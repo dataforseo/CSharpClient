@@ -1,0 +1,2645 @@
+# KeywordsDataApi
+
+Namespace: DataForSeo.Client.Api
+
+```csharp
+public class KeywordsDataApi
+```
+
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataApi](./dataforseo.client.api.keywordsdataapi.md)
+
+## Properties
+
+### **BaseUrl**
+
+```csharp
+public string BaseUrl { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+
+### **ReadResponseAsString**
+
+```csharp
+public bool ReadResponseAsString { get; set; }
+```
+
+#### Property Value
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
+
+## Constructors
+
+### **KeywordsDataApi(HttpClient)**
+
+```csharp
+public KeywordsDataApi(HttpClient httpClient)
+```
+
+#### Parameters
+
+`httpClient` HttpClient<br>
+
+## Methods
+
+### **KeywordsDataIdListAsync(IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataIdListResponseInfo> KeywordsDataIdListAsync(IEnumerable<KeywordsDataIdListRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint is designed to provide you with the list of IDs and metadata of the completed Keywords Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/id_list/?bash'
+
+### **KeywordsDataIdListAsync(IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataIdListResponseInfo> KeywordsDataIdListAsync(IEnumerable<KeywordsDataIdListRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint is designed to provide you with the list of IDs and metadata of the completed Keywords Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/id_list/?bash'
+
+### **KeywordsDataErrorsAsync(IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataErrorsResponseInfo> KeywordsDataErrorsAsync(IEnumerable<KeywordsDataErrorsRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
+
+### **KeywordsDataErrorsAsync(IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataErrorsResponseInfo> KeywordsDataErrorsAsync(IEnumerable<KeywordsDataErrorsRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
+
+### **GoogleAdsStatusAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsStatusResponseInfo> GoogleAdsStatusAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsStatusResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>By calling this endpoint, you will know if Google updated keyword data for the previous month. Generally, Google updates keyword data in the middle of the month. So, if Google updated its data in October, you would be able to see the actual search volume, cost-per-click, competition, and other metrics for September. If Google didn’t update its data in October, the latest information would be available for August.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/status/?bash'
+
+### **GoogleAdsStatusAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsStatusResponseInfo> GoogleAdsStatusAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsStatusResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>By calling this endpoint, you will know if Google updated keyword data for the previous month. Generally, Google updates keyword data in the middle of the month. So, if Google updated its data in October, you would be able to see the actual search volume, cost-per-click, competition, and other metrics for September. If Google didn’t update its data in October, the latest information would be available for August.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/status/?bash'
+
+### **KeywordsDataGoogleAdsLocationsAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsLocationsResponseInfo> KeywordsDataGoogleAdsLocationsAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”.
+ <br>Postal Codes can be used to set a task, albeit API response will not return data for such tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash'
+
+### **KeywordsDataGoogleAdsLocationsAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsLocationsResponseInfo> KeywordsDataGoogleAdsLocationsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”.
+ <br>Postal Codes can be used to set a task, albeit API response will not return data for such tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash'
+
+### **KeywordsDataGoogleAdsLanguagesAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsLanguagesResponseInfo> KeywordsDataGoogleAdsLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of languages supported by Keywords Data API.
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
+
+### **KeywordsDataGoogleAdsLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsLanguagesResponseInfo> KeywordsDataGoogleAdsLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of languages supported by Keywords Data API.
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
+
+### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
+
+### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
+
+### **GoogleAdsSearchVolumeTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo> GoogleAdsSearchVolumeTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/tasks_ready/?bash'
+
+### **GoogleAdsSearchVolumeTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo> GoogleAdsSearchVolumeTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/tasks_ready/?bash'
+
+### **GoogleAdsSearchVolumeTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo> GoogleAdsSearchVolumeTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
+
+### **GoogleAdsSearchVolumeTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo> GoogleAdsSearchVolumeTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
+
+### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
+
+### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
+
+### **GoogleAdsKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo> GoogleAdsKeywordsForSiteTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_post/?bash'
+
+### **GoogleAdsKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo> GoogleAdsKeywordsForSiteTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_post/?bash'
+
+### **GoogleAdsKeywordsForSiteTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo> GoogleAdsKeywordsForSiteTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/tasks_ready/?bash'
+
+### **GoogleAdsKeywordsForSiteTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo> GoogleAdsKeywordsForSiteTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/tasks_ready/?bash'
+
+### **GoogleAdsKeywordsForSiteTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo> GoogleAdsKeywordsForSiteTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_get/?bash'
+
+### **GoogleAdsKeywordsForSiteTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo> GoogleAdsKeywordsForSiteTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_get/?bash'
+
+### **GoogleAdsKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo> GoogleAdsKeywordsForSiteLiveAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live/?bash'
+
+### **GoogleAdsKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo> GoogleAdsKeywordsForSiteLiveAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live/?bash'
+
+### **GoogleAdsKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo> GoogleAdsKeywordsForKeywordsTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_post/?bash'
+
+### **GoogleAdsKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo> GoogleAdsKeywordsForKeywordsTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_post/?bash'
+
+### **GoogleAdsKeywordsForKeywordsTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo> GoogleAdsKeywordsForKeywordsTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/tasks_ready/?bash'
+
+### **GoogleAdsKeywordsForKeywordsTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo> GoogleAdsKeywordsForKeywordsTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/tasks_ready/?bash'
+
+### **GoogleAdsKeywordsForKeywordsTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo> GoogleAdsKeywordsForKeywordsTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
+
+### **GoogleAdsKeywordsForKeywordsTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo> GoogleAdsKeywordsForKeywordsTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
+
+### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
+
+### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo> GoogleAdsAdTrafficByKeywordsTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/task_post/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo> GoogleAdsAdTrafficByKeywordsTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/task_post/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo> GoogleAdsAdTrafficByKeywordsTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo> GoogleAdsAdTrafficByKeywordsTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo> GoogleAdsAdTrafficByKeywordsTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/task_get/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo> GoogleAdsAdTrafficByKeywordsTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/task_get/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo> GoogleAdsAdTrafficByKeywordsLiveAsync(IEnumerable<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/live/?bash'
+
+### **GoogleAdsAdTrafficByKeywordsLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo> GoogleAdsAdTrafficByKeywordsLiveAsync(IEnumerable<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/live/?bash'
+
+### **KeywordsDataGoogleTrendsLocationsAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsLocationsResponseInfo> KeywordsDataGoogleTrendsLocationsAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+
+### **KeywordsDataGoogleTrendsLocationsAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsLocationsResponseInfo> KeywordsDataGoogleTrendsLocationsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+
+### **KeywordsDataGoogleTrendsLocationsCountryAsync(String)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> KeywordsDataGoogleTrendsLocationsCountryAsync(string country)
+```
+
+#### Parameters
+
+`country` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+country ISO code
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+
+### **KeywordsDataGoogleTrendsLocationsCountryAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> KeywordsDataGoogleTrendsLocationsCountryAsync(string country, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`country` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+country ISO code
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+
+### **KeywordsDataGoogleTrendsLanguagesAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsLanguagesResponseInfo> KeywordsDataGoogleTrendsLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of languages supported by Google Trends API.
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/languages/?bash'
+
+### **KeywordsDataGoogleTrendsLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsLanguagesResponseInfo> KeywordsDataGoogleTrendsLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of languages supported by Google Trends API.
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/languages/?bash'
+
+### **GoogleTrendsCategoriesAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsCategoriesResponseInfo> GoogleTrendsCategoriesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsCategoriesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of categories supported by Google Trends API.
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available categories.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/categories/?bash'
+
+### **GoogleTrendsCategoriesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsCategoriesResponseInfo> GoogleTrendsCategoriesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsCategoriesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of categories supported by Google Trends API.
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available categories.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/categories/?bash'
+
+### **GoogleTrendsExploreTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreTaskPostResponseInfo> GoogleTrendsExploreTaskPostAsync(IEnumerable<KeywordsDataGoogleTrendsExploreTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_post/?bash'
+
+### **GoogleTrendsExploreTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreTaskPostResponseInfo> GoogleTrendsExploreTaskPostAsync(IEnumerable<KeywordsDataGoogleTrendsExploreTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_post/?bash'
+
+### **GoogleTrendsExploreTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo> GoogleTrendsExploreTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/tasks_ready/?bash'
+
+### **GoogleTrendsExploreTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo> GoogleTrendsExploreTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/tasks_ready/?bash'
+
+### **GoogleTrendsExploreTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreTaskGetResponseInfo> GoogleTrendsExploreTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_get/?bash'
+
+### **GoogleTrendsExploreTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreTaskGetResponseInfo> GoogleTrendsExploreTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_get/?bash'
+
+### **GoogleTrendsExploreLiveAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreLiveResponseInfo> GoogleTrendsExploreLiveAsync(IEnumerable<KeywordsDataGoogleTrendsExploreLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/live/?bash'
+
+### **GoogleTrendsExploreLiveAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataGoogleTrendsExploreLiveResponseInfo> GoogleTrendsExploreLiveAsync(IEnumerable<KeywordsDataGoogleTrendsExploreLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataGoogleTrendsExploreLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/live/?bash'
+
+### **KeywordsDataBingLocationsAsync()**
+
+```csharp
+public Task<KeywordsDataBingLocationsResponseInfo> KeywordsDataBingLocationsAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of locations supported in Bing Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
+
+### **KeywordsDataBingLocationsAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingLocationsResponseInfo> KeywordsDataBingLocationsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of locations supported in Bing Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
+
+### **KeywordsDataBingLanguagesAsync()**
+
+```csharp
+public Task<KeywordsDataBingLanguagesResponseInfo> KeywordsDataBingLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of languages supported by Bing Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/languages/?bash'
+
+### **KeywordsDataBingLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingLanguagesResponseInfo> KeywordsDataBingLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of languages supported by Bing Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/languages/?bash'
+
+### **BingSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeTaskPostResponseInfo> BingSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataBingSearchVolumeTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_post/?bash'
+
+### **BingSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeTaskPostResponseInfo> BingSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataBingSearchVolumeTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_post/?bash'
+
+### **BingSearchVolumeTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeTasksReadyResponseInfo> BingSearchVolumeTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/tasks_ready/?bash'
+
+### **BingSearchVolumeTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeTasksReadyResponseInfo> BingSearchVolumeTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/tasks_ready/?bash'
+
+### **BingSearchVolumeTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeTaskGetResponseInfo> BingSearchVolumeTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_get/?bash'
+
+### **BingSearchVolumeTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeTaskGetResponseInfo> BingSearchVolumeTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_get/?bash'
+
+### **BingSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeLiveResponseInfo> BingSearchVolumeLiveAsync(IEnumerable<KeywordsDataBingSearchVolumeLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
+
+### **BingSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeLiveResponseInfo> BingSearchVolumeLiveAsync(IEnumerable<KeywordsDataBingSearchVolumeLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
+
+### **BingKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteTaskPostResponseInfo> BingKeywordsForSiteTaskPostAsync(IEnumerable<KeywordsDataBingKeywordsForSiteTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_post/?bash'
+
+### **BingKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteTaskPostResponseInfo> BingKeywordsForSiteTaskPostAsync(IEnumerable<KeywordsDataBingKeywordsForSiteTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_post/?bash'
+
+### **BingKeywordsForSiteTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo> BingKeywordsForSiteTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/tasks_ready/?bash'
+
+### **BingKeywordsForSiteTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo> BingKeywordsForSiteTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/tasks_ready/?bash'
+
+### **BingKeywordsForSiteTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteTaskGetResponseInfo> BingKeywordsForSiteTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for the last year (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_get/?bash'
+
+### **BingKeywordsForSiteTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteTaskGetResponseInfo> BingKeywordsForSiteTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for the last year (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_get/?bash'
+
+### **BingKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteLiveResponseInfo> BingKeywordsForSiteLiveAsync(IEnumerable<KeywordsDataBingKeywordsForSiteLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with a list of keywords relevant to the specified URL along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition values for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/live/?bash'
+
+### **BingKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForSiteLiveResponseInfo> BingKeywordsForSiteLiveAsync(IEnumerable<KeywordsDataBingKeywordsForSiteLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with a list of keywords relevant to the specified URL along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition values for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/live/?bash'
+
+### **BingKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo> BingKeywordsForKeywordsTaskPostAsync(IEnumerable<KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_post/?bash'
+
+### **BingKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo> BingKeywordsForKeywordsTaskPostAsync(IEnumerable<KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_post/?bash'
+
+### **BingKeywordsForKeywordsTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo> BingKeywordsForKeywordsTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/tasks_ready/?bash'
+
+### **BingKeywordsForKeywordsTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo> BingKeywordsForKeywordsTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/tasks_ready/?bash'
+
+### **BingKeywordsForKeywordsTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo> BingKeywordsForKeywordsTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_get/?bash'
+
+### **BingKeywordsForKeywordsTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo> BingKeywordsForKeywordsTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_get/?bash'
+
+### **BingKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsLiveResponseInfo> BingKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataBingKeywordsForKeywordsLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will select the relevant keywords for the specified ones. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/live/?bash'
+
+### **BingKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordsForKeywordsLiveResponseInfo> BingKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataBingKeywordsForKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will select the relevant keywords for the specified ones. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/live/?bash'
+
+### **KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync()**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Using this endpoint you can get the full list of locations and languages supported in Keyword Performance endpoints of Bing Keywords Data API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/locations_and_languages/?bash'
+
+### **KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Using this endpoint you can get the full list of locations and languages supported in Keyword Performance endpoints of Bing Keywords Data API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/locations_and_languages/?bash'
+
+### **BingKeywordPerformanceTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceTaskPostResponseInfo> BingKeywordPerformanceTaskPostAsync(IEnumerable<KeywordsDataBingKeywordPerformanceTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_post/?bash'
+
+### **BingKeywordPerformanceTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceTaskPostResponseInfo> BingKeywordPerformanceTaskPostAsync(IEnumerable<KeywordsDataBingKeywordPerformanceTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_post/?bash'
+
+### **BingKeywordPerformanceTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo> BingKeywordPerformanceTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/tasks_ready/?bash'
+
+### **BingKeywordPerformanceTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo> BingKeywordPerformanceTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/tasks_ready/?bash'
+
+### **BingKeywordPerformanceTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceTaskGetResponseInfo> BingKeywordPerformanceTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
+
+### **BingKeywordPerformanceTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceTaskGetResponseInfo> BingKeywordPerformanceTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
+
+### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerformanceLiveAsync(IEnumerable<KeywordsDataBingKeywordPerformanceLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
+
+### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerformanceLiveAsync(IEnumerable<KeywordsDataBingKeywordPerformanceLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
+
+### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+
+```csharp
+protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
+```
+
+#### Type Parameters
+
+`T`<br>
+
+#### Parameters
+
+`response` HttpResponseMessage<br>
+
+`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
+
+#### Returns
+
+Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
