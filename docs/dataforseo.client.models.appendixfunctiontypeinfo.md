@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixFunctionTypeInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixFunctionTypeInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixFunctionTypeInfo](./dataforseo.client.models.appendixfunctiontypeinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixFunctionTypeInfo](./dataforseo.client.models.appendixfunctiontypeinfo)
 
 ## Properties
 
@@ -57,3 +61,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixFunctionTypeInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MicrodataFieldsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MicrodataFieldsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MicrodataFieldsInfo](./dataforseo.client.models.microdatafieldsinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MicrodataFieldsInfo](./dataforseo.client.models.microdatafieldsinfo)
 
 ## Properties
 
@@ -60,7 +64,7 @@ public MicrodataTestResultsInfo TestResults { get; set; }
 
 #### Property Value
 
-[MicrodataTestResultsInfo](./dataforseo.client.models.microdatatestresultsinfo.md)<br>
+[MicrodataTestResultsInfo](./dataforseo.client.models.microdatatestresultsinfo)<br>
 
 ### **Fields**
 
@@ -73,7 +77,7 @@ public ICollection<MicrodataFieldsInfo> Fields { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MicrodataFieldsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MicrodataFieldsInfo&gt;](./dataforseo.client.models.microdatafieldsinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -92,3 +96,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MicrodataFieldsInfo()
 ```
+
+---
+
+[`< Back`](./)

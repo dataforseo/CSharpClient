@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLighthouseLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseLanguagesResultInfo](./dataforseo.client.models.responses.onpagelighthouselanguagesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseLanguagesResultInfo](./dataforseo.client.models.responses.onpagelighthouselanguagesresultinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseLanguagesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

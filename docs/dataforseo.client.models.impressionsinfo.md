@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ImpressionsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ImpressionsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ImpressionsInfo](./dataforseo.client.models.impressionsinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ImpressionsInfo](./dataforseo.client.models.impressionsinfo)
 
 ## Properties
 
@@ -281,3 +285,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImpressionsInfo()
 ```
+
+---
+
+[`< Back`](./)

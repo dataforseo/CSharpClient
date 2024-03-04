@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixMerchantLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixMerchantLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixmerchantlimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixmerchantlimitsratesdatainfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixMerchantGoogleInfo Google { get; set; }
 
 #### Property Value
 
-[AppendixMerchantGoogleInfo](./dataforseo.client.models.appendixmerchantgoogleinfo.md)<br>
+[AppendixMerchantGoogleInfo](./dataforseo.client.models.appendixmerchantgoogleinfo)<br>
 
 ### **Amazon**
 
@@ -28,7 +32,7 @@ public AppendixMerchantAmazonInfo Amazon { get; set; }
 
 #### Property Value
 
-[AppendixMerchantAmazonInfo](./dataforseo.client.models.appendixmerchantamazoninfo.md)<br>
+[AppendixMerchantAmazonInfo](./dataforseo.client.models.appendixmerchantamazoninfo)<br>
 
 ### **Locations**
 
@@ -68,7 +72,7 @@ public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -87,3 +91,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixMerchantLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

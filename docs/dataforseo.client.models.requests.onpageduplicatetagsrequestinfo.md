@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageDuplicateTagsRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageDuplicateTagsRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateTagsRequestInfo](./dataforseo.client.models.requests.onpageduplicatetagsrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateTagsRequestInfo](./dataforseo.client.models.requests.onpageduplicatetagsrequestinfo)
 
 ## Properties
 
@@ -115,3 +119,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateTagsRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixOnPageLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixOnPageLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixOnPageLimitsRatesDataInfo](./dataforseo.client.models.appendixonpagelimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixOnPageLimitsRatesDataInfo](./dataforseo.client.models.appendixonpagelimitsratesdatainfo)
 
 ## Properties
 
@@ -168,7 +172,7 @@ public AppendixInfo Lighthouse { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordDensity**
 
@@ -227,3 +231,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixOnPageLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

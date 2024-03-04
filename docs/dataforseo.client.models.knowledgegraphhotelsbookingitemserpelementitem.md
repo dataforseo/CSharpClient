@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KnowledgeGraphHotelsBookingItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class KnowledgeGraphHotelsBookingItemSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [KnowledgeGraphHotelsBookingItemSerpElementItem](./dataforseo.client.models.knowledgegraphhotelsbookingitemserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [KnowledgeGraphHotelsBookingItemSerpElementItem](./dataforseo.client.models.knowledgegraphhotelsbookingitemserpelementitem)
 
 ## Properties
 
@@ -129,7 +133,7 @@ public ICollection<KnowledgeGraphHotelsBookingElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KnowledgeGraphHotelsBookingElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KnowledgeGraphHotelsBookingElement&gt;](./dataforseo.client.models.knowledgegraphhotelsbookingelement)<br>
 
 ### **Rectangle**
 
@@ -143,7 +147,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -162,3 +166,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KnowledgeGraphHotelsBookingItemSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

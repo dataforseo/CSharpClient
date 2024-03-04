@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantAmazonAsinTaskPostTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonAsinTaskPostTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [MerchantAmazonAsinTaskPostTaskInfo](./dataforseo.client.models.responses.merchantamazonasintaskposttaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [MerchantAmazonAsinTaskPostTaskInfo](./dataforseo.client.models.responses.merchantamazonasintaskposttaskinfo)
 
 ## Properties
 
@@ -140,3 +144,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonAsinTaskPostTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

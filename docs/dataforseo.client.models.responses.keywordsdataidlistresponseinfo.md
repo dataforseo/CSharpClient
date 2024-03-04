@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataIdListResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataIdListResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [KeywordsDataIdListResponseInfo](./dataforseo.client.models.responses.keywordsdataidlistresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [KeywordsDataIdListResponseInfo](./dataforseo.client.models.responses.keywordsdataidlistresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<KeywordsDataIdListTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataIdListTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordsDataIdListTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdataidlisttaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataIdListResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # QueriesListDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class QueriesListDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [QueriesListDataInfo](./dataforseo.client.models.querieslistdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [QueriesListDataInfo](./dataforseo.client.models.querieslistdatainfo)
 
 ## Properties
 
@@ -21,7 +25,7 @@ public ICollection<QueriesListDataItemInfo> Top { get; set; }
 
 #### Property Value
 
-[ICollection&lt;QueriesListDataItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;QueriesListDataItemInfo&gt;](./dataforseo.client.models.querieslistdataiteminfo)<br>
 
 ### **Rising**
 
@@ -34,7 +38,7 @@ public ICollection<QueriesListDataItemInfo> Rising { get; set; }
 
 #### Property Value
 
-[ICollection&lt;QueriesListDataItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;QueriesListDataItemInfo&gt;](./dataforseo.client.models.querieslistdataiteminfo)<br>
 
 ### **AdditionalProperties**
 
@@ -53,3 +57,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public QueriesListDataInfo()
 ```
+
+---
+
+[`< Back`](./)

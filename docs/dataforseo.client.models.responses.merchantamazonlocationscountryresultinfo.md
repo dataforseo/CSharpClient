@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantAmazonLocationsCountryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonLocationsCountryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonLocationsCountryResultInfo](./dataforseo.client.models.responses.merchantamazonlocationscountryresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonLocationsCountryResultInfo](./dataforseo.client.models.responses.merchantamazonlocationscountryresultinfo)
 
 ## Properties
 
@@ -91,3 +95,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonLocationsCountryResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforsiteliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforsiteliverequestinfo)
 
 ## Properties
 
@@ -278,3 +282,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

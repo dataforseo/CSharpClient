@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # VideoElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class VideoElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [VideoElement](./dataforseo.client.models.videoelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [VideoElement](./dataforseo.client.models.videoelement)
 
 ## Properties
 
@@ -103,3 +107,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public VideoElement()
 ```
+
+---
+
+[`< Back`](./)

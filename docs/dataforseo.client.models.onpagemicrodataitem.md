@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageMicrodataItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageMicrodataItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageMicrodataItem](./dataforseo.client.models.onpagemicrodataitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageMicrodataItem](./dataforseo.client.models.onpagemicrodataitem)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public MicrodataInspectionInfo InspectionInfo { get; set; }
 
 #### Property Value
 
-[MicrodataInspectionInfo](./dataforseo.client.models.microdatainspectioninfo.md)<br>
+[MicrodataInspectionInfo](./dataforseo.client.models.microdatainspectioninfo)<br>
 
 ### **AdditionalProperties**
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageMicrodataItem()
 ```
+
+---
+
+[`< Back`](./)

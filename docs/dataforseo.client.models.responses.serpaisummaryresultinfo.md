@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpAiSummaryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpAiSummaryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpAiSummaryResultInfo](./dataforseo.client.models.responses.serpaisummaryresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpAiSummaryResultInfo](./dataforseo.client.models.responses.serpaisummaryresultinfo)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public ICollection<SerpAiSummaryItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpAiSummaryItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpAiSummaryItem&gt;](./dataforseo.client.models.serpaisummaryitem)<br>
 
 ### **AdditionalProperties**
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpAiSummaryResultInfo()
 ```
+
+---
+
+[`< Back`](./)

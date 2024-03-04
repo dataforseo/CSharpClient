@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataErrorsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataErrorsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataErrorsTaskInfo](./dataforseo.client.models.responses.businessdataerrorstaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataErrorsTaskInfo](./dataforseo.client.models.responses.businessdataerrorstaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BusinessDataErrorsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BusinessDataErrorsResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BusinessDataErrorsResultInfo&gt;](./dataforseo.client.models.responses.businessdataerrorsresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataErrorsTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsTechnologiesLocationsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsTechnologiesLocationsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesLocationsResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologieslocationsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesLocationsResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologieslocationsresultinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesLocationsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

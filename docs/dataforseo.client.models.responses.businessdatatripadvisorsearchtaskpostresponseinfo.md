@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataTripadvisorSearchTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataTripadvisorSearchTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BusinessDataTripadvisorSearchTaskPostResponseInfo](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskpostresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BusinessDataTripadvisorSearchTaskPostResponseInfo](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskpostresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BusinessDataTripadvisorSearchTaskPostTaskInfo> Tasks { get; s
 
 #### Property Value
 
-[ICollection&lt;BusinessDataTripadvisorSearchTaskPostTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BusinessDataTripadvisorSearchTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskposttaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTripadvisorSearchTaskPostResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLighthouseLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageLighthouseLanguagesTaskInfo](./dataforseo.client.models.responses.onpagelighthouselanguagestaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageLighthouseLanguagesTaskInfo](./dataforseo.client.models.responses.onpagelighthouselanguagestaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<OnPageLighthouseLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLighthouseLanguagesResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;OnPageLighthouseLanguagesResultInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselanguagesresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseLanguagesTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

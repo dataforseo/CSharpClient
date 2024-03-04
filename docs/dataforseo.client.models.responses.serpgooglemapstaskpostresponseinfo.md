@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleMapsTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleMapsTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleMapsTaskPostResponseInfo](./dataforseo.client.models.responses.serpgooglemapstaskpostresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleMapsTaskPostResponseInfo](./dataforseo.client.models.responses.serpgooglemapstaskpostresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpGoogleMapsTaskPostTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleMapsTaskPostTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpGoogleMapsTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskposttaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsTaskPostResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

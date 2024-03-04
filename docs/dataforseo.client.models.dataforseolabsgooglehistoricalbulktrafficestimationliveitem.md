@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem](./dataforseo.client.models.dataforseolabsgooglehistoricalbulktrafficestimationliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem](./dataforseo.client.models.dataforseolabsgooglehistoricalbulktrafficestimationliveitem)
 
 ## Properties
 
@@ -44,7 +48,7 @@ public HistoricalMetricsBundleInfo Metrics { get; set; }
 
 #### Property Value
 
-[HistoricalMetricsBundleInfo](./dataforseo.client.models.historicalmetricsbundleinfo.md)<br>
+[HistoricalMetricsBundleInfo](./dataforseo.client.models.historicalmetricsbundleinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem()
 ```
+
+---
+
+[`< Back`](./)

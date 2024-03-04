@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppleAppListTasksReadyResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleAppListTasksReadyResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [AppDataAppleAppListTasksReadyResponseInfo](./dataforseo.client.models.responses.appdataappleapplisttasksreadyresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [AppDataAppleAppListTasksReadyResponseInfo](./dataforseo.client.models.responses.appdataappleapplisttasksreadyresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<AppDataAppleAppListTasksReadyTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleAppListTasksReadyTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppDataAppleAppListTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttasksreadytaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppListTasksReadyResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataErrorsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataErrorsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataErrorsResultInfo](./dataforseo.client.models.responses.keywordsdataerrorsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataErrorsResultInfo](./dataforseo.client.models.responses.keywordsdataerrorsresultinfo)
 
 ## Properties
 
@@ -154,3 +158,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataErrorsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

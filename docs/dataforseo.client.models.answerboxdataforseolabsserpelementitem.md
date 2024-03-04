@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AnswerBoxDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AnswerBoxDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [AnswerBoxDataforseoLabsSerpElementItem](./dataforseo.client.models.answerboxdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [AnswerBoxDataforseoLabsSerpElementItem](./dataforseo.client.models.answerboxdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -88,7 +92,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
 
 ### **AdditionalProperties**
 
@@ -107,3 +111,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AnswerBoxDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

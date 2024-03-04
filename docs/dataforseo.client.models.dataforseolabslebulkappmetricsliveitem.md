@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsleBulkAppMetricsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsleBulkAppMetricsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsleBulkAppMetricsLiveItem](./dataforseo.client.models.dataforseolabslebulkappmetricsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsleBulkAppMetricsLiveItem](./dataforseo.client.models.dataforseolabslebulkappmetricsliveitem)
 
 ## Properties
 
@@ -64,3 +68,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsleBulkAppMetricsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

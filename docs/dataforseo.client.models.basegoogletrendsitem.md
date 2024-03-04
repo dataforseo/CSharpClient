@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BaseGoogleTrendsItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BaseGoogleTrendsItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseGoogleTrendsItem](./dataforseo.client.models.basegoogletrendsitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseGoogleTrendsItem](./dataforseo.client.models.basegoogletrendsitem)
 
 ## Properties
 
@@ -27,3 +31,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BaseGoogleTrendsItem()
 ```
+
+---
+
+[`< Back`](./)

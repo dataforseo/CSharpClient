@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantGoogleLocationsCountryTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantGoogleLocationsCountryTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [MerchantGoogleLocationsCountryTaskInfo](./dataforseo.client.models.responses.merchantgooglelocationscountrytaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [MerchantGoogleLocationsCountryTaskInfo](./dataforseo.client.models.responses.merchantgooglelocationscountrytaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<MerchantGoogleLocationsCountryResultInfo> Result { get; set; 
 
 #### Property Value
 
-[ICollection&lt;MerchantGoogleLocationsCountryResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MerchantGoogleLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.merchantgooglelocationscountryresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleLocationsCountryTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLighthouseLiveJsonRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageLighthouseLiveJsonRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseLiveJsonRequestInfo](./dataforseo.client.models.requests.onpagelighthouselivejsonrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseLiveJsonRequestInfo](./dataforseo.client.models.requests.onpagelighthouselivejsonrequestinfo)
 
 ## Properties
 
@@ -163,3 +167,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseLiveJsonRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

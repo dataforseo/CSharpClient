@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataGoogleAppSearchesTaskPostTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppSearchesTaskPostTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataGoogleAppSearchesTaskPostTaskInfo](./dataforseo.client.models.responses.appdatagoogleappsearchestaskposttaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataGoogleAppSearchesTaskPostTaskInfo](./dataforseo.client.models.responses.appdatagoogleappsearchestaskposttaskinfo)
 
 ## Properties
 
@@ -140,3 +144,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppSearchesTaskPostTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

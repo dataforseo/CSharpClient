@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksCompetitorsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BacklinksCompetitorsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksCompetitorsLiveRequestInfo](./dataforseo.client.models.requests.backlinkscompetitorsliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksCompetitorsLiveRequestInfo](./dataforseo.client.models.requests.backlinkscompetitorsliverequestinfo)
 
 ## Properties
 
@@ -166,3 +170,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksCompetitorsLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

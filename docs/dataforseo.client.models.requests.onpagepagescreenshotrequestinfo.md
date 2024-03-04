@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPagePageScreenshotRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPagePageScreenshotRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPagePageScreenshotRequestInfo](./dataforseo.client.models.requests.onpagepagescreenshotrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPagePageScreenshotRequestInfo](./dataforseo.client.models.requests.onpagepagescreenshotrequestinfo)
 
 ## Properties
 
@@ -239,3 +243,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPagePageScreenshotRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixContentGenerationDayLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixContentGenerationDayLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentGenerationDayLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationdaylimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentGenerationDayLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationdaylimitsratesdatainfo)
 
 ## Properties
 
@@ -47,3 +51,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixContentGenerationDayLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsleAppIntersectionLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsleAppIntersectionLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsleAppIntersectionLiveItem](./dataforseo.client.models.dataforseolabsleappintersectionliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsleAppIntersectionLiveItem](./dataforseo.client.models.dataforseolabsleappintersectionliveitem)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public KeywordData KeywordData { get; set; }
 
 #### Property Value
 
-[KeywordData](./dataforseo.client.models.keyworddata.md)<br>
+[KeywordData](./dataforseo.client.models.keyworddata)<br>
 
 ### **IntersectionResult**
 
@@ -65,3 +69,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsleAppIntersectionLiveItem()
 ```
+
+---
+
+[`< Back`](./)

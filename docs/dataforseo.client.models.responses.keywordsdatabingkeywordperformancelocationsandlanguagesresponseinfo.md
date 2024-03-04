@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagesresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagesresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesTaskIn
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagestaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataYelpReviewsTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataYelpReviewsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataYelpReviewsTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatayelpreviewstaskpostrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataYelpReviewsTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatayelpreviewstaskpostrequestinfo)
 
 ## Properties
 
@@ -243,3 +247,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpReviewsTaskPostRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DatasetSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DatasetSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [DatasetSerpElementItem](./dataforseo.client.models.datasetserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [DatasetSerpElementItem](./dataforseo.client.models.datasetserpelementitem)
 
 ## Properties
 
@@ -165,7 +169,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
 
 ### **DatasetProviders**
 
@@ -177,7 +181,7 @@ public ICollection<LicensesElement> DatasetProviders { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LicensesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LicensesElement&gt;](./dataforseo.client.models.licenseselement)<br>
 
 ### **Formats**
 
@@ -189,7 +193,7 @@ public ICollection<FormatsElement> Formats { get; set; }
 
 #### Property Value
 
-[ICollection&lt;FormatsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;FormatsElement&gt;](./dataforseo.client.models.formatselement)<br>
 
 ### **Authors**
 
@@ -201,7 +205,7 @@ public ICollection<AuthorsElement> Authors { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AuthorsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AuthorsElement&gt;](./dataforseo.client.models.authorselement)<br>
 
 ### **Licenses**
 
@@ -213,7 +217,7 @@ public ICollection<LicensesElement> Licenses { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LicensesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LicensesElement&gt;](./dataforseo.client.models.licenseselement)<br>
 
 ### **UpdatedDate**
 
@@ -253,7 +257,7 @@ public PeriodCovered PeriodCovered { get; set; }
 
 #### Property Value
 
-[PeriodCovered](./dataforseo.client.models.periodcovered.md)<br>
+[PeriodCovered](./dataforseo.client.models.periodcovered)<br>
 
 ### **DatasetDescription**
 
@@ -265,7 +269,7 @@ public DatasetDescription DatasetDescription { get; set; }
 
 #### Property Value
 
-[DatasetDescription](./dataforseo.client.models.datasetdescription.md)<br>
+[DatasetDescription](./dataforseo.client.models.datasetdescription)<br>
 
 ### **AdditionalProperties**
 
@@ -284,3 +288,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DatasetSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

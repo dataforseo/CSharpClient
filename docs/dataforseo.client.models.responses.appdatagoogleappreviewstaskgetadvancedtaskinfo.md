@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataGoogleAppReviewsTaskGetAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppReviewsTaskGetAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataGoogleAppReviewsTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedtaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataGoogleAppReviewsTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedtaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<AppDataGoogleAppReviewsTaskGetAdvancedResultInfo> Result { ge
 
 #### Property Value
 
-[ICollection&lt;AppDataGoogleAppReviewsTaskGetAdvancedResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppDataGoogleAppReviewsTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppReviewsTaskGetAdvancedTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

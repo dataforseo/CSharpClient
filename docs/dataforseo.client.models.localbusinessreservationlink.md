@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # LocalBusinessReservationLink
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalBusinessReservationLink : BaseLocalBusinessLink
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink.md) → [LocalBusinessReservationLink](./dataforseo.client.models.localbusinessreservationlink.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink) → [LocalBusinessReservationLink](./dataforseo.client.models.localbusinessreservationlink)
 
 ## Properties
 
@@ -52,3 +56,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalBusinessReservationLink()
 ```
+
+---
+
+[`< Back`](./)

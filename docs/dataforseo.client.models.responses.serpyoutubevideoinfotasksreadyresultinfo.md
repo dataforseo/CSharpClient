@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpYoutubeVideoInfoTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeVideoInfoTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeVideoInfoTasksReadyResultInfo](./dataforseo.client.models.responses.serpyoutubevideoinfotasksreadyresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeVideoInfoTasksReadyResultInfo](./dataforseo.client.models.responses.serpyoutubevideoinfotasksreadyresultinfo)
 
 ## Properties
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoInfoTasksReadyResultInfo()
 ```
+
+---
+
+[`< Back`](./)

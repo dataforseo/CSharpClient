@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLighthouseTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseTasksReadyResultInfo](./dataforseo.client.models.responses.onpagelighthousetasksreadyresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseTasksReadyResultInfo](./dataforseo.client.models.responses.onpagelighthousetasksreadyresultinfo)
 
 ## Properties
 
@@ -64,3 +68,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseTasksReadyResultInfo()
 ```
+
+---
+
+[`< Back`](./)

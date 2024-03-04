@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AnchorLinkElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AnchorLinkElementItem : BaseOnPageLinkItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo.md) → [AnchorLinkElementItem](./dataforseo.client.models.anchorlinkelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo) → [AnchorLinkElementItem](./dataforseo.client.models.anchorlinkelementitem)
 
 ## Properties
 
@@ -221,3 +225,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AnchorLinkElementItem()
 ```
+
+---
+
+[`< Back`](./)

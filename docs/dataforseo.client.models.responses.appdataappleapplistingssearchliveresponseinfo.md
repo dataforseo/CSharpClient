@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppleAppListingsSearchLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleAppListingsSearchLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [AppDataAppleAppListingsSearchLiveResponseInfo](./dataforseo.client.models.responses.appdataappleapplistingssearchliveresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [AppDataAppleAppListingsSearchLiveResponseInfo](./dataforseo.client.models.responses.appdataappleapplistingssearchliveresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<AppDataAppleAppListingsSearchLiveTaskInfo> Tasks { get; set; 
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleAppListingsSearchLiveTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppDataAppleAppListingsSearchLiveTaskInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingssearchlivetaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppListingsSearchLiveResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

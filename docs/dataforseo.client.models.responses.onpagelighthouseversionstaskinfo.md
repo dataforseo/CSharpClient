@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLighthouseVersionsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseVersionsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageLighthouseVersionsTaskInfo](./dataforseo.client.models.responses.onpagelighthouseversionstaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageLighthouseVersionsTaskInfo](./dataforseo.client.models.responses.onpagelighthouseversionstaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<OnPageLighthouseVersionsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLighthouseVersionsResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;OnPageLighthouseVersionsResultInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseversionsresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseVersionsTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

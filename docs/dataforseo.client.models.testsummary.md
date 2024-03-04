@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # TestSummary
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class TestSummary
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TestSummary](./dataforseo.client.models.testsummary.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TestSummary](./dataforseo.client.models.testsummary)
 
 ## Properties
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TestSummary()
 ```
+
+---
+
+[`< Back`](./)

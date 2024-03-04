@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleDatasetSearchTasksFixedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleDatasetSearchTasksFixedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleDatasetSearchTasksFixedTaskInfo](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksfixedtaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleDatasetSearchTasksFixedTaskInfo](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksfixedtaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpGoogleDatasetSearchTasksFixedResultInfo> Result { get; se
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleDatasetSearchTasksFixedResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpGoogleDatasetSearchTasksFixedResultInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksfixedresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleDatasetSearchTasksFixedTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

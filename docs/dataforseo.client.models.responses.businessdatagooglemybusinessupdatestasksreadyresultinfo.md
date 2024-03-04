@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataGoogleMyBusinessUpdatesTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleMyBusinessUpdatesTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleMyBusinessUpdatesTasksReadyResultInfo](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestasksreadyresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleMyBusinessUpdatesTasksReadyResultInfo](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestasksreadyresultinfo)
 
 ## Properties
 
@@ -89,3 +93,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleMyBusinessUpdatesTasksReadyResultInfo()
 ```
+
+---
+
+[`< Back`](./)

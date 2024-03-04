@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBingOrganicLiveHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingOrganicLiveHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBingOrganicLiveHtmlTaskInfo](./dataforseo.client.models.responses.serpbingorganiclivehtmltaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBingOrganicLiveHtmlTaskInfo](./dataforseo.client.models.responses.serpbingorganiclivehtmltaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpBingOrganicLiveHtmlResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingOrganicLiveHtmlResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpBingOrganicLiveHtmlResultInfo&gt;](./dataforseo.client.models.responses.serpbingorganiclivehtmlresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingOrganicLiveHtmlTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

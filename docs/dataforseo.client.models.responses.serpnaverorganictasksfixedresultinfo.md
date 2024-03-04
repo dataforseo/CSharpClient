@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpNaverOrganicTasksFixedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpNaverOrganicTasksFixedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpNaverOrganicTasksFixedResultInfo](./dataforseo.client.models.responses.serpnaverorganictasksfixedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpNaverOrganicTasksFixedResultInfo](./dataforseo.client.models.responses.serpnaverorganictasksfixedresultinfo)
 
 ## Properties
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpNaverOrganicTasksFixedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

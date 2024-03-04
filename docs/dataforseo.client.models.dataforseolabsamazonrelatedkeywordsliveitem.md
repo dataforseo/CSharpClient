@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAmazonRelatedKeywordsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsAmazonRelatedKeywordsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonRelatedKeywordsLiveItem](./dataforseo.client.models.dataforseolabsamazonrelatedkeywordsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonRelatedKeywordsLiveItem](./dataforseo.client.models.dataforseolabsamazonrelatedkeywordsliveitem)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public AmazonKeywordData KeywordData { get; set; }
 
 #### Property Value
 
-[AmazonKeywordData](./dataforseo.client.models.amazonkeyworddata.md)<br>
+[AmazonKeywordData](./dataforseo.client.models.amazonkeyworddata)<br>
 
 ### **Depth**
 
@@ -76,3 +80,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonRelatedKeywordsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentGenerationGenerateMetaTagsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class ContentGenerationGenerateMetaTagsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationGenerateMetaTagsLiveRequestInfo](./dataforseo.client.models.requests.contentgenerationgeneratemetatagsliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationGenerateMetaTagsLiveRequestInfo](./dataforseo.client.models.requests.contentgenerationgeneratemetatagsliverequestinfo)
 
 ## Properties
 
@@ -76,3 +80,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationGenerateMetaTagsLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

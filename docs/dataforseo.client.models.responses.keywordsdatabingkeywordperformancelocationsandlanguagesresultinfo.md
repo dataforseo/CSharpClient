@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagesresultinfo)
 
 ## Properties
 
@@ -45,7 +49,7 @@ public ICollection<AvailableLocations> AvailableLocations { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AvailableLocations&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AvailableLocations&gt;](./dataforseo.client.models.availablelocations)<br>
 
 ### **AdditionalProperties**
 
@@ -64,3 +68,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

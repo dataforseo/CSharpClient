@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleEventsTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleEventsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleEventsTaskPostRequestInfo](./dataforseo.client.models.requests.serpgoogleeventstaskpostrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleEventsTaskPostRequestInfo](./dataforseo.client.models.requests.serpgoogleeventstaskpostrequestinfo)
 
 ## Properties
 
@@ -309,3 +313,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleEventsTaskPostRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

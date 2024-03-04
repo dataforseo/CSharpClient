@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PeopleAlsoSearch
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PeopleAlsoSearch
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PeopleAlsoSearch](./dataforseo.client.models.peoplealsosearch.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PeopleAlsoSearch](./dataforseo.client.models.peoplealsosearch)
 
 ## Properties
 
@@ -61,7 +65,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **AdditionalProperties**
 
@@ -80,3 +84,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PeopleAlsoSearch()
 ```
+
+---
+
+[`< Back`](./)

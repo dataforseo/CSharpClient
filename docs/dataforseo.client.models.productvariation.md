@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ProductVariation
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductVariation
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductVariation](./dataforseo.client.models.productvariation.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductVariation](./dataforseo.client.models.productvariation)
 
 ## Properties
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductVariation()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAppleKeywordsForAppLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAppleKeywordsForAppLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DataforseoLabsAppleKeywordsForAppLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsapplekeywordsforapplivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DataforseoLabsAppleKeywordsForAppLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsapplekeywordsforapplivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<DataforseoLabsAppleKeywordsForAppLiveResultInfo> Result { get
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAppleKeywordsForAppLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsAppleKeywordsForAppLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplekeywordsforappliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleKeywordsForAppLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

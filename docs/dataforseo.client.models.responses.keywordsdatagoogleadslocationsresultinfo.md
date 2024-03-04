@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataGoogleAdsLocationsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleAdsLocationsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsLocationsResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadslocationsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsLocationsResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadslocationsresultinfo)
 
 ## Properties
 
@@ -95,3 +99,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsLocationsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

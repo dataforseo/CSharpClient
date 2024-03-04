@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataBusinessListingsSearchLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataBusinessListingsSearchLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsSearchLiveRequestInfo](./dataforseo.client.models.requests.businessdatabusinesslistingssearchliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsSearchLiveRequestInfo](./dataforseo.client.models.requests.businessdatabusinesslistingssearchliverequestinfo)
 
 ## Properties
 
@@ -213,3 +217,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsSearchLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

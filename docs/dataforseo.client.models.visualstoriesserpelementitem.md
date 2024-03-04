@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # VisualStoriesSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class VisualStoriesSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [VisualStoriesSerpElementItem](./dataforseo.client.models.visualstoriesserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [VisualStoriesSerpElementItem](./dataforseo.client.models.visualstoriesserpelementitem)
 
 ## Properties
 
@@ -73,7 +77,7 @@ public ICollection<LicensesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LicensesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LicensesElement&gt;](./dataforseo.client.models.licenseselement)<br>
 
 ### **Rectangle**
 
@@ -87,7 +91,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -106,3 +110,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public VisualStoriesSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleJobsTasksFixedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleJobsTasksFixedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleJobsTasksFixedResultInfo](./dataforseo.client.models.responses.serpgooglejobstasksfixedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleJobsTasksFixedResultInfo](./dataforseo.client.models.responses.serpgooglejobstasksfixedresultinfo)
 
 ## Properties
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleJobsTasksFixedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

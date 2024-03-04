@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsBBulkKeywordDifficultyLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsBBulkKeywordDifficultyLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBBulkKeywordDifficultyLiveItem](./dataforseo.client.models.dataforseolabsbbulkkeyworddifficultyliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBBulkKeywordDifficultyLiveItem](./dataforseo.client.models.dataforseolabsbbulkkeyworddifficultyliveitem)
 
 ## Properties
 
@@ -66,3 +70,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBBulkKeywordDifficultyLiveItem()
 ```
+
+---
+
+[`< Back`](./)

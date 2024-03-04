@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # JobsElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class JobsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [JobsElement](./dataforseo.client.models.jobselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [JobsElement](./dataforseo.client.models.jobselement)
 
 ## Properties
 
@@ -138,3 +142,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public JobsElement()
 ```
+
+---
+
+[`< Back`](./)

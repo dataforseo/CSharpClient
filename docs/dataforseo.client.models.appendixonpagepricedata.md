@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixOnPagePriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixOnPagePriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixOnPagePriceData](./dataforseo.client.models.appendixonpagepricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixOnPagePriceData](./dataforseo.client.models.appendixonpagepricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Lighthouse**
 
@@ -28,7 +32,7 @@ public AppendixGoogleBusinessDataPriceDataInfo Lighthouse { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **ContentParsing**
 
@@ -38,7 +42,7 @@ public AppendixTaskKeywordsDataPriceDataInfo ContentParsing { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **ContentParsingLive**
 
@@ -48,7 +52,7 @@ public AppendixTaskKeywordsDataPriceDataInfo ContentParsingLive { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **DuplicateContent**
 
@@ -58,7 +62,7 @@ public AppendixTaskKeywordsDataPriceDataInfo DuplicateContent { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **DuplicateTags**
 
@@ -68,7 +72,7 @@ public AppendixTaskKeywordsDataPriceDataInfo DuplicateTags { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **InstantPages**
 
@@ -78,7 +82,7 @@ public AppendixTaskKeywordsDataPriceDataInfo InstantPages { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **KeywordDensity**
 
@@ -88,7 +92,7 @@ public AppendixTaskKeywordsDataPriceDataInfo KeywordDensity { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Links**
 
@@ -98,7 +102,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Links { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **NonIndexable**
 
@@ -108,7 +112,7 @@ public AppendixTaskKeywordsDataPriceDataInfo NonIndexable { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Pages**
 
@@ -118,7 +122,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Pages { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **PagesByResource**
 
@@ -128,7 +132,7 @@ public AppendixTaskKeywordsDataPriceDataInfo PagesByResource { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **PageScreenshot**
 
@@ -138,7 +142,7 @@ public AppendixTaskKeywordsDataPriceDataInfo PageScreenshot { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **RawHtml**
 
@@ -148,7 +152,7 @@ public AppendixTaskKeywordsDataPriceDataInfo RawHtml { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **RedirectChains**
 
@@ -158,7 +162,7 @@ public AppendixTaskKeywordsDataPriceDataInfo RedirectChains { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Resources**
 
@@ -168,7 +172,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Resources { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Summary**
 
@@ -178,7 +182,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Summary { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **TaskPost**
 
@@ -188,7 +192,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TaskPost { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **TasksReady**
 
@@ -198,7 +202,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Waterfall**
 
@@ -208,7 +212,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Waterfall { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -227,3 +231,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixOnPagePriceData()
 ```
+
+---
+
+[`< Back`](./)

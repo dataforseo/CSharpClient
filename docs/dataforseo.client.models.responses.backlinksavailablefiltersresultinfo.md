@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksAvailableFiltersResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksAvailableFiltersResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksAvailableFiltersResultInfo](./dataforseo.client.models.responses.backlinksavailablefiltersresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksAvailableFiltersResultInfo](./dataforseo.client.models.responses.backlinksavailablefiltersresultinfo)
 
 ## Properties
 
@@ -127,3 +131,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksAvailableFiltersResultInfo()
 ```
+
+---
+
+[`< Back`](./)

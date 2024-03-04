@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BuyOnGoogleMerchantSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BuyOnGoogleMerchantSerpElementItem : BaseMerchantSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem.md) → [BuyOnGoogleMerchantSerpElementItem](./dataforseo.client.models.buyongooglemerchantserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem) → [BuyOnGoogleMerchantSerpElementItem](./dataforseo.client.models.buyongooglemerchantserpelementitem)
 
 ## Properties
 
@@ -198,7 +202,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
+[RatingElement](./dataforseo.client.models.ratingelement)<br>
 
 ### **ShopAdAclk**
 
@@ -244,3 +248,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BuyOnGoogleMerchantSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

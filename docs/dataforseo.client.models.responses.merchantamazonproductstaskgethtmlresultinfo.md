@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantAmazonProductsTaskGetHtmlResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonProductsTaskGetHtmlResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonProductsTaskGetHtmlResultInfo](./dataforseo.client.models.responses.merchantamazonproductstaskgethtmlresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonProductsTaskGetHtmlResultInfo](./dataforseo.client.models.responses.merchantamazonproductstaskgethtmlresultinfo)
 
 ## Properties
 
@@ -108,7 +112,7 @@ public ICollection<HtmlItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HtmlItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem)<br>
 
 ### **AdditionalProperties**
 
@@ -127,3 +131,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonProductsTaskGetHtmlResultInfo()
 ```
+
+---
+
+[`< Back`](./)

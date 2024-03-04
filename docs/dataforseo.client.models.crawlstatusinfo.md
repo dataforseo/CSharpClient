@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # CrawlStatusInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class CrawlStatusInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)
 
 ## Properties
 
@@ -64,3 +68,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public CrawlStatusInfo()
 ```
+
+---
+
+[`< Back`](./)

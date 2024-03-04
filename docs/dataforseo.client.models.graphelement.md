@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GraphElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GraphElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GraphElement](./dataforseo.client.models.graphelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GraphElement](./dataforseo.client.models.graphelement)
 
 ## Properties
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GraphElement()
 ```
+
+---
+
+[`< Back`](./)

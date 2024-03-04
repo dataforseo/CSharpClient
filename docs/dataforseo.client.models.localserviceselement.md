@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # LocalServicesElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalServicesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LocalServicesElement](./dataforseo.client.models.localserviceselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LocalServicesElement](./dataforseo.client.models.localserviceselement)
 
 ## Properties
 
@@ -81,7 +85,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **ProfileImageUrl**
 
@@ -112,3 +116,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalServicesElement()
 ```
+
+---
+
+[`< Back`](./)

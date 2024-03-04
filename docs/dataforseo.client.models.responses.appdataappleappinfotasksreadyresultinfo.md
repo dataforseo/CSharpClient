@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppleAppInfoTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleAppInfoTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleAppInfoTasksReadyResultInfo](./dataforseo.client.models.responses.appdataappleappinfotasksreadyresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleAppInfoTasksReadyResultInfo](./dataforseo.client.models.responses.appdataappleappinfotasksreadyresultinfo)
 
 ## Properties
 
@@ -101,3 +105,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppInfoTasksReadyResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # RelatedImageSearchesElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class RelatedImageSearchesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RelatedImageSearchesElement](./dataforseo.client.models.relatedimagesearcheselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RelatedImageSearchesElement](./dataforseo.client.models.relatedimagesearcheselement)
 
 ## Properties
 
@@ -88,3 +92,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RelatedImageSearchesElement()
 ```
+
+---
+
+[`< Back`](./)

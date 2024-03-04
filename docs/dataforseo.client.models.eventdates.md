@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # EventDates
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class EventDates
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [EventDates](./dataforseo.client.models.eventdates.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [EventDates](./dataforseo.client.models.eventdates)
 
 ## Properties
 
@@ -79,3 +83,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public EventDates()
 ```
+
+---
+
+[`< Back`](./)

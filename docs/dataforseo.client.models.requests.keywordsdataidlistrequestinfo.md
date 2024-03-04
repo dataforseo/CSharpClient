@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataIdListRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class KeywordsDataIdListRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataIdListRequestInfo](./dataforseo.client.models.requests.keywordsdataidlistrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataIdListRequestInfo](./dataforseo.client.models.requests.keywordsdataidlistrequestinfo)
 
 ## Properties
 
@@ -121,3 +125,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataIdListRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

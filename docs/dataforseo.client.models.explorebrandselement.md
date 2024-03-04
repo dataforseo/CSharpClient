@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ExploreBrandsElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ExploreBrandsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ExploreBrandsElement](./dataforseo.client.models.explorebrandselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ExploreBrandsElement](./dataforseo.client.models.explorebrandselement)
 
 ## Properties
 
@@ -111,3 +115,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ExploreBrandsElement()
 ```
+
+---
+
+[`< Back`](./)

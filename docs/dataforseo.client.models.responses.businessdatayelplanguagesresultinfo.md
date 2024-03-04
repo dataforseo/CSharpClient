@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataYelpLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataYelpLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataYelpLanguagesResultInfo](./dataforseo.client.models.responses.businessdatayelplanguagesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataYelpLanguagesResultInfo](./dataforseo.client.models.responses.businessdatayelplanguagesresultinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpLanguagesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

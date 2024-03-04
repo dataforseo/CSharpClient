@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # Groups
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class Groups
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Groups](./dataforseo.client.models.groups.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Groups](./dataforseo.client.models.groups)
 
 ## Properties
 
@@ -46,7 +50,7 @@ public ICollection<TechnologyCategoryInfo> Categories { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TechnologyCategoryInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;TechnologyCategoryInfo&gt;](./dataforseo.client.models.technologycategoryinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -65,3 +69,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Groups()
 ```
+
+---
+
+[`< Back`](./)

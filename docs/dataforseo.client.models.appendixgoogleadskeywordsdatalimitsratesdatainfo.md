@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo](./dataforseo.client.models.appendixgoogleadskeywordsdatalimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo](./dataforseo.client.models.appendixgoogleadskeywordsdatalimitsratesdatainfo)
 
 ## Properties
 
@@ -28,7 +32,7 @@ public AppendixInfo SearchVolume { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordsForKeywords**
 
@@ -38,7 +42,7 @@ public AppendixInfo KeywordsForKeywords { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordsForSite**
 
@@ -48,7 +52,7 @@ public AppendixInfo KeywordsForSite { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **AdTrafficByKeywords**
 
@@ -58,7 +62,7 @@ public AppendixInfo AdTrafficByKeywords { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageContentParsingItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageContentParsingItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingItem](./dataforseo.client.models.onpagecontentparsingitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingItem](./dataforseo.client.models.onpagecontentparsingitem)
 
 ## Properties
 
@@ -58,7 +62,7 @@ public PageContentInfo PageContent { get; set; }
 
 #### Property Value
 
-[PageContentInfo](./dataforseo.client.models.pagecontentinfo.md)<br>
+[PageContentInfo](./dataforseo.client.models.pagecontentinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageContentParsingItem()
 ```
+
+---
+
+[`< Back`](./)

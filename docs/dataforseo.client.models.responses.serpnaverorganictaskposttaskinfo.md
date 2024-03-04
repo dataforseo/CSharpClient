@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpNaverOrganicTaskPostTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpNaverOrganicTaskPostTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpNaverOrganicTaskPostTaskInfo](./dataforseo.client.models.responses.serpnaverorganictaskposttaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpNaverOrganicTaskPostTaskInfo](./dataforseo.client.models.responses.serpnaverorganictaskposttaskinfo)
 
 ## Properties
 
@@ -140,3 +144,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpNaverOrganicTaskPostTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

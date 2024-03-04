@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageDuplicateContentItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageDuplicateContentItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateContentItem](./dataforseo.client.models.onpageduplicatecontentitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateContentItem](./dataforseo.client.models.onpageduplicatecontentitem)
 
 ## Properties
 
@@ -44,7 +48,7 @@ public ICollection<Pages> Pages { get; set; }
 
 #### Property Value
 
-[ICollection&lt;Pages&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;Pages&gt;](./dataforseo.client.models.pages)<br>
 
 ### **AdditionalProperties**
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateContentItem()
 ```
+
+---
+
+[`< Back`](./)

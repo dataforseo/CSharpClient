@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataBusinessListingsSearchLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BusinessDataBusinessListingsSearchLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsSearchLiveItem](./dataforseo.client.models.businessdatabusinesslistingssearchliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsSearchLiveItem](./dataforseo.client.models.businessdatabusinesslistingssearchliveitem)
 
 ## Properties
 
@@ -136,7 +140,7 @@ public AddressInfo AddressInfo { get; set; }
 
 #### Property Value
 
-[AddressInfo](./dataforseo.client.models.addressinfo.md)<br>
+[AddressInfo](./dataforseo.client.models.addressinfo)<br>
 
 ### **PlaceId**
 
@@ -287,7 +291,7 @@ public BusinessDataAttributesInfo Attributes { get; set; }
 
 #### Property Value
 
-[BusinessDataAttributesInfo](./dataforseo.client.models.businessdataattributesinfo.md)<br>
+[BusinessDataAttributesInfo](./dataforseo.client.models.businessdataattributesinfo)<br>
 
 ### **PlaceTopics**
 
@@ -318,7 +322,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **RatingDistribution**
 
@@ -343,7 +347,7 @@ public ICollection<PeopleAlsoSearch> PeopleAlsoSearch { get; set; }
 
 #### Property Value
 
-[ICollection&lt;PeopleAlsoSearch&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;PeopleAlsoSearch&gt;](./dataforseo.client.models.peoplealsosearch)<br>
 
 ### **WorkTime**
 
@@ -356,7 +360,7 @@ public WorkInfo WorkTime { get; set; }
 
 #### Property Value
 
-[WorkInfo](./dataforseo.client.models.workinfo.md)<br>
+[WorkInfo](./dataforseo.client.models.workinfo)<br>
 
 ### **PopularTimes**
 
@@ -369,7 +373,7 @@ public PopularTimes PopularTimes { get; set; }
 
 #### Property Value
 
-[PopularTimes](./dataforseo.client.models.populartimes.md)<br>
+[PopularTimes](./dataforseo.client.models.populartimes)<br>
 
 ### **LocalBusinessLinks**
 
@@ -382,7 +386,7 @@ public ICollection<BaseLocalBusinessLink> LocalBusinessLinks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseLocalBusinessLink&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseLocalBusinessLink&gt;](./dataforseo.client.models.baselocalbusinesslink)<br>
 
 ### **ContactInfo**
 
@@ -395,7 +399,7 @@ public ICollection<BusinessDataContactInfo> ContactInfo { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BusinessDataContactInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BusinessDataContactInfo&gt;](./dataforseo.client.models.businessdatacontactinfo)<br>
 
 ### **CheckUrl**
 
@@ -442,3 +446,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsSearchLiveItem()
 ```
+
+---
+
+[`< Back`](./)

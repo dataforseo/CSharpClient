@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleImagesTasksFixedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleImagesTasksFixedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleImagesTasksFixedTaskInfo](./dataforseo.client.models.responses.serpgoogleimagestasksfixedtaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleImagesTasksFixedTaskInfo](./dataforseo.client.models.responses.serpgoogleimagestasksfixedtaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpGoogleImagesTasksFixedResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleImagesTasksFixedResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpGoogleImagesTasksFixedResultInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestasksfixedresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleImagesTasksFixedTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

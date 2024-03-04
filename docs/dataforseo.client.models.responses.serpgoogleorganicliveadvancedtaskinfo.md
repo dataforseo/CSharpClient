@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleOrganicLiveAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleOrganicLiveAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleOrganicLiveAdvancedTaskInfo](./dataforseo.client.models.responses.serpgoogleorganicliveadvancedtaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleOrganicLiveAdvancedTaskInfo](./dataforseo.client.models.responses.serpgoogleorganicliveadvancedtaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpGoogleOrganicLiveAdvancedResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleOrganicLiveAdvancedResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpGoogleOrganicLiveAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganicliveadvancedresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleOrganicLiveAdvancedTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

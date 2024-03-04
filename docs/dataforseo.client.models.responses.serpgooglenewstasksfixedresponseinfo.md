@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleNewsTasksFixedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleNewsTasksFixedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleNewsTasksFixedResponseInfo](./dataforseo.client.models.responses.serpgooglenewstasksfixedresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleNewsTasksFixedResponseInfo](./dataforseo.client.models.responses.serpgooglenewstasksfixedresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpGoogleNewsTasksFixedTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleNewsTasksFixedTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpGoogleNewsTasksFixedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstasksfixedtaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleNewsTasksFixedResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

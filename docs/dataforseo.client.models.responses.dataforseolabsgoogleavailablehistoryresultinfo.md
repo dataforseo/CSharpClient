@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleAvailableHistoryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsGoogleAvailableHistoryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleAvailableHistoryResultInfo](./dataforseo.client.models.responses.dataforseolabsgoogleavailablehistoryresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleAvailableHistoryResultInfo](./dataforseo.client.models.responses.dataforseolabsgoogleavailablehistoryresultinfo)
 
 ## Properties
 
@@ -42,3 +46,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleAvailableHistoryResultInfo()
 ```
+
+---
+
+[`< Back`](./)

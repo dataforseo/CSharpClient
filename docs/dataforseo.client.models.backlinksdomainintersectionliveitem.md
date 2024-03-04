@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksDomainIntersectionLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksDomainIntersectionLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksDomainIntersectionLiveItem](./dataforseo.client.models.backlinksdomainintersectionliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksDomainIntersectionLiveItem](./dataforseo.client.models.backlinksdomainintersectionliveitem)
 
 ## Properties
 
@@ -33,7 +37,7 @@ public Summary Summary { get; set; }
 
 #### Property Value
 
-[Summary](./dataforseo.client.models.summary.md)<br>
+[Summary](./dataforseo.client.models.summary)<br>
 
 ### **AdditionalProperties**
 
@@ -52,3 +56,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksDomainIntersectionLiveItem()
 ```
+
+---
+
+[`< Back`](./)

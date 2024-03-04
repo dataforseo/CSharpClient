@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixTaskKeywordsDataPriceDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixTaskKeywordsDataPriceDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public ICollection<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> Priority
 
 #### Property Value
 
-[ICollection&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;](./dataforseo.client.models.appendixprioritytasksreadykeywordsdatapricedatainfo)<br>
 
 ### **PriorityNormal**
 
@@ -28,7 +32,7 @@ public ICollection<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> Priority
 
 #### Property Value
 
-[ICollection&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;](./dataforseo.client.models.appendixprioritytasksreadykeywordsdatapricedatainfo)<br>
 
 ### **PriorityHigh**
 
@@ -38,7 +42,7 @@ public ICollection<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> Priority
 
 #### Property Value
 
-[ICollection&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;](./dataforseo.client.models.appendixprioritytasksreadykeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -57,3 +61,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixTaskKeywordsDataPriceDataInfo()
 ```
+
+---
+
+[`< Back`](./)

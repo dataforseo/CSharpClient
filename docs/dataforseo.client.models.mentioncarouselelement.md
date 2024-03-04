@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MentionCarouselElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MentionCarouselElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MentionCarouselElement](./dataforseo.client.models.mentioncarouselelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MentionCarouselElement](./dataforseo.client.models.mentioncarouselelement)
 
 ## Properties
 
@@ -44,7 +48,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo)<br>
 
 ### **Rating**
 
@@ -57,7 +61,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **MentionedIn**
 
@@ -69,7 +73,7 @@ public ICollection<LinkElement> MentionedIn { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
 
 ### **AdditionalProperties**
 
@@ -88,3 +92,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MentionCarouselElement()
 ```
+
+---
+
+[`< Back`](./)

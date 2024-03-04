@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # TrustpilotSearchOrganicBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class TrustpilotSearchOrganicBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [TrustpilotSearchOrganicBusinessDataSerpElementItem](./dataforseo.client.models.trustpilotsearchorganicbusinessdataserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [TrustpilotSearchOrganicBusinessDataSerpElementItem](./dataforseo.client.models.trustpilotsearchorganicbusinessdataserpelementitem)
 
 ## Properties
 
@@ -94,7 +98,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **AdditionalProperties**
 
@@ -113,3 +117,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TrustpilotSearchOrganicBusinessDataSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleHistoricalSerpsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleHistoricalSerpsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalSerpsLiveItem](./dataforseo.client.models.dataforseolabsgooglehistoricalserpsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalSerpsLiveItem](./dataforseo.client.models.dataforseolabsgooglehistoricalserpsliveitem)
 
 ## Properties
 
@@ -122,7 +126,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo)<br>
 
 ### **ItemTypes**
 
@@ -174,7 +178,7 @@ public ICollection<BaseDataforseoLabsSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseDataforseoLabsSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseDataforseoLabsSerpElementItem&gt;](./dataforseo.client.models.basedataforseolabsserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -193,3 +197,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleHistoricalSerpsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GoogleShoppingSponsoredCarouselMerchantSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleShoppingSponsoredCarouselMerchantSerpElementItem : BaseMerchantSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem.md) → [GoogleShoppingSponsoredCarouselMerchantSerpElementItem](./dataforseo.client.models.googleshoppingsponsoredcarouselmerchantserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem) → [GoogleShoppingSponsoredCarouselMerchantSerpElementItem](./dataforseo.client.models.googleshoppingsponsoredcarouselmerchantserpelementitem)
 
 ## Properties
 
@@ -84,7 +88,7 @@ public ICollection<GoogleShoppingSponsoredCarouselElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;GoogleShoppingSponsoredCarouselElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;GoogleShoppingSponsoredCarouselElement&gt;](./dataforseo.client.models.googleshoppingsponsoredcarouselelement)<br>
 
 ### **AdditionalProperties**
 
@@ -103,3 +107,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleShoppingSponsoredCarouselMerchantSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

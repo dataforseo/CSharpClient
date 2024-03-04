@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DatasetDescription
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DatasetDescription
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DatasetDescription](./dataforseo.client.models.datasetdescription.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DatasetDescription](./dataforseo.client.models.datasetdescription)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
 
 ### **AdditionalProperties**
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DatasetDescription()
 ```
+
+---
+
+[`< Back`](./)

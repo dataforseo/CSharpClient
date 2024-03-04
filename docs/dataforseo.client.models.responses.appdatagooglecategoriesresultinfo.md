@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataGoogleCategoriesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleCategoriesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleCategoriesResultInfo](./dataforseo.client.models.responses.appdatagooglecategoriesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleCategoriesResultInfo](./dataforseo.client.models.responses.appdatagooglecategoriesresultinfo)
 
 ## Properties
 
@@ -39,3 +43,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleCategoriesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppStoreInfoOrganicSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataAppStoreInfoOrganicSerpElementItem : BaseAppDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md) → [AppDataAppStoreInfoOrganicSerpElementItem](./dataforseo.client.models.appdataappstoreinfoorganicserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem) → [AppDataAppStoreInfoOrganicSerpElementItem](./dataforseo.client.models.appdataappstoreinfoorganicserpelementitem)
 
 ## Properties
 
@@ -131,7 +135,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **Price**
 
@@ -143,7 +147,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo)<br>
 
 ### **IsFree**
 
@@ -344,7 +348,7 @@ public ICollection<AppsInfo> SimilarApps { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppsInfo&gt;](./dataforseo.client.models.appsinfo)<br>
 
 ### **MoreAppsByDeveloper**
 
@@ -357,7 +361,7 @@ public ICollection<AppsInfo> MoreAppsByDeveloper { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppsInfo&gt;](./dataforseo.client.models.appsinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -376,3 +380,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppStoreInfoOrganicSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

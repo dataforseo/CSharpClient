@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBaiduLocationsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBaiduLocationsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBaiduLocationsTaskInfo](./dataforseo.client.models.responses.serpbaidulocationstaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBaiduLocationsTaskInfo](./dataforseo.client.models.responses.serpbaidulocationstaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpBaiduLocationsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBaiduLocationsResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpBaiduLocationsResultInfo&gt;](./dataforseo.client.models.responses.serpbaidulocationsresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBaiduLocationsTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

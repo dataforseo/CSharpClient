@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataTripadvisorReviewsTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataTripadvisorReviewsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTripadvisorReviewsTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatatripadvisorreviewstaskpostrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTripadvisorReviewsTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatatripadvisorreviewstaskpostrequestinfo)
 
 ## Properties
 
@@ -299,3 +303,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTripadvisorReviewsTaskPostRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

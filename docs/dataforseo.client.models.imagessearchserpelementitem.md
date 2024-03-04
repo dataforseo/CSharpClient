@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ImagesSearchSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ImagesSearchSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [ImagesSearchSerpElementItem](./dataforseo.client.models.imagessearchserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [ImagesSearchSerpElementItem](./dataforseo.client.models.imagessearchserpelementitem)
 
 ## Properties
 
@@ -138,3 +142,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImagesSearchSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

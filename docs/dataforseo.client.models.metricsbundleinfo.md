@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MetricsBundleInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MetricsBundleInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MetricsBundleInfo](./dataforseo.client.models.metricsbundleinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MetricsBundleInfo](./dataforseo.client.models.metricsbundleinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public MetricsInfo Organic { get; set; }
 
 #### Property Value
 
-[MetricsInfo](./dataforseo.client.models.metricsinfo.md)<br>
+[MetricsInfo](./dataforseo.client.models.metricsinfo)<br>
 
 ### **Paid**
 
@@ -32,7 +36,7 @@ public MetricsInfo Paid { get; set; }
 
 #### Property Value
 
-[MetricsInfo](./dataforseo.client.models.metricsinfo.md)<br>
+[MetricsInfo](./dataforseo.client.models.metricsinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MetricsBundleInfo()
 ```
+
+---
+
+[`< Back`](./)

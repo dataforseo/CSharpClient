@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # CurrencyBoxSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class CurrencyBoxSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [CurrencyBoxSerpElementItem](./dataforseo.client.models.currencyboxserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [CurrencyBoxSerpElementItem](./dataforseo.client.models.currencyboxserpelementitem)
 
 ## Properties
 
@@ -140,7 +144,7 @@ public Table Table { get; set; }
 
 #### Property Value
 
-[Table](./dataforseo.client.models.table.md)<br>
+[Table](./dataforseo.client.models.table)<br>
 
 ### **Graph**
 
@@ -152,7 +156,7 @@ public Graph Graph { get; set; }
 
 #### Property Value
 
-[Graph](./dataforseo.client.models.graph.md)<br>
+[Graph](./dataforseo.client.models.graph)<br>
 
 ### **Rectangle**
 
@@ -166,7 +170,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -185,3 +189,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public CurrencyBoxSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

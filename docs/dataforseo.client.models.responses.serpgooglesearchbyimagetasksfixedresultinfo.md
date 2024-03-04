@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleSearchByImageTasksFixedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleSearchByImageTasksFixedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleSearchByImageTasksFixedResultInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksfixedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleSearchByImageTasksFixedResultInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksfixedresultinfo)
 
 ## Properties
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleSearchByImageTasksFixedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

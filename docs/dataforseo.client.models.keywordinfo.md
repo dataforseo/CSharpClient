@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class KeywordInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordInfo](./dataforseo.client.models.keywordinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordInfo](./dataforseo.client.models.keywordinfo)
 
 ## Properties
 
@@ -144,7 +148,7 @@ public ICollection<MonthlySearches> MonthlySearches { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MonthlySearches&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MonthlySearches&gt;](./dataforseo.client.models.monthlysearches)<br>
 
 ### **AdditionalProperties**
 
@@ -163,3 +167,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordInfo()
 ```
+
+---
+
+[`< Back`](./)

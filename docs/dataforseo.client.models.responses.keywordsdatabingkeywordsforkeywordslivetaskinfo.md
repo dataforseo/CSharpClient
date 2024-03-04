@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataBingKeywordsForKeywordsLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordsForKeywordsLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataBingKeywordsForKeywordsLiveTaskInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordslivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataBingKeywordsForKeywordsLiveTaskInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordslivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<KeywordsDataBingKeywordsForKeywordsLiveResultInfo> Result { g
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingKeywordsForKeywordsLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordsDataBingKeywordsForKeywordsLiveResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordsliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordsForKeywordsLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

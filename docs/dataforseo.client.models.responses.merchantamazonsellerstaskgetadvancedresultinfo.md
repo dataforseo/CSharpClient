@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantAmazonSellersTaskGetAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonSellersTaskGetAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonSellersTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.merchantamazonsellerstaskgetadvancedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonSellersTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.merchantamazonsellerstaskgetadvancedresultinfo)
 
 ## Properties
 
@@ -162,7 +166,7 @@ public ICollection<BaseAmazonSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseAmazonSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseAmazonSerpElementItem&gt;](./dataforseo.client.models.baseamazonserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -181,3 +185,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonSellersTaskGetAdvancedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

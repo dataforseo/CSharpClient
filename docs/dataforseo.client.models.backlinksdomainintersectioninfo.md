@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksDomainIntersectionInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksDomainIntersectionInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksDomainIntersectionInfo](./dataforseo.client.models.backlinksdomainintersectioninfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksDomainIntersectionInfo](./dataforseo.client.models.backlinksdomainintersectioninfo)
 
 ## Properties
 
@@ -310,3 +314,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksDomainIntersectionInfo()
 ```
+
+---
+
+[`< Back`](./)

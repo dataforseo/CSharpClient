@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsLocationsAndLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsLocationsAndLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsLocationsAndLanguagesResponseInfo](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagesresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsLocationsAndLanguagesResponseInfo](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagesresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<DataforseoLabsLocationsAndLanguagesTaskInfo> Tasks { get; set
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsLocationsAndLanguagesTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsLocationsAndLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagestaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsLocationsAndLanguagesResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

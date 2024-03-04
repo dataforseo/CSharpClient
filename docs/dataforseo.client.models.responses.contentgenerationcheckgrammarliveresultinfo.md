@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentGenerationCheckGrammarLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationCheckGrammarLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationCheckGrammarLiveResultInfo](./dataforseo.client.models.responses.contentgenerationcheckgrammarliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationCheckGrammarLiveResultInfo](./dataforseo.client.models.responses.contentgenerationcheckgrammarliveresultinfo)
 
 ## Properties
 
@@ -92,7 +96,7 @@ public ICollection<ContentGenerationCheckGrammarLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentGenerationCheckGrammarLiveItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentGenerationCheckGrammarLiveItem&gt;](./dataforseo.client.models.contentgenerationcheckgrammarliveitem)<br>
 
 ### **AdditionalProperties**
 
@@ -111,3 +115,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationCheckGrammarLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

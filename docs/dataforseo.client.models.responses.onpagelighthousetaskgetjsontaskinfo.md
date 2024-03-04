@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLighthouseTaskGetJsonTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseTaskGetJsonTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageLighthouseTaskGetJsonTaskInfo](./dataforseo.client.models.responses.onpagelighthousetaskgetjsontaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageLighthouseTaskGetJsonTaskInfo](./dataforseo.client.models.responses.onpagelighthousetaskgetjsontaskinfo)
 
 ## Properties
 
@@ -141,3 +145,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseTaskGetJsonTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

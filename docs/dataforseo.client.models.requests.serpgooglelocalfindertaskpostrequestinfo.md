@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleLocalFinderTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleLocalFinderTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleLocalFinderTaskPostRequestInfo](./dataforseo.client.models.requests.serpgooglelocalfindertaskpostrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleLocalFinderTaskPostRequestInfo](./dataforseo.client.models.requests.serpgooglelocalfindertaskpostrequestinfo)
 
 ## Properties
 
@@ -308,3 +312,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleLocalFinderTaskPostRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

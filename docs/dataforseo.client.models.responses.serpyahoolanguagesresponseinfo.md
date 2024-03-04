@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpYahooLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYahooLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpYahooLanguagesResponseInfo](./dataforseo.client.models.responses.serpyahoolanguagesresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpYahooLanguagesResponseInfo](./dataforseo.client.models.responses.serpyahoolanguagesresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpYahooLanguagesTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpYahooLanguagesTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpYahooLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.serpyahoolanguagestaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYahooLanguagesResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

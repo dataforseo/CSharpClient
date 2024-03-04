@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixContentAnalysisPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixContentAnalysisPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentAnalysisPriceData](./dataforseo.client.models.appendixcontentanalysispricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentAnalysisPriceData](./dataforseo.client.models.appendixcontentanalysispricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **CategoryTrends**
 
@@ -28,7 +32,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo CategoryTrends { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **Errors**
 
@@ -38,7 +42,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Languages**
 
@@ -48,7 +52,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Locations**
 
@@ -58,7 +62,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **PhraseTrends**
 
@@ -68,7 +72,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo PhraseTrends { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **RatingDistribution**
 
@@ -78,7 +82,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo RatingDistribution { get; se
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **Search**
 
@@ -88,7 +92,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Search { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **SentimentAnalysis**
 
@@ -98,7 +102,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo SentimentAnalysis { get; set
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **Summary**
 
@@ -108,7 +112,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Summary { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -127,3 +131,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixContentAnalysisPriceData()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessAddressLocationInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BusinessAddressLocationInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessAddressLocationInfo](./dataforseo.client.models.businessaddresslocationinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessAddressLocationInfo](./dataforseo.client.models.businessaddresslocationinfo)
 
 ## Properties
 
@@ -64,3 +68,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessAddressLocationInfo()
 ```
+
+---
+
+[`< Back`](./)

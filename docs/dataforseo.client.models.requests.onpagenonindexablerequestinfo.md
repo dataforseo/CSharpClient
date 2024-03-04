@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageNonIndexableRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageNonIndexableRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageNonIndexableRequestInfo](./dataforseo.client.models.requests.onpagenonindexablerequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageNonIndexableRequestInfo](./dataforseo.client.models.requests.onpagenonindexablerequestinfo)
 
 ## Properties
 
@@ -99,3 +103,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageNonIndexableRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem](./dataforseo.client.models.dataforseolabsgoogledomainmetricsbycategoriesliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem](./dataforseo.client.models.dataforseolabsgoogledomainmetricsbycategoriesliveitem)
 
 ## Properties
 
@@ -150,3 +154,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem()
 ```
+
+---
+
+[`< Back`](./)

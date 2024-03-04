@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # QuestionsAndAnswersDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class QuestionsAndAnswersDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [QuestionsAndAnswersDataforseoLabsSerpElementItem](./dataforseo.client.models.questionsandanswersdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [QuestionsAndAnswersDataforseoLabsSerpElementItem](./dataforseo.client.models.questionsandanswersdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -72,7 +76,7 @@ public ICollection<QuestionsAndAnswersElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;QuestionsAndAnswersElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;QuestionsAndAnswersElement&gt;](./dataforseo.client.models.questionsandanswerselement)<br>
 
 ### **AdditionalProperties**
 
@@ -91,3 +95,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public QuestionsAndAnswersDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixSerpPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixSerpPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSerpPriceData](./dataforseo.client.models.appendixserppricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSerpPriceData](./dataforseo.client.models.appendixserppricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TasksFixed { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Errors**
 
@@ -28,7 +32,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Jobs**
 
@@ -38,7 +42,7 @@ public AppendixKeywordsKeywordsDataPriceDataInfo Jobs { get; set; }
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordskeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordsKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordskeywordsdatapricedatainfo)<br>
 
 ### **Languages**
 
@@ -48,7 +52,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Live**
 
@@ -58,7 +62,7 @@ public AppendixSerpPriceDataInfo Live { get; set; }
 
 #### Property Value
 
-[AppendixSerpPriceDataInfo](./dataforseo.client.models.appendixserppricedatainfo.md)<br>
+[AppendixSerpPriceDataInfo](./dataforseo.client.models.appendixserppricedatainfo)<br>
 
 ### **Locations**
 
@@ -68,7 +72,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **Screenshot**
 
@@ -78,7 +82,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Screenshot { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **TaskGet**
 
@@ -88,7 +92,7 @@ public AppendixSerpPriceDataInfo TaskGet { get; set; }
 
 #### Property Value
 
-[AppendixSerpPriceDataInfo](./dataforseo.client.models.appendixserppricedatainfo.md)<br>
+[AppendixSerpPriceDataInfo](./dataforseo.client.models.appendixserppricedatainfo)<br>
 
 ### **TaskPost**
 
@@ -98,7 +102,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TaskPost { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **TasksReady**
 
@@ -108,7 +112,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -127,3 +131,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixSerpPriceData()
 ```
+
+---
+
+[`< Back`](./)

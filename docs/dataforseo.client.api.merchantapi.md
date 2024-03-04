@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantApi
 
 Namespace: DataForSeo.Client.Api
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Api
 public class MerchantApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantApi](./dataforseo.client.api.merchantapi.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantApi](./dataforseo.client.api.merchantapi)
 
 ## Properties
 
@@ -52,16 +56,16 @@ public Task<MerchantIdListResponseInfo> MerchantIdListAsync(IEnumerable<Merchant
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantIdListRequestInfo&gt;](./dataforseo.client.models.requests.merchantidlistrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantIdListResponseInfo&gt;](./dataforseo.client.models.responses.merchantidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -77,19 +81,19 @@ public Task<MerchantIdListResponseInfo> MerchantIdListAsync(IEnumerable<Merchant
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantIdListRequestInfo&gt;](./dataforseo.client.models.requests.merchantidlistrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantIdListResponseInfo&gt;](./dataforseo.client.models.responses.merchantidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -105,16 +109,16 @@ public Task<MerchantErrorsResponseInfo> MerchantErrorsAsync(IEnumerable<Merchant
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantErrorsRequestInfo&gt;](./dataforseo.client.models.requests.merchanterrorsrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantErrorsResponseInfo&gt;](./dataforseo.client.models.responses.merchanterrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -130,19 +134,19 @@ public Task<MerchantErrorsResponseInfo> MerchantErrorsAsync(IEnumerable<Merchant
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantErrorsRequestInfo&gt;](./dataforseo.client.models.requests.merchanterrorsrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantErrorsResponseInfo&gt;](./dataforseo.client.models.responses.merchanterrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -158,12 +162,12 @@ public Task<MerchantGoogleLanguagesResponseInfo> MerchantGoogleLanguagesAsync()
 
 #### Returns
 
-[Task&lt;MerchantGoogleLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglelanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -184,12 +188,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglelanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -205,12 +209,12 @@ public Task<MerchantGoogleLocationsResponseInfo> MerchantGoogleLocationsAsync()
 
 #### Returns
 
-[Task&lt;MerchantGoogleLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglelocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -230,12 +234,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglelocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -259,12 +263,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;MerchantGoogleLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglelocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -291,12 +295,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglelocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -311,16 +315,16 @@ public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantTaskRequestInfo&gt;](./dataforseo.client.models.requests.merchanttaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -337,19 +341,19 @@ public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantTaskRequestInfo&gt;](./dataforseo.client.models.requests.merchanttaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -366,12 +370,12 @@ public Task<MerchantGoogleProductsTasksReadyResponseInfo> GoogleProductsTasksRea
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -393,12 +397,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -422,12 +426,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -453,12 +457,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -481,12 +485,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -512,12 +516,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -533,16 +537,16 @@ public Task<MerchantGoogleSellersTaskPostResponseInfo> GoogleSellersTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantgooglesellerstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -559,19 +563,19 @@ public Task<MerchantGoogleSellersTaskPostResponseInfo> GoogleSellersTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantgooglesellerstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -588,12 +592,12 @@ public Task<MerchantGoogleSellersTasksReadyResponseInfo> GoogleSellersTasksReady
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -615,12 +619,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -644,12 +648,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -675,12 +679,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -703,12 +707,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -734,12 +738,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellerstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -755,16 +759,16 @@ public Task<MerchantGoogleProductSpecTaskPostResponseInfo> GoogleProductSpecTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantgoogleproductspectaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -781,19 +785,19 @@ public Task<MerchantGoogleProductSpecTaskPostResponseInfo> GoogleProductSpecTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantgoogleproductspectaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -810,12 +814,12 @@ public Task<MerchantGoogleProductSpecTasksReadyResponseInfo> GoogleProductSpecTa
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -837,12 +841,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -866,12 +870,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -897,12 +901,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -925,12 +929,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -956,12 +960,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductSpecTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductSpecTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -977,16 +981,16 @@ public Task<MerchantGoogleProductInfoTaskPostResponseInfo> GoogleProductInfoTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantgoogleproductinfotaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductInfoTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductinfotaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1003,19 +1007,19 @@ public Task<MerchantGoogleProductInfoTaskPostResponseInfo> GoogleProductInfoTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantgoogleproductinfotaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductInfoTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductinfotaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1032,12 +1036,12 @@ public Task<MerchantGoogleProductInfoTasksReadyResponseInfo> GoogleProductInfoTa
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductInfoTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductinfotasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1059,12 +1063,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductInfoTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductinfotasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1088,12 +1092,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductInfoTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductinfotaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1119,12 +1123,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleProductInfoTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleProductInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductinfotaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1146,12 +1150,12 @@ unique ad click referral parameter
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersAdUrlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersAdUrlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellersadurlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1176,12 +1180,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantGoogleSellersAdUrlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantGoogleSellersAdUrlResponseInfo&gt;](./dataforseo.client.models.responses.merchantgooglesellersadurlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1197,12 +1201,12 @@ public Task<MerchantAmazonLocationsResponseInfo> MerchantAmazonLocationsAsync()
 
 #### Returns
 
-[Task&lt;MerchantAmazonLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonLocationsResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonlocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1223,12 +1227,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonLocationsResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonlocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1253,12 +1257,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;MerchantAmazonLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonlocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1286,12 +1290,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonlocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1307,12 +1311,12 @@ public Task<MerchantAmazonLanguagesResponseInfo> MerchantAmazonLanguagesAsync()
 
 #### Returns
 
-[Task&lt;MerchantAmazonLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1333,12 +1337,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1354,16 +1358,16 @@ public Task<MerchantAmazonProductsTaskPostResponseInfo> AmazonProductsTaskPostAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonproductstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1380,19 +1384,19 @@ public Task<MerchantAmazonProductsTaskPostResponseInfo> AmazonProductsTaskPostAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonproductstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1409,12 +1413,12 @@ public Task<MerchantAmazonProductsTasksReadyResponseInfo> AmazonProductsTasksRea
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1436,12 +1440,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1465,12 +1469,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1496,12 +1500,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1524,12 +1528,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1555,12 +1559,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonProductsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonProductsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonproductstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1576,16 +1580,16 @@ public Task<MerchantAmazonAsinTaskPostResponseInfo> AmazonAsinTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonasintaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1602,19 +1606,19 @@ public Task<MerchantAmazonAsinTaskPostResponseInfo> AmazonAsinTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonasintaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1631,12 +1635,12 @@ public Task<MerchantAmazonAsinTasksReadyResponseInfo> AmazonAsinTasksReadyAsync(
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1658,12 +1662,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1687,12 +1691,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1718,12 +1722,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1746,12 +1750,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1777,12 +1781,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonAsinTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonAsinTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1798,16 +1802,16 @@ public Task<MerchantAmazonSellersTaskPostResponseInfo> AmazonSellersTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonsellerstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1825,19 +1829,19 @@ public Task<MerchantAmazonSellersTaskPostResponseInfo> AmazonSellersTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonsellerstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1855,12 +1859,12 @@ public Task<MerchantAmazonSellersTasksReadyResponseInfo> AmazonSellersTasksReady
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1882,12 +1886,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1911,12 +1915,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1942,12 +1946,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1970,12 +1974,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2001,12 +2005,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonSellersTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonSellersTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2022,16 +2026,16 @@ public Task<MerchantAmazonReviewsTaskPostResponseInfo> AmazonReviewsTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonreviewstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2048,19 +2052,19 @@ public Task<MerchantAmazonReviewsTaskPostResponseInfo> AmazonReviewsTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.merchantamazonreviewstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2077,12 +2081,12 @@ public Task<MerchantAmazonReviewsTasksReadyResponseInfo> AmazonReviewsTasksReady
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2104,12 +2108,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2133,12 +2137,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2164,12 +2168,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2192,12 +2196,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2223,12 +2227,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;MerchantAmazonReviewsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;MerchantAmazonReviewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.merchantamazonreviewstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2257,3 +2261,7 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+
+---
+
+[`< Back`](./)

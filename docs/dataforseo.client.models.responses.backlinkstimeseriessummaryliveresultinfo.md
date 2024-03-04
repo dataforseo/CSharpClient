@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksTimeseriesSummaryLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksTimeseriesSummaryLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksTimeseriesSummaryLiveResultInfo](./dataforseo.client.models.responses.backlinkstimeseriessummaryliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksTimeseriesSummaryLiveResultInfo](./dataforseo.client.models.responses.backlinkstimeseriessummaryliveresultinfo)
 
 ## Properties
 
@@ -86,7 +90,7 @@ public ICollection<BacklinksTimeseriesSummaryLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksTimeseriesSummaryLiveItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BacklinksTimeseriesSummaryLiveItem&gt;](./dataforseo.client.models.backlinkstimeseriessummaryliveitem)<br>
 
 ### **AdditionalProperties**
 
@@ -105,3 +109,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksTimeseriesSummaryLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

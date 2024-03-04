@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentAnalysisSummaryInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ContentAnalysisSummaryInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)
 
 ## Properties
 
@@ -58,7 +62,7 @@ public ICollection<TopDomainInfo> TopDomains { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopDomainInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;TopDomainInfo&gt;](./dataforseo.client.models.topdomaininfo)<br>
 
 ### **SentimentConnotations**
 
@@ -100,7 +104,7 @@ public ICollection<ContentAnalysisCategoriesInfo> TextCategories { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](./dataforseo.client.models.contentanalysiscategoriesinfo)<br>
 
 ### **PageCategories**
 
@@ -114,7 +118,7 @@ public ICollection<ContentAnalysisCategoriesInfo> PageCategories { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](./dataforseo.client.models.contentanalysiscategoriesinfo)<br>
 
 ### **PageTypes**
 
@@ -174,3 +178,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSummaryInfo()
 ```
+
+---
+
+[`< Back`](./)

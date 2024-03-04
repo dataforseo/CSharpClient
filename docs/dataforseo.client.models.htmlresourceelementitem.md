@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # HtmlResourceElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class HtmlResourceElementItem : BaseOnPageResourceItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo.md) → [HtmlResourceElementItem](./dataforseo.client.models.htmlresourceelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo) → [HtmlResourceElementItem](./dataforseo.client.models.htmlresourceelementitem)
 
 ## Properties
 
@@ -58,7 +62,7 @@ public PageMetaInfo Meta { get; set; }
 
 #### Property Value
 
-[PageMetaInfo](./dataforseo.client.models.pagemetainfo.md)<br>
+[PageMetaInfo](./dataforseo.client.models.pagemetainfo)<br>
 
 ### **PageTiming**
 
@@ -70,7 +74,7 @@ public PageTiming PageTiming { get; set; }
 
 #### Property Value
 
-[PageTiming](./dataforseo.client.models.pagetiming.md)<br>
+[PageTiming](./dataforseo.client.models.pagetiming)<br>
 
 ### **OnpageScore**
 
@@ -123,7 +127,7 @@ public OnPageResourceIssueInfo ResourceErrors { get; set; }
 
 #### Property Value
 
-[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo.md)<br>
+[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo)<br>
 
 ### **BrokenResources**
 
@@ -262,7 +266,7 @@ public CacheControl CacheControl { get; set; }
 
 #### Property Value
 
-[CacheControl](./dataforseo.client.models.cachecontrol.md)<br>
+[CacheControl](./dataforseo.client.models.cachecontrol)<br>
 
 ### **Checks**
 
@@ -360,7 +364,7 @@ public LastModified LastModified { get; set; }
 
 #### Property Value
 
-[LastModified](./dataforseo.client.models.lastmodified.md)<br>
+[LastModified](./dataforseo.client.models.lastmodified)<br>
 
 ### **AdditionalProperties**
 
@@ -379,3 +383,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HtmlResourceElementItem()
 ```
+
+---
+
+[`< Back`](./)

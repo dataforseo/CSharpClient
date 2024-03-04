@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentAnalysisSummaryLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisSummaryLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentAnalysisSummaryLiveResponseInfo](./dataforseo.client.models.responses.contentanalysissummaryliveresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentAnalysisSummaryLiveResponseInfo](./dataforseo.client.models.responses.contentanalysissummaryliveresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<ContentAnalysisSummaryLiveTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisSummaryLiveTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentAnalysisSummaryLiveTaskInfo&gt;](./dataforseo.client.models.responses.contentanalysissummarylivetaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSummaryLiveResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

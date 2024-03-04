@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # LicensesElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class LicensesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LicensesElement](./dataforseo.client.models.licenseselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LicensesElement](./dataforseo.client.models.licenseselement)
 
 ## Properties
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LicensesElement()
 ```
+
+---
+
+[`< Back`](./)

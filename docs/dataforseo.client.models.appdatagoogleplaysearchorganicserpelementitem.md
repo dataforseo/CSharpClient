@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataGooglePlaySearchOrganicSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataGooglePlaySearchOrganicSerpElementItem : BaseAppDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md) → [AppDataGooglePlaySearchOrganicSerpElementItem](./dataforseo.client.models.appdatagoogleplaysearchorganicserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem) → [AppDataGooglePlaySearchOrganicSerpElementItem](./dataforseo.client.models.appdatagoogleplaysearchorganicserpelementitem)
 
 ## Properties
 
@@ -120,7 +124,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **IsFree**
 
@@ -144,7 +148,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo)<br>
 
 ### **Developer**
 
@@ -187,3 +191,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGooglePlaySearchOrganicSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

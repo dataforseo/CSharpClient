@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixBusinessDataLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBusinessDataLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatalimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatalimitsratesdatainfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixBusinessDataGoogleInfo Google { get; set; }
 
 #### Property Value
 
-[AppendixBusinessDataGoogleInfo](./dataforseo.client.models.appendixbusinessdatagoogleinfo.md)<br>
+[AppendixBusinessDataGoogleInfo](./dataforseo.client.models.appendixbusinessdatagoogleinfo)<br>
 
 ### **Locations**
 
@@ -58,7 +62,7 @@ public AppendixBusinessDataDayLimitsRatesDataInfo Yelp { get; set; }
 
 #### Property Value
 
-[AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo.md)<br>
+[AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo)<br>
 
 ### **SocialMedia**
 
@@ -68,7 +72,7 @@ public AppendixSocialMediaBusinessDataLimitsRatesDataInfo SocialMedia { get; set
 
 #### Property Value
 
-[AppendixSocialMediaBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixsocialmediabusinessdatalimitsratesdatainfo.md)<br>
+[AppendixSocialMediaBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixsocialmediabusinessdatalimitsratesdatainfo)<br>
 
 ### **Tripadvisor**
 
@@ -78,7 +82,7 @@ public AppendixBusinessDataDayLimitsRatesDataInfo Tripadvisor { get; set; }
 
 #### Property Value
 
-[AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo.md)<br>
+[AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo)<br>
 
 ### **Trustpilot**
 
@@ -88,7 +92,7 @@ public AppendixBusinessDataDayLimitsRatesDataInfo Trustpilot { get; set; }
 
 #### Property Value
 
-[AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo.md)<br>
+[AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo)<br>
 
 ### **BusinessListings**
 
@@ -98,7 +102,7 @@ public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo BusinessListings 
 
 #### Property Value
 
-[AppendixBusinessListingsBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinesslistingsbusinessdatalimitsratesdatainfo.md)<br>
+[AppendixBusinessListingsBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinesslistingsbusinessdatalimitsratesdatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -117,3 +121,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBusinessDataLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpYoutubeVideoInfoTasksFixedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeVideoInfoTasksFixedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpYoutubeVideoInfoTasksFixedResponseInfo](./dataforseo.client.models.responses.serpyoutubevideoinfotasksfixedresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpYoutubeVideoInfoTasksFixedResponseInfo](./dataforseo.client.models.responses.serpyoutubevideoinfotasksfixedresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpYoutubeVideoInfoTasksFixedTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpYoutubeVideoInfoTasksFixedTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpYoutubeVideoInfoTasksFixedTaskInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotasksfixedtaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoInfoTasksFixedResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

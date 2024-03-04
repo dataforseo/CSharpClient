@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PageSectionContentInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PageSectionContentInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageSectionContentInfo](./dataforseo.client.models.pagesectioncontentinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageSectionContentInfo](./dataforseo.client.models.pagesectioncontentinfo)
 
 ## Properties
 
@@ -21,7 +25,7 @@ public ICollection<ContentItemInfo> PrimaryContent { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentItemInfo&gt;](./dataforseo.client.models.contentiteminfo)<br>
 
 ### **SecondaryContent**
 
@@ -34,7 +38,7 @@ public ICollection<ContentItemInfo> SecondaryContent { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentItemInfo&gt;](./dataforseo.client.models.contentiteminfo)<br>
 
 ### **AdditionalProperties**
 
@@ -53,3 +57,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PageSectionContentInfo()
 ```
+
+---
+
+[`< Back`](./)

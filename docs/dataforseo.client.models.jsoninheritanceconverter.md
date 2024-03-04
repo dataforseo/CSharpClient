@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # JsonInheritanceConverter
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class JsonInheritanceConverter : Newtonsoft.Json.JsonConverter
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → JsonConverter → [JsonInheritanceConverter](./dataforseo.client.models.jsoninheritanceconverter.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → JsonConverter → [JsonInheritanceConverter](./dataforseo.client.models.jsoninheritanceconverter)
 
 ## Properties
 
@@ -107,3 +111,7 @@ public object ReadJson(JsonReader reader, Type objectType, object existingValue,
 #### Returns
 
 [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)<br>
+
+---
+
+[`< Back`](./)

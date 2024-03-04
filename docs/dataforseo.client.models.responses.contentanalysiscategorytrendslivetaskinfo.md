@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentAnalysisCategoryTrendsLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisCategoryTrendsLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [ContentAnalysisCategoryTrendsLiveTaskInfo](./dataforseo.client.models.responses.contentanalysiscategorytrendslivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [ContentAnalysisCategoryTrendsLiveTaskInfo](./dataforseo.client.models.responses.contentanalysiscategorytrendslivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<ContentAnalysisCategoryTrendsLiveResultInfo> Result { get; se
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisCategoryTrendsLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentAnalysisCategoryTrendsLiveResultInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategorytrendsliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisCategoryTrendsLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

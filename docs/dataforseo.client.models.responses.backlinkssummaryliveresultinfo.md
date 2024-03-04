@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksSummaryLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksSummaryLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksSummaryLiveResultInfo](./dataforseo.client.models.responses.backlinkssummaryliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksSummaryLiveResultInfo](./dataforseo.client.models.responses.backlinkssummaryliveresultinfo)
 
 ## Properties
 
@@ -114,7 +118,7 @@ public TargetInfo Info { get; set; }
 
 #### Property Value
 
-[TargetInfo](./dataforseo.client.models.targetinfo.md)<br>
+[TargetInfo](./dataforseo.client.models.targetinfo)<br>
 
 ### **InternalLinksCount**
 
@@ -359,3 +363,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksSummaryLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixGoogleMerchantPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixGoogleMerchantPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixGoogleMerchantPriceData](./dataforseo.client.models.appendixgooglemerchantpricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixGoogleMerchantPriceData](./dataforseo.client.models.appendixgooglemerchantpricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixPriceDataInfo ProductInfo { get; set; }
 
 #### Property Value
 
-[AppendixPriceDataInfo](./dataforseo.client.models.appendixpricedatainfo.md)<br>
+[AppendixPriceDataInfo](./dataforseo.client.models.appendixpricedatainfo)<br>
 
 ### **ProductSpec**
 
@@ -28,7 +32,7 @@ public AppendixProductGoogleMerchantPriceDataInfo ProductSpec { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
 
 ### **Products**
 
@@ -38,7 +42,7 @@ public AppendixProductGoogleMerchantPriceDataInfo Products { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
 
 ### **Sellers**
 
@@ -48,7 +52,7 @@ public AppendixSellersGoogleMerchantPriceData Sellers { get; set; }
 
 #### Property Value
 
-[AppendixSellersGoogleMerchantPriceData](./dataforseo.client.models.appendixsellersgooglemerchantpricedata.md)<br>
+[AppendixSellersGoogleMerchantPriceData](./dataforseo.client.models.appendixsellersgooglemerchantpricedata)<br>
 
 ### **AdditionalProperties**
 
@@ -67,3 +71,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixGoogleMerchantPriceData()
 ```
+
+---
+
+[`< Back`](./)

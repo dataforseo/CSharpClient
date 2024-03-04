@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixPriorityTasksReadyKeywordsDataPriceDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixPriorityTasksReadyKeywordsDataPriceDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixPriorityTasksReadyKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixprioritytasksreadykeywordsdatapricedatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixPriorityTasksReadyKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixprioritytasksreadykeywordsdatapricedatainfo)
 
 ## Properties
 
@@ -54,3 +58,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixPriorityTasksReadyKeywordsDataPriceDataInfo()
 ```
+
+---
+
+[`< Back`](./)

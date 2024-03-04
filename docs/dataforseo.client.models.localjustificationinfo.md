@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # LocalJustificationInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalJustificationInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LocalJustificationInfo](./dataforseo.client.models.localjustificationinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LocalJustificationInfo](./dataforseo.client.models.localjustificationinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalJustificationInfo()
 ```
+
+---
+
+[`< Back`](./)

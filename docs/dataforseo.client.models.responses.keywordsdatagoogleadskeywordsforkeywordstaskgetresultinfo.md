@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgetresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgetresultinfo)
 
 ## Properties
 
@@ -163,7 +167,7 @@ public ICollection<MonthlySearches> MonthlySearches { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MonthlySearches&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MonthlySearches&gt;](./dataforseo.client.models.monthlysearches)<br>
 
 ### **KeywordAnnotations**
 
@@ -175,7 +179,7 @@ public KeywordAnnotations KeywordAnnotations { get; set; }
 
 #### Property Value
 
-[KeywordAnnotations](./dataforseo.client.models.keywordannotations.md)<br>
+[KeywordAnnotations](./dataforseo.client.models.keywordannotations)<br>
 
 ### **AdditionalProperties**
 
@@ -194,3 +198,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo()
 ```
+
+---
+
+[`< Back`](./)

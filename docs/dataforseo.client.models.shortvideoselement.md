@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ShortVideosElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ShortVideosElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ShortVideosElement](./dataforseo.client.models.shortvideoselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ShortVideosElement](./dataforseo.client.models.shortvideoselement)
 
 ## Properties
 
@@ -88,3 +92,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ShortVideosElement()
 ```
+
+---
+
+[`< Back`](./)

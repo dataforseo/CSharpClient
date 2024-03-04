@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsBingRankedKeywordsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingRankedKeywordsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingRankedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingRankedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresultinfo)
 
 ## Properties
 
@@ -120,7 +124,7 @@ public ICollection<DataforseoLabsBingRankedKeywordsLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsbingrankedkeywordsliveitem)<br>
 
 ### **AdditionalProperties**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingRankedKeywordsLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -5,18 +5,18 @@ There is a C# client to call DataForSeo API.
 DataForSEO API uses REST technology for interchanging data between your application and our service. The data exchange is made through the widely used HTTP protocol, which allows applying our API to almost all programming languages.
 
 Client contains 12 sections (aka API):
-- Serp ([source](https://docs.dataforseo.com/v3/serp/overview/?bash))
-- KeywordsData ([source](https://docs.dataforseo.com/v3/keywords_data/overview/?bash))
-- DomainAnalytics ([source](https://docs.dataforseo.com/v3/domain_analytics/overview/?bash))
-- DataforseoLabs ([source](https://docs.dataforseo.com/v3/dataforseo_labs/overview/?bash))
-- Backlinks ([source](https://docs.dataforseo.com/v3/backlinks/overview/?bash))
-- OnPage ([source](https://docs.dataforseo.com/v3/on_page/overview/?bash))
-- ContentAnalysis ([source](https://docs.dataforseo.com/v3/content_analysis/overview/?bash))
-- ContentGeneration ([source](https://docs.dataforseo.com/v3/content_generation/overview/?bash))
-- Merchant ([source](https://docs.dataforseo.com/v3/merchant/overview/?bash))
-- AppData ([source](https://docs.dataforseo.com/v3/app_data/overview/?bash))
-- BusinessData ([source](https://docs.dataforseo.com/v3/business_data/overview/?bash))
-- Appendix ([source](https://docs.dataforseo.com/v3/appendix/user_data/?bash))
+- Serp ([code docs](./docs/dataforseo.client.api.serpapi.md) | [source docs](https://docs.dataforseo.com/v3/serp/overview/?bash))
+- KeywordsData ([code docs](./docs/dataforseo.client.api.keywordsdataapi.md) | [source docs](https://docs.dataforseo.com/v3/keywords_data/overview/?bash))
+- DomainAnalytics ([code docs](./docs/dataforseo.client.api.domainanalyticsapi.md) | [source docs](https://docs.dataforseo.com/v3/domain_analytics/overview/?bash))
+- DataforseoLabs ([code docs](./docs/dataforseo.client.api.dataforseolabsapi.md) | [source docs](https://docs.dataforseo.com/v3/dataforseo_labs/overview/?bash))
+- Backlinks ([code docs](./docs/dataforseo.client.api.backlinksapi.md) | [source docs](https://docs.dataforseo.com/v3/backlinks/overview/?bash))
+- OnPage ([code docs](./docs/dataforseo.client.api.onpageapi.md) | [source docs](https://docs.dataforseo.com/v3/on_page/overview/?bash))
+- ContentAnalysis ([code docs](./docs/dataforseo.client.api.contentanalysisapi.md) | [source docs](https://docs.dataforseo.com/v3/content_analysis/overview/?bash))
+- ContentGeneration ([code docs](./docs/dataforseo.client.api.contentgenerationapi.md) | [source docs](https://docs.dataforseo.com/v3/content_generation/overview/?bash))
+- Merchant ([code docs](./docs/dataforseo.client.api.merchantapi.md) | [source docs](https://docs.dataforseo.com/v3/merchant/overview/?bash))
+- AppData ([code docs](./docs/dataforseo.client.api.appdataapi.md) | [source docs](https://docs.dataforseo.com/v3/app_data/overview/?bash))
+- BusinessData ([code docs](./docs/dataforseo.client.api.businessdataapi.md) | [source docs](https://docs.dataforseo.com/v3/business_data/overview/?bash))
+- Appendix ([code docs](./docs/dataforseo.client.api.appendixapi.md) | [source docs](https://docs.dataforseo.com/v3/appendix/user_data/?bash))
 
 API Contains 2 types of requests:
 1) Live (Simple HTTP request/response message)
@@ -33,7 +33,8 @@ Our API description is based on openAPI [syntax](https://spec.openapis.org/oas/v
 Code generated with using [NSwag lib](https://github.com/RicoSuter/NSwag)
 
 ## Documentation
-Code Objects documentation in .md format was generated using [XMLDoc2Markdown](https://charlesdevandiere.github.io/xmldoc2md/) and placed [here](./docs)
+The documentation for code objects, formatted in Markdown (.md) is available [here](./docs/dataforseo.client.dataforseoclient.md).
+Offical documentation for DataForSeo API is avaliable [here](https://docs.dataforseo.com).
 
 ## install package from nuget.org
 

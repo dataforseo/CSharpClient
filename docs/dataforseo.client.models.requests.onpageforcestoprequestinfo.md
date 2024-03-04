@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageForceStopRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageForceStopRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageForceStopRequestInfo](./dataforseo.client.models.requests.onpageforcestoprequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageForceStopRequestInfo](./dataforseo.client.models.requests.onpageforcestoprequestinfo)
 
 ## Properties
 
@@ -44,3 +48,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageForceStopRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

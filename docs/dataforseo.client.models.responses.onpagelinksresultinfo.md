@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLinksResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLinksResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLinksResultInfo](./dataforseo.client.models.responses.onpagelinksresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLinksResultInfo](./dataforseo.client.models.responses.onpagelinksresultinfo)
 
 ## Properties
 
@@ -33,7 +37,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
 
 ### **TotalItemsCount**
 
@@ -69,7 +73,7 @@ public ICollection<BaseOnPageLinkItemInfo> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseOnPageLinkItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseOnPageLinkItemInfo&gt;](./dataforseo.client.models.baseonpagelinkiteminfo)<br>
 
 ### **AdditionalProperties**
 
@@ -88,3 +92,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLinksResultInfo()
 ```
+
+---
+
+[`< Back`](./)

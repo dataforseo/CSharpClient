@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageRawHtmlItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageRawHtmlItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRawHtmlItem](./dataforseo.client.models.onpagerawhtmlitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRawHtmlItem](./dataforseo.client.models.onpagerawhtmlitem)
 
 ## Properties
 
@@ -39,3 +43,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageRawHtmlItem()
 ```
+
+---
+
+[`< Back`](./)

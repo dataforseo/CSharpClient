@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DeliveryInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DeliveryInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DeliveryInfo](./dataforseo.client.models.deliveryinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DeliveryInfo](./dataforseo.client.models.deliveryinfo)
 
 ## Properties
 
@@ -35,7 +39,7 @@ public PriceInfo DeliveryPrice { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo)<br>
 
 ### **StoresCountInfo**
 
@@ -48,7 +52,7 @@ public StoresCountInfo StoresCountInfo { get; set; }
 
 #### Property Value
 
-[StoresCountInfo](./dataforseo.client.models.storescountinfo.md)<br>
+[StoresCountInfo](./dataforseo.client.models.storescountinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -67,3 +71,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DeliveryInfo()
 ```
+
+---
+
+[`< Back`](./)

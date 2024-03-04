@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # CarouselElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class CarouselElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [CarouselElement](./dataforseo.client.models.carouselelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [CarouselElement](./dataforseo.client.models.carouselelement)
 
 ## Properties
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public CarouselElement()
 ```
+
+---
+
+[`< Back`](./)

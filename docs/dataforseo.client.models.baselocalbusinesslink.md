@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BaseLocalBusinessLink
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BaseLocalBusinessLink
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink)
 
 ## Properties
 
@@ -27,3 +31,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BaseLocalBusinessLink()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixStatusTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppendixStatusTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppendixStatusTaskInfo](./dataforseo.client.models.responses.appendixstatustaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppendixStatusTaskInfo](./dataforseo.client.models.responses.appendixstatustaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<AppendixStatusResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppendixStatusResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppendixStatusResultInfo&gt;](./dataforseo.client.models.responses.appendixstatusresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixStatusTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

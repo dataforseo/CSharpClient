@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # EventsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class EventsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [EventsDataforseoLabsSerpElementItem](./dataforseo.client.models.eventsdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [EventsDataforseoLabsSerpElementItem](./dataforseo.client.models.eventsdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -96,7 +100,7 @@ public ICollection<EventsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;EventsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;EventsElement&gt;](./dataforseo.client.models.eventselement)<br>
 
 ### **AdditionalProperties**
 
@@ -115,3 +119,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public EventsDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataGoogleHotelSearchesItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BusinessDataGoogleHotelSearchesItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelSearchesItem](./dataforseo.client.models.businessdatagooglehotelsearchesitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelSearchesItem](./dataforseo.client.models.businessdatagooglehotelsearchesitem)
 
 ## Properties
 
@@ -85,7 +89,7 @@ public GpsCoordinatesLocationInfo Location { get; set; }
 
 #### Property Value
 
-[GpsCoordinatesLocationInfo](./dataforseo.client.models.gpscoordinateslocationinfo.md)<br>
+[GpsCoordinatesLocationInfo](./dataforseo.client.models.gpscoordinateslocationinfo)<br>
 
 ### **Reviews**
 
@@ -97,7 +101,7 @@ public HotelReviewInfo Reviews { get; set; }
 
 #### Property Value
 
-[HotelReviewInfo](./dataforseo.client.models.hotelreviewinfo.md)<br>
+[HotelReviewInfo](./dataforseo.client.models.hotelreviewinfo)<br>
 
 ### **OverviewImages**
 
@@ -121,7 +125,7 @@ public HotelPriceInfo Prices { get; set; }
 
 #### Property Value
 
-[HotelPriceInfo](./dataforseo.client.models.hotelpriceinfo.md)<br>
+[HotelPriceInfo](./dataforseo.client.models.hotelpriceinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -140,3 +144,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleHotelSearchesItem()
 ```
+
+---
+
+[`< Back`](./)

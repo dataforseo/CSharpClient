@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBaiduLocationsCountryTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBaiduLocationsCountryTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBaiduLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpbaidulocationscountrytaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBaiduLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpbaidulocationscountrytaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpBaiduLocationsCountryResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBaiduLocationsCountryResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpBaiduLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpbaidulocationscountryresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBaiduLocationsCountryTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

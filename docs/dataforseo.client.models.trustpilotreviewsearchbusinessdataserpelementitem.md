@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # TrustpilotReviewSearchBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class TrustpilotReviewSearchBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [TrustpilotReviewSearchBusinessDataSerpElementItem](./dataforseo.client.models.trustpilotreviewsearchbusinessdataserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [TrustpilotReviewSearchBusinessDataSerpElementItem](./dataforseo.client.models.trustpilotreviewsearchbusinessdataserpelementitem)
 
 ## Properties
 
@@ -71,7 +75,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **Verified**
 
@@ -160,7 +164,7 @@ public BusinessDataUserProfileInfo UserProfile { get; set; }
 
 #### Property Value
 
-[BusinessDataUserProfileInfo](./dataforseo.client.models.businessdatauserprofileinfo.md)<br>
+[BusinessDataUserProfileInfo](./dataforseo.client.models.businessdatauserprofileinfo)<br>
 
 ### **Responses**
 
@@ -172,7 +176,7 @@ public ICollection<ReviewResponseItemInfo> Responses { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ReviewResponseItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ReviewResponseItemInfo&gt;](./dataforseo.client.models.reviewresponseiteminfo)<br>
 
 ### **AdditionalProperties**
 
@@ -191,3 +195,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TrustpilotReviewSearchBusinessDataSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

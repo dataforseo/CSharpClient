@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusyWorkingTimeInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BusyWorkingTimeInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusyWorkingTimeInfo](./dataforseo.client.models.busyworkingtimeinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusyWorkingTimeInfo](./dataforseo.client.models.busyworkingtimeinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public WorkTimeInfo Time { get; set; }
 
 #### Property Value
 
-[WorkTimeInfo](./dataforseo.client.models.worktimeinfo.md)<br>
+[WorkTimeInfo](./dataforseo.client.models.worktimeinfo)<br>
 
 ### **PopularIndex**
 
@@ -53,3 +57,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusyWorkingTimeInfo()
 ```
+
+---
+
+[`< Back`](./)

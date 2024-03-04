@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsTechnologiesAvailableFiltersResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsTechnologiesAvailableFiltersResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesAvailableFiltersResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologiesavailablefiltersresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesAvailableFiltersResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologiesavailablefiltersresultinfo)
 
 ## Properties
 
@@ -67,3 +71,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesAvailableFiltersResultInfo()
 ```
+
+---
+
+[`< Back`](./)

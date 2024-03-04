@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GoogleJobsItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleJobsItemSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [GoogleJobsItemSerpElementItem](./dataforseo.client.models.googlejobsitemserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [GoogleJobsItemSerpElementItem](./dataforseo.client.models.googlejobsitemserpelementitem)
 
 ## Properties
 
@@ -223,7 +227,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -242,3 +246,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleJobsItemSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # YoutubeSubtitlesSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class YoutubeSubtitlesSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [YoutubeSubtitlesSerpElementItem](./dataforseo.client.models.youtubesubtitlesserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [YoutubeSubtitlesSerpElementItem](./dataforseo.client.models.youtubesubtitlesserpelementitem)
 
 ## Properties
 
@@ -102,3 +106,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public YoutubeSubtitlesSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

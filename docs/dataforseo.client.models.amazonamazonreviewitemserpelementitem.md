@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AmazonAmazonReviewItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonAmazonReviewItemSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonAmazonReviewItemSerpElementItem](./dataforseo.client.models.amazonamazonreviewitemserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonAmazonReviewItemSerpElementItem](./dataforseo.client.models.amazonamazonreviewitemserpelementitem)
 
 ## Properties
 
@@ -108,7 +112,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
 
 ### **Videos**
 
@@ -120,7 +124,7 @@ public ICollection<VideoElement> Videos { get; set; }
 
 #### Property Value
 
-[ICollection&lt;VideoElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement)<br>
 
 ### **UserProfile**
 
@@ -132,7 +136,7 @@ public UserProfileInfo UserProfile { get; set; }
 
 #### Property Value
 
-[UserProfileInfo](./dataforseo.client.models.userprofileinfo.md)<br>
+[UserProfileInfo](./dataforseo.client.models.userprofileinfo)<br>
 
 ### **Title**
 
@@ -195,7 +199,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **AdditionalProperties**
 
@@ -214,3 +218,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonAmazonReviewItemSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

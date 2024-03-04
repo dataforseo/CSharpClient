@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataBingSearchVolumeTaskGetTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingSearchVolumeTaskGetTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataBingSearchVolumeTaskGetTaskInfo](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskgettaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataBingSearchVolumeTaskGetTaskInfo](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskgettaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<KeywordsDataBingSearchVolumeTaskGetResultInfo> Result { get; 
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingSearchVolumeTaskGetResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordsDataBingSearchVolumeTaskGetResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskgetresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingSearchVolumeTaskGetTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

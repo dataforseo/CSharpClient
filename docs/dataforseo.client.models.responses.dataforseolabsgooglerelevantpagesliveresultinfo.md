@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleRelevantPagesLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsGoogleRelevantPagesLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleRelevantPagesLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsgooglerelevantpagesliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleRelevantPagesLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsgooglerelevantpagesliveresultinfo)
 
 ## Properties
 
@@ -94,7 +98,7 @@ public ICollection<DataforseoLabsRelevantPagesLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsRelevantPagesLiveItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsRelevantPagesLiveItem&gt;](./dataforseo.client.models.dataforseolabsrelevantpagesliveitem)<br>
 
 ### **AdditionalProperties**
 
@@ -113,3 +117,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleRelevantPagesLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

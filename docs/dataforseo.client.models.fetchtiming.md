@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # FetchTiming
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class FetchTiming
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FetchTiming](./dataforseo.client.models.fetchtiming.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FetchTiming](./dataforseo.client.models.fetchtiming)
 
 ## Properties
 
@@ -65,3 +69,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public FetchTiming()
 ```
+
+---
+
+[`< Back`](./)

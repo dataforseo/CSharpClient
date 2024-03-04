@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsStatusResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsStatusResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsStatusResultInfo](./dataforseo.client.models.responses.dataforseolabsstatusresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsStatusResultInfo](./dataforseo.client.models.responses.dataforseolabsstatusresultinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public DataforseoLabsStatusInfo Google { get; set; }
 
 #### Property Value
 
-[DataforseoLabsStatusInfo](./dataforseo.client.models.dataforseolabsstatusinfo.md)<br>
+[DataforseoLabsStatusInfo](./dataforseo.client.models.dataforseolabsstatusinfo)<br>
 
 ### **Bing**
 
@@ -32,7 +36,7 @@ public DataforseoLabsStatusInfo Bing { get; set; }
 
 #### Property Value
 
-[DataforseoLabsStatusInfo](./dataforseo.client.models.dataforseolabsstatusinfo.md)<br>
+[DataforseoLabsStatusInfo](./dataforseo.client.models.dataforseolabsstatusinfo)<br>
 
 ### **Amazon**
 
@@ -44,7 +48,7 @@ public DataforseoLabsStatusInfo Amazon { get; set; }
 
 #### Property Value
 
-[DataforseoLabsStatusInfo](./dataforseo.client.models.dataforseolabsstatusinfo.md)<br>
+[DataforseoLabsStatusInfo](./dataforseo.client.models.dataforseolabsstatusinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsStatusResultInfo()
 ```
+
+---
+
+[`< Back`](./)

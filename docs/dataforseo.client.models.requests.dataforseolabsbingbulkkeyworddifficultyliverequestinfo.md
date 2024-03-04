@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsbingbulkkeyworddifficultyliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsbingbulkkeyworddifficultyliverequestinfo)
 
 ## Properties
 
@@ -130,3 +134,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

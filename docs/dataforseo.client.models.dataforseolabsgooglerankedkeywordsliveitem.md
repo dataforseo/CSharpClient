@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleRankedKeywordsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleRankedKeywordsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleRankedKeywordsLiveItem](./dataforseo.client.models.dataforseolabsgooglerankedkeywordsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleRankedKeywordsLiveItem](./dataforseo.client.models.dataforseolabsgooglerankedkeywordsliveitem)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public KeywordData KeywordData { get; set; }
 
 #### Property Value
 
-[KeywordData](./dataforseo.client.models.keyworddata.md)<br>
+[KeywordData](./dataforseo.client.models.keyworddata)<br>
 
 ### **RankedSerpElement**
 
@@ -44,7 +48,7 @@ public RankedSerpElement RankedSerpElement { get; set; }
 
 #### Property Value
 
-[RankedSerpElement](./dataforseo.client.models.rankedserpelement.md)<br>
+[RankedSerpElement](./dataforseo.client.models.rankedserpelement)<br>
 
 ### **AdditionalProperties**
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleRankedKeywordsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

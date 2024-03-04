@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # HotelAboutInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class HotelAboutInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelAboutInfo](./dataforseo.client.models.hotelaboutinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelAboutInfo](./dataforseo.client.models.hotelaboutinfo)
 
 ## Properties
 
@@ -47,7 +51,7 @@ public WorkTimeInfo CheckInTime { get; set; }
 
 #### Property Value
 
-[WorkTimeInfo](./dataforseo.client.models.worktimeinfo.md)<br>
+[WorkTimeInfo](./dataforseo.client.models.worktimeinfo)<br>
 
 ### **CheckOutTime**
 
@@ -60,7 +64,7 @@ public WorkTimeInfo CheckOutTime { get; set; }
 
 #### Property Value
 
-[WorkTimeInfo](./dataforseo.client.models.worktimeinfo.md)<br>
+[WorkTimeInfo](./dataforseo.client.models.worktimeinfo)<br>
 
 ### **FullAddress**
 
@@ -112,7 +116,7 @@ public ICollection<HotelAmenityInfo> Amenities { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HotelAmenityInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;HotelAmenityInfo&gt;](./dataforseo.client.models.hotelamenityinfo)<br>
 
 ### **PopularAmenities**
 
@@ -125,7 +129,7 @@ public ICollection<HotelAmenityItemInfo> PopularAmenities { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HotelAmenityItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;HotelAmenityItemInfo&gt;](./dataforseo.client.models.hotelamenityiteminfo)<br>
 
 ### **AdditionalProperties**
 
@@ -144,3 +148,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HotelAboutInfo()
 ```
+
+---
+
+[`< Back`](./)

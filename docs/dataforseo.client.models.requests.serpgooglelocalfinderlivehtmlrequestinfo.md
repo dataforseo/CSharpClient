@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleLocalFinderLiveHtmlRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleLocalFinderLiveHtmlRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleLocalFinderLiveHtmlRequestInfo](./dataforseo.client.models.requests.serpgooglelocalfinderlivehtmlrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleLocalFinderLiveHtmlRequestInfo](./dataforseo.client.models.requests.serpgooglelocalfinderlivehtmlrequestinfo)
 
 ## Properties
 
@@ -253,3 +257,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleLocalFinderLiveHtmlRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

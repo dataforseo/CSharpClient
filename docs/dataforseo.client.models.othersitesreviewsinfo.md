@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OtherSitesReviewsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class OtherSitesReviewsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OtherSitesReviewsInfo](./dataforseo.client.models.othersitesreviewsinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OtherSitesReviewsInfo](./dataforseo.client.models.othersitesreviewsinfo)
 
 ## Properties
 
@@ -60,7 +64,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **AdditionalProperties**
 
@@ -79,3 +83,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OtherSitesReviewsInfo()
 ```
+
+---
+
+[`< Back`](./)

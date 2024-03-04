@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataTripadvisorReviewsTaskGetResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataTripadvisorReviewsTaskGetResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTripadvisorReviewsTaskGetResultInfo](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskgetresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTripadvisorReviewsTaskGetResultInfo](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskgetresultinfo)
 
 ## Properties
 
@@ -123,7 +127,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **ItemsCount**
 
@@ -149,7 +153,7 @@ public ICollection<BaseBusinessDataSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseBusinessDataSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseBusinessDataSerpElementItem&gt;](./dataforseo.client.models.basebusinessdataserpelementitem)<br>
 
 ### **LanguageCode**
 
@@ -180,3 +184,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTripadvisorReviewsTaskGetResultInfo()
 ```
+
+---
+
+[`< Back`](./)

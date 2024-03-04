@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleAppCompetitorsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleAppCompetitorsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleAppCompetitorsLiveItem](./dataforseo.client.models.dataforseolabsgoogleappcompetitorsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleAppCompetitorsLiveItem](./dataforseo.client.models.dataforseolabsgoogleappcompetitorsliveitem)
 
 ## Properties
 
@@ -86,7 +90,7 @@ public GooglePlayMetricsBundleInfo CompetitorMetrics { get; set; }
 
 #### Property Value
 
-[GooglePlayMetricsBundleInfo](./dataforseo.client.models.googleplaymetricsbundleinfo.md)<br>
+[GooglePlayMetricsBundleInfo](./dataforseo.client.models.googleplaymetricsbundleinfo)<br>
 
 ### **FullMetrics**
 
@@ -99,7 +103,7 @@ public GooglePlayMetricsBundleInfo FullMetrics { get; set; }
 
 #### Property Value
 
-[GooglePlayMetricsBundleInfo](./dataforseo.client.models.googleplaymetricsbundleinfo.md)<br>
+[GooglePlayMetricsBundleInfo](./dataforseo.client.models.googleplaymetricsbundleinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -118,3 +122,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleAppCompetitorsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

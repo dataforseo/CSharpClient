@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpErrorsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpErrorsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpErrorsResultInfo](./dataforseo.client.models.responses.serperrorsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpErrorsResultInfo](./dataforseo.client.models.responses.serperrorsresultinfo)
 
 ## Properties
 
@@ -154,3 +158,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpErrorsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

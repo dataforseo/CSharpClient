@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDirectoryInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BusinessDirectoryInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDirectoryInfo](./dataforseo.client.models.businessdirectoryinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDirectoryInfo](./dataforseo.client.models.businessdirectoryinfo)
 
 ## Properties
 
@@ -35,7 +39,7 @@ public ICollection<BaseBusinessDataSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseBusinessDataSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseBusinessDataSerpElementItem&gt;](./dataforseo.client.models.basebusinessdataserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -54,3 +58,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDirectoryInfo()
 ```
+
+---
+
+[`< Back`](./)

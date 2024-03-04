@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsApi
 
 Namespace: DataForSeo.Client.Api
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Api
 public class DataforseoLabsApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsApi](./dataforseo.client.api.dataforseolabsapi.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsApi](./dataforseo.client.api.dataforseolabsapi)
 
 ## Properties
 
@@ -52,16 +56,16 @@ public Task<DataforseoLabsIdListResponseInfo> DataforseoLabsIdListAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsidlistrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsIdListResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -77,19 +81,19 @@ public Task<DataforseoLabsIdListResponseInfo> DataforseoLabsIdListAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsidlistrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsIdListResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -105,12 +109,12 @@ public Task<DataforseoLabsStatusResponseInfo> DataforseoLabsStatusAsync()
 
 #### Returns
 
-[Task&lt;DataforseoLabsStatusResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsStatusResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsstatusresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -132,12 +136,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;DataforseoLabsStatusResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsStatusResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsstatusresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -154,16 +158,16 @@ public Task<DataforseoLabsErrorsResponseInfo> DataforseoLabsErrorsAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabserrorsrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsErrorsResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabserrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -179,19 +183,19 @@ public Task<DataforseoLabsErrorsResponseInfo> DataforseoLabsErrorsAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabserrorsrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsErrorsResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabserrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -207,12 +211,12 @@ public Task<DataforseoLabsAvailableFiltersResponseInfo> AvailableFiltersAsync()
 
 #### Returns
 
-[Task&lt;DataforseoLabsAvailableFiltersResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsavailablefiltersresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -234,12 +238,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;DataforseoLabsAvailableFiltersResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsavailablefiltersresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -256,12 +260,12 @@ public Task<DataforseoLabsLocationsAndLanguagesResponseInfo> DataforseoLabsLocat
 
 #### Returns
 
-[Task&lt;DataforseoLabsLocationsAndLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsLocationsAndLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -283,12 +287,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;DataforseoLabsLocationsAndLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsLocationsAndLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -305,12 +309,12 @@ public Task<DataforseoLabsCategoriesResponseInfo> CategoriesAsync()
 
 #### Returns
 
-[Task&lt;DataforseoLabsCategoriesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabscategoriesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -332,12 +336,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;DataforseoLabsCategoriesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabscategoriesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -354,12 +358,12 @@ public Task<DataforseoLabsGoogleAvailableHistoryResponseInfo> GoogleAvailableHis
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleAvailableHistoryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleAvailableHistoryResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleavailablehistoryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -381,12 +385,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleAvailableHistoryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleAvailableHistoryResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleavailablehistoryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -403,16 +407,16 @@ public Task<DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo> GoogleKeywordsF
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforsiteliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforsiteliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -429,19 +433,19 @@ public Task<DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo> GoogleKeywordsF
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforsiteliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforsiteliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -458,16 +462,16 @@ public Task<DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo> GoogleRelatedKe
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglerelatedkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglerelatedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -484,19 +488,19 @@ public Task<DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo> GoogleRelatedKe
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglerelatedkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglerelatedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -513,16 +517,16 @@ public Task<DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo> GoogleKeywor
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsuggestionsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsuggestionsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -539,19 +543,19 @@ public Task<DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo> GoogleKeywor
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsuggestionsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsuggestionsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -568,16 +572,16 @@ public Task<DataforseoLabsGoogleKeywordIdeasLiveResponseInfo> GoogleKeywordIdeas
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordideasliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordIdeasLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordIdeasLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordideasliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -594,19 +598,19 @@ public Task<DataforseoLabsGoogleKeywordIdeasLiveResponseInfo> GoogleKeywordIdeas
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordideasliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordIdeasLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordIdeasLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordideasliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -623,16 +627,16 @@ public Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalsearchvolumeliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalsearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -649,19 +653,19 @@ public Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalsearchvolumeliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalsearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -678,16 +682,16 @@ public Task<DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo> GoogleBul
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglebulkkeyworddifficultyliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulkkeyworddifficultyliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -703,19 +707,19 @@ public Task<DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo> GoogleBul
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglebulkkeyworddifficultyliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulkkeyworddifficultyliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -731,16 +735,16 @@ public Task<DataforseoLabsGoogleSearchIntentLiveResponseInfo> GoogleSearchIntent
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglesearchintentliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleSearchIntentLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleSearchIntentLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglesearchintentliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -757,19 +761,19 @@ public Task<DataforseoLabsGoogleSearchIntentLiveResponseInfo> GoogleSearchIntent
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglesearchintentliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleSearchIntentLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleSearchIntentLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglesearchintentliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -786,16 +790,16 @@ public Task<DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo> GoogleCateg
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglecategoriesfordomainliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglecategoriesfordomainliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -812,19 +816,19 @@ public Task<DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo> GoogleCateg
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglecategoriesfordomainliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglecategoriesfordomainliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -841,16 +845,16 @@ public Task<DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo> GoogleKey
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforcategoriesliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforcategoriesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -867,19 +871,19 @@ public Task<DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo> GoogleKey
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforcategoriesliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforcategoriesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -896,16 +900,16 @@ public Task<DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo> Googl
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainmetricsbycategoriesliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainmetricsbycategoriesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -922,19 +926,19 @@ public Task<DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo> Googl
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainmetricsbycategoriesliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainmetricsbycategoriesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -951,16 +955,16 @@ public Task<DataforseoLabsGoogleTopSearchesLiveResponseInfo> GoogleTopSearchesLi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogletopsearchesliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogletopsearchesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -977,19 +981,19 @@ public Task<DataforseoLabsGoogleTopSearchesLiveResponseInfo> GoogleTopSearchesLi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogletopsearchesliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogletopsearchesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1006,16 +1010,16 @@ public Task<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> GoogleDomai
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainwhoisoverviewliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainwhoisoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1032,19 +1036,19 @@ public Task<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> GoogleDomai
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainwhoisoverviewliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainwhoisoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1061,16 +1065,16 @@ public Task<DataforseoLabsGoogleRankedKeywordsLiveResponseInfo> GoogleRankedKeyw
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglerankedkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleRankedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleRankedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglerankedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1087,19 +1091,19 @@ public Task<DataforseoLabsGoogleRankedKeywordsLiveResponseInfo> GoogleRankedKeyw
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglerankedkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleRankedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleRankedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglerankedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1116,16 +1120,16 @@ public Task<DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo> GoogleSerpCompe
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogleserpcompetitorsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleserpcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1142,19 +1146,19 @@ public Task<DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo> GoogleSerpCompe
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogleserpcompetitorsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleserpcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1171,16 +1175,16 @@ public Task<DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo> GoogleCompeti
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglecompetitorsdomainliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglecompetitorsdomainliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1197,19 +1201,19 @@ public Task<DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo> GoogleCompeti
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglecompetitorsdomainliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglecompetitorsdomainliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1226,16 +1230,16 @@ public Task<DataforseoLabsGoogleDomainIntersectionLiveResponseInfo> GoogleDomain
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainintersectionliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1252,19 +1256,19 @@ public Task<DataforseoLabsGoogleDomainIntersectionLiveResponseInfo> GoogleDomain
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainintersectionliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1281,16 +1285,16 @@ public Task<DataforseoLabsGoogleSubdomainsLiveResponseInfo> GoogleSubdomainsLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglesubdomainsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleSubdomainsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleSubdomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglesubdomainsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1307,19 +1311,19 @@ public Task<DataforseoLabsGoogleSubdomainsLiveResponseInfo> GoogleSubdomainsLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglesubdomainsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleSubdomainsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleSubdomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglesubdomainsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1336,16 +1340,16 @@ public Task<DataforseoLabsGoogleRelevantPagesLiveResponseInfo> GoogleRelevantPag
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglerelevantpagesliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleRelevantPagesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleRelevantPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglerelevantpagesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1361,19 +1365,19 @@ public Task<DataforseoLabsGoogleRelevantPagesLiveResponseInfo> GoogleRelevantPag
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglerelevantpagesliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleRelevantPagesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleRelevantPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglerelevantpagesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1389,16 +1393,16 @@ public Task<DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo> GoogleDomain
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainrankoverviewliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1415,19 +1419,19 @@ public Task<DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo> GoogleDomain
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogledomainrankoverviewliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogledomainrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1444,16 +1448,16 @@ public Task<DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo> GoogleHistorica
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalserpsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalserpsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1470,19 +1474,19 @@ public Task<DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo> GoogleHistorica
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalserpsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalserpsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1499,16 +1503,16 @@ public Task<DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo> GoogleHi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalrankoverviewliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1525,19 +1529,19 @@ public Task<DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo> GoogleHi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalrankoverviewliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1554,16 +1558,16 @@ public Task<DataforseoLabsGooglePageIntersectionLiveResponseInfo> GooglePageInte
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglepageintersectionliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGooglePageIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGooglePageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglepageintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1580,19 +1584,19 @@ public Task<DataforseoLabsGooglePageIntersectionLiveResponseInfo> GooglePageInte
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglepageintersectionliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGooglePageIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGooglePageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglepageintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1609,16 +1613,16 @@ public Task<DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo> GoogleBul
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglebulktrafficestimationliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulktrafficestimationliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1635,19 +1639,19 @@ public Task<DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo> GoogleBul
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglebulktrafficestimationliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulktrafficestimationliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1664,16 +1668,16 @@ public Task<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo>
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalbulktrafficestimationliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalbulktrafficestimationliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1690,19 +1694,19 @@ public Task<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo>
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalbulktrafficestimationliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglehistoricalbulktrafficestimationliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1719,16 +1723,16 @@ public Task<DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo> AmazonBulkSear
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonbulksearchvolumeliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonbulksearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1745,19 +1749,19 @@ public Task<DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo> AmazonBulkSear
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonbulksearchvolumeliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonbulksearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1774,16 +1778,16 @@ public Task<DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo> AmazonRelatedKe
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonrelatedkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonrelatedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1800,19 +1804,19 @@ public Task<DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo> AmazonRelatedKe
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonrelatedkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonrelatedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1829,16 +1833,16 @@ public Task<DataforseoLabsAmazonRankedKeywordsLiveResponseInfo> AmazonRankedKeyw
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonrankedkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonRankedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonRankedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonrankedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1855,19 +1859,19 @@ public Task<DataforseoLabsAmazonRankedKeywordsLiveResponseInfo> AmazonRankedKeyw
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonrankedkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonRankedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonRankedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonrankedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1884,16 +1888,16 @@ public Task<DataforseoLabsAmazonProductRankOverviewLiveResponseInfo> AmazonProdu
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonproductrankoverviewliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonProductRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonProductRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1910,19 +1914,19 @@ public Task<DataforseoLabsAmazonProductRankOverviewLiveResponseInfo> AmazonProdu
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonproductrankoverviewliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonProductRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonProductRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1939,16 +1943,16 @@ public Task<DataforseoLabsAmazonProductCompetitorsLiveResponseInfo> AmazonProduc
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonproductcompetitorsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonProductCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonProductCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1965,19 +1969,19 @@ public Task<DataforseoLabsAmazonProductCompetitorsLiveResponseInfo> AmazonProduc
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonproductcompetitorsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonProductCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonProductCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1994,16 +1998,16 @@ public Task<DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo> Ama
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonproductkeywordintersectionsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductkeywordintersectionsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2020,19 +2024,19 @@ public Task<DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo> Ama
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsamazonproductkeywordintersectionsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductkeywordintersectionsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2049,16 +2053,16 @@ public Task<DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo> BingBulkKey
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingbulkkeyworddifficultyliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulkkeyworddifficultyliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2075,19 +2079,19 @@ public Task<DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo> BingBulkKey
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingbulkkeyworddifficultyliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulkkeyworddifficultyliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2104,16 +2108,16 @@ public Task<DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo> BingBulkTra
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingbulktrafficestimationliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulktrafficestimationliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2130,19 +2134,19 @@ public Task<DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo> BingBulkTra
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingbulktrafficestimationliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulktrafficestimationliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2159,16 +2163,16 @@ public Task<DataforseoLabsBingCompetitorsDomainLiveResponseInfo> BingCompetitors
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingcompetitorsdomainliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingCompetitorsDomainLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingCompetitorsDomainLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingcompetitorsdomainliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2185,19 +2189,19 @@ public Task<DataforseoLabsBingCompetitorsDomainLiveResponseInfo> BingCompetitors
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingcompetitorsdomainliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingCompetitorsDomainLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingCompetitorsDomainLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingcompetitorsdomainliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2214,16 +2218,16 @@ public Task<DataforseoLabsBingDomainIntersectionLiveResponseInfo> BingDomainInte
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingdomainintersectionliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingDomainIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingdomainintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2240,19 +2244,19 @@ public Task<DataforseoLabsBingDomainIntersectionLiveResponseInfo> BingDomainInte
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingdomainintersectionliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingDomainIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingdomainintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2269,16 +2273,16 @@ public Task<DataforseoLabsBingDomainRankOverviewLiveResponseInfo> BingDomainRank
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingdomainrankoverviewliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingDomainRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingDomainRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingdomainrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2295,19 +2299,19 @@ public Task<DataforseoLabsBingDomainRankOverviewLiveResponseInfo> BingDomainRank
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingdomainrankoverviewliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingDomainRankOverviewLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingDomainRankOverviewLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingdomainrankoverviewliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2324,16 +2328,16 @@ public Task<DataforseoLabsBingPageIntersectionLiveResponseInfo> BingPageIntersec
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingpageintersectionliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingPageIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingPageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingpageintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2350,19 +2354,19 @@ public Task<DataforseoLabsBingPageIntersectionLiveResponseInfo> BingPageIntersec
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingpageintersectionliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingPageIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingPageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingpageintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2379,16 +2383,16 @@ public Task<DataforseoLabsBingRankedKeywordsLiveResponseInfo> BingRankedKeywords
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingrankedkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingRankedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingRankedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2405,19 +2409,19 @@ public Task<DataforseoLabsBingRankedKeywordsLiveResponseInfo> BingRankedKeywords
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingrankedkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingRankedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingRankedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2434,16 +2438,16 @@ public Task<DataforseoLabsBingRelatedKeywordsLiveResponseInfo> BingRelatedKeywor
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingrelatedkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingRelatedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingRelatedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrelatedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2461,19 +2465,19 @@ public Task<DataforseoLabsBingRelatedKeywordsLiveResponseInfo> BingRelatedKeywor
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingrelatedkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingRelatedKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingRelatedKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrelatedkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2491,16 +2495,16 @@ public Task<DataforseoLabsBingRelevantPagesLiveResponseInfo> BingRelevantPagesLi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingrelevantpagesliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingRelevantPagesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingRelevantPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrelevantpagesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2516,19 +2520,19 @@ public Task<DataforseoLabsBingRelevantPagesLiveResponseInfo> BingRelevantPagesLi
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingrelevantpagesliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingRelevantPagesLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingRelevantPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrelevantpagesliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2544,16 +2548,16 @@ public Task<DataforseoLabsBingSerpCompetitorsLiveResponseInfo> BingSerpCompetito
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingserpcompetitorsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingSerpCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingSerpCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingserpcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2570,19 +2574,19 @@ public Task<DataforseoLabsBingSerpCompetitorsLiveResponseInfo> BingSerpCompetito
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingserpcompetitorsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingSerpCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingSerpCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingserpcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2599,16 +2603,16 @@ public Task<DataforseoLabsBingSubdomainsLiveResponseInfo> BingSubdomainsLiveAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingsubdomainsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingSubdomainsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingSubdomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingsubdomainsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2625,19 +2629,19 @@ public Task<DataforseoLabsBingSubdomainsLiveResponseInfo> BingSubdomainsLiveAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsbingsubdomainsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsBingSubdomainsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsBingSubdomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingsubdomainsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2654,16 +2658,16 @@ public Task<DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo> GoogleBulkAppMet
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglebulkappmetricsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulkappmetricsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2680,19 +2684,19 @@ public Task<DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo> GoogleBulkAppMet
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglebulkappmetricsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulkappmetricsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2709,16 +2713,16 @@ public Task<DataforseoLabsGoogleKeywordsForAppLiveResponseInfo> GoogleKeywordsFo
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforappliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordsForAppLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordsForAppLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforappliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2735,19 +2739,19 @@ public Task<DataforseoLabsGoogleKeywordsForAppLiveResponseInfo> GoogleKeywordsFo
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgooglekeywordsforappliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleKeywordsForAppLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleKeywordsForAppLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforappliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2764,16 +2768,16 @@ public Task<DataforseoLabsGoogleAppCompetitorsLiveResponseInfo> GoogleAppCompeti
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogleappcompetitorsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleAppCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleAppCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleappcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2790,19 +2794,19 @@ public Task<DataforseoLabsGoogleAppCompetitorsLiveResponseInfo> GoogleAppCompeti
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogleappcompetitorsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleAppCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleAppCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleappcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2819,16 +2823,16 @@ public Task<DataforseoLabsGoogleAppIntersectionLiveResponseInfo> GoogleAppInters
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogleappintersectionliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleAppIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleAppIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleappintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2845,19 +2849,19 @@ public Task<DataforseoLabsGoogleAppIntersectionLiveResponseInfo> GoogleAppInters
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsgoogleappintersectionliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsGoogleAppIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsGoogleAppIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleappintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2874,16 +2878,16 @@ public Task<DataforseoLabsAppleBulkAppMetricsLiveResponseInfo> AppleBulkAppMetri
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsapplebulkappmetricsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleBulkAppMetricsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleBulkAppMetricsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2900,19 +2904,19 @@ public Task<DataforseoLabsAppleBulkAppMetricsLiveResponseInfo> AppleBulkAppMetri
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsapplebulkappmetricsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleBulkAppMetricsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleBulkAppMetricsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2929,16 +2933,16 @@ public Task<DataforseoLabsAppleKeywordsForAppLiveResponseInfo> AppleKeywordsForA
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsapplekeywordsforappliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleKeywordsForAppLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleKeywordsForAppLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplekeywordsforappliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2955,19 +2959,19 @@ public Task<DataforseoLabsAppleKeywordsForAppLiveResponseInfo> AppleKeywordsForA
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsapplekeywordsforappliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleKeywordsForAppLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleKeywordsForAppLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplekeywordsforappliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2984,16 +2988,16 @@ public Task<DataforseoLabsAppleAppCompetitorsLiveResponseInfo> AppleAppCompetito
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsappleappcompetitorsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleAppCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleAppCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsappleappcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3010,19 +3014,19 @@ public Task<DataforseoLabsAppleAppCompetitorsLiveResponseInfo> AppleAppCompetito
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsappleappcompetitorsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleAppCompetitorsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleAppCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsappleappcompetitorsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3039,16 +3043,16 @@ public Task<DataforseoLabsAppleAppIntersectionLiveResponseInfo> AppleAppIntersec
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsappleappintersectionliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleAppIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleAppIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsappleappintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3065,19 +3069,19 @@ public Task<DataforseoLabsAppleAppIntersectionLiveResponseInfo> AppleAppIntersec
 
 #### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.dataforseolabsappleappintersectionliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;DataforseoLabsAppleAppIntersectionLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;DataforseoLabsAppleAppIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.dataforseolabsappleappintersectionliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3107,3 +3111,7 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+
+---
+
+[`< Back`](./)

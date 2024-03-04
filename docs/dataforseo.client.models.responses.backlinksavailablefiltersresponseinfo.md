@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksAvailableFiltersResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksAvailableFiltersResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BacklinksAvailableFiltersResponseInfo](./dataforseo.client.models.responses.backlinksavailablefiltersresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BacklinksAvailableFiltersResponseInfo](./dataforseo.client.models.responses.backlinksavailablefiltersresponseinfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public ICollection<BacklinksAvailableFiltersTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksAvailableFiltersTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BacklinksAvailableFiltersTaskInfo&gt;](./dataforseo.client.models.responses.backlinksavailablefilterstaskinfo)<br>
 
 ### **Version**
 
@@ -123,3 +127,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksAvailableFiltersResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

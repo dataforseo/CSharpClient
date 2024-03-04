@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksReferringNetworksLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksReferringNetworksLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksReferringNetworksLiveResultInfo](./dataforseo.client.models.responses.backlinksreferringnetworksliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksReferringNetworksLiveResultInfo](./dataforseo.client.models.responses.backlinksreferringnetworksliveresultinfo)
 
 ## Properties
 
@@ -56,7 +60,7 @@ public ICollection<BacklinksReferringNetworksLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksReferringNetworksLiveItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BacklinksReferringNetworksLiveItem&gt;](./dataforseo.client.models.backlinksreferringnetworksliveitem)<br>
 
 ### **AdditionalProperties**
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksReferringNetworksLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

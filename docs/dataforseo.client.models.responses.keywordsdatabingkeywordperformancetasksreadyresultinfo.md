@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataBingKeywordPerformanceTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordPerformanceTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceTasksReadyResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetasksreadyresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceTasksReadyResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetasksreadyresultinfo)
 
 ## Properties
 
@@ -100,3 +104,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordPerformanceTasksReadyResultInfo()
 ```
+
+---
+
+[`< Back`](./)

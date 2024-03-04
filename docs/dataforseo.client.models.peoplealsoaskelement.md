@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PeopleAlsoAskElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PeopleAlsoAskElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PeopleAlsoAskElement](./dataforseo.client.models.peoplealsoaskelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PeopleAlsoAskElement](./dataforseo.client.models.peoplealsoaskelement)
 
 ## Properties
 
@@ -68,7 +72,7 @@ public ICollection<PeopleAlsoAskExpandedElement> ExpandedElement { get; set; }
 
 #### Property Value
 
-[ICollection&lt;PeopleAlsoAskExpandedElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;PeopleAlsoAskExpandedElement&gt;](./dataforseo.client.models.peoplealsoaskexpandedelement)<br>
 
 ### **AdditionalProperties**
 
@@ -87,3 +91,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PeopleAlsoAskElement()
 ```
+
+---
+
+[`< Back`](./)

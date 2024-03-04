@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KnowledgeGraphDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class KnowledgeGraphDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [KnowledgeGraphDataforseoLabsSerpElementItem](./dataforseo.client.models.knowledgegraphdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [KnowledgeGraphDataforseoLabsSerpElementItem](./dataforseo.client.models.knowledgegraphdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -180,7 +184,7 @@ public ICollection<BaseDataforseoLabsSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseDataforseoLabsSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseDataforseoLabsSerpElementItem&gt;](./dataforseo.client.models.basedataforseolabsserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -199,3 +203,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KnowledgeGraphDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetaskgetresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetaskgetresultinfo)
 
 ## Properties
 
@@ -34,7 +38,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo)<br>
 
 ### **LocationCode**
 
@@ -173,7 +177,7 @@ public ICollection<MonthlySearches> MonthlySearches { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MonthlySearches&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MonthlySearches&gt;](./dataforseo.client.models.monthlysearches)<br>
 
 ### **AdditionalProperties**
 
@@ -192,3 +196,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsIdListRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsIdListRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsIdListRequestInfo](./dataforseo.client.models.requests.dataforseolabsidlistrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsIdListRequestInfo](./dataforseo.client.models.requests.dataforseolabsidlistrequestinfo)
 
 ## Properties
 
@@ -121,3 +125,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsIdListRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

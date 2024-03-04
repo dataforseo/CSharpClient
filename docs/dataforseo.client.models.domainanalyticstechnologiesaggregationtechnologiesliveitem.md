@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -8,7 +12,7 @@ items array
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem](./dataforseo.client.models.domainanalyticstechnologiesaggregationtechnologiesliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem](./dataforseo.client.models.domainanalyticstechnologiesaggregationtechnologiesliveitem)
 
 ## Properties
 
@@ -116,3 +120,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem()
 ```
+
+---
+
+[`< Back`](./)

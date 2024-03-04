@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GooglePlayMetricsBundleInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GooglePlayMetricsBundleInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GooglePlayMetricsBundleInfo](./dataforseo.client.models.googleplaymetricsbundleinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GooglePlayMetricsBundleInfo](./dataforseo.client.models.googleplaymetricsbundleinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public AppMetricsInfo GooglePlaySearchOrganic { get; set; }
 
 #### Property Value
 
-[AppMetricsInfo](./dataforseo.client.models.appmetricsinfo.md)<br>
+[AppMetricsInfo](./dataforseo.client.models.appmetricsinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -39,3 +43,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GooglePlayMetricsBundleInfo()
 ```
+
+---
+
+[`< Back`](./)

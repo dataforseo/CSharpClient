@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleMapsTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleMapsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleMapsTaskPostRequestInfo](./dataforseo.client.models.requests.serpgooglemapstaskpostrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleMapsTaskPostRequestInfo](./dataforseo.client.models.requests.serpgooglemapstaskpostrequestinfo)
 
 ## Properties
 
@@ -360,3 +364,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsTaskPostRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

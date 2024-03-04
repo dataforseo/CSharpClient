@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixDomainAnalyticsPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixDomainAnalyticsPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixDomainAnalyticsPriceData](./dataforseo.client.models.appendixdomainanalyticspricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixDomainAnalyticsPriceData](./dataforseo.client.models.appendixdomainanalyticspricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixWhoisDomainAnalyticsPriceData Whois { get; set; }
 
 #### Property Value
 
-[AppendixWhoisDomainAnalyticsPriceData](./dataforseo.client.models.appendixwhoisdomainanalyticspricedata.md)<br>
+[AppendixWhoisDomainAnalyticsPriceData](./dataforseo.client.models.appendixwhoisdomainanalyticspricedata)<br>
 
 ### **Technologies**
 
@@ -28,7 +32,7 @@ public AppendixTechnologiesDomainAnalyticsPriceData Technologies { get; set; }
 
 #### Property Value
 
-[AppendixTechnologiesDomainAnalyticsPriceData](./dataforseo.client.models.appendixtechnologiesdomainanalyticspricedata.md)<br>
+[AppendixTechnologiesDomainAnalyticsPriceData](./dataforseo.client.models.appendixtechnologiesdomainanalyticspricedata)<br>
 
 ### **Errors**
 
@@ -38,7 +42,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **TasksReady**
 
@@ -48,7 +52,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -67,3 +71,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixDomainAnalyticsPriceData()
 ```
+
+---
+
+[`< Back`](./)

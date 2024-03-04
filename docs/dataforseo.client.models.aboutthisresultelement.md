@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AboutThisResultElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AboutThisResultElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement)
 
 ## Properties
 
@@ -136,3 +140,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AboutThisResultElement()
 ```
+
+---
+
+[`< Back`](./)

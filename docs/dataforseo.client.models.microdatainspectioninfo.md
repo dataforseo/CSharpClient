@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MicrodataInspectionInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MicrodataInspectionInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MicrodataInspectionInfo](./dataforseo.client.models.microdatainspectioninfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MicrodataInspectionInfo](./dataforseo.client.models.microdatainspectioninfo)
 
 ## Properties
 
@@ -34,7 +38,7 @@ public ICollection<MicrodataFieldsInfo> Fields { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MicrodataFieldsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MicrodataFieldsInfo&gt;](./dataforseo.client.models.microdatafieldsinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -53,3 +57,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MicrodataInspectionInfo()
 ```
+
+---
+
+[`< Back`](./)

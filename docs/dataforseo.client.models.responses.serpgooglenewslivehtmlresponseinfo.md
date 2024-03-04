@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleNewsLiveHtmlResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleNewsLiveHtmlResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleNewsLiveHtmlResponseInfo](./dataforseo.client.models.responses.serpgooglenewslivehtmlresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleNewsLiveHtmlResponseInfo](./dataforseo.client.models.responses.serpgooglenewslivehtmlresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpGoogleNewsLiveHtmlTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleNewsLiveHtmlTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpGoogleNewsLiveHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglenewslivehtmltaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleNewsLiveHtmlResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

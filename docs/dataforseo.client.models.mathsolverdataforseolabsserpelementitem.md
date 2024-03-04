@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MathSolverDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MathSolverDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [MathSolverDataforseoLabsSerpElementItem](./dataforseo.client.models.mathsolverdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [MathSolverDataforseoLabsSerpElementItem](./dataforseo.client.models.mathsolverdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -99,7 +103,7 @@ public ICollection<MathSolverElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MathSolverElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MathSolverElement&gt;](./dataforseo.client.models.mathsolverelement)<br>
 
 ### **Links**
 
@@ -113,7 +117,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
 
 ### **AdditionalProperties**
 
@@ -132,3 +136,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MathSolverDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

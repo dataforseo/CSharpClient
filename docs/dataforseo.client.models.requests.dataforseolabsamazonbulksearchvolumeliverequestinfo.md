@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsamazonbulksearchvolumeliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsamazonbulksearchvolumeliverequestinfo)
 
 ## Properties
 
@@ -146,3 +150,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

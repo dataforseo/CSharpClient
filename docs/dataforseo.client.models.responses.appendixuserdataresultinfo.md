@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixUserDataResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppendixUserDataResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixUserDataResultInfo](./dataforseo.client.models.responses.appendixuserdataresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixUserDataResultInfo](./dataforseo.client.models.responses.appendixuserdataresultinfo)
 
 ## Properties
 
@@ -45,7 +49,7 @@ public AppendixRatesData Rates { get; set; }
 
 #### Property Value
 
-[AppendixRatesData](./dataforseo.client.models.appendixratesdata.md)<br>
+[AppendixRatesData](./dataforseo.client.models.appendixratesdata)<br>
 
 ### **Money**
 
@@ -57,7 +61,7 @@ public AppendixMoneyData Money { get; set; }
 
 #### Property Value
 
-[AppendixMoneyData](./dataforseo.client.models.appendixmoneydata.md)<br>
+[AppendixMoneyData](./dataforseo.client.models.appendixmoneydata)<br>
 
 ### **Price**
 
@@ -69,7 +73,7 @@ public AppendixPriceData Price { get; set; }
 
 #### Property Value
 
-[AppendixPriceData](./dataforseo.client.models.appendixpricedata.md)<br>
+[AppendixPriceData](./dataforseo.client.models.appendixpricedata)<br>
 
 ### **AdditionalProperties**
 
@@ -88,3 +92,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixUserDataResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataGoogleHotelInfoLiveAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelInfoLiveAdvancedResultInfo](./dataforseo.client.models.responses.businessdatagooglehotelinfoliveadvancedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelInfoLiveAdvancedResultInfo](./dataforseo.client.models.responses.businessdatagooglehotelinfoliveadvancedresultinfo)
 
 ## Properties
 
@@ -152,7 +156,7 @@ public HotelAboutInfo About { get; set; }
 
 #### Property Value
 
-[HotelAboutInfo](./dataforseo.client.models.hotelaboutinfo.md)<br>
+[HotelAboutInfo](./dataforseo.client.models.hotelaboutinfo)<br>
 
 ### **Location**
 
@@ -165,7 +169,7 @@ public Location Location { get; set; }
 
 #### Property Value
 
-[Location](./dataforseo.client.models.location.md)<br>
+[Location](./dataforseo.client.models.location)<br>
 
 ### **Reviews**
 
@@ -178,7 +182,7 @@ public HotelReviewInfo Reviews { get; set; }
 
 #### Property Value
 
-[HotelReviewInfo](./dataforseo.client.models.hotelreviewinfo.md)<br>
+[HotelReviewInfo](./dataforseo.client.models.hotelreviewinfo)<br>
 
 ### **OverviewImages**
 
@@ -204,7 +208,7 @@ public HotelPriceInfo Prices { get; set; }
 
 #### Property Value
 
-[HotelPriceInfo](./dataforseo.client.models.hotelpriceinfo.md)<br>
+[HotelPriceInfo](./dataforseo.client.models.hotelpriceinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -223,3 +227,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

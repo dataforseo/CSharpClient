@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixTrBusinessDataPriceDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixTrBusinessDataPriceDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **Search**
 
@@ -28,7 +32,7 @@ public AppendixGoogleBusinessDataPriceDataInfo Search { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -47,3 +51,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixTrBusinessDataPriceDataInfo()
 ```
+
+---
+
+[`< Back`](./)

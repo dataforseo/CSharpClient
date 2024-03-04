@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixGoogleBusinessDataPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixGoogleBusinessDataPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixGoogleBusinessDataPriceData](./dataforseo.client.models.appendixgooglebusinessdatapricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixGoogleBusinessDataPriceData](./dataforseo.client.models.appendixgooglebusinessdatapricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixHotelInfoGoogleBusinessDataPriceData HotelInfo { get; set; }
 
 #### Property Value
 
-[AppendixHotelInfoGoogleBusinessDataPriceData](./dataforseo.client.models.appendixhotelinfogooglebusinessdatapricedata.md)<br>
+[AppendixHotelInfoGoogleBusinessDataPriceData](./dataforseo.client.models.appendixhotelinfogooglebusinessdatapricedata)<br>
 
 ### **HotelSearches**
 
@@ -28,7 +32,7 @@ public AppendixGoogleBusinessDataPriceDataInfo HotelSearches { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **MyBusinessInfo**
 
@@ -38,7 +42,7 @@ public AppendixGoogleBusinessDataPriceDataInfo MyBusinessInfo { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **MyBusinessUpdates**
 
@@ -48,7 +52,7 @@ public AppendixGoogleBusinessDataPriceDataInfo MyBusinessUpdates { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **Reviews**
 
@@ -58,7 +62,7 @@ public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo.md)<br>
+[AppendixGoogleBusinessDataPriceDataInfo](./dataforseo.client.models.appendixgooglebusinessdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixGoogleBusinessDataPriceData()
 ```
+
+---
+
+[`< Back`](./)

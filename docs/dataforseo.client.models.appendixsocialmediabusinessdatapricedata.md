@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixSocialMediaBusinessDataPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixSocialMediaBusinessDataPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSocialMediaBusinessDataPriceData](./dataforseo.client.models.appendixsocialmediabusinessdatapricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSocialMediaBusinessDataPriceData](./dataforseo.client.models.appendixsocialmediabusinessdatapricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Facebook { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **Pinterest**
 
@@ -28,7 +32,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Pinterest { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **Reddit**
 
@@ -38,7 +42,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Reddit { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -57,3 +61,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixSocialMediaBusinessDataPriceData()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixPriceData](./dataforseo.client.models.appendixpricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixPriceData](./dataforseo.client.models.appendixpricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixKeywordsDataPriceData KeywordsData { get; set; }
 
 #### Property Value
 
-[AppendixKeywordsDataPriceData](./dataforseo.client.models.appendixkeywordsdatapricedata.md)<br>
+[AppendixKeywordsDataPriceData](./dataforseo.client.models.appendixkeywordsdatapricedata)<br>
 
 ### **Merchant**
 
@@ -28,7 +32,7 @@ public AppendixMerchantPriceData Merchant { get; set; }
 
 #### Property Value
 
-[AppendixMerchantPriceData](./dataforseo.client.models.appendixmerchantpricedata.md)<br>
+[AppendixMerchantPriceData](./dataforseo.client.models.appendixmerchantpricedata)<br>
 
 ### **Serp**
 
@@ -38,7 +42,7 @@ public AppendixSerpPriceData Serp { get; set; }
 
 #### Property Value
 
-[AppendixSerpPriceData](./dataforseo.client.models.appendixserppricedata.md)<br>
+[AppendixSerpPriceData](./dataforseo.client.models.appendixserppricedata)<br>
 
 ### **Appendix**
 
@@ -48,7 +52,7 @@ public AppendixAppendixPriceData Appendix { get; set; }
 
 #### Property Value
 
-[AppendixAppendixPriceData](./dataforseo.client.models.appendixappendixpricedata.md)<br>
+[AppendixAppendixPriceData](./dataforseo.client.models.appendixappendixpricedata)<br>
 
 ### **AppData**
 
@@ -58,7 +62,7 @@ public AppendixAppDataPriceData AppData { get; set; }
 
 #### Property Value
 
-[AppendixAppDataPriceData](./dataforseo.client.models.appendixappdatapricedata.md)<br>
+[AppendixAppDataPriceData](./dataforseo.client.models.appendixappdatapricedata)<br>
 
 ### **Backlinks**
 
@@ -68,7 +72,7 @@ public AppendixBacklinksPriceData Backlinks { get; set; }
 
 #### Property Value
 
-[AppendixBacklinksPriceData](./dataforseo.client.models.appendixbacklinkspricedata.md)<br>
+[AppendixBacklinksPriceData](./dataforseo.client.models.appendixbacklinkspricedata)<br>
 
 ### **BusinessData**
 
@@ -78,7 +82,7 @@ public AppendixBusinessDataPriceData BusinessData { get; set; }
 
 #### Property Value
 
-[AppendixBusinessDataPriceData](./dataforseo.client.models.appendixbusinessdatapricedata.md)<br>
+[AppendixBusinessDataPriceData](./dataforseo.client.models.appendixbusinessdatapricedata)<br>
 
 ### **ContentAnalysis**
 
@@ -88,7 +92,7 @@ public AppendixContentAnalysisPriceData ContentAnalysis { get; set; }
 
 #### Property Value
 
-[AppendixContentAnalysisPriceData](./dataforseo.client.models.appendixcontentanalysispricedata.md)<br>
+[AppendixContentAnalysisPriceData](./dataforseo.client.models.appendixcontentanalysispricedata)<br>
 
 ### **ContentGeneration**
 
@@ -98,7 +102,7 @@ public AppendixContentGenerationPriceData ContentGeneration { get; set; }
 
 #### Property Value
 
-[AppendixContentGenerationPriceData](./dataforseo.client.models.appendixcontentgenerationpricedata.md)<br>
+[AppendixContentGenerationPriceData](./dataforseo.client.models.appendixcontentgenerationpricedata)<br>
 
 ### **DataforseoLabs**
 
@@ -108,7 +112,7 @@ public AppendixDataforseoLabsPriceData DataforseoLabs { get; set; }
 
 #### Property Value
 
-[AppendixDataforseoLabsPriceData](./dataforseo.client.models.appendixdataforseolabspricedata.md)<br>
+[AppendixDataforseoLabsPriceData](./dataforseo.client.models.appendixdataforseolabspricedata)<br>
 
 ### **DomainAnalytics**
 
@@ -118,7 +122,7 @@ public AppendixDomainAnalyticsPriceData DomainAnalytics { get; set; }
 
 #### Property Value
 
-[AppendixDomainAnalyticsPriceData](./dataforseo.client.models.appendixdomainanalyticspricedata.md)<br>
+[AppendixDomainAnalyticsPriceData](./dataforseo.client.models.appendixdomainanalyticspricedata)<br>
 
 ### **OnPage**
 
@@ -128,7 +132,7 @@ public AppendixOnPagePriceData OnPage { get; set; }
 
 #### Property Value
 
-[AppendixOnPagePriceData](./dataforseo.client.models.appendixonpagepricedata.md)<br>
+[AppendixOnPagePriceData](./dataforseo.client.models.appendixonpagepricedata)<br>
 
 ### **AdditionalProperties**
 
@@ -147,3 +151,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixPriceData()
 ```
+
+---
+
+[`< Back`](./)

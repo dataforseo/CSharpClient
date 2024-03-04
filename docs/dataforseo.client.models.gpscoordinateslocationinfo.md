@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GpsCoordinatesLocationInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GpsCoordinatesLocationInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GpsCoordinatesLocationInfo](./dataforseo.client.models.gpscoordinateslocationinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GpsCoordinatesLocationInfo](./dataforseo.client.models.gpscoordinateslocationinfo)
 
 ## Properties
 
@@ -55,3 +59,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GpsCoordinatesLocationInfo()
 ```
+
+---
+
+[`< Back`](./)

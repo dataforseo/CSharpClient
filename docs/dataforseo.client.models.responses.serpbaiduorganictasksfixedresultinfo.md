@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBaiduOrganicTasksFixedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBaiduOrganicTasksFixedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBaiduOrganicTasksFixedResultInfo](./dataforseo.client.models.responses.serpbaiduorganictasksfixedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBaiduOrganicTasksFixedResultInfo](./dataforseo.client.models.responses.serpbaiduorganictasksfixedresultinfo)
 
 ## Properties
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBaiduOrganicTasksFixedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

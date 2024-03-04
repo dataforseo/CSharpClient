@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataSocialMediaRedditLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataSocialMediaRedditLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataSocialMediaRedditLiveTaskInfo](./dataforseo.client.models.responses.businessdatasocialmediaredditlivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataSocialMediaRedditLiveTaskInfo](./dataforseo.client.models.responses.businessdatasocialmediaredditlivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BusinessDataSocialMediaRedditLiveResultInfo> Result { get; se
 
 #### Property Value
 
-[ICollection&lt;BusinessDataSocialMediaRedditLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BusinessDataSocialMediaRedditLiveResultInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataSocialMediaRedditLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

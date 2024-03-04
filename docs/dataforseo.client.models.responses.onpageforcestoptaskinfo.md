@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageForceStopTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageForceStopTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageForceStopTaskInfo](./dataforseo.client.models.responses.onpageforcestoptaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageForceStopTaskInfo](./dataforseo.client.models.responses.onpageforcestoptaskinfo)
 
 ## Properties
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageForceStopTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

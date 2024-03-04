@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AdLinkElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AdLinkElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AdLinkElement](./dataforseo.client.models.adlinkelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AdLinkElement](./dataforseo.client.models.adlinkelement)
 
 ## Properties
 
@@ -99,3 +103,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AdLinkElement()
 ```
+
+---
+
+[`< Back`](./)

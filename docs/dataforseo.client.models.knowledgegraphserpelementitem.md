@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KnowledgeGraphSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class KnowledgeGraphSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [KnowledgeGraphSerpElementItem](./dataforseo.client.models.knowledgegraphserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [KnowledgeGraphSerpElementItem](./dataforseo.client.models.knowledgegraphserpelementitem)
 
 ## Properties
 
@@ -173,7 +177,7 @@ public ICollection<BaseSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseSerpElementItem&gt;](./dataforseo.client.models.baseserpelementitem)<br>
 
 ### **Rectangle**
 
@@ -187,7 +191,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -206,3 +210,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KnowledgeGraphSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

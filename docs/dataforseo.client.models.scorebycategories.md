@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ScoreByCategories
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ScoreByCategories
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ScoreByCategories](./dataforseo.client.models.scorebycategories.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ScoreByCategories](./dataforseo.client.models.scorebycategories)
 
 ## Properties
 
@@ -98,3 +102,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ScoreByCategories()
 ```
+
+---
+
+[`< Back`](./)

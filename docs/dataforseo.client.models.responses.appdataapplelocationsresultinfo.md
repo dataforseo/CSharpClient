@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppleLocationsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleLocationsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleLocationsResultInfo](./dataforseo.client.models.responses.appdataapplelocationsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleLocationsResultInfo](./dataforseo.client.models.responses.appdataapplelocationsresultinfo)
 
 ## Properties
 
@@ -94,3 +98,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleLocationsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

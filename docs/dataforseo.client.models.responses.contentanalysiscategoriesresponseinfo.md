@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentAnalysisCategoriesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisCategoriesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentAnalysisCategoriesResponseInfo](./dataforseo.client.models.responses.contentanalysiscategoriesresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentAnalysisCategoriesResponseInfo](./dataforseo.client.models.responses.contentanalysiscategoriesresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<ContentAnalysisCategoriesTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisCategoriesTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentAnalysisCategoriesTaskInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategoriestaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisCategoriesResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

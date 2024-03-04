@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GoogleShoppingSerpMerchantSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleShoppingSerpMerchantSerpElementItem : BaseMerchantSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem.md) → [GoogleShoppingSerpMerchantSerpElementItem](./dataforseo.client.models.googleshoppingserpmerchantserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem) → [GoogleShoppingSerpMerchantSerpElementItem](./dataforseo.client.models.googleshoppingserpmerchantserpelementitem)
 
 ## Properties
 
@@ -274,7 +278,7 @@ public RatingElement ProductRating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
+[RatingElement](./dataforseo.client.models.ratingelement)<br>
 
 ### **ShopRating**
 
@@ -287,7 +291,7 @@ public RatingElement ShopRating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
+[RatingElement](./dataforseo.client.models.ratingelement)<br>
 
 ### **ProductImages**
 
@@ -326,7 +330,7 @@ public DeliveryInfo DeliveryInfo { get; set; }
 
 #### Property Value
 
-[DeliveryInfo](./dataforseo.client.models.deliveryinfo.md)<br>
+[DeliveryInfo](./dataforseo.client.models.deliveryinfo)<br>
 
 ### **StoresCountInfo**
 
@@ -339,7 +343,7 @@ public StoresCountInfo StoresCountInfo { get; set; }
 
 #### Property Value
 
-[StoresCountInfo](./dataforseo.client.models.storescountinfo.md)<br>
+[StoresCountInfo](./dataforseo.client.models.storescountinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -358,3 +362,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleShoppingSerpMerchantSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

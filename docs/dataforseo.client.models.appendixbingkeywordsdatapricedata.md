@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixBingKeywordsDataPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBingKeywordsDataPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBingKeywordsDataPriceData](./dataforseo.client.models.appendixbingkeywordsdatapricedata.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBingKeywordsDataPriceData](./dataforseo.client.models.appendixbingkeywordsdatapricedata)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordPerformance { get; se
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **KeywordsForKeywords**
 
@@ -28,7 +32,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; s
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **KeywordsForSite**
 
@@ -38,7 +42,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; 
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **SearchVolumeHistory**
 
@@ -48,7 +52,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo SearchVolumeHistory { get; s
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **SearchVolume**
 
@@ -58,7 +62,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
 
 ### **AdditionalProperties**
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBingKeywordsDataPriceData()
 ```
+
+---
+
+[`< Back`](./)

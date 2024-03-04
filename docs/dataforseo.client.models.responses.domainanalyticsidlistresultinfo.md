@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsIdListResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsIdListResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsIdListResultInfo](./dataforseo.client.models.responses.domainanalyticsidlistresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsIdListResultInfo](./dataforseo.client.models.responses.domainanalyticsidlistresultinfo)
 
 ## Properties
 
@@ -119,3 +123,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsIdListResultInfo()
 ```
+
+---
+
+[`< Back`](./)

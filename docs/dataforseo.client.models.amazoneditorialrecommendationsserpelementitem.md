@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AmazonEditorialRecommendationsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonEditorialRecommendationsSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonEditorialRecommendationsSerpElementItem](./dataforseo.client.models.amazoneditorialrecommendationsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonEditorialRecommendationsSerpElementItem](./dataforseo.client.models.amazoneditorialrecommendationsserpelementitem)
 
 ## Properties
 
@@ -72,7 +76,7 @@ public ICollection<AmazonSerpElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AmazonSerpElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AmazonSerpElement&gt;](./dataforseo.client.models.amazonserpelement)<br>
 
 ### **AdditionalProperties**
 
@@ -91,3 +95,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonEditorialRecommendationsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixAppDataLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixAppDataLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixAppDataLimitsRatesDataInfo](./dataforseo.client.models.appendixappdatalimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixAppDataLimitsRatesDataInfo](./dataforseo.client.models.appendixappdatalimitsratesdatainfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixSerpLimitsRatesDataInfo AppInfo { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
 
 ### **AppList**
 
@@ -28,7 +32,7 @@ public AppendixSerpLimitsRatesDataInfo AppList { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
 
 ### **AppReviews**
 
@@ -38,7 +42,7 @@ public AppendixSerpLimitsRatesDataInfo AppReviews { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
 
 ### **AppSearches**
 
@@ -48,7 +52,7 @@ public AppendixSerpLimitsRatesDataInfo AppSearches { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
 
 ### **Errors**
 
@@ -107,3 +111,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixAppDataLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

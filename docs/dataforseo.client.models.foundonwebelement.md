@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # FoundOnWebElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class FoundOnWebElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FoundOnWebElement](./dataforseo.client.models.foundonwebelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FoundOnWebElement](./dataforseo.client.models.foundonwebelement)
 
 ## Properties
 
@@ -56,7 +60,7 @@ public ImagesElement Image { get; set; }
 
 #### Property Value
 
-[ImagesElement](./dataforseo.client.models.imageselement.md)<br>
+[ImagesElement](./dataforseo.client.models.imageselement)<br>
 
 ### **AdditionalProperties**
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public FoundOnWebElement()
 ```
+
+---
+
+[`< Back`](./)

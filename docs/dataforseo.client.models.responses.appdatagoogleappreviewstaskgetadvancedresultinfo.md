@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataGoogleAppReviewsTaskGetAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppReviewsTaskGetAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppReviewsTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppReviewsTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresultinfo)
 
 ## Properties
 
@@ -122,7 +126,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **ReviewsCount**
 
@@ -160,7 +164,7 @@ public ICollection<BaseAppDataSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseAppDataSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseAppDataSerpElementItem&gt;](./dataforseo.client.models.baseappdataserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -179,3 +183,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppReviewsTaskGetAdvancedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

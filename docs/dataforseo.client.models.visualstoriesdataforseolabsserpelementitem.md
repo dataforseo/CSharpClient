@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # VisualStoriesDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class VisualStoriesDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [VisualStoriesDataforseoLabsSerpElementItem](./dataforseo.client.models.visualstoriesdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [VisualStoriesDataforseoLabsSerpElementItem](./dataforseo.client.models.visualstoriesdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -72,7 +76,7 @@ public ICollection<LicensesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LicensesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LicensesElement&gt;](./dataforseo.client.models.licenseselement)<br>
 
 ### **AdditionalProperties**
 
@@ -91,3 +95,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public VisualStoriesDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

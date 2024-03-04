@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # JobsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class JobsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [JobsDataforseoLabsSerpElementItem](./dataforseo.client.models.jobsdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [JobsDataforseoLabsSerpElementItem](./dataforseo.client.models.jobsdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -96,7 +100,7 @@ public ICollection<JobsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;JobsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;JobsElement&gt;](./dataforseo.client.models.jobselement)<br>
 
 ### **AdditionalProperties**
 
@@ -115,3 +119,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public JobsDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

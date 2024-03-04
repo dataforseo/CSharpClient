@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # RatingElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class RatingElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RatingElement](./dataforseo.client.models.ratingelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RatingElement](./dataforseo.client.models.ratingelement)
 
 ## Properties
 
@@ -102,3 +106,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RatingElement()
 ```
+
+---
+
+[`< Back`](./)

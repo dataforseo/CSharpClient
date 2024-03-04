@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetTaskInfo](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgettaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetTaskInfo](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgettaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo> Re
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgetresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

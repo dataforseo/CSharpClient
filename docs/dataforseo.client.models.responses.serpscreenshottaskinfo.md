@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpScreenshotTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpScreenshotTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpScreenshotTaskInfo](./dataforseo.client.models.responses.serpscreenshottaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpScreenshotTaskInfo](./dataforseo.client.models.responses.serpscreenshottaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpScreenshotResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpScreenshotResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpScreenshotResultInfo&gt;](./dataforseo.client.models.responses.serpscreenshotresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpScreenshotTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

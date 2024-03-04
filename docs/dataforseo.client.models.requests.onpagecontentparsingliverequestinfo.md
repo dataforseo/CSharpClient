@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageContentParsingLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageContentParsingLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingLiveRequestInfo](./dataforseo.client.models.requests.onpagecontentparsingliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingLiveRequestInfo](./dataforseo.client.models.requests.onpagecontentparsingliverequestinfo)
 
 ## Properties
 
@@ -240,3 +244,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageContentParsingLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

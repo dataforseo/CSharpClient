@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgoogledomainwhoisoverviewliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgoogledomainwhoisoverviewliverequestinfo)
 
 ## Properties
 
@@ -123,3 +127,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

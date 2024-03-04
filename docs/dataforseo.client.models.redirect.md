@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # Redirect
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class Redirect
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Redirect](./dataforseo.client.models.redirect.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Redirect](./dataforseo.client.models.redirect)
 
 ## Properties
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Redirect()
 ```
+
+---
+
+[`< Back`](./)

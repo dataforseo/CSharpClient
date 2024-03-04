@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # HotelLocationInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class HotelLocationInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelLocationInfo](./dataforseo.client.models.hotellocationinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelLocationInfo](./dataforseo.client.models.hotellocationinfo)
 
 ## Properties
 
@@ -115,7 +119,7 @@ public ICollection<LocationChain> LocationChain { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LocationChain&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;LocationChain&gt;](./dataforseo.client.models.locationchain)<br>
 
 ### **AdditionalProperties**
 
@@ -134,3 +138,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HotelLocationInfo()
 ```
+
+---
+
+[`< Back`](./)

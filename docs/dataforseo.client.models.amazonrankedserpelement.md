@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AmazonRankedSerpElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonRankedSerpElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonRankedSerpElement](./dataforseo.client.models.amazonrankedserpelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonRankedSerpElement](./dataforseo.client.models.amazonrankedserpelement)
 
 ## Properties
 
@@ -33,7 +37,7 @@ public BaseAmazonSerpElementItem SerpItem { get; set; }
 
 #### Property Value
 
-[BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md)<br>
+[BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem)<br>
 
 ### **CheckUrl**
 
@@ -122,3 +126,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonRankedSerpElement()
 ```
+
+---
+
+[`< Back`](./)

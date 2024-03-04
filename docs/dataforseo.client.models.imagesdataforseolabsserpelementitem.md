@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ImagesDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ImagesDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [ImagesDataforseoLabsSerpElementItem](./dataforseo.client.models.imagesdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [ImagesDataforseoLabsSerpElementItem](./dataforseo.client.models.imagesdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -96,7 +100,7 @@ public ICollection<ImagesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
 
 ### **RelatedImageSearches**
 
@@ -109,7 +113,7 @@ public ICollection<RelatedImageSearchesElement> RelatedImageSearches { get; set;
 
 #### Property Value
 
-[ICollection&lt;RelatedImageSearchesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;RelatedImageSearchesElement&gt;](./dataforseo.client.models.relatedimagesearcheselement)<br>
 
 ### **AdditionalProperties**
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImagesDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

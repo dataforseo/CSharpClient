@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAvailableFiltersResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAvailableFiltersResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsAvailableFiltersResponseInfo](./dataforseo.client.models.responses.dataforseolabsavailablefiltersresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsAvailableFiltersResponseInfo](./dataforseo.client.models.responses.dataforseolabsavailablefiltersresponseinfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public ICollection<DataforseoLabsAvailableFiltersTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAvailableFiltersTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsAvailableFiltersTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsavailablefilterstaskinfo)<br>
 
 ### **Version**
 
@@ -123,3 +127,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAvailableFiltersResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataSocialMediaRedditLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataSocialMediaRedditLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaRedditLiveRequestInfo](./dataforseo.client.models.requests.businessdatasocialmediaredditliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaRedditLiveRequestInfo](./dataforseo.client.models.requests.businessdatasocialmediaredditliverequestinfo)
 
 ## Properties
 
@@ -60,3 +64,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataSocialMediaRedditLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageErrorsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageErrorsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageErrorsResultInfo](./dataforseo.client.models.responses.onpageerrorsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageErrorsResultInfo](./dataforseo.client.models.responses.onpageerrorsresultinfo)
 
 ## Properties
 
@@ -154,3 +158,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageErrorsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

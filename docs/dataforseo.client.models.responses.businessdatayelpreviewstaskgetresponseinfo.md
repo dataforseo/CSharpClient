@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataYelpReviewsTaskGetResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataYelpReviewsTaskGetResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BusinessDataYelpReviewsTaskGetResponseInfo](./dataforseo.client.models.responses.businessdatayelpreviewstaskgetresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BusinessDataYelpReviewsTaskGetResponseInfo](./dataforseo.client.models.responses.businessdatayelpreviewstaskgetresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BusinessDataYelpReviewsTaskGetTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BusinessDataYelpReviewsTaskGetTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BusinessDataYelpReviewsTaskGetTaskInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskgettaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpReviewsTaskGetResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksHistoryLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksHistoryLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BacklinksHistoryLiveTaskInfo](./dataforseo.client.models.responses.backlinkshistorylivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BacklinksHistoryLiveTaskInfo](./dataforseo.client.models.responses.backlinkshistorylivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BacklinksHistoryLiveResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksHistoryLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BacklinksHistoryLiveResultInfo&gt;](./dataforseo.client.models.responses.backlinkshistoryliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksHistoryLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

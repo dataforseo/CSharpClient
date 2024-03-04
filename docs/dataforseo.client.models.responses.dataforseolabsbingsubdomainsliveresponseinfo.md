@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsBingSubdomainsLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingSubdomainsLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsBingSubdomainsLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsbingsubdomainsliveresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsBingSubdomainsLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsbingsubdomainsliveresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<DataforseoLabsBingSubdomainsLiveTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingSubdomainsLiveTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsBingSubdomainsLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingsubdomainslivetaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingSubdomainsLiveResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

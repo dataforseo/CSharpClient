@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageWaterfallTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageWaterfallTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageWaterfallTaskInfo](./dataforseo.client.models.responses.onpagewaterfalltaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageWaterfallTaskInfo](./dataforseo.client.models.responses.onpagewaterfalltaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<OnPageWaterfallResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageWaterfallResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;OnPageWaterfallResultInfo&gt;](./dataforseo.client.models.responses.onpagewaterfallresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageWaterfallTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

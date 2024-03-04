@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleDatasetSearchLiveAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleDatasetSearchLiveAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleDatasetSearchLiveAdvancedResultInfo](./dataforseo.client.models.responses.serpgoogledatasetsearchliveadvancedresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleDatasetSearchLiveAdvancedResultInfo](./dataforseo.client.models.responses.serpgoogledatasetsearchliveadvancedresultinfo)
 
 ## Properties
 
@@ -86,7 +90,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo)<br>
 
 ### **ItemTypes**
 
@@ -136,7 +140,7 @@ public ICollection<BaseSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseSerpElementItem&gt;](./dataforseo.client.models.baseserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -155,3 +159,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleDatasetSearchLiveAdvancedResultInfo()
 ```
+
+---
+
+[`< Back`](./)

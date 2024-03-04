@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixSellersGoogleMerchantLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixSellersGoogleMerchantLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSellersGoogleMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixsellersgooglemerchantlimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSellersGoogleMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixsellersgooglemerchantlimitsratesdatainfo)
 
 ## Properties
 
@@ -38,7 +42,7 @@ public AppendixFunctionTypeInfo TaskGet { get; set; }
 
 #### Property Value
 
-[AppendixFunctionTypeInfo](./dataforseo.client.models.appendixfunctiontypeinfo.md)<br>
+[AppendixFunctionTypeInfo](./dataforseo.client.models.appendixfunctiontypeinfo)<br>
 
 ### **AdUrl**
 
@@ -67,3 +71,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixSellersGoogleMerchantLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

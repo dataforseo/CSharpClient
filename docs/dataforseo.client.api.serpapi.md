@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpApi
 
 Namespace: DataForSeo.Client.Api
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Api
 public class SerpApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpApi](./dataforseo.client.api.serpapi.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpApi](./dataforseo.client.api.serpapi)
 
 ## Properties
 
@@ -52,16 +56,16 @@ public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -78,19 +82,19 @@ public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -107,12 +111,12 @@ public Task<SerpNaverOrganicTasksReadyResponseInfo> NaverOrganicTasksReadyAsync(
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -134,12 +138,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -156,12 +160,12 @@ public Task<SerpNaverOrganicTasksFixedResponseInfo> NaverOrganicTasksFixedAsync(
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -183,12 +187,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -212,12 +216,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -243,12 +247,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -271,12 +275,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -302,12 +306,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -330,12 +334,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -361,12 +365,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpNaverOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpNaverOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -382,12 +386,12 @@ public Task<SerpSeznamLocationsResponseInfo> SerpSeznamLocationsAsync()
 
 #### Returns
 
-[Task&lt;SerpSeznamLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -408,12 +412,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -438,12 +442,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;SerpSeznamLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -471,12 +475,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -492,12 +496,12 @@ public Task<SerpSeznamLanguagesResponseInfo> SerpSeznamLanguagesAsync()
 
 #### Returns
 
-[Task&lt;SerpSeznamLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -518,12 +522,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -539,16 +543,16 @@ public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -565,19 +569,19 @@ public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -594,12 +598,12 @@ public Task<SerpSeznamOrganicTasksReadyResponseInfo> SeznamOrganicTasksReadyAsyn
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -621,12 +625,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -643,12 +647,12 @@ public Task<SerpSeznamOrganicTasksFixedResponseInfo> SeznamOrganicTasksFixedAsyn
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -670,12 +674,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -699,12 +703,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -730,12 +734,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -758,12 +762,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -789,12 +793,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -817,12 +821,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -848,12 +852,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpSeznamOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpSeznamOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -891,16 +895,16 @@ public Task<SerpGoogleDatasetSearchLiveAdvancedResponseInfo> GoogleDatasetSearch
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetsearchliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -917,19 +921,19 @@ public Task<SerpGoogleDatasetSearchLiveAdvancedResponseInfo> GoogleDatasetSearch
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetsearchliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -946,16 +950,16 @@ public Task<SerpGoogleDatasetInfoTaskPostResponseInfo> GoogleDatasetInfoTaskPost
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetinfotaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -972,19 +976,19 @@ public Task<SerpGoogleDatasetInfoTaskPostResponseInfo> GoogleDatasetInfoTaskPost
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetinfotaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1001,12 +1005,12 @@ public Task<SerpGoogleDatasetInfoTasksReadyResponseInfo> GoogleDatasetInfoTasksR
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1028,12 +1032,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1050,12 +1054,12 @@ public Task<SerpGoogleDatasetInfoTasksFixedResponseInfo> GoogleDatasetInfoTasksF
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1077,12 +1081,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1106,12 +1110,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1137,12 +1141,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfotaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1158,16 +1162,16 @@ public Task<SerpGoogleDatasetInfoLiveAdvancedResponseInfo> GoogleDatasetInfoLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetinfoliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfoliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1184,19 +1188,19 @@ public Task<SerpGoogleDatasetInfoLiveAdvancedResponseInfo> GoogleDatasetInfoLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetinfoliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetInfoLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetinfoliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1213,12 +1217,12 @@ public Task<SerpBingLocationsResponseInfo> SerpBingLocationsAsync()
 
 #### Returns
 
-[Task&lt;SerpBingLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1239,12 +1243,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1269,12 +1273,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;SerpBingLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1302,12 +1306,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1323,12 +1327,12 @@ public Task<SerpBingLanguagesResponseInfo> SerpBingLanguagesAsync()
 
 #### Returns
 
-[Task&lt;SerpBingLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1349,12 +1353,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1370,16 +1374,16 @@ public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1396,19 +1400,19 @@ public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1425,12 +1429,12 @@ public Task<SerpBingOrganicTasksReadyResponseInfo> BingOrganicTasksReadyAsync()
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1452,12 +1456,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1474,12 +1478,12 @@ public Task<SerpBingOrganicTasksFixedResponseInfo> BingOrganicTasksFixedAsync()
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1501,12 +1505,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1530,12 +1534,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1561,12 +1565,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1589,12 +1593,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1620,12 +1624,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1648,12 +1652,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1679,12 +1683,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1700,16 +1704,16 @@ public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingOrganicLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganicliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1726,19 +1730,19 @@ public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingOrganicLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganicliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1755,16 +1759,16 @@ public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingOrganicLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganicliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1781,19 +1785,19 @@ public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingOrganicLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganicliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1810,16 +1814,16 @@ public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingOrganicLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganiclivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1836,19 +1840,19 @@ public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingOrganicLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingOrganicLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbingorganiclivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1865,16 +1869,16 @@ public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1891,19 +1895,19 @@ public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1920,12 +1924,12 @@ public Task<SerpBingLocalPackTasksReadyResponseInfo> BingLocalPackTasksReadyAsyn
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1947,12 +1951,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1969,12 +1973,12 @@ public Task<SerpBingLocalPackTasksFixedResponseInfo> BingLocalPackTasksFixedAsyn
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1996,12 +2000,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2025,12 +2029,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2056,12 +2060,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2084,12 +2088,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2115,12 +2119,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2136,16 +2140,16 @@ public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpackliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2162,19 +2166,19 @@ public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpackliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2191,16 +2195,16 @@ public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacklivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2217,19 +2221,19 @@ public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBingLocalPackLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBingLocalPackLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacklivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2246,12 +2250,12 @@ public Task<SerpYoutubeLocationsResponseInfo> SerpYoutubeLocationsAsync()
 
 #### Returns
 
-[Task&lt;SerpYoutubeLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubelocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2272,12 +2276,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubelocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2302,12 +2306,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;SerpYoutubeLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubelocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2335,12 +2339,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubelocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2356,12 +2360,12 @@ public Task<SerpYoutubeLanguagesResponseInfo> SerpYoutubeLanguagesAsync()
 
 #### Returns
 
-[Task&lt;SerpYoutubeLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubelanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2382,12 +2386,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubelanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2403,16 +2407,16 @@ public Task<SerpYoutubeVideoInfoTaskPostResponseInfo> YoutubeVideoInfoTaskPostAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideoinfotaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2429,19 +2433,19 @@ public Task<SerpYoutubeVideoInfoTaskPostResponseInfo> YoutubeVideoInfoTaskPostAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideoinfotaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2458,12 +2462,12 @@ public Task<SerpYoutubeVideoInfoTasksReadyResponseInfo> YoutubeVideoInfoTasksRea
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2485,12 +2489,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2507,12 +2511,12 @@ public Task<SerpYoutubeVideoInfoTasksFixedResponseInfo> YoutubeVideoInfoTasksFix
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2534,12 +2538,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2563,12 +2567,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2594,12 +2598,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfotaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2615,16 +2619,16 @@ public Task<SerpYoutubeVideoInfoLiveAdvancedResponseInfo> YoutubeVideoInfoLiveAd
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideoinfoliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfoliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2641,19 +2645,19 @@ public Task<SerpYoutubeVideoInfoLiveAdvancedResponseInfo> YoutubeVideoInfoLiveAd
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideoinfoliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoInfoLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfoliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2670,16 +2674,16 @@ public Task<SerpYoutubeVideoSubtitlesTaskPostResponseInfo> YoutubeVideoSubtitles
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideosubtitlestaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2696,19 +2700,19 @@ public Task<SerpYoutubeVideoSubtitlesTaskPostResponseInfo> YoutubeVideoSubtitles
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideosubtitlestaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2725,12 +2729,12 @@ public Task<SerpYoutubeVideoSubtitlesTasksReadyResponseInfo> YoutubeVideoSubtitl
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2752,12 +2756,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2774,12 +2778,12 @@ public Task<SerpYoutubeVideoSubtitlesTasksFixedResponseInfo> YoutubeVideoSubtitl
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2801,12 +2805,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2830,12 +2834,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2861,12 +2865,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2882,16 +2886,16 @@ public Task<SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo> YoutubeVideoSubti
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideosubtitlesliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlesliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2908,19 +2912,19 @@ public Task<SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo> YoutubeVideoSubti
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideosubtitlesliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlesliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2937,16 +2941,16 @@ public Task<SerpYoutubeVideoCommentsTaskPostResponseInfo> YoutubeVideoCommentsTa
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideocommentstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2963,19 +2967,19 @@ public Task<SerpYoutubeVideoCommentsTaskPostResponseInfo> YoutubeVideoCommentsTa
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideocommentstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2992,12 +2996,12 @@ public Task<SerpYoutubeVideoCommentsTasksReadyResponseInfo> YoutubeVideoComments
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3019,12 +3023,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3041,12 +3045,12 @@ public Task<SerpYoutubeVideoCommentsTasksFixedResponseInfo> YoutubeVideoComments
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3068,12 +3072,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3097,12 +3101,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3128,12 +3132,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3149,16 +3153,16 @@ public Task<SerpYoutubeVideoCommentsLiveAdvancedResponseInfo> YoutubeVideoCommen
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideocommentsliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3175,19 +3179,19 @@ public Task<SerpYoutubeVideoCommentsLiveAdvancedResponseInfo> YoutubeVideoCommen
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpyoutubevideocommentsliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYoutubeVideoCommentsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3204,12 +3208,12 @@ public Task<SerpYahooLocationsResponseInfo> SerpYahooLocationsAsync()
 
 #### Returns
 
-[Task&lt;SerpYahooLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpyahoolocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3230,12 +3234,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpyahoolocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3260,12 +3264,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;SerpYahooLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpyahoolocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3293,12 +3297,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpyahoolocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3314,12 +3318,12 @@ public Task<SerpYahooLanguagesResponseInfo> SerpYahooLanguagesAsync()
 
 #### Returns
 
-[Task&lt;SerpYahooLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpyahoolanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3340,12 +3344,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpyahoolanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3361,16 +3365,16 @@ public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3387,19 +3391,19 @@ public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3416,12 +3420,12 @@ public Task<SerpYahooOrganicTasksReadyResponseInfo> YahooOrganicTasksReadyAsync(
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3443,12 +3447,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3465,12 +3469,12 @@ public Task<SerpYahooOrganicTasksFixedResponseInfo> YahooOrganicTasksFixedAsync(
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3492,12 +3496,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3521,12 +3525,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3552,12 +3556,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3580,12 +3584,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3611,12 +3615,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3639,12 +3643,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3670,12 +3674,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3691,16 +3695,16 @@ public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganicliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3717,19 +3721,19 @@ public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganicliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3746,16 +3750,16 @@ public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganicliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3772,19 +3776,19 @@ public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganicliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3801,16 +3805,16 @@ public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganiclivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3827,19 +3831,19 @@ public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpyahooorganiclivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3856,12 +3860,12 @@ public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync()
 
 #### Returns
 
-[Task&lt;SerpBaiduLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpbaidulocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3882,12 +3886,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpbaidulocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3912,12 +3916,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpbaidulocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3945,12 +3949,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpbaidulocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3966,12 +3970,12 @@ public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync()
 
 #### Returns
 
-[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpbaidulanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3992,12 +3996,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpbaidulanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4013,16 +4017,16 @@ public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpbaiduorganictaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4039,19 +4043,19 @@ public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpbaiduorganictaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4068,12 +4072,12 @@ public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync(
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4095,12 +4099,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4117,12 +4121,12 @@ public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync(
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4144,12 +4148,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4173,12 +4177,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4204,12 +4208,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4232,12 +4236,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4263,12 +4267,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4291,12 +4295,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4322,12 +4326,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4343,16 +4347,16 @@ public Task<SerpIdListResponseInfo> SerpIdListAsync(IEnumerable<SerpIdListReques
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpIdListRequestInfo&gt;](./dataforseo.client.models.requests.serpidlistrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpIdListResponseInfo&gt;](./dataforseo.client.models.responses.serpidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4368,19 +4372,19 @@ public Task<SerpIdListResponseInfo> SerpIdListAsync(IEnumerable<SerpIdListReques
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpIdListRequestInfo&gt;](./dataforseo.client.models.requests.serpidlistrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpIdListResponseInfo&gt;](./dataforseo.client.models.responses.serpidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4396,16 +4400,16 @@ public Task<SerpErrorsResponseInfo> SerpErrorsAsync(IEnumerable<SerpErrorsReques
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpErrorsRequestInfo&gt;](./dataforseo.client.models.requests.serperrorsrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpErrorsResponseInfo&gt;](./dataforseo.client.models.responses.serperrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4421,19 +4425,19 @@ public Task<SerpErrorsResponseInfo> SerpErrorsAsync(IEnumerable<SerpErrorsReques
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpErrorsRequestInfo&gt;](./dataforseo.client.models.requests.serperrorsrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpErrorsResponseInfo&gt;](./dataforseo.client.models.responses.serperrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4449,16 +4453,16 @@ public Task<SerpScreenshotResponseInfo> ScreenshotAsync(IEnumerable<SerpScreensh
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpScreenshotRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpScreenshotRequestInfo&gt;](./dataforseo.client.models.requests.serpscreenshotrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpScreenshotResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpScreenshotResponseInfo&gt;](./dataforseo.client.models.responses.serpscreenshotresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4475,19 +4479,19 @@ public Task<SerpScreenshotResponseInfo> ScreenshotAsync(IEnumerable<SerpScreensh
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpScreenshotRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpScreenshotRequestInfo&gt;](./dataforseo.client.models.requests.serpscreenshotrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpScreenshotResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpScreenshotResponseInfo&gt;](./dataforseo.client.models.responses.serpscreenshotresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4504,16 +4508,16 @@ public Task<SerpAiSummaryResponseInfo> AiSummaryAsync(IEnumerable<SerpAiSummaryR
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpAiSummaryRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpAiSummaryRequestInfo&gt;](./dataforseo.client.models.requests.serpaisummaryrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpAiSummaryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpAiSummaryResponseInfo&gt;](./dataforseo.client.models.responses.serpaisummaryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4531,19 +4535,19 @@ public Task<SerpAiSummaryResponseInfo> AiSummaryAsync(IEnumerable<SerpAiSummaryR
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpAiSummaryRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpAiSummaryRequestInfo&gt;](./dataforseo.client.models.requests.serpaisummaryrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpAiSummaryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpAiSummaryResponseInfo&gt;](./dataforseo.client.models.responses.serpaisummaryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4561,12 +4565,12 @@ public Task<SerpGoogleLocationsResponseInfo> SerpGoogleLocationsAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4587,12 +4591,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4617,12 +4621,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;SerpGoogleLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4650,12 +4654,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4671,12 +4675,12 @@ public Task<SerpGoogleLanguagesResponseInfo> SerpGoogleLanguagesAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4697,12 +4701,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4718,16 +4722,16 @@ public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4744,19 +4748,19 @@ public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4773,12 +4777,12 @@ public Task<SerpGoogleOrganicTasksReadyResponseInfo> GoogleOrganicTasksReadyAsyn
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4800,12 +4804,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4822,12 +4826,12 @@ public Task<SerpGoogleOrganicTasksFixedResponseInfo> GoogleOrganicTasksFixedAsyn
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4849,12 +4853,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4878,12 +4882,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4909,12 +4913,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskGetRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskgetregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4937,12 +4941,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4968,12 +4972,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -4996,12 +5000,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5027,12 +5031,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5048,16 +5052,16 @@ public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganicliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5074,19 +5078,19 @@ public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganicliveregularresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5103,16 +5107,16 @@ public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvanced
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganicliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5129,19 +5133,19 @@ public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvanced
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganicliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5158,16 +5162,16 @@ public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganiclivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5184,19 +5188,19 @@ public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IE
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleOrganicLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleOrganicLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganiclivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5213,16 +5217,16 @@ public Task<SerpGoogleMapsTaskPostResponseInfo> GoogleMapsTaskPostAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglemapstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5239,19 +5243,19 @@ public Task<SerpGoogleMapsTaskPostResponseInfo> GoogleMapsTaskPostAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglemapstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5268,12 +5272,12 @@ public Task<SerpGoogleMapsTasksReadyResponseInfo> GoogleMapsTasksReadyAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5295,12 +5299,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5317,12 +5321,12 @@ public Task<SerpGoogleMapsTasksFixedResponseInfo> GoogleMapsTasksFixedAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5344,12 +5348,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5374,12 +5378,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5406,12 +5410,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5427,16 +5431,16 @@ public Task<SerpGoogleMapsLiveAdvancedResponseInfo> GoogleMapsLiveAdvancedAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglemapsliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5453,19 +5457,19 @@ public Task<SerpGoogleMapsLiveAdvancedResponseInfo> GoogleMapsLiveAdvancedAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglemapsliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleMapsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleMapsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglemapsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5482,16 +5486,16 @@ public Task<SerpGoogleLocalFinderTaskPostResponseInfo> GoogleLocalFinderTaskPost
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglelocalfindertaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5508,19 +5512,19 @@ public Task<SerpGoogleLocalFinderTaskPostResponseInfo> GoogleLocalFinderTaskPost
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglelocalfindertaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5537,12 +5541,12 @@ public Task<SerpGoogleLocalFinderTasksReadyResponseInfo> GoogleLocalFinderTasksR
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5564,12 +5568,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5586,12 +5590,12 @@ public Task<SerpGoogleLocalFinderTasksFixedResponseInfo> GoogleLocalFinderTasksF
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5613,12 +5617,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5643,12 +5647,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5675,12 +5679,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5703,12 +5707,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5734,12 +5738,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5755,16 +5759,16 @@ public Task<SerpGoogleLocalFinderLiveAdvancedResponseInfo> GoogleLocalFinderLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglelocalfinderliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfinderliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5781,19 +5785,19 @@ public Task<SerpGoogleLocalFinderLiveAdvancedResponseInfo> GoogleLocalFinderLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglelocalfinderliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfinderliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5810,16 +5814,16 @@ public Task<SerpGoogleLocalFinderLiveHtmlResponseInfo> GoogleLocalFinderLiveHtml
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglelocalfinderlivehtmlrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfinderlivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5836,19 +5840,19 @@ public Task<SerpGoogleLocalFinderLiveHtmlResponseInfo> GoogleLocalFinderLiveHtml
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglelocalfinderlivehtmlrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleLocalFinderLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleLocalFinderLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfinderlivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5865,16 +5869,16 @@ public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5891,19 +5895,19 @@ public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5920,12 +5924,12 @@ public Task<SerpGoogleNewsTasksReadyResponseInfo> GoogleNewsTasksReadyAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5947,12 +5951,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5969,12 +5973,12 @@ public Task<SerpGoogleNewsTasksFixedResponseInfo> GoogleNewsTasksFixedAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -5996,12 +6000,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6025,12 +6029,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6056,12 +6060,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6084,12 +6088,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6115,12 +6119,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6136,16 +6140,16 @@ public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6162,19 +6166,19 @@ public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6191,16 +6195,16 @@ public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewslivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6217,19 +6221,19 @@ public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleNewsLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleNewsLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglenewslivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6246,16 +6250,16 @@ public Task<SerpGoogleEventsTaskPostResponseInfo> GoogleEventsTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogleeventstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6272,19 +6276,19 @@ public Task<SerpGoogleEventsTaskPostResponseInfo> GoogleEventsTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogleeventstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6301,12 +6305,12 @@ public Task<SerpGoogleEventsTasksReadyResponseInfo> GoogleEventsTasksReadyAsync(
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6328,12 +6332,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6350,12 +6354,12 @@ public Task<SerpGoogleEventsTasksFixedResponseInfo> GoogleEventsTasksFixedAsync(
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6377,12 +6381,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6406,12 +6410,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6437,12 +6441,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6458,16 +6462,16 @@ public Task<SerpGoogleEventsLiveAdvancedResponseInfo> GoogleEventsLiveAdvancedAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogleeventsliveadvancedrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6484,19 +6488,19 @@ public Task<SerpGoogleEventsLiveAdvancedResponseInfo> GoogleEventsLiveAdvancedAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogleeventsliveadvancedrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleEventsLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleEventsLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleeventsliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6513,16 +6517,16 @@ public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6539,19 +6543,19 @@ public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6568,12 +6572,12 @@ public Task<SerpGoogleImagesTasksReadyResponseInfo> GoogleImagesTasksReadyAsync(
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6595,12 +6599,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6617,12 +6621,12 @@ public Task<SerpGoogleImagesTasksFixedResponseInfo> GoogleImagesTasksFixedAsync(
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6644,12 +6648,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6673,12 +6677,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6704,12 +6708,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6732,12 +6736,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6763,12 +6767,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagestaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6784,16 +6788,16 @@ public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagesliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6810,19 +6814,19 @@ public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesLiveAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimagesliveadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6839,16 +6843,16 @@ public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimageslivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6865,19 +6869,19 @@ public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnu
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./dataforseo.client.models.requests.serptaskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleImagesLiveHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleImagesLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogleimageslivehtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6894,16 +6898,16 @@ public Task<SerpGoogleSearchByImageTaskPostResponseInfo> GoogleSearchByImageTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglesearchbyimagetaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6920,19 +6924,19 @@ public Task<SerpGoogleSearchByImageTaskPostResponseInfo> GoogleSearchByImageTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglesearchbyimagetaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6949,12 +6953,12 @@ public Task<SerpGoogleSearchByImageTasksReadyResponseInfo> GoogleSearchByImageTa
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6976,12 +6980,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -6998,12 +7002,12 @@ public Task<SerpGoogleSearchByImageTasksFixedResponseInfo> GoogleSearchByImageTa
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7025,12 +7029,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7054,12 +7058,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7085,12 +7089,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleSearchByImageTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleSearchByImageTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7106,16 +7110,16 @@ public Task<SerpGoogleJobsTaskPostResponseInfo> GoogleJobsTaskPostAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglejobstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7132,19 +7136,19 @@ public Task<SerpGoogleJobsTaskPostResponseInfo> GoogleJobsTaskPostAsync(IEnumera
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgooglejobstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7161,12 +7165,12 @@ public Task<SerpGoogleJobsTasksReadyResponseInfo> GoogleJobsTasksReadyAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7188,12 +7192,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7210,12 +7214,12 @@ public Task<SerpGoogleJobsTasksFixedResponseInfo> GoogleJobsTasksFixedAsync()
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7237,12 +7241,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7266,12 +7270,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7297,12 +7301,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7325,12 +7329,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7356,12 +7360,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleJobsTaskGetHtmlResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleJobsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskgethtmlresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7377,16 +7381,16 @@ public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetsearchtaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7403,19 +7407,19 @@ public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.serpgoogledatasetsearchtaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7432,12 +7436,12 @@ public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTa
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7459,12 +7463,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7481,12 +7485,12 @@ public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTa
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7508,12 +7512,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtasksfixedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7537,12 +7541,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -7568,15 +7572,19 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.serpgoogledatasetsearchtaskgetadvancedresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
 
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
+
+---
+
+[`< Back`](./)

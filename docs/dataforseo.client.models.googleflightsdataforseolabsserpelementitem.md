@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # GoogleFlightsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleFlightsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [GoogleFlightsDataforseoLabsSerpElementItem](./dataforseo.client.models.googleflightsdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [GoogleFlightsDataforseoLabsSerpElementItem](./dataforseo.client.models.googleflightsdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -96,7 +100,7 @@ public ICollection<GoogleFlightsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;GoogleFlightsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;GoogleFlightsElement&gt;](./dataforseo.client.models.googleflightselement)<br>
 
 ### **AdditionalProperties**
 
@@ -115,3 +119,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleFlightsDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

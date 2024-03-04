@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentAnalysisIdListRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class ContentAnalysisIdListRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisIdListRequestInfo](./dataforseo.client.models.requests.contentanalysisidlistrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisIdListRequestInfo](./dataforseo.client.models.requests.contentanalysisidlistrequestinfo)
 
 ## Properties
 
@@ -121,3 +125,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisIdListRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

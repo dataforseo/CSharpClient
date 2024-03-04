@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AmazonAmazonSerpSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonAmazonSerpSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonAmazonSerpSerpElementItem](./dataforseo.client.models.amazonamazonserpserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonAmazonSerpSerpElementItem](./dataforseo.client.models.amazonamazonserpserpelementitem)
 
 ## Properties
 
@@ -239,7 +243,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
+[RatingElement](./dataforseo.client.models.ratingelement)<br>
 
 ### **DeliveryInfo**
 
@@ -252,7 +256,7 @@ public AmazonDeliveryInfo DeliveryInfo { get; set; }
 
 #### Property Value
 
-[AmazonDeliveryInfo](./dataforseo.client.models.amazondeliveryinfo.md)<br>
+[AmazonDeliveryInfo](./dataforseo.client.models.amazondeliveryinfo)<br>
 
 ### **BoughtPastMonth**
 
@@ -298,3 +302,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonAmazonSerpSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

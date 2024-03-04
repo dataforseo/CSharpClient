@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataTaskRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataTaskRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTaskRequestInfo](./dataforseo.client.models.requests.businessdatataskrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTaskRequestInfo](./dataforseo.client.models.requests.businessdatataskrequestinfo)
 
 ## Properties
 
@@ -214,3 +218,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTaskRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

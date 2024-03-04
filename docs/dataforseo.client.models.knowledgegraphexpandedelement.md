@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KnowledgeGraphExpandedElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class KnowledgeGraphExpandedElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KnowledgeGraphExpandedElement](./dataforseo.client.models.knowledgegraphexpandedelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KnowledgeGraphExpandedElement](./dataforseo.client.models.knowledgegraphexpandedelement)
 
 ## Properties
 
@@ -92,7 +96,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
 
 ### **Timestamp**
 
@@ -119,7 +123,7 @@ public Table Table { get; set; }
 
 #### Property Value
 
-[Table](./dataforseo.client.models.table.md)<br>
+[Table](./dataforseo.client.models.table)<br>
 
 ### **AdditionalProperties**
 
@@ -138,3 +142,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KnowledgeGraphExpandedElement()
 ```
+
+---
+
+[`< Back`](./)

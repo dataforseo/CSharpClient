@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksBulkNewLostReferringDomainsLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksBulkNewLostReferringDomainsLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BacklinksBulkNewLostReferringDomainsLiveResponseInfo](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainsliveresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BacklinksBulkNewLostReferringDomainsLiveResponseInfo](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainsliveresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BacklinksBulkNewLostReferringDomainsLiveTaskInfo> Tasks { get
 
 #### Property Value
 
-[ICollection&lt;BacklinksBulkNewLostReferringDomainsLiveTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BacklinksBulkNewLostReferringDomainsLiveTaskInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainslivetaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkNewLostReferringDomainsLiveResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

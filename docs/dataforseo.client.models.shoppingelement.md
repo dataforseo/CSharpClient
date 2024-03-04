@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ShoppingElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ShoppingElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ShoppingElement](./dataforseo.client.models.shoppingelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ShoppingElement](./dataforseo.client.models.shoppingelement)
 
 ## Properties
 
@@ -44,7 +48,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo)<br>
 
 ### **Source**
 
@@ -128,3 +132,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ShoppingElement()
 ```
+
+---
+
+[`< Back`](./)

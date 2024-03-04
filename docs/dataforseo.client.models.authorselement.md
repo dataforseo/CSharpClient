@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AuthorsElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AuthorsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AuthorsElement](./dataforseo.client.models.authorselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AuthorsElement](./dataforseo.client.models.authorselement)
 
 ## Properties
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AuthorsElement()
 ```
+
+---
+
+[`< Back`](./)

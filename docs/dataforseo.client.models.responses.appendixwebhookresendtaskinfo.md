@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixWebhookResendTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppendixWebhookResendTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppendixWebhookResendTaskInfo](./dataforseo.client.models.responses.appendixwebhookresendtaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppendixWebhookResendTaskInfo](./dataforseo.client.models.responses.appendixwebhookresendtaskinfo)
 
 ## Properties
 
@@ -141,3 +145,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixWebhookResendTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

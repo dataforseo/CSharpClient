@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBingOrganicLiveRegularResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingOrganicLiveRegularResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBingOrganicLiveRegularResultInfo](./dataforseo.client.models.responses.serpbingorganicliveregularresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBingOrganicLiveRegularResultInfo](./dataforseo.client.models.responses.serpbingorganicliveregularresultinfo)
 
 ## Properties
 
@@ -110,7 +114,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo)<br>
 
 ### **ItemTypes**
 
@@ -161,7 +165,7 @@ public ICollection<BaseSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseSerpElementItem&gt;](./dataforseo.client.models.baseserpelementitem)<br>
 
 ### **AdditionalProperties**
 
@@ -180,3 +184,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingOrganicLiveRegularResultInfo()
 ```
+
+---
+
+[`< Back`](./)

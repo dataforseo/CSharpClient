@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageDuplicateTagsItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageDuplicateTagsItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateTagsItem](./dataforseo.client.models.onpageduplicatetagsitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateTagsItem](./dataforseo.client.models.onpageduplicatetagsitem)
 
 ## Properties
 
@@ -44,7 +48,7 @@ public ICollection<BaseOnPageResourceItemInfo> Pages { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseOnPageResourceItemInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo)<br>
 
 ### **AdditionalProperties**
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateTagsItem()
 ```
+
+---
+
+[`< Back`](./)

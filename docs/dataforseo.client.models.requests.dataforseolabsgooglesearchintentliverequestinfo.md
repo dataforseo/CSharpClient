@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleSearchIntentLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsGoogleSearchIntentLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleSearchIntentLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglesearchintentliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleSearchIntentLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglesearchintentliverequestinfo)
 
 ## Properties
 
@@ -117,3 +121,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleSearchIntentLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

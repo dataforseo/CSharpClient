@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ApiException&lt;TResult&gt;
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +14,7 @@ public class ApiException<TResult> : ApiException, System.Runtime.Serialization.
 
 `TResult`<br>
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) → [ApiException](./dataforseo.client.models.apiexception.md) → [ApiException&lt;TResult&gt;](./dataforseo.client.models.apiexception-1.md)<br>
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) → [ApiException](./dataforseo.client.models.apiexception) → [ApiException&lt;TResult&gt;](./dataforseo.client.models.apiexception-1)<br>
 Implements [ISerializable](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.iserializable)
 
 ## Properties
@@ -156,3 +160,7 @@ public ApiException(string message, int statusCode, string response, IReadOnlyDi
 `result` TResult<br>
 
 `innerException` [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)<br>
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PodcastsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PodcastsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [PodcastsDataforseoLabsSerpElementItem](./dataforseo.client.models.podcastsdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [PodcastsDataforseoLabsSerpElementItem](./dataforseo.client.models.podcastsdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -72,7 +76,7 @@ public ICollection<PodcastsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;PodcastsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;PodcastsElement&gt;](./dataforseo.client.models.podcastselement)<br>
 
 ### **AdditionalProperties**
 
@@ -91,3 +95,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PodcastsDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

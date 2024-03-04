@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAppleAppCompetitorsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsAppleAppCompetitorsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleAppCompetitorsLiveItem](./dataforseo.client.models.dataforseolabsappleappcompetitorsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleAppCompetitorsLiveItem](./dataforseo.client.models.dataforseolabsappleappcompetitorsliveitem)
 
 ## Properties
 
@@ -86,7 +90,7 @@ public AppStoreMetricsBundleInfo CompetitorMetrics { get; set; }
 
 #### Property Value
 
-[AppStoreMetricsBundleInfo](./dataforseo.client.models.appstoremetricsbundleinfo.md)<br>
+[AppStoreMetricsBundleInfo](./dataforseo.client.models.appstoremetricsbundleinfo)<br>
 
 ### **FullMetrics**
 
@@ -99,7 +103,7 @@ public AppStoreMetricsBundleInfo FullMetrics { get; set; }
 
 #### Property Value
 
-[AppStoreMetricsBundleInfo](./dataforseo.client.models.appstoremetricsbundleinfo.md)<br>
+[AppStoreMetricsBundleInfo](./dataforseo.client.models.appstoremetricsbundleinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -118,3 +122,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleAppCompetitorsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

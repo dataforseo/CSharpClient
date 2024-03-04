@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MathSolverExpandedElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MathSolverExpandedElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MathSolverExpandedElement](./dataforseo.client.models.mathsolverexpandedelement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MathSolverExpandedElement](./dataforseo.client.models.mathsolverexpandedelement)
 
 ## Properties
 
@@ -64,3 +68,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MathSolverExpandedElement()
 ```
+
+---
+
+[`< Back`](./)

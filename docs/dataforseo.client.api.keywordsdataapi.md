@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordsDataApi
 
 Namespace: DataForSeo.Client.Api
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Api
 public class KeywordsDataApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataApi](./dataforseo.client.api.keywordsdataapi.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataApi](./dataforseo.client.api.keywordsdataapi)
 
 ## Properties
 
@@ -52,16 +56,16 @@ public Task<KeywordsDataIdListResponseInfo> KeywordsDataIdListAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdataidlistrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdataidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -77,19 +81,19 @@ public Task<KeywordsDataIdListResponseInfo> KeywordsDataIdListAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdataidlistrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataIdListResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdataidlistresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -105,16 +109,16 @@ public Task<KeywordsDataErrorsResponseInfo> KeywordsDataErrorsAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdataerrorsrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdataerrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -130,19 +134,19 @@ public Task<KeywordsDataErrorsResponseInfo> KeywordsDataErrorsAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdataerrorsrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataErrorsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdataerrorsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -158,12 +162,12 @@ public Task<KeywordsDataGoogleAdsStatusResponseInfo> GoogleAdsStatusAsync()
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsStatusResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsStatusResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsstatusresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -185,12 +189,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsStatusResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsStatusResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsstatusresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -207,12 +211,12 @@ public Task<KeywordsDataGoogleAdsLocationsResponseInfo> KeywordsDataGoogleAdsLoc
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadslocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -235,12 +239,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadslocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -258,12 +262,12 @@ public Task<KeywordsDataGoogleAdsLanguagesResponseInfo> KeywordsDataGoogleAdsLan
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadslanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -286,12 +290,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadslanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -309,16 +313,16 @@ public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSear
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -335,19 +339,19 @@ public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSear
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -364,12 +368,12 @@ public Task<KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo> GoogleAdsSe
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -391,12 +395,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -420,12 +424,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -452,12 +456,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -474,16 +478,16 @@ public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVo
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -500,19 +504,19 @@ public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVo
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -529,16 +533,16 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo> GoogleAdsK
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadskeywordsforsitetaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsitetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -554,19 +558,19 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo> GoogleAdsK
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadskeywordsforsitetaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsitetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -582,12 +586,12 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo> GoogleAd
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsitetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -609,12 +613,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsitetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -638,12 +642,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsitetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -672,12 +676,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsitetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -696,16 +700,16 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo> GoogleAdsKeywo
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadskeywordsforsiteliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsiteliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -723,19 +727,19 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo> GoogleAdsKeywo
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadskeywordsforsiteliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforsiteliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -753,16 +757,16 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo> Google
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadskeywordsforkeywordstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -780,19 +784,19 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo> Google
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadskeywordsforkeywordstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -810,12 +814,12 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo> Goog
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -837,12 +841,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -866,12 +870,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -899,12 +903,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordstaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -922,16 +926,16 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsK
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -949,19 +953,19 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsK
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadskeywordsforkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -979,16 +983,16 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo> Google
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadsadtrafficbykeywordstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1003,19 +1007,19 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo> Google
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadsadtrafficbykeywordstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1030,12 +1034,12 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo> Goog
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1057,12 +1061,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1086,12 +1090,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordstaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1116,12 +1120,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordstaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1136,16 +1140,16 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo> GoogleAdsA
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadsadtrafficbykeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1160,19 +1164,19 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo> GoogleAdsA
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogleadsadtrafficbykeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadsadtrafficbykeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1187,12 +1191,12 @@ public Task<KeywordsDataGoogleTrendsLocationsResponseInfo> KeywordsDataGoogleTre
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendslocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1213,12 +1217,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendslocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1243,12 +1247,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendslocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1276,12 +1280,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsLocationsCountryResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendslocationscountryresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1297,12 +1301,12 @@ public Task<KeywordsDataGoogleTrendsLanguagesResponseInfo> KeywordsDataGoogleTre
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendslanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1325,12 +1329,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendslanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1348,12 +1352,12 @@ public Task<KeywordsDataGoogleTrendsCategoriesResponseInfo> GoogleTrendsCategori
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsCategoriesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendscategoriesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1376,12 +1380,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsCategoriesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendscategoriesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1399,16 +1403,16 @@ public Task<KeywordsDataGoogleTrendsExploreTaskPostResponseInfo> GoogleTrendsExp
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogletrendsexploretaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1425,19 +1429,19 @@ public Task<KeywordsDataGoogleTrendsExploreTaskPostResponseInfo> GoogleTrendsExp
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogletrendsexploretaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1454,12 +1458,12 @@ public Task<KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo> GoogleTrendsE
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1481,12 +1485,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1510,12 +1514,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1541,12 +1545,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1562,16 +1566,16 @@ public Task<KeywordsDataGoogleTrendsExploreLiveResponseInfo> GoogleTrendsExplore
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogletrendsexploreliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploreliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1587,19 +1591,19 @@ public Task<KeywordsDataGoogleTrendsExploreLiveResponseInfo> GoogleTrendsExplore
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatagoogletrendsexploreliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataGoogleTrendsExploreLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataGoogleTrendsExploreLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploreliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1615,12 +1619,12 @@ public Task<KeywordsDataBingLocationsResponseInfo> KeywordsDataBingLocationsAsyn
 
 #### Returns
 
-[Task&lt;KeywordsDataBingLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingLocationsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1641,12 +1645,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingLocationsResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingLocationsResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglocationsresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1662,12 +1666,12 @@ public Task<KeywordsDataBingLanguagesResponseInfo> KeywordsDataBingLanguagesAsyn
 
 #### Returns
 
-[Task&lt;KeywordsDataBingLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1688,12 +1692,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1709,16 +1713,16 @@ public Task<KeywordsDataBingSearchVolumeTaskPostResponseInfo> BingSearchVolumeTa
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingsearchvolumetaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1735,19 +1739,19 @@ public Task<KeywordsDataBingSearchVolumeTaskPostResponseInfo> BingSearchVolumeTa
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingsearchvolumetaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1764,12 +1768,12 @@ public Task<KeywordsDataBingSearchVolumeTasksReadyResponseInfo> BingSearchVolume
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1791,12 +1795,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1820,12 +1824,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1851,12 +1855,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1872,16 +1876,16 @@ public Task<KeywordsDataBingSearchVolumeLiveResponseInfo> BingSearchVolumeLiveAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingsearchvolumeliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1897,19 +1901,19 @@ public Task<KeywordsDataBingSearchVolumeLiveResponseInfo> BingSearchVolumeLiveAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingsearchvolumeliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingSearchVolumeLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingSearchVolumeLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumeliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1925,16 +1929,16 @@ public Task<KeywordsDataBingKeywordsForSiteTaskPostResponseInfo> BingKeywordsFor
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforsitetaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1950,19 +1954,19 @@ public Task<KeywordsDataBingKeywordsForSiteTaskPostResponseInfo> BingKeywordsFor
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforsitetaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1978,12 +1982,12 @@ public Task<KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo> BingKeywordsF
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2005,12 +2009,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2034,12 +2038,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2066,12 +2070,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2088,16 +2092,16 @@ public Task<KeywordsDataBingKeywordsForSiteLiveResponseInfo> BingKeywordsForSite
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforsiteliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsiteliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2113,19 +2117,19 @@ public Task<KeywordsDataBingKeywordsForSiteLiveResponseInfo> BingKeywordsForSite
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforsiteliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForSiteLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForSiteLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsiteliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2141,16 +2145,16 @@ public Task<KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo> BingKeyword
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforkeywordstaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2167,19 +2171,19 @@ public Task<KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo> BingKeyword
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforkeywordstaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2196,12 +2200,12 @@ public Task<KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo> BingKeywo
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2223,12 +2227,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2252,12 +2256,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2284,12 +2288,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2306,16 +2310,16 @@ public Task<KeywordsDataBingKeywordsForKeywordsLiveResponseInfo> BingKeywordsFor
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforkeywordsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2332,19 +2336,19 @@ public Task<KeywordsDataBingKeywordsForKeywordsLiveResponseInfo> BingKeywordsFor
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordsforkeywordsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordsForKeywordsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordsForKeywordsLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2361,12 +2365,12 @@ public Task<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2388,12 +2392,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancelocationsandlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2410,16 +2414,16 @@ public Task<KeywordsDataBingKeywordPerformanceTaskPostResponseInfo> BingKeywordP
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordperformancetaskpostrequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2436,19 +2440,19 @@ public Task<KeywordsDataBingKeywordPerformanceTaskPostResponseInfo> BingKeywordP
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordperformancetaskpostrequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceTaskPostResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetaskpostresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2465,12 +2469,12 @@ public Task<KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo> BingKeywor
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2492,12 +2496,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetasksreadyresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2521,12 +2525,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2553,12 +2557,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceTaskGetResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformancetaskgetresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2575,16 +2579,16 @@ public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerfo
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordperformanceliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformanceliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2601,19 +2605,19 @@ public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerfo
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](./dataforseo.client.models.requests.keywordsdatabingkeywordperformanceliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordperformanceliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2643,3 +2647,7 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+
+---
+
+[`< Back`](./)

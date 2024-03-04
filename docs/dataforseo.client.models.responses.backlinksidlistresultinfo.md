@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksIdListResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksIdListResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksIdListResultInfo](./dataforseo.client.models.responses.backlinksidlistresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksIdListResultInfo](./dataforseo.client.models.responses.backlinksidlistresultinfo)
 
 ## Properties
 
@@ -119,3 +123,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksIdListResultInfo()
 ```
+
+---
+
+[`< Back`](./)

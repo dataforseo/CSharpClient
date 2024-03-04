@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo](./dataforseo.client.models.requests.businessdatagooglehotelinfoliveadvancedrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo](./dataforseo.client.models.requests.businessdatagooglehotelinfoliveadvancedrequestinfo)
 
 ## Properties
 
@@ -233,3 +237,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

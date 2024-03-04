@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentGenerationParaphraseLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationParaphraseLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationParaphraseLiveResultInfo](./dataforseo.client.models.responses.contentgenerationparaphraseliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationParaphraseLiveResultInfo](./dataforseo.client.models.responses.contentgenerationparaphraseliveresultinfo)
 
 ## Properties
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationParaphraseLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

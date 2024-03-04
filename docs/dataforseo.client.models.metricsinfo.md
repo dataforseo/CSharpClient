@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MetricsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MetricsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MetricsInfo](./dataforseo.client.models.metricsinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MetricsInfo](./dataforseo.client.models.metricsinfo)
 
 ## Properties
 
@@ -280,3 +284,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MetricsInfo()
 ```
+
+---
+
+[`< Back`](./)

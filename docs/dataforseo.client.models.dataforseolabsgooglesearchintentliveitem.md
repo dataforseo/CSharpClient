@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleSearchIntentLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleSearchIntentLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleSearchIntentLiveItem](./dataforseo.client.models.dataforseolabsgooglesearchintentliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleSearchIntentLiveItem](./dataforseo.client.models.dataforseolabsgooglesearchintentliveitem)
 
 ## Properties
 
@@ -32,7 +36,7 @@ public KeywordIntentInfo KeywordIntent { get; set; }
 
 #### Property Value
 
-[KeywordIntentInfo](./dataforseo.client.models.keywordintentinfo.md)<br>
+[KeywordIntentInfo](./dataforseo.client.models.keywordintentinfo)<br>
 
 ### **SecondaryKeywordIntents**
 
@@ -44,7 +48,7 @@ public ICollection<KeywordIntentInfo> SecondaryKeywordIntents { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordIntentInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordIntentInfo&gt;](./dataforseo.client.models.keywordintentinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleSearchIntentLiveItem()
 ```
+
+---
+
+[`< Back`](./)

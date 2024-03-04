@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ProductInfoElementMerchantSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductInfoElementMerchantSerpElementItem : BaseMerchantSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem.md) → [ProductInfoElementMerchantSerpElementItem](./dataforseo.client.models.productinfoelementmerchantserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem) → [ProductInfoElementMerchantSerpElementItem](./dataforseo.client.models.productinfoelementmerchantserpelementitem)
 
 ## Properties
 
@@ -137,7 +141,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
+[RatingElement](./dataforseo.client.models.ratingelement)<br>
 
 ### **SellerReviewsCount**
 
@@ -163,7 +167,7 @@ public ICollection<ProductSeller> Sellers { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ProductSeller&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ProductSeller&gt;](./dataforseo.client.models.productseller)<br>
 
 ### **Variations**
 
@@ -176,7 +180,7 @@ public ICollection<ProductVariation> Variations { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ProductVariation&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ProductVariation&gt;](./dataforseo.client.models.productvariation)<br>
 
 ### **AdditionalProperties**
 
@@ -195,3 +199,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductInfoElementMerchantSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

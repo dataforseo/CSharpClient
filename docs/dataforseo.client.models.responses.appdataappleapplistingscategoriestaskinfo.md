@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppleAppListingsCategoriesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleAppListingsCategoriesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataAppleAppListingsCategoriesTaskInfo](./dataforseo.client.models.responses.appdataappleapplistingscategoriestaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataAppleAppListingsCategoriesTaskInfo](./dataforseo.client.models.responses.appdataappleapplistingscategoriestaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<AppDataAppleAppListingsCategoriesResultInfo> Result { get; se
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleAppListingsCategoriesResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AppDataAppleAppListingsCategoriesResultInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingscategoriesresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppListingsCategoriesTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

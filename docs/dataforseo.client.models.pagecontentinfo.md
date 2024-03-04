@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PageContentInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PageContentInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageContentInfo](./dataforseo.client.models.pagecontentinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageContentInfo](./dataforseo.client.models.pagecontentinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public PageSectionContentInfo Header { get; set; }
 
 #### Property Value
 
-[PageSectionContentInfo](./dataforseo.client.models.pagesectioncontentinfo.md)<br>
+[PageSectionContentInfo](./dataforseo.client.models.pagesectioncontentinfo)<br>
 
 ### **Footer**
 
@@ -32,7 +36,7 @@ public PageSectionContentInfo Footer { get; set; }
 
 #### Property Value
 
-[PageSectionContentInfo](./dataforseo.client.models.pagesectioncontentinfo.md)<br>
+[PageSectionContentInfo](./dataforseo.client.models.pagesectioncontentinfo)<br>
 
 ### **MainTopic**
 
@@ -45,7 +49,7 @@ public ICollection<TopicInfo> MainTopic { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopicInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;TopicInfo&gt;](./dataforseo.client.models.topicinfo)<br>
 
 ### **SecondaryTopic**
 
@@ -58,7 +62,7 @@ public ICollection<TopicInfo> SecondaryTopic { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopicInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;TopicInfo&gt;](./dataforseo.client.models.topicinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PageContentInfo()
 ```
+
+---
+
+[`< Back`](./)

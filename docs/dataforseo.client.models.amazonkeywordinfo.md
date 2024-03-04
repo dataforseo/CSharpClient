@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AmazonKeywordInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonKeywordInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonKeywordInfo](./dataforseo.client.models.amazonkeywordinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonKeywordInfo](./dataforseo.client.models.amazonkeywordinfo)
 
 ## Properties
 
@@ -66,3 +70,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonKeywordInfo()
 ```
+
+---
+
+[`< Back`](./)

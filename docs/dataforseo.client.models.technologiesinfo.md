@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # TechnologiesInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class TechnologiesInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TechnologiesInfo](./dataforseo.client.models.technologiesinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TechnologiesInfo](./dataforseo.client.models.technologiesinfo)
 
 ## Properties
 
@@ -187,3 +191,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TechnologiesInfo()
 ```
+
+---
+
+[`< Back`](./)

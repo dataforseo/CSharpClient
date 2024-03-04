@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksBulkNewLostReferringDomainsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksBulkNewLostReferringDomainsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkNewLostReferringDomainsLiveItem](./dataforseo.client.models.backlinksbulknewlostreferringdomainsliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkNewLostReferringDomainsLiveItem](./dataforseo.client.models.backlinksbulknewlostreferringdomainsliveitem)
 
 ## Properties
 
@@ -89,3 +93,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkNewLostReferringDomainsLiveItem()
 ```
+
+---
+
+[`< Back`](./)

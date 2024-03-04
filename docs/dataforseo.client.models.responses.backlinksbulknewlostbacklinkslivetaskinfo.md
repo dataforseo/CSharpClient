@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksBulkNewLostBacklinksLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksBulkNewLostBacklinksLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BacklinksBulkNewLostBacklinksLiveTaskInfo](./dataforseo.client.models.responses.backlinksbulknewlostbacklinkslivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BacklinksBulkNewLostBacklinksLiveTaskInfo](./dataforseo.client.models.responses.backlinksbulknewlostbacklinkslivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BacklinksBulkNewLostBacklinksLiveResultInfo> Result { get; se
 
 #### Property Value
 
-[ICollection&lt;BacklinksBulkNewLostBacklinksLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BacklinksBulkNewLostBacklinksLiveResultInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostbacklinksliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkNewLostBacklinksLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SearchIntentInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class SearchIntentInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SearchIntentInfo](./dataforseo.client.models.searchintentinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SearchIntentInfo](./dataforseo.client.models.searchintentinfo)
 
 ## Properties
 
@@ -81,3 +85,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SearchIntentInfo()
 ```
+
+---
+
+[`< Back`](./)

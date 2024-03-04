@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataAppleLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleLanguagesResultInfo](./dataforseo.client.models.responses.appdataapplelanguagesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleLanguagesResultInfo](./dataforseo.client.models.responses.appdataapplelanguagesresultinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleLanguagesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

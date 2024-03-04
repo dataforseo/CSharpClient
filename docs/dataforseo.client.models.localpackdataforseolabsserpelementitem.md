@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # LocalPackDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalPackDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [LocalPackDataforseoLabsSerpElementItem](./dataforseo.client.models.localpackdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [LocalPackDataforseoLabsSerpElementItem](./dataforseo.client.models.localpackdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -145,7 +149,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **MainDomain**
 
@@ -228,7 +232,7 @@ public RankChanges RankChanges { get; set; }
 
 #### Property Value
 
-[RankChanges](./dataforseo.client.models.rankchanges.md)<br>
+[RankChanges](./dataforseo.client.models.rankchanges)<br>
 
 ### **SeType**
 
@@ -252,7 +256,7 @@ public AvgBacklinksInfo BacklinksInfo { get; set; }
 
 #### Property Value
 
-[AvgBacklinksInfo](./dataforseo.client.models.avgbacklinksinfo.md)<br>
+[AvgBacklinksInfo](./dataforseo.client.models.avgbacklinksinfo)<br>
 
 ### **RankInfo**
 
@@ -264,7 +268,7 @@ public RankInfo RankInfo { get; set; }
 
 #### Property Value
 
-[RankInfo](./dataforseo.client.models.rankinfo.md)<br>
+[RankInfo](./dataforseo.client.models.rankinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -283,3 +287,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalPackDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

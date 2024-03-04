@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpGoogleImagesLiveHtmlResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleImagesLiveHtmlResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleImagesLiveHtmlResultInfo](./dataforseo.client.models.responses.serpgoogleimageslivehtmlresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleImagesLiveHtmlResultInfo](./dataforseo.client.models.responses.serpgoogleimageslivehtmlresultinfo)
 
 ## Properties
 
@@ -108,7 +112,7 @@ public ICollection<HtmlItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HtmlItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem)<br>
 
 ### **AdditionalProperties**
 
@@ -127,3 +131,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleImagesLiveHtmlResultInfo()
 ```
+
+---
+
+[`< Back`](./)

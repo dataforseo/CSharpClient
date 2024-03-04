@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixDataforseoLabsLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixDataforseoLabsLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixDataforseoLabsLimitsRatesDataInfo](./dataforseo.client.models.appendixdataforseolabslimitsratesdatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixDataforseoLabsLimitsRatesDataInfo](./dataforseo.client.models.appendixdataforseolabslimitsratesdatainfo)
 
 ## Properties
 
@@ -48,7 +52,7 @@ public AppendixInfo ProductCompetitors { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **ProductKeywordIntersections**
 
@@ -58,7 +62,7 @@ public AppendixInfo ProductKeywordIntersections { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **ProductRankOverview**
 
@@ -68,7 +72,7 @@ public AppendixInfo ProductRankOverview { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **RankedKeywords**
 
@@ -78,7 +82,7 @@ public AppendixInfo RankedKeywords { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **SerpCompetitors**
 
@@ -88,7 +92,7 @@ public AppendixInfo SerpCompetitors { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **Subdomains**
 
@@ -98,7 +102,7 @@ public AppendixInfo Subdomains { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **RelevantPages**
 
@@ -108,7 +112,7 @@ public AppendixInfo RelevantPages { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **CompetitorsDomain**
 
@@ -118,7 +122,7 @@ public AppendixInfo CompetitorsDomain { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **RelatedKeywords**
 
@@ -128,7 +132,7 @@ public AppendixInfo RelatedKeywords { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **DomainRankOverview**
 
@@ -138,7 +142,7 @@ public AppendixInfo DomainRankOverview { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **DomainIntersection**
 
@@ -148,7 +152,7 @@ public AppendixInfo DomainIntersection { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **PageIntersection**
 
@@ -158,7 +162,7 @@ public AppendixInfo PageIntersection { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **BulkTrafficEstimation**
 
@@ -168,7 +172,7 @@ public AppendixInfo BulkTrafficEstimation { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **BulkKeywordDifficulty**
 
@@ -178,7 +182,7 @@ public AppendixInfo BulkKeywordDifficulty { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **BulkSearchVolume**
 
@@ -188,7 +192,7 @@ public AppendixInfo BulkSearchVolume { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordsForSite**
 
@@ -198,7 +202,7 @@ public AppendixInfo KeywordsForSite { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordSuggestions**
 
@@ -208,7 +212,7 @@ public AppendixInfo KeywordSuggestions { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordIdeas**
 
@@ -218,7 +222,7 @@ public AppendixInfo KeywordIdeas { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **HistoricalSearchVolume**
 
@@ -228,7 +232,7 @@ public AppendixInfo HistoricalSearchVolume { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **CategoriesForDomain**
 
@@ -238,7 +242,7 @@ public AppendixInfo CategoriesForDomain { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **DomainMetricsByCategories**
 
@@ -248,7 +252,7 @@ public AppendixInfo DomainMetricsByCategories { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **TopSearches**
 
@@ -258,7 +262,7 @@ public AppendixInfo TopSearches { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **DomainWhoisOverview**
 
@@ -268,7 +272,7 @@ public AppendixInfo DomainWhoisOverview { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **HistoricalRankOverview**
 
@@ -278,7 +282,7 @@ public AppendixInfo HistoricalRankOverview { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordsForCategories**
 
@@ -288,7 +292,7 @@ public AppendixInfo KeywordsForCategories { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **HistoricalSerps**
 
@@ -298,7 +302,7 @@ public AppendixInfo HistoricalSerps { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **AppCompetitors**
 
@@ -308,7 +312,7 @@ public AppendixInfo AppCompetitors { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **KeywordsForApp**
 
@@ -318,7 +322,7 @@ public AppendixInfo KeywordsForApp { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **AppIntersection**
 
@@ -328,7 +332,7 @@ public AppendixInfo AppIntersection { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **BulkAppMetrics**
 
@@ -338,7 +342,7 @@ public AppendixInfo BulkAppMetrics { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **SearchIntent**
 
@@ -348,7 +352,7 @@ public AppendixInfo SearchIntent { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -367,3 +371,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixDataforseoLabsLimitsRatesDataInfo()
 ```
+
+---
+
+[`< Back`](./)

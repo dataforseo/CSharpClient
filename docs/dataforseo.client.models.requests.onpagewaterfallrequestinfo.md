@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageWaterfallRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageWaterfallRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageWaterfallRequestInfo](./dataforseo.client.models.requests.onpagewaterfallrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageWaterfallRequestInfo](./dataforseo.client.models.requests.onpagewaterfallrequestinfo)
 
 ## Properties
 
@@ -73,3 +77,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageWaterfallRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

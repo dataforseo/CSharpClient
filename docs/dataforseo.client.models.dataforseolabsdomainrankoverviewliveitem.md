@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsDomainRankOverviewLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsDomainRankOverviewLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsDomainRankOverviewLiveItem](./dataforseo.client.models.dataforseolabsdomainrankoverviewliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsDomainRankOverviewLiveItem](./dataforseo.client.models.dataforseolabsdomainrankoverviewliveitem)
 
 ## Properties
 
@@ -75,3 +79,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsDomainRankOverviewLiveItem()
 ```
+
+---
+
+[`< Back`](./)

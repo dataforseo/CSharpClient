@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # FindResultsOnDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class FindResultsOnDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [FindResultsOnDataforseoLabsSerpElementItem](./dataforseo.client.models.findresultsondataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [FindResultsOnDataforseoLabsSerpElementItem](./dataforseo.client.models.findresultsondataforseolabsserpelementitem)
 
 ## Properties
 
@@ -72,7 +76,7 @@ public ICollection<ShortVideosElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ShortVideosElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ShortVideosElement&gt;](./dataforseo.client.models.shortvideoselement)<br>
 
 ### **AdditionalProperties**
 
@@ -91,3 +95,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public FindResultsOnDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

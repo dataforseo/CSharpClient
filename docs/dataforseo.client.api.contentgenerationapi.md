@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentGenerationApi
 
 Namespace: DataForSeo.Client.Api
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Api
 public class ContentGenerationApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationApi](./dataforseo.client.api.contentgenerationapi.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentGenerationApi](./dataforseo.client.api.contentgenerationapi)
 
 ## Properties
 
@@ -52,16 +56,16 @@ public Task<ContentGenerationGenerateLiveResponseInfo> GenerateLiveAsync(IEnumer
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgenerateliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgenerateliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -78,19 +82,19 @@ public Task<ContentGenerationGenerateLiveResponseInfo> GenerateLiveAsync(IEnumer
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgenerateliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgenerateliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -107,16 +111,16 @@ public Task<ContentGenerationGenerateTextLiveResponseInfo> GenerateTextLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgeneratetextliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateTextLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateTextLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratetextliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -133,19 +137,19 @@ public Task<ContentGenerationGenerateTextLiveResponseInfo> GenerateTextLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgeneratetextliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateTextLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateTextLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratetextliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -162,16 +166,16 @@ public Task<ContentGenerationGenerateMetaTagsLiveResponseInfo> GenerateMetaTagsL
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgeneratemetatagsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateMetaTagsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateMetaTagsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratemetatagsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -188,19 +192,19 @@ public Task<ContentGenerationGenerateMetaTagsLiveResponseInfo> GenerateMetaTagsL
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgeneratemetatagsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateMetaTagsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateMetaTagsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratemetatagsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -217,16 +221,16 @@ public Task<ContentGenerationGenerateSubTopicsLiveResponseInfo> GenerateSubTopic
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgeneratesubtopicsliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateSubTopicsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateSubTopicsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratesubtopicsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -243,19 +247,19 @@ public Task<ContentGenerationGenerateSubTopicsLiveResponseInfo> GenerateSubTopic
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationgeneratesubtopicsliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationGenerateSubTopicsLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGenerateSubTopicsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratesubtopicsliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -272,16 +276,16 @@ public Task<ContentGenerationParaphraseLiveResponseInfo> ParaphraseLiveAsync(IEn
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationparaphraseliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationParaphraseLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationParaphraseLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationparaphraseliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -298,19 +302,19 @@ public Task<ContentGenerationParaphraseLiveResponseInfo> ParaphraseLiveAsync(IEn
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationparaphraseliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationParaphraseLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationParaphraseLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationparaphraseliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -327,16 +331,16 @@ public Task<ContentGenerationCheckGrammarLiveResponseInfo> CheckGrammarLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationcheckgrammarliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationCheckGrammarLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationCheckGrammarLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationcheckgrammarliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -353,19 +357,19 @@ public Task<ContentGenerationCheckGrammarLiveResponseInfo> CheckGrammarLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationcheckgrammarliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationCheckGrammarLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationCheckGrammarLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationcheckgrammarliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -382,12 +386,12 @@ public Task<ContentGenerationCheckGrammarLanguagesResponseInfo> ContentGeneratio
 
 #### Returns
 
-[Task&lt;ContentGenerationCheckGrammarLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationCheckGrammarLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationcheckgrammarlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -410,12 +414,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentGenerationCheckGrammarLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationCheckGrammarLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationcheckgrammarlanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -433,12 +437,12 @@ public Task<ContentGenerationGrammarRulesResponseInfo> GrammarRulesAsync()
 
 #### Returns
 
-[Task&lt;ContentGenerationGrammarRulesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGrammarRulesResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgrammarrulesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -461,12 +465,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentGenerationGrammarRulesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationGrammarRulesResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationgrammarrulesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -484,16 +488,16 @@ public Task<ContentGenerationTextSummaryLiveResponseInfo> TextSummaryLiveAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationtextsummaryliverequestinfo)<br>
 
 #### Returns
 
-[Task&lt;ContentGenerationTextSummaryLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationTextSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationtextsummaryliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -510,19 +514,19 @@ public Task<ContentGenerationTextSummaryLiveResponseInfo> TextSummaryLiveAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)<br>
+`body` [IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentgenerationtextsummaryliverequestinfo)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentGenerationTextSummaryLiveResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationTextSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationtextsummaryliveresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -539,12 +543,12 @@ public Task<ContentGenerationTextSummaryLanguagesResponseInfo> ContentGeneration
 
 #### Returns
 
-[Task&lt;ContentGenerationTextSummaryLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationTextSummaryLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationtextsummarylanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -567,12 +571,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentGenerationTextSummaryLanguagesResponseInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1)<br>
+[Task&lt;ContentGenerationTextSummaryLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentgenerationtextsummarylanguagesresponseinfo)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception.md)<br>
+[ApiException](./dataforseo.client.models.apiexception)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -603,3 +607,7 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+
+---
+
+[`< Back`](./)

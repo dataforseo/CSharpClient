@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PriceInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PriceInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PriceInfo](./dataforseo.client.models.priceinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PriceInfo](./dataforseo.client.models.priceinfo)
 
 ## Properties
 
@@ -105,3 +109,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PriceInfo()
 ```
+
+---
+
+[`< Back`](./)

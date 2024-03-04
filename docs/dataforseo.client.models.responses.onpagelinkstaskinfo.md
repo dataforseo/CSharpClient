@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageLinksTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLinksTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageLinksTaskInfo](./dataforseo.client.models.responses.onpagelinkstaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageLinksTaskInfo](./dataforseo.client.models.responses.onpagelinkstaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<OnPageLinksResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLinksResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;OnPageLinksResultInfo&gt;](./dataforseo.client.models.responses.onpagelinksresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLinksTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

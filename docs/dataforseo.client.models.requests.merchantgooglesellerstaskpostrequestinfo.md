@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantGoogleSellersTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class MerchantGoogleSellersTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleSellersTaskPostRequestInfo](./dataforseo.client.models.requests.merchantgooglesellerstaskpostrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleSellersTaskPostRequestInfo](./dataforseo.client.models.requests.merchantgooglesellerstaskpostrequestinfo)
 
 ## Properties
 
@@ -271,3 +275,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleSellersTaskPostRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

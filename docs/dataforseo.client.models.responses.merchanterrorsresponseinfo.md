@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MerchantErrorsResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantErrorsResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [MerchantErrorsResponseInfo](./dataforseo.client.models.responses.merchanterrorsresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [MerchantErrorsResponseInfo](./dataforseo.client.models.responses.merchanterrorsresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<MerchantErrorsTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MerchantErrorsTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;MerchantErrorsTaskInfo&gt;](./dataforseo.client.models.responses.merchanterrorstaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantErrorsResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

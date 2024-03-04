@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PositiveConnotationDistribution
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PositiveConnotationDistribution
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PositiveConnotationDistribution](./dataforseo.client.models.positiveconnotationdistribution.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PositiveConnotationDistribution](./dataforseo.client.models.positiveconnotationdistribution)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public ContentAnalysisSummaryInfo Positive { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
 
 ### **Negative**
 
@@ -28,7 +32,7 @@ public ContentAnalysisSummaryInfo Negative { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
 
 ### **Neutral**
 
@@ -38,7 +42,7 @@ public ContentAnalysisSummaryInfo Neutral { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -57,3 +61,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PositiveConnotationDistribution()
 ```
+
+---
+
+[`< Back`](./)

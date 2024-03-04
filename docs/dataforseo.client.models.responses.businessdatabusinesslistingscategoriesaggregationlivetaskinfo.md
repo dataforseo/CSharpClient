@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationlivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationlivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<BusinessDataBusinessListingsCategoriesAggregationLiveResultIn
 
 #### Property Value
 
-[ICollection&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # MapsPaidItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class MapsPaidItemSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [MapsPaidItemSerpElementItem](./dataforseo.client.models.mapspaiditemserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [MapsPaidItemSerpElementItem](./dataforseo.client.models.mapspaiditemserpelementitem)
 
 ## Properties
 
@@ -84,7 +88,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **RatingDistribution**
 
@@ -116,3 +120,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MapsPaidItemSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalsearchvolumeliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglehistoricalsearchvolumeliverequestinfo)
 
 ## Properties
 
@@ -149,3 +153,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

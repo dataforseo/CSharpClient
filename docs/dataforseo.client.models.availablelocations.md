@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AvailableLocations
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AvailableLocations
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvailableLocations](./dataforseo.client.models.availablelocations.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvailableLocations](./dataforseo.client.models.availablelocations)
 
 ## Properties
 
@@ -77,3 +81,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AvailableLocations()
 ```
+
+---
+
+[`< Back`](./)

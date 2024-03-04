@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PodcastsElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PodcastsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PodcastsElement](./dataforseo.client.models.podcastselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PodcastsElement](./dataforseo.client.models.podcastselement)
 
 ## Properties
 
@@ -102,3 +106,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PodcastsElement()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PaidSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PaidSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [PaidSerpElementItem](./dataforseo.client.models.paidserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [PaidSerpElementItem](./dataforseo.client.models.paidserpelementitem)
 
 ## Properties
 
@@ -133,7 +137,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
 
 ### **Url**
 
@@ -208,7 +212,7 @@ public ICollection<AdLinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AdLinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AdLinkElement&gt;](./dataforseo.client.models.adlinkelement)<br>
 
 ### **Price**
 
@@ -221,7 +225,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo)<br>
 
 ### **Rectangle**
 
@@ -235,7 +239,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **WebsiteName**
 
@@ -266,3 +270,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PaidSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

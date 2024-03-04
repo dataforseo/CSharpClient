@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageIdListRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageIdListRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageIdListRequestInfo](./dataforseo.client.models.requests.onpageidlistrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageIdListRequestInfo](./dataforseo.client.models.requests.onpageidlistrequestinfo)
 
 ## Properties
 
@@ -121,3 +125,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageIdListRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

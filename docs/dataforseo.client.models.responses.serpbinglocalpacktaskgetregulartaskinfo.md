@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBingLocalPackTaskGetRegularTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLocalPackTaskGetRegularTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBingLocalPackTaskGetRegularTaskInfo](./dataforseo.client.models.responses.serpbinglocalpacktaskgetregulartaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBingLocalPackTaskGetRegularTaskInfo](./dataforseo.client.models.responses.serpbinglocalpacktaskgetregulartaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<SerpBingLocalPackTaskGetRegularResultInfo> Result { get; set;
 
 #### Property Value
 
-[ICollection&lt;SerpBingLocalPackTaskGetRegularResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;SerpBingLocalPackTaskGetRegularResultInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktaskgetregularresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLocalPackTaskGetRegularTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

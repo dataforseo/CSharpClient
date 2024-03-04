@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ScriptResourceElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ScriptResourceElementItem : BaseOnPageResourceItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo.md) → [ScriptResourceElementItem](./dataforseo.client.models.scriptresourceelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo) → [ScriptResourceElementItem](./dataforseo.client.models.scriptresourceelementitem)
 
 ## Properties
 
@@ -23,7 +27,7 @@ public ResourceMetaInfo Meta { get; set; }
 
 #### Property Value
 
-[ResourceMetaInfo](./dataforseo.client.models.resourcemetainfo.md)<br>
+[ResourceMetaInfo](./dataforseo.client.models.resourcemetainfo)<br>
 
 ### **StatusCode**
 
@@ -126,7 +130,7 @@ public FetchTiming FetchTiming { get; set; }
 
 #### Property Value
 
-[FetchTiming](./dataforseo.client.models.fetchtiming.md)<br>
+[FetchTiming](./dataforseo.client.models.fetchtiming)<br>
 
 ### **CacheControl**
 
@@ -138,7 +142,7 @@ public CacheControl CacheControl { get; set; }
 
 #### Property Value
 
-[CacheControl](./dataforseo.client.models.cachecontrol.md)<br>
+[CacheControl](./dataforseo.client.models.cachecontrol)<br>
 
 ### **Checks**
 
@@ -215,7 +219,7 @@ public LastModified LastModified { get; set; }
 
 #### Property Value
 
-[LastModified](./dataforseo.client.models.lastmodified.md)<br>
+[LastModified](./dataforseo.client.models.lastmodified)<br>
 
 ### **ResourceErrors**
 
@@ -227,7 +231,7 @@ public OnPageResourceIssueInfo ResourceErrors { get; set; }
 
 #### Property Value
 
-[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo.md)<br>
+[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -246,3 +250,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ScriptResourceElementItem()
 ```
+
+---
+
+[`< Back`](./)

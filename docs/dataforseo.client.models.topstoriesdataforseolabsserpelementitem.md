@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # TopStoriesDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class TopStoriesDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [TopStoriesDataforseoLabsSerpElementItem](./dataforseo.client.models.topstoriesdataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [TopStoriesDataforseoLabsSerpElementItem](./dataforseo.client.models.topstoriesdataforseolabsserpelementitem)
 
 ## Properties
 
@@ -74,7 +78,7 @@ public ICollection<TopStoriesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopStoriesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;TopStoriesElement&gt;](./dataforseo.client.models.topstorieselement)<br>
 
 ### **AdditionalProperties**
 
@@ -93,3 +97,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TopStoriesDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ImagesElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ImagesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ImagesElement](./dataforseo.client.models.imageselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ImagesElement](./dataforseo.client.models.imageselement)
 
 ## Properties
 
@@ -76,3 +80,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImagesElement()
 ```
+
+---
+
+[`< Back`](./)

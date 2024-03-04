@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BacklinksBacklinksLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksBacklinksLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBacklinksLiveItem](./dataforseo.client.models.backlinksbacklinksliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBacklinksLiveItem](./dataforseo.client.models.backlinksbacklinksliveitem)
 
 ## Properties
 
@@ -600,7 +604,7 @@ public RankedKeywordsInfo RankedKeywordsInfo { get; set; }
 
 #### Property Value
 
-[RankedKeywordsInfo](./dataforseo.client.models.rankedkeywordsinfo.md)<br>
+[RankedKeywordsInfo](./dataforseo.client.models.rankedkeywordsinfo)<br>
 
 ### **IsIndirectLink**
 
@@ -626,7 +630,7 @@ public ICollection<Redirect> IndirectLinkPath { get; set; }
 
 #### Property Value
 
-[ICollection&lt;Redirect&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;Redirect&gt;](./dataforseo.client.models.redirect)<br>
 
 ### **AdditionalProperties**
 
@@ -645,3 +649,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBacklinksLiveItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataSocialMediaFacebookLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataSocialMediaFacebookLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaFacebookLiveResultInfo](./dataforseo.client.models.responses.businessdatasocialmediafacebookliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaFacebookLiveResultInfo](./dataforseo.client.models.responses.businessdatasocialmediafacebookliveresultinfo)
 
 ## Properties
 
@@ -65,3 +69,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataSocialMediaFacebookLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # RelatedSearchesElement
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class RelatedSearchesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RelatedSearchesElement](./dataforseo.client.models.relatedsearcheselement.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RelatedSearchesElement](./dataforseo.client.models.relatedsearcheselement)
 
 ## Properties
 
@@ -87,3 +91,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RelatedSearchesElement()
 ```
+
+---
+
+[`< Back`](./)

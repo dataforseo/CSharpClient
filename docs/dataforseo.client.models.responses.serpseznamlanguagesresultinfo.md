@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpSeznamLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpSeznamLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpSeznamLanguagesResultInfo](./dataforseo.client.models.responses.serpseznamlanguagesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpSeznamLanguagesResultInfo](./dataforseo.client.models.responses.serpseznamlanguagesresultinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpSeznamLanguagesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

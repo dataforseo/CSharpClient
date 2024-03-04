@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppDataGoogleAppListingsSearchLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class AppDataGoogleAppListingsSearchLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppListingsSearchLiveRequestInfo](./dataforseo.client.models.requests.appdatagoogleapplistingssearchliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppListingsSearchLiveRequestInfo](./dataforseo.client.models.requests.appdatagoogleapplistingssearchliverequestinfo)
 
 ## Properties
 
@@ -182,3 +186,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppListingsSearchLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

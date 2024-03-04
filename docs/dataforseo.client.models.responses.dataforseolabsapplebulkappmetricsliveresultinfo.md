@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAppleBulkAppMetricsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAppleBulkAppMetricsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleBulkAppMetricsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricsliveresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleBulkAppMetricsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricsliveresultinfo)
 
 ## Properties
 
@@ -80,7 +84,7 @@ public ICollection<DataforseoLabsleBulkAppMetricsLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsleBulkAppMetricsLiveItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsleBulkAppMetricsLiveItem&gt;](./dataforseo.client.models.dataforseolabslebulkappmetricsliveitem)<br>
 
 ### **AdditionalProperties**
 
@@ -99,3 +103,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleBulkAppMetricsLiveResultInfo()
 ```
+
+---
+
+[`< Back`](./)

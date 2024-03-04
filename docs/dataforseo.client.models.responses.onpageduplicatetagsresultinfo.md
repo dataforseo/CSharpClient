@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageDuplicateTagsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageDuplicateTagsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateTagsResultInfo](./dataforseo.client.models.responses.onpageduplicatetagsresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateTagsResultInfo](./dataforseo.client.models.responses.onpageduplicatetagsresultinfo)
 
 ## Properties
 
@@ -33,7 +37,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
 
 ### **TotalPagesCount**
 
@@ -83,7 +87,7 @@ public ICollection<OnPageDuplicateTagsItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageDuplicateTagsItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;OnPageDuplicateTagsItem&gt;](./dataforseo.client.models.onpageduplicatetagsitem)<br>
 
 ### **AdditionalProperties**
 
@@ -102,3 +106,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateTagsResultInfo()
 ```
+
+---
+
+[`< Back`](./)

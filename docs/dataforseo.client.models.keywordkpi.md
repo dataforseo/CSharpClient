@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # KeywordKpi
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class KeywordKpi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordKpi](./dataforseo.client.models.keywordkpi.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordKpi](./dataforseo.client.models.keywordkpi)
 
 ## Properties
 
@@ -21,7 +25,7 @@ public ICollection<KeywordKpiInfo> Desktop { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordKpiInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordKpiInfo&gt;](./dataforseo.client.models.keywordkpiinfo)<br>
 
 ### **Mobile**
 
@@ -34,7 +38,7 @@ public ICollection<KeywordKpiInfo> Mobile { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordKpiInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordKpiInfo&gt;](./dataforseo.client.models.keywordkpiinfo)<br>
 
 ### **Tablet**
 
@@ -47,7 +51,7 @@ public ICollection<KeywordKpiInfo> Tablet { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordKpiInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;KeywordKpiInfo&gt;](./dataforseo.client.models.keywordkpiinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -66,3 +70,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordKpi()
 ```
+
+---
+
+[`< Back`](./)

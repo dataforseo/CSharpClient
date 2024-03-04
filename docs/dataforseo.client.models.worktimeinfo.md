@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # WorkTimeInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class WorkTimeInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [WorkTimeInfo](./dataforseo.client.models.worktimeinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [WorkTimeInfo](./dataforseo.client.models.worktimeinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public WorkTimeInfo()
 ```
+
+---
+
+[`< Back`](./)

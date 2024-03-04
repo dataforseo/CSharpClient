@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # RecipesSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class RecipesSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [RecipesSerpElementItem](./dataforseo.client.models.recipesserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [RecipesSerpElementItem](./dataforseo.client.models.recipesserpelementitem)
 
 ## Properties
 
@@ -73,7 +77,7 @@ public ICollection<RecipesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;RecipesElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;RecipesElement&gt;](./dataforseo.client.models.recipeselement)<br>
 
 ### **Rectangle**
 
@@ -87,7 +91,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -106,3 +110,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RecipesSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

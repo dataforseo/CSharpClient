@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentGenerationCheckGrammarLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationCheckGrammarLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentGenerationCheckGrammarLanguagesResponseInfo](./dataforseo.client.models.responses.contentgenerationcheckgrammarlanguagesresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentGenerationCheckGrammarLanguagesResponseInfo](./dataforseo.client.models.responses.contentgenerationcheckgrammarlanguagesresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<ContentGenerationCheckGrammarLanguagesTaskInfo> Tasks { get; 
 
 #### Property Value
 
-[ICollection&lt;ContentGenerationCheckGrammarLanguagesTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentGenerationCheckGrammarLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.contentgenerationcheckgrammarlanguagestaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationCheckGrammarLanguagesResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

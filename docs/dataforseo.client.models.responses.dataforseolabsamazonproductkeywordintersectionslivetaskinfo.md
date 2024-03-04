@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsamazonproductkeywordintersectionslivetaskinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsamazonproductkeywordintersectionslivetaskinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsamazonproductkeywordintersectionsliveresultinfo)<br>
 
 ### **Id**
 
@@ -139,3 +143,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo()
 ```
+
+---
+
+[`< Back`](./)

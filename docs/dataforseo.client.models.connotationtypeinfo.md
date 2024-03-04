@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ConnotationTypeInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class ConnotationTypeInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ConnotationTypeInfo](./dataforseo.client.models.connotationtypeinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ConnotationTypeInfo](./dataforseo.client.models.connotationtypeinfo)
 
 ## Properties
 
@@ -63,3 +67,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ConnotationTypeInfo()
 ```
+
+---
+
+[`< Back`](./)

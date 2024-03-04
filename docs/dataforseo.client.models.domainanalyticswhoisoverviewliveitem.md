@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsWhoisOverviewLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -8,7 +12,7 @@ items array
 public class DomainAnalyticsWhoisOverviewLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsWhoisOverviewLiveItem](./dataforseo.client.models.domainanalyticswhoisoverviewliveitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsWhoisOverviewLiveItem](./dataforseo.client.models.domainanalyticswhoisoverviewliveitem)
 
 ## Properties
 
@@ -164,7 +168,7 @@ public MetricsBundleInfo Metrics { get; set; }
 
 #### Property Value
 
-[MetricsBundleInfo](./dataforseo.client.models.metricsbundleinfo.md)<br>
+[MetricsBundleInfo](./dataforseo.client.models.metricsbundleinfo)<br>
 
 ### **BacklinksInfo**
 
@@ -176,7 +180,7 @@ public BacklinksInfo BacklinksInfo { get; set; }
 
 #### Property Value
 
-[BacklinksInfo](./dataforseo.client.models.backlinksinfo.md)<br>
+[BacklinksInfo](./dataforseo.client.models.backlinksinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -195,3 +199,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsWhoisOverviewLiveItem()
 ```
+
+---
+
+[`< Back`](./)

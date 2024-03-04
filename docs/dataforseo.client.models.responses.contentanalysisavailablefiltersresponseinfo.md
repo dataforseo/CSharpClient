@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # ContentAnalysisAvailableFiltersResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisAvailableFiltersResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentAnalysisAvailableFiltersResponseInfo](./dataforseo.client.models.responses.contentanalysisavailablefiltersresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentAnalysisAvailableFiltersResponseInfo](./dataforseo.client.models.responses.contentanalysisavailablefiltersresponseinfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public ICollection<ContentAnalysisAvailableFiltersTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisAvailableFiltersTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ContentAnalysisAvailableFiltersTaskInfo&gt;](./dataforseo.client.models.responses.contentanalysisavailablefilterstaskinfo)<br>
 
 ### **Version**
 
@@ -123,3 +127,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisAvailableFiltersResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

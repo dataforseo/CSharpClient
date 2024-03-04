@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # RedirectLinkElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class RedirectLinkElementItem : BaseOnPageLinkItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo.md) → [RedirectLinkElementItem](./dataforseo.client.models.redirectlinkelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo) → [RedirectLinkElementItem](./dataforseo.client.models.redirectlinkelementitem)
 
 ## Properties
 
@@ -181,3 +185,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RedirectLinkElementItem()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsErrorsRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DomainAnalyticsErrorsRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsErrorsRequestInfo](./dataforseo.client.models.requests.domainanalyticserrorsrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsErrorsRequestInfo](./dataforseo.client.models.requests.domainanalyticserrorsrequestinfo)
 
 ## Properties
 
@@ -107,3 +111,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsErrorsRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

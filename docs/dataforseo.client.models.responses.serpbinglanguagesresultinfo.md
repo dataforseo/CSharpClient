@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # SerpBingLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBingLanguagesResultInfo](./dataforseo.client.models.responses.serpbinglanguagesresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBingLanguagesResultInfo](./dataforseo.client.models.responses.serpbinglanguagesresultinfo)
 
 ## Properties
 
@@ -51,3 +55,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLanguagesResultInfo()
 ```
+
+---
+
+[`< Back`](./)

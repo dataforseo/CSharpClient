@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # AppendixNaverKeywordsDataDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixNaverKeywordsDataDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixNaverKeywordsDataDataInfo](./dataforseo.client.models.appendixnaverkeywordsdatadatainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixNaverKeywordsDataDataInfo](./dataforseo.client.models.appendixnaverkeywordsdatadatainfo)
 
 ## Properties
 
@@ -18,7 +22,7 @@ public AppendixInfo KeywordsForCategory { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **SearchVolume**
 
@@ -28,7 +32,7 @@ public AppendixInfo SearchVolume { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -47,3 +51,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixNaverKeywordsDataDataInfo()
 ```
+
+---
+
+[`< Back`](./)

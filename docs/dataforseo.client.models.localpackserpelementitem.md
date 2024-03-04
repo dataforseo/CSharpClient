@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # LocalPackSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalPackSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [LocalPackSerpElementItem](./dataforseo.client.models.localpackserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [LocalPackSerpElementItem](./dataforseo.client.models.localpackserpelementitem)
 
 ## Properties
 
@@ -146,7 +150,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **Cid**
 
@@ -172,7 +176,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -191,3 +195,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalPackSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

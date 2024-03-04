@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BusinessDataYelpSearchTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataYelpSearchTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataYelpSearchTasksReadyResultInfo](./dataforseo.client.models.responses.businessdatayelpsearchtasksreadyresultinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataYelpSearchTasksReadyResultInfo](./dataforseo.client.models.responses.businessdatayelpsearchtasksreadyresultinfo)
 
 ## Properties
 
@@ -102,3 +106,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpSearchTasksReadyResultInfo()
 ```
+
+---
+
+[`< Back`](./)

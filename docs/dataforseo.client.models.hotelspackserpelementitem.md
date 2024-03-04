@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # HotelsPackSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class HotelsPackSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [HotelsPackSerpElementItem](./dataforseo.client.models.hotelspackserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [HotelsPackSerpElementItem](./dataforseo.client.models.hotelspackserpelementitem)
 
 ## Properties
 
@@ -115,7 +119,7 @@ public ICollection<HotelsPackElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HotelsPackElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;HotelsPackElement&gt;](./dataforseo.client.models.hotelspackelement)<br>
 
 ### **Rectangle**
 
@@ -129,7 +133,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle.md)<br>
+[Rectangle](./dataforseo.client.models.rectangle)<br>
 
 ### **AdditionalProperties**
 
@@ -148,3 +152,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HotelsPackSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

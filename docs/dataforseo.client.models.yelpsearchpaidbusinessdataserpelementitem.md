@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # YelpSearchPaidBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class YelpSearchPaidBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [YelpSearchPaidBusinessDataSerpElementItem](./dataforseo.client.models.yelpsearchpaidbusinessdataserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [YelpSearchPaidBusinessDataSerpElementItem](./dataforseo.client.models.yelpsearchpaidbusinessdataserpelementitem)
 
 ## Properties
 
@@ -109,7 +113,7 @@ public BusinessAddressLocationInfo Location { get; set; }
 
 #### Property Value
 
-[BusinessAddressLocationInfo](./dataforseo.client.models.businessaddresslocationinfo.md)<br>
+[BusinessAddressLocationInfo](./dataforseo.client.models.businessaddresslocationinfo)<br>
 
 ### **PriceRange**
 
@@ -160,7 +164,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
 
 ### **Categories**
 
@@ -224,7 +228,7 @@ public ICollection<ServiceOfferingsElement> ServiceOfferings { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ServiceOfferingsElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;ServiceOfferingsElement&gt;](./dataforseo.client.models.serviceofferingselement)<br>
 
 ### **AdditionalProperties**
 
@@ -243,3 +247,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public YelpSearchPaidBusinessDataSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

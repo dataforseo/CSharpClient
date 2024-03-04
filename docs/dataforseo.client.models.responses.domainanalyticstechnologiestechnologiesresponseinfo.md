@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DomainAnalyticsTechnologiesTechnologiesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsTechnologiesTechnologiesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DomainAnalyticsTechnologiesTechnologiesResponseInfo](./dataforseo.client.models.responses.domainanalyticstechnologiestechnologiesresponseinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DomainAnalyticsTechnologiesTechnologiesResponseInfo](./dataforseo.client.models.responses.domainanalyticstechnologiestechnologiesresponseinfo)
 
 ## Properties
 
@@ -20,7 +24,7 @@ public ICollection<DomainAnalyticsTechnologiesTechnologiesTaskInfo> Tasks { get;
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsTechnologiesTechnologiesTaskInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;DomainAnalyticsTechnologiesTechnologiesTaskInfo&gt;](./dataforseo.client.models.responses.domainanalyticstechnologiestechnologiestaskinfo)<br>
 
 ### **Version**
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesTechnologiesResponseInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PageMetaInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PageMetaInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageMetaInfo](./dataforseo.client.models.pagemetainfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageMetaInfo](./dataforseo.client.models.pagemetainfo)
 
 ## Properties
 
@@ -312,7 +316,7 @@ public HtmlContentInfo Content { get; set; }
 
 #### Property Value
 
-[HtmlContentInfo](./dataforseo.client.models.htmlcontentinfo.md)<br>
+[HtmlContentInfo](./dataforseo.client.models.htmlcontentinfo)<br>
 
 ### **DeprecatedTags**
 
@@ -349,7 +353,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo)<br>
 
 ### **SocialMediaTags**
 
@@ -375,7 +379,7 @@ public OnPageResourceIssueInfo BrokenHtml { get; set; }
 
 #### Property Value
 
-[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo.md)<br>
+[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -394,3 +398,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PageMetaInfo()
 ```
+
+---
+
+[`< Back`](./)

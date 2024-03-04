@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # OnPageRedirectChainsRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageRedirectChainsRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRedirectChainsRequestInfo](./dataforseo.client.models.requests.onpageredirectchainsrequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRedirectChainsRequestInfo](./dataforseo.client.models.requests.onpageredirectchainsrequestinfo)
 
 ## Properties
 
@@ -125,3 +129,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageRedirectChainsRequestInfo()
 ```
+
+---
+
+[`< Back`](./)

@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # PaidDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class PaidDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [PaidDataforseoLabsSerpElementItem](./dataforseo.client.models.paiddataforseolabsserpelementitem.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [PaidDataforseoLabsSerpElementItem](./dataforseo.client.models.paiddataforseolabsserpelementitem)
 
 ## Properties
 
@@ -169,7 +173,7 @@ public ICollection<AdLinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AdLinkElement&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)<br>
+[ICollection&lt;AdLinkElement&gt;](./dataforseo.client.models.adlinkelement)<br>
 
 ### **MainDomain**
 
@@ -252,7 +256,7 @@ public RankChanges RankChanges { get; set; }
 
 #### Property Value
 
-[RankChanges](./dataforseo.client.models.rankchanges.md)<br>
+[RankChanges](./dataforseo.client.models.rankchanges)<br>
 
 ### **SeType**
 
@@ -276,7 +280,7 @@ public BacklinksInfo BacklinksInfo { get; set; }
 
 #### Property Value
 
-[BacklinksInfo](./dataforseo.client.models.backlinksinfo.md)<br>
+[BacklinksInfo](./dataforseo.client.models.backlinksinfo)<br>
 
 ### **RankInfo**
 
@@ -288,7 +292,7 @@ public RankInfo RankInfo { get; set; }
 
 #### Property Value
 
-[RankInfo](./dataforseo.client.models.rankinfo.md)<br>
+[RankInfo](./dataforseo.client.models.rankinfo)<br>
 
 ### **AdditionalProperties**
 
@@ -307,3 +311,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PaidDataforseoLabsSerpElementItem()
 ```
+
+---
+
+[`< Back`](./)

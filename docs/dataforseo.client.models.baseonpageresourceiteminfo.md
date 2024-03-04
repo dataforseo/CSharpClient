@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # BaseOnPageResourceItemInfo
 
 Namespace: DataForSeo.Client.Models
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models
 public class BaseOnPageResourceItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo)
 
 ## Properties
 
@@ -27,3 +31,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BaseOnPageResourceItemInfo()
 ```
+
+---
+
+[`< Back`](./)

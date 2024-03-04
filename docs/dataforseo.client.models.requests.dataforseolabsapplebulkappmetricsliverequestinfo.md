@@ -1,3 +1,7 @@
+[`< Back`](./)
+
+---
+
 # DataforseoLabsAppleBulkAppMetricsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -6,7 +10,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsAppleBulkAppMetricsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleBulkAppMetricsLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsapplebulkappmetricsliverequestinfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleBulkAppMetricsLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsapplebulkappmetricsliverequestinfo)
 
 ## Properties
 
@@ -138,3 +142,7 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleBulkAppMetricsLiveRequestInfo()
 ```
+
+---
+
+[`< Back`](./)
