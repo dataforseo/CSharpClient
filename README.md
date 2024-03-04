@@ -59,7 +59,7 @@ var dfsClient = new DataForSeoClient("USERNAME", "PASSWORD");
       });
 ``` 
 
-Example of Task-based endpoint
+Example of Task-based request
 ```csharp
 var dfsClient = new DataForSeoClient("USERNAME", "PASSWORD");
 var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpTaskRequestInfo>()
