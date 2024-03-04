@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleDomainWhoisOverviewLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleDomainWhoisOverviewLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleDomainWhoisOverviewLiveItem](./dataforseo.client.models.dataforseolabsgoogledomainwhoisoverviewliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleDomainWhoisOverviewLiveItem](./dataforseo.client.models.dataforseolabsgoogledomainwhoisoverviewliveitem.md)
 
 ## Properties
 
@@ -178,7 +174,7 @@ public IDictionary<string, MetricsInfo> Metrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **BacklinksInfo**
 
@@ -190,7 +186,7 @@ public BacklinksInfo BacklinksInfo { get; set; }
 
 #### Property Value
 
-[BacklinksInfo](./dataforseo.client.models.backlinksinfo)<br>
+[BacklinksInfo](./dataforseo.client.models.backlinksinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -209,7 +205,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleDomainWhoisOverviewLiveItem()
 ```
-
----
-
-[`< Back`](./)

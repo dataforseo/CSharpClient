@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # StocksBoxDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class StocksBoxDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [StocksBoxDataforseoLabsSerpElementItem](./dataforseo.client.models.stocksboxdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [StocksBoxDataforseoLabsSerpElementItem](./dataforseo.client.models.stocksboxdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -113,7 +109,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **Url**
 
@@ -150,7 +146,7 @@ public Table Table { get; set; }
 
 #### Property Value
 
-[Table](./dataforseo.client.models.table)<br>
+[Table](./dataforseo.client.models.table.md)<br>
 
 ### **Graph**
 
@@ -162,7 +158,7 @@ public Graph Graph { get; set; }
 
 #### Property Value
 
-[Graph](./dataforseo.client.models.graph)<br>
+[Graph](./dataforseo.client.models.graph.md)<br>
 
 ### **AdditionalProperties**
 
@@ -181,7 +177,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public StocksBoxDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

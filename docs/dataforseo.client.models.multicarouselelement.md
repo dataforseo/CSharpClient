@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MultiCarouselElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MultiCarouselElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MultiCarouselElement](./dataforseo.client.models.multicarouselelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MultiCarouselElement](./dataforseo.client.models.multicarouselelement.md)
 
 ## Properties
 
@@ -48,7 +44,7 @@ public ICollection<CarouselElement> MultiCarouselSnippets { get; set; }
 
 #### Property Value
 
-[ICollection&lt;CarouselElement&gt;](./dataforseo.client.models.carouselelement)<br>
+[ICollection&lt;CarouselElement&gt;](./dataforseo.client.models.carouselelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MultiCarouselElement()
 ```
-
----
-
-[`< Back`](./)

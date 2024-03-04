@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # YoutubeVideoInfoSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class YoutubeVideoInfoSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [YoutubeVideoInfoSerpElementItem](./dataforseo.client.models.youtubevideoinfoserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [YoutubeVideoInfoSerpElementItem](./dataforseo.client.models.youtubevideoinfoserpelementitem.md)
 
 ## Properties
 
@@ -294,7 +290,7 @@ public ICollection<StreamingQualityElement> StreamingQuality { get; set; }
 
 #### Property Value
 
-[ICollection&lt;StreamingQualityElement&gt;](./dataforseo.client.models.streamingqualityelement)<br>
+[ICollection&lt;StreamingQualityElement&gt;](./dataforseo.client.models.streamingqualityelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -313,7 +309,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public YoutubeVideoInfoSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

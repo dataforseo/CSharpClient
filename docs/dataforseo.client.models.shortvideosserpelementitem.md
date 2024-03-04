@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ShortVideosSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ShortVideosSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [ShortVideosSerpElementItem](./dataforseo.client.models.shortvideosserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [ShortVideosSerpElementItem](./dataforseo.client.models.shortvideosserpelementitem.md)
 
 ## Properties
 
@@ -89,7 +85,7 @@ public ICollection<ShortVideosElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ShortVideosElement&gt;](./dataforseo.client.models.shortvideoselement)<br>
+[ICollection&lt;ShortVideosElement&gt;](./dataforseo.client.models.shortvideoselement.md)<br>
 
 ### **Rectangle**
 
@@ -103,7 +99,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -122,7 +118,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ShortVideosSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo : BusinessDataTaskRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTaskRequestInfo](./dataforseo.client.models.requests.businessdatataskrequestinfo) → [BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatagooglemybusinessupdatestaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTaskRequestInfo](./dataforseo.client.models.requests.businessdatataskrequestinfo.md) → [BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatagooglemybusinessupdatestaskpostrequestinfo.md)
 
 ## Properties
 
@@ -235,7 +231,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

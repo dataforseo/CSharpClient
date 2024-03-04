@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo](./dataforseo.client.models.requests.keywordsdatagoogleadsadtrafficbykeywordstaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo](./dataforseo.client.models.requests.keywordsdatagoogleadsadtrafficbykeywordstaskpostrequestinfo.md)
 
 ## Properties
 
@@ -311,7 +307,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

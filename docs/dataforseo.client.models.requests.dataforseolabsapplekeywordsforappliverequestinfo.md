@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAppleKeywordsForAppLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsAppleKeywordsForAppLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleKeywordsForAppLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsapplekeywordsforappliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleKeywordsForAppLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsapplekeywordsforappliverequestinfo.md)
 
 ## Properties
 
@@ -219,7 +215,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleKeywordsForAppLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

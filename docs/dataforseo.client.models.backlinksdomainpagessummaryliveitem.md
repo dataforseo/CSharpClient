@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksDomainPagesSummaryLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksDomainPagesSummaryLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksDomainPagesSummaryLiveItem](./dataforseo.client.models.backlinksdomainpagessummaryliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksDomainPagesSummaryLiveItem](./dataforseo.client.models.backlinksdomainpagessummaryliveitem.md)
 
 ## Properties
 
@@ -320,7 +316,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksDomainPagesSummaryLiveItem()
 ```
-
----
-
-[`< Back`](./)

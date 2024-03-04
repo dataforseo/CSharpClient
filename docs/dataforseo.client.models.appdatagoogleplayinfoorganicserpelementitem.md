@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGooglePlayInfoOrganicSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataGooglePlayInfoOrganicSerpElementItem : BaseAppDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem) → [AppDataGooglePlayInfoOrganicSerpElementItem](./dataforseo.client.models.appdatagoogleplayinfoorganicserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md) → [AppDataGooglePlayInfoOrganicSerpElementItem](./dataforseo.client.models.appdatagoogleplayinfoorganicserpelementitem.md)
 
 ## Properties
 
@@ -135,7 +131,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Price**
 
@@ -147,7 +143,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **IsFree**
 
@@ -387,7 +383,7 @@ public ICollection<AppsInfo> SimilarApps { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppsInfo&gt;](./dataforseo.client.models.appsinfo)<br>
+[ICollection&lt;AppsInfo&gt;](./dataforseo.client.models.appsinfo.md)<br>
 
 ### **MoreAppsByDeveloper**
 
@@ -400,7 +396,7 @@ public ICollection<AppsInfo> MoreAppsByDeveloper { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppsInfo&gt;](./dataforseo.client.models.appsinfo)<br>
+[ICollection&lt;AppsInfo&gt;](./dataforseo.client.models.appsinfo.md)<br>
 
 ### **Genres**
 
@@ -445,7 +441,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGooglePlayInfoOrganicSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

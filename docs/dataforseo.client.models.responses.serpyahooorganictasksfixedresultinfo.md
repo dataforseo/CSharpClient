@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYahooOrganicTasksFixedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYahooOrganicTasksFixedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYahooOrganicTasksFixedResultInfo](./dataforseo.client.models.responses.serpyahooorganictasksfixedresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYahooOrganicTasksFixedResultInfo](./dataforseo.client.models.responses.serpyahooorganictasksfixedresultinfo.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYahooOrganicTasksFixedResultInfo()
 ```
-
----
-
-[`< Back`](./)

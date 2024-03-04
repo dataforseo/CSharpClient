@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingLocalPackLiveHtmlResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLocalPackLiveHtmlResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpBingLocalPackLiveHtmlResponseInfo](./dataforseo.client.models.responses.serpbinglocalpacklivehtmlresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpBingLocalPackLiveHtmlResponseInfo](./dataforseo.client.models.responses.serpbinglocalpacklivehtmlresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBingLocalPackLiveHtmlTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingLocalPackLiveHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacklivehtmltaskinfo)<br>
+[ICollection&lt;SerpBingLocalPackLiveHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacklivehtmltaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLocalPackLiveHtmlResponseInfo()
 ```
-
----
-
-[`< Back`](./)

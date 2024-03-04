@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsTechnologiesLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsTechnologiesLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesLanguagesResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologieslanguagesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesLanguagesResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologieslanguagesresultinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesLanguagesResultInfo()
 ```
-
----
-
-[`< Back`](./)

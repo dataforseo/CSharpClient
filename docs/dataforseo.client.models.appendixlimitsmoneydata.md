@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixLimitsMoneyData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixLimitsMoneyData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixLimitsMoneyData](./dataforseo.client.models.appendixlimitsmoneydata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixLimitsMoneyData](./dataforseo.client.models.appendixlimitsmoneydata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixDataInfo Day { get; set; }
 
 #### Property Value
 
-[AppendixDataInfo](./dataforseo.client.models.appendixdatainfo)<br>
+[AppendixDataInfo](./dataforseo.client.models.appendixdatainfo.md)<br>
 
 ### **Minute**
 
@@ -32,7 +28,7 @@ public AppendixDataInfo Minute { get; set; }
 
 #### Property Value
 
-[AppendixDataInfo](./dataforseo.client.models.appendixdatainfo)<br>
+[AppendixDataInfo](./dataforseo.client.models.appendixdatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -51,7 +47,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixLimitsMoneyData()
 ```
-
----
-
-[`< Back`](./)

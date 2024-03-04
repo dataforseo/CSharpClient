@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantGoogleProductSpecTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class MerchantGoogleProductSpecTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleProductSpecTaskPostRequestInfo](./dataforseo.client.models.requests.merchantgoogleproductspectaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleProductSpecTaskPostRequestInfo](./dataforseo.client.models.requests.merchantgoogleproductspectaskpostrequestinfo.md)
 
 ## Properties
 
@@ -258,7 +254,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleProductSpecTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

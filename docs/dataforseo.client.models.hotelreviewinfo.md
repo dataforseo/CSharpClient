@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # HotelReviewInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class HotelReviewInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelReviewInfo](./dataforseo.client.models.hotelreviewinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelReviewInfo](./dataforseo.client.models.hotelreviewinfo.md)
 
 ## Properties
 
@@ -50,7 +46,7 @@ public ICollection<ReviewMentionInfo> Mentions { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ReviewMentionInfo&gt;](./dataforseo.client.models.reviewmentioninfo)<br>
+[ICollection&lt;ReviewMentionInfo&gt;](./dataforseo.client.models.reviewmentioninfo.md)<br>
 
 ### **RatingDistribution**
 
@@ -76,7 +72,7 @@ public ICollection<OtherSitesReviewsInfo> OtherSitesReviews { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OtherSitesReviewsInfo&gt;](./dataforseo.client.models.othersitesreviewsinfo)<br>
+[ICollection&lt;OtherSitesReviewsInfo&gt;](./dataforseo.client.models.othersitesreviewsinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HotelReviewInfo()
 ```
-
----
-
-[`< Back`](./)

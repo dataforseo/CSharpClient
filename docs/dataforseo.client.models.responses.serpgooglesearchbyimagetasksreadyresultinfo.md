@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleSearchByImageTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleSearchByImageTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleSearchByImageTasksReadyResultInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleSearchByImageTasksReadyResultInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetasksreadyresultinfo.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleSearchByImageTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

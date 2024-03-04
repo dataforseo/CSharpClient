@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleAppSearchesTaskGetAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppSearchesTaskGetAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppSearchesTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgetadvancedresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppSearchesTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgetadvancedresultinfo.md)
 
 ## Properties
 
@@ -124,7 +120,7 @@ public ICollection<BaseAppDataSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseAppDataSerpElementItem&gt;](./dataforseo.client.models.baseappdataserpelementitem)<br>
+[ICollection&lt;BaseAppDataSerpElementItem&gt;](./dataforseo.client.models.baseappdataserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppSearchesTaskGetAdvancedResultInfo()
 ```
-
----
-
-[`< Back`](./)

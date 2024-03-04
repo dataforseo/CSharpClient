@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataTaskRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class KeywordsDataTaskRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataTaskRequestInfo](./dataforseo.client.models.requests.keywordsdatataskrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataTaskRequestInfo](./dataforseo.client.models.requests.keywordsdatataskrequestinfo.md)
 
 ## Properties
 
@@ -278,7 +274,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataTaskRequestInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleJobsTaskGetHtmlResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleJobsTaskGetHtmlResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleJobsTaskGetHtmlResponseInfo](./dataforseo.client.models.responses.serpgooglejobstaskgethtmlresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleJobsTaskGetHtmlResponseInfo](./dataforseo.client.models.responses.serpgooglejobstaskgethtmlresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleJobsTaskGetHtmlTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleJobsTaskGetHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskgethtmltaskinfo)<br>
+[ICollection&lt;SerpGoogleJobsTaskGetHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglejobstaskgethtmltaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleJobsTaskGetHtmlResponseInfo()
 ```
-
----
-
-[`< Back`](./)

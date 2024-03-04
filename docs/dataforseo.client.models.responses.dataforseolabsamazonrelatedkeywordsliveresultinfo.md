@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAmazonRelatedKeywordsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAmazonRelatedKeywordsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonRelatedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsamazonrelatedkeywordsliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonRelatedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsamazonrelatedkeywordsliveresultinfo.md)
 
 ## Properties
 
@@ -49,7 +45,7 @@ public AmazonKeywordData SeedKeywordData { get; set; }
 
 #### Property Value
 
-[AmazonKeywordData](./dataforseo.client.models.amazonkeyworddata)<br>
+[AmazonKeywordData](./dataforseo.client.models.amazonkeyworddata.md)<br>
 
 ### **LocationCode**
 
@@ -109,7 +105,7 @@ public ICollection<DataforseoLabsAmazonRelatedKeywordsLiveItem> Items { get; set
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAmazonRelatedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsamazonrelatedkeywordsliveitem)<br>
+[ICollection&lt;DataforseoLabsAmazonRelatedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsamazonrelatedkeywordsliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -128,7 +124,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonRelatedKeywordsLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksBulkSpamScoreLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksBulkSpamScoreLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BacklinksBulkSpamScoreLiveResponseInfo](./dataforseo.client.models.responses.backlinksbulkspamscoreliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BacklinksBulkSpamScoreLiveResponseInfo](./dataforseo.client.models.responses.backlinksbulkspamscoreliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BacklinksBulkSpamScoreLiveTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksBulkSpamScoreLiveTaskInfo&gt;](./dataforseo.client.models.responses.backlinksbulkspamscorelivetaskinfo)<br>
+[ICollection&lt;BacklinksBulkSpamScoreLiveTaskInfo&gt;](./dataforseo.client.models.responses.backlinksbulkspamscorelivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkSpamScoreLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

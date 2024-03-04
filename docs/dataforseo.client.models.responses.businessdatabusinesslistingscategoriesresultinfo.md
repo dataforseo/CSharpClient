@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataBusinessListingsCategoriesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataBusinessListingsCategoriesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsCategoriesResultInfo](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsCategoriesResultInfo](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesresultinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsCategoriesResultInfo()
 ```
-
----
-
-[`< Back`](./)

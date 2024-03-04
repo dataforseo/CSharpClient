@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixErrorsResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppendixErrorsResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [AppendixErrorsResponseInfo](./dataforseo.client.models.responses.appendixerrorsresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [AppendixErrorsResponseInfo](./dataforseo.client.models.responses.appendixerrorsresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppendixErrorsTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppendixErrorsTaskInfo&gt;](./dataforseo.client.models.responses.appendixerrorstaskinfo)<br>
+[ICollection&lt;AppendixErrorsTaskInfo&gt;](./dataforseo.client.models.responses.appendixerrorstaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixErrorsResponseInfo()
 ```
-
----
-
-[`< Back`](./)

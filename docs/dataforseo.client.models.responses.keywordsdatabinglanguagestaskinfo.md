@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataBingLanguagesTaskInfo](./dataforseo.client.models.responses.keywordsdatabinglanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataBingLanguagesTaskInfo](./dataforseo.client.models.responses.keywordsdatabinglanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataBingLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingLanguagesResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglanguagesresultinfo)<br>
+[ICollection&lt;KeywordsDataBingLanguagesResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

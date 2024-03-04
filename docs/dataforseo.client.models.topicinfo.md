@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TopicInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TopicInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopicInfo](./dataforseo.client.models.topicinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopicInfo](./dataforseo.client.models.topicinfo.md)
 
 ## Properties
 
@@ -85,7 +81,7 @@ public ICollection<ContentItemInfo> PrimaryContent { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentItemInfo&gt;](./dataforseo.client.models.contentiteminfo)<br>
+[ICollection&lt;ContentItemInfo&gt;](./dataforseo.client.models.contentiteminfo.md)<br>
 
 ### **SecondaryContent**
 
@@ -98,7 +94,7 @@ public ICollection<ContentItemInfo> SecondaryContent { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentItemInfo&gt;](./dataforseo.client.models.contentiteminfo)<br>
+[ICollection&lt;ContentItemInfo&gt;](./dataforseo.client.models.contentiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -117,7 +113,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TopicInfo()
 ```
-
----
-
-[`< Back`](./)

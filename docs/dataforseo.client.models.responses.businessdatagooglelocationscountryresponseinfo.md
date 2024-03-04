@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleLocationsCountryResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleLocationsCountryResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BusinessDataGoogleLocationsCountryResponseInfo](./dataforseo.client.models.responses.businessdatagooglelocationscountryresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BusinessDataGoogleLocationsCountryResponseInfo](./dataforseo.client.models.responses.businessdatagooglelocationscountryresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataGoogleLocationsCountryTaskInfo> Tasks { get; set;
 
 #### Property Value
 
-[ICollection&lt;BusinessDataGoogleLocationsCountryTaskInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationscountrytaskinfo)<br>
+[ICollection&lt;BusinessDataGoogleLocationsCountryTaskInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationscountrytaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleLocationsCountryResponseInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAmazonProductCompetitorsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAmazonProductCompetitorsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonProductCompetitorsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsamazonproductcompetitorsliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonProductCompetitorsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsamazonproductcompetitorsliveresultinfo.md)
 
 ## Properties
 
@@ -98,7 +94,7 @@ public ICollection<DataforseoLabsAmazonProductCompetitorsLiveItem> Items { get; 
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAmazonProductCompetitorsLiveItem&gt;](./dataforseo.client.models.dataforseolabsamazonproductcompetitorsliveitem)<br>
+[ICollection&lt;DataforseoLabsAmazonProductCompetitorsLiveItem&gt;](./dataforseo.client.models.dataforseolabsamazonproductcompetitorsliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -117,7 +113,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonProductCompetitorsLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

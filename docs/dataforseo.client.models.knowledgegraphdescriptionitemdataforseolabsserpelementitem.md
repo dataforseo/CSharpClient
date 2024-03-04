@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem](./dataforseo.client.models.knowledgegraphdescriptionitemdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem](./dataforseo.client.models.knowledgegraphdescriptionitemdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -91,7 +87,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -110,7 +106,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

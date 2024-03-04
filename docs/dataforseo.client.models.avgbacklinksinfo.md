@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AvgBacklinksInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AvgBacklinksInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvgBacklinksInfo](./dataforseo.client.models.avgbacklinksinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvgBacklinksInfo](./dataforseo.client.models.avgbacklinksinfo.md)
 
 ## Properties
 
@@ -144,7 +140,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AvgBacklinksInfo()
 ```
-
----
-
-[`< Back`](./)

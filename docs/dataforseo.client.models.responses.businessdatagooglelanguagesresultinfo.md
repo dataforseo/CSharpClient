@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleLanguagesResultInfo](./dataforseo.client.models.responses.businessdatagooglelanguagesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleLanguagesResultInfo](./dataforseo.client.models.responses.businessdatagooglelanguagesresultinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleLanguagesResultInfo()
 ```
-
----
-
-[`< Back`](./)

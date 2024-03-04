@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseTaskGetJsonResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseTaskGetJsonResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageLighthouseTaskGetJsonResponseInfo](./dataforseo.client.models.responses.onpagelighthousetaskgetjsonresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageLighthouseTaskGetJsonResponseInfo](./dataforseo.client.models.responses.onpagelighthousetaskgetjsonresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageLighthouseTaskGetJsonTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLighthouseTaskGetJsonTaskInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskgetjsontaskinfo)<br>
+[ICollection&lt;OnPageLighthouseTaskGetJsonTaskInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskgetjsontaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseTaskGetJsonResponseInfo()
 ```
-
----
-
-[`< Back`](./)

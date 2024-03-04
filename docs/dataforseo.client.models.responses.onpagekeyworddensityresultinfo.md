@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageKeywordDensityResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageKeywordDensityResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageKeywordDensityResultInfo](./dataforseo.client.models.responses.onpagekeyworddensityresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageKeywordDensityResultInfo](./dataforseo.client.models.responses.onpagekeyworddensityresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **TotalItemsCount**
 
@@ -74,7 +70,7 @@ public ICollection<OnPageKeywordDensityItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageKeywordDensityItem&gt;](./dataforseo.client.models.onpagekeyworddensityitem)<br>
+[ICollection&lt;OnPageKeywordDensityItem&gt;](./dataforseo.client.models.onpagekeyworddensityitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -93,7 +89,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageKeywordDensityResultInfo()
 ```
-
----
-
-[`< Back`](./)

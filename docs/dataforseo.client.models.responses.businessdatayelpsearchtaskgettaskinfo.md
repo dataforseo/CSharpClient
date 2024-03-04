@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataYelpSearchTaskGetTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataYelpSearchTaskGetTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataYelpSearchTaskGetTaskInfo](./dataforseo.client.models.responses.businessdatayelpsearchtaskgettaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataYelpSearchTaskGetTaskInfo](./dataforseo.client.models.responses.businessdatayelpsearchtaskgettaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataYelpSearchTaskGetResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BusinessDataYelpSearchTaskGetResultInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskgetresultinfo)<br>
+[ICollection&lt;BusinessDataYelpSearchTaskGetResultInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskgetresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpSearchTaskGetTaskInfo()
 ```
-
----
-
-[`< Back`](./)

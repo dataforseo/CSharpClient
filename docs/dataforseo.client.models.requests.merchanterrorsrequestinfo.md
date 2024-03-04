@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantErrorsRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class MerchantErrorsRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantErrorsRequestInfo](./dataforseo.client.models.requests.merchanterrorsrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantErrorsRequestInfo](./dataforseo.client.models.requests.merchanterrorsrequestinfo.md)
 
 ## Properties
 
@@ -111,7 +107,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantErrorsRequestInfo()
 ```
-
----
-
-[`< Back`](./)

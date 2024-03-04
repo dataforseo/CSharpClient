@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageContentParsingResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageContentParsingResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingResultInfo](./dataforseo.client.models.responses.onpagecontentparsingresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingResultInfo](./dataforseo.client.models.responses.onpagecontentparsingresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **ItemsCount**
 
@@ -61,7 +57,7 @@ public ICollection<OnPageContentParsingItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageContentParsingItem&gt;](./dataforseo.client.models.onpagecontentparsingitem)<br>
+[ICollection&lt;OnPageContentParsingItem&gt;](./dataforseo.client.models.onpagecontentparsingitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -80,7 +76,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageContentParsingResultInfo()
 ```
-
----
-
-[`< Back`](./)

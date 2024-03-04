@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixBacklinksLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBacklinksLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBacklinksLimitsRatesDataInfo](./dataforseo.client.models.appendixbacklinkslimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBacklinksLimitsRatesDataInfo](./dataforseo.client.models.appendixbacklinkslimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo Summary { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **History**
 
@@ -32,7 +28,7 @@ public AppendixInfo History { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **ContentDuplicates**
 
@@ -42,7 +38,7 @@ public AppendixInfo ContentDuplicates { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **DomainIntersection**
 
@@ -52,7 +48,7 @@ public AppendixInfo DomainIntersection { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Backlinks**
 
@@ -62,7 +58,7 @@ public AppendixInfo Backlinks { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **DomainPages**
 
@@ -72,7 +68,7 @@ public AppendixInfo DomainPages { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Anchors**
 
@@ -82,7 +78,7 @@ public AppendixInfo Anchors { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **ReferringDomains**
 
@@ -92,7 +88,7 @@ public AppendixInfo ReferringDomains { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **PageIntersection**
 
@@ -102,7 +98,7 @@ public AppendixInfo PageIntersection { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **ReferringNetworks**
 
@@ -112,7 +108,7 @@ public AppendixInfo ReferringNetworks { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **BulkRanks**
 
@@ -122,7 +118,7 @@ public AppendixInfo BulkRanks { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **BulkBacklinks**
 
@@ -132,7 +128,7 @@ public AppendixInfo BulkBacklinks { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **BulkNewLostBacklinks**
 
@@ -142,7 +138,7 @@ public AppendixInfo BulkNewLostBacklinks { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **BulkNewLostReferringDomains**
 
@@ -152,7 +148,7 @@ public AppendixInfo BulkNewLostReferringDomains { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **BulkReferringDomains**
 
@@ -162,7 +158,7 @@ public AppendixInfo BulkReferringDomains { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Errors**
 
@@ -182,7 +178,7 @@ public AppendixInfo DomainPagesSummary { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **TimeseriesSummary**
 
@@ -192,7 +188,7 @@ public AppendixInfo TimeseriesSummary { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **TimeseriesNewLostSummary**
 
@@ -202,7 +198,7 @@ public AppendixInfo TimeseriesNewLostSummary { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Competitors**
 
@@ -212,7 +208,7 @@ public AppendixInfo Competitors { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -231,7 +227,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBacklinksLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

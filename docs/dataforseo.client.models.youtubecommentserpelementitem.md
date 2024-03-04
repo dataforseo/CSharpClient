@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # YoutubeCommentSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class YoutubeCommentSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [YoutubeCommentSerpElementItem](./dataforseo.client.models.youtubecommentserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [YoutubeCommentSerpElementItem](./dataforseo.client.models.youtubecommentserpelementitem.md)
 
 ## Properties
 
@@ -157,7 +153,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public YoutubeCommentSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

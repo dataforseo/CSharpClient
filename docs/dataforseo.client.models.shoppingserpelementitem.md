@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ShoppingSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ShoppingSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [ShoppingSerpElementItem](./dataforseo.client.models.shoppingserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [ShoppingSerpElementItem](./dataforseo.client.models.shoppingserpelementitem.md)
 
 ## Properties
 
@@ -89,7 +85,7 @@ public ICollection<ShoppingElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ShoppingElement&gt;](./dataforseo.client.models.shoppingelement)<br>
+[ICollection&lt;ShoppingElement&gt;](./dataforseo.client.models.shoppingelement.md)<br>
 
 ### **Rectangle**
 
@@ -103,7 +99,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -122,7 +118,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ShoppingSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

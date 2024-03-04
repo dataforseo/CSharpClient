@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleOrganicTasksFixedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleOrganicTasksFixedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleOrganicTasksFixedResponseInfo](./dataforseo.client.models.responses.serpgoogleorganictasksfixedresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleOrganicTasksFixedResponseInfo](./dataforseo.client.models.responses.serpgoogleorganictasksfixedresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleOrganicTasksFixedTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleOrganicTasksFixedTaskInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictasksfixedtaskinfo)<br>
+[ICollection&lt;SerpGoogleOrganicTasksFixedTaskInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictasksfixedtaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleOrganicTasksFixedResponseInfo()
 ```
-
----
-
-[`< Back`](./)

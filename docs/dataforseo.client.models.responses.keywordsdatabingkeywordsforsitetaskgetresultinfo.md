@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingKeywordsForSiteTaskGetResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordsForSiteTaskGetResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordsForSiteTaskGetResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetaskgetresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordsForSiteTaskGetResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetaskgetresultinfo.md)
 
 ## Properties
 
@@ -149,7 +145,7 @@ public ICollection<MonthlySearches> MonthlySearches { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MonthlySearches&gt;](./dataforseo.client.models.monthlysearches)<br>
+[ICollection&lt;MonthlySearches&gt;](./dataforseo.client.models.monthlysearches.md)<br>
 
 ### **AdditionalProperties**
 
@@ -168,7 +164,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordsForSiteTaskGetResultInfo()
 ```
-
----
-
-[`< Back`](./)

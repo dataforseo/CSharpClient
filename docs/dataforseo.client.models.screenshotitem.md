@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ScreenshotItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ScreenshotItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ScreenshotItem](./dataforseo.client.models.screenshotitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ScreenshotItem](./dataforseo.client.models.screenshotitem.md)
 
 ## Properties
 
@@ -45,7 +41,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ScreenshotItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeVideoCommentsTaskGetAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeVideoCommentsTaskGetAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpYoutubeVideoCommentsTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpyoutubevideocommentstaskgetadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpYoutubeVideoCommentsTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpyoutubevideocommentstaskgetadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo> Result { g
 
 #### Property Value
 
-[ICollection&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstaskgetadvancedresultinfo)<br>
+[ICollection&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideocommentstaskgetadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoCommentsTaskGetAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

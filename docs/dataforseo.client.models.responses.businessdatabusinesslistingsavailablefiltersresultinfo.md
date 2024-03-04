@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataBusinessListingsAvailableFiltersResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataBusinessListingsAvailableFiltersResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsAvailableFiltersResultInfo](./dataforseo.client.models.responses.businessdatabusinesslistingsavailablefiltersresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsAvailableFiltersResultInfo](./dataforseo.client.models.responses.businessdatabusinesslistingsavailablefiltersresultinfo.md)
 
 ## Properties
 
@@ -51,7 +47,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsAvailableFiltersResultInfo()
 ```
-
----
-
-[`< Back`](./)

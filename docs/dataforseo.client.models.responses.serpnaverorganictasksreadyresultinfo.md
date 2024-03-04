@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpNaverOrganicTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpNaverOrganicTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpNaverOrganicTasksReadyResultInfo](./dataforseo.client.models.responses.serpnaverorganictasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpNaverOrganicTasksReadyResultInfo](./dataforseo.client.models.responses.serpnaverorganictasksreadyresultinfo.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpNaverOrganicTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

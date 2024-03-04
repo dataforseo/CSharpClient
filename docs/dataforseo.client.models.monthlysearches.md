@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MonthlySearches
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MonthlySearches
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MonthlySearches](./dataforseo.client.models.monthlysearches)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MonthlySearches](./dataforseo.client.models.monthlysearches.md)
 
 ## Properties
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MonthlySearches()
 ```
-
----
-
-[`< Back`](./)

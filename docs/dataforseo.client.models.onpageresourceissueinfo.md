@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageResourceIssueInfo
 
 Namespace: DataForSeo.Client.Models
@@ -12,7 +8,7 @@ resource errors and warnings
 public class OnPageResourceIssueInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo.md)
 
 ## Properties
 
@@ -26,7 +22,7 @@ public ICollection<OnPageResourceIssueItemInfo> Errors { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageResourceIssueItemInfo&gt;](./dataforseo.client.models.onpageresourceissueiteminfo)<br>
+[ICollection&lt;OnPageResourceIssueItemInfo&gt;](./dataforseo.client.models.onpageresourceissueiteminfo.md)<br>
 
 ### **Warnings**
 
@@ -38,7 +34,7 @@ public ICollection<OnPageResourceIssueItemInfo> Warnings { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageResourceIssueItemInfo&gt;](./dataforseo.client.models.onpageresourceissueiteminfo)<br>
+[ICollection&lt;OnPageResourceIssueItemInfo&gt;](./dataforseo.client.models.onpageresourceissueiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -57,7 +53,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageResourceIssueInfo()
 ```
-
----
-
-[`< Back`](./)

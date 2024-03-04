@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # StoresCountInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class StoresCountInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [StoresCountInfo](./dataforseo.client.models.storescountinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [StoresCountInfo](./dataforseo.client.models.storescountinfo.md)
 
 ## Properties
 
@@ -71,7 +67,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public StoresCountInfo()
 ```
-
----
-
-[`< Back`](./)

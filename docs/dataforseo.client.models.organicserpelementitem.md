@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OrganicSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class OrganicSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [OrganicSerpElementItem](./dataforseo.client.models.organicserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [OrganicSerpElementItem](./dataforseo.client.models.organicserpelementitem.md)
 
 ## Properties
 
@@ -258,7 +254,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement.md)<br>
 
 ### **AmpVersion**
 
@@ -284,7 +280,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Price**
 
@@ -297,7 +293,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **Highlighted**
 
@@ -323,7 +319,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **Faq**
 
@@ -337,7 +333,7 @@ public FaqBox Faq { get; set; }
 
 #### Property Value
 
-[FaqBox](./dataforseo.client.models.faqbox)<br>
+[FaqBox](./dataforseo.client.models.faqbox.md)<br>
 
 ### **ExtendedPeopleAlsoSearch**
 
@@ -365,7 +361,7 @@ public AboutThisResultElement AboutThisResult { get; set; }
 
 #### Property Value
 
-[AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement)<br>
+[AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement.md)<br>
 
 ### **RelatedResult**
 
@@ -379,7 +375,7 @@ public ICollection<RelatedResult> RelatedResult { get; set; }
 
 #### Property Value
 
-[ICollection&lt;RelatedResult&gt;](./dataforseo.client.models.relatedresult)<br>
+[ICollection&lt;RelatedResult&gt;](./dataforseo.client.models.relatedresult.md)<br>
 
 ### **Timestamp**
 
@@ -408,7 +404,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -427,7 +423,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OrganicSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisSearchLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ContentAnalysisSearchLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSearchLiveItem](./dataforseo.client.models.contentanalysissearchliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSearchLiveItem](./dataforseo.client.models.contentanalysissearchliveitem.md)
 
 ## Properties
 
@@ -211,7 +207,7 @@ public ICollection<SocialMetricsInfo> SocialMetrics { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SocialMetricsInfo&gt;](./dataforseo.client.models.socialmetricsinfo)<br>
+[ICollection&lt;SocialMetricsInfo&gt;](./dataforseo.client.models.socialmetricsinfo.md)<br>
 
 ### **ContentInfo**
 
@@ -223,7 +219,7 @@ public AnalysisContentInfo ContentInfo { get; set; }
 
 #### Property Value
 
-[AnalysisContentInfo](./dataforseo.client.models.analysiscontentinfo)<br>
+[AnalysisContentInfo](./dataforseo.client.models.analysiscontentinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -242,7 +238,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSearchLiveItem()
 ```
-
----
-
-[`< Back`](./)

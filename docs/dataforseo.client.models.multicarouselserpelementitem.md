@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MultiCarouselSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MultiCarouselSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [MultiCarouselSerpElementItem](./dataforseo.client.models.multicarouselserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [MultiCarouselSerpElementItem](./dataforseo.client.models.multicarouselserpelementitem.md)
 
 ## Properties
 
@@ -77,7 +73,7 @@ public ICollection<MultiCarouselElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MultiCarouselElement&gt;](./dataforseo.client.models.multicarouselelement)<br>
+[ICollection&lt;MultiCarouselElement&gt;](./dataforseo.client.models.multicarouselelement.md)<br>
 
 ### **Rectangle**
 
@@ -91,7 +87,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -110,7 +106,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MultiCarouselSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

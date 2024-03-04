@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingKeywordPerformanceTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class KeywordsDataBingKeywordPerformanceTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceTaskPostRequestInfo](./dataforseo.client.models.requests.keywordsdatabingkeywordperformancetaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceTaskPostRequestInfo](./dataforseo.client.models.requests.keywordsdatabingkeywordperformancetaskpostrequestinfo.md)
 
 ## Properties
 
@@ -222,7 +218,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordPerformanceTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

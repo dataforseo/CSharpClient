@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ProductConsiderationsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductConsiderationsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductConsiderationsElement](./dataforseo.client.models.productconsiderationselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductConsiderationsElement](./dataforseo.client.models.productconsiderationselement.md)
 
 ## Properties
 
@@ -61,7 +57,7 @@ public ProductConsiderationsExpandedElement ExpandedElement { get; set; }
 
 #### Property Value
 
-[ProductConsiderationsExpandedElement](./dataforseo.client.models.productconsiderationsexpandedelement)<br>
+[ProductConsiderationsExpandedElement](./dataforseo.client.models.productconsiderationsexpandedelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -80,7 +76,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductConsiderationsElement()
 ```
-
----
-
-[`< Back`](./)

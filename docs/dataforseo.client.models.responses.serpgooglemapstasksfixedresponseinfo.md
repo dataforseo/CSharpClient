@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleMapsTasksFixedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleMapsTasksFixedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleMapsTasksFixedResponseInfo](./dataforseo.client.models.responses.serpgooglemapstasksfixedresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleMapsTasksFixedResponseInfo](./dataforseo.client.models.responses.serpgooglemapstasksfixedresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleMapsTasksFixedTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleMapsTasksFixedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstasksfixedtaskinfo)<br>
+[ICollection&lt;SerpGoogleMapsTasksFixedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstasksfixedtaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsTasksFixedResponseInfo()
 ```
-
----
-
-[`< Back`](./)

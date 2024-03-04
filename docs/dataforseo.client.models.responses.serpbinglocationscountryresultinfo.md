@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingLocationsCountryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLocationsCountryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBingLocationsCountryResultInfo](./dataforseo.client.models.responses.serpbinglocationscountryresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBingLocationsCountryResultInfo](./dataforseo.client.models.responses.serpbinglocationscountryresultinfo.md)
 
 ## Properties
 
@@ -98,7 +94,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLocationsCountryResultInfo()
 ```
-
----
-
-[`< Back`](./)

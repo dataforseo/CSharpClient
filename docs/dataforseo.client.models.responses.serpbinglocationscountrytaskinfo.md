@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingLocationsCountryTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLocationsCountryTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBingLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpbinglocationscountrytaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBingLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpbinglocationscountrytaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBingLocationsCountryResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpbinglocationscountryresultinfo)<br>
+[ICollection&lt;SerpBingLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpbinglocationscountryresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLocationsCountryTaskInfo()
 ```
-
----
-
-[`< Back`](./)

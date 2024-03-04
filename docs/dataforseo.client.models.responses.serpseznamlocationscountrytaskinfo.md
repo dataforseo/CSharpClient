@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpSeznamLocationsCountryTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpSeznamLocationsCountryTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpSeznamLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpseznamlocationscountrytaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpSeznamLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpseznamlocationscountrytaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpSeznamLocationsCountryResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpSeznamLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationscountryresultinfo)<br>
+[ICollection&lt;SerpSeznamLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationscountryresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpSeznamLocationsCountryTaskInfo()
 ```
-
----
-
-[`< Back`](./)

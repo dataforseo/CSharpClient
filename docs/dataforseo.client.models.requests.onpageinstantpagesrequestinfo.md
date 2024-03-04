@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageInstantPagesRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageInstantPagesRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageInstantPagesRequestInfo](./dataforseo.client.models.requests.onpageinstantpagesrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageInstantPagesRequestInfo](./dataforseo.client.models.requests.onpageinstantpagesrequestinfo.md)
 
 ## Properties
 
@@ -317,7 +313,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageInstantPagesRequestInfo()
 ```
-
----
-
-[`< Back`](./)

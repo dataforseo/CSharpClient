@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleReviewsTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleReviewsTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BusinessDataGoogleReviewsTaskPostResponseInfo](./dataforseo.client.models.responses.businessdatagooglereviewstaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BusinessDataGoogleReviewsTaskPostResponseInfo](./dataforseo.client.models.responses.businessdatagooglereviewstaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataGoogleReviewsTaskPostTaskInfo> Tasks { get; set; 
 
 #### Property Value
 
-[ICollection&lt;BusinessDataGoogleReviewsTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskposttaskinfo)<br>
+[ICollection&lt;BusinessDataGoogleReviewsTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleReviewsTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

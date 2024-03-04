@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # LocalBusinessOrderLink
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalBusinessOrderLink : BaseLocalBusinessLink
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink) → [LocalBusinessOrderLink](./dataforseo.client.models.localbusinessorderlink)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink.md) → [LocalBusinessOrderLink](./dataforseo.client.models.localbusinessorderlink.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<LocalBusinessDeliveryServiceInfo> DeliveryServices { get; set
 
 #### Property Value
 
-[ICollection&lt;LocalBusinessDeliveryServiceInfo&gt;](./dataforseo.client.models.localbusinessdeliveryserviceinfo)<br>
+[ICollection&lt;LocalBusinessDeliveryServiceInfo&gt;](./dataforseo.client.models.localbusinessdeliveryserviceinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -43,7 +39,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalBusinessOrderLink()
 ```
-
----
-
-[`< Back`](./)

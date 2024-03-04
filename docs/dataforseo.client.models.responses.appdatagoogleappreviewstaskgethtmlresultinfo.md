@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleAppReviewsTaskGetHtmlResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppReviewsTaskGetHtmlResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppReviewsTaskGetHtmlResultInfo](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgethtmlresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppReviewsTaskGetHtmlResultInfo](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgethtmlresultinfo.md)
 
 ## Properties
 
@@ -111,7 +107,7 @@ public ICollection<HtmlItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem)<br>
+[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -130,7 +126,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppReviewsTaskGetHtmlResultInfo()
 ```
-
----
-
-[`< Back`](./)

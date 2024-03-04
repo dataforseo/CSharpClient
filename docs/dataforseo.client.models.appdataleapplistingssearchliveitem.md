@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataleAppListingsSearchLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataleAppListingsSearchLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataleAppListingsSearchLiveItem](./dataforseo.client.models.appdataleapplistingssearchliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataleAppListingsSearchLiveItem](./dataforseo.client.models.appdataleapplistingssearchliveitem.md)
 
 ## Properties
 
@@ -100,7 +96,7 @@ public BaseAppDataSerpElementItem Item { get; set; }
 
 #### Property Value
 
-[BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem)<br>
+[BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -119,7 +115,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataleAppListingsSearchLiveItem()
 ```
-
----
-
-[`< Back`](./)

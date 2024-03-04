@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # CacheControl
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class CacheControl
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [CacheControl](./dataforseo.client.models.cachecontrol)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [CacheControl](./dataforseo.client.models.cachecontrol.md)
 
 ## Properties
 
@@ -56,7 +52,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public CacheControl()
 ```
-
----
-
-[`< Back`](./)

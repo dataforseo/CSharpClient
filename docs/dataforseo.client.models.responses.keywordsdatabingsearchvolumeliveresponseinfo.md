@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingSearchVolumeLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingSearchVolumeLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [KeywordsDataBingSearchVolumeLiveResponseInfo](./dataforseo.client.models.responses.keywordsdatabingsearchvolumeliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [KeywordsDataBingSearchVolumeLiveResponseInfo](./dataforseo.client.models.responses.keywordsdatabingsearchvolumeliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataBingSearchVolumeLiveTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingSearchVolumeLiveTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumelivetaskinfo)<br>
+[ICollection&lt;KeywordsDataBingSearchVolumeLiveTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingsearchvolumelivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingSearchVolumeLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

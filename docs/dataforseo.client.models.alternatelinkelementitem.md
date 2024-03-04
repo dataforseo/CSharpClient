@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AlternateLinkElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AlternateLinkElementItem : BaseOnPageLinkItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo) → [AlternateLinkElementItem](./dataforseo.client.models.alternatelinkelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo.md) → [AlternateLinkElementItem](./dataforseo.client.models.alternatelinkelementitem.md)
 
 ## Properties
 
@@ -198,7 +194,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AlternateLinkElementItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpYoutubeLanguagesResponseInfo](./dataforseo.client.models.responses.serpyoutubelanguagesresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpYoutubeLanguagesResponseInfo](./dataforseo.client.models.responses.serpyoutubelanguagesresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpYoutubeLanguagesTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpYoutubeLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.serpyoutubelanguagestaskinfo)<br>
+[ICollection&lt;SerpYoutubeLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.serpyoutubelanguagestaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeLanguagesResponseInfo()
 ```
-
----
-
-[`< Back`](./)

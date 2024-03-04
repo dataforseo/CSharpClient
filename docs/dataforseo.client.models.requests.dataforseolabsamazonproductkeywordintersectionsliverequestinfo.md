@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsamazonproductkeywordintersectionsliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsamazonproductkeywordintersectionsliverequestinfo.md)
 
 ## Properties
 
@@ -231,7 +227,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

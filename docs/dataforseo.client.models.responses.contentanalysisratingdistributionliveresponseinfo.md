@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisRatingDistributionLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisRatingDistributionLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentAnalysisRatingDistributionLiveResponseInfo](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentAnalysisRatingDistributionLiveResponseInfo](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentAnalysisRatingDistributionLiveTaskInfo> Tasks { get; s
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisRatingDistributionLiveTaskInfo&gt;](./dataforseo.client.models.responses.contentanalysisratingdistributionlivetaskinfo)<br>
+[ICollection&lt;ContentAnalysisRatingDistributionLiveTaskInfo&gt;](./dataforseo.client.models.responses.contentanalysisratingdistributionlivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisRatingDistributionLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

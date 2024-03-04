@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ResponseDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ResponseDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ResponseDataInfo](./dataforseo.client.models.responsedatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ResponseDataInfo](./dataforseo.client.models.responsedatainfo.md)
 
 ## Properties
 
@@ -83,7 +79,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ResponseDataInfo()
 ```
-
----
-
-[`< Back`](./)

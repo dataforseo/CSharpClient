@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresultinfo.md)
 
 ## Properties
 
@@ -77,7 +73,7 @@ public ICollection<BusinessDataBusinessListingsCategoriesAggregationLiveItem> It
 
 #### Property Value
 
-[ICollection&lt;BusinessDataBusinessListingsCategoriesAggregationLiveItem&gt;](./dataforseo.client.models.businessdatabusinesslistingscategoriesaggregationliveitem)<br>
+[ICollection&lt;BusinessDataBusinessListingsCategoriesAggregationLiveItem&gt;](./dataforseo.client.models.businessdatabusinesslistingscategoriesaggregationliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -96,7 +92,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

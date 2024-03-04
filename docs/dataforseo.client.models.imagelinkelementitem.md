@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ImageLinkElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ImageLinkElementItem : BaseOnPageLinkItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo) → [ImageLinkElementItem](./dataforseo.client.models.imagelinkelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageLinkItemInfo](./dataforseo.client.models.baseonpagelinkiteminfo.md) → [ImageLinkElementItem](./dataforseo.client.models.imagelinkelementitem.md)
 
 ## Properties
 
@@ -249,7 +245,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImageLinkElementItem()
 ```
-
----
-
-[`< Back`](./)

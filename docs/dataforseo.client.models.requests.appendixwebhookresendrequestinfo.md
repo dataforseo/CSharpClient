@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixWebhookResendRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class AppendixWebhookResendRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixWebhookResendRequestInfo](./dataforseo.client.models.requests.appendixwebhookresendrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixWebhookResendRequestInfo](./dataforseo.client.models.requests.appendixwebhookresendrequestinfo.md)
 
 ## Properties
 
@@ -46,7 +42,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixWebhookResendRequestInfo()
 ```
-
----
-
-[`< Back`](./)

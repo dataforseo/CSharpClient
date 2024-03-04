@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleLocationsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleLocationsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataGoogleLocationsTaskInfo](./dataforseo.client.models.responses.appdatagooglelocationstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataGoogleLocationsTaskInfo](./dataforseo.client.models.responses.appdatagooglelocationstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataGoogleLocationsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataGoogleLocationsResultInfo&gt;](./dataforseo.client.models.responses.appdatagooglelocationsresultinfo)<br>
+[ICollection&lt;AppDataGoogleLocationsResultInfo&gt;](./dataforseo.client.models.responses.appdatagooglelocationsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleLocationsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

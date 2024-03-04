@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleBusinessInfoBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleBusinessInfoBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [GoogleBusinessInfoBusinessDataSerpElementItem](./dataforseo.client.models.googlebusinessinfobusinessdataserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [GoogleBusinessInfoBusinessDataSerpElementItem](./dataforseo.client.models.googlebusinessinfobusinessdataserpelementitem.md)
 
 ## Properties
 
@@ -166,7 +162,7 @@ public AddressInfo AddressInfo { get; set; }
 
 #### Property Value
 
-[AddressInfo](./dataforseo.client.models.addressinfo)<br>
+[AddressInfo](./dataforseo.client.models.addressinfo.md)<br>
 
 ### **PlaceId**
 
@@ -329,7 +325,7 @@ public BusinessDataAttributesInfo Attributes { get; set; }
 
 #### Property Value
 
-[BusinessDataAttributesInfo](./dataforseo.client.models.businessdataattributesinfo)<br>
+[BusinessDataAttributesInfo](./dataforseo.client.models.businessdataattributesinfo.md)<br>
 
 ### **PlaceTopics**
 
@@ -360,7 +356,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **HotelRating**
 
@@ -413,7 +409,7 @@ public ICollection<PeopleAlsoSearch> PeopleAlsoSearch { get; set; }
 
 #### Property Value
 
-[ICollection&lt;PeopleAlsoSearch&gt;](./dataforseo.client.models.peoplealsosearch)<br>
+[ICollection&lt;PeopleAlsoSearch&gt;](./dataforseo.client.models.peoplealsosearch.md)<br>
 
 ### **WorkTime**
 
@@ -426,7 +422,7 @@ public WorkInfo WorkTime { get; set; }
 
 #### Property Value
 
-[WorkInfo](./dataforseo.client.models.workinfo)<br>
+[WorkInfo](./dataforseo.client.models.workinfo.md)<br>
 
 ### **PopularTimes**
 
@@ -439,7 +435,7 @@ public PopularTimes PopularTimes { get; set; }
 
 #### Property Value
 
-[PopularTimes](./dataforseo.client.models.populartimes)<br>
+[PopularTimes](./dataforseo.client.models.populartimes.md)<br>
 
 ### **LocalBusinessLinks**
 
@@ -452,7 +448,7 @@ public BaseLocalBusinessLink LocalBusinessLinks { get; set; }
 
 #### Property Value
 
-[BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink)<br>
+[BaseLocalBusinessLink](./dataforseo.client.models.baselocalbusinesslink.md)<br>
 
 ### **IsDirectoryItem**
 
@@ -480,7 +476,7 @@ public BusinessDirectoryInfo Directory { get; set; }
 
 #### Property Value
 
-[BusinessDirectoryInfo](./dataforseo.client.models.businessdirectoryinfo)<br>
+[BusinessDirectoryInfo](./dataforseo.client.models.businessdirectoryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -499,7 +495,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleBusinessInfoBusinessDataSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

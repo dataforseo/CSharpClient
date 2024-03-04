@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MapsSearchBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MapsSearchBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [MapsSearchBusinessDataSerpElementItem](./dataforseo.client.models.mapssearchbusinessdataserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [MapsSearchBusinessDataSerpElementItem](./dataforseo.client.models.mapssearchbusinessdataserpelementitem.md)
 
 ## Properties
 
@@ -87,7 +83,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **RatingDistribution**
 
@@ -136,7 +132,7 @@ public AddressInfo AddressInfo { get; set; }
 
 #### Property Value
 
-[AddressInfo](./dataforseo.client.models.addressinfo)<br>
+[AddressInfo](./dataforseo.client.models.addressinfo.md)<br>
 
 ### **PlaceId**
 
@@ -266,7 +262,7 @@ public WorkInfo WorkHours { get; set; }
 
 #### Property Value
 
-[WorkInfo](./dataforseo.client.models.workinfo)<br>
+[WorkInfo](./dataforseo.client.models.workinfo.md)<br>
 
 ### **FeatureId**
 
@@ -381,7 +377,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MapsSearchBusinessDataSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

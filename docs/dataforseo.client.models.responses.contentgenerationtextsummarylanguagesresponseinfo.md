@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentGenerationTextSummaryLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationTextSummaryLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentGenerationTextSummaryLanguagesResponseInfo](./dataforseo.client.models.responses.contentgenerationtextsummarylanguagesresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentGenerationTextSummaryLanguagesResponseInfo](./dataforseo.client.models.responses.contentgenerationtextsummarylanguagesresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentGenerationTextSummaryLanguagesTaskInfo> Tasks { get; s
 
 #### Property Value
 
-[ICollection&lt;ContentGenerationTextSummaryLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.contentgenerationtextsummarylanguagestaskinfo)<br>
+[ICollection&lt;ContentGenerationTextSummaryLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.contentgenerationtextsummarylanguagestaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationTextSummaryLanguagesResponseInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataTrustpilotSearchTaskGetTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataTrustpilotSearchTaskGetTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataTrustpilotSearchTaskGetTaskInfo](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgettaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataTrustpilotSearchTaskGetTaskInfo](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgettaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataTrustpilotSearchTaskGetResultInfo> Result { get; 
 
 #### Property Value
 
-[ICollection&lt;BusinessDataTrustpilotSearchTaskGetResultInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgetresultinfo)<br>
+[ICollection&lt;BusinessDataTrustpilotSearchTaskGetResultInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgetresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTrustpilotSearchTaskGetTaskInfo()
 ```
-
----
-
-[`< Back`](./)

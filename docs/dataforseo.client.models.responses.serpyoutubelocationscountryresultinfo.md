@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeLocationsCountryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeLocationsCountryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeLocationsCountryResultInfo](./dataforseo.client.models.responses.serpyoutubelocationscountryresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeLocationsCountryResultInfo](./dataforseo.client.models.responses.serpyoutubelocationscountryresultinfo.md)
 
 ## Properties
 
@@ -98,7 +94,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeLocationsCountryResultInfo()
 ```
-
----
-
-[`< Back`](./)

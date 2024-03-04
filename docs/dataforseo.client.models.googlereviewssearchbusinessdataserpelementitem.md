@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleReviewsSearchBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleReviewsSearchBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [GoogleReviewsSearchBusinessDataSerpElementItem](./dataforseo.client.models.googlereviewssearchbusinessdataserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [GoogleReviewsSearchBusinessDataSerpElementItem](./dataforseo.client.models.googlereviewssearchbusinessdataserpelementitem.md)
 
 ## Properties
 
@@ -128,7 +124,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **ReviewsCount**
 
@@ -292,7 +288,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -311,7 +307,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleReviewsSearchBusinessDataSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

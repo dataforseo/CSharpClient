@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageSummaryResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageSummaryResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageSummaryResponseInfo](./dataforseo.client.models.responses.onpagesummaryresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageSummaryResponseInfo](./dataforseo.client.models.responses.onpagesummaryresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageSummaryTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageSummaryTaskInfo&gt;](./dataforseo.client.models.responses.onpagesummarytaskinfo)<br>
+[ICollection&lt;OnPageSummaryTaskInfo&gt;](./dataforseo.client.models.responses.onpagesummarytaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageSummaryResponseInfo()
 ```
-
----
-
-[`< Back`](./)

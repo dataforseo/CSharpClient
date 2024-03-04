@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantGoogleLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantGoogleLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [MerchantGoogleLanguagesResponseInfo](./dataforseo.client.models.responses.merchantgooglelanguagesresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [MerchantGoogleLanguagesResponseInfo](./dataforseo.client.models.responses.merchantgooglelanguagesresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<MerchantGoogleLanguagesTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MerchantGoogleLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.merchantgooglelanguagestaskinfo)<br>
+[ICollection&lt;MerchantGoogleLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.merchantgooglelanguagestaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleLanguagesResponseInfo()
 ```
-
----
-
-[`< Back`](./)

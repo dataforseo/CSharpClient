@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleSearchByImageTaskGetAdvancedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleSearchByImageTaskGetAdvancedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleSearchByImageTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskgetadvancedresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleSearchByImageTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskgetadvancedresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleSearchByImageTaskGetAdvancedTaskInfo> Tasks { get; 
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleSearchByImageTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskgetadvancedtaskinfo)<br>
+[ICollection&lt;SerpGoogleSearchByImageTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskgetadvancedtaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleSearchByImageTaskGetAdvancedResponseInfo()
 ```
-
----
-
-[`< Back`](./)

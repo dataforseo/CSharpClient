@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RelatedSearchesSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RelatedSearchesSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [RelatedSearchesSerpElementItem](./dataforseo.client.models.relatedsearchesserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [RelatedSearchesSerpElementItem](./dataforseo.client.models.relatedsearchesserpelementitem.md)
 
 ## Properties
 
@@ -91,7 +87,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -110,7 +106,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RelatedSearchesSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

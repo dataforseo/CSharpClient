@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixKeywordsKeywordsDataPriceDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixKeywordsKeywordsDataPriceDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixKeywordsKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordskeywordsdatapricedatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixKeywordsKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordskeywordsdatapricedatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TaskGet { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **TaskPost**
 
@@ -32,7 +28,7 @@ public AppendixTaskKeywordsDataPriceDataInfo TaskPost { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -51,7 +47,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixKeywordsKeywordsDataPriceDataInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # FaqBoxElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class FaqBoxElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FaqBoxElement](./dataforseo.client.models.faqboxelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FaqBoxElement](./dataforseo.client.models.faqboxelement.md)
 
 ## Properties
 
@@ -60,7 +56,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public FaqBoxElement()
 ```
-
----
-
-[`< Back`](./)

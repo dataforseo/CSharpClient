@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksHistoryLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksHistoryLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksHistoryLiveItem](./dataforseo.client.models.backlinkshistoryliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksHistoryLiveItem](./dataforseo.client.models.backlinkshistoryliveitem.md)
 
 ## Properties
 
@@ -148,7 +144,7 @@ public TargetInfo Info { get; set; }
 
 #### Property Value
 
-[TargetInfo](./dataforseo.client.models.targetinfo)<br>
+[TargetInfo](./dataforseo.client.models.targetinfo.md)<br>
 
 ### **InternalLinksCount**
 
@@ -388,7 +384,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksHistoryLiveItem()
 ```
-
----
-
-[`< Back`](./)

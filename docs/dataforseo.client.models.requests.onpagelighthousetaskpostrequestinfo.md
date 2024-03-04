@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageLighthouseTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseTaskPostRequestInfo](./dataforseo.client.models.requests.onpagelighthousetaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseTaskPostRequestInfo](./dataforseo.client.models.requests.onpagelighthousetaskpostrequestinfo.md)
 
 ## Properties
 
@@ -207,7 +203,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

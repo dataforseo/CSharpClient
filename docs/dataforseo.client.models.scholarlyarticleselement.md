@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ScholarlyArticlesElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ScholarlyArticlesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ScholarlyArticlesElement](./dataforseo.client.models.scholarlyarticleselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ScholarlyArticlesElement](./dataforseo.client.models.scholarlyarticleselement.md)
 
 ## Properties
 
@@ -91,7 +87,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ScholarlyArticlesElement()
 ```
-
----
-
-[`< Back`](./)

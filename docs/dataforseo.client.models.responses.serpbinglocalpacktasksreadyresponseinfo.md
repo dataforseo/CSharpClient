@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingLocalPackTasksReadyResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLocalPackTasksReadyResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpBingLocalPackTasksReadyResponseInfo](./dataforseo.client.models.responses.serpbinglocalpacktasksreadyresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpBingLocalPackTasksReadyResponseInfo](./dataforseo.client.models.responses.serpbinglocalpacktasksreadyresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBingLocalPackTasksReadyTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingLocalPackTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktasksreadytaskinfo)<br>
+[ICollection&lt;SerpBingLocalPackTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.serpbinglocalpacktasksreadytaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLocalPackTasksReadyResponseInfo()
 ```
-
----
-
-[`< Back`](./)

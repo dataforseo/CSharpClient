@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PageMetrics
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PageMetrics
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageMetrics](./dataforseo.client.models.pagemetrics)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageMetrics](./dataforseo.client.models.pagemetrics.md)
 
 ## Properties
 
@@ -187,7 +183,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PageMetrics()
 ```
-
----
-
-[`< Back`](./)

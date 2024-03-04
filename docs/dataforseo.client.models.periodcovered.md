@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PeriodCovered
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PeriodCovered
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PeriodCovered](./dataforseo.client.models.periodcovered)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PeriodCovered](./dataforseo.client.models.periodcovered.md)
 
 ## Properties
 
@@ -75,7 +71,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PeriodCovered()
 ```
-
----
-
-[`< Back`](./)

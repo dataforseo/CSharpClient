@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleOrganicTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleOrganicTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleOrganicTaskPostResponseInfo](./dataforseo.client.models.responses.serpgoogleorganictaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleOrganicTaskPostResponseInfo](./dataforseo.client.models.responses.serpgoogleorganictaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleOrganicTaskPostTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleOrganicTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskposttaskinfo)<br>
+[ICollection&lt;SerpGoogleOrganicTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganictaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleOrganicTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

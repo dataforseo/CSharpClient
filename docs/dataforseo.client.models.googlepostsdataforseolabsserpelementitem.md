@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GooglePostsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GooglePostsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [GooglePostsDataforseoLabsSerpElementItem](./dataforseo.client.models.googlepostsdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [GooglePostsDataforseoLabsSerpElementItem](./dataforseo.client.models.googlepostsdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -119,7 +115,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GooglePostsDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

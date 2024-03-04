@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBingRankedKeywordsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingRankedKeywordsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingRankedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingRankedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresultinfo.md)
 
 ## Properties
 
@@ -99,7 +95,7 @@ public IDictionary<string, MetricsInfo> Metrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **MetricsAbsolute**
 
@@ -112,7 +108,7 @@ public IDictionary<string, MetricsInfo> MetricsAbsolute { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **Items**
 
@@ -124,7 +120,7 @@ public ICollection<DataforseoLabsBingRankedKeywordsLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsbingrankedkeywordsliveitem)<br>
+[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsbingrankedkeywordsliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingRankedKeywordsLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

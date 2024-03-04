@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPagePagesByResourceRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPagePagesByResourceRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPagePagesByResourceRequestInfo](./dataforseo.client.models.requests.onpagepagesbyresourcerequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPagePagesByResourceRequestInfo](./dataforseo.client.models.requests.onpagepagesbyresourcerequestinfo.md)
 
 ## Properties
 
@@ -157,7 +153,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPagePagesByResourceRequestInfo()
 ```
-
----
-
-[`< Back`](./)

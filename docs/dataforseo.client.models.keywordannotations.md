@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordAnnotations
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class KeywordAnnotations
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordAnnotations](./dataforseo.client.models.keywordannotations)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordAnnotations](./dataforseo.client.models.keywordannotations.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ConceptInfo> Concepts { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ConceptInfo&gt;](./dataforseo.client.models.conceptinfo)<br>
+[ICollection&lt;ConceptInfo&gt;](./dataforseo.client.models.conceptinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -43,7 +39,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordAnnotations()
 ```
-
----
-
-[`< Back`](./)

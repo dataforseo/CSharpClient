@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataBusinessListingsSearchLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataBusinessListingsSearchLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataBusinessListingsSearchLiveTaskInfo](./dataforseo.client.models.responses.businessdatabusinesslistingssearchlivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataBusinessListingsSearchLiveTaskInfo](./dataforseo.client.models.responses.businessdatabusinesslistingssearchlivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataBusinessListingsSearchLiveResultInfo> Result { ge
 
 #### Property Value
 
-[ICollection&lt;BusinessDataBusinessListingsSearchLiveResultInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingssearchliveresultinfo)<br>
+[ICollection&lt;BusinessDataBusinessListingsSearchLiveResultInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingssearchliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataBusinessListingsSearchLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

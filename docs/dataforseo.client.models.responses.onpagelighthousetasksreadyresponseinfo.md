@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseTasksReadyResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseTasksReadyResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageLighthouseTasksReadyResponseInfo](./dataforseo.client.models.responses.onpagelighthousetasksreadyresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageLighthouseTasksReadyResponseInfo](./dataforseo.client.models.responses.onpagelighthousetasksreadyresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageLighthouseTasksReadyTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLighthouseTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetasksreadytaskinfo)<br>
+[ICollection&lt;OnPageLighthouseTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetasksreadytaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseTasksReadyResponseInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # HotelPriceInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class HotelPriceInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelPriceInfo](./dataforseo.client.models.hotelpriceinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelPriceInfo](./dataforseo.client.models.hotelpriceinfo.md)
 
 ## Properties
 
@@ -117,7 +113,7 @@ public ICollection<HotelPriceItemInfo> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HotelPriceItemInfo&gt;](./dataforseo.client.models.hotelpriceiteminfo)<br>
+[ICollection&lt;HotelPriceItemInfo&gt;](./dataforseo.client.models.hotelpriceiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -136,7 +132,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HotelPriceInfo()
 ```
-
----
-
-[`< Back`](./)

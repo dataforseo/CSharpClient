@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonLanguagesResultInfo](./dataforseo.client.models.responses.merchantamazonlanguagesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonLanguagesResultInfo](./dataforseo.client.models.responses.merchantamazonlanguagesresultinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonLanguagesResultInfo()
 ```
-
----
-
-[`< Back`](./)

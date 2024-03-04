@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLinksRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageLinksRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLinksRequestInfo](./dataforseo.client.models.requests.onpagelinksrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLinksRequestInfo](./dataforseo.client.models.requests.onpagelinksrequestinfo.md)
 
 ## Properties
 
@@ -150,7 +146,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLinksRequestInfo()
 ```
-
----
-
-[`< Back`](./)

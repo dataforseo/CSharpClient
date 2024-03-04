@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleAppListTaskGetHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppListTaskGetHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataGoogleAppListTaskGetHtmlTaskInfo](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmltaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataGoogleAppListTaskGetHtmlTaskInfo](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmltaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataGoogleAppListTaskGetHtmlResultInfo> Result { get; set;
 
 #### Property Value
 
-[ICollection&lt;AppDataGoogleAppListTaskGetHtmlResultInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmlresultinfo)<br>
+[ICollection&lt;AppDataGoogleAppListTaskGetHtmlResultInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmlresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppListTaskGetHtmlTaskInfo()
 ```
-
----
-
-[`< Back`](./)

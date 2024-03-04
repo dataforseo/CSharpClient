@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo](./dataforseo.client.models.requests.domainanalyticstechnologiesdomainsbyhtmltermsliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo](./dataforseo.client.models.requests.domainanalyticstechnologiesdomainsbyhtmltermsliverequestinfo.md)
 
 ## Properties
 
@@ -188,7 +184,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

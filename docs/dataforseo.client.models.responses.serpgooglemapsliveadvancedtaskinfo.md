@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleMapsLiveAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleMapsLiveAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleMapsLiveAdvancedTaskInfo](./dataforseo.client.models.responses.serpgooglemapsliveadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleMapsLiveAdvancedTaskInfo](./dataforseo.client.models.responses.serpgooglemapsliveadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleMapsLiveAdvancedResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleMapsLiveAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpgooglemapsliveadvancedresultinfo)<br>
+[ICollection&lt;SerpGoogleMapsLiveAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpgooglemapsliveadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsLiveAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

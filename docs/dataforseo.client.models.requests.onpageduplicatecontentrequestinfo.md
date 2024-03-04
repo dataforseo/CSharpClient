@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageDuplicateContentRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageDuplicateContentRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateContentRequestInfo](./dataforseo.client.models.requests.onpageduplicatecontentrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateContentRequestInfo](./dataforseo.client.models.requests.onpageduplicatecontentrequestinfo.md)
 
 ## Properties
 
@@ -121,7 +117,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateContentRequestInfo()
 ```
-
----
-
-[`< Back`](./)

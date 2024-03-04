@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpSeznamOrganicTaskPostTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpSeznamOrganicTaskPostTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpSeznamOrganicTaskPostTaskInfo](./dataforseo.client.models.responses.serpseznamorganictaskposttaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpSeznamOrganicTaskPostTaskInfo](./dataforseo.client.models.responses.serpseznamorganictaskposttaskinfo.md)
 
 ## Properties
 
@@ -144,7 +140,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpSeznamOrganicTaskPostTaskInfo()
 ```
-
----
-
-[`< Back`](./)

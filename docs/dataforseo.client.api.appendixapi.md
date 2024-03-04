@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixApi
 
 Namespace: DataForSeo.Client.Api
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Api
 public class AppendixApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixApi](./dataforseo.client.api.appendixapi)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixApi](./dataforseo.client.api.appendixapi.md)
 
 ## Properties
 
@@ -56,12 +52,12 @@ public Task<AppendixUserDataResponseInfo> UserDataAsync()
 
 #### Returns
 
-[Task&lt;AppendixUserDataResponseInfo&gt;](./dataforseo.client.models.responses.appendixuserdataresponseinfo)<br>
+[Task&lt;AppendixUserDataResponseInfo&gt;](./dataforseo.client.models.responses.appendixuserdataresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -82,12 +78,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppendixUserDataResponseInfo&gt;](./dataforseo.client.models.responses.appendixuserdataresponseinfo)<br>
+[Task&lt;AppendixUserDataResponseInfo&gt;](./dataforseo.client.models.responses.appendixuserdataresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -103,12 +99,12 @@ public Task<AppendixErrorsResponseInfo> AppendixErrorsAsync()
 
 #### Returns
 
-[Task&lt;AppendixErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appendixerrorsresponseinfo)<br>
+[Task&lt;AppendixErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appendixerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -129,12 +125,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppendixErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appendixerrorsresponseinfo)<br>
+[Task&lt;AppendixErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appendixerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -150,16 +146,16 @@ public Task<AppendixWebhookResendResponseInfo> WebhookResendAsync(IEnumerable<Ap
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;](./dataforseo.client.models.requests.appendixwebhookresendrequestinfo)<br>
+`body` [IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;](./dataforseo.client.models.requests.appendixwebhookresendrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppendixWebhookResendResponseInfo&gt;](./dataforseo.client.models.responses.appendixwebhookresendresponseinfo)<br>
+[Task&lt;AppendixWebhookResendResponseInfo&gt;](./dataforseo.client.models.responses.appendixwebhookresendresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -176,19 +172,19 @@ public Task<AppendixWebhookResendResponseInfo> WebhookResendAsync(IEnumerable<Ap
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;](./dataforseo.client.models.requests.appendixwebhookresendrequestinfo)<br>
+`body` [IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;](./dataforseo.client.models.requests.appendixwebhookresendrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppendixWebhookResendResponseInfo&gt;](./dataforseo.client.models.responses.appendixwebhookresendresponseinfo)<br>
+[Task&lt;AppendixWebhookResendResponseInfo&gt;](./dataforseo.client.models.responses.appendixwebhookresendresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -205,12 +201,12 @@ public Task<AppendixStatusResponseInfo> AppendixStatusAsync()
 
 #### Returns
 
-[Task&lt;AppendixStatusResponseInfo&gt;](./dataforseo.client.models.responses.appendixstatusresponseinfo)<br>
+[Task&lt;AppendixStatusResponseInfo&gt;](./dataforseo.client.models.responses.appendixstatusresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -231,12 +227,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppendixStatusResponseInfo&gt;](./dataforseo.client.models.responses.appendixstatusresponseinfo)<br>
+[Task&lt;AppendixStatusResponseInfo&gt;](./dataforseo.client.models.responses.appendixstatusresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -265,7 +261,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
----
-
-[`< Back`](./)

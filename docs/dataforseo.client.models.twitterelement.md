@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TwitterElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TwitterElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TwitterElement](./dataforseo.client.models.twitterelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TwitterElement](./dataforseo.client.models.twitterelement.md)
 
 ## Properties
 
@@ -94,7 +90,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TwitterElement()
 ```
-
----
-
-[`< Back`](./)

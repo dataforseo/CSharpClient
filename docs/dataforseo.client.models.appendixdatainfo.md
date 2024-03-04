@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixDataInfo](./dataforseo.client.models.appendixdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixDataInfo](./dataforseo.client.models.appendixdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **Total**
 
@@ -54,7 +50,7 @@ public AppendixKeywordsDataDataInfo KeywordsData { get; set; }
 
 #### Property Value
 
-[AppendixKeywordsDataDataInfo](./dataforseo.client.models.appendixkeywordsdatadatainfo)<br>
+[AppendixKeywordsDataDataInfo](./dataforseo.client.models.appendixkeywordsdatadatainfo.md)<br>
 
 ### **TotalKeywordsData**
 
@@ -74,7 +70,7 @@ public AppendixAppendixDataInfo Appendix { get; set; }
 
 #### Property Value
 
-[AppendixAppendixDataInfo](./dataforseo.client.models.appendixappendixdatainfo)<br>
+[AppendixAppendixDataInfo](./dataforseo.client.models.appendixappendixdatainfo.md)<br>
 
 ### **TotalAppendix**
 
@@ -94,7 +90,7 @@ public AppendixDataforseoLabsLimitsRatesDataInfo DataforseoLabs { get; set; }
 
 #### Property Value
 
-[AppendixDataforseoLabsLimitsRatesDataInfo](./dataforseo.client.models.appendixdataforseolabslimitsratesdatainfo)<br>
+[AppendixDataforseoLabsLimitsRatesDataInfo](./dataforseo.client.models.appendixdataforseolabslimitsratesdatainfo.md)<br>
 
 ### **TotalDataforseoLabs**
 
@@ -114,7 +110,7 @@ public AppendixDomainAnalyticsLimitsRatesDataInfo DomainAnalytics { get; set; }
 
 #### Property Value
 
-[AppendixDomainAnalyticsLimitsRatesDataInfo](./dataforseo.client.models.appendixdomainanalyticslimitsratesdatainfo)<br>
+[AppendixDomainAnalyticsLimitsRatesDataInfo](./dataforseo.client.models.appendixdomainanalyticslimitsratesdatainfo.md)<br>
 
 ### **TotalDomainAnalytics**
 
@@ -134,7 +130,7 @@ public AppendixMerchantLimitsRatesDataInfo Merchant { get; set; }
 
 #### Property Value
 
-[AppendixMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixmerchantlimitsratesdatainfo)<br>
+[AppendixMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixmerchantlimitsratesdatainfo.md)<br>
 
 ### **TotalMerchant**
 
@@ -154,7 +150,7 @@ public AppendixOnPageLimitsRatesDataInfo OnPage { get; set; }
 
 #### Property Value
 
-[AppendixOnPageLimitsRatesDataInfo](./dataforseo.client.models.appendixonpagelimitsratesdatainfo)<br>
+[AppendixOnPageLimitsRatesDataInfo](./dataforseo.client.models.appendixonpagelimitsratesdatainfo.md)<br>
 
 ### **TotalOnPage**
 
@@ -174,7 +170,7 @@ public AppendixBusinessDataLimitsRatesDataInfo BusinessData { get; set; }
 
 #### Property Value
 
-[AppendixBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatalimitsratesdatainfo)<br>
+[AppendixBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatalimitsratesdatainfo.md)<br>
 
 ### **TotalBusinessData**
 
@@ -194,7 +190,7 @@ public AppendixBacklinksLimitsRatesDataInfo Backlinks { get; set; }
 
 #### Property Value
 
-[AppendixBacklinksLimitsRatesDataInfo](./dataforseo.client.models.appendixbacklinkslimitsratesdatainfo)<br>
+[AppendixBacklinksLimitsRatesDataInfo](./dataforseo.client.models.appendixbacklinkslimitsratesdatainfo.md)<br>
 
 ### **TotalBacklinks**
 
@@ -214,7 +210,7 @@ public AppendixAppDataLimitsRatesDataInfo AppData { get; set; }
 
 #### Property Value
 
-[AppendixAppDataLimitsRatesDataInfo](./dataforseo.client.models.appendixappdatalimitsratesdatainfo)<br>
+[AppendixAppDataLimitsRatesDataInfo](./dataforseo.client.models.appendixappdatalimitsratesdatainfo.md)<br>
 
 ### **TotalAppData**
 
@@ -234,7 +230,7 @@ public AppendixContentAnalysisLimitsRatesDataInfo ContentAnalysis { get; set; }
 
 #### Property Value
 
-[AppendixContentAnalysisLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentanalysislimitsratesdatainfo)<br>
+[AppendixContentAnalysisLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentanalysislimitsratesdatainfo.md)<br>
 
 ### **TotalContentAnalysis**
 
@@ -254,7 +250,7 @@ public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set
 
 #### Property Value
 
-[AppendixContentGenerationLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationlimitsratesdatainfo)<br>
+[AppendixContentGenerationLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationlimitsratesdatainfo.md)<br>
 
 ### **TotalContentGeneration**
 
@@ -284,7 +280,7 @@ public AppendixSerpLimitsRatesDataInfo TrafficAnalytics { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **TotalReviews**
 
@@ -304,7 +300,7 @@ public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **TotalSocial**
 
@@ -324,7 +320,7 @@ public AppendixSerpLimitsRatesDataInfo Social { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -343,7 +339,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixDataInfo()
 ```
-
----
-
-[`< Back`](./)

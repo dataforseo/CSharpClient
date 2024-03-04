@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # VideoDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class VideoDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [VideoDataforseoLabsSerpElementItem](./dataforseo.client.models.videodataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [VideoDataforseoLabsSerpElementItem](./dataforseo.client.models.videodataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -78,7 +74,7 @@ public ICollection<VideoElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement)<br>
+[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -97,7 +93,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public VideoDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

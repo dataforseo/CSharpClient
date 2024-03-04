@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # FeaturedSnippetSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class FeaturedSnippetSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [FeaturedSnippetSerpElementItem](./dataforseo.client.models.featuredsnippetserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [FeaturedSnippetSerpElementItem](./dataforseo.client.models.featuredsnippetserpelementitem.md)
 
 ## Properties
 
@@ -166,7 +162,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement.md)<br>
 
 ### **Table**
 
@@ -179,7 +175,7 @@ public Table Table { get; set; }
 
 #### Property Value
 
-[Table](./dataforseo.client.models.table)<br>
+[Table](./dataforseo.client.models.table.md)<br>
 
 ### **Rectangle**
 
@@ -193,7 +189,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -212,7 +208,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public FeaturedSnippetSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

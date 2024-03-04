@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OrganicDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class OrganicDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [OrganicDataforseoLabsSerpElementItem](./dataforseo.client.models.organicdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [OrganicDataforseoLabsSerpElementItem](./dataforseo.client.models.organicdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -246,7 +242,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Highlighted**
 
@@ -272,7 +268,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **AboutThisResult**
 
@@ -286,7 +282,7 @@ public AboutThisResultElement AboutThisResult { get; set; }
 
 #### Property Value
 
-[AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement)<br>
+[AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement.md)<br>
 
 ### **MainDomain**
 
@@ -367,7 +363,7 @@ public RankChanges RankChanges { get; set; }
 
 #### Property Value
 
-[RankChanges](./dataforseo.client.models.rankchanges)<br>
+[RankChanges](./dataforseo.client.models.rankchanges.md)<br>
 
 ### **BacklinksInfo**
 
@@ -379,7 +375,7 @@ public BacklinksInfo BacklinksInfo { get; set; }
 
 #### Property Value
 
-[BacklinksInfo](./dataforseo.client.models.backlinksinfo)<br>
+[BacklinksInfo](./dataforseo.client.models.backlinksinfo.md)<br>
 
 ### **RankInfo**
 
@@ -391,7 +387,7 @@ public RankInfo RankInfo { get; set; }
 
 #### Property Value
 
-[RankInfo](./dataforseo.client.models.rankinfo)<br>
+[RankInfo](./dataforseo.client.models.rankinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -410,7 +406,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OrganicDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

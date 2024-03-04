@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonRelatedSearchesSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonRelatedSearchesSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonRelatedSearchesSerpElementItem](./dataforseo.client.models.amazonrelatedsearchesserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonRelatedSearchesSerpElementItem](./dataforseo.client.models.amazonrelatedsearchesserpelementitem.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public ICollection<RelatedSearchesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;RelatedSearchesElement&gt;](./dataforseo.client.models.relatedsearcheselement)<br>
+[ICollection&lt;RelatedSearchesElement&gt;](./dataforseo.client.models.relatedsearcheselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonRelatedSearchesSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

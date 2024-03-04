@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BulkMetricsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BulkMetricsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BulkMetricsInfo](./dataforseo.client.models.bulkmetricsinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BulkMetricsInfo](./dataforseo.client.models.bulkmetricsinfo.md)
 
 ## Properties
 
@@ -58,7 +54,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BulkMetricsInfo()
 ```
-
----
-
-[`< Back`](./)

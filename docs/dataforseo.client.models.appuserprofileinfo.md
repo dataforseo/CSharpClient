@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppUserProfileInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppUserProfileInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppUserProfileInfo](./dataforseo.client.models.appuserprofileinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppUserProfileInfo](./dataforseo.client.models.appuserprofileinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppUserProfileInfo()
 ```
-
----
-
-[`< Back`](./)

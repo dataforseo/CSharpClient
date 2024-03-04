@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentGenerationGenerateMetaTagsLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationGenerateMetaTagsLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [ContentGenerationGenerateMetaTagsLiveResponseInfo](./dataforseo.client.models.responses.contentgenerationgeneratemetatagsliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [ContentGenerationGenerateMetaTagsLiveResponseInfo](./dataforseo.client.models.responses.contentgenerationgeneratemetatagsliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentGenerationGenerateMetaTagsLiveTaskInfo> Tasks { get; s
 
 #### Property Value
 
-[ICollection&lt;ContentGenerationGenerateMetaTagsLiveTaskInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratemetatagslivetaskinfo)<br>
+[ICollection&lt;ContentGenerationGenerateMetaTagsLiveTaskInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratemetatagslivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationGenerateMetaTagsLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

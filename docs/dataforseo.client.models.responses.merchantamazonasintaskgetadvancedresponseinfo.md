@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonAsinTaskGetAdvancedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonAsinTaskGetAdvancedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [MerchantAmazonAsinTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.merchantamazonasintaskgetadvancedresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [MerchantAmazonAsinTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.merchantamazonasintaskgetadvancedresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<MerchantAmazonAsinTaskGetAdvancedTaskInfo> Tasks { get; set; 
 
 #### Property Value
 
-[ICollection&lt;MerchantAmazonAsinTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskgetadvancedtaskinfo)<br>
+[ICollection&lt;MerchantAmazonAsinTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.merchantamazonasintaskgetadvancedtaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonAsinTaskGetAdvancedResponseInfo()
 ```
-
----
-
-[`< Back`](./)

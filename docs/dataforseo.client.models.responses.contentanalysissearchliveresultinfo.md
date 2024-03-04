@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisSearchLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisSearchLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSearchLiveResultInfo](./dataforseo.client.models.responses.contentanalysissearchliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSearchLiveResultInfo](./dataforseo.client.models.responses.contentanalysissearchliveresultinfo.md)
 
 ## Properties
 
@@ -62,7 +58,7 @@ public ICollection<ContentAnalysisSearchLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisSearchLiveItem&gt;](./dataforseo.client.models.contentanalysissearchliveitem)<br>
+[ICollection&lt;ContentAnalysisSearchLiveItem&gt;](./dataforseo.client.models.contentanalysissearchliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -81,7 +77,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSearchLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

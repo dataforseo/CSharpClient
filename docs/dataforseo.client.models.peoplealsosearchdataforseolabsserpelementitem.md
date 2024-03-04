@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PeopleAlsoSearchDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PeopleAlsoSearchDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [PeopleAlsoSearchDataforseoLabsSerpElementItem](./dataforseo.client.models.peoplealsosearchdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [PeopleAlsoSearchDataforseoLabsSerpElementItem](./dataforseo.client.models.peoplealsosearchdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -119,7 +115,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PeopleAlsoSearchDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

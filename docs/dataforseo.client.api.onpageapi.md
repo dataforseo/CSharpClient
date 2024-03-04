@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageApi
 
 Namespace: DataForSeo.Client.Api
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Api
 public class OnPageApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageApi](./dataforseo.client.api.onpageapi)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageApi](./dataforseo.client.api.onpageapi.md)
 
 ## Properties
 
@@ -56,16 +52,16 @@ public Task<OnPageIdListResponseInfo> OnPageIdListAsync(IEnumerable<OnPageIdList
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageIdListRequestInfo&gt;](./dataforseo.client.models.requests.onpageidlistrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageIdListRequestInfo&gt;](./dataforseo.client.models.requests.onpageidlistrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageIdListResponseInfo&gt;](./dataforseo.client.models.responses.onpageidlistresponseinfo)<br>
+[Task&lt;OnPageIdListResponseInfo&gt;](./dataforseo.client.models.responses.onpageidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -81,19 +77,19 @@ public Task<OnPageIdListResponseInfo> OnPageIdListAsync(IEnumerable<OnPageIdList
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageIdListRequestInfo&gt;](./dataforseo.client.models.requests.onpageidlistrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageIdListRequestInfo&gt;](./dataforseo.client.models.requests.onpageidlistrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageIdListResponseInfo&gt;](./dataforseo.client.models.responses.onpageidlistresponseinfo)<br>
+[Task&lt;OnPageIdListResponseInfo&gt;](./dataforseo.client.models.responses.onpageidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -109,16 +105,16 @@ public Task<OnPageErrorsResponseInfo> OnPageErrorsAsync(IEnumerable<OnPageErrors
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageErrorsRequestInfo&gt;](./dataforseo.client.models.requests.onpageerrorsrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageErrorsRequestInfo&gt;](./dataforseo.client.models.requests.onpageerrorsrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageErrorsResponseInfo&gt;](./dataforseo.client.models.responses.onpageerrorsresponseinfo)<br>
+[Task&lt;OnPageErrorsResponseInfo&gt;](./dataforseo.client.models.responses.onpageerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -134,19 +130,19 @@ public Task<OnPageErrorsResponseInfo> OnPageErrorsAsync(IEnumerable<OnPageErrors
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageErrorsRequestInfo&gt;](./dataforseo.client.models.requests.onpageerrorsrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageErrorsRequestInfo&gt;](./dataforseo.client.models.requests.onpageerrorsrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageErrorsResponseInfo&gt;](./dataforseo.client.models.responses.onpageerrorsresponseinfo)<br>
+[Task&lt;OnPageErrorsResponseInfo&gt;](./dataforseo.client.models.responses.onpageerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -162,16 +158,16 @@ public Task<OnPageForceStopResponseInfo> ForceStopAsync(IEnumerable<OnPageForceS
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageForceStopRequestInfo&gt;](./dataforseo.client.models.requests.onpageforcestoprequestinfo)<br>
+`body` [IEnumerable&lt;OnPageForceStopRequestInfo&gt;](./dataforseo.client.models.requests.onpageforcestoprequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageForceStopResponseInfo&gt;](./dataforseo.client.models.responses.onpageforcestopresponseinfo)<br>
+[Task&lt;OnPageForceStopResponseInfo&gt;](./dataforseo.client.models.responses.onpageforcestopresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -188,19 +184,19 @@ public Task<OnPageForceStopResponseInfo> ForceStopAsync(IEnumerable<OnPageForceS
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageForceStopRequestInfo&gt;](./dataforseo.client.models.requests.onpageforcestoprequestinfo)<br>
+`body` [IEnumerable&lt;OnPageForceStopRequestInfo&gt;](./dataforseo.client.models.requests.onpageforcestoprequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageForceStopResponseInfo&gt;](./dataforseo.client.models.responses.onpageforcestopresponseinfo)<br>
+[Task&lt;OnPageForceStopResponseInfo&gt;](./dataforseo.client.models.responses.onpageforcestopresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -217,12 +213,12 @@ public Task<OnPageAvailableFiltersResponseInfo> OnPageAvailableFiltersAsync()
 
 #### Returns
 
-[Task&lt;OnPageAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.onpageavailablefiltersresponseinfo)<br>
+[Task&lt;OnPageAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.onpageavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -245,12 +241,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.onpageavailablefiltersresponseinfo)<br>
+[Task&lt;OnPageAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.onpageavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -268,16 +264,16 @@ public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskRequ
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageTaskRequestInfo&gt;](./dataforseo.client.models.requests.onpagetaskrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageTaskRequestInfo&gt;](./dataforseo.client.models.requests.onpagetaskrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagetaskpostresponseinfo)<br>
+[Task&lt;OnPageTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagetaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -294,19 +290,19 @@ public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskRequ
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageTaskRequestInfo&gt;](./dataforseo.client.models.requests.onpagetaskrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageTaskRequestInfo&gt;](./dataforseo.client.models.requests.onpagetaskrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagetaskpostresponseinfo)<br>
+[Task&lt;OnPageTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagetaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -323,12 +319,12 @@ public Task<OnPageTasksReadyResponseInfo> TasksReadyAsync()
 
 #### Returns
 
-[Task&lt;OnPageTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagetasksreadyresponseinfo)<br>
+[Task&lt;OnPageTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagetasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -350,12 +346,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagetasksreadyresponseinfo)<br>
+[Task&lt;OnPageTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagetasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -381,12 +377,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;OnPageSummaryResponseInfo&gt;](./dataforseo.client.models.responses.onpagesummaryresponseinfo)<br>
+[Task&lt;OnPageSummaryResponseInfo&gt;](./dataforseo.client.models.responses.onpagesummaryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -415,12 +411,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageSummaryResponseInfo&gt;](./dataforseo.client.models.responses.onpagesummaryresponseinfo)<br>
+[Task&lt;OnPageSummaryResponseInfo&gt;](./dataforseo.client.models.responses.onpagesummaryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -437,16 +433,16 @@ public Task<OnPagePagesResponseInfo> PagesAsync(IEnumerable<OnPagePagesRequestIn
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPagePagesRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesrequestinfo)<br>
+`body` [IEnumerable&lt;OnPagePagesRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPagePagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesresponseinfo)<br>
+[Task&lt;OnPagePagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -464,19 +460,19 @@ public Task<OnPagePagesResponseInfo> PagesAsync(IEnumerable<OnPagePagesRequestIn
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPagePagesRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesrequestinfo)<br>
+`body` [IEnumerable&lt;OnPagePagesRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPagePagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesresponseinfo)<br>
+[Task&lt;OnPagePagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -494,16 +490,16 @@ public Task<OnPagePagesByResourceResponseInfo> PagesByResourceAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesbyresourcerequestinfo)<br>
+`body` [IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesbyresourcerequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPagePagesByResourceResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesbyresourceresponseinfo)<br>
+[Task&lt;OnPagePagesByResourceResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesbyresourceresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -521,19 +517,19 @@ public Task<OnPagePagesByResourceResponseInfo> PagesByResourceAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesbyresourcerequestinfo)<br>
+`body` [IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagesbyresourcerequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPagePagesByResourceResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesbyresourceresponseinfo)<br>
+[Task&lt;OnPagePagesByResourceResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagesbyresourceresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -551,16 +547,16 @@ public Task<OnPageResourcesResponseInfo> ResourcesAsync(IEnumerable<OnPageResour
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageResourcesRequestInfo&gt;](./dataforseo.client.models.requests.onpageresourcesrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageResourcesRequestInfo&gt;](./dataforseo.client.models.requests.onpageresourcesrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageResourcesResponseInfo&gt;](./dataforseo.client.models.responses.onpageresourcesresponseinfo)<br>
+[Task&lt;OnPageResourcesResponseInfo&gt;](./dataforseo.client.models.responses.onpageresourcesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -578,19 +574,19 @@ public Task<OnPageResourcesResponseInfo> ResourcesAsync(IEnumerable<OnPageResour
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageResourcesRequestInfo&gt;](./dataforseo.client.models.requests.onpageresourcesrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageResourcesRequestInfo&gt;](./dataforseo.client.models.requests.onpageresourcesrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageResourcesResponseInfo&gt;](./dataforseo.client.models.responses.onpageresourcesresponseinfo)<br>
+[Task&lt;OnPageResourcesResponseInfo&gt;](./dataforseo.client.models.responses.onpageresourcesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -608,16 +604,16 @@ public Task<OnPageDuplicateTagsResponseInfo> DuplicateTagsAsync(IEnumerable<OnPa
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatetagsrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatetagsrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageDuplicateTagsResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatetagsresponseinfo)<br>
+[Task&lt;OnPageDuplicateTagsResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatetagsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -634,19 +630,19 @@ public Task<OnPageDuplicateTagsResponseInfo> DuplicateTagsAsync(IEnumerable<OnPa
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatetagsrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatetagsrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageDuplicateTagsResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatetagsresponseinfo)<br>
+[Task&lt;OnPageDuplicateTagsResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatetagsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -663,16 +659,16 @@ public Task<OnPageDuplicateContentResponseInfo> DuplicateContentAsync(IEnumerabl
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatecontentrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatecontentrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageDuplicateContentResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatecontentresponseinfo)<br>
+[Task&lt;OnPageDuplicateContentResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatecontentresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -689,19 +685,19 @@ public Task<OnPageDuplicateContentResponseInfo> DuplicateContentAsync(IEnumerabl
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatecontentrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;](./dataforseo.client.models.requests.onpageduplicatecontentrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageDuplicateContentResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatecontentresponseinfo)<br>
+[Task&lt;OnPageDuplicateContentResponseInfo&gt;](./dataforseo.client.models.responses.onpageduplicatecontentresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -718,16 +714,16 @@ public Task<OnPageLinksResponseInfo> LinksAsync(IEnumerable<OnPageLinksRequestIn
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageLinksRequestInfo&gt;](./dataforseo.client.models.requests.onpagelinksrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageLinksRequestInfo&gt;](./dataforseo.client.models.requests.onpagelinksrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageLinksResponseInfo&gt;](./dataforseo.client.models.responses.onpagelinksresponseinfo)<br>
+[Task&lt;OnPageLinksResponseInfo&gt;](./dataforseo.client.models.responses.onpagelinksresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -745,19 +741,19 @@ public Task<OnPageLinksResponseInfo> LinksAsync(IEnumerable<OnPageLinksRequestIn
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageLinksRequestInfo&gt;](./dataforseo.client.models.requests.onpagelinksrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageLinksRequestInfo&gt;](./dataforseo.client.models.requests.onpagelinksrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageLinksResponseInfo&gt;](./dataforseo.client.models.responses.onpagelinksresponseinfo)<br>
+[Task&lt;OnPageLinksResponseInfo&gt;](./dataforseo.client.models.responses.onpagelinksresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -775,16 +771,16 @@ public Task<OnPageRedirectChainsResponseInfo> RedirectChainsAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;](./dataforseo.client.models.requests.onpageredirectchainsrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;](./dataforseo.client.models.requests.onpageredirectchainsrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageRedirectChainsResponseInfo&gt;](./dataforseo.client.models.responses.onpageredirectchainsresponseinfo)<br>
+[Task&lt;OnPageRedirectChainsResponseInfo&gt;](./dataforseo.client.models.responses.onpageredirectchainsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -801,19 +797,19 @@ public Task<OnPageRedirectChainsResponseInfo> RedirectChainsAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;](./dataforseo.client.models.requests.onpageredirectchainsrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;](./dataforseo.client.models.requests.onpageredirectchainsrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageRedirectChainsResponseInfo&gt;](./dataforseo.client.models.responses.onpageredirectchainsresponseinfo)<br>
+[Task&lt;OnPageRedirectChainsResponseInfo&gt;](./dataforseo.client.models.responses.onpageredirectchainsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -830,16 +826,16 @@ public Task<OnPageNonIndexableResponseInfo> NonIndexableAsync(IEnumerable<OnPage
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;](./dataforseo.client.models.requests.onpagenonindexablerequestinfo)<br>
+`body` [IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;](./dataforseo.client.models.requests.onpagenonindexablerequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageNonIndexableResponseInfo&gt;](./dataforseo.client.models.responses.onpagenonindexableresponseinfo)<br>
+[Task&lt;OnPageNonIndexableResponseInfo&gt;](./dataforseo.client.models.responses.onpagenonindexableresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -856,19 +852,19 @@ public Task<OnPageNonIndexableResponseInfo> NonIndexableAsync(IEnumerable<OnPage
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;](./dataforseo.client.models.requests.onpagenonindexablerequestinfo)<br>
+`body` [IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;](./dataforseo.client.models.requests.onpagenonindexablerequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageNonIndexableResponseInfo&gt;](./dataforseo.client.models.responses.onpagenonindexableresponseinfo)<br>
+[Task&lt;OnPageNonIndexableResponseInfo&gt;](./dataforseo.client.models.responses.onpagenonindexableresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -885,16 +881,16 @@ public Task<OnPageWaterfallResponseInfo> WaterfallAsync(IEnumerable<OnPageWaterf
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageWaterfallRequestInfo&gt;](./dataforseo.client.models.requests.onpagewaterfallrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageWaterfallRequestInfo&gt;](./dataforseo.client.models.requests.onpagewaterfallrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageWaterfallResponseInfo&gt;](./dataforseo.client.models.responses.onpagewaterfallresponseinfo)<br>
+[Task&lt;OnPageWaterfallResponseInfo&gt;](./dataforseo.client.models.responses.onpagewaterfallresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -911,19 +907,19 @@ public Task<OnPageWaterfallResponseInfo> WaterfallAsync(IEnumerable<OnPageWaterf
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageWaterfallRequestInfo&gt;](./dataforseo.client.models.requests.onpagewaterfallrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageWaterfallRequestInfo&gt;](./dataforseo.client.models.requests.onpagewaterfallrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageWaterfallResponseInfo&gt;](./dataforseo.client.models.responses.onpagewaterfallresponseinfo)<br>
+[Task&lt;OnPageWaterfallResponseInfo&gt;](./dataforseo.client.models.responses.onpagewaterfallresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -940,16 +936,16 @@ public Task<OnPageKeywordDensityResponseInfo> KeywordDensityAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;](./dataforseo.client.models.requests.onpagekeyworddensityrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;](./dataforseo.client.models.requests.onpagekeyworddensityrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageKeywordDensityResponseInfo&gt;](./dataforseo.client.models.responses.onpagekeyworddensityresponseinfo)<br>
+[Task&lt;OnPageKeywordDensityResponseInfo&gt;](./dataforseo.client.models.responses.onpagekeyworddensityresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -966,19 +962,19 @@ public Task<OnPageKeywordDensityResponseInfo> KeywordDensityAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;](./dataforseo.client.models.requests.onpagekeyworddensityrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;](./dataforseo.client.models.requests.onpagekeyworddensityrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageKeywordDensityResponseInfo&gt;](./dataforseo.client.models.responses.onpagekeyworddensityresponseinfo)<br>
+[Task&lt;OnPageKeywordDensityResponseInfo&gt;](./dataforseo.client.models.responses.onpagekeyworddensityresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -995,16 +991,16 @@ public Task<OnPageMicrodataResponseInfo> MicrodataAsync(IEnumerable<OnPageMicrod
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageMicrodataRequestInfo&gt;](./dataforseo.client.models.requests.onpagemicrodatarequestinfo)<br>
+`body` [IEnumerable&lt;OnPageMicrodataRequestInfo&gt;](./dataforseo.client.models.requests.onpagemicrodatarequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageMicrodataResponseInfo&gt;](./dataforseo.client.models.responses.onpagemicrodataresponseinfo)<br>
+[Task&lt;OnPageMicrodataResponseInfo&gt;](./dataforseo.client.models.responses.onpagemicrodataresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1022,19 +1018,19 @@ public Task<OnPageMicrodataResponseInfo> MicrodataAsync(IEnumerable<OnPageMicrod
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageMicrodataRequestInfo&gt;](./dataforseo.client.models.requests.onpagemicrodatarequestinfo)<br>
+`body` [IEnumerable&lt;OnPageMicrodataRequestInfo&gt;](./dataforseo.client.models.requests.onpagemicrodatarequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageMicrodataResponseInfo&gt;](./dataforseo.client.models.responses.onpagemicrodataresponseinfo)<br>
+[Task&lt;OnPageMicrodataResponseInfo&gt;](./dataforseo.client.models.responses.onpagemicrodataresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1052,16 +1048,16 @@ public Task<OnPageRawHtmlResponseInfo> RawHtmlAsync(IEnumerable<OnPageRawHtmlReq
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;](./dataforseo.client.models.requests.onpagerawhtmlrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;](./dataforseo.client.models.requests.onpagerawhtmlrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageRawHtmlResponseInfo&gt;](./dataforseo.client.models.responses.onpagerawhtmlresponseinfo)<br>
+[Task&lt;OnPageRawHtmlResponseInfo&gt;](./dataforseo.client.models.responses.onpagerawhtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1078,19 +1074,19 @@ public Task<OnPageRawHtmlResponseInfo> RawHtmlAsync(IEnumerable<OnPageRawHtmlReq
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;](./dataforseo.client.models.requests.onpagerawhtmlrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;](./dataforseo.client.models.requests.onpagerawhtmlrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageRawHtmlResponseInfo&gt;](./dataforseo.client.models.responses.onpagerawhtmlresponseinfo)<br>
+[Task&lt;OnPageRawHtmlResponseInfo&gt;](./dataforseo.client.models.responses.onpagerawhtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1107,16 +1103,16 @@ public Task<OnPagePageScreenshotResponseInfo> PageScreenshotAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagescreenshotrequestinfo)<br>
+`body` [IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagescreenshotrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPagePageScreenshotResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagescreenshotresponseinfo)<br>
+[Task&lt;OnPagePageScreenshotResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagescreenshotresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1133,19 +1129,19 @@ public Task<OnPagePageScreenshotResponseInfo> PageScreenshotAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagescreenshotrequestinfo)<br>
+`body` [IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;](./dataforseo.client.models.requests.onpagepagescreenshotrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPagePageScreenshotResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagescreenshotresponseinfo)<br>
+[Task&lt;OnPagePageScreenshotResponseInfo&gt;](./dataforseo.client.models.responses.onpagepagescreenshotresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1162,16 +1158,16 @@ public Task<OnPageContentParsingResponseInfo> ContentParsingAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageContentParsingRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageContentParsingRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageContentParsingResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingresponseinfo)<br>
+[Task&lt;OnPageContentParsingResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1188,19 +1184,19 @@ public Task<OnPageContentParsingResponseInfo> ContentParsingAsync(IEnumerable<On
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageContentParsingRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageContentParsingRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageContentParsingResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingresponseinfo)<br>
+[Task&lt;OnPageContentParsingResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1217,16 +1213,16 @@ public Task<OnPageContentParsingLiveResponseInfo> ContentParsingLiveAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingliverequestinfo)<br>
+`body` [IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageContentParsingLiveResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingliveresponseinfo)<br>
+[Task&lt;OnPageContentParsingLiveResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1243,19 +1239,19 @@ public Task<OnPageContentParsingLiveResponseInfo> ContentParsingLiveAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingliverequestinfo)<br>
+`body` [IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;](./dataforseo.client.models.requests.onpagecontentparsingliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageContentParsingLiveResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingliveresponseinfo)<br>
+[Task&lt;OnPageContentParsingLiveResponseInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsingliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1272,16 +1268,16 @@ public Task<OnPageInstantPagesResponseInfo> InstantPagesAsync(IEnumerable<OnPage
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;](./dataforseo.client.models.requests.onpageinstantpagesrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;](./dataforseo.client.models.requests.onpageinstantpagesrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageInstantPagesResponseInfo&gt;](./dataforseo.client.models.responses.onpageinstantpagesresponseinfo)<br>
+[Task&lt;OnPageInstantPagesResponseInfo&gt;](./dataforseo.client.models.responses.onpageinstantpagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1298,19 +1294,19 @@ public Task<OnPageInstantPagesResponseInfo> InstantPagesAsync(IEnumerable<OnPage
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;](./dataforseo.client.models.requests.onpageinstantpagesrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;](./dataforseo.client.models.requests.onpageinstantpagesrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageInstantPagesResponseInfo&gt;](./dataforseo.client.models.responses.onpageinstantpagesresponseinfo)<br>
+[Task&lt;OnPageInstantPagesResponseInfo&gt;](./dataforseo.client.models.responses.onpageinstantpagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1327,12 +1323,12 @@ public Task<OnPageLighthouseLanguagesResponseInfo> OnPageLighthouseLanguagesAsyn
 
 #### Returns
 
-[Task&lt;OnPageLighthouseLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselanguagesresponseinfo)<br>
+[Task&lt;OnPageLighthouseLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1355,12 +1351,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageLighthouseLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselanguagesresponseinfo)<br>
+[Task&lt;OnPageLighthouseLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1378,12 +1374,12 @@ public Task<OnPageLighthouseAuditsResponseInfo> LighthouseAuditsAsync()
 
 #### Returns
 
-[Task&lt;OnPageLighthouseAuditsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseauditsresponseinfo)<br>
+[Task&lt;OnPageLighthouseAuditsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseauditsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1404,12 +1400,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageLighthouseAuditsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseauditsresponseinfo)<br>
+[Task&lt;OnPageLighthouseAuditsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseauditsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1425,12 +1421,12 @@ public Task<OnPageLighthouseVersionsResponseInfo> LighthouseVersionsAsync()
 
 #### Returns
 
-[Task&lt;OnPageLighthouseVersionsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseversionsresponseinfo)<br>
+[Task&lt;OnPageLighthouseVersionsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseversionsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1451,12 +1447,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageLighthouseVersionsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseversionsresponseinfo)<br>
+[Task&lt;OnPageLighthouseVersionsResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseversionsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1472,16 +1468,16 @@ public Task<OnPageLighthouseTaskPostResponseInfo> LighthouseTaskPostAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthousetaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthousetaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageLighthouseTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskpostresponseinfo)<br>
+[Task&lt;OnPageLighthouseTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1497,19 +1493,19 @@ public Task<OnPageLighthouseTaskPostResponseInfo> LighthouseTaskPostAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthousetaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthousetaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageLighthouseTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskpostresponseinfo)<br>
+[Task&lt;OnPageLighthouseTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1525,12 +1521,12 @@ public Task<OnPageLighthouseTasksReadyResponseInfo> LighthouseTasksReadyAsync()
 
 #### Returns
 
-[Task&lt;OnPageLighthouseTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetasksreadyresponseinfo)<br>
+[Task&lt;OnPageLighthouseTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1552,12 +1548,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageLighthouseTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetasksreadyresponseinfo)<br>
+[Task&lt;OnPageLighthouseTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1583,12 +1579,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;OnPageLighthouseTaskGetJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskgetjsonresponseinfo)<br>
+[Task&lt;OnPageLighthouseTaskGetJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskgetjsonresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1617,12 +1613,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;OnPageLighthouseTaskGetJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskgetjsonresponseinfo)<br>
+[Task&lt;OnPageLighthouseTaskGetJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthousetaskgetjsonresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1639,16 +1635,16 @@ public Task<OnPageLighthouseLiveJsonResponseInfo> LighthouseLiveJsonAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthouselivejsonrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthouselivejsonrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;OnPageLighthouseLiveJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselivejsonresponseinfo)<br>
+[Task&lt;OnPageLighthouseLiveJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselivejsonresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1664,19 +1660,19 @@ public Task<OnPageLighthouseLiveJsonResponseInfo> LighthouseLiveJsonAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthouselivejsonrequestinfo)<br>
+`body` [IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;](./dataforseo.client.models.requests.onpagelighthouselivejsonrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;OnPageLighthouseLiveJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselivejsonresponseinfo)<br>
+[Task&lt;OnPageLighthouseLiveJsonResponseInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselivejsonresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1705,7 +1701,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBingRankedKeywordsLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingRankedKeywordsLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DataforseoLabsBingRankedKeywordsLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordslivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DataforseoLabsBingRankedKeywordsLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordslivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsBingRankedKeywordsLiveResultInfo> Result { get;
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresultinfo)<br>
+[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingrankedkeywordsliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingRankedKeywordsLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

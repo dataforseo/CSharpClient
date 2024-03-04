@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksBulkReferringDomainsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BacklinksBulkReferringDomainsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkReferringDomainsLiveRequestInfo](./dataforseo.client.models.requests.backlinksbulkreferringdomainsliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkReferringDomainsLiveRequestInfo](./dataforseo.client.models.requests.backlinksbulkreferringdomainsliverequestinfo.md)
 
 ## Properties
 
@@ -76,7 +72,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkReferringDomainsLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

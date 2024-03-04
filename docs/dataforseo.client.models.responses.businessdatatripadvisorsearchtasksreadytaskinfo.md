@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataTripadvisorSearchTasksReadyTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataTripadvisorSearchTasksReadyTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataTripadvisorSearchTasksReadyTaskInfo](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadytaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataTripadvisorSearchTasksReadyTaskInfo](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadytaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataTripadvisorSearchTasksReadyResultInfo> Result { g
 
 #### Property Value
 
-[ICollection&lt;BusinessDataTripadvisorSearchTasksReadyResultInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadyresultinfo)<br>
+[ICollection&lt;BusinessDataTripadvisorSearchTasksReadyResultInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadyresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTripadvisorSearchTasksReadyTaskInfo()
 ```
-
----
-
-[`< Back`](./)

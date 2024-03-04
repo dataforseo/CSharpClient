@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ProductInformationExtendedItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductInformationExtendedItem : BaseProductInformationItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseProductInformationItem](./dataforseo.client.models.baseproductinformationitem) → [ProductInformationExtendedItem](./dataforseo.client.models.productinformationextendeditem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseProductInformationItem](./dataforseo.client.models.baseproductinformationitem.md) → [ProductInformationExtendedItem](./dataforseo.client.models.productinformationextendeditem.md)
 
 ## Properties
 
@@ -36,7 +32,7 @@ public ICollection<ProductInformationRows> Contents { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ProductInformationRows&gt;](./dataforseo.client.models.productinformationrows)<br>
+[ICollection&lt;ProductInformationRows&gt;](./dataforseo.client.models.productinformationrows.md)<br>
 
 ### **AdditionalProperties**
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductInformationExtendedItem()
 ```
-
----
-
-[`< Back`](./)

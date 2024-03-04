@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AddressInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AddressInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AddressInfo](./dataforseo.client.models.addressinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AddressInfo](./dataforseo.client.models.addressinfo.md)
 
 ## Properties
 
@@ -103,7 +99,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AddressInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageMicrodataResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageMicrodataResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageMicrodataResultInfo](./dataforseo.client.models.responses.onpagemicrodataresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageMicrodataResultInfo](./dataforseo.client.models.responses.onpagemicrodataresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **TestSummary**
 
@@ -49,7 +45,7 @@ public TestSummary TestSummary { get; set; }
 
 #### Property Value
 
-[TestSummary](./dataforseo.client.models.testsummary)<br>
+[TestSummary](./dataforseo.client.models.testsummary.md)<br>
 
 ### **ItemsCount**
 
@@ -73,7 +69,7 @@ public ICollection<OnPageMicrodataItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageMicrodataItem&gt;](./dataforseo.client.models.onpagemicrodataitem)<br>
+[ICollection&lt;OnPageMicrodataItem&gt;](./dataforseo.client.models.onpagemicrodataitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -92,7 +88,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageMicrodataResultInfo()
 ```
-
----
-
-[`< Back`](./)

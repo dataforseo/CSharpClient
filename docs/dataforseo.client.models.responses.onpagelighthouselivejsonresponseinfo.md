@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseLiveJsonResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseLiveJsonResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageLighthouseLiveJsonResponseInfo](./dataforseo.client.models.responses.onpagelighthouselivejsonresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageLighthouseLiveJsonResponseInfo](./dataforseo.client.models.responses.onpagelighthouselivejsonresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageLighthouseLiveJsonTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLighthouseLiveJsonTaskInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselivejsontaskinfo)<br>
+[ICollection&lt;OnPageLighthouseLiveJsonTaskInfo&gt;](./dataforseo.client.models.responses.onpagelighthouselivejsontaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseLiveJsonResponseInfo()
 ```
-
----
-
-[`< Back`](./)

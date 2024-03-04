@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TopSightsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TopSightsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [TopSightsDataforseoLabsSerpElementItem](./dataforseo.client.models.topsightsdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [TopSightsDataforseoLabsSerpElementItem](./dataforseo.client.models.topsightsdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -88,7 +84,7 @@ public ICollection<TopSightsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopSightsElement&gt;](./dataforseo.client.models.topsightselement)<br>
+[ICollection&lt;TopSightsElement&gt;](./dataforseo.client.models.topsightselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -107,7 +103,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TopSightsDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

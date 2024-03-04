@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ServiceOfferingsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ServiceOfferingsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ServiceOfferingsElement](./dataforseo.client.models.serviceofferingselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ServiceOfferingsElement](./dataforseo.client.models.serviceofferingselement.md)
 
 ## Properties
 
@@ -69,7 +65,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ServiceOfferingsElement()
 ```
-
----
-
-[`< Back`](./)

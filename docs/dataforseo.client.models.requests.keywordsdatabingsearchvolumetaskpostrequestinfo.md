@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingSearchVolumeTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class KeywordsDataBingSearchVolumeTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingSearchVolumeTaskPostRequestInfo](./dataforseo.client.models.requests.keywordsdatabingsearchvolumetaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingSearchVolumeTaskPostRequestInfo](./dataforseo.client.models.requests.keywordsdatabingsearchvolumetaskpostrequestinfo.md)
 
 ## Properties
 
@@ -270,7 +266,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingSearchVolumeTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

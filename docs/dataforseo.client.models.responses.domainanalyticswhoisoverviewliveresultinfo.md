@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsWhoisOverviewLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsWhoisOverviewLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsWhoisOverviewLiveResultInfo](./dataforseo.client.models.responses.domainanalyticswhoisoverviewliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsWhoisOverviewLiveResultInfo](./dataforseo.client.models.responses.domainanalyticswhoisoverviewliveresultinfo.md)
 
 ## Properties
 
@@ -48,7 +44,7 @@ public ICollection<DomainAnalyticsWhoisOverviewLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsWhoisOverviewLiveItem&gt;](./dataforseo.client.models.domainanalyticswhoisoverviewliveitem)<br>
+[ICollection&lt;DomainAnalyticsWhoisOverviewLiveItem&gt;](./dataforseo.client.models.domainanalyticswhoisoverviewliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsWhoisOverviewLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingOrganicTaskGetAdvancedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingOrganicTaskGetAdvancedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpBingOrganicTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.serpbingorganictaskgetadvancedresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpBingOrganicTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.serpbingorganictaskgetadvancedresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBingOrganicTaskGetAdvancedTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingOrganicTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgetadvancedtaskinfo)<br>
+[ICollection&lt;SerpBingOrganicTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.serpbingorganictaskgetadvancedtaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingOrganicTaskGetAdvancedResponseInfo()
 ```
-
----
-
-[`< Back`](./)

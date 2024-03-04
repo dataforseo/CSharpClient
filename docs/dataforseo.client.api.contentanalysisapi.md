@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisApi
 
 Namespace: DataForSeo.Client.Api
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Api
 public class ContentAnalysisApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisApi](./dataforseo.client.api.contentanalysisapi)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisApi](./dataforseo.client.api.contentanalysisapi.md)
 
 ## Properties
 
@@ -56,16 +52,16 @@ public Task<ContentAnalysisIdListResponseInfo> ContentAnalysisIdListAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisidlistrequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisidlistrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisIdListResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisidlistresponseinfo)<br>
+[Task&lt;ContentAnalysisIdListResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -81,19 +77,19 @@ public Task<ContentAnalysisIdListResponseInfo> ContentAnalysisIdListAsync(IEnume
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisidlistrequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisidlistrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisIdListResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisidlistresponseinfo)<br>
+[Task&lt;ContentAnalysisIdListResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -109,12 +105,12 @@ public Task<ContentAnalysisAvailableFiltersResponseInfo> ContentAnalysisAvailabl
 
 #### Returns
 
-[Task&lt;ContentAnalysisAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisavailablefiltersresponseinfo)<br>
+[Task&lt;ContentAnalysisAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -136,12 +132,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentAnalysisAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisavailablefiltersresponseinfo)<br>
+[Task&lt;ContentAnalysisAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -158,12 +154,12 @@ public Task<ContentAnalysisLocationsResponseInfo> ContentAnalysisLocationsAsync(
 
 #### Returns
 
-[Task&lt;ContentAnalysisLocationsResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislocationsresponseinfo)<br>
+[Task&lt;ContentAnalysisLocationsResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -184,12 +180,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentAnalysisLocationsResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislocationsresponseinfo)<br>
+[Task&lt;ContentAnalysisLocationsResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -205,12 +201,12 @@ public Task<ContentAnalysisLanguagesResponseInfo> ContentAnalysisLanguagesAsync(
 
 #### Returns
 
-[Task&lt;ContentAnalysisLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislanguagesresponseinfo)<br>
+[Task&lt;ContentAnalysisLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -233,12 +229,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentAnalysisLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislanguagesresponseinfo)<br>
+[Task&lt;ContentAnalysisLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysislanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -256,12 +252,12 @@ public Task<ContentAnalysisCategoriesResponseInfo> ContentAnalysisCategoriesAsyn
 
 #### Returns
 
-[Task&lt;ContentAnalysisCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategoriesresponseinfo)<br>
+[Task&lt;ContentAnalysisCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -283,12 +279,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;ContentAnalysisCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategoriesresponseinfo)<br>
+[Task&lt;ContentAnalysisCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -305,16 +301,16 @@ public Task<ContentAnalysisSearchLiveResponseInfo> SearchLiveAsync(IEnumerable<C
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissearchliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissearchliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissearchliveresponseinfo)<br>
+[Task&lt;ContentAnalysisSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -331,19 +327,19 @@ public Task<ContentAnalysisSearchLiveResponseInfo> SearchLiveAsync(IEnumerable<C
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissearchliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissearchliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissearchliveresponseinfo)<br>
+[Task&lt;ContentAnalysisSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -360,16 +356,16 @@ public Task<ContentAnalysisSummaryLiveResponseInfo> ContentAnalysisSummaryLiveAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissummaryliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissummaryliveresponseinfo)<br>
+[Task&lt;ContentAnalysisSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -386,19 +382,19 @@ public Task<ContentAnalysisSummaryLiveResponseInfo> ContentAnalysisSummaryLiveAs
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissummaryliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissummaryliveresponseinfo)<br>
+[Task&lt;ContentAnalysisSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -415,16 +411,16 @@ public Task<ContentAnalysisSentimentAnalysisLiveResponseInfo> SentimentAnalysisL
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissentimentanalysisliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissentimentanalysisliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisSentimentAnalysisLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresponseinfo)<br>
+[Task&lt;ContentAnalysisSentimentAnalysisLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -441,19 +437,19 @@ public Task<ContentAnalysisSentimentAnalysisLiveResponseInfo> SentimentAnalysisL
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissentimentanalysisliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysissentimentanalysisliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisSentimentAnalysisLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresponseinfo)<br>
+[Task&lt;ContentAnalysisSentimentAnalysisLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -470,16 +466,16 @@ public Task<ContentAnalysisRatingDistributionLiveResponseInfo> RatingDistributio
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisratingdistributionliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisratingdistributionliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisRatingDistributionLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresponseinfo)<br>
+[Task&lt;ContentAnalysisRatingDistributionLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -496,19 +492,19 @@ public Task<ContentAnalysisRatingDistributionLiveResponseInfo> RatingDistributio
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisratingdistributionliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisratingdistributionliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisRatingDistributionLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresponseinfo)<br>
+[Task&lt;ContentAnalysisRatingDistributionLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -525,16 +521,16 @@ public Task<ContentAnalysisPhraseTrendsLiveResponseInfo> PhraseTrendsLiveAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisphrasetrendsliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisphrasetrendsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisPhraseTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisphrasetrendsliveresponseinfo)<br>
+[Task&lt;ContentAnalysisPhraseTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisphrasetrendsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -551,19 +547,19 @@ public Task<ContentAnalysisPhraseTrendsLiveResponseInfo> PhraseTrendsLiveAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisphrasetrendsliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysisphrasetrendsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisPhraseTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisphrasetrendsliveresponseinfo)<br>
+[Task&lt;ContentAnalysisPhraseTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysisphrasetrendsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -580,16 +576,16 @@ public Task<ContentAnalysisCategoryTrendsLiveResponseInfo> CategoryTrendsLiveAsy
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysiscategorytrendsliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysiscategorytrendsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;ContentAnalysisCategoryTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategorytrendsliveresponseinfo)<br>
+[Task&lt;ContentAnalysisCategoryTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategorytrendsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -606,19 +602,19 @@ public Task<ContentAnalysisCategoryTrendsLiveResponseInfo> CategoryTrendsLiveAsy
 
 #### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysiscategorytrendsliverequestinfo)<br>
+`body` [IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;](./dataforseo.client.models.requests.contentanalysiscategorytrendsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;ContentAnalysisCategoryTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategorytrendsliveresponseinfo)<br>
+[Task&lt;ContentAnalysisCategoryTrendsLiveResponseInfo&gt;](./dataforseo.client.models.responses.contentanalysiscategorytrendsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -648,7 +644,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
----
-
-[`< Back`](./)

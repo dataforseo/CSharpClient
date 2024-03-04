@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBaiduOrganicTasksFixedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBaiduOrganicTasksFixedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBaiduOrganicTasksFixedTaskInfo](./dataforseo.client.models.responses.serpbaiduorganictasksfixedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBaiduOrganicTasksFixedTaskInfo](./dataforseo.client.models.responses.serpbaiduorganictasksfixedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBaiduOrganicTasksFixedResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBaiduOrganicTasksFixedResultInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictasksfixedresultinfo)<br>
+[ICollection&lt;SerpBaiduOrganicTasksFixedResultInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictasksfixedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBaiduOrganicTasksFixedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

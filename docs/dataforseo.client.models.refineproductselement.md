@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RefineProductsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RefineProductsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RefineProductsElement](./dataforseo.client.models.refineproductselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RefineProductsElement](./dataforseo.client.models.refineproductselement.md)
 
 ## Properties
 
@@ -103,7 +99,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RefineProductsElement()
 ```
-
----
-
-[`< Back`](./)

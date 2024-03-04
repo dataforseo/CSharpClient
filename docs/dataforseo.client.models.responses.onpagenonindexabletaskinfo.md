@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageNonIndexableTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageNonIndexableTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageNonIndexableTaskInfo](./dataforseo.client.models.responses.onpagenonindexabletaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageNonIndexableTaskInfo](./dataforseo.client.models.responses.onpagenonindexabletaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageNonIndexableResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageNonIndexableResultInfo&gt;](./dataforseo.client.models.responses.onpagenonindexableresultinfo)<br>
+[ICollection&lt;OnPageNonIndexableResultInfo&gt;](./dataforseo.client.models.responses.onpagenonindexableresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageNonIndexableTaskInfo()
 ```
-
----
-
-[`< Back`](./)

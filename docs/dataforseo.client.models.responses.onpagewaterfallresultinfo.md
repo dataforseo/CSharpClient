@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageWaterfallResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageWaterfallResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageWaterfallResultInfo](./dataforseo.client.models.responses.onpagewaterfallresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageWaterfallResultInfo](./dataforseo.client.models.responses.onpagewaterfallresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **ItemsCount**
 
@@ -61,7 +57,7 @@ public ICollection<OnPageWaterfallItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageWaterfallItem&gt;](./dataforseo.client.models.onpagewaterfallitem)<br>
+[ICollection&lt;OnPageWaterfallItem&gt;](./dataforseo.client.models.onpagewaterfallitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -80,7 +76,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageWaterfallResultInfo()
 ```
-
----
-
-[`< Back`](./)

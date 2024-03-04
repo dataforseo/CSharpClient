@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixWhoisDomainAnalyticsPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixWhoisDomainAnalyticsPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixWhoisDomainAnalyticsPriceData](./dataforseo.client.models.appendixwhoisdomainanalyticspricedata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixWhoisDomainAnalyticsPriceData](./dataforseo.client.models.appendixwhoisdomainanalyticspricedata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Overview { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -41,7 +37,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixWhoisDomainAnalyticsPriceData()
 ```
-
----
-
-[`< Back`](./)

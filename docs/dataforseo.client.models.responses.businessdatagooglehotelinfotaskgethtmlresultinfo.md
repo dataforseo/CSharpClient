@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgethtmlresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgethtmlresultinfo.md)
 
 ## Properties
 
@@ -90,7 +86,7 @@ public ICollection<HtmlItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem)<br>
+[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem.md)<br>
 
 ### **Type**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo()
 ```
-
----
-
-[`< Back`](./)

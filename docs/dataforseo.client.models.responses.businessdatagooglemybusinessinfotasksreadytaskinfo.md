@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleMyBusinessInfoTasksReadyTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleMyBusinessInfoTasksReadyTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataGoogleMyBusinessInfoTasksReadyTaskInfo](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadytaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataGoogleMyBusinessInfoTasksReadyTaskInfo](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadytaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataGoogleMyBusinessInfoTasksReadyResultInfo> Result 
 
 #### Property Value
 
-[ICollection&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResultInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadyresultinfo)<br>
+[ICollection&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResultInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadyresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleMyBusinessInfoTasksReadyTaskInfo()
 ```
-
----
-
-[`< Back`](./)

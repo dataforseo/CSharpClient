@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksPageMeta
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksPageMeta
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksPageMeta](./dataforseo.client.models.backlinkspagemeta)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksPageMeta](./dataforseo.client.models.backlinkspagemeta.md)
 
 ## Properties
 
@@ -245,7 +241,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksPageMeta()
 ```
-
----
-
-[`< Back`](./)

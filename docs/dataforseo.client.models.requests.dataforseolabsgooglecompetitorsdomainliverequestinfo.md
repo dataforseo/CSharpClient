@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglecompetitorsdomainliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglecompetitorsdomainliverequestinfo.md)
 
 ## Properties
 
@@ -297,7 +293,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -133,4 +133,4 @@ $RECYCLE.BIN/
 _NCrunch*
 
 # VSCode
-.vs/
+.vs/*

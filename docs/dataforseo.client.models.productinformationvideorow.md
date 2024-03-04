@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ProductInformationVideoRow
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductInformationVideoRow : BaseProductInformationRowItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseProductInformationRowItem](./dataforseo.client.models.baseproductinformationrowitem) → [ProductInformationVideoRow](./dataforseo.client.models.productinformationvideorow)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseProductInformationRowItem](./dataforseo.client.models.baseproductinformationrowitem.md) → [ProductInformationVideoRow](./dataforseo.client.models.productinformationvideorow.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductInformationVideoRow()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksReferringDomainsLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksReferringDomainsLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BacklinksReferringDomainsLiveTaskInfo](./dataforseo.client.models.responses.backlinksreferringdomainslivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BacklinksReferringDomainsLiveTaskInfo](./dataforseo.client.models.responses.backlinksreferringdomainslivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BacklinksReferringDomainsLiveResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksReferringDomainsLiveResultInfo&gt;](./dataforseo.client.models.responses.backlinksreferringdomainsliveresultinfo)<br>
+[ICollection&lt;BacklinksReferringDomainsLiveResultInfo&gt;](./dataforseo.client.models.responses.backlinksreferringdomainsliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksReferringDomainsLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

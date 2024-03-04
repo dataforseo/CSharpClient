@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisRatingInfo
 
 Namespace: DataForSeo.Client.Models
@@ -13,7 +9,7 @@ content rating
 public class ContentAnalysisRatingInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisRatingInfo](./dataforseo.client.models.contentanalysisratinginfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisRatingInfo](./dataforseo.client.models.contentanalysisratinginfo.md)
 
 ## Properties
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisRatingInfo()
 ```
-
----
-
-[`< Back`](./)

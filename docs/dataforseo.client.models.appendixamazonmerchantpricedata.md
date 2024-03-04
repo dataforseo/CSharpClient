@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixAmazonMerchantPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixAmazonMerchantPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixAmazonMerchantPriceData](./dataforseo.client.models.appendixamazonmerchantpricedata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixAmazonMerchantPriceData](./dataforseo.client.models.appendixamazonmerchantpricedata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixProductGoogleMerchantPriceDataInfo Asin { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
 
 ### **Products**
 
@@ -32,7 +28,7 @@ public AppendixProductGoogleMerchantPriceDataInfo Products { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
 
 ### **Sellers**
 
@@ -42,7 +38,7 @@ public AppendixProductGoogleMerchantPriceDataInfo Sellers { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -61,7 +57,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixAmazonMerchantPriceData()
 ```
-
----
-
-[`< Back`](./)

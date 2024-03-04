@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseAuditsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseAuditsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageLighthouseAuditsTaskInfo](./dataforseo.client.models.responses.onpagelighthouseauditstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageLighthouseAuditsTaskInfo](./dataforseo.client.models.responses.onpagelighthouseauditstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageLighthouseAuditsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageLighthouseAuditsResultInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseauditsresultinfo)<br>
+[ICollection&lt;OnPageLighthouseAuditsResultInfo&gt;](./dataforseo.client.models.responses.onpagelighthouseauditsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseAuditsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

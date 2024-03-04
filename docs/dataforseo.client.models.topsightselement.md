@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TopSightsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TopSightsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopSightsElement](./dataforseo.client.models.topsightselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopSightsElement](./dataforseo.client.models.topsightselement.md)
 
 ## Properties
 
@@ -73,7 +69,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -92,7 +88,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TopSightsElement()
 ```
-
----
-
-[`< Back`](./)

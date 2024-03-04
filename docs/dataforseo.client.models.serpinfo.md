@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class SerpInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpInfo](./dataforseo.client.models.serpinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpInfo](./dataforseo.client.models.serpinfo.md)
 
 ## Properties
 
@@ -114,7 +110,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpInfo()
 ```
-
----
-
-[`< Back`](./)

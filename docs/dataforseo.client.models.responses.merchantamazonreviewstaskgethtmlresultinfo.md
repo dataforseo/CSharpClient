@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonReviewsTaskGetHtmlResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonReviewsTaskGetHtmlResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonReviewsTaskGetHtmlResultInfo](./dataforseo.client.models.responses.merchantamazonreviewstaskgethtmlresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonReviewsTaskGetHtmlResultInfo](./dataforseo.client.models.responses.merchantamazonreviewstaskgethtmlresultinfo.md)
 
 ## Properties
 
@@ -111,7 +107,7 @@ public ICollection<HtmlItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem)<br>
+[ICollection&lt;HtmlItem&gt;](./dataforseo.client.models.htmlitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -130,7 +126,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonReviewsTaskGetHtmlResultInfo()
 ```
-
----
-
-[`< Back`](./)

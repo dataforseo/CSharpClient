@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixAppDataPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixAppDataPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixAppDataPriceData](./dataforseo.client.models.appendixappdatapricedata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixAppDataPriceData](./dataforseo.client.models.appendixappdatapricedata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixProductGoogleMerchantPriceDataInfo AppInfo { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
 
 ### **AppList**
 
@@ -32,7 +28,7 @@ public AppendixProductGoogleMerchantPriceDataInfo AppList { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
 
 ### **AppReviews**
 
@@ -42,7 +38,7 @@ public AppendixPriceDataInfo AppReviews { get; set; }
 
 #### Property Value
 
-[AppendixPriceDataInfo](./dataforseo.client.models.appendixpricedatainfo)<br>
+[AppendixPriceDataInfo](./dataforseo.client.models.appendixpricedatainfo.md)<br>
 
 ### **AppSearches**
 
@@ -52,7 +48,7 @@ public AppendixProductGoogleMerchantPriceDataInfo AppSearches { get; set; }
 
 #### Property Value
 
-[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo)<br>
+[AppendixProductGoogleMerchantPriceDataInfo](./dataforseo.client.models.appendixproductgooglemerchantpricedatainfo.md)<br>
 
 ### **Categories**
 
@@ -62,7 +58,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **Errors**
 
@@ -72,7 +68,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **Languages**
 
@@ -82,7 +78,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **Locations**
 
@@ -92,7 +88,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -111,7 +107,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixAppDataPriceData()
 ```
-
----
-
-[`< Back`](./)

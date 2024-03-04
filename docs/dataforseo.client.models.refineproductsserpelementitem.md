@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RefineProductsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RefineProductsSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [RefineProductsSerpElementItem](./dataforseo.client.models.refineproductsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [RefineProductsSerpElementItem](./dataforseo.client.models.refineproductsserpelementitem.md)
 
 ## Properties
 
@@ -89,7 +85,7 @@ public ICollection<RefineProductsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;RefineProductsElement&gt;](./dataforseo.client.models.refineproductselement)<br>
+[ICollection&lt;RefineProductsElement&gt;](./dataforseo.client.models.refineproductselement.md)<br>
 
 ### **Rectangle**
 
@@ -103,7 +99,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -122,7 +118,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RefineProductsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

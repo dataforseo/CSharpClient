@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppleAppListingsSearchLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class AppDataAppleAppListingsSearchLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleAppListingsSearchLiveRequestInfo](./dataforseo.client.models.requests.appdataappleapplistingssearchliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleAppListingsSearchLiveRequestInfo](./dataforseo.client.models.requests.appdataappleapplistingssearchliverequestinfo.md)
 
 ## Properties
 
@@ -186,7 +182,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppListingsSearchLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

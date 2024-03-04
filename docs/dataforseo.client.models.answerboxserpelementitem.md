@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AnswerBoxSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AnswerBoxSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [AnswerBoxSerpElementItem](./dataforseo.client.models.answerboxserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [AnswerBoxSerpElementItem](./dataforseo.client.models.answerboxserpelementitem.md)
 
 ## Properties
 
@@ -90,7 +86,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **Rectangle**
 
@@ -104,7 +100,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -123,7 +119,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AnswerBoxSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

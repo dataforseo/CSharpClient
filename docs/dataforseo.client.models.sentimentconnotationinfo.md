@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SentimentConnotationInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class SentimentConnotationInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SentimentConnotationInfo](./dataforseo.client.models.sentimentconnotationinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SentimentConnotationInfo](./dataforseo.client.models.sentimentconnotationinfo.md)
 
 ## Properties
 
@@ -103,7 +99,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SentimentConnotationInfo()
 ```
-
----
-
-[`< Back`](./)

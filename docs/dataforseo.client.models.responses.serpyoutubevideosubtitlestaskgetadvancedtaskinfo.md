@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeVideoSubtitlesTaskGetAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeVideoSubtitlesTaskGetAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpYoutubeVideoSubtitlesTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskgetadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpYoutubeVideoSubtitlesTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskgetadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpYoutubeVideoSubtitlesTaskGetAdvancedResultInfo> Result { 
 
 #### Property Value
 
-[ICollection&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskgetadvancedresultinfo)<br>
+[ICollection&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideosubtitlestaskgetadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoSubtitlesTaskGetAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

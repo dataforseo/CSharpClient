@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYahooLocationsCountryTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYahooLocationsCountryTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpYahooLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpyahoolocationscountrytaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpYahooLocationsCountryTaskInfo](./dataforseo.client.models.responses.serpyahoolocationscountrytaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpYahooLocationsCountryResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpYahooLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpyahoolocationscountryresultinfo)<br>
+[ICollection&lt;SerpYahooLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.serpyahoolocationscountryresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYahooLocationsCountryTaskInfo()
 ```
-
----
-
-[`< Back`](./)

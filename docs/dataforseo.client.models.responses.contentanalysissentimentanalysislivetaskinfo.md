@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisSentimentAnalysisLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisSentimentAnalysisLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [ContentAnalysisSentimentAnalysisLiveTaskInfo](./dataforseo.client.models.responses.contentanalysissentimentanalysislivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [ContentAnalysisSentimentAnalysisLiveTaskInfo](./dataforseo.client.models.responses.contentanalysissentimentanalysislivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentAnalysisSentimentAnalysisLiveResultInfo> Result { get;
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisSentimentAnalysisLiveResultInfo&gt;](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresultinfo)<br>
+[ICollection&lt;ContentAnalysisSentimentAnalysisLiveResultInfo&gt;](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSentimentAnalysisLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppleAppSearchesTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleAppSearchesTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [AppDataAppleAppSearchesTaskPostResponseInfo](./dataforseo.client.models.responses.appdataappleappsearchestaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [AppDataAppleAppSearchesTaskPostResponseInfo](./dataforseo.client.models.responses.appdataappleappsearchestaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataAppleAppSearchesTaskPostTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleAppSearchesTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskposttaskinfo)<br>
+[ICollection&lt;AppDataAppleAppSearchesTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppSearchesTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

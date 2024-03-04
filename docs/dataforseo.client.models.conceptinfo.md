@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ConceptInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ConceptInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ConceptInfo](./dataforseo.client.models.conceptinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ConceptInfo](./dataforseo.client.models.conceptinfo.md)
 
 ## Properties
 
@@ -36,7 +32,7 @@ public ConceptGroupInfo ConceptGroup { get; set; }
 
 #### Property Value
 
-[ConceptGroupInfo](./dataforseo.client.models.conceptgroupinfo)<br>
+[ConceptGroupInfo](./dataforseo.client.models.conceptgroupinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ConceptInfo()
 ```
-
----
-
-[`< Back`](./)

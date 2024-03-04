@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleBusinessPostBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleBusinessPostBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [GoogleBusinessPostBusinessDataSerpElementItem](./dataforseo.client.models.googlebusinesspostbusinessdataserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [GoogleBusinessPostBusinessDataSerpElementItem](./dataforseo.client.models.googlebusinesspostbusinessdataserpelementitem.md)
 
 ## Properties
 
@@ -164,7 +160,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -183,7 +179,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleBusinessPostBusinessDataSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

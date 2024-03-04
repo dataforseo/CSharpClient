@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo](./dataforseo.client.models.requests.domainanalyticstechnologiestechnologystatsliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo](./dataforseo.client.models.requests.domainanalyticstechnologiestechnologystatsliverequestinfo.md)
 
 ## Properties
 
@@ -98,7 +94,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

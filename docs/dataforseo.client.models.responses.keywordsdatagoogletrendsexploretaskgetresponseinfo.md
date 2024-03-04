@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataGoogleTrendsExploreTaskGetResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleTrendsExploreTaskGetResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [KeywordsDataGoogleTrendsExploreTaskGetResponseInfo](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskgetresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [KeywordsDataGoogleTrendsExploreTaskGetResponseInfo](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskgetresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataGoogleTrendsExploreTaskGetTaskInfo> Tasks { get; 
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataGoogleTrendsExploreTaskGetTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskgettaskinfo)<br>
+[ICollection&lt;KeywordsDataGoogleTrendsExploreTaskGetTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogletrendsexploretaskgettaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleTrendsExploreTaskGetResponseInfo()
 ```
-
----
-
-[`< Back`](./)

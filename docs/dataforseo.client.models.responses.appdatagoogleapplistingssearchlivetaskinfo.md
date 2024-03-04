@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleAppListingsSearchLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleAppListingsSearchLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataGoogleAppListingsSearchLiveTaskInfo](./dataforseo.client.models.responses.appdatagoogleapplistingssearchlivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataGoogleAppListingsSearchLiveTaskInfo](./dataforseo.client.models.responses.appdatagoogleapplistingssearchlivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataGoogleAppListingsSearchLiveResultInfo> Result { get; s
 
 #### Property Value
 
-[ICollection&lt;AppDataGoogleAppListingsSearchLiveResultInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingssearchliveresultinfo)<br>
+[ICollection&lt;AppDataGoogleAppListingsSearchLiveResultInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingssearchliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppListingsSearchLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

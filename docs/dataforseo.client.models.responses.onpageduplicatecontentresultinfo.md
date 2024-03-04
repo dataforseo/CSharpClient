@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageDuplicateContentResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageDuplicateContentResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateContentResultInfo](./dataforseo.client.models.responses.onpageduplicatecontentresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageDuplicateContentResultInfo](./dataforseo.client.models.responses.onpageduplicatecontentresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **ItemsCount**
 
@@ -61,7 +57,7 @@ public ICollection<OnPageDuplicateContentItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageDuplicateContentItem&gt;](./dataforseo.client.models.onpageduplicatecontentitem)<br>
+[ICollection&lt;OnPageDuplicateContentItem&gt;](./dataforseo.client.models.onpageduplicatecontentitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -80,7 +76,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateContentResultInfo()
 ```
-
----
-
-[`< Back`](./)

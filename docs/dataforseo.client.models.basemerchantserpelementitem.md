@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BaseMerchantSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BaseMerchantSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem.md)
 
 ## Properties
 
@@ -31,7 +27,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BaseMerchantSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

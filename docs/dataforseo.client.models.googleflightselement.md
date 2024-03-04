@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleFlightsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleFlightsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GoogleFlightsElement](./dataforseo.client.models.googleflightselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GoogleFlightsElement](./dataforseo.client.models.googleflightselement.md)
 
 ## Properties
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleFlightsElement()
 ```
-
----
-
-[`< Back`](./)

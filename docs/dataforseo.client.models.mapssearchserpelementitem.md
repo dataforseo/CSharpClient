@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MapsSearchSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MapsSearchSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [MapsSearchSerpElementItem](./dataforseo.client.models.mapssearchserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [MapsSearchSerpElementItem](./dataforseo.client.models.mapssearchserpelementitem.md)
 
 ## Properties
 
@@ -100,7 +96,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **HotelRating**
 
@@ -179,7 +175,7 @@ public AddressInfo AddressInfo { get; set; }
 
 #### Property Value
 
-[AddressInfo](./dataforseo.client.models.addressinfo)<br>
+[AddressInfo](./dataforseo.client.models.addressinfo.md)<br>
 
 ### **PlaceId**
 
@@ -281,7 +277,7 @@ public WorkHours WorkHours { get; set; }
 
 #### Property Value
 
-[WorkHours](./dataforseo.client.models.workhours)<br>
+[WorkHours](./dataforseo.client.models.workhours.md)<br>
 
 ### **FeatureId**
 
@@ -360,7 +356,7 @@ public ICollection<LocalJustificationInfo> LocalJustifications { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LocalJustificationInfo&gt;](./dataforseo.client.models.localjustificationinfo)<br>
+[ICollection&lt;LocalJustificationInfo&gt;](./dataforseo.client.models.localjustificationinfo.md)<br>
 
 ### **IsDirectoryItem**
 
@@ -391,7 +387,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MapsSearchSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

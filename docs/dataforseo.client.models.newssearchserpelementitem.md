@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # NewsSearchSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class NewsSearchSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [NewsSearchSerpElementItem](./dataforseo.client.models.newssearchserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [NewsSearchSerpElementItem](./dataforseo.client.models.newssearchserpelementitem.md)
 
 ## Properties
 
@@ -153,7 +149,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -172,7 +168,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public NewsSearchSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

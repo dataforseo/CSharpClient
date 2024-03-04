@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsErrorsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsErrorsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DomainAnalyticsErrorsTaskInfo](./dataforseo.client.models.responses.domainanalyticserrorstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DomainAnalyticsErrorsTaskInfo](./dataforseo.client.models.responses.domainanalyticserrorstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DomainAnalyticsErrorsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsErrorsResultInfo&gt;](./dataforseo.client.models.responses.domainanalyticserrorsresultinfo)<br>
+[ICollection&lt;DomainAnalyticsErrorsResultInfo&gt;](./dataforseo.client.models.responses.domainanalyticserrorsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsErrorsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [MerchantAmazonLanguagesTaskInfo](./dataforseo.client.models.responses.merchantamazonlanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [MerchantAmazonLanguagesTaskInfo](./dataforseo.client.models.responses.merchantamazonlanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<MerchantAmazonLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MerchantAmazonLanguagesResultInfo&gt;](./dataforseo.client.models.responses.merchantamazonlanguagesresultinfo)<br>
+[ICollection&lt;MerchantAmazonLanguagesResultInfo&gt;](./dataforseo.client.models.responses.merchantamazonlanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

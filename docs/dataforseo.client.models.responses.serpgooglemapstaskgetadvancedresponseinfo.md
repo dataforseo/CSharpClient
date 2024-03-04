@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleMapsTaskGetAdvancedResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleMapsTaskGetAdvancedResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleMapsTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.serpgooglemapstaskgetadvancedresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleMapsTaskGetAdvancedResponseInfo](./dataforseo.client.models.responses.serpgooglemapstaskgetadvancedresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleMapsTaskGetAdvancedTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleMapsTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskgetadvancedtaskinfo)<br>
+[ICollection&lt;SerpGoogleMapsTaskGetAdvancedTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglemapstaskgetadvancedtaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsTaskGetAdvancedResponseInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataTripadvisorLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataTripadvisorLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataTripadvisorLanguagesTaskInfo](./dataforseo.client.models.responses.businessdatatripadvisorlanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataTripadvisorLanguagesTaskInfo](./dataforseo.client.models.responses.businessdatatripadvisorlanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataTripadvisorLanguagesResultInfo> Result { get; set
 
 #### Property Value
 
-[ICollection&lt;BusinessDataTripadvisorLanguagesResultInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlanguagesresultinfo)<br>
+[ICollection&lt;BusinessDataTripadvisorLanguagesResultInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTripadvisorLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

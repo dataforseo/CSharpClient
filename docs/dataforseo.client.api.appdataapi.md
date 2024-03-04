@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataApi
 
 Namespace: DataForSeo.Client.Api
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Api
 public class AppDataApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataApi](./dataforseo.client.api.appdataapi)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataApi](./dataforseo.client.api.appdataapi.md)
 
 ## Properties
 
@@ -56,16 +52,16 @@ public Task<AppDataIdListResponseInfo> AppDataIdListAsync(IEnumerable<AppDataIdL
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.appdataidlistrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.appdataidlistrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.appdataidlistresponseinfo)<br>
+[Task&lt;AppDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.appdataidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -81,19 +77,19 @@ public Task<AppDataIdListResponseInfo> AppDataIdListAsync(IEnumerable<AppDataIdL
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.appdataidlistrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.appdataidlistrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.appdataidlistresponseinfo)<br>
+[Task&lt;AppDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.appdataidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -109,16 +105,16 @@ public Task<AppDataErrorsResponseInfo> AppDataErrorsAsync(IEnumerable<AppDataErr
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.appdataerrorsrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.appdataerrorsrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appdataerrorsresponseinfo)<br>
+[Task&lt;AppDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appdataerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -134,19 +130,19 @@ public Task<AppDataErrorsResponseInfo> AppDataErrorsAsync(IEnumerable<AppDataErr
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.appdataerrorsrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.appdataerrorsrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appdataerrorsresponseinfo)<br>
+[Task&lt;AppDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.appdataerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -162,12 +158,12 @@ public Task<AppDataGoogleCategoriesResponseInfo> GoogleCategoriesAsync()
 
 #### Returns
 
-[Task&lt;AppDataGoogleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglecategoriesresponseinfo)<br>
+[Task&lt;AppDataGoogleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglecategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -188,12 +184,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglecategoriesresponseinfo)<br>
+[Task&lt;AppDataGoogleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglecategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -209,12 +205,12 @@ public Task<AppDataGoogleLocationsResponseInfo> AppDataGoogleLocationsAsync()
 
 #### Returns
 
-[Task&lt;AppDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelocationsresponseinfo)<br>
+[Task&lt;AppDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -235,12 +231,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelocationsresponseinfo)<br>
+[Task&lt;AppDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -256,12 +252,12 @@ public Task<AppDataGoogleLanguagesResponseInfo> AppDataGoogleLanguagesAsync()
 
 #### Returns
 
-[Task&lt;AppDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelanguagesresponseinfo)<br>
+[Task&lt;AppDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -282,12 +278,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelanguagesresponseinfo)<br>
+[Task&lt;AppDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagooglelanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -303,16 +299,16 @@ public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskP
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -329,19 +325,19 @@ public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskP
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -358,12 +354,12 @@ public Task<AppDataGoogleAppSearchesTasksReadyResponseInfo> GoogleAppSearchesTas
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -385,12 +381,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -414,12 +410,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -445,12 +441,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -473,12 +469,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -504,12 +500,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppSearchesTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappsearchestaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -525,16 +521,16 @@ public Task<AppDataGoogleAppListTaskPostResponseInfo> GoogleAppListTaskPostAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplisttaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplisttaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -551,19 +547,19 @@ public Task<AppDataGoogleAppListTaskPostResponseInfo> GoogleAppListTaskPostAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplisttaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplisttaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -580,12 +576,12 @@ public Task<AppDataGoogleAppListTasksReadyResponseInfo> GoogleAppListTasksReadyA
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -607,12 +603,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -636,12 +632,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -667,12 +663,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -695,12 +691,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -726,12 +722,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplisttaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -747,16 +743,16 @@ public Task<AppDataGoogleAppInfoTaskPostResponseInfo> GoogleAppInfoTaskPostAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappinfotaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappinfotaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -773,19 +769,19 @@ public Task<AppDataGoogleAppInfoTaskPostResponseInfo> GoogleAppInfoTaskPostAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappinfotaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappinfotaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -802,12 +798,12 @@ public Task<AppDataGoogleAppInfoTasksReadyResponseInfo> GoogleAppInfoTasksReadyA
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -829,12 +825,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -858,12 +854,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -889,12 +885,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -917,12 +913,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -948,12 +944,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappinfotaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -969,16 +965,16 @@ public Task<AppDataGoogleAppReviewsTaskPostResponseInfo> GoogleAppReviewsTaskPos
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappreviewstaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -995,19 +991,19 @@ public Task<AppDataGoogleAppReviewsTaskPostResponseInfo> GoogleAppReviewsTaskPos
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleappreviewstaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskpostresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1024,12 +1020,12 @@ public Task<AppDataGoogleAppReviewsTasksReadyResponseInfo> GoogleAppReviewsTasks
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1051,12 +1047,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstasksreadyresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1080,12 +1076,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1111,12 +1107,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1139,12 +1135,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1170,12 +1166,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgethtmlresponseinfo)<br>
+[Task&lt;AppDataGoogleAppReviewsTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleappreviewstaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1191,12 +1187,12 @@ public Task<AppDataGoogleAppListingsCategoriesResponseInfo> GoogleAppListingsCat
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingscategoriesresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1217,12 +1213,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingscategoriesresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1238,16 +1234,16 @@ public Task<AppDataGoogleAppListingsSearchLiveResponseInfo> GoogleAppListingsSea
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplistingssearchliverequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplistingssearchliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingssearchliveresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingssearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1263,19 +1259,19 @@ public Task<AppDataGoogleAppListingsSearchLiveResponseInfo> GoogleAppListingsSea
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplistingssearchliverequestinfo)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdatagoogleapplistingssearchliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataGoogleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingssearchliveresponseinfo)<br>
+[Task&lt;AppDataGoogleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdatagoogleapplistingssearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1291,12 +1287,12 @@ public Task<AppDataAppleCategoriesResponseInfo> AppleCategoriesAsync()
 
 #### Returns
 
-[Task&lt;AppDataAppleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplecategoriesresponseinfo)<br>
+[Task&lt;AppDataAppleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplecategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1317,12 +1313,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplecategoriesresponseinfo)<br>
+[Task&lt;AppDataAppleCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplecategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1338,12 +1334,12 @@ public Task<AppDataAppleLocationsResponseInfo> AppDataAppleLocationsAsync()
 
 #### Returns
 
-[Task&lt;AppDataAppleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelocationsresponseinfo)<br>
+[Task&lt;AppDataAppleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1364,12 +1360,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelocationsresponseinfo)<br>
+[Task&lt;AppDataAppleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1385,12 +1381,12 @@ public Task<AppDataAppleLanguagesResponseInfo> AppDataAppleLanguagesAsync()
 
 #### Returns
 
-[Task&lt;AppDataAppleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelanguagesresponseinfo)<br>
+[Task&lt;AppDataAppleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1411,12 +1407,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelanguagesresponseinfo)<br>
+[Task&lt;AppDataAppleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.appdataapplelanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1432,16 +1428,16 @@ public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPos
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1458,19 +1454,19 @@ public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPos
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.appdatataskrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1487,12 +1483,12 @@ public Task<AppDataAppleAppSearchesTasksReadyResponseInfo> AppleAppSearchesTasks
 
 #### Returns
 
-[Task&lt;AppDataAppleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1514,12 +1510,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1543,12 +1539,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataAppleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1574,12 +1570,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppSearchesTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1595,16 +1591,16 @@ public Task<AppDataAppleAppInfoTaskPostResponseInfo> AppleAppInfoTaskPostAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappinfotaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappinfotaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataAppleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1621,19 +1617,19 @@ public Task<AppDataAppleAppInfoTaskPostResponseInfo> AppleAppInfoTaskPostAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappinfotaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappinfotaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataAppleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1650,12 +1646,12 @@ public Task<AppDataAppleAppInfoTasksReadyResponseInfo> AppleAppInfoTasksReadyAsy
 
 #### Returns
 
-[Task&lt;AppDataAppleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1677,12 +1673,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1706,12 +1702,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataAppleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1737,12 +1733,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappinfotaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1758,16 +1754,16 @@ public Task<AppDataAppleAppListTaskPostResponseInfo> AppleAppListTaskPostAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplisttaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplisttaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1784,19 +1780,19 @@ public Task<AppDataAppleAppListTaskPostResponseInfo> AppleAppListTaskPostAsync(I
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplisttaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplisttaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppListTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1813,12 +1809,12 @@ public Task<AppDataAppleAppListTasksReadyResponseInfo> AppleAppListTasksReadyAsy
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1840,12 +1836,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppListTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1869,12 +1865,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1900,12 +1896,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppListTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplisttaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1921,16 +1917,16 @@ public Task<AppDataAppleAppReviewsTaskPostResponseInfo> AppleAppReviewsTaskPostA
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappreviewstaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataAppleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1947,19 +1943,19 @@ public Task<AppDataAppleAppReviewsTaskPostResponseInfo> AppleAppReviewsTaskPostA
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleappreviewstaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataAppleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskpostresponseinfo)<br>
+[Task&lt;AppDataAppleAppReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1976,12 +1972,12 @@ public Task<AppDataAppleAppReviewsTasksReadyResponseInfo> AppleAppReviewsTasksRe
 
 #### Returns
 
-[Task&lt;AppDataAppleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2003,12 +1999,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstasksreadyresponseinfo)<br>
+[Task&lt;AppDataAppleAppReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2032,12 +2028,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;AppDataAppleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2063,12 +2059,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskgetadvancedresponseinfo)<br>
+[Task&lt;AppDataAppleAppReviewsTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleappreviewstaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2084,12 +2080,12 @@ public Task<AppDataAppleAppListingsCategoriesResponseInfo> AppleAppListingsCateg
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingscategoriesresponseinfo)<br>
+[Task&lt;AppDataAppleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2110,12 +2106,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingscategoriesresponseinfo)<br>
+[Task&lt;AppDataAppleAppListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2131,16 +2127,16 @@ public Task<AppDataAppleAppListingsSearchLiveResponseInfo> AppleAppListingsSearc
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplistingssearchliverequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplistingssearchliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingssearchliveresponseinfo)<br>
+[Task&lt;AppDataAppleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingssearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2156,19 +2152,19 @@ public Task<AppDataAppleAppListingsSearchLiveResponseInfo> AppleAppListingsSearc
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplistingssearchliverequestinfo)<br>
+`body` [IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.appdataappleapplistingssearchliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;AppDataAppleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingssearchliveresponseinfo)<br>
+[Task&lt;AppDataAppleAppListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.appdataappleapplistingssearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2197,7 +2193,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
----
-
-[`< Back`](./)

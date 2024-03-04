@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageRedirectChainsResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageRedirectChainsResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageRedirectChainsResponseInfo](./dataforseo.client.models.responses.onpageredirectchainsresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageRedirectChainsResponseInfo](./dataforseo.client.models.responses.onpageredirectchainsresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageRedirectChainsTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageRedirectChainsTaskInfo&gt;](./dataforseo.client.models.responses.onpageredirectchainstaskinfo)<br>
+[ICollection&lt;OnPageRedirectChainsTaskInfo&gt;](./dataforseo.client.models.responses.onpageredirectchainstaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageRedirectChainsResponseInfo()
 ```
-
----
-
-[`< Back`](./)

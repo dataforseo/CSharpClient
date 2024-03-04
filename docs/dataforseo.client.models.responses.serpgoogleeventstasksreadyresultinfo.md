@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleEventsTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleEventsTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleEventsTasksReadyResultInfo](./dataforseo.client.models.responses.serpgoogleeventstasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleEventsTasksReadyResultInfo](./dataforseo.client.models.responses.serpgoogleeventstasksreadyresultinfo.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleEventsTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeVideoInfoLiveAdvancedRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpYoutubeVideoInfoLiveAdvancedRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeVideoInfoLiveAdvancedRequestInfo](./dataforseo.client.models.requests.serpyoutubevideoinfoliveadvancedrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeVideoInfoLiveAdvancedRequestInfo](./dataforseo.client.models.requests.serpyoutubevideoinfoliveadvancedrequestinfo.md)
 
 ## Properties
 
@@ -160,7 +156,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoInfoLiveAdvancedRequestInfo()
 ```
-
----
-
-[`< Back`](./)

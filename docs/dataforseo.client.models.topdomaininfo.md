@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TopDomainInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TopDomainInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopDomainInfo](./dataforseo.client.models.topdomaininfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopDomainInfo](./dataforseo.client.models.topdomaininfo.md)
 
 ## Properties
 
@@ -51,7 +47,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TopDomainInfo()
 ```
-
----
-
-[`< Back`](./)

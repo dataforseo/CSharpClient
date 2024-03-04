@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksApi
 
 Namespace: DataForSeo.Client.Api
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Api
 public class BacklinksApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksApi](./dataforseo.client.api.backlinksapi)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksApi](./dataforseo.client.api.backlinksapi.md)
 
 ## Properties
 
@@ -56,16 +52,16 @@ public Task<BacklinksIdListResponseInfo> BacklinksIdListAsync(IEnumerable<Backli
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksIdListRequestInfo&gt;](./dataforseo.client.models.requests.backlinksidlistrequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksIdListRequestInfo&gt;](./dataforseo.client.models.requests.backlinksidlistrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksIdListResponseInfo&gt;](./dataforseo.client.models.responses.backlinksidlistresponseinfo)<br>
+[Task&lt;BacklinksIdListResponseInfo&gt;](./dataforseo.client.models.responses.backlinksidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -81,19 +77,19 @@ public Task<BacklinksIdListResponseInfo> BacklinksIdListAsync(IEnumerable<Backli
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksIdListRequestInfo&gt;](./dataforseo.client.models.requests.backlinksidlistrequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksIdListRequestInfo&gt;](./dataforseo.client.models.requests.backlinksidlistrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksIdListResponseInfo&gt;](./dataforseo.client.models.responses.backlinksidlistresponseinfo)<br>
+[Task&lt;BacklinksIdListResponseInfo&gt;](./dataforseo.client.models.responses.backlinksidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -109,16 +105,16 @@ public Task<BacklinksErrorsResponseInfo> BacklinksErrorsAsync(IEnumerable<Backli
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksErrorsRequestInfo&gt;](./dataforseo.client.models.requests.backlinkserrorsrequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksErrorsRequestInfo&gt;](./dataforseo.client.models.requests.backlinkserrorsrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksErrorsResponseInfo&gt;](./dataforseo.client.models.responses.backlinkserrorsresponseinfo)<br>
+[Task&lt;BacklinksErrorsResponseInfo&gt;](./dataforseo.client.models.responses.backlinkserrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -134,19 +130,19 @@ public Task<BacklinksErrorsResponseInfo> BacklinksErrorsAsync(IEnumerable<Backli
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksErrorsRequestInfo&gt;](./dataforseo.client.models.requests.backlinkserrorsrequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksErrorsRequestInfo&gt;](./dataforseo.client.models.requests.backlinkserrorsrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksErrorsResponseInfo&gt;](./dataforseo.client.models.responses.backlinkserrorsresponseinfo)<br>
+[Task&lt;BacklinksErrorsResponseInfo&gt;](./dataforseo.client.models.responses.backlinkserrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -162,12 +158,12 @@ public Task<BacklinksAvailableFiltersResponseInfo> BacklinksAvailableFiltersAsyn
 
 #### Returns
 
-[Task&lt;BacklinksAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.backlinksavailablefiltersresponseinfo)<br>
+[Task&lt;BacklinksAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.backlinksavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -190,12 +186,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BacklinksAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.backlinksavailablefiltersresponseinfo)<br>
+[Task&lt;BacklinksAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.backlinksavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -213,12 +209,12 @@ public Task<BacklinksIndexResponseInfo> IndexAsync()
 
 #### Returns
 
-[Task&lt;BacklinksIndexResponseInfo&gt;](./dataforseo.client.models.responses.backlinksindexresponseinfo)<br>
+[Task&lt;BacklinksIndexResponseInfo&gt;](./dataforseo.client.models.responses.backlinksindexresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -240,12 +236,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BacklinksIndexResponseInfo&gt;](./dataforseo.client.models.responses.backlinksindexresponseinfo)<br>
+[Task&lt;BacklinksIndexResponseInfo&gt;](./dataforseo.client.models.responses.backlinksindexresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -262,16 +258,16 @@ public Task<BacklinksSummaryLiveResponseInfo> SummaryLiveAsync(IEnumerable<Backl
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkssummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkssummaryliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkssummaryliveresponseinfo)<br>
+[Task&lt;BacklinksSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkssummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -288,19 +284,19 @@ public Task<BacklinksSummaryLiveResponseInfo> SummaryLiveAsync(IEnumerable<Backl
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkssummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkssummaryliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkssummaryliveresponseinfo)<br>
+[Task&lt;BacklinksSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkssummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -317,16 +313,16 @@ public Task<BacklinksHistoryLiveResponseInfo> HistoryLiveAsync(IEnumerable<Backl
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksHistoryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkshistoryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksHistoryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkshistoryliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksHistoryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkshistoryliveresponseinfo)<br>
+[Task&lt;BacklinksHistoryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkshistoryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -343,19 +339,19 @@ public Task<BacklinksHistoryLiveResponseInfo> HistoryLiveAsync(IEnumerable<Backl
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksHistoryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkshistoryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksHistoryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkshistoryliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksHistoryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkshistoryliveresponseinfo)<br>
+[Task&lt;BacklinksHistoryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkshistoryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -372,16 +368,16 @@ public Task<BacklinksBacklinksLiveResponseInfo> BacklinksLiveAsync(IEnumerable<B
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbacklinksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbacklinksliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbacklinksliveresponseinfo)<br>
+[Task&lt;BacklinksBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbacklinksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -398,19 +394,19 @@ public Task<BacklinksBacklinksLiveResponseInfo> BacklinksLiveAsync(IEnumerable<B
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbacklinksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbacklinksliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbacklinksliveresponseinfo)<br>
+[Task&lt;BacklinksBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbacklinksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -427,16 +423,16 @@ public Task<BacklinksAnchorsLiveResponseInfo> AnchorsLiveAsync(IEnumerable<Backl
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksAnchorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksanchorsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksAnchorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksanchorsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksAnchorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksanchorsliveresponseinfo)<br>
+[Task&lt;BacklinksAnchorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksanchorsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -453,19 +449,19 @@ public Task<BacklinksAnchorsLiveResponseInfo> AnchorsLiveAsync(IEnumerable<Backl
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksAnchorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksanchorsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksAnchorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksanchorsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksAnchorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksanchorsliveresponseinfo)<br>
+[Task&lt;BacklinksAnchorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksanchorsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -482,16 +478,16 @@ public Task<BacklinksDomainPagesLiveResponseInfo> DomainPagesLiveAsync(IEnumerab
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksDomainPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagesliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksDomainPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagesliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksDomainPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagesliveresponseinfo)<br>
+[Task&lt;BacklinksDomainPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagesliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -508,19 +504,19 @@ public Task<BacklinksDomainPagesLiveResponseInfo> DomainPagesLiveAsync(IEnumerab
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksDomainPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagesliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksDomainPagesLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagesliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksDomainPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagesliveresponseinfo)<br>
+[Task&lt;BacklinksDomainPagesLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagesliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -537,16 +533,16 @@ public Task<BacklinksDomainPagesSummaryLiveResponseInfo> DomainPagesSummaryLiveA
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksDomainPagesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagessummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksDomainPagesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagessummaryliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksDomainPagesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagessummaryliveresponseinfo)<br>
+[Task&lt;BacklinksDomainPagesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagessummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -562,19 +558,19 @@ public Task<BacklinksDomainPagesSummaryLiveResponseInfo> DomainPagesSummaryLiveA
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksDomainPagesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagessummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksDomainPagesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainpagessummaryliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksDomainPagesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagessummaryliveresponseinfo)<br>
+[Task&lt;BacklinksDomainPagesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainpagessummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -590,16 +586,16 @@ public Task<BacklinksReferringDomainsLiveResponseInfo> ReferringDomainsLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringdomainsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringdomainsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringdomainsliveresponseinfo)<br>
+[Task&lt;BacklinksReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringdomainsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -616,19 +612,19 @@ public Task<BacklinksReferringDomainsLiveResponseInfo> ReferringDomainsLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringdomainsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringdomainsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringdomainsliveresponseinfo)<br>
+[Task&lt;BacklinksReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringdomainsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -645,16 +641,16 @@ public Task<BacklinksReferringNetworksLiveResponseInfo> ReferringNetworksLiveAsy
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksReferringNetworksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringnetworksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksReferringNetworksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringnetworksliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksReferringNetworksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringnetworksliveresponseinfo)<br>
+[Task&lt;BacklinksReferringNetworksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringnetworksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -671,19 +667,19 @@ public Task<BacklinksReferringNetworksLiveResponseInfo> ReferringNetworksLiveAsy
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksReferringNetworksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringnetworksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksReferringNetworksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksreferringnetworksliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksReferringNetworksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringnetworksliveresponseinfo)<br>
+[Task&lt;BacklinksReferringNetworksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksreferringnetworksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -700,16 +696,16 @@ public Task<BacklinksCompetitorsLiveResponseInfo> CompetitorsLiveAsync(IEnumerab
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkscompetitorsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkscompetitorsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkscompetitorsliveresponseinfo)<br>
+[Task&lt;BacklinksCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkscompetitorsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -726,19 +722,19 @@ public Task<BacklinksCompetitorsLiveResponseInfo> CompetitorsLiveAsync(IEnumerab
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkscompetitorsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksCompetitorsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkscompetitorsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkscompetitorsliveresponseinfo)<br>
+[Task&lt;BacklinksCompetitorsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkscompetitorsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -755,16 +751,16 @@ public Task<BacklinksDomainIntersectionLiveResponseInfo> DomainIntersectionLiveA
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainintersectionliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainintersectionliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainintersectionliveresponseinfo)<br>
+[Task&lt;BacklinksDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainintersectionliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -781,19 +777,19 @@ public Task<BacklinksDomainIntersectionLiveResponseInfo> DomainIntersectionLiveA
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainintersectionliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksDomainIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksdomainintersectionliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainintersectionliveresponseinfo)<br>
+[Task&lt;BacklinksDomainIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksdomainintersectionliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -810,16 +806,16 @@ public Task<BacklinksPageIntersectionLiveResponseInfo> PageIntersectionLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksPageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkspageintersectionliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksPageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkspageintersectionliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksPageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkspageintersectionliveresponseinfo)<br>
+[Task&lt;BacklinksPageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkspageintersectionliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -836,19 +832,19 @@ public Task<BacklinksPageIntersectionLiveResponseInfo> PageIntersectionLiveAsync
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksPageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkspageintersectionliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksPageIntersectionLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkspageintersectionliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksPageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkspageintersectionliveresponseinfo)<br>
+[Task&lt;BacklinksPageIntersectionLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkspageintersectionliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -865,16 +861,16 @@ public Task<BacklinksTimeseriesSummaryLiveResponseInfo> TimeseriesSummaryLiveAsy
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksTimeseriesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriessummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksTimeseriesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriessummaryliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksTimeseriesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriessummaryliveresponseinfo)<br>
+[Task&lt;BacklinksTimeseriesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriessummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -891,19 +887,19 @@ public Task<BacklinksTimeseriesSummaryLiveResponseInfo> TimeseriesSummaryLiveAsy
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksTimeseriesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriessummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksTimeseriesSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriessummaryliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksTimeseriesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriessummaryliveresponseinfo)<br>
+[Task&lt;BacklinksTimeseriesSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriessummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -920,16 +916,16 @@ public Task<BacklinksTimeseriesNewLostSummaryLiveResponseInfo> TimeseriesNewLost
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksTimeseriesNewLostSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriesnewlostsummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksTimeseriesNewLostSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriesnewlostsummaryliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksTimeseriesNewLostSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriesnewlostsummaryliveresponseinfo)<br>
+[Task&lt;BacklinksTimeseriesNewLostSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriesnewlostsummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -946,19 +942,19 @@ public Task<BacklinksTimeseriesNewLostSummaryLiveResponseInfo> TimeseriesNewLost
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksTimeseriesNewLostSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriesnewlostsummaryliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksTimeseriesNewLostSummaryLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinkstimeseriesnewlostsummaryliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksTimeseriesNewLostSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriesnewlostsummaryliveresponseinfo)<br>
+[Task&lt;BacklinksTimeseriesNewLostSummaryLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinkstimeseriesnewlostsummaryliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -975,16 +971,16 @@ public Task<BacklinksBulkRanksLiveResponseInfo> BulkRanksLiveAsync(IEnumerable<B
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkRanksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkranksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkRanksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkranksliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBulkRanksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkranksliveresponseinfo)<br>
+[Task&lt;BacklinksBulkRanksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkranksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1001,19 +997,19 @@ public Task<BacklinksBulkRanksLiveResponseInfo> BulkRanksLiveAsync(IEnumerable<B
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkRanksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkranksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkRanksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkranksliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBulkRanksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkranksliveresponseinfo)<br>
+[Task&lt;BacklinksBulkRanksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkranksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1030,16 +1026,16 @@ public Task<BacklinksBulkBacklinksLiveResponseInfo> BulkBacklinksLiveAsync(IEnum
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkbacklinksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkbacklinksliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBulkBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkbacklinksliveresponseinfo)<br>
+[Task&lt;BacklinksBulkBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkbacklinksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1056,19 +1052,19 @@ public Task<BacklinksBulkBacklinksLiveResponseInfo> BulkBacklinksLiveAsync(IEnum
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkbacklinksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkbacklinksliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBulkBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkbacklinksliveresponseinfo)<br>
+[Task&lt;BacklinksBulkBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkbacklinksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1085,16 +1081,16 @@ public Task<BacklinksBulkSpamScoreLiveResponseInfo> BulkSpamScoreLiveAsync(IEnum
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkSpamScoreLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkspamscoreliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkSpamScoreLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkspamscoreliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBulkSpamScoreLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkspamscoreliveresponseinfo)<br>
+[Task&lt;BacklinksBulkSpamScoreLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkspamscoreliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1111,19 +1107,19 @@ public Task<BacklinksBulkSpamScoreLiveResponseInfo> BulkSpamScoreLiveAsync(IEnum
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkSpamScoreLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkspamscoreliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkSpamScoreLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkspamscoreliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBulkSpamScoreLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkspamscoreliveresponseinfo)<br>
+[Task&lt;BacklinksBulkSpamScoreLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkspamscoreliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1140,16 +1136,16 @@ public Task<BacklinksBulkReferringDomainsLiveResponseInfo> BulkReferringDomainsL
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkreferringdomainsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkreferringdomainsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBulkReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkreferringdomainsliveresponseinfo)<br>
+[Task&lt;BacklinksBulkReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkreferringdomainsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1166,19 +1162,19 @@ public Task<BacklinksBulkReferringDomainsLiveResponseInfo> BulkReferringDomainsL
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkreferringdomainsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulkreferringdomainsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBulkReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkreferringdomainsliveresponseinfo)<br>
+[Task&lt;BacklinksBulkReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulkreferringdomainsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1195,16 +1191,16 @@ public Task<BacklinksBulkNewLostBacklinksLiveResponseInfo> BulkNewLostBacklinksL
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkNewLostBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostbacklinksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkNewLostBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostbacklinksliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBulkNewLostBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostbacklinksliveresponseinfo)<br>
+[Task&lt;BacklinksBulkNewLostBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostbacklinksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1221,19 +1217,19 @@ public Task<BacklinksBulkNewLostBacklinksLiveResponseInfo> BulkNewLostBacklinksL
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkNewLostBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostbacklinksliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkNewLostBacklinksLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostbacklinksliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBulkNewLostBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostbacklinksliveresponseinfo)<br>
+[Task&lt;BacklinksBulkNewLostBacklinksLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostbacklinksliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1250,16 +1246,16 @@ public Task<BacklinksBulkNewLostReferringDomainsLiveResponseInfo> BulkNewLostRef
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkNewLostReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostreferringdomainsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkNewLostReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostreferringdomainsliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BacklinksBulkNewLostReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainsliveresponseinfo)<br>
+[Task&lt;BacklinksBulkNewLostReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1276,19 +1272,19 @@ public Task<BacklinksBulkNewLostReferringDomainsLiveResponseInfo> BulkNewLostRef
 
 #### Parameters
 
-`body` [IEnumerable&lt;BacklinksBulkNewLostReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostreferringdomainsliverequestinfo)<br>
+`body` [IEnumerable&lt;BacklinksBulkNewLostReferringDomainsLiveRequestInfo&gt;](./dataforseo.client.models.requests.backlinksbulknewlostreferringdomainsliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BacklinksBulkNewLostReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainsliveresponseinfo)<br>
+[Task&lt;BacklinksBulkNewLostReferringDomainsLiveResponseInfo&gt;](./dataforseo.client.models.responses.backlinksbulknewlostreferringdomainsliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1318,7 +1314,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
----
-
-[`< Back`](./)

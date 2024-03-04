@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpScreenshotRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpScreenshotRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpScreenshotRequestInfo](./dataforseo.client.models.requests.serpscreenshotrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpScreenshotRequestInfo](./dataforseo.client.models.requests.serpscreenshotrequestinfo.md)
 
 ## Properties
 
@@ -104,7 +100,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpScreenshotRequestInfo()
 ```
-
----
-
-[`< Back`](./)

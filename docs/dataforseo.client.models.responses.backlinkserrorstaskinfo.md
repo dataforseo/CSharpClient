@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksErrorsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksErrorsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BacklinksErrorsTaskInfo](./dataforseo.client.models.responses.backlinkserrorstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BacklinksErrorsTaskInfo](./dataforseo.client.models.responses.backlinkserrorstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BacklinksErrorsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksErrorsResultInfo&gt;](./dataforseo.client.models.responses.backlinkserrorsresultinfo)<br>
+[ICollection&lt;BacklinksErrorsResultInfo&gt;](./dataforseo.client.models.responses.backlinkserrorsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksErrorsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsCompetitorsDomainLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsCompetitorsDomainLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsCompetitorsDomainLiveItem](./dataforseo.client.models.dataforseolabscompetitorsdomainliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsCompetitorsDomainLiveItem](./dataforseo.client.models.dataforseolabscompetitorsdomainliveitem.md)
 
 ## Properties
 
@@ -89,7 +85,7 @@ public IDictionary<string, MetricsInfo> FullDomainMetrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **Metrics**
 
@@ -103,7 +99,7 @@ public IDictionary<string, MetricsInfo> Metrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **CompetitorMetrics**
 
@@ -117,7 +113,7 @@ public IDictionary<string, MetricsInfo> CompetitorMetrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -136,7 +132,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsCompetitorsDomainLiveItem()
 ```
-
----
-
-[`< Back`](./)

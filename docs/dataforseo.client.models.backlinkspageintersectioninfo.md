@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksPageIntersectionInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BacklinksPageIntersectionInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksPageIntersectionInfo](./dataforseo.client.models.backlinkspageintersectioninfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksPageIntersectionInfo](./dataforseo.client.models.backlinkspageintersectioninfo.md)
 
 ## Properties
 
@@ -604,7 +600,7 @@ public ICollection<Redirect> IndirectLinkPath { get; set; }
 
 #### Property Value
 
-[ICollection&lt;Redirect&gt;](./dataforseo.client.models.redirect)<br>
+[ICollection&lt;Redirect&gt;](./dataforseo.client.models.redirect.md)<br>
 
 ### **AdditionalProperties**
 
@@ -623,7 +619,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksPageIntersectionInfo()
 ```
-
----
-
-[`< Back`](./)

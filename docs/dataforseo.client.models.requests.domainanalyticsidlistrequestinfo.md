@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsIdListRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DomainAnalyticsIdListRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsIdListRequestInfo](./dataforseo.client.models.requests.domainanalyticsidlistrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsIdListRequestInfo](./dataforseo.client.models.requests.domainanalyticsidlistrequestinfo.md)
 
 ## Properties
 
@@ -125,7 +121,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsIdListRequestInfo()
 ```
-
----
-
-[`< Back`](./)

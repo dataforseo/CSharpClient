@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleLocalFinderTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleLocalFinderTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleLocalFinderTasksReadyResultInfo](./dataforseo.client.models.responses.serpgooglelocalfindertasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleLocalFinderTasksReadyResultInfo](./dataforseo.client.models.responses.serpgooglelocalfindertasksreadyresultinfo.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleLocalFinderTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

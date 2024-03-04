@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppleCategoriesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleCategoriesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataAppleCategoriesTaskInfo](./dataforseo.client.models.responses.appdataapplecategoriestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataAppleCategoriesTaskInfo](./dataforseo.client.models.responses.appdataapplecategoriestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataAppleCategoriesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleCategoriesResultInfo&gt;](./dataforseo.client.models.responses.appdataapplecategoriesresultinfo)<br>
+[ICollection&lt;AppDataAppleCategoriesResultInfo&gt;](./dataforseo.client.models.responses.appdataapplecategoriesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleCategoriesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

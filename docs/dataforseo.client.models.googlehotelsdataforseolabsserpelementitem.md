@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleHotelsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleHotelsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [GoogleHotelsDataforseoLabsSerpElementItem](./dataforseo.client.models.googlehotelsdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [GoogleHotelsDataforseoLabsSerpElementItem](./dataforseo.client.models.googlehotelsdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -109,7 +105,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleHotelsDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

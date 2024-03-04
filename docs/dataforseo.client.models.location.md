@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # Location
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class Location
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Location](./dataforseo.client.models.location)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Location](./dataforseo.client.models.location.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public ScoreByCategories ScoreByCategories { get; set; }
 
 #### Property Value
 
-[ScoreByCategories](./dataforseo.client.models.scorebycategories)<br>
+[ScoreByCategories](./dataforseo.client.models.scorebycategories.md)<br>
 
 ### **Latitude**
 
@@ -119,7 +115,7 @@ public ICollection<LocationChain> LocationChain { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LocationChain&gt;](./dataforseo.client.models.locationchain)<br>
+[ICollection&lt;LocationChain&gt;](./dataforseo.client.models.locationchain.md)<br>
 
 ### **AdditionalProperties**
 
@@ -138,7 +134,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Location()
 ```
-
----
-
-[`< Back`](./)

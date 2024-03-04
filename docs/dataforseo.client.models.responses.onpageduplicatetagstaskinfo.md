@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageDuplicateTagsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageDuplicateTagsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageDuplicateTagsTaskInfo](./dataforseo.client.models.responses.onpageduplicatetagstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageDuplicateTagsTaskInfo](./dataforseo.client.models.responses.onpageduplicatetagstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageDuplicateTagsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageDuplicateTagsResultInfo&gt;](./dataforseo.client.models.responses.onpageduplicatetagsresultinfo)<br>
+[ICollection&lt;OnPageDuplicateTagsResultInfo&gt;](./dataforseo.client.models.responses.onpageduplicatetagsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateTagsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

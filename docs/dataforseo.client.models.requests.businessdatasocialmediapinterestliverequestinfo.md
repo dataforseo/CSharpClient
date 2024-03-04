@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataSocialMediaPinterestLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataSocialMediaPinterestLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaPinterestLiveRequestInfo](./dataforseo.client.models.requests.businessdatasocialmediapinterestliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaPinterestLiveRequestInfo](./dataforseo.client.models.requests.businessdatasocialmediapinterestliverequestinfo.md)
 
 ## Properties
 
@@ -64,7 +60,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataSocialMediaPinterestLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixContentGenerationPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixContentGenerationPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentGenerationPriceData](./dataforseo.client.models.appendixcontentgenerationpricedata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentGenerationPriceData](./dataforseo.client.models.appendixcontentgenerationpricedata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixContentGenerationPriceDataInfo CheckGrammar { get; set; }
 
 #### Property Value
 
-[AppendixContentGenerationPriceDataInfo](./dataforseo.client.models.appendixcontentgenerationpricedatainfo)<br>
+[AppendixContentGenerationPriceDataInfo](./dataforseo.client.models.appendixcontentgenerationpricedatainfo.md)<br>
 
 ### **Generate**
 
@@ -32,7 +28,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Generate { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **GenerateMetaTags**
 
@@ -42,7 +38,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateMetaTags { get; set;
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **GenerateSubTopics**
 
@@ -52,7 +48,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateSubTopics { get; set
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **GenerateText**
 
@@ -62,7 +58,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateText { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **Paraphrase**
 
@@ -72,7 +68,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Paraphrase { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **TextSummary**
 
@@ -82,7 +78,7 @@ public AppendixContentGenerationPriceDataInfo TextSummary { get; set; }
 
 #### Property Value
 
-[AppendixContentGenerationPriceDataInfo](./dataforseo.client.models.appendixcontentgenerationpricedatainfo)<br>
+[AppendixContentGenerationPriceDataInfo](./dataforseo.client.models.appendixcontentgenerationpricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -101,7 +97,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixContentGenerationPriceData()
 ```
-
----
-
-[`< Back`](./)

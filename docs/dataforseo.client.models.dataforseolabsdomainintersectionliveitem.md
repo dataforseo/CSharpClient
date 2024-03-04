@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsDomainIntersectionLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsDomainIntersectionLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsDomainIntersectionLiveItem](./dataforseo.client.models.dataforseolabsdomainintersectionliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsDomainIntersectionLiveItem](./dataforseo.client.models.dataforseolabsdomainintersectionliveitem.md)
 
 ## Properties
 
@@ -36,7 +32,7 @@ public KeywordData KeywordData { get; set; }
 
 #### Property Value
 
-[KeywordData](./dataforseo.client.models.keyworddata)<br>
+[KeywordData](./dataforseo.client.models.keyworddata.md)<br>
 
 ### **FirstDomainSerpElement**
 
@@ -49,7 +45,7 @@ public BaseDataforseoLabsSerpElementItem FirstDomainSerpElement { get; set; }
 
 #### Property Value
 
-[BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem)<br>
+[BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md)<br>
 
 ### **SecondDomainSerpElement**
 
@@ -62,7 +58,7 @@ public BaseDataforseoLabsSerpElementItem SecondDomainSerpElement { get; set; }
 
 #### Property Value
 
-[BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem)<br>
+[BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -81,7 +77,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsDomainIntersectionLiveItem()
 ```
-
----
-
-[`< Back`](./)

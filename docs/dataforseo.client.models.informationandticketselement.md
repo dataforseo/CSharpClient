@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # InformationAndTicketsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class InformationAndTicketsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [InformationAndTicketsElement](./dataforseo.client.models.informationandticketselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [InformationAndTicketsElement](./dataforseo.client.models.informationandticketselement.md)
 
 ## Properties
 
@@ -91,7 +87,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public InformationAndTicketsElement()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonAmazonReviewItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonAmazonReviewItemSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonAmazonReviewItemSerpElementItem](./dataforseo.client.models.amazonamazonreviewitemserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonAmazonReviewItemSerpElementItem](./dataforseo.client.models.amazonamazonreviewitemserpelementitem.md)
 
 ## Properties
 
@@ -112,7 +108,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement.md)<br>
 
 ### **Videos**
 
@@ -124,7 +120,7 @@ public ICollection<VideoElement> Videos { get; set; }
 
 #### Property Value
 
-[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement)<br>
+[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement.md)<br>
 
 ### **UserProfile**
 
@@ -136,7 +132,7 @@ public UserProfileInfo UserProfile { get; set; }
 
 #### Property Value
 
-[UserProfileInfo](./dataforseo.client.models.userprofileinfo)<br>
+[UserProfileInfo](./dataforseo.client.models.userprofileinfo.md)<br>
 
 ### **Title**
 
@@ -199,7 +195,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -218,7 +214,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonAmazonReviewItemSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

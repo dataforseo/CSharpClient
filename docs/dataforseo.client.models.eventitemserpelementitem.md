@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # EventItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class EventItemSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [EventItemSerpElementItem](./dataforseo.client.models.eventitemserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [EventItemSerpElementItem](./dataforseo.client.models.eventitemserpelementitem.md)
 
 ## Properties
 
@@ -126,7 +122,7 @@ public EventDates EventDates { get; set; }
 
 #### Property Value
 
-[EventDates](./dataforseo.client.models.eventdates)<br>
+[EventDates](./dataforseo.client.models.eventdates.md)<br>
 
 ### **LocationInfo**
 
@@ -139,7 +135,7 @@ public LocationInfo LocationInfo { get; set; }
 
 #### Property Value
 
-[LocationInfo](./dataforseo.client.models.locationinfo)<br>
+[LocationInfo](./dataforseo.client.models.locationinfo.md)<br>
 
 ### **InformationAndTickets**
 
@@ -152,7 +148,7 @@ public ICollection<InformationAndTicketsElement> InformationAndTickets { get; se
 
 #### Property Value
 
-[ICollection&lt;InformationAndTicketsElement&gt;](./dataforseo.client.models.informationandticketselement)<br>
+[ICollection&lt;InformationAndTicketsElement&gt;](./dataforseo.client.models.informationandticketselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -171,7 +167,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public EventItemSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

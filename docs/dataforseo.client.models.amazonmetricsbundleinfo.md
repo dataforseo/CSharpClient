@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonMetricsBundleInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonMetricsBundleInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonMetricsBundleInfo](./dataforseo.client.models.amazonmetricsbundleinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonMetricsBundleInfo](./dataforseo.client.models.amazonmetricsbundleinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public AppMetricsInfo AmazonSerp { get; set; }
 
 #### Property Value
 
-[AppMetricsInfo](./dataforseo.client.models.appmetricsinfo)<br>
+[AppMetricsInfo](./dataforseo.client.models.appmetricsinfo.md)<br>
 
 ### **AmazonPaid**
 
@@ -36,7 +32,7 @@ public AppMetricsInfo AmazonPaid { get; set; }
 
 #### Property Value
 
-[AppMetricsInfo](./dataforseo.client.models.appmetricsinfo)<br>
+[AppMetricsInfo](./dataforseo.client.models.appmetricsinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonMetricsBundleInfo()
 ```
-
----
-
-[`< Back`](./)

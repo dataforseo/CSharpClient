@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAmazonRankedKeywordsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsAmazonRankedKeywordsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonRankedKeywordsLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsamazonrankedkeywordsliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAmazonRankedKeywordsLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsamazonrankedkeywordsliverequestinfo.md)
 
 ## Properties
 
@@ -224,7 +220,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAmazonRankedKeywordsLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

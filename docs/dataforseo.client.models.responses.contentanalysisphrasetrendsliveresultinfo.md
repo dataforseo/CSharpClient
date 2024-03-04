@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisPhraseTrendsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisPhraseTrendsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisPhraseTrendsLiveResultInfo](./dataforseo.client.models.responses.contentanalysisphrasetrendsliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisPhraseTrendsLiveResultInfo](./dataforseo.client.models.responses.contentanalysisphrasetrendsliveresultinfo.md)
 
 ## Properties
 
@@ -74,7 +70,7 @@ public ICollection<TopDomainInfo> TopDomains { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopDomainInfo&gt;](./dataforseo.client.models.topdomaininfo)<br>
+[ICollection&lt;TopDomainInfo&gt;](./dataforseo.client.models.topdomaininfo.md)<br>
 
 ### **SentimentConnotations**
 
@@ -116,7 +112,7 @@ public ICollection<ContentAnalysisCategoriesInfo> TextCategories { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](./dataforseo.client.models.contentanalysiscategoriesinfo)<br>
+[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](./dataforseo.client.models.contentanalysiscategoriesinfo.md)<br>
 
 ### **PageCategories**
 
@@ -130,7 +126,7 @@ public ICollection<ContentAnalysisCategoriesInfo> PageCategories { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](./dataforseo.client.models.contentanalysiscategoriesinfo)<br>
+[ICollection&lt;ContentAnalysisCategoriesInfo&gt;](./dataforseo.client.models.contentanalysiscategoriesinfo.md)<br>
 
 ### **PageTypes**
 
@@ -190,7 +186,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisPhraseTrendsLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

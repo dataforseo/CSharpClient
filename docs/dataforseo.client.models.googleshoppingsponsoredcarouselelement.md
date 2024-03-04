@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleShoppingSponsoredCarouselElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleShoppingSponsoredCarouselElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GoogleShoppingSponsoredCarouselElement](./dataforseo.client.models.googleshoppingsponsoredcarouselelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [GoogleShoppingSponsoredCarouselElement](./dataforseo.client.models.googleshoppingsponsoredcarouselelement.md)
 
 ## Properties
 
@@ -114,7 +110,7 @@ public RatingElement ProductRating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement)<br>
+[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
 
 ### **ProductImages**
 
@@ -153,7 +149,7 @@ public DeliveryInfo DeliveryInfo { get; set; }
 
 #### Property Value
 
-[DeliveryInfo](./dataforseo.client.models.deliveryinfo)<br>
+[DeliveryInfo](./dataforseo.client.models.deliveryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -172,7 +168,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleShoppingSponsoredCarouselElement()
 ```
-
----
-
-[`< Back`](./)

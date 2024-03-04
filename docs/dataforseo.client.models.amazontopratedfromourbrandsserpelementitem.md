@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonTopRatedFromOurBrandsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonTopRatedFromOurBrandsSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonTopRatedFromOurBrandsSerpElementItem](./dataforseo.client.models.amazontopratedfromourbrandsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonTopRatedFromOurBrandsSerpElementItem](./dataforseo.client.models.amazontopratedfromourbrandsserpelementitem.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public ICollection<AmazonSerpElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AmazonSerpElement&gt;](./dataforseo.client.models.amazonserpelement)<br>
+[ICollection&lt;AmazonSerpElement&gt;](./dataforseo.client.models.amazonserpelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonTopRatedFromOurBrandsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

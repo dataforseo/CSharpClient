@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpAiSummaryRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpAiSummaryRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpAiSummaryRequestInfo](./dataforseo.client.models.requests.serpaisummaryrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpAiSummaryRequestInfo](./dataforseo.client.models.requests.serpaisummaryrequestinfo.md)
 
 ## Properties
 
@@ -107,7 +103,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpAiSummaryRequestInfo()
 ```
-
----
-
-[`< Back`](./)

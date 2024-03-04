@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsPageIntersectionLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsPageIntersectionLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsPageIntersectionLiveItem](./dataforseo.client.models.dataforseolabspageintersectionliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsPageIntersectionLiveItem](./dataforseo.client.models.dataforseolabspageintersectionliveitem.md)
 
 ## Properties
 
@@ -36,7 +32,7 @@ public KeywordData KeywordData { get; set; }
 
 #### Property Value
 
-[KeywordData](./dataforseo.client.models.keyworddata)<br>
+[KeywordData](./dataforseo.client.models.keyworddata.md)<br>
 
 ### **IntersectionResult**
 
@@ -50,7 +46,7 @@ public IDictionary<string, BaseDataforseoLabsSerpElementItem> IntersectionResult
 
 #### Property Value
 
-[IDictionary&lt;String, BaseDataforseoLabsSerpElementItem&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, BaseDataforseoLabsSerpElementItem&gt;](./dataforseo.client.models.basedataforseolabsserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -69,7 +65,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsPageIntersectionLiveItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixContentAnalysisLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixContentAnalysisLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentAnalysisLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentanalysislimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentAnalysisLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentanalysislimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo Search { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Summary**
 
@@ -32,7 +28,7 @@ public AppendixInfo Summary { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **SentimentAnalysis**
 
@@ -42,7 +38,7 @@ public AppendixInfo SentimentAnalysis { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **RatingDistribution**
 
@@ -52,7 +48,7 @@ public AppendixInfo RatingDistribution { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **PhraseTrends**
 
@@ -62,7 +58,7 @@ public AppendixInfo PhraseTrends { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **CategoryTrends**
 
@@ -72,7 +68,7 @@ public AppendixInfo CategoryTrends { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Locations**
 
@@ -131,7 +127,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixContentAnalysisLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

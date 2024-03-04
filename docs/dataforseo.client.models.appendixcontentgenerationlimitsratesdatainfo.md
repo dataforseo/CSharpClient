@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixContentGenerationLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixContentGenerationLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentGenerationLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationlimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixContentGenerationLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationlimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo Generate { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **GenerateMetaTags**
 
@@ -32,7 +28,7 @@ public AppendixInfo GenerateMetaTags { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **GenerateText**
 
@@ -42,7 +38,7 @@ public AppendixInfo GenerateText { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Paraphrase**
 
@@ -52,7 +48,7 @@ public AppendixInfo Paraphrase { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **CheckGrammar**
 
@@ -62,7 +58,7 @@ public AppendixContentGenerationDayLimitsRatesDataInfo CheckGrammar { get; set; 
 
 #### Property Value
 
-[AppendixContentGenerationDayLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationdaylimitsratesdatainfo)<br>
+[AppendixContentGenerationDayLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationdaylimitsratesdatainfo.md)<br>
 
 ### **TextSummary**
 
@@ -72,7 +68,7 @@ public AppendixContentGenerationDayLimitsRatesDataInfo TextSummary { get; set; }
 
 #### Property Value
 
-[AppendixContentGenerationDayLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationdaylimitsratesdatainfo)<br>
+[AppendixContentGenerationDayLimitsRatesDataInfo](./dataforseo.client.models.appendixcontentgenerationdaylimitsratesdatainfo.md)<br>
 
 ### **GenerateSubTopics**
 
@@ -82,7 +78,7 @@ public AppendixInfo GenerateSubTopics { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -101,7 +97,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixContentGenerationLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

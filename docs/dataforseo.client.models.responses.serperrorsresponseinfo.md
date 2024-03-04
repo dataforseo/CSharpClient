@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpErrorsResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpErrorsResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpErrorsResponseInfo](./dataforseo.client.models.responses.serperrorsresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpErrorsResponseInfo](./dataforseo.client.models.responses.serperrorsresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpErrorsTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpErrorsTaskInfo&gt;](./dataforseo.client.models.responses.serperrorstaskinfo)<br>
+[ICollection&lt;SerpErrorsTaskInfo&gt;](./dataforseo.client.models.responses.serperrorstaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpErrorsResponseInfo()
 ```
-
----
-
-[`< Back`](./)

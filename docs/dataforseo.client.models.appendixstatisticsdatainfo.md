@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixStatisticsDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixStatisticsDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixStatisticsDataInfo](./dataforseo.client.models.appendixstatisticsdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixStatisticsDataInfo](./dataforseo.client.models.appendixstatisticsdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixStatisticsRatesDataInfo Day { get; set; }
 
 #### Property Value
 
-[AppendixStatisticsRatesDataInfo](./dataforseo.client.models.appendixstatisticsratesdatainfo)<br>
+[AppendixStatisticsRatesDataInfo](./dataforseo.client.models.appendixstatisticsratesdatainfo.md)<br>
 
 ### **Minute**
 
@@ -32,7 +28,7 @@ public AppendixStatisticsRatesDataInfo Minute { get; set; }
 
 #### Property Value
 
-[AppendixStatisticsRatesDataInfo](./dataforseo.client.models.appendixstatisticsratesdatainfo)<br>
+[AppendixStatisticsRatesDataInfo](./dataforseo.client.models.appendixstatisticsratesdatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -51,7 +47,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixStatisticsDataInfo()
 ```
-
----
-
-[`< Back`](./)

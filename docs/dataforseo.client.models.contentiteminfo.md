@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentItemInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ContentItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentItemInfo](./dataforseo.client.models.contentiteminfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentItemInfo](./dataforseo.client.models.contentiteminfo.md)
 
 ## Properties
 
@@ -56,7 +52,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentItemInfo()
 ```
-
----
-
-[`< Back`](./)

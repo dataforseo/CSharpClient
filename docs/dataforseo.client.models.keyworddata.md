@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class KeywordData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordData](./dataforseo.client.models.keyworddata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordData](./dataforseo.client.models.keyworddata.md)
 
 ## Properties
 
@@ -72,7 +68,7 @@ public KeywordInfo KeywordInfo { get; set; }
 
 #### Property Value
 
-[KeywordInfo](./dataforseo.client.models.keywordinfo)<br>
+[KeywordInfo](./dataforseo.client.models.keywordinfo.md)<br>
 
 ### **KeywordProperties**
 
@@ -84,7 +80,7 @@ public KeywordProperties KeywordProperties { get; set; }
 
 #### Property Value
 
-[KeywordProperties](./dataforseo.client.models.keywordproperties)<br>
+[KeywordProperties](./dataforseo.client.models.keywordproperties.md)<br>
 
 ### **ImpressionsInfo**
 
@@ -100,7 +96,7 @@ public ImpressionsInfo ImpressionsInfo { get; set; }
 
 #### Property Value
 
-[ImpressionsInfo](./dataforseo.client.models.impressionsinfo)<br>
+[ImpressionsInfo](./dataforseo.client.models.impressionsinfo.md)<br>
 
 ### **SerpInfo**
 
@@ -113,7 +109,7 @@ public SerpInfo SerpInfo { get; set; }
 
 #### Property Value
 
-[SerpInfo](./dataforseo.client.models.serpinfo)<br>
+[SerpInfo](./dataforseo.client.models.serpinfo.md)<br>
 
 ### **AvgBacklinksInfo**
 
@@ -126,7 +122,7 @@ public AvgBacklinksInfo AvgBacklinksInfo { get; set; }
 
 #### Property Value
 
-[AvgBacklinksInfo](./dataforseo.client.models.avgbacklinksinfo)<br>
+[AvgBacklinksInfo](./dataforseo.client.models.avgbacklinksinfo.md)<br>
 
 ### **SearchIntentInfo**
 
@@ -139,7 +135,7 @@ public SearchIntentInfo SearchIntentInfo { get; set; }
 
 #### Property Value
 
-[SearchIntentInfo](./dataforseo.client.models.searchintentinfo)<br>
+[SearchIntentInfo](./dataforseo.client.models.searchintentinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -158,7 +154,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordData()
 ```
-
----
-
-[`< Back`](./)

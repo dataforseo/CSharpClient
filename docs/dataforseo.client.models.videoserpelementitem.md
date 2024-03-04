@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # VideoSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class VideoSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [VideoSerpElementItem](./dataforseo.client.models.videoserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [VideoSerpElementItem](./dataforseo.client.models.videoserpelementitem.md)
 
 ## Properties
 
@@ -77,7 +73,7 @@ public ICollection<VideoElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement)<br>
+[ICollection&lt;VideoElement&gt;](./dataforseo.client.models.videoelement.md)<br>
 
 ### **Rectangle**
 
@@ -91,7 +87,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -110,7 +106,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public VideoSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

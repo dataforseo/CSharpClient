@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TripadvisorSearchOrganicBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TripadvisorSearchOrganicBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [TripadvisorSearchOrganicBusinessDataSerpElementItem](./dataforseo.client.models.tripadvisorsearchorganicbusinessdataserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [TripadvisorSearchOrganicBusinessDataSerpElementItem](./dataforseo.client.models.tripadvisorsearchorganicbusinessdataserpelementitem.md)
 
 ## Properties
 
@@ -125,7 +121,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -144,7 +140,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TripadvisorSearchOrganicBusinessDataSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

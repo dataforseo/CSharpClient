@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonReviewsTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class MerchantAmazonReviewsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonReviewsTaskPostRequestInfo](./dataforseo.client.models.requests.merchantamazonreviewstaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonReviewsTaskPostRequestInfo](./dataforseo.client.models.requests.merchantamazonreviewstaskpostrequestinfo.md)
 
 ## Properties
 
@@ -371,7 +367,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonReviewsTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

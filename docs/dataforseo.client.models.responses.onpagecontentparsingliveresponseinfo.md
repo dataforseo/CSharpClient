@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageContentParsingLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageContentParsingLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageContentParsingLiveResponseInfo](./dataforseo.client.models.responses.onpagecontentparsingliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageContentParsingLiveResponseInfo](./dataforseo.client.models.responses.onpagecontentparsingliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageContentParsingLiveTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageContentParsingLiveTaskInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsinglivetaskinfo)<br>
+[ICollection&lt;OnPageContentParsingLiveTaskInfo&gt;](./dataforseo.client.models.responses.onpagecontentparsinglivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageContentParsingLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

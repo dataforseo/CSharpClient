@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RankedKeywordsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RankedKeywordsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RankedKeywordsInfo](./dataforseo.client.models.rankedkeywordsinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RankedKeywordsInfo](./dataforseo.client.models.rankedkeywordsinfo.md)
 
 ## Properties
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RankedKeywordsInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonAmazonProductInfoSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonAmazonProductInfoSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonAmazonProductInfoSerpElementItem](./dataforseo.client.models.amazonamazonproductinfoserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonAmazonProductInfoSerpElementItem](./dataforseo.client.models.amazonamazonproductinfoserpelementitem.md)
 
 ## Properties
 
@@ -215,7 +211,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement)<br>
+[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
 
 ### **IsNewerModelAvailable**
 
@@ -239,7 +235,7 @@ public AmazonProductNewerModelInfo NewerModel { get; set; }
 
 #### Property Value
 
-[AmazonProductNewerModelInfo](./dataforseo.client.models.amazonproductnewermodelinfo)<br>
+[AmazonProductNewerModelInfo](./dataforseo.client.models.amazonproductnewermodelinfo.md)<br>
 
 ### **Categories**
 
@@ -251,7 +247,7 @@ public ICollection<ProductCategoryInfo> Categories { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ProductCategoryInfo&gt;](./dataforseo.client.models.productcategoryinfo)<br>
+[ICollection&lt;ProductCategoryInfo&gt;](./dataforseo.client.models.productcategoryinfo.md)<br>
 
 ### **ProductInformation**
 
@@ -263,7 +259,7 @@ public ICollection<BaseProductInformationItem> ProductInformation { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseProductInformationItem&gt;](./dataforseo.client.models.baseproductinformationitem)<br>
+[ICollection&lt;BaseProductInformationItem&gt;](./dataforseo.client.models.baseproductinformationitem.md)<br>
 
 ### **ProductImagesList**
 
@@ -331,7 +327,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonAmazonProductInfoSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

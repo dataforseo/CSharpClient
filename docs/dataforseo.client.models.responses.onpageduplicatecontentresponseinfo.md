@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageDuplicateContentResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageDuplicateContentResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageDuplicateContentResponseInfo](./dataforseo.client.models.responses.onpageduplicatecontentresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageDuplicateContentResponseInfo](./dataforseo.client.models.responses.onpageduplicatecontentresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageDuplicateContentTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageDuplicateContentTaskInfo&gt;](./dataforseo.client.models.responses.onpageduplicatecontenttaskinfo)<br>
+[ICollection&lt;OnPageDuplicateContentTaskInfo&gt;](./dataforseo.client.models.responses.onpageduplicatecontenttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageDuplicateContentResponseInfo()
 ```
-
----
-
-[`< Back`](./)

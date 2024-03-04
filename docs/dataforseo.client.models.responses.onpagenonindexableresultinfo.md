@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageNonIndexableResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageNonIndexableResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageNonIndexableResultInfo](./dataforseo.client.models.responses.onpagenonindexableresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageNonIndexableResultInfo](./dataforseo.client.models.responses.onpagenonindexableresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **TotalItemsCount**
 
@@ -73,7 +69,7 @@ public ICollection<OnPageNonIndexableItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageNonIndexableItem&gt;](./dataforseo.client.models.onpagenonindexableitem)<br>
+[ICollection&lt;OnPageNonIndexableItem&gt;](./dataforseo.client.models.onpagenonindexableitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -92,7 +88,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageNonIndexableResultInfo()
 ```
-
----
-
-[`< Back`](./)

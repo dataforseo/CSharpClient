@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [ContentAnalysisLanguagesTaskInfo](./dataforseo.client.models.responses.contentanalysislanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [ContentAnalysisLanguagesTaskInfo](./dataforseo.client.models.responses.contentanalysislanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentAnalysisLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisLanguagesResultInfo&gt;](./dataforseo.client.models.responses.contentanalysislanguagesresultinfo)<br>
+[ICollection&lt;ContentAnalysisLanguagesResultInfo&gt;](./dataforseo.client.models.responses.contentanalysislanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

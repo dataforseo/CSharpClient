@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleSearchByImageTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleSearchByImageTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleSearchByImageTaskPostResponseInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleSearchByImageTaskPostResponseInfo](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleSearchByImageTaskPostTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleSearchByImageTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskposttaskinfo)<br>
+[ICollection&lt;SerpGoogleSearchByImageTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpgooglesearchbyimagetaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleSearchByImageTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

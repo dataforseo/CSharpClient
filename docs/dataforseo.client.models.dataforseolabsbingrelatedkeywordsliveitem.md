@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBingRelatedKeywordsLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsBingRelatedKeywordsLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingRelatedKeywordsLiveItem](./dataforseo.client.models.dataforseolabsbingrelatedkeywordsliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBingRelatedKeywordsLiveItem](./dataforseo.client.models.dataforseolabsbingrelatedkeywordsliveitem.md)
 
 ## Properties
 
@@ -36,7 +32,7 @@ public KeywordData KeywordData { get; set; }
 
 #### Property Value
 
-[KeywordData](./dataforseo.client.models.keyworddata)<br>
+[KeywordData](./dataforseo.client.models.keyworddata.md)<br>
 
 ### **Depth**
 
@@ -80,7 +76,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingRelatedKeywordsLiveItem()
 ```
-
----
-
-[`< Back`](./)

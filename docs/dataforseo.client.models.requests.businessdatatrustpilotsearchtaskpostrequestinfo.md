@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataTrustpilotSearchTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataTrustpilotSearchTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTrustpilotSearchTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatatrustpilotsearchtaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTrustpilotSearchTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatatrustpilotsearchtaskpostrequestinfo.md)
 
 ## Properties
 
@@ -140,7 +136,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTrustpilotSearchTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

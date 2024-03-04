@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseVersionsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseVersionsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseVersionsResultInfo](./dataforseo.client.models.responses.onpagelighthouseversionsresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseVersionsResultInfo](./dataforseo.client.models.responses.onpagelighthouseversionsresultinfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public ICollection<AvailibleVersions> AvailibleVersions { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AvailibleVersions&gt;](./dataforseo.client.models.availibleversions)<br>
+[ICollection&lt;AvailibleVersions&gt;](./dataforseo.client.models.availibleversions.md)<br>
 
 ### **AdditionalProperties**
 
@@ -41,7 +37,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseVersionsResultInfo()
 ```
-
----
-
-[`< Back`](./)

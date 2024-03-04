@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AvailibleVersions
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AvailibleVersions
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvailibleVersions](./dataforseo.client.models.availibleversions)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvailibleVersions](./dataforseo.client.models.availibleversions.md)
 
 ## Properties
 
@@ -56,7 +52,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AvailibleVersions()
 ```
-
----
-
-[`< Back`](./)

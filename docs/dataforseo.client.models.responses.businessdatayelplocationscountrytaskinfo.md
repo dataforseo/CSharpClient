@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataYelpLocationsCountryTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataYelpLocationsCountryTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataYelpLocationsCountryTaskInfo](./dataforseo.client.models.responses.businessdatayelplocationscountrytaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataYelpLocationsCountryTaskInfo](./dataforseo.client.models.responses.businessdatayelplocationscountrytaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataYelpLocationsCountryResultInfo> Result { get; set
 
 #### Property Value
 
-[ICollection&lt;BusinessDataYelpLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationscountryresultinfo)<br>
+[ICollection&lt;BusinessDataYelpLocationsCountryResultInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationscountryresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpLocationsCountryTaskInfo()
 ```
-
----
-
-[`< Back`](./)

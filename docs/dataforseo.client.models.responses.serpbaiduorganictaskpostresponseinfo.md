@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBaiduOrganicTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBaiduOrganicTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpBaiduOrganicTaskPostResponseInfo](./dataforseo.client.models.responses.serpbaiduorganictaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpBaiduOrganicTaskPostResponseInfo](./dataforseo.client.models.responses.serpbaiduorganictaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBaiduOrganicTaskPostTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBaiduOrganicTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskposttaskinfo)<br>
+[ICollection&lt;SerpBaiduOrganicTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.serpbaiduorganictaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBaiduOrganicTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

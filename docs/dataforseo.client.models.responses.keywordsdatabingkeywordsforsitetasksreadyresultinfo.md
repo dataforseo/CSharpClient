@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingKeywordsForSiteTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordsForSiteTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordsForSiteTasksReadyResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordsForSiteTasksReadyResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforsitetasksreadyresultinfo.md)
 
 ## Properties
 
@@ -104,7 +100,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordsForSiteTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

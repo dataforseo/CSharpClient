@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGooglePlayReviewsSearchSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataGooglePlayReviewsSearchSerpElementItem : BaseAppDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem) → [AppDataGooglePlayReviewsSearchSerpElementItem](./dataforseo.client.models.appdatagoogleplayreviewssearchserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md) → [AppDataGooglePlayReviewsSearchSerpElementItem](./dataforseo.client.models.appdatagoogleplayreviewssearchserpelementitem.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Timestamp**
 
@@ -153,7 +149,7 @@ public AppUserProfileInfo UserProfile { get; set; }
 
 #### Property Value
 
-[AppUserProfileInfo](./dataforseo.client.models.appuserprofileinfo)<br>
+[AppUserProfileInfo](./dataforseo.client.models.appuserprofileinfo.md)<br>
 
 ### **Responses**
 
@@ -165,7 +161,7 @@ public ICollection<ResponseDataInfo> Responses { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ResponseDataInfo&gt;](./dataforseo.client.models.responsedatainfo)<br>
+[ICollection&lt;ResponseDataInfo&gt;](./dataforseo.client.models.responsedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -184,7 +180,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGooglePlayReviewsSearchSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

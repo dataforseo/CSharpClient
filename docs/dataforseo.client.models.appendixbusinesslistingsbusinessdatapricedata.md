@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixBusinessListingsBusinessDataPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBusinessListingsBusinessDataPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessListingsBusinessDataPriceData](./dataforseo.client.models.appendixbusinesslistingsbusinessdatapricedata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessListingsBusinessDataPriceData](./dataforseo.client.models.appendixbusinesslistingsbusinessdatapricedata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **CategoriesAggregation**
 
@@ -32,7 +28,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo CategoriesAggregation { get;
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **Locations**
 
@@ -42,7 +38,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **Search**
 
@@ -52,7 +48,7 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo Search { get; set; }
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo)<br>
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixkeywordbingkeywordsdatapricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -71,7 +67,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBusinessListingsBusinessDataPriceData()
 ```
-
----
-
-[`< Back`](./)

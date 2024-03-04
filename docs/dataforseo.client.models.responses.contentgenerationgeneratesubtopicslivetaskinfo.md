@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentGenerationGenerateSubTopicsLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationGenerateSubTopicsLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [ContentGenerationGenerateSubTopicsLiveTaskInfo](./dataforseo.client.models.responses.contentgenerationgeneratesubtopicslivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [ContentGenerationGenerateSubTopicsLiveTaskInfo](./dataforseo.client.models.responses.contentgenerationgeneratesubtopicslivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentGenerationGenerateSubTopicsLiveResultInfo> Result { ge
 
 #### Property Value
 
-[ICollection&lt;ContentGenerationGenerateSubTopicsLiveResultInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratesubtopicsliveresultinfo)<br>
+[ICollection&lt;ContentGenerationGenerateSubTopicsLiveResultInfo&gt;](./dataforseo.client.models.responses.contentgenerationgeneratesubtopicsliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationGenerateSubTopicsLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsbingbulktrafficestimationliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsbingbulktrafficestimationliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsBingBulkTrafficEstimationLiveTaskInfo> Tasks { 
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingBulkTrafficEstimationLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulktrafficestimationlivetaskinfo)<br>
+[ICollection&lt;DataforseoLabsBingBulkTrafficEstimationLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulktrafficestimationlivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

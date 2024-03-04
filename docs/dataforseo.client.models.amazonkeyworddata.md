@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonKeywordData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonKeywordData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonKeywordData](./dataforseo.client.models.amazonkeyworddata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonKeywordData](./dataforseo.client.models.amazonkeyworddata.md)
 
 ## Properties
 
@@ -72,7 +68,7 @@ public AmazonKeywordInfo KeywordInfo { get; set; }
 
 #### Property Value
 
-[AmazonKeywordInfo](./dataforseo.client.models.amazonkeywordinfo)<br>
+[AmazonKeywordInfo](./dataforseo.client.models.amazonkeywordinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -91,7 +87,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonKeywordData()
 ```
-
----
-
-[`< Back`](./)

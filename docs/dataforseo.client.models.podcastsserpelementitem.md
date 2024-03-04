@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PodcastsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PodcastsSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [PodcastsSerpElementItem](./dataforseo.client.models.podcastsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [PodcastsSerpElementItem](./dataforseo.client.models.podcastsserpelementitem.md)
 
 ## Properties
 
@@ -77,7 +73,7 @@ public ICollection<PodcastsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;PodcastsElement&gt;](./dataforseo.client.models.podcastselement)<br>
+[ICollection&lt;PodcastsElement&gt;](./dataforseo.client.models.podcastselement.md)<br>
 
 ### **Rectangle**
 
@@ -91,7 +87,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -110,7 +106,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PodcastsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RedditReviews
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RedditReviews
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RedditReviews](./dataforseo.client.models.redditreviews)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RedditReviews](./dataforseo.client.models.redditreviews.md)
 
 ## Properties
 
@@ -92,7 +88,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RedditReviews()
 ```
-
----
-
-[`< Back`](./)

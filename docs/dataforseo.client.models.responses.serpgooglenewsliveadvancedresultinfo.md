@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleNewsLiveAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleNewsLiveAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleNewsLiveAdvancedResultInfo](./dataforseo.client.models.responses.serpgooglenewsliveadvancedresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleNewsLiveAdvancedResultInfo](./dataforseo.client.models.responses.serpgooglenewsliveadvancedresultinfo.md)
 
 ## Properties
 
@@ -114,7 +110,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
 
 ### **ItemTypes**
 
@@ -165,7 +161,7 @@ public ICollection<BaseSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](./dataforseo.client.models.baseserpelementitem)<br>
+[ICollection&lt;BaseSerpElementItem&gt;](./dataforseo.client.models.baseserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -184,7 +180,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleNewsLiveAdvancedResultInfo()
 ```
-
----
-
-[`< Back`](./)

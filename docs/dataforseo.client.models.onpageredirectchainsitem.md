@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageRedirectChainsItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageRedirectChainsItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRedirectChainsItem](./dataforseo.client.models.onpageredirectchainsitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRedirectChainsItem](./dataforseo.client.models.onpageredirectchainsitem.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public ICollection<BaseOnPageLinkItemInfo> Chain { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseOnPageLinkItemInfo&gt;](./dataforseo.client.models.baseonpagelinkiteminfo)<br>
+[ICollection&lt;BaseOnPageLinkItemInfo&gt;](./dataforseo.client.models.baseonpagelinkiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -56,7 +52,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageRedirectChainsItem()
 ```
-
----
-
-[`< Back`](./)

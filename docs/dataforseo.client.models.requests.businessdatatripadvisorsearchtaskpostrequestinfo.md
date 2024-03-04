@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataTripadvisorSearchTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataTripadvisorSearchTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTripadvisorSearchTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatatripadvisorsearchtaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTripadvisorSearchTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatatripadvisorsearchtaskpostrequestinfo.md)
 
 ## Properties
 
@@ -171,7 +167,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTripadvisorSearchTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

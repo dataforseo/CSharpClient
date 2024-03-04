@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAppleAppIntersectionLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsAppleAppIntersectionLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleAppIntersectionLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsappleappintersectionliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsAppleAppIntersectionLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsappleappintersectionliverequestinfo.md)
 
 ## Properties
 
@@ -226,7 +222,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleAppIntersectionLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

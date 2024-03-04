@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksBulkRanksLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksBulkRanksLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkRanksLiveResultInfo](./dataforseo.client.models.responses.backlinksbulkranksliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkRanksLiveResultInfo](./dataforseo.client.models.responses.backlinksbulkranksliveresultinfo.md)
 
 ## Properties
 
@@ -36,7 +32,7 @@ public ICollection<BacklinksBulkRanksLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BacklinksBulkRanksLiveItem&gt;](./dataforseo.client.models.backlinksbulkranksliveitem)<br>
+[ICollection&lt;BacklinksBulkRanksLiveItem&gt;](./dataforseo.client.models.backlinksbulkranksliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkRanksLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

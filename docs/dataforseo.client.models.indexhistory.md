@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # IndexHistory
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class IndexHistory
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [IndexHistory](./dataforseo.client.models.indexhistory)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [IndexHistory](./dataforseo.client.models.indexhistory.md)
 
 ## Properties
 
@@ -82,7 +78,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public IndexHistory()
 ```
-
----
-
-[`< Back`](./)

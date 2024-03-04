@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TwitterDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TwitterDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [TwitterDataforseoLabsSerpElementItem](./dataforseo.client.models.twitterdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [TwitterDataforseoLabsSerpElementItem](./dataforseo.client.models.twitterdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -112,7 +108,7 @@ public ICollection<TwitterElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TwitterElement&gt;](./dataforseo.client.models.twitterelement)<br>
+[ICollection&lt;TwitterElement&gt;](./dataforseo.client.models.twitterelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -131,7 +127,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TwitterDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

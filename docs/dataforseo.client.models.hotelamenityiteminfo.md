@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # HotelAmenityItemInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class HotelAmenityItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelAmenityItemInfo](./dataforseo.client.models.hotelamenityiteminfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HotelAmenityItemInfo](./dataforseo.client.models.hotelamenityiteminfo.md)
 
 ## Properties
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HotelAmenityItemInfo()
 ```
-
----
-
-[`< Back`](./)

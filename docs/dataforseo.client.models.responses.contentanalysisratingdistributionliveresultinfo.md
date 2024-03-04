@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisRatingDistributionLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisRatingDistributionLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisRatingDistributionLiveResultInfo](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisRatingDistributionLiveResultInfo](./dataforseo.client.models.responses.contentanalysisratingdistributionliveresultinfo.md)
 
 ## Properties
 
@@ -60,7 +56,7 @@ public ContentAnalysisSummaryInfo Metrics { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisRatingDistributionLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

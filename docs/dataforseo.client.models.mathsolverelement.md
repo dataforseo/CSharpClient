@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MathSolverElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MathSolverElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MathSolverElement](./dataforseo.client.models.mathsolverelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MathSolverElement](./dataforseo.client.models.mathsolverelement.md)
 
 ## Properties
 
@@ -48,7 +44,7 @@ public ICollection<MathSolverExpandedElement> ExpandedElement { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MathSolverExpandedElement&gt;](./dataforseo.client.models.mathsolverexpandedelement)<br>
+[ICollection&lt;MathSolverExpandedElement&gt;](./dataforseo.client.models.mathsolverexpandedelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MathSolverElement()
 ```
-
----
-
-[`< Back`](./)

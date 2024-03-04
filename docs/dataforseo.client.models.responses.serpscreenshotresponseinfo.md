@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpScreenshotResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpScreenshotResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpScreenshotResponseInfo](./dataforseo.client.models.responses.serpscreenshotresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpScreenshotResponseInfo](./dataforseo.client.models.responses.serpscreenshotresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpScreenshotTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpScreenshotTaskInfo&gt;](./dataforseo.client.models.responses.serpscreenshottaskinfo)<br>
+[ICollection&lt;SerpScreenshotTaskInfo&gt;](./dataforseo.client.models.responses.serpscreenshottaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpScreenshotResponseInfo()
 ```
-
----
-
-[`< Back`](./)

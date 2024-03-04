@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleMapsTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleMapsTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleMapsTasksReadyResultInfo](./dataforseo.client.models.responses.serpgooglemapstasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleMapsTasksReadyResultInfo](./dataforseo.client.models.responses.serpgooglemapstasksreadyresultinfo.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KnowledgeGraphHotelsBookingElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class KnowledgeGraphHotelsBookingElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KnowledgeGraphHotelsBookingElement](./dataforseo.client.models.knowledgegraphhotelsbookingelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KnowledgeGraphHotelsBookingElement](./dataforseo.client.models.knowledgegraphhotelsbookingelement.md)
 
 ## Properties
 
@@ -85,7 +81,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **IsPaid**
 
@@ -116,7 +112,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KnowledgeGraphHotelsBookingElement()
 ```
-
----
-
-[`< Back`](./)

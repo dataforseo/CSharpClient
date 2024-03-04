@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DiscussionsAndForumsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DiscussionsAndForumsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DiscussionsAndForumsElement](./dataforseo.client.models.discussionsandforumselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DiscussionsAndForumsElement](./dataforseo.client.models.discussionsandforumselement.md)
 
 ## Properties
 
@@ -131,7 +127,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DiscussionsAndForumsElement()
 ```
-
----
-
-[`< Back`](./)

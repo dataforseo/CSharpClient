@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantGoogleProductsTaskGetAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantGoogleProductsTaskGetAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleProductsTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.merchantgoogleproductstaskgetadvancedresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleProductsTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.merchantgoogleproductstaskgetadvancedresultinfo.md)
 
 ## Properties
 
@@ -114,7 +110,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
 
 ### **ItemTypes**
 
@@ -155,7 +151,7 @@ public ICollection<BaseMerchantSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseMerchantSerpElementItem&gt;](./dataforseo.client.models.basemerchantserpelementitem)<br>
+[ICollection&lt;BaseMerchantSerpElementItem&gt;](./dataforseo.client.models.basemerchantserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -174,7 +170,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleProductsTaskGetAdvancedResultInfo()
 ```
-
----
-
-[`< Back`](./)

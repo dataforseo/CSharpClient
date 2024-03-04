@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisLanguagesResultInfo](./dataforseo.client.models.responses.contentanalysislanguagesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisLanguagesResultInfo](./dataforseo.client.models.responses.contentanalysislanguagesresultinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisLanguagesResultInfo()
 ```
-
----
-
-[`< Back`](./)

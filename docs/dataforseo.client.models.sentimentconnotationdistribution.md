@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SentimentConnotationDistribution
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class SentimentConnotationDistribution
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SentimentConnotationDistribution](./dataforseo.client.models.sentimentconnotationdistribution)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SentimentConnotationDistribution](./dataforseo.client.models.sentimentconnotationdistribution.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public ContentAnalysisSummaryInfo Anger { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **Happiness**
 
@@ -32,7 +28,7 @@ public ContentAnalysisSummaryInfo Happiness { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **Love**
 
@@ -42,7 +38,7 @@ public ContentAnalysisSummaryInfo Love { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **Sadness**
 
@@ -52,7 +48,7 @@ public ContentAnalysisSummaryInfo Sadness { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **Share**
 
@@ -62,7 +58,7 @@ public ContentAnalysisSummaryInfo Share { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **Fun**
 
@@ -72,7 +68,7 @@ public ContentAnalysisSummaryInfo Fun { get; set; }
 
 #### Property Value
 
-[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo)<br>
+[ContentAnalysisSummaryInfo](./dataforseo.client.models.contentanalysissummaryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -91,7 +87,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SentimentConnotationDistribution()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DictionarySerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DictionarySerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [DictionarySerpElementItem](./dataforseo.client.models.dictionaryserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [DictionarySerpElementItem](./dataforseo.client.models.dictionaryserpelementitem.md)
 
 ## Properties
 
@@ -163,7 +159,7 @@ public ICollection<LinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement)<br>
+[ICollection&lt;LinkElement&gt;](./dataforseo.client.models.linkelement.md)<br>
 
 ### **Rectangle**
 
@@ -177,7 +173,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -196,7 +192,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DictionarySerpElementItem()
 ```
-
----
-
-[`< Back`](./)

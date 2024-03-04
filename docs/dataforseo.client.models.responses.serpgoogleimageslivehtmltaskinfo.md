@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleImagesLiveHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleImagesLiveHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleImagesLiveHtmlTaskInfo](./dataforseo.client.models.responses.serpgoogleimageslivehtmltaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleImagesLiveHtmlTaskInfo](./dataforseo.client.models.responses.serpgoogleimageslivehtmltaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleImagesLiveHtmlResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleImagesLiveHtmlResultInfo&gt;](./dataforseo.client.models.responses.serpgoogleimageslivehtmlresultinfo)<br>
+[ICollection&lt;SerpGoogleImagesLiveHtmlResultInfo&gt;](./dataforseo.client.models.responses.serpgoogleimageslivehtmlresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleImagesLiveHtmlTaskInfo()
 ```
-
----
-
-[`< Back`](./)

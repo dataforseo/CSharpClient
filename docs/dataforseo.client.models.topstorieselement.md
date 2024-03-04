@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TopStoriesElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TopStoriesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopStoriesElement](./dataforseo.client.models.topstorieselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TopStoriesElement](./dataforseo.client.models.topstorieselement.md)
 
 ## Properties
 
@@ -132,7 +128,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TopStoriesElement()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RecipesElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RecipesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RecipesElement](./dataforseo.client.models.recipeselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RecipesElement](./dataforseo.client.models.recipeselement.md)
 
 ## Properties
 
@@ -110,7 +106,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RecipesElement()
 ```
-
----
-
-[`< Back`](./)

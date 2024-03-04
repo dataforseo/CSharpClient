@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # LocalServicesSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalServicesSerpElementItem : BaseSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem) → [LocalServicesSerpElementItem](./dataforseo.client.models.localservicesserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseSerpElementItem](./dataforseo.client.models.baseserpelementitem.md) → [LocalServicesSerpElementItem](./dataforseo.client.models.localservicesserpelementitem.md)
 
 ## Properties
 
@@ -113,7 +109,7 @@ public ICollection<LocalServicesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;LocalServicesElement&gt;](./dataforseo.client.models.localserviceselement)<br>
+[ICollection&lt;LocalServicesElement&gt;](./dataforseo.client.models.localserviceselement.md)<br>
 
 ### **Rectangle**
 
@@ -127,7 +123,7 @@ public Rectangle Rectangle { get; set; }
 
 #### Property Value
 
-[Rectangle](./dataforseo.client.models.rectangle)<br>
+[Rectangle](./dataforseo.client.models.rectangle.md)<br>
 
 ### **AdditionalProperties**
 
@@ -146,7 +142,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalServicesSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

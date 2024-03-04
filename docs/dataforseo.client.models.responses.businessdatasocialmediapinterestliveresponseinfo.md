@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataSocialMediaPinterestLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataSocialMediaPinterestLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [BusinessDataSocialMediaPinterestLiveResponseInfo](./dataforseo.client.models.responses.businessdatasocialmediapinterestliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [BusinessDataSocialMediaPinterestLiveResponseInfo](./dataforseo.client.models.responses.businessdatasocialmediapinterestliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataSocialMediaPinterestLiveTaskInfo> Tasks { get; se
 
 #### Property Value
 
-[ICollection&lt;BusinessDataSocialMediaPinterestLiveTaskInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediapinterestlivetaskinfo)<br>
+[ICollection&lt;BusinessDataSocialMediaPinterestLiveTaskInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediapinterestlivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataSocialMediaPinterestLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

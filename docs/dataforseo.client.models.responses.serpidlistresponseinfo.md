@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpIdListResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpIdListResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpIdListResponseInfo](./dataforseo.client.models.responses.serpidlistresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpIdListResponseInfo](./dataforseo.client.models.responses.serpidlistresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpIdListTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpIdListTaskInfo&gt;](./dataforseo.client.models.responses.serpidlisttaskinfo)<br>
+[ICollection&lt;SerpIdListTaskInfo&gt;](./dataforseo.client.models.responses.serpidlisttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpIdListResponseInfo()
 ```
-
----
-
-[`< Back`](./)

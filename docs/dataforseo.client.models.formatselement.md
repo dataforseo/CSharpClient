@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # FormatsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class FormatsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FormatsElement](./dataforseo.client.models.formatselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [FormatsElement](./dataforseo.client.models.formatselement.md)
 
 ## Properties
 
@@ -68,7 +64,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public FormatsElement()
 ```
-
----
-
-[`< Back`](./)

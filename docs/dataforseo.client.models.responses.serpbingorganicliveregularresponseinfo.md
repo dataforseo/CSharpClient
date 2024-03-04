@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingOrganicLiveRegularResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingOrganicLiveRegularResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpBingOrganicLiveRegularResponseInfo](./dataforseo.client.models.responses.serpbingorganicliveregularresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpBingOrganicLiveRegularResponseInfo](./dataforseo.client.models.responses.serpbingorganicliveregularresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBingOrganicLiveRegularTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingOrganicLiveRegularTaskInfo&gt;](./dataforseo.client.models.responses.serpbingorganicliveregulartaskinfo)<br>
+[ICollection&lt;SerpBingOrganicLiveRegularTaskInfo&gt;](./dataforseo.client.models.responses.serpbingorganicliveregulartaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingOrganicLiveRegularResponseInfo()
 ```
-
----
-
-[`< Back`](./)

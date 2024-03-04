@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageInstantPagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageInstantPagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageInstantPagesResultInfo](./dataforseo.client.models.responses.onpageinstantpagesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageInstantPagesResultInfo](./dataforseo.client.models.responses.onpageinstantpagesresultinfo.md)
 
 ## Properties
 
@@ -38,7 +34,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **CrawlGatewayAddress**
 
@@ -76,7 +72,7 @@ public ICollection<BaseOnPageResourceItemInfo> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo)<br>
+[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageInstantPagesResultInfo()
 ```
-
----
-
-[`< Back`](./)

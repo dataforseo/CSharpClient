@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataIdListTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataIdListTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataIdListTaskInfo](./dataforseo.client.models.responses.appdataidlisttaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataIdListTaskInfo](./dataforseo.client.models.responses.appdataidlisttaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataIdListResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataIdListResultInfo&gt;](./dataforseo.client.models.responses.appdataidlistresultinfo)<br>
+[ICollection&lt;AppDataIdListResultInfo&gt;](./dataforseo.client.models.responses.appdataidlistresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataIdListTaskInfo()
 ```
-
----
-
-[`< Back`](./)

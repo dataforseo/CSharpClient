@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleAppInfoTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class AppDataGoogleAppInfoTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppInfoTaskPostRequestInfo](./dataforseo.client.models.requests.appdatagoogleappinfotaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataGoogleAppInfoTaskPostRequestInfo](./dataforseo.client.models.requests.appdatagoogleappinfotaskpostrequestinfo.md)
 
 ## Properties
 
@@ -207,7 +203,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleAppInfoTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

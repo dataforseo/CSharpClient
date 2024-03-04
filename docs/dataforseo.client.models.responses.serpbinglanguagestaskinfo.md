@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBingLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpBingLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpBingLanguagesTaskInfo](./dataforseo.client.models.responses.serpbinglanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpBingLanguagesTaskInfo](./dataforseo.client.models.responses.serpbinglanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpBingLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpBingLanguagesResultInfo&gt;](./dataforseo.client.models.responses.serpbinglanguagesresultinfo)<br>
+[ICollection&lt;SerpBingLanguagesResultInfo&gt;](./dataforseo.client.models.responses.serpbinglanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBingLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

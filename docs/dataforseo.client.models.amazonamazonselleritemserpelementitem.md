@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonAmazonSellerItemSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonAmazonSellerItemSerpElementItem : BaseAmazonSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem) → [AmazonAmazonSellerItemSerpElementItem](./dataforseo.client.models.amazonamazonselleritemserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAmazonSerpElementItem](./dataforseo.client.models.baseamazonserpelementitem.md) → [AmazonAmazonSellerItemSerpElementItem](./dataforseo.client.models.amazonamazonselleritemserpelementitem.md)
 
 ## Properties
 
@@ -113,7 +109,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **Rating**
 
@@ -126,7 +122,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement)<br>
+[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
 
 ### **Condition**
 
@@ -165,7 +161,7 @@ public AmazonDeliveryInfo DeliveryInfo { get; set; }
 
 #### Property Value
 
-[AmazonDeliveryInfo](./dataforseo.client.models.amazondeliveryinfo)<br>
+[AmazonDeliveryInfo](./dataforseo.client.models.amazondeliveryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -184,7 +180,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonAmazonSellerItemSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

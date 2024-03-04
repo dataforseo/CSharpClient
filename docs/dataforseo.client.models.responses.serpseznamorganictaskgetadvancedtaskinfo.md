@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpSeznamOrganicTaskGetAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpSeznamOrganicTaskGetAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpSeznamOrganicTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpseznamorganictaskgetadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpSeznamOrganicTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpseznamorganictaskgetadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpSeznamOrganicTaskGetAdvancedResultInfo> Result { get; set
 
 #### Property Value
 
-[ICollection&lt;SerpSeznamOrganicTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgetadvancedresultinfo)<br>
+[ICollection&lt;SerpSeznamOrganicTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpseznamorganictaskgetadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpSeznamOrganicTaskGetAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

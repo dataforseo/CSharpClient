@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # EventsElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class EventsElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [EventsElement](./dataforseo.client.models.eventselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [EventsElement](./dataforseo.client.models.eventselement.md)
 
 ## Properties
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public EventsElement()
 ```
-
----
-
-[`< Back`](./)

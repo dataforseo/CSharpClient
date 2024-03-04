@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsLocationsAndLanguagesResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsLocationsAndLanguagesResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsLocationsAndLanguagesResultInfo](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagesresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsLocationsAndLanguagesResultInfo](./dataforseo.client.models.responses.dataforseolabslocationsandlanguagesresultinfo.md)
 
 ## Properties
 
@@ -88,7 +84,7 @@ public ICollection<AvailableLanguages> AvailableLanguages { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AvailableLanguages&gt;](./dataforseo.client.models.availablelanguages)<br>
+[ICollection&lt;AvailableLanguages&gt;](./dataforseo.client.models.availablelanguages.md)<br>
 
 ### **AdditionalProperties**
 
@@ -107,7 +103,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsLocationsAndLanguagesResultInfo()
 ```
-
----
-
-[`< Back`](./)

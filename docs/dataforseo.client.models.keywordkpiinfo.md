@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordKpiInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class KeywordKpiInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordKpiInfo](./dataforseo.client.models.keywordkpiinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordKpiInfo](./dataforseo.client.models.keywordkpiinfo.md)
 
 ## Properties
 
@@ -135,7 +131,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordKpiInfo()
 ```
-
----
-
-[`< Back`](./)

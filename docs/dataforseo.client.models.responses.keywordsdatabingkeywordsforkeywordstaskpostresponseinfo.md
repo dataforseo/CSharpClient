@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataBingKeywordsForKeywordsTaskPostTaskInfo> Tasks { 
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingKeywordsForKeywordsTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskposttaskinfo)<br>
+[ICollection&lt;KeywordsDataBingKeywordsForKeywordsTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.keywordsdatabingkeywordsforkeywordstaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

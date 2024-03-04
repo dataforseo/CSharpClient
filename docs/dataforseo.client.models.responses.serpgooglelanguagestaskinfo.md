@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleLanguagesTaskInfo](./dataforseo.client.models.responses.serpgooglelanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleLanguagesTaskInfo](./dataforseo.client.models.responses.serpgooglelanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleLanguagesResultInfo&gt;](./dataforseo.client.models.responses.serpgooglelanguagesresultinfo)<br>
+[ICollection&lt;SerpGoogleLanguagesResultInfo&gt;](./dataforseo.client.models.responses.serpgooglelanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

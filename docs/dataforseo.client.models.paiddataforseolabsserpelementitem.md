@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PaidDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PaidDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [PaidDataforseoLabsSerpElementItem](./dataforseo.client.models.paiddataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [PaidDataforseoLabsSerpElementItem](./dataforseo.client.models.paiddataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -173,7 +169,7 @@ public ICollection<AdLinkElement> Links { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AdLinkElement&gt;](./dataforseo.client.models.adlinkelement)<br>
+[ICollection&lt;AdLinkElement&gt;](./dataforseo.client.models.adlinkelement.md)<br>
 
 ### **MainDomain**
 
@@ -256,7 +252,7 @@ public RankChanges RankChanges { get; set; }
 
 #### Property Value
 
-[RankChanges](./dataforseo.client.models.rankchanges)<br>
+[RankChanges](./dataforseo.client.models.rankchanges.md)<br>
 
 ### **SeType**
 
@@ -280,7 +276,7 @@ public BacklinksInfo BacklinksInfo { get; set; }
 
 #### Property Value
 
-[BacklinksInfo](./dataforseo.client.models.backlinksinfo)<br>
+[BacklinksInfo](./dataforseo.client.models.backlinksinfo.md)<br>
 
 ### **RankInfo**
 
@@ -292,7 +288,7 @@ public RankInfo RankInfo { get; set; }
 
 #### Property Value
 
-[RankInfo](./dataforseo.client.models.rankinfo)<br>
+[RankInfo](./dataforseo.client.models.rankinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -311,7 +307,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PaidDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

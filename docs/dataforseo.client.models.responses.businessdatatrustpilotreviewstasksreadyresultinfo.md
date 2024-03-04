@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataTrustpilotReviewsTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataTrustpilotReviewsTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTrustpilotReviewsTasksReadyResultInfo](./dataforseo.client.models.responses.businessdatatrustpilotreviewstasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTrustpilotReviewsTasksReadyResultInfo](./dataforseo.client.models.responses.businessdatatrustpilotreviewstasksreadyresultinfo.md)
 
 ## Properties
 
@@ -93,7 +89,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataTrustpilotReviewsTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

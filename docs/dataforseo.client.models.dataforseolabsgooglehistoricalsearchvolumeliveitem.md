@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleHistoricalSearchVolumeLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalSearchVolumeLiveItem](./dataforseo.client.models.dataforseolabsgooglehistoricalsearchvolumeliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleHistoricalSearchVolumeLiveItem](./dataforseo.client.models.dataforseolabsgooglehistoricalsearchvolumeliveitem.md)
 
 ## Properties
 
@@ -88,7 +84,7 @@ public KeywordInfo KeywordInfo { get; set; }
 
 #### Property Value
 
-[KeywordInfo](./dataforseo.client.models.keywordinfo)<br>
+[KeywordInfo](./dataforseo.client.models.keywordinfo.md)<br>
 
 ### **KeywordProperties**
 
@@ -100,7 +96,7 @@ public KeywordProperties KeywordProperties { get; set; }
 
 #### Property Value
 
-[KeywordProperties](./dataforseo.client.models.keywordproperties)<br>
+[KeywordProperties](./dataforseo.client.models.keywordproperties.md)<br>
 
 ### **ImpressionsInfo**
 
@@ -116,7 +112,7 @@ public ImpressionsInfo ImpressionsInfo { get; set; }
 
 #### Property Value
 
-[ImpressionsInfo](./dataforseo.client.models.impressionsinfo)<br>
+[ImpressionsInfo](./dataforseo.client.models.impressionsinfo.md)<br>
 
 ### **SerpInfo**
 
@@ -129,7 +125,7 @@ public SerpInfo SerpInfo { get; set; }
 
 #### Property Value
 
-[SerpInfo](./dataforseo.client.models.serpinfo)<br>
+[SerpInfo](./dataforseo.client.models.serpinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -148,7 +144,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem()
 ```
-
----
-
-[`< Back`](./)

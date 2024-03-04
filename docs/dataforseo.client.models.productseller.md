@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ProductSeller
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductSeller
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductSeller](./dataforseo.client.models.productseller)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductSeller](./dataforseo.client.models.productseller.md)
 
 ## Properties
 
@@ -61,7 +57,7 @@ public RatingElement SellerRating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement)<br>
+[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
 
 ### **SellerReviewCount**
 
@@ -87,7 +83,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **DeliveryInfo**
 
@@ -100,7 +96,7 @@ public DeliveryInfo DeliveryInfo { get; set; }
 
 #### Property Value
 
-[DeliveryInfo](./dataforseo.client.models.deliveryinfo)<br>
+[DeliveryInfo](./dataforseo.client.models.deliveryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -119,7 +115,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductSeller()
 ```
-
----
-
-[`< Back`](./)

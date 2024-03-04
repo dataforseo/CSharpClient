@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageMicrodataResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageMicrodataResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageMicrodataResponseInfo](./dataforseo.client.models.responses.onpagemicrodataresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageMicrodataResponseInfo](./dataforseo.client.models.responses.onpagemicrodataresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageMicrodataTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageMicrodataTaskInfo&gt;](./dataforseo.client.models.responses.onpagemicrodatataskinfo)<br>
+[ICollection&lt;OnPageMicrodataTaskInfo&gt;](./dataforseo.client.models.responses.onpagemicrodatataskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageMicrodataResponseInfo()
 ```
-
----
-
-[`< Back`](./)

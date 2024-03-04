@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AvailableLanguages
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AvailableLanguages
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvailableLanguages](./dataforseo.client.models.availablelanguages)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AvailableLanguages](./dataforseo.client.models.availablelanguages.md)
 
 ## Properties
 
@@ -93,7 +89,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AvailableLanguages()
 ```
-
----
-
-[`< Back`](./)

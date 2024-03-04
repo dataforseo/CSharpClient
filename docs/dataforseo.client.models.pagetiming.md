@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PageTiming
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PageTiming
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageTiming](./dataforseo.client.models.pagetiming)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PageTiming](./dataforseo.client.models.pagetiming.md)
 
 ## Properties
 
@@ -184,7 +180,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PageTiming()
 ```
-
----
-
-[`< Back`](./)

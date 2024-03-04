@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksDomainIntersectionLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BacklinksDomainIntersectionLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BacklinksDomainIntersectionLiveTaskInfo](./dataforseo.client.models.responses.backlinksdomainintersectionlivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BacklinksDomainIntersectionLiveTaskInfo](./dataforseo.client.models.responses.backlinksdomainintersectionlivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BacklinksDomainIntersectionLiveResultInfo> Result { get; set;
 
 #### Property Value
 
-[ICollection&lt;BacklinksDomainIntersectionLiveResultInfo&gt;](./dataforseo.client.models.responses.backlinksdomainintersectionliveresultinfo)<br>
+[ICollection&lt;BacklinksDomainIntersectionLiveResultInfo&gt;](./dataforseo.client.models.responses.backlinksdomainintersectionliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksDomainIntersectionLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

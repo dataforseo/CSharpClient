@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpErrorsRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpErrorsRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpErrorsRequestInfo](./dataforseo.client.models.requests.serperrorsrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpErrorsRequestInfo](./dataforseo.client.models.requests.serperrorsrequestinfo.md)
 
 ## Properties
 
@@ -111,7 +107,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpErrorsRequestInfo()
 ```
-
----
-
-[`< Back`](./)

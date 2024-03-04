@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisSentimentAnalysisLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class ContentAnalysisSentimentAnalysisLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSentimentAnalysisLiveRequestInfo](./dataforseo.client.models.requests.contentanalysissentimentanalysisliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSentimentAnalysisLiveRequestInfo](./dataforseo.client.models.requests.contentanalysissentimentanalysisliverequestinfo.md)
 
 ## Properties
 
@@ -186,7 +182,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSentimentAnalysisLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

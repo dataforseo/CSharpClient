@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageAvailableFiltersResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageAvailableFiltersResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageAvailableFiltersResponseInfo](./dataforseo.client.models.responses.onpageavailablefiltersresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageAvailableFiltersResponseInfo](./dataforseo.client.models.responses.onpageavailablefiltersresponseinfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public ICollection<OnPageAvailableFiltersTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageAvailableFiltersTaskInfo&gt;](./dataforseo.client.models.responses.onpageavailablefilterstaskinfo)<br>
+[ICollection&lt;OnPageAvailableFiltersTaskInfo&gt;](./dataforseo.client.models.responses.onpageavailablefilterstaskinfo.md)<br>
 
 ### **Version**
 
@@ -127,7 +123,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageAvailableFiltersResponseInfo()
 ```
-
----
-
-[`< Back`](./)

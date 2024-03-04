@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageRawHtmlRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageRawHtmlRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRawHtmlRequestInfo](./dataforseo.client.models.requests.onpagerawhtmlrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageRawHtmlRequestInfo](./dataforseo.client.models.requests.onpagerawhtmlrequestinfo.md)
 
 ## Properties
 
@@ -62,7 +58,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageRawHtmlRequestInfo()
 ```
-
----
-
-[`< Back`](./)

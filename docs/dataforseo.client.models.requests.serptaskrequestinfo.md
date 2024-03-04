@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpTaskRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpTaskRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpTaskRequestInfo](./dataforseo.client.models.requests.serptaskrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpTaskRequestInfo](./dataforseo.client.models.requests.serptaskrequestinfo.md)
 
 ## Properties
 
@@ -450,7 +446,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpTaskRequestInfo()
 ```
-
----
-
-[`< Back`](./)

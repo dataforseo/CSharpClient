@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppStoreReviewsSearchSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataAppStoreReviewsSearchSerpElementItem : BaseAppDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem) → [AppDataAppStoreReviewsSearchSerpElementItem](./dataforseo.client.models.appdataappstorereviewssearchserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md) → [AppDataAppStoreReviewsSearchSerpElementItem](./dataforseo.client.models.appdataappstorereviewssearchserpelementitem.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Timestamp**
 
@@ -139,7 +135,7 @@ public AppUserProfileInfo UserProfile { get; set; }
 
 #### Property Value
 
-[AppUserProfileInfo](./dataforseo.client.models.appuserprofileinfo)<br>
+[AppUserProfileInfo](./dataforseo.client.models.appuserprofileinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -158,7 +154,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppStoreReviewsSearchSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

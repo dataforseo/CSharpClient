@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGooglePageIntersectionLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class DataforseoLabsGooglePageIntersectionLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGooglePageIntersectionLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglepageintersectionliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGooglePageIntersectionLiveRequestInfo](./dataforseo.client.models.requests.dataforseolabsgooglepageintersectionliverequestinfo.md)
 
 ## Properties
 
@@ -340,7 +336,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGooglePageIntersectionLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

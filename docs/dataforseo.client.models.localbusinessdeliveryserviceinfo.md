@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # LocalBusinessDeliveryServiceInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class LocalBusinessDeliveryServiceInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LocalBusinessDeliveryServiceInfo](./dataforseo.client.models.localbusinessdeliveryserviceinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [LocalBusinessDeliveryServiceInfo](./dataforseo.client.models.localbusinessdeliveryserviceinfo.md)
 
 ## Properties
 
@@ -68,7 +64,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public LocalBusinessDeliveryServiceInfo()
 ```
-
----
-
-[`< Back`](./)

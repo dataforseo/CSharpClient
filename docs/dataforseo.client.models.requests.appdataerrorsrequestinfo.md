@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataErrorsRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class AppDataErrorsRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataErrorsRequestInfo](./dataforseo.client.models.requests.appdataerrorsrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataErrorsRequestInfo](./dataforseo.client.models.requests.appdataerrorsrequestinfo.md)
 
 ## Properties
 
@@ -111,7 +107,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataErrorsRequestInfo()
 ```
-
----
-
-[`< Back`](./)

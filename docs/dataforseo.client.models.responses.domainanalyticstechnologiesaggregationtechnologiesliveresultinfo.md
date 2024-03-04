@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologiesaggregationtechnologiesliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo](./dataforseo.client.models.responses.domainanalyticstechnologiesaggregationtechnologiesliveresultinfo.md)
 
 ## Properties
 
@@ -60,7 +56,7 @@ public ICollection<DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem> I
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem&gt;](./dataforseo.client.models.domainanalyticstechnologiesaggregationtechnologiesliveitem)<br>
+[ICollection&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem&gt;](./dataforseo.client.models.domainanalyticstechnologiesaggregationtechnologiesliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

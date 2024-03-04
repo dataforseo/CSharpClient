@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpNaverOrganicTaskGetAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpNaverOrganicTaskGetAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpNaverOrganicTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpnaverorganictaskgetadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpNaverOrganicTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.serpnaverorganictaskgetadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpNaverOrganicTaskGetAdvancedResultInfo> Result { get; set;
 
 #### Property Value
 
-[ICollection&lt;SerpNaverOrganicTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgetadvancedresultinfo)<br>
+[ICollection&lt;SerpNaverOrganicTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpnaverorganictaskgetadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpNaverOrganicTaskGetAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

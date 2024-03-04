@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageLighthouseAuditsResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageLighthouseAuditsResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseAuditsResultInfo](./dataforseo.client.models.responses.onpagelighthouseauditsresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageLighthouseAuditsResultInfo](./dataforseo.client.models.responses.onpagelighthouseauditsresultinfo.md)
 
 ## Properties
 
@@ -45,7 +41,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageLighthouseAuditsResultInfo()
 ```
-
----
-
-[`< Back`](./)

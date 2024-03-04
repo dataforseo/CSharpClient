@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BrokenResourceElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class BrokenResourceElementItem : BaseOnPageResourceItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo) → [BrokenResourceElementItem](./dataforseo.client.models.brokenresourceelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo.md) → [BrokenResourceElementItem](./dataforseo.client.models.brokenresourceelementitem.md)
 
 ## Properties
 
@@ -27,7 +23,7 @@ public PageMetaInfo Meta { get; set; }
 
 #### Property Value
 
-[PageMetaInfo](./dataforseo.client.models.pagemetainfo)<br>
+[PageMetaInfo](./dataforseo.client.models.pagemetainfo.md)<br>
 
 ### **StatusCode**
 
@@ -130,7 +126,7 @@ public FetchTiming FetchTiming { get; set; }
 
 #### Property Value
 
-[FetchTiming](./dataforseo.client.models.fetchtiming)<br>
+[FetchTiming](./dataforseo.client.models.fetchtiming.md)<br>
 
 ### **CacheControl**
 
@@ -142,7 +138,7 @@ public CacheControl CacheControl { get; set; }
 
 #### Property Value
 
-[CacheControl](./dataforseo.client.models.cachecontrol)<br>
+[CacheControl](./dataforseo.client.models.cachecontrol.md)<br>
 
 ### **Checks**
 
@@ -219,7 +215,7 @@ public LastModified LastModified { get; set; }
 
 #### Property Value
 
-[LastModified](./dataforseo.client.models.lastmodified)<br>
+[LastModified](./dataforseo.client.models.lastmodified.md)<br>
 
 ### **AdditionalProperties**
 
@@ -238,7 +234,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BrokenResourceElementItem()
 ```
-
----
-
-[`< Back`](./)

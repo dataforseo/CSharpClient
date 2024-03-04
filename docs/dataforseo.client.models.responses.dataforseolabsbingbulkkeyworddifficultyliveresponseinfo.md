@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsbingbulkkeyworddifficultyliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsbingbulkkeyworddifficultyliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsBingBulkKeywordDifficultyLiveTaskInfo> Tasks { 
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingBulkKeywordDifficultyLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulkkeyworddifficultylivetaskinfo)<br>
+[ICollection&lt;DataforseoLabsBingBulkKeywordDifficultyLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingbulkkeyworddifficultylivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

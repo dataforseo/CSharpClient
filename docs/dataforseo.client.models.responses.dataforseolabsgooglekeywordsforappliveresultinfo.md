@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleKeywordsForAppLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsGoogleKeywordsForAppLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleKeywordsForAppLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforappliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleKeywordsForAppLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsgooglekeywordsforappliveresultinfo.md)
 
 ## Properties
 
@@ -96,7 +92,7 @@ public ICollection<DataforseoLabsleKeywordsForAppLiveItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsleKeywordsForAppLiveItem&gt;](./dataforseo.client.models.dataforseolabslekeywordsforappliveitem)<br>
+[ICollection&lt;DataforseoLabsleKeywordsForAppLiveItem&gt;](./dataforseo.client.models.dataforseolabslekeywordsforappliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -115,7 +111,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleKeywordsForAppLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

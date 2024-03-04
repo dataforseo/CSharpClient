@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantIdListRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class MerchantIdListRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantIdListRequestInfo](./dataforseo.client.models.requests.merchantidlistrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantIdListRequestInfo](./dataforseo.client.models.requests.merchantidlistrequestinfo.md)
 
 ## Properties
 
@@ -125,7 +121,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantIdListRequestInfo()
 ```
-
----
-
-[`< Back`](./)

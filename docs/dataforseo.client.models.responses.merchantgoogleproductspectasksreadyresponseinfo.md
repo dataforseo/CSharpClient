@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantGoogleProductSpecTasksReadyResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantGoogleProductSpecTasksReadyResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [MerchantGoogleProductSpecTasksReadyResponseInfo](./dataforseo.client.models.responses.merchantgoogleproductspectasksreadyresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [MerchantGoogleProductSpecTasksReadyResponseInfo](./dataforseo.client.models.responses.merchantgoogleproductspectasksreadyresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<MerchantGoogleProductSpecTasksReadyTaskInfo> Tasks { get; set
 
 #### Property Value
 
-[ICollection&lt;MerchantGoogleProductSpecTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectasksreadytaskinfo)<br>
+[ICollection&lt;MerchantGoogleProductSpecTasksReadyTaskInfo&gt;](./dataforseo.client.models.responses.merchantgoogleproductspectasksreadytaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleProductSpecTasksReadyResponseInfo()
 ```
-
----
-
-[`< Back`](./)

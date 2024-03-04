@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleRankedKeywordsLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleRankedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsgooglerankedkeywordsliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsGoogleRankedKeywordsLiveResultInfo](./dataforseo.client.models.responses.dataforseolabsgooglerankedkeywordsliveresultinfo.md)
 
 ## Properties
 
@@ -99,7 +95,7 @@ public IDictionary<string, MetricsInfo> Metrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **MetricsAbsolute**
 
@@ -112,7 +108,7 @@ public IDictionary<string, MetricsInfo> MetricsAbsolute { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, MetricsInfo&gt;](./dataforseo.client.models.metricsinfo.md)<br>
 
 ### **Items**
 
@@ -124,7 +120,7 @@ public ICollection<DataforseoLabsGoogleRankedKeywordsLiveItem> Items { get; set;
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsGoogleRankedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsgooglerankedkeywordsliveitem)<br>
+[ICollection&lt;DataforseoLabsGoogleRankedKeywordsLiveItem&gt;](./dataforseo.client.models.dataforseolabsgooglerankedkeywordsliveitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleRankedKeywordsLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

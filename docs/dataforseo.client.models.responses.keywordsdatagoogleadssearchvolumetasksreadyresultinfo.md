@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataGoogleAdsSearchVolumeTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleAdsSearchVolumeTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsSearchVolumeTasksReadyResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataGoogleAdsSearchVolumeTasksReadyResultInfo](./dataforseo.client.models.responses.keywordsdatagoogleadssearchvolumetasksreadyresultinfo.md)
 
 ## Properties
 
@@ -104,7 +100,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsSearchVolumeTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

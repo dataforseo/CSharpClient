@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RecipesDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RecipesDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [RecipesDataforseoLabsSerpElementItem](./dataforseo.client.models.recipesdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [RecipesDataforseoLabsSerpElementItem](./dataforseo.client.models.recipesdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public ICollection<RecipesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;RecipesElement&gt;](./dataforseo.client.models.recipeselement)<br>
+[ICollection&lt;RecipesElement&gt;](./dataforseo.client.models.recipeselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RecipesDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

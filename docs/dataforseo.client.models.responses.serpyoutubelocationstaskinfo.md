@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeLocationsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeLocationsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpYoutubeLocationsTaskInfo](./dataforseo.client.models.responses.serpyoutubelocationstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpYoutubeLocationsTaskInfo](./dataforseo.client.models.responses.serpyoutubelocationstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpYoutubeLocationsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpYoutubeLocationsResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubelocationsresultinfo)<br>
+[ICollection&lt;SerpYoutubeLocationsResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubelocationsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeLocationsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

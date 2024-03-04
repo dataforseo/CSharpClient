@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleSearchByImageTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleSearchByImageTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleSearchByImageTaskPostRequestInfo](./dataforseo.client.models.requests.serpgooglesearchbyimagetaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleSearchByImageTaskPostRequestInfo](./dataforseo.client.models.requests.serpgooglesearchbyimagetaskpostrequestinfo.md)
 
 ## Properties
 
@@ -338,7 +334,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleSearchByImageTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

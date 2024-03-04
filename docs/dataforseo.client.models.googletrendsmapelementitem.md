@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleTrendsMapElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleTrendsMapElementItem : BaseGoogleTrendsItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseGoogleTrendsItem](./dataforseo.client.models.basegoogletrendsitem) → [GoogleTrendsMapElementItem](./dataforseo.client.models.googletrendsmapelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseGoogleTrendsItem](./dataforseo.client.models.basegoogletrendsitem.md) → [GoogleTrendsMapElementItem](./dataforseo.client.models.googletrendsmapelementitem.md)
 
 ## Properties
 
@@ -62,7 +58,7 @@ public ICollection<TrendsMapDataInfo> Data { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TrendsMapDataInfo&gt;](./dataforseo.client.models.trendsmapdatainfo)<br>
+[ICollection&lt;TrendsMapDataInfo&gt;](./dataforseo.client.models.trendsmapdatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -81,7 +77,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleTrendsMapElementItem()
 ```
-
----
-
-[`< Back`](./)

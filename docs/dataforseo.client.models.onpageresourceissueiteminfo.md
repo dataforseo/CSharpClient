@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageResourceIssueItemInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageResourceIssueItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageResourceIssueItemInfo](./dataforseo.client.models.onpageresourceissueiteminfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageResourceIssueItemInfo](./dataforseo.client.models.onpageresourceissueiteminfo.md)
 
 ## Properties
 
@@ -89,7 +85,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageResourceIssueItemInfo()
 ```
-
----
-
-[`< Back`](./)

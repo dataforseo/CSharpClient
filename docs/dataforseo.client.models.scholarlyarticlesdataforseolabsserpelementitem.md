@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ScholarlyArticlesDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ScholarlyArticlesDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [ScholarlyArticlesDataforseoLabsSerpElementItem](./dataforseo.client.models.scholarlyarticlesdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [ScholarlyArticlesDataforseoLabsSerpElementItem](./dataforseo.client.models.scholarlyarticlesdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -100,7 +96,7 @@ public ICollection<ScholarlyArticlesElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ScholarlyArticlesElement&gt;](./dataforseo.client.models.scholarlyarticleselement)<br>
+[ICollection&lt;ScholarlyArticlesElement&gt;](./dataforseo.client.models.scholarlyarticleselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -119,7 +115,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ScholarlyArticlesDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

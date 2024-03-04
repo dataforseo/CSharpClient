@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ProductCategoryInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ProductCategoryInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductCategoryInfo](./dataforseo.client.models.productcategoryinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ProductCategoryInfo](./dataforseo.client.models.productcategoryinfo.md)
 
 ## Properties
 
@@ -56,7 +52,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ProductCategoryInfo()
 ```
-
----
-
-[`< Back`](./)

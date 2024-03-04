@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeVideoSubtitlesTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpYoutubeVideoSubtitlesTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeVideoSubtitlesTaskPostRequestInfo](./dataforseo.client.models.requests.serpyoutubevideosubtitlestaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpYoutubeVideoSubtitlesTaskPostRequestInfo](./dataforseo.client.models.requests.serpyoutubevideosubtitlestaskpostrequestinfo.md)
 
 ## Properties
 
@@ -261,7 +257,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

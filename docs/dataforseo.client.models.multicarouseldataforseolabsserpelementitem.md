@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MultiCarouselDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MultiCarouselDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [MultiCarouselDataforseoLabsSerpElementItem](./dataforseo.client.models.multicarouseldataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [MultiCarouselDataforseoLabsSerpElementItem](./dataforseo.client.models.multicarouseldataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -78,7 +74,7 @@ public ICollection<MultiCarouselElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;MultiCarouselElement&gt;](./dataforseo.client.models.multicarouselelement)<br>
+[ICollection&lt;MultiCarouselElement&gt;](./dataforseo.client.models.multicarouselelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -97,7 +93,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MultiCarouselDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

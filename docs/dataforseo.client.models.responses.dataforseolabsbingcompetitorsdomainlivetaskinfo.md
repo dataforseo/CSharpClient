@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBingCompetitorsDomainLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsBingCompetitorsDomainLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DataforseoLabsBingCompetitorsDomainLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsbingcompetitorsdomainlivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DataforseoLabsBingCompetitorsDomainLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsbingcompetitorsdomainlivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsBingCompetitorsDomainLiveResultInfo> Result { g
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingCompetitorsDomainLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingcompetitorsdomainliveresultinfo)<br>
+[ICollection&lt;DataforseoLabsBingCompetitorsDomainLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsbingcompetitorsdomainliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingCompetitorsDomainLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingLocationsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingLocationsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataBingLocationsTaskInfo](./dataforseo.client.models.responses.keywordsdatabinglocationstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataBingLocationsTaskInfo](./dataforseo.client.models.responses.keywordsdatabinglocationstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataBingLocationsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataBingLocationsResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglocationsresultinfo)<br>
+[ICollection&lt;KeywordsDataBingLocationsResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatabinglocationsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingLocationsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # GoogleShoppingPaidMerchantSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class GoogleShoppingPaidMerchantSerpElementItem : BaseMerchantSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem) → [GoogleShoppingPaidMerchantSerpElementItem](./dataforseo.client.models.googleshoppingpaidmerchantserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseMerchantSerpElementItem](./dataforseo.client.models.basemerchantserpelementitem.md) → [GoogleShoppingPaidMerchantSerpElementItem](./dataforseo.client.models.googleshoppingpaidmerchantserpelementitem.md)
 
 ## Properties
 
@@ -144,7 +140,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public GoogleShoppingPaidMerchantSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

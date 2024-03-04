@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataYelpLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataYelpLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataYelpLanguagesTaskInfo](./dataforseo.client.models.responses.businessdatayelplanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataYelpLanguagesTaskInfo](./dataforseo.client.models.responses.businessdatayelplanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataYelpLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BusinessDataYelpLanguagesResultInfo&gt;](./dataforseo.client.models.responses.businessdatayelplanguagesresultinfo)<br>
+[ICollection&lt;BusinessDataYelpLanguagesResultInfo&gt;](./dataforseo.client.models.responses.businessdatayelplanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataYelpLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

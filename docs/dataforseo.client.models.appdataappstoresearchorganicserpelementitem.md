@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppStoreSearchOrganicSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppDataAppStoreSearchOrganicSerpElementItem : BaseAppDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem) → [AppDataAppStoreSearchOrganicSerpElementItem](./dataforseo.client.models.appdataappstoresearchorganicserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md) → [AppDataAppStoreSearchOrganicSerpElementItem](./dataforseo.client.models.appdataappstoresearchorganicserpelementitem.md)
 
 ## Properties
 
@@ -124,7 +120,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **IsFree**
 
@@ -148,7 +144,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -167,7 +163,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppStoreSearchOrganicSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # Graph
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class Graph
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Graph](./dataforseo.client.models.graph)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Graph](./dataforseo.client.models.graph.md)
 
 ## Properties
 
@@ -25,7 +21,7 @@ public ICollection<GraphElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;GraphElement&gt;](./dataforseo.client.models.graphelement)<br>
+[ICollection&lt;GraphElement&gt;](./dataforseo.client.models.graphelement.md)<br>
 
 ### **PreviousItems**
 
@@ -38,7 +34,7 @@ public ICollection<GraphElement> PreviousItems { get; set; }
 
 #### Property Value
 
-[ICollection&lt;GraphElement&gt;](./dataforseo.client.models.graphelement)<br>
+[ICollection&lt;GraphElement&gt;](./dataforseo.client.models.graphelement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -57,7 +53,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Graph()
 ```
-
----
-
-[`< Back`](./)

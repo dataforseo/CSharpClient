@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ReviewMentionInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ReviewMentionInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ReviewMentionInfo](./dataforseo.client.models.reviewmentioninfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ReviewMentionInfo](./dataforseo.client.models.reviewmentioninfo.md)
 
 ## Properties
 
@@ -104,7 +100,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ReviewMentionInfo()
 ```
-
----
-
-[`< Back`](./)

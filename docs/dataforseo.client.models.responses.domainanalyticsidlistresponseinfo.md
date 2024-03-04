@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsIdListResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsIdListResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DomainAnalyticsIdListResponseInfo](./dataforseo.client.models.responses.domainanalyticsidlistresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DomainAnalyticsIdListResponseInfo](./dataforseo.client.models.responses.domainanalyticsidlistresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DomainAnalyticsIdListTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsIdListTaskInfo&gt;](./dataforseo.client.models.responses.domainanalyticsidlisttaskinfo)<br>
+[ICollection&lt;DomainAnalyticsIdListTaskInfo&gt;](./dataforseo.client.models.responses.domainanalyticsidlisttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsIdListResponseInfo()
 ```
-
----
-
-[`< Back`](./)

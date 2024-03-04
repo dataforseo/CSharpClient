@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixBingKeywordsDataLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBingKeywordsDataLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBingKeywordsDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbingkeywordsdatalimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBingKeywordsDataLimitsRatesDataInfo](./dataforseo.client.models.appendixbingkeywordsdatalimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo KeywordPerformance { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **SearchVolumeHistory**
 
@@ -32,7 +28,7 @@ public AppendixInfo SearchVolumeHistory { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **SearchVolume**
 
@@ -42,7 +38,7 @@ public AppendixInfo SearchVolume { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **KeywordsForSite**
 
@@ -52,7 +48,7 @@ public AppendixInfo KeywordsForSite { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **KeywordsForKeywords**
 
@@ -62,7 +58,7 @@ public AppendixInfo KeywordsForKeywords { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -81,7 +77,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBingKeywordsDataLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

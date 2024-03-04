@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataIdListResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataIdListResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataIdListResultInfo](./dataforseo.client.models.responses.appdataidlistresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataIdListResultInfo](./dataforseo.client.models.responses.appdataidlistresultinfo.md)
 
 ## Properties
 
@@ -123,7 +119,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataIdListResultInfo()
 ```
-
----
-
-[`< Back`](./)

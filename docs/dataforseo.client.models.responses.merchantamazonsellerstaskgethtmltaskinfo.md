@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonSellersTaskGetHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonSellersTaskGetHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [MerchantAmazonSellersTaskGetHtmlTaskInfo](./dataforseo.client.models.responses.merchantamazonsellerstaskgethtmltaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [MerchantAmazonSellersTaskGetHtmlTaskInfo](./dataforseo.client.models.responses.merchantamazonsellerstaskgethtmltaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<MerchantAmazonSellersTaskGetHtmlResultInfo> Result { get; set
 
 #### Property Value
 
-[ICollection&lt;MerchantAmazonSellersTaskGetHtmlResultInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskgethtmlresultinfo)<br>
+[ICollection&lt;MerchantAmazonSellersTaskGetHtmlResultInfo&gt;](./dataforseo.client.models.responses.merchantamazonsellerstaskgethtmlresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonSellersTaskGetHtmlTaskInfo()
 ```
-
----
-
-[`< Back`](./)

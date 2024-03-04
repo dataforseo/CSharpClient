@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantGoogleSellersTasksReadyResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantGoogleSellersTasksReadyResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleSellersTasksReadyResultInfo](./dataforseo.client.models.responses.merchantgooglesellerstasksreadyresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantGoogleSellersTasksReadyResultInfo](./dataforseo.client.models.responses.merchantgooglesellerstasksreadyresultinfo.md)
 
 ## Properties
 
@@ -117,7 +113,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantGoogleSellersTasksReadyResultInfo()
 ```
-
----
-
-[`< Back`](./)

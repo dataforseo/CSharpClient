@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageMicrodataRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageMicrodataRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageMicrodataRequestInfo](./dataforseo.client.models.requests.onpagemicrodatarequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageMicrodataRequestInfo](./dataforseo.client.models.requests.onpagemicrodatarequestinfo.md)
 
 ## Properties
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageMicrodataRequestInfo()
 ```
-
----
-
-[`< Back`](./)

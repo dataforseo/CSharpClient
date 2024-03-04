@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo](./dataforseo.client.models.appendixtechnologiesdomainanalyticslimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo](./dataforseo.client.models.appendixtechnologiesdomainanalyticslimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo DomainTechnologies { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **DomainsByTechnology**
 
@@ -32,7 +28,7 @@ public AppendixInfo DomainsByTechnology { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Languages**
 
@@ -72,7 +68,7 @@ public AppendixInfo AggregationTechnologies { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **TechnologiesSummary**
 
@@ -82,7 +78,7 @@ public AppendixInfo TechnologiesSummary { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **DomainsByHtmlTerms**
 
@@ -92,7 +88,7 @@ public AppendixInfo DomainsByHtmlTerms { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **TechnologyStats**
 
@@ -102,7 +98,7 @@ public AppendixInfo TechnologyStats { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -121,7 +117,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixBusinessDataDayLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBusinessDataDayLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataDayLimitsRatesDataInfo](./dataforseo.client.models.appendixbusinessdatadaylimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo Reviews { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Search**
 
@@ -32,7 +28,7 @@ public AppendixInfo Search { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -51,7 +47,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBusinessDataDayLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

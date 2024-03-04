@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageContentParsingRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageContentParsingRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingRequestInfo](./dataforseo.client.models.requests.onpagecontentparsingrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageContentParsingRequestInfo](./dataforseo.client.models.requests.onpagecontentparsingrequestinfo.md)
 
 ## Properties
 
@@ -64,7 +60,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageContentParsingRequestInfo()
 ```
-
----
-
-[`< Back`](./)

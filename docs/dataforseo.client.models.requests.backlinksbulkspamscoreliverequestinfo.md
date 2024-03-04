@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BacklinksBulkSpamScoreLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BacklinksBulkSpamScoreLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkSpamScoreLiveRequestInfo](./dataforseo.client.models.requests.backlinksbulkspamscoreliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BacklinksBulkSpamScoreLiveRequestInfo](./dataforseo.client.models.requests.backlinksbulkspamscoreliverequestinfo.md)
 
 ## Properties
 
@@ -76,7 +72,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksBulkSpamScoreLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

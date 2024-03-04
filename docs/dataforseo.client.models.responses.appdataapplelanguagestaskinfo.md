@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppleLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataAppleLanguagesTaskInfo](./dataforseo.client.models.responses.appdataapplelanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataAppleLanguagesTaskInfo](./dataforseo.client.models.responses.appdataapplelanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataAppleLanguagesResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleLanguagesResultInfo&gt;](./dataforseo.client.models.responses.appdataapplelanguagesresultinfo)<br>
+[ICollection&lt;AppDataAppleLanguagesResultInfo&gt;](./dataforseo.client.models.responses.appdataapplelanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

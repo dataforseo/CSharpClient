@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageKeywordDensityRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class OnPageKeywordDensityRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageKeywordDensityRequestInfo](./dataforseo.client.models.requests.onpagekeyworddensityrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageKeywordDensityRequestInfo](./dataforseo.client.models.requests.onpagekeyworddensityrequestinfo.md)
 
 ## Properties
 
@@ -160,7 +156,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageKeywordDensityRequestInfo()
 ```
-
----
-
-[`< Back`](./)

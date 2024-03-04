@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppRankedSerpElementInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppRankedSerpElementInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppRankedSerpElementInfo](./dataforseo.client.models.apprankedserpelementinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppRankedSerpElementInfo](./dataforseo.client.models.apprankedserpelementinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public BaseAppDataSerpElementItem SerpItem { get; set; }
 
 #### Property Value
 
-[BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem)<br>
+[BaseAppDataSerpElementItem](./dataforseo.client.models.baseappdataserpelementitem.md)<br>
 
 ### **CheckUrl**
 
@@ -112,7 +108,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppRankedSerpElementInfo()
 ```
-
----
-
-[`< Back`](./)

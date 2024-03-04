@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixBusinessDataPriceData
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBusinessDataPriceData
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataPriceData](./dataforseo.client.models.appendixbusinessdatapricedata)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataPriceData](./dataforseo.client.models.appendixbusinessdatapricedata.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixBusinessListingsBusinessDataPriceData BusinessListings { get; set
 
 #### Property Value
 
-[AppendixBusinessListingsBusinessDataPriceData](./dataforseo.client.models.appendixbusinesslistingsbusinessdatapricedata)<br>
+[AppendixBusinessListingsBusinessDataPriceData](./dataforseo.client.models.appendixbusinesslistingsbusinessdatapricedata.md)<br>
 
 ### **Errors**
 
@@ -32,7 +28,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **SocialMedia**
 
@@ -42,7 +38,7 @@ public AppendixSocialMediaBusinessDataPriceData SocialMedia { get; set; }
 
 #### Property Value
 
-[AppendixSocialMediaBusinessDataPriceData](./dataforseo.client.models.appendixsocialmediabusinessdatapricedata)<br>
+[AppendixSocialMediaBusinessDataPriceData](./dataforseo.client.models.appendixsocialmediabusinessdatapricedata.md)<br>
 
 ### **Google**
 
@@ -52,7 +48,7 @@ public AppendixGoogleBusinessDataPriceData Google { get; set; }
 
 #### Property Value
 
-[AppendixGoogleBusinessDataPriceData](./dataforseo.client.models.appendixgooglebusinessdatapricedata)<br>
+[AppendixGoogleBusinessDataPriceData](./dataforseo.client.models.appendixgooglebusinessdatapricedata.md)<br>
 
 ### **Languages**
 
@@ -62,7 +58,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **Locations**
 
@@ -72,7 +68,7 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 #### Property Value
 
-[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./dataforseo.client.models.appendixtaskkeywordsdatapricedatainfo.md)<br>
 
 ### **Tripadvisor**
 
@@ -82,7 +78,7 @@ public AppendixTrBusinessDataPriceDataInfo Tripadvisor { get; set; }
 
 #### Property Value
 
-[AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo)<br>
+[AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo.md)<br>
 
 ### **Trustpilot**
 
@@ -92,7 +88,7 @@ public AppendixTrBusinessDataPriceDataInfo Trustpilot { get; set; }
 
 #### Property Value
 
-[AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo)<br>
+[AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo.md)<br>
 
 ### **Yelp**
 
@@ -102,7 +98,7 @@ public AppendixTrBusinessDataPriceDataInfo Yelp { get; set; }
 
 #### Property Value
 
-[AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo)<br>
+[AppendixTrBusinessDataPriceDataInfo](./dataforseo.client.models.appendixtrbusinessdatapricedatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -121,7 +117,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBusinessDataPriceData()
 ```
-
----
-
-[`< Back`](./)

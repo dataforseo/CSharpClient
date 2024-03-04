@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsAppleBulkAppMetricsLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsAppleBulkAppMetricsLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsAppleBulkAppMetricsLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricsliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsAppleBulkAppMetricsLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricsliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsAppleBulkAppMetricsLiveTaskInfo> Tasks { get; s
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAppleBulkAppMetricsLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricslivetaskinfo)<br>
+[ICollection&lt;DataforseoLabsAppleBulkAppMetricsLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsapplebulkappmetricslivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsAppleBulkAppMetricsLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

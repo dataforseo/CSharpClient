@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleDatasetSearchTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleDatasetSearchTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleDatasetSearchTaskPostRequestInfo](./dataforseo.client.models.requests.serpgoogledatasetsearchtaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleDatasetSearchTaskPostRequestInfo](./dataforseo.client.models.requests.serpgoogledatasetsearchtaskpostrequestinfo.md)
 
 ## Properties
 
@@ -286,7 +282,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleDatasetSearchTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

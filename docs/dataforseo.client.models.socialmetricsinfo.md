@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SocialMetricsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class SocialMetricsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SocialMetricsInfo](./dataforseo.client.models.socialmetricsinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SocialMetricsInfo](./dataforseo.client.models.socialmetricsinfo.md)
 
 ## Properties
 
@@ -55,7 +51,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SocialMetricsInfo()
 ```
-
----
-
-[`< Back`](./)

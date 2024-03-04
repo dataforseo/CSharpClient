@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # HtmlItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class HtmlItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HtmlItem](./dataforseo.client.models.htmlitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HtmlItem](./dataforseo.client.models.htmlitem.md)
 
 ## Properties
 
@@ -70,7 +66,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HtmlItem()
 ```
-
----
-
-[`< Back`](./)

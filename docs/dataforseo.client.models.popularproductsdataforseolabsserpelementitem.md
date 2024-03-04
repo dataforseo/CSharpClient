@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PopularProductsDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PopularProductsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [PopularProductsDataforseoLabsSerpElementItem](./dataforseo.client.models.popularproductsdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [PopularProductsDataforseoLabsSerpElementItem](./dataforseo.client.models.popularproductsdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -76,7 +72,7 @@ public ICollection<PopularProductsElement> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;PopularProductsElement&gt;](./dataforseo.client.models.popularproductselement)<br>
+[ICollection&lt;PopularProductsElement&gt;](./dataforseo.client.models.popularproductselement.md)<br>
 
 ### **AdditionalProperties**
 
@@ -95,7 +91,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PopularProductsDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TargetInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TargetInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TargetInfo](./dataforseo.client.models.targetinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TargetInfo](./dataforseo.client.models.targetinfo.md)
 
 ## Properties
 
@@ -118,7 +114,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TargetInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ImageResourceElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ImageResourceElementItem : BaseOnPageResourceItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo) → [ImageResourceElementItem](./dataforseo.client.models.imageresourceelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo.md) → [ImageResourceElementItem](./dataforseo.client.models.imageresourceelementitem.md)
 
 ## Properties
 
@@ -27,7 +23,7 @@ public ResourceMetaInfo Meta { get; set; }
 
 #### Property Value
 
-[ResourceMetaInfo](./dataforseo.client.models.resourcemetainfo)<br>
+[ResourceMetaInfo](./dataforseo.client.models.resourcemetainfo.md)<br>
 
 ### **StatusCode**
 
@@ -130,7 +126,7 @@ public FetchTiming FetchTiming { get; set; }
 
 #### Property Value
 
-[FetchTiming](./dataforseo.client.models.fetchtiming)<br>
+[FetchTiming](./dataforseo.client.models.fetchtiming.md)<br>
 
 ### **CacheControl**
 
@@ -142,7 +138,7 @@ public CacheControl CacheControl { get; set; }
 
 #### Property Value
 
-[CacheControl](./dataforseo.client.models.cachecontrol)<br>
+[CacheControl](./dataforseo.client.models.cachecontrol.md)<br>
 
 ### **Checks**
 
@@ -219,7 +215,7 @@ public LastModified LastModified { get; set; }
 
 #### Property Value
 
-[LastModified](./dataforseo.client.models.lastmodified)<br>
+[LastModified](./dataforseo.client.models.lastmodified.md)<br>
 
 ### **ResourceErrors**
 
@@ -231,7 +227,7 @@ public OnPageResourceIssueInfo ResourceErrors { get; set; }
 
 #### Property Value
 
-[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo)<br>
+[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -250,7 +246,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImageResourceElementItem()
 ```
-
----
-
-[`< Back`](./)

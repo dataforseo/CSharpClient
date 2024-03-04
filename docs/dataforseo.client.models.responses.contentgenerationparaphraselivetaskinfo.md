@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentGenerationParaphraseLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentGenerationParaphraseLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [ContentGenerationParaphraseLiveTaskInfo](./dataforseo.client.models.responses.contentgenerationparaphraselivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [ContentGenerationParaphraseLiveTaskInfo](./dataforseo.client.models.responses.contentgenerationparaphraselivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<ContentGenerationParaphraseLiveResultInfo> Result { get; set;
 
 #### Property Value
 
-[ICollection&lt;ContentGenerationParaphraseLiveResultInfo&gt;](./dataforseo.client.models.responses.contentgenerationparaphraseliveresultinfo)<br>
+[ICollection&lt;ContentGenerationParaphraseLiveResultInfo&gt;](./dataforseo.client.models.responses.contentgenerationparaphraseliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentGenerationParaphraseLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

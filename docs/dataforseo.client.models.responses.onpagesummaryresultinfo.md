@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageSummaryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageSummaryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageSummaryResultInfo](./dataforseo.client.models.responses.onpagesummaryresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageSummaryResultInfo](./dataforseo.client.models.responses.onpagesummaryresultinfo.md)
 
 ## Properties
 
@@ -37,7 +33,7 @@ public CrawlStatusInfo CrawlStatus { get; set; }
 
 #### Property Value
 
-[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo)<br>
+[CrawlStatusInfo](./dataforseo.client.models.crawlstatusinfo.md)<br>
 
 ### **CrawlGatewayAddress**
 
@@ -82,7 +78,7 @@ public DomainInfo DomainInfo { get; set; }
 
 #### Property Value
 
-[DomainInfo](./dataforseo.client.models.domaininfo)<br>
+[DomainInfo](./dataforseo.client.models.domaininfo.md)<br>
 
 ### **PageMetrics**
 
@@ -95,7 +91,7 @@ public PageMetrics PageMetrics { get; set; }
 
 #### Property Value
 
-[PageMetrics](./dataforseo.client.models.pagemetrics)<br>
+[PageMetrics](./dataforseo.client.models.pagemetrics.md)<br>
 
 ### **AdditionalProperties**
 
@@ -114,7 +110,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageSummaryResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageRawHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageRawHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [OnPageRawHtmlTaskInfo](./dataforseo.client.models.responses.onpagerawhtmltaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [OnPageRawHtmlTaskInfo](./dataforseo.client.models.responses.onpagerawhtmltaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageRawHtmlResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageRawHtmlResultInfo&gt;](./dataforseo.client.models.responses.onpagerawhtmlresultinfo)<br>
+[ICollection&lt;OnPageRawHtmlResultInfo&gt;](./dataforseo.client.models.responses.onpagerawhtmlresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageRawHtmlTaskInfo()
 ```
-
----
-
-[`< Back`](./)

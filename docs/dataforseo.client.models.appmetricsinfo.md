@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppMetricsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppMetricsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppMetricsInfo](./dataforseo.client.models.appmetricsinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppMetricsInfo](./dataforseo.client.models.appmetricsinfo.md)
 
 ## Properties
 
@@ -103,7 +99,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppMetricsInfo()
 ```
-
----
-
-[`< Back`](./)

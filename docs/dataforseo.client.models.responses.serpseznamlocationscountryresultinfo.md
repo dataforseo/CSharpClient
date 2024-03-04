@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpSeznamLocationsCountryResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpSeznamLocationsCountryResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpSeznamLocationsCountryResultInfo](./dataforseo.client.models.responses.serpseznamlocationscountryresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpSeznamLocationsCountryResultInfo](./dataforseo.client.models.responses.serpseznamlocationscountryresultinfo.md)
 
 ## Properties
 
@@ -93,7 +89,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpSeznamLocationsCountryResultInfo()
 ```
-
----
-
-[`< Back`](./)

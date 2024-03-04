@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsErrorsResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsErrorsResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsErrorsResponseInfo](./dataforseo.client.models.responses.dataforseolabserrorsresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsErrorsResponseInfo](./dataforseo.client.models.responses.dataforseolabserrorsresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsErrorsTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsErrorsTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabserrorstaskinfo)<br>
+[ICollection&lt;DataforseoLabsErrorsTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabserrorstaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsErrorsResponseInfo()
 ```
-
----
-
-[`< Back`](./)

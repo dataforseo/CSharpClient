@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MerchantAmazonReviewsTaskGetAdvancedResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class MerchantAmazonReviewsTaskGetAdvancedResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonReviewsTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.merchantamazonreviewstaskgetadvancedresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [MerchantAmazonReviewsTaskGetAdvancedResultInfo](./dataforseo.client.models.responses.merchantamazonreviewstaskgetadvancedresultinfo.md)
 
 ## Properties
 
@@ -113,7 +109,7 @@ public SpellInfo Spell { get; set; }
 
 #### Property Value
 
-[SpellInfo](./dataforseo.client.models.spellinfo)<br>
+[SpellInfo](./dataforseo.client.models.spellinfo.md)<br>
 
 ### **Title**
 
@@ -138,7 +134,7 @@ public ImagesElement Image { get; set; }
 
 #### Property Value
 
-[ImagesElement](./dataforseo.client.models.imageselement)<br>
+[ImagesElement](./dataforseo.client.models.imageselement.md)<br>
 
 ### **Rating**
 
@@ -151,7 +147,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement)<br>
+[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
 
 ### **ReviewsCount**
 
@@ -204,7 +200,7 @@ public ICollection<BaseAmazonSerpElementItem> Items { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseAmazonSerpElementItem&gt;](./dataforseo.client.models.baseamazonserpelementitem)<br>
+[ICollection&lt;BaseAmazonSerpElementItem&gt;](./dataforseo.client.models.baseamazonserpelementitem.md)<br>
 
 ### **AdditionalProperties**
 
@@ -223,7 +219,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MerchantAmazonReviewsTaskGetAdvancedResultInfo()
 ```
-
----
-
-[`< Back`](./)

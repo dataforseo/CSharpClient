@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ImageUrlInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class ImageUrlInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ImageUrlInfo](./dataforseo.client.models.imageurlinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ImageUrlInfo](./dataforseo.client.models.imageurlinfo.md)
 
 ## Properties
 
@@ -43,7 +39,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ImageUrlInfo()
 ```
-
----
-
-[`< Back`](./)

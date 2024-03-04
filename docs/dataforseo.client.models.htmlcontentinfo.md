@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # HtmlContentInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class HtmlContentInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HtmlContentInfo](./dataforseo.client.models.htmlcontentinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HtmlContentInfo](./dataforseo.client.models.htmlcontentinfo.md)
 
 ## Properties
 
@@ -167,7 +163,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HtmlContentInfo()
 ```
-
----
-
-[`< Back`](./)

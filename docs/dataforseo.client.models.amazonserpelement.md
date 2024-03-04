@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AmazonSerpElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AmazonSerpElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonSerpElement](./dataforseo.client.models.amazonserpelement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AmazonSerpElement](./dataforseo.client.models.amazonserpelement.md)
 
 ## Properties
 
@@ -178,7 +174,7 @@ public RatingElement Rating { get; set; }
 
 #### Property Value
 
-[RatingElement](./dataforseo.client.models.ratingelement)<br>
+[RatingElement](./dataforseo.client.models.ratingelement.md)<br>
 
 ### **IsAmazonChoice**
 
@@ -217,7 +213,7 @@ public AmazonDeliveryInfo DeliveryInfo { get; set; }
 
 #### Property Value
 
-[AmazonDeliveryInfo](./dataforseo.client.models.amazondeliveryinfo)<br>
+[AmazonDeliveryInfo](./dataforseo.client.models.amazondeliveryinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -236,7 +232,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AmazonSerpElement()
 ```
-
----
-
-[`< Back`](./)

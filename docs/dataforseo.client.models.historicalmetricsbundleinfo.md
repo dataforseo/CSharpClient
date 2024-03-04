@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # HistoricalMetricsBundleInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class HistoricalMetricsBundleInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HistoricalMetricsBundleInfo](./dataforseo.client.models.historicalmetricsbundleinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [HistoricalMetricsBundleInfo](./dataforseo.client.models.historicalmetricsbundleinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<HistoricalMetricsInfo> Organic { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo)<br>
+[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo.md)<br>
 
 ### **Paid**
 
@@ -36,7 +32,7 @@ public ICollection<HistoricalMetricsInfo> Paid { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo)<br>
+[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo.md)<br>
 
 ### **LocalPack**
 
@@ -48,7 +44,7 @@ public ICollection<HistoricalMetricsInfo> LocalPack { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo)<br>
+[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo.md)<br>
 
 ### **FeaturedSnippet**
 
@@ -60,7 +56,7 @@ public ICollection<HistoricalMetricsInfo> FeaturedSnippet { get; set; }
 
 #### Property Value
 
-[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo)<br>
+[ICollection&lt;HistoricalMetricsInfo&gt;](./dataforseo.client.models.historicalmetricsinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -79,7 +75,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public HistoricalMetricsBundleInfo()
 ```
-
----
-
-[`< Back`](./)

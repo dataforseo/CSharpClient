@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpSeznamLocationsResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpSeznamLocationsResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpSeznamLocationsResponseInfo](./dataforseo.client.models.responses.serpseznamlocationsresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpSeznamLocationsResponseInfo](./dataforseo.client.models.responses.serpseznamlocationsresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpSeznamLocationsTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpSeznamLocationsTaskInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationstaskinfo)<br>
+[ICollection&lt;SerpSeznamLocationsTaskInfo&gt;](./dataforseo.client.models.responses.serpseznamlocationstaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpSeznamLocationsResponseInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsWhoisOverviewLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsWhoisOverviewLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DomainAnalyticsWhoisOverviewLiveResponseInfo](./dataforseo.client.models.responses.domainanalyticswhoisoverviewliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DomainAnalyticsWhoisOverviewLiveResponseInfo](./dataforseo.client.models.responses.domainanalyticswhoisoverviewliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DomainAnalyticsWhoisOverviewLiveTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsWhoisOverviewLiveTaskInfo&gt;](./dataforseo.client.models.responses.domainanalyticswhoisoverviewlivetaskinfo)<br>
+[ICollection&lt;DomainAnalyticsWhoisOverviewLiveTaskInfo&gt;](./dataforseo.client.models.responses.domainanalyticswhoisoverviewlivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsWhoisOverviewLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

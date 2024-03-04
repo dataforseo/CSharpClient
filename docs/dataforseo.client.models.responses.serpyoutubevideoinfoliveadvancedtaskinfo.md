@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpYoutubeVideoInfoLiveAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpYoutubeVideoInfoLiveAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpYoutubeVideoInfoLiveAdvancedTaskInfo](./dataforseo.client.models.responses.serpyoutubevideoinfoliveadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpYoutubeVideoInfoLiveAdvancedTaskInfo](./dataforseo.client.models.responses.serpyoutubevideoinfoliveadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpYoutubeVideoInfoLiveAdvancedResultInfo> Result { get; set
 
 #### Property Value
 
-[ICollection&lt;SerpYoutubeVideoInfoLiveAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfoliveadvancedresultinfo)<br>
+[ICollection&lt;SerpYoutubeVideoInfoLiveAdvancedResultInfo&gt;](./dataforseo.client.models.responses.serpyoutubevideoinfoliveadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpYoutubeVideoInfoLiveAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleBulkTrafficEstimationLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsGoogleBulkTrafficEstimationLiveTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DataforseoLabsGoogleBulkTrafficEstimationLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsgooglebulktrafficestimationlivetaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DataforseoLabsGoogleBulkTrafficEstimationLiveTaskInfo](./dataforseo.client.models.responses.dataforseolabsgooglebulktrafficestimationlivetaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsGoogleBulkTrafficEstimationLiveResultInfo> Resu
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulktrafficestimationliveresultinfo)<br>
+[ICollection&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResultInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgooglebulktrafficestimationliveresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleBulkTrafficEstimationLiveTaskInfo()
 ```
-
----
-
-[`< Back`](./)

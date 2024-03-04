@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPagePageScreenshotResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPagePageScreenshotResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPagePageScreenshotResponseInfo](./dataforseo.client.models.responses.onpagepagescreenshotresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPagePageScreenshotResponseInfo](./dataforseo.client.models.responses.onpagepagescreenshotresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPagePageScreenshotTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPagePageScreenshotTaskInfo&gt;](./dataforseo.client.models.responses.onpagepagescreenshottaskinfo)<br>
+[ICollection&lt;OnPagePageScreenshotTaskInfo&gt;](./dataforseo.client.models.responses.onpagepagescreenshottaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPagePageScreenshotResponseInfo()
 ```
-
----
-
-[`< Back`](./)

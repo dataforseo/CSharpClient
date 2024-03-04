@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # StylesheetResourceElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class StylesheetResourceElementItem : BaseOnPageResourceItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo) → [StylesheetResourceElementItem](./dataforseo.client.models.stylesheetresourceelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseOnPageResourceItemInfo](./dataforseo.client.models.baseonpageresourceiteminfo.md) → [StylesheetResourceElementItem](./dataforseo.client.models.stylesheetresourceelementitem.md)
 
 ## Properties
 
@@ -27,7 +23,7 @@ public ResourceMetaInfo Meta { get; set; }
 
 #### Property Value
 
-[ResourceMetaInfo](./dataforseo.client.models.resourcemetainfo)<br>
+[ResourceMetaInfo](./dataforseo.client.models.resourcemetainfo.md)<br>
 
 ### **StatusCode**
 
@@ -130,7 +126,7 @@ public FetchTiming FetchTiming { get; set; }
 
 #### Property Value
 
-[FetchTiming](./dataforseo.client.models.fetchtiming)<br>
+[FetchTiming](./dataforseo.client.models.fetchtiming.md)<br>
 
 ### **CacheControl**
 
@@ -142,7 +138,7 @@ public CacheControl CacheControl { get; set; }
 
 #### Property Value
 
-[CacheControl](./dataforseo.client.models.cachecontrol)<br>
+[CacheControl](./dataforseo.client.models.cachecontrol.md)<br>
 
 ### **Checks**
 
@@ -167,7 +163,7 @@ public OnPageResourceIssueInfo ResourceErrors { get; set; }
 
 #### Property Value
 
-[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo)<br>
+[OnPageResourceIssueInfo](./dataforseo.client.models.onpageresourceissueinfo.md)<br>
 
 ### **ContentEncoding**
 
@@ -231,7 +227,7 @@ public LastModified LastModified { get; set; }
 
 #### Property Value
 
-[LastModified](./dataforseo.client.models.lastmodified)<br>
+[LastModified](./dataforseo.client.models.lastmodified.md)<br>
 
 ### **Initiator**
 
@@ -312,7 +308,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public StylesheetResourceElementItem()
 ```
-
----
-
-[`< Back`](./)

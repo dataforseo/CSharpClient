@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsWhoisAvailableFiltersTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DomainAnalyticsWhoisAvailableFiltersTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [DomainAnalyticsWhoisAvailableFiltersTaskInfo](./dataforseo.client.models.responses.domainanalyticswhoisavailablefilterstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [DomainAnalyticsWhoisAvailableFiltersTaskInfo](./dataforseo.client.models.responses.domainanalyticswhoisavailablefilterstaskinfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public ICollection<DomainAnalyticsWhoisAvailableFiltersResultInfo> Result { get;
 
 #### Property Value
 
-[ICollection&lt;DomainAnalyticsWhoisAvailableFiltersResultInfo&gt;](./dataforseo.client.models.responses.domainanalyticswhoisavailablefiltersresultinfo)<br>
+[ICollection&lt;DomainAnalyticsWhoisAvailableFiltersResultInfo&gt;](./dataforseo.client.models.responses.domainanalyticswhoisavailablefiltersresultinfo.md)<br>
 
 ### **Id**
 
@@ -141,7 +137,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsWhoisAvailableFiltersTaskInfo()
 ```
-
----
-
-[`< Back`](./)

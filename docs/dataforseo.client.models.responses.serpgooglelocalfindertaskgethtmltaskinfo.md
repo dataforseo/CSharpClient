@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleLocalFinderTaskGetHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleLocalFinderTaskGetHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [SerpGoogleLocalFinderTaskGetHtmlTaskInfo](./dataforseo.client.models.responses.serpgooglelocalfindertaskgethtmltaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [SerpGoogleLocalFinderTaskGetHtmlTaskInfo](./dataforseo.client.models.responses.serpgooglelocalfindertaskgethtmltaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleLocalFinderTaskGetHtmlResultInfo> Result { get; set
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleLocalFinderTaskGetHtmlResultInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskgethtmlresultinfo)<br>
+[ICollection&lt;SerpGoogleLocalFinderTaskGetHtmlResultInfo&gt;](./dataforseo.client.models.responses.serpgooglelocalfindertaskgethtmlresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleLocalFinderTaskGetHtmlTaskInfo()
 ```
-
----
-
-[`< Back`](./)

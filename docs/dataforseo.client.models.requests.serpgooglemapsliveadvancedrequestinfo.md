@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleMapsLiveAdvancedRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpGoogleMapsLiveAdvancedRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleMapsLiveAdvancedRequestInfo](./dataforseo.client.models.requests.serpgooglemapsliveadvancedrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpGoogleMapsLiveAdvancedRequestInfo](./dataforseo.client.models.requests.serpgooglemapsliveadvancedrequestinfo.md)
 
 ## Properties
 
@@ -292,7 +288,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleMapsLiveAdvancedRequestInfo()
 ```
-
----
-
-[`< Back`](./)

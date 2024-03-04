@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpBaiduOrganicTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class SerpBaiduOrganicTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBaiduOrganicTaskPostRequestInfo](./dataforseo.client.models.requests.serpbaiduorganictaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SerpBaiduOrganicTaskPostRequestInfo](./dataforseo.client.models.requests.serpbaiduorganictaskpostrequestinfo.md)
 
 ## Properties
 
@@ -312,7 +308,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpBaiduOrganicTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

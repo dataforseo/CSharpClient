@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixMerchantGoogleInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixMerchantGoogleInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixMerchantGoogleInfo](./dataforseo.client.models.appendixmerchantgoogleinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixMerchantGoogleInfo](./dataforseo.client.models.appendixmerchantgoogleinfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixSerpLimitsRatesDataInfo Products { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **Sellers**
 
@@ -32,7 +28,7 @@ public AppendixSellersGoogleMerchantLimitsRatesDataInfo Sellers { get; set; }
 
 #### Property Value
 
-[AppendixSellersGoogleMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixsellersgooglemerchantlimitsratesdatainfo)<br>
+[AppendixSellersGoogleMerchantLimitsRatesDataInfo](./dataforseo.client.models.appendixsellersgooglemerchantlimitsratesdatainfo.md)<br>
 
 ### **ProductSpec**
 
@@ -42,7 +38,7 @@ public AppendixSerpLimitsRatesDataInfo ProductSpec { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **ProductInfo**
 
@@ -52,7 +48,7 @@ public AppendixSerpLimitsRatesDataInfo ProductInfo { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -71,7 +67,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixMerchantGoogleInfo()
 ```
-
----
-
-[`< Back`](./)

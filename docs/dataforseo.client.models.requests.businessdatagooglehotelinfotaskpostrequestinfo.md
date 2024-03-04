@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleHotelInfoTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class BusinessDataGoogleHotelInfoTaskPostRequestInfo : BusinessDataTaskRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTaskRequestInfo](./dataforseo.client.models.requests.businessdatataskrequestinfo) → [BusinessDataGoogleHotelInfoTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatagooglehotelinfotaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataTaskRequestInfo](./dataforseo.client.models.requests.businessdatataskrequestinfo.md) → [BusinessDataGoogleHotelInfoTaskPostRequestInfo](./dataforseo.client.models.requests.businessdatagooglehotelinfotaskpostrequestinfo.md)
 
 ## Properties
 
@@ -338,7 +334,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleHotelInfoTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

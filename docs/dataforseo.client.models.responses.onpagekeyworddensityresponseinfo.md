@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageKeywordDensityResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageKeywordDensityResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageKeywordDensityResponseInfo](./dataforseo.client.models.responses.onpagekeyworddensityresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageKeywordDensityResponseInfo](./dataforseo.client.models.responses.onpagekeyworddensityresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageKeywordDensityTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageKeywordDensityTaskInfo&gt;](./dataforseo.client.models.responses.onpagekeyworddensitytaskinfo)<br>
+[ICollection&lt;OnPageKeywordDensityTaskInfo&gt;](./dataforseo.client.models.responses.onpagekeyworddensitytaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageKeywordDensityResponseInfo()
 ```
-
----
-
-[`< Back`](./)

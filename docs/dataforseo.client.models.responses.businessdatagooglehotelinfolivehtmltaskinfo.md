@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataGoogleHotelInfoLiveHtmlTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataGoogleHotelInfoLiveHtmlTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [BusinessDataGoogleHotelInfoLiveHtmlTaskInfo](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmltaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [BusinessDataGoogleHotelInfoLiveHtmlTaskInfo](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmltaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<BusinessDataGoogleHotelInfoLiveHtmlResultInfo> Result { get; 
 
 #### Property Value
 
-[ICollection&lt;BusinessDataGoogleHotelInfoLiveHtmlResultInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmlresultinfo)<br>
+[ICollection&lt;BusinessDataGoogleHotelInfoLiveHtmlResultInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmlresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataGoogleHotelInfoLiveHtmlTaskInfo()
 ```
-
----
-
-[`< Back`](./)

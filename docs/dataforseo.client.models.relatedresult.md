@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RelatedResult
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RelatedResult
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RelatedResult](./dataforseo.client.models.relatedresult)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RelatedResult](./dataforseo.client.models.relatedresult.md)
 
 ## Properties
 
@@ -193,7 +189,7 @@ public ICollection<ImagesElement> Images { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement)<br>
+[ICollection&lt;ImagesElement&gt;](./dataforseo.client.models.imageselement.md)<br>
 
 ### **AmpVersion**
 
@@ -219,7 +215,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Price**
 
@@ -232,7 +228,7 @@ public PriceInfo Price { get; set; }
 
 #### Property Value
 
-[PriceInfo](./dataforseo.client.models.priceinfo)<br>
+[PriceInfo](./dataforseo.client.models.priceinfo.md)<br>
 
 ### **Highlighted**
 
@@ -258,7 +254,7 @@ public AboutThisResultElement AboutThisResult { get; set; }
 
 #### Property Value
 
-[AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement)<br>
+[AboutThisResultElement](./dataforseo.client.models.aboutthisresultelement.md)<br>
 
 ### **Timestamp**
 
@@ -292,7 +288,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RelatedResult()
 ```
-
----
-
-[`< Back`](./)

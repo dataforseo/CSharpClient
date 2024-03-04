@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsBulkTrafficEstimationLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DataforseoLabsBulkTrafficEstimationLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBulkTrafficEstimationLiveItem](./dataforseo.client.models.dataforseolabsbulktrafficestimationliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataforseoLabsBulkTrafficEstimationLiveItem](./dataforseo.client.models.dataforseolabsbulktrafficestimationliveitem.md)
 
 ## Properties
 
@@ -48,7 +44,7 @@ public IDictionary<string, BulkMetricsInfo> Metrics { get; set; }
 
 #### Property Value
 
-[IDictionary&lt;String, BulkMetricsInfo&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)<br>
+[IDictionary&lt;String, BulkMetricsInfo&gt;](./dataforseo.client.models.bulkmetricsinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBulkTrafficEstimationLiveItem()
 ```
-
----
-
-[`< Back`](./)

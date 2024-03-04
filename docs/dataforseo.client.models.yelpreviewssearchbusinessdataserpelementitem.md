@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # YelpReviewsSearchBusinessDataSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class YelpReviewsSearchBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem) → [YelpReviewsSearchBusinessDataSerpElementItem](./dataforseo.client.models.yelpreviewssearchbusinessdataserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseBusinessDataSerpElementItem](./dataforseo.client.models.basebusinessdataserpelementitem.md) → [YelpReviewsSearchBusinessDataSerpElementItem](./dataforseo.client.models.yelpreviewssearchbusinessdataserpelementitem.md)
 
 ## Properties
 
@@ -77,7 +73,7 @@ public RatingInfo Rating { get; set; }
 
 #### Property Value
 
-[RatingInfo](./dataforseo.client.models.ratinginfo)<br>
+[RatingInfo](./dataforseo.client.models.ratinginfo.md)<br>
 
 ### **Timestamp**
 
@@ -127,7 +123,7 @@ public BusinessDataUserProfileInfo UserProfile { get; set; }
 
 #### Property Value
 
-[BusinessDataUserProfileInfo](./dataforseo.client.models.businessdatauserprofileinfo)<br>
+[BusinessDataUserProfileInfo](./dataforseo.client.models.businessdatauserprofileinfo.md)<br>
 
 ### **Responses**
 
@@ -139,7 +135,7 @@ public ICollection<ReviewResponseItemInfo> Responses { get; set; }
 
 #### Property Value
 
-[ICollection&lt;ReviewResponseItemInfo&gt;](./dataforseo.client.models.reviewresponseiteminfo)<br>
+[ICollection&lt;ReviewResponseItemInfo&gt;](./dataforseo.client.models.reviewresponseiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -158,7 +154,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public YelpReviewsSearchBusinessDataSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

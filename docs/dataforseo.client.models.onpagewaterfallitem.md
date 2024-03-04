@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageWaterfallItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class OnPageWaterfallItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageWaterfallItem](./dataforseo.client.models.onpagewaterfallitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [OnPageWaterfallItem](./dataforseo.client.models.onpagewaterfallitem.md)
 
 ## Properties
 
@@ -164,7 +160,7 @@ public ICollection<BaseOnPageResourceItemInfo> Resources { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo)<br>
+[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -183,7 +179,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageWaterfallItem()
 ```
-
----
-
-[`< Back`](./)

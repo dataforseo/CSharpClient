@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainAnalyticsTechnologiesDomainsByLiveItem
 
 Namespace: DataForSeo.Client.Models
@@ -12,7 +8,7 @@ items array
 public class DomainAnalyticsTechnologiesDomainsByLiveItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesDomainsByLiveItem](./dataforseo.client.models.domainanalyticstechnologiesdomainsbyliveitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainAnalyticsTechnologiesDomainsByLiveItem](./dataforseo.client.models.domainanalyticstechnologiesdomainsbyliveitem.md)
 
 ## Properties
 
@@ -194,7 +190,7 @@ public TechnologiesInfo Technologies { get; set; }
 
 #### Property Value
 
-[TechnologiesInfo](./dataforseo.client.models.technologiesinfo)<br>
+[TechnologiesInfo](./dataforseo.client.models.technologiesinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -213,7 +209,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainAnalyticsTechnologiesDomainsByLiveItem()
 ```
-
----
-
-[`< Back`](./)

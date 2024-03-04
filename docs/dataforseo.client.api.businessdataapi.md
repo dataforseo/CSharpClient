@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataApi
 
 Namespace: DataForSeo.Client.Api
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Api
 public class BusinessDataApi
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataApi](./dataforseo.client.api.businessdataapi)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataApi](./dataforseo.client.api.businessdataapi.md)
 
 ## Properties
 
@@ -56,16 +52,16 @@ public Task<BusinessDataIdListResponseInfo> BusinessDataIdListAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.businessdataidlistrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.businessdataidlistrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.businessdataidlistresponseinfo)<br>
+[Task&lt;BusinessDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.businessdataidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -81,19 +77,19 @@ public Task<BusinessDataIdListResponseInfo> BusinessDataIdListAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.businessdataidlistrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataIdListRequestInfo&gt;](./dataforseo.client.models.requests.businessdataidlistrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.businessdataidlistresponseinfo)<br>
+[Task&lt;BusinessDataIdListResponseInfo&gt;](./dataforseo.client.models.responses.businessdataidlistresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -109,16 +105,16 @@ public Task<BusinessDataErrorsResponseInfo> BusinessDataErrorsAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.businessdataerrorsrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.businessdataerrorsrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.businessdataerrorsresponseinfo)<br>
+[Task&lt;BusinessDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.businessdataerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -134,19 +130,19 @@ public Task<BusinessDataErrorsResponseInfo> BusinessDataErrorsAsync(IEnumerable<
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.businessdataerrorsrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;](./dataforseo.client.models.requests.businessdataerrorsrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.businessdataerrorsresponseinfo)<br>
+[Task&lt;BusinessDataErrorsResponseInfo&gt;](./dataforseo.client.models.responses.businessdataerrorsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -162,12 +158,12 @@ public Task<BusinessDataBusinessListingsLocationsResponseInfo> BusinessDataBusin
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingslocationsresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingslocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -188,12 +184,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingslocationsresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingslocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -209,12 +205,12 @@ public Task<BusinessDataBusinessListingsCategoriesResponseInfo> BusinessListings
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -235,12 +231,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsCategoriesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -256,12 +252,12 @@ public Task<BusinessDataBusinessListingsAvailableFiltersResponseInfo> BusinessLi
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingsavailablefiltersresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingsavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -283,12 +279,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingsavailablefiltersresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsAvailableFiltersResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingsavailablefiltersresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -305,16 +301,16 @@ public Task<BusinessDataBusinessListingsSearchLiveResponseInfo> BusinessListings
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingssearchliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingssearchliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingssearchliveresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingssearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -331,19 +327,19 @@ public Task<BusinessDataBusinessListingsSearchLiveResponseInfo> BusinessListings
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingssearchliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingssearchliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingssearchliveresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsSearchLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingssearchliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -360,16 +356,16 @@ public Task<BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo> B
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingscategoriesaggregationliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingscategoriesaggregationliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -386,19 +382,19 @@ public Task<BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo> B
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingscategoriesaggregationliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatabusinesslistingscategoriesaggregationliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresponseinfo)<br>
+[Task&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatabusinesslistingscategoriesaggregationliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -415,12 +411,12 @@ public Task<BusinessDataGoogleLocationsResponseInfo> BusinessDataGoogleLocations
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationsresponseinfo)<br>
+[Task&lt;BusinessDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -441,12 +437,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationsresponseinfo)<br>
+[Task&lt;BusinessDataGoogleLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -471,12 +467,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationscountryresponseinfo)<br>
+[Task&lt;BusinessDataGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationscountryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -504,12 +500,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationscountryresponseinfo)<br>
+[Task&lt;BusinessDataGoogleLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelocationscountryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -525,12 +521,12 @@ public Task<BusinessDataGoogleLanguagesResponseInfo> BusinessDataGoogleLanguages
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelanguagesresponseinfo)<br>
+[Task&lt;BusinessDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -551,12 +547,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelanguagesresponseinfo)<br>
+[Task&lt;BusinessDataGoogleLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglelanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -572,16 +568,16 @@ public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusine
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.businessdatataskrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.businessdatataskrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -598,19 +594,19 @@ public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusine
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.businessdatataskrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./dataforseo.client.models.requests.businessdatataskrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -627,12 +623,12 @@ public Task<BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo> GoogleMyBusi
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -654,12 +650,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -683,12 +679,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -713,12 +709,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessinfotaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -733,16 +729,16 @@ public Task<BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo> GoogleMyBus
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglemybusinessupdatestaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglemybusinessupdatestaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -759,19 +755,19 @@ public Task<BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo> GoogleMyBus
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglemybusinessupdatestaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglemybusinessupdatestaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -788,12 +784,12 @@ public Task<BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo> GoogleMyB
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -815,12 +811,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -844,12 +840,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -874,12 +870,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglemybusinessupdatestaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -894,16 +890,16 @@ public Task<BusinessDataGoogleHotelSearchesTaskPostResponseInfo> GoogleHotelSear
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchestaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchestaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -920,19 +916,19 @@ public Task<BusinessDataGoogleHotelSearchesTaskPostResponseInfo> GoogleHotelSear
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchestaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchestaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -949,12 +945,12 @@ public Task<BusinessDataGoogleHotelSearchesTasksReadyResponseInfo> GoogleHotelSe
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -976,12 +972,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1005,12 +1001,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1035,12 +1031,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchestaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1055,16 +1051,16 @@ public Task<BusinessDataGoogleHotelSearchesLiveResponseInfo> GoogleHotelSearches
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchesliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchesliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchesliveresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchesliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1081,19 +1077,19 @@ public Task<BusinessDataGoogleHotelSearchesLiveResponseInfo> GoogleHotelSearches
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchesliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelsearchesliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchesliveresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelSearchesLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelsearchesliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1110,16 +1106,16 @@ public Task<BusinessDataGoogleHotelInfoTaskPostResponseInfo> GoogleHotelInfoTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfotaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfotaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1136,19 +1132,19 @@ public Task<BusinessDataGoogleHotelInfoTaskPostResponseInfo> GoogleHotelInfoTask
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfotaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfotaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1165,12 +1161,12 @@ public Task<BusinessDataGoogleHotelInfoTasksReadyResponseInfo> GoogleHotelInfoTa
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1192,12 +1188,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1221,12 +1217,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgetadvancedresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1251,12 +1247,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgetadvancedresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgetadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1278,12 +1274,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgethtmlresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1308,12 +1304,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgethtmlresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfotaskgethtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1328,16 +1324,16 @@ public Task<BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo> GoogleHotelInfo
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfoliveadvancedrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfoliveadvancedrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfoliveadvancedresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfoliveadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1354,19 +1350,19 @@ public Task<BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo> GoogleHotelInfo
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfoliveadvancedrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfoliveadvancedrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfoliveadvancedresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfoliveadvancedresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1383,16 +1379,16 @@ public Task<BusinessDataGoogleHotelInfoLiveHtmlResponseInfo> GoogleHotelInfoLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfolivehtmlrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfolivehtmlrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmlresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1409,19 +1405,19 @@ public Task<BusinessDataGoogleHotelInfoLiveHtmlResponseInfo> GoogleHotelInfoLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfolivehtmlrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglehotelinfolivehtmlrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmlresponseinfo)<br>
+[Task&lt;BusinessDataGoogleHotelInfoLiveHtmlResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglehotelinfolivehtmlresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1438,16 +1434,16 @@ public Task<BusinessDataGoogleReviewsTaskPostResponseInfo> GoogleReviewsTaskPost
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglereviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglereviewstaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1464,19 +1460,19 @@ public Task<BusinessDataGoogleReviewsTaskPostResponseInfo> GoogleReviewsTaskPost
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglereviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatagooglereviewstaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataGoogleReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1493,12 +1489,12 @@ public Task<BusinessDataGoogleReviewsTasksReadyResponseInfo> GoogleReviewsTasksR
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1520,12 +1516,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataGoogleReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1549,12 +1545,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1580,12 +1576,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataGoogleReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataGoogleReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatagooglereviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1601,16 +1597,16 @@ public Task<BusinessDataTrustpilotSearchTaskPostResponseInfo> TrustpilotSearchTa
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotsearchtaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotsearchtaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1627,19 +1623,19 @@ public Task<BusinessDataTrustpilotSearchTaskPostResponseInfo> TrustpilotSearchTa
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotsearchtaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotsearchtaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1656,12 +1652,12 @@ public Task<BusinessDataTrustpilotSearchTasksReadyResponseInfo> TrustpilotSearch
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1683,12 +1679,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1712,12 +1708,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1743,12 +1739,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotsearchtaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1764,16 +1760,16 @@ public Task<BusinessDataTrustpilotReviewsTaskPostResponseInfo> TrustpilotReviews
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotreviewstaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1790,19 +1786,19 @@ public Task<BusinessDataTrustpilotReviewsTaskPostResponseInfo> TrustpilotReviews
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatrustpilotreviewstaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1819,12 +1815,12 @@ public Task<BusinessDataTrustpilotReviewsTasksReadyResponseInfo> TrustpilotRevie
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1846,12 +1842,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1875,12 +1871,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1906,12 +1902,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTrustpilotReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatrustpilotreviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1927,12 +1923,12 @@ public Task<BusinessDataTripadvisorLocationsResponseInfo> BusinessDataTripadviso
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationsresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1953,12 +1949,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationsresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -1983,12 +1979,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationscountryresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationscountryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2016,12 +2012,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationscountryresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlocationscountryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2037,12 +2033,12 @@ public Task<BusinessDataTripadvisorLanguagesResponseInfo> BusinessDataTripadviso
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlanguagesresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2063,12 +2059,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlanguagesresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorlanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2084,16 +2080,16 @@ public Task<BusinessDataTripadvisorSearchTaskPostResponseInfo> TripadvisorSearch
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorsearchtaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorsearchtaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2110,19 +2106,19 @@ public Task<BusinessDataTripadvisorSearchTaskPostResponseInfo> TripadvisorSearch
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorsearchtaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorsearchtaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2139,12 +2135,12 @@ public Task<BusinessDataTripadvisorSearchTasksReadyResponseInfo> TripadvisorSear
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2166,12 +2162,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2195,12 +2191,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2226,12 +2222,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorsearchtaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2247,16 +2243,16 @@ public Task<BusinessDataTripadvisorReviewsTaskPostResponseInfo> TripadvisorRevie
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorreviewstaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2273,19 +2269,19 @@ public Task<BusinessDataTripadvisorReviewsTaskPostResponseInfo> TripadvisorRevie
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatatripadvisorreviewstaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2302,12 +2298,12 @@ public Task<BusinessDataTripadvisorReviewsTasksReadyResponseInfo> TripadvisorRev
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2329,12 +2325,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2358,12 +2354,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2389,12 +2385,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataTripadvisorReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatatripadvisorreviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2410,12 +2406,12 @@ public Task<BusinessDataYelpLocationsResponseInfo> BusinessDataYelpLocationsAsyn
 
 #### Returns
 
-[Task&lt;BusinessDataYelpLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationsresponseinfo)<br>
+[Task&lt;BusinessDataYelpLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2436,12 +2432,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationsresponseinfo)<br>
+[Task&lt;BusinessDataYelpLocationsResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationsresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2466,12 +2462,12 @@ country ISO code
 
 #### Returns
 
-[Task&lt;BusinessDataYelpLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationscountryresponseinfo)<br>
+[Task&lt;BusinessDataYelpLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationscountryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2499,12 +2495,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationscountryresponseinfo)<br>
+[Task&lt;BusinessDataYelpLocationsCountryResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplocationscountryresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2520,12 +2516,12 @@ public Task<BusinessDataYelpLanguagesResponseInfo> BusinessDataYelpLanguagesAsyn
 
 #### Returns
 
-[Task&lt;BusinessDataYelpLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplanguagesresponseinfo)<br>
+[Task&lt;BusinessDataYelpLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2546,12 +2542,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplanguagesresponseinfo)<br>
+[Task&lt;BusinessDataYelpLanguagesResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelplanguagesresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2567,16 +2563,16 @@ public Task<BusinessDataYelpSearchTaskPostResponseInfo> YelpSearchTaskPostAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpsearchtaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpsearchtaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataYelpSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskpostresponseinfo)<br>
+[Task&lt;BusinessDataYelpSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2593,19 +2589,19 @@ public Task<BusinessDataYelpSearchTaskPostResponseInfo> YelpSearchTaskPostAsync(
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpsearchtaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpsearchtaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataYelpSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskpostresponseinfo)<br>
+[Task&lt;BusinessDataYelpSearchTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2622,12 +2618,12 @@ public Task<BusinessDataYelpSearchTasksReadyResponseInfo> YelpSearchTasksReadyAs
 
 #### Returns
 
-[Task&lt;BusinessDataYelpSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataYelpSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2649,12 +2645,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataYelpSearchTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2678,12 +2674,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataYelpSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskgetresponseinfo)<br>
+[Task&lt;BusinessDataYelpSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2709,12 +2705,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskgetresponseinfo)<br>
+[Task&lt;BusinessDataYelpSearchTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpsearchtaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2730,16 +2726,16 @@ public Task<BusinessDataYelpReviewsTaskPostResponseInfo> YelpReviewsTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpreviewstaskpostrequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataYelpReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataYelpReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2756,19 +2752,19 @@ public Task<BusinessDataYelpReviewsTaskPostResponseInfo> YelpReviewsTaskPostAsyn
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpreviewstaskpostrequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;](./dataforseo.client.models.requests.businessdatayelpreviewstaskpostrequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataYelpReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskpostresponseinfo)<br>
+[Task&lt;BusinessDataYelpReviewsTaskPostResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskpostresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2785,12 +2781,12 @@ public Task<BusinessDataYelpReviewsTasksReadyResponseInfo> YelpReviewsTasksReady
 
 #### Returns
 
-[Task&lt;BusinessDataYelpReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataYelpReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2812,12 +2808,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstasksreadyresponseinfo)<br>
+[Task&lt;BusinessDataYelpReviewsTasksReadyResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstasksreadyresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2841,12 +2837,12 @@ task identifier
 
 #### Returns
 
-[Task&lt;BusinessDataYelpReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataYelpReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2872,12 +2868,12 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;BusinessDataYelpReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskgetresponseinfo)<br>
+[Task&lt;BusinessDataYelpReviewsTaskGetResponseInfo&gt;](./dataforseo.client.models.responses.businessdatayelpreviewstaskgetresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2893,16 +2889,16 @@ public Task<BusinessDataSocialMediaPinterestLiveResponseInfo> SocialMediaPintere
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediapinterestliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediapinterestliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataSocialMediaPinterestLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediapinterestliveresponseinfo)<br>
+[Task&lt;BusinessDataSocialMediaPinterestLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediapinterestliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2919,19 +2915,19 @@ public Task<BusinessDataSocialMediaPinterestLiveResponseInfo> SocialMediaPintere
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediapinterestliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediapinterestliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataSocialMediaPinterestLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediapinterestliveresponseinfo)<br>
+[Task&lt;BusinessDataSocialMediaPinterestLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediapinterestliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2948,16 +2944,16 @@ public Task<BusinessDataSocialMediaFacebookLiveResponseInfo> SocialMediaFacebook
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediafacebookliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediafacebookliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataSocialMediaFacebookLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediafacebookliveresponseinfo)<br>
+[Task&lt;BusinessDataSocialMediaFacebookLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediafacebookliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -2974,19 +2970,19 @@ public Task<BusinessDataSocialMediaFacebookLiveResponseInfo> SocialMediaFacebook
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediafacebookliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediafacebookliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataSocialMediaFacebookLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediafacebookliveresponseinfo)<br>
+[Task&lt;BusinessDataSocialMediaFacebookLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediafacebookliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3003,16 +2999,16 @@ public Task<BusinessDataSocialMediaRedditLiveResponseInfo> SocialMediaRedditLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediaredditliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediaredditliverequestinfo.md)<br>
 
 #### Returns
 
-[Task&lt;BusinessDataSocialMediaRedditLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresponseinfo)<br>
+[Task&lt;BusinessDataSocialMediaRedditLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3028,19 +3024,19 @@ public Task<BusinessDataSocialMediaRedditLiveResponseInfo> SocialMediaRedditLive
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediaredditliverequestinfo)<br>
+`body` [IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;](./dataforseo.client.models.requests.businessdatasocialmediaredditliverequestinfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;BusinessDataSocialMediaRedditLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresponseinfo)<br>
+[Task&lt;BusinessDataSocialMediaRedditLiveResponseInfo&gt;](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresponseinfo.md)<br>
 Successful operation
 
 #### Exceptions
 
-[ApiException](./dataforseo.client.models.apiexception)<br>
+[ApiException](./dataforseo.client.models.apiexception.md)<br>
 A server side error occurred.
 
 **Remarks:**
@@ -3069,7 +3065,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
----
-
-[`< Back`](./)

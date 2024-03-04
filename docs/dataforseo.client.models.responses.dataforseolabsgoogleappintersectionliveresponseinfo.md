@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataforseoLabsGoogleAppIntersectionLiveResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class DataforseoLabsGoogleAppIntersectionLiveResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [DataforseoLabsGoogleAppIntersectionLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsgoogleappintersectionliveresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [DataforseoLabsGoogleAppIntersectionLiveResponseInfo](./dataforseo.client.models.responses.dataforseolabsgoogleappintersectionliveresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<DataforseoLabsGoogleAppIntersectionLiveTaskInfo> Tasks { get;
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsGoogleAppIntersectionLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleappintersectionlivetaskinfo)<br>
+[ICollection&lt;DataforseoLabsGoogleAppIntersectionLiveTaskInfo&gt;](./dataforseo.client.models.responses.dataforseolabsgoogleappintersectionlivetaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsGoogleAppIntersectionLiveResponseInfo()
 ```
-
----
-
-[`< Back`](./)

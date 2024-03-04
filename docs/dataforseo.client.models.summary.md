@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # Summary
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class Summary
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Summary](./dataforseo.client.models.summary)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Summary](./dataforseo.client.models.summary.md)
 
 ## Properties
 
@@ -43,7 +39,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Summary()
 ```
-
----
-
-[`< Back`](./)

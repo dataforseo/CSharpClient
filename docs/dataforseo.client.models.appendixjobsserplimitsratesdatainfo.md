@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixJobsSerpLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixJobsSerpLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixJobsSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixjobsserplimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixJobsSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixjobsserplimitsratesdatainfo.md)
 
 ## Properties
 
@@ -41,7 +37,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixJobsSerpLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

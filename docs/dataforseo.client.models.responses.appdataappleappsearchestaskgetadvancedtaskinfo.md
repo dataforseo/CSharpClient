@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppleAppSearchesTaskGetAdvancedTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataAppleAppSearchesTaskGetAdvancedTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataAppleAppSearchesTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedtaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataAppleAppSearchesTaskGetAdvancedTaskInfo](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedtaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataAppleAppSearchesTaskGetAdvancedResultInfo> Result { ge
 
 #### Property Value
 
-[ICollection&lt;AppDataAppleAppSearchesTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedresultinfo)<br>
+[ICollection&lt;AppDataAppleAppSearchesTaskGetAdvancedResultInfo&gt;](./dataforseo.client.models.responses.appdataappleappsearchestaskgetadvancedresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppSearchesTaskGetAdvancedTaskInfo()
 ```
-
----
-
-[`< Back`](./)

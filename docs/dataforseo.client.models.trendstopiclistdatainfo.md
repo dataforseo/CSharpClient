@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TrendsTopicListDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TrendsTopicListDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TrendsTopicListDataInfo](./dataforseo.client.models.trendstopiclistdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TrendsTopicListDataInfo](./dataforseo.client.models.trendstopiclistdatainfo.md)
 
 ## Properties
 
@@ -25,7 +21,7 @@ public ICollection<TopicListDataItemInfo> Top { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopicListDataItemInfo&gt;](./dataforseo.client.models.topiclistdataiteminfo)<br>
+[ICollection&lt;TopicListDataItemInfo&gt;](./dataforseo.client.models.topiclistdataiteminfo.md)<br>
 
 ### **Rising**
 
@@ -38,7 +34,7 @@ public ICollection<TopicListDataItemInfo> Rising { get; set; }
 
 #### Property Value
 
-[ICollection&lt;TopicListDataItemInfo&gt;](./dataforseo.client.models.topiclistdataiteminfo)<br>
+[ICollection&lt;TopicListDataItemInfo&gt;](./dataforseo.client.models.topiclistdataiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -57,7 +53,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TrendsTopicListDataInfo()
 ```
-
----
-
-[`< Back`](./)

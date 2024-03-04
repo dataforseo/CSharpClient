@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DataForSeoClient
 
 Namespace: DataForSeo.Client
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client
 public class DataForSeoClient
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataForSeoClient](./dataforseo.client.dataforseoclient)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DataForSeoClient](./dataforseo.client.dataforseoclient.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public SerpApi SerpApi { get; }
 
 #### Property Value
 
-[SerpApi](./dataforseo.client.api.serpapi)<br>
+[SerpApi](./dataforseo.client.api.serpapi.md)<br>
 
 ### **DomainAnalyticsApi**
 
@@ -32,7 +28,7 @@ public DomainAnalyticsApi DomainAnalyticsApi { get; }
 
 #### Property Value
 
-[DomainAnalyticsApi](./dataforseo.client.api.domainanalyticsapi)<br>
+[DomainAnalyticsApi](./dataforseo.client.api.domainanalyticsapi.md)<br>
 
 ### **DataforseoLabsApi**
 
@@ -42,7 +38,7 @@ public DataforseoLabsApi DataforseoLabsApi { get; }
 
 #### Property Value
 
-[DataforseoLabsApi](./dataforseo.client.api.dataforseolabsapi)<br>
+[DataforseoLabsApi](./dataforseo.client.api.dataforseolabsapi.md)<br>
 
 ### **KeywordsDataApi**
 
@@ -52,7 +48,7 @@ public KeywordsDataApi KeywordsDataApi { get; }
 
 #### Property Value
 
-[KeywordsDataApi](./dataforseo.client.api.keywordsdataapi)<br>
+[KeywordsDataApi](./dataforseo.client.api.keywordsdataapi.md)<br>
 
 ### **BacklinksApi**
 
@@ -62,7 +58,7 @@ public BacklinksApi BacklinksApi { get; }
 
 #### Property Value
 
-[BacklinksApi](./dataforseo.client.api.backlinksapi)<br>
+[BacklinksApi](./dataforseo.client.api.backlinksapi.md)<br>
 
 ### **OnPageApi**
 
@@ -72,7 +68,7 @@ public OnPageApi OnPageApi { get; }
 
 #### Property Value
 
-[OnPageApi](./dataforseo.client.api.onpageapi)<br>
+[OnPageApi](./dataforseo.client.api.onpageapi.md)<br>
 
 ### **ContentAnalysisApi**
 
@@ -82,7 +78,7 @@ public ContentAnalysisApi ContentAnalysisApi { get; }
 
 #### Property Value
 
-[ContentAnalysisApi](./dataforseo.client.api.contentanalysisapi)<br>
+[ContentAnalysisApi](./dataforseo.client.api.contentanalysisapi.md)<br>
 
 ### **ContentGenerationApi**
 
@@ -92,7 +88,7 @@ public ContentGenerationApi ContentGenerationApi { get; }
 
 #### Property Value
 
-[ContentGenerationApi](./dataforseo.client.api.contentgenerationapi)<br>
+[ContentGenerationApi](./dataforseo.client.api.contentgenerationapi.md)<br>
 
 ### **MerchantApi**
 
@@ -102,7 +98,7 @@ public MerchantApi MerchantApi { get; }
 
 #### Property Value
 
-[MerchantApi](./dataforseo.client.api.merchantapi)<br>
+[MerchantApi](./dataforseo.client.api.merchantapi.md)<br>
 
 ### **AppDataApi**
 
@@ -112,7 +108,7 @@ public AppDataApi AppDataApi { get; }
 
 #### Property Value
 
-[AppDataApi](./dataforseo.client.api.appdataapi)<br>
+[AppDataApi](./dataforseo.client.api.appdataapi.md)<br>
 
 ### **BusinessDataApi**
 
@@ -122,7 +118,7 @@ public BusinessDataApi BusinessDataApi { get; }
 
 #### Property Value
 
-[BusinessDataApi](./dataforseo.client.api.businessdataapi)<br>
+[BusinessDataApi](./dataforseo.client.api.businessdataapi.md)<br>
 
 ### **AppendixApi**
 
@@ -132,7 +128,7 @@ public AppendixApi AppendixApi { get; }
 
 #### Property Value
 
-[AppendixApi](./dataforseo.client.api.appendixapi)<br>
+[AppendixApi](./dataforseo.client.api.appendixapi.md)<br>
 
 ## Constructors
 
@@ -149,7 +145,3 @@ public DataForSeoClient(string username, string password, bool useCompression)
 `password` [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
 
 `useCompression` [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)<br>
-
----
-
-[`< Back`](./)

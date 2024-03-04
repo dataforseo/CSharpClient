@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisAvailableFiltersResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisAvailableFiltersResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisAvailableFiltersResultInfo](./dataforseo.client.models.responses.contentanalysisavailablefiltersresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisAvailableFiltersResultInfo](./dataforseo.client.models.responses.contentanalysisavailablefiltersresultinfo.md)
 
 ## Properties
 
@@ -41,7 +37,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisAvailableFiltersResultInfo()
 ```
-
----
-
-[`< Back`](./)

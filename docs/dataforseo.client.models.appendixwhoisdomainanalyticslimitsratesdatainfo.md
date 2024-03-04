@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixWhoisDomainAnalyticsLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixWhoisDomainAnalyticsLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixWhoisDomainAnalyticsLimitsRatesDataInfo](./dataforseo.client.models.appendixwhoisdomainanalyticslimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixWhoisDomainAnalyticsLimitsRatesDataInfo](./dataforseo.client.models.appendixwhoisdomainanalyticslimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo Overview { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -41,7 +37,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixWhoisDomainAnalyticsLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

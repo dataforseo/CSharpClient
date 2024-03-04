@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # BusinessDataSocialMediaRedditLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class BusinessDataSocialMediaRedditLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaRedditLiveResultInfo](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BusinessDataSocialMediaRedditLiveResultInfo](./dataforseo.client.models.responses.businessdatasocialmediaredditliveresultinfo.md)
 
 ## Properties
 
@@ -49,7 +45,7 @@ public ICollection<RedditReviews> RedditReviews { get; set; }
 
 #### Property Value
 
-[ICollection&lt;RedditReviews&gt;](./dataforseo.client.models.redditreviews)<br>
+[ICollection&lt;RedditReviews&gt;](./dataforseo.client.models.redditreviews.md)<br>
 
 ### **AdditionalProperties**
 
@@ -68,7 +64,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BusinessDataSocialMediaRedditLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppsInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppsInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppsInfo](./dataforseo.client.models.appsinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppsInfo](./dataforseo.client.models.appsinfo.md)
 
 ## Properties
 
@@ -67,7 +63,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppsInfo()
 ```
-
----
-
-[`< Back`](./)

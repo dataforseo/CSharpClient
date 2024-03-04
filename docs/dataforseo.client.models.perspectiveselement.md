@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # PerspectivesElement
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class PerspectivesElement
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PerspectivesElement](./dataforseo.client.models.perspectiveselement)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [PerspectivesElement](./dataforseo.client.models.perspectiveselement.md)
 
 ## Properties
 
@@ -131,7 +127,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PerspectivesElement()
 ```
-
----
-
-[`< Back`](./)

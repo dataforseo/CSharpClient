@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixSocialMediaBusinessDataLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixSocialMediaBusinessDataLimitsRatesDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSocialMediaBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixsocialmediabusinessdatalimitsratesdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixSocialMediaBusinessDataLimitsRatesDataInfo](./dataforseo.client.models.appendixsocialmediabusinessdatalimitsratesdatainfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo Facebook { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Pinterest**
 
@@ -32,7 +28,7 @@ public AppendixInfo Pinterest { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Reddit**
 
@@ -42,7 +38,7 @@ public AppendixInfo Reddit { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -61,7 +57,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixSocialMediaBusinessDataLimitsRatesDataInfo()
 ```
-
----
-
-[`< Back`](./)

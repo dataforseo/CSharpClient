@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataGoogleLanguagesResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataGoogleLanguagesResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [AppDataGoogleLanguagesResponseInfo](./dataforseo.client.models.responses.appdatagooglelanguagesresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [AppDataGoogleLanguagesResponseInfo](./dataforseo.client.models.responses.appdatagooglelanguagesresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataGoogleLanguagesTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataGoogleLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.appdatagooglelanguagestaskinfo)<br>
+[ICollection&lt;AppDataGoogleLanguagesTaskInfo&gt;](./dataforseo.client.models.responses.appdatagooglelanguagestaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGoogleLanguagesResponseInfo()
 ```
-
----
-
-[`< Back`](./)

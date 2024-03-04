@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataGoogleAdsLanguagesTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataGoogleAdsLanguagesTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataGoogleAdsLanguagesTaskInfo](./dataforseo.client.models.responses.keywordsdatagoogleadslanguagestaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataGoogleAdsLanguagesTaskInfo](./dataforseo.client.models.responses.keywordsdatagoogleadslanguagestaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataGoogleAdsLanguagesResultInfo> Result { get; set; 
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataGoogleAdsLanguagesResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadslanguagesresultinfo)<br>
+[ICollection&lt;KeywordsDataGoogleAdsLanguagesResultInfo&gt;](./dataforseo.client.models.responses.keywordsdatagoogleadslanguagesresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsLanguagesTaskInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataErrorsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class AppDataErrorsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [AppDataErrorsTaskInfo](./dataforseo.client.models.responses.appdataerrorstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [AppDataErrorsTaskInfo](./dataforseo.client.models.responses.appdataerrorstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<AppDataErrorsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;AppDataErrorsResultInfo&gt;](./dataforseo.client.models.responses.appdataerrorsresultinfo)<br>
+[ICollection&lt;AppDataErrorsResultInfo&gt;](./dataforseo.client.models.responses.appdataerrorsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataErrorsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

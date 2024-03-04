@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisSentimentAnalysisLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class ContentAnalysisSentimentAnalysisLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSentimentAnalysisLiveResultInfo](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisSentimentAnalysisLiveResultInfo](./dataforseo.client.models.responses.contentanalysissentimentanalysisliveresultinfo.md)
 
 ## Properties
 
@@ -38,7 +34,7 @@ public PositiveConnotationDistribution PositiveConnotationDistribution { get; se
 
 #### Property Value
 
-[PositiveConnotationDistribution](./dataforseo.client.models.positiveconnotationdistribution)<br>
+[PositiveConnotationDistribution](./dataforseo.client.models.positiveconnotationdistribution.md)<br>
 
 ### **SentimentConnotationDistribution**
 
@@ -52,7 +48,7 @@ public SentimentConnotationDistribution SentimentConnotationDistribution { get; 
 
 #### Property Value
 
-[SentimentConnotationDistribution](./dataforseo.client.models.sentimentconnotationdistribution)<br>
+[SentimentConnotationDistribution](./dataforseo.client.models.sentimentconnotationdistribution.md)<br>
 
 ### **AdditionalProperties**
 
@@ -71,7 +67,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisSentimentAnalysisLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # OnPageTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class OnPageTaskPostResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [OnPageTaskPostResponseInfo](./dataforseo.client.models.responses.onpagetaskpostresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [OnPageTaskPostResponseInfo](./dataforseo.client.models.responses.onpagetaskpostresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<OnPageTaskPostTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;OnPageTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.onpagetaskposttaskinfo)<br>
+[ICollection&lt;OnPageTaskPostTaskInfo&gt;](./dataforseo.client.models.responses.onpagetaskposttaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OnPageTaskPostResponseInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # TrendsGraphDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class TrendsGraphDataInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TrendsGraphDataInfo](./dataforseo.client.models.trendsgraphdatainfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [TrendsGraphDataInfo](./dataforseo.client.models.trendsgraphdatainfo.md)
 
 ## Properties
 
@@ -97,7 +93,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TrendsGraphDataInfo()
 ```
-
----
-
-[`< Back`](./)

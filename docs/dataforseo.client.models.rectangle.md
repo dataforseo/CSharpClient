@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # Rectangle
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class Rectangle
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Rectangle](./dataforseo.client.models.rectangle)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Rectangle](./dataforseo.client.models.rectangle.md)
 
 ## Properties
 
@@ -81,7 +77,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Rectangle()
 ```
-
----
-
-[`< Back`](./)

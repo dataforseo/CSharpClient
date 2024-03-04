@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppDataAppleAppListTaskPostRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class AppDataAppleAppListTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleAppListTaskPostRequestInfo](./dataforseo.client.models.requests.appdataappleapplisttaskpostrequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppDataAppleAppListTaskPostRequestInfo](./dataforseo.client.models.requests.appdataappleapplisttaskpostrequestinfo.md)
 
 ## Properties
 
@@ -242,7 +238,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataAppleAppListTaskPostRequestInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # MapDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class MapDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem) → [MapDataforseoLabsSerpElementItem](./dataforseo.client.models.mapdataforseolabsserpelementitem)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseDataforseoLabsSerpElementItem](./dataforseo.client.models.basedataforseolabsserpelementitem.md) → [MapDataforseoLabsSerpElementItem](./dataforseo.client.models.mapdataforseolabsserpelementitem.md)
 
 ## Properties
 
@@ -107,7 +103,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public MapDataforseoLabsSerpElementItem()
 ```
-
----
-
-[`< Back`](./)

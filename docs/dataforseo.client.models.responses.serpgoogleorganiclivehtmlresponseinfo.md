@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SerpGoogleOrganicLiveHtmlResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class SerpGoogleOrganicLiveHtmlResponseInfo : BaseResponseInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo) → [SerpGoogleOrganicLiveHtmlResponseInfo](./dataforseo.client.models.responses.serpgoogleorganiclivehtmlresponseinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseInfo](./dataforseo.client.models.responses.baseresponseinfo.md) → [SerpGoogleOrganicLiveHtmlResponseInfo](./dataforseo.client.models.responses.serpgoogleorganiclivehtmlresponseinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<SerpGoogleOrganicLiveHtmlTaskInfo> Tasks { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleOrganicLiveHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganiclivehtmltaskinfo)<br>
+[ICollection&lt;SerpGoogleOrganicLiveHtmlTaskInfo&gt;](./dataforseo.client.models.responses.serpgoogleorganiclivehtmltaskinfo.md)<br>
 
 ### **Version**
 
@@ -129,7 +125,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SerpGoogleOrganicLiveHtmlResponseInfo()
 ```
-
----
-
-[`< Back`](./)

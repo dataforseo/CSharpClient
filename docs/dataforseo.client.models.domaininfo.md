@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # DomainInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class DomainInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainInfo](./dataforseo.client.models.domaininfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [DomainInfo](./dataforseo.client.models.domaininfo.md)
 
 ## Properties
 
@@ -134,7 +130,7 @@ public SslInfo SslInfo { get; set; }
 
 #### Property Value
 
-[SslInfo](./dataforseo.client.models.sslinfo)<br>
+[SslInfo](./dataforseo.client.models.sslinfo.md)<br>
 
 ### **Checks**
 
@@ -246,7 +242,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainInfo()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AnalysisContentInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AnalysisContentInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AnalysisContentInfo](./dataforseo.client.models.analysiscontentinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AnalysisContentInfo](./dataforseo.client.models.analysiscontentinfo.md)
 
 ## Properties
 
@@ -124,7 +120,7 @@ public ICollection<SocialMetricsInfo> SocialMetrics { get; set; }
 
 #### Property Value
 
-[ICollection&lt;SocialMetricsInfo&gt;](./dataforseo.client.models.socialmetricsinfo)<br>
+[ICollection&lt;SocialMetricsInfo&gt;](./dataforseo.client.models.socialmetricsinfo.md)<br>
 
 ### **HighlightedText**
 
@@ -163,7 +159,7 @@ public SentimentConnotationInfo SentimentConnotations { get; set; }
 
 #### Property Value
 
-[SentimentConnotationInfo](./dataforseo.client.models.sentimentconnotationinfo)<br>
+[SentimentConnotationInfo](./dataforseo.client.models.sentimentconnotationinfo.md)<br>
 
 ### **ConnotationTypes**
 
@@ -177,7 +173,7 @@ public ConnotationTypeInfo ConnotationTypes { get; set; }
 
 #### Property Value
 
-[ConnotationTypeInfo](./dataforseo.client.models.connotationtypeinfo)<br>
+[ConnotationTypeInfo](./dataforseo.client.models.connotationtypeinfo.md)<br>
 
 ### **TextCategory**
 
@@ -246,7 +242,7 @@ public ContentAnalysisRatingInfo Rating { get; set; }
 
 #### Property Value
 
-[ContentAnalysisRatingInfo](./dataforseo.client.models.contentanalysisratinginfo)<br>
+[ContentAnalysisRatingInfo](./dataforseo.client.models.contentanalysisratinginfo.md)<br>
 
 ### **GroupDate**
 
@@ -282,7 +278,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AnalysisContentInfo()
 ```
-
----
-
-[`< Back`](./)

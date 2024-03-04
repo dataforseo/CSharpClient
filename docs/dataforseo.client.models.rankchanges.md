@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # RankChanges
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class RankChanges
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RankChanges](./dataforseo.client.models.rankchanges)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [RankChanges](./dataforseo.client.models.rankchanges.md)
 
 ## Properties
 
@@ -84,7 +80,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RankChanges()
 ```
-
----
-
-[`< Back`](./)

@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # SslInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class SslInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SslInfo](./dataforseo.client.models.sslinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SslInfo](./dataforseo.client.models.sslinfo.md)
 
 ## Properties
 
@@ -112,7 +108,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public SslInfo()
 ```
-
----
-
-[`< Back`](./)

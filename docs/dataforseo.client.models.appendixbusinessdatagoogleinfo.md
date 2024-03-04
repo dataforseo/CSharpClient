@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # AppendixBusinessDataGoogleInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class AppendixBusinessDataGoogleInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataGoogleInfo](./dataforseo.client.models.appendixbusinessdatagoogleinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [AppendixBusinessDataGoogleInfo](./dataforseo.client.models.appendixbusinessdatagoogleinfo.md)
 
 ## Properties
 
@@ -22,7 +18,7 @@ public AppendixInfo MyBusinessInfo { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **MyBusinessUpdates**
 
@@ -32,7 +28,7 @@ public AppendixInfo MyBusinessUpdates { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **HotelInfo**
 
@@ -42,7 +38,7 @@ public AppendixSerpLimitsRatesDataInfo HotelInfo { get; set; }
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo)<br>
+[AppendixSerpLimitsRatesDataInfo](./dataforseo.client.models.appendixserplimitsratesdatainfo.md)<br>
 
 ### **HotelSearches**
 
@@ -52,7 +48,7 @@ public AppendixInfo HotelSearches { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **Reviews**
 
@@ -62,7 +58,7 @@ public AppendixInfo Reviews { get; set; }
 
 #### Property Value
 
-[AppendixInfo](./dataforseo.client.models.appendixinfo)<br>
+[AppendixInfo](./dataforseo.client.models.appendixinfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -81,7 +77,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBusinessDataGoogleInfo()
 ```
-
----
-
-[`< Back`](./)

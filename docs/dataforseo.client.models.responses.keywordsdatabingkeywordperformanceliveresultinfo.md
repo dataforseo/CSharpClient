@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataBingKeywordPerformanceLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataBingKeywordPerformanceLiveResultInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceLiveResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformanceliveresultinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [KeywordsDataBingKeywordPerformanceLiveResultInfo](./dataforseo.client.models.responses.keywordsdatabingkeywordperformanceliveresultinfo.md)
 
 ## Properties
 
@@ -91,7 +87,7 @@ public KeywordKpi KeywordKpi { get; set; }
 
 #### Property Value
 
-[KeywordKpi](./dataforseo.client.models.keywordkpi)<br>
+[KeywordKpi](./dataforseo.client.models.keywordkpi.md)<br>
 
 ### **AdditionalProperties**
 
@@ -110,7 +106,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataBingKeywordPerformanceLiveResultInfo()
 ```
-
----
-
-[`< Back`](./)

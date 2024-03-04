@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # ContentAnalysisPhraseTrendsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Requests
 public class ContentAnalysisPhraseTrendsLiveRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisPhraseTrendsLiveRequestInfo](./dataforseo.client.models.requests.contentanalysisphrasetrendsliverequestinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [ContentAnalysisPhraseTrendsLiveRequestInfo](./dataforseo.client.models.requests.contentanalysisphrasetrendsliverequestinfo.md)
 
 ## Properties
 
@@ -217,7 +213,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisPhraseTrendsLiveRequestInfo()
 ```
-
----
-
-[`< Back`](./)

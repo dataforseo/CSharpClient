@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # QueriesListDataItemInfo
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class QueriesListDataItemInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [QueriesListDataItemInfo](./dataforseo.client.models.querieslistdataiteminfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [QueriesListDataItemInfo](./dataforseo.client.models.querieslistdataiteminfo.md)
 
 ## Properties
 
@@ -56,7 +52,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public QueriesListDataItemInfo()
 ```
-
----
-
-[`< Back`](./)

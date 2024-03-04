@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # KeywordsDataErrorsTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models.Responses
 public class KeywordsDataErrorsTaskInfo : BaseResponseTaskInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo) → [KeywordsDataErrorsTaskInfo](./dataforseo.client.models.responses.keywordsdataerrorstaskinfo)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [BaseResponseTaskInfo](./dataforseo.client.models.responses.baseresponsetaskinfo.md) → [KeywordsDataErrorsTaskInfo](./dataforseo.client.models.responses.keywordsdataerrorstaskinfo.md)
 
 ## Properties
 
@@ -24,7 +20,7 @@ public ICollection<KeywordsDataErrorsResultInfo> Result { get; set; }
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataErrorsResultInfo&gt;](./dataforseo.client.models.responses.keywordsdataerrorsresultinfo)<br>
+[ICollection&lt;KeywordsDataErrorsResultInfo&gt;](./dataforseo.client.models.responses.keywordsdataerrorsresultinfo.md)<br>
 
 ### **Id**
 
@@ -143,7 +139,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataErrorsTaskInfo()
 ```
-
----
-
-[`< Back`](./)

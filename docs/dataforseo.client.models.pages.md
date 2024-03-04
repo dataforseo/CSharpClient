@@ -1,7 +1,3 @@
-[`< Back`](./)
-
----
-
 # Pages
 
 Namespace: DataForSeo.Client.Models
@@ -10,7 +6,7 @@ Namespace: DataForSeo.Client.Models
 public class Pages
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Pages](./dataforseo.client.models.pages)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [Pages](./dataforseo.client.models.pages.md)
 
 ## Properties
 
@@ -38,7 +34,7 @@ public ICollection<BaseOnPageResourceItemInfo> Page { get; set; }
 
 #### Property Value
 
-[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo)<br>
+[ICollection&lt;BaseOnPageResourceItemInfo&gt;](./dataforseo.client.models.baseonpageresourceiteminfo.md)<br>
 
 ### **AdditionalProperties**
 
@@ -57,7 +53,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public Pages()
 ```
-
----
-
-[`< Back`](./)
