@@ -1,0 +1,77 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
+# OnPageResourceIssueItemInfo
+
+Namespace: DataForSeo.Client.Models
+
+```csharp
+public class OnPageResourceIssueItemInfo
+```
+
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [OnPageResourceIssueItemInfo](./OnPageResourceIssueItemInfo.md)
+
+## Properties
+
+### **Line**
+
+```csharp
+public Nullable<int> Line { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Column**
+
+```csharp
+public Nullable<int> Column { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Message**
+
+```csharp
+public string Message { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **StatusCode**
+
+```csharp
+public Nullable<int> StatusCode { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **AdditionalProperties**
+
+```csharp
+public IDictionary<string, object> AdditionalProperties { get; set; }
+```
+
+#### Property Value
+
+[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+## Constructors
+
+### **OnPageResourceIssueItemInfo()**
+
+```csharp
+public OnPageResourceIssueItemInfo()
+```
+
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

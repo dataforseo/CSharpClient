@@ -5,18 +5,18 @@ There is a C# client to call DataForSeo API.
 DataForSEO API uses REST technology for interchanging data between your application and our service. The data exchange is made through the widely used HTTP protocol, which allows applying our API to almost all programming languages.
 
 Client contains 12 sections (aka API):
-- Serp ([source docs](./docs/dataforseo.client.api.serpapi.md) | [api docs](https://docs.dataforseo.com/v3/serp/overview/?bash))
-- KeywordsData ([source docs](./docs/dataforseo.client.api.keywordsdataapi.md) | [api docs](https://docs.dataforseo.com/v3/keywords_data/overview/?bash))
-- DomainAnalytics ([source docs](./docs/dataforseo.client.api.domainanalyticsapi.md) | [api docs](https://docs.dataforseo.com/v3/domain_analytics/overview/?bash))
-- DataforseoLabs ([source docs](./docs/dataforseo.client.api.dataforseolabsapi.md) | [api docs](https://docs.dataforseo.com/v3/dataforseo_labs/overview/?bash))
-- Backlinks ([source docs](./docs/dataforseo.client.api.backlinksapi.md) | [api docs](https://docs.dataforseo.com/v3/backlinks/overview/?bash))
-- OnPage ([source docs](./docs/dataforseo.client.api.onpageapi.md) | [api docs](https://docs.dataforseo.com/v3/on_page/overview/?bash))
-- ContentAnalysis ([source docs](./docs/dataforseo.client.api.contentanalysisapi.md) | [api docs](https://docs.dataforseo.com/v3/content_analysis/overview/?bash))
-- ContentGeneration ([source docs](./docs/dataforseo.client.api.contentgenerationapi.md) | [api docs](https://docs.dataforseo.com/v3/content_generation/overview/?bash))
-- Merchant ([source docs](./docs/dataforseo.client.api.merchantapi.md) | [api docs](https://docs.dataforseo.com/v3/merchant/overview/?bash))
-- AppData ([source docs](./docs/dataforseo.client.api.appdataapi.md) | [api docs](https://docs.dataforseo.com/v3/app_data/overview/?bash))
-- BusinessData ([source docs](./docs/dataforseo.client.api.businessdataapi.md) | [api docs](https://docs.dataforseo.com/v3/business_data/overview/?bash))
-- Appendix ([source docs](./docs/dataforseo.client.api.appendixapi.md) | [api docs](https://docs.dataforseo.com/v3/appendix/user_data/?bash))
+- Serp ([source docs](./docs/SerpApi.md) | [api docs](https://docs.dataforseo.com/v3/serp/overview/?bash))
+- KeywordsData ([source docs](./docs/KeywordsDataApi.md) | [api docs](https://docs.dataforseo.com/v3/keywords_data/overview/?bash))
+- DomainAnalytics ([source docs](./docs/DomainAnalyticsApi.md) | [api docs](https://docs.dataforseo.com/v3/domain_analytics/overview/?bash))
+- DataforseoLabs ([source docs](./docs/DataforseoLabsApi.md) | [api docs](https://docs.dataforseo.com/v3/dataforseo_labs/overview/?bash))
+- Backlinks ([source docs](./docs/BacklinksApi.md) | [api docs](https://docs.dataforseo.com/v3/backlinks/overview/?bash))
+- OnPage ([source docs](./docs/OnPageApi.md) | [api docs](https://docs.dataforseo.com/v3/on_page/overview/?bash))
+- ContentAnalysis ([source docs](./docs/ContentAnalysisApi.md) | [api docs](https://docs.dataforseo.com/v3/content_analysis/overview/?bash))
+- ContentGeneration ([source docs](./docs/ContentGenerationApi.md) | [api docs](https://docs.dataforseo.com/v3/content_generation/overview/?bash))
+- Merchant ([source docs](./docs/MerchantApi.md) | [api docs](https://docs.dataforseo.com/v3/merchant/overview/?bash))
+- AppData ([source docs](./docs/AppDataApi.md) | [api docs](https://docs.dataforseo.com/v3/app_data/overview/?bash))
+- BusinessData ([source docs](./docs/BusinessDataApi.md) | [api docs](https://docs.dataforseo.com/v3/business_data/overview/?bash))
+- Appendix ([source docs](./docs/AppendixApi.md) | [api docs](https://docs.dataforseo.com/v3/appendix/user_data/?bash))
 
 API Contains 2 types of requests:
 1) Live (Simple HTTP request/response message)
