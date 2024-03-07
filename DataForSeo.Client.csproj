@@ -5,9 +5,9 @@
         <PackageId>DataForSeo.Client</PackageId>
         <Authors>DataForSeo</Authors>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
-        <Description>API client that provide services of DataForSeo API (https://dataforseo.com/)
+        <Description>API client that provides services of DataForSEO API (https://dataforseo.com/)
 
-            For more information about client code generation, please follow to github (https://github.com/dataforseo/DataForSeoClient)
+            For more information about client code generation, please follow the link (https://github.com/dataforseo/DataForSeoClient)
         </Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
