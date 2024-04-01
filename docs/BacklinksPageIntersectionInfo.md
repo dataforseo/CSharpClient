@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # BacklinksPageIntersectionInfo
 
 Namespace: DataForSeo.Client.Models
@@ -481,7 +477,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksPageIntersectionInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

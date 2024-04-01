@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # OrganicSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -341,7 +337,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public OrganicSerpElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

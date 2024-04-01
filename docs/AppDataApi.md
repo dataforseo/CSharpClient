@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppDataApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed App Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/id_list/?bash'
 
 ### **AppDataIdListAsync(IEnumerable&lt;AppDataIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed App Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/id_list/?bash'
 
 ### **AppDataErrorsAsync(IEnumerable&lt;AppDataErrorsRequestInfo&gt;)**
 
@@ -124,7 +120,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
 
 ### **AppDataErrorsAsync(IEnumerable&lt;AppDataErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -152,7 +148,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
 
 ### **GoogleCategoriesAsync()**
 
@@ -173,7 +169,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on Google Play.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/categories/?bash'
 
 ### **GoogleCategoriesAsync(CancellationToken)**
 
@@ -199,7 +195,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on Google Play.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/categories/?bash'
 
 ### **AppDataGoogleLocationsAsync()**
 
@@ -220,7 +216,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Google locations supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
 
 ### **AppDataGoogleLocationsAsync(CancellationToken)**
 
@@ -246,7 +242,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Google locations supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
 
 ### **AppDataGoogleLanguagesAsync()**
 
@@ -267,7 +263,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Google languages supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
 
 ### **AppDataGoogleLanguagesAsync(CancellationToken)**
 
@@ -293,7 +289,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Google languages supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
 
 ### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;)**
 
@@ -318,8 +314,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
+ <br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
 
 ### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;, CancellationToken)**
 
@@ -347,8 +343,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
+ <br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
 
 ### **GoogleAppSearchesTasksReadyAsync()**
 
@@ -369,8 +365,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
 
 ### **GoogleAppSearchesTasksReadyAsync(CancellationToken)**
 
@@ -396,8 +392,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
 
 ### **GoogleAppSearchesTaskGetAdvancedAsync(String)**
 
@@ -409,8 +405,8 @@ public Task<AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo> GoogleAppSearch
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -425,7 +421,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps ranking on Google Play for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash'
 
 ### **GoogleAppSearchesTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -437,8 +433,8 @@ public Task<AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo> GoogleAppSearch
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -456,7 +452,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps ranking on Google Play for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash'
 
 ### **GoogleAppSearchesTaskGetHtmlAsync(String)**
 
@@ -468,8 +464,8 @@ public Task<AppDataGoogleAppSearchesTaskGetHtmlResponseInfo> GoogleAppSearchesTa
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -484,7 +480,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash'
 
 ### **GoogleAppSearchesTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -496,8 +492,8 @@ public Task<AppDataGoogleAppSearchesTaskGetHtmlResponseInfo> GoogleAppSearchesTa
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -515,7 +511,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash'
 
 ### **GoogleAppListTaskPostAsync(IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;)**
 
@@ -540,8 +536,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash'
+ <br>This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash'
 
 ### **GoogleAppListTaskPostAsync(IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -569,8 +565,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash'
+ <br>This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash'
 
 ### **GoogleAppListTasksReadyAsync()**
 
@@ -591,8 +587,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash'
 
 ### **GoogleAppListTasksReadyAsync(CancellationToken)**
 
@@ -618,8 +614,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash'
 
 ### **GoogleAppListTaskGetAdvancedAsync(String)**
 
@@ -631,8 +627,8 @@ public Task<AppDataGoogleAppListTaskGetAdvancedResponseInfo> GoogleAppListTaskGe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -647,7 +643,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of applications published in the top charts on the Google Play platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash'
 
 ### **GoogleAppListTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -659,8 +655,8 @@ public Task<AppDataGoogleAppListTaskGetAdvancedResponseInfo> GoogleAppListTaskGe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -678,7 +674,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of applications published in the top charts on the Google Play platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash'
 
 ### **GoogleAppListTaskGetHtmlAsync(String)**
 
@@ -690,8 +686,8 @@ public Task<AppDataGoogleAppListTaskGetHtmlResponseInfo> GoogleAppListTaskGetHtm
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -706,7 +702,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash'
 
 ### **GoogleAppListTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -718,8 +714,8 @@ public Task<AppDataGoogleAppListTaskGetHtmlResponseInfo> GoogleAppListTaskGetHtm
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -737,7 +733,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash'
 
 ### **GoogleAppInfoTaskPostAsync(IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;)**
 
@@ -762,8 +758,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash'
+ <br>This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash'
 
 ### **GoogleAppInfoTaskPostAsync(IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -791,8 +787,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash'
+ <br>This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash'
 
 ### **GoogleAppInfoTasksReadyAsync()**
 
@@ -813,8 +809,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash'
 
 ### **GoogleAppInfoTasksReadyAsync(CancellationToken)**
 
@@ -840,8 +836,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash'
 
 ### **GoogleAppInfoTaskGetAdvancedAsync(String)**
 
@@ -853,8 +849,8 @@ public Task<AppDataGoogleAppInfoTaskGetAdvancedResponseInfo> GoogleAppInfoTaskGe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -869,7 +865,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, number of installs, images, and other data. The results are specific to the app_id parameter specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash'
 
 ### **GoogleAppInfoTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -881,8 +877,8 @@ public Task<AppDataGoogleAppInfoTaskGetAdvancedResponseInfo> GoogleAppInfoTaskGe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -900,7 +896,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, number of installs, images, and other data. The results are specific to the app_id parameter specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash'
 
 ### **GoogleAppInfoTaskGetHtmlAsync(String)**
 
@@ -912,8 +908,8 @@ public Task<AppDataGoogleAppInfoTaskGetHtmlResponseInfo> GoogleAppInfoTaskGetHtm
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -928,7 +924,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash'
 
 ### **GoogleAppInfoTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -940,8 +936,8 @@ public Task<AppDataGoogleAppInfoTaskGetHtmlResponseInfo> GoogleAppInfoTaskGetHtm
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -959,7 +955,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash'
 
 ### **GoogleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;)**
 
@@ -984,8 +980,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash'
+ <br>This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash'
 
 ### **GoogleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1013,8 +1009,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash'
+ <br>This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash'
 
 ### **GoogleAppReviewsTasksReadyAsync()**
 
@@ -1035,8 +1031,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash'
 
 ### **GoogleAppReviewsTasksReadyAsync(CancellationToken)**
 
@@ -1062,8 +1058,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash'
 
 ### **GoogleAppReviewsTaskGetAdvancedAsync(String)**
 
@@ -1075,8 +1071,8 @@ public Task<AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo> GoogleAppReviews
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1091,7 +1087,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with feedback data on applications listed on the Google Play platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash'
 
 ### **GoogleAppReviewsTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1103,8 +1099,8 @@ public Task<AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo> GoogleAppReviews
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1122,7 +1118,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with feedback data on applications listed on the Google Play platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash'
 
 ### **GoogleAppReviewsTaskGetHtmlAsync(String)**
 
@@ -1134,8 +1130,8 @@ public Task<AppDataGoogleAppReviewsTaskGetHtmlResponseInfo> GoogleAppReviewsTask
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -1150,7 +1146,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash'
 
 ### **GoogleAppReviewsTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -1162,8 +1158,8 @@ public Task<AppDataGoogleAppReviewsTaskGetHtmlResponseInfo> GoogleAppReviewsTask
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1181,7 +1177,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash'
 
 ### **GoogleAppListingsCategoriesAsync()**
 
@@ -1202,7 +1198,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on Google Play.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash'
 
 ### **GoogleAppListingsCategoriesAsync(CancellationToken)**
 
@@ -1228,7 +1224,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on Google Play.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash'
 
 ### **GoogleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;)**
 
@@ -1253,7 +1249,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps published on Google Play along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash'
 
 ### **GoogleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1281,7 +1277,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps published on Google Play along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash'
 
 ### **AppleCategoriesAsync()**
 
@@ -1302,7 +1298,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on App Store.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/categories/?bash'
 
 ### **AppleCategoriesAsync(CancellationToken)**
 
@@ -1328,7 +1324,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on App Store.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/categories/?bash'
 
 ### **AppDataAppleLocationsAsync()**
 
@@ -1349,7 +1345,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Apple locations supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/locations/?bash'
 
 ### **AppDataAppleLocationsAsync(CancellationToken)**
 
@@ -1375,7 +1371,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Apple locations supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/locations/?bash'
 
 ### **AppDataAppleLanguagesAsync()**
 
@@ -1396,7 +1392,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Apple languages supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
 
 ### **AppDataAppleLanguagesAsync(CancellationToken)**
 
@@ -1422,7 +1418,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive the list of Apple languages supported in App Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
 
 ### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;)**
 
@@ -1447,8 +1443,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
+ <br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
 
 ### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;, CancellationToken)**
 
@@ -1476,8 +1472,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
+ <br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
 
 ### **AppleAppSearchesTasksReadyAsync()**
 
@@ -1498,8 +1494,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash'
 
 ### **AppleAppSearchesTasksReadyAsync(CancellationToken)**
 
@@ -1525,8 +1521,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash'
 
 ### **AppleAppSearchesTaskGetAdvancedAsync(String)**
 
@@ -1538,8 +1534,8 @@ public Task<AppDataAppleAppSearchesTaskGetAdvancedResponseInfo> AppleAppSearches
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1554,7 +1550,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps ranking on the App Store for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash'
 
 ### **AppleAppSearchesTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1566,8 +1562,8 @@ public Task<AppDataAppleAppSearchesTaskGetAdvancedResponseInfo> AppleAppSearches
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1585,7 +1581,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps ranking on the App Store for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash'
 
 ### **AppleAppInfoTaskPostAsync(IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;)**
 
@@ -1610,8 +1606,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash'
+ <br>This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash'
 
 ### **AppleAppInfoTaskPostAsync(IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1639,8 +1635,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash'
+ <br>This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash'
 
 ### **AppleAppInfoTasksReadyAsync()**
 
@@ -1661,8 +1657,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash'
 
 ### **AppleAppInfoTasksReadyAsync(CancellationToken)**
 
@@ -1688,8 +1684,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash'
 
 ### **AppleAppInfoTaskGetAdvancedAsync(String)**
 
@@ -1701,8 +1697,8 @@ public Task<AppDataAppleAppInfoTaskGetAdvancedResponseInfo> AppleAppInfoTaskGetA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1717,7 +1713,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, images, and other data. The results are specific to the app_id parameter specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash'
 
 ### **AppleAppInfoTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1729,8 +1725,8 @@ public Task<AppDataAppleAppInfoTaskGetAdvancedResponseInfo> AppleAppInfoTaskGetA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1748,7 +1744,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, images, and other data. The results are specific to the app_id parameter specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash'
 
 ### **AppleAppListTaskPostAsync(IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;)**
 
@@ -1773,8 +1769,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash'
+ <br>This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash'
 
 ### **AppleAppListTaskPostAsync(IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1802,8 +1798,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash'
+ <br>This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash'
 
 ### **AppleAppListTasksReadyAsync()**
 
@@ -1824,8 +1820,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash'
 
 ### **AppleAppListTasksReadyAsync(CancellationToken)**
 
@@ -1851,8 +1847,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash'
 
 ### **AppleAppListTaskGetAdvancedAsync(String)**
 
@@ -1864,8 +1860,8 @@ public Task<AppDataAppleAppListTaskGetAdvancedResponseInfo> AppleAppListTaskGetA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1880,7 +1876,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of applications published in the top app charts on the App Store platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash'
 
 ### **AppleAppListTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1892,8 +1888,8 @@ public Task<AppDataAppleAppListTaskGetAdvancedResponseInfo> AppleAppListTaskGetA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1911,7 +1907,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of applications published in the top app charts on the App Store platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash'
 
 ### **AppleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;)**
 
@@ -1936,8 +1932,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash'
+ <br>This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash'
 
 ### **AppleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1965,8 +1961,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash'
+ <br>This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash'
 
 ### **AppleAppReviewsTasksReadyAsync()**
 
@@ -1987,8 +1983,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash'
 
 ### **AppleAppReviewsTasksReadyAsync(CancellationToken)**
 
@@ -2014,8 +2010,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash'
 
 ### **AppleAppReviewsTaskGetAdvancedAsync(String)**
 
@@ -2027,8 +2023,8 @@ public Task<AppDataAppleAppReviewsTaskGetAdvancedResponseInfo> AppleAppReviewsTa
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2043,7 +2039,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with feedback data on applications listed on the App Store platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash'
 
 ### **AppleAppReviewsTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -2055,8 +2051,8 @@ public Task<AppDataAppleAppReviewsTaskGetAdvancedResponseInfo> AppleAppReviewsTa
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2074,7 +2070,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with feedback data on applications listed on the App Store platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash'
 
 ### **AppleAppListingsCategoriesAsync()**
 
@@ -2095,7 +2091,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on Apple App Store.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash'
 
 ### **AppleAppListingsCategoriesAsync(CancellationToken)**
 
@@ -2121,7 +2117,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a full list of app categories available on Apple App Store.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash'
 
 ### **AppleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;)**
 
@@ -2146,7 +2142,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps published on App Store along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash'
 
 ### **AppleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2174,7 +2170,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with a list of apps published on App Store along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -2197,7 +2193,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

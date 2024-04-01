@@ -8,16 +8,16 @@ namespace DataForSeo.Client.Models
         public AppendixHotelInfoGoogleBusinessDataPriceData HotelInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo HotelSearches { get; set; }
+        public AppendixHotelSearchesGoogleBusinessDataPriceData HotelSearches { get; set; }
 
         [Newtonsoft.Json.JsonProperty("my_business_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo MyBusinessInfo { get; set; }
+        public AppendixHotelSearchesGoogleBusinessDataPriceData MyBusinessInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("my_business_updates", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo MyBusinessUpdates { get; set; }
+        public AppendixHotelSearchesGoogleBusinessDataPriceData MyBusinessUpdates { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
+        public AppendixHotelSearchesGoogleBusinessDataPriceData Reviews { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of the row
+        /// title of a given link element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -23,20 +23,20 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// domain where a link points
+        /// website domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// price of booking a place for the specified dates of stay
+        /// price indicated in the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// web source of the hotel booking element
-        /// <br/>indicates the source of information included in the element
+        /// source of the element
+        /// <br/>indicates the source of information included in the top_stories_element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("source", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Source { get; set; }

@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -111,7 +107,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

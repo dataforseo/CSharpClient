@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # JsonInheritanceConverter
 
 Namespace: DataForSeo.Client.Models
@@ -111,7 +107,3 @@ public object ReadJson(JsonReader reader, Type objectType, object existingValue,
 #### Returns
 
 [Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

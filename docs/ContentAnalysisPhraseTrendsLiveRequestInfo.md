@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # ContentAnalysisPhraseTrendsLiveRequestInfo
 
 Namespace: DataForSeo.Client.Models.Requests
@@ -131,7 +127,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ContentAnalysisPhraseTrendsLiveRequestInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

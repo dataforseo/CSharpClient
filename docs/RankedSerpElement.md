@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # RankedSerpElement
 
 Namespace: DataForSeo.Client.Models
@@ -121,7 +117,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RankedSerpElement()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

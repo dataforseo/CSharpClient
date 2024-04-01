@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppDataGooglePlayReviewsSearchSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -151,7 +147,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppDataGooglePlayReviewsSearchSerpElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

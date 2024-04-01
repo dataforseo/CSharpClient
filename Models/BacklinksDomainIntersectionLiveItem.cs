@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         /// contains the domain intersections summary
         /// </summary>
         [Newtonsoft.Json.JsonProperty("summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Summary Summary { get; set; }
+        public IntersectionSummaryInfo Summary { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

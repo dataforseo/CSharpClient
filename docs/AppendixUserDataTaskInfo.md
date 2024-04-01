@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppendixUserDataTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -121,7 +117,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixUserDataTaskInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

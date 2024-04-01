@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DataforseoLabsBingCompetitorsDomainLiveTaskInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -121,7 +117,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DataforseoLabsBingCompetitorsDomainLiveTaskInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

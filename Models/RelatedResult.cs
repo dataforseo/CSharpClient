@@ -23,13 +23,13 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// title of the element
+        /// title of a given link element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         public bool? IsVideo { get; set; }
 
         /// <summary>
-        /// description
+        /// description of the hotel booking element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -110,8 +110,7 @@ namespace DataForSeo.Client.Models
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result
+        /// price of booking a place for the specified dates of stay
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

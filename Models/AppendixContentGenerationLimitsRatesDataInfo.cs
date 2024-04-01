@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixContentGenerationLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("generate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo Generate { get; set; }
+        public AppendixFunctionInfo Generate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate_meta_tags", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo GenerateMetaTags { get; set; }
+        public AppendixFunctionInfo GenerateMetaTags { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate_text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo GenerateText { get; set; }
+        public AppendixFunctionInfo GenerateText { get; set; }
 
         [Newtonsoft.Json.JsonProperty("paraphrase", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo Paraphrase { get; set; }
+        public AppendixFunctionInfo Paraphrase { get; set; }
 
         [Newtonsoft.Json.JsonProperty("check_grammar", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixContentGenerationDayLimitsRatesDataInfo CheckGrammar { get; set; }
@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
         public AppendixContentGenerationDayLimitsRatesDataInfo TextSummary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate_sub_topics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo GenerateSubTopics { get; set; }
+        public AppendixFunctionInfo GenerateSubTopics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

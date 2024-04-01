@@ -14,97 +14,97 @@ namespace DataForSeo.Client.Models
         public double? Errors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("product_competitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo ProductCompetitors { get; set; }
+        public AppendixFunctionInfo ProductCompetitors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("product_keyword_intersections", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo ProductKeywordIntersections { get; set; }
+        public AppendixFunctionInfo ProductKeywordIntersections { get; set; }
 
         [Newtonsoft.Json.JsonProperty("product_rank_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo ProductRankOverview { get; set; }
+        public AppendixFunctionInfo ProductRankOverview { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ranked_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo RankedKeywords { get; set; }
+        public AppendixFunctionInfo RankedKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("serp_competitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo SerpCompetitors { get; set; }
+        public AppendixFunctionInfo SerpCompetitors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("subdomains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo Subdomains { get; set; }
+        public AppendixFunctionInfo Subdomains { get; set; }
 
         [Newtonsoft.Json.JsonProperty("relevant_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo RelevantPages { get; set; }
+        public AppendixFunctionInfo RelevantPages { get; set; }
 
         [Newtonsoft.Json.JsonProperty("competitors_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo CompetitorsDomain { get; set; }
+        public AppendixFunctionInfo CompetitorsDomain { get; set; }
 
         [Newtonsoft.Json.JsonProperty("related_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo RelatedKeywords { get; set; }
+        public AppendixFunctionInfo RelatedKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_rank_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainRankOverview { get; set; }
+        public AppendixFunctionInfo DomainRankOverview { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_intersection", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainIntersection { get; set; }
+        public AppendixFunctionInfo DomainIntersection { get; set; }
 
         [Newtonsoft.Json.JsonProperty("page_intersection", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo PageIntersection { get; set; }
+        public AppendixFunctionInfo PageIntersection { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_traffic_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo BulkTrafficEstimation { get; set; }
+        public AppendixFunctionInfo BulkTrafficEstimation { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_keyword_difficulty", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo BulkKeywordDifficulty { get; set; }
+        public AppendixFunctionInfo BulkKeywordDifficulty { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo BulkSearchVolume { get; set; }
+        public AppendixFunctionInfo BulkSearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_site", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo KeywordsForSite { get; set; }
+        public AppendixFunctionInfo KeywordsForSite { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_suggestions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo KeywordSuggestions { get; set; }
+        public AppendixFunctionInfo KeywordSuggestions { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_ideas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo KeywordIdeas { get; set; }
+        public AppendixFunctionInfo KeywordIdeas { get; set; }
 
         [Newtonsoft.Json.JsonProperty("historical_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo HistoricalSearchVolume { get; set; }
+        public AppendixFunctionInfo HistoricalSearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("categories_for_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo CategoriesForDomain { get; set; }
+        public AppendixFunctionInfo CategoriesForDomain { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_metrics_by_categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainMetricsByCategories { get; set; }
+        public AppendixFunctionInfo DomainMetricsByCategories { get; set; }
 
         [Newtonsoft.Json.JsonProperty("top_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo TopSearches { get; set; }
+        public AppendixFunctionInfo TopSearches { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_whois_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainWhoisOverview { get; set; }
+        public AppendixFunctionInfo DomainWhoisOverview { get; set; }
 
         [Newtonsoft.Json.JsonProperty("historical_rank_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo HistoricalRankOverview { get; set; }
+        public AppendixFunctionInfo HistoricalRankOverview { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo KeywordsForCategories { get; set; }
+        public AppendixFunctionInfo KeywordsForCategories { get; set; }
 
         [Newtonsoft.Json.JsonProperty("historical_serps", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo HistoricalSerps { get; set; }
+        public AppendixFunctionInfo HistoricalSerps { get; set; }
 
         [Newtonsoft.Json.JsonProperty("app_competitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo AppCompetitors { get; set; }
+        public AppendixFunctionInfo AppCompetitors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_app", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo KeywordsForApp { get; set; }
+        public AppendixFunctionInfo KeywordsForApp { get; set; }
 
         [Newtonsoft.Json.JsonProperty("app_intersection", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo AppIntersection { get; set; }
+        public AppendixFunctionInfo AppIntersection { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_app_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo BulkAppMetrics { get; set; }
+        public AppendixFunctionInfo BulkAppMetrics { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_intent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo SearchIntent { get; set; }
+        public AppendixFunctionInfo SearchIntent { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

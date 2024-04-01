@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DomainAnalyticsApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Domain Analytics tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash'
 
 ### **DomainAnalyticsIdListAsync(IEnumerable&lt;DomainAnalyticsIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Domain Analytics tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash'
 
 ### **DomainAnalyticsErrorsAsync(IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;)**
 
@@ -124,7 +120,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
 
 ### **DomainAnalyticsErrorsAsync(IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -152,7 +148,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
 
 ### **TechnologiesAvailableFiltersAsync()**
 
@@ -173,8 +169,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash'
 
 ### **TechnologiesAvailableFiltersAsync(CancellationToken)**
 
@@ -200,8 +196,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash'
 
 ### **DomainAnalyticsTechnologiesLocationsAsync()**
 
@@ -222,7 +218,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash'
 
 ### **DomainAnalyticsTechnologiesLocationsAsync(CancellationToken)**
 
@@ -248,7 +244,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash'
 
 ### **DomainAnalyticsTechnologiesLanguagesAsync()**
 
@@ -269,9 +265,9 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br> 
-<br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash'
+ <br> 
+ <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash'
 
 ### **DomainAnalyticsTechnologiesLanguagesAsync(CancellationToken)**
 
@@ -297,9 +293,9 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br> 
-<br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash'
+ <br> 
+ <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash'
 
 ### **TechnologiesTechnologiesAsync()**
 
@@ -320,7 +316,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the full list of available technologies structured by technology groups and categories each particular technology belongs to.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash'
 
 ### **TechnologiesTechnologiesAsync(CancellationToken)**
 
@@ -346,7 +342,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the full list of available technologies structured by technology groups and categories each particular technology belongs to.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash'
 
 ### **TechnologiesAggregationTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;)**
 
@@ -371,8 +367,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash'
+ <br>The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash'
 
 ### **TechnologiesAggregationTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -400,8 +396,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash'
+ <br>The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash'
 
 ### **TechnologiesTechnologiesSummaryLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;)**
 
@@ -426,8 +422,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash'
+ <br>The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash'
 
 ### **TechnologiesTechnologiesSummaryLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;, CancellationToken)**
 
@@ -455,8 +451,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash'
+ <br>The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash'
 
 ### **TechnologiesTechnologyStatsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;)**
 
@@ -481,8 +477,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash'
+ <br>The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash'
 
 ### **TechnologiesTechnologyStatsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -510,8 +506,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash'
+ <br>The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash'
 
 ### **TechnologiesDomainsByTechnologyLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;)**
 
@@ -536,8 +532,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash'
+ <br>This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash'
 
 ### **TechnologiesDomainsByTechnologyLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;, CancellationToken)**
 
@@ -565,8 +561,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash'
+ <br>This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash'
 
 ### **TechnologiesDomainsByHtmlTermsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;)**
 
@@ -591,8 +587,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash'
+ <br>This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash'
 
 ### **TechnologiesDomainsByHtmlTermsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -620,8 +616,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash'
+ <br>This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash'
 
 ### **TechnologiesDomainTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;)**
 
@@ -646,8 +642,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Using this endpoint you will get a list of technologies used in a particular domain.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash'
+ <br>Using this endpoint you will get a list of technologies used in a particular domain.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash'
 
 ### **TechnologiesDomainTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -675,8 +671,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Using this endpoint you will get a list of technologies used in a particular domain.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash'
+ <br>Using this endpoint you will get a list of technologies used in a particular domain.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash'
 
 ### **WhoisAvailableFiltersAsync()**
 
@@ -697,8 +693,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash'
 
 ### **WhoisAvailableFiltersAsync(CancellationToken)**
 
@@ -724,8 +720,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash'
 
 ### **WhoisOverviewLiveAsync(IEnumerable&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;)**
 
@@ -750,8 +746,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash'
+ <br>This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash'
 
 ### **WhoisOverviewLiveAsync(IEnumerable&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;, CancellationToken)**
 
@@ -779,8 +775,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash'
+ <br>This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -803,7 +799,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -5,10 +5,10 @@ namespace DataForSeo.Client.Models
     public partial class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("domain_technologies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainTechnologies { get; set; }
+        public AppendixFunctionInfo DomainTechnologies { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domains_by_technology", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainsByTechnology { get; set; }
+        public AppendixFunctionInfo DomainsByTechnology { get; set; }
 
         [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Languages { get; set; }
@@ -20,16 +20,16 @@ namespace DataForSeo.Client.Models
         public double? Technologies { get; set; }
 
         [Newtonsoft.Json.JsonProperty("aggregation_technologies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo AggregationTechnologies { get; set; }
+        public AppendixFunctionInfo AggregationTechnologies { get; set; }
 
         [Newtonsoft.Json.JsonProperty("technologies_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo TechnologiesSummary { get; set; }
+        public AppendixFunctionInfo TechnologiesSummary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domains_by_html_terms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo DomainsByHtmlTerms { get; set; }
+        public AppendixFunctionInfo DomainsByHtmlTerms { get; set; }
 
         [Newtonsoft.Json.JsonProperty("technology_stats", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo TechnologyStats { get; set; }
+        public AppendixFunctionInfo TechnologyStats { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// number of new backlinks for the target
         /// <br/>data is provided based in a comparison with the previous period
         /// <br/>Note: this data is available from May 2021;
-        /// <br/>if the date range specified in the POST request preceds May 2021, the field will equal 0
+        /// <br/>if the date range specified in the POST request precedes May 2021, the field will equal 0
         /// </summary>
         [Newtonsoft.Json.JsonProperty("new_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? NewBacklinks { get; set; }
@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         /// number of lost backlinks for the target
         /// <br/>data is provided based in a comparison with the previous period
         /// <br/>Note: this data is available from May 2021;
-        /// <br/>if the date range specified in the POST request preceds May 2021, the field will equal 0
+        /// <br/>if the date range specified in the POST request precedes May 2021, the field will equal 0
         /// </summary>
         [Newtonsoft.Json.JsonProperty("lost_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? LostBacklinks { get; set; }
@@ -54,7 +54,7 @@ namespace DataForSeo.Client.Models
         /// number of new referring domains for the target
         /// <br/>data is provided based in a comparison with the previous period
         /// <br/>Note: this data is available from May 2021;
-        /// <br/>if the date range specified in the POST request preceds May 2021, the field will equal 0
+        /// <br/>if the date range specified in the POST request precedes May 2021, the field will equal 0
         /// </summary>
         [Newtonsoft.Json.JsonProperty("new_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? NewReferringDomains { get; set; }
@@ -63,7 +63,7 @@ namespace DataForSeo.Client.Models
         /// number of lost referring domains for the target
         /// <br/>data is provided based in a comparison with the previous period
         /// <br/>Note: this data is available from May 2021;
-        /// <br/>if the date range specified in the POST request preceds May 2021, the field will equal 0
+        /// <br/>if the date range specified in the POST request precedes May 2021, the field will equal 0
         /// </summary>
         [Newtonsoft.Json.JsonProperty("lost_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? LostReferringDomains { get; set; }
@@ -151,6 +151,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReferringPages { get; set; }
+
+        /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
 
         /// <summary>
         /// top-level domains of the referring links

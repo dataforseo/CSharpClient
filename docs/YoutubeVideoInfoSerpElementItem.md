@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # YoutubeVideoInfoSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -261,7 +257,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public YoutubeVideoInfoSerpElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

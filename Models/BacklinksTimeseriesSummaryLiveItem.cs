@@ -45,6 +45,12 @@ namespace DataForSeo.Client.Models
         public long? ReferringPages { get; set; }
 
         /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target for the given date
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
+
+        /// <summary>
         /// number of referring domains for the given date
         /// <br/>referring domains include subdomains that are counted as separate domains for this metric
         /// </summary>

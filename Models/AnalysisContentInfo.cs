@@ -81,7 +81,7 @@ namespace DataForSeo.Client.Models
         /// <br/>possible sentiment connotations: anger, happiness, love, sadness, share, fun
         /// </summary>
         [Newtonsoft.Json.JsonProperty("sentiment_connotations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SentimentConnotationInfo SentimentConnotations { get; set; }
+        public System.Collections.Generic.IDictionary<string, long?> SentimentConnotations { get; set; }
 
         /// <summary>
         /// connotation types
@@ -89,7 +89,7 @@ namespace DataForSeo.Client.Models
         /// <br/>possible sentiment connotation types: positive, negative, neutral
         /// </summary>
         [Newtonsoft.Json.JsonProperty("connotation_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public ConnotationTypeInfo ConnotationTypes { get; set; }
+        public System.Collections.Generic.IDictionary<string, long?> ConnotationTypes { get; set; }
 
         /// <summary>
         /// text category

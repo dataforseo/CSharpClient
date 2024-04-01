@@ -17,25 +17,25 @@ namespace DataForSeo.Client.Models
         public string FeaturedTitle { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// website domain
+        /// domain where a link points
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the carousel item
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// description of the hotel booking element
+        /// description of the results element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }

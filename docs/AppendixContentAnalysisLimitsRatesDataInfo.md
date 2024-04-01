@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppendixContentAnalysisLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -131,7 +127,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixContentAnalysisLimitsRatesDataInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

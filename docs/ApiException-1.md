@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # ApiException&lt;TResult&gt;
 
 Namespace: DataForSeo.Client.Models
@@ -160,7 +156,3 @@ public ApiException(string message, int statusCode, string response, IReadOnlyDi
 `result` TResult<br>
 
 `innerException` [Exception](https://docs.microsoft.com/en-us/dotnet/api/Exception)<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

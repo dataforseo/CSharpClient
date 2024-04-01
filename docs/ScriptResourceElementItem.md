@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # ScriptResourceElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -201,7 +197,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public ScriptResourceElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

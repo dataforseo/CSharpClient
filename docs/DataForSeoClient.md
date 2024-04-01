@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DataForSeoClient
 
 Namespace: DataForSeo.Client
@@ -149,7 +145,3 @@ public DataForSeoClient(string username, string password, bool useCompression)
 `password` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 `useCompression` [Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

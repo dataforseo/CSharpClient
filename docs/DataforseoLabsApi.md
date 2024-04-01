@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DataforseoLabsApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed DataForSEO Labs tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash'
 
 ### **DataforseoLabsIdListAsync(IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed DataForSEO Labs tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash'
 
 ### **DataforseoLabsStatusAsync()**
 
@@ -120,8 +116,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash'
+ <br>By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash'
 
 ### **DataforseoLabsStatusAsync(CancellationToken)**
 
@@ -147,8 +143,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash'
+ <br>By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash'
 
 ### **DataforseoLabsErrorsAsync(IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;)**
 
@@ -173,7 +169,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
 
 ### **DataforseoLabsErrorsAsync(IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -201,7 +197,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
 
 ### **AvailableFiltersAsync()**
 
@@ -222,8 +218,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash'
 
 ### **AvailableFiltersAsync(CancellationToken)**
 
@@ -249,8 +245,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash'
 
 ### **DataforseoLabsLocationsAndLanguagesAsync()**
 
@@ -271,8 +267,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash'
+ <br>Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash'
 
 ### **DataforseoLabsLocationsAndLanguagesAsync(CancellationToken)**
 
@@ -298,8 +294,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash'
+ <br>Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash'
 
 ### **CategoriesAsync()**
 
@@ -320,8 +316,8 @@ A server side error occurred.
 **Remarks:**
 
 We use Google product and service categories. This endpoint will provide you with the full list of available categories.
-<br>You can also download the CSV file by this link.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash'
+ <br>You can also download the CSV file by this link.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash'
 
 ### **CategoriesAsync(CancellationToken)**
 
@@ -347,8 +343,8 @@ A server side error occurred.
 **Remarks:**
 
 We use Google product and service categories. This endpoint will provide you with the full list of available categories.
-<br>You can also download the CSV file by this link.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash'
+ <br>You can also download the CSV file by this link.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash'
 
 ### **GoogleAvailableHistoryAsync()**
 
@@ -369,8 +365,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash'
+ <br>By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash'
 
 ### **GoogleAvailableHistoryAsync(CancellationToken)**
 
@@ -396,8 +392,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash'
+ <br>By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash'
 
 ### **GoogleKeywordsForSiteLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;)**
 
@@ -422,8 +418,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash'
+ <br>The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash'
 
 ### **GoogleKeywordsForSiteLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;, CancellationToken)**
 
@@ -451,8 +447,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash'
+ <br>The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash'
 
 ### **GoogleRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;)**
 
@@ -477,8 +473,8 @@ A server side error occurred.
 **Remarks:**
 
 The Related Keywords endpoint provides keywords appearing in the  "searches related to" SERP element
-<br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
+ <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
 
 ### **GoogleRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -506,8 +502,8 @@ A server side error occurred.
 **Remarks:**
 
 The Related Keywords endpoint provides keywords appearing in the  "searches related to" SERP element
-<br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
+ <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
 
 ### **GoogleKeywordSuggestionsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;)**
 
@@ -532,8 +528,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Keyword Suggestions endpoint provides search queries that include the specified seed keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash'
+ <br>The Keyword Suggestions endpoint provides search queries that include the specified seed keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash'
 
 ### **GoogleKeywordSuggestionsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -561,8 +557,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Keyword Suggestions endpoint provides search queries that include the specified seed keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash'
+ <br>The Keyword Suggestions endpoint provides search queries that include the specified seed keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash'
 
 ### **GoogleKeywordIdeasLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;)**
 
@@ -587,8 +583,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
+ <br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
 
 ### **GoogleKeywordIdeasLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;, CancellationToken)**
 
@@ -616,8 +612,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
+ <br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
 
 ### **GoogleHistoricalSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;)**
 
@@ -642,8 +638,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌ 
-<br>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
+ <br>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
 
 ### **GoogleHistoricalSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
 
@@ -671,8 +667,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌ 
-<br>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
+ <br>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
 
 ### **GoogleBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;)**
 
@@ -697,7 +693,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
 
 ### **GoogleBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;, CancellationToken)**
 
@@ -725,7 +721,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
 
 ### **GoogleSearchIntentLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;)**
 
@@ -750,8 +746,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
+ <br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
 
 ### **GoogleSearchIntentLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;, CancellationToken)**
 
@@ -779,8 +775,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
+ <br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
 
 ### **GoogleCategoriesForDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;)**
 
@@ -805,8 +801,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
+ <br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
 
 ### **GoogleCategoriesForDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;, CancellationToken)**
 
@@ -834,8 +830,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
+ <br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
 
 ### **GoogleKeywordsForCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;)**
 
@@ -860,8 +856,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash'
+ <br>This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash'
 
 ### **GoogleKeywordsForCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -889,8 +885,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash'
+ <br>This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash'
 
 ### **GoogleDomainMetricsByCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;)**
 
@@ -915,8 +911,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash'
+ <br>This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash'
 
 ### **GoogleDomainMetricsByCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -944,8 +940,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash'
+ <br>This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash'
 
 ### **GoogleTopSearchesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;)**
 
@@ -970,8 +966,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
+ <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
 
 ### **GoogleTopSearchesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -999,8 +995,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
+ <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
 
 ### **GoogleDomainWhoisOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;)**
 
@@ -1025,8 +1021,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash'
+ <br>This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash'
 
 ### **GoogleDomainWhoisOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1054,8 +1050,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash'
+ <br>This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash'
 
 ### **GoogleRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;)**
 
@@ -1080,8 +1076,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash'
+ <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash'
 
 ### **GoogleRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1109,8 +1105,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash'
+ <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash'
 
 ### **GoogleSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;)**
 
@@ -1135,8 +1131,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash'
 
 ### **GoogleSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1164,8 +1160,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash'
 
 ### **GoogleCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;)**
 
@@ -1190,8 +1186,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash'
+ <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash'
 
 ### **GoogleCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1219,8 +1215,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash'
+ <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash'
 
 ### **GoogleDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;)**
 
@@ -1245,8 +1241,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash'
 
 ### **GoogleDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1274,8 +1270,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash'
 
 ### **GoogleSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;)**
 
@@ -1300,8 +1296,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash'
+ <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash'
 
 ### **GoogleSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1329,8 +1325,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash'
+ <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash'
 
 ### **GoogleRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;)**
 
@@ -1355,7 +1351,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash'
 
 ### **GoogleRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1383,7 +1379,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash'
 
 ### **GoogleDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;)**
 
@@ -1408,8 +1404,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash'
+ <br>This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash'
 
 ### **GoogleDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1437,8 +1433,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash'
+ <br>This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash'
 
 ### **GoogleHistoricalSerpsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;)**
 
@@ -1463,8 +1459,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash'
+ <br>This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash'
 
 ### **GoogleHistoricalSerpsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1492,8 +1488,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash'
+ <br>This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash'
 
 ### **GoogleHistoricalRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;)**
 
@@ -1518,8 +1514,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash'
+ <br>This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash'
 
 ### **GoogleHistoricalRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1547,8 +1543,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash'
+ <br>This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash'
 
 ### **GooglePageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;)**
 
@@ -1573,8 +1569,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash'
 
 ### **GooglePageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1602,8 +1598,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash'
 
 ### **GoogleBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;)**
 
@@ -1628,8 +1624,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash'
+ <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash'
 
 ### **GoogleBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1657,8 +1653,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash'
+ <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash'
 
 ### **GoogleHistoricalBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;)**
 
@@ -1683,8 +1679,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
+ <br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
 
 ### **GoogleHistoricalBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1712,8 +1708,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
+ <br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
 
 ### **AmazonBulkSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;)**
 
@@ -1738,8 +1734,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash'
+ <br>This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash'
 
 ### **AmazonBulkSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1767,8 +1763,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash'
+ <br>This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash'
 
 ### **AmazonRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;)**
 
@@ -1793,8 +1789,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Related Keywords endpoint provides keywords appearing in the  "Related Searches" section on Amazon.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash'
+ <br>The Related Keywords endpoint provides keywords appearing in the  "Related Searches" section on Amazon.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash'
 
 ### **AmazonRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1822,8 +1818,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Related Keywords endpoint provides keywords appearing in the  "Related Searches" section on Amazon.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash'
+ <br>The Related Keywords endpoint provides keywords appearing in the  "Related Searches" section on Amazon.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash'
 
 ### **AmazonRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;)**
 
@@ -1848,8 +1844,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash'
+ <br>This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash'
 
 ### **AmazonRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1877,8 +1873,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash'
+ <br>This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash'
 
 ### **AmazonProductRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;)**
 
@@ -1903,8 +1899,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash'
+ <br>This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash'
 
 ### **AmazonProductRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1932,8 +1928,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash'
+ <br>This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash'
 
 ### **AmazonProductCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;)**
 
@@ -1958,8 +1954,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash'
 
 ### **AmazonProductCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1987,8 +1983,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash'
 
 ### **AmazonProductKeywordIntersectionsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;)**
 
@@ -2013,8 +2009,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash'
 
 ### **AmazonProductKeywordIntersectionsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2042,8 +2038,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash'
 
 ### **BingBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;)**
 
@@ -2068,8 +2064,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash'
+ <br>This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash'
 
 ### **BingBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2097,8 +2093,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash'
+ <br>This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash'
 
 ### **BingBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;)**
 
@@ -2123,8 +2119,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash'
+ <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash'
 
 ### **BingBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2152,8 +2148,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash'
+ <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash'
 
 ### **BingCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;)**
 
@@ -2178,8 +2174,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash'
+ <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash'
 
 ### **BingCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2207,8 +2203,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash'
+ <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash'
 
 ### **BingDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;)**
 
@@ -2233,8 +2229,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash'
 
 ### **BingDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2262,8 +2258,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash'
 
 ### **BingDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;)**
 
@@ -2288,8 +2284,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash'
+ <br>This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash'
 
 ### **BingDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2317,8 +2313,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash'
+ <br>This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash'
 
 ### **BingPageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;)**
 
@@ -2343,8 +2339,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash'
 
 ### **BingPageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2372,8 +2368,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash'
+ <br>This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash'
 
 ### **BingRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;)**
 
@@ -2398,8 +2394,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash'
+ <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash'
 
 ### **BingRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2427,8 +2423,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash'
+ <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash'
 
 ### **BingRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;)**
 
@@ -2453,9 +2449,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element.
-<br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash'
+ <br>The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element.
+ <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash'
 
 ### **BingRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2483,9 +2479,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element.
-<br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash'
+ <br>The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element.
+ <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash'
 
 ### **BingRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;)**
 
@@ -2510,7 +2506,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash'
 
 ### **BingRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2538,7 +2534,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash'
 
 ### **BingSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;)**
 
@@ -2563,8 +2559,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash'
 
 ### **BingSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2592,8 +2588,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash'
 
 ### **BingSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;)**
 
@@ -2618,8 +2614,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash'
+ <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash'
 
 ### **BingSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2647,8 +2643,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash'
+ <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash'
 
 ### **GoogleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;)**
 
@@ -2673,8 +2669,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking metrics for up to 1000 Google Play applications.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash'
+ <br>This endpoint will provide you with ranking metrics for up to 1000 Google Play applications.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash'
 
 ### **GoogleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2702,8 +2698,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking metrics for up to 1000 Google Play applications.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash'
+ <br>This endpoint will provide you with ranking metrics for up to 1000 Google Play applications.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash'
 
 ### **GoogleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;)**
 
@@ -2728,8 +2724,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash'
 
 ### **GoogleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2757,8 +2753,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash'
 
 ### **GoogleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;)**
 
@@ -2783,8 +2779,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash'
 
 ### **GoogleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2812,8 +2808,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash'
 
 ### **GoogleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;)**
 
@@ -2838,8 +2834,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash'
 
 ### **GoogleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2867,8 +2863,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash'
 
 ### **AppleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;)**
 
@@ -2893,8 +2889,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking metrics for up to 1000 App Store applications.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash'
+ <br>This endpoint will provide you with ranking metrics for up to 1000 App Store applications.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash'
 
 ### **AppleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2922,8 +2918,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with ranking metrics for up to 1000 App Store applications.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash'
+ <br>This endpoint will provide you with ranking metrics for up to 1000 App Store applications.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash'
 
 ### **AppleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;)**
 
@@ -2948,8 +2944,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash'
 
 ### **AppleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2977,8 +2973,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash'
 
 ### **AppleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;)**
 
@@ -3003,8 +2999,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash'
 
 ### **AppleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -3032,8 +3028,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash'
+ <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash'
 
 ### **AppleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;)**
 
@@ -3058,8 +3054,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
 
 ### **AppleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -3087,8 +3083,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
+ <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -3111,7 +3107,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

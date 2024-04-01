@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # RelatedResult
 
 Namespace: DataForSeo.Client.Models
@@ -241,7 +237,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RelatedResult()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # BacklinksSummaryLiveResultInfo
 
 Namespace: DataForSeo.Client.Models.Responses
@@ -281,7 +277,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public BacklinksSummaryLiveResultInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         public string Phone { get; set; }
 
         /// <summary>
-        /// URL link
+        /// relevant URL of the Ad element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -132,7 +132,7 @@ namespace DataForSeo.Client.Models
         /// backlinks information for the target website
         /// </summary>
         [Newtonsoft.Json.JsonProperty("backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AvgBacklinksInfo BacklinksInfo { get; set; }
+        public BacklinksInfo BacklinksInfo { get; set; }
 
         /// <summary>
         /// page and domain rank information

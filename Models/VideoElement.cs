@@ -11,14 +11,14 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// web source of the hotel booking element
-        /// <br/>indicates the source of information included in the element
+        /// source of the element
+        /// <br/>indicates the source of information included in the top_stories_element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("source", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Source { get; set; }
 
         /// <summary>
-        /// title of the row
+        /// title of a given link element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }

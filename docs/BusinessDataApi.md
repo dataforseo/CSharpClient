@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # BusinessDataApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Business Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/id_list/?bash'
 
 ### **BusinessDataIdListAsync(IEnumerable&lt;BusinessDataIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Business Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/id_list/?bash'
 
 ### **BusinessDataErrorsAsync(IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;)**
 
@@ -124,7 +120,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
 
 ### **BusinessDataErrorsAsync(IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -152,7 +148,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
 
 ### **BusinessDataBusinessListingsLocationsAsync()**
 
@@ -173,7 +169,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2023-12-29).
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
 
 ### **BusinessDataBusinessListingsLocationsAsync(CancellationToken)**
 
@@ -199,7 +195,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2023-12-29).
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
 
 ### **BusinessListingsCategoriesAsync()**
 
@@ -220,7 +216,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the list of top categories by business count.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash'
 
 ### **BusinessListingsCategoriesAsync(CancellationToken)**
 
@@ -246,7 +242,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the list of top categories by business count.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash'
 
 ### **BusinessListingsAvailableFiltersAsync()**
 
@@ -267,8 +263,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Business Listings API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Business Listings API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash'
 
 ### **BusinessListingsAvailableFiltersAsync(CancellationToken)**
 
@@ -294,8 +290,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Business Listings API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Business Listings API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash'
 
 ### **BusinessListingsSearchLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;)**
 
@@ -320,8 +316,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash'
+ <br>Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash'
 
 ### **BusinessListingsSearchLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;, CancellationToken)**
 
@@ -349,8 +345,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash'
+ <br>Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash'
 
 ### **BusinessListingsCategoriesAggregationLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;)**
 
@@ -375,8 +371,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash'
+ <br>Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash'
 
 ### **BusinessListingsCategoriesAggregationLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;, CancellationToken)**
 
@@ -404,8 +400,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash'
+ <br>Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash'
 
 ### **BusinessDataGoogleLocationsAsync()**
 
@@ -426,7 +422,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
 
 ### **BusinessDataGoogleLocationsAsync(CancellationToken)**
 
@@ -452,7 +448,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
 
 ### **BusinessDataGoogleLocationsCountryAsync(String)**
 
@@ -464,10 +460,10 @@ public Task<BusinessDataGoogleLocationsCountryResponseInfo> BusinessDataGoogleLo
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 #### Returns
 
@@ -482,7 +478,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
 
 ### **BusinessDataGoogleLocationsCountryAsync(String, CancellationToken)**
 
@@ -494,10 +490,10 @@ public Task<BusinessDataGoogleLocationsCountryResponseInfo> BusinessDataGoogleLo
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -515,7 +511,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
 
 ### **BusinessDataGoogleLanguagesAsync()**
 
@@ -536,7 +532,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
 
 ### **BusinessDataGoogleLanguagesAsync(CancellationToken)**
 
@@ -562,7 +558,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
 
 ### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;)**
 
@@ -587,8 +583,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
+ <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
 
 ### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;, CancellationToken)**
 
@@ -616,8 +612,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
+ <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
 
 ### **GoogleMyBusinessInfoTasksReadyAsync()**
 
@@ -638,8 +634,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
 
 ### **GoogleMyBusinessInfoTasksReadyAsync(CancellationToken)**
 
@@ -665,8 +661,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
 
 ### **GoogleMyBusinessInfoTaskGetAsync(String)**
 
@@ -678,8 +674,8 @@ public Task<BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo> GoogleMyBusines
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -705,8 +701,8 @@ public Task<BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo> GoogleMyBusines
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -748,8 +744,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash'
+ <br>This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash'
 
 ### **GoogleMyBusinessUpdatesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -777,8 +773,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash'
+ <br>This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash'
 
 ### **GoogleMyBusinessUpdatesTasksReadyAsync()**
 
@@ -799,8 +795,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash'
 
 ### **GoogleMyBusinessUpdatesTasksReadyAsync(CancellationToken)**
 
@@ -826,8 +822,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash'
 
 ### **GoogleMyBusinessUpdatesTaskGetAsync(String)**
 
@@ -839,8 +835,8 @@ public Task<BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo> GoogleMyBusi
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -866,8 +862,8 @@ public Task<BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo> GoogleMyBusi
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -909,8 +905,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash'
+ <br>Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash'
 
 ### **GoogleHotelSearchesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -938,8 +934,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash'
+ <br>Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash'
 
 ### **GoogleHotelSearchesTasksReadyAsync()**
 
@@ -960,8 +956,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash'
 
 ### **GoogleHotelSearchesTasksReadyAsync(CancellationToken)**
 
@@ -987,8 +983,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash'
 
 ### **GoogleHotelSearchesTaskGetAsync(String)**
 
@@ -1000,8 +996,8 @@ public Task<BusinessDataGoogleHotelSearchesTaskGetResponseInfo> GoogleHotelSearc
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1027,8 +1023,8 @@ public Task<BusinessDataGoogleHotelSearchesTaskGetResponseInfo> GoogleHotelSearc
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1070,8 +1066,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash'
+ <br>Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash'
 
 ### **GoogleHotelSearchesLiveAsync(IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1099,8 +1095,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash'
+ <br>Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash'
 
 ### **GoogleHotelInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;)**
 
@@ -1125,8 +1121,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash'
+ <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash'
 
 ### **GoogleHotelInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1154,8 +1150,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash'
+ <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash'
 
 ### **GoogleHotelInfoTasksReadyAsync()**
 
@@ -1176,8 +1172,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash'
 
 ### **GoogleHotelInfoTasksReadyAsync(CancellationToken)**
 
@@ -1203,8 +1199,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash'
 
 ### **GoogleHotelInfoTaskGetAdvancedAsync(String)**
 
@@ -1216,8 +1212,8 @@ public Task<BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo> GoogleHotelI
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1243,8 +1239,8 @@ public Task<BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo> GoogleHotelI
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1273,8 +1269,8 @@ public Task<BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo> GoogleHotelInfoT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -1300,8 +1296,8 @@ public Task<BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo> GoogleHotelInfoT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1343,8 +1339,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash'
+ <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash'
 
 ### **GoogleHotelInfoLiveAdvancedAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
@@ -1372,8 +1368,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash'
+ <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash'
 
 ### **GoogleHotelInfoLiveHtmlAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;)**
 
@@ -1398,8 +1394,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash'
+ <br>Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash'
 
 ### **GoogleHotelInfoLiveHtmlAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;, CancellationToken)**
 
@@ -1427,8 +1423,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash'
+ <br>Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash'
 
 ### **GoogleReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;)**
 
@@ -1453,8 +1449,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash'
+ <br>This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash'
 
 ### **GoogleReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1482,8 +1478,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash'
+ <br>This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash'
 
 ### **GoogleReviewsTasksReadyAsync()**
 
@@ -1504,8 +1500,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash'
 
 ### **GoogleReviewsTasksReadyAsync(CancellationToken)**
 
@@ -1531,8 +1527,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash'
 
 ### **GoogleReviewsTaskGetAsync(String)**
 
@@ -1544,8 +1540,8 @@ public Task<BusinessDataGoogleReviewsTaskGetResponseInfo> GoogleReviewsTaskGetAs
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1560,7 +1556,7 @@ A server side error occurred.
 **Remarks:**
 
 The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
 
 ### **GoogleReviewsTaskGetAsync(String, CancellationToken)**
 
@@ -1572,8 +1568,8 @@ public Task<BusinessDataGoogleReviewsTaskGetResponseInfo> GoogleReviewsTaskGetAs
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1591,7 +1587,7 @@ A server side error occurred.
 **Remarks:**
 
 The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
 
 ### **TrustpilotSearchTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;)**
 
@@ -1616,8 +1612,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
+ <br>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
 
 ### **TrustpilotSearchTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1645,8 +1641,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
+ <br>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
 
 ### **TrustpilotSearchTasksReadyAsync()**
 
@@ -1667,8 +1663,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash'
 
 ### **TrustpilotSearchTasksReadyAsync(CancellationToken)**
 
@@ -1694,8 +1690,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash'
 
 ### **TrustpilotSearchTaskGetAsync(String)**
 
@@ -1707,8 +1703,8 @@ public Task<BusinessDataTrustpilotSearchTaskGetResponseInfo> TrustpilotSearchTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1723,7 +1719,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the keyword specified in a POST request. We emulate set parameters with the highest accuracy so that the results you receive match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus will not be reflected in the returned results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash'
 
 ### **TrustpilotSearchTaskGetAsync(String, CancellationToken)**
 
@@ -1735,8 +1731,8 @@ public Task<BusinessDataTrustpilotSearchTaskGetResponseInfo> TrustpilotSearchTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1754,7 +1750,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the keyword specified in a POST request. We emulate set parameters with the highest accuracy so that the results you receive match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus will not be reflected in the returned results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash'
 
 ### **TrustpilotReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;)**
 
@@ -1779,8 +1775,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash'
+ <br>This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash'
 
 ### **TrustpilotReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1808,8 +1804,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash'
+ <br>This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash'
 
 ### **TrustpilotReviewsTasksReadyAsync()**
 
@@ -1830,8 +1826,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash'
 
 ### **TrustpilotReviewsTasksReadyAsync(CancellationToken)**
 
@@ -1857,8 +1853,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash'
 
 ### **TrustpilotReviewsTaskGetAsync(String)**
 
@@ -1870,8 +1866,8 @@ public Task<BusinessDataTrustpilotReviewsTaskGetResponseInfo> TrustpilotReviewsT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1886,7 +1882,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides reviews published on the Trustpilot platform The returned results are specific to the indicated business entity. We emulate set parameters with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash'
 
 ### **TrustpilotReviewsTaskGetAsync(String, CancellationToken)**
 
@@ -1898,8 +1894,8 @@ public Task<BusinessDataTrustpilotReviewsTaskGetResponseInfo> TrustpilotReviewsT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1917,7 +1913,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides reviews published on the Trustpilot platform The returned results are specific to the indicated business entity. We emulate set parameters with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash'
 
 ### **BusinessDataTripadvisorLocationsAsync()**
 
@@ -1938,7 +1934,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
 
 ### **BusinessDataTripadvisorLocationsAsync(CancellationToken)**
 
@@ -1964,7 +1960,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
 
 ### **BusinessDataTripadvisorLocationsCountryAsync(String)**
 
@@ -1976,10 +1972,10 @@ public Task<BusinessDataTripadvisorLocationsCountryResponseInfo> BusinessDataTri
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 #### Returns
 
@@ -1994,7 +1990,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
 
 ### **BusinessDataTripadvisorLocationsCountryAsync(String, CancellationToken)**
 
@@ -2006,10 +2002,10 @@ public Task<BusinessDataTripadvisorLocationsCountryResponseInfo> BusinessDataTri
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2027,7 +2023,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
 
 ### **BusinessDataTripadvisorLanguagesAsync()**
 
@@ -2048,7 +2044,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash'
 
 ### **BusinessDataTripadvisorLanguagesAsync(CancellationToken)**
 
@@ -2074,7 +2070,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash'
 
 ### **TripadvisorSearchTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;)**
 
@@ -2099,8 +2095,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations).
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash'
+ <br>This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations).
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash'
 
 ### **TripadvisorSearchTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2128,8 +2124,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations).
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash'
+ <br>This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations).
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash'
 
 ### **TripadvisorSearchTasksReadyAsync()**
 
@@ -2150,8 +2146,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash'
 
 ### **TripadvisorSearchTasksReadyAsync(CancellationToken)**
 
@@ -2177,8 +2173,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash'
 
 ### **TripadvisorSearchTaskGetAsync(String)**
 
@@ -2190,8 +2186,8 @@ public Task<BusinessDataTripadvisorSearchTaskGetResponseInfo> TripadvisorSearchT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2206,7 +2202,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with data on businesses listed on the Tripadvisor platform. The results obtained through this endpoint are specific to the location (see the List of Tripadvisor Locations) and keyword parameters used in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash'
 
 ### **TripadvisorSearchTaskGetAsync(String, CancellationToken)**
 
@@ -2218,8 +2214,8 @@ public Task<BusinessDataTripadvisorSearchTaskGetResponseInfo> TripadvisorSearchT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2237,7 +2233,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with data on businesses listed on the Tripadvisor platform. The results obtained through this endpoint are specific to the location (see the List of Tripadvisor Locations) and keyword parameters used in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash'
 
 ### **TripadvisorReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;)**
 
@@ -2262,8 +2258,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations).
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash'
+ <br>This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations).
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash'
 
 ### **TripadvisorReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2291,8 +2287,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations).
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash'
+ <br>This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations).
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash'
 
 ### **TripadvisorReviewsTasksReadyAsync()**
 
@@ -2313,8 +2309,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash'
 
 ### **TripadvisorReviewsTasksReadyAsync(CancellationToken)**
 
@@ -2340,8 +2336,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash'
 
 ### **TripadvisorReviewsTaskGetAsync(String)**
 
@@ -2353,8 +2349,8 @@ public Task<BusinessDataTripadvisorReviewsTaskGetResponseInfo> TripadvisorReview
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2369,7 +2365,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides feedback data on businesses listed on the Tripadvisor platform, including their locations, ratings, review content and count. The results are specific to the URL path indicated in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
 
 ### **TripadvisorReviewsTaskGetAsync(String, CancellationToken)**
 
@@ -2381,8 +2377,8 @@ public Task<BusinessDataTripadvisorReviewsTaskGetResponseInfo> TripadvisorReview
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2400,7 +2396,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides feedback data on businesses listed on the Tripadvisor platform, including their locations, ratings, review content and count. The results are specific to the URL path indicated in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
 
 ### **BusinessDataYelpLocationsAsync()**
 
@@ -2421,7 +2417,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
 
 ### **BusinessDataYelpLocationsAsync(CancellationToken)**
 
@@ -2447,7 +2443,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
 
 ### **BusinessDataYelpLocationsCountryAsync(String)**
 
@@ -2459,10 +2455,10 @@ public Task<BusinessDataYelpLocationsCountryResponseInfo> BusinessDataYelpLocati
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 #### Returns
 
@@ -2477,7 +2473,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
 
 ### **BusinessDataYelpLocationsCountryAsync(String, CancellationToken)**
 
@@ -2489,10 +2485,10 @@ public Task<BusinessDataYelpLocationsCountryResponseInfo> BusinessDataYelpLocati
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2510,7 +2506,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
 
 ### **BusinessDataYelpLanguagesAsync()**
 
@@ -2531,7 +2527,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash'
 
 ### **BusinessDataYelpLanguagesAsync(CancellationToken)**
 
@@ -2557,7 +2553,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash'
 
 ### **YelpSearchTaskPostAsync(IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;)**
 
@@ -2582,8 +2578,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash'
+ <br>By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash'
 
 ### **YelpSearchTaskPostAsync(IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2611,8 +2607,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash'
+ <br>By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash'
 
 ### **YelpSearchTasksReadyAsync()**
 
@@ -2633,8 +2629,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash'
 
 ### **YelpSearchTasksReadyAsync(CancellationToken)**
 
@@ -2660,8 +2656,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash'
 
 ### **YelpSearchTaskGetAsync(String)**
 
@@ -2673,8 +2669,8 @@ public Task<BusinessDataYelpSearchTaskGetResponseInfo> YelpSearchTaskGetAsync(st
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2689,7 +2685,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with data on businesses listed on the Yelp platform. The results obtained through this endpoint are specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash'
 
 ### **YelpSearchTaskGetAsync(String, CancellationToken)**
 
@@ -2701,8 +2697,8 @@ public Task<BusinessDataYelpSearchTaskGetResponseInfo> YelpSearchTaskGetAsync(st
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2720,7 +2716,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with data on businesses listed on the Yelp platform. The results obtained through this endpoint are specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash'
 
 ### **YelpReviewsTaskPostAsync(IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;)**
 
@@ -2745,8 +2741,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash'
+ <br>This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash'
 
 ### **YelpReviewsTaskPostAsync(IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2774,8 +2770,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash'
+ <br>This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash'
 
 ### **YelpReviewsTasksReadyAsync()**
 
@@ -2796,8 +2792,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash'
 
 ### **YelpReviewsTasksReadyAsync(CancellationToken)**
 
@@ -2823,8 +2819,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash'
 
 ### **YelpReviewsTaskGetAsync(String)**
 
@@ -2836,8 +2832,8 @@ public Task<BusinessDataYelpReviewsTaskGetResponseInfo> YelpReviewsTaskGetAsync(
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2852,7 +2848,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash'
 
 ### **YelpReviewsTaskGetAsync(String, CancellationToken)**
 
@@ -2864,8 +2860,8 @@ public Task<BusinessDataYelpReviewsTaskGetResponseInfo> YelpReviewsTaskGetAsync(
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2883,7 +2879,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash'
 
 ### **SocialMediaPinterestLiveAsync(IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;)**
 
@@ -2908,8 +2904,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash'
+ <br>Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash'
 
 ### **SocialMediaPinterestLiveAsync(IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2937,8 +2933,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash'
+ <br>Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash'
 
 ### **SocialMediaFacebookLiveAsync(IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;)**
 
@@ -2963,8 +2959,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash'
+ <br>Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash'
 
 ### **SocialMediaFacebookLiveAsync(IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2992,8 +2988,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash'
+ <br>Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash'
 
 ### **SocialMediaRedditLiveAsync(IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;)**
 
@@ -3018,7 +3014,7 @@ A server side error occurred.
 **Remarks:**
 
 Social Media Reddit API provides information for each share of the target webpage on Reddit. For each specified Reddit URL, you will get subreddit and author names, permalink, title, and the number of subreddit members.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash'
 
 ### **SocialMediaRedditLiveAsync(IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;, CancellationToken)**
 
@@ -3046,7 +3042,7 @@ A server side error occurred.
 **Remarks:**
 
 Social Media Reddit API provides information for each share of the target webpage on Reddit. For each specified Reddit URL, you will get subreddit and author names, permalink, title, and the number of subreddit members.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -3069,7 +3065,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # RefineProductsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -101,7 +97,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RefineProductsSerpElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

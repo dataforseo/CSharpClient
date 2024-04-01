@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppendixApi
 
 Namespace: DataForSeo.Client.Api
@@ -67,7 +63,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive detailed information about your API usage, prices, spending and other account details by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/user_data/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/user_data/?bash'
 
 ### **UserDataAsync(CancellationToken)**
 
@@ -93,7 +89,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive detailed information about your API usage, prices, spending and other account details by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/user_data/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/user_data/?bash'
 
 ### **AppendixErrorsAsync()**
 
@@ -114,7 +110,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint returns a list of possible DataForSEO API errors and general status codes. Below you will find a list of HTTP response codes and internal messages. We recommend storing the data connected to error codes in your application log and designing a necessary system for handling related exceptional or error conditions.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/errors/?bash'
 
 ### **AppendixErrorsAsync(CancellationToken)**
 
@@ -140,7 +136,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint returns a list of possible DataForSEO API errors and general status codes. Below you will find a list of HTTP response codes and internal messages. We recommend storing the data connected to error codes in your application log and designing a necessary system for handling related exceptional or error conditions.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/errors/?bash'
 
 ### **WebhookResendAsync(IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;)**
 
@@ -165,8 +161,8 @@ A server side error occurred.
 **Remarks:**
 
 Using this endpoint you can resend webhooks (pingbacks and postbacks) for up to 100 specified tasks.
-<br>Note: Your account will not be double-charged for resending a webhook.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash'
+ <br>Note: Your account will not be double-charged for resending a webhook.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash'
 
 ### **WebhookResendAsync(IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;, CancellationToken)**
 
@@ -194,8 +190,8 @@ A server side error occurred.
 **Remarks:**
 
 Using this endpoint you can resend webhooks (pingbacks and postbacks) for up to 100 specified tasks.
-<br>Note: Your account will not be double-charged for resending a webhook.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash'
+ <br>Note: Your account will not be double-charged for resending a webhook.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash'
 
 ### **AppendixStatusAsync()**
 
@@ -216,7 +212,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive detailed information about the current status of all our APIs and endpoints. You will also get a full issue description if a problem occurs.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/status/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/status/?bash'
 
 ### **AppendixStatusAsync(CancellationToken)**
 
@@ -242,7 +238,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive detailed information about the current status of all our APIs and endpoints. You will also get a full issue description if a problem occurs.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/status/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/status/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -265,7 +261,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -11,32 +11,32 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// source of the element
-        /// <br/>indicates the source of information included in the shopping_element
+        /// source of additional information about the result
         /// </summary>
         [Newtonsoft.Json.JsonProperty("source", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Source { get; set; }
 
         /// <summary>
-        /// the description of the results element in SERP
+        /// description of the results element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
-        /// URL
+        /// relevant URL
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// domain in the URL
+        /// domain where a link points
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// price indicated in the element
+        /// pricing details
+        /// <br/>contains the pricing details of the product or service featured in the result
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

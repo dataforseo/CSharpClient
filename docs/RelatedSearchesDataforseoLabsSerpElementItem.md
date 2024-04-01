@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # RelatedSearchesDataforseoLabsSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -91,7 +87,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public RelatedSearchesDataforseoLabsSerpElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

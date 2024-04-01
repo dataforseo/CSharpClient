@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// relevant keywords
-        /// <br/>the data included in the google_trends_queries_list element is based on the keywords listed in this array
+        /// <br/>the data included in the google_trends_topics_list element is based on the keywords listed in this array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

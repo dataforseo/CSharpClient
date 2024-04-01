@@ -115,7 +115,7 @@ namespace DataForSeo.Client.Models
         /// backlinks information for the target website
         /// </summary>
         [Newtonsoft.Json.JsonProperty("backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AvgBacklinksInfo BacklinksInfo { get; set; }
+        public BacklinksInfo BacklinksInfo { get; set; }
 
         /// <summary>
         /// page and domain rank information

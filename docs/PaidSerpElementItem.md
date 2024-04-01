@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # PaidSerpElementItem
 
 Namespace: DataForSeo.Client.Models
@@ -221,7 +217,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public PaidSerpElementItem()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # OnPageApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed On Page tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/id_list/?bash'
 
 ### **OnPageIdListAsync(IEnumerable&lt;OnPageIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed On Page tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/id_list/?bash'
 
 ### **OnPageErrorsAsync(IEnumerable&lt;OnPageErrorsRequestInfo&gt;)**
 
@@ -124,7 +120,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
 
 ### **OnPageErrorsAsync(IEnumerable&lt;OnPageErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -152,7 +148,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
 
 ### **ForceStopAsync(IEnumerable&lt;OnPageForceStopRequestInfo&gt;)**
 
@@ -177,8 +173,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/force_stop/?bash'
+ <br>This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/force_stop/?bash'
 
 ### **ForceStopAsync(IEnumerable&lt;OnPageForceStopRequestInfo&gt;, CancellationToken)**
 
@@ -206,8 +202,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/force_stop/?bash'
+ <br>This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/force_stop/?bash'
 
 ### **OnPageAvailableFiltersAsync()**
 
@@ -228,9 +224,9 @@ A server side error occurred.
 **Remarks:**
 
 OnPage API supports plenty of customizable crawling parameters that allow you to adapt the extraction of website data to your requirements and modify the thresholds for various performance indicators.
-<br>‌‌
-<br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
+ <br>‌‌
+ <br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
 
 ### **OnPageAvailableFiltersAsync(CancellationToken)**
 
@@ -256,9 +252,9 @@ A server side error occurred.
 **Remarks:**
 
 OnPage API supports plenty of customizable crawling parameters that allow you to adapt the extraction of website data to your requirements and modify the thresholds for various performance indicators.
-<br>‌‌
-<br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
+ <br>‌‌
+ <br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
 
 ### **TaskPostAsync(IEnumerable&lt;OnPageTaskRequestInfo&gt;)**
 
@@ -283,8 +279,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
+ <br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
 
 ### **TaskPostAsync(IEnumerable&lt;OnPageTaskRequestInfo&gt;, CancellationToken)**
 
@@ -312,8 +308,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
+ <br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
 
 ### **TasksReadyAsync()**
 
@@ -334,8 +330,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
 
 ### **TasksReadyAsync(CancellationToken)**
 
@@ -361,8 +357,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
 
 ### **SummaryAsync(String)**
 
@@ -374,10 +370,10 @@ public Task<OnPageSummaryResponseInfo> SummaryAsync(string id)
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>required field
-<br>you can get this ID in the response of the Task POST endpoint
-<br>example:
-<br>“07131248-1535-0216-1000-17384017ad04”
+ <br>required field
+ <br>you can get this ID in the response of the Task POST endpoint
+ <br>example:
+ <br>“07131248-1535-0216-1000-17384017ad04”
 
 #### Returns
 
@@ -392,8 +388,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/summary/?bash'
+ <br>Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/summary/?bash'
 
 ### **SummaryAsync(String, CancellationToken)**
 
@@ -405,10 +401,10 @@ public Task<OnPageSummaryResponseInfo> SummaryAsync(string id, CancellationToken
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>required field
-<br>you can get this ID in the response of the Task POST endpoint
-<br>example:
-<br>“07131248-1535-0216-1000-17384017ad04”
+ <br>required field
+ <br>you can get this ID in the response of the Task POST endpoint
+ <br>example:
+ <br>“07131248-1535-0216-1000-17384017ad04”
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -426,8 +422,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/summary/?bash'
+ <br>Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/summary/?bash'
 
 ### **PagesAsync(IEnumerable&lt;OnPagePagesRequestInfo&gt;)**
 
@@ -452,9 +448,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance.
-<br>Using this function you will get page-specific data with detailed information on how well your pages are optimized for search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/pages/?bash'
+ <br>This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance.
+ <br>Using this function you will get page-specific data with detailed information on how well your pages are optimized for search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/pages/?bash'
 
 ### **PagesAsync(IEnumerable&lt;OnPagePagesRequestInfo&gt;, CancellationToken)**
 
@@ -482,9 +478,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance.
-<br>Using this function you will get page-specific data with detailed information on how well your pages are optimized for search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/pages/?bash'
+ <br>This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance.
+ <br>Using this function you will get page-specific data with detailed information on how well your pages are optimized for search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/pages/?bash'
 
 ### **PagesByResourceAsync(IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;)**
 
@@ -509,9 +505,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource.
-<br>You can get the URL of a resource using the Resources endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash'
+ <br>This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource.
+ <br>You can get the URL of a resource using the Resources endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash'
 
 ### **PagesByResourceAsync(IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;, CancellationToken)**
 
@@ -539,9 +535,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource.
-<br>You can get the URL of a resource using the Resources endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash'
+ <br>This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource.
+ <br>You can get the URL of a resource using the Resources endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash'
 
 ### **ResourcesAsync(IEnumerable&lt;OnPageResourcesRequestInfo&gt;)**
 
@@ -566,9 +562,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements.
-<br>You will get a detailed overview of every resource found on the crawled pages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/resources/?bash'
+ <br>This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements.
+ <br>You will get a detailed overview of every resource found on the crawled pages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/resources/?bash'
 
 ### **ResourcesAsync(IEnumerable&lt;OnPageResourcesRequestInfo&gt;, CancellationToken)**
 
@@ -596,9 +592,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements.
-<br>You will get a detailed overview of every resource found on the crawled pages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/resources/?bash'
+ <br>This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements.
+ <br>You will get a detailed overview of every resource found on the crawled pages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/resources/?bash'
 
 ### **DuplicateTagsAsync(IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;)**
 
@@ -623,8 +619,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash'
+ <br>This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash'
 
 ### **DuplicateTagsAsync(IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;, CancellationToken)**
 
@@ -652,8 +648,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash'
+ <br>This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash'
 
 ### **DuplicateContentAsync(IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;)**
 
@@ -678,8 +674,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash'
+ <br>This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash'
 
 ### **DuplicateContentAsync(IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;, CancellationToken)**
 
@@ -707,8 +703,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash'
+ <br>This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash'
 
 ### **LinksAsync(IEnumerable&lt;OnPageLinksRequestInfo&gt;)**
 
@@ -733,9 +729,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of internal and external links detected on a target website.
-<br>The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/links/?bash'
+ <br>This endpoint will provide you with a list of internal and external links detected on a target website.
+ <br>The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/links/?bash'
 
 ### **LinksAsync(IEnumerable&lt;OnPageLinksRequestInfo&gt;, CancellationToken)**
 
@@ -763,9 +759,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of internal and external links detected on a target website.
-<br>The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/links/?bash'
+ <br>This endpoint will provide you with a list of internal and external links detected on a target website.
+ <br>The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/links/?bash'
 
 ### **RedirectChainsAsync(IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;)**
 
@@ -790,8 +786,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash'
+ <br>Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash'
 
 ### **RedirectChainsAsync(IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;, CancellationToken)**
 
@@ -819,8 +815,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash'
+ <br>Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash'
 
 ### **NonIndexableAsync(IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;)**
 
@@ -845,8 +841,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
+ <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
 
 ### **NonIndexableAsync(IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;, CancellationToken)**
 
@@ -874,8 +870,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
+ <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
 
 ### **WaterfallAsync(IEnumerable&lt;OnPageWaterfallRequestInfo&gt;)**
 
@@ -900,8 +896,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/waterfall/?bash'
+ <br>This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/waterfall/?bash'
 
 ### **WaterfallAsync(IEnumerable&lt;OnPageWaterfallRequestInfo&gt;, CancellationToken)**
 
@@ -929,8 +925,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/waterfall/?bash'
+ <br>This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/waterfall/?bash'
 
 ### **KeywordDensityAsync(IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;)**
 
@@ -955,8 +951,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/keyword_density/?bash'
+ <br>This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/keyword_density/?bash'
 
 ### **KeywordDensityAsync(IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;, CancellationToken)**
 
@@ -984,8 +980,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/keyword_density/?bash'
+ <br>This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/keyword_density/?bash'
 
 ### **MicrodataAsync(IEnumerable&lt;OnPageMicrodataRequestInfo&gt;)**
 
@@ -1010,9 +1006,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation.
-<br>To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/microdata/?bash'
+ <br>This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation.
+ <br>To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/microdata/?bash'
 
 ### **MicrodataAsync(IEnumerable&lt;OnPageMicrodataRequestInfo&gt;, CancellationToken)**
 
@@ -1040,9 +1036,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation.
-<br>To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/microdata/?bash'
+ <br>This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation.
+ <br>To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/microdata/?bash'
 
 ### **RawHtmlAsync(IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;)**
 
@@ -1067,8 +1063,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns the HTML of a page you indicate in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/raw_html/?bash'
+ <br>This endpoint returns the HTML of a page you indicate in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/raw_html/?bash'
 
 ### **RawHtmlAsync(IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;, CancellationToken)**
 
@@ -1096,8 +1092,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint returns the HTML of a page you indicate in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/raw_html/?bash'
+ <br>This endpoint returns the HTML of a page you indicate in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/raw_html/?bash'
 
 ### **PageScreenshotAsync(IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;)**
 
@@ -1122,8 +1118,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash'
+ <br>Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash'
 
 ### **PageScreenshotAsync(IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;, CancellationToken)**
 
@@ -1151,8 +1147,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash'
+ <br>Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash'
 
 ### **ContentParsingAsync(IEnumerable&lt;OnPageContentParsingRequestInfo&gt;)**
 
@@ -1177,8 +1173,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/?bash'
+ <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/?bash'
 
 ### **ContentParsingAsync(IEnumerable&lt;OnPageContentParsingRequestInfo&gt;, CancellationToken)**
 
@@ -1206,8 +1202,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/?bash'
+ <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/?bash'
 
 ### **ContentParsingLiveAsync(IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;)**
 
@@ -1232,8 +1228,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash'
+ <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash'
 
 ### **ContentParsingLiveAsync(IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1261,8 +1257,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash'
+ <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash'
 
 ### **InstantPagesAsync(IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;)**
 
@@ -1287,8 +1283,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/instant_pages/?bash'
+ <br>Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/instant_pages/?bash'
 
 ### **InstantPagesAsync(IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;, CancellationToken)**
 
@@ -1316,8 +1312,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/instant_pages/?bash'
+ <br>Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/instant_pages/?bash'
 
 ### **OnPageLighthouseLanguagesAsync()**
 
@@ -1338,9 +1334,9 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br> 
-<br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash'
+ <br> 
+ <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash'
 
 ### **OnPageLighthouseLanguagesAsync(CancellationToken)**
 
@@ -1366,9 +1362,9 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br> 
-<br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash'
+ <br> 
+ <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash'
 
 ### **LighthouseAuditsAsync()**
 
@@ -1389,7 +1385,7 @@ A server side error occurred.
 **Remarks:**
 
 The OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash'
 
 ### **LighthouseAuditsAsync(CancellationToken)**
 
@@ -1415,7 +1411,7 @@ A server side error occurred.
 **Remarks:**
 
 The OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash'
 
 ### **LighthouseVersionsAsync()**
 
@@ -1436,7 +1432,7 @@ A server side error occurred.
 **Remarks:**
 
 OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash'
 
 ### **LighthouseVersionsAsync(CancellationToken)**
 
@@ -1462,7 +1458,7 @@ A server side error occurred.
 **Remarks:**
 
 OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash'
 
 ### **LighthouseTaskPostAsync(IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;)**
 
@@ -1487,7 +1483,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash'
 
 ### **LighthouseTaskPostAsync(IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1515,7 +1511,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash'
 
 ### **LighthouseTasksReadyAsync()**
 
@@ -1536,8 +1532,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash'
 
 ### **LighthouseTasksReadyAsync(CancellationToken)**
 
@@ -1563,8 +1559,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash'
 
 ### **LighthouseTaskGetJsonAsync(String)**
 
@@ -1576,10 +1572,10 @@ public Task<OnPageLighthouseTaskGetJsonResponseInfo> LighthouseTaskGetJsonAsync(
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>required field
-<br>you can get this ID in the response of the Task POST endpoint
-<br>example:
-<br>“07131248-1535-0216-1000-17384017ad04”
+ <br>required field
+ <br>you can get this ID in the response of the Task POST endpoint
+ <br>example:
+ <br>“07131248-1535-0216-1000-17384017ad04”
 
 #### Returns
 
@@ -1594,8 +1590,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash'
+ <br>The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash'
 
 ### **LighthouseTaskGetJsonAsync(String, CancellationToken)**
 
@@ -1607,10 +1603,10 @@ public Task<OnPageLighthouseTaskGetJsonResponseInfo> LighthouseTaskGetJsonAsync(
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>required field
-<br>you can get this ID in the response of the Task POST endpoint
-<br>example:
-<br>“07131248-1535-0216-1000-17384017ad04”
+ <br>required field
+ <br>you can get this ID in the response of the Task POST endpoint
+ <br>example:
+ <br>“07131248-1535-0216-1000-17384017ad04”
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1628,8 +1624,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash'
+ <br>The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash'
 
 ### **LighthouseLiveJsonAsync(IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;)**
 
@@ -1654,7 +1650,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash'
 
 ### **LighthouseLiveJsonAsync(IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;, CancellationToken)**
 
@@ -1682,7 +1678,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -1705,7 +1701,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

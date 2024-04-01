@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DomainInfo
 
 Namespace: DataForSeo.Client.Models
@@ -181,7 +177,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public DomainInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

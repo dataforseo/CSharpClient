@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # MerchantApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Merchant tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/id_list/?bash'
 
 ### **MerchantIdListAsync(IEnumerable&lt;MerchantIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Merchant tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/id_list/?bash'
 
 ### **MerchantErrorsAsync(IEnumerable&lt;MerchantErrorsRequestInfo&gt;)**
 
@@ -124,7 +120,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
 
 ### **MerchantErrorsAsync(IEnumerable&lt;MerchantErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -152,7 +148,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
 
 ### **MerchantGoogleLanguagesAsync()**
 
@@ -173,7 +169,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Google Shopping languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/languages/?bash'
 
 ### **MerchantGoogleLanguagesAsync(CancellationToken)**
 
@@ -199,7 +195,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Google Shopping languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/languages/?bash'
 
 ### **MerchantGoogleLocationsAsync()**
 
@@ -256,10 +252,10 @@ public Task<MerchantGoogleLocationsCountryResponseInfo> MerchantGoogleLocationsC
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 #### Returns
 
@@ -285,10 +281,10 @@ public Task<MerchantGoogleLocationsCountryResponseInfo> MerchantGoogleLocationsC
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -330,8 +326,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
+ <br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
 
 ### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantTaskRequestInfo&gt;, CancellationToken)**
 
@@ -359,8 +355,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
+ <br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
 
 ### **GoogleProductsTasksReadyAsync()**
 
@@ -381,8 +377,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
 
 ### **GoogleProductsTasksReadyAsync(CancellationToken)**
 
@@ -408,8 +404,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
 
 ### **GoogleProductsTaskGetAdvancedAsync(String)**
 
@@ -421,8 +417,8 @@ public Task<MerchantGoogleProductsTaskGetAdvancedResponseInfo> GoogleProductsTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -437,7 +433,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash'
 
 ### **GoogleProductsTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -449,8 +445,8 @@ public Task<MerchantGoogleProductsTaskGetAdvancedResponseInfo> GoogleProductsTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -468,7 +464,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash'
 
 ### **GoogleProductsTaskGetHtmlAsync(String)**
 
@@ -480,8 +476,8 @@ public Task<MerchantGoogleProductsTaskGetHtmlResponseInfo> GoogleProductsTaskGet
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -496,7 +492,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash'
 
 ### **GoogleProductsTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -508,8 +504,8 @@ public Task<MerchantGoogleProductsTaskGetHtmlResponseInfo> GoogleProductsTaskGet
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -527,7 +523,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash'
 
 ### **GoogleSellersTaskPostAsync(IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;)**
 
@@ -552,8 +548,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash'
+ <br>Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash'
 
 ### **GoogleSellersTaskPostAsync(IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -581,8 +577,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash'
+ <br>Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash'
 
 ### **GoogleSellersTasksReadyAsync()**
 
@@ -603,8 +599,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash'
 
 ### **GoogleSellersTasksReadyAsync(CancellationToken)**
 
@@ -630,8 +626,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash'
 
 ### **GoogleSellersTaskGetAdvancedAsync(String)**
 
@@ -643,8 +639,8 @@ public Task<MerchantGoogleSellersTaskGetAdvancedResponseInfo> GoogleSellersTaskG
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -659,7 +655,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash'
 
 ### **GoogleSellersTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -671,8 +667,8 @@ public Task<MerchantGoogleSellersTaskGetAdvancedResponseInfo> GoogleSellersTaskG
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -690,7 +686,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash'
 
 ### **GoogleSellersTaskGetHtmlAsync(String)**
 
@@ -702,8 +698,8 @@ public Task<MerchantGoogleSellersTaskGetHtmlResponseInfo> GoogleSellersTaskGetHt
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -718,7 +714,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash'
 
 ### **GoogleSellersTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -730,8 +726,8 @@ public Task<MerchantGoogleSellersTaskGetHtmlResponseInfo> GoogleSellersTaskGetHt
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -749,7 +745,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash'
 
 ### **GoogleProductSpecTaskPostAsync(IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;)**
 
@@ -774,8 +770,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash'
+ <br>This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash'
 
 ### **GoogleProductSpecTaskPostAsync(IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -803,8 +799,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash'
+ <br>This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash'
 
 ### **GoogleProductSpecTasksReadyAsync()**
 
@@ -825,8 +821,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash'
 
 ### **GoogleProductSpecTasksReadyAsync(CancellationToken)**
 
@@ -852,8 +848,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash'
 
 ### **GoogleProductSpecTaskGetAdvancedAsync(String)**
 
@@ -865,8 +861,8 @@ public Task<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> GoogleProductS
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -881,7 +877,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash'
 
 ### **GoogleProductSpecTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -893,8 +889,8 @@ public Task<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> GoogleProductS
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -912,7 +908,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash'
 
 ### **GoogleProductSpecTaskGetHtmlAsync(String)**
 
@@ -924,8 +920,8 @@ public Task<MerchantGoogleProductSpecTaskGetHtmlResponseInfo> GoogleProductSpecT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -940,7 +936,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash'
 
 ### **GoogleProductSpecTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -952,8 +948,8 @@ public Task<MerchantGoogleProductSpecTaskGetHtmlResponseInfo> GoogleProductSpecT
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -971,7 +967,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash'
 
 ### **GoogleProductInfoTaskPostAsync(IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;)**
 
@@ -996,8 +992,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the product_id.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash'
+ <br>This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the product_id.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash'
 
 ### **GoogleProductInfoTaskPostAsync(IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1025,8 +1021,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the product_id.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash'
+ <br>This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the product_id.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash'
 
 ### **GoogleProductInfoTasksReadyAsync()**
 
@@ -1047,8 +1043,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash'
 
 ### **GoogleProductInfoTasksReadyAsync(CancellationToken)**
 
@@ -1074,8 +1070,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash'
 
 ### **GoogleProductInfoTaskGetAdvancedAsync(String)**
 
@@ -1087,8 +1083,8 @@ public Task<MerchantGoogleProductInfoTaskGetAdvancedResponseInfo> GoogleProductI
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1103,7 +1099,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash'
 
 ### **GoogleProductInfoTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1115,8 +1111,8 @@ public Task<MerchantGoogleProductInfoTaskGetAdvancedResponseInfo> GoogleProductI
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1134,7 +1130,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash'
 
 ### **GoogleSellersAdUrlAsync(String)**
 
@@ -1146,7 +1142,7 @@ public Task<MerchantGoogleSellersAdUrlResponseInfo> GoogleSellersAdUrlAsync(stri
 
 `shop_ad_aclk` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 unique ad click referral parameter
-<br>you can obtain this parameter with Google Shopping Products or Google Shopping Sellers
+ <br>you can obtain this parameter with Google Shopping Products or Google Shopping Sellers
 
 #### Returns
 
@@ -1161,7 +1157,7 @@ A server side error occurred.
 **Remarks:**
 
 Google Shopping Sellers Ad URL is designed to provide you with a full URL of the advertisement containing all additional parameters set by the seller.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash'
 
 ### **GoogleSellersAdUrlAsync(String, CancellationToken)**
 
@@ -1173,7 +1169,7 @@ public Task<MerchantGoogleSellersAdUrlResponseInfo> GoogleSellersAdUrlAsync(stri
 
 `shop_ad_aclk` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 unique ad click referral parameter
-<br>you can obtain this parameter with Google Shopping Products or Google Shopping Sellers
+ <br>you can obtain this parameter with Google Shopping Products or Google Shopping Sellers
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1191,7 +1187,7 @@ A server side error occurred.
 **Remarks:**
 
 Google Shopping Sellers Ad URL is designed to provide you with a full URL of the advertisement containing all additional parameters set by the seller.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash'
 
 ### **MerchantAmazonLocationsAsync()**
 
@@ -1212,7 +1208,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
 
 ### **MerchantAmazonLocationsAsync(CancellationToken)**
 
@@ -1238,7 +1234,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
 
 ### **MerchantAmazonLocationsCountryAsync(String)**
 
@@ -1250,10 +1246,10 @@ public Task<MerchantAmazonLocationsCountryResponseInfo> MerchantAmazonLocationsC
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 #### Returns
 
@@ -1268,7 +1264,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
 
 ### **MerchantAmazonLocationsCountryAsync(String, CancellationToken)**
 
@@ -1280,10 +1276,10 @@ public Task<MerchantAmazonLocationsCountryResponseInfo> MerchantAmazonLocationsC
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1301,7 +1297,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
 
 ### **MerchantAmazonLanguagesAsync()**
 
@@ -1322,7 +1318,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Amazon languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash'
 
 ### **MerchantAmazonLanguagesAsync(CancellationToken)**
 
@@ -1348,7 +1344,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of supported Amazon languages by calling this API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash'
 
 ### **AmazonProductsTaskPostAsync(IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;)**
 
@@ -1373,8 +1369,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash'
+ <br>This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash'
 
 ### **AmazonProductsTaskPostAsync(IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1402,8 +1398,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash'
+ <br>This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash'
 
 ### **AmazonProductsTasksReadyAsync()**
 
@@ -1424,8 +1420,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash'
 
 ### **AmazonProductsTasksReadyAsync(CancellationToken)**
 
@@ -1451,8 +1447,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash'
 
 ### **AmazonProductsTaskGetAdvancedAsync(String)**
 
@@ -1464,8 +1460,8 @@ public Task<MerchantAmazonProductsTaskGetAdvancedResponseInfo> AmazonProductsTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1480,7 +1476,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash'
 
 ### **AmazonProductsTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1492,8 +1488,8 @@ public Task<MerchantAmazonProductsTaskGetAdvancedResponseInfo> AmazonProductsTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1511,7 +1507,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash'
 
 ### **AmazonProductsTaskGetHtmlAsync(String)**
 
@@ -1523,8 +1519,8 @@ public Task<MerchantAmazonProductsTaskGetHtmlResponseInfo> AmazonProductsTaskGet
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -1539,7 +1535,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash'
 
 ### **AmazonProductsTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -1551,8 +1547,8 @@ public Task<MerchantAmazonProductsTaskGetHtmlResponseInfo> AmazonProductsTaskGet
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1570,7 +1566,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash'
 
 ### **AmazonAsinTaskPostAsync(IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;)**
 
@@ -1595,8 +1591,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a full list of ASINs assigned to different modifications of a product.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash'
+ <br>This endpoint will provide you with a full list of ASINs assigned to different modifications of a product.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash'
 
 ### **AmazonAsinTaskPostAsync(IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1624,8 +1620,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a full list of ASINs assigned to different modifications of a product.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash'
+ <br>This endpoint will provide you with a full list of ASINs assigned to different modifications of a product.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash'
 
 ### **AmazonAsinTasksReadyAsync()**
 
@@ -1646,8 +1642,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash'
 
 ### **AmazonAsinTasksReadyAsync(CancellationToken)**
 
@@ -1673,8 +1669,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash'
 
 ### **AmazonAsinTaskGetAdvancedAsync(String)**
 
@@ -1686,8 +1682,8 @@ public Task<MerchantAmazonAsinTaskGetAdvancedResponseInfo> AmazonAsinTaskGetAdva
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1702,7 +1698,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with information about the product and ASINs of all its modifications listed on Amazon.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash'
 
 ### **AmazonAsinTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1714,8 +1710,8 @@ public Task<MerchantAmazonAsinTaskGetAdvancedResponseInfo> AmazonAsinTaskGetAdva
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1733,7 +1729,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with information about the product and ASINs of all its modifications listed on Amazon.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash'
 
 ### **AmazonAsinTaskGetHtmlAsync(String)**
 
@@ -1745,8 +1741,8 @@ public Task<MerchantAmazonAsinTaskGetHtmlResponseInfo> AmazonAsinTaskGetHtmlAsyn
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -1761,7 +1757,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash'
 
 ### **AmazonAsinTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -1773,8 +1769,8 @@ public Task<MerchantAmazonAsinTaskGetHtmlResponseInfo> AmazonAsinTaskGetHtmlAsyn
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1792,7 +1788,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash'
 
 ### **AmazonSellersTaskPostAsync(IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;)**
 
@@ -1817,9 +1813,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
-<br>The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash'
+ <br>This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
+ <br>The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash'
 
 ### **AmazonSellersTaskPostAsync(IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1847,9 +1843,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
-<br>The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash'
+ <br>This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
+ <br>The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash'
 
 ### **AmazonSellersTasksReadyAsync()**
 
@@ -1870,8 +1866,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash'
 
 ### **AmazonSellersTasksReadyAsync(CancellationToken)**
 
@@ -1897,8 +1893,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash'
 
 ### **AmazonSellersTaskGetAdvancedAsync(String)**
 
@@ -1910,8 +1906,8 @@ public Task<MerchantAmazonSellersTaskGetAdvancedResponseInfo> AmazonSellersTaskG
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1926,7 +1922,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash'
 
 ### **AmazonSellersTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -1938,8 +1934,8 @@ public Task<MerchantAmazonSellersTaskGetAdvancedResponseInfo> AmazonSellersTaskG
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1957,7 +1953,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash'
 
 ### **AmazonSellersTaskGetHtmlAsync(String)**
 
@@ -1969,8 +1965,8 @@ public Task<MerchantAmazonSellersTaskGetHtmlResponseInfo> AmazonSellersTaskGetHt
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -1985,7 +1981,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash'
 
 ### **AmazonSellersTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -1997,8 +1993,8 @@ public Task<MerchantAmazonSellersTaskGetHtmlResponseInfo> AmazonSellersTaskGetHt
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2016,7 +2012,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash'
 
 ### **AmazonReviewsTaskPostAsync(IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;)**
 
@@ -2041,8 +2037,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of reviews for the target Amazon product.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
+ <br>This endpoint will provide you with a list of reviews for the target Amazon product.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
 
 ### **AmazonReviewsTaskPostAsync(IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2070,8 +2066,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will provide you with a list of reviews for the target Amazon product.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
+ <br>This endpoint will provide you with a list of reviews for the target Amazon product.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
 
 ### **AmazonReviewsTasksReadyAsync()**
 
@@ -2092,8 +2088,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash'
 
 ### **AmazonReviewsTasksReadyAsync(CancellationToken)**
 
@@ -2119,8 +2115,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash'
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash'
 
 ### **AmazonReviewsTaskGetAdvancedAsync(String)**
 
@@ -2132,8 +2128,8 @@ public Task<MerchantAmazonReviewsTaskGetAdvancedResponseInfo> AmazonReviewsTaskG
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2148,7 +2144,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides feedback data on products listed on the Amazon marketplace, including their titles, images, ratings, review content, user profile info, review publication dates, and more. The results are specific to the asin specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash'
 
 ### **AmazonReviewsTaskGetAdvancedAsync(String, CancellationToken)**
 
@@ -2160,8 +2156,8 @@ public Task<MerchantAmazonReviewsTaskGetAdvancedResponseInfo> AmazonReviewsTaskG
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2179,7 +2175,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint provides feedback data on products listed on the Amazon marketplace, including their titles, images, ratings, review content, user profile info, review publication dates, and more. The results are specific to the asin specified in the POST request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash'
 
 ### **AmazonReviewsTaskGetHtmlAsync(String)**
 
@@ -2191,8 +2187,8 @@ public Task<MerchantAmazonReviewsTaskGetHtmlResponseInfo> AmazonReviewsTaskGetHt
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 #### Returns
 
@@ -2207,7 +2203,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash'
 
 ### **AmazonReviewsTaskGetHtmlAsync(String, CancellationToken)**
 
@@ -2219,8 +2215,8 @@ public Task<MerchantAmazonReviewsTaskGetHtmlResponseInfo> AmazonReviewsTaskGetHt
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 7 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2238,7 +2234,7 @@ A server side error occurred.
 **Remarks:**
 
 Description of the fields for sending a request:
-<br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -2261,7 +2257,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

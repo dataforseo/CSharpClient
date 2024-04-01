@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # TechnologiesInfo
 
 Namespace: DataForSeo.Client.Models
@@ -191,7 +187,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public TechnologiesInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

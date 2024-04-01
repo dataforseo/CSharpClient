@@ -238,7 +238,7 @@ namespace DataForSeo.Client.Models
         /// <br/>list of options to interact with the business directly from search results
         /// </summary>
         [Newtonsoft.Json.JsonProperty("local_business_links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public BaseLocalBusinessLink LocalBusinessLinks { get; set; }
+        public System.Collections.Generic.ICollection<BaseLocalBusinessLink> LocalBusinessLinks { get; set; }
 
         /// <summary>
         /// business establishment is a part of the directory

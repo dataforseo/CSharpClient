@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppendixBusinessListingsBusinessDataLimitsRatesDataInfo
 
 Namespace: DataForSeo.Client.Models
@@ -71,7 +67,3 @@ public IDictionary<string, object> AdditionalProperties { get; set; }
 ```csharp
 public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo()
 ```
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

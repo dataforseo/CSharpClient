@@ -161,6 +161,12 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("referring_links_countries", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> ReferringLinksCountries { get; set; }
 
+        /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

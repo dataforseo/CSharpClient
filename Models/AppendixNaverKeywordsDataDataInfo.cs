@@ -5,10 +5,10 @@ namespace DataForSeo.Client.Models
     public partial class AppendixNaverKeywordsDataDataInfo
     {
         [Newtonsoft.Json.JsonProperty("keywords_for_category", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo KeywordsForCategory { get; set; }
+        public AppendixFunctionInfo KeywordsForCategory { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo SearchVolume { get; set; }
+        public AppendixFunctionInfo SearchVolume { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

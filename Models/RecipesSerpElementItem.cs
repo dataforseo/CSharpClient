@@ -6,8 +6,9 @@ namespace DataForSeo.Client.Models
     {
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical type values;
+        /// <br/>positions of elements with different type values are omitted from rank_group;
+        /// <br/>always equals 0 for desktop
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -15,6 +16,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
+        /// <br/>always equals 0 for desktop
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
@@ -34,7 +36,8 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<RecipesElement> Items { get; set; }

@@ -43,6 +43,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixKeywordsKeywordsDataPriceDataInfo SearchVolume { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("dataforseo_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixDataforseoTrendsKeywordsDataPriceData DataforseoTrends { get; set; }
+
         [Newtonsoft.Json.JsonProperty("explore", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixExploreKeywordsDataPriceData Explore { get; set; }
 

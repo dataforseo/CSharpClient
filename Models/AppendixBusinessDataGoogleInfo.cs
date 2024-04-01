@@ -5,19 +5,19 @@ namespace DataForSeo.Client.Models
     public partial class AppendixBusinessDataGoogleInfo
     {
         [Newtonsoft.Json.JsonProperty("my_business_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo MyBusinessInfo { get; set; }
+        public AppendixFunctionInfo MyBusinessInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("my_business_updates", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo MyBusinessUpdates { get; set; }
+        public AppendixFunctionInfo MyBusinessUpdates { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixSerpLimitsRatesDataInfo HotelInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo HotelSearches { get; set; }
+        public AppendixFunctionInfo HotelSearches { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo Reviews { get; set; }
+        public AppendixFunctionInfo Reviews { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

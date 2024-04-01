@@ -2295,6 +2295,467 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
+        /// You will receive the list of DataForSEO Trends locations by calling this API. You can filter the list of locations by country when setting a task. Please note that the minimum geographic scope supported for the DataForSEO Trends API is country level.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/locations/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsLocationsResponseInfo> KeywordsDataDataforseoTrendsLocationsAsync()
+        {
+            return KeywordsDataDataforseoTrendsLocationsAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// You will receive the list of DataForSEO Trends locations by calling this API. You can filter the list of locations by country when setting a task. Please note that the minimum geographic scope supported for the DataForSEO Trends API is country level.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/locations/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsLocationsResponseInfo> KeywordsDataDataforseoTrendsLocationsAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/keywords_data/dataforseo_trends/locations");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<KeywordsDataDataforseoTrendsLocationsResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// You will receive the list of DataForSEO Trends locations by calling this API. You can filter the list of locations by country when setting a task. Please note that the minimum geographic scope supported for the DataForSEO Trends API is country level.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/locations/?bash'
+        /// </remarks>
+        /// <param name = "country">country ISO code
+        /// <br/>optional field
+        /// <br/>specify the ISO code if you want to filter the list of locations by country
+        /// <br/>example:
+        /// <br/>us</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> KeywordsDataDataforseoTrendsLocationsCountryAsync(string country)
+        {
+            return KeywordsDataDataforseoTrendsLocationsCountryAsync(country, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// You will receive the list of DataForSEO Trends locations by calling this API. You can filter the list of locations by country when setting a task. Please note that the minimum geographic scope supported for the DataForSEO Trends API is country level.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/locations/?bash'
+        /// </remarks>
+        /// <param name = "country">country ISO code
+        /// <br/>optional field
+        /// <br/>specify the ISO code if you want to filter the list of locations by country
+        /// <br/>example:
+        /// <br/>us</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> KeywordsDataDataforseoTrendsLocationsCountryAsync(string country, System.Threading.CancellationToken cancellationToken)
+        {
+            if (country == null)
+                throw new System.ArgumentNullException("country");
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/keywords_data/dataforseo_trends/locations/{country}");
+            urlBuilder_.Replace("{country}", System.Uri.EscapeDataString(ConvertToString(country, System.Globalization.CultureInfo.InvariantCulture)));
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// This endpoint will provide you with the keyword popularity data from DataForSEO Trends. You can check keyword trends for Google Search, Google News, and Google Shopping.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/explore/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsExploreLiveResponseInfo> DataforseoTrendsExploreLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsExploreLiveRequestInfo> body)
+        {
+            return DataforseoTrendsExploreLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// This endpoint will provide you with the keyword popularity data from DataForSEO Trends. You can check keyword trends for Google Search, Google News, and Google Shopping.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/explore/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsExploreLiveResponseInfo> DataforseoTrendsExploreLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsExploreLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/keywords_data/dataforseo_trends/explore/live");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<KeywordsDataDataforseoTrendsExploreLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// This endpoint will provide you with location-specific keyword popularity data from DataForSEO Trends. You can check keyword trends for Google Search, Google News, and Google Shopping.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo> DataforseoTrendsSubregionInterestsLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo> body)
+        {
+            return DataforseoTrendsSubregionInterestsLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// This endpoint will provide you with location-specific keyword popularity data from DataForSEO Trends. You can check keyword trends for Google Search, Google News, and Google Shopping.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/subregion_interests/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo> DataforseoTrendsSubregionInterestsLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/keywords_data/dataforseo_trends/subregion_interests/live");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// This endpoint will provide you with the demographic breakdown (by age and gender) of keyword popularity per each specified term based on DataForSEO Trends data. You can check keyword trends for Google Search, Google News, and Google Shopping.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/demography/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsDemographyLiveResponseInfo> DataforseoTrendsDemographyLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsDemographyLiveRequestInfo> body)
+        {
+            return DataforseoTrendsDemographyLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// This endpoint will provide you with the demographic breakdown (by age and gender) of keyword popularity per each specified term based on DataForSEO Trends data. You can check keyword trends for Google Search, Google News, and Google Shopping.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/demography/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsDemographyLiveResponseInfo> DataforseoTrendsDemographyLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsDemographyLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/keywords_data/dataforseo_trends/demography/live");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<KeywordsDataDataforseoTrendsDemographyLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// This endpoint will provide you with the keyword popularity data from DataForSEO Trends. In addition to keyword popularity rate over the given time range, you will get location-specific keyword popularity data, and a demographic breakdown of keyword popularity per each specified term along with comparative values.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/merged_data/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo> DataforseoTrendsMergedDataLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo> body)
+        {
+            return DataforseoTrendsMergedDataLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// This endpoint will provide you with the keyword popularity data from DataForSEO Trends. In addition to keyword popularity rate over the given time range, you will get location-specific keyword popularity data, and a demographic breakdown of keyword popularity per each specified term along with comparative values.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/dataforseo_trends/merged_data/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo> DataforseoTrendsMergedDataLiveAsync(System.Collections.Generic.IEnumerable<KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/keywords_data/dataforseo_trends/merged_data/live");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
         /// By calling this API you will receive the list of locations supported in Bing Ads API.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
         /// </remarks>

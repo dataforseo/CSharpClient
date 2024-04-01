@@ -6,8 +6,9 @@ namespace DataForSeo.Client.Models
     {
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical type values;
+        /// <br/>positions of elements with different type values are omitted from rank_group;
+        /// <br/>always equals 0 for desktop
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -15,6 +16,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
+        /// <br/>always equals 0 for desktop
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
@@ -34,14 +36,14 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the row
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// source of the element
-        /// <br/>indicates the source of information included in the top_stories_element
+        /// <br/>indicates the source of the video
         /// </summary>
         [Newtonsoft.Json.JsonProperty("source", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Source { get; set; }
@@ -59,13 +61,13 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// URL
+        /// source URL
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// domain where a link points
+        /// source domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }

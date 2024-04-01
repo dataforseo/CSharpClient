@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         public long? Backlinks { get; set; }
 
         /// <summary>
-        /// date and time when our crawler found the backlink for the first time
+        /// date and time when our crawler found the backlink with this anchor for the first time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
@@ -113,6 +113,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReferringPages { get; set; }
+
+        /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target with this anchor
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
 
         /// <summary>
         /// top-level domains of the referring links

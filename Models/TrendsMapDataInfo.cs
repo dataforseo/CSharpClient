@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
         /// <br/>a value of 0 means there was not enough data for this term
         /// </summary>
         [Newtonsoft.Json.JsonProperty("values", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<int?> Values { get; set; }
+        public System.Collections.Generic.ICollection<object> Values { get; set; }
 
         /// <summary>
         /// max value among comparable terms

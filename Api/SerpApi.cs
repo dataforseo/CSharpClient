@@ -282,6 +282,7 @@ namespace DataForSeo.Client.Api
         /// ‌‌
         /// <br/>The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt.
         /// <br/>To obtain results, you have to specify task_id, which you can find in the response to the POST request.
+        /// <br/>Learn more in our Help Center.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/ai_summary/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -296,6 +297,7 @@ namespace DataForSeo.Client.Api
         /// ‌‌
         /// <br/>The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt.
         /// <br/>To obtain results, you have to specify task_id, which you can find in the response to the POST request.
+        /// <br/>Learn more in our Help Center.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/ai_summary/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4369,6 +4371,391 @@ namespace DataForSeo.Client.Api
                         if (status_ == 200)
                         {
                             var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleJobsTaskGetHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌‌
+        /// <br/>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleAutocompleteTaskPostResponseInfo> GoogleAutocompleteTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo> body)
+        {
+            return GoogleAutocompleteTaskPostAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌‌
+        /// <br/>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleAutocompleteTaskPostResponseInfo> GoogleAutocompleteTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/autocomplete/task_post");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleAutocompleteTaskPostResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleAutocompleteTasksReadyResponseInfo> GoogleAutocompleteTasksReadyAsync()
+        {
+            return GoogleAutocompleteTasksReadyAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleAutocompleteTasksReadyResponseInfo> GoogleAutocompleteTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/autocomplete/tasks_ready");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleAutocompleteTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleAutocompleteTasksFixedResponseInfo> GoogleAutocompleteTasksFixedAsync()
+        {
+            return GoogleAutocompleteTasksFixedAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleAutocompleteTasksFixedResponseInfo> GoogleAutocompleteTasksFixedAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/autocomplete/tasks_fixed");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleAutocompleteTasksFixedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo> GoogleAutocompleteTaskGetAdvancedAsync(string id)
+        {
+            return GoogleAutocompleteTaskGetAdvancedAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo> GoogleAutocompleteTaskGetAdvancedAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/autocomplete/task_get/advanced/{id}");
+            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌‌
+        /// <br/>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleAutocompleteLiveAdvancedResponseInfo> GoogleAutocompleteLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo> body)
+        {
+            return GoogleAutocompleteLiveAdvancedAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌‌
+        /// <br/>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleAutocompleteLiveAdvancedResponseInfo> GoogleAutocompleteLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/autocomplete/live/advanced");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleAutocompleteLiveAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             return objectResponse_.Object;
                         }
                         else

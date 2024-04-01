@@ -5,10 +5,10 @@ namespace DataForSeo.Client.Models
     public partial class AppendixBusinessDataDayLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo Reviews { get; set; }
+        public AppendixFunctionInfo Reviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo Search { get; set; }
+        public AppendixFunctionInfo Search { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

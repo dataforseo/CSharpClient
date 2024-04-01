@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # KeywordsDataApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Keywords Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/id_list/?bash'
 
 ### **KeywordsDataIdListAsync(IEnumerable&lt;KeywordsDataIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Keywords Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/id_list/?bash'
 
 ### **KeywordsDataErrorsAsync(IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;)**
 
@@ -124,7 +120,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
 
 ### **KeywordsDataErrorsAsync(IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;, CancellationToken)**
 
@@ -152,7 +148,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
 
 ### **GoogleAdsStatusAsync()**
 
@@ -173,8 +169,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>By calling this endpoint, you will know if Google updated keyword data for the previous month. Generally, Google updates keyword data in the middle of the month. So, if Google updated its data in October, you would be able to see the actual search volume, cost-per-click, competition, and other metrics for September. If Google didn’t update its data in October, the latest information would be available for August.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/status/?bash'
+ <br>By calling this endpoint, you will know if Google updated keyword data for the previous month. Generally, Google updates keyword data in the middle of the month. So, if Google updated its data in October, you would be able to see the actual search volume, cost-per-click, competition, and other metrics for September. If Google didn’t update its data in October, the latest information would be available for August.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/status/?bash'
 
 ### **GoogleAdsStatusAsync(CancellationToken)**
 
@@ -200,8 +196,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>By calling this endpoint, you will know if Google updated keyword data for the previous month. Generally, Google updates keyword data in the middle of the month. So, if Google updated its data in October, you would be able to see the actual search volume, cost-per-click, competition, and other metrics for September. If Google didn’t update its data in October, the latest information would be available for August.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/status/?bash'
+ <br>By calling this endpoint, you will know if Google updated keyword data for the previous month. Generally, Google updates keyword data in the middle of the month. So, if Google updated its data in October, you would be able to see the actual search volume, cost-per-click, competition, and other metrics for September. If Google didn’t update its data in October, the latest information would be available for August.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/status/?bash'
 
 ### **KeywordsDataGoogleAdsLocationsAsync()**
 
@@ -222,9 +218,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”.
-<br>Postal Codes can be used to set a task, albeit API response will not return data for such tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash'
+ <br>We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”.
+ <br>Postal Codes can be used to set a task, albeit API response will not return data for such tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash'
 
 ### **KeywordsDataGoogleAdsLocationsAsync(CancellationToken)**
 
@@ -250,9 +246,9 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”.
-<br>Postal Codes can be used to set a task, albeit API response will not return data for such tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash'
+ <br>We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”.
+ <br>Postal Codes can be used to set a task, albeit API response will not return data for such tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash'
 
 ### **KeywordsDataGoogleAdsLanguagesAsync()**
 
@@ -273,9 +269,9 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of languages supported by Keywords Data API.
-<br>‌
-<br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
 
 ### **KeywordsDataGoogleAdsLanguagesAsync(CancellationToken)**
 
@@ -301,9 +297,9 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of languages supported by Keywords Data API.
-<br>‌
-<br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
 
 ### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
 
@@ -328,8 +324,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
 
 ### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
 
@@ -357,8 +353,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
 
 ### **GoogleAdsSearchVolumeTasksReadyAsync()**
 
@@ -379,8 +375,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/tasks_ready/?bash'
 
 ### **GoogleAdsSearchVolumeTasksReadyAsync(CancellationToken)**
 
@@ -406,8 +402,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/tasks_ready/?bash'
 
 ### **GoogleAdsSearchVolumeTaskGetAsync(String)**
 
@@ -419,8 +415,8 @@ public Task<KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo> GoogleAdsSearc
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -435,8 +431,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
 
 ### **GoogleAdsSearchVolumeTaskGetAsync(String, CancellationToken)**
 
@@ -448,8 +444,8 @@ public Task<KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo> GoogleAdsSearc
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -467,8 +463,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
 
 ### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
 
@@ -493,8 +489,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
 
 ### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
 
@@ -522,8 +518,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
 
 ### **GoogleAdsKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;)**
 
@@ -548,7 +544,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_post/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_post/?bash'
 
 ### **GoogleAdsKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -576,7 +572,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_post/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_post/?bash'
 
 ### **GoogleAdsKeywordsForSiteTasksReadyAsync()**
 
@@ -597,8 +593,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/tasks_ready/?bash'
 
 ### **GoogleAdsKeywordsForSiteTasksReadyAsync(CancellationToken)**
 
@@ -624,8 +620,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/tasks_ready/?bash'
 
 ### **GoogleAdsKeywordsForSiteTaskGetAsync(String)**
 
@@ -637,8 +633,8 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo> GoogleAdsKe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -653,10 +649,10 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_get/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_get/?bash'
 
 ### **GoogleAdsKeywordsForSiteTaskGetAsync(String, CancellationToken)**
 
@@ -668,8 +664,8 @@ public Task<KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo> GoogleAdsKe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -687,10 +683,10 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_get/?bash'
+ <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/task_get/?bash'
 
 ### **GoogleAdsKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;)**
 
@@ -715,9 +711,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live/?bash'
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live/?bash'
 
 ### **GoogleAdsKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo&gt;, CancellationToken)**
 
@@ -745,9 +741,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live/?bash'
+ <br>‌‌
+ <br>This endpoint will provide you with a list of keywords relevant to the specified domain along with their bids, search volumes for the last month, search volume trends for the last year (for estimating search volume dynamics), and competition levels.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;)**
 
@@ -772,9 +768,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_post/?bash'
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_post/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -802,9 +798,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_post/?bash'
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_post/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsTasksReadyAsync()**
 
@@ -825,8 +821,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/tasks_ready/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsTasksReadyAsync(CancellationToken)**
 
@@ -852,8 +848,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/tasks_ready/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsTaskGetAsync(String)**
 
@@ -865,8 +861,8 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo> GoogleA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -881,9 +877,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌
-<br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
+ <br>‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsTaskGetAsync(String, CancellationToken)**
 
@@ -895,8 +891,8 @@ public Task<KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo> GoogleA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -914,9 +910,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌
-<br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
+ <br>‌
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
 
@@ -941,9 +937,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
 
 ### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
 
@@ -971,9 +967,9 @@ A server side error occurred.
 **Remarks:**
 
 Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
-<br>‌‌
-<br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
+ <br>‌‌
+ <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
 
 ### **GoogleAdsAdTrafficByKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo&gt;)**
 
@@ -1045,8 +1041,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready/?bash'
 
 ### **GoogleAdsAdTrafficByKeywordsTasksReadyAsync(CancellationToken)**
 
@@ -1072,8 +1068,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready/?bash'
 
 ### **GoogleAdsAdTrafficByKeywordsTaskGetAsync(String)**
 
@@ -1085,8 +1081,8 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo> GoogleA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1112,8 +1108,8 @@ public Task<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo> GoogleA
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1202,7 +1198,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
 
 ### **KeywordsDataGoogleTrendsLocationsAsync(CancellationToken)**
 
@@ -1228,7 +1224,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
 
 ### **KeywordsDataGoogleTrendsLocationsCountryAsync(String)**
 
@@ -1240,10 +1236,10 @@ public Task<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> KeywordsDataGo
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 #### Returns
 
@@ -1258,7 +1254,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
 
 ### **KeywordsDataGoogleTrendsLocationsCountryAsync(String, CancellationToken)**
 
@@ -1270,10 +1266,10 @@ public Task<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> KeywordsDataGo
 
 `country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 country ISO code
-<br>optional field
-<br>specify the ISO code if you want to filter the list of locations by country
-<br>example:
-<br>us
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1291,7 +1287,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/locations/?bash'
 
 ### **KeywordsDataGoogleTrendsLanguagesAsync()**
 
@@ -1312,9 +1308,9 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of languages supported by Google Trends API.
-<br>‌
-<br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/languages/?bash'
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/languages/?bash'
 
 ### **KeywordsDataGoogleTrendsLanguagesAsync(CancellationToken)**
 
@@ -1340,9 +1336,9 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of languages supported by Google Trends API.
-<br>‌
-<br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/languages/?bash'
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/languages/?bash'
 
 ### **GoogleTrendsCategoriesAsync()**
 
@@ -1363,9 +1359,9 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of categories supported by Google Trends API.
-<br>‌
-<br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available categories.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/categories/?bash'
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available categories.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/categories/?bash'
 
 ### **GoogleTrendsCategoriesAsync(CancellationToken)**
 
@@ -1391,9 +1387,9 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of categories supported by Google Trends API.
-<br>‌
-<br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available categories.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/categories/?bash'
+ <br>‌
+ <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available categories.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/categories/?bash'
 
 ### **GoogleTrendsExploreTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;)**
 
@@ -1418,8 +1414,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_post/?bash'
+ <br>This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_post/?bash'
 
 ### **GoogleTrendsExploreTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1447,8 +1443,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_post/?bash'
+ <br>This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_post/?bash'
 
 ### **GoogleTrendsExploreTasksReadyAsync()**
 
@@ -1469,8 +1465,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/tasks_ready/?bash'
 
 ### **GoogleTrendsExploreTasksReadyAsync(CancellationToken)**
 
@@ -1496,8 +1492,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with a list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/tasks_ready/?bash'
 
 ### **GoogleTrendsExploreTaskGetAsync(String)**
 
@@ -1509,8 +1505,8 @@ public Task<KeywordsDataGoogleTrendsExploreTaskGetResponseInfo> GoogleTrendsExpl
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1525,7 +1521,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_get/?bash'
 
 ### **GoogleTrendsExploreTaskGetAsync(String, CancellationToken)**
 
@@ -1537,8 +1533,8 @@ public Task<KeywordsDataGoogleTrendsExploreTaskGetResponseInfo> GoogleTrendsExpl
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1556,7 +1552,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/task_get/?bash'
 
 ### **GoogleTrendsExploreLiveAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;)**
 
@@ -1581,7 +1577,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/live/?bash'
 
 ### **GoogleTrendsExploreLiveAsync(IEnumerable&lt;KeywordsDataGoogleTrendsExploreLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1609,7 +1605,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint will provide you with the keyword popularity data from the ‘Explore’ feature of Google Trends. You can check keyword trends for Google Search, Google News, Google Images, Google Shopping, and YouTube.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_trends/explore/live/?bash'
 
 ### **KeywordsDataBingLocationsAsync()**
 
@@ -1630,7 +1626,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of locations supported in Bing Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
 
 ### **KeywordsDataBingLocationsAsync(CancellationToken)**
 
@@ -1656,7 +1652,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of locations supported in Bing Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/locations/?bash'
 
 ### **KeywordsDataBingLanguagesAsync()**
 
@@ -1677,7 +1673,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of languages supported by Bing Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/languages/?bash'
 
 ### **KeywordsDataBingLanguagesAsync(CancellationToken)**
 
@@ -1703,7 +1699,7 @@ A server side error occurred.
 **Remarks:**
 
 By calling this API you will receive the list of languages supported by Bing Ads API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/languages/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/languages/?bash'
 
 ### **BingSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;)**
 
@@ -1728,8 +1724,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_post/?bash'
+ <br>This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_post/?bash'
 
 ### **BingSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1757,8 +1753,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_post/?bash'
+ <br>This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_post/?bash'
 
 ### **BingSearchVolumeTasksReadyAsync()**
 
@@ -1779,8 +1775,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/tasks_ready/?bash'
 
 ### **BingSearchVolumeTasksReadyAsync(CancellationToken)**
 
@@ -1806,8 +1802,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/tasks_ready/?bash'
 
 ### **BingSearchVolumeTaskGetAsync(String)**
 
@@ -1819,8 +1815,8 @@ public Task<KeywordsDataBingSearchVolumeTaskGetResponseInfo> BingSearchVolumeTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -1835,7 +1831,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_get/?bash'
 
 ### **BingSearchVolumeTaskGetAsync(String, CancellationToken)**
 
@@ -1847,8 +1843,8 @@ public Task<KeywordsDataBingSearchVolumeTaskGetResponseInfo> BingSearchVolumeTas
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1866,7 +1862,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_get/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/task_get/?bash'
 
 ### **BingSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;)**
 
@@ -1891,7 +1887,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
 
 ### **BingSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
 
@@ -1919,7 +1915,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
 
 ### **BingKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;)**
 
@@ -1944,7 +1940,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_post/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_post/?bash'
 
 ### **BingKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -1972,7 +1968,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_post/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_post/?bash'
 
 ### **BingKeywordsForSiteTasksReadyAsync()**
 
@@ -1993,8 +1989,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/tasks_ready/?bash'
 
 ### **BingKeywordsForSiteTasksReadyAsync(CancellationToken)**
 
@@ -2020,8 +2016,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/tasks_ready/?bash'
 
 ### **BingKeywordsForSiteTaskGetAsync(String)**
 
@@ -2033,8 +2029,8 @@ public Task<KeywordsDataBingKeywordsForSiteTaskGetResponseInfo> BingKeywordsForS
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2049,8 +2045,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for the last year (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_get/?bash'
+ <br>This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for the last year (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_get/?bash'
 
 ### **BingKeywordsForSiteTaskGetAsync(String, CancellationToken)**
 
@@ -2062,8 +2058,8 @@ public Task<KeywordsDataBingKeywordsForSiteTaskGetResponseInfo> BingKeywordsForS
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2081,8 +2077,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for the last year (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_get/?bash'
+ <br>This endpoint will provide you with a list of keywords relevant to the specified website along with their search volume for the last month, search volume trend for the last year (for estimating search volume dynamics), current cost-per-click and competition level for paid search. The maximum number of returned keywords is 3000.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/task_get/?bash'
 
 ### **BingKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;)**
 
@@ -2107,7 +2103,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌This endpoint will provide you with a list of keywords relevant to the specified URL along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition values for paid search. The maximum number of returned keywords is 3000.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/live/?bash'
 
 ### **BingKeywordsForSiteLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2135,7 +2131,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌This endpoint will provide you with a list of keywords relevant to the specified URL along with their search volume for the last month, search volume trend for up to 24 past months (for estimating search volume dynamics), current cost-per-click and competition values for paid search. The maximum number of returned keywords is 3000.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/live/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_site/live/?bash'
 
 ### **BingKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;)**
 
@@ -2160,8 +2156,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_post/?bash'
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_post/?bash'
 
 ### **BingKeywordsForKeywordsTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2189,8 +2185,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_post/?bash'
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_post/?bash'
 
 ### **BingKeywordsForKeywordsTasksReadyAsync()**
 
@@ -2211,8 +2207,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/tasks_ready/?bash'
 
 ### **BingKeywordsForKeywordsTasksReadyAsync(CancellationToken)**
 
@@ -2238,8 +2234,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/tasks_ready/?bash'
 
 ### **BingKeywordsForKeywordsTaskGetAsync(String)**
 
@@ -2251,8 +2247,8 @@ public Task<KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo> BingKeywords
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2267,8 +2263,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_get/?bash'
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_get/?bash'
 
 ### **BingKeywordsForKeywordsTaskGetAsync(String, CancellationToken)**
 
@@ -2280,8 +2276,8 @@ public Task<KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo> BingKeywords
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2299,8 +2295,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_get/?bash'
+ <br>This endpoint will select relevant keywords for the specified terms. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/task_get/?bash'
 
 ### **BingKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;)**
 
@@ -2325,8 +2321,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will select the relevant keywords for the specified ones. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/live/?bash'
+ <br>This endpoint will select the relevant keywords for the specified ones. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/live/?bash'
 
 ### **BingKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordsForKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2354,8 +2350,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will select the relevant keywords for the specified ones. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/live/?bash'
+ <br>This endpoint will select the relevant keywords for the specified ones. Set up to 200 keywords and get the results, which are suggested by Bing Ads for your query. You can get up to 3000 keyword suggestions using this function.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keywords_for_keywords/live/?bash'
 
 ### **KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync()**
 
@@ -2376,8 +2372,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Using this endpoint you can get the full list of locations and languages supported in Keyword Performance endpoints of Bing Keywords Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/locations_and_languages/?bash'
+ <br>Using this endpoint you can get the full list of locations and languages supported in Keyword Performance endpoints of Bing Keywords Data API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/locations_and_languages/?bash'
 
 ### **KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync(CancellationToken)**
 
@@ -2403,8 +2399,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>Using this endpoint you can get the full list of locations and languages supported in Keyword Performance endpoints of Bing Keywords Data API.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/locations_and_languages/?bash'
+ <br>Using this endpoint you can get the full list of locations and languages supported in Keyword Performance endpoints of Bing Keywords Data API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/locations_and_languages/?bash'
 
 ### **BingKeywordPerformanceTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;)**
 
@@ -2429,8 +2425,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_post/?bash'
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_post/?bash'
 
 ### **BingKeywordPerformanceTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceTaskPostRequestInfo&gt;, CancellationToken)**
 
@@ -2458,8 +2454,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_post/?bash'
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_post/?bash'
 
 ### **BingKeywordPerformanceTasksReadyAsync()**
 
@@ -2480,8 +2476,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/tasks_ready/?bash'
 
 ### **BingKeywordPerformanceTasksReadyAsync(CancellationToken)**
 
@@ -2507,8 +2503,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/tasks_ready/?bash'
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/tasks_ready/?bash'
 
 ### **BingKeywordPerformanceTaskGetAsync(String)**
 
@@ -2520,8 +2516,8 @@ public Task<KeywordsDataBingKeywordPerformanceTaskGetResponseInfo> BingKeywordPe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2536,8 +2532,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
 
 ### **BingKeywordPerformanceTaskGetAsync(String, CancellationToken)**
 
@@ -2549,8 +2545,8 @@ public Task<KeywordsDataBingKeywordPerformanceTaskGetResponseInfo> BingKeywordPe
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 task identifier
-<br>unique task identifier in our system in the UUID format
-<br>you will be able to use it within 30 days to request the results of the task at any time
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2568,8 +2564,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
 
 ### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;)**
 
@@ -2594,8 +2590,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
 
 ### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;, CancellationToken)**
 
@@ -2623,8 +2619,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -2647,7 +2643,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # ApiException
 
 Namespace: DataForSeo.Client.Models
@@ -156,7 +152,3 @@ public string ToString()
 #### Returns
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

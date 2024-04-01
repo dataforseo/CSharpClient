@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # ContentAnalysisApi
 
 Namespace: DataForSeo.Client.Api
@@ -71,7 +67,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Content Analysis tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/id_list/?bash'
 
 ### **ContentAnalysisIdListAsync(IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;, CancellationToken)**
 
@@ -99,7 +95,7 @@ A server side error occurred.
 **Remarks:**
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Content Analysis tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/id_list/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/id_list/?bash'
 
 ### **ContentAnalysisAvailableFiltersAsync()**
 
@@ -120,8 +116,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/filters/?bash'
 
 ### **ContentAnalysisAvailableFiltersAsync(CancellationToken)**
 
@@ -147,8 +143,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
-<br>Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/filters/?bash'
+ <br>Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/filters/?bash'
 
 ### **ContentAnalysisLocationsAsync()**
 
@@ -169,7 +165,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/locations/?bash'
 
 ### **ContentAnalysisLocationsAsync(CancellationToken)**
 
@@ -195,7 +191,7 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of locations by this API call.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/locations/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/locations/?bash'
 
 ### **ContentAnalysisLanguagesAsync()**
 
@@ -216,9 +212,9 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br> 
-<br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/languages/?bash'
+ <br> 
+ <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/languages/?bash'
 
 ### **ContentAnalysisLanguagesAsync(CancellationToken)**
 
@@ -244,9 +240,9 @@ A server side error occurred.
 **Remarks:**
 
 You will receive the list of languages by calling this API.
-<br> 
-<br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/languages/?bash'
+ <br> 
+ <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/languages/?bash'
 
 ### **ContentAnalysisCategoriesAsync()**
 
@@ -267,8 +263,8 @@ A server side error occurred.
 **Remarks:**
 
 We use Google product and service categories. This endpoint will provide you with the full list of available categories.
-<br>You can also download the CSV file by this link.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/categories/?bash'
+ <br>You can also download the CSV file by this link.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/categories/?bash'
 
 ### **ContentAnalysisCategoriesAsync(CancellationToken)**
 
@@ -294,8 +290,8 @@ A server side error occurred.
 **Remarks:**
 
 We use Google product and service categories. This endpoint will provide you with the full list of available categories.
-<br>You can also download the CSV file by this link.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/categories/?bash'
+ <br>You can also download the CSV file by this link.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/categories/?bash'
 
 ### **SearchLiveAsync(IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;)**
 
@@ -320,8 +316,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with detailed citation data available for the target keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/search/live/?bash'
+ <br>This endpoint will provide you with detailed citation data available for the target keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/search/live/?bash'
 
 ### **SearchLiveAsync(IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;, CancellationToken)**
 
@@ -349,8 +345,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with detailed citation data available for the target keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/search/live/?bash'
+ <br>This endpoint will provide you with detailed citation data available for the target keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/search/live/?bash'
 
 ### **ContentAnalysisSummaryLiveAsync(IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;)**
 
@@ -375,8 +371,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with an overview of citation data available for the target keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash'
+ <br>This endpoint will provide you with an overview of citation data available for the target keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash'
 
 ### **ContentAnalysisSummaryLiveAsync(IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;, CancellationToken)**
 
@@ -404,8 +400,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with an overview of citation data available for the target keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash'
+ <br>This endpoint will provide you with an overview of citation data available for the target keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash'
 
 ### **SentimentAnalysisLiveAsync(IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;)**
 
@@ -430,8 +426,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with sentiment analysis data for the citations available for the target keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash'
+ <br>This endpoint will provide you with sentiment analysis data for the citations available for the target keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash'
 
 ### **SentimentAnalysisLiveAsync(IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;, CancellationToken)**
 
@@ -459,8 +455,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with sentiment analysis data for the citations available for the target keyword.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash'
+ <br>This endpoint will provide you with sentiment analysis data for the citations available for the target keyword.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash'
 
 ### **RatingDistributionLiveAsync(IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;)**
 
@@ -485,8 +481,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash'
+ <br>This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash'
 
 ### **RatingDistributionLiveAsync(IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;, CancellationToken)**
 
@@ -514,8 +510,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash'
+ <br>This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash'
 
 ### **PhraseTrendsLiveAsync(IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;)**
 
@@ -540,8 +536,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with data on all citations of the target keyword for the indicated date range.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash'
+ <br>This endpoint will provide you with data on all citations of the target keyword for the indicated date range.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash'
 
 ### **PhraseTrendsLiveAsync(IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -569,8 +565,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with data on all citations of the target keyword for the indicated date range.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash'
+ <br>This endpoint will provide you with data on all citations of the target keyword for the indicated date range.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash'
 
 ### **CategoryTrendsLiveAsync(IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;)**
 
@@ -595,8 +591,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with data on all citations in the target category for the indicated date range.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash'
+ <br>This endpoint will provide you with data on all citations in the target category for the indicated date range.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash'
 
 ### **CategoryTrendsLiveAsync(IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;, CancellationToken)**
 
@@ -624,8 +620,8 @@ A server side error occurred.
 **Remarks:**
 
 ‌
-<br>This endpoint will provide you with data on all citations in the target category for the indicated date range.
-<br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash'
+ <br>This endpoint will provide you with data on all citations in the target category for the indicated date range.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
@@ -648,7 +644,3 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 #### Returns
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
-
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
