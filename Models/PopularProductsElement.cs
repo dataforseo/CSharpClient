@@ -23,6 +23,12 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
+        /// seller of the product
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("seller", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Seller { get; set; }
+
+        /// <summary>
         /// price indicated in the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

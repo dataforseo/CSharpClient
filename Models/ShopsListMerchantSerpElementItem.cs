@@ -19,8 +19,8 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// the alignment of the element in Google Shopping SERP
-        /// <br/>possible values:
+        /// alignment of the element in SERP
+        /// <br/>can take the following values:
         /// <br/>left, right
         /// </summary>
         [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
