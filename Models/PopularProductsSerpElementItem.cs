@@ -36,6 +36,12 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
+        /// title of the row
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Title { get; set; }
+
+        /// <summary>
         /// additional items present in the element
         /// <br/>if there are none, equals null
         /// </summary>

@@ -29,6 +29,12 @@ namespace DataForSeo.Client.Models
         public string Seller { get; set; }
 
         /// <summary>
+        /// URL of the image
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("image_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string ImageUrl { get; set; }
+
+        /// <summary>
         /// price indicated in the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

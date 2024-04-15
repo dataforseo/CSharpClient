@@ -2,7 +2,7 @@ namespace DataForSeo.Client.Models
 {
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsBingRankedKeywordsLiveItem
+    public partial class DataforseoLabsBBulkTrafficEstimationLiveItem
     {
         /// <summary>
         /// search engine type
@@ -11,16 +11,16 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// keyword data for the returned keyword
+        /// target domain in a POST array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public KeywordDataKeywordDataInfo KeywordData { get; set; }
+        [Newtonsoft.Json.JsonProperty("target", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Target { get; set; }
 
         /// <summary>
-        /// contains data on the domain’s SERP element found for the returned keyword
+        /// traffic data relevant to the specified domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ranked_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RankedSerpElement RankedSerpElement { get; set; }
+        [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.IDictionary<string, BulkMetricsInfo> Metrics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

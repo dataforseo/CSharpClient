@@ -122,23 +122,5 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("rank_changes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }
 
-        /// <summary>
-        /// search engine type
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
-        /// backlinks information for the target website
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public BacklinksInfo BacklinksInfo { get; set; }
-
-        /// <summary>
-        /// page and domain rank information
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RankInfo RankInfo { get; set; }
-
     }
 }

@@ -136,7 +136,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkElement> Links { get; set; }
+        public object Links { get; set; }
 
         /// <summary>
         /// contains information from the ‘About this result’ panel
@@ -144,7 +144,7 @@ namespace DataForSeo.Client.Models
         /// <br/>this feature appears after clicking on the three dots next to most results
         /// </summary>
         [Newtonsoft.Json.JsonProperty("about_this_result", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AboutThisResultElement AboutThisResult { get; set; }
+        public object AboutThisResult { get; set; }
 
         /// <summary>
         /// primary domain name in SERP

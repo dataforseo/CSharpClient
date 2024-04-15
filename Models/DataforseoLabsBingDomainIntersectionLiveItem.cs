@@ -2,10 +2,12 @@ namespace DataForSeo.Client.Models
 {
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsBingRankedKeywordsLiveItem
+    public partial class DataforseoLabsBingDomainIntersectionLiveItem
     {
         /// <summary>
         /// search engine type
+        /// <br/>search engine type specified in a POST request;
+        /// <br/>for this endpoint, the field equals bing
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -17,10 +19,18 @@ namespace DataForSeo.Client.Models
         public KeywordDataKeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
-        /// contains data on the domain’s SERP element found for the returned keyword
+        /// contains data on the first domain’s SERP element found for the returned keyword
+        /// <br/>the list of supported SERP elements can be found below
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ranked_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RankedSerpElement RankedSerpElement { get; set; }
+        [Newtonsoft.Json.JsonProperty("first_domain_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public BaseDataforseoLabsSerpElementItem FirstDomainSerpElement { get; set; }
+
+        /// <summary>
+        /// contains data on the second domain’s SERP element found for the returned keyword
+        /// <br/>the list of supported SERP elements can be found below
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("second_domain_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public BaseDataforseoLabsSerpElementItem SecondDomainSerpElement { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
