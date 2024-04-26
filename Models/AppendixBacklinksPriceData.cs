@@ -19,6 +19,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("bulk_new_lost_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixKeywordBingKeywordsDataPriceDataInfo BulkNewLostReferringDomains { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("bulk_pages_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixKeywordBingKeywordsDataPriceDataInfo BulkPagesSummary { get; set; }
+
         [Newtonsoft.Json.JsonProperty("bulk_ranks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixKeywordBingKeywordsDataPriceDataInfo BulkRanks { get; set; }
 

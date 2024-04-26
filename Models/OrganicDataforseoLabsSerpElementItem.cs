@@ -136,7 +136,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object Links { get; set; }
+        public System.Collections.Generic.ICollection<AdLinkElement> Links { get; set; }
 
         /// <summary>
         /// contains information from the ‘About this result’ panel

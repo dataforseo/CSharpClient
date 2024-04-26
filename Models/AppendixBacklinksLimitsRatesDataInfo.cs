@@ -64,6 +64,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("competitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixFunctionInfo Competitors { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("bulk_pages_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixFunctionInfo BulkPagesSummary { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

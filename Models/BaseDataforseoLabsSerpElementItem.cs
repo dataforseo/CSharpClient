@@ -3,6 +3,7 @@ namespace DataForSeo.Client.Models
 
     [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
     [JsonInheritanceAttribute("organic", typeof(OrganicDataforseoLabsSerpElementItem))]
+    [JsonInheritanceAttribute("paid", typeof(PaidDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("people_also_ask", typeof(PeopleAlsoAskDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("twitter", typeof(TwitterDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("people_also_search", typeof(PeopleAlsoSearchDataforseoLabsSerpElementItem))]
@@ -26,7 +27,6 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("knowledge_graph_part_item", typeof(KnowledgeGraphPartItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_expanded_item", typeof(KnowledgeGraphExpandedItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_shopping_item", typeof(KnowledgeGraphShoppingItemDataforseoLabsSerpElementItem))]
-    [JsonInheritanceAttribute("paid", typeof(PaidDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_reviews", typeof(GoogleReviewsDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_posts", typeof(GooglePostsDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_flights", typeof(GoogleFlightsDataforseoLabsSerpElementItem))]
