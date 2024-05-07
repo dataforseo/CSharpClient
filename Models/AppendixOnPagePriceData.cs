@@ -8,7 +8,7 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("lighthouse", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixLighthouseOnPagePriceData Lighthouse { get; set; }
+        public AppendixsGoogleBusinessDataPriceDataInfo Lighthouse { get; set; }
 
         [Newtonsoft.Json.JsonProperty("content_parsing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo ContentParsing { get; set; }

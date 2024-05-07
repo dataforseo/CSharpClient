@@ -2275,6 +2275,331 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌‌
+        /// <br/>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+        /// <br/> 
+        /// <br/>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+        /// <br/> 
+        /// <br/>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body)
+        {
+            return GoogleQuestionsAndAnswersTaskPostAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌‌
+        /// <br/>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+        /// <br/> 
+        /// <br/>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+        /// <br/> 
+        /// <br/>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/task_post");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync()
+        {
+            return GoogleQuestionsAndAnswersTasksReadyAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/tasks_ready");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> GoogleQuestionsAndAnswersTaskGetAsync(string id)
+        {
+            return GoogleQuestionsAndAnswersTaskGetAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> GoogleQuestionsAndAnswersTaskGetAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/task_get/{id}");
+            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌‌
+        /// <br/>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+        /// <br/> 
+        /// <br/>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+        /// <br/> 
+        /// <br/>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body)
+        {
+            return GoogleQuestionsAndAnswersLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌‌
+        /// <br/>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+        /// <br/> 
+        /// <br/>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+        /// <br/> 
+        /// <br/>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/live");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, _settings.Value);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌‌
         /// <br/>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
         /// </remarks>

@@ -171,6 +171,22 @@ namespace DataForSeo.Client.Models
         public RatingInfo Rating { get; set; }
 
         /// <summary>
+        /// hotel class rating
+        /// <br/>class ratings range between 1-5 stars, learn more
+        /// <br/>if there is no hotel class rating information, the value will be null
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("hotel_rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? HotelRating { get; set; }
+
+        /// <summary>
+        /// property price level
+        /// <br/>can take values: inexpensive, moderate, expensive, very_expensive
+        /// <br/>if there is no price level information, the value will be null
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("price_level", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string PriceLevel { get; set; }
+
+        /// <summary>
         /// the distribution of ratings of the business entity
         /// <br/>the object displays the number of 1-star to 5-star ratings, as reviewed by users
         /// </summary>
@@ -197,10 +213,6 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("popular_times", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PopularTimes PopularTimes { get; set; }
 
-        /// <summary>
-        /// available interactions with the business
-        /// <br/>list of options to interact with the business directly from search results
-        /// </summary>
         [Newtonsoft.Json.JsonProperty("local_business_links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseLocalBusinessLink> LocalBusinessLinks { get; set; }
 

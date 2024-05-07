@@ -19,6 +19,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixFunctionInfo Reviews { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("questions_and_answers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixFunctionInfo QuestionsAndAnswers { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

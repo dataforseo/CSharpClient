@@ -164,6 +164,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("is_claimed", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool? IsClaimed { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("questions_and_answers_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? QuestionsAndAnswersCount { get; set; }
+
         /// <summary>
         /// service details in a form of user-reviewed checks;
         /// <br/>service details of a business entity displayed in a form of checks and based on user feedback and business category

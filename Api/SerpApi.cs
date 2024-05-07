@@ -1065,7 +1065,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(System.Collections.Generic.IEnumerable<SerpTaskRequestInfo> body)
+        public virtual System.Threading.Tasks.Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(System.Collections.Generic.IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> body)
         {
             return GoogleOrganicLiveRegularAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1078,7 +1078,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(System.Collections.Generic.IEnumerable<SerpTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(System.Collections.Generic.IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/organic/live/regular");
@@ -1143,7 +1143,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpTaskRequestInfo> body)
+        public virtual System.Threading.Tasks.Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> body)
         {
             return GoogleOrganicLiveAdvancedAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1156,7 +1156,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/google/organic/live/advanced");
