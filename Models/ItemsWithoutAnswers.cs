@@ -82,7 +82,7 @@ namespace DataForSeo.Client.Models
         /// <br/>items within google_business_question_item
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object Items { get; set; }
+        public GoogleBusinessAnswerElement Items { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

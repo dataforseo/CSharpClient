@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if you specified a single keyword, the value will be null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("demography_comparison", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public DemographyComparison DemographyComparison { get; set; }
+        public DemographyComparisonInfo DemographyComparison { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
         /// link of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("link", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object Link { get; set; }
+        public LinkElement Link { get; set; }
 
         /// <summary>
         /// additional items present in the element

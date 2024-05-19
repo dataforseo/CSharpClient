@@ -25,13 +25,8 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("demography", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Demography Demography { get; set; }
 
-        /// <summary>
-        /// comparison of demographic data on keyword popularity for the specified parameters
-        /// <br/>conains keyword popularity data by age and gender
-        /// <br/>if you specified a single keyword, the value will be null
-        /// </summary>
         [Newtonsoft.Json.JsonProperty("demography_comparison", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object DemographyComparison { get; set; }
+        public DemographyComparisonInfo DemographyComparison { get; set; }
 
     }
 }

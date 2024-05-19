@@ -144,7 +144,7 @@ namespace DataForSeo.Client.Models
         /// <br/>this feature appears after clicking on the three dots next to most results
         /// </summary>
         [Newtonsoft.Json.JsonProperty("about_this_result", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object AboutThisResult { get; set; }
+        public System.Collections.Generic.IDictionary<string, AboutThisResultElement> AboutThisResult { get; set; }
 
         /// <summary>
         /// primary domain name in SERP

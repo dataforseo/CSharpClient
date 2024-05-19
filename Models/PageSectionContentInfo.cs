@@ -18,6 +18,12 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("secondary_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ContentItemInfo> SecondaryContent { get; set; }
 
+        /// <summary>
+        /// content of the table on the page
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("table_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<TableContent> TableContent { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]
