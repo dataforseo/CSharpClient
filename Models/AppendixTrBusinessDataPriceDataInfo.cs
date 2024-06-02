@@ -5,10 +5,10 @@ namespace DataForSeo.Client.Models
     public partial class AppendixTrBusinessDataPriceDataInfo
     {
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo Reviews { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo Search { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo Search { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

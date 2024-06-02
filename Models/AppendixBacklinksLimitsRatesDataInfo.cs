@@ -5,67 +5,67 @@ namespace DataForSeo.Client.Models
     public partial class AppendixBacklinksLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Summary { get; set; }
+        public AppendixInfo Summary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo History { get; set; }
+        public AppendixInfo History { get; set; }
 
         [Newtonsoft.Json.JsonProperty("content_duplicates", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo ContentDuplicates { get; set; }
+        public AppendixInfo ContentDuplicates { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_intersection", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo DomainIntersection { get; set; }
+        public AppendixInfo DomainIntersection { get; set; }
 
         [Newtonsoft.Json.JsonProperty("backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Backlinks { get; set; }
+        public AppendixInfo Backlinks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo DomainPages { get; set; }
+        public AppendixInfo DomainPages { get; set; }
 
         [Newtonsoft.Json.JsonProperty("anchors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Anchors { get; set; }
+        public AppendixInfo Anchors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo ReferringDomains { get; set; }
+        public AppendixInfo ReferringDomains { get; set; }
 
         [Newtonsoft.Json.JsonProperty("page_intersection", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo PageIntersection { get; set; }
+        public AppendixInfo PageIntersection { get; set; }
 
         [Newtonsoft.Json.JsonProperty("referring_networks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo ReferringNetworks { get; set; }
+        public AppendixInfo ReferringNetworks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_ranks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo BulkRanks { get; set; }
+        public AppendixInfo BulkRanks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo BulkBacklinks { get; set; }
+        public AppendixInfo BulkBacklinks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_new_lost_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo BulkNewLostBacklinks { get; set; }
+        public AppendixInfo BulkNewLostBacklinks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_new_lost_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo BulkNewLostReferringDomains { get; set; }
+        public AppendixInfo BulkNewLostReferringDomains { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo BulkReferringDomains { get; set; }
+        public AppendixInfo BulkReferringDomains { get; set; }
 
         [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Errors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_pages_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo DomainPagesSummary { get; set; }
+        public AppendixInfo DomainPagesSummary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("timeseries_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo TimeseriesSummary { get; set; }
+        public AppendixInfo TimeseriesSummary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("timeseries_new_lost_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo TimeseriesNewLostSummary { get; set; }
+        public AppendixInfo TimeseriesNewLostSummary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("competitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Competitors { get; set; }
+        public AppendixInfo Competitors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bulk_pages_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo BulkPagesSummary { get; set; }
+        public AppendixInfo BulkPagesSummary { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

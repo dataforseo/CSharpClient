@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// type of search engine
-        /// <br/>can take the following values: video_info
+        /// <br/>example: video_info
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }

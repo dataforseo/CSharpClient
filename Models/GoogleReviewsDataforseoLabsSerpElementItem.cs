@@ -59,6 +59,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// google-defined client id
+        /// <br/>unique id of a local establishment;
+        /// <br/>can be used with Google Reviews API to get a full list of reviews
         /// </summary>
         [Newtonsoft.Json.JsonProperty("cid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Cid { get; set; }

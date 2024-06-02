@@ -137,10 +137,10 @@ namespace DataForSeo.Client.Models
         public int? DurationTimeSeconds { get; set; }
 
         /// <summary>
-        /// subtitles in the video
+        /// array of elements describing properties of subtitles in the video
         /// </summary>
         [Newtonsoft.Json.JsonProperty("subtitles", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Subtitles { get; set; }
+        public System.Collections.Generic.ICollection<Subtitles> Subtitles { get; set; }
 
         /// <summary>
         /// array of elements that contain information about all possible streaming qualities of the video

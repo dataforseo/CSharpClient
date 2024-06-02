@@ -5,10 +5,10 @@ namespace DataForSeo.Client.Models
     public partial class AppendixBusinessListingsBusinessDataLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("search", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Search { get; set; }
+        public AppendixInfo Search { get; set; }
 
         [Newtonsoft.Json.JsonProperty("categories_aggregation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo CategoriesAggregation { get; set; }
+        public AppendixInfo CategoriesAggregation { get; set; }
 
         [Newtonsoft.Json.JsonProperty("categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Categories { get; set; }

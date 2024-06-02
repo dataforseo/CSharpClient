@@ -5,13 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class AppendixSocialMediaBusinessDataLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("facebook", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Facebook { get; set; }
+        public AppendixInfo Facebook { get; set; }
 
         [Newtonsoft.Json.JsonProperty("pinterest", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Pinterest { get; set; }
+        public AppendixInfo Pinterest { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reddit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Reddit { get; set; }
+        public AppendixInfo Reddit { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

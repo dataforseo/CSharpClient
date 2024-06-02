@@ -10,9 +10,6 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("trustpilot_review_search", typeof(TrustpilotReviewSearchBusinessDataSerpElementItem))]
     [JsonInheritanceAttribute("tripadvisor_search_organic", typeof(TripadvisorSearchOrganicBusinessDataSerpElementItem))]
     [JsonInheritanceAttribute("tripadvisor_review_search", typeof(TripadvisorReviewSearchBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("yelp_search_organic", typeof(YelpSearchOrganicBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("yelp_search_paid", typeof(YelpSearchPaidBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("yelp_reviews_search", typeof(YelpReviewsSearchBusinessDataSerpElementItem))]
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseBusinessDataSerpElementItem
     {

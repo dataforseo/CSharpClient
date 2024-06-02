@@ -112,7 +112,7 @@ namespace DataForSeo.Client.Models.Requests
         public System.Collections.Generic.ICollection<object> BacklinksFilters { get; set; }
 
         /// <summary>
-        /// indicates if the subdomains of the target will be included in the search
+        /// indicates if the subdomains of the target domain will be included in the search
         /// <br/>optional field
         /// <br/>if set to false, the subdomains will be ignored
         /// <br/>default value: true
@@ -133,7 +133,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// indicates whether the backlinks from subdomains of the target are excluded
         /// <br/>optional field
-        /// <br/>if set to false, the backlinks from subdomains of the target will be ommited and you won’t receive the same domain in the response;
+        /// <br/>if set to false, backlinks from the subdomains of the target domain will be ommited and you won’t receive the same domain in the response;
         /// <br/>default value: true
         /// </summary>
         [Newtonsoft.Json.JsonProperty("exclude_internal_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

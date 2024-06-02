@@ -8,6 +8,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// id of the target technology group
         /// <br/>required field if you don’t specify technology or category
+        /// <br/>at least one field (group, category, technology) must be set
         /// <br/>you can find the full list of technology group ids on this page
         /// <br/>example:
         /// <br/>"marketing"
@@ -18,6 +19,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// id of the target technology category
         /// <br/>required field if you don’t specify group or technology
+        /// <br/>at least one field (group, category, technology) must be set
         /// <br/>you can find the full list of technology category ids on this page
         /// <br/>example:
         /// <br/>"crm"
@@ -28,6 +30,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// target technology
         /// <br/>required field if you don’t specify group or category
+        /// <br/>at least one field (group, category, technology) must be set
         /// <br/>you can find the full list of technologies on this page
         /// <br/>example:
         /// <br/>"Salesforce"

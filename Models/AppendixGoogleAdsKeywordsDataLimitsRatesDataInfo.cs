@@ -8,16 +8,16 @@ namespace DataForSeo.Client.Models
         public double? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo SearchVolume { get; set; }
+        public AppendixInfo SearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo KeywordsForKeywords { get; set; }
+        public AppendixInfo KeywordsForKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_site", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo KeywordsForSite { get; set; }
+        public AppendixInfo KeywordsForSite { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ad_traffic_by_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo AdTrafficByKeywords { get; set; }
+        public AppendixInfo AdTrafficByKeywords { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

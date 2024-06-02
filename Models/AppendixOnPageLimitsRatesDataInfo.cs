@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         public double? RedirectChains { get; set; }
 
         [Newtonsoft.Json.JsonProperty("lighthouse", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Lighthouse { get; set; }
+        public AppendixInfo Lighthouse { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_density", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? KeywordDensity { get; set; }

@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// type of search engine
-        /// <br/>can take the following values: local_pack
+        /// <br/>example: local_pack
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }

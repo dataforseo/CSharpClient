@@ -670,6 +670,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -683,6 +684,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -719,6 +721,82 @@ namespace DataForSeo.Client.Api
                         if (status_ == 200)
                         {
                             var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleOrganicTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpTasksReadyResponseInfo> TasksReadyAsync()
+        {
+            return TasksReadyAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpTasksReadyResponseInfo> TasksReadyAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/serp/tasks_ready");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             return objectResponse_.Object;
                         }
                         else
@@ -1373,6 +1451,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -1386,6 +1465,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -1760,6 +1840,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -1773,6 +1854,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2306,6 +2388,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2319,6 +2402,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2850,6 +2934,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2863,6 +2948,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -3235,6 +3321,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -3248,6 +3335,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4086,6 +4174,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4099,6 +4188,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4474,6 +4564,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4487,6 +4578,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4859,6 +4951,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -4872,6 +4965,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -5244,6 +5338,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -5257,6 +5352,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -5858,6 +5954,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -5871,6 +5968,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -6561,6 +6659,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -6574,6 +6673,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -7334,6 +7434,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -7347,6 +7448,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -7719,6 +7821,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -7732,6 +7835,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -8104,6 +8208,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -8117,6 +8222,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -8718,6 +8824,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -8731,6 +8838,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -9650,6 +9758,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -9663,6 +9772,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -10119,6 +10229,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -10132,6 +10243,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -10817,6 +10929,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -10830,6 +10943,7 @@ namespace DataForSeo.Client.Api
         /// <remarks>
         /// ‌
         /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>

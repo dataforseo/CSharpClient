@@ -5,22 +5,22 @@ namespace DataForSeo.Client.Models
     public partial class AppendixContentAnalysisLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("search", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Search { get; set; }
+        public AppendixInfo Search { get; set; }
 
         [Newtonsoft.Json.JsonProperty("summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Summary { get; set; }
+        public AppendixInfo Summary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("sentiment_analysis", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo SentimentAnalysis { get; set; }
+        public AppendixInfo SentimentAnalysis { get; set; }
 
         [Newtonsoft.Json.JsonProperty("rating_distribution", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo RatingDistribution { get; set; }
+        public AppendixInfo RatingDistribution { get; set; }
 
         [Newtonsoft.Json.JsonProperty("phrase_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo PhraseTrends { get; set; }
+        public AppendixInfo PhraseTrends { get; set; }
 
         [Newtonsoft.Json.JsonProperty("category_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo CategoryTrends { get; set; }
+        public AppendixInfo CategoryTrends { get; set; }
 
         [Newtonsoft.Json.JsonProperty("locations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Locations { get; set; }

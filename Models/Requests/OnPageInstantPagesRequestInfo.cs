@@ -97,6 +97,16 @@ namespace DataForSeo.Client.Models.Requests
         public string AcceptLanguage { get; set; }
 
         /// <summary>
+        /// load resources
+        /// <br/>optional field
+        /// <br/>set to true if you want to load image, stylesheets, scripts, and broken resources
+        /// <br/>default value: false
+        /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("load_resources", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? LoadResources { get; set; }
+
+        /// <summary>
         /// load javascript on a page
         /// <br/>optional field
         /// <br/>set to true if you want to load the scripts available on a page
@@ -113,7 +123,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>enable_browser_rendering loads styles, images, fonts, animations, videos, and other resources on a page;
         /// <br/>default value: false
         /// <br/>set to true to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response;
-        /// <br/>if you use this field, enable_javascript, and load_resources parameters must be set to true
+        /// <br/>if you use this field, parameters enable_javascript, and load_resources are enabled automatically;
         /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("enable_browser_rendering", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

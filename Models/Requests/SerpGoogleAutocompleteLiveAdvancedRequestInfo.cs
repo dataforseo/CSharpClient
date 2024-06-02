@@ -82,6 +82,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>chrome — used when google search is opened in google chrome;
         /// <br/>chrome-omni — used in the address bar in chrome;
         /// <br/>gws-wiz — used in google search home page;
+        /// <br/>gws-wiz-serp — used in google search engine results page;
         /// <br/>safari — used when google search is opened in safari browser;
         /// <br/>firefox — used when google search is opened in firefox browser;
         /// <br/>psy-ab — may be used when google search is opened in google chrome browser;

@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// type of search engine
-        /// <br/>can take the following values: events
+        /// <br/>example: events
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }

@@ -18,6 +18,9 @@ namespace DataForSeo.Client.Models.Responses
         [Newtonsoft.Json.JsonProperty("se", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Se { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
         /// <summary>
         /// date when the task was posted (in the UTC format)
         /// </summary>

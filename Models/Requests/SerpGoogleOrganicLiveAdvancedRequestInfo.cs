@@ -209,6 +209,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen resolution ratio
         /// <br/>optional field
         /// <br/>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
+        /// <br/>possible values: from 1 to 3;
         /// <br/>by default, the parameter is set to:
         /// <br/>1 for desktop;
         /// <br/>3 for mobile on android;

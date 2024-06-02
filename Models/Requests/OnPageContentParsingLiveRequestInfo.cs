@@ -27,6 +27,22 @@ namespace DataForSeo.Client.Models.Requests
         public string CustomUserAgent { get; set; }
 
         /// <summary>
+        /// custom javascript
+        /// <br/>optional field
+        /// <br/>Note that the execution time for the script you enter here should be 700 ms maximum, for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute:
+        /// <br/>let meta = { haveGoogleAnalytics: false, haveTagManager: false };\r\nfor (var i = 0; i &lt; document.scripts.length; i++) {\r\n let src = document.scripts[i].getAttribute(\"src\");\r\n if (src != undefined) {\r\n if (src.indexOf(\"analytics.js\") &gt;= 0)\r\n      meta.haveGoogleAnalytics = true;\r\n\tif (src.indexOf(\"gtm.js\") &gt;= 0)\r\n      meta.haveTagManager = true;\r\n  }\r\n}\r\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script:
+        /// <br/>meta = {}; meta.url = document.URL; meta.test = 'test'; meta;
+        /// <br/>as a response you will receive the following data:
+        /// <br/>"custom_js_response": {
+        /// <br/>"url": "https://dataforseo.com/",
+        /// <br/>"test": "test"
+        /// <br/>}
+        /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("custom_js", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string CustomJs { get; set; }
+
+        /// <summary>
         /// preset for browser screen parameters
         /// <br/>optional field
         /// <br/>if you use this field, you don’t need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factor

@@ -8,19 +8,19 @@ namespace DataForSeo.Client.Models
         public AppendixHotelInfoGoogleBusinessDataPriceData HotelInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo HotelSearches { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo HotelSearches { get; set; }
 
         [Newtonsoft.Json.JsonProperty("my_business_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo MyBusinessInfo { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo MyBusinessInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("my_business_updates", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo MyBusinessUpdates { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo MyBusinessUpdates { get; set; }
 
         [Newtonsoft.Json.JsonProperty("questions_and_answers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo QuestionsAndAnswers { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo QuestionsAndAnswers { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixsGoogleBusinessDataPriceDataInfo Reviews { get; set; }
+        public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

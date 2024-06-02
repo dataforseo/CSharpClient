@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>learn more in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("bid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public float? Bid { get; set; }
+        public long? Bid { get; set; }
 
         /// <summary>
         /// keywords match-type

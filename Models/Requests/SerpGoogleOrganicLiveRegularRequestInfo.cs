@@ -148,6 +148,16 @@ namespace DataForSeo.Client.Models.Requests
         public string Target { get; set; }
 
         /// <summary>
+        /// display related results
+        /// <br/>optional field
+        /// <br/>if set to true, the related_result element in the response will be provided as a snippet of its parent organic result;
+        /// <br/>if set to false, the related_result element will be provided as a separate organic result;
+        /// <br/>default value: true
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("group_organic_results", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? GroupOrganicResults { get; set; }
+
+        /// <summary>
         /// page crawl limit
         /// <br/>optional field
         /// <br/>number of search results pages to crawl

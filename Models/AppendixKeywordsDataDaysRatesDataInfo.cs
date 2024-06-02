@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixKeywordsDataDaysRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("keywords_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo KeywordsForKeywords { get; set; }
+        public AppendixInfo KeywordsForKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_site", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo KeywordsForSite { get; set; }
+        public AppendixInfo KeywordsForSite { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo SearchVolume { get; set; }
+        public AppendixInfo SearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ad_traffic_by_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo AdTrafficByKeywords { get; set; }
+        public AppendixInfo AdTrafficByKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Languages { get; set; }
@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public double? TasksReady { get; set; }
 
         [Newtonsoft.Json.JsonProperty("explore", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Explore { get; set; }
+        public AppendixInfo Explore { get; set; }
 
         [Newtonsoft.Json.JsonProperty("categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Categories { get; set; }
@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         public AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo KeywordPerformance { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo SearchVolumeHistory { get; set; }
+        public AppendixInfo SearchVolumeHistory { get; set; }
 
         [Newtonsoft.Json.JsonProperty("google_ads", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo GoogleAds { get; set; }

@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the minimum value for “zoom”: 4z
         /// <br/>the maximum value for “zoom”: 18z
         /// <br/>example:
-        /// <br/>52.6178549,-155.352142,20z
+        /// <br/>52.6178549,-155.352142,18z
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_coordinate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }

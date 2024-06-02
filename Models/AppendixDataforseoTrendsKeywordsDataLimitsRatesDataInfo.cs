@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("explore", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Explore { get; set; }
+        public AppendixInfo Explore { get; set; }
 
         [Newtonsoft.Json.JsonProperty("subregion_interests", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo SubregionInterests { get; set; }
+        public AppendixInfo SubregionInterests { get; set; }
 
         [Newtonsoft.Json.JsonProperty("demography", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Demography { get; set; }
+        public AppendixInfo Demography { get; set; }
 
         [Newtonsoft.Json.JsonProperty("merged_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo MergedData { get; set; }
+        public AppendixInfo MergedData { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

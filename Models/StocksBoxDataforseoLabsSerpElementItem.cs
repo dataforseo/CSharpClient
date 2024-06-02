@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// title of the result in SERP
+        /// title of the item
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// relevant URL of the Ad element in SERP
+        /// URL link
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

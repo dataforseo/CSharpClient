@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class AppendixWhoisDomainAnalyticsLimitsRatesDataInfo
     {
         [Newtonsoft.Json.JsonProperty("overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixFunctionInfo Overview { get; set; }
+        public AppendixInfo Overview { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

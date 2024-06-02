@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// page rank
-        /// <br/>rank of the page on the target website
+        /// <br/>rank of the page
         /// <br/>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// number of broken backlinks
-        /// <br/>number of broken backlinks pointing to the target
+        /// <br/>number of broken backlinks pointing to the page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("broken_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? BrokenBacklinks { get; set; }
@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         public long? ReferringDomains { get; set; }
 
         /// <summary>
-        /// number of domains pointing at least one nofollow link to the target
+        /// number of domains pointing at least one nofollow link to the page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_domains_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReferringDomainsNofollow { get; set; }
@@ -78,7 +78,7 @@ namespace DataForSeo.Client.Models
         public long? ReferringMainDomains { get; set; }
 
         /// <summary>
-        /// number of main domains pointing at least one nofollow link to the target
+        /// number of main domains pointing at least one nofollow link to the page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_main_domains_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReferringMainDomainsNofollow { get; set; }
@@ -97,13 +97,13 @@ namespace DataForSeo.Client.Models
         public long? ReferringSubnets { get; set; }
 
         /// <summary>
-        /// indicates the number of pages pointing to the target
+        /// indicates the number of pages pointing to the page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReferringPages { get; set; }
 
         /// <summary>
-        /// number of referring pages pointing at least one nofollow link to the target
+        /// number of referring pages pointing at least one nofollow link to the page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReferringPagesNofollow { get; set; }
