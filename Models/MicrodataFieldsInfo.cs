@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         /// <br/>for a full list of available types, please visit schema.org
         /// </summary>
         [Newtonsoft.Json.JsonProperty("types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Types { get; set; }
+        public object Types { get; set; }
 
         /// <summary>
         /// microdata value
@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         /// <br/>sub-type microdata test results that contain detected errors and related messages
         /// </summary>
         [Newtonsoft.Json.JsonProperty("test_results", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public MicrodataTestResultsInfo TestResults { get; set; }
+        public object TestResults { get; set; }
 
         /// <summary>
         /// microdata fields

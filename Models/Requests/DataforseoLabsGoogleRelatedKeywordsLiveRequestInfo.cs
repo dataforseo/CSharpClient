@@ -126,13 +126,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like,not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["keyword_info.search_volume","&gt;",0]
+        /// <br/>["keyword_data.keyword_info.search_volume","&gt;",0]
         /// <br/>[["keyword_info.search_volume","in",[0,1000]],
         /// <br/>"and",
-        /// <br/>["keyword_info.competition_level","=","LOW"]]
-        /// <br/>[["keyword_info.search_volume","&gt;",100],
+        /// <br/>["keyword_data.keyword_info.competition_level","=","LOW"]]
+        /// <br/>[["keyword_data.keyword_info.search_volume","&gt;",100],
         /// <br/>"and",
-        /// <br/>[["keyword_info.cpc","&lt;",0.5],
+        /// <br/>[["keyword_data.keyword_info.cpc","&lt;",0.5],
         /// <br/>"or",
         /// <br/>["keyword_info.high_top_of_page_bid","&lt;=",0.5]]]
         /// <br/>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide

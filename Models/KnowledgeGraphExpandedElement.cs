@@ -56,7 +56,8 @@ namespace DataForSeo.Client.Models
         public string Timestamp { get; set; }
 
         /// <summary>
-        /// table element
+        /// results table
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("table", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Table Table { get; set; }

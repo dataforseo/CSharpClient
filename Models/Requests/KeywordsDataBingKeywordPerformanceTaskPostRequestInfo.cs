@@ -8,9 +8,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// keywords
         /// <br/>required field
-        /// <br/>The maximum number of keywords you can specify: 2500.
-        /// <br/>The maximum number of characters for each keyword: 80.
-        /// <br/>The maximum number of words for each keyword phrase: 10.
+        /// <br/>The maximum number of keywords you can specify: 1000
+        /// <br/>The maximum number of characters for each keyword: 80
+        /// <br/>The maximum number of words for each keyword phrase: 10
         /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don’t specify location_name or location_code
         /// <br/>if you use this field, you don’t need to specify location_name or location_code
         /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,zoom” format
-        /// <br/>if “zoom” is not specified, 17z will be applied as a default value
+        /// <br/>if “zoom” is not specified, 9z will be applied as a default value
         /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
         /// <br/>the minimum value for “zoom”: 4z
         /// <br/>the maximum value for “zoom”: 18z

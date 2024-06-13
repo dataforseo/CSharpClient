@@ -52,6 +52,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>browser_screen_width: 1024
         /// <br/>browser_screen_height: 1366
         /// <br/>browser_screen_scale_factor: 2
+        /// <br/>Note: in this endpoint, the enable_browser_rendering, enable_javascript, load_resources, and enable_xhr parameters are always enabled.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("browser_preset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string BrowserPreset { get; set; }
@@ -109,16 +110,6 @@ namespace DataForSeo.Client.Models.Requests
         public bool? DisableCookiePopup { get; set; }
 
         /// <summary>
-        /// load javascript on a page
-        /// <br/>optional field
-        /// <br/>set to true if you want to load the scripts available on a page
-        /// <br/>default value: false
-        /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("enable_javascript", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? EnableJavascript { get; set; }
-
-        /// <summary>
         /// custom javascript
         /// <br/>optional field
         /// <br/>Note that the execution time for the script you enter here should be 700 ms maximum
@@ -135,6 +126,15 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [Newtonsoft.Json.JsonProperty("custom_js", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string CustomJs { get; set; }
+
+        /// <summary>
+        /// switch proxy pool
+        /// <br/>optional field
+        /// <br/>if true, additional proxy pools will be used to obtain the requested data;
+        /// <br/>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("switch_pool", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? SwitchPool { get; set; }
 
         /// <summary>
         /// proxy pool

@@ -137,7 +137,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that the results of target-specific tasks will only include SERP elements that contain a url string;
         /// <br/>you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
         /// <br/>examples:
-        /// <br/>example.com  – return results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
+        /// <br/>example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
         /// <br/>example.com* – returns results for the domain, including all its pages;
         /// <br/>*example.com* – returns results for the entire domain, including all its pages and subdomains;
         /// <br/>*example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com;

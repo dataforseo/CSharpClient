@@ -3,7 +3,7 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models.Responses
 {
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppDataAppleAppSearchesTasksReadyResultInfo
+    public partial class MerchantTasksReadyResultInfo
     {
         /// <summary>
         /// task identifier of the completed task
@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models.Responses
         public string Se { get; set; }
 
         /// <summary>
-        /// search engine type
+        /// type of search engine
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -37,14 +37,13 @@ namespace DataForSeo.Client.Models.Responses
         public string Tag { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Apple App Searches task
+        /// URL for collecting the results of the Amazon Reviews Advanced task
         /// </summary>
         [Newtonsoft.Json.JsonProperty("endpoint_advanced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Apple App Searches HTML task
-        /// <br/>if HTML tasks are not supported in the specified endpoint, the value will be null
+        /// URL for collecting the results of the Amazon Reviews HTML task
         /// </summary>
         [Newtonsoft.Json.JsonProperty("endpoint_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointHtml { get; set; }

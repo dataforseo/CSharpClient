@@ -17,8 +17,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// AI prompt
         /// <br/>optional field
-        /// <br/>additional task for AI summarizer, also referred to as
+        /// <br/>additional task for AI summariser;
         /// <br/>any form of text, question or information that communicates to AI what response you’re looking for;
+        /// <br/>max number of symbols or characters you can specify: 2000;
         /// <br/>note: your prompt has to be relevant to the keyword specified in the POST request to SERP API
         /// </summary>
         [Newtonsoft.Json.JsonProperty("prompt", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

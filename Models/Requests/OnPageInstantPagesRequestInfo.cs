@@ -200,6 +200,25 @@ namespace DataForSeo.Client.Models.Requests
         [Newtonsoft.Json.JsonProperty("checks_threshold", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> ChecksThreshold { get; set; }
 
+        /// <summary>
+        /// switch proxy pool
+        /// <br/>optional field
+        /// <br/>if true, additional proxy pools will be used to obtain the requested data;
+        /// <br/>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("switch_pool", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? SwitchPool { get; set; }
+
+        /// <summary>
+        /// proxy pool
+        /// <br/>optional field
+        /// <br/>you can choose a location of the proxy pool that will be used to obtain the requested data;
+        /// <br/>the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors
+        /// <br/>possible values: us, de
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("ip_pool_for_scan", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string IpPoolForScan { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]
         public System.Collections.Generic.IDictionary<string, object> AdditionalProperties

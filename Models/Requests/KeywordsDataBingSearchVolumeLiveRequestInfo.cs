@@ -8,7 +8,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// keywords
         /// <br/>required field
-        /// <br/>The maximum number of keywords you can specify: 200
+        /// <br/>The maximum number of keywords you can specify: 1000
         /// <br/>The maximum number of characters for each keyword: 100
         /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate array
         /// </summary>

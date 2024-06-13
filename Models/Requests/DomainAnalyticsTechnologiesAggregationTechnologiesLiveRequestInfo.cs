@@ -7,8 +7,8 @@ namespace DataForSeo.Client.Models.Requests
     {
         /// <summary>
         /// id of the target technology group
-        /// <br/>required field if you don’t specify technology or category
-        /// <br/>at least one field (group, category, technology) must be set
+        /// <br/>required field if you don’t specify technology, category  or keyword
+        /// <br/>at least one field (group, category, keyword, technology) must be set
         /// <br/>you can find the full list of technology group ids on this page
         /// <br/>example:
         /// <br/>"marketing"
@@ -18,8 +18,8 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// id of the target technology category
-        /// <br/>required field if you don’t specify group or technology
-        /// <br/>at least one field (group, category, technology) must be set
+        /// <br/>required field if you don’t specify group, keyword or technology
+        /// <br/>at least one field (group, category, keyword, technology) must be set
         /// <br/>you can find the full list of technology category ids on this page
         /// <br/>example:
         /// <br/>"crm"
@@ -29,8 +29,8 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target technology
-        /// <br/>required field if you don’t specify group or category
-        /// <br/>at least one field (group, category, technology) must be set
+        /// <br/>required field if you don’t specify group, keyword or category
+        /// <br/>at least one field (group, category, keyword, technology) must be set
         /// <br/>you can find the full list of technologies on this page
         /// <br/>example:
         /// <br/>"Salesforce"
@@ -40,9 +40,9 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target keyword in the domain’s meta keywords
-        /// <br/>optional field
+        /// <br/>required field if you don’t specify group, category or technology
+        /// <br/>at least one field (group, category, keyword, technology) must be set
         /// <br/>UTF-8 encoding
-        /// <br/>each keyword should be at least 3 characters long
         /// <br/>example:
         /// <br/>"seo"
         /// </summary>
@@ -69,6 +69,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>&lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like,not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>you can use the following parameters to filter the results: domain_rank, last_visited, country_iso_code, language_code, content_language_code
+        /// <br/>Note: all filtering parameters are taken from the domain_technology_item of the domain_technologies endpoint;
         /// <br/>example:
         /// <br/>[["country_iso_code","=","US"],
         /// <br/>"and",

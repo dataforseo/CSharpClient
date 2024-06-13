@@ -213,6 +213,10 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("popular_times", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PopularTimes PopularTimes { get; set; }
 
+        /// <summary>
+        /// available interactions with the business
+        /// <br/>list of options to interact with the business directly from search results
+        /// </summary>
         [Newtonsoft.Json.JsonProperty("local_business_links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseLocalBusinessLink> LocalBusinessLinks { get; set; }
 

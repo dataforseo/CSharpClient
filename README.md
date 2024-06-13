@@ -50,16 +50,16 @@ dotnet add package DataForSeo.Client
 Example of live request
 ```csharp
 var dfsClient = new DataForSeoClient("USERNAME", "PASSWORD");
-      var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpTaskRequestInfo>()
-      {
-          new()
-          {
-              LanguageCode = "en",
-              LocationCode = 2840,
-              Keyword = "albert einstein",
-              Priority = 2,
-          }
-      });
+var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+        CalculateRectangles = true,
+    }
+});
 ``` 
 
 Example of Task-based request

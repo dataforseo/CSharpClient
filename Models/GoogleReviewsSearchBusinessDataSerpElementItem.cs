@@ -152,5 +152,12 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("images", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ImagesElement> Images { get; set; }
 
+        /// <summary>
+        /// review highlights
+        /// <br/>contains highlighted review criteria and assessments
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("review_highlights", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<ReviewHighlights> ReviewHighlights { get; set; }
+
     }
 }

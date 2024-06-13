@@ -3,7 +3,7 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models.Responses
 {
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppDataAppleAppSearchesTasksReadyResultInfo
+    public partial class BusinessDataTasksReadyResultInfo
     {
         /// <summary>
         /// task identifier of the completed task
@@ -14,6 +14,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// search engine specified when setting the task
+        /// <br/>can take the following values: tripadvisor
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Se { get; set; }
@@ -37,17 +38,10 @@ namespace DataForSeo.Client.Models.Responses
         public string Tag { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Apple App Searches task
+        /// URL for collecting the results of the task
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("endpoint_advanced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string EndpointAdvanced { get; set; }
-
-        /// <summary>
-        /// URL for collecting the results of the Apple App Searches HTML task
-        /// <br/>if HTML tasks are not supported in the specified endpoint, the value will be null
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("endpoint_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string EndpointHtml { get; set; }
+        [Newtonsoft.Json.JsonProperty("endpoint", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Endpoint { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

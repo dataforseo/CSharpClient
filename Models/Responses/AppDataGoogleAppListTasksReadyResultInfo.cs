@@ -18,6 +18,9 @@ namespace DataForSeo.Client.Models.Responses
         [Newtonsoft.Json.JsonProperty("se", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Se { get; set; }
 
+        /// <summary>
+        /// search engine type
+        /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }
 

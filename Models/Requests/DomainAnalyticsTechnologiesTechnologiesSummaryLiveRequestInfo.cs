@@ -55,7 +55,6 @@ namespace DataForSeo.Client.Models.Requests
         /// target keywords in the domain’s title, description or meta keywords
         /// <br/>optional field
         /// <br/>UTF-8 encoding
-        /// <br/>each keyword should be at least 3 characters long
         /// <br/>example:
         /// <br/>["seo","software"]
         /// </summary>

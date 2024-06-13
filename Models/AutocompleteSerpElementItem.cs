@@ -61,6 +61,14 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("thumbnail_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ThumbnailUrl { get; set; }
 
+        /// <summary>
+        /// keywords highlighted in autocomplete
+        /// <br/>contains a list of google autocomplete suggestions that are highlighted in the search bar;
+        /// <br/>Note: array is only available for the following client:
+        /// <br/>gws-wiz
+        /// <br/>psy-ab
+        /// <br/>gws-wiz-local
+        /// </summary>
         [Newtonsoft.Json.JsonProperty("highlighted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Highlighted { get; set; }
 

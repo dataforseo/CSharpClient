@@ -7,7 +7,8 @@ namespace DataForSeo.Client.Models.Requests
     {
         /// <summary>
         /// target technology paths
-        /// <br/>required field if you don’t specify groups, technologies and categories
+        /// <br/>required field if you don’t specify groups, technologies, keywords or categories
+        /// <br/>at least one field (technology_paths, groups, technologies, keywords or categories) must be set;
         /// <br/>each technology path should be specified as a separate object containing “path” and “name”, where “path” is specified as “$group_id.$category_id” and “name” – as the name of the target technology;
         /// <br/>each object with a technology path should be separated with a comma
         /// <br/>you can find the full list of technology group ids, category ids and technology names on this page
@@ -20,7 +21,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// ids of the target technology groups
-        /// <br/>required field if you don’t specify technologies, technology_paths or categories
+        /// <br/>required field if you don’t specify technologies, technology_paths, keywords or categories
         /// <br/>you can find the full list of technology group ids on this page
         /// <br/>note: you can specify up to 10 technology groups in this array
         /// <br/>example:
@@ -31,7 +32,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// ids of the target technology categories
-        /// <br/>required field if you don’t specify groups, technology_paths or technologies
+        /// <br/>required field if you don’t specify groups, technology_paths, keywords or technologies
         /// <br/>you can find the full list of technology category ids on this page
         /// <br/>note: you can specify up to 10 technology categories in this array
         /// <br/>example:
@@ -42,7 +43,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target technologies
-        /// <br/>required field if you don’t specify groups, technology_paths or categories
+        /// <br/>required field if you don’t specify groups, technology_paths, keywords or categories
         /// <br/>you can find the full list of technologies you can specify here on this page
         /// <br/>note: you can specify up to 10 technologies in this array
         /// <br/>example:
@@ -53,9 +54,9 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target keywords in the domain’s title, description or meta keywords
+        /// <br/>required field if you don’t specify groups, technology_paths, technologies or categories
         /// <br/>optional field
         /// <br/>UTF-8 encoding
-        /// <br/>each keyword should be at least 3 characters long
         /// <br/>example:
         /// <br/>["seo","software"]
         /// </summary>
