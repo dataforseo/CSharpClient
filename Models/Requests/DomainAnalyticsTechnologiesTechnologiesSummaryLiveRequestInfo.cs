@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// ids of the target technology groups
-        /// <br/>required field if you don’t specify technologies, technology_paths or categories
+        /// <br/>required field if you don’t specify technologies, technology_paths, categories, or keywords
         /// <br/>you can find the full list of technology group ids on this page
         /// <br/>note: you can specify up to 10 technology groups in this array
         /// <br/>example:
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// ids of the target technology categories
-        /// <br/>required field if you don’t specify groups, technology_paths or technologies
+        /// <br/>required field if you don’t specify groups, technology_paths, technologies, or keywords
         /// <br/>you can find the full list of technology category ids on this page
         /// <br/>note: you can specify up to 10 technology categories in this array
         /// <br/>example:
@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target technologies
-        /// <br/>required field if you don’t specify groups, technology_paths or categories
+        /// <br/>required field if you don’t specify groups, technology_paths, categories, or keywords
         /// <br/>you can find the full list of technologies you can specify here on this page
         /// <br/>note: you can specify up to 10 technologies in this array
         /// <br/>example:
@@ -53,8 +53,9 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target keywords in the domain’s title, description or meta keywords
-        /// <br/>optional field
-        /// <br/>UTF-8 encoding
+        /// <br/>required field if you don’t specify groups, technology_paths, categories, or technologies
+        /// <br/>you can specify the maximum of 10 keywords;
+        /// <br/>UTF-8 encoding;
         /// <br/>example:
         /// <br/>["seo","software"]
         /// </summary>
@@ -96,6 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this field to limit the number of elements within the following arrays:
         /// <br/>countries, languages, content_languages, keywords
         /// <br/>default value: 10
+        /// <br/>minimum value: 1
         /// <br/>maximum value: 10000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("internal_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

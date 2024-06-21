@@ -103,6 +103,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to limit the number of items with identical "group" in the results
         /// <br/>default value: 5
+        /// <br/>minimum value: 1
         /// <br/>maximum value: 10000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("internal_groups_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -113,6 +114,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to limit the number of items with identical "category" in the results
         /// <br/>default value: 5
+        /// <br/>minimum value: 1
         /// <br/>maximum value: 10000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("internal_categories_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -123,6 +125,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to limit the number of items with identical "technology" in the results
         /// <br/>default value: 10
+        /// <br/>minimum value: 1
         /// <br/>maximum value: 10000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("internal_technologies_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -134,6 +137,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, the values specified in internal_groups_list_limit, internal_categories_list_limit and internal_technologies_list_limit will be ignored;
         /// <br/>you can use this field to limit the number of items with identical "category", "group", or "technology"
         /// <br/>default value: 10
+        /// <br/>minimum value: 1
         /// <br/>maximum value: 10000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("internal_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

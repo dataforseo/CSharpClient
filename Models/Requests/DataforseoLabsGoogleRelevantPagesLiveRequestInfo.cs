@@ -74,7 +74,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>["organic", "paid", "featured_snippet", "local_pack"]
         /// <br/>default value:
-        /// <br/>["organic", "paid", "featured_snippet", "local_pack"]
+        /// <br/>["organic", "paid"]
         /// </summary>
         [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
@@ -87,6 +87,18 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? Limit { get; set; }
+
+        /// <summary>
+        /// include or exclude data from clickstream-based metrics in the result
+        /// <br/>optional field
+        /// <br/>if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response
+        /// <br/>default value: false
+        /// <br/>with this parameter enabled, you will be charged double the price for the request
+        /// <br/>Note: clickstream data is available for roughly 15% of keywords in the response
+        /// <br/>learn more about how clickstream-based metrics are calculated in this help center article
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("include_clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IncludeClickstreamData { get; set; }
 
         /// <summary>
         /// offset in the results array of returned pages

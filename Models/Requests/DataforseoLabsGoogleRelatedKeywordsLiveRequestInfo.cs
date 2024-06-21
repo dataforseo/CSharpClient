@@ -98,6 +98,18 @@ namespace DataForSeo.Client.Models.Requests
         public bool? IncludeSerpInfo { get; set; }
 
         /// <summary>
+        /// include or exclude data from clickstream-based metrics in the result
+        /// <br/>optional field
+        /// <br/>if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response
+        /// <br/>default value: false
+        /// <br/>with this parameter enabled, you will be charged double the price for the request
+        /// <br/>Note: clickstream data is available for roughly 15% of keywords in the response
+        /// <br/>learn more about how clickstream-based metrics are calculated in this help center article
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("include_clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IncludeClickstreamData { get; set; }
+
+        /// <summary>
         /// ignore highly similar keywords
         /// <br/>optional field
         /// <br/>if set to true only core keywords will be returned, all highly similar keywords will be excluded;

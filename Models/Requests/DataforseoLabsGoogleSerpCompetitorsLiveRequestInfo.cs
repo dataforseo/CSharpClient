@@ -81,7 +81,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>["organic", "paid", "featured_snippet", "local_pack"]
         /// <br/>default value:
-        /// <br/>["organic", "paid", "featured_snippet", "local_pack"]
+        /// <br/>["organic", "paid"]
         /// </summary>
         [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }

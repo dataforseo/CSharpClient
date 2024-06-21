@@ -185,6 +185,14 @@ namespace DataForSeo.Client.Models
         public float? EstimatedPaidTrafficCost { get; set; }
 
         /// <summary>
+        /// estimated traffic volume based on clickstream data
+        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
+        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("clickstream_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? ClickstreamEtv { get; set; }
+
+        /// <summary>
         /// changes in rankings
         /// <br/>contains information about the ranking changes of the SERP element since the previous_updated_time
         /// </summary>

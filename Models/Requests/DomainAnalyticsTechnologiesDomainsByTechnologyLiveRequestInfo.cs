@@ -56,7 +56,8 @@ namespace DataForSeo.Client.Models.Requests
         /// target keywords in the domain’s title, description or meta keywords
         /// <br/>required field if you don’t specify groups, technology_paths, technologies or categories
         /// <br/>optional field
-        /// <br/>UTF-8 encoding
+        /// <br/>you can specify the maximum of 10 keywords;
+        /// <br/>UTF-8 encoding;
         /// <br/>example:
         /// <br/>["seo","software"]
         /// </summary>

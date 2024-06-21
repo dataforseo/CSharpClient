@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
         public KeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
-        /// contains data on the first domain’s SERP element found for the returned keyword
+        /// contains data on the first domain's SERP element found for the returned keyword
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [Newtonsoft.Json.JsonProperty("first_domain_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public BaseDataforseoLabsSerpElementItem FirstDomainSerpElement { get; set; }
 
         /// <summary>
-        /// contains data on the second domain’s SERP element found for the returned keyword
+        /// contains data on the second domain's SERP element found for the returned keyword
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [Newtonsoft.Json.JsonProperty("second_domain_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

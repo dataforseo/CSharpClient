@@ -67,6 +67,13 @@ namespace DataForSeo.Client.Models.Responses
         public RatingInfo Rating { get; set; }
 
         /// <summary>
+        /// rating distribution by votes
+        /// <br/>the distribution of votes across the rating in the range from 1 to 5
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rating_distribution", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.IDictionary<string, int?> RatingDistribution { get; set; }
+
+        /// <summary>
         /// the number of reviews items in the results array
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>

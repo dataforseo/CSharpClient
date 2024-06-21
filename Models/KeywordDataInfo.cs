@@ -35,6 +35,13 @@ namespace DataForSeo.Client.Models
         public KeywordInfo KeywordInfo { get; set; }
 
         /// <summary>
+        /// clickstream data for the returned keyword
+        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("clickstream_keyword_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public ClickstreamKeywordInfo ClickstreamKeywordInfo { get; set; }
+
+        /// <summary>
         /// additional information about the keyword
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword_properties", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
