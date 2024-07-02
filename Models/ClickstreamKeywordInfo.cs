@@ -19,12 +19,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// distribution of estimated clickstream-based metrics by gender
+        /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("gender_distribution", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> GenderDistribution { get; set; }
 
         /// <summary>
         /// distribution of clickstream-based metrics by age
+        /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("age_distribution", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> AgeDistribution { get; set; }

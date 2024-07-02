@@ -2,7 +2,7 @@ namespace DataForSeo.Client.Models
 {
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsDomainRankOverviewLiveItem
+    public partial class DataforseoLabsLiveItem
     {
         /// <summary>
         /// search engine type
@@ -11,22 +11,16 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// location code in a POST array
+        /// keyword data for the returned keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        [Newtonsoft.Json.JsonProperty("keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public KeywordDataKeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
-        /// language code in a POST array
+        /// contains data on the domain’s SERP element found for the returned keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string LanguageCode { get; set; }
-
-        /// <summary>
-        /// ranking data relevant to the specified domain
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
+        [Newtonsoft.Json.JsonProperty("ranked_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RankedSerpElement RankedSerpElement { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

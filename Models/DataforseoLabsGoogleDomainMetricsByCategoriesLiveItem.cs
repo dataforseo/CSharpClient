@@ -58,14 +58,14 @@ namespace DataForSeo.Client.Models
         /// historical ranking and traffic data of the domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.IDictionary<string, MetricsInfo>> MetricsHistory { get; set; }
+        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo>> MetricsHistory { get; set; }
 
         /// <summary>
         /// metrics difference between first_date and second_date
         /// <br/>calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics_difference", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> MetricsDifference { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> MetricsDifference { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

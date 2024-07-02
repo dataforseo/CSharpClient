@@ -220,7 +220,7 @@ namespace DataForSeo.Client.Models
         /// <br/>nofollow
         /// </summary>
         [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object Attributes { get; set; }
+        public System.Collections.Generic.ICollection<string> Attributes { get; set; }
 
         /// <summary>
         /// indicates whether the backlink is dofollow
@@ -338,7 +338,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates a URL or a sequence of URLs that lead to url_to
         /// </summary>
         [Newtonsoft.Json.JsonProperty("indirect_link_path", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public object IndirectLinkPath { get; set; }
+        public System.Collections.Generic.ICollection<Redirect> IndirectLinkPath { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

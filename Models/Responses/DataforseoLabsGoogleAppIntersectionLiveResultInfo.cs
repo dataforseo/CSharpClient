@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models.Responses
         /// contains data related to the ranking keywords for the app specified in the app_id field
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<DataforseoLabsleAppIntersectionLiveItem> Items { get; set; }
+        public System.Collections.Generic.ICollection<DataforseoLabsGoogleAppIntersectionLiveItem> Items { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

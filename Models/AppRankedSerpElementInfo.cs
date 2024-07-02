@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [Newtonsoft.Json.JsonProperty("serp_item", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public BaseAppDataSerpElementItem SerpItem { get; set; }
+        public AppDataGooglePlaySearchOrganicSerpElementItem SerpItem { get; set; }
 
         /// <summary>
         /// direct URL to search engine results

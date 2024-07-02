@@ -38,7 +38,10 @@ namespace DataForSeo.Client.Models
         public AppendixBingKeywordsDataLimitsRatesDataInfo Bing { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_performance", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo KeywordPerformance { get; set; }
+        public AppendixInfo KeywordPerformance { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("locations_and_languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? LocationsAndLanguages { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo SearchVolumeHistory { get; set; }

@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Models
         /// <br/>full overview of ranking and traffic data relevant to all keywords that the provided domain is ranking for
         /// </summary>
         [Newtonsoft.Json.JsonProperty("full_domain_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> FullDomainMetrics { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> FullDomainMetrics { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>note: in this array ranking and traffic data is provided for the target considering the keywords target shares in search with the competitor’s domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> Metrics { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
@@ -59,7 +59,7 @@ namespace DataForSeo.Client.Models
         /// <br/>note: in this array ranking and traffic data is provided for the returned competitor’s domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("competitor_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> CompetitorMetrics { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> CompetitorMetrics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

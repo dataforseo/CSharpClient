@@ -137,6 +137,7 @@ namespace DataForSeo.Client.Models
         /// estimated traffic volume based on clickstream data
         /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
         /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
+        /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("clickstream_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? ClickstreamEtv { get; set; }

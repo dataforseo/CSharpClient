@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         /// ranking data relevant to the specified domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> Metrics { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
         /// backlink data for the returned domain

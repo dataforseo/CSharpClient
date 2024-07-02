@@ -118,14 +118,17 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// types of items returned
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, all items will be presented in the response;
-        /// <br/>you can set only one item to speed up the execution of the request
+        /// <br/>to speed up the execution of the request, specify one item at a time;
         /// <br/>possible values:
         /// <br/>"item_types": [
         /// <br/>"google_trends_graph",
         /// <br/>"google_trends_map",
         /// <br/>"google_trends_topics_list",
         /// <br/>"google_trends_queries_list"
+        /// <br/>]
+        /// <br/>default value:
+        /// <br/>"item_types": [
+        /// <br/>"google_trends_graph"
         /// <br/>]
         /// </summary>
         [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

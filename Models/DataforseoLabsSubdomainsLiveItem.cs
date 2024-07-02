@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// ranking data relevant to subdomain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> Metrics { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

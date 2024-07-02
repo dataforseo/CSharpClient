@@ -48,14 +48,14 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>ranking data is provided by the rank_group parameters that show the result’s rank considering only equivalent SERP elements
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> Metrics { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
         /// ranking data relevant to the specified domain
         /// <br/>ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metrics_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, MetricsInfo> MetricsAbsolute { get; set; }
+        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> MetricsAbsolute { get; set; }
 
         /// <summary>
         /// contains ranked keywords and related data
