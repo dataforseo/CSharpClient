@@ -2,7 +2,7 @@ namespace DataForSeo.Client.Models
 {
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsBingRelatedKeywordsLiveItem
+    public partial class DataforseoLabsAppleKeywordsForAppLiveItem
     {
         /// <summary>
         /// search engine type
@@ -17,17 +17,10 @@ namespace DataForSeo.Client.Models
         public KeywordData KeywordData { get; set; }
 
         /// <summary>
-        /// keyword search depth
+        /// contains data on the domain’s SERP element found for the returned keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Depth { get; set; }
-
-        /// <summary>
-        /// list of related keywords
-        /// <br/>represents the list of search queries which are related to the keyword returned in the array above
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("related_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> RelatedKeywords { get; set; }
+        [Newtonsoft.Json.JsonProperty("ranked_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public ItemsRankedSerpElement RankedSerpElement { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

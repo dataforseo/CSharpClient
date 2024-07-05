@@ -82,6 +82,12 @@ namespace DataForSeo.Client.Models
         public System.Collections.Generic.IDictionary<string, bool?> Checks { get; set; }
 
         /// <summary>
+        /// resource errors and warnings
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("resource_errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public OnPageResourceIssueInfo ResourceErrors { get; set; }
+
+        /// <summary>
         /// type of encoding
         /// </summary>
         [Newtonsoft.Json.JsonProperty("content_encoding", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -114,12 +120,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("last_modified", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public LastModified LastModified { get; set; }
-
-        /// <summary>
-        /// resource errors and warnings
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("resource_errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public OnPageResourceIssueInfo ResourceErrors { get; set; }
 
     }
 }

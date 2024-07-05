@@ -21,14 +21,14 @@ namespace DataForSeo.Client.Models
         /// <br/>you can find more information about topic priority calculation in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("main_topic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<MainTopic> MainTopic { get; set; }
+        public System.Collections.Generic.ICollection<TopicInfo> MainTopic { get; set; }
 
         /// <summary>
         /// secondary topic on the page
         /// <br/>you can find more information about topic priority calculation in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("secondary_topic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<SecondaryTopic> SecondaryTopic { get; set; }
+        public System.Collections.Generic.ICollection<TopicInfo> SecondaryTopic { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

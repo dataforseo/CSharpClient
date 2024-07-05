@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are no details, the value will be null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public PriceInfo Price { get; set; }
+        public Price Price { get; set; }
 
         /// <summary>
         /// seller rating details

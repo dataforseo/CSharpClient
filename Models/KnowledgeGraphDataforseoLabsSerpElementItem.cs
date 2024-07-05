@@ -11,8 +11,7 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
+        /// position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -64,7 +63,7 @@ namespace DataForSeo.Client.Models
         public string CardId { get; set; }
 
         /// <summary>
-        /// relevant URL in SERP
+        /// relevant URL of the Ad element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -91,7 +90,7 @@ namespace DataForSeo.Client.Models
         /// elements of search results found in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<PeopleAlsoAskElement> Items { get; set; }
+        public System.Collections.Generic.ICollection<BaseDataforseoLabsSerpElementItem> Items { get; set; }
 
     }
 }

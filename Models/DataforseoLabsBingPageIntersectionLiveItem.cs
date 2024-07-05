@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         /// keyword data for the returned keyword
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public KeywordDataKeywordDataInfo KeywordData { get; set; }
+        public KeywordData KeywordData { get; set; }
 
         /// <summary>
         /// contains data on the SERP elements found for the returned keyword

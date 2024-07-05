@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>fields in the array are identical to that of keyword_data
         /// </summary>
         [Newtonsoft.Json.JsonProperty("seed_keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public KeywordDataKeywordDataInfo SeedKeywordData { get; set; }
+        public KeywordData SeedKeywordData { get; set; }
 
         /// <summary>
         /// location code in a POST array

@@ -58,6 +58,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("perspectives", typeof(PerspectivesSerpElementItem))]
     [JsonInheritanceAttribute("discussions_and_forums", typeof(DiscussionsAndForumsSerpElementItem))]
     [JsonInheritanceAttribute("compare_sites", typeof(CompareSitesSerpElementItem))]
+    [JsonInheritanceAttribute("courses", typeof(CoursesSerpElementItem))]
     [JsonInheritanceAttribute("maps_search", typeof(MapsSearchSerpElementItem))]
     [JsonInheritanceAttribute("maps_paid_item", typeof(MapsPaidItemSerpElementItem))]
     [JsonInheritanceAttribute("news_search", typeof(NewsSearchSerpElementItem))]

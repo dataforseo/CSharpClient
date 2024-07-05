@@ -74,8 +74,8 @@ namespace DataForSeo.Client.Models
         /// keyword positions
         /// <br/>SERP positions the related domain holds in SERP for the specified keywords
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords_positions", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<double>> KeywordsPositions { get; set; }
+        [Newtonsoft.Json.JsonProperty("keywords_positions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<int?>> KeywordsPositions { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

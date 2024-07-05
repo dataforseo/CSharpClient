@@ -71,7 +71,7 @@ namespace DataForSeo.Client.Models
         /// price of the app
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public PriceInfo Price { get; set; }
+        public Price Price { get; set; }
 
         /// <summary>
         /// indicates whether the app is free

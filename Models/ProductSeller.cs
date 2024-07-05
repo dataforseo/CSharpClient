@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// <br/>product price details on the seller’s website
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public PriceInfo Price { get; set; }
+        public Price Price { get; set; }
 
         /// <summary>
         /// delivery information
