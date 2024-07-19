@@ -62,7 +62,7 @@ namespace DataForSeo.Client.Models
         /// product price without tax and shipping
         /// </summary>
         [Newtonsoft.Json.JsonProperty("base_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? BasePrice { get; set; }
+        public int? BasePrice { get; set; }
 
         /// <summary>
         /// the amount of tax

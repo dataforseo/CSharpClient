@@ -45,6 +45,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,radius” format
         /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
+        /// <br/>the value of “radius” is specified in kilometres (km)
         /// <br/>the minimum value for “radius”: 1
         /// <br/>the maximum value for “radius”: 100000
         /// <br/>example:

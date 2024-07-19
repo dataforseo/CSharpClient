@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models.Requests
         /// URL path of the business entity
         /// <br/>required field if you do not specify keyword
         /// <br/>URL path to the Tripadvisor page of the business entity;
-        /// <br/>can be found in the URL of the business entity on Tripadvisor
-        /// <br/>example:
+        /// <br/>examples:
         /// <br/>Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
         /// <br/>https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
         /// </summary>
@@ -142,6 +141,16 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [Newtonsoft.Json.JsonProperty("sort_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SortBy { get; set; }
+
+        /// <summary>
+        /// translate reviews according to the URL path
+        /// <br/>optional field
+        /// <br/>if set to true, returned reviews will be translated to the language matching the specified url_path;
+        /// <br/>for example, if url_path contains tripadvisor.it and translate_reviews is true, reviews will be translated to the Italian language;
+        /// <br/>default value: true
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("translate_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? TranslateReviews { get; set; }
 
         /// <summary>
         /// user-defined task identifier

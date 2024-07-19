@@ -95,6 +95,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>date format: "yyyy-mm-dd"
         /// <br/>example:
         /// <br/>"2020-01-01"
+        /// <br/>Note: we do not recommend using a custom time range for the past year’s dates
         /// </summary>
         [Newtonsoft.Json.JsonProperty("date_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
@@ -109,6 +110,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>date format: "yyyy-mm-dd"
         /// <br/>example:
         /// <br/>"2020-03-15"
+        /// <br/>Note: we do not recommend using a custom time range for the past year’s dates
         /// </summary>
         [Newtonsoft.Json.JsonProperty("date_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DateTo { get; set; }

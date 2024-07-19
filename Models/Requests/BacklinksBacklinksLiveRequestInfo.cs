@@ -165,6 +165,16 @@ namespace DataForSeo.Client.Models.Requests
         public bool? IncludeIndirectLinks { get; set; }
 
         /// <summary>
+        /// indicates if internal backlinks from subdomains to the target will be excluded from the results
+        /// <br/>optional field
+        /// <br/>if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target
+        /// <br/>if set to false, internal links will be included in the results
+        /// <br/>default value: true
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("exclude_internal_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? ExcludeInternalBacklinks { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

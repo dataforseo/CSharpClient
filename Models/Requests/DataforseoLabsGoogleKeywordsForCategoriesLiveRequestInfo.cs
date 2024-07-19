@@ -105,7 +105,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of keywords in the results array
         /// <br/>optional field
-        /// <br/>default value: 700
+        /// <br/>default value: 100
         /// <br/>maximum value: 1000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

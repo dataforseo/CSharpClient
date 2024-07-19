@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
         /// </summary>
         [Newtonsoft.Json.JsonProperty("clickstream_keyword_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public ClickstreamKeywordInfo ClickstreamKeywordInfo { get; set; }
+        public object ClickstreamKeywordInfo { get; set; }
 
         /// <summary>
         /// additional information about the keyword
@@ -73,6 +73,13 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("serp_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SerpInfo SerpInfo { get; set; }
+
+        /// <summary>
+        /// backlink data for the returned keyword
+        /// <br/>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 websites ranking organically for the keyword
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("avg_backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AvgBacklinksInfo AvgBacklinksInfo { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

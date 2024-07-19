@@ -184,7 +184,7 @@ namespace DataForSeo.Client.Models
         /// <br/>}
         /// </summary>
         [Newtonsoft.Json.JsonProperty("place_topics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> PlaceTopics { get; set; }
+        public System.Collections.Generic.IDictionary<string, long?> PlaceTopics { get; set; }
 
         /// <summary>
         /// the element’s rating 
