@@ -123,22 +123,22 @@ public string Language { get; set; }
 ### **SentimentConnotations**
 
 ```csharp
-public SentimentConnotationInfo SentimentConnotations { get; set; }
+public IDictionary<string, Nullable<long>> SentimentConnotations { get; set; }
 ```
 
 #### Property Value
 
-[SentimentConnotationInfo](./SentimentConnotationInfo.md)<br>
+[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **ConnotationTypes**
 
 ```csharp
-public ConnotationTypeInfo ConnotationTypes { get; set; }
+public IDictionary<string, Nullable<long>> ConnotationTypes { get; set; }
 ```
 
 #### Property Value
 
-[ConnotationTypeInfo](./ConnotationTypeInfo.md)<br>
+[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **TextCategory**
 

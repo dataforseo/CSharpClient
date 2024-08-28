@@ -50,6 +50,16 @@ public string Xpath { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **Title**
+
+```csharp
+public string Title { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Items**
 
 ```csharp

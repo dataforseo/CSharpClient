@@ -170,6 +170,16 @@ public string ContactUrl { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **ContributorUrl**
+
+```csharp
+public string ContributorUrl { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Domain**
 
 ```csharp
@@ -250,6 +260,16 @@ public Nullable<bool> IsClaimed { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **QuestionsAndAnswersCount**
+
+```csharp
+public Nullable<int> QuestionsAndAnswersCount { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **Attributes**
 
 ```csharp
@@ -263,12 +283,12 @@ public BusinessDataAttributesInfo Attributes { get; set; }
 ### **PlaceTopics**
 
 ```csharp
-public IDictionary<string, string> PlaceTopics { get; set; }
+public IDictionary<string, Nullable<long>> PlaceTopics { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Rating**
 
@@ -343,12 +363,12 @@ public PopularTimes PopularTimes { get; set; }
 ### **LocalBusinessLinks**
 
 ```csharp
-public BaseLocalBusinessLink LocalBusinessLinks { get; set; }
+public ICollection<BaseLocalBusinessLink> LocalBusinessLinks { get; set; }
 ```
 
 #### Property Value
 
-[BaseLocalBusinessLink](./BaseLocalBusinessLink.md)<br>
+[ICollection&lt;BaseLocalBusinessLink&gt;](./BaseLocalBusinessLink.md)<br>
 
 ### **IsDirectoryItem**
 

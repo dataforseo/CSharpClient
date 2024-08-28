@@ -10,16 +10,6 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ba
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **RankGroup**
 
 ```csharp
@@ -113,12 +103,22 @@ public string Url { get; set; }
 ### **Table**
 
 ```csharp
-public object Table { get; set; }
+public Table Table { get; set; }
 ```
 
 #### Property Value
 
-[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
+[Table](./Table.md)<br>
+
+### **SeType**
+
+```csharp
+public string SeType { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **MainDomain**
 
@@ -173,12 +173,12 @@ public RankChanges RankChanges { get; set; }
 ### **BacklinksInfo**
 
 ```csharp
-public AvgBacklinksInfo BacklinksInfo { get; set; }
+public BacklinksInfo BacklinksInfo { get; set; }
 ```
 
 #### Property Value
 
-[AvgBacklinksInfo](./AvgBacklinksInfo.md)<br>
+[BacklinksInfo](./BacklinksInfo.md)<br>
 
 ### **RankInfo**
 

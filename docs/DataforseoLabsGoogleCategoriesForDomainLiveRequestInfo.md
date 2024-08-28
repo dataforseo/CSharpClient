@@ -70,6 +70,16 @@ public Nullable<bool> IncludeSubcategories { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **IncludeClickstreamData**
+
+```csharp
+public Nullable<bool> IncludeClickstreamData { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **ItemTypes**
 
 ```csharp

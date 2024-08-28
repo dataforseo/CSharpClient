@@ -103,12 +103,12 @@ public Nullable<int> RelevantSerpItems { get; set; }
 ### **KeywordsPositions**
 
 ```csharp
-public IDictionary<string, ICollection<double>> KeywordsPositions { get; set; }
+public IDictionary<string, ICollection<Nullable<int>>> KeywordsPositions { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, ICollection&lt;Double&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[IDictionary&lt;String, ICollection&lt;Nullable&lt;Int32&gt;&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

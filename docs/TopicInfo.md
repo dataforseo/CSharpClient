@@ -53,12 +53,12 @@ public string Language { get; set; }
 ### **Level**
 
 ```csharp
-public string Level { get; set; }
+public Nullable<int> Level { get; set; }
 ```
 
 #### Property Value
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **PrimaryContent**
 
@@ -79,6 +79,16 @@ public ICollection<ContentItemInfo> SecondaryContent { get; set; }
 #### Property Value
 
 [ICollection&lt;ContentItemInfo&gt;](./ContentItemInfo.md)<br>
+
+### **TableContent**
+
+```csharp
+public ICollection<TableContent> TableContent { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;TableContent&gt;](./TableContent.md)<br>
 
 ### **AdditionalProperties**
 

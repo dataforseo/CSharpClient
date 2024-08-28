@@ -200,6 +200,26 @@ public Nullable<int> PeopleAlsoAskClickDepth { get; set; }
 
 [Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **LoadAsyncAiOverview**
+
+```csharp
+public Nullable<bool> LoadAsyncAiOverview { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **ExpandAiOverview**
+
+```csharp
+public Nullable<bool> ExpandAiOverview { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **SearchParam**
 
 ```csharp

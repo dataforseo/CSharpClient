@@ -3,16 +3,15 @@ namespace DataForSeo.Client.Models
 
     [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
     [JsonInheritanceAttribute("organic", typeof(OrganicDataforseoLabsSerpElementItem))]
-    [JsonInheritanceAttribute("paid", typeof(PaidDataforseoLabsSerpElementItem))]
+    [JsonInheritanceAttribute("knowledge_graph", typeof(KnowledgeGraphDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("people_also_ask", typeof(PeopleAlsoAskDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("twitter", typeof(TwitterDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("people_also_search", typeof(PeopleAlsoSearchDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("related_searches", typeof(RelatedSearchesDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_description_item", typeof(KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_row_item", typeof(KnowledgeGraphRowItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_carousel_item", typeof(KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph", typeof(KnowledgeGraphDataforseoLabsSerpElementItem))]
+    [JsonInheritanceAttribute("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("carousel", typeof(CarouselDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("multi_carousel", typeof(MultiCarouselDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("top_stories", typeof(TopStoriesDataforseoLabsSerpElementItem))]
@@ -27,6 +26,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("knowledge_graph_part_item", typeof(KnowledgeGraphPartItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_expanded_item", typeof(KnowledgeGraphExpandedItemDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_shopping_item", typeof(KnowledgeGraphShoppingItemDataforseoLabsSerpElementItem))]
+    [JsonInheritanceAttribute("paid", typeof(PaidDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_reviews", typeof(GoogleReviewsDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_posts", typeof(GooglePostsDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_flights", typeof(GoogleFlightsDataforseoLabsSerpElementItem))]
@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("commercial_units", typeof(CommercialUnitsDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("local_services", typeof(LocalServicesDataforseoLabsSerpElementItem))]
     [JsonInheritanceAttribute("google_hotels", typeof(GoogleHotelsDataforseoLabsSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseDataforseoLabsSerpElementItem
     {
 

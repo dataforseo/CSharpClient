@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AppendixMoneyData
     {
         /// <summary>
@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// statistics of your spending
         /// </summary>
         [Newtonsoft.Json.JsonProperty("statistics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixStatisticsDataInfo Statistics { get; set; }
+        public AppendixStatisticsMoneyData Statistics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

@@ -30,6 +30,16 @@ public string Se { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **SeType**
+
+```csharp
+public string SeType { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **DatePosted**
 
 ```csharp

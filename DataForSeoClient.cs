@@ -18,10 +18,12 @@ namespace DataForSeo.Client
         public BusinessDataApi BusinessDataApi { get; }
         public AppendixApi AppendixApi { get; }
 
-        public DataForSeoClient(string username, string password, bool useCompression = true) : base()
+        public DataForSeoClient(string username, string password, bool useCompression = true, string userAgent = null) : base()
         {
             _client = new System.Net.Http.HttpClient(new System.Net.Http.HttpClientHandler { AutomaticDecompression = System.Net.DecompressionMethods.GZip, MaxConnectionsPerServer = 1000 });
             _client.Timeout = System.TimeSpan.FromMinutes(1);
+            if (!string.IsNullOrEmpty(userAgent))
+                _client.DefaultRequestHeaders.UserAgent.ParseAdd(userAgent);
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes($"{username}:{password}")));
             if (useCompression)
             {

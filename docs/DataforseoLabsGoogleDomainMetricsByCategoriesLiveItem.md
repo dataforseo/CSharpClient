@@ -93,22 +93,22 @@ public string MainDomain { get; set; }
 ### **MetricsHistory**
 
 ```csharp
-public IDictionary<string, IDictionary<string, MetricsInfo>> MetricsHistory { get; set; }
+public IDictionary<string, IDictionary<string, DataforseoLabsMetricsInfo>> MetricsHistory { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, IDictionary&lt;String, MetricsInfo&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[IDictionary&lt;String, IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **MetricsDifference**
 
 ```csharp
-public IDictionary<string, MetricsInfo> MetricsDifference { get; set; }
+public IDictionary<string, DataforseoLabsMetricsInfo> MetricsDifference { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](./MetricsInfo.md)<br>
+[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
 
 ### **AdditionalProperties**
 

@@ -100,16 +100,6 @@ public Nullable<bool> DisableCookiePopup { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **EnableJavascript**
-
-```csharp
-public Nullable<bool> EnableJavascript { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
 ### **CustomJs**
 
 ```csharp
@@ -119,6 +109,16 @@ public string CustomJs { get; set; }
 #### Property Value
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **SwitchPool**
+
+```csharp
+public Nullable<bool> SwitchPool { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **IpPoolForScan**
 

@@ -4,19 +4,25 @@ using DataForSeo.Client.Models.Responses;
 
 namespace DataForSeo.Client.Api
 {
-    [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ContentGenerationApi
     {
-        private string _baseUrl = "https://api.dataforseo.com";
+#pragma warning disable 8618
+        private string _baseUrl;
+#pragma warning restore 8618
         private System.Net.Http.HttpClient _httpClient;
-        private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;
+        private static System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings, true);
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
         public ContentGenerationApi(System.Net.Http.HttpClient httpClient)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
         {
+            BaseUrl = "https://api.dataforseo.com";
             _httpClient = httpClient;
-            _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings, true);
         }
 
-        private Newtonsoft.Json.JsonSerializerSettings CreateSerializerSettings()
+        private static Newtonsoft.Json.JsonSerializerSettings CreateSerializerSettings()
         {
             var settings = new Newtonsoft.Json.JsonSerializerSettings();
             UpdateJsonSerializerSettings(settings);
@@ -33,6 +39,8 @@ namespace DataForSeo.Client.Api
             set
             {
                 _baseUrl = value;
+                if (!string.IsNullOrEmpty(_baseUrl) && !_baseUrl.EndsWith("/"))
+                    _baseUrl += '/';
             }
         }
 
@@ -44,7 +52,7 @@ namespace DataForSeo.Client.Api
             }
         }
 
-        partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings);
+        static partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings);
         partial void PrepareRequest(System.Net.Http.HttpClient client, System.Net.Http.HttpRequestMessage request, string url);
         partial void PrepareRequest(System.Net.Http.HttpClient client, System.Net.Http.HttpRequestMessage request, System.Text.StringBuilder urlBuilder);
         partial void ProcessResponse(System.Net.Http.HttpClient client, System.Net.Http.HttpResponseMessage response);
@@ -70,8 +78,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationGenerateLiveResponseInfo> GenerateLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationGenerateLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/generate/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -84,6 +90,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/generate/live"
+                    urlBuilder_.Append("v3/content_generation/generate/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -92,7 +103,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -148,8 +161,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationGenerateTextLiveResponseInfo> GenerateTextLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationGenerateTextLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/generate_text/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -162,6 +173,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/generate_text/live"
+                    urlBuilder_.Append("v3/content_generation/generate_text/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -170,7 +186,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -226,8 +244,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationGenerateMetaTagsLiveResponseInfo> GenerateMetaTagsLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationGenerateMetaTagsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/generate_meta_tags/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -240,6 +256,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/generate_meta_tags/live"
+                    urlBuilder_.Append("v3/content_generation/generate_meta_tags/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -248,7 +269,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -304,8 +327,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationGenerateSubTopicsLiveResponseInfo> GenerateSubTopicsLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationGenerateSubTopicsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/generate_sub_topics/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -318,6 +339,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/generate_sub_topics/live"
+                    urlBuilder_.Append("v3/content_generation/generate_sub_topics/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -326,7 +352,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -382,8 +410,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationParaphraseLiveResponseInfo> ParaphraseLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationParaphraseLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/paraphrase/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -396,6 +422,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/paraphrase/live"
+                    urlBuilder_.Append("v3/content_generation/paraphrase/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -404,7 +435,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -460,8 +493,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationCheckGrammarLiveResponseInfo> CheckGrammarLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationCheckGrammarLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/check_grammar/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -474,6 +505,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/check_grammar/live"
+                    urlBuilder_.Append("v3/content_generation/check_grammar/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -482,7 +518,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -540,8 +578,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationCheckGrammarLanguagesResponseInfo> ContentGenerationCheckGrammarLanguagesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/check_grammar/languages");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -550,6 +586,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/check_grammar/languages"
+                    urlBuilder_.Append("v3/content_generation/check_grammar/languages");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -558,7 +599,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -616,8 +659,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationGrammarRulesResponseInfo> GrammarRulesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/grammar_rules");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -626,6 +667,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/grammar_rules"
+                    urlBuilder_.Append("v3/content_generation/grammar_rules");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -634,7 +680,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -690,8 +738,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationTextSummaryLiveResponseInfo> TextSummaryLiveAsync(System.Collections.Generic.IEnumerable<ContentGenerationTextSummaryLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/text_summary/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -704,6 +750,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/text_summary/live"
+                    urlBuilder_.Append("v3/content_generation/text_summary/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -712,7 +763,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -770,8 +823,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ContentGenerationTextSummaryLanguagesResponseInfo> ContentGenerationTextSummaryLanguagesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/content_generation/text_summary/languages");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -780,6 +831,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/content_generation/text_summary/languages"
+                    urlBuilder_.Append("v3/content_generation/text_summary/languages");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -788,7 +844,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -912,10 +970,20 @@ namespace DataForSeo.Client.Api
             {
                 return System.Convert.ToBase64String((byte[])value);
             }
+            else if (value is string[])
+            {
+                return string.Join(",", (string[])value);
+            }
             else if (value.GetType().IsArray)
             {
-                var array = System.Linq.Enumerable.OfType<object>((System.Array)value);
-                return string.Join(",", System.Linq.Enumerable.Select(array, o => ConvertToString(o, cultureInfo)));
+                var valueArray = (System.Array)value;
+                var valueTextArray = new string[valueArray.Length];
+                for (var i = 0; i < valueArray.Length; i++)
+                {
+                    valueTextArray[i] = ConvertToString(valueArray.GetValue(i), cultureInfo);
+                }
+
+                return string.Join(",", valueTextArray);
             }
 
             var result = System.Convert.ToString(value, cultureInfo);

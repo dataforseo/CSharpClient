@@ -30,6 +30,16 @@ public ICollection<ContentItemInfo> SecondaryContent { get; set; }
 
 [ICollection&lt;ContentItemInfo&gt;](./ContentItemInfo.md)<br>
 
+### **TableContent**
+
+```csharp
+public ICollection<TableContent> TableContent { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;TableContent&gt;](./TableContent.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo
     {
         /// <summary>
@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the domain or subdomain name of the target website
         /// <br/>the domain or subdomain should be specified without https:// and www.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("target", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("target", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Target { get; set; }
 
         /// <summary>
@@ -78,7 +78,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response
         /// <br/>default value: false
         /// <br/>with this parameter enabled, you will be charged double the price for the request
-        /// <br/>Note: clickstream data is available for roughly 15% of keywords in the response
         /// <br/>learn more about how clickstream-based metrics are calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("include_clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ContentGenerationGenerateTextLiveRequestInfo
     {
         /// <summary>
@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>main topic for generating content;
         /// <br/>can contain from 1 to 50 tokens
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("topic", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("topic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Topic { get; set; }
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the number of tokens in the generated text;
         /// <br/>can take values from 1 to 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("word_count", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("word_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? WordCount { get; set; }
 
         /// <summary>

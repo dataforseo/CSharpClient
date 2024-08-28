@@ -100,6 +100,16 @@ public RatingInfo Rating { get; set; }
 
 [RatingInfo](./RatingInfo.md)<br>
 
+### **RatingDistribution**
+
+```csharp
+public IDictionary<string, Nullable<int>> RatingDistribution { get; set; }
+```
+
+#### Property Value
+
+[IDictionary&lt;String, Nullable&lt;Int32&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **ItemsCount**
 
 ```csharp

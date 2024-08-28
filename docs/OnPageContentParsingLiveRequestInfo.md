@@ -30,6 +30,16 @@ public string CustomUserAgent { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **CustomJs**
+
+```csharp
+public string CustomJs { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **BrowserPreset**
 
 ```csharp
@@ -129,6 +139,26 @@ public Nullable<bool> EnableXhr { get; set; }
 #### Property Value
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **SwitchPool**
+
+```csharp
+public Nullable<bool> SwitchPool { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **IpPoolForScan**
+
+```csharp
+public string IpPoolForScan { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **AdditionalProperties**
 

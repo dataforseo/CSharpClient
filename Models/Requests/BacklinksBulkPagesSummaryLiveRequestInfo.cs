@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BacklinksBulkPagesSummaryLiveRequestInfo
     {
         /// <summary>
@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify up to 1000 pages, domains, or subdomains in each request.
         /// <br/>note that the URLs you set in a single request cannot belong to more than 100 different domains.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("targets", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("targets", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Targets { get; set; }
 
         /// <summary>

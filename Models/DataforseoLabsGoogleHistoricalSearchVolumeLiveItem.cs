@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem
     {
         /// <summary>
@@ -43,6 +43,18 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public KeywordInfo KeywordInfo { get; set; }
+
+        /// <summary>
+        /// contains keyword search volume normalized with Bing search volume
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("keyword_info_normalized_with_bing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithBing { get; set; }
+
+        /// <summary>
+        /// contains keyword search volume normalized with clickstream data
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("keyword_info_normalized_with_clickstream", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithClickstream { get; set; }
 
         /// <summary>
         /// clickstream data for the returned keyword

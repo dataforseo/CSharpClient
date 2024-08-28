@@ -143,12 +143,12 @@ public string Cid { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<BaseDataforseoLabsSerpElementItem> Items { get; set; }
+public ICollection<PeopleAlsoAskElement> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;BaseDataforseoLabsSerpElementItem&gt;](./BaseDataforseoLabsSerpElementItem.md)<br>
+[ICollection&lt;PeopleAlsoAskElement&gt;](./PeopleAlsoAskElement.md)<br>
 
 ### **AdditionalProperties**
 

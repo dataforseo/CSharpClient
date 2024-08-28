@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class KeywordDataInfo
     {
         /// <summary>
@@ -35,11 +35,23 @@ namespace DataForSeo.Client.Models
         public KeywordInfo KeywordInfo { get; set; }
 
         /// <summary>
+        /// contains keyword search volume normalized with Bing search volume
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("keyword_info_normalized_with_bing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithBing { get; set; }
+
+        /// <summary>
+        /// contains keyword search volume normalized with clickstream data
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("keyword_info_normalized_with_clickstream", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithClickstream { get; set; }
+
+        /// <summary>
         /// clickstream data for the returned keyword
         /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
         /// </summary>
         [Newtonsoft.Json.JsonProperty("clickstream_keyword_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public ClickstreamKeywordInfo ClickstreamKeywordInfo { get; set; }
+        public object ClickstreamKeywordInfo { get; set; }
 
         /// <summary>
         /// additional information about the keyword
@@ -49,6 +61,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// impressions data for the returned keyword idea
+        /// <br/>Note that all data in the impressions_info object is deprecated and provided only as legacy to avoid maintenance issues
         /// <br/>daily_impressions values provide a more accurate alternative to Google search volume data;
         /// <br/>the 999 bid is used to mitigate account-specific factors Google considers when calculating impressions
         /// <br/>learn more about impressions in this help center article
@@ -65,7 +78,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// backlink data for the returned keyword
-        /// <br/>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 websites ranking organically for the keyword
+        /// <br/>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 webpages ranking organically for the keyword
         /// </summary>
         [Newtonsoft.Json.JsonProperty("avg_backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AvgBacklinksInfo AvgBacklinksInfo { get; set; }

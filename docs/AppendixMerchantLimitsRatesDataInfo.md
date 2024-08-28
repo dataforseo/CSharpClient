@@ -70,6 +70,16 @@ public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
 
 [AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
 
+### **TasksReady**
+
+```csharp
+public Nullable<double> TasksReady { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **AdditionalProperties**
 
 ```csharp

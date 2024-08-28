@@ -110,6 +110,16 @@ public Nullable<bool> IncludeIndirectLinks { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **ExcludeInternalBacklinks**
+
+```csharp
+public Nullable<bool> ExcludeInternalBacklinks { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **IntersectionMode**
 
 ```csharp

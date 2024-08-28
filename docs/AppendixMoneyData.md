@@ -43,12 +43,12 @@ public AppendixLimitsMoneyData Limits { get; set; }
 ### **Statistics**
 
 ```csharp
-public AppendixStatisticsDataInfo Statistics { get; set; }
+public AppendixStatisticsMoneyData Statistics { get; set; }
 ```
 
 #### Property Value
 
-[AppendixStatisticsDataInfo](./AppendixStatisticsDataInfo.md)<br>
+[AppendixStatisticsMoneyData](./AppendixStatisticsMoneyData.md)<br>
 
 ### **AdditionalProperties**
 

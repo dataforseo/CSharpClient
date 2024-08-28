@@ -132,10 +132,10 @@ public AppendixApi AppendixApi { get; }
 
 ## Constructors
 
-### **DataForSeoClient(String, String, Boolean)**
+### **DataForSeoClient(String, String, Boolean, String)**
 
 ```csharp
-public DataForSeoClient(string username, string password, bool useCompression)
+public DataForSeoClient(string username, string password, bool useCompression, string userAgent)
 ```
 
 #### Parameters
@@ -145,3 +145,5 @@ public DataForSeoClient(string username, string password, bool useCompression)
 `password` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 `useCompression` [Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
+
+`userAgent` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>

@@ -73,22 +73,22 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Metrics**
 
 ```csharp
-public IDictionary<string, MetricsInfo> Metrics { get; set; }
+public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](./MetricsInfo.md)<br>
+[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
 
 ### **MetricsAbsolute**
 
 ```csharp
-public IDictionary<string, MetricsInfo> MetricsAbsolute { get; set; }
+public IDictionary<string, DataforseoLabsMetricsInfo> MetricsAbsolute { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](./MetricsInfo.md)<br>
+[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
 
 ### **Items**
 

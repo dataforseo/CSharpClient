@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AppendixDataInfo
     {
         [Newtonsoft.Json.JsonProperty("serp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -82,12 +82,6 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("total_content_generation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalContentGeneration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? TotalTrafficAnalytics { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo TrafficAnalytics { get; set; }
-
         [Newtonsoft.Json.JsonProperty("total_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalReviews { get; set; }
 
@@ -99,6 +93,12 @@ namespace DataForSeo.Client.Models
 
         [Newtonsoft.Json.JsonProperty("social", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixSerpLimitsRatesDataInfo Social { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? TotalTrafficAnalytics { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixSerpLimitsRatesDataInfo TrafficAnalytics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

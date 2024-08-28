@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo
     {
         /// <summary>
@@ -91,8 +91,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like, not_like
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, ilike, not_ilike, like, not_like
+        /// <br/>you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters
         /// <br/>example:
         /// <br/>["avg_position","&lt;", 10]
         /// <br/>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide

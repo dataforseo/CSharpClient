@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BusinessDataBusinessListingsSearchLiveItem
     {
         /// <summary>
@@ -242,6 +242,15 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("last_updated_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }
+
+        /// <summary>
+        /// date and time when our crawler found the business listing element for the first time
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2023-03-11 10:04:11 +00:00
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("first_seen", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string FirstSeen { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

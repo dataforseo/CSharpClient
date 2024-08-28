@@ -90,6 +90,16 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
+### **TasksReady**
+
+```csharp
+public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
+```
+
+#### Property Value
+
+[AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

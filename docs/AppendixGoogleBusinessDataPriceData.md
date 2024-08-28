@@ -50,6 +50,16 @@ public AppendixGoogleBusinessDataPriceDataInfo MyBusinessUpdates { get; set; }
 
 [AppendixGoogleBusinessDataPriceDataInfo](./AppendixGoogleBusinessDataPriceDataInfo.md)<br>
 
+### **QuestionsAndAnswers**
+
+```csharp
+public AppendixGoogleBusinessDataPriceDataInfo QuestionsAndAnswers { get; set; }
+```
+
+#### Property Value
+
+[AppendixGoogleBusinessDataPriceDataInfo](./AppendixGoogleBusinessDataPriceDataInfo.md)<br>
+
 ### **Reviews**
 
 ```csharp

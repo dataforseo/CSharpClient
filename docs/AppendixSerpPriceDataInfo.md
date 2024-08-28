@@ -10,16 +10,6 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 
 ## Properties
 
-### **Html**
-
-```csharp
-public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
-```
-
-#### Property Value
-
-[AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
-
 ### **Advanced**
 
 ```csharp
@@ -34,6 +24,16 @@ public AppendixTaskKeywordsDataPriceDataInfo Advanced { get; set; }
 
 ```csharp
 public AppendixTaskKeywordsDataPriceDataInfo Regular { get; set; }
+```
+
+#### Property Value
+
+[AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
+
+### **Html**
+
+```csharp
+public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
 ```
 
 #### Property Value

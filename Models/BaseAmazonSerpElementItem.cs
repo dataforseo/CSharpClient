@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("amazon_seller_main_item", typeof(AmazonAmazonSellerMainItemSerpElementItem))]
     [JsonInheritanceAttribute("amazon_seller_item", typeof(AmazonAmazonSellerItemSerpElementItem))]
     [JsonInheritanceAttribute("amazon_review_item", typeof(AmazonAmazonReviewItemSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseAmazonSerpElementItem
     {
 

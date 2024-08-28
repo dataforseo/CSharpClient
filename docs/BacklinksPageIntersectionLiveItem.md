@@ -23,12 +23,12 @@ public IDictionary<string, ICollection<BacklinksPageIntersectionInfo>> PageInter
 ### **Summary**
 
 ```csharp
-public Summary Summary { get; set; }
+public IntersectionSummaryInfo Summary { get; set; }
 ```
 
 #### Property Value
 
-[Summary](./Summary.md)<br>
+[IntersectionSummaryInfo](./IntersectionSummaryInfo.md)<br>
 
 ### **AdditionalProperties**
 

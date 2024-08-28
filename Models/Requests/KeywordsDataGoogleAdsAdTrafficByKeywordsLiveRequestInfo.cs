@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo
     {
         /// <summary>
@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task;
         /// <br/>to learn more about which symbols can be used, please refer to this article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>it stands for the price you are willing to pay for an ad; the higher value you specify here, the higher values you will get in the returned metrics
         /// <br/>learn more in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("bid", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("bid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? Bid { get; set; }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>can take the following values: exact, broad, phrase
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("match", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("match", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Match { get; set; }
 
         /// <summary>

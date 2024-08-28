@@ -30,6 +30,16 @@ public string Url { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **Urls**
+
+```csharp
+public ICollection<ContentUrlInfo> Urls { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;ContentUrlInfo&gt;](./ContentUrlInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

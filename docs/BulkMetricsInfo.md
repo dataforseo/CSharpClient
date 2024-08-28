@@ -30,6 +30,16 @@ public Nullable<long> Count { get; set; }
 
 [Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **ClickstreamEtv**
+
+```csharp
+public Nullable<int> ClickstreamEtv { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **AdditionalProperties**
 
 ```csharp

@@ -40,16 +40,6 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; 
 
 [AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
 
-### **SearchVolumeHistory**
-
-```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo SearchVolumeHistory { get; set; }
-```
-
-#### Property Value
-
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
-
 ### **SearchVolume**
 
 ```csharp

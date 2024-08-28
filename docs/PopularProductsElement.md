@@ -40,6 +40,26 @@ public string Description { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **Seller**
+
+```csharp
+public string Seller { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **ImageUrl**
+
+```csharp
+public string ImageUrl { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Price**
 
 ```csharp

@@ -170,6 +170,16 @@ public LastModified LastModified { get; set; }
 
 [LastModified](./LastModified.md)<br>
 
+### **ResourceErrors**
+
+```csharp
+public OnPageResourceIssueInfo ResourceErrors { get; set; }
+```
+
+#### Property Value
+
+[OnPageResourceIssueInfo](./OnPageResourceIssueInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

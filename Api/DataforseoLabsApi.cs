@@ -4,19 +4,25 @@ using DataForSeo.Client.Models.Responses;
 
 namespace DataForSeo.Client.Api
 {
-    [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsApi
     {
-        private string _baseUrl = "https://api.dataforseo.com";
+#pragma warning disable 8618
+        private string _baseUrl;
+#pragma warning restore 8618
         private System.Net.Http.HttpClient _httpClient;
-        private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;
+        private static System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings, true);
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
         public DataforseoLabsApi(System.Net.Http.HttpClient httpClient)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
         {
+            BaseUrl = "https://api.dataforseo.com";
             _httpClient = httpClient;
-            _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings, true);
         }
 
-        private Newtonsoft.Json.JsonSerializerSettings CreateSerializerSettings()
+        private static Newtonsoft.Json.JsonSerializerSettings CreateSerializerSettings()
         {
             var settings = new Newtonsoft.Json.JsonSerializerSettings();
             UpdateJsonSerializerSettings(settings);
@@ -33,6 +39,8 @@ namespace DataForSeo.Client.Api
             set
             {
                 _baseUrl = value;
+                if (!string.IsNullOrEmpty(_baseUrl) && !_baseUrl.EndsWith("/"))
+                    _baseUrl += '/';
             }
         }
 
@@ -44,7 +52,7 @@ namespace DataForSeo.Client.Api
             }
         }
 
-        partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings);
+        static partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings);
         partial void PrepareRequest(System.Net.Http.HttpClient client, System.Net.Http.HttpRequestMessage request, string url);
         partial void PrepareRequest(System.Net.Http.HttpClient client, System.Net.Http.HttpRequestMessage request, System.Text.StringBuilder urlBuilder);
         partial void ProcessResponse(System.Net.Http.HttpClient client, System.Net.Http.HttpResponseMessage response);
@@ -68,8 +76,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsIdListResponseInfo> DataforseoLabsIdListAsync(System.Collections.Generic.IEnumerable<DataforseoLabsIdListRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/id_list");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -82,6 +88,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/id_list"
+                    urlBuilder_.Append("v3/dataforseo_labs/id_list");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -90,7 +101,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -146,8 +159,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsStatusResponseInfo> DataforseoLabsStatusAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/status");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -156,6 +167,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/status"
+                    urlBuilder_.Append("v3/dataforseo_labs/status");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -164,7 +180,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -218,8 +236,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsErrorsResponseInfo> DataforseoLabsErrorsAsync(System.Collections.Generic.IEnumerable<DataforseoLabsErrorsRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/errors");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -232,6 +248,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/errors"
+                    urlBuilder_.Append("v3/dataforseo_labs/errors");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -240,7 +261,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -296,8 +319,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAvailableFiltersResponseInfo> AvailableFiltersAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/available_filters");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -306,6 +327,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/available_filters"
+                    urlBuilder_.Append("v3/dataforseo_labs/available_filters");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -314,7 +340,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -370,8 +398,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsLocationsAndLanguagesResponseInfo> DataforseoLabsLocationsAndLanguagesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/locations_and_languages");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -380,6 +406,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/locations_and_languages"
+                    urlBuilder_.Append("v3/dataforseo_labs/locations_and_languages");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -388,7 +419,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -444,8 +477,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsCategoriesResponseInfo> CategoriesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/categories");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -454,6 +485,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/categories"
+                    urlBuilder_.Append("v3/dataforseo_labs/categories");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -462,7 +498,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -518,8 +556,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleAvailableHistoryResponseInfo> GoogleAvailableHistoryAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/available_history");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -528,6 +564,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/available_history"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/available_history");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -536,7 +577,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -592,8 +635,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo> GoogleKeywordsForSiteLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/keywords_for_site/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -606,6 +647,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/keywords_for_site/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/keywords_for_site/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -614,7 +660,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -670,8 +718,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo> GoogleRelatedKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/related_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -684,6 +730,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/related_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/related_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -692,7 +743,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -748,8 +801,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo> GoogleKeywordSuggestionsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/keyword_suggestions/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -762,6 +813,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/keyword_suggestions/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/keyword_suggestions/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -770,7 +826,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -826,8 +884,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordIdeasLiveResponseInfo> GoogleKeywordIdeasLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/keyword_ideas/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -840,6 +896,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/keyword_ideas/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/keyword_ideas/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -848,7 +909,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -904,8 +967,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHistoricalSearchVolumeLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/historical_search_volume/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -918,6 +979,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/historical_search_volume/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/historical_search_volume/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -926,7 +992,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -980,8 +1048,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo> GoogleBulkKeywordDifficultyLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/bulk_keyword_difficulty/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -994,6 +1060,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/bulk_keyword_difficulty/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/bulk_keyword_difficulty/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1002,7 +1073,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1058,8 +1131,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleSearchIntentLiveResponseInfo> GoogleSearchIntentLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleSearchIntentLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/search_intent/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1072,6 +1143,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/search_intent/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/search_intent/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1080,7 +1156,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1136,8 +1214,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/categories_for_keywords/languages");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1146,6 +1222,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/categories_for_keywords/languages"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/categories_for_keywords/languages");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1154,7 +1235,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1210,8 +1293,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo> GoogleCategoriesForDomainLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/categories_for_domain/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1224,6 +1305,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/categories_for_domain/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/categories_for_domain/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1232,7 +1318,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1286,8 +1374,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> GoogleCategoriesForKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/categories_for_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1300,6 +1386,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/categories_for_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/categories_for_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1308,7 +1399,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1364,8 +1457,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo> GoogleKeywordsForCategoriesLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/keywords_for_categories/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1378,6 +1469,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/keywords_for_categories/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/keywords_for_categories/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1386,7 +1482,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1442,8 +1540,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo> GoogleDomainMetricsByCategoriesLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/domain_metrics_by_categories/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1456,6 +1552,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/domain_metrics_by_categories/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/domain_metrics_by_categories/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1464,7 +1565,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1520,8 +1623,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleTopSearchesLiveResponseInfo> GoogleTopSearchesLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleTopSearchesLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/top_searches/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1534,6 +1635,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/top_searches/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/top_searches/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1542,7 +1648,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1598,8 +1706,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> GoogleDomainWhoisOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/domain_whois_overview/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1612,6 +1718,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/domain_whois_overview/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/domain_whois_overview/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1620,7 +1731,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1676,8 +1789,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleRankedKeywordsLiveResponseInfo> GoogleRankedKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/ranked_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1690,6 +1801,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/ranked_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/ranked_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1698,7 +1814,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1754,8 +1872,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo> GoogleSerpCompetitorsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/serp_competitors/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1768,6 +1884,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/serp_competitors/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/serp_competitors/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1776,7 +1897,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1832,8 +1955,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo> GoogleCompetitorsDomainLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/competitors_domain/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1846,6 +1967,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/competitors_domain/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/competitors_domain/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1854,7 +1980,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1910,8 +2038,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleDomainIntersectionLiveResponseInfo> GoogleDomainIntersectionLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/domain_intersection/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1924,6 +2050,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/domain_intersection/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/domain_intersection/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1932,7 +2063,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1988,8 +2121,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleSubdomainsLiveResponseInfo> GoogleSubdomainsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleSubdomainsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/subdomains/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2002,6 +2133,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/subdomains/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/subdomains/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2010,7 +2146,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2064,8 +2202,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleRelevantPagesLiveResponseInfo> GoogleRelevantPagesLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleRelevantPagesLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/relevant_pages/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2078,6 +2214,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/relevant_pages/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/relevant_pages/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2086,7 +2227,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2142,8 +2285,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo> GoogleDomainRankOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/domain_rank_overview/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2156,6 +2297,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/domain_rank_overview/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/domain_rank_overview/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2164,7 +2310,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2220,8 +2368,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo> GoogleHistoricalSerpsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/historical_serps/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2234,6 +2380,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/historical_serps/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/historical_serps/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2242,7 +2393,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2298,8 +2451,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo> GoogleHistoricalRankOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/historical_rank_overview/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2312,6 +2463,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/historical_rank_overview/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/historical_rank_overview/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2320,7 +2476,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2376,8 +2534,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGooglePageIntersectionLiveResponseInfo> GooglePageIntersectionLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGooglePageIntersectionLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/page_intersection/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2390,6 +2546,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/page_intersection/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/page_intersection/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2398,7 +2559,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2454,8 +2617,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo> GoogleBulkTrafficEstimationLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/bulk_traffic_estimation/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2468,6 +2629,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/bulk_traffic_estimation/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/bulk_traffic_estimation/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2476,7 +2642,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2532,8 +2700,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo> GoogleHistoricalBulkTrafficEstimationLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2546,6 +2712,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2554,7 +2725,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2610,8 +2783,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo> AmazonBulkSearchVolumeLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/amazon/bulk_search_volume/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2624,6 +2795,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/amazon/bulk_search_volume/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/amazon/bulk_search_volume/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2632,7 +2808,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2688,8 +2866,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo> AmazonRelatedKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/amazon/related_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2702,6 +2878,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/amazon/related_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/amazon/related_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2710,7 +2891,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2766,8 +2949,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAmazonRankedKeywordsLiveResponseInfo> AmazonRankedKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/amazon/ranked_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2780,6 +2961,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/amazon/ranked_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/amazon/ranked_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2788,7 +2974,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2844,8 +3032,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAmazonProductRankOverviewLiveResponseInfo> AmazonProductRankOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/amazon/product_rank_overview/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2858,6 +3044,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/amazon/product_rank_overview/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/amazon/product_rank_overview/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2866,7 +3057,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2922,8 +3115,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAmazonProductCompetitorsLiveResponseInfo> AmazonProductCompetitorsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/amazon/product_competitors/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2936,6 +3127,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/amazon/product_competitors/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/amazon/product_competitors/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2944,7 +3140,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3000,8 +3198,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo> AmazonProductKeywordIntersectionsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/amazon/product_keyword_intersections/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3014,6 +3210,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/amazon/product_keyword_intersections/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/amazon/product_keyword_intersections/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3022,7 +3223,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3078,8 +3281,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo> BingBulkKeywordDifficultyLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3092,6 +3293,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/bulk_keyword_difficulty/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/bulk_keyword_difficulty/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3100,7 +3306,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3156,8 +3364,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo> BingBulkTrafficEstimationLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/bulk_traffic_estimation/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3170,6 +3376,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/bulk_traffic_estimation/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/bulk_traffic_estimation/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3178,7 +3389,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3234,8 +3447,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingCompetitorsDomainLiveResponseInfo> BingCompetitorsDomainLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingCompetitorsDomainLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/competitors_domain/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3248,6 +3459,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/competitors_domain/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/competitors_domain/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3256,7 +3472,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3312,8 +3530,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingDomainIntersectionLiveResponseInfo> BingDomainIntersectionLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingDomainIntersectionLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/domain_intersection/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3326,6 +3542,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/domain_intersection/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/domain_intersection/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3334,7 +3555,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3390,8 +3613,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingDomainRankOverviewLiveResponseInfo> BingDomainRankOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingDomainRankOverviewLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/domain_rank_overview/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3404,6 +3625,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/domain_rank_overview/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/domain_rank_overview/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3412,7 +3638,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3468,8 +3696,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingPageIntersectionLiveResponseInfo> BingPageIntersectionLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingPageIntersectionLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/page_intersection/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3482,6 +3708,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/page_intersection/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/page_intersection/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3490,7 +3721,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3546,8 +3779,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingRankedKeywordsLiveResponseInfo> BingRankedKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingRankedKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/ranked_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3560,6 +3791,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/ranked_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/ranked_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3568,7 +3804,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3626,8 +3864,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingRelatedKeywordsLiveResponseInfo> BingRelatedKeywordsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingRelatedKeywordsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/related_keywords/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3640,6 +3876,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/related_keywords/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/related_keywords/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3648,7 +3889,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3702,8 +3945,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingRelevantPagesLiveResponseInfo> BingRelevantPagesLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingRelevantPagesLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/relevant_pages/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3716,6 +3957,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/relevant_pages/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/relevant_pages/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3724,7 +3970,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3780,8 +4028,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingSerpCompetitorsLiveResponseInfo> BingSerpCompetitorsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingSerpCompetitorsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/serp_competitors/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3794,6 +4040,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/serp_competitors/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/serp_competitors/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3802,7 +4053,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3858,8 +4111,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsBingSubdomainsLiveResponseInfo> BingSubdomainsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsBingSubdomainsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/bing/subdomains/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3872,6 +4123,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/bing/subdomains/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/bing/subdomains/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3880,7 +4136,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3936,8 +4194,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo> GoogleBulkAppMetricsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/bulk_app_metrics/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3950,6 +4206,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/bulk_app_metrics/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/bulk_app_metrics/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3958,7 +4219,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4014,8 +4277,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordsForAppLiveResponseInfo> GoogleKeywordsForAppLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/keywords_for_app/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4028,6 +4289,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/keywords_for_app/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/keywords_for_app/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4036,7 +4302,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4092,8 +4360,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleAppCompetitorsLiveResponseInfo> GoogleAppCompetitorsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/app_competitors/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4106,6 +4372,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/app_competitors/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/app_competitors/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4114,7 +4385,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4170,8 +4443,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleAppIntersectionLiveResponseInfo> GoogleAppIntersectionLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleAppIntersectionLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/google/app_intersection/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4184,6 +4455,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/app_intersection/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/app_intersection/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4192,7 +4468,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4248,8 +4526,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAppleBulkAppMetricsLiveResponseInfo> AppleBulkAppMetricsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/apple/bulk_app_metrics/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4262,6 +4538,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/apple/bulk_app_metrics/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/apple/bulk_app_metrics/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4270,7 +4551,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4326,8 +4609,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAppleKeywordsForAppLiveResponseInfo> AppleKeywordsForAppLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAppleKeywordsForAppLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/apple/keywords_for_app/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4340,6 +4621,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/apple/keywords_for_app/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/apple/keywords_for_app/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4348,7 +4634,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4404,8 +4692,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAppleAppCompetitorsLiveResponseInfo> AppleAppCompetitorsLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAppleAppCompetitorsLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/apple/app_competitors/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4418,6 +4704,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/apple/app_competitors/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/apple/app_competitors/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4426,7 +4717,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4482,8 +4775,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<DataforseoLabsAppleAppIntersectionLiveResponseInfo> AppleAppIntersectionLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsAppleAppIntersectionLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/dataforseo_labs/apple/app_intersection/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4496,6 +4787,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/apple/app_intersection/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/apple/app_intersection/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4504,7 +4800,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4628,10 +4926,20 @@ namespace DataForSeo.Client.Api
             {
                 return System.Convert.ToBase64String((byte[])value);
             }
+            else if (value is string[])
+            {
+                return string.Join(",", (string[])value);
+            }
             else if (value.GetType().IsArray)
             {
-                var array = System.Linq.Enumerable.OfType<object>((System.Array)value);
-                return string.Join(",", System.Linq.Enumerable.Select(array, o => ConvertToString(o, cultureInfo)));
+                var valueArray = (System.Array)value;
+                var valueTextArray = new string[valueArray.Length];
+                for (var i = 0; i < valueArray.Length; i++)
+                {
+                    valueTextArray[i] = ConvertToString(valueArray.GetValue(i), cultureInfo);
+                }
+
+                return string.Join(",", valueTextArray);
             }
 
             var result = System.Convert.ToString(value, cultureInfo);

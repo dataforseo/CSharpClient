@@ -20,16 +20,6 @@ public AppendixInfo KeywordPerformance { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **SearchVolumeHistory**
-
-```csharp
-public AppendixInfo SearchVolumeHistory { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
 ### **SearchVolume**
 
 ```csharp

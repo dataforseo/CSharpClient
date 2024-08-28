@@ -244,6 +244,69 @@ A server side error occurred.
 By calling this endpoint you will receive the list of Google locations supported in App Data API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
 
+### **AppDataGoogleLocationsCountryAsync(String)**
+
+```csharp
+public Task<AppDataGoogleLocationsCountryResponseInfo> AppDataGoogleLocationsCountryAsync(string country)
+```
+
+#### Parameters
+
+`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+country ISO code
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
+
+#### Returns
+
+[Task&lt;AppDataGoogleLocationsCountryResponseInfo&gt;](./AppDataGoogleLocationsCountryResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this endpoint you will receive the list of Google locations supported in App Data API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
+
+### **AppDataGoogleLocationsCountryAsync(String, CancellationToken)**
+
+```csharp
+public Task<AppDataGoogleLocationsCountryResponseInfo> AppDataGoogleLocationsCountryAsync(string country, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+country ISO code
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;AppDataGoogleLocationsCountryResponseInfo&gt;](./AppDataGoogleLocationsCountryResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this endpoint you will receive the list of Google locations supported in App Data API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
+
 ### **AppDataGoogleLanguagesAsync()**
 
 ```csharp
@@ -382,6 +445,55 @@ A cancellation token that can be used by other objects or threads to receive not
 #### Returns
 
 [Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./AppDataGoogleAppSearchesTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+
+### **AppDataTasksReadyAsync()**
+
+```csharp
+public Task<AppDataTasksReadyResponseInfo> AppDataTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;AppDataTasksReadyResponseInfo&gt;](./AppDataTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+
+### **AppDataTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<AppDataTasksReadyResponseInfo> AppDataTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;AppDataTasksReadyResponseInfo&gt;](./AppDataTasksReadyResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions

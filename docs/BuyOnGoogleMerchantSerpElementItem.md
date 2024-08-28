@@ -170,16 +170,6 @@ public string ShopAdAclk { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **ProductCondition**
-
-```csharp
-public string ProductCondition { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **AdditionalProperties**
 
 ```csharp

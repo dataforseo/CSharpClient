@@ -44,6 +44,338 @@ public SerpApi(HttpClient httpClient)
 
 ## Methods
 
+### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnumerable<SerpBaiduOrganicTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./SerpBaiduOrganicTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./SerpBaiduOrganicTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash'
+
+### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnumerable<SerpBaiduOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./SerpBaiduOrganicTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./SerpBaiduOrganicTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash'
+
+### **BaiduOrganicTasksReadyAsync()**
+
+```csharp
+public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./SerpBaiduOrganicTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
+
+### **BaiduOrganicTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./SerpBaiduOrganicTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
+
+### **BaiduOrganicTasksFixedAsync()**
+
+```csharp
+public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./SerpBaiduOrganicTasksFixedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash'
+
+### **BaiduOrganicTasksFixedAsync(CancellationToken)**
+
+```csharp
+public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./SerpBaiduOrganicTasksFixedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash'
+
+### **BaiduOrganicTaskGetRegularAsync(String)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskGetRegularResponseInfo> BaiduOrganicTaskGetRegularAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./SerpBaiduOrganicTaskGetRegularResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash'
+
+### **BaiduOrganicTaskGetRegularAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskGetRegularResponseInfo> BaiduOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./SerpBaiduOrganicTaskGetRegularResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash'
+
+### **BaiduOrganicTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskGetAdvancedResponseInfo> BaiduOrganicTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash'
+
+### **BaiduOrganicTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskGetAdvancedResponseInfo> BaiduOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash'
+
+### **BaiduOrganicTaskGetHtmlAsync(String)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskGetHtmlResponseInfo> BaiduOrganicTaskGetHtmlAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./SerpBaiduOrganicTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
+
+### **BaiduOrganicTaskGetHtmlAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpBaiduOrganicTaskGetHtmlResponseInfo> BaiduOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./SerpBaiduOrganicTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
+
 ### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
 
 ```csharp
@@ -119,6 +451,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash'
 
 ### **NaverOrganicTasksReadyAsync(CancellationToken)**
@@ -146,6 +479,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash'
 
 ### **NaverOrganicTasksFixedAsync()**
@@ -606,6 +940,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash'
 
 ### **SeznamOrganicTasksReadyAsync(CancellationToken)**
@@ -633,6 +968,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash'
 
 ### **SeznamOrganicTasksFixedAsync()**
@@ -883,6 +1219,334 @@ protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseM
 
 Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
 
+### **GoogleAutocompleteTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo> GoogleAutocompleteTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleAutocompleteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash'
+
+### **GoogleAutocompleteTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo> GoogleAutocompleteTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAutocompleteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash'
+
+### **GoogleAutocompleteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleAutocompleteLiveAdvancedResponseInfo> GoogleAutocompleteLiveAdvancedAsync(IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleAutocompleteLiveAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash'
+
+### **GoogleAutocompleteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAutocompleteLiveAdvancedResponseInfo> GoogleAutocompleteLiveAdvancedAsync(IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAutocompleteLiveAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash'
+
+### **GoogleDatasetSearchTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTaskPostAsync(IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./SerpGoogleDatasetSearchTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash'
+
+### **GoogleDatasetSearchTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTaskPostAsync(IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./SerpGoogleDatasetSearchTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash'
+
+### **GoogleDatasetSearchTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./SerpGoogleDatasetSearchTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
+
+### **GoogleDatasetSearchTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./SerpGoogleDatasetSearchTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
+
+### **GoogleDatasetSearchTasksFixedAsync()**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTasksFixedAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./SerpGoogleDatasetSearchTasksFixedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash'
+
+### **GoogleDatasetSearchTasksFixedAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTasksFixedAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./SerpGoogleDatasetSearchTasksFixedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash'
+
+### **GoogleDatasetSearchTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo> GoogleDatasetSearchTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
+
+### **GoogleDatasetSearchTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo> GoogleDatasetSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
+
 ### **GoogleDatasetSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;)**
 
 ```csharp
@@ -1013,6 +1677,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash'
 
 ### **GoogleDatasetInfoTasksReadyAsync(CancellationToken)**
@@ -1040,6 +1705,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash'
 
 ### **GoogleDatasetInfoTasksFixedAsync()**
@@ -1437,6 +2103,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash'
 
 ### **BingOrganicTasksReadyAsync(CancellationToken)**
@@ -1464,6 +2131,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash'
 
 ### **BingOrganicTasksFixedAsync()**
@@ -1932,6 +2600,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash'
 
 ### **BingLocalPackTasksReadyAsync(CancellationToken)**
@@ -1959,6 +2628,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash'
 
 ### **BingLocalPackTasksFixedAsync()**
@@ -2470,6 +3140,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash'
 
 ### **YoutubeVideoInfoTasksReadyAsync(CancellationToken)**
@@ -2497,6 +3168,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash'
 
 ### **YoutubeVideoInfoTasksFixedAsync()**
@@ -2737,6 +3409,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash'
 
 ### **YoutubeVideoSubtitlesTasksReadyAsync(CancellationToken)**
@@ -2764,6 +3437,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash'
 
 ### **YoutubeVideoSubtitlesTasksFixedAsync()**
@@ -3004,6 +3678,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash'
 
 ### **YoutubeVideoCommentsTasksReadyAsync(CancellationToken)**
@@ -3031,6 +3706,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash'
 
 ### **YoutubeVideoCommentsTasksFixedAsync()**
@@ -3428,6 +4104,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash'
 
 ### **YahooOrganicTasksReadyAsync(CancellationToken)**
@@ -3455,6 +4132,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash'
 
 ### **YahooOrganicTasksFixedAsync()**
@@ -4005,336 +4683,6 @@ A server side error occurred.
 You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
 
-### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnumerable<SerpBaiduOrganicTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./SerpBaiduOrganicTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./SerpBaiduOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash'
-
-### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnumerable<SerpBaiduOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./SerpBaiduOrganicTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./SerpBaiduOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash'
-
-### **BaiduOrganicTasksReadyAsync()**
-
-```csharp
-public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./SerpBaiduOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
-
-### **BaiduOrganicTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./SerpBaiduOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
-
-### **BaiduOrganicTasksFixedAsync()**
-
-```csharp
-public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./SerpBaiduOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash'
-
-### **BaiduOrganicTasksFixedAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./SerpBaiduOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash'
-
-### **BaiduOrganicTaskGetRegularAsync(String)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetRegularResponseInfo> BaiduOrganicTaskGetRegularAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./SerpBaiduOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash'
-
-### **BaiduOrganicTaskGetRegularAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetRegularResponseInfo> BaiduOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./SerpBaiduOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash'
-
-### **BaiduOrganicTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetAdvancedResponseInfo> BaiduOrganicTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash'
-
-### **BaiduOrganicTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetAdvancedResponseInfo> BaiduOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash'
-
-### **BaiduOrganicTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetHtmlResponseInfo> BaiduOrganicTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./SerpBaiduOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
-
-### **BaiduOrganicTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetHtmlResponseInfo> BaiduOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./SerpBaiduOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
-
 ### **SerpIdListAsync(IEnumerable&lt;SerpIdListRequestInfo&gt;)**
 
 ```csharp
@@ -4521,6 +4869,7 @@ A server side error occurred.
 ‌‌
  <br>The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt.
  <br>To obtain results, you have to specify task_id, which you can find in the response to the POST request.
+ <br>Learn more in our Help Center.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/ai_summary/?bash'
 
 ### **AiSummaryAsync(IEnumerable&lt;SerpAiSummaryRequestInfo&gt;, CancellationToken)**
@@ -4551,6 +4900,7 @@ A server side error occurred.
 ‌‌
  <br>The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt.
  <br>To obtain results, you have to specify task_id, which you can find in the response to the POST request.
+ <br>Learn more in our Help Center.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/ai_summary/?bash'
 
 ### **SerpGoogleLocationsAsync()**
@@ -4785,6 +5135,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
 
 ### **GoogleOrganicTasksReadyAsync(CancellationToken)**
@@ -4812,6 +5163,58 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+
+### **TasksReadyAsync()**
+
+```csharp
+public Task<SerpTasksReadyResponseInfo> TasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpTasksReadyResponseInfo&gt;](./SerpTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+
+### **TasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpTasksReadyResponseInfo> TasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpTasksReadyResponseInfo&gt;](./SerpTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
 
 ### **GoogleOrganicTasksFixedAsync()**
@@ -5040,15 +5443,15 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/html/?bash'
 
-### **GoogleOrganicLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleOrganicLiveRegularAsync(IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;](./SerpGoogleOrganicLiveRegularRequestInfo.md)<br>
 
 #### Returns
 
@@ -5066,15 +5469,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash'
 
-### **GoogleOrganicLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleOrganicLiveRegularAsync(IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;](./SerpGoogleOrganicLiveRegularRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -5095,15 +5498,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash'
 
-### **GoogleOrganicLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleOrganicLiveAdvancedAsync(IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;](./SerpGoogleOrganicLiveAdvancedRequestInfo.md)<br>
 
 #### Returns
 
@@ -5121,15 +5524,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash'
 
-### **GoogleOrganicLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleOrganicLiveAdvancedAsync(IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;](./SerpGoogleOrganicLiveAdvancedRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -5280,6 +5683,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash'
 
 ### **GoogleMapsTasksReadyAsync(CancellationToken)**
@@ -5307,6 +5711,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash'
 
 ### **GoogleMapsTasksFixedAsync()**
@@ -5549,6 +5954,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash'
 
 ### **GoogleLocalFinderTasksReadyAsync(CancellationToken)**
@@ -5576,6 +5982,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash'
 
 ### **GoogleLocalFinderTasksFixedAsync()**
@@ -5932,6 +6339,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash'
 
 ### **GoogleNewsTasksReadyAsync(CancellationToken)**
@@ -5959,6 +6367,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash'
 
 ### **GoogleNewsTasksFixedAsync()**
@@ -6313,6 +6722,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash'
 
 ### **GoogleEventsTasksReadyAsync(CancellationToken)**
@@ -6340,6 +6750,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash'
 
 ### **GoogleEventsTasksFixedAsync()**
@@ -6580,6 +6991,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash'
 
 ### **GoogleImagesTasksReadyAsync(CancellationToken)**
@@ -6607,6 +7019,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash'
 
 ### **GoogleImagesTasksFixedAsync()**
@@ -7173,6 +7586,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash'
 
 ### **GoogleJobsTasksReadyAsync(CancellationToken)**
@@ -7200,6 +7614,7 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash'
 
 ### **GoogleJobsTasksFixedAsync()**
@@ -7369,19 +7784,19 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_get/html/?bash'
 
-### **GoogleDatasetSearchTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;)**
+### **GoogleAutocompleteTaskPostAsync(IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTaskPostAsync(IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo> body)
+public Task<SerpGoogleAutocompleteTaskPostResponseInfo> GoogleAutocompleteTaskPostAsync(IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;](./SerpGoogleAutocompleteTaskPostRequestInfo.md)<br>
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./SerpGoogleDatasetSearchTaskPostResponseInfo.md)<br>
+[Task&lt;SerpGoogleAutocompleteTaskPostResponseInfo&gt;](./SerpGoogleAutocompleteTaskPostResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions
@@ -7392,25 +7807,25 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash'
+ <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash'
 
-### **GoogleDatasetSearchTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;, CancellationToken)**
+### **GoogleAutocompleteTaskPostAsync(IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTaskPostAsync(IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleAutocompleteTaskPostResponseInfo> GoogleAutocompleteTaskPostAsync(IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;](./SerpGoogleAutocompleteTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./SerpGoogleDatasetSearchTaskPostResponseInfo.md)<br>
+[Task&lt;SerpGoogleAutocompleteTaskPostResponseInfo&gt;](./SerpGoogleAutocompleteTaskPostResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions
@@ -7421,18 +7836,18 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash'
+ <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash'
 
-### **GoogleDatasetSearchTasksReadyAsync()**
+### **GoogleAutocompleteTasksReadyAsync()**
 
 ```csharp
-public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTasksReadyAsync()
+public Task<SerpGoogleAutocompleteTasksReadyResponseInfo> GoogleAutocompleteTasksReadyAsync()
 ```
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./SerpGoogleDatasetSearchTasksReadyResponseInfo.md)<br>
+[Task&lt;SerpGoogleAutocompleteTasksReadyResponseInfo&gt;](./SerpGoogleAutocompleteTasksReadyResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions
@@ -7444,12 +7859,13 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
 
-### **GoogleDatasetSearchTasksReadyAsync(CancellationToken)**
+### **GoogleAutocompleteTasksReadyAsync(CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTasksReadyAsync(CancellationToken cancellationToken)
+public Task<SerpGoogleAutocompleteTasksReadyResponseInfo> GoogleAutocompleteTasksReadyAsync(CancellationToken cancellationToken)
 ```
 
 #### Parameters
@@ -7459,7 +7875,7 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./SerpGoogleDatasetSearchTasksReadyResponseInfo.md)<br>
+[Task&lt;SerpGoogleAutocompleteTasksReadyResponseInfo&gt;](./SerpGoogleAutocompleteTasksReadyResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions
@@ -7471,17 +7887,18 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
 
-### **GoogleDatasetSearchTasksFixedAsync()**
+### **GoogleAutocompleteTasksFixedAsync()**
 
 ```csharp
-public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTasksFixedAsync()
+public Task<SerpGoogleAutocompleteTasksFixedResponseInfo> GoogleAutocompleteTasksFixedAsync()
 ```
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./SerpGoogleDatasetSearchTasksFixedResponseInfo.md)<br>
+[Task&lt;SerpGoogleAutocompleteTasksFixedResponseInfo&gt;](./SerpGoogleAutocompleteTasksFixedResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions
@@ -7493,12 +7910,12 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash'
 
-### **GoogleDatasetSearchTasksFixedAsync(CancellationToken)**
+### **GoogleAutocompleteTasksFixedAsync(CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTasksFixedAsync(CancellationToken cancellationToken)
+public Task<SerpGoogleAutocompleteTasksFixedResponseInfo> GoogleAutocompleteTasksFixedAsync(CancellationToken cancellationToken)
 ```
 
 #### Parameters
@@ -7508,7 +7925,7 @@ A cancellation token that can be used by other objects or threads to receive not
 
 #### Returns
 
-[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./SerpGoogleDatasetSearchTasksFixedResponseInfo.md)<br>
+[Task&lt;SerpGoogleAutocompleteTasksFixedResponseInfo&gt;](./SerpGoogleAutocompleteTasksFixedResponseInfo.md)<br>
 Successful operation
 
 #### Exceptions
@@ -7520,63 +7937,4 @@ A server side error occurred.
 
 ‌
  <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash'
-
-### **GoogleDatasetSearchTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo> GoogleDatasetSearchTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
-
-### **GoogleDatasetSearchTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo> GoogleDatasetSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash'

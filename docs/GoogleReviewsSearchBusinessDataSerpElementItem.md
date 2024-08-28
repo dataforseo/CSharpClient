@@ -230,6 +230,16 @@ public ICollection<ImagesElement> Images { get; set; }
 
 [ICollection&lt;ImagesElement&gt;](./ImagesElement.md)<br>
 
+### **ReviewHighlights**
+
+```csharp
+public ICollection<ReviewHighlights> ReviewHighlights { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;ReviewHighlights&gt;](./ReviewHighlights.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

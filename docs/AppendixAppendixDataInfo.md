@@ -30,20 +30,20 @@ public Nullable<double> Errors { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Test**
+### **Status**
 
 ```csharp
-public Nullable<double> Test { get; set; }
+public Nullable<double> Status { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Status**
+### **Test**
 
 ```csharp
-public Nullable<double> Status { get; set; }
+public Nullable<double> Test { get; set; }
 ```
 
 #### Property Value

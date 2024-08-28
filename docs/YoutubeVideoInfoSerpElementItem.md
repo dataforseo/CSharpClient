@@ -150,6 +150,16 @@ public Nullable<long> CommentsCount { get; set; }
 
 [Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **ChannelSubscribersCount**
+
+```csharp
+public ChannelSubscribersCount ChannelSubscribersCount { get; set; }
+```
+
+#### Property Value
+
+[ChannelSubscribersCount](./ChannelSubscribersCount.md)<br>
+
 ### **PublicationDate**
 
 ```csharp
@@ -223,12 +233,12 @@ public Nullable<int> DurationTimeSeconds { get; set; }
 ### **Subtitles**
 
 ```csharp
-public string Subtitles { get; set; }
+public ICollection<Subtitles> Subtitles { get; set; }
 ```
 
 #### Property Value
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+[ICollection&lt;Subtitles&gt;](./Subtitles.md)<br>
 
 ### **StreamingQuality**
 

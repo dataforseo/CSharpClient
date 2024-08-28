@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SearchIntentInfo
     {
         /// <summary>
@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public System.Collections.Generic.ICollection<string> ForeignIntent { get; set; }
 
         /// <summary>
-        /// date and time when search intent data was last updated
+        /// date and time when the dataset was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

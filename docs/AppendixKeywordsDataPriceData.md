@@ -23,12 +23,12 @@ public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
 ### **AdTrafficByKeywords**
 
 ```csharp
-public AppendixKeywordsKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
+public AppendixKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./AppendixKeywordsKeywordsDataPriceDataInfo.md)<br>
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
 
 ### **Bing**
 
@@ -49,6 +49,16 @@ public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 #### Property Value
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
+
+### **ClickstreamData**
+
+```csharp
+public AppendixClickstreamDataKeywordsDataPriceData ClickstreamData { get; set; }
+```
+
+#### Property Value
+
+[AppendixClickstreamDataKeywordsDataPriceData](./AppendixClickstreamDataKeywordsDataPriceData.md)<br>
 
 ### **Errors**
 
@@ -73,32 +83,32 @@ public AppendixGoogleAdsKeywordsDataPriceData GoogleAds { get; set; }
 ### **KeywordPerformance**
 
 ```csharp
-public AppendixKeywordPerformanceKeywordsDataPriceData KeywordPerformance { get; set; }
+public AppendixKeywordsDataPriceDataInfo KeywordPerformance { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordPerformanceKeywordsDataPriceData](./AppendixKeywordPerformanceKeywordsDataPriceData.md)<br>
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForKeywords**
 
 ```csharp
-public AppendixKeywordsKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
+public AppendixKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./AppendixKeywordsKeywordsDataPriceDataInfo.md)<br>
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForSite**
 
 ```csharp
-public AppendixKeywordsKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+public AppendixKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./AppendixKeywordsKeywordsDataPriceDataInfo.md)<br>
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
 
 ### **Languages**
 
@@ -120,25 +130,35 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
-### **SearchVolumeHistory**
+### **LocationsAndLanguages**
 
 ```csharp
-public AppendixKeywordsKeywordsDataPriceDataInfo SearchVolumeHistory { get; set; }
+public AppendixTaskKeywordsDataPriceDataInfo LocationsAndLanguages { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./AppendixKeywordsKeywordsDataPriceDataInfo.md)<br>
+[AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
 ### **SearchVolume**
 
 ```csharp
-public AppendixKeywordsKeywordsDataPriceDataInfo SearchVolume { get; set; }
+public AppendixKeywordsDataPriceDataInfo SearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./AppendixKeywordsKeywordsDataPriceDataInfo.md)<br>
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
+
+### **DataforseoTrends**
+
+```csharp
+public AppendixDataforseoTrendsKeywordsDataPriceData DataforseoTrends { get; set; }
+```
+
+#### Property Value
+
+[AppendixDataforseoTrendsKeywordsDataPriceData](./AppendixDataforseoTrendsKeywordsDataPriceData.md)<br>
 
 ### **Explore**
 

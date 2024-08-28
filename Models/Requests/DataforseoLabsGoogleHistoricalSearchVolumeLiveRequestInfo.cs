@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo
     {
         /// <summary>
@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that if some of the keywords specified in this array are omitted in the results you receive, then our database doesn’t contain such keywords and cannot return data on them
         /// <br/>you will not be charged for the keywords omitted in the results
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }
 
         /// <summary>
@@ -81,7 +81,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response
         /// <br/>default value: false
         /// <br/>with this parameter enabled, you will be charged double the price for the request
-        /// <br/>Note: clickstream data is available for roughly 15% of keywords in the response
         /// <br/>learn more about how clickstream-based metrics are calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("include_clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

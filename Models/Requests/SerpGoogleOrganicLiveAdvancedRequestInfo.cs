@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SerpGoogleOrganicLiveAdvancedRequestInfo
     {
         /// <summary>
@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘site:’, the charge per task will be multiplied by 5
         /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
@@ -229,6 +229,18 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [Newtonsoft.Json.JsonProperty("people_also_ask_click_depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? PeopleAlsoAskClickDepth { get; set; }
+
+        /// <summary>
+        /// load asynchronous ai overview
+        /// <br/>optional field
+        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
+        /// <br/>if set to false, you will only obtain ai_overview items from cache;
+        /// <br/>default value: false
+        /// <br/>Note your account will be billed $0.002 extra for each request;
+        /// <br/>if the element is absent or contains "asynchronous_ai_overview": false, all extra charges will be returned to your account balance
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("load_async_ai_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? LoadAsyncAiOverview { get; set; }
 
         /// <summary>
         /// additional parameters of the search query

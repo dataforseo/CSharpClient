@@ -90,16 +90,6 @@ public string Url { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **Description**
-
-```csharp
-public string Description { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **Asin**
 
 ```csharp
@@ -209,6 +199,16 @@ public Nullable<int> BoughtPastMonth { get; set; }
 #### Property Value
 
 [Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Description**
+
+```csharp
+public string Description { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **DataAsin**
 

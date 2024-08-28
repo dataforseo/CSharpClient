@@ -250,6 +250,26 @@ public RatingInfo Rating { get; set; }
 
 [RatingInfo](./RatingInfo.md)<br>
 
+### **HotelRating**
+
+```csharp
+public Nullable<int> HotelRating { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **PriceLevel**
+
+```csharp
+public string PriceLevel { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **RatingDistribution**
 
 ```csharp
@@ -324,6 +344,16 @@ public string CheckUrl { get; set; }
 
 ```csharp
 public string LastUpdatedTime { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **FirstSeen**
+
+```csharp
+public string FirstSeen { get; set; }
 ```
 
 #### Property Value

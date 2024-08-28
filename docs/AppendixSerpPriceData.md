@@ -33,12 +33,12 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 ### **Jobs**
 
 ```csharp
-public AppendixKeywordsKeywordsDataPriceDataInfo Jobs { get; set; }
+public AppendixKeywordsDataPriceDataInfo Jobs { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsKeywordsDataPriceDataInfo](./AppendixKeywordsKeywordsDataPriceDataInfo.md)<br>
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
 
 ### **Languages**
 

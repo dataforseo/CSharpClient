@@ -140,6 +140,16 @@ public ICollection<BaseDataforseoLabsSerpElementItem> Items { get; set; }
 
 [ICollection&lt;BaseDataforseoLabsSerpElementItem&gt;](./BaseDataforseoLabsSerpElementItem.md)<br>
 
+### **ClickstreamEtv**
+
+```csharp
+public Nullable<int> ClickstreamEtv { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **AdditionalProperties**
 
 ```csharp

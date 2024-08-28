@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsAppleKeywordsForAppLiveRequestInfo
     {
         /// <summary>
@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>in the URL https://apps.apple.com/us/app/id835599320
         /// <br/>the id is 835599320
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("app_id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("app_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AppId { get; set; }
 
         /// <summary>

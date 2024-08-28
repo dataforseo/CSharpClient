@@ -63,12 +63,12 @@ public Nullable<int> SellerReviewCount { get; set; }
 ### **Price**
 
 ```csharp
-public PriceInfo Price { get; set; }
+public Price Price { get; set; }
 ```
 
 #### Property Value
 
-[PriceInfo](./PriceInfo.md)<br>
+[Price](./Price.md)<br>
 
 ### **DeliveryInfo**
 

@@ -213,22 +213,22 @@ public ICollection<string> Highlighted { get; set; }
 ### **Links**
 
 ```csharp
-public ICollection<LinkElement> Links { get; set; }
+public object Links { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./LinkElement.md)<br>
+[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
 
 ### **AboutThisResult**
 
 ```csharp
-public AboutThisResultElement AboutThisResult { get; set; }
+public IDictionary<string, AboutThisResultElement> AboutThisResult { get; set; }
 ```
 
 #### Property Value
 
-[AboutThisResultElement](./AboutThisResultElement.md)<br>
+[IDictionary&lt;String, AboutThisResultElement&gt;](./AboutThisResultElement.md)<br>
 
 ### **MainDomain**
 
@@ -279,6 +279,16 @@ public Nullable<float> EstimatedPaidTrafficCost { get; set; }
 #### Property Value
 
 [Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **ClickstreamEtv**
+
+```csharp
+public Nullable<int> ClickstreamEtv { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **RankChanges**
 

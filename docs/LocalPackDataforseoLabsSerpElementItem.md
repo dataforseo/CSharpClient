@@ -180,35 +180,15 @@ public RankChanges RankChanges { get; set; }
 
 [RankChanges](./RankChanges.md)<br>
 
-### **SeType**
+### **ClickstreamEtv**
 
 ```csharp
-public string SeType { get; set; }
+public Nullable<int> ClickstreamEtv { get; set; }
 ```
 
 #### Property Value
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **BacklinksInfo**
-
-```csharp
-public AvgBacklinksInfo BacklinksInfo { get; set; }
-```
-
-#### Property Value
-
-[AvgBacklinksInfo](./AvgBacklinksInfo.md)<br>
-
-### **RankInfo**
-
-```csharp
-public RankInfo RankInfo { get; set; }
-```
-
-#### Property Value
-
-[RankInfo](./RankInfo.md)<br>
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AppendixDayLimitsRatesData
     {
         [Newtonsoft.Json.JsonProperty("serp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -17,13 +17,13 @@ namespace DataForSeo.Client.Models
         public double? TotalSerp { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataDaysRatesDataInfo KeywordsData { get; set; }
+        public AppendixKeywordsDatasRatesDataInfo KeywordsData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_keywords_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalKeywordsData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
+        public AppendixAppendixsRatesDataInfo Appendix { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalAppendix { get; set; }
@@ -82,14 +82,14 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("total_content_generation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalContentGeneration { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? TotalTrafficAnalytics { get; set; }
-
         [Newtonsoft.Json.JsonProperty("total_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalReviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_social", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalSocial { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? TotalTrafficAnalytics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

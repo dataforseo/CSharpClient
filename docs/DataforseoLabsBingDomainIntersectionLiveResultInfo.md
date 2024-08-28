@@ -83,12 +83,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<DataforseoLabsDomainIntersectionLiveItem> Items { get; set; }
+public ICollection<DataforseoLabsBingDomainIntersectionLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsDomainIntersectionLiveItem&gt;](./DataforseoLabsDomainIntersectionLiveItem.md)<br>
+[ICollection&lt;DataforseoLabsBingDomainIntersectionLiveItem&gt;](./DataforseoLabsBingDomainIntersectionLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

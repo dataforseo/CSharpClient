@@ -168,7 +168,7 @@ A server side error occurred.
 
 **Remarks:**
 
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2023-12-29).
+You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17).
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
 
 ### **BusinessDataBusinessListingsLocationsAsync(CancellationToken)**
@@ -194,7 +194,7 @@ A server side error occurred.
 
 **Remarks:**
 
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2023-12-29).
+You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17).
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
 
 ### **BusinessListingsCategoriesAsync()**
@@ -664,6 +664,55 @@ A server side error occurred.
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
 
+### **BusinessDataTasksReadyAsync()**
+
+```csharp
+public Task<BusinessDataTasksReadyResponseInfo> BusinessDataTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;BusinessDataTasksReadyResponseInfo&gt;](./BusinessDataTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
+
+### **BusinessDataTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<BusinessDataTasksReadyResponseInfo> BusinessDataTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataTasksReadyResponseInfo&gt;](./BusinessDataTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
+
 ### **GoogleMyBusinessInfoTaskGetAsync(String)**
 
 ```csharp
@@ -720,6 +769,61 @@ A server side error occurred.
 **Remarks:**
 
 for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_get/?bash'
+
+### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;)**
+
+```csharp
+public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataTaskRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./BusinessDataTaskRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleMyBusinessInfoLiveResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash'
+
+### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataTaskRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./BusinessDataTaskRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleMyBusinessInfoLiveResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash'
 
 ### **GoogleMyBusinessUpdatesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;)**
 
@@ -1589,6 +1693,238 @@ A server side error occurred.
 The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
 
+### **GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+ <br> 
+ <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br> 
+ <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash'
+
+### **GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+ <br> 
+ <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br> 
+ <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash'
+
+### **GoogleQuestionsAndAnswersTasksReadyAsync()**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash'
+
+### **GoogleQuestionsAndAnswersTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash'
+
+### **GoogleQuestionsAndAnswersTaskGetAsync(String)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> GoogleQuestionsAndAnswersTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash'
+
+### **GoogleQuestionsAndAnswersTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> GoogleQuestionsAndAnswersTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash'
+
+### **GoogleQuestionsAndAnswersLiveAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+ <br> 
+ <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br> 
+ <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash'
+
+### **GoogleQuestionsAndAnswersLiveAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
+ <br> 
+ <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br> 
+ <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash'
+
 ### **TrustpilotSearchTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;)**
 
 ```csharp
@@ -2397,489 +2733,6 @@ A server side error occurred.
 
 This endpoint provides feedback data on businesses listed on the Tripadvisor platform, including their locations, ratings, review content and count. The results are specific to the URL path indicated in the POST request.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
-
-### **BusinessDataYelpLocationsAsync()**
-
-```csharp
-public Task<BusinessDataYelpLocationsResponseInfo> BusinessDataYelpLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataYelpLocationsResponseInfo&gt;](./BusinessDataYelpLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
-
-### **BusinessDataYelpLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpLocationsResponseInfo> BusinessDataYelpLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpLocationsResponseInfo&gt;](./BusinessDataYelpLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
-
-### **BusinessDataYelpLocationsCountryAsync(String)**
-
-```csharp
-public Task<BusinessDataYelpLocationsCountryResponseInfo> BusinessDataYelpLocationsCountryAsync(string country)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-#### Returns
-
-[Task&lt;BusinessDataYelpLocationsCountryResponseInfo&gt;](./BusinessDataYelpLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
-
-### **BusinessDataYelpLocationsCountryAsync(String, CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpLocationsCountryResponseInfo> BusinessDataYelpLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpLocationsCountryResponseInfo&gt;](./BusinessDataYelpLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash'
-
-### **BusinessDataYelpLanguagesAsync()**
-
-```csharp
-public Task<BusinessDataYelpLanguagesResponseInfo> BusinessDataYelpLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataYelpLanguagesResponseInfo&gt;](./BusinessDataYelpLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash'
-
-### **BusinessDataYelpLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpLanguagesResponseInfo> BusinessDataYelpLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpLanguagesResponseInfo&gt;](./BusinessDataYelpLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash'
-
-### **YelpSearchTaskPostAsync(IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataYelpSearchTaskPostResponseInfo> YelpSearchTaskPostAsync(IEnumerable<BusinessDataYelpSearchTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;](./BusinessDataYelpSearchTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataYelpSearchTaskPostResponseInfo&gt;](./BusinessDataYelpSearchTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash'
-
-### **YelpSearchTaskPostAsync(IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpSearchTaskPostResponseInfo> YelpSearchTaskPostAsync(IEnumerable<BusinessDataYelpSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataYelpSearchTaskPostRequestInfo&gt;](./BusinessDataYelpSearchTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpSearchTaskPostResponseInfo&gt;](./BusinessDataYelpSearchTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash'
-
-### **YelpSearchTasksReadyAsync()**
-
-```csharp
-public Task<BusinessDataYelpSearchTasksReadyResponseInfo> YelpSearchTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataYelpSearchTasksReadyResponseInfo&gt;](./BusinessDataYelpSearchTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash'
-
-### **YelpSearchTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpSearchTasksReadyResponseInfo> YelpSearchTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpSearchTasksReadyResponseInfo&gt;](./BusinessDataYelpSearchTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash'
-
-### **YelpSearchTaskGetAsync(String)**
-
-```csharp
-public Task<BusinessDataYelpSearchTaskGetResponseInfo> YelpSearchTaskGetAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;BusinessDataYelpSearchTaskGetResponseInfo&gt;](./BusinessDataYelpSearchTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with data on businesses listed on the Yelp platform. The results obtained through this endpoint are specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash'
-
-### **YelpSearchTaskGetAsync(String, CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpSearchTaskGetResponseInfo> YelpSearchTaskGetAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpSearchTaskGetResponseInfo&gt;](./BusinessDataYelpSearchTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with data on businesses listed on the Yelp platform. The results obtained through this endpoint are specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash'
-
-### **YelpReviewsTaskPostAsync(IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataYelpReviewsTaskPostResponseInfo> YelpReviewsTaskPostAsync(IEnumerable<BusinessDataYelpReviewsTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;](./BusinessDataYelpReviewsTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataYelpReviewsTaskPostResponseInfo&gt;](./BusinessDataYelpReviewsTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash'
-
-### **YelpReviewsTaskPostAsync(IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpReviewsTaskPostResponseInfo> YelpReviewsTaskPostAsync(IEnumerable<BusinessDataYelpReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataYelpReviewsTaskPostRequestInfo&gt;](./BusinessDataYelpReviewsTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpReviewsTaskPostResponseInfo&gt;](./BusinessDataYelpReviewsTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash'
-
-### **YelpReviewsTasksReadyAsync()**
-
-```csharp
-public Task<BusinessDataYelpReviewsTasksReadyResponseInfo> YelpReviewsTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataYelpReviewsTasksReadyResponseInfo&gt;](./BusinessDataYelpReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash'
-
-### **YelpReviewsTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpReviewsTasksReadyResponseInfo> YelpReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpReviewsTasksReadyResponseInfo&gt;](./BusinessDataYelpReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash'
-
-### **YelpReviewsTaskGetAsync(String)**
-
-```csharp
-public Task<BusinessDataYelpReviewsTaskGetResponseInfo> YelpReviewsTaskGetAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;BusinessDataYelpReviewsTaskGetResponseInfo&gt;](./BusinessDataYelpReviewsTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash'
-
-### **YelpReviewsTaskGetAsync(String, CancellationToken)**
-
-```csharp
-public Task<BusinessDataYelpReviewsTaskGetResponseInfo> YelpReviewsTaskGetAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataYelpReviewsTaskGetResponseInfo&gt;](./BusinessDataYelpReviewsTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash'
 
 ### **SocialMediaPinterestLiveAsync(IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;)**
 

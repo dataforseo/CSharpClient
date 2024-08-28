@@ -63,12 +63,12 @@ public Nullable<bool> SearchPartners { get; set; }
 ### **Bid**
 
 ```csharp
-public Nullable<float> Bid { get; set; }
+public Nullable<long> Bid { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Match**
 

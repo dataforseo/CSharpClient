@@ -601,7 +601,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>This endpoint will provide you with a detailed overview of referring domains pointing to the target domain you specify.
+ <br>This endpoint will provide you with a detailed overview of referring domains pointing to the target you specify.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/referring_domains/live/?bash'
 
 ### **ReferringDomainsLiveAsync(IEnumerable&lt;BacklinksReferringDomainsLiveRequestInfo&gt;, CancellationToken)**
@@ -630,7 +630,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>This endpoint will provide you with a detailed overview of referring domains pointing to the target domain you specify.
+ <br>This endpoint will provide you with a detailed overview of referring domains pointing to the target you specify.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/referring_domains/live/?bash'
 
 ### **ReferringNetworksLiveAsync(IEnumerable&lt;BacklinksReferringNetworksLiveRequestInfo&gt;)**
@@ -986,7 +986,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
- <br>This endpoint will provide you with rank scores of the domains, subdomains, and pages specified in the targets array. The score is based on the number of referring domains pointing to the specified domains, subdomains, or pages. rank values range from 0 (no backlinks detected) to 1,000 (highest rank). A similar scoring system is used in Google’s Page Rank algorithm. You can learn more about rank scores in this help center article
+ <br>This endpoint will provide you with rank scores of the domains, subdomains, and pages specified in the targets array. The score is based on the number of referring domains pointing to the specified domains, subdomains, or pages. The rank values represent real-time data for the date of the request and range from 0 (no backlinks detected) to 1,000 (highest rank). A similar scoring system is used in Google’s Page Rank algorithm. You can learn more about rank scores in this help center article
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/bulk_ranks/live/?bash'
 
 ### **BulkRanksLiveAsync(IEnumerable&lt;BacklinksBulkRanksLiveRequestInfo&gt;, CancellationToken)**
@@ -1015,7 +1015,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
- <br>This endpoint will provide you with rank scores of the domains, subdomains, and pages specified in the targets array. The score is based on the number of referring domains pointing to the specified domains, subdomains, or pages. rank values range from 0 (no backlinks detected) to 1,000 (highest rank). A similar scoring system is used in Google’s Page Rank algorithm. You can learn more about rank scores in this help center article
+ <br>This endpoint will provide you with rank scores of the domains, subdomains, and pages specified in the targets array. The score is based on the number of referring domains pointing to the specified domains, subdomains, or pages. The rank values represent real-time data for the date of the request and range from 0 (no backlinks detected) to 1,000 (highest rank). A similar scoring system is used in Google’s Page Rank algorithm. You can learn more about rank scores in this help center article
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/bulk_ranks/live/?bash'
 
 ### **BulkBacklinksLiveAsync(IEnumerable&lt;BacklinksBulkBacklinksLiveRequestInfo&gt;)**
@@ -1292,6 +1292,59 @@ A server side error occurred.
 ‌
  <br>This endpoint will provide you with the number of referring domains pointing to the domains, subdomains and pages specified in the targets array.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/bulk_new_lost_referring_domains/live/?bash'
+
+### **BulkPagesSummaryLiveAsync(IEnumerable&lt;BacklinksBulkPagesSummaryLiveRequestInfo&gt;)**
+
+```csharp
+public Task<BacklinksBulkPagesSummaryLiveResponseInfo> BulkPagesSummaryLiveAsync(IEnumerable<BacklinksBulkPagesSummaryLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BacklinksBulkPagesSummaryLiveRequestInfo&gt;](./BacklinksBulkPagesSummaryLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;BacklinksBulkPagesSummaryLiveResponseInfo&gt;](./BacklinksBulkPagesSummaryLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint will provide you with a comprehensive overview of backlinks and related data for a bulk of up to 1000 pages, domains, or subdomains. If you indicate a single page as a target, you will get comprehensive summary data on all backlinks for that page.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/bulk_pages_summary/live/?bash'
+
+### **BulkPagesSummaryLiveAsync(IEnumerable&lt;BacklinksBulkPagesSummaryLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<BacklinksBulkPagesSummaryLiveResponseInfo> BulkPagesSummaryLiveAsync(IEnumerable<BacklinksBulkPagesSummaryLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BacklinksBulkPagesSummaryLiveRequestInfo&gt;](./BacklinksBulkPagesSummaryLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BacklinksBulkPagesSummaryLiveResponseInfo&gt;](./BacklinksBulkPagesSummaryLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint will provide you with a comprehensive overview of backlinks and related data for a bulk of up to 1000 pages, domains, or subdomains. If you indicate a single page as a target, you will get comprehensive summary data on all backlinks for that page.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/bulk_pages_summary/live/?bash'
 
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 

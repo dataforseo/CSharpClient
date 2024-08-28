@@ -33,12 +33,12 @@ public string GeoName { get; set; }
 ### **Values**
 
 ```csharp
-public ICollection<Nullable<int>> Values { get; set; }
+public ICollection<object> Values { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;Nullable&lt;Int32&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **MaxValueIndex**
 

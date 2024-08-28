@@ -63,32 +63,32 @@ public Nullable<int> Intersections { get; set; }
 ### **FullDomainMetrics**
 
 ```csharp
-public IDictionary<string, MetricsInfo> FullDomainMetrics { get; set; }
+public IDictionary<string, DataforseoLabsMetricsInfo> FullDomainMetrics { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](./MetricsInfo.md)<br>
+[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
 
 ### **Metrics**
 
 ```csharp
-public IDictionary<string, MetricsInfo> Metrics { get; set; }
+public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](./MetricsInfo.md)<br>
+[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
 
 ### **CompetitorMetrics**
 
 ```csharp
-public IDictionary<string, MetricsInfo> CompetitorMetrics { get; set; }
+public IDictionary<string, DataforseoLabsMetricsInfo> CompetitorMetrics { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, MetricsInfo&gt;](./MetricsInfo.md)<br>
+[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
 
 ### **AdditionalProperties**
 

@@ -44,6 +44,28 @@ public DataforseoLabsApi(HttpClient httpClient)
 
 ## Methods
 
+### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+
+```csharp
+protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
+```
+
+#### Type Parameters
+
+`T`<br>
+
+#### Parameters
+
+`response` HttpResponseMessage<br>
+
+`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+
+#### Returns
+
+Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+
 ### **DataforseoLabsIdListAsync(IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;)**
 
 ```csharp
@@ -778,6 +800,55 @@ A server side error occurred.
  <br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
 
+### **DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync()**
+
+```csharp
+public Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash'
+
+### **DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash'
+
 ### **GoogleCategoriesForDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;)**
 
 ```csharp
@@ -832,6 +903,59 @@ A server side error occurred.
 ‌
  <br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
+
+### **GoogleCategoriesForKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;)**
+
+```csharp
+public Task<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> GoogleCategoriesForKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash'
+
+### **GoogleCategoriesForKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> GoogleCategoriesForKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash'
 
 ### **GoogleKeywordsForCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;)**
 
@@ -3085,25 +3209,3 @@ A server side error occurred.
 ‌
  <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
-
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
-
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
-
-#### Type Parameters
-
-`T`<br>
-
-#### Parameters
-
-`response` HttpResponseMessage<br>
-
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-
-#### Returns
-
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>

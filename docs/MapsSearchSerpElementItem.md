@@ -70,6 +70,16 @@ public string ContactUrl { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **ContributorUrl**
+
+```csharp
+public string ContributorUrl { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Rating**
 
 ```csharp

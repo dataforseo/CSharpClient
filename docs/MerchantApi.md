@@ -407,6 +407,55 @@ A server side error occurred.
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
 
+### **MerchantTasksReadyAsync()**
+
+```csharp
+public Task<MerchantTasksReadyResponseInfo> MerchantTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;MerchantTasksReadyResponseInfo&gt;](./MerchantTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
+
+### **MerchantTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<MerchantTasksReadyResponseInfo> MerchantTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;MerchantTasksReadyResponseInfo&gt;](./MerchantTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
+
 ### **GoogleProductsTaskGetAdvancedAsync(String)**
 
 ```csharp

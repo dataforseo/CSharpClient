@@ -311,10 +311,10 @@ A server side error occurred.
  <br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
 
-### **TasksReadyAsync()**
+### **OnPageTasksReadyAsync()**
 
 ```csharp
-public Task<OnPageTasksReadyResponseInfo> TasksReadyAsync()
+public Task<OnPageTasksReadyResponseInfo> OnPageTasksReadyAsync()
 ```
 
 #### Returns
@@ -333,10 +333,10 @@ A server side error occurred.
  <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
 
-### **TasksReadyAsync(CancellationToken)**
+### **OnPageTasksReadyAsync(CancellationToken)**
 
 ```csharp
-public Task<OnPageTasksReadyResponseInfo> TasksReadyAsync(CancellationToken cancellationToken)
+public Task<OnPageTasksReadyResponseInfo> OnPageTasksReadyAsync(CancellationToken cancellationToken)
 ```
 
 #### Parameters

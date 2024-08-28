@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BusinessDataTripadvisorReviewsTaskPostRequestInfo
     {
         /// <summary>
@@ -148,6 +148,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, returned reviews will be translated to the language matching the specified url_path;
         /// <br/>for example, if url_path contains tripadvisor.it and translate_reviews is true, reviews will be translated to the Italian language;
         /// <br/>default value: true
+        /// <br/>you can learn more about how reviews are translated in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("translate_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool? TranslateReviews { get; set; }

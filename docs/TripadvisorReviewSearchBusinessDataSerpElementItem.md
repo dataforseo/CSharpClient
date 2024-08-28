@@ -130,6 +130,16 @@ public ICollection<ReviewResponseItemInfo> Responses { get; set; }
 
 [ICollection&lt;ReviewResponseItemInfo&gt;](./ReviewResponseItemInfo.md)<br>
 
+### **ReviewHighlights**
+
+```csharp
+public ICollection<ReviewHighlights> ReviewHighlights { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;ReviewHighlights&gt;](./ReviewHighlights.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

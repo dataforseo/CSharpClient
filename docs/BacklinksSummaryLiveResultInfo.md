@@ -260,6 +260,16 @@ public IDictionary<string, Nullable<long>> ReferringLinksCountries { get; set; }
 
 [IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **ReferringPagesNofollow**
+
+```csharp
+public Nullable<long> ReferringPagesNofollow { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **AdditionalProperties**
 
 ```csharp

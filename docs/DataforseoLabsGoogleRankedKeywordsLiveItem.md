@@ -23,12 +23,12 @@ public string SeType { get; set; }
 ### **KeywordData**
 
 ```csharp
-public KeywordData KeywordData { get; set; }
+public KeywordDataInfo KeywordData { get; set; }
 ```
 
 #### Property Value
 
-[KeywordData](./KeywordData.md)<br>
+[KeywordDataInfo](./KeywordDataInfo.md)<br>
 
 ### **RankedSerpElement**
 

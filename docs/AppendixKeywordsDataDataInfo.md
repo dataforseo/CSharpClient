@@ -123,22 +123,22 @@ public AppendixBingKeywordsDataLimitsRatesDataInfo Bing { get; set; }
 ### **KeywordPerformance**
 
 ```csharp
-public AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo KeywordPerformance { get; set; }
-```
-
-#### Property Value
-
-[AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo](./AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.md)<br>
-
-### **SearchVolumeHistory**
-
-```csharp
-public AppendixInfo SearchVolumeHistory { get; set; }
+public AppendixInfo KeywordPerformance { get; set; }
 ```
 
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
+
+### **LocationsAndLanguages**
+
+```csharp
+public Nullable<double> LocationsAndLanguages { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **GoogleAds**
 
@@ -149,6 +149,26 @@ public AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo GoogleAds { get; set; }
 #### Property Value
 
 [AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo](./AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.md)<br>
+
+### **DataforseoTrends**
+
+```csharp
+public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo DataforseoTrends { get; set; }
+```
+
+#### Property Value
+
+[AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo](./AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md)<br>
+
+### **ClickstreamData**
+
+```csharp
+public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { get; set; }
+```
+
+#### Property Value
+
+[AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo](./AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md)<br>
 
 ### **Naver**
 

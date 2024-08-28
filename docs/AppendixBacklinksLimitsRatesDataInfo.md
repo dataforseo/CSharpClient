@@ -210,6 +210,16 @@ public AppendixInfo Competitors { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
+### **BulkPagesSummary**
+
+```csharp
+public AppendixInfo BulkPagesSummary { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

@@ -53,12 +53,12 @@ public string OffsetToken { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<AppDataleAppListingsSearchLiveItem> Items { get; set; }
+public ICollection<AppDataGoogleAppListingsSearchLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;AppDataleAppListingsSearchLiveItem&gt;](./AppDataleAppListingsSearchLiveItem.md)<br>
+[ICollection&lt;AppDataGoogleAppListingsSearchLiveItem&gt;](./AppDataGoogleAppListingsSearchLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

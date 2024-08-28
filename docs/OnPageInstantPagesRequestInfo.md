@@ -90,6 +90,16 @@ public string AcceptLanguage { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **LoadResources**
+
+```csharp
+public Nullable<bool> LoadResources { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **EnableJavascript**
 
 ```csharp
@@ -179,6 +189,26 @@ public IDictionary<string, Nullable<long>> ChecksThreshold { get; set; }
 #### Property Value
 
 [IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **SwitchPool**
+
+```csharp
+public Nullable<bool> SwitchPool { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **IpPoolForScan**
+
+```csharp
+public string IpPoolForScan { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **AdditionalProperties**
 

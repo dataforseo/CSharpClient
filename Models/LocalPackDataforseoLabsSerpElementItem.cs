@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class LocalPackDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// title of the result in SERP
+        /// title of the item
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         public string Phone { get; set; }
 
         /// <summary>
-        /// relevant URL of the Ad element in SERP
+        /// URL link
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -121,6 +121,15 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_changes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }
+
+        /// <summary>
+        /// estimated traffic volume based on clickstream data
+        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
+        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
+        /// <br/>learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("clickstream_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? ClickstreamEtv { get; set; }
 
     }
 }

@@ -53,12 +53,12 @@ public string Xpath { get; set; }
 ### **Link**
 
 ```csharp
-public object Link { get; set; }
+public LinkElement Link { get; set; }
 ```
 
 #### Property Value
 
-[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
+[LinkElement](./LinkElement.md)<br>
 
 ### **Items**
 

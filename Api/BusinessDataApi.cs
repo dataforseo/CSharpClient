@@ -4,19 +4,25 @@ using DataForSeo.Client.Models.Responses;
 
 namespace DataForSeo.Client.Api
 {
-    [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BusinessDataApi
     {
-        private string _baseUrl = "https://api.dataforseo.com";
+#pragma warning disable 8618
+        private string _baseUrl;
+#pragma warning restore 8618
         private System.Net.Http.HttpClient _httpClient;
-        private System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings;
+        private static System.Lazy<Newtonsoft.Json.JsonSerializerSettings> _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings, true);
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
         public BusinessDataApi(System.Net.Http.HttpClient httpClient)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+
         {
+            BaseUrl = "https://api.dataforseo.com";
             _httpClient = httpClient;
-            _settings = new System.Lazy<Newtonsoft.Json.JsonSerializerSettings>(CreateSerializerSettings, true);
         }
 
-        private Newtonsoft.Json.JsonSerializerSettings CreateSerializerSettings()
+        private static Newtonsoft.Json.JsonSerializerSettings CreateSerializerSettings()
         {
             var settings = new Newtonsoft.Json.JsonSerializerSettings();
             UpdateJsonSerializerSettings(settings);
@@ -33,6 +39,8 @@ namespace DataForSeo.Client.Api
             set
             {
                 _baseUrl = value;
+                if (!string.IsNullOrEmpty(_baseUrl) && !_baseUrl.EndsWith("/"))
+                    _baseUrl += '/';
             }
         }
 
@@ -44,7 +52,7 @@ namespace DataForSeo.Client.Api
             }
         }
 
-        partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings);
+        static partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings);
         partial void PrepareRequest(System.Net.Http.HttpClient client, System.Net.Http.HttpRequestMessage request, string url);
         partial void PrepareRequest(System.Net.Http.HttpClient client, System.Net.Http.HttpRequestMessage request, System.Text.StringBuilder urlBuilder);
         partial void ProcessResponse(System.Net.Http.HttpClient client, System.Net.Http.HttpResponseMessage response);
@@ -68,8 +76,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataIdListResponseInfo> BusinessDataIdListAsync(System.Collections.Generic.IEnumerable<BusinessDataIdListRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/id_list");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -82,6 +88,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/id_list"
+                    urlBuilder_.Append("v3/business_data/id_list");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -90,7 +101,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -144,8 +157,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataErrorsResponseInfo> BusinessDataErrorsAsync(System.Collections.Generic.IEnumerable<BusinessDataErrorsRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/errors");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -158,6 +169,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/errors"
+                    urlBuilder_.Append("v3/business_data/errors");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -166,7 +182,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -220,8 +238,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataBusinessListingsLocationsResponseInfo> BusinessDataBusinessListingsLocationsAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/business_listings/locations");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -230,6 +246,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/business_listings/locations"
+                    urlBuilder_.Append("v3/business_data/business_listings/locations");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -238,7 +259,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -292,8 +315,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataBusinessListingsCategoriesResponseInfo> BusinessListingsCategoriesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/business_listings/categories");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -302,6 +323,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/business_listings/categories"
+                    urlBuilder_.Append("v3/business_data/business_listings/categories");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -310,7 +336,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -366,8 +394,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataBusinessListingsAvailableFiltersResponseInfo> BusinessListingsAvailableFiltersAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/business_listings/available_filters");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -376,6 +402,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/business_listings/available_filters"
+                    urlBuilder_.Append("v3/business_data/business_listings/available_filters");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -384,7 +415,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -440,8 +473,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataBusinessListingsSearchLiveResponseInfo> BusinessListingsSearchLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataBusinessListingsSearchLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/business_listings/search/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -454,6 +485,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/business_listings/search/live"
+                    urlBuilder_.Append("v3/business_data/business_listings/search/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -462,7 +498,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -518,8 +556,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo> BusinessListingsCategoriesAggregationLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/business_listings/categories_aggregation/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -532,6 +568,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/business_listings/categories_aggregation/live"
+                    urlBuilder_.Append("v3/business_data/business_listings/categories_aggregation/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -540,7 +581,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -594,8 +637,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleLocationsResponseInfo> BusinessDataGoogleLocationsAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/locations");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -604,6 +645,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/locations"
+                    urlBuilder_.Append("v3/business_data/google/locations");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -612,7 +658,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -678,9 +726,6 @@ namespace DataForSeo.Client.Api
         {
             if (country == null)
                 throw new System.ArgumentNullException("country");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/locations/{country}");
-            urlBuilder_.Replace("{country}", System.Uri.EscapeDataString(ConvertToString(country, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -689,6 +734,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/locations/{country}"
+                    urlBuilder_.Append("v3/business_data/google/locations/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(country, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -697,7 +748,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -751,8 +804,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleLanguagesResponseInfo> BusinessDataGoogleLanguagesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/languages");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -761,6 +812,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/languages"
+                    urlBuilder_.Append("v3/business_data/google/languages");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -769,7 +825,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -825,8 +883,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_info/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -839,6 +895,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_info/task_post"
+                    urlBuilder_.Append("v3/business_data/google/my_business_info/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -847,7 +908,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -903,8 +966,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo> GoogleMyBusinessInfoTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_info/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -913,6 +974,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_info/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/google/my_business_info/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -921,7 +987,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -977,8 +1045,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTasksReadyResponseInfo> BusinessDataTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -987,6 +1053,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -995,7 +1066,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1055,9 +1128,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_info/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1066,6 +1136,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_info/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/google/my_business_info/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1074,7 +1150,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1130,8 +1208,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_info/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1144,6 +1220,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_info/live"
+                    urlBuilder_.Append("v3/business_data/google/my_business_info/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1152,7 +1233,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1208,8 +1291,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo> GoogleMyBusinessUpdatesTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_updates/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1222,6 +1303,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_updates/task_post"
+                    urlBuilder_.Append("v3/business_data/google/my_business_updates/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1230,7 +1316,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1286,8 +1374,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo> GoogleMyBusinessUpdatesTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_updates/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1296,6 +1382,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_updates/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/google/my_business_updates/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1304,7 +1395,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1364,9 +1457,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/my_business_updates/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1375,6 +1465,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/my_business_updates/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/google/my_business_updates/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1383,7 +1479,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1439,8 +1537,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelSearchesTaskPostResponseInfo> GoogleHotelSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleHotelSearchesTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_searches/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1453,6 +1549,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_searches/task_post"
+                    urlBuilder_.Append("v3/business_data/google/hotel_searches/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1461,7 +1562,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1517,8 +1620,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelSearchesTasksReadyResponseInfo> GoogleHotelSearchesTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_searches/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1527,6 +1628,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_searches/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/google/hotel_searches/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1535,7 +1641,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1595,9 +1703,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_searches/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1606,6 +1711,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_searches/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/google/hotel_searches/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1614,7 +1725,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1670,8 +1783,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelSearchesLiveResponseInfo> GoogleHotelSearchesLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleHotelSearchesLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_searches/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1684,6 +1795,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_searches/live"
+                    urlBuilder_.Append("v3/business_data/google/hotel_searches/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1692,7 +1808,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1748,8 +1866,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelInfoTaskPostResponseInfo> GoogleHotelInfoTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleHotelInfoTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_info/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1762,6 +1878,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_info/task_post"
+                    urlBuilder_.Append("v3/business_data/google/hotel_info/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1770,7 +1891,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1826,8 +1949,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelInfoTasksReadyResponseInfo> GoogleHotelInfoTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_info/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1836,6 +1957,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_info/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/google/hotel_info/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1844,7 +1970,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1904,9 +2032,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_info/task_get/advanced/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1915,6 +2040,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_info/task_get/advanced/{id}"
+                    urlBuilder_.Append("v3/business_data/google/hotel_info/task_get/advanced/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -1923,7 +2054,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -1983,9 +2116,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_info/task_get/html/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1994,6 +2124,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_info/task_get/html/{id}"
+                    urlBuilder_.Append("v3/business_data/google/hotel_info/task_get/html/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2002,7 +2138,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2058,8 +2196,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo> GoogleHotelInfoLiveAdvancedAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_info/live/advanced");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2072,6 +2208,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_info/live/advanced"
+                    urlBuilder_.Append("v3/business_data/google/hotel_info/live/advanced");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2080,7 +2221,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2136,8 +2279,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleHotelInfoLiveHtmlResponseInfo> GoogleHotelInfoLiveHtmlAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/hotel_info/live/html");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2150,6 +2291,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/hotel_info/live/html"
+                    urlBuilder_.Append("v3/business_data/google/hotel_info/live/html");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2158,7 +2304,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2214,8 +2362,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleReviewsTaskPostResponseInfo> GoogleReviewsTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleReviewsTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/reviews/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2228,6 +2374,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/reviews/task_post"
+                    urlBuilder_.Append("v3/business_data/google/reviews/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2236,7 +2387,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2292,8 +2445,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleReviewsTasksReadyResponseInfo> GoogleReviewsTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/reviews/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2302,6 +2453,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/reviews/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/google/reviews/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2310,7 +2466,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2372,9 +2530,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/reviews/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2383,6 +2538,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/reviews/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/google/reviews/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2391,7 +2552,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2455,8 +2618,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2469,6 +2630,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/questions_and_answers/task_post"
+                    urlBuilder_.Append("v3/business_data/google/questions_and_answers/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2477,7 +2643,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2533,8 +2701,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2543,6 +2709,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/questions_and_answers/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/google/questions_and_answers/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2551,7 +2722,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2611,9 +2784,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2622,6 +2792,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/questions_and_answers/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/google/questions_and_answers/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2630,7 +2806,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2694,8 +2872,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/google/questions_and_answers/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2708,6 +2884,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/google/questions_and_answers/live"
+                    urlBuilder_.Append("v3/business_data/google/questions_and_answers/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2716,7 +2897,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2772,8 +2955,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTrustpilotSearchTaskPostResponseInfo> TrustpilotSearchTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataTrustpilotSearchTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/trustpilot/search/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2786,6 +2967,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/trustpilot/search/task_post"
+                    urlBuilder_.Append("v3/business_data/trustpilot/search/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2794,7 +2980,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2850,8 +3038,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTrustpilotSearchTasksReadyResponseInfo> TrustpilotSearchTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/trustpilot/search/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2860,6 +3046,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/trustpilot/search/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/trustpilot/search/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2868,7 +3059,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -2930,9 +3123,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/trustpilot/search/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2941,6 +3131,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/trustpilot/search/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/trustpilot/search/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -2949,7 +3145,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3005,8 +3203,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTrustpilotReviewsTaskPostResponseInfo> TrustpilotReviewsTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataTrustpilotReviewsTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/trustpilot/reviews/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3019,6 +3215,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/trustpilot/reviews/task_post"
+                    urlBuilder_.Append("v3/business_data/trustpilot/reviews/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3027,7 +3228,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3083,8 +3286,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTrustpilotReviewsTasksReadyResponseInfo> TrustpilotReviewsTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/trustpilot/reviews/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3093,6 +3294,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/trustpilot/reviews/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/trustpilot/reviews/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3101,7 +3307,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3163,9 +3371,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/trustpilot/reviews/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3174,6 +3379,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/trustpilot/reviews/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/trustpilot/reviews/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3182,7 +3393,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3236,8 +3449,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTripadvisorLocationsResponseInfo> BusinessDataTripadvisorLocationsAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/locations");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3246,6 +3457,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/locations"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/locations");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3254,7 +3470,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3320,9 +3538,6 @@ namespace DataForSeo.Client.Api
         {
             if (country == null)
                 throw new System.ArgumentNullException("country");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/locations/{country}");
-            urlBuilder_.Replace("{country}", System.Uri.EscapeDataString(ConvertToString(country, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3331,6 +3546,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/locations/{country}"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/locations/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(country, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3339,7 +3560,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3393,8 +3616,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTripadvisorLanguagesResponseInfo> BusinessDataTripadvisorLanguagesAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/languages");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3403,6 +3624,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/languages"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/languages");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3411,7 +3637,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3467,8 +3695,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTripadvisorSearchTaskPostResponseInfo> TripadvisorSearchTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataTripadvisorSearchTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/search/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3481,6 +3707,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/search/task_post"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/search/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3489,7 +3720,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3545,8 +3778,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTripadvisorSearchTasksReadyResponseInfo> TripadvisorSearchTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/search/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3555,6 +3786,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/search/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/search/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3563,7 +3799,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3625,9 +3863,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/search/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3636,6 +3871,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/search/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/search/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3644,7 +3885,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3700,8 +3943,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTripadvisorReviewsTaskPostResponseInfo> TripadvisorReviewsTaskPostAsync(System.Collections.Generic.IEnumerable<BusinessDataTripadvisorReviewsTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/reviews/task_post");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3714,6 +3955,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/reviews/task_post"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/reviews/task_post");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3722,7 +3968,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3778,8 +4026,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataTripadvisorReviewsTasksReadyResponseInfo> TripadvisorReviewsTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/reviews/tasks_ready");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3788,6 +4034,11 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/reviews/tasks_ready"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/reviews/tasks_ready");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3796,7 +4047,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3858,9 +4111,6 @@ namespace DataForSeo.Client.Api
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/tripadvisor/reviews/task_get/{id}");
-            urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3869,6 +4119,12 @@ namespace DataForSeo.Client.Api
                 {
                     request_.Method = new System.Net.Http.HttpMethod("GET");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/tripadvisor/reviews/task_get/{id}"
+                    urlBuilder_.Append("v3/business_data/tripadvisor/reviews/task_get/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3877,7 +4133,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -3933,8 +4191,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataSocialMediaPinterestLiveResponseInfo> SocialMediaPinterestLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataSocialMediaPinterestLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/social_media/pinterest/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -3947,6 +4203,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/social_media/pinterest/live"
+                    urlBuilder_.Append("v3/business_data/social_media/pinterest/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -3955,7 +4216,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4011,8 +4274,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataSocialMediaFacebookLiveResponseInfo> SocialMediaFacebookLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/social_media/facebook/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4025,6 +4286,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/social_media/facebook/live"
+                    urlBuilder_.Append("v3/business_data/social_media/facebook/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4033,7 +4299,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4087,8 +4355,6 @@ namespace DataForSeo.Client.Api
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<BusinessDataSocialMediaRedditLiveResponseInfo> SocialMediaRedditLiveAsync(System.Collections.Generic.IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
-            var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/v3/business_data/social_media/reddit/live");
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -4101,6 +4367,11 @@ namespace DataForSeo.Client.Api
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("POST");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/business_data/social_media/reddit/live"
+                    urlBuilder_.Append("v3/business_data/social_media/reddit/live");
                     PrepareRequest(client_, request_, urlBuilder_);
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
@@ -4109,7 +4380,9 @@ namespace DataForSeo.Client.Api
                     var disposeResponse_ = true;
                     try
                     {
-                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
                         if (response_.Content != null && response_.Content.Headers != null)
                         {
                             foreach (var item_ in response_.Content.Headers)
@@ -4233,10 +4506,20 @@ namespace DataForSeo.Client.Api
             {
                 return System.Convert.ToBase64String((byte[])value);
             }
+            else if (value is string[])
+            {
+                return string.Join(",", (string[])value);
+            }
             else if (value.GetType().IsArray)
             {
-                var array = System.Linq.Enumerable.OfType<object>((System.Array)value);
-                return string.Join(",", System.Linq.Enumerable.Select(array, o => ConvertToString(o, cultureInfo)));
+                var valueArray = (System.Array)value;
+                var valueTextArray = new string[valueArray.Length];
+                for (var i = 0; i < valueArray.Length; i++)
+                {
+                    valueTextArray[i] = ConvertToString(valueArray.GetValue(i), cultureInfo);
+                }
+
+                return string.Join(",", valueTextArray);
             }
 
             var result = System.Convert.ToString(value, cultureInfo);

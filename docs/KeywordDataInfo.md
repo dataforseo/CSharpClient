@@ -60,6 +60,36 @@ public KeywordInfo KeywordInfo { get; set; }
 
 [KeywordInfo](./KeywordInfo.md)<br>
 
+### **KeywordInfoNormalizedWithBing**
+
+```csharp
+public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithBing { get; set; }
+```
+
+#### Property Value
+
+[KeywordInfoNormalizedWithInfo](./KeywordInfoNormalizedWithInfo.md)<br>
+
+### **KeywordInfoNormalizedWithClickstream**
+
+```csharp
+public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithClickstream { get; set; }
+```
+
+#### Property Value
+
+[KeywordInfoNormalizedWithInfo](./KeywordInfoNormalizedWithInfo.md)<br>
+
+### **ClickstreamKeywordInfo**
+
+```csharp
+public object ClickstreamKeywordInfo { get; set; }
+```
+
+#### Property Value
+
+[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
+
 ### **KeywordProperties**
 
 ```csharp

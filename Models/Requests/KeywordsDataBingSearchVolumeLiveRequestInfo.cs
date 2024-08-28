@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class KeywordsDataBingSearchVolumeLiveRequestInfo
     {
         /// <summary>
@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>The maximum number of characters for each keyword: 100
         /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }
 
         /// <summary>
@@ -72,7 +72,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
-        /// <br/>specify this field if you want to get the data for a particular device typepossible values: all, mobile, desktop, tablet
+        /// <br/>specify this field if you want to get the data for a particular device type;
+        /// <br/>possible values: all, mobile, desktop, tablet
         /// <br/>default value: all
         /// </summary>
         [Newtonsoft.Json.JsonProperty("device", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

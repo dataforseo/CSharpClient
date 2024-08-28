@@ -1,15 +1,9 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class PaidDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
-        /// <summary>
-        /// search engine type
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
         /// <summary>
         /// position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
@@ -39,13 +33,13 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// title of the result in SERP
+        /// title of the item
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// subdomain in SERP
+        /// domain where a link points
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -57,13 +51,13 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// breadcrumb in SERP
+        /// breadcrumb of the Ad element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("breadcrumb", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// relevant URL in SERP
+        /// URL link
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -88,9 +82,7 @@ namespace DataForSeo.Client.Models
         public System.Collections.Generic.ICollection<string> DescriptionRows { get; set; }
 
         /// <summary>
-        /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// link of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AdLinkElement> Links { get; set; }
@@ -109,8 +101,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated paid monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for
+        /// <br/>estimated organic monthly traffic to the domain
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -118,36 +110,44 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume based on impressions
-        /// <br/>estimated paid monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and impressions values of all keywords in the category that the domain ranks for
+        /// <br/>estimated organic monthly traffic to the domain
+        /// <br/>calculated as the product of CTR (click-through-rate) and impressions values of the returned keyword
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("impressions_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public float? ImpressionsEtv { get; set; }
 
         /// <summary>
-        /// estimated cost of monthly search traffic
-        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for
+        /// estimated cost of converting organic search traffic into paid
+        /// <br/>represents the estimated monthly cost of running ads for the returned keyword
+        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("estimated_paid_traffic_cost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public float? EstimatedPaidTrafficCost { get; set; }
 
         /// <summary>
+        /// changes in rankings
+        /// <br/>ranking changes of the SERP element compared to the preceding month;
+        /// <br/>Note: the changes are calculated even if the preceding month is not included in a POST request
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_changes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RankChanges RankChanges { get; set; }
+
+        /// <summary>
         /// estimated traffic volume based on clickstream data
         /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
         /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
         /// </summary>
         [Newtonsoft.Json.JsonProperty("clickstream_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? ClickstreamEtv { get; set; }
 
         /// <summary>
-        /// changes in rankings
-        /// <br/>contains information about the ranking changes of the SERP element since the previous_updated_time
+        /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_changes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RankChanges RankChanges { get; set; }
+        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SeType { get; set; }
 
         /// <summary>
         /// backlinks information for the target website

@@ -43,12 +43,12 @@ public Nullable<double> TotalSerp { get; set; }
 ### **KeywordsData**
 
 ```csharp
-public AppendixKeywordsDataDaysRatesDataInfo KeywordsData { get; set; }
+public AppendixKeywordsDatasRatesDataInfo KeywordsData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsDataDaysRatesDataInfo](./AppendixKeywordsDataDaysRatesDataInfo.md)<br>
+[AppendixKeywordsDatasRatesDataInfo](./AppendixKeywordsDatasRatesDataInfo.md)<br>
 
 ### **TotalKeywordsData**
 
@@ -63,12 +63,12 @@ public Nullable<double> TotalKeywordsData { get; set; }
 ### **Appendix**
 
 ```csharp
-public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
+public AppendixAppendixsRatesDataInfo Appendix { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppendixDaysRatesDataInfo](./AppendixAppendixDaysRatesDataInfo.md)<br>
+[AppendixAppendixsRatesDataInfo](./AppendixAppendixsRatesDataInfo.md)<br>
 
 ### **TotalAppendix**
 
@@ -260,16 +260,6 @@ public Nullable<double> TotalContentGeneration { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **TotalTrafficAnalytics**
-
-```csharp
-public Nullable<double> TotalTrafficAnalytics { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
 ### **TotalReviews**
 
 ```csharp
@@ -284,6 +274,16 @@ public Nullable<double> TotalReviews { get; set; }
 
 ```csharp
 public Nullable<double> TotalSocial { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **TotalTrafficAnalytics**
+
+```csharp
+public Nullable<double> TotalTrafficAnalytics { get; set; }
 ```
 
 #### Property Value

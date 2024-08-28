@@ -70,20 +70,20 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
-### **Tripadvisor**
+### **Trustpilot**
 
 ```csharp
-public AppendixTrBusinessDataPriceDataInfo Tripadvisor { get; set; }
+public AppendixTrBusinessDataPriceDataInfo Trustpilot { get; set; }
 ```
 
 #### Property Value
 
 [AppendixTrBusinessDataPriceDataInfo](./AppendixTrBusinessDataPriceDataInfo.md)<br>
 
-### **Trustpilot**
+### **Tripadvisor**
 
 ```csharp
-public AppendixTrBusinessDataPriceDataInfo Trustpilot { get; set; }
+public AppendixTrBusinessDataPriceDataInfo Tripadvisor { get; set; }
 ```
 
 #### Property Value
@@ -99,6 +99,16 @@ public AppendixTrBusinessDataPriceDataInfo Yelp { get; set; }
 #### Property Value
 
 [AppendixTrBusinessDataPriceDataInfo](./AppendixTrBusinessDataPriceDataInfo.md)<br>
+
+### **TasksReady**
+
+```csharp
+public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
+```
+
+#### Property Value
+
+[AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

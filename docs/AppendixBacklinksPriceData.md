@@ -60,6 +60,16 @@ public AppendixKeywordBingKeywordsDataPriceDataInfo BulkNewLostReferringDomains 
 
 [AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
 
+### **BulkPagesSummary**
+
+```csharp
+public AppendixKeywordBingKeywordsDataPriceDataInfo BulkPagesSummary { get; set; }
+```
+
+#### Property Value
+
+[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+
 ### **BulkRanks**
 
 ```csharp

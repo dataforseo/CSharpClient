@@ -23,12 +23,12 @@ public string SeType { get; set; }
 ### **SerpItem**
 
 ```csharp
-public BaseAppDataSerpElementItem SerpItem { get; set; }
+public AppDataGooglePlaySearchOrganicSerpElementItem SerpItem { get; set; }
 ```
 
 #### Property Value
 
-[BaseAppDataSerpElementItem](./BaseAppDataSerpElementItem.md)<br>
+[AppDataGooglePlaySearchOrganicSerpElementItem](./AppDataGooglePlaySearchOrganicSerpElementItem.md)<br>
 
 ### **CheckUrl**
 

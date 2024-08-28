@@ -70,6 +70,16 @@ public AppendixProductGoogleMerchantPriceDataInfo Reviews { get; set; }
 
 [AppendixProductGoogleMerchantPriceDataInfo](./AppendixProductGoogleMerchantPriceDataInfo.md)<br>
 
+### **TasksReady**
+
+```csharp
+public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
+```
+
+#### Property Value
+
+[AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

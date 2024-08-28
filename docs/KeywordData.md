@@ -70,16 +70,6 @@ public KeywordProperties KeywordProperties { get; set; }
 
 [KeywordProperties](./KeywordProperties.md)<br>
 
-### **ImpressionsInfo**
-
-```csharp
-public ImpressionsInfo ImpressionsInfo { get; set; }
-```
-
-#### Property Value
-
-[ImpressionsInfo](./ImpressionsInfo.md)<br>
-
 ### **SerpInfo**
 
 ```csharp
@@ -99,16 +89,6 @@ public AvgBacklinksInfo AvgBacklinksInfo { get; set; }
 #### Property Value
 
 [AvgBacklinksInfo](./AvgBacklinksInfo.md)<br>
-
-### **SearchIntentInfo**
-
-```csharp
-public SearchIntentInfo SearchIntentInfo { get; set; }
-```
-
-#### Property Value
-
-[SearchIntentInfo](./SearchIntentInfo.md)<br>
 
 ### **AdditionalProperties**
 

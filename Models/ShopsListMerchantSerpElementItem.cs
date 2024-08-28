@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ShopsListMerchantSerpElementItem : BaseMerchantSerpElementItem
     {
         /// <summary>
@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// product shipping price
         /// </summary>
         [Newtonsoft.Json.JsonProperty("shipping_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? ShippingPrice { get; set; }
+        public int? ShippingPrice { get; set; }
 
         /// <summary>
         /// product price including tax and shipping

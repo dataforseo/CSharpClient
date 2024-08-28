@@ -73,12 +73,12 @@ public Nullable<float> Cost { get; set; }
 ### **Metadata**
 
 ```csharp
-public IDictionary<string, string> Metadata { get; set; }
+public IDictionary<string, object> Metadata { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

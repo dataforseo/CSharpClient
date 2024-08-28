@@ -23,12 +23,12 @@ public AppendixLimitsRatesData Limits { get; set; }
 ### **Statistics**
 
 ```csharp
-public AppendixStatisticsDataInfo Statistics { get; set; }
+public AppendixStatisticsRatesData Statistics { get; set; }
 ```
 
 #### Property Value
 
-[AppendixStatisticsDataInfo](./AppendixStatisticsDataInfo.md)<br>
+[AppendixStatisticsRatesData](./AppendixStatisticsRatesData.md)<br>
 
 ### **AdditionalProperties**
 

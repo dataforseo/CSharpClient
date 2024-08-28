@@ -59,6 +59,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("discussions_and_forums", typeof(DiscussionsAndForumsSerpElementItem))]
     [JsonInheritanceAttribute("compare_sites", typeof(CompareSitesSerpElementItem))]
     [JsonInheritanceAttribute("courses", typeof(CoursesSerpElementItem))]
+    [JsonInheritanceAttribute("ai_overview", typeof(AiOverviewSerpElementItem))]
     [JsonInheritanceAttribute("maps_search", typeof(MapsSearchSerpElementItem))]
     [JsonInheritanceAttribute("maps_paid_item", typeof(MapsPaidItemSerpElementItem))]
     [JsonInheritanceAttribute("news_search", typeof(NewsSearchSerpElementItem))]
@@ -71,7 +72,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("youtube_subtitles", typeof(YoutubeSubtitlesSerpElementItem))]
     [JsonInheritanceAttribute("youtube_comment", typeof(YoutubeCommentSerpElementItem))]
     [JsonInheritanceAttribute("dictionary", typeof(DictionarySerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseSerpElementItem
     {
 
