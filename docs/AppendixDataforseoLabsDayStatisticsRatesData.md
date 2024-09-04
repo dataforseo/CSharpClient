@@ -350,15 +350,15 @@ public AppendixInfo SearchIntent { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **CategoriesForKeywords**
+### **Status**
 
 ```csharp
-public AppendixInfo CategoriesForKeywords { get; set; }
+public Nullable<double> Status { get; set; }
 ```
 
 #### Property Value
 
-[AppendixInfo](./AppendixInfo.md)<br>
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Amazon**
 
@@ -370,30 +370,20 @@ public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
 
 [AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
 
-### **Languages**
+### **AvailableFilters**
 
 ```csharp
-public Nullable<double> Languages { get; set; }
+public Nullable<double> AvailableFilters { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Status**
+### **HistoricalBulkTrafficEstimation**
 
 ```csharp
-public Nullable<double> Status { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TopGoogleSearches**
-
-```csharp
-public AppendixInfo TopGoogleSearches { get; set; }
+public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
 ```
 
 #### Property Value
@@ -420,20 +410,30 @@ public Nullable<double> AvailableHistory { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **HistoricalBulkTrafficEstimation**
+### **CategoriesForKeywords**
 
 ```csharp
-public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
+public AppendixInfo CategoriesForKeywords { get; set; }
 ```
 
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **AvailableFilters**
+### **TopGoogleSearches**
 
 ```csharp
-public Nullable<double> AvailableFilters { get; set; }
+public AppendixInfo TopGoogleSearches { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **Languages**
+
+```csharp
+public Nullable<double> Languages { get; set; }
 ```
 
 #### Property Value

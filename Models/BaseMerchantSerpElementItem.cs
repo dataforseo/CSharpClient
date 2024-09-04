@@ -10,18 +10,36 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("buy_on_google", typeof(BuyOnGoogleMerchantSerpElementItem))]
     [JsonInheritanceAttribute("shopping_specification", typeof(ShoppingSpecificationMerchantSerpElementItem))]
     [JsonInheritanceAttribute("product_info_element", typeof(ProductInfoElementMerchantSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseMerchantSerpElementItem
     {
+        /// <summary>
+        /// type of element
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Type { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
-            set { _additionalProperties = value; }
-        }
+        /// <summary>
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements found in Google Shopping SERP
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
+
+        /// <summary>
+        /// alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Position { get; set; }
 
     }
 }

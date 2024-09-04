@@ -170,16 +170,6 @@ public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { 
 
 [AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo](./AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md)<br>
 
-### **SearchVolumeHistory**
-
-```csharp
-public AppendixInfo SearchVolumeHistory { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
 ### **Google**
 
 ```csharp
@@ -189,6 +179,16 @@ public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
 #### Property Value
 
 [AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
+
+### **SearchVolumeHistory**
+
+```csharp
+public AppendixInfo SearchVolumeHistory { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
 
 ### **IdList**
 

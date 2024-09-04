@@ -123,12 +123,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<BaseSerpElementItem> Items { get; set; }
+public ICollection<SerpGoogleAutocompleteeAdvancedItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](./BaseSerpElementItem.md)<br>
+[ICollection&lt;SerpGoogleAutocompleteeAdvancedItem&gt;](./SerpGoogleAutocompleteeAdvancedItem.md)<br>
 
 ### **AdditionalProperties**
 

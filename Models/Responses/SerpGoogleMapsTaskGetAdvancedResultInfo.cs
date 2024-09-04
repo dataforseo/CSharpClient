@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Responses
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class SerpGoogleMapsTaskGetAdvancedResultInfo
     {
         /// <summary>
@@ -85,7 +85,7 @@ namespace DataForSeo.Client.Models.Responses
         /// elements of search results found in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<BaseSerpElementItem> Items { get; set; }
+        public System.Collections.Generic.ICollection<BaseGoogleMapsSerpElementItem> Items { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

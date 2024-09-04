@@ -1,41 +1,14 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AppDataAppStoreInfoOrganicSerpElementItem : BaseAppDataSerpElementItem
     {
-        /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
-
-        /// <summary>
-        /// absolute rank among all the listed apps
-        /// <br/>absolute position among all apps on the list
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
-
-        /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values: left
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Position { get; set; }
-
         /// <summary>
         /// ID of the app
         /// </summary>
         [Newtonsoft.Json.JsonProperty("app_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string AppId { get; set; }
-
-        /// <summary>
-        /// title of the app
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Title { get; set; }
 
         /// <summary>
         /// URL to the app page on App Store
@@ -60,12 +33,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("reviews_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public long? ReviewsCount { get; set; }
-
-        /// <summary>
-        /// average rating of the app
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// price of the app
@@ -184,6 +151,15 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("more_apps_by_developer", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<AppsInfo> MoreAppsByDeveloper { get; set; }
+
+        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+
+        [Newtonsoft.Json.JsonExtensionData]
+        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
 
     }
 }

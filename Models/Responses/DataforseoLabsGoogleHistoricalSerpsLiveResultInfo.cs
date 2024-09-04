@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Responses
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo
     {
         /// <summary>
@@ -43,7 +43,8 @@ namespace DataForSeo.Client.Models.Responses
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<DataforseoLabsGoogleHistoricalSerpsLiveItem> Items { get; set; }

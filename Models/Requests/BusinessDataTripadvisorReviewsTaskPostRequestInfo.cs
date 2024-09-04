@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BusinessDataTripadvisorReviewsTaskPostRequestInfo
     {
         /// <summary>
@@ -88,9 +88,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// parsing depth
         /// <br/>optional field
-        /// <br/>number of reviews in SERP
-        /// <br/>we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row
-        /// <br/>default value: 10
+        /// <br/>number of reviews in SERP;
+        /// <br/>we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row;
+        /// <br/>default value: 10;
+        /// <br/>max value: 4490
         /// </summary>
         [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? Depth { get; set; }

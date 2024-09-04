@@ -11,18 +11,34 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("amazon_seller_main_item", typeof(AmazonAmazonSellerMainItemSerpElementItem))]
     [JsonInheritanceAttribute("amazon_seller_item", typeof(AmazonAmazonSellerItemSerpElementItem))]
     [JsonInheritanceAttribute("amazon_review_item", typeof(AmazonAmazonReviewItemSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseAmazonSerpElementItem
     {
+        /// <summary>
+        /// type of element
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Type { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
-            set { _additionalProperties = value; }
-        }
+        /// <summary>
+        /// absolute rank in Amazon SERP
+        /// <br/>absolute position among all the elements in SERP
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("xpath", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
 
     }
 }

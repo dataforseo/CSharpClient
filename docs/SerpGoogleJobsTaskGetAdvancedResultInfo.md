@@ -123,12 +123,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<BaseSerpElementItem> Items { get; set; }
+public ICollection<SerpGoogleJobsTaskGetAdvancedItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](./BaseSerpElementItem.md)<br>
+[ICollection&lt;SerpGoogleJobsTaskGetAdvancedItem&gt;](./SerpGoogleJobsTaskGetAdvancedItem.md)<br>
 
 ### **AdditionalProperties**
 

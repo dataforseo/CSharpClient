@@ -2,7 +2,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsAmazonProductRankOverviewLiveRequestInfo
     {
         /// <summary>
@@ -11,6 +11,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>product IDs to receive ranking data for;
         /// <br/>the maximum number of ASINs you can specify in this array is 1000;
         /// <br/>you can receive the asin parameter by making a separate request to the Amazon Products endpoint
+        /// <br/>Note: all letters in ASIN code must be specified in uppercase format;
+        /// <br/>example:
+        /// <br/>B01LW2SL7R
         /// </summary>
         [Newtonsoft.Json.JsonProperty("asins", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Asins { get; set; }

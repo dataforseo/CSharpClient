@@ -60,30 +60,45 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("compare_sites", typeof(CompareSitesSerpElementItem))]
     [JsonInheritanceAttribute("courses", typeof(CoursesSerpElementItem))]
     [JsonInheritanceAttribute("ai_overview", typeof(AiOverviewSerpElementItem))]
-    [JsonInheritanceAttribute("maps_search", typeof(MapsSearchSerpElementItem))]
-    [JsonInheritanceAttribute("maps_paid_item", typeof(MapsPaidItemSerpElementItem))]
-    [JsonInheritanceAttribute("news_search", typeof(NewsSearchSerpElementItem))]
     [JsonInheritanceAttribute("event_item", typeof(EventItemSerpElementItem))]
-    [JsonInheritanceAttribute("images_search", typeof(ImagesSearchSerpElementItem))]
-    [JsonInheritanceAttribute("google_jobs_item", typeof(GoogleJobsItemSerpElementItem))]
-    [JsonInheritanceAttribute("autocomplete", typeof(AutocompleteSerpElementItem))]
-    [JsonInheritanceAttribute("dataset", typeof(DatasetSerpElementItem))]
-    [JsonInheritanceAttribute("youtube_video_info", typeof(YoutubeVideoInfoSerpElementItem))]
-    [JsonInheritanceAttribute("youtube_subtitles", typeof(YoutubeSubtitlesSerpElementItem))]
-    [JsonInheritanceAttribute("youtube_comment", typeof(YoutubeCommentSerpElementItem))]
     [JsonInheritanceAttribute("dictionary", typeof(DictionarySerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.6.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BaseSerpElementItem
     {
+        /// <summary>
+        /// type of element
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Type { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
-            set { _additionalProperties = value; }
-        }
+        /// <summary>
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements in SERP
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
+
+        /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("xpath", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
 
     }
 }

@@ -123,12 +123,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<BaseSerpElementItem> Items { get; set; }
+public ICollection<BaseYoutubeSerpElementItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;BaseSerpElementItem&gt;](./BaseSerpElementItem.md)<br>
+[ICollection&lt;BaseYoutubeSerpElementItem&gt;](./BaseYoutubeSerpElementItem.md)<br>
 
 ### **AdditionalProperties**
 

@@ -143,12 +143,12 @@ public Nullable<double> TotalMerchant { get; set; }
 ### **OnPage**
 
 ```csharp
-public AppendixOnPageDayStatisticsMoneyData OnPage { get; set; }
+public AppendixOnPageStatisticsMoneyDataInfo OnPage { get; set; }
 ```
 
 #### Property Value
 
-[AppendixOnPageDayStatisticsMoneyData](./AppendixOnPageDayStatisticsMoneyData.md)<br>
+[AppendixOnPageStatisticsMoneyDataInfo](./AppendixOnPageStatisticsMoneyDataInfo.md)<br>
 
 ### **TotalOnPage**
 

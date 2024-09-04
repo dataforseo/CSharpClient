@@ -220,10 +220,30 @@ public AppendixInfo BulkPagesSummary { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **PagesSummaryWithPageInfo**
+### **HistoricalNewLostSummary**
 
 ```csharp
-public AppendixInfo PagesSummaryWithPageInfo { get; set; }
+public AppendixInfo HistoricalNewLostSummary { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **AvailableFilters**
+
+```csharp
+public Nullable<double> AvailableFilters { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **BulkSpamScore**
+
+```csharp
+public AppendixInfo BulkSpamScore { get; set; }
 ```
 
 #### Property Value
@@ -240,35 +260,15 @@ public Nullable<double> Index { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **HistoricalNewLostSummary**
+### **PagesSummaryWithPageInfo**
 
 ```csharp
-public AppendixInfo HistoricalNewLostSummary { get; set; }
+public AppendixInfo PagesSummaryWithPageInfo { get; set; }
 ```
 
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
-
-### **BulkSpamScore**
-
-```csharp
-public AppendixInfo BulkSpamScore { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **AvailableFilters**
-
-```csharp
-public Nullable<double> AvailableFilters { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **IdList**
 

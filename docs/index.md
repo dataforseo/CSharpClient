@@ -250,19 +250,21 @@
 
 [AppendixMerchantPriceData](./AppendixMerchantPriceData.md)
 
-[AppendixMinuteStatisticsDataInfo](./AppendixMinuteStatisticsDataInfo.md)
+[AppendixMinuteStatisticsMoneyData](./AppendixMinuteStatisticsMoneyData.md)
+
+[AppendixMinuteStatisticsRatesData](./AppendixMinuteStatisticsRatesData.md)
 
 [AppendixMoneyData](./AppendixMoneyData.md)
 
 [AppendixNaverKeywordsDataDataInfo](./AppendixNaverKeywordsDataDataInfo.md)
-
-[AppendixOnPageDayStatisticsMoneyData](./AppendixOnPageDayStatisticsMoneyData.md)
 
 [AppendixOnPageDayStatisticsRatesData](./AppendixOnPageDayStatisticsRatesData.md)
 
 [AppendixOnPageLimitsRatesDataInfo](./AppendixOnPageLimitsRatesDataInfo.md)
 
 [AppendixOnPagePriceData](./AppendixOnPagePriceData.md)
+
+[AppendixOnPageStatisticsMoneyDataInfo](./AppendixOnPageStatisticsMoneyDataInfo.md)
 
 [AppendixPriceData](./AppendixPriceData.md)
 
@@ -328,8 +330,6 @@
 
 [AuthorsElement](./AuthorsElement.md)
 
-[AutocompleteSerpElementItem](./AutocompleteSerpElementItem.md)
-
 [AvailableLanguages](./AvailableLanguages.md)
 
 [AvailableLocations](./AvailableLocations.md)
@@ -394,6 +394,12 @@
 
 [BaseDataforseoTrendsItem](./BaseDataforseoTrendsItem.md)
 
+[BaseGoogleImagesSerpElementItem](./BaseGoogleImagesSerpElementItem.md)
+
+[BaseGoogleMapsSerpElementItem](./BaseGoogleMapsSerpElementItem.md)
+
+[BaseGoogleNewsSerpElementItem](./BaseGoogleNewsSerpElementItem.md)
+
 [BaseGoogleTrendsItem](./BaseGoogleTrendsItem.md)
 
 [BaseLocalBusinessLink](./BaseLocalBusinessLink.md)
@@ -409,6 +415,8 @@
 [BaseProductInformationRowItem](./BaseProductInformationRowItem.md)
 
 [BaseSerpElementItem](./BaseSerpElementItem.md)
+
+[BaseYoutubeSerpElementItem](./BaseYoutubeSerpElementItem.md)
 
 [BrokenResourceElementItem](./BrokenResourceElementItem.md)
 
@@ -574,8 +582,6 @@
 
 [DatasetDescription](./DatasetDescription.md)
 
-[DatasetSerpElementItem](./DatasetSerpElementItem.md)
-
 [DeliveryInfo](./DeliveryInfo.md)
 
 [Demography](./Demography.md)
@@ -650,7 +656,19 @@
 
 [GoogleHotelsSerpElementItem](./GoogleHotelsSerpElementItem.md)
 
-[GoogleJobsItemSerpElementItem](./GoogleJobsItemSerpElementItem.md)
+[GoogleImageCarouselSerpElementItem](./GoogleImageCarouselSerpElementItem.md)
+
+[GoogleImageImagesSearchSerpElementItem](./GoogleImageImagesSearchSerpElementItem.md)
+
+[GoogleImageRelatedSearchesSerpElementItem](./GoogleImageRelatedSearchesSerpElementItem.md)
+
+[GoogleMapsMapsPaidItemSerpElementItem](./GoogleMapsMapsPaidItemSerpElementItem.md)
+
+[GoogleMapsMapsSearchSerpElementItem](./GoogleMapsMapsSearchSerpElementItem.md)
+
+[GoogleNewsNewsSearchSerpElementItem](./GoogleNewsNewsSearchSerpElementItem.md)
+
+[GoogleNewsTopStoriesSerpElementItem](./GoogleNewsTopStoriesSerpElementItem.md)
 
 [GooglePlayMetricsBundleInfo](./GooglePlayMetricsBundleInfo.md)
 
@@ -727,8 +745,6 @@
 [ImagesDataforseoLabsSerpElementItem](./ImagesDataforseoLabsSerpElementItem.md)
 
 [ImagesElement](./ImagesElement.md)
-
-[ImagesSearchSerpElementItem](./ImagesSearchSerpElementItem.md)
 
 [ImagesSerpElementItem](./ImagesSerpElementItem.md)
 
@@ -866,11 +882,7 @@
 
 [MapSerpElementItem](./MapSerpElementItem.md)
 
-[MapsPaidItemSerpElementItem](./MapsPaidItemSerpElementItem.md)
-
 [MapsSearchBusinessDataSerpElementItem](./MapsSearchBusinessDataSerpElementItem.md)
-
-[MapsSearchSerpElementItem](./MapsSearchSerpElementItem.md)
 
 [MathSolverDataforseoLabsSerpElementItem](./MathSolverDataforseoLabsSerpElementItem.md)
 
@@ -901,8 +913,6 @@
 [MultiCarouselElement](./MultiCarouselElement.md)
 
 [MultiCarouselSerpElementItem](./MultiCarouselSerpElementItem.md)
-
-[NewsSearchSerpElementItem](./NewsSearchSerpElementItem.md)
 
 [OnPageContentParsingItem](./OnPageContentParsingItem.md)
 
@@ -1103,6 +1113,14 @@
 [SentimentConnotationDistribution](./SentimentConnotationDistribution.md)
 
 [SerpAiSummaryItem](./SerpAiSummaryItem.md)
+
+[SerpGoogleAutocompleteeAdvancedItem](./SerpGoogleAutocompleteeAdvancedItem.md)
+
+[SerpGoogleDatasetAdvancedItem](./SerpGoogleDatasetAdvancedItem.md)
+
+[SerpGoogleDatasetInfoAdvancedItem](./SerpGoogleDatasetInfoAdvancedItem.md)
+
+[SerpGoogleJobsTaskGetAdvancedItem](./SerpGoogleJobsTaskGetAdvancedItem.md)
 
 [SerpInfo](./SerpInfo.md)
 

@@ -110,20 +110,20 @@ public Nullable<double> Screenshot { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **IdList**
+### **AiSummary**
 
 ```csharp
-public Nullable<double> IdList { get; set; }
+public Nullable<double> AiSummary { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **AiSummary**
+### **IdList**
 
 ```csharp
-public Nullable<double> AiSummary { get; set; }
+public Nullable<double> IdList { get; set; }
 ```
 
 #### Property Value
