@@ -106,32 +106,32 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("search_intent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo SearchIntent { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Status { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("amazon", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("available_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? AvailableFilters { get; set; }
-
         [Newtonsoft.Json.JsonProperty("historical_bulk_traffic_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? Languages { get; set; }
 
         [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? IdList { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("available_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? AvailableHistory { get; set; }
+        [Newtonsoft.Json.JsonProperty("top_google_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo TopGoogleSearches { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? Status { get; set; }
 
         [Newtonsoft.Json.JsonProperty("categories_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo CategoriesForKeywords { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("top_google_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo TopGoogleSearches { get; set; }
+        [Newtonsoft.Json.JsonProperty("available_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? AvailableHistory { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Languages { get; set; }
+        [Newtonsoft.Json.JsonProperty("available_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("amazon", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

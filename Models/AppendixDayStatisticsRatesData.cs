@@ -90,14 +90,14 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Value { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? TotalTrafficAnalytics { get; set; }
+
         [Newtonsoft.Json.JsonProperty("total_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalReviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo Reviews { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? TotalTrafficAnalytics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

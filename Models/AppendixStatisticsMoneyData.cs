@@ -8,7 +8,7 @@ namespace DataForSeo.Client.Models
         public AppendixDayStatisticsMoneyData Day { get; set; }
 
         [Newtonsoft.Json.JsonProperty("minute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixMinuteStatisticsMoneyData Minute { get; set; }
+        public AppendixMinuteStatisticsDataInfo Minute { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

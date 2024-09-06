@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// website domain
+        /// domain name of the reference
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }

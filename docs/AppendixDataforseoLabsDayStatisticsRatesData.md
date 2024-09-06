@@ -350,36 +350,6 @@ public AppendixInfo SearchIntent { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **Status**
-
-```csharp
-public Nullable<double> Status { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Amazon**
-
-```csharp
-public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
-```
-
-#### Property Value
-
-[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
-
-### **AvailableFilters**
-
-```csharp
-public Nullable<double> AvailableFilters { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
 ### **HistoricalBulkTrafficEstimation**
 
 ```csharp
@@ -389,6 +359,16 @@ public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
+
+### **Languages**
+
+```csharp
+public Nullable<double> Languages { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **IdList**
 
@@ -400,10 +380,20 @@ public Nullable<double> IdList { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **AvailableHistory**
+### **TopGoogleSearches**
 
 ```csharp
-public Nullable<double> AvailableHistory { get; set; }
+public AppendixInfo TopGoogleSearches { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **Status**
+
+```csharp
+public Nullable<double> Status { get; set; }
 ```
 
 #### Property Value
@@ -420,25 +410,35 @@ public AppendixInfo CategoriesForKeywords { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **TopGoogleSearches**
+### **AvailableHistory**
 
 ```csharp
-public AppendixInfo TopGoogleSearches { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **Languages**
-
-```csharp
-public Nullable<double> Languages { get; set; }
+public Nullable<double> AvailableHistory { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **AvailableFilters**
+
+```csharp
+public Nullable<double> AvailableFilters { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Amazon**
+
+```csharp
+public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
+```
+
+#### Property Value
+
+[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

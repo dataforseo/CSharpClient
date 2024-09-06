@@ -56,8 +56,7 @@ namespace DataForSeo.Client.Models
         public string Cid { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// contains results featured in the ‘hotels_pack’ element of SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseSerpElementItem> Items { get; set; }

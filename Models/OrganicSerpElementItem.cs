@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class OrganicSerpElementItem : BaseSerpElementItem
     {
         /// <summary>
-        /// website domain
+        /// domain name of the reference
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }

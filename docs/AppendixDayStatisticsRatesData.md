@@ -270,6 +270,16 @@ public string Value { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **TotalTrafficAnalytics**
+
+```csharp
+public Nullable<double> TotalTrafficAnalytics { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **TotalReviews**
 
 ```csharp
@@ -289,16 +299,6 @@ public AppendixInfo Reviews { get; set; }
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
-
-### **TotalTrafficAnalytics**
-
-```csharp
-public Nullable<double> TotalTrafficAnalytics { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

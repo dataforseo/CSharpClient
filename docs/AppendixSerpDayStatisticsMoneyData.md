@@ -110,20 +110,20 @@ public Nullable<double> Screenshot { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **RefundMoney**
+### **AiSummary**
 
 ```csharp
-public Nullable<double> RefundMoney { get; set; }
+public Nullable<double> AiSummary { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **AiSummary**
+### **RefundMoney**
 
 ```csharp
-public Nullable<double> AiSummary { get; set; }
+public Nullable<double> RefundMoney { get; set; }
 ```
 
 #### Property Value

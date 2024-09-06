@@ -180,16 +180,6 @@ public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
 
 [AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
 
-### **SearchVolumeHistory**
-
-```csharp
-public AppendixInfo SearchVolumeHistory { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
 ### **IdList**
 
 ```csharp
@@ -199,6 +189,16 @@ public Nullable<double> IdList { get; set; }
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **SearchVolumeHistory**
+
+```csharp
+public AppendixInfo SearchVolumeHistory { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
 
 ### **AdditionalProperties**
 

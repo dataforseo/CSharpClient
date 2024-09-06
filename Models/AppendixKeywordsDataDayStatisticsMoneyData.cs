@@ -52,11 +52,11 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("google", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
-
         [Newtonsoft.Json.JsonProperty("search_volume_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixJobsSerpLimitsRatesDataInfo SearchVolumeHistory { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("google", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

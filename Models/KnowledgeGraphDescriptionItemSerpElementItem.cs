@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class KnowledgeGraphDescriptionItemSerpElementItem : BaseSerpElementItem
     {
         /// <summary>
-        /// description content
+        /// text or description of the element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }

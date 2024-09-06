@@ -36,6 +36,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL of the image
+        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
         [Newtonsoft.Json.JsonProperty("image_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }

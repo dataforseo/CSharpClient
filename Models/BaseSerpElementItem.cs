@@ -14,6 +14,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("knowledge_graph_part_item", typeof(KnowledgeGraphPartItemSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_shopping_item", typeof(KnowledgeGraphShoppingItemSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph_hotels_booking_item", typeof(KnowledgeGraphHotelsBookingItemSerpElementItem))]
+    [JsonInheritanceAttribute("knowledge_graph_ai_overview_item", typeof(KnowledgeGraphAiOverviewItemSerpElementItem))]
     [JsonInheritanceAttribute("knowledge_graph", typeof(KnowledgeGraphSerpElementItem))]
     [JsonInheritanceAttribute("top_stories", typeof(TopStoriesSerpElementItem))]
     [JsonInheritanceAttribute("people_also_ask", typeof(PeopleAlsoAskSerpElementItem))]

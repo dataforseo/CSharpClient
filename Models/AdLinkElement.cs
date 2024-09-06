@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

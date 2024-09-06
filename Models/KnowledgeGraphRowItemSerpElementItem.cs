@@ -19,7 +19,8 @@ namespace DataForSeo.Client.Models
         public string DataAttrid { get; set; }
 
         /// <summary>
-        /// row content
+        /// reference text
+        /// <br/>text snippet from the page that was used to generate the ai_overview_element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }

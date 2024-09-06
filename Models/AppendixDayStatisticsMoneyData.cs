@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
         public double? TotalMerchant { get; set; }
 
         [Newtonsoft.Json.JsonProperty("on_page", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixOnPageStatisticsMoneyDataInfo OnPage { get; set; }
+        public AppendixOnPageDayStatisticsMoneyData OnPage { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_on_page", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalOnPage { get; set; }

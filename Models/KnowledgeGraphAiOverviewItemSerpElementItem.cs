@@ -2,19 +2,29 @@ namespace DataForSeo.Client.Models
 {
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class TopStoriesSerpElementItem : BaseSerpElementItem
+    public partial class KnowledgeGraphAiOverviewItemSerpElementItem : BaseSerpElementItem
     {
         /// <summary>
-        /// title of the row
+        /// indicates whether the element is loaded asynchronically
+        /// <br/>if true, the ai_overview element is loaded asynchronically;
+        /// <br/>if false, the ai_overview element is loaded from cache;
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Title { get; set; }
+        [Newtonsoft.Json.JsonProperty("asynchronous_ai_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? AsynchronousAiOverview { get; set; }
 
         /// <summary>
-        /// contains arrays of specific images
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<TopStoriesElement> Items { get; set; }
+        public System.Collections.Generic.ICollection<AiOverviewElement> Items { get; set; }
+
+        /// <summary>
+        /// additional references relevant to the item
+        /// <br/>includes references to webpages that may have been used to generate the ai_overview
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("references", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<AiOverviewReference> References { get; set; }
 
         /// <summary>
         /// rectangle parameters

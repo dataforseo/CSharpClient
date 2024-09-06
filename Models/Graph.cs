@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class Graph
     {
         /// <summary>
-        /// contains arrays of specific images
+        /// contains arrays of elements available in the list
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<GraphElement> Items { get; set; }

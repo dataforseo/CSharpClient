@@ -67,23 +67,23 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("bulk_pages_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo BulkPagesSummary { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("historical_new_lost_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo HistoricalNewLostSummary { get; set; }
+        [Newtonsoft.Json.JsonProperty("index", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? Index { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
 
         [Newtonsoft.Json.JsonProperty("available_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? AvailableFilters { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("bulk_spam_score", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo BulkSpamScore { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("index", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Index { get; set; }
-
         [Newtonsoft.Json.JsonProperty("pages_summary_with_page_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo PagesSummaryWithPageInfo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? IdList { get; set; }
+        [Newtonsoft.Json.JsonProperty("historical_new_lost_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo HistoricalNewLostSummary { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("bulk_spam_score", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo BulkSpamScore { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

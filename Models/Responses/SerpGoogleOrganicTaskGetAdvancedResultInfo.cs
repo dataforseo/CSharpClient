@@ -81,7 +81,7 @@ namespace DataForSeo.Client.Models.Responses
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// contains arrays of elements available in the list
+        /// items present in the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseSerpElementItem> Items { get; set; }

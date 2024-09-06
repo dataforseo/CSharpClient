@@ -11,14 +11,13 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// source of the element
-        /// <br/>indicates the source of information included in the questions_and_answers_element
+        /// reference source name or title
         /// </summary>
         [Newtonsoft.Json.JsonProperty("source", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Source { get; set; }
 
         /// <summary>
-        /// domain in SERP
+        /// website domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -30,14 +29,13 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// title of a given shopping element
+        /// title of a given link element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// reference text
-        /// <br/>text snippet from the page that was used to generate the ai_overview_element
+        /// row content
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }

@@ -250,21 +250,19 @@
 
 [AppendixMerchantPriceData](./AppendixMerchantPriceData.md)
 
-[AppendixMinuteStatisticsMoneyData](./AppendixMinuteStatisticsMoneyData.md)
-
-[AppendixMinuteStatisticsRatesData](./AppendixMinuteStatisticsRatesData.md)
+[AppendixMinuteStatisticsDataInfo](./AppendixMinuteStatisticsDataInfo.md)
 
 [AppendixMoneyData](./AppendixMoneyData.md)
 
 [AppendixNaverKeywordsDataDataInfo](./AppendixNaverKeywordsDataDataInfo.md)
+
+[AppendixOnPageDayStatisticsMoneyData](./AppendixOnPageDayStatisticsMoneyData.md)
 
 [AppendixOnPageDayStatisticsRatesData](./AppendixOnPageDayStatisticsRatesData.md)
 
 [AppendixOnPageLimitsRatesDataInfo](./AppendixOnPageLimitsRatesDataInfo.md)
 
 [AppendixOnPagePriceData](./AppendixOnPagePriceData.md)
-
-[AppendixOnPageStatisticsMoneyDataInfo](./AppendixOnPageStatisticsMoneyDataInfo.md)
 
 [AppendixPriceData](./AppendixPriceData.md)
 
@@ -797,6 +795,8 @@
 [KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem](./KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem.md)
 
 [KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem](./KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem.md)
+
+[KnowledgeGraphAiOverviewItemSerpElementItem](./KnowledgeGraphAiOverviewItemSerpElementItem.md)
 
 [KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem](./KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem.md)
 

@@ -5,8 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class QuestionsAndAnswersSerpElementItem : BaseSerpElementItem
     {
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// contains arrays of specific images
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<QuestionsAndAnswersElement> Items { get; set; }

@@ -100,16 +100,6 @@ public Nullable<double> TasksReady { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **AppListings**
-
-```csharp
-public AppendixBusinessDataDayLimitsRatesDataInfo AppListings { get; set; }
-```
-
-#### Property Value
-
-[AppendixBusinessDataDayLimitsRatesDataInfo](./AppendixBusinessDataDayLimitsRatesDataInfo.md)<br>
-
 ### **RefundMoney**
 
 ```csharp
@@ -119,6 +109,16 @@ public Nullable<double> RefundMoney { get; set; }
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **AppListings**
+
+```csharp
+public AppendixBusinessDataDayLimitsRatesDataInfo AppListings { get; set; }
+```
+
+#### Property Value
+
+[AppendixBusinessDataDayLimitsRatesDataInfo](./AppendixBusinessDataDayLimitsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 
