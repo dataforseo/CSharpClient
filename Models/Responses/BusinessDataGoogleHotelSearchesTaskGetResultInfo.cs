@@ -7,7 +7,7 @@ namespace DataForSeo.Client.Models.Responses
     {
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character);
+        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character);
         /// <br/>in order to obtain accurate search results, the location name is appended to the keyword automatically
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

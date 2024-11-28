@@ -141,7 +141,7 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
-        /// By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -153,7 +153,7 @@ namespace DataForSeo.Client.Api
 
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
-        /// By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -392,7 +392,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<OnPageTaskPostResponseInfo> TaskPostAsync(System.Collections.Generic.IEnumerable<OnPageTaskRequestInfo> body)
+        public virtual System.Threading.Tasks.Task<OnPageTaskPostResponseInfo> TaskPostAsync(System.Collections.Generic.IEnumerable<OnPageTaskPostRequestInfo> body)
         {
             return TaskPostAsync(body, System.Threading.CancellationToken.None);
         }
@@ -405,7 +405,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<OnPageTaskPostResponseInfo> TaskPostAsync(System.Collections.Generic.IEnumerable<OnPageTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<OnPageTaskPostResponseInfo> TaskPostAsync(System.Collections.Generic.IEnumerable<OnPageTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1230,7 +1230,7 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌‌
-        /// <br/>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
+        /// <br/>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -1243,7 +1243,7 @@ namespace DataForSeo.Client.Api
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
         /// ‌‌
-        /// <br/>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
+        /// <br/>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>

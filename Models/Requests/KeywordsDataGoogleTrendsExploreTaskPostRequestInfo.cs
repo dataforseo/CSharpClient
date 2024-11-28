@@ -9,7 +9,8 @@ namespace DataForSeo.Client.Models.Requests
         /// keywords
         /// <br/>required field
         /// <br/>The maximum number of keywords you can specify: 5
-        /// <br/>Note: comma symbols (,) in the specified keywords will be unset and ignored
+        /// <br/>Note: the comma characters (,) in the specified keywords will be unset and ignored
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }
@@ -135,8 +136,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/postbackscript?id=$id
         /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in postback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in postback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -149,8 +151,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/pingscript?id=$id
         /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in pingback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in pingback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

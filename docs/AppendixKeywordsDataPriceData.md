@@ -30,6 +30,16 @@ public AppendixKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
 
 [AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
 
+### **AudienceEstimation**
+
+```csharp
+public AppendixKeywordsDataPriceDataInfo AudienceEstimation { get; set; }
+```
+
+#### Property Value
+
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
+
 ### **Bing**
 
 ```csharp
@@ -104,6 +114,16 @@ public AppendixKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
 
 ```csharp
 public AppendixKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+```
+
+#### Property Value
+
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
+
+### **KeywordSuggestionsForUrl**
+
+```csharp
+public AppendixKeywordsDataPriceDataInfo KeywordSuggestionsForUrl { get; set; }
 ```
 
 #### Property Value

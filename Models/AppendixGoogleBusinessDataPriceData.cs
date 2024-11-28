@@ -4,6 +4,9 @@ namespace DataForSeo.Client.Models
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AppendixGoogleBusinessDataPriceData
     {
+        [Newtonsoft.Json.JsonProperty("extended_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
+
         [Newtonsoft.Json.JsonProperty("hotel_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixHotelInfoGoogleBusinessDataPriceData HotelInfo { get; set; }
 

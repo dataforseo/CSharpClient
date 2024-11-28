@@ -63,12 +63,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<DataforseoLabsBBulkTrafficEstimationLiveItem> Items { get; set; }
+public ICollection<DataforseoLabsBulkTrafficEstimationLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBBulkTrafficEstimationLiveItem&gt;](./DataforseoLabsBBulkTrafficEstimationLiveItem.md)<br>
+[ICollection&lt;DataforseoLabsBulkTrafficEstimationLiveItem&gt;](./DataforseoLabsBulkTrafficEstimationLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

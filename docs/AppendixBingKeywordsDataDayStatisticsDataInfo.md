@@ -50,6 +50,26 @@ public AppendixInfo KeywordsForKeywords { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
+### **AudienceEstimation**
+
+```csharp
+public AppendixInfo AudienceEstimation { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **KeywordSuggestionsForUrl**
+
+```csharp
+public AppendixInfo KeywordSuggestionsForUrl { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
 ### **SearchVolumeHistory**
 
 ```csharp

@@ -10,6 +10,16 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 
 ## Properties
 
+### **ExtendedReviews**
+
+```csharp
+public AppendixKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
+```
+
+#### Property Value
+
+[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
+
 ### **HotelInfo**
 
 ```csharp

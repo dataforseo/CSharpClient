@@ -100,16 +100,6 @@ public Nullable<bool> DisableCookiePopup { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **CustomJs**
-
-```csharp
-public string CustomJs { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **SwitchPool**
 
 ```csharp

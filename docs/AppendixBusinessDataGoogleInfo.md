@@ -70,6 +70,16 @@ public AppendixInfo QuestionsAndAnswers { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
+### **ExtendedReviews**
+
+```csharp
+public AppendixInfo ExtendedReviews { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

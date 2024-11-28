@@ -60,6 +60,16 @@ public object CustomJsResponse { get; set; }
 
 [Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
 
+### **CustomJsClientException**
+
+```csharp
+public string CustomJsClientException { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **BrokenResources**
 
 ```csharp

@@ -11,8 +11,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the results will be based on the keywords you specify in this array
         /// <br/>UTF-8 encoding;
         /// <br/>the keywords will be converted to lowercase format;
-        /// <br/>a keyword should be at least 3 characters long;
         /// <br/>you can specify the maximum of 200 keywords
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

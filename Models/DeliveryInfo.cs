@@ -19,13 +19,6 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("delivery_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PriceInfo DeliveryPrice { get; set; }
 
-        /// <summary>
-        /// stores count information
-        /// <br/>contains information about the number of stores that offer the same product
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("stores_count_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public StoresCountInfo StoresCountInfo { get; set; }
-
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

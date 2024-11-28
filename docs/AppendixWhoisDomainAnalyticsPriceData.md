@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Overview**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Overview { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Overview { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

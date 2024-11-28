@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models.Requests
         /// keyword in the app’s description
         /// <br/>optional field
         /// <br/>keywords that occur in the description of the app;
-        /// <br/>can contain up to 200 symbols
+        /// <br/>can contain up to 200 characters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Requests
         /// keyword in the app’s title
         /// <br/>optional field
         /// <br/>keywords that occur in the title of the app;
-        /// <br/>can contain up to 200 symbols
+        /// <br/>can contain up to 200 characters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }

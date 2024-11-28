@@ -5,7 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class VideoDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// search engine type
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
+        /// <summary>
+        /// elements of search results found in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<VideoElement> Items { get; set; }

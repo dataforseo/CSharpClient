@@ -119,7 +119,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
 
 ### **MerchantErrorsAsync(IEnumerable&lt;MerchantErrorsRequestInfo&gt;, CancellationToken)**
@@ -147,7 +147,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
 
 ### **MerchantGoogleLanguagesAsync()**
@@ -303,15 +303,15 @@ A server side error occurred.
 
 for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/locations/?bash'
 
-### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantTaskRequestInfo&gt;)**
+### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(IEnumerable<MerchantTaskRequestInfo> body)
+public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(IEnumerable<MerchantGoogleProductsTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantTaskRequestInfo&gt;](./MerchantTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;](./MerchantGoogleProductsTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -329,15 +329,15 @@ A server side error occurred.
  <br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
 
-### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(IEnumerable<MerchantTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(IEnumerable<MerchantGoogleProductsTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;MerchantTaskRequestInfo&gt;](./MerchantTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;](./MerchantGoogleProductsTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.

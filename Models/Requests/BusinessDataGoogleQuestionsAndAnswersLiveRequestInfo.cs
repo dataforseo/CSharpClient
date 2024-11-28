@@ -9,9 +9,9 @@ namespace DataForSeo.Client.Models.Requests
         /// keyword
         /// <br/>required field
         /// <br/>the keyword you specify should indicate the name of the local establishment
-        /// <br/>you can specify up to 700 symbols in the keyword filed
-        /// <br/>all %## will be decoded (plus symbol ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” symbol for your keyword, please specify it as “%25”; 
+        /// <br/>you can specify up to 700 characters in the keyword filed
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”; 
         /// <br/>this field can also be used to pass the following parameters:
         /// <br/>cid – a unique, google-defined id of the business entity;
         /// <br/>place_id – an identifier of the business entity in Google Maps;
@@ -21,6 +21,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>place_id:GhIJQWDl0CIeQUARxks3icF8U8A
         /// <br/>spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30
         /// <br/>learn more about the cid and place_id identifiers in this help center article
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }

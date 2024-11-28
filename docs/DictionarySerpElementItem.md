@@ -73,12 +73,12 @@ public string Snippet { get; set; }
 ### **Text**
 
 ```csharp
-public Nullable<bool> Text { get; set; }
+public string Text { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **Links**
 

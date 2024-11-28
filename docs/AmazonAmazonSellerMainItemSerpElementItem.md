@@ -53,12 +53,12 @@ public string ShipsFrom { get; set; }
 ### **Price**
 
 ```csharp
-public Price Price { get; set; }
+public PriceInfo Price { get; set; }
 ```
 
 #### Property Value
 
-[Price](./Price.md)<br>
+[PriceInfo](./PriceInfo.md)<br>
 
 ### **Rating**
 

@@ -106,6 +106,13 @@ namespace DataForSeo.Client.Models
         public string ContributorUrl { get; set; }
 
         /// <summary>
+        /// URL in the ‘book online’ button of the element
+        /// <br/>URL directing users to the online booking or order page of the business entity
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("book_online_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string BookOnlineUrl { get; set; }
+
+        /// <summary>
         /// domain of the business entity
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -220,7 +227,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information related to operational hours of the business entity
         /// </summary>
         [Newtonsoft.Json.JsonProperty("work_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public WorkInfo WorkTime { get; set; }
+        public WorkTime WorkTime { get; set; }
 
         /// <summary>
         /// popular times

@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixGoogleAdsKeywordsDataPriceData
     {
         [Newtonsoft.Json.JsonProperty("ad_traffic_by_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_site", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Status { get; set; }

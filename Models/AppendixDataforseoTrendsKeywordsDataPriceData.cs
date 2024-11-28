@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixDataforseoTrendsKeywordsDataPriceData
     {
         [Newtonsoft.Json.JsonProperty("demography", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Demography { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Demography { get; set; }
 
         [Newtonsoft.Json.JsonProperty("explore", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Explore { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Explore { get; set; }
 
         [Newtonsoft.Json.JsonProperty("merged_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo MergedData { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo MergedData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("subregion_interests", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo SubregionInterests { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo SubregionInterests { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

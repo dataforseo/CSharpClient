@@ -220,7 +220,7 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
-        /// By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -232,7 +232,7 @@ namespace DataForSeo.Client.Api
 
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
-        /// By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>

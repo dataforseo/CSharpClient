@@ -183,12 +183,12 @@ public ICollection<string> CategoryIds { get; set; }
 ### **WorkHours**
 
 ```csharp
-public WorkInfo WorkHours { get; set; }
+public WorkHours WorkHours { get; set; }
 ```
 
 #### Property Value
 
-[WorkInfo](./WorkInfo.md)<br>
+[WorkHours](./WorkHours.md)<br>
 
 ### **FeatureId**
 

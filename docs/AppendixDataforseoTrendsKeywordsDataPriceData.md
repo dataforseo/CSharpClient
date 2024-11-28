@@ -13,42 +13,42 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Demography**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Demography { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Demography { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Explore**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Explore { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Explore { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **MergedData**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo MergedData { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo MergedData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **SubregionInterests**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo SubregionInterests { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo SubregionInterests { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

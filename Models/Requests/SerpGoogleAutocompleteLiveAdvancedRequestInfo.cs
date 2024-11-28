@@ -8,10 +8,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// keyword
         /// <br/>required field
-        /// <br/>you can specify up to 700 symbols in the keyword field
-        /// <br/>all %## will be decoded (plus symbol ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” symbol for your keyword, please specify it as “%25”;
-        /// <br/>if you need to use the “+” symbol for your keyword, please specify it as “%2B”;
+        /// <br/>you can specify up to 700 characters in the keyword field
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
+        /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -65,7 +66,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the horizontal numerical position of the cursor pointer within the keyword in the search bar;
         /// <br/>by modifying the position of the cursor pointer, you will obtain different autocomplete suggestions for the same seed keyword;
         /// <br/>minimal value: 0
-        /// <br/>default value: the number of the last symbol of the specified keyword
+        /// <br/>default value: the number of the last character of the specified keyword
         /// <br/>example:
         /// <br/>|which query are s – "cursor_pointer": 0
         /// <br/>which query is s| – "cursor_pointer": 16

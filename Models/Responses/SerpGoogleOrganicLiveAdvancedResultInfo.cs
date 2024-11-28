@@ -7,7 +7,7 @@ namespace DataForSeo.Client.Models.Responses
     {
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -58,6 +58,12 @@ namespace DataForSeo.Client.Models.Responses
         /// </summary>
         [Newtonsoft.Json.JsonProperty("spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
+
+        /// <summary>
+        /// search refinement chips
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("refinement_chips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
         /// types of search results in SERP

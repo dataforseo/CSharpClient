@@ -119,7 +119,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
 
 ### **OnPageErrorsAsync(IEnumerable&lt;OnPageErrorsRequestInfo&gt;, CancellationToken)**
@@ -147,7 +147,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
 
 ### **ForceStopAsync(IEnumerable&lt;OnPageForceStopRequestInfo&gt;)**
@@ -256,15 +256,15 @@ OnPage API supports plenty of customizable crawling parameters that allow you to
  <br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
 
-### **TaskPostAsync(IEnumerable&lt;OnPageTaskRequestInfo&gt;)**
+### **TaskPostAsync(IEnumerable&lt;OnPageTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskRequestInfo> body)
+public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageTaskRequestInfo&gt;](./OnPageTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;OnPageTaskPostRequestInfo&gt;](./OnPageTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -282,15 +282,15 @@ A server side error occurred.
  <br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
 
-### **TaskPostAsync(IEnumerable&lt;OnPageTaskRequestInfo&gt;, CancellationToken)**
+### **TaskPostAsync(IEnumerable&lt;OnPageTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;OnPageTaskRequestInfo&gt;](./OnPageTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;OnPageTaskPostRequestInfo&gt;](./OnPageTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -841,7 +841,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
+ <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
 
 ### **NonIndexableAsync(IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;, CancellationToken)**
@@ -870,7 +870,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings.
+ <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
 
 ### **WaterfallAsync(IEnumerable&lt;OnPageWaterfallRequestInfo&gt;)**

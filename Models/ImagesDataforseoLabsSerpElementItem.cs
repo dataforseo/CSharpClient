@@ -5,6 +5,12 @@ namespace DataForSeo.Client.Models
     public partial class ImagesDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
+        /// search engine type
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
+        /// <summary>
         /// title of the result in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -27,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("related_image_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<RelatedImageSearchesElement> RelatedImageSearches { get; set; }
+        public RelatedImageSearchesElement RelatedImageSearches { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

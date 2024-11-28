@@ -119,7 +119,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
 
 ### **BusinessDataErrorsAsync(IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;, CancellationToken)**
@@ -147,7 +147,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
 
 ### **BusinessDataBusinessListingsLocationsAsync()**
@@ -168,7 +168,7 @@ A server side error occurred.
 
 **Remarks:**
 
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17).
+You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05).
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
 
 ### **BusinessDataBusinessListingsLocationsAsync(CancellationToken)**
@@ -194,7 +194,7 @@ A server side error occurred.
 
 **Remarks:**
 
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17).
+You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05).
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
 
 ### **BusinessListingsCategoriesAsync()**
@@ -560,15 +560,15 @@ A server side error occurred.
 You will receive the list of languages by calling this API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
 
-### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;)**
+### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(IEnumerable<BusinessDataTaskRequestInfo> body)
+public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./BusinessDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -586,15 +586,15 @@ A server side error occurred.
  <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
 
-### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(IEnumerable<BusinessDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./BusinessDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -770,15 +770,15 @@ A server side error occurred.
 
 for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_get/?bash'
 
-### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;)**
+### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;)**
 
 ```csharp
-public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataTaskRequestInfo> body)
+public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./BusinessDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveRequestInfo.md)<br>
 
 #### Returns
 
@@ -796,15 +796,15 @@ A server side error occurred.
  <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash'
 
-### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTaskRequestInfo&gt;](./BusinessDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1692,6 +1692,169 @@ A server side error occurred.
 
 The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
+
+### **GoogleExtendedReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> GoogleExtendedReviewsTaskPostAsync(IEnumerable<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleExtendedReviewsTaskPostResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash'
+
+### **GoogleExtendedReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> GoogleExtendedReviewsTaskPostAsync(IEnumerable<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleExtendedReviewsTaskPostResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash'
+
+### **GoogleExtendedReviewsTasksReadyAsync()**
+
+```csharp
+public Task<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> GoogleExtendedReviewsTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash'
+
+### **GoogleExtendedReviewsTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> GoogleExtendedReviewsTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash'
+
+### **GoogleExtendedReviewsTaskGetAsync(String)**
+
+```csharp
+public Task<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> GoogleExtendedReviewsTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleExtendedReviewsTaskGetResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash'
+
+### **GoogleExtendedReviewsTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> GoogleExtendedReviewsTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;BusinessDataGoogleExtendedReviewsTaskGetResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash'
 
 ### **GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;)**
 

@@ -119,7 +119,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/errors/?bash'
 
 ### **BacklinksErrorsAsync(IEnumerable&lt;BacklinksErrorsRequestInfo&gt;, CancellationToken)**
@@ -147,7 +147,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/backlinks/errors/?bash'
 
 ### **BacklinksAvailableFiltersAsync()**

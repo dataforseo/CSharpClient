@@ -14,22 +14,22 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Technologies { get; set; }
 
         [Newtonsoft.Json.JsonProperty("aggregation_technologies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo AggregationTechnologies { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo AggregationTechnologies { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domains_by_html_terms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo DomainsByHtmlTerms { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo DomainsByHtmlTerms { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domains_by_technology", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo DomainsByTechnology { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo DomainsByTechnology { get; set; }
 
         [Newtonsoft.Json.JsonProperty("domain_technologies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo DomainTechnologies { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo DomainTechnologies { get; set; }
 
         [Newtonsoft.Json.JsonProperty("technologies_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo TechnologiesSummary { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo TechnologiesSummary { get; set; }
 
         [Newtonsoft.Json.JsonProperty("technology_stats", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo TechnologyStats { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo TechnologyStats { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

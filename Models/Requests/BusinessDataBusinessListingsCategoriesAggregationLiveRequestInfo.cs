@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models.Requests
         /// description of the element in SERP
         /// <br/>optional field
         /// <br/>the description of the business entity for which the results are collected;
-        /// <br/>can contain up to 200 symbols
+        /// <br/>can contain up to 200 characters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Requests
         /// title of the element in SERP
         /// <br/>optional field
         /// <br/>the name of the business entity for which the results are collected;
-        /// <br/>can contain up to 200 symbols
+        /// <br/>can contain up to 200 characters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }

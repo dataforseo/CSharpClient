@@ -30,6 +30,16 @@ public string ContributorUrl { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **BookOnlineUrl**
+
+```csharp
+public string BookOnlineUrl { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **HotelRating**
 
 ```csharp

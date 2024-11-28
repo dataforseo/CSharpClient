@@ -119,7 +119,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
 
 ### **AppDataErrorsAsync(IEnumerable&lt;AppDataErrorsRequestInfo&gt;, CancellationToken)**
@@ -147,7 +147,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
 
 ### **GoogleCategoriesAsync()**
@@ -354,15 +354,15 @@ A server side error occurred.
 By calling this endpoint you will receive the list of Google languages supported in App Data API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
 
-### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;)**
+### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(IEnumerable<AppDataTaskRequestInfo> body)
+public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./AppDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;](./AppDataGoogleAppSearchesTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -380,15 +380,15 @@ A server side error occurred.
  <br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
 
-### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(IEnumerable<AppDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./AppDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;](./AppDataGoogleAppSearchesTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1532,15 +1532,15 @@ A server side error occurred.
 By calling this endpoint you will receive the list of Apple languages supported in App Data API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
 
-### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;)**
+### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(IEnumerable<AppDataTaskRequestInfo> body)
+public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./AppDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;](./AppDataAppleAppSearchesTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -1558,15 +1558,15 @@ A server side error occurred.
  <br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
 
-### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataTaskRequestInfo&gt;, CancellationToken)**
+### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(IEnumerable<AppDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;AppDataTaskRequestInfo&gt;](./AppDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;](./AppDataAppleAppSearchesTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.

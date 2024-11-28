@@ -23,52 +23,52 @@ public AppendixContentGenerationPriceDataInfo CheckGrammar { get; set; }
 ### **Generate**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Generate { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Generate { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **GenerateMetaTags**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateMetaTags { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo GenerateMetaTags { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **GenerateSubTopics**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateSubTopics { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo GenerateSubTopics { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **GenerateText**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateText { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo GenerateText { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Paraphrase**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Paraphrase { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Paraphrase { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **TextSummary**
 

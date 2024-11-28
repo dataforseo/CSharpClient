@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Serp**
 
 ```csharp
-public AppendixSerpDayStatisticsMoneyData Serp { get; set; }
+public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpDayStatisticsMoneyData](./AppendixSerpDayStatisticsMoneyData.md)<br>
+[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
 
 ### **Total**
 
@@ -143,12 +143,12 @@ public Nullable<double> TotalMerchant { get; set; }
 ### **OnPage**
 
 ```csharp
-public AppendixOnPageStatisticsMoneyDataInfo OnPage { get; set; }
+public AppendixOnPageLimitsRatesDataInfo OnPage { get; set; }
 ```
 
 #### Property Value
 
-[AppendixOnPageStatisticsMoneyDataInfo](./AppendixOnPageStatisticsMoneyDataInfo.md)<br>
+[AppendixOnPageLimitsRatesDataInfo](./AppendixOnPageLimitsRatesDataInfo.md)<br>
 
 ### **TotalOnPage**
 

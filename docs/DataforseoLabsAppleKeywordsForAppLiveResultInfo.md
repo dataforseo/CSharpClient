@@ -73,12 +73,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<DataforseoLabsAppleKeywordsForAppLiveItem> Items { get; set; }
+public ICollection<DataforseoLabsLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsAppleKeywordsForAppLiveItem&gt;](./DataforseoLabsAppleKeywordsForAppLiveItem.md)<br>
+[ICollection&lt;DataforseoLabsLiveItem&gt;](./DataforseoLabsLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

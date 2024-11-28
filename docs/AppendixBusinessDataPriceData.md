@@ -30,16 +30,6 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
-### **SocialMedia**
-
-```csharp
-public AppendixSocialMediaBusinessDataPriceData SocialMedia { get; set; }
-```
-
-#### Property Value
-
-[AppendixSocialMediaBusinessDataPriceData](./AppendixSocialMediaBusinessDataPriceData.md)<br>
-
 ### **Google**
 
 ```csharp
@@ -49,6 +39,16 @@ public AppendixGoogleBusinessDataPriceData Google { get; set; }
 #### Property Value
 
 [AppendixGoogleBusinessDataPriceData](./AppendixGoogleBusinessDataPriceData.md)<br>
+
+### **SocialMedia**
+
+```csharp
+public AppendixSocialMediaBusinessDataPriceData SocialMedia { get; set; }
+```
+
+#### Property Value
+
+[AppendixSocialMediaBusinessDataPriceData](./AppendixSocialMediaBusinessDataPriceData.md)<br>
 
 ### **Languages**
 
@@ -70,20 +70,20 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
-### **Trustpilot**
+### **Tripadvisor**
 
 ```csharp
-public AppendixTrBusinessDataPriceDataInfo Trustpilot { get; set; }
+public AppendixTrBusinessDataPriceDataInfo Tripadvisor { get; set; }
 ```
 
 #### Property Value
 
 [AppendixTrBusinessDataPriceDataInfo](./AppendixTrBusinessDataPriceDataInfo.md)<br>
 
-### **Tripadvisor**
+### **Trustpilot**
 
 ```csharp
-public AppendixTrBusinessDataPriceDataInfo Tripadvisor { get; set; }
+public AppendixTrBusinessDataPriceDataInfo Trustpilot { get; set; }
 ```
 
 #### Property Value

@@ -10,6 +10,46 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ra
 
 ## Properties
 
+### **RatingType**
+
+```csharp
+public string RatingType { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **Value**
+
+```csharp
+public Nullable<double> Value { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **VotesCount**
+
+```csharp
+public Nullable<long> VotesCount { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **RatingMax**
+
+```csharp
+public Nullable<double> RatingMax { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **Type**
 
 ```csharp
@@ -29,46 +69,6 @@ public string Position { get; set; }
 #### Property Value
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RatingType**
-
-```csharp
-public string RatingType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Value**
-
-```csharp
-public string Value { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **VotesCount**
-
-```csharp
-public Nullable<long> VotesCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RatingMax**
-
-```csharp
-public Nullable<int> RatingMax { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

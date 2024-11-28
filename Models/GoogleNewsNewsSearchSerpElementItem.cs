@@ -5,13 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class GoogleNewsNewsSearchSerpElementItem : BaseGoogleNewsSerpElementItem
     {
         /// <summary>
-        /// domain name of the result in SERP
+        /// domain in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// URL of the result in SERP
+        /// search URL with refinement parameters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

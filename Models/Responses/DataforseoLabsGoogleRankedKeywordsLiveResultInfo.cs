@@ -61,7 +61,7 @@ namespace DataForSeo.Client.Models.Responses
         /// contains ranked keywords and related data
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<DataforseoLabsGoogleRankedKeywordsLiveItem> Items { get; set; }
+        public System.Collections.Generic.ICollection<DataforseoLabsLiveItem> Items { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

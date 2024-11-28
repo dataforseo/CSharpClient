@@ -10,7 +10,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if keywords are not specified, the results will not contain keyword-related data;
         /// <br/>The maximum number of keywords you can specify: 5
-        /// <br/>Note: comma symbols (,) in the specified keywords will be unset and ignored
+        /// <br/>Note: the comma characters (,) in the specified keywords will be unset and ignored
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

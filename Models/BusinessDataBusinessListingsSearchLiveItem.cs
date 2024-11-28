@@ -204,7 +204,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information related to operational hours of the business entity
         /// </summary>
         [Newtonsoft.Json.JsonProperty("work_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public WorkInfo WorkTime { get; set; }
+        public WorkTime WorkTime { get; set; }
 
         /// <summary>
         /// popular times

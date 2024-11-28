@@ -13,32 +13,32 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Facebook**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Facebook { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Facebook { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Pinterest**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Pinterest { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Pinterest { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Reddit**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Reddit { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Reddit { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

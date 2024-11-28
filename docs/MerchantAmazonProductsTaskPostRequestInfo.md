@@ -3,22 +3,12 @@
 Namespace: DataForSeo.Client.Models.Requests
 
 ```csharp
-public class MerchantAmazonProductsTaskPostRequestInfo : MerchantTaskRequestInfo
+public class MerchantAmazonProductsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MerchantTaskRequestInfo](./MerchantTaskRequestInfo.md) → [MerchantAmazonProductsTaskPostRequestInfo](./MerchantAmazonProductsTaskPostRequestInfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MerchantAmazonProductsTaskPostRequestInfo](./MerchantAmazonProductsTaskPostRequestInfo.md)
 
 ## Properties
-
-### **Department**
-
-```csharp
-public string Department { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **Keyword**
 
@@ -129,6 +119,16 @@ public Nullable<int> MaxCrawlPages { get; set; }
 #### Property Value
 
 [Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Department**
+
+```csharp
+public string Department { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **SearchParam**
 

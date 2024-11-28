@@ -8,12 +8,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// keyword
         /// <br/>required field
-        /// <br/>you can specify up to 700 symbols in the keyword field
-        /// <br/>all %## will be decoded (plus symbol ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” symbol for your keyword, please specify it as “%25”;
-        /// <br/>if you need to use the “+” symbol for your keyword, please specify it as “%2B”;
-        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘site:’, the charge per task will be multiplied by 5
+        /// <br/>you can specify up to 700 characters in the keyword field
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
+        /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
+        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘site:’, ‘-site:’, the charge per task will be multiplied by 5
         /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }

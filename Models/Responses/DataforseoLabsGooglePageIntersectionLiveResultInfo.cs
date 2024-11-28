@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models.Responses
         /// contains keywords, relevant SERP elements and related data
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<DataforseoLabsGooglePageIntersectionLiveItem> Items { get; set; }
+        public System.Collections.Generic.ICollection<DataforseoLabsPageIntersectionLiveItem> Items { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

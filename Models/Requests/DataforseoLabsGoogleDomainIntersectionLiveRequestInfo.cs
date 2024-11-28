@@ -107,7 +107,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// include or exclude data from clickstream-based metrics in the result
         /// <br/>optional field
-        /// <br/>if the parameter is set to true, you will receive clickstream_keyword_info, and clickstream_etv fields with clickstream data in the response
+        /// <br/>if the parameter is set to true, you will receive clickstream_keyword_info, clickstream_etv, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response
         /// <br/>default value: false
         /// <br/>with this parameter enabled, you will be charged double the price for the request
         /// <br/>learn more about how clickstream-based metrics are calculated in this help center article

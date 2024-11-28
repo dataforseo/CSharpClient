@@ -10,8 +10,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>UTF-8 encoding
         /// <br/>The maximum number of keywords you can specify: 200.
-        /// <br/>The minimum number of characters for each keyword: 3.
         /// <br/>The keywords will be converted to lowercase format
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }
@@ -97,7 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// include or exclude data from clickstream-based metrics in the result
         /// <br/>optional field
-        /// <br/>if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response
+        /// <br/>if the parameter is set to true, you will receive clickstream_keyword_info, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response
         /// <br/>default value: false
         /// <br/>with this parameter enabled, you will be charged double the price for the request
         /// <br/>learn more about how clickstream-based metrics are calculated in this help center article

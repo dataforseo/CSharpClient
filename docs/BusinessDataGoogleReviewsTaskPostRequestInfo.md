@@ -3,12 +3,22 @@
 Namespace: DataForSeo.Client.Models.Requests
 
 ```csharp
-public class BusinessDataGoogleReviewsTaskPostRequestInfo : BusinessDataTaskRequestInfo
+public class BusinessDataGoogleReviewsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataTaskRequestInfo](./BusinessDataTaskRequestInfo.md) → [BusinessDataGoogleReviewsTaskPostRequestInfo](./BusinessDataGoogleReviewsTaskPostRequestInfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataGoogleReviewsTaskPostRequestInfo](./BusinessDataGoogleReviewsTaskPostRequestInfo.md)
 
 ## Properties
+
+### **Keyword**
+
+```csharp
+public string Keyword { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **Cid**
 
@@ -24,36 +34,6 @@ public string Cid { get; set; }
 
 ```csharp
 public string PlaceId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Depth**
-
-```csharp
-public Nullable<int> Depth { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SortBy**
-
-```csharp
-public string SortBy { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
 ```
 
 #### Property Value
@@ -114,6 +94,26 @@ public string LanguageName { get; set; }
 
 ```csharp
 public string LanguageCode { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **Depth**
+
+```csharp
+public Nullable<int> Depth { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **SortBy**
+
+```csharp
+public string SortBy { get; set; }
 ```
 
 #### Property Value

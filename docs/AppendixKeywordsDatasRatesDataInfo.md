@@ -170,6 +170,26 @@ public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { 
 
 [AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo](./AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md)<br>
 
+### **AudienceEstimation**
+
+```csharp
+public AppendixDayLimitsRatesDataInfo AudienceEstimation { get; set; }
+```
+
+#### Property Value
+
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
+
+### **KeywordSuggestionsForUrl**
+
+```csharp
+public AppendixDayLimitsRatesDataInfo KeywordSuggestionsForUrl { get; set; }
+```
+
+#### Property Value
+
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

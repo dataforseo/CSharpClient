@@ -8,13 +8,13 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 
         [Newtonsoft.Json.JsonProperty("categories_aggregation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo CategoriesAggregation { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo CategoriesAggregation { get; set; }
 
         [Newtonsoft.Json.JsonProperty("locations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Search { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Search { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

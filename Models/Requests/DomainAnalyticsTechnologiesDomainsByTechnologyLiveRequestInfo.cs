@@ -60,6 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>UTF-8 encoding;
         /// <br/>example:
         /// <br/>["seo","software"]
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

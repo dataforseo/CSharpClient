@@ -13,32 +13,32 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **BulkSearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo BulkSearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo BulkSearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DataforseoSearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DataforseoSearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DataforseoSearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **GlobalSearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo GlobalSearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo GlobalSearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **LocationsAndLanguages**
 

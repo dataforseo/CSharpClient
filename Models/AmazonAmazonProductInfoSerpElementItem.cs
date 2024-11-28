@@ -140,6 +140,19 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("is_available", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool? IsAvailable { get; set; }
 
+        /// <summary>
+        /// array of objects with top reviews from target location
+        /// <br/>to obtain additional local reviews, you can specify the load_more_local_reviews parameter in Task POST
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("top_local_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<BaseAmazonSerpElementItem> TopLocalReviews { get; set; }
+
+        /// <summary>
+        /// array of objects with top reviews from around the world
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("top_global_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<BaseAmazonSerpElementItem> TopGlobalReviews { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

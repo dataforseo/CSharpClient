@@ -8,7 +8,7 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 
         [Newtonsoft.Json.JsonProperty("category_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo CategoryTrends { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo CategoryTrends { get; set; }
 
         [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
@@ -20,19 +20,19 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 
         [Newtonsoft.Json.JsonProperty("phrase_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo PhraseTrends { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo PhraseTrends { get; set; }
 
         [Newtonsoft.Json.JsonProperty("rating_distribution", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo RatingDistribution { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo RatingDistribution { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Search { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Search { get; set; }
 
         [Newtonsoft.Json.JsonProperty("sentiment_analysis", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo SentimentAnalysis { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo SentimentAnalysis { get; set; }
 
         [Newtonsoft.Json.JsonProperty("summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Summary { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Summary { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

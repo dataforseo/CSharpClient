@@ -46,7 +46,7 @@ namespace DataForSeo.Client.Models
         public string JobId { get; set; }
 
         /// <summary>
-        /// title of the job
+        /// title of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }

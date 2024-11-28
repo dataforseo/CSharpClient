@@ -64,6 +64,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("competitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo Competitors { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("bulk_spam_score", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo BulkSpamScore { get; set; }
+
         [Newtonsoft.Json.JsonProperty("bulk_pages_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo BulkPagesSummary { get; set; }
 

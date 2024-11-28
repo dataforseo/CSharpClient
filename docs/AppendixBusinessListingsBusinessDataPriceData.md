@@ -23,12 +23,12 @@ public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 ### **CategoriesAggregation**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo CategoriesAggregation { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo CategoriesAggregation { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Locations**
 
@@ -43,12 +43,12 @@ public AppendixTaskKeywordsDataPriceDataInfo Locations { get; set; }
 ### **Search**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Search { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Search { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

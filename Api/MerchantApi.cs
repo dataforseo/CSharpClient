@@ -141,7 +141,7 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
-        /// By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -153,7 +153,7 @@ namespace DataForSeo.Client.Api
 
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
-        /// By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -468,7 +468,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(System.Collections.Generic.IEnumerable<MerchantTaskRequestInfo> body)
+        public virtual System.Threading.Tasks.Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(System.Collections.Generic.IEnumerable<MerchantGoogleProductsTaskPostRequestInfo> body)
         {
             return GoogleProductsTaskPostAsync(body, System.Threading.CancellationToken.None);
         }
@@ -481,7 +481,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(System.Collections.Generic.IEnumerable<MerchantTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(System.Collections.Generic.IEnumerable<MerchantGoogleProductsTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;

@@ -30,16 +30,6 @@ public PriceInfo DeliveryPrice { get; set; }
 
 [PriceInfo](./PriceInfo.md)<br>
 
-### **StoresCountInfo**
-
-```csharp
-public StoresCountInfo StoresCountInfo { get; set; }
-```
-
-#### Property Value
-
-[StoresCountInfo](./StoresCountInfo.md)<br>
-
 ### **AdditionalProperties**
 
 ```csharp

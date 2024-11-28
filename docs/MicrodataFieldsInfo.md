@@ -23,12 +23,12 @@ public string Name { get; set; }
 ### **Types**
 
 ```csharp
-public object Types { get; set; }
+public ICollection<string> Types { get; set; }
 ```
 
 #### Property Value
 
-[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
+[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Value**
 
@@ -43,12 +43,12 @@ public string Value { get; set; }
 ### **TestResults**
 
 ```csharp
-public object TestResults { get; set; }
+public TestResults TestResults { get; set; }
 ```
 
 #### Property Value
 
-[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
+[TestResults](./TestResults.md)<br>
 
 ### **Fields**
 

@@ -90,6 +90,26 @@ public string SeDomain { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **LoadMoreLocalReviews**
+
+```csharp
+public Nullable<bool> LoadMoreLocalReviews { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **LocalReviewsSort**
+
+```csharp
+public string LocalReviewsSort { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Tag**
 
 ```csharp

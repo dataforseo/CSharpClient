@@ -43,12 +43,12 @@ public ICollection<string> SerpItemTypes { get; set; }
 ### **SeResultsCount**
 
 ```csharp
-public string SeResultsCount { get; set; }
+public Nullable<long> SeResultsCount { get; set; }
 ```
 
 #### Property Value
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **LastUpdatedTime**
 

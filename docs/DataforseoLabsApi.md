@@ -190,7 +190,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
 
 ### **DataforseoLabsErrorsAsync(IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;, CancellationToken)**
@@ -218,7 +218,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
 
 ### **AvailableFiltersAsync()**

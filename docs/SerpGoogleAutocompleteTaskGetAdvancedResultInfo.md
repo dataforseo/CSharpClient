@@ -90,6 +90,16 @@ public SpellInfo Spell { get; set; }
 
 [SpellInfo](./SpellInfo.md)<br>
 
+### **RefinementChips**
+
+```csharp
+public RefinementChipsInfo RefinementChips { get; set; }
+```
+
+#### Property Value
+
+[RefinementChipsInfo](./RefinementChipsInfo.md)<br>
+
 ### **ItemTypes**
 
 ```csharp
@@ -123,12 +133,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<SerpGoogleAutocompleteeAdvancedItem> Items { get; set; }
+public ICollection<SerpGoogleAutocompleteAdvancedItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;SerpGoogleAutocompleteeAdvancedItem&gt;](./SerpGoogleAutocompleteeAdvancedItem.md)<br>
+[ICollection&lt;SerpGoogleAutocompleteAdvancedItem&gt;](./SerpGoogleAutocompleteAdvancedItem.md)<br>
 
 ### **AdditionalProperties**
 

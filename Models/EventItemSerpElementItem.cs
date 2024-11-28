@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class EventItemSerpElementItem : BaseSerpElementItem
     {
         /// <summary>
-        /// title of the result in SERP
+        /// title of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// relevant URL
+        /// search URL with refinement parameters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -37,14 +37,12 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// information about the event’s venue
-        /// <br/>if there is none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public LocationInfo LocationInfo { get; set; }
 
         /// <summary>
         /// additional information and ticket purchase options
-        /// <br/>if there is none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("information_and_tickets", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<InformationAndTicketsElement> InformationAndTickets { get; set; }

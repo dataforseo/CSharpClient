@@ -30,16 +30,6 @@ public string CustomUserAgent { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **CustomJs**
-
-```csharp
-public string CustomJs { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **BrowserPreset**
 
 ```csharp

@@ -7,7 +7,7 @@ namespace DataForSeo.Client.Models.Responses
     {
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
         /// <br/>this field will contain the cid parameter if you specified it in the keyword field when setting a task;
         /// <br/>example:
         /// <br/>cid:2946633002421908862

@@ -17,14 +17,13 @@ namespace DataForSeo.Client.Models
         public string Address { get; set; }
 
         /// <summary>
-        /// URL to the event’s venue on google maps
+        /// search URL with refinement parameters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// google-defined client id
-        /// <br/>unique id of a local establishment;
         /// <br/>can be used with Google Reviews API to get a full list of reviews
         /// </summary>
         [Newtonsoft.Json.JsonProperty("cid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

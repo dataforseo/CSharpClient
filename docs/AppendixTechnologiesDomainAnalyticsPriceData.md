@@ -43,62 +43,62 @@ public AppendixTaskKeywordsDataPriceDataInfo Technologies { get; set; }
 ### **AggregationTechnologies**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo AggregationTechnologies { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo AggregationTechnologies { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainsByHtmlTerms**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainsByHtmlTerms { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainsByHtmlTerms { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainsByTechnology**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainsByTechnology { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainsByTechnology { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainTechnologies**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainTechnologies { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainTechnologies { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **TechnologiesSummary**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo TechnologiesSummary { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo TechnologiesSummary { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **TechnologyStats**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo TechnologyStats { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo TechnologyStats { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

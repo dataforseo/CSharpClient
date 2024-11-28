@@ -3,22 +3,12 @@
 Namespace: DataForSeo.Client.Models.Requests
 
 ```csharp
-public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo : BusinessDataTaskRequestInfo
+public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataTaskRequestInfo](./BusinessDataTaskRequestInfo.md) → [BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo](./BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo](./BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)
 
 ## Properties
-
-### **Depth**
-
-```csharp
-public Nullable<int> Depth { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Keyword**
 
@@ -89,6 +79,16 @@ public string LanguageCode { get; set; }
 #### Property Value
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **Depth**
+
+```csharp
+public Nullable<int> Depth { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Tag**
 

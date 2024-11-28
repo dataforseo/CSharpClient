@@ -33,12 +33,12 @@ public string SeedKeyword { get; set; }
 ### **SeedKeywordData**
 
 ```csharp
-public KeywordData SeedKeywordData { get; set; }
+public KeywordDataInfo SeedKeywordData { get; set; }
 ```
 
 #### Property Value
 
-[KeywordData](./KeywordData.md)<br>
+[KeywordDataInfo](./KeywordDataInfo.md)<br>
 
 ### **LocationCode**
 
@@ -83,12 +83,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<DataforseoLabsBingRelatedKeywordsLiveItem> Items { get; set; }
+public ICollection<DataforseoLabsRelatedKeywordsLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingRelatedKeywordsLiveItem&gt;](./DataforseoLabsBingRelatedKeywordsLiveItem.md)<br>
+[ICollection&lt;DataforseoLabsRelatedKeywordsLiveItem&gt;](./DataforseoLabsRelatedKeywordsLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

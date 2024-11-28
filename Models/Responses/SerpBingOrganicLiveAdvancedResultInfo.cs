@@ -7,7 +7,7 @@ namespace DataForSeo.Client.Models.Responses
     {
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -60,6 +60,13 @@ namespace DataForSeo.Client.Models.Responses
         public SpellInfo Spell { get; set; }
 
         /// <summary>
+        /// search refinement chips
+        /// <br/>equals null
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("refinement_chips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RefinementChipsInfo RefinementChips { get; set; }
+
+        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item types:
@@ -81,8 +88,7 @@ namespace DataForSeo.Client.Models.Responses
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// items featured in the faq_box
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseSerpElementItem> Items { get; set; }

@@ -170,20 +170,40 @@ public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { 
 
 [AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo](./AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md)<br>
 
-### **Google**
+### **AudienceEstimation**
 
 ```csharp
-public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
+public AppendixInfo AudienceEstimation { get; set; }
 ```
 
 #### Property Value
 
-[AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **KeywordSuggestionsForUrl**
+
+```csharp
+public AppendixDayLimitsRatesDataInfo KeywordSuggestionsForUrl { get; set; }
+```
+
+#### Property Value
+
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
 
 ### **IdList**
 
 ```csharp
 public Nullable<double> IdList { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Industries**
+
+```csharp
+public Nullable<double> Industries { get; set; }
 ```
 
 #### Property Value
@@ -199,6 +219,26 @@ public AppendixInfo SearchVolumeHistory { get; set; }
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
+
+### **Google**
+
+```csharp
+public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
+
+### **JobFunctions**
+
+```csharp
+public Nullable<double> JobFunctions { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

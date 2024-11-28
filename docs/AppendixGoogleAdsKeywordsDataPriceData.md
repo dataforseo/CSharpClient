@@ -13,42 +13,42 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **AdTrafficByKeywords**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForKeywords**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForSite**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **SearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Status**
 

@@ -170,15 +170,35 @@ public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { 
 
 [AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo](./AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md)<br>
 
-### **SearchVolumeHistory**
+### **AudienceEstimation**
 
 ```csharp
-public AppendixJobsSerpLimitsRatesDataInfo SearchVolumeHistory { get; set; }
+public AppendixDayLimitsRatesDataInfo AudienceEstimation { get; set; }
 ```
 
 #### Property Value
 
-[AppendixJobsSerpLimitsRatesDataInfo](./AppendixJobsSerpLimitsRatesDataInfo.md)<br>
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
+
+### **KeywordSuggestionsForUrl**
+
+```csharp
+public AppendixDayLimitsRatesDataInfo KeywordSuggestionsForUrl { get; set; }
+```
+
+#### Property Value
+
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
+
+### **SearchVolumeHistory**
+
+```csharp
+public AppendixDayLimitsRatesDataInfo SearchVolumeHistory { get; set; }
+```
+
+#### Property Value
+
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
 
 ### **Google**
 

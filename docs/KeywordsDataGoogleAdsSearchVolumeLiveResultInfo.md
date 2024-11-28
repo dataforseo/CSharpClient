@@ -23,12 +23,12 @@ public string Keyword { get; set; }
 ### **Spell**
 
 ```csharp
-public SpellInfo Spell { get; set; }
+public string Spell { get; set; }
 ```
 
 #### Property Value
 
-[SpellInfo](./SpellInfo.md)<br>
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **LocationCode**
 

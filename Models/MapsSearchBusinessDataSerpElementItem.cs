@@ -123,7 +123,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information about work hours of the local establishment
         /// </summary>
         [Newtonsoft.Json.JsonProperty("work_hours", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public WorkInfo WorkHours { get; set; }
+        public WorkHours WorkHours { get; set; }
 
         /// <summary>
         /// the unique identifier of the element in SERP

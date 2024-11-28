@@ -60,13 +60,19 @@ namespace DataForSeo.Client.Models.Responses
         public SpellInfo Spell { get; set; }
 
         /// <summary>
+        /// search refinement chips
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("refinement_chips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RefinementChipsInfo RefinementChips { get; set; }
+
+        /// <summary>
         /// types of search results found in SERP
         /// <br/>contains types of all search results (items) found in the returned SERP
         /// <br/>possible item types:
         /// <br/>answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, ai_overview
         /// <br/>note that this array contains all types of search results found in the returned SERP;
         /// <br/>however, this endpoint provides data for featured_snippet, organic and paid types only;
-        /// <br/>to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the Google Organiс Advanced SERP endpoint
+        /// <br/>to get all items (including SERP features and rich snippets) found in the returned SERP, please refer to the Google Organiс Advanced SERP endpoint
         /// </summary>
         [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }

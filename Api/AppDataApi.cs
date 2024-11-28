@@ -141,7 +141,7 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
-        /// By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -153,7 +153,7 @@ namespace DataForSeo.Client.Api
 
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
-        /// By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours.
+        /// By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -547,7 +547,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataTaskRequestInfo> body)
+        public virtual System.Threading.Tasks.Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo> body)
         {
             return GoogleAppSearchesTaskPostAsync(body, System.Threading.CancellationToken.None);
         }
@@ -560,7 +560,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2351,7 +2351,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataTaskRequestInfo> body)
+        public virtual System.Threading.Tasks.Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo> body)
         {
             return AppleAppSearchesTaskPostAsync(body, System.Threading.CancellationToken.None);
         }
@@ -2364,7 +2364,7 @@ namespace DataForSeo.Client.Api
         /// </remarks>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataTaskRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(System.Collections.Generic.IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;

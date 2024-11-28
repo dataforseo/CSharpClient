@@ -60,6 +60,13 @@ namespace DataForSeo.Client.Models.Responses
         public SpellInfo Spell { get; set; }
 
         /// <summary>
+        /// search refinement chips
+        /// <br/>equals null
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("refinement_chips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RefinementChipsInfo RefinementChips { get; set; }
+
+        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item types:

@@ -93,12 +93,12 @@ public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithClickstream { get;
 ### **ClickstreamKeywordInfo**
 
 ```csharp
-public object ClickstreamKeywordInfo { get; set; }
+public ClickstreamKeywordInfo ClickstreamKeywordInfo { get; set; }
 ```
 
 #### Property Value
 
-[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
+[ClickstreamKeywordInfo](./ClickstreamKeywordInfo.md)<br>
 
 ### **KeywordProperties**
 

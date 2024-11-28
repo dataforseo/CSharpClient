@@ -3,22 +3,12 @@
 Namespace: DataForSeo.Client.Models.Requests
 
 ```csharp
-public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo : KeywordsDataTaskRequestInfo
+public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataTaskRequestInfo](./KeywordsDataTaskRequestInfo.md) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo](./KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.md)
+Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo](./KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.md)
 
 ## Properties
-
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **Keywords**
 
@@ -29,6 +19,16 @@ public ICollection<string> Keywords { get; set; }
 #### Property Value
 
 [ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Target**
+
+```csharp
+public string Target { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **LocationName**
 
@@ -110,16 +110,6 @@ public string DateTo { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **IncludeAdultKeywords**
-
-```csharp
-public Nullable<bool> IncludeAdultKeywords { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
 ### **SortBy**
 
 ```csharp
@@ -129,6 +119,16 @@ public string SortBy { get; set; }
 #### Property Value
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **IncludeAdultKeywords**
+
+```csharp
+public Nullable<bool> IncludeAdultKeywords { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **PostbackUrl**
 

@@ -5,13 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class AppendixClickstreamDataKeywordsDataPriceData
     {
         [Newtonsoft.Json.JsonProperty("bulk_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo BulkSearchVolume { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo BulkSearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("dataforseo_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo DataforseoSearchVolume { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo DataforseoSearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("global_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo GlobalSearchVolume { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo GlobalSearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("locations_and_languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo LocationsAndLanguages { get; set; }

@@ -11,6 +11,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>The maximum number of keywords you can specify: 1000
         /// <br/>The maximum number of characters for each keyword: 100
         /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate array
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

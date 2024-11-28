@@ -17,6 +17,13 @@ namespace DataForSeo.Client.Models
         public string ContributorUrl { get; set; }
 
         /// <summary>
+        /// URL in the ‘book online’ button of the element
+        /// <br/>URL directing users to the online booking or order page of the business entity
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("book_online_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string BookOnlineUrl { get; set; }
+
+        /// <summary>
         /// hotel class rating
         /// <br/>class ratings range between 1-5 stars, learn more
         /// <br/>if there is no hotel class rating information, the value will be null

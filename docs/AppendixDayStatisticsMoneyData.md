@@ -293,12 +293,12 @@ public Nullable<double> TotalReviews { get; set; }
 ### **Reviews**
 
 ```csharp
-public AppendixJobsSerpLimitsRatesDataInfo Reviews { get; set; }
+public AppendixDayLimitsRatesDataInfo Reviews { get; set; }
 ```
 
 #### Property Value
 
-[AppendixJobsSerpLimitsRatesDataInfo](./AppendixJobsSerpLimitsRatesDataInfo.md)<br>
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

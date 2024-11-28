@@ -23,12 +23,12 @@ public AppendixDayStatisticsRatesData Day { get; set; }
 ### **Minute**
 
 ```csharp
-public AppendixMinuteStatisticsDataInfo Minute { get; set; }
+public AppendixMinuteStatisticsRatesData Minute { get; set; }
 ```
 
 #### Property Value
 
-[AppendixMinuteStatisticsDataInfo](./AppendixMinuteStatisticsDataInfo.md)<br>
+[AppendixMinuteStatisticsRatesData](./AppendixMinuteStatisticsRatesData.md)<br>
 
 ### **AdditionalProperties**
 

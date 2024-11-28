@@ -93,12 +93,12 @@ public Nullable<double> TasksFixed { get; set; }
 ### **Jobs**
 
 ```csharp
-public AppendixJobsSerpLimitsRatesDataInfo Jobs { get; set; }
+public AppendixDayLimitsRatesDataInfo Jobs { get; set; }
 ```
 
 #### Property Value
 
-[AppendixJobsSerpLimitsRatesDataInfo](./AppendixJobsSerpLimitsRatesDataInfo.md)<br>
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
 
 ### **Screenshot**
 

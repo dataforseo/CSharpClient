@@ -44,6 +44,324 @@ public KeywordsDataApi(HttpClient httpClient)
 
 ## Methods
 
+### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerformanceLiveAsync(IEnumerable<KeywordsDataBingKeywordPerformanceLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
+
+### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerformanceLiveAsync(IEnumerable<KeywordsDataBingKeywordPerformanceLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
+
+### **KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync()**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash'
+
+### **KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash'
+
+### **BingSearchVolumeHistoryTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> BingSearchVolumeHistoryTaskPostAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash'
+
+### **BingSearchVolumeHistoryTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> BingSearchVolumeHistoryTaskPostAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash'
+
+### **BingSearchVolumeHistoryTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> BingSearchVolumeHistoryTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash'
+
+### **BingSearchVolumeHistoryTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> BingSearchVolumeHistoryTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash'
+
+### **BingSearchVolumeHistoryTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> BingSearchVolumeHistoryTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash'
+
+### **BingSearchVolumeHistoryTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> BingSearchVolumeHistoryTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash'
+
+### **BingSearchVolumeHistoryLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> BingSearchVolumeHistoryLiveAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryLiveResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash'
+
+### **BingSearchVolumeHistoryLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> BingSearchVolumeHistoryLiveAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingSearchVolumeHistoryLiveResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash'
+
 ### **KeywordsDataClickstreamDataLocationsAndLanguagesAsync()**
 
 ```csharp
@@ -146,15 +464,15 @@ A server side error occurred.
 ‌
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/clickstream_data/dataforseo_search_volume/live/?bash'
 
-### **ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+### **ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo&gt;)**
 
 ```csharp
-public Task<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+public Task<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo&gt;](./KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo.md)<br>
 
 #### Returns
 
@@ -172,15 +490,15 @@ A server side error occurred.
  <br>The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash'
 
-### **ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+### **ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> ClickstreamDataGlobalSearchVolumeLiveAsync(IEnumerable<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo&gt;](./KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -201,15 +519,15 @@ A server side error occurred.
  <br>The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash'
 
-### **ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+### **ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo&gt;)**
 
 ```csharp
-public Task<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+public Task<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo&gt;](./KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo.md)<br>
 
 #### Returns
 
@@ -227,15 +545,15 @@ A server side error occurred.
  <br>The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters).
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash'
 
-### **ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+### **ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> ClickstreamDataBulkSearchVolumeLiveAsync(IEnumerable<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo&gt;](./KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -353,7 +671,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
 
 ### **KeywordsDataErrorsAsync(IEnumerable&lt;KeywordsDataErrorsRequestInfo&gt;, CancellationToken)**
@@ -381,7 +699,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/errors/?bash'
 
 ### **GoogleAdsStatusAsync()**
@@ -602,15 +920,15 @@ By calling this API you will receive the list of languages supported by Keywords
  <br>‌‌As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information about available languages.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/languages/?bash'
 
-### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo&gt;](./KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -628,15 +946,15 @@ A server side error occurred.
  <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash'
 
-### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleAdsSearchVolumeTaskPostAsync(IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> GoogleAdsSearchVolumeTaskPostAsync(IEnumerable<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo&gt;](./KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -767,15 +1085,15 @@ A server side error occurred.
  <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_get/?bash'
 
-### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo&gt;)**
 
 ```csharp
-public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVolumeLiveAsync(IEnumerable<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo&gt;](./KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo.md)<br>
 
 #### Returns
 
@@ -793,15 +1111,15 @@ A server side error occurred.
  <br>Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash'
 
-### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleAdsSearchVolumeLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVolumeLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> GoogleAdsSearchVolumeLiveAsync(IEnumerable<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo&gt;](./KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1215,15 +1533,15 @@ Note that Google Ads Keywords Data API is based on the latest version of the Goo
  <br>This endpoint will select relevant keywords for the specified terms. Set up to 20 keywords and get the results, which are suggested by Google Ads for your query.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/task_get/?bash'
 
-### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;)**
+### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo&gt;)**
 
 ```csharp
-public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body)
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo&gt;](./KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo.md)<br>
 
 #### Returns
 
@@ -1242,15 +1560,15 @@ Note that Google Ads Keywords Data API is based on the latest version of the Goo
  <br>This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash'
 
-### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> GoogleAdsKeywordsForKeywordsLiveAsync(IEnumerable<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;KeywordsDataTaskRequestInfo&gt;](./KeywordsDataTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo&gt;](./KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2540,6 +2858,316 @@ A server side error occurred.
 ‌This endpoint will provide you with search volume data for the last month, search volume trend for up to 24 past months (that will let you estimate search volume dynamics), current cost-per-click and competition values for paid search.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume/live/?bash'
 
+### **BingAudienceEstimationJobFunctionsAsync()**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo> BingAudienceEstimationJobFunctionsAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo&gt;](./KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash'
+
+### **BingAudienceEstimationJobFunctionsAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo> BingAudienceEstimationJobFunctionsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo&gt;](./KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash'
+
+### **BingAudienceEstimationIndustriesAsync()**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationIndustriesResponseInfo> BingAudienceEstimationIndustriesAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationIndustriesResponseInfo&gt;](./KeywordsDataBingAudienceEstimationIndustriesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash'
+
+### **BingAudienceEstimationIndustriesAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationIndustriesResponseInfo> BingAudienceEstimationIndustriesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationIndustriesResponseInfo&gt;](./KeywordsDataBingAudienceEstimationIndustriesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash'
+
+### **BingAudienceEstimationTaskPostAsync(IEnumerable&lt;KeywordsDataBingAudienceEstimationTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationTaskPostResponseInfo> BingAudienceEstimationTaskPostAsync(IEnumerable<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingAudienceEstimationTaskPostRequestInfo&gt;](./KeywordsDataBingAudienceEstimationTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationTaskPostResponseInfo&gt;](./KeywordsDataBingAudienceEstimationTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash'
+
+### **BingAudienceEstimationTaskPostAsync(IEnumerable&lt;KeywordsDataBingAudienceEstimationTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationTaskPostResponseInfo> BingAudienceEstimationTaskPostAsync(IEnumerable<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingAudienceEstimationTaskPostRequestInfo&gt;](./KeywordsDataBingAudienceEstimationTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationTaskPostResponseInfo&gt;](./KeywordsDataBingAudienceEstimationTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash'
+
+### **BingAudienceEstimationTasksReadyAsync()**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo> BingAudienceEstimationTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationTasksReadyResponseInfo&gt;](./KeywordsDataBingAudienceEstimationTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash'
+
+### **BingAudienceEstimationTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo> BingAudienceEstimationTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationTasksReadyResponseInfo&gt;](./KeywordsDataBingAudienceEstimationTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash'
+
+### **BingAudienceEstimationTaskGetAsync(String)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationTaskGetResponseInfo> BingAudienceEstimationTaskGetAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationTaskGetResponseInfo&gt;](./KeywordsDataBingAudienceEstimationTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash'
+
+### **BingAudienceEstimationTaskGetAsync(String, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationTaskGetResponseInfo> BingAudienceEstimationTaskGetAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationTaskGetResponseInfo&gt;](./KeywordsDataBingAudienceEstimationTaskGetResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash'
+
+### **BingAudienceEstimationLiveAsync(IEnumerable&lt;KeywordsDataBingAudienceEstimationLiveRequestInfo&gt;)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationLiveResponseInfo> BingAudienceEstimationLiveAsync(IEnumerable<KeywordsDataBingAudienceEstimationLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingAudienceEstimationLiveRequestInfo&gt;](./KeywordsDataBingAudienceEstimationLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationLiveResponseInfo&gt;](./KeywordsDataBingAudienceEstimationLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash'
+
+### **BingAudienceEstimationLiveAsync(IEnumerable&lt;KeywordsDataBingAudienceEstimationLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<KeywordsDataBingAudienceEstimationLiveResponseInfo> BingAudienceEstimationLiveAsync(IEnumerable<KeywordsDataBingAudienceEstimationLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;KeywordsDataBingAudienceEstimationLiveRequestInfo&gt;](./KeywordsDataBingAudienceEstimationLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;KeywordsDataBingAudienceEstimationLiveResponseInfo&gt;](./KeywordsDataBingAudienceEstimationLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash'
+
 ### **BingKeywordsForSiteTaskPostAsync(IEnumerable&lt;KeywordsDataBingKeywordsForSiteTaskPostRequestInfo&gt;)**
 
 ```csharp
@@ -3189,321 +3817,3 @@ A server side error occurred.
 ‌
  <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/task_get/?bash'
-
-### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;)**
-
-```csharp
-public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerformanceLiveAsync(IEnumerable<KeywordsDataBingKeywordPerformanceLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
-
-### **BingKeywordPerformanceLiveAsync(IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<KeywordsDataBingKeywordPerformanceLiveResponseInfo> BingKeywordPerformanceLiveAsync(IEnumerable<KeywordsDataBingKeywordPerformanceLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;KeywordsDataBingKeywordPerformanceLiveRequestInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;KeywordsDataBingKeywordPerformanceLiveResponseInfo&gt;](./KeywordsDataBingKeywordPerformanceLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash'
-
-### **KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync()**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash'
-
-### **KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash'
-
-### **BingSearchVolumeHistoryTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> BingSearchVolumeHistoryTaskPostAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash'
-
-### **BingSearchVolumeHistoryTaskPostAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> BingSearchVolumeHistoryTaskPostAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash'
-
-### **BingSearchVolumeHistoryTasksReadyAsync()**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> BingSearchVolumeHistoryTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash'
-
-### **BingSearchVolumeHistoryTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> BingSearchVolumeHistoryTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash'
-
-### **BingSearchVolumeHistoryTaskGetAsync(String)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> BingSearchVolumeHistoryTaskGetAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash'
-
-### **BingSearchVolumeHistoryTaskGetAsync(String, CancellationToken)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> BingSearchVolumeHistoryTaskGetAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash'
-
-### **BingSearchVolumeHistoryLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> BingSearchVolumeHistoryLiveAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryLiveResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash'
-
-### **BingSearchVolumeHistoryLiveAsync(IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> BingSearchVolumeHistoryLiveAsync(IEnumerable<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;KeywordsDataBingSearchVolumeHistoryLiveRequestInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;KeywordsDataBingSearchVolumeHistoryLiveResponseInfo&gt;](./KeywordsDataBingSearchVolumeHistoryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash'

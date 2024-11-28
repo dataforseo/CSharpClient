@@ -5,13 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class AppendixSocialMediaBusinessDataPriceData
     {
         [Newtonsoft.Json.JsonProperty("facebook", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Facebook { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Facebook { get; set; }
 
         [Newtonsoft.Json.JsonProperty("pinterest", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Pinterest { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Pinterest { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reddit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Reddit { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Reddit { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

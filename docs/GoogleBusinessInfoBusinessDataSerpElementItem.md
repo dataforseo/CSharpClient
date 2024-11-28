@@ -160,6 +160,16 @@ public string ContributorUrl { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **BookOnlineUrl**
+
+```csharp
+public string BookOnlineUrl { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Domain**
 
 ```csharp
@@ -323,12 +333,12 @@ public ICollection<PeopleAlsoSearch> PeopleAlsoSearch { get; set; }
 ### **WorkTime**
 
 ```csharp
-public WorkInfo WorkTime { get; set; }
+public WorkTime WorkTime { get; set; }
 ```
 
 #### Property Value
 
-[WorkInfo](./WorkInfo.md)<br>
+[WorkTime](./WorkTime.md)<br>
 
 ### **PopularTimes**
 

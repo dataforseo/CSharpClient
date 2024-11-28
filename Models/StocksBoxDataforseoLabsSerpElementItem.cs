@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         /// price of the shopping element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Price Price { get; set; }
+        public PriceInfo Price { get; set; }
 
         /// <summary>
         /// relevant URL of the Ad element in SERP
@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// website domain
+        /// domain where a link points
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }

@@ -33,12 +33,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<KeywordsDataClickstreamDataBulkSearchVolumeLiveItem> Items { get; set; }
+public ICollection<KeywordsDataClickstreamDataSearchVolumeLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveItem&gt;](./KeywordsDataClickstreamDataBulkSearchVolumeLiveItem.md)<br>
+[ICollection&lt;KeywordsDataClickstreamDataSearchVolumeLiveItem&gt;](./KeywordsDataClickstreamDataSearchVolumeLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

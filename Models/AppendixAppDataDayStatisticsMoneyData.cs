@@ -31,11 +31,11 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("tasks_ready", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("refund_money", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? RefundMoney { get; set; }
-
         [Newtonsoft.Json.JsonProperty("app_listings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBusinessDataDayLimitsRatesDataInfo AppListings { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("refund_money", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? RefundMoney { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

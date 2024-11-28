@@ -8,19 +8,19 @@ namespace DataForSeo.Client.Models
         public AppendixContentGenerationPriceDataInfo CheckGrammar { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Generate { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Generate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate_meta_tags", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateMetaTags { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo GenerateMetaTags { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate_sub_topics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateSubTopics { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo GenerateSubTopics { get; set; }
 
         [Newtonsoft.Json.JsonProperty("generate_text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo GenerateText { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo GenerateText { get; set; }
 
         [Newtonsoft.Json.JsonProperty("paraphrase", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Paraphrase { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Paraphrase { get; set; }
 
         [Newtonsoft.Json.JsonProperty("text_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixContentGenerationPriceDataInfo TextSummary { get; set; }

@@ -97,6 +97,25 @@ namespace DataForSeo.Client.Models.Requests
         public string SeDomain { get; set; }
 
         /// <summary>
+        /// load more local reviews
+        /// <br/>optional field
+        /// <br/>if set to true, additional local reviews will be loaded in the top_local_reviews array of the Task GET response;
+        /// <br/>Note: you will be charged double the price for using this parameter
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("load_more_local_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? LoadMoreLocalReviews { get; set; }
+
+        /// <summary>
+        /// sort local reviews
+        /// <br/>optional field
+        /// <br/>reviews in the top_local_reviews array of the Task GET response can be sorted by most helpful or most recent first;
+        /// <br/>possible values: helpful, recent
+        /// <br/>default value: helpful
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("local_reviews_sort", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string LocalReviewsSort { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255
@@ -114,8 +133,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/postbackscript?id=$id
         /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in postback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in postback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -138,8 +158,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/pingscript?id=$id
         /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in pingback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in pingback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

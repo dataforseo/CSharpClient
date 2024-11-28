@@ -10,10 +10,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the keyword you specify is used to search for the list of hotels;
         /// <br/>if you don’t use this field, we will return the list of hotels found in a specified location;
-        /// <br/>you can specify up to 700 symbols in the keyword filed
-        /// <br/>all %## will be decoded (plus symbol ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” symbol for your keyword, please specify it as “%25”;
+        /// <br/>you can specify up to 700 characters in the keyword filed
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>Note: in order to obtain accurate search results, the location name is appended to the keyword automatically
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }

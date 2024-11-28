@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
         public string Avatar { get; set; }
 
         /// <summary>
-        /// URL to the reviewer’s profile
+        /// URL of the video
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

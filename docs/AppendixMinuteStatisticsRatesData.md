@@ -163,12 +163,12 @@ public Nullable<double> TotalOnPage { get; set; }
 ### **BusinessData**
 
 ```csharp
-public AppendixBusinessDataLimitsRatesDataInfo BusinessData { get; set; }
+public AppendixBusinessDataStatisticsRatesDataInfo BusinessData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixBusinessDataLimitsRatesDataInfo](./AppendixBusinessDataLimitsRatesDataInfo.md)<br>
+[AppendixBusinessDataStatisticsRatesDataInfo](./AppendixBusinessDataStatisticsRatesDataInfo.md)<br>
 
 ### **TotalBusinessData**
 
@@ -203,12 +203,12 @@ public Nullable<double> TotalBacklinks { get; set; }
 ### **AppData**
 
 ```csharp
-public AppendixAppDataLimitsRatesDataInfo AppData { get; set; }
+public AppendixAppDataDayStatisticsRatesData AppData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppDataLimitsRatesDataInfo](./AppendixAppDataLimitsRatesDataInfo.md)<br>
+[AppendixAppDataDayStatisticsRatesData](./AppendixAppDataDayStatisticsRatesData.md)<br>
 
 ### **TotalAppData**
 
@@ -243,12 +243,12 @@ public Nullable<double> TotalContentAnalysis { get; set; }
 ### **ContentGeneration**
 
 ```csharp
-public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
+public AppendixContentGenerationStatisticsRatesDataInfo ContentGeneration { get; set; }
 ```
 
 #### Property Value
 
-[AppendixContentGenerationLimitsRatesDataInfo](./AppendixContentGenerationLimitsRatesDataInfo.md)<br>
+[AppendixContentGenerationStatisticsRatesDataInfo](./AppendixContentGenerationStatisticsRatesDataInfo.md)<br>
 
 ### **TotalContentGeneration**
 

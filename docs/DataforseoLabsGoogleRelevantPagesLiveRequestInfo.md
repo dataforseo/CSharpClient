@@ -70,16 +70,6 @@ public ICollection<string> ItemTypes { get; set; }
 
 [ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Limit**
-
-```csharp
-public Nullable<int> Limit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
 ### **IncludeClickstreamData**
 
 ```csharp
@@ -89,6 +79,16 @@ public Nullable<bool> IncludeClickstreamData { get; set; }
 #### Property Value
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Limit**
+
+```csharp
+public Nullable<int> Limit { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Offset**
 

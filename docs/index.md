@@ -40,6 +40,8 @@
 
 [AdLinkElement](./AdLinkElement.md)
 
+[Advertiser](./Advertiser.md)
+
 [AiOverviewElement](./AiOverviewElement.md)
 
 [AiOverviewReference](./AiOverviewReference.md)
@@ -140,17 +142,19 @@
 
 [AppendixBingKeywordsDataPriceData](./AppendixBingKeywordsDataPriceData.md)
 
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)
+
 [AppendixBusinessDataDayLimitsRatesDataInfo](./AppendixBusinessDataDayLimitsRatesDataInfo.md)
 
 [AppendixBusinessDataDayStatisticsMoneyData](./AppendixBusinessDataDayStatisticsMoneyData.md)
-
-[AppendixBusinessDataDayStatisticsRatesData](./AppendixBusinessDataDayStatisticsRatesData.md)
 
 [AppendixBusinessDataGoogleInfo](./AppendixBusinessDataGoogleInfo.md)
 
 [AppendixBusinessDataLimitsRatesDataInfo](./AppendixBusinessDataLimitsRatesDataInfo.md)
 
 [AppendixBusinessDataPriceData](./AppendixBusinessDataPriceData.md)
+
+[AppendixBusinessDataStatisticsRatesDataInfo](./AppendixBusinessDataStatisticsRatesDataInfo.md)
 
 [AppendixBusinessListingsBusinessDataLimitsRatesDataInfo](./AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md)
 
@@ -168,13 +172,13 @@
 
 [AppendixContentGenerationDayLimitsRatesDataInfo](./AppendixContentGenerationDayLimitsRatesDataInfo.md)
 
-[AppendixContentGenerationDayStatisticsRatesData](./AppendixContentGenerationDayStatisticsRatesData.md)
-
 [AppendixContentGenerationLimitsRatesDataInfo](./AppendixContentGenerationLimitsRatesDataInfo.md)
 
 [AppendixContentGenerationPriceData](./AppendixContentGenerationPriceData.md)
 
 [AppendixContentGenerationPriceDataInfo](./AppendixContentGenerationPriceDataInfo.md)
+
+[AppendixContentGenerationStatisticsRatesDataInfo](./AppendixContentGenerationStatisticsRatesDataInfo.md)
 
 [AppendixDataforseoLabsDayStatisticsRatesData](./AppendixDataforseoLabsDayStatisticsRatesData.md)
 
@@ -189,6 +193,8 @@
 [AppendixDataInfo](./AppendixDataInfo.md)
 
 [AppendixDayLimitsRatesData](./AppendixDayLimitsRatesData.md)
+
+[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)
 
 [AppendixDayStatisticsMoneyData](./AppendixDayStatisticsMoneyData.md)
 
@@ -218,10 +224,6 @@
 
 [AppendixInfo](./AppendixInfo.md)
 
-[AppendixJobsSerpLimitsRatesDataInfo](./AppendixJobsSerpLimitsRatesDataInfo.md)
-
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)
-
 [AppendixKeywordsDataDataInfo](./AppendixKeywordsDataDataInfo.md)
 
 [AppendixKeywordsDataDayStatisticsMoneyData](./AppendixKeywordsDataDayStatisticsMoneyData.md)
@@ -250,7 +252,9 @@
 
 [AppendixMerchantPriceData](./AppendixMerchantPriceData.md)
 
-[AppendixMinuteStatisticsDataInfo](./AppendixMinuteStatisticsDataInfo.md)
+[AppendixMinuteStatisticsMoneyData](./AppendixMinuteStatisticsMoneyData.md)
+
+[AppendixMinuteStatisticsRatesData](./AppendixMinuteStatisticsRatesData.md)
 
 [AppendixMoneyData](./AppendixMoneyData.md)
 
@@ -392,6 +396,8 @@
 
 [BaseDataforseoTrendsItem](./BaseDataforseoTrendsItem.md)
 
+[BaseGoogleAdsAdvertisersSerpElementItem](./BaseGoogleAdsAdvertisersSerpElementItem.md)
+
 [BaseGoogleImagesSerpElementItem](./BaseGoogleImagesSerpElementItem.md)
 
 [BaseGoogleMapsSerpElementItem](./BaseGoogleMapsSerpElementItem.md)
@@ -428,6 +434,8 @@
 
 [BusinessDataContactInfo](./BusinessDataContactInfo.md)
 
+[BusinessDataGoogleExtendedReviewsTaskGetItem](./BusinessDataGoogleExtendedReviewsTaskGetItem.md)
+
 [BusinessDataGoogleHotelSearchesItem](./BusinessDataGoogleHotelSearchesItem.md)
 
 [BusinessDataGoogleQuestionsAndAnswersItem](./BusinessDataGoogleQuestionsAndAnswersItem.md)
@@ -451,6 +459,8 @@
 [CarouselSerpElementItem](./CarouselSerpElementItem.md)
 
 [ChannelSubscribersCount](./ChannelSubscribersCount.md)
+
+[ClickstreamKeywordInfo](./ClickstreamKeywordInfo.md)
 
 [CommercialUnitsDataforseoLabsSerpElementItem](./CommercialUnitsDataforseoLabsSerpElementItem.md)
 
@@ -506,21 +516,13 @@
 
 [DataforseoLabsAppleAppIntersectionLiveItem](./DataforseoLabsAppleAppIntersectionLiveItem.md)
 
-[DataforseoLabsAppleKeywordsForAppLiveItem](./DataforseoLabsAppleKeywordsForAppLiveItem.md)
+[DataforseoLabsBulkKeywordDifficultyLiveItem](./DataforseoLabsBulkKeywordDifficultyLiveItem.md)
 
-[DataforseoLabsBBulkKeywordDifficultyLiveItem](./DataforseoLabsBBulkKeywordDifficultyLiveItem.md)
-
-[DataforseoLabsBBulkTrafficEstimationLiveItem](./DataforseoLabsBBulkTrafficEstimationLiveItem.md)
-
-[DataforseoLabsBingDomainIntersectionLiveItem](./DataforseoLabsBingDomainIntersectionLiveItem.md)
-
-[DataforseoLabsBingPageIntersectionLiveItem](./DataforseoLabsBingPageIntersectionLiveItem.md)
-
-[DataforseoLabsBingRankedKeywordsLiveItem](./DataforseoLabsBingRankedKeywordsLiveItem.md)
-
-[DataforseoLabsBingRelatedKeywordsLiveItem](./DataforseoLabsBingRelatedKeywordsLiveItem.md)
+[DataforseoLabsBulkTrafficEstimationLiveItem](./DataforseoLabsBulkTrafficEstimationLiveItem.md)
 
 [DataforseoLabsCompetitorsDomainLiveItem](./DataforseoLabsCompetitorsDomainLiveItem.md)
+
+[DataforseoLabsDomainIntersectionLiveItem](./DataforseoLabsDomainIntersectionLiveItem.md)
 
 [DataforseoLabsDomainRankOverviewLiveItem](./DataforseoLabsDomainRankOverviewLiveItem.md)
 
@@ -531,8 +533,6 @@
 [DataforseoLabsGoogleCategoriesForDomainLiveItem](./DataforseoLabsGoogleCategoriesForDomainLiveItem.md)
 
 [DataforseoLabsGoogleCategoriesForKeywordsLiveItem](./DataforseoLabsGoogleCategoriesForKeywordsLiveItem.md)
-
-[DataforseoLabsGoogleDomainIntersectionLiveItem](./DataforseoLabsGoogleDomainIntersectionLiveItem.md)
 
 [DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem](./DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem.md)
 
@@ -548,17 +548,17 @@
 
 [DataforseoLabsGoogleKeywordsForAppLiveItem](./DataforseoLabsGoogleKeywordsForAppLiveItem.md)
 
-[DataforseoLabsGooglePageIntersectionLiveItem](./DataforseoLabsGooglePageIntersectionLiveItem.md)
-
-[DataforseoLabsGoogleRankedKeywordsLiveItem](./DataforseoLabsGoogleRankedKeywordsLiveItem.md)
-
-[DataforseoLabsGoogleRelatedKeywordsLiveItem](./DataforseoLabsGoogleRelatedKeywordsLiveItem.md)
-
 [DataforseoLabsGoogleSearchIntentLiveItem](./DataforseoLabsGoogleSearchIntentLiveItem.md)
 
 [DataforseoLabsleBulkAppMetricsLiveItem](./DataforseoLabsleBulkAppMetricsLiveItem.md)
 
+[DataforseoLabsLiveItem](./DataforseoLabsLiveItem.md)
+
 [DataforseoLabsMetricsInfo](./DataforseoLabsMetricsInfo.md)
+
+[DataforseoLabsPageIntersectionLiveItem](./DataforseoLabsPageIntersectionLiveItem.md)
+
+[DataforseoLabsRelatedKeywordsLiveItem](./DataforseoLabsRelatedKeywordsLiveItem.md)
 
 [DataforseoLabsRelevantPagesLiveItem](./DataforseoLabsRelevantPagesLiveItem.md)
 
@@ -604,6 +604,10 @@
 
 [DomainInfo](./DomainInfo.md)
 
+[EstCInfo](./EstCInfo.md)
+
+[EstInfo](./EstInfo.md)
+
 [EventDates](./EventDates.md)
 
 [EventItemSerpElementItem](./EventItemSerpElementItem.md)
@@ -637,6 +641,12 @@
 [FoundOnWebElement](./FoundOnWebElement.md)
 
 [FoundOnWebSerpElementItem](./FoundOnWebSerpElementItem.md)
+
+[GoogleAdsAdvertisersAdsAdvertiserSerpElementItem](./GoogleAdsAdvertisersAdsAdvertiserSerpElementItem.md)
+
+[GoogleAdsAdvertisersAdsDomainSerpElementItem](./GoogleAdsAdvertisersAdsDomainSerpElementItem.md)
+
+[GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem](./GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem.md)
 
 [GoogleBusinessAnswerElement](./GoogleBusinessAnswerElement.md)
 
@@ -760,8 +770,6 @@
 
 [IntersectionSummaryInfo](./IntersectionSummaryInfo.md)
 
-[ItemsRankedSerpElement](./ItemsRankedSerpElement.md)
-
 [ItemsWithoutAnswers](./ItemsWithoutAnswers.md)
 
 [JobsDataforseoLabsSerpElementItem](./JobsDataforseoLabsSerpElementItem.md)
@@ -773,8 +781,6 @@
 [JsonInheritanceConverter](./JsonInheritanceConverter.md)
 
 [KeywordAnnotations](./KeywordAnnotations.md)
-
-[KeywordData](./KeywordData.md)
 
 [KeywordDataInfo](./KeywordDataInfo.md)
 
@@ -790,11 +796,9 @@
 
 [KeywordProperties](./KeywordProperties.md)
 
-[KeywordsDataClickstreamDataBulkSearchVolumeLiveItem](./KeywordsDataClickstreamDataBulkSearchVolumeLiveItem.md)
-
-[KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem](./KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem.md)
-
 [KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem](./KeywordsDataClickstreamDataGlobalSearchVolumeLiveItem.md)
+
+[KeywordsDataClickstreamDataSearchVolumeLiveItem](./KeywordsDataClickstreamDataSearchVolumeLiveItem.md)
 
 [KnowledgeGraphAiOverviewItemSerpElementItem](./KnowledgeGraphAiOverviewItemSerpElementItem.md)
 
@@ -898,6 +902,8 @@
 
 [MentionCarouselSerpElementItem](./MentionCarouselSerpElementItem.md)
 
+[MessageInfo](./MessageInfo.md)
+
 [MetricsBundleInfo](./MetricsBundleInfo.md)
 
 [MetricsInfo](./MetricsInfo.md)
@@ -905,6 +911,8 @@
 [MicrodataFieldsInfo](./MicrodataFieldsInfo.md)
 
 [MicrodataInspectionInfo](./MicrodataInspectionInfo.md)
+
+[MicrodataTestResultsInfo](./MicrodataTestResultsInfo.md)
 
 [MonthlySearches](./MonthlySearches.md)
 
@@ -996,7 +1004,7 @@
 
 [PositiveConnotationDistribution](./PositiveConnotationDistribution.md)
 
-[Price](./Price.md)
+[PreviewImage](./PreviewImage.md)
 
 [PriceInfo](./PriceInfo.md)
 
@@ -1021,8 +1029,6 @@
 [ProductInformationTextItem](./ProductInformationTextItem.md)
 
 [ProductInformationTextRow](./ProductInformationTextRow.md)
-
-[ProductInformationVideoRow](./ProductInformationVideoRow.md)
 
 [ProductSeller](./ProductSeller.md)
 
@@ -1063,6 +1069,10 @@
 [Redirect](./Redirect.md)
 
 [RedirectLinkElementItem](./RedirectLinkElementItem.md)
+
+[RefinementChipsElement](./RefinementChipsElement.md)
+
+[RefinementChipsInfo](./RefinementChipsInfo.md)
 
 [RefineProductsElement](./RefineProductsElement.md)
 
@@ -1114,11 +1124,11 @@
 
 [SerpAiSummaryItem](./SerpAiSummaryItem.md)
 
-[SerpGoogleAutocompleteeAdvancedItem](./SerpGoogleAutocompleteeAdvancedItem.md)
+[SerpGoogleAdsSearchTaskGetAdvancedItem](./SerpGoogleAdsSearchTaskGetAdvancedItem.md)
+
+[SerpGoogleAutocompleteAdvancedItem](./SerpGoogleAutocompleteAdvancedItem.md)
 
 [SerpGoogleDatasetAdvancedItem](./SerpGoogleDatasetAdvancedItem.md)
-
-[SerpGoogleDatasetInfoAdvancedItem](./SerpGoogleDatasetInfoAdvancedItem.md)
 
 [SerpGoogleJobsTaskGetAdvancedItem](./SerpGoogleJobsTaskGetAdvancedItem.md)
 
@@ -1139,6 +1149,8 @@
 [ShortVideosSerpElementItem](./ShortVideosSerpElementItem.md)
 
 [SocialMetricsInfo](./SocialMetricsInfo.md)
+
+[Source](./Source.md)
 
 [SpellInfo](./SpellInfo.md)
 
@@ -1167,6 +1179,8 @@
 [TechnologiesInfo](./TechnologiesInfo.md)
 
 [TechnologyCategoryInfo](./TechnologyCategoryInfo.md)
+
+[TestResults](./TestResults.md)
 
 [TestSummary](./TestSummary.md)
 
@@ -1226,7 +1240,7 @@
 
 [WorkHours](./WorkHours.md)
 
-[WorkInfo](./WorkInfo.md)
+[WorkTime](./WorkTime.md)
 
 [WorkTimeInfo](./WorkTimeInfo.md)
 
@@ -1246,6 +1260,8 @@
 
 [AppDataAppleAppReviewsTaskPostRequestInfo](./AppDataAppleAppReviewsTaskPostRequestInfo.md)
 
+[AppDataAppleAppSearchesTaskPostRequestInfo](./AppDataAppleAppSearchesTaskPostRequestInfo.md)
+
 [AppDataErrorsRequestInfo](./AppDataErrorsRequestInfo.md)
 
 [AppDataGoogleAppInfoTaskPostRequestInfo](./AppDataGoogleAppInfoTaskPostRequestInfo.md)
@@ -1256,9 +1272,9 @@
 
 [AppDataGoogleAppReviewsTaskPostRequestInfo](./AppDataGoogleAppReviewsTaskPostRequestInfo.md)
 
-[AppDataIdListRequestInfo](./AppDataIdListRequestInfo.md)
+[AppDataGoogleAppSearchesTaskPostRequestInfo](./AppDataGoogleAppSearchesTaskPostRequestInfo.md)
 
-[AppDataTaskRequestInfo](./AppDataTaskRequestInfo.md)
+[AppDataIdListRequestInfo](./AppDataIdListRequestInfo.md)
 
 [AppendixWebhookResendRequestInfo](./AppendixWebhookResendRequestInfo.md)
 
@@ -1312,6 +1328,8 @@
 
 [BusinessDataErrorsRequestInfo](./BusinessDataErrorsRequestInfo.md)
 
+[BusinessDataGoogleExtendedReviewsTaskPostRequestInfo](./BusinessDataGoogleExtendedReviewsTaskPostRequestInfo.md)
+
 [BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo](./BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo.md)
 
 [BusinessDataGoogleHotelInfoLiveHtmlRequestInfo](./BusinessDataGoogleHotelInfoLiveHtmlRequestInfo.md)
@@ -1321,6 +1339,10 @@
 [BusinessDataGoogleHotelSearchesLiveRequestInfo](./BusinessDataGoogleHotelSearchesLiveRequestInfo.md)
 
 [BusinessDataGoogleHotelSearchesTaskPostRequestInfo](./BusinessDataGoogleHotelSearchesTaskPostRequestInfo.md)
+
+[BusinessDataGoogleMyBusinessInfoLiveRequestInfo](./BusinessDataGoogleMyBusinessInfoLiveRequestInfo.md)
+
+[BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo](./BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo.md)
 
 [BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo](./BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.md)
 
@@ -1337,8 +1359,6 @@
 [BusinessDataSocialMediaPinterestLiveRequestInfo](./BusinessDataSocialMediaPinterestLiveRequestInfo.md)
 
 [BusinessDataSocialMediaRedditLiveRequestInfo](./BusinessDataSocialMediaRedditLiveRequestInfo.md)
-
-[BusinessDataTaskRequestInfo](./BusinessDataTaskRequestInfo.md)
 
 [BusinessDataTripadvisorReviewsTaskPostRequestInfo](./BusinessDataTripadvisorReviewsTaskPostRequestInfo.md)
 
@@ -1498,6 +1518,10 @@
 
 [DomainAnalyticsWhoisOverviewLiveRequestInfo](./DomainAnalyticsWhoisOverviewLiveRequestInfo.md)
 
+[KeywordsDataBingAudienceEstimationLiveRequestInfo](./KeywordsDataBingAudienceEstimationLiveRequestInfo.md)
+
+[KeywordsDataBingAudienceEstimationTaskPostRequestInfo](./KeywordsDataBingAudienceEstimationTaskPostRequestInfo.md)
+
 [KeywordsDataBingKeywordPerformanceLiveRequestInfo](./KeywordsDataBingKeywordPerformanceLiveRequestInfo.md)
 
 [KeywordsDataBingKeywordPerformanceTaskPostRequestInfo](./KeywordsDataBingKeywordPerformanceTaskPostRequestInfo.md)
@@ -1518,7 +1542,11 @@
 
 [KeywordsDataBingSearchVolumeTaskPostRequestInfo](./KeywordsDataBingSearchVolumeTaskPostRequestInfo.md)
 
+[KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo](./KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo.md)
+
 [KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo](./KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo.md)
+
+[KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo](./KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo.md)
 
 [KeywordsDataDataforseoTrendsDemographyLiveRequestInfo](./KeywordsDataDataforseoTrendsDemographyLiveRequestInfo.md)
 
@@ -1534,19 +1562,23 @@
 
 [KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo](./KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.md)
 
+[KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo](./KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo.md)
+
 [KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo](./KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.md)
 
 [KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo](./KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo.md)
 
 [KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo](./KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo.md)
 
+[KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo](./KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo.md)
+
+[KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo](./KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo.md)
+
 [KeywordsDataGoogleTrendsExploreLiveRequestInfo](./KeywordsDataGoogleTrendsExploreLiveRequestInfo.md)
 
 [KeywordsDataGoogleTrendsExploreTaskPostRequestInfo](./KeywordsDataGoogleTrendsExploreTaskPostRequestInfo.md)
 
 [KeywordsDataIdListRequestInfo](./KeywordsDataIdListRequestInfo.md)
-
-[KeywordsDataTaskRequestInfo](./KeywordsDataTaskRequestInfo.md)
 
 [MerchantAmazonAsinTaskPostRequestInfo](./MerchantAmazonAsinTaskPostRequestInfo.md)
 
@@ -1562,11 +1594,11 @@
 
 [MerchantGoogleProductSpecTaskPostRequestInfo](./MerchantGoogleProductSpecTaskPostRequestInfo.md)
 
+[MerchantGoogleProductsTaskPostRequestInfo](./MerchantGoogleProductsTaskPostRequestInfo.md)
+
 [MerchantGoogleSellersTaskPostRequestInfo](./MerchantGoogleSellersTaskPostRequestInfo.md)
 
 [MerchantIdListRequestInfo](./MerchantIdListRequestInfo.md)
-
-[MerchantTaskRequestInfo](./MerchantTaskRequestInfo.md)
 
 [OnPageContentParsingLiveRequestInfo](./OnPageContentParsingLiveRequestInfo.md)
 
@@ -1608,7 +1640,7 @@
 
 [OnPageResourcesRequestInfo](./OnPageResourcesRequestInfo.md)
 
-[OnPageTaskRequestInfo](./OnPageTaskRequestInfo.md)
+[OnPageTaskPostRequestInfo](./OnPageTaskPostRequestInfo.md)
 
 [OnPageWaterfallRequestInfo](./OnPageWaterfallRequestInfo.md)
 
@@ -1616,7 +1648,25 @@
 
 [SerpBaiduOrganicTaskPostRequestInfo](./SerpBaiduOrganicTaskPostRequestInfo.md)
 
+[SerpBingLocalPackLiveHtmlRequestInfo](./SerpBingLocalPackLiveHtmlRequestInfo.md)
+
+[SerpBingLocalPackLiveRegularRequestInfo](./SerpBingLocalPackLiveRegularRequestInfo.md)
+
+[SerpBingLocalPackTaskPostRequestInfo](./SerpBingLocalPackTaskPostRequestInfo.md)
+
+[SerpBingOrganicLiveAdvancedRequestInfo](./SerpBingOrganicLiveAdvancedRequestInfo.md)
+
+[SerpBingOrganicLiveHtmlRequestInfo](./SerpBingOrganicLiveHtmlRequestInfo.md)
+
+[SerpBingOrganicLiveRegularRequestInfo](./SerpBingOrganicLiveRegularRequestInfo.md)
+
+[SerpBingOrganicTaskPostRequestInfo](./SerpBingOrganicTaskPostRequestInfo.md)
+
 [SerpErrorsRequestInfo](./SerpErrorsRequestInfo.md)
+
+[SerpGoogleAdsAdvertisersTaskPostRequestInfo](./SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)
+
+[SerpGoogleAdsSearchTaskPostRequestInfo](./SerpGoogleAdsSearchTaskPostRequestInfo.md)
 
 [SerpGoogleAutocompleteLiveAdvancedRequestInfo](./SerpGoogleAutocompleteLiveAdvancedRequestInfo.md)
 
@@ -1634,6 +1684,12 @@
 
 [SerpGoogleEventsTaskPostRequestInfo](./SerpGoogleEventsTaskPostRequestInfo.md)
 
+[SerpGoogleImagesLiveAdvancedRequestInfo](./SerpGoogleImagesLiveAdvancedRequestInfo.md)
+
+[SerpGoogleImagesLiveHtmlRequestInfo](./SerpGoogleImagesLiveHtmlRequestInfo.md)
+
+[SerpGoogleImagesTaskPostRequestInfo](./SerpGoogleImagesTaskPostRequestInfo.md)
+
 [SerpGoogleJobsTaskPostRequestInfo](./SerpGoogleJobsTaskPostRequestInfo.md)
 
 [SerpGoogleLocalFinderLiveAdvancedRequestInfo](./SerpGoogleLocalFinderLiveAdvancedRequestInfo.md)
@@ -1646,17 +1702,37 @@
 
 [SerpGoogleMapsTaskPostRequestInfo](./SerpGoogleMapsTaskPostRequestInfo.md)
 
+[SerpGoogleNewsLiveAdvancedRequestInfo](./SerpGoogleNewsLiveAdvancedRequestInfo.md)
+
+[SerpGoogleNewsLiveHtmlRequestInfo](./SerpGoogleNewsLiveHtmlRequestInfo.md)
+
+[SerpGoogleNewsTaskPostRequestInfo](./SerpGoogleNewsTaskPostRequestInfo.md)
+
 [SerpGoogleOrganicLiveAdvancedRequestInfo](./SerpGoogleOrganicLiveAdvancedRequestInfo.md)
 
+[SerpGoogleOrganicLiveHtmlRequestInfo](./SerpGoogleOrganicLiveHtmlRequestInfo.md)
+
 [SerpGoogleOrganicLiveRegularRequestInfo](./SerpGoogleOrganicLiveRegularRequestInfo.md)
+
+[SerpGoogleOrganicTaskPostRequestInfo](./SerpGoogleOrganicTaskPostRequestInfo.md)
 
 [SerpGoogleSearchByImageTaskPostRequestInfo](./SerpGoogleSearchByImageTaskPostRequestInfo.md)
 
 [SerpIdListRequestInfo](./SerpIdListRequestInfo.md)
 
+[SerpNaverOrganicTaskPostRequestInfo](./SerpNaverOrganicTaskPostRequestInfo.md)
+
 [SerpScreenshotRequestInfo](./SerpScreenshotRequestInfo.md)
 
-[SerpTaskRequestInfo](./SerpTaskRequestInfo.md)
+[SerpSeznamOrganicTaskPostRequestInfo](./SerpSeznamOrganicTaskPostRequestInfo.md)
+
+[SerpYahooOrganicLiveAdvancedRequestInfo](./SerpYahooOrganicLiveAdvancedRequestInfo.md)
+
+[SerpYahooOrganicLiveHtmlRequestInfo](./SerpYahooOrganicLiveHtmlRequestInfo.md)
+
+[SerpYahooOrganicLiveRegularRequestInfo](./SerpYahooOrganicLiveRegularRequestInfo.md)
+
+[SerpYahooOrganicTaskPostRequestInfo](./SerpYahooOrganicTaskPostRequestInfo.md)
 
 [SerpYoutubeVideoCommentsLiveAdvancedRequestInfo](./SerpYoutubeVideoCommentsLiveAdvancedRequestInfo.md)
 
@@ -2113,6 +2189,22 @@
 [BusinessDataErrorsResultInfo](./BusinessDataErrorsResultInfo.md)
 
 [BusinessDataErrorsTaskInfo](./BusinessDataErrorsTaskInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTaskGetResponseInfo](./BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTaskGetResultInfo](./BusinessDataGoogleExtendedReviewsTaskGetResultInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTaskGetTaskInfo](./BusinessDataGoogleExtendedReviewsTaskGetTaskInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTaskPostResponseInfo](./BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTaskPostTaskInfo](./BusinessDataGoogleExtendedReviewsTaskPostTaskInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo](./BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTasksReadyResultInfo](./BusinessDataGoogleExtendedReviewsTasksReadyResultInfo.md)
+
+[BusinessDataGoogleExtendedReviewsTasksReadyTaskInfo](./BusinessDataGoogleExtendedReviewsTasksReadyTaskInfo.md)
 
 [BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo](./BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo.md)
 
@@ -2931,6 +3023,40 @@
 [DomainAnalyticsWhoisOverviewLiveResultInfo](./DomainAnalyticsWhoisOverviewLiveResultInfo.md)
 
 [DomainAnalyticsWhoisOverviewLiveTaskInfo](./DomainAnalyticsWhoisOverviewLiveTaskInfo.md)
+
+[KeywordsDataBingAudienceEstimationIndustriesResponseInfo](./KeywordsDataBingAudienceEstimationIndustriesResponseInfo.md)
+
+[KeywordsDataBingAudienceEstimationIndustriesResultInfo](./KeywordsDataBingAudienceEstimationIndustriesResultInfo.md)
+
+[KeywordsDataBingAudienceEstimationIndustriesTaskInfo](./KeywordsDataBingAudienceEstimationIndustriesTaskInfo.md)
+
+[KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo](./KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo.md)
+
+[KeywordsDataBingAudienceEstimationJobFunctionsResultInfo](./KeywordsDataBingAudienceEstimationJobFunctionsResultInfo.md)
+
+[KeywordsDataBingAudienceEstimationJobFunctionsTaskInfo](./KeywordsDataBingAudienceEstimationJobFunctionsTaskInfo.md)
+
+[KeywordsDataBingAudienceEstimationLiveResponseInfo](./KeywordsDataBingAudienceEstimationLiveResponseInfo.md)
+
+[KeywordsDataBingAudienceEstimationLiveResultInfo](./KeywordsDataBingAudienceEstimationLiveResultInfo.md)
+
+[KeywordsDataBingAudienceEstimationLiveTaskInfo](./KeywordsDataBingAudienceEstimationLiveTaskInfo.md)
+
+[KeywordsDataBingAudienceEstimationTaskGetResponseInfo](./KeywordsDataBingAudienceEstimationTaskGetResponseInfo.md)
+
+[KeywordsDataBingAudienceEstimationTaskGetResultInfo](./KeywordsDataBingAudienceEstimationTaskGetResultInfo.md)
+
+[KeywordsDataBingAudienceEstimationTaskGetTaskInfo](./KeywordsDataBingAudienceEstimationTaskGetTaskInfo.md)
+
+[KeywordsDataBingAudienceEstimationTaskPostResponseInfo](./KeywordsDataBingAudienceEstimationTaskPostResponseInfo.md)
+
+[KeywordsDataBingAudienceEstimationTaskPostTaskInfo](./KeywordsDataBingAudienceEstimationTaskPostTaskInfo.md)
+
+[KeywordsDataBingAudienceEstimationTasksReadyResponseInfo](./KeywordsDataBingAudienceEstimationTasksReadyResponseInfo.md)
+
+[KeywordsDataBingAudienceEstimationTasksReadyResultInfo](./KeywordsDataBingAudienceEstimationTasksReadyResultInfo.md)
+
+[KeywordsDataBingAudienceEstimationTasksReadyTaskInfo](./KeywordsDataBingAudienceEstimationTasksReadyTaskInfo.md)
 
 [KeywordsDataBingKeywordPerformanceLiveResponseInfo](./KeywordsDataBingKeywordPerformanceLiveResponseInfo.md)
 
@@ -3869,6 +3995,50 @@
 [SerpErrorsResultInfo](./SerpErrorsResultInfo.md)
 
 [SerpErrorsTaskInfo](./SerpErrorsTaskInfo.md)
+
+[SerpGoogleAdsAdvertisersLocationsResponseInfo](./SerpGoogleAdsAdvertisersLocationsResponseInfo.md)
+
+[SerpGoogleAdsAdvertisersLocationsResultInfo](./SerpGoogleAdsAdvertisersLocationsResultInfo.md)
+
+[SerpGoogleAdsAdvertisersLocationsTaskInfo](./SerpGoogleAdsAdvertisersLocationsTaskInfo.md)
+
+[SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo](./SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)
+
+[SerpGoogleAdsAdvertisersTaskGetAdvancedResultInfo](./SerpGoogleAdsAdvertisersTaskGetAdvancedResultInfo.md)
+
+[SerpGoogleAdsAdvertisersTaskGetAdvancedTaskInfo](./SerpGoogleAdsAdvertisersTaskGetAdvancedTaskInfo.md)
+
+[SerpGoogleAdsAdvertisersTaskPostResponseInfo](./SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)
+
+[SerpGoogleAdsAdvertisersTaskPostTaskInfo](./SerpGoogleAdsAdvertisersTaskPostTaskInfo.md)
+
+[SerpGoogleAdsAdvertisersTasksReadyResponseInfo](./SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)
+
+[SerpGoogleAdsAdvertisersTasksReadyResultInfo](./SerpGoogleAdsAdvertisersTasksReadyResultInfo.md)
+
+[SerpGoogleAdsAdvertisersTasksReadyTaskInfo](./SerpGoogleAdsAdvertisersTasksReadyTaskInfo.md)
+
+[SerpGoogleAdsSearchLocationsResponseInfo](./SerpGoogleAdsSearchLocationsResponseInfo.md)
+
+[SerpGoogleAdsSearchLocationsResultInfo](./SerpGoogleAdsSearchLocationsResultInfo.md)
+
+[SerpGoogleAdsSearchLocationsTaskInfo](./SerpGoogleAdsSearchLocationsTaskInfo.md)
+
+[SerpGoogleAdsSearchTaskGetAdvancedResponseInfo](./SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)
+
+[SerpGoogleAdsSearchTaskGetAdvancedResultInfo](./SerpGoogleAdsSearchTaskGetAdvancedResultInfo.md)
+
+[SerpGoogleAdsSearchTaskGetAdvancedTaskInfo](./SerpGoogleAdsSearchTaskGetAdvancedTaskInfo.md)
+
+[SerpGoogleAdsSearchTaskPostResponseInfo](./SerpGoogleAdsSearchTaskPostResponseInfo.md)
+
+[SerpGoogleAdsSearchTaskPostTaskInfo](./SerpGoogleAdsSearchTaskPostTaskInfo.md)
+
+[SerpGoogleAdsSearchTasksReadyResponseInfo](./SerpGoogleAdsSearchTasksReadyResponseInfo.md)
+
+[SerpGoogleAdsSearchTasksReadyResultInfo](./SerpGoogleAdsSearchTasksReadyResultInfo.md)
+
+[SerpGoogleAdsSearchTasksReadyTaskInfo](./SerpGoogleAdsSearchTasksReadyTaskInfo.md)
 
 [SerpGoogleAutocompleteLiveAdvancedResponseInfo](./SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)
 

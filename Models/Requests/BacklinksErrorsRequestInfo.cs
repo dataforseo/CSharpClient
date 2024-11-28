@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// start time for filtering results
         /// <br/>optional field
-        /// <br/>allows filtering results by the datetime parameter within the range of the last 24 hours;
+        /// <br/>allows filtering results by the datetime parameter within the range of the last 7 days;
         /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2021-11-15 12:57:46 +00:00
@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// finish time for filtering results
         /// <br/>optional field
-        /// <br/>allows filtering results by the datetime parameter within the range of the last 24 hours;
+        /// <br/>allows filtering results by the datetime parameter within the range of the last 7 days;
         /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2021-11-15 13:57:46 +00:00

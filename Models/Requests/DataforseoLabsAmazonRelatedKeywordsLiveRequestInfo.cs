@@ -9,8 +9,8 @@ namespace DataForSeo.Client.Models.Requests
         /// keyword
         /// <br/>required field
         /// <br/>UTF-8 encoding
-        /// <br/>a keyword should be at least 3 characters long;
         /// <br/>the keywords should be specified in the lowercase format
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }

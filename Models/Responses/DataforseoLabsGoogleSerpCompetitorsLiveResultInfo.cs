@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// keywords specified in the request
-        /// <br/>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
         /// </summary>
         [Newtonsoft.Json.JsonProperty("seed_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> SeedKeywords { get; set; }

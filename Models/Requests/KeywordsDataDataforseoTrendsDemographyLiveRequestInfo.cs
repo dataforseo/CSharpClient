@@ -11,6 +11,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the maximum number of keywords you can specify: 5
         /// <br/>avoid symbols and special characters (e.g., UTF symbols, emojis);
         /// <br/>specifying non-Latin characters, you’ll get data for the countries where they are used
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

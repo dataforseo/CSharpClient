@@ -293,12 +293,12 @@ public ICollection<PeopleAlsoSearch> PeopleAlsoSearch { get; set; }
 ### **WorkTime**
 
 ```csharp
-public WorkInfo WorkTime { get; set; }
+public WorkTime WorkTime { get; set; }
 ```
 
 #### Property Value
 
-[WorkInfo](./WorkInfo.md)<br>
+[WorkTime](./WorkTime.md)<br>
 
 ### **PopularTimes**
 

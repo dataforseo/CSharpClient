@@ -80,15 +80,6 @@ namespace DataForSeo.Client.Models.Requests
         public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
 
         /// <summary>
-        /// the maximum number of returned pages
-        /// <br/>optional field
-        /// <br/>default value: 100
-        /// <br/>maximum value: 1000
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Limit { get; set; }
-
-        /// <summary>
         /// include or exclude data from clickstream-based metrics in the result
         /// <br/>optional field
         /// <br/>if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response
@@ -98,6 +89,15 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [Newtonsoft.Json.JsonProperty("include_clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool? IncludeClickstreamData { get; set; }
+
+        /// <summary>
+        /// the maximum number of returned pages
+        /// <br/>optional field
+        /// <br/>default value: 100
+        /// <br/>maximum value: 1000
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? Limit { get; set; }
 
         /// <summary>
         /// offset in the results array of returned pages

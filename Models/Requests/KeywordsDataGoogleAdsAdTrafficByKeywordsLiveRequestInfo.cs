@@ -15,7 +15,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note: Google Ads may return no data for certain groups of keywords
         /// <br/>visit our Help Center to learn more
         /// <br/>Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task;
-        /// <br/>to learn more about which symbols can be used, please refer to this article
+        /// <br/>to learn more about which symbols and characters can be used, please refer to this article
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

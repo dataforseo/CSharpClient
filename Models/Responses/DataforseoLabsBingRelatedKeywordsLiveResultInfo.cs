@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>fields in the array are identical to that of keyword_data
         /// </summary>
         [Newtonsoft.Json.JsonProperty("seed_keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public KeywordData SeedKeywordData { get; set; }
+        public KeywordDataInfo SeedKeywordData { get; set; }
 
         /// <summary>
         /// location code in a POST array
@@ -52,7 +52,7 @@ namespace DataForSeo.Client.Models.Responses
         /// contains keywords and related data
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<DataforseoLabsBingRelatedKeywordsLiveItem> Items { get; set; }
+        public System.Collections.Generic.ICollection<DataforseoLabsRelatedKeywordsLiveItem> Items { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

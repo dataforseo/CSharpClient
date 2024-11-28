@@ -93,12 +93,12 @@ public IDictionary<string, DataforseoLabsMetricsInfo> MetricsAbsolute { get; set
 ### **Items**
 
 ```csharp
-public ICollection<DataforseoLabsBingRankedKeywordsLiveItem> Items { get; set; }
+public ICollection<DataforseoLabsLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;DataforseoLabsBingRankedKeywordsLiveItem&gt;](./DataforseoLabsBingRankedKeywordsLiveItem.md)<br>
+[ICollection&lt;DataforseoLabsLiveItem&gt;](./DataforseoLabsLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

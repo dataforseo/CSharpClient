@@ -20,9 +20,9 @@ namespace DataForSeo.Client.Models.Requests
         /// keyword
         /// <br/>required field if you do not specify url_path
         /// <br/>the keyword you specify should indicate a name of an existing business or prominent place on Tripadvisor;
-        /// <br/>you can specify up to 700 symbols in the keyword filed;
-        /// <br/>all %## will be decoded (plus symbol ‘+’ will be decoded to a space character);
-        /// <br/>if you need to use the “%” symbol for your keyword, please specify it as “%25”
+        /// <br/>you can specify up to 700 characters in the keyword filed;
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character);
+        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -172,8 +172,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/postbackscript?id=$id
         /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in postback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in postback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -186,8 +187,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/pingscript?id=$id
         /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in pingback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in pingback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

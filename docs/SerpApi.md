@@ -44,6 +44,446 @@ public SerpApi(HttpClient httpClient)
 
 ## Methods
 
+### **YahooOrganicTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpYahooOrganicTaskGetAdvancedResponseInfo> YahooOrganicTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./SerpYahooOrganicTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash'
+
+### **YahooOrganicTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpYahooOrganicTaskGetAdvancedResponseInfo> YahooOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./SerpYahooOrganicTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash'
+
+### **YahooOrganicTaskGetHtmlAsync(String)**
+
+```csharp
+public Task<SerpYahooOrganicTaskGetHtmlResponseInfo> YahooOrganicTaskGetHtmlAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./SerpYahooOrganicTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash'
+
+### **YahooOrganicTaskGetHtmlAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpYahooOrganicTaskGetHtmlResponseInfo> YahooOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./SerpYahooOrganicTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash'
+
+### **YahooOrganicLiveRegularAsync(IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;)**
+
+```csharp
+public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsync(IEnumerable<SerpYahooOrganicLiveRegularRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;](./SerpYahooOrganicLiveRegularRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./SerpYahooOrganicLiveRegularResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash'
+
+### **YahooOrganicLiveRegularAsync(IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsync(IEnumerable<SerpYahooOrganicLiveRegularRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;](./SerpYahooOrganicLiveRegularRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./SerpYahooOrganicLiveRegularResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌
+ <br>Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash'
+
+### **YahooOrganicLiveAdvancedAsync(IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;)**
+
+```csharp
+public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAsync(IEnumerable<SerpYahooOrganicLiveAdvancedRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;](./SerpYahooOrganicLiveAdvancedRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./SerpYahooOrganicLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash'
+
+### **YahooOrganicLiveAdvancedAsync(IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAsync(IEnumerable<SerpYahooOrganicLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;](./SerpYahooOrganicLiveAdvancedRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./SerpYahooOrganicLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash'
+
+### **YahooOrganicLiveHtmlAsync(IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;)**
+
+```csharp
+public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnumerable<SerpYahooOrganicLiveHtmlRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;](./SerpYahooOrganicLiveHtmlRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./SerpYahooOrganicLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash'
+
+### **YahooOrganicLiveHtmlAsync(IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnumerable<SerpYahooOrganicLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;](./SerpYahooOrganicLiveHtmlRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./SerpYahooOrganicLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash'
+
+### **SerpBaiduLocationsAsync()**
+
+```csharp
+public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./SerpBaiduLocationsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
+
+### **SerpBaiduLocationsAsync(CancellationToken)**
+
+```csharp
+public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./SerpBaiduLocationsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
+
+### **SerpBaiduLocationsCountryAsync(String)**
+
+```csharp
+public Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country)
+```
+
+#### Parameters
+
+`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+country ISO code
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
+
+#### Returns
+
+[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./SerpBaiduLocationsCountryResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
+
+### **SerpBaiduLocationsCountryAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+country ISO code
+ <br>optional field
+ <br>specify the ISO code if you want to filter the list of locations by country
+ <br>example:
+ <br>us
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./SerpBaiduLocationsCountryResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
+
+### **SerpBaiduLanguagesAsync()**
+
+```csharp
+public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./SerpBaiduLanguagesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
+
+### **SerpBaiduLanguagesAsync(CancellationToken)**
+
+```csharp
+public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./SerpBaiduLanguagesResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
+
 ### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;)**
 
 ```csharp
@@ -376,15 +816,15 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
 
-### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnumerable<SerpNaverOrganicTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;](./SerpNaverOrganicTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -402,15 +842,15 @@ A server side error occurred.
  <br>Naver SERP API provides top 100 search engine results. Naver search results do not vary by location and language, and the search parameters for this search engine do not contain language and location variables. However, you can specify a keyword in any language, and the search engine results may vary depending on the language you used for specifying the search query.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_post/?bash'
 
-### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnumerable<SerpNaverOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;](./SerpNaverOrganicTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -865,15 +1305,15 @@ A server side error occurred.
 You will receive the list of languages by calling this API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/languages/?bash'
 
-### **SeznamOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **SeznamOrganicTaskPostAsync(IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IEnumerable<SerpSeznamOrganicTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;](./SerpSeznamOrganicTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -891,15 +1331,15 @@ A server side error occurred.
  <br>Seznam SERP API provides top 10 search engine results from one of the most popular search engines in the Czech Republic. Seznam is focused on the local search market, and thus supports the Czech language only.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_post/?bash'
 
-### **SeznamOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **SeznamOrganicTaskPostAsync(IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IEnumerable<SerpSeznamOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;](./SerpSeznamOrganicTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -1871,6 +2311,422 @@ A server side error occurred.
  <br>Live Google Dataset Info provides real-time data on the dataset you specify in the request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/live/advanced/?bash'
 
+### **SerpGoogleAdsAdvertisersLocationsAsync()**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersLocationsResponseInfo> SerpGoogleAdsAdvertisersLocationsAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersLocationsResponseInfo&gt;](./SerpGoogleAdsAdvertisersLocationsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash'
+
+### **SerpGoogleAdsAdvertisersLocationsAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersLocationsResponseInfo> SerpGoogleAdsAdvertisersLocationsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersLocationsResponseInfo&gt;](./SerpGoogleAdsAdvertisersLocationsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash'
+
+### **GoogleAdsAdvertisersTaskPostAsync(IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersTaskPostResponseInfo> GoogleAdsAdvertisersTaskPostAsync(IEnumerable<SerpGoogleAdsAdvertisersTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersTaskPostResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash'
+
+### **GoogleAdsAdvertisersTaskPostAsync(IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersTaskPostResponseInfo> GoogleAdsAdvertisersTaskPostAsync(IEnumerable<SerpGoogleAdsAdvertisersTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersTaskPostResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash'
+
+### **GoogleAdsAdvertisersTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersTasksReadyResponseInfo> GoogleAdsAdvertisersTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersTasksReadyResponseInfo&gt;](./SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash'
+
+### **GoogleAdsAdvertisersTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersTasksReadyResponseInfo> GoogleAdsAdvertisersTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersTasksReadyResponseInfo&gt;](./SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash'
+
+### **GoogleAdsAdvertisersTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo> GoogleAdsAdvertisersTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash'
+
+### **GoogleAdsAdvertisersTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo> GoogleAdsAdvertisersTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash'
+
+### **SerpGoogleAdsSearchLocationsAsync()**
+
+```csharp
+public Task<SerpGoogleAdsSearchLocationsResponseInfo> SerpGoogleAdsSearchLocationsAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchLocationsResponseInfo&gt;](./SerpGoogleAdsSearchLocationsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash'
+
+### **SerpGoogleAdsSearchLocationsAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsSearchLocationsResponseInfo> SerpGoogleAdsSearchLocationsAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchLocationsResponseInfo&gt;](./SerpGoogleAdsSearchLocationsResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash'
+
+### **GoogleAdsSearchTaskPostAsync(IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleAdsSearchTaskPostResponseInfo> GoogleAdsSearchTaskPostAsync(IEnumerable<SerpGoogleAdsSearchTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;](./SerpGoogleAdsSearchTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchTaskPostResponseInfo&gt;](./SerpGoogleAdsSearchTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash'
+
+### **GoogleAdsSearchTaskPostAsync(IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsSearchTaskPostResponseInfo> GoogleAdsSearchTaskPostAsync(IEnumerable<SerpGoogleAdsSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;](./SerpGoogleAdsSearchTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchTaskPostResponseInfo&gt;](./SerpGoogleAdsSearchTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash'
+
+### **GoogleAdsSearchTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleAdsSearchTasksReadyResponseInfo> GoogleAdsSearchTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchTasksReadyResponseInfo&gt;](./SerpGoogleAdsSearchTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash'
+
+### **GoogleAdsSearchTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsSearchTasksReadyResponseInfo> GoogleAdsSearchTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchTasksReadyResponseInfo&gt;](./SerpGoogleAdsSearchTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash'
+
+### **GoogleAdsSearchTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleAdsSearchTaskGetAdvancedResponseInfo> GoogleAdsSearchTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash'
+
+### **GoogleAdsSearchTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleAdsSearchTaskGetAdvancedResponseInfo> GoogleAdsSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleAdsSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash'
+
 ### **SerpBingLocationsAsync()**
 
 ```csharp
@@ -2028,15 +2884,15 @@ A server side error occurred.
 You will receive the list of languages by calling this API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/languages/?bash'
 
-### **BingOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingOrganicTaskPostAsync(IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnumerable<SerpBingOrganicTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;](./SerpBingOrganicTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -2054,15 +2910,15 @@ A server side error occurred.
  <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_post/?bash'
 
-### **BingOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingOrganicTaskPostAsync(IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnumerable<SerpBingOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;](./SerpBingOrganicTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2360,15 +3216,15 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/html/?bash'
 
-### **BingOrganicLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingOrganicLiveRegularAsync(IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(IEnumerable<SerpBingOrganicLiveRegularRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;](./SerpBingOrganicLiveRegularRequestInfo.md)<br>
 
 #### Returns
 
@@ -2386,15 +3242,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/regular/?bash'
 
-### **BingOrganicLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingOrganicLiveRegularAsync(IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(IEnumerable<SerpBingOrganicLiveRegularRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;](./SerpBingOrganicLiveRegularRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2415,15 +3271,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/regular/?bash'
 
-### **BingOrganicLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingOrganicLiveAdvancedAsync(IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsync(IEnumerable<SerpBingOrganicLiveAdvancedRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;](./SerpBingOrganicLiveAdvancedRequestInfo.md)<br>
 
 #### Returns
 
@@ -2441,15 +3297,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/advanced/?bash'
 
-### **BingOrganicLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingOrganicLiveAdvancedAsync(IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsync(IEnumerable<SerpBingOrganicLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;](./SerpBingOrganicLiveAdvancedRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2470,15 +3326,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/advanced/?bash'
 
-### **BingOrganicLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingOrganicLiveHtmlAsync(IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnumerable<SerpBingOrganicLiveHtmlRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;](./SerpBingOrganicLiveHtmlRequestInfo.md)<br>
 
 #### Returns
 
@@ -2496,15 +3352,15 @@ A server side error occurred.
  <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/html/?bash'
 
-### **BingOrganicLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingOrganicLiveHtmlAsync(IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnumerable<SerpBingOrganicLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;](./SerpBingOrganicLiveHtmlRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2525,15 +3381,15 @@ A server side error occurred.
  <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/html/?bash'
 
-### **BingLocalPackTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingLocalPackTaskPostAsync(IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IEnumerable<SerpBingLocalPackTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;](./SerpBingLocalPackTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -2551,15 +3407,15 @@ A server side error occurred.
  <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_post/?bash'
 
-### **BingLocalPackTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingLocalPackTaskPostAsync(IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IEnumerable<SerpBingLocalPackTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;](./SerpBingLocalPackTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2798,15 +3654,15 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/html/?bash'
 
-### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAsync(IEnumerable<SerpBingLocalPackLiveRegularRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;](./SerpBingLocalPackLiveRegularRequestInfo.md)<br>
 
 #### Returns
 
@@ -2824,15 +3680,15 @@ A server side error occurred.
  <br>Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
 
-### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAsync(IEnumerable<SerpBingLocalPackLiveRegularRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;](./SerpBingLocalPackLiveRegularRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -2853,15 +3709,15 @@ A server side error occurred.
  <br>Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
 
-### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;](./SerpBingLocalPackLiveHtmlRequestInfo.md)<br>
 
 #### Returns
 
@@ -2879,15 +3735,15 @@ A server side error occurred.
  <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/html/?bash'
 
-### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;](./SerpBingLocalPackLiveHtmlRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -4029,15 +4885,15 @@ A server side error occurred.
 You will receive the list of languages by calling this API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/languages/?bash'
 
-### **YahooOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **YahooOrganicTaskPostAsync(IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnumerable<SerpYahooOrganicTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;](./SerpYahooOrganicTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -4055,15 +4911,15 @@ A server side error occurred.
  <br>SERP API provides top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_post/?bash'
 
-### **YahooOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **YahooOrganicTaskPostAsync(IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnumerable<SerpYahooOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;](./SerpYahooOrganicTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -4243,446 +5099,6 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/regular/?bash'
 
-### **YahooOrganicTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetAdvancedResponseInfo> YahooOrganicTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./SerpYahooOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash'
-
-### **YahooOrganicTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetAdvancedResponseInfo> YahooOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./SerpYahooOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash'
-
-### **YahooOrganicTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetHtmlResponseInfo> YahooOrganicTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./SerpYahooOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash'
-
-### **YahooOrganicTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetHtmlResponseInfo> YahooOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./SerpYahooOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash'
-
-### **YahooOrganicLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
-
-```csharp
-public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./SerpYahooOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash'
-
-### **YahooOrganicLiveRegularAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./SerpYahooOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash'
-
-### **YahooOrganicLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
-
-```csharp
-public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./SerpYahooOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash'
-
-### **YahooOrganicLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./SerpYahooOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash'
-
-### **YahooOrganicLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
-
-```csharp
-public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./SerpYahooOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash'
-
-### **YahooOrganicLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./SerpYahooOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash'
-
-### **SerpBaiduLocationsAsync()**
-
-```csharp
-public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./SerpBaiduLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./SerpBaiduLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLocationsCountryAsync(String)**
-
-```csharp
-public Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./SerpBaiduLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLocationsCountryAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./SerpBaiduLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLanguagesAsync()**
-
-```csharp
-public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./SerpBaiduLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
-
-### **SerpBaiduLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./SerpBaiduLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
-
 ### **SerpIdListAsync(IEnumerable&lt;SerpIdListRequestInfo&gt;)**
 
 ```csharp
@@ -4758,7 +5174,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/errors/?bash'
 
 ### **SerpErrorsAsync(IEnumerable&lt;SerpErrorsRequestInfo&gt;, CancellationToken)**
@@ -4786,7 +5202,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/errors/?bash'
 
 ### **ScreenshotAsync(IEnumerable&lt;SerpScreenshotRequestInfo&gt;)**
@@ -5060,15 +5476,15 @@ A server side error occurred.
 You will receive the list of languages by calling this API.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/languages/?bash'
 
-### **GoogleOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleOrganicTaskPostAsync(IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IEnumerable<SerpGoogleOrganicTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;](./SerpGoogleOrganicTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -5086,15 +5502,15 @@ A server side error occurred.
  <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_post/?bash'
 
-### **GoogleOrganicTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleOrganicTaskPostAsync(IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IEnumerable<SerpGoogleOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;](./SerpGoogleOrganicTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -5553,15 +5969,15 @@ A server side error occurred.
  <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash'
 
-### **GoogleOrganicLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleOrganicLiveHtmlAsync(IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;](./SerpGoogleOrganicLiveHtmlRequestInfo.md)<br>
 
 #### Returns
 
@@ -5579,15 +5995,15 @@ A server side error occurred.
  <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/html/?bash'
 
-### **GoogleOrganicLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleOrganicLiveHtmlAsync(IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;](./SerpGoogleOrganicLiveHtmlRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -6264,15 +6680,15 @@ A server side error occurred.
  <br>Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
 
-### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumerable<SerpGoogleNewsTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;](./SerpGoogleNewsTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -6290,15 +6706,15 @@ A server side error occurred.
  <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_post/?bash'
 
-### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumerable<SerpGoogleNewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;](./SerpGoogleNewsTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -6537,15 +6953,15 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_get/html/?bash'
 
-### **GoogleNewsLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleNewsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(IEnumerable<SerpGoogleNewsLiveAdvancedRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;](./SerpGoogleNewsLiveAdvancedRequestInfo.md)<br>
 
 #### Returns
 
@@ -6563,15 +6979,15 @@ A server side error occurred.
  <br>Live Google News SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/advanced/?bash'
 
-### **GoogleNewsLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleNewsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(IEnumerable<SerpGoogleNewsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;](./SerpGoogleNewsLiveAdvancedRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -6592,15 +7008,15 @@ A server side error occurred.
  <br>Live Google News SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/advanced/?bash'
 
-### **GoogleNewsLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleNewsLiveHtmlAsync(IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumerable<SerpGoogleNewsLiveHtmlRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;](./SerpGoogleNewsLiveHtmlRequestInfo.md)<br>
 
 #### Returns
 
@@ -6618,15 +7034,15 @@ A server side error occurred.
  <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/html/?bash'
 
-### **GoogleNewsLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleNewsLiveHtmlAsync(IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumerable<SerpGoogleNewsLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;](./SerpGoogleNewsLiveHtmlRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -6916,15 +7332,15 @@ A server side error occurred.
  <br>Live Google Events SERP provides real-time data from Google Events Search for the specified keyword and location. Note that Google Events SERP API works for the English language only.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/live/advanced/?bash'
 
-### **GoogleImagesTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleImagesTaskPostAsync(IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnumerable<SerpGoogleImagesTaskPostRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;](./SerpGoogleImagesTaskPostRequestInfo.md)<br>
 
 #### Returns
 
@@ -6942,15 +7358,15 @@ A server side error occurred.
  <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_post/?bash'
 
-### **GoogleImagesTaskPostAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleImagesTaskPostAsync(IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnumerable<SerpGoogleImagesTaskPostRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;](./SerpGoogleImagesTaskPostRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -7189,15 +7605,15 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_get/html/?bash'
 
-### **GoogleImagesLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleImagesLiveAdvancedAsync(IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAsync(IEnumerable<SerpGoogleImagesLiveAdvancedRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;](./SerpGoogleImagesLiveAdvancedRequestInfo.md)<br>
 
 #### Returns
 
@@ -7215,15 +7631,15 @@ A server side error occurred.
  <br>Live Google Images SERP provides real-time data on top 100 images results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/advanced/?bash'
 
-### **GoogleImagesLiveAdvancedAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleImagesLiveAdvancedAsync(IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAsync(IEnumerable<SerpGoogleImagesLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;](./SerpGoogleImagesLiveAdvancedRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -7244,15 +7660,15 @@ A server side error occurred.
  <br>Live Google Images SERP provides real-time data on top 100 images results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/advanced/?bash'
 
-### **GoogleImagesLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;)**
+### **GoogleImagesLiveHtmlAsync(IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;)**
 
 ```csharp
-public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body)
+public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnumerable<SerpGoogleImagesLiveHtmlRequestInfo> body)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;](./SerpGoogleImagesLiveHtmlRequestInfo.md)<br>
 
 #### Returns
 
@@ -7270,15 +7686,15 @@ A server side error occurred.
  <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/html/?bash'
 
-### **GoogleImagesLiveHtmlAsync(IEnumerable&lt;SerpTaskRequestInfo&gt;, CancellationToken)**
+### **GoogleImagesLiveHtmlAsync(IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;, CancellationToken)**
 
 ```csharp
-public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnumerable<SerpTaskRequestInfo> body, CancellationToken cancellationToken)
+public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnumerable<SerpGoogleImagesLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
 ```
 
 #### Parameters
 
-`body` [IEnumerable&lt;SerpTaskRequestInfo&gt;](./SerpTaskRequestInfo.md)<br>
+`body` [IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;](./SerpGoogleImagesLiveHtmlRequestInfo.md)<br>
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.

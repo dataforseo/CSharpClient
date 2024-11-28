@@ -119,7 +119,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
 
 ### **DomainAnalyticsErrorsAsync(IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;, CancellationToken)**
@@ -147,7 +147,7 @@ A server side error occurred.
 
 **Remarks:**
 
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours.
+By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
 
 ### **TechnologiesAvailableFiltersAsync()**

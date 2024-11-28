@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class AppendixWhoisDomainAnalyticsPriceData
     {
         [Newtonsoft.Json.JsonProperty("overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordBingKeywordsDataPriceDataInfo Overview { get; set; }
+        public AppendixBingKeywordsDataPriceDataInfo Overview { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

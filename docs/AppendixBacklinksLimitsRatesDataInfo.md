@@ -210,6 +210,16 @@ public AppendixInfo Competitors { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
+### **BulkSpamScore**
+
+```csharp
+public AppendixInfo BulkSpamScore { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
 ### **BulkPagesSummary**
 
 ```csharp

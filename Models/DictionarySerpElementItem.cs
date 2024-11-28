@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// description of the results element in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? Text { get; set; }
+        public string Text { get; set; }
 
         /// <summary>
         /// sitelinks

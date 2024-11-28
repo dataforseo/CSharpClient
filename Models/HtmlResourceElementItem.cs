@@ -41,6 +41,13 @@ namespace DataForSeo.Client.Models
         public object CustomJsResponse { get; set; }
 
         /// <summary>
+        /// error when executing a custom js
+        /// <br/>if the error occurred when executing the script you specified in the custom_js field, the error message would be displayed here
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("custom_js_client_exception", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string CustomJsClientException { get; set; }
+
+        /// <summary>
         /// indicates whether a page contains broken resources
         /// </summary>
         [Newtonsoft.Json.JsonProperty("broken_resources", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

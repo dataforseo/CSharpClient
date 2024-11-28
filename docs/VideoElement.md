@@ -60,16 +60,6 @@ public string Url { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **Preview**
-
-```csharp
-public string Preview { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **AdditionalProperties**
 
 ```csharp

@@ -9,6 +9,7 @@ namespace DataForSeo.Client.Models.Requests
         /// keywords
         /// <br/>required field
         /// <br/>the maximum number of keywords you can specify: 5
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Keywords { get; set; }

@@ -31,11 +31,11 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("tasks_ready", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("app_listings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo AppListings { get; set; }
-
         [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? IdList { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("app_listings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo AppListings { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

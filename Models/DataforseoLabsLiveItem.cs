@@ -1,7 +1,7 @@
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.20.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class DataforseoLabsLiveItem
     {
         /// <summary>
@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models
         /// keyword data for the returned keyword
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public KeywordDataKeywordDataInfo KeywordData { get; set; }
+        public KeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
         /// contains data on the domain’s SERP element found for the returned keyword

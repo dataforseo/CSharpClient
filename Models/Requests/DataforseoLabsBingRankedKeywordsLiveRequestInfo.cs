@@ -6,15 +6,11 @@ namespace DataForSeo.Client.Models.Requests
     public partial class DataforseoLabsBingRankedKeywordsLiveRequestInfo
     {
         /// <summary>
-        /// domain
+        /// domain name or page url
         /// <br/>required field
-        /// <br/>the domain name of the target website
-        /// <br/>the domain should be specified without https:// or www.
-        /// <br/>if you want to get the keywords a particular webpage ranks for, specify the filter by the
-        /// <br/>ranked_serp_element.serp_item.relative_url parameter
-        /// <br/>example:
-        /// <br/>"filters":[
-        /// <br/>"ranked_serp_element.serp_item.relative_url", "=", "/apis/rank-tracker-api"]
+        /// <br/>the domain name of the target website or URL of the target webpage;
+        /// <br/>the domain name must be specified without https:// or www.;
+        /// <br/>the webpage URL must be specified with https:// or www.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("target", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Target { get; set; }

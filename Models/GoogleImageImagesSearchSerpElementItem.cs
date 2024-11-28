@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
         public string Alt { get; set; }
 
         /// <summary>
-        /// the URL of the page where the image is hosted
+        /// search URL with refinement parameters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

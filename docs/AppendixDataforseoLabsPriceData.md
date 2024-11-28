@@ -13,62 +13,62 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **AppCompetitors**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo AppCompetitors { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo AppCompetitors { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AppIntersection**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo AppIntersection { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo AppIntersection { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **BulkAppMetrics**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo BulkAppMetrics { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo BulkAppMetrics { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **BulkKeywordDifficulty**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo BulkKeywordDifficulty { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo BulkKeywordDifficulty { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **BulkSearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo BulkSearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo BulkSearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **BulkTrafficEstimation**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo BulkTrafficEstimation { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo BulkTrafficEstimation { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Categories**
 
@@ -83,62 +83,62 @@ public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
 ### **CategoriesForDomain**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo CategoriesForDomain { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo CategoriesForDomain { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **CompetitorsDomain**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo CompetitorsDomain { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo CompetitorsDomain { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainIntersection**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainIntersection { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainIntersection { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainMetricsByCategories**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainMetricsByCategories { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainMetricsByCategories { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainRankOverview**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainRankOverview { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainRankOverview { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **DomainWhoisOverview**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo DomainWhoisOverview { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo DomainWhoisOverview { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Errors**
 
@@ -153,82 +153,82 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 ### **HistoricalRankOverview**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **HistoricalSearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo HistoricalSearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo HistoricalSearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **HistoricalSerps**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo HistoricalSerps { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo HistoricalSerps { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordIdeas**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordIdeas { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordIdeas { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForApp**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForApp { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForApp { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForCategories**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForCategories { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForCategories { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForSite**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordSuggestions**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordSuggestions { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordSuggestions { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **LocationsAndLanguages**
 
@@ -243,112 +243,112 @@ public AppendixTaskKeywordsDataPriceDataInfo LocationsAndLanguages { get; set; }
 ### **PageIntersection**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo PageIntersection { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo PageIntersection { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **ProductCompetitors**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo ProductCompetitors { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo ProductCompetitors { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **ProductKeywordIntersections**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo ProductKeywordIntersections { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo ProductKeywordIntersections { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **ProductRankOverview**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo ProductRankOverview { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo ProductRankOverview { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **RankedKeywords**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo RankedKeywords { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo RankedKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **RelatedKeywords**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo RelatedKeywords { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo RelatedKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **RelevantPages**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo RelevantPages { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo RelevantPages { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **SearchIntent**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo SearchIntent { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo SearchIntent { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **SerpCompetitors**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo SerpCompetitors { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo SerpCompetitors { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **Subdomains**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo Subdomains { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo Subdomains { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **TopSearches**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo TopSearches { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo TopSearches { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

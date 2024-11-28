@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// price of the app
         /// </summary>
         [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Price Price { get; set; }
+        public PriceInfo Price { get; set; }
 
         /// <summary>
         /// name of the app developer

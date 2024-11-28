@@ -53,12 +53,12 @@ public string ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem> Items { get; set; }
+public ICollection<KeywordsDataClickstreamDataSearchVolumeLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem&gt;](./KeywordsDataClickstreamDataDataforseoSearchVolumeLiveItem.md)<br>
+[ICollection&lt;KeywordsDataClickstreamDataSearchVolumeLiveItem&gt;](./KeywordsDataClickstreamDataSearchVolumeLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

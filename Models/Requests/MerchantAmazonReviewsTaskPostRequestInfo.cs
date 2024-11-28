@@ -101,7 +101,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>number of reviews in SERP;
         /// <br/>we strongly recommend setting the parsing depth in the multiples of ten, because our system processes ten reviews in a row;
-        /// <br/>maximum value: 100
+        /// <br/>maximum value: 50
         /// <br/>default value: 10
         /// </summary>
         [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -110,10 +110,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// results sorting parameters
         /// <br/>optional field
-        /// <br/>you can use this field to sort the results;
         /// <br/>possible types of sorting:
-        /// <br/>helpful — sort by helpful reviews;
-        /// <br/>recent — sort by recent reviews;
+        /// <br/>helpful — for now, the only available sorting value;
         /// <br/>default rule: helpful
         /// </summary>
         [Newtonsoft.Json.JsonProperty("sort_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -152,7 +150,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// filter reviews by specified keyword
         /// <br/>optional field
-        /// <br/>you can specify up to 300 symbols in this field;
+        /// <br/>you can specify up to 300 characters in this field;
         /// <br/>if you use this field, the response will only include reviews that contain the specified keyword
         /// </summary>
         [Newtonsoft.Json.JsonProperty("filter_by_keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -201,8 +199,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/postbackscript?id=$id
         /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in postback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in postback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -225,8 +224,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>http://your-server.com/pingscript?id=$id
         /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special symbols in pingback_url will be urlencoded;
-        /// <br/>i.a., the # symbol will be encoded into %23
+        /// <br/>Note: special characters in pingback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
         [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

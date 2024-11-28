@@ -70,6 +70,16 @@ public SpellInfo Spell { get; set; }
 
 [SpellInfo](./SpellInfo.md)<br>
 
+### **RefinementChips**
+
+```csharp
+public RefinementChipsInfo RefinementChips { get; set; }
+```
+
+#### Property Value
+
+[RefinementChipsInfo](./RefinementChipsInfo.md)<br>
+
 ### **ItemTypes**
 
 ```csharp

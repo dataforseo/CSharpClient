@@ -160,7 +160,8 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// custom javascript
-        /// <br/>optional fieldNote that the execution time for the script you enter here should be 700 ms maximumfor example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute:
+        /// <br/>optional fieldNote that the execution time for the script you enter here should be 700 ms maximum;
+        /// <br/>for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute:
         /// <br/>let meta = { haveGoogleAnalytics: false, haveTagManager: false };\r\nfor (var i = 0; i &lt; document.scripts.length; i++) {\r\n let src = document.scripts[i].getAttribute(\"src\");\r\n if (src != undefined) {\r\n if (src.indexOf(\"analytics.js\") &gt;= 0)\r\n      meta.haveGoogleAnalytics = true;\r\n\tif (src.indexOf(\"gtm.js\") &gt;= 0)\r\n      meta.haveTagManager = true;\r\n  }\r\n}\r\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script:
         /// <br/>meta = {}; meta.url = document.URL; meta.test = 'test'; meta;
         /// <br/>as a response you will receive the following data:

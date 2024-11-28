@@ -220,6 +220,26 @@ public Nullable<bool> IsAvailable { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **TopLocalReviews**
+
+```csharp
+public ICollection<BaseAmazonSerpElementItem> TopLocalReviews { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;BaseAmazonSerpElementItem&gt;](./BaseAmazonSerpElementItem.md)<br>
+
+### **TopGlobalReviews**
+
+```csharp
+public ICollection<BaseAmazonSerpElementItem> TopGlobalReviews { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;BaseAmazonSerpElementItem&gt;](./BaseAmazonSerpElementItem.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

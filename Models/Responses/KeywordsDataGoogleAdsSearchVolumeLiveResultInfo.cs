@@ -7,17 +7,18 @@ namespace DataForSeo.Client.Models.Responses
     {
         /// <summary>
         /// keyword
-        /// <br/>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
-        /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// correct spelling of the keyword
+        /// <br/>Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;
+        /// <br/>we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
         /// </summary>
         [Newtonsoft.Json.JsonProperty("spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SpellInfo Spell { get; set; }
+        public string Spell { get; set; }
 
         /// <summary>
         /// location code in a POST array

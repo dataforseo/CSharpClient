@@ -10,45 +10,65 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 
 ## Properties
 
-### **KeywordPerformance**
+### **AudienceEstimation**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordPerformance { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo AudienceEstimation { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
+
+### **KeywordPerformance**
+
+```csharp
+public AppendixBingKeywordsDataPriceDataInfo KeywordPerformance { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForKeywords**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **KeywordsForSite**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
+
+### **KeywordSuggestionsForUrl**
+
+```csharp
+public AppendixBingKeywordsDataPriceDataInfo KeywordSuggestionsForUrl { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **SearchVolume**
 
 ```csharp
-public AppendixKeywordBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo SearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordBingKeywordsDataPriceDataInfo](./AppendixKeywordBingKeywordsDataPriceDataInfo.md)<br>
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

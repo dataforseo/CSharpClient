@@ -13,13 +13,13 @@ namespace DataForSeo.Client.Models
         public string Position { get; set; }
 
         /// <summary>
-        /// title of the result in SERP
+        /// title of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// items of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<CarouselElement> Items { get; set; }
