@@ -1120,6 +1120,8 @@
 
 [SearchVolumeHistorySearchInfo](./SearchVolumeHistorySearchInfo.md)
 
+[SearchVolumeTrendInfo](./SearchVolumeTrendInfo.md)
+
 [SentimentConnotationDistribution](./SentimentConnotationDistribution.md)
 
 [SerpAiSummaryItem](./SerpAiSummaryItem.md)

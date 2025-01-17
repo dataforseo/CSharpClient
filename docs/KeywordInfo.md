@@ -110,6 +110,16 @@ public ICollection<MonthlySearches> MonthlySearches { get; set; }
 
 [ICollection&lt;MonthlySearches&gt;](./MonthlySearches.md)<br>
 
+### **SearchVolumeTrend**
+
+```csharp
+public SearchVolumeTrendInfo SearchVolumeTrend { get; set; }
+```
+
+#### Property Value
+
+[SearchVolumeTrendInfo](./SearchVolumeTrendInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp
