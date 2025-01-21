@@ -65,7 +65,7 @@ var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<Ser
 Example of Task-based request
 ```csharp
 var dfsClient = new DataForSeoClient("USERNAME", "PASSWORD");
-var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpTaskRequestInfo>()
+var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
 {
     new()
     {
