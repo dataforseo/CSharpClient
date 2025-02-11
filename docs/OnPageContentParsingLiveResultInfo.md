@@ -43,12 +43,12 @@ public Nullable<long> ItemsCount { get; set; }
 ### **Items**
 
 ```csharp
-public ICollection<OnPageContentParsingItem> Items { get; set; }
+public ICollection<OnPageContentParsingLiveItem> Items { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;OnPageContentParsingItem&gt;](./OnPageContentParsingItem.md)<br>
+[ICollection&lt;OnPageContentParsingLiveItem&gt;](./OnPageContentParsingLiveItem.md)<br>
 
 ### **AdditionalProperties**
 

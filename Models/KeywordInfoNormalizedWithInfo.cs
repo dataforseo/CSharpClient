@@ -18,6 +18,13 @@ namespace DataForSeo.Client.Models
         public long? SearchVolume { get; set; }
 
         /// <summary>
+        /// keyword info is normalized
+        /// <br/>if true, values are normalized with Bing data
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("is_normalized", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IsNormalized { get; set; }
+
+        /// <summary>
         /// monthly clickstream search volume rates
         /// <br/>array of objects with clickstream search volume rates in a certain month of a year
         /// </summary>

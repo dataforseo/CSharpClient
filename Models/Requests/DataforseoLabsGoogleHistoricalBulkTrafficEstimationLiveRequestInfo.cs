@@ -87,7 +87,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ignore highly similar keywords
         /// <br/>optional field
-        /// <br/>if set to true only core keywords will be returned, all highly similar keywords will be excluded;
+        /// <br/>if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
         /// <br/>default value: false
         /// </summary>
         [Newtonsoft.Json.JsonProperty("ignore_synonyms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

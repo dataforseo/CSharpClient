@@ -30,6 +30,16 @@ public Nullable<long> SearchVolume { get; set; }
 
 [Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **IsNormalized**
+
+```csharp
+public Nullable<bool> IsNormalized { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **MonthlySearches**
 
 ```csharp

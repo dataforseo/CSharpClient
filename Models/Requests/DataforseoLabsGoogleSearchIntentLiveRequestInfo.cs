@@ -40,6 +40,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Norwegian(Bokmål), nb,
         /// <br/>Polish, pl,
         /// <br/>Portuguese, pt,
+        /// <br/>Romanian, ro,
         /// <br/>Russian, ru,
         /// <br/>Spanish, es,
         /// <br/>Swedish, sv,

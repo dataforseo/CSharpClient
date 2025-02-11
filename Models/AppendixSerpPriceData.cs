@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("jobs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo Jobs { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo Jobs { get; set; }
 
         [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }

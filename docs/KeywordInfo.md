@@ -113,12 +113,12 @@ public ICollection<MonthlySearches> MonthlySearches { get; set; }
 ### **SearchVolumeTrend**
 
 ```csharp
-public SearchVolumeTrendInfo SearchVolumeTrend { get; set; }
+public SearchVolumeTrend SearchVolumeTrend { get; set; }
 ```
 
 #### Property Value
 
-[SearchVolumeTrendInfo](./SearchVolumeTrendInfo.md)<br>
+[SearchVolumeTrend](./SearchVolumeTrend.md)<br>
 
 ### **AdditionalProperties**
 

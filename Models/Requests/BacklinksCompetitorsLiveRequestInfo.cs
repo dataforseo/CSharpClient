@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, =, &lt; &gt;, in, not_in, like, not_like, ilike, not_ilike
+        /// <br/>regex, not_regex, =, &lt; &gt;, in, not_in, like, not_like, ilike, not_ilike, match, not_match
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
         /// <br/>["rank","&gt;","100"]

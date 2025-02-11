@@ -23,22 +23,22 @@ public ICollection<string> Keywords { get; set; }
 ### **LocationName**
 
 ```csharp
-public string LocationName { get; set; }
+public ICollection<string> LocationName { get; set; }
 ```
 
 #### Property Value
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **LocationCode**
 
 ```csharp
-public Nullable<int> LocationCode { get; set; }
+public ICollection<Nullable<int>> LocationCode { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[ICollection&lt;Nullable&lt;Int32&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **LanguageName**
 

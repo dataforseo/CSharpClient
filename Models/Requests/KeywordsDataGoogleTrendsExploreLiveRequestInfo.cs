@@ -7,10 +7,11 @@ namespace DataForSeo.Client.Models.Requests
     {
         /// <summary>
         /// keywords
-        /// <br/>optional field
+        /// <br/>required field
         /// <br/>if keywords are not specified, the results will not contain keyword-related data;
         /// <br/>The maximum number of keywords you can specify: 5
-        /// <br/>Note: the comma characters (,) in the specified keywords will be unset and ignored
+        /// <br/>comma characters (,) in the specified keywords will be unset and ignored;
+        /// <br/>Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword;
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -21,24 +22,26 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if you don’t use this field, you will recieve global results
         /// <br/>if you use this field, you don’t need to specify location_code
+        /// <br/>you can use this field as an array to set several locations, each corresponding to a specific keyword – learn more;
         /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations
         /// <br/>example:
         /// <br/>United Kingdom
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
+        public System.Collections.Generic.ICollection<string> LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
         /// <br/>optional field
         /// <br/>if you don’t use this field, you will recieve global results
         /// <br/>if you use this field, you don’t need to specify location_name
+        /// <br/>you can use this field as an array to set several locations, each corresponding to a specific keyword – learn more;
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations
         /// <br/>example:
         /// <br/>2840
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public System.Collections.Generic.ICollection<int?> LocationCode { get; set; }
 
         /// <summary>
         /// full name of search engine language
@@ -125,6 +128,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>"google_trends_graph", "google_trends_map", "google_trends_topics_list","google_trends_queries_list"
         /// <br/>default value:
         /// <br/>"google_trends_graph"
+        /// <br/>Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword in the keywords field
         /// </summary>
         [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }

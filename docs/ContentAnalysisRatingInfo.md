@@ -30,6 +30,16 @@ public Nullable<double> RatingValue { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **MaxRatingValue**
+
+```csharp
+public Nullable<int> MaxRatingValue { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **RatingCount**
 
 ```csharp
@@ -40,25 +50,15 @@ public Nullable<long> RatingCount { get; set; }
 
 [Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **MaxRatingValue**
-
-```csharp
-public string MaxRatingValue { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **RelativeRating**
 
 ```csharp
-public Nullable<double> RelativeRating { get; set; }
+public Nullable<float> RelativeRating { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

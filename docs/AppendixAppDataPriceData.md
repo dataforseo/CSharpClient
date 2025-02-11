@@ -20,6 +20,16 @@ public AppendixProductGoogleMerchantPriceDataInfo AppInfo { get; set; }
 
 [AppendixProductGoogleMerchantPriceDataInfo](./AppendixProductGoogleMerchantPriceDataInfo.md)<br>
 
+### **AppListings**
+
+```csharp
+public AppendixAppListingsAppDataPriceData AppListings { get; set; }
+```
+
+#### Property Value
+
+[AppendixAppListingsAppDataPriceData](./AppendixAppListingsAppDataPriceData.md)<br>
+
 ### **AppList**
 
 ```csharp

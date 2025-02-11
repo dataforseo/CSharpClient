@@ -17,6 +17,12 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
+        /// name of the website in SERP
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("website_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string WebsiteName { get; set; }
+
+        /// <summary>
         /// breadcrumb in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("breadcrumb", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -87,18 +93,19 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
+        /// the item’s rating 
+        /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public RatingInfo Rating { get; set; }
+
+        /// <summary>
         /// rectangle parameters
         /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
         /// <br/>equals null if calculate_rectangles in the POST request is not set to true
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rectangle", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public Rectangle Rectangle { get; set; }
-
-        /// <summary>
-        /// website name in SERP
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("website_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string WebsiteName { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

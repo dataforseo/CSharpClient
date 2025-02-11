@@ -29,16 +29,16 @@ namespace DataForSeo.Client.Models
         public double? TasksFixed { get; set; }
 
         [Newtonsoft.Json.JsonProperty("jobs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixDayLimitsRatesDataInfo Jobs { get; set; }
+        public AppendixJobsSerpLimitsRatesDataInfo Jobs { get; set; }
 
         [Newtonsoft.Json.JsonProperty("screenshot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Screenshot { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("ai_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? AiSummary { get; set; }
-
         [Newtonsoft.Json.JsonProperty("refund_money", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? RefundMoney { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("ai_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? AiSummary { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

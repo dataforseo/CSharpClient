@@ -350,20 +350,20 @@ public AppendixInfo SearchIntent { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **IdList**
-
-```csharp
-public Nullable<double> IdList { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
 ### **HistoricalBulkTrafficEstimation**
 
 ```csharp
 public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **CategoriesForKeywords**
+
+```csharp
+public AppendixInfo CategoriesForKeywords { get; set; }
 ```
 
 #### Property Value
@@ -390,6 +390,36 @@ public Nullable<double> Status { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **IdList**
+
+```csharp
+public Nullable<double> IdList { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **TopGoogleSearches**
+
+```csharp
+public AppendixInfo TopGoogleSearches { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **Languages**
+
+```csharp
+public Nullable<double> Languages { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **AvailableFilters**
 
 ```csharp
@@ -409,36 +439,6 @@ public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
 #### Property Value
 
 [AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
-
-### **Languages**
-
-```csharp
-public Nullable<double> Languages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **CategoriesForKeywords**
-
-```csharp
-public AppendixInfo CategoriesForKeywords { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **TopGoogleSearches**
-
-```csharp
-public AppendixInfo TopGoogleSearches { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
 
 ### **AdditionalProperties**
 

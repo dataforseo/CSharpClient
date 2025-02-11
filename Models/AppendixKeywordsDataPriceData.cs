@@ -8,10 +8,10 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
 
         [Newtonsoft.Json.JsonProperty("ad_traffic_by_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo AdTrafficByKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("audience_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo AudienceEstimation { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo AudienceEstimation { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceData Bing { get; set; }
@@ -29,16 +29,16 @@ namespace DataForSeo.Client.Models
         public AppendixGoogleAdsKeywordsDataPriceData GoogleAds { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_performance", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo KeywordPerformance { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo KeywordPerformance { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo KeywordsForKeywords { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_site", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo KeywordsForSite { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_suggestions_for_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo KeywordSuggestionsForUrl { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo KeywordSuggestionsForUrl { get; set; }
 
         [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo LocationsAndLanguages { get; set; }
 
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo SearchVolume { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo SearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("dataforseo_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixDataforseoTrendsKeywordsDataPriceData DataforseoTrends { get; set; }

@@ -33,12 +33,12 @@ public string Format { get; set; }
 ### **Size**
 
 ```csharp
-public string Size { get; set; }
+public Nullable<long> Size { get; set; }
 ```
 
 #### Property Value
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// file size in bytes
         /// </summary>
         [Newtonsoft.Json.JsonProperty("size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Size { get; set; }
+        public long? Size { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

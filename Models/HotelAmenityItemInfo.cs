@@ -28,6 +28,12 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("hint_label", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string HintLabel { get; set; }
 
+        /// <summary>
+        /// indicates whether the amenity is available in the hotel
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("is_available", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IsAvailable { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

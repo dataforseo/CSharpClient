@@ -95,6 +95,15 @@ namespace DataForSeo.Client.Models.Requests
         public string HistoricalSerpMode { get; set; }
 
         /// <summary>
+        /// ignore highly similar keywords
+        /// <br/>optional field
+        /// <br/>if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
+        /// <br/>default value: false
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("ignore_synonyms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IgnoreSynonyms { get; set; }
+
+        /// <summary>
         /// array of results filtering parameters
         /// <br/>optional field
         /// <br/>you can add several filters at once (8 filters maximum)

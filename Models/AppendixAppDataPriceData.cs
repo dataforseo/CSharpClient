@@ -7,6 +7,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("app_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixProductGoogleMerchantPriceDataInfo AppInfo { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("app_listings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixAppListingsAppDataPriceData AppListings { get; set; }
+
         [Newtonsoft.Json.JsonProperty("app_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixProductGoogleMerchantPriceDataInfo AppList { get; set; }
 

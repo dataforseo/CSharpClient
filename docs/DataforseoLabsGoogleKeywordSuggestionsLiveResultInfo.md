@@ -33,12 +33,12 @@ public string SeedKeyword { get; set; }
 ### **SeedKeywordData**
 
 ```csharp
-public IDictionary<string, string> SeedKeywordData { get; set; }
+public KeywordDataInfo SeedKeywordData { get; set; }
 ```
 
 #### Property Value
 
-[IDictionary&lt;String, String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[KeywordDataInfo](./KeywordDataInfo.md)<br>
 
 ### **LocationCode**
 

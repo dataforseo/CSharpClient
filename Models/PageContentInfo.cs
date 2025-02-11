@@ -5,13 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class PageContentInfo
     {
         /// <summary>
-        /// content of the header of the table
+        /// parsed content of the header
         /// </summary>
         [Newtonsoft.Json.JsonProperty("header", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PageSectionContentInfo Header { get; set; }
 
         /// <summary>
-        /// parsed content of the footer
+        /// content of the footer of the table
         /// </summary>
         [Newtonsoft.Json.JsonProperty("footer", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public PageSectionContentInfo Footer { get; set; }

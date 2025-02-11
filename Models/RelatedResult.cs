@@ -54,7 +54,7 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// name of the website in SERP
+        /// name of the website in the ad element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("website_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string WebsiteName { get; set; }

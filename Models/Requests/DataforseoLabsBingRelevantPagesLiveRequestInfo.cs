@@ -113,12 +113,21 @@ namespace DataForSeo.Client.Models.Requests
         public string HistoricalSerpMode { get; set; }
 
         /// <summary>
+        /// ignore highly similar keywords
+        /// <br/>optional field
+        /// <br/>if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
+        /// <br/>default value: false
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("ignore_synonyms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IgnoreSynonyms { get; set; }
+
+        /// <summary>
         /// array of results filtering parameters
         /// <br/>optional field
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, match, not_match
         /// <br/>example:
         /// <br/>["metrics.paid.count","&gt;",0]
         /// <br/>[["metrics.organic.count","&gt;",50],"and",["metrics.organic.pos_1","&lt; &gt;",0]]

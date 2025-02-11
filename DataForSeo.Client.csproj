@@ -12,11 +12,22 @@
         <RepositoryUrl>https://github.com/dataforseo/CSharpClient</RepositoryUrl>
         <PackageProjectUrl>https://github.com/dataforseo/CSharpClient</PackageProjectUrl>
         <RootNamespace>DataForSeo.Client</RootNamespace>
-        <Version>1.0.22</Version>
+        <Version>1.0.25</Version>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>     
+        <PackageReleaseNotes>
+- add "website_name" in SerpApi  'paid' element item
+- add 'RatingInfo' object in SerpApi 'paid' and 'shopping' elements
+- add 'applicable_vouchers' array to 'amazon_product_info' element in MerchantApi
+- change location fields to array type in request objects in GoogleTrends (KeywordData API) endpoints
+        </PackageReleaseNotes>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="README.md" Pack="true" PackagePath="">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 

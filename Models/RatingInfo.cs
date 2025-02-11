@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         /// the value of the rating
         /// </summary>
         [Newtonsoft.Json.JsonProperty("value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public float? Value { get; set; }
+        public double? Value { get; set; }
 
         /// <summary>
         /// the amount of feedback

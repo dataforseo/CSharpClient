@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **ExtendedReviews**
 
 ```csharp
-public AppendixKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
+public AppendixAKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
 ```
 
 #### Property Value
 
-[AppendixKeywordsDataPriceDataInfo](./AppendixKeywordsDataPriceDataInfo.md)<br>
+[AppendixAKeywordsDataPriceDataInfo](./AppendixAKeywordsDataPriceDataInfo.md)<br>
 
 ### **HotelInfo**
 

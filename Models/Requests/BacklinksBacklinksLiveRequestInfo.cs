@@ -68,7 +68,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, =, &lt; &gt;, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex
+        /// <br/>=, &lt; &gt;, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex, match, not_match
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
         /// <br/>["rank","&gt;","80"]
@@ -115,9 +115,9 @@ namespace DataForSeo.Client.Models.Requests
         /// token for subsequent requests
         /// <br/>optional field
         /// <br/>provided in the identical filed of the response to each request;
-        /// <br/>use this parameter to avoid timeouts while trying to obtain over 100,000 results in a single request;
+        /// <br/>use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
         /// <br/>by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
-        /// <br/>search_after_token values are unique for each subsequent task
+        /// <br/>search_after_token values are unique for each subsequent task ;
         /// <br/>Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
         /// </summary>
         [Newtonsoft.Json.JsonProperty("search_after_token", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

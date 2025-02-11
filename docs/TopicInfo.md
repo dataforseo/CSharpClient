@@ -53,12 +53,12 @@ public string Language { get; set; }
 ### **Level**
 
 ```csharp
-public Nullable<int> Level { get; set; }
+public string Level { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **PrimaryContent**
 

@@ -494,7 +494,8 @@ A server side error occurred.
 
 **Remarks:**
 
-The Related Keywords endpoint provides keywords appearing in the  "searches related to" SERP element
+The Related Keywords endpoint provides keywords appearing in the
+ <br>  "searches related to" SERP element
  <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
 
@@ -523,7 +524,8 @@ A server side error occurred.
 
 **Remarks:**
 
-The Related Keywords endpoint provides keywords appearing in the  "searches related to" SERP element
+The Related Keywords endpoint provides keywords appearing in the
+ <br>  "searches related to" SERP element
  <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
 
@@ -1090,7 +1092,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
+ <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
 
 ### **GoogleTopSearchesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;, CancellationToken)**
@@ -1119,7 +1121,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
+ <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
 
 ### **GoogleDomainWhoisOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;)**

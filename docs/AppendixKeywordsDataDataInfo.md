@@ -173,22 +173,22 @@ public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { 
 ### **AudienceEstimation**
 
 ```csharp
-public AppendixDayLimitsRatesDataInfo AudienceEstimation { get; set; }
+public AppendixInfo AudienceEstimation { get; set; }
 ```
 
 #### Property Value
 
-[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
+[AppendixInfo](./AppendixInfo.md)<br>
 
 ### **KeywordSuggestionsForUrl**
 
 ```csharp
-public AppendixDayLimitsRatesDataInfo KeywordSuggestionsForUrl { get; set; }
+public AppendixInfo KeywordSuggestionsForUrl { get; set; }
 ```
 
 #### Property Value
 
-[AppendixDayLimitsRatesDataInfo](./AppendixDayLimitsRatesDataInfo.md)<br>
+[AppendixInfo](./AppendixInfo.md)<br>
 
 ### **Naver**
 

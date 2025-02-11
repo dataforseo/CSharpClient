@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class AppendixGoogleBusinessDataPriceData
     {
         [Newtonsoft.Json.JsonProperty("extended_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
+        public AppendixAKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixHotelInfoGoogleBusinessDataPriceData HotelInfo { get; set; }

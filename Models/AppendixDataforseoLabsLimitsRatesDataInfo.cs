@@ -106,6 +106,12 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("search_intent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo SearchIntent { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("historical_bulk_traffic_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("categories_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo CategoriesForKeywords { get; set; }
+
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
         [Newtonsoft.Json.JsonExtensionData]

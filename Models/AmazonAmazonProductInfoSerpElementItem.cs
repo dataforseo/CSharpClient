@@ -98,6 +98,12 @@ namespace DataForSeo.Client.Models
         public bool? IsNewerModelAvailable { get; set; }
 
         /// <summary>
+        /// array of objects containing information about applicable vouchers
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("applicable_vouchers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<AmazonApplicableVouchersItem> ApplicableVouchers { get; set; }
+
+        /// <summary>
         /// information about the newer model of the product
         /// </summary>
         [Newtonsoft.Json.JsonProperty("newer_model", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

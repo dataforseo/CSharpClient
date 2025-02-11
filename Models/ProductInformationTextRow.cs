@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class ProductInformationTextRow : BaseProductInformationRowItem
     {
         /// <summary>
-        /// text specified under the given title within the section_name
+        /// text of the voucher
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }

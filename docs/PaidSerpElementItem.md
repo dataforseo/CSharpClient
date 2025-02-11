@@ -30,6 +30,16 @@ public string Domain { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **WebsiteName**
+
+```csharp
+public string WebsiteName { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Breadcrumb**
 
 ```csharp
@@ -140,6 +150,16 @@ public PriceInfo Price { get; set; }
 
 [PriceInfo](./PriceInfo.md)<br>
 
+### **Rating**
+
+```csharp
+public RatingInfo Rating { get; set; }
+```
+
+#### Property Value
+
+[RatingInfo](./RatingInfo.md)<br>
+
 ### **Rectangle**
 
 ```csharp
@@ -149,16 +169,6 @@ public Rectangle Rectangle { get; set; }
 #### Property Value
 
 [Rectangle](./Rectangle.md)<br>
-
-### **WebsiteName**
-
-```csharp
-public string WebsiteName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **AdditionalProperties**
 

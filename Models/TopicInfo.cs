@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// HTML level
         /// </summary>
         [Newtonsoft.Json.JsonProperty("level", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Level { get; set; }
+        public string Level { get; set; }
 
         /// <summary>
         /// primary content on the page

@@ -23,12 +23,12 @@ public string RatingType { get; set; }
 ### **Value**
 
 ```csharp
-public Nullable<float> Value { get; set; }
+public Nullable<double> Value { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **VotesCount**
 

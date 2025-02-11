@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// the value of the rating
         /// </summary>
         [Newtonsoft.Json.JsonProperty("value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Value { get; set; }
+        public float? Value { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

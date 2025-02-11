@@ -6,14 +6,25 @@ namespace DataForSeo.Client.Models.Requests
     public partial class MerchantGoogleProductSpecTaskPostRequestInfo
     {
         /// <summary>
-        /// product ID
-        /// <br/>required field
-        /// <br/>unique product identifier in Google Shopping
-        /// <br/>you can receive the product_id by making a separate request to the Google Shopping Products endpoint
+        /// unique product identifier on Google Shopping
+        /// <br/>required field if data_docid is not specified
+        /// <br/>you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint
+        /// <br/>example:
+        /// <br/>4485466949985702538
         /// <br/>learn more about the parameter in this help center guide
         /// </summary>
         [Newtonsoft.Json.JsonProperty("product_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductId { get; set; }
+
+        /// <summary>
+        /// unique identifier of the SERP data element
+        /// <br/>required field if product_id is not specified
+        /// <br/>you can get this value for a certain element by making a separate request to the Google Shopping Products endpoint
+        /// <br/>example:
+        /// <br/>13071766526042404278
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("data_docid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string DataDocid { get; set; }
 
         /// <summary>
         /// task priority
@@ -22,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>1 – normal execution priority (set by default)
         /// <br/>2 – high execution priority
         /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>the cost can be calculated on the Pricing page.
         /// </summary>
         [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? Priority { get; set; }

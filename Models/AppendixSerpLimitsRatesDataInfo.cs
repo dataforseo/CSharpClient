@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
         public double? TasksFixed { get; set; }
 
         [Newtonsoft.Json.JsonProperty("jobs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixDayLimitsRatesDataInfo Jobs { get; set; }
+        public AppendixJobsSerpLimitsRatesDataInfo Jobs { get; set; }
 
         [Newtonsoft.Json.JsonProperty("screenshot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Screenshot { get; set; }

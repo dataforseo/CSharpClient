@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
         public long? ReviewsCount { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the element’s rating
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

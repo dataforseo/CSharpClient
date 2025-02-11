@@ -7,15 +7,24 @@ namespace DataForSeo.Client.Models.Requests
     {
         /// <summary>
         /// unique product identifier on Google Shopping
-        /// <br/>required field
-        /// <br/>you can get this value making a separate request to the Google Shopping Products endpoint
-        /// <br/>note that there is no full list of possible values as the product_id is a dynamic value assigned by Google
+        /// <br/>required field if data_docid is not specified
+        /// <br/>you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint
         /// <br/>example:
         /// <br/>4485466949985702538
         /// <br/>learn more about the parameter in this help center guide
         /// </summary>
         [Newtonsoft.Json.JsonProperty("product_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProductId { get; set; }
+
+        /// <summary>
+        /// unique identifier of the SERP data element
+        /// <br/>required field if product_id is not specified
+        /// <br/>you can get this value for a certain element by making a separate request to the Google Shopping Products endpoint
+        /// <br/>example:
+        /// <br/>13071766526042404278
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("data_docid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string DataDocid { get; set; }
 
         /// <summary>
         /// task priority

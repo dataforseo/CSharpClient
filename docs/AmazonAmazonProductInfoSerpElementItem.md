@@ -150,6 +150,16 @@ public Nullable<bool> IsNewerModelAvailable { get; set; }
 
 [Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **ApplicableVouchers**
+
+```csharp
+public ICollection<AmazonApplicableVouchersItem> ApplicableVouchers { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;AmazonApplicableVouchersItem&gt;](./AmazonApplicableVouchersItem.md)<br>
+
 ### **NewerModel**
 
 ```csharp

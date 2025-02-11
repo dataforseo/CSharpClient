@@ -90,6 +90,16 @@ public AppendixBingKeywordsDataPriceDataInfo CategoriesForDomain { get; set; }
 
 [AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
+### **CategoriesForKeywords**
+
+```csharp
+public AppendixBingKeywordsDataPriceDataInfo CategoriesForKeywords { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
+
 ### **CompetitorsDomain**
 
 ```csharp
@@ -149,6 +159,16 @@ public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
 #### Property Value
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
+
+### **HistoricalBulkTrafficEstimation**
+
+```csharp
+public AppendixBingKeywordsDataPriceDataInfo HistoricalBulkTrafficEstimation { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
 ### **HistoricalRankOverview**
 

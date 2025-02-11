@@ -350,6 +350,26 @@ public AppendixInfo SearchIntent { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
+### **HistoricalBulkTrafficEstimation**
+
+```csharp
+public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **CategoriesForKeywords**
+
+```csharp
+public AppendixInfo CategoriesForKeywords { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

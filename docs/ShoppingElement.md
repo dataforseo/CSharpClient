@@ -90,6 +90,16 @@ public string Url { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **Rating**
+
+```csharp
+public RatingInfo Rating { get; set; }
+```
+
+#### Property Value
+
+[RatingInfo](./RatingInfo.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

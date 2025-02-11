@@ -20,6 +20,16 @@ public string ProductId { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **DataDocid**
+
+```csharp
+public string DataDocid { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Priority**
 
 ```csharp

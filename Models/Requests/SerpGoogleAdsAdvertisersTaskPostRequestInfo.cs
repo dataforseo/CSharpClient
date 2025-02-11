@@ -19,32 +19,35 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
+        /// <br/>optional field
         /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
         /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_advertisers/locations
         /// <br/>example:
         /// <br/>London,England,United Kingdom
+        /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
+        /// <br/>optional field
         /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_advertisers/locations
         /// <br/>example:
         /// <br/>2840
+        /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
+        /// <br/>optional field
         /// <br/>if you use this field, you don’t need to specify location_name or location_code
         /// <br/>example:
         /// <br/>52.6178549,-155.352142
+        /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_coordinate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }

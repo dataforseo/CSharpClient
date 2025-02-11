@@ -81,10 +81,11 @@ namespace DataForSeo.Client.Models
         public System.Collections.Generic.ICollection<MonthlySearches> MonthlySearches { get; set; }
 
         /// <summary>
-        /// search volume trend changes\nrepresents search volume change in percent compared to the previous period
+        /// search volume trend changes
+        /// <br/>represents search volume change in percent compared to the previous period
         /// </summary>
         [Newtonsoft.Json.JsonProperty("search_volume_trend", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SearchVolumeTrendInfo SearchVolumeTrend { get; set; }
+        public SearchVolumeTrend SearchVolumeTrend { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

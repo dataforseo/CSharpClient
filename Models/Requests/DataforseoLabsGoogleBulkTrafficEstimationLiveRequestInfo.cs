@@ -78,6 +78,15 @@ namespace DataForSeo.Client.Models.Requests
         public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
 
         /// <summary>
+        /// ignore highly similar keywords
+        /// <br/>optional field
+        /// <br/>if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
+        /// <br/>default value: false
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("ignore_synonyms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IgnoreSynonyms { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

@@ -70,6 +70,16 @@ public ICollection<string> ItemTypes { get; set; }
 
 [ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **IgnoreSynonyms**
+
+```csharp
+public Nullable<bool> IgnoreSynonyms { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **Tag**
 
 ```csharp

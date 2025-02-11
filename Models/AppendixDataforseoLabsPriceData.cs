@@ -28,6 +28,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("categories_for_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo CategoriesForDomain { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("categories_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo CategoriesForKeywords { get; set; }
+
         [Newtonsoft.Json.JsonProperty("competitors_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo CompetitorsDomain { get; set; }
 
@@ -45,6 +48,9 @@ namespace DataForSeo.Client.Models
 
         [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("historical_bulk_traffic_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo HistoricalBulkTrafficEstimation { get; set; }
 
         [Newtonsoft.Json.JsonProperty("historical_rank_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
