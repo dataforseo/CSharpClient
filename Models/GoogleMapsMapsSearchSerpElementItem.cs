@@ -5,6 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class GoogleMapsMapsSearchSerpElementItem : BaseGoogleMapsSerpElementItem
     {
         /// <summary>
+        /// original title of the element
+        /// <br/>original title not translated by Google
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("original_title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string OriginalTitle { get; set; }
+
+        /// <summary>
         /// URL of the preferred contact page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("contact_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

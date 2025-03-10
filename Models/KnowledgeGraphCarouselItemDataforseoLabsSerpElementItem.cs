@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// title of the link
+        /// title of the result in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google defined data attribute ID
         /// <br/>example:
-        /// <br/>ss:/webfacts:net_worth
+        /// <br/>action:listen_artist
         /// </summary>
         [Newtonsoft.Json.JsonProperty("data_attrid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }
@@ -25,8 +25,7 @@ namespace DataForSeo.Client.Models
         public LinkElement Link { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// elements of search results found in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<KnowledgeGraphListElement> Items { get; set; }

@@ -50,6 +50,46 @@ public ICollection<TopicInfo> SecondaryTopic { get; set; }
 
 [ICollection&lt;TopicInfo&gt;](./TopicInfo.md)<br>
 
+### **Ratings**
+
+```csharp
+public ICollection<ContentRatingInfo> Ratings { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;ContentRatingInfo&gt;](./ContentRatingInfo.md)<br>
+
+### **Offers**
+
+```csharp
+public ICollection<ContentOfferInfo> Offers { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;ContentOfferInfo&gt;](./ContentOfferInfo.md)<br>
+
+### **Comments**
+
+```csharp
+public ICollection<ContentCommentInfo> Comments { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;ContentCommentInfo&gt;](./ContentCommentInfo.md)<br>
+
+### **Contacts**
+
+```csharp
+public Contacts Contacts { get; set; }
+```
+
+#### Property Value
+
+[Contacts](./Contacts.md)<br>
+
 ### **AdditionalProperties**
 
 ```csharp

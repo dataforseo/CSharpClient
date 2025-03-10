@@ -1637,6 +1637,1008 @@ A server side error occurred.
 Description of the fields for sending a request:
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/html/?bash'
 
+### **GoogleFinanceExploreTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTaskPostResponseInfo> GoogleFinanceExploreTaskPostAsync(IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;](./SerpGoogleFinanceExploreTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTaskPostResponseInfo&gt;](./SerpGoogleFinanceExploreTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash'
+
+### **GoogleFinanceExploreTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTaskPostResponseInfo> GoogleFinanceExploreTaskPostAsync(IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;](./SerpGoogleFinanceExploreTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTaskPostResponseInfo&gt;](./SerpGoogleFinanceExploreTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash'
+
+### **GoogleFinanceExploreTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTasksReadyResponseInfo> GoogleFinanceExploreTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTasksReadyResponseInfo&gt;](./SerpGoogleFinanceExploreTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash'
+
+### **GoogleFinanceExploreTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTasksReadyResponseInfo> GoogleFinanceExploreTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTasksReadyResponseInfo&gt;](./SerpGoogleFinanceExploreTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash'
+
+### **GoogleFinanceExploreTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> GoogleFinanceExploreTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash'
+
+### **GoogleFinanceExploreTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> GoogleFinanceExploreTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash'
+
+### **GoogleFinanceExploreTaskGetHtmlAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> GoogleFinanceExploreTaskGetHtmlAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash'
+
+### **GoogleFinanceExploreTaskGetHtmlAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> GoogleFinanceExploreTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash'
+
+### **GoogleFinanceExploreLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> GoogleFinanceExploreLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash'
+
+### **GoogleFinanceExploreLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> GoogleFinanceExploreLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash'
+
+### **GoogleFinanceExploreLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreLiveHtmlResponseInfo> GoogleFinanceExploreLiveHtmlAsync(IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash'
+
+### **GoogleFinanceExploreLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceExploreLiveHtmlResponseInfo> GoogleFinanceExploreLiveHtmlAsync(IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceExploreLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash'
+
+### **GoogleFinanceMarketsTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTaskPostResponseInfo> GoogleFinanceMarketsTaskPostAsync(IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;](./SerpGoogleFinanceMarketsTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTaskPostResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash'
+
+### **GoogleFinanceMarketsTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTaskPostResponseInfo> GoogleFinanceMarketsTaskPostAsync(IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;](./SerpGoogleFinanceMarketsTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTaskPostResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash'
+
+### **GoogleFinanceMarketsTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTasksReadyResponseInfo> GoogleFinanceMarketsTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTasksReadyResponseInfo&gt;](./SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash'
+
+### **GoogleFinanceMarketsTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTasksReadyResponseInfo> GoogleFinanceMarketsTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTasksReadyResponseInfo&gt;](./SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash'
+
+### **GoogleFinanceMarketsTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> GoogleFinanceMarketsTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash'
+
+### **GoogleFinanceMarketsTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> GoogleFinanceMarketsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash'
+
+### **GoogleFinanceMarketsTaskGetHtmlAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> GoogleFinanceMarketsTaskGetHtmlAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash'
+
+### **GoogleFinanceMarketsTaskGetHtmlAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> GoogleFinanceMarketsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash'
+
+### **GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash'
+
+### **GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash'
+
+### **GoogleFinanceMarketsLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> GoogleFinanceMarketsLiveHtmlAsync(IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash'
+
+### **GoogleFinanceMarketsLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> GoogleFinanceMarketsLiveHtmlAsync(IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceMarketsLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash'
+
+### **GoogleFinanceQuoteTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTaskPostResponseInfo> GoogleFinanceQuoteTaskPostAsync(IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;](./SerpGoogleFinanceQuoteTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTaskPostResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash'
+
+### **GoogleFinanceQuoteTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTaskPostResponseInfo> GoogleFinanceQuoteTaskPostAsync(IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;](./SerpGoogleFinanceQuoteTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTaskPostResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash'
+
+### **GoogleFinanceQuoteTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTasksReadyResponseInfo> GoogleFinanceQuoteTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTasksReadyResponseInfo&gt;](./SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash'
+
+### **GoogleFinanceQuoteTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTasksReadyResponseInfo> GoogleFinanceQuoteTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTasksReadyResponseInfo&gt;](./SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash'
+
+### **GoogleFinanceQuoteTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
+
+### **GoogleFinanceQuoteTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
+
+### **GoogleFinanceQuoteTaskGetHtmlAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> GoogleFinanceQuoteTaskGetHtmlAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash'
+
+### **GoogleFinanceQuoteTaskGetHtmlAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> GoogleFinanceQuoteTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 7 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+Description of the fields for sending a request:
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash'
+
+### **GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash'
+
+### **GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash'
+
+### **GoogleFinanceQuoteLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> GoogleFinanceQuoteLiveHtmlAsync(IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
+
+### **GoogleFinanceQuoteLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> GoogleFinanceQuoteLiveHtmlAsync(IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceQuoteLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
+
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
 ```csharp

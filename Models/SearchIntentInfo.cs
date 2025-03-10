@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public System.Collections.Generic.ICollection<string> ForeignIntent { get; set; }
 
         /// <summary>
-        /// date and time when the dataset was updated
+        /// date and time when backlink data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

@@ -220,6 +220,16 @@ public string SearchParam { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **RemoveFromUrl**
+
+```csharp
+public ICollection<string> RemoveFromUrl { get; set; }
+```
+
+#### Property Value
+
+[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **Tag**
 
 ```csharp

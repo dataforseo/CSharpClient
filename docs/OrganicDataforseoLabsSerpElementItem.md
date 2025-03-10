@@ -173,12 +173,12 @@ public ICollection<string> Highlighted { get; set; }
 ### **Links**
 
 ```csharp
-public ICollection<LinkElement> Links { get; set; }
+public object Links { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./LinkElement.md)<br>
+[Object](https://docs.microsoft.com/en-us/dotnet/api/Object)<br>
 
 ### **AboutThisResult**
 

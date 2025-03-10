@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, you will get DataForSEO search volume values based on clickstream data;
         /// <br/>if set to false, Bing search volume data will be used to calculate DataForSEO search volume;
         /// <br/>default value: true;
-        /// <br/>Note: some locations may not be available for calculating Bing search volume, in this case search volume will be calculated based on clickstream data even if you set this parameter to false
+        /// <br/>Note: Bing search volume is available for locations provided in Bing Search Volume History Locations and Bing Ads Locations endpoints; search volume values for any other location are calculated based on clickstream data even if you set this parameter to false
         /// </summary>
         [Newtonsoft.Json.JsonProperty("use_clickstream", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool? UseClickstream { get; set; }

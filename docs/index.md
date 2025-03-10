@@ -332,8 +332,6 @@
 
 [AppUserProfileInfo](./AppUserProfileInfo.md)
 
-[AryContentInfo](./AryContentInfo.md)
-
 [AuthorsElement](./AuthorsElement.md)
 
 [AvailableLanguages](./AvailableLanguages.md)
@@ -401,6 +399,8 @@
 [BaseDataforseoTrendsItem](./BaseDataforseoTrendsItem.md)
 
 [BaseGoogleAdsAdvertisersSerpElementItem](./BaseGoogleAdsAdvertisersSerpElementItem.md)
+
+[BaseGoogleFinanceSerpElementItem](./BaseGoogleFinanceSerpElementItem.md)
 
 [BaseGoogleImagesSerpElementItem](./BaseGoogleImagesSerpElementItem.md)
 
@@ -480,17 +480,21 @@
 
 [ConceptInfo](./ConceptInfo.md)
 
-[ContentAnalysisCategoriesInfo](./ContentAnalysisCategoriesInfo.md)
+[Contacts](./Contacts.md)
 
-[ContentAnalysisRatingInfo](./ContentAnalysisRatingInfo.md)
+[ContentAnalysisCategoriesInfo](./ContentAnalysisCategoriesInfo.md)
 
 [ContentAnalysisSearchLiveItem](./ContentAnalysisSearchLiveItem.md)
 
 [ContentAnalysisSummaryInfo](./ContentAnalysisSummaryInfo.md)
 
+[ContentCommentInfo](./ContentCommentInfo.md)
+
 [ContentGenerationCheckGrammarLiveItem](./ContentGenerationCheckGrammarLiveItem.md)
 
-[ContentItemInfo](./ContentItemInfo.md)
+[ContentOfferInfo](./ContentOfferInfo.md)
+
+[ContentRatingInfo](./ContentRatingInfo.md)
 
 [ContentUrlInfo](./ContentUrlInfo.md)
 
@@ -658,6 +662,34 @@
 
 [GoogleBusinessPostBusinessDataSerpElementItem](./GoogleBusinessPostBusinessDataSerpElementItem.md)
 
+[GoogleFinanceAssetPairElement](./GoogleFinanceAssetPairElement.md)
+
+[GoogleFinanceEarningsCalendarElement](./GoogleFinanceEarningsCalendarElement.md)
+
+[GoogleFinanceEarningsCalendarSerpElementItem](./GoogleFinanceEarningsCalendarSerpElementItem.md)
+
+[GoogleFinanceHeroGroupsSerpElementItem](./GoogleFinanceHeroGroupsSerpElementItem.md)
+
+[GoogleFinanceInterestedSerpElementItem](./GoogleFinanceInterestedSerpElementItem.md)
+
+[GoogleFinanceMarketIndexElement](./GoogleFinanceMarketIndexElement.md)
+
+[GoogleFinanceMarketInstrumentElement](./GoogleFinanceMarketInstrumentElement.md)
+
+[GoogleFinanceMarketsInfo](./GoogleFinanceMarketsInfo.md)
+
+[GoogleFinanceMarketTrendsElement](./GoogleFinanceMarketTrendsElement.md)
+
+[GoogleFinanceMarketTrendsSerpElementItem](./GoogleFinanceMarketTrendsSerpElementItem.md)
+
+[GoogleFinanceMostFollowedSerpElementItem](./GoogleFinanceMostFollowedSerpElementItem.md)
+
+[GoogleFinanceNewsElement](./GoogleFinanceNewsElement.md)
+
+[GoogleFinanceNewsSerpElementItem](./GoogleFinanceNewsSerpElementItem.md)
+
+[GoogleFinancePeopleAlsoSearchSerpElementItem](./GoogleFinancePeopleAlsoSearchSerpElementItem.md)
+
 [GoogleFlightsDataforseoLabsSerpElementItem](./GoogleFlightsDataforseoLabsSerpElementItem.md)
 
 [GoogleFlightsElement](./GoogleFlightsElement.md)
@@ -716,6 +748,8 @@
 
 [GraphElement](./GraphElement.md)
 
+[GraphItems](./GraphItems.md)
+
 [Groups](./Groups.md)
 
 [HistoricalMetricsBundleInfo](./HistoricalMetricsBundleInfo.md)
@@ -765,6 +799,8 @@
 [ImpressionsInfo](./ImpressionsInfo.md)
 
 [IndexHistory](./IndexHistory.md)
+
+[Info](./Info.md)
 
 [InformationAndTicketsElement](./InformationAndTicketsElement.md)
 
@@ -916,8 +952,6 @@
 
 [MicrodataInspectionInfo](./MicrodataInspectionInfo.md)
 
-[MicrodataTestResultsInfo](./MicrodataTestResultsInfo.md)
-
 [MonthlySearches](./MonthlySearches.md)
 
 [MultiCarouselDataforseoLabsSerpElementItem](./MultiCarouselDataforseoLabsSerpElementItem.md)
@@ -927,8 +961,6 @@
 [MultiCarouselSerpElementItem](./MultiCarouselSerpElementItem.md)
 
 [OnPageContentParsingItem](./OnPageContentParsingItem.md)
-
-[OnPageContentParsingLiveItem](./OnPageContentParsingLiveItem.md)
 
 [OnPageDuplicateContentItem](./OnPageDuplicateContentItem.md)
 
@@ -1128,6 +1160,8 @@
 
 [SearchVolumeTrend](./SearchVolumeTrend.md)
 
+[SectionContentItemInfo](./SectionContentItemInfo.md)
+
 [SentimentConnotationDistribution](./SentimentConnotationDistribution.md)
 
 [SerpAiSummaryItem](./SerpAiSummaryItem.md)
@@ -1137,6 +1171,8 @@
 [SerpGoogleAutocompleteAdvancedItem](./SerpGoogleAutocompleteAdvancedItem.md)
 
 [SerpGoogleDatasetAdvancedItem](./SerpGoogleDatasetAdvancedItem.md)
+
+[SerpGoogleFinanceExploreAdvancedItem](./SerpGoogleFinanceExploreAdvancedItem.md)
 
 [SerpGoogleJobsTaskGetAdvancedItem](./SerpGoogleJobsTaskGetAdvancedItem.md)
 
@@ -1178,7 +1214,7 @@
 
 [Table](./Table.md)
 
-[TableContent](./TableContent.md)
+[TableContentInfo](./TableContentInfo.md)
 
 [TableContentItemInfo](./TableContentItemInfo.md)
 
@@ -1229,8 +1265,6 @@
 [TwitterElement](./TwitterElement.md)
 
 [TwitterSerpElementItem](./TwitterSerpElementItem.md)
-
-[Urls](./Urls.md)
 
 [UserProfileInfo](./UserProfileInfo.md)
 
@@ -1693,6 +1727,24 @@
 [SerpGoogleEventsLiveAdvancedRequestInfo](./SerpGoogleEventsLiveAdvancedRequestInfo.md)
 
 [SerpGoogleEventsTaskPostRequestInfo](./SerpGoogleEventsTaskPostRequestInfo.md)
+
+[SerpGoogleFinanceExploreLiveAdvancedRequestInfo](./SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)
+
+[SerpGoogleFinanceExploreLiveHtmlRequestInfo](./SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)
+
+[SerpGoogleFinanceExploreTaskPostRequestInfo](./SerpGoogleFinanceExploreTaskPostRequestInfo.md)
+
+[SerpGoogleFinanceMarketsLiveAdvancedRequestInfo](./SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)
+
+[SerpGoogleFinanceMarketsLiveHtmlRequestInfo](./SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)
+
+[SerpGoogleFinanceMarketsTaskPostRequestInfo](./SerpGoogleFinanceMarketsTaskPostRequestInfo.md)
+
+[SerpGoogleFinanceQuoteLiveAdvancedRequestInfo](./SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)
+
+[SerpGoogleFinanceQuoteLiveHtmlRequestInfo](./SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)
+
+[SerpGoogleFinanceQuoteTaskPostRequestInfo](./SerpGoogleFinanceQuoteTaskPostRequestInfo.md)
 
 [SerpGoogleImagesLiveAdvancedRequestInfo](./SerpGoogleImagesLiveAdvancedRequestInfo.md)
 
@@ -4161,6 +4213,108 @@
 [SerpGoogleEventsTasksReadyResultInfo](./SerpGoogleEventsTasksReadyResultInfo.md)
 
 [SerpGoogleEventsTasksReadyTaskInfo](./SerpGoogleEventsTasksReadyTaskInfo.md)
+
+[SerpGoogleFinanceExploreLiveAdvancedResponseInfo](./SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceExploreLiveAdvancedResultInfo](./SerpGoogleFinanceExploreLiveAdvancedResultInfo.md)
+
+[SerpGoogleFinanceExploreLiveAdvancedTaskInfo](./SerpGoogleFinanceExploreLiveAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceExploreLiveHtmlResponseInfo](./SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)
+
+[SerpGoogleFinanceExploreLiveHtmlResultInfo](./SerpGoogleFinanceExploreLiveHtmlResultInfo.md)
+
+[SerpGoogleFinanceExploreLiveHtmlTaskInfo](./SerpGoogleFinanceExploreLiveHtmlTaskInfo.md)
+
+[SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo](./SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceExploreTaskGetAdvancedResultInfo](./SerpGoogleFinanceExploreTaskGetAdvancedResultInfo.md)
+
+[SerpGoogleFinanceExploreTaskGetAdvancedTaskInfo](./SerpGoogleFinanceExploreTaskGetAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceExploreTaskGetHtmlResponseInfo](./SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)
+
+[SerpGoogleFinanceExploreTaskGetHtmlResultInfo](./SerpGoogleFinanceExploreTaskGetHtmlResultInfo.md)
+
+[SerpGoogleFinanceExploreTaskGetHtmlTaskInfo](./SerpGoogleFinanceExploreTaskGetHtmlTaskInfo.md)
+
+[SerpGoogleFinanceExploreTaskPostResponseInfo](./SerpGoogleFinanceExploreTaskPostResponseInfo.md)
+
+[SerpGoogleFinanceExploreTaskPostTaskInfo](./SerpGoogleFinanceExploreTaskPostTaskInfo.md)
+
+[SerpGoogleFinanceExploreTasksReadyResponseInfo](./SerpGoogleFinanceExploreTasksReadyResponseInfo.md)
+
+[SerpGoogleFinanceExploreTasksReadyResultInfo](./SerpGoogleFinanceExploreTasksReadyResultInfo.md)
+
+[SerpGoogleFinanceExploreTasksReadyTaskInfo](./SerpGoogleFinanceExploreTasksReadyTaskInfo.md)
+
+[SerpGoogleFinanceMarketsLiveAdvancedResponseInfo](./SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceMarketsLiveAdvancedResultInfo](./SerpGoogleFinanceMarketsLiveAdvancedResultInfo.md)
+
+[SerpGoogleFinanceMarketsLiveAdvancedTaskInfo](./SerpGoogleFinanceMarketsLiveAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceMarketsLiveHtmlResponseInfo](./SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)
+
+[SerpGoogleFinanceMarketsLiveHtmlResultInfo](./SerpGoogleFinanceMarketsLiveHtmlResultInfo.md)
+
+[SerpGoogleFinanceMarketsLiveHtmlTaskInfo](./SerpGoogleFinanceMarketsLiveHtmlTaskInfo.md)
+
+[SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo](./SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceMarketsTaskGetAdvancedResultInfo](./SerpGoogleFinanceMarketsTaskGetAdvancedResultInfo.md)
+
+[SerpGoogleFinanceMarketsTaskGetAdvancedTaskInfo](./SerpGoogleFinanceMarketsTaskGetAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo](./SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)
+
+[SerpGoogleFinanceMarketsTaskGetHtmlResultInfo](./SerpGoogleFinanceMarketsTaskGetHtmlResultInfo.md)
+
+[SerpGoogleFinanceMarketsTaskGetHtmlTaskInfo](./SerpGoogleFinanceMarketsTaskGetHtmlTaskInfo.md)
+
+[SerpGoogleFinanceMarketsTaskPostResponseInfo](./SerpGoogleFinanceMarketsTaskPostResponseInfo.md)
+
+[SerpGoogleFinanceMarketsTaskPostTaskInfo](./SerpGoogleFinanceMarketsTaskPostTaskInfo.md)
+
+[SerpGoogleFinanceMarketsTasksReadyResponseInfo](./SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)
+
+[SerpGoogleFinanceMarketsTasksReadyResultInfo](./SerpGoogleFinanceMarketsTasksReadyResultInfo.md)
+
+[SerpGoogleFinanceMarketsTasksReadyTaskInfo](./SerpGoogleFinanceMarketsTasksReadyTaskInfo.md)
+
+[SerpGoogleFinanceQuoteLiveAdvancedResponseInfo](./SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceQuoteLiveAdvancedResultInfo](./SerpGoogleFinanceQuoteLiveAdvancedResultInfo.md)
+
+[SerpGoogleFinanceQuoteLiveAdvancedTaskInfo](./SerpGoogleFinanceQuoteLiveAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceQuoteLiveHtmlResponseInfo](./SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)
+
+[SerpGoogleFinanceQuoteLiveHtmlResultInfo](./SerpGoogleFinanceQuoteLiveHtmlResultInfo.md)
+
+[SerpGoogleFinanceQuoteLiveHtmlTaskInfo](./SerpGoogleFinanceQuoteLiveHtmlTaskInfo.md)
+
+[SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo](./SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceQuoteTaskGetAdvancedResultInfo](./SerpGoogleFinanceQuoteTaskGetAdvancedResultInfo.md)
+
+[SerpGoogleFinanceQuoteTaskGetAdvancedTaskInfo](./SerpGoogleFinanceQuoteTaskGetAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo](./SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)
+
+[SerpGoogleFinanceQuoteTaskGetHtmlResultInfo](./SerpGoogleFinanceQuoteTaskGetHtmlResultInfo.md)
+
+[SerpGoogleFinanceQuoteTaskGetHtmlTaskInfo](./SerpGoogleFinanceQuoteTaskGetHtmlTaskInfo.md)
+
+[SerpGoogleFinanceQuoteTaskPostResponseInfo](./SerpGoogleFinanceQuoteTaskPostResponseInfo.md)
+
+[SerpGoogleFinanceQuoteTaskPostTaskInfo](./SerpGoogleFinanceQuoteTaskPostTaskInfo.md)
+
+[SerpGoogleFinanceQuoteTasksReadyResponseInfo](./SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)
+
+[SerpGoogleFinanceQuoteTasksReadyResultInfo](./SerpGoogleFinanceQuoteTasksReadyResultInfo.md)
+
+[SerpGoogleFinanceQuoteTasksReadyTaskInfo](./SerpGoogleFinanceQuoteTasksReadyTaskInfo.md)
 
 [SerpGoogleImagesLiveAdvancedResponseInfo](./SerpGoogleImagesLiveAdvancedResponseInfo.md)
 

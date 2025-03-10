@@ -183,12 +183,12 @@ public string SemanticLocation { get; set; }
 ### **Rating**
 
 ```csharp
-public ContentAnalysisRatingInfo Rating { get; set; }
+public ContentRatingInfo Rating { get; set; }
 ```
 
 #### Property Value
 
-[ContentAnalysisRatingInfo](./ContentAnalysisRatingInfo.md)<br>
+[ContentRatingInfo](./ContentRatingInfo.md)<br>
 
 ### **GroupDate**
 

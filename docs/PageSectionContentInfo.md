@@ -13,32 +13,32 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Pa
 ### **PrimaryContent**
 
 ```csharp
-public ICollection<ContentItemInfo> PrimaryContent { get; set; }
+public ICollection<SectionContentItemInfo> PrimaryContent { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;ContentItemInfo&gt;](./ContentItemInfo.md)<br>
+[ICollection&lt;SectionContentItemInfo&gt;](./SectionContentItemInfo.md)<br>
 
 ### **SecondaryContent**
 
 ```csharp
-public ICollection<ContentItemInfo> SecondaryContent { get; set; }
+public ICollection<SectionContentItemInfo> SecondaryContent { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;ContentItemInfo&gt;](./ContentItemInfo.md)<br>
+[ICollection&lt;SectionContentItemInfo&gt;](./SectionContentItemInfo.md)<br>
 
 ### **TableContent**
 
 ```csharp
-public ICollection<TableContent> TableContent { get; set; }
+public ICollection<TableContentInfo> TableContent { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;TableContent&gt;](./TableContent.md)<br>
+[ICollection&lt;TableContentInfo&gt;](./TableContentInfo.md)<br>
 
 ### **AdditionalProperties**
 

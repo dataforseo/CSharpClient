@@ -10,11 +10,11 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Errors { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("webhook_resend", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? WebhookResend { get; set; }
-
         [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Status { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("webhook_resend", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? WebhookResend { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

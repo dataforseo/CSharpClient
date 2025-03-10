@@ -10,16 +10,6 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ba
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
 ### **Title**
 
 ```csharp

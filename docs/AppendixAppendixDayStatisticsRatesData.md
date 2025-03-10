@@ -30,20 +30,20 @@ public Nullable<double> Errors { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **WebhookResend**
+### **Status**
 
 ```csharp
-public Nullable<double> WebhookResend { get; set; }
+public Nullable<double> Status { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Status**
+### **WebhookResend**
 
 ```csharp
-public Nullable<double> Status { get; set; }
+public Nullable<double> WebhookResend { get; set; }
 ```
 
 #### Property Value

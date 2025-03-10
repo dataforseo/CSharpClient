@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         public string CardId { get; set; }
 
         /// <summary>
-        /// relevant URL of the Ad element in SERP
+        /// relevant URL in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -59,7 +59,8 @@ namespace DataForSeo.Client.Models
         public string Cid { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseDataforseoLabsSerpElementItem> Items { get; set; }

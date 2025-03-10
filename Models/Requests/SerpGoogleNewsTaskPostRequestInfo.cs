@@ -22,7 +22,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// direct URL of the search query
         /// <br/>optional field
-        /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
+        /// <br/>you can specify a direct URL and we will sort it out to the necessary fields;
+        /// <br/>Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method;
         /// <br/>example:
         /// <br/>https://www.google.co.uk/search?q=%20rank%20tracker%20api&amp;hl=en&amp;gl=GB&amp;uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
         /// </summary>

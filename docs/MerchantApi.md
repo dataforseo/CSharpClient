@@ -2086,7 +2086,6 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>This endpoint will provide you with a list of reviews for the target Amazon product.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
 
 ### **AmazonReviewsTaskPostAsync(IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;, CancellationToken)**
@@ -2115,7 +2114,6 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>This endpoint will provide you with a list of reviews for the target Amazon product.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
 
 ### **AmazonReviewsTasksReadyAsync()**

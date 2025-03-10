@@ -3124,7 +3124,6 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌‌
-        /// <br/>This endpoint will provide you with a list of reviews for the target Amazon product.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -3137,7 +3136,6 @@ namespace DataForSeo.Client.Api
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
         /// ‌‌
-        /// <br/>This endpoint will provide you with a list of reviews for the target Amazon product.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>

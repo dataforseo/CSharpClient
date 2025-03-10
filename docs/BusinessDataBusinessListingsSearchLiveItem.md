@@ -30,6 +30,16 @@ public string Title { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **OriginalTitle**
+
+```csharp
+public string OriginalTitle { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Description**
 
 ```csharp

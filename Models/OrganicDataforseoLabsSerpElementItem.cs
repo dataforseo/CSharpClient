@@ -108,7 +108,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkElement> Links { get; set; }
+        public object Links { get; set; }
 
         /// <summary>
         /// contains information from the ‘About this result’ panel

@@ -370,30 +370,20 @@ public AppendixInfo CategoriesForKeywords { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **AvailableHistory**
+### **Amazon**
 
 ```csharp
-public Nullable<double> AvailableHistory { get; set; }
+public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
 
-### **Status**
-
-```csharp
-public Nullable<double> Status { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IdList**
+### **Languages**
 
 ```csharp
-public Nullable<double> IdList { get; set; }
+public Nullable<double> Languages { get; set; }
 ```
 
 #### Property Value
@@ -410,10 +400,30 @@ public AppendixInfo TopGoogleSearches { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **Languages**
+### **Status**
 
 ```csharp
-public Nullable<double> Languages { get; set; }
+public Nullable<double> Status { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **AvailableHistory**
+
+```csharp
+public Nullable<double> AvailableHistory { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **IdList**
+
+```csharp
+public Nullable<double> IdList { get; set; }
 ```
 
 #### Property Value
@@ -429,16 +439,6 @@ public Nullable<double> AvailableFilters { get; set; }
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Amazon**
-
-```csharp
-public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
-```
-
-#### Property Value
-
-[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

@@ -11,10 +11,8 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// date and time when SERP data was updated
+        /// date and time when the clickstream dataset was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
         [Newtonsoft.Json.JsonProperty("last_updated_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }

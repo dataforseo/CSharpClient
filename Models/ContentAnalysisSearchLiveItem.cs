@@ -104,7 +104,7 @@ namespace DataForSeo.Client.Models
         /// <br/>all ratings found on the page based on microdata
         /// </summary>
         [Newtonsoft.Json.JsonProperty("ratings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ContentAnalysisRatingInfo> Ratings { get; set; }
+        public System.Collections.Generic.ICollection<ContentRatingInfo> Ratings { get; set; }
 
         /// <summary>
         /// social media engagement metrics

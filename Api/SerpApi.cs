@@ -12701,6 +12701,1512 @@ namespace DataForSeo.Client.Api
             }
         }
 
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceExploreTaskPostResponseInfo> GoogleFinanceExploreTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo> body)
+        {
+            return GoogleFinanceExploreTaskPostAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceExploreTaskPostResponseInfo> GoogleFinanceExploreTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_explore/task_post"
+                    urlBuilder_.Append("v3/serp/google/finance_explore/task_post");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceExploreTaskPostResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceExploreTasksReadyResponseInfo> GoogleFinanceExploreTasksReadyAsync()
+        {
+            return GoogleFinanceExploreTasksReadyAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceExploreTasksReadyResponseInfo> GoogleFinanceExploreTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_explore/tasks_ready"
+                    urlBuilder_.Append("v3/serp/google/finance_explore/tasks_ready");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceExploreTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> GoogleFinanceExploreTaskGetAdvancedAsync(string id)
+        {
+            return GoogleFinanceExploreTaskGetAdvancedAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> GoogleFinanceExploreTaskGetAdvancedAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_explore/task_get/advanced/{id}"
+                    urlBuilder_.Append("v3/serp/google/finance_explore/task_get/advanced/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 7 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> GoogleFinanceExploreTaskGetHtmlAsync(string id)
+        {
+            return GoogleFinanceExploreTaskGetHtmlAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 7 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> GoogleFinanceExploreTaskGetHtmlAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_explore/task_get/html/{id}"
+                    urlBuilder_.Append("v3/serp/google/finance_explore/task_get/html/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> GoogleFinanceExploreLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> body)
+        {
+            return GoogleFinanceExploreLiveAdvancedAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> GoogleFinanceExploreLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_explore/live/advanced"
+                    urlBuilder_.Append("v3/serp/google/finance_explore/live/advanced");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceExploreLiveAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceExploreLiveHtmlResponseInfo> GoogleFinanceExploreLiveHtmlAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo> body)
+        {
+            return GoogleFinanceExploreLiveHtmlAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceExploreLiveHtmlResponseInfo> GoogleFinanceExploreLiveHtmlAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_explore/live/html"
+                    urlBuilder_.Append("v3/serp/google/finance_explore/live/html");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceExploreLiveHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTaskPostResponseInfo> GoogleFinanceMarketsTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo> body)
+        {
+            return GoogleFinanceMarketsTaskPostAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTaskPostResponseInfo> GoogleFinanceMarketsTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_markets/task_post"
+                    urlBuilder_.Append("v3/serp/google/finance_markets/task_post");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceMarketsTaskPostResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTasksReadyResponseInfo> GoogleFinanceMarketsTasksReadyAsync()
+        {
+            return GoogleFinanceMarketsTasksReadyAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTasksReadyResponseInfo> GoogleFinanceMarketsTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_markets/tasks_ready"
+                    urlBuilder_.Append("v3/serp/google/finance_markets/tasks_ready");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceMarketsTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> GoogleFinanceMarketsTaskGetAdvancedAsync(string id)
+        {
+            return GoogleFinanceMarketsTaskGetAdvancedAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> GoogleFinanceMarketsTaskGetAdvancedAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_markets/task_get/advanced/{id}"
+                    urlBuilder_.Append("v3/serp/google/finance_markets/task_get/advanced/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 7 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> GoogleFinanceMarketsTaskGetHtmlAsync(string id)
+        {
+            return GoogleFinanceMarketsTaskGetHtmlAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 7 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> GoogleFinanceMarketsTaskGetHtmlAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_markets/task_get/html/{id}"
+                    urlBuilder_.Append("v3/serp/google/finance_markets/task_get/html/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> GoogleFinanceMarketsLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> body)
+        {
+            return GoogleFinanceMarketsLiveAdvancedAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> GoogleFinanceMarketsLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_markets/live/advanced"
+                    urlBuilder_.Append("v3/serp/google/finance_markets/live/advanced");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> GoogleFinanceMarketsLiveHtmlAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> body)
+        {
+            return GoogleFinanceMarketsLiveHtmlAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> GoogleFinanceMarketsLiveHtmlAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_markets/live/html"
+                    urlBuilder_.Append("v3/serp/google/finance_markets/live/html");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceMarketsLiveHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskPostResponseInfo> GoogleFinanceQuoteTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo> body)
+        {
+            return GoogleFinanceQuoteTaskPostAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskPostResponseInfo> GoogleFinanceQuoteTaskPostAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_quote/task_post"
+                    urlBuilder_.Append("v3/serp/google/finance_quote/task_post");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceQuoteTaskPostResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTasksReadyResponseInfo> GoogleFinanceQuoteTasksReadyAsync()
+        {
+            return GoogleFinanceQuoteTasksReadyAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+        /// <br/>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTasksReadyResponseInfo> GoogleFinanceQuoteTasksReadyAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_quote/tasks_ready"
+                    urlBuilder_.Append("v3/serp/google/finance_quote/tasks_ready");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceQuoteTasksReadyResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id)
+        {
+            return GoogleFinanceQuoteTaskGetAdvancedAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_quote/task_get/advanced/{id}"
+                    urlBuilder_.Append("v3/serp/google/finance_quote/task_get/advanced/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 7 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> GoogleFinanceQuoteTaskGetHtmlAsync(string id)
+        {
+            return GoogleFinanceQuoteTaskGetHtmlAsync(id, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// Description of the fields for sending a request:
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash'
+        /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 7 days to request the results of the task at any time</param>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> GoogleFinanceQuoteTaskGetHtmlAsync(string id, System.Threading.CancellationToken cancellationToken)
+        {
+            if (id == null)
+                throw new System.ArgumentNullException("id");
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_quote/task_get/html/{id}"
+                    urlBuilder_.Append("v3/serp/google/finance_quote/task_get/html/");
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> GoogleFinanceQuoteLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> body)
+        {
+            return GoogleFinanceQuoteLiveAdvancedAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> GoogleFinanceQuoteLiveAdvancedAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_quote/live/advanced"
+                    urlBuilder_.Append("v3/serp/google/finance_quote/live/advanced");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌
+        /// <br/>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> GoogleFinanceQuoteLiveHtmlAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> body)
+        {
+            return GoogleFinanceQuoteLiveHtmlAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌
+        /// <br/>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> GoogleFinanceQuoteLiveHtmlAsync(System.Collections.Generic.IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/serp/google/finance_quote/live/html"
+                    urlBuilder_.Append("v3/serp/google/finance_quote/live/html");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<SerpGoogleFinanceQuoteLiveHtmlResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
         protected struct ObjectResponseResult<T>
         {
             public ObjectResponseResult(T responseObject, string responseText)

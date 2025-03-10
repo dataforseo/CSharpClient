@@ -5,7 +5,8 @@ namespace DataForSeo.Client.Models
     public partial class PodcastsDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<PodcastsElement> Items { get; set; }

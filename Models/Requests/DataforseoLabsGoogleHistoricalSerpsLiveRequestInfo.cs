@@ -61,10 +61,10 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// full name of the language
-        /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>ignore this field to get the results for all available languages
+        /// <br/>required field if you don’t specify language_code
+        /// <br/>Note: it is required to specify either language_name or language_code
+        /// <br/>you can receive the list of available languages with their language_name parameters by making a separate request to the
+        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
         /// <br/>example:
         /// <br/>English
         /// </summary>
@@ -72,11 +72,11 @@ namespace DataForSeo.Client.Models.Requests
         public string LanguageName { get; set; }
 
         /// <summary>
-        /// language code
-        /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>ignore this field to get the results for all available languages
+        /// unique language identifier
+        /// <br/>required field if you don’t specify language_name
+        /// <br/>Note: it is required to specify either language_name or language_code
+        /// <br/>you can receive the list of available languages with their language_code parameters by making a separate request to the
+        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
         /// <br/>example:
         /// <br/>en
         /// </summary>

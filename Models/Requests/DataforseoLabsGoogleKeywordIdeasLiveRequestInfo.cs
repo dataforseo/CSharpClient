@@ -46,9 +46,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify language_code
         /// <br/>you can receive the list of available languages with their language_name by making a separate request to the
         /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>ignore this field to get the results for all available languages
         /// <br/>example:
         /// <br/>English
+        /// <br/>Note: if omitted, results default to the language with the most keyword records in the specified location;
+        /// <br/>refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language
         /// </summary>
         [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -59,9 +60,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify language_name
         /// <br/>you can receive the list of available languages with their language_code by making a separate request to the
         /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>ignore this field to get the results for all available languages
         /// <br/>example:
         /// <br/>en
+        /// <br/>Note: if omitted, results default to the language with the most keyword records in the specified location;
+        /// <br/>refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language
         /// </summary>
         [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -167,15 +169,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>asc – results will be sorted in the ascending order
         /// <br/>desc – results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting parameter
-        /// <br/>example:
-        /// <br/>["keyword_info.competition,desc"]
         /// <br/>default rule:
         /// <br/>["relevance,desc"]
         /// <br/>relevance is used as the default sorting rule to provide you with the closest keyword ideas. We recommend using this sorting rule to get highly-relevant search terms. Note that relevance is only our internal system identifier, so it can not be used as a filter, and you will not find this field in the result array. The relevance score is based on a similar principle as used in the Keywords For Keywords endpoint.
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>["keyword_info.search_volume,desc","keyword_info.cpc,desc"]
+        /// <br/>["relevance,desc","keyword_info.search_volume,desc"]
         /// </summary>
         [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> OrderBy { get; set; }

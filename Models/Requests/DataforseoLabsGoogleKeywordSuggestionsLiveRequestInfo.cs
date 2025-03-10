@@ -47,9 +47,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify language_code
         /// <br/>you can receive the list of available languages with their language_name by making a separate request to the
         /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>ignore this field to get the results for all available languages
         /// <br/>example:
         /// <br/>English
+        /// <br/>Note: if omitted, results default to the language with the most keyword records in the specified location;
+        /// <br/>refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language
         /// </summary>
         [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -60,9 +61,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify language_name
         /// <br/>you can receive the list of available languages with their language_code by making a separate request to the
         /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>ignore this field to get the results for all available languages
         /// <br/>example:
         /// <br/>en
+        /// <br/>Note: if omitted, results default to the language with the most keyword records in the specified location;
+        /// <br/>refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language
         /// </summary>
         [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

@@ -210,16 +210,6 @@ public AppendixInfo SearchVolumeHistory { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **Google**
-
-```csharp
-public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
-```
-
-#### Property Value
-
-[AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
-
 ### **Industries**
 
 ```csharp
@@ -229,6 +219,16 @@ public Nullable<double> Industries { get; set; }
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Google**
+
+```csharp
+public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
 
 ### **IdList**
 

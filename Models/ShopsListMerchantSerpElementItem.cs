@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
         /// <br/>tax is specified as the actual amount of money, not as the percentage
         /// </summary>
         [Newtonsoft.Json.JsonProperty("tax", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Tax { get; set; }
+        public double? Tax { get; set; }
 
         /// <summary>
         /// product shipping price
@@ -59,7 +59,7 @@ namespace DataForSeo.Client.Models
         /// product price including tax and shipping
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalPrice { get; set; }
+        public double? TotalPrice { get; set; }
 
         /// <summary>
         /// currency in the ISO format
@@ -68,6 +68,13 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("currency", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Currency { get; set; }
+
+        /// <summary>
+        /// monthly price multiplier
+        /// <br/>indicates the number of months covered by the monthly payment for the product
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("price_multiplier", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? PriceMultiplier { get; set; }
 
         /// <summary>
         /// name of the seller

@@ -10,6 +10,16 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ba
 
 ## Properties
 
+### **OriginalTitle**
+
+```csharp
+public string OriginalTitle { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **ContactUrl**
 
 ```csharp

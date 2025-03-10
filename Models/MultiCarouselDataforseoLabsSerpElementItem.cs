@@ -5,7 +5,8 @@ namespace DataForSeo.Client.Models
     public partial class MultiCarouselDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MultiCarouselElement> Items { get; set; }

@@ -128,7 +128,7 @@ namespace DataForSeo.Client.Models
         /// <br/>rating related to content_info
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public ContentAnalysisRatingInfo Rating { get; set; }
+        public ContentRatingInfo Rating { get; set; }
 
         /// <summary>
         /// citation group date and time

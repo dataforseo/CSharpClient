@@ -9,20 +9,20 @@ namespace DataForSeo.Client.Models
         /// <br/>you can find more information about content priority calculation in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("primary_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ContentItemInfo> PrimaryContent { get; set; }
+        public System.Collections.Generic.ICollection<SectionContentItemInfo> PrimaryContent { get; set; }
 
         /// <summary>
         /// secondary content on the page
         /// <br/>you can find more information about content priority calculation in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("secondary_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ContentItemInfo> SecondaryContent { get; set; }
+        public System.Collections.Generic.ICollection<SectionContentItemInfo> SecondaryContent { get; set; }
 
         /// <summary>
         /// content of the table on the page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("table_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<TableContent> TableContent { get; set; }
+        public System.Collections.Generic.ICollection<TableContentInfo> TableContent { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

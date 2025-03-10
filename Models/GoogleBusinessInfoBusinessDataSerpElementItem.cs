@@ -18,6 +18,13 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
+        /// original title of the element
+        /// <br/>original title not translated by Google
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("original_title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string OriginalTitle { get; set; }
+
+        /// <summary>
         /// description of the element in SERP
         /// <br/>the description of the business entity for which the results are collected
         /// </summary>

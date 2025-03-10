@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class KnowledgeGraphRowItemDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// title of the item
+        /// title of the result in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google defined data attribute ID
         /// <br/>example:
-        /// <br/>action:listen_artist
+        /// <br/>ss:/webfacts:net_worth
         /// </summary>
         [Newtonsoft.Json.JsonProperty("data_attrid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }

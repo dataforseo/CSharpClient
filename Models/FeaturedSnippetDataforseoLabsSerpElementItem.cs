@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// relevant URL of the Ad element in SERP
+        /// relevant URL
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

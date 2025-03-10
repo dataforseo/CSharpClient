@@ -73,12 +73,12 @@ public Nullable<int> BasePrice { get; set; }
 ### **Tax**
 
 ```csharp
-public Nullable<int> Tax { get; set; }
+public Nullable<double> Tax { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **ShippingPrice**
 
@@ -93,12 +93,12 @@ public Nullable<int> ShippingPrice { get; set; }
 ### **TotalPrice**
 
 ```csharp
-public Nullable<long> TotalPrice { get; set; }
+public Nullable<double> TotalPrice { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Currency**
 
@@ -109,6 +109,16 @@ public string Currency { get; set; }
 #### Property Value
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
+### **PriceMultiplier**
+
+```csharp
+public Nullable<int> PriceMultiplier { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **SellerName**
 

@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class KnowledgeGraphListItemDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// title of the row
+        /// title of the element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -25,7 +25,8 @@ namespace DataForSeo.Client.Models
         public LinkElement Link { get; set; }
 
         /// <summary>
-        /// contains arrays of specific images
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<KnowledgeGraphListElement> Items { get; set; }

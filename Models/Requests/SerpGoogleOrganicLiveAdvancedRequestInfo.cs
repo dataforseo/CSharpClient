@@ -252,6 +252,17 @@ namespace DataForSeo.Client.Models.Requests
         public string SearchParam { get; set; }
 
         /// <summary>
+        /// remove specific parameters from URLs
+        /// <br/>optional field
+        /// <br/>using this field, you can specify up to 10 parameters to remove from URLs in the result
+        /// <br/>example:
+        /// <br/>"remove_from_url": ["srsltid"]
+        /// <br/>Note: if the target field is specified, the specified URL parameters will be removed before the search
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("remove_from_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.Collections.Generic.ICollection<string> RemoveFromUrl { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class ContentUrlInfo
     {
         /// <summary>
-        /// other URL found in the content element
+        /// contains other URLs and anchors found in the content element
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }

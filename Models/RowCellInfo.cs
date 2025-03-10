@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class RowCellInfo
     {
         /// <summary>
-        /// content text
+        /// content of the row cells of the header
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }
@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
         public System.Collections.Generic.ICollection<ContentUrlInfo> Urls { get; set; }
 
         /// <summary>
-        /// indicates if the text belongs to the header
+        /// content of the row cells of the header
         /// </summary>
         [Newtonsoft.Json.JsonProperty("is_header", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool? IsHeader { get; set; }

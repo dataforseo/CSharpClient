@@ -143,12 +143,12 @@ public ICollection<string> PageTypes { get; set; }
 ### **Ratings**
 
 ```csharp
-public ICollection<ContentAnalysisRatingInfo> Ratings { get; set; }
+public ICollection<ContentRatingInfo> Ratings { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;ContentAnalysisRatingInfo&gt;](./ContentAnalysisRatingInfo.md)<br>
+[ICollection&lt;ContentRatingInfo&gt;](./ContentRatingInfo.md)<br>
 
 ### **SocialMetrics**
 
