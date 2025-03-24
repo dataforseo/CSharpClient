@@ -951,89 +951,6 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
-        /// ‌‌ 
-        /// <br/>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
-        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
-        /// </remarks>
-        /// <returns>Successful operation</returns>
-        /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHistoricalSearchVolumeLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> body)
-        {
-            return GoogleHistoricalSearchVolumeLiveAsync(body, System.Threading.CancellationToken.None);
-        }
-
-        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <remarks>
-        /// ‌‌ 
-        /// <br/>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
-        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
-        /// </remarks>
-        /// <returns>Successful operation</returns>
-        /// <exception cref = "ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHistoricalSearchVolumeLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
-        {
-            var client_ = _httpClient;
-            var disposeClient_ = false;
-            try
-            {
-                using (var request_ = new System.Net.Http.HttpRequestMessage())
-                {
-                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
-                    var content_ = new System.Net.Http.StringContent(json_);
-                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
-                    request_.Content = content_;
-                    request_.Method = new System.Net.Http.HttpMethod("POST");
-                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                    var urlBuilder_ = new System.Text.StringBuilder();
-                    if (!string.IsNullOrEmpty(_baseUrl))
-                        urlBuilder_.Append(_baseUrl);
-                    // Operation Path: "v3/dataforseo_labs/google/historical_search_volume/live"
-                    urlBuilder_.Append("v3/dataforseo_labs/google/historical_search_volume/live");
-                    PrepareRequest(client_, request_, urlBuilder_);
-                    var url_ = urlBuilder_.ToString();
-                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
-                    PrepareRequest(client_, request_, url_);
-                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
-                    var disposeResponse_ = true;
-                    try
-                    {
-                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
-                        foreach (var item_ in response_.Headers)
-                            headers_[item_.Key] = item_.Value;
-                        if (response_.Content != null && response_.Content.Headers != null)
-                        {
-                            foreach (var item_ in response_.Content.Headers)
-                                headers_[item_.Key] = item_.Value;
-                        }
-
-                        ProcessResponse(client_, response_);
-                        var status_ = (int)response_.StatusCode;
-                        if (status_ == 200)
-                        {
-                            var objectResponse_ = await ReadObjectResponseAsync<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
-                            return objectResponse_.Object;
-                        }
-                        else
-                        {
-                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
-                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
-                        }
-                    }
-                    finally
-                    {
-                        if (disposeResponse_)
-                            response_.Dispose();
-                    }
-                }
-            }
-            finally
-            {
-                if (disposeClient_)
-                    client_.Dispose();
-            }
-        }
-
-        /// <remarks>
         /// This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
         /// </remarks>
@@ -2744,6 +2661,172 @@ namespace DataForSeo.Client.Api
                         if (status_ == 200)
                         {
                             var objectResponse_ = await ReadObjectResponseAsync<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌‌ 
+        /// <br/>This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> GoogleHistoricalKeywordDataLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> body)
+        {
+            return GoogleHistoricalKeywordDataLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌‌ 
+        /// <br/>This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> GoogleHistoricalKeywordDataLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/historical_keyword_data/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/historical_keyword_data/live");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <remarks>
+        /// ‌‌ 
+        /// <br/>This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> GoogleKeywordOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> body)
+        {
+            return GoogleKeywordOverviewLiveAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <remarks>
+        /// ‌‌ 
+        /// <br/>This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter.
+        /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash'
+        /// </remarks>
+        /// <returns>Successful operation</returns>
+        /// <exception cref = "ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> GoogleKeywordOverviewLiveAsync(System.Collections.Generic.IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = Newtonsoft.Json.JsonConvert.SerializeObject(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.StringContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                    if (!string.IsNullOrEmpty(_baseUrl))
+                        urlBuilder_.Append(_baseUrl);
+                    // Operation Path: "v3/dataforseo_labs/google/keyword_overview/live"
+                    urlBuilder_.Append("v3/dataforseo_labs/google/keyword_overview/live");
+                    PrepareRequest(client_, request_, urlBuilder_);
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+                    PrepareRequest(client_, request_, url_);
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             return objectResponse_.Object;
                         }
                         else

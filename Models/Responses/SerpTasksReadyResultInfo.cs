@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// type of search engine
-        /// <br/>example: finance_quote
+        /// <br/>example: finance_ticker_search
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SeType { get; set; }

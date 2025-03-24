@@ -2639,6 +2639,228 @@ A server side error occurred.
  <br>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
 
+### **GoogleFinanceTickerSearchTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> GoogleFinanceTickerSearchTaskPostAsync(IEnumerable<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchTaskPostResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash'
+
+### **GoogleFinanceTickerSearchTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> GoogleFinanceTickerSearchTaskPostAsync(IEnumerable<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchTaskPostResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash'
+
+### **GoogleFinanceTickerSearchTasksReadyAsync()**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> GoogleFinanceTickerSearchTasksReadyAsync()
+```
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchTasksReadyResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash'
+
+### **GoogleFinanceTickerSearchTasksReadyAsync(CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> GoogleFinanceTickerSearchTasksReadyAsync(CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchTasksReadyResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTasksReadyResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
+ <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash'
+
+### **GoogleFinanceTickerSearchTaskGetAdvancedAsync(String)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> GoogleFinanceTickerSearchTaskGetAdvancedAsync(string id)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash'
+
+### **GoogleFinanceTickerSearchTaskGetAdvancedAsync(String, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> GoogleFinanceTickerSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash'
+
+### **GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash'
+
+### **GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌
+ <br>Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash'
+
 ### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
 ```csharp

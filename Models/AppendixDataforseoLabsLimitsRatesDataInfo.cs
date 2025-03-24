@@ -67,9 +67,6 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("keyword_ideas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo KeywordIdeas { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("historical_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixInfo HistoricalSearchVolume { get; set; }
-
         [Newtonsoft.Json.JsonProperty("categories_for_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo CategoriesForDomain { get; set; }
 
@@ -111,6 +108,12 @@ namespace DataForSeo.Client.Models
 
         [Newtonsoft.Json.JsonProperty("categories_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo CategoriesForKeywords { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("keyword_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo KeywordOverview { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("historical_keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixInfo HistoricalKeywordData { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

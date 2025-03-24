@@ -63,12 +63,12 @@ public Nullable<double> TotalKeywordsData { get; set; }
 ### **Appendix**
 
 ```csharp
-public AppendixAppendixDayStatisticsRatesData Appendix { get; set; }
+public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppendixDayStatisticsRatesData](./AppendixAppendixDayStatisticsRatesData.md)<br>
+[AppendixAppendixDaysRatesDataInfo](./AppendixAppendixDaysRatesDataInfo.md)<br>
 
 ### **TotalAppendix**
 

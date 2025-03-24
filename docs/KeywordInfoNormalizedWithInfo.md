@@ -23,22 +23,22 @@ public string LastUpdatedTime { get; set; }
 ### **SearchVolume**
 
 ```csharp
-public Nullable<long> SearchVolume { get; set; }
+public string SearchVolume { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **IsNormalized**
 
 ```csharp
-public Nullable<bool> IsNormalized { get; set; }
+public string IsNormalized { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
 ### **MonthlySearches**
 

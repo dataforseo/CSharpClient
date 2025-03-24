@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Serp**
 
 ```csharp
-public AppendixSerpDayStatisticsMoneyData Serp { get; set; }
+public AppendixSerpDayStatisticsRatesData Serp { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpDayStatisticsMoneyData](./AppendixSerpDayStatisticsMoneyData.md)<br>
+[AppendixSerpDayStatisticsRatesData](./AppendixSerpDayStatisticsRatesData.md)<br>
 
 ### **Total**
 
@@ -63,12 +63,12 @@ public Nullable<double> TotalKeywordsData { get; set; }
 ### **Appendix**
 
 ```csharp
-public AppendixAppendixsRatesDataInfo Appendix { get; set; }
+public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppendixsRatesDataInfo](./AppendixAppendixsRatesDataInfo.md)<br>
+[AppendixAppendixDaysRatesDataInfo](./AppendixAppendixDaysRatesDataInfo.md)<br>
 
 ### **TotalAppendix**
 
@@ -143,12 +143,12 @@ public Nullable<double> TotalMerchant { get; set; }
 ### **OnPage**
 
 ```csharp
-public AppendixOnPageDayStatisticsMoneyData OnPage { get; set; }
+public AppendixOnPageLimitsRatesDataInfo OnPage { get; set; }
 ```
 
 #### Property Value
 
-[AppendixOnPageDayStatisticsMoneyData](./AppendixOnPageDayStatisticsMoneyData.md)<br>
+[AppendixOnPageLimitsRatesDataInfo](./AppendixOnPageLimitsRatesDataInfo.md)<br>
 
 ### **TotalOnPage**
 
@@ -163,12 +163,12 @@ public Nullable<double> TotalOnPage { get; set; }
 ### **BusinessData**
 
 ```csharp
-public AppendixBusinessDataDayStatisticsMoneyData BusinessData { get; set; }
+public AppendixBusinessDataLimitsRatesDataInfo BusinessData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixBusinessDataDayStatisticsMoneyData](./AppendixBusinessDataDayStatisticsMoneyData.md)<br>
+[AppendixBusinessDataLimitsRatesDataInfo](./AppendixBusinessDataLimitsRatesDataInfo.md)<br>
 
 ### **TotalBusinessData**
 
@@ -203,12 +203,12 @@ public Nullable<double> TotalBacklinks { get; set; }
 ### **AppData**
 
 ```csharp
-public AppendixAppDataDayStatisticsMoneyData AppData { get; set; }
+public AppendixAppDataLimitsRatesDataInfo AppData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppDataDayStatisticsMoneyData](./AppendixAppDataDayStatisticsMoneyData.md)<br>
+[AppendixAppDataLimitsRatesDataInfo](./AppendixAppDataLimitsRatesDataInfo.md)<br>
 
 ### **TotalAppData**
 

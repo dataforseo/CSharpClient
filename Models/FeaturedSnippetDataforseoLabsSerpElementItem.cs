@@ -5,7 +5,13 @@ namespace DataForSeo.Client.Models
     public partial class FeaturedSnippetDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
     {
         /// <summary>
-        /// domain where a link points
+        /// search engine type
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
+        /// <summary>
+        /// subdomain in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -29,7 +35,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// relevant URL
+        /// relevant URL in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -42,35 +48,30 @@ namespace DataForSeo.Client.Models
         public Table Table { get; set; }
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
         /// primary domain name in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("main_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string MainDomain { get; set; }
 
         /// <summary>
-        /// URL in SERP that does not specify the HTTPs protocol and domain name
+        /// relative URL in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("relative_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RelativeUrl { get; set; }
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated paid monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for
+        /// <br/>estimated organic monthly traffic to the domain;
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public float? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of monthly search traffic
-        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for
+        /// estimated cost of converting organic search traffic into paid
+        /// <br/>represents the estimated monthly cost of running ads (USD) for the returned keyword;
+        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Bing Search
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("estimated_paid_traffic_cost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -83,15 +84,9 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("rank_changes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }
 
-        /// <summary>
-        /// backlinks information for the target website
-        /// </summary>
         [Newtonsoft.Json.JsonProperty("backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }
 
-        /// <summary>
-        /// page and domain rank information
-        /// </summary>
         [Newtonsoft.Json.JsonProperty("rank_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public RankInfo RankInfo { get; set; }
 

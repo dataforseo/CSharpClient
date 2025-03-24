@@ -222,7 +222,7 @@ namespace DataForSeo.Client.Api
         }
 
         /// <remarks>
-        /// You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05).
+        /// You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04).
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -234,7 +234,7 @@ namespace DataForSeo.Client.Api
 
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
-        /// You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05).
+        /// You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04).
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>

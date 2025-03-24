@@ -220,16 +220,6 @@ public AppendixInfo KeywordIdeas { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **HistoricalSearchVolume**
-
-```csharp
-public AppendixInfo HistoricalSearchVolume { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
 ### **CategoriesForDomain**
 
 ```csharp
@@ -364,6 +354,26 @@ public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
 
 ```csharp
 public AppendixInfo CategoriesForKeywords { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **KeywordOverview**
+
+```csharp
+public AppendixInfo KeywordOverview { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **HistoricalKeywordData**
+
+```csharp
+public AppendixInfo HistoricalKeywordData { get; set; }
 ```
 
 #### Property Value

@@ -87,7 +87,7 @@ namespace DataForSeo.Client.Models.Responses
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// items of the element
+        /// elements of search results found in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseGoogleNewsSerpElementItem> Items { get; set; }

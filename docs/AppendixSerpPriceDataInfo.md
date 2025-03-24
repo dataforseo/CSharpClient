@@ -20,20 +20,20 @@ public AppendixTaskKeywordsDataPriceDataInfo Regular { get; set; }
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
-### **Html**
+### **Advanced**
 
 ```csharp
-public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
+public AppendixTaskKeywordsDataPriceDataInfo Advanced { get; set; }
 ```
 
 #### Property Value
 
 [AppendixTaskKeywordsDataPriceDataInfo](./AppendixTaskKeywordsDataPriceDataInfo.md)<br>
 
-### **Advanced**
+### **Html**
 
 ```csharp
-public AppendixTaskKeywordsDataPriceDataInfo Advanced { get; set; }
+public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
 ```
 
 #### Property Value

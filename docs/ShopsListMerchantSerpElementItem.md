@@ -73,12 +73,12 @@ public Nullable<int> BasePrice { get; set; }
 ### **Tax**
 
 ```csharp
-public Nullable<double> Tax { get; set; }
+public Nullable<int> Tax { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **ShippingPrice**
 
@@ -93,12 +93,12 @@ public Nullable<int> ShippingPrice { get; set; }
 ### **TotalPrice**
 
 ```csharp
-public Nullable<double> TotalPrice { get; set; }
+public Nullable<long> TotalPrice { get; set; }
 ```
 
 #### Property Value
 
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **Currency**
 

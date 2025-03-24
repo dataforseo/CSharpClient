@@ -118,8 +118,6 @@
 
 [AppendixAmazonMerchantPriceData](./AppendixAmazonMerchantPriceData.md)
 
-[AppendixAppDataDayStatisticsMoneyData](./AppendixAppDataDayStatisticsMoneyData.md)
-
 [AppendixAppDataDayStatisticsRatesData](./AppendixAppDataDayStatisticsRatesData.md)
 
 [AppendixAppDataLimitsRatesDataInfo](./AppendixAppDataLimitsRatesDataInfo.md)
@@ -128,11 +126,9 @@
 
 [AppendixAppendixDataInfo](./AppendixAppendixDataInfo.md)
 
-[AppendixAppendixDayStatisticsRatesData](./AppendixAppendixDayStatisticsRatesData.md)
+[AppendixAppendixDaysRatesDataInfo](./AppendixAppendixDaysRatesDataInfo.md)
 
 [AppendixAppendixPriceData](./AppendixAppendixPriceData.md)
-
-[AppendixAppendixsRatesDataInfo](./AppendixAppendixsRatesDataInfo.md)
 
 [AppendixAppListingsAppDataPriceData](./AppendixAppListingsAppDataPriceData.md)
 
@@ -151,8 +147,6 @@
 [AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)
 
 [AppendixBusinessDataDayLimitsRatesDataInfo](./AppendixBusinessDataDayLimitsRatesDataInfo.md)
-
-[AppendixBusinessDataDayStatisticsMoneyData](./AppendixBusinessDataDayStatisticsMoneyData.md)
 
 [AppendixBusinessDataDayStatisticsRatesData](./AppendixBusinessDataDayStatisticsRatesData.md)
 
@@ -262,8 +256,6 @@
 
 [AppendixNaverKeywordsDataDataInfo](./AppendixNaverKeywordsDataDataInfo.md)
 
-[AppendixOnPageDayStatisticsMoneyData](./AppendixOnPageDayStatisticsMoneyData.md)
-
 [AppendixOnPageDayStatisticsRatesData](./AppendixOnPageDayStatisticsRatesData.md)
 
 [AppendixOnPageLimitsRatesDataInfo](./AppendixOnPageLimitsRatesDataInfo.md)
@@ -283,8 +275,6 @@
 [AppendixSellersGoogleMerchantLimitsRatesDataInfo](./AppendixSellersGoogleMerchantLimitsRatesDataInfo.md)
 
 [AppendixSellersGoogleMerchantPriceData](./AppendixSellersGoogleMerchantPriceData.md)
-
-[AppendixSerpDayStatisticsMoneyData](./AppendixSerpDayStatisticsMoneyData.md)
 
 [AppendixSerpDayStatisticsRatesData](./AppendixSerpDayStatisticsRatesData.md)
 
@@ -401,6 +391,8 @@
 [BaseGoogleAdsAdvertisersSerpElementItem](./BaseGoogleAdsAdvertisersSerpElementItem.md)
 
 [BaseGoogleFinanceSerpElementItem](./BaseGoogleFinanceSerpElementItem.md)
+
+[BaseGoogleFinanceTickerSearchSerpElementItem](./BaseGoogleFinanceTickerSearchSerpElementItem.md)
 
 [BaseGoogleImagesSerpElementItem](./BaseGoogleImagesSerpElementItem.md)
 
@@ -548,11 +540,13 @@
 
 [DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem.md)
 
+[DataforseoLabsGoogleHistoricalKeywordDataLiveItem](./DataforseoLabsGoogleHistoricalKeywordDataLiveItem.md)
+
 [DataforseoLabsGoogleHistoricalRankOverviewLiveItem](./DataforseoLabsGoogleHistoricalRankOverviewLiveItem.md)
 
-[DataforseoLabsGoogleHistoricalSearchVolumeLiveItem](./DataforseoLabsGoogleHistoricalSearchVolumeLiveItem.md)
-
 [DataforseoLabsGoogleHistoricalSerpsLiveItem](./DataforseoLabsGoogleHistoricalSerpsLiveItem.md)
+
+[DataforseoLabsGoogleKeywordOverviewLiveItem](./DataforseoLabsGoogleKeywordOverviewLiveItem.md)
 
 [DataforseoLabsGoogleKeywordsForAppLiveItem](./DataforseoLabsGoogleKeywordsForAppLiveItem.md)
 
@@ -664,6 +658,8 @@
 
 [GoogleFinanceAssetPairElement](./GoogleFinanceAssetPairElement.md)
 
+[GoogleFinanceAssetPairSerpElementItem](./GoogleFinanceAssetPairSerpElementItem.md)
+
 [GoogleFinanceEarningsCalendarElement](./GoogleFinanceEarningsCalendarElement.md)
 
 [GoogleFinanceEarningsCalendarSerpElementItem](./GoogleFinanceEarningsCalendarSerpElementItem.md)
@@ -674,7 +670,11 @@
 
 [GoogleFinanceMarketIndexElement](./GoogleFinanceMarketIndexElement.md)
 
+[GoogleFinanceMarketIndexSerpElementItem](./GoogleFinanceMarketIndexSerpElementItem.md)
+
 [GoogleFinanceMarketInstrumentElement](./GoogleFinanceMarketInstrumentElement.md)
+
+[GoogleFinanceMarketInstrumentSerpElementItem](./GoogleFinanceMarketInstrumentSerpElementItem.md)
 
 [GoogleFinanceMarketsInfo](./GoogleFinanceMarketsInfo.md)
 
@@ -755,6 +755,8 @@
 [HistoricalMetricsBundleInfo](./HistoricalMetricsBundleInfo.md)
 
 [HistoricalMetricsInfo](./HistoricalMetricsInfo.md)
+
+[History](./History.md)
 
 [HotelAboutInfo](./HotelAboutInfo.md)
 
@@ -867,6 +869,8 @@
 [KnowledgeGraphImagesItemDataforseoLabsSerpElementItem](./KnowledgeGraphImagesItemDataforseoLabsSerpElementItem.md)
 
 [KnowledgeGraphImagesItemSerpElementItem](./KnowledgeGraphImagesItemSerpElementItem.md)
+
+[KnowledgeGraphLinkElementInfo](./KnowledgeGraphLinkElementInfo.md)
 
 [KnowledgeGraphListElement](./KnowledgeGraphListElement.md)
 
@@ -1510,13 +1514,15 @@
 
 [DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.md)
 
-[DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo](./DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.md)
+[DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo](./DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo.md)
 
-[DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo](./DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.md)
+[DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo](./DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.md)
 
 [DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo](./DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo.md)
 
 [DataforseoLabsGoogleKeywordIdeasLiveRequestInfo](./DataforseoLabsGoogleKeywordIdeasLiveRequestInfo.md)
+
+[DataforseoLabsGoogleKeywordOverviewLiveRequestInfo](./DataforseoLabsGoogleKeywordOverviewLiveRequestInfo.md)
 
 [DataforseoLabsGoogleKeywordsForAppLiveRequestInfo](./DataforseoLabsGoogleKeywordsForAppLiveRequestInfo.md)
 
@@ -1745,6 +1751,10 @@
 [SerpGoogleFinanceQuoteLiveHtmlRequestInfo](./SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)
 
 [SerpGoogleFinanceQuoteTaskPostRequestInfo](./SerpGoogleFinanceQuoteTaskPostRequestInfo.md)
+
+[SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo](./SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo.md)
+
+[SerpGoogleFinanceTickerSearchTaskPostRequestInfo](./SerpGoogleFinanceTickerSearchTaskPostRequestInfo.md)
 
 [SerpGoogleImagesLiveAdvancedRequestInfo](./SerpGoogleImagesLiveAdvancedRequestInfo.md)
 
@@ -2888,17 +2898,17 @@
 
 [DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveTaskInfo](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveTaskInfo.md)
 
+[DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo](./DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)
+
+[DataforseoLabsGoogleHistoricalKeywordDataLiveResultInfo](./DataforseoLabsGoogleHistoricalKeywordDataLiveResultInfo.md)
+
+[DataforseoLabsGoogleHistoricalKeywordDataLiveTaskInfo](./DataforseoLabsGoogleHistoricalKeywordDataLiveTaskInfo.md)
+
 [DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo](./DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo.md)
 
 [DataforseoLabsGoogleHistoricalRankOverviewLiveResultInfo](./DataforseoLabsGoogleHistoricalRankOverviewLiveResultInfo.md)
 
 [DataforseoLabsGoogleHistoricalRankOverviewLiveTaskInfo](./DataforseoLabsGoogleHistoricalRankOverviewLiveTaskInfo.md)
-
-[DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo](./DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo.md)
-
-[DataforseoLabsGoogleHistoricalSearchVolumeLiveResultInfo](./DataforseoLabsGoogleHistoricalSearchVolumeLiveResultInfo.md)
-
-[DataforseoLabsGoogleHistoricalSearchVolumeLiveTaskInfo](./DataforseoLabsGoogleHistoricalSearchVolumeLiveTaskInfo.md)
 
 [DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo](./DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo.md)
 
@@ -2911,6 +2921,12 @@
 [DataforseoLabsGoogleKeywordIdeasLiveResultInfo](./DataforseoLabsGoogleKeywordIdeasLiveResultInfo.md)
 
 [DataforseoLabsGoogleKeywordIdeasLiveTaskInfo](./DataforseoLabsGoogleKeywordIdeasLiveTaskInfo.md)
+
+[DataforseoLabsGoogleKeywordOverviewLiveResponseInfo](./DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)
+
+[DataforseoLabsGoogleKeywordOverviewLiveResultInfo](./DataforseoLabsGoogleKeywordOverviewLiveResultInfo.md)
+
+[DataforseoLabsGoogleKeywordOverviewLiveTaskInfo](./DataforseoLabsGoogleKeywordOverviewLiveTaskInfo.md)
 
 [DataforseoLabsGoogleKeywordsForAppLiveResponseInfo](./DataforseoLabsGoogleKeywordsForAppLiveResponseInfo.md)
 
@@ -4315,6 +4331,28 @@
 [SerpGoogleFinanceQuoteTasksReadyResultInfo](./SerpGoogleFinanceQuoteTasksReadyResultInfo.md)
 
 [SerpGoogleFinanceQuoteTasksReadyTaskInfo](./SerpGoogleFinanceQuoteTasksReadyTaskInfo.md)
+
+[SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo](./SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo](./SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo.md)
+
+[SerpGoogleFinanceTickerSearchLiveAdvancedTaskInfo](./SerpGoogleFinanceTickerSearchLiveAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo](./SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)
+
+[SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo](./SerpGoogleFinanceTickerSearchTaskGetAdvancedResultInfo.md)
+
+[SerpGoogleFinanceTickerSearchTaskGetAdvancedTaskInfo](./SerpGoogleFinanceTickerSearchTaskGetAdvancedTaskInfo.md)
+
+[SerpGoogleFinanceTickerSearchTaskPostResponseInfo](./SerpGoogleFinanceTickerSearchTaskPostResponseInfo.md)
+
+[SerpGoogleFinanceTickerSearchTaskPostTaskInfo](./SerpGoogleFinanceTickerSearchTaskPostTaskInfo.md)
+
+[SerpGoogleFinanceTickerSearchTasksReadyResponseInfo](./SerpGoogleFinanceTickerSearchTasksReadyResponseInfo.md)
+
+[SerpGoogleFinanceTickerSearchTasksReadyResultInfo](./SerpGoogleFinanceTickerSearchTasksReadyResultInfo.md)
+
+[SerpGoogleFinanceTickerSearchTasksReadyTaskInfo](./SerpGoogleFinanceTickerSearchTasksReadyTaskInfo.md)
 
 [SerpGoogleImagesLiveAdvancedResponseInfo](./SerpGoogleImagesLiveAdvancedResponseInfo.md)
 

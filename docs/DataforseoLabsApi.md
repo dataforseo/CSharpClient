@@ -639,61 +639,6 @@ A server side error occurred.
  <br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
 
-### **GoogleHistoricalSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHistoricalSearchVolumeLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌ 
- <br>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
-
-### **GoogleHistoricalSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> GoogleHistoricalSearchVolumeLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌ 
- <br>This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash'
-
 ### **GoogleBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;)**
 
 ```csharp
@@ -1836,6 +1781,116 @@ A server side error occurred.
 ‌
  <br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
+
+### **GoogleHistoricalKeywordDataLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;)**
+
+```csharp
+public Task<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> GoogleHistoricalKeywordDataLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌ 
+ <br>This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash'
+
+### **GoogleHistoricalKeywordDataLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> GoogleHistoricalKeywordDataLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌ 
+ <br>This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash'
+
+### **GoogleKeywordOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;)**
+
+```csharp
+public Task<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> GoogleKeywordOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> body)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveRequestInfo.md)<br>
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleKeywordOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌ 
+ <br>This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash'
+
+### **GoogleKeywordOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;, CancellationToken)**
+
+```csharp
+public Task<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> GoogleKeywordOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
+```
+
+#### Parameters
+
+`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveRequestInfo.md)<br>
+
+`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+
+#### Returns
+
+[Task&lt;DataforseoLabsGoogleKeywordOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)<br>
+Successful operation
+
+#### Exceptions
+
+[ApiException](./ApiException.md)<br>
+A server side error occurred.
+
+**Remarks:**
+
+‌‌ 
+ <br>This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter.
+ <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash'
 
 ### **AmazonBulkSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;)**
 

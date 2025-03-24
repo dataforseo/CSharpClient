@@ -210,20 +210,10 @@ public Nullable<double> ContentParsingLive { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **ForceStop**
+### **Microdata**
 
 ```csharp
-public Nullable<double> ForceStop { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AvailableFilters**
-
-```csharp
-public Nullable<double> AvailableFilters { get; set; }
+public Nullable<double> Microdata { get; set; }
 ```
 
 #### Property Value
@@ -240,10 +230,20 @@ public Nullable<double> IdList { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Microdata**
+### **ForceStop**
 
 ```csharp
-public Nullable<double> Microdata { get; set; }
+public Nullable<double> ForceStop { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **AvailableFilters**
+
+```csharp
+public Nullable<double> AvailableFilters { get; set; }
 ```
 
 #### Property Value

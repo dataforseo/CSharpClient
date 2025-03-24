@@ -170,20 +170,20 @@ public AppendixBingKeywordsDataPriceDataInfo HistoricalBulkTrafficEstimation { g
 
 [AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
-### **HistoricalRankOverview**
+### **HistoricalKeywordData**
 
 ```csharp
-public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo HistoricalKeywordData { get; set; }
 ```
 
 #### Property Value
 
 [AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
 
-### **HistoricalSearchVolume**
+### **HistoricalRankOverview**
 
 ```csharp
-public AppendixBingKeywordsDataPriceDataInfo HistoricalSearchVolume { get; set; }
+public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
 ```
 
 #### Property Value
@@ -204,6 +204,16 @@ public AppendixBingKeywordsDataPriceDataInfo HistoricalSerps { get; set; }
 
 ```csharp
 public AppendixBingKeywordsDataPriceDataInfo KeywordIdeas { get; set; }
+```
+
+#### Property Value
+
+[AppendixBingKeywordsDataPriceDataInfo](./AppendixBingKeywordsDataPriceDataInfo.md)<br>
+
+### **KeywordOverview**
+
+```csharp
+public AppendixBingKeywordsDataPriceDataInfo KeywordOverview { get; set; }
 ```
 
 #### Property Value

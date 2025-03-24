@@ -52,17 +52,20 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("historical_bulk_traffic_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalBulkTrafficEstimation { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("historical_keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo HistoricalKeywordData { get; set; }
+
         [Newtonsoft.Json.JsonProperty("historical_rank_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("historical_search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixBingKeywordsDataPriceDataInfo HistoricalSearchVolume { get; set; }
 
         [Newtonsoft.Json.JsonProperty("historical_serps", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalSerps { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_ideas", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo KeywordIdeas { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("keyword_overview", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo KeywordOverview { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keywords_for_app", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo KeywordsForApp { get; set; }

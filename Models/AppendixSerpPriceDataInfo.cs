@@ -7,11 +7,11 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("regular", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Regular { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
-
         [Newtonsoft.Json.JsonProperty("advanced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Advanced { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

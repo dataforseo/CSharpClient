@@ -5,7 +5,8 @@ namespace DataForSeo.Client.Models
     public partial class SectionContentItemInfo
     {
         /// <summary>
-        /// content text
+        /// secondary content on the page
+        /// <br/>you can find more information about content priority calculation in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Text { get; set; }

@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
         public double? TotalKeywordsData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixAppendixsRatesDataInfo Appendix { get; set; }
+        public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalAppendix { get; set; }

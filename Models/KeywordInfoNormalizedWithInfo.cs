@@ -5,28 +5,30 @@ namespace DataForSeo.Client.Models
     public partial class KeywordInfoNormalizedWithInfo
     {
         /// <summary>
-        /// date and time when the clickstream dataset was updated
+        /// date and time when the dataset was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
         [Newtonsoft.Json.JsonProperty("last_updated_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }
 
         /// <summary>
-        /// monthly average clickstream search volume rate
+        /// current search volume rate of a keyword
         /// </summary>
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SearchVolume { get; set; }
+        public string SearchVolume { get; set; }
 
         /// <summary>
         /// keyword info is normalized
         /// <br/>if true, values are normalized with Bing data
         /// </summary>
         [Newtonsoft.Json.JsonProperty("is_normalized", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool? IsNormalized { get; set; }
+        public string IsNormalized { get; set; }
 
         /// <summary>
-        /// monthly clickstream search volume rates
-        /// <br/>array of objects with clickstream search volume rates in a certain month of a year
+        /// monthly search volume rates
+        /// <br/>array of objects with search volume rates in a certain month of a year
         /// </summary>
         [Newtonsoft.Json.JsonProperty("monthly_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MonthlySearches> MonthlySearches { get; set; }

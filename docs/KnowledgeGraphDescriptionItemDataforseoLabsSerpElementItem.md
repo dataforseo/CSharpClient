@@ -23,12 +23,12 @@ public string Text { get; set; }
 ### **Links**
 
 ```csharp
-public ICollection<LinkElement> Links { get; set; }
+public ICollection<KnowledgeGraphLinkElementInfo> Links { get; set; }
 ```
 
 #### Property Value
 
-[ICollection&lt;LinkElement&gt;](./LinkElement.md)<br>
+[ICollection&lt;KnowledgeGraphLinkElementInfo&gt;](./KnowledgeGraphLinkElementInfo.md)<br>
 
 ### **AdditionalProperties**
 
