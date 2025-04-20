@@ -164,8 +164,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <summary>
         /// types of referring platforms
         /// <br/>indicates referring platform types and and link count per each platform
-        /// <br/>example values:
-        /// <br/>cms, blogs, unknown, ecommerce, message-boards
+        /// <br/>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_links_platform_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> ReferringLinksPlatformTypes { get; set; }

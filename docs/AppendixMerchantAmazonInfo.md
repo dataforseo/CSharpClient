@@ -13,32 +13,32 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Asin**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Asin { get; set; }
+public AppendixSerpsRatesDataInfo Asin { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **Products**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Products { get; set; }
+public AppendixSerpsRatesDataInfo Products { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **Sellers**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Sellers { get; set; }
+public AppendixSerpsRatesDataInfo Sellers { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

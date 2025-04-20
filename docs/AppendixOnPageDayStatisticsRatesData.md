@@ -220,6 +220,16 @@ public Nullable<double> Microdata { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **AvailableFilters**
+
+```csharp
+public Nullable<double> AvailableFilters { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **IdList**
 
 ```csharp
@@ -234,16 +244,6 @@ public Nullable<double> IdList { get; set; }
 
 ```csharp
 public Nullable<double> ForceStop { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AvailableFilters**
-
-```csharp
-public Nullable<double> AvailableFilters { get; set; }
 ```
 
 #### Property Value

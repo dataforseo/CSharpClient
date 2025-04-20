@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Serp**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
+public AppendixSerpDayStatisticsRatesData Serp { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpDayStatisticsRatesData](./AppendixSerpDayStatisticsRatesData.md)<br>
 
 ### **Total**
 
@@ -63,12 +63,12 @@ public Nullable<double> TotalKeywordsData { get; set; }
 ### **Appendix**
 
 ```csharp
-public AppendixAppendixsRatesDataInfo Appendix { get; set; }
+public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppendixsRatesDataInfo](./AppendixAppendixsRatesDataInfo.md)<br>
+[AppendixAppendixDaysRatesDataInfo](./AppendixAppendixDaysRatesDataInfo.md)<br>
 
 ### **TotalAppendix**
 
@@ -83,12 +83,12 @@ public Nullable<double> TotalAppendix { get; set; }
 ### **DataforseoLabs**
 
 ```csharp
-public AppendixDataforseoLabsLimitsRatesDataInfo DataforseoLabs { get; set; }
+public AppendixDataforseoLabsDayStatisticsRatesData DataforseoLabs { get; set; }
 ```
 
 #### Property Value
 
-[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
+[AppendixDataforseoLabsDayStatisticsRatesData](./AppendixDataforseoLabsDayStatisticsRatesData.md)<br>
 
 ### **TotalDataforseoLabs**
 

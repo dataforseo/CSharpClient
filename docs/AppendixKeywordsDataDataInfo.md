@@ -213,12 +213,12 @@ public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
 ### **KeywordIdeasAdsApi**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo KeywordIdeasAdsApi { get; set; }
+public AppendixSerpsRatesDataInfo KeywordIdeasAdsApi { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

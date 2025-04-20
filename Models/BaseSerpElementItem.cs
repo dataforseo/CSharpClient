@@ -61,6 +61,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritanceAttribute("compare_sites", typeof(CompareSitesSerpElementItem))]
     [JsonInheritanceAttribute("courses", typeof(CoursesSerpElementItem))]
     [JsonInheritanceAttribute("ai_overview", typeof(AiOverviewSerpElementItem))]
+    [JsonInheritanceAttribute("third_party_reviews", typeof(ThirdPartyReviewsSerpElementItem))]
     [JsonInheritanceAttribute("event_item", typeof(EventItemSerpElementItem))]
     [JsonInheritanceAttribute("dictionary", typeof(DictionarySerpElementItem))]
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]

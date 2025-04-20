@@ -103,6 +103,19 @@ namespace DataForSeo.Client.Models.Requests
         public System.Collections.Generic.ICollection<object> InitialDatasetFilters { get; set; }
 
         /// <summary>
+        /// defines the scale used for calculating and displaying the rank values
+        /// <br/>optional field
+        /// <br/>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
+        /// <br/>possible values:
+        /// <br/>one_hundred — rank values are displayed on a 0–100 scale
+        /// <br/>one_thousand — rank values are displayed on a 0–1000 scale
+        /// <br/>default value: one_thousand
+        /// <br/>learn more about how this parameter works in this Help Center article
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("rank_scale", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string RankScale { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Serp**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
+public AppendixSerpDataInfo Serp { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpDataInfo](./AppendixSerpDataInfo.md)<br>
 
 ### **Total**
 
@@ -273,12 +273,12 @@ public Nullable<double> TotalReviews { get; set; }
 ### **Reviews**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
+public AppendixSerpsRatesDataInfo Reviews { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **TotalSocial**
 
@@ -293,12 +293,12 @@ public Nullable<double> TotalSocial { get; set; }
 ### **Social**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Social { get; set; }
+public AppendixSerpsRatesDataInfo Social { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **TotalTrafficAnalytics**
 
@@ -313,12 +313,12 @@ public Nullable<double> TotalTrafficAnalytics { get; set; }
 ### **TrafficAnalytics**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo TrafficAnalytics { get; set; }
+public AppendixSerpsRatesDataInfo TrafficAnalytics { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **AdditionalProperties**
 

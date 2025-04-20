@@ -250,7 +250,9 @@
 
 [AppendixMerchantPriceData](./AppendixMerchantPriceData.md)
 
-[AppendixMinuteStatisticsDataInfo](./AppendixMinuteStatisticsDataInfo.md)
+[AppendixMinuteStatisticsMoneyData](./AppendixMinuteStatisticsMoneyData.md)
+
+[AppendixMinuteStatisticsRatesData](./AppendixMinuteStatisticsRatesData.md)
 
 [AppendixMoneyData](./AppendixMoneyData.md)
 
@@ -272,17 +274,21 @@
 
 [AppendixRatesData](./AppendixRatesData.md)
 
+[AppendixReviewsDayStatisticsMoneyData](./AppendixReviewsDayStatisticsMoneyData.md)
+
 [AppendixSellersGoogleMerchantLimitsRatesDataInfo](./AppendixSellersGoogleMerchantLimitsRatesDataInfo.md)
 
 [AppendixSellersGoogleMerchantPriceData](./AppendixSellersGoogleMerchantPriceData.md)
 
-[AppendixSerpDayStatisticsRatesData](./AppendixSerpDayStatisticsRatesData.md)
+[AppendixSerpDataInfo](./AppendixSerpDataInfo.md)
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)
+[AppendixSerpDayStatisticsRatesData](./AppendixSerpDayStatisticsRatesData.md)
 
 [AppendixSerpPriceData](./AppendixSerpPriceData.md)
 
 [AppendixSerpPriceDataInfo](./AppendixSerpPriceDataInfo.md)
+
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)
 
 [AppendixSocialMediaBusinessDataLimitsRatesDataInfo](./AppendixSocialMediaBusinessDataLimitsRatesDataInfo.md)
 
@@ -1231,6 +1237,8 @@
 [TestResults](./TestResults.md)
 
 [TestSummary](./TestSummary.md)
+
+[ThirdPartyReviewsSerpElementItem](./ThirdPartyReviewsSerpElementItem.md)
 
 [TopDomainInfo](./TopDomainInfo.md)
 

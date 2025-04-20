@@ -97,7 +97,7 @@ namespace DataForSeo.Client.Models
         public double? TotalReviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixJobsSerpLimitsRatesDataInfo Reviews { get; set; }
+        public AppendixReviewsDayStatisticsMoneyData Reviews { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

@@ -66,6 +66,12 @@ namespace DataForSeo.Client.Models.Responses
         public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
+        /// indicates whether the response contains non-news search results in addition to news content
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("includes_non_news_search_results", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public bool? IncludesNonNewsSearchResults { get; set; }
+
+        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item types:

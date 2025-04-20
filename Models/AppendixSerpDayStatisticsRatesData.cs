@@ -34,11 +34,11 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("screenshot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Screenshot { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? IdList { get; set; }
-
         [Newtonsoft.Json.JsonProperty("ai_summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? AiSummary { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

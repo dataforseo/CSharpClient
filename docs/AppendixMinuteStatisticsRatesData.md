@@ -13,12 +13,12 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **Serp**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
+public AppendixSerpsRatesDataInfo Serp { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **Total**
 
@@ -63,12 +63,12 @@ public Nullable<double> TotalKeywordsData { get; set; }
 ### **Appendix**
 
 ```csharp
-public AppendixAppendixsRatesDataInfo Appendix { get; set; }
+public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppendixsRatesDataInfo](./AppendixAppendixsRatesDataInfo.md)<br>
+[AppendixAppendixDaysRatesDataInfo](./AppendixAppendixDaysRatesDataInfo.md)<br>
 
 ### **TotalAppendix**
 
@@ -83,12 +83,12 @@ public Nullable<double> TotalAppendix { get; set; }
 ### **DataforseoLabs**
 
 ```csharp
-public AppendixDataforseoLabsLimitsRatesDataInfo DataforseoLabs { get; set; }
+public AppendixDataforseoLabsDayStatisticsRatesData DataforseoLabs { get; set; }
 ```
 
 #### Property Value
 
-[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
+[AppendixDataforseoLabsDayStatisticsRatesData](./AppendixDataforseoLabsDayStatisticsRatesData.md)<br>
 
 ### **TotalDataforseoLabs**
 
@@ -163,12 +163,12 @@ public Nullable<double> TotalOnPage { get; set; }
 ### **BusinessData**
 
 ```csharp
-public AppendixBusinessDataStatisticsRatesDataInfo BusinessData { get; set; }
+public AppendixBusinessDataLimitsRatesDataInfo BusinessData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixBusinessDataStatisticsRatesDataInfo](./AppendixBusinessDataStatisticsRatesDataInfo.md)<br>
+[AppendixBusinessDataLimitsRatesDataInfo](./AppendixBusinessDataLimitsRatesDataInfo.md)<br>
 
 ### **TotalBusinessData**
 
@@ -203,12 +203,12 @@ public Nullable<double> TotalBacklinks { get; set; }
 ### **AppData**
 
 ```csharp
-public AppendixAppDataDayStatisticsRatesData AppData { get; set; }
+public AppendixAppDataLimitsRatesDataInfo AppData { get; set; }
 ```
 
 #### Property Value
 
-[AppendixAppDataDayStatisticsRatesData](./AppendixAppDataDayStatisticsRatesData.md)<br>
+[AppendixAppDataLimitsRatesDataInfo](./AppendixAppDataLimitsRatesDataInfo.md)<br>
 
 ### **TotalAppData**
 
@@ -243,12 +243,12 @@ public Nullable<double> TotalContentAnalysis { get; set; }
 ### **ContentGeneration**
 
 ```csharp
-public AppendixContentGenerationStatisticsRatesDataInfo ContentGeneration { get; set; }
+public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
 ```
 
 #### Property Value
 
-[AppendixContentGenerationStatisticsRatesDataInfo](./AppendixContentGenerationStatisticsRatesDataInfo.md)<br>
+[AppendixContentGenerationLimitsRatesDataInfo](./AppendixContentGenerationLimitsRatesDataInfo.md)<br>
 
 ### **TotalContentGeneration**
 

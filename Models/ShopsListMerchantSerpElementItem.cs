@@ -47,19 +47,19 @@ namespace DataForSeo.Client.Models
         /// <br/>tax is specified as the actual amount of money, not as the percentage
         /// </summary>
         [Newtonsoft.Json.JsonProperty("tax", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Tax { get; set; }
+        public double? Tax { get; set; }
 
         /// <summary>
         /// product shipping price
         /// </summary>
         [Newtonsoft.Json.JsonProperty("shipping_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ShippingPrice { get; set; }
+        public double? ShippingPrice { get; set; }
 
         /// <summary>
         /// product price including tax and shipping
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalPrice { get; set; }
+        public double? TotalPrice { get; set; }
 
         /// <summary>
         /// currency in the ISO format

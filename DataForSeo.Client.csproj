@@ -12,7 +12,9 @@
         <RepositoryUrl>https://github.com/dataforseo/CSharpClient</RepositoryUrl>
         <PackageProjectUrl>https://github.com/dataforseo/CSharpClient</PackageProjectUrl>
         <RootNamespace>DataForSeo.Client</RootNamespace>
-        <Version>1.0.26</Version>
+        <AssemblyVersion>1.0.30</AssemblyVersion>
+        <FileVersion>1.0.30</FileVersion>
+        <Version>1.0.30</Version>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>

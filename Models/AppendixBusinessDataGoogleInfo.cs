@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
         public AppendixInfo MyBusinessUpdates { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo HotelInfo { get; set; }
+        public AppendixSerpsRatesDataInfo HotelInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("hotel_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixInfo HotelSearches { get; set; }

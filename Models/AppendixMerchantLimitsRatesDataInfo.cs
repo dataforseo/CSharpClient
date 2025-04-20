@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         public double? Errors { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
+        public AppendixSerpsRatesDataInfo Reviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("tasks_ready", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }

@@ -380,15 +380,35 @@ public AppendixInfo HistoricalKeywordData { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **IdList**
+### **TopGoogleSearches**
 
 ```csharp
-public Nullable<double> IdList { get; set; }
+public AppendixInfo TopGoogleSearches { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **Languages**
+
+```csharp
+public Nullable<double> Languages { get; set; }
 ```
 
 #### Property Value
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **Amazon**
+
+```csharp
+public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
+```
+
+#### Property Value
+
+[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
 
 ### **HistoricalSearchVolume**
 
@@ -400,10 +420,20 @@ public AppendixInfo HistoricalSearchVolume { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **AvailableFilters**
+### **Status**
 
 ```csharp
-public Nullable<double> AvailableFilters { get; set; }
+public Nullable<double> Status { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **IdList**
+
+```csharp
+public Nullable<double> IdList { get; set; }
 ```
 
 #### Property Value
@@ -420,40 +450,10 @@ public Nullable<double> AvailableHistory { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Languages**
+### **AvailableFilters**
 
 ```csharp
-public Nullable<double> Languages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TopGoogleSearches**
-
-```csharp
-public AppendixInfo TopGoogleSearches { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **Amazon**
-
-```csharp
-public AppendixDataforseoLabsLimitsRatesDataInfo Amazon { get; set; }
-```
-
-#### Property Value
-
-[AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)<br>
-
-### **Status**
-
-```csharp
-public Nullable<double> Status { get; set; }
+public Nullable<double> AvailableFilters { get; set; }
 ```
 
 #### Property Value

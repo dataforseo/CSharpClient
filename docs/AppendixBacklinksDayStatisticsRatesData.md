@@ -230,16 +230,6 @@ public AppendixInfo BulkPagesSummary { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **HistoricalNewLostSummary**
-
-```csharp
-public AppendixInfo HistoricalNewLostSummary { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
 ### **PagesSummaryWithPageInfo**
 
 ```csharp
@@ -249,16 +239,6 @@ public AppendixInfo PagesSummaryWithPageInfo { get; set; }
 #### Property Value
 
 [AppendixInfo](./AppendixInfo.md)<br>
-
-### **Index**
-
-```csharp
-public Nullable<double> Index { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **IdList**
 
@@ -274,6 +254,26 @@ public Nullable<double> IdList { get; set; }
 
 ```csharp
 public Nullable<double> AvailableFilters { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
+### **HistoricalNewLostSummary**
+
+```csharp
+public AppendixInfo HistoricalNewLostSummary { get; set; }
+```
+
+#### Property Value
+
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **Index**
+
+```csharp
+public Nullable<double> Index { get; set; }
 ```
 
 #### Property Value

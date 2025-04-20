@@ -65,7 +65,7 @@ namespace DataForSeo.Client.Models
         public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
 
         [Newtonsoft.Json.JsonProperty("keyword_ideas_ads_api", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo KeywordIdeasAdsApi { get; set; }
+        public AppendixSerpsRatesDataInfo KeywordIdeasAdsApi { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

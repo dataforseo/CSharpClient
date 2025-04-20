@@ -63,12 +63,12 @@ public Nullable<double> Errors { get; set; }
 ### **Reviews**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
+public AppendixSerpsRatesDataInfo Reviews { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **TasksReady**
 

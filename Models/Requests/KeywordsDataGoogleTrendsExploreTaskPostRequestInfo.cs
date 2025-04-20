@@ -9,7 +9,8 @@ namespace DataForSeo.Client.Models.Requests
         /// keywords
         /// <br/>required field
         /// <br/>the maximum number of keywords you can specify: 5
-        /// <br/>the minimum number of symbols must be greater than 1
+        /// <br/>the maximum number of characters you can specify in a keyword: 100
+        /// <br/>the minimum number of characters must be greater than 1
         /// <br/>comma characters (,) in the specified keywords will be unset and ignored
         /// <br/>Note: keywords cannot consist of a combination of the following characters: &lt; &gt; | \ " - + = ~ ! : * ( ) [ ] { }
         /// <br/>Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword

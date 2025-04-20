@@ -100,6 +100,16 @@ public string OffsetToken { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
+### **RankScale**
+
+```csharp
+public string RankScale { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Tag**
 
 ```csharp

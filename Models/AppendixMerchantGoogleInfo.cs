@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixMerchantGoogleInfo
     {
         [Newtonsoft.Json.JsonProperty("products", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Products { get; set; }
+        public AppendixSerpsRatesDataInfo Products { get; set; }
 
         [Newtonsoft.Json.JsonProperty("sellers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public AppendixSellersGoogleMerchantLimitsRatesDataInfo Sellers { get; set; }
 
         [Newtonsoft.Json.JsonProperty("product_spec", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo ProductSpec { get; set; }
+        public AppendixSerpsRatesDataInfo ProductSpec { get; set; }
 
         [Newtonsoft.Json.JsonProperty("product_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo ProductInfo { get; set; }
+        public AppendixSerpsRatesDataInfo ProductInfo { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

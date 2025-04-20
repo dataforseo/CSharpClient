@@ -46,7 +46,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Swedish, sv,
         /// <br/>Thai, th,
         /// <br/>Ukrainian, uk,
-        /// <br/>Vietnamese, vi
+        /// <br/>Vietnamese, vi,
+        /// <br/>Bulgarian, bg,
+        /// <br/>Croatian, hr,
+        /// <br/>Serbian, sr,
+        /// <br/>Slovenian, sl,
+        /// <br/>Bosnian, bs
         /// <br/>example:
         /// <br/>English
         /// </summary>

@@ -2424,6 +2424,9 @@ public Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuot
 #### Parameters
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 #### Returns
 
@@ -2450,6 +2453,9 @@ public Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuot
 #### Parameters
 
 `id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+task identifier
+ <br>unique task identifier in our system in the UUID format
+ <br>you will be able to use it within 30 days to request the results of the task at any time
 
 `cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
 A cancellation token that can be used by other objects or threads to receive notice of cancellation.
@@ -4901,7 +4907,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
+ <br>Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
 
 ### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;, CancellationToken)**
@@ -4930,7 +4936,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
+ <br>Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
 
 ### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;)**
@@ -7542,7 +7548,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash'
 
 ### **GoogleLocalFinderTaskPostAsync(IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;, CancellationToken)**
@@ -7571,7 +7577,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+ <br>Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash'
 
 ### **GoogleLocalFinderTasksReadyAsync()**
@@ -7817,7 +7823,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Live Google Local finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
+ <br>Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash'
 
 ### **GoogleLocalFinderLiveAdvancedAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;, CancellationToken)**
@@ -7846,7 +7852,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌‌
- <br>Live Google Local finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
+ <br>Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash'
 
 ### **GoogleLocalFinderLiveHtmlAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;)**
@@ -7872,7 +7878,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
- <br>Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
+ <br>Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
 
 ### **GoogleLocalFinderLiveHtmlAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;, CancellationToken)**
@@ -7901,7 +7907,7 @@ A server side error occurred.
 **Remarks:**
 
 ‌
- <br>Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
+ <br>Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
  <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
 
 ### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;)**

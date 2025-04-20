@@ -87,8 +87,7 @@ namespace DataForSeo.Client.Models.Responses
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// items inside the element
-        /// <br/>array of 8 search queries related to the keyword
+        /// items in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<BaseSerpElementItem> Items { get; set; }

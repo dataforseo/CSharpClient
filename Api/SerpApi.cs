@@ -1882,7 +1882,7 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌‌
-        /// <br/>Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+        /// <br/>Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -1895,7 +1895,7 @@ namespace DataForSeo.Client.Api
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
         /// ‌‌
-        /// <br/>Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
+        /// <br/>Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2299,7 +2299,7 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌‌
-        /// <br/>Live Google Local finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
+        /// <br/>Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2312,7 +2312,7 @@ namespace DataForSeo.Client.Api
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
         /// ‌‌
-        /// <br/>Live Google Local finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
+        /// <br/>Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2382,7 +2382,7 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌
-        /// <br/>Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
+        /// <br/>Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -2395,7 +2395,7 @@ namespace DataForSeo.Client.Api
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
         /// ‌
-        /// <br/>Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
+        /// <br/>Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -8072,7 +8072,7 @@ namespace DataForSeo.Client.Api
 
         /// <remarks>
         /// ‌‌
-        /// <br/>Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
+        /// <br/>Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -8085,7 +8085,7 @@ namespace DataForSeo.Client.Api
         /// <param name = "cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <remarks>
         /// ‌‌
-        /// <br/>Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
+        /// <br/>Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
         /// </remarks>
         /// <returns>Successful operation</returns>
@@ -13878,6 +13878,9 @@ namespace DataForSeo.Client.Api
         /// <br/>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
         /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id)
@@ -13891,6 +13894,9 @@ namespace DataForSeo.Client.Api
         /// <br/>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
         /// <br/>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
         /// </remarks>
+        /// <param name = "id">task identifier
+        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>you will be able to use it within 30 days to request the results of the task at any time</param>
         /// <returns>Successful operation</returns>
         /// <exception cref = "ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id, System.Threading.CancellationToken cancellationToken)

@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class AppendixDataInfo
     {
         [Newtonsoft.Json.JsonProperty("serp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
+        public AppendixSerpDataInfo Serp { get; set; }
 
         /// <summary>
         /// total amount of money deposited to your account
@@ -86,19 +86,19 @@ namespace DataForSeo.Client.Models
         public double? TotalReviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Reviews { get; set; }
+        public AppendixSerpsRatesDataInfo Reviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_social", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalSocial { get; set; }
 
         [Newtonsoft.Json.JsonProperty("social", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Social { get; set; }
+        public AppendixSerpsRatesDataInfo Social { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalTrafficAnalytics { get; set; }
 
         [Newtonsoft.Json.JsonProperty("traffic_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo TrafficAnalytics { get; set; }
+        public AppendixSerpsRatesDataInfo TrafficAnalytics { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

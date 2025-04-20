@@ -13,42 +13,42 @@ Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Ap
 ### **AppInfo**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo AppInfo { get; set; }
+public AppendixSerpsRatesDataInfo AppInfo { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **AppList**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo AppList { get; set; }
+public AppendixSerpsRatesDataInfo AppList { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **AppReviews**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo AppReviews { get; set; }
+public AppendixSerpsRatesDataInfo AppReviews { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **AppSearches**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo AppSearches { get; set; }
+public AppendixSerpsRatesDataInfo AppSearches { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **Errors**
 

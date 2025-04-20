@@ -6,7 +6,7 @@ namespace DataForSeo.Client.Models.Requests
     public partial class DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo
     {
         /// <summary>
-        /// target domains and websites
+        /// target domains, subdomains, and webpages
         /// <br/>required field
         /// <br/>you can specify domains, subdomains, and webpages in this field;
         /// <br/>domains and subdomains should be specified without https:// and www.;

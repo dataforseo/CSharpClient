@@ -5,16 +5,16 @@ namespace DataForSeo.Client.Models
     public partial class AppendixAppDataDayStatisticsRatesData
     {
         [Newtonsoft.Json.JsonProperty("app_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo AppInfo { get; set; }
+        public AppendixSerpsRatesDataInfo AppInfo { get; set; }
 
         [Newtonsoft.Json.JsonProperty("app_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo AppList { get; set; }
+        public AppendixSerpsRatesDataInfo AppList { get; set; }
 
         [Newtonsoft.Json.JsonProperty("app_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo AppReviews { get; set; }
+        public AppendixSerpsRatesDataInfo AppReviews { get; set; }
 
         [Newtonsoft.Json.JsonProperty("app_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo AppSearches { get; set; }
+        public AppendixSerpsRatesDataInfo AppSearches { get; set; }
 
         [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Errors { get; set; }

@@ -117,7 +117,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>number of reviews in SERP
         /// <br/>we strongly recommend setting the parsing depth in the multiples of twenty, because our systems processes twenty reviews in a row
         /// <br/>default value: 20
-        /// <br/>maximum value: 700
+        /// <br/>maximum value: 1000
         /// </summary>
         [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int? Depth { get; set; }

@@ -33,12 +33,12 @@ public AppendixInfo MyBusinessUpdates { get; set; }
 ### **HotelInfo**
 
 ```csharp
-public AppendixSerpLimitsRatesDataInfo HotelInfo { get; set; }
+public AppendixSerpsRatesDataInfo HotelInfo { get; set; }
 ```
 
 #### Property Value
 
-[AppendixSerpLimitsRatesDataInfo](./AppendixSerpLimitsRatesDataInfo.md)<br>
+[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
 
 ### **HotelSearches**
 

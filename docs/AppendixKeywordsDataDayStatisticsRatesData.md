@@ -190,30 +190,20 @@ public AppendixInfo KeywordSuggestionsForUrl { get; set; }
 
 [AppendixInfo](./AppendixInfo.md)<br>
 
-### **SearchVolumeHistory**
+### **Google**
 
 ```csharp
-public AppendixInfo SearchVolumeHistory { get; set; }
+public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
 ```
 
 #### Property Value
 
-[AppendixInfo](./AppendixInfo.md)<br>
+[AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
 
 ### **Industries**
 
 ```csharp
 public Nullable<double> Industries { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **JobFunctions**
-
-```csharp
-public Nullable<double> JobFunctions { get; set; }
 ```
 
 #### Property Value
@@ -230,15 +220,25 @@ public Nullable<double> IdList { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
-### **Google**
+### **SearchVolumeHistory**
 
 ```csharp
-public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
+public AppendixInfo SearchVolumeHistory { get; set; }
 ```
 
 #### Property Value
 
-[AppendixBingKeywordsDataLimitsRatesDataInfo](./AppendixBingKeywordsDataLimitsRatesDataInfo.md)<br>
+[AppendixInfo](./AppendixInfo.md)<br>
+
+### **JobFunctions**
+
+```csharp
+public Nullable<double> JobFunctions { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
 ### **AdditionalProperties**
 

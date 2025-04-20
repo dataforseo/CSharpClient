@@ -80,6 +80,16 @@ public ICollection<object> BacklinksFilters { get; set; }
 
 [ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **RankScale**
+
+```csharp
+public string RankScale { get; set; }
+```
+
+#### Property Value
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+
 ### **Tag**
 
 ```csharp

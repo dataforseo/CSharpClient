@@ -115,6 +115,12 @@ namespace DataForSeo.Client.Models
         public long? ReferringPages { get; set; }
 
         /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the page
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
+
+        /// <summary>
         /// top-level domains of the referring links
         /// <br/>contains top level domains and referring link count per each
         /// </summary>
@@ -140,6 +146,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// types of referring platforms
         /// <br/>indicates referring platform types and and link count per each platform
+        /// <br/>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_links_platform_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> ReferringLinksPlatformTypes { get; set; }
@@ -160,12 +167,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_links_countries", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> ReferringLinksCountries { get; set; }
-
-        /// <summary>
-        /// number of referring pages pointing at least one nofollow link to the page
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringPagesNofollow { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 

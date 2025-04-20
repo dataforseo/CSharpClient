@@ -77,11 +77,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results to be returned to be returned from the Google Play SERP;
-        /// <br/>we strongly recommend setting the parsing depth in the multiples of 100, because our system processes 100 results in a row;
-        /// <br/>Note: your account will be billed per each SERP containing up to 100 results;
-        /// <br/>thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;
+        /// <br/>we strongly recommend setting the parsing depth in the multiples of 30, because our system processes 30 results in a row;
+        /// <br/>Note: your account will be billed per each SERP containing up to 30 results;
+        /// <br/>thus, setting a depth above 30 may result in additional charges if the search engine returns more than 30 results;
         /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
-        /// <br/>default value: 100;
+        /// <br/>default value: 30;
         /// <br/>maximum value: 200
         /// </summary>
         [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

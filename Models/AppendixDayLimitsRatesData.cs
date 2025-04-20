@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class AppendixDayLimitsRatesData
     {
         [Newtonsoft.Json.JsonProperty("serp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
+        public AppendixSerpsRatesDataInfo Serp { get; set; }
 
         /// <summary>
         /// total amount of money deposited to your account

@@ -102,9 +102,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// platform types of the referring domain
-        /// <br/>example:
-        /// <br/>"cms",
-        /// <br/>"blogs"
+        /// <br/>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain_from_platform_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> DomainFromPlatformType { get; set; }

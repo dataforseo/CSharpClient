@@ -5,7 +5,7 @@ namespace DataForSeo.Client.Models
     public partial class AppendixMinuteStatisticsRatesData
     {
         [Newtonsoft.Json.JsonProperty("serp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixSerpLimitsRatesDataInfo Serp { get; set; }
+        public AppendixSerpsRatesDataInfo Serp { get; set; }
 
         /// <summary>
         /// total amount of money deposited to your account
@@ -23,13 +23,13 @@ namespace DataForSeo.Client.Models
         public double? TotalKeywordsData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixAppendixsRatesDataInfo Appendix { get; set; }
+        public AppendixAppendixDaysRatesDataInfo Appendix { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalAppendix { get; set; }
 
         [Newtonsoft.Json.JsonProperty("dataforseo_labs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixDataforseoLabsLimitsRatesDataInfo DataforseoLabs { get; set; }
+        public AppendixDataforseoLabsDayStatisticsRatesData DataforseoLabs { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_dataforseo_labs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalDataforseoLabs { get; set; }
@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
         public double? TotalOnPage { get; set; }
 
         [Newtonsoft.Json.JsonProperty("business_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixBusinessDataStatisticsRatesDataInfo BusinessData { get; set; }
+        public AppendixBusinessDataLimitsRatesDataInfo BusinessData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_business_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalBusinessData { get; set; }
@@ -65,7 +65,7 @@ namespace DataForSeo.Client.Models
         public double? TotalBacklinks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("app_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixAppDataDayStatisticsRatesData AppData { get; set; }
+        public AppendixAppDataLimitsRatesDataInfo AppData { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_app_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalAppData { get; set; }
@@ -77,7 +77,7 @@ namespace DataForSeo.Client.Models
         public double? TotalContentAnalysis { get; set; }
 
         [Newtonsoft.Json.JsonProperty("content_generation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public AppendixContentGenerationStatisticsRatesDataInfo ContentGeneration { get; set; }
+        public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
 
         [Newtonsoft.Json.JsonProperty("total_content_generation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? TotalContentGeneration { get; set; }

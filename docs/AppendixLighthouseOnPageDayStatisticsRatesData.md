@@ -50,6 +50,16 @@ public Nullable<double> Live { get; set; }
 
 [Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
 
+### **Languages**
+
+```csharp
+public Nullable<double> Languages { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+
 ### **Audits**
 
 ```csharp
@@ -64,16 +74,6 @@ public Nullable<double> Audits { get; set; }
 
 ```csharp
 public Nullable<double> Versions { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Languages**
-
-```csharp
-public Nullable<double> Languages { get; set; }
 ```
 
 #### Property Value

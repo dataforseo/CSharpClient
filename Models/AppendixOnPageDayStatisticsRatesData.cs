@@ -67,14 +67,14 @@ namespace DataForSeo.Client.Models
         [Newtonsoft.Json.JsonProperty("microdata", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? Microdata { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("available_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
+
         [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? IdList { get; set; }
 
         [Newtonsoft.Json.JsonProperty("force_stop", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public double? ForceStop { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("available_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? AvailableFilters { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
