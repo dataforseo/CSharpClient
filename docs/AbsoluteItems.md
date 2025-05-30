@@ -1,59 +1,10 @@
 # AbsoluteItems
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AbsoluteItems
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AbsoluteItems](./AbsoluteItems.md)
 
 ## Properties
 
-### **GeoId**
-
-```csharp
-public string GeoId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **GeoName**
-
-```csharp
-public string GeoName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Values**
-
-```csharp
-public ICollection<Nullable<int>> Values { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Nullable&lt;Int32&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AbsoluteItems()**
-
-```csharp
-public AbsoluteItems()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**GeoId** | **string** | location identifier<br>you can use this field for matching obtained results with location parameters specified in the request<br>see the full list of available locations with their geo_id here or by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations<br>example:<br>US-NY |[optional]|
+**GeoName** | **string** | location name<br>you can use this field for matching obtained results with location parameters specified in the request<br>see the full list of available locations with their geo_name here or by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations<br>example:<br>Andorra |[optional]|
+**Values** | **IEnumerable<string>** | keyword popularity rates within a given location<br>represents location-specific keyword popularity rate over the specified time range;<br>using these values, you can understand which of the specified keywords is more popular in the related location;<br>the first value in the array is provided for the first term from the keywords array, the second value is provided for the second keyword, and so on;<br>calculation: we determine the highest popularity value across all specified keywords within a given location, and then express the popularity values of each keyword as a percentage of the highest value (100);<br>a value of 100 is the peak popularity for the term<br>a value of 50 means that the term is half as popular<br>a value of 0 means there was not enough data for this term |[optional]|

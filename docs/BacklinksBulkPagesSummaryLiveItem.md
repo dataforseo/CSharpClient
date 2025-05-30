@@ -1,269 +1,31 @@
 # BacklinksBulkPagesSummaryLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BacklinksBulkPagesSummaryLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksBulkPagesSummaryLiveItem](./BacklinksBulkPagesSummaryLiveItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Rank**
-
-```csharp
-public Nullable<int> Rank { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MainDomainRank**
-
-```csharp
-public Nullable<int> MainDomainRank { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Backlinks**
-
-```csharp
-public Nullable<long> Backlinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **FirstSeen**
-
-```csharp
-public string FirstSeen { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LostDate**
-
-```csharp
-public string LostDate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **BacklinksSpamScore**
-
-```csharp
-public Nullable<long> BacklinksSpamScore { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **BrokenBacklinks**
-
-```csharp
-public Nullable<long> BrokenBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **BrokenPages**
-
-```csharp
-public Nullable<int> BrokenPages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringDomains**
-
-```csharp
-public Nullable<long> ReferringDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringDomainsNofollow**
-
-```csharp
-public Nullable<long> ReferringDomainsNofollow { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringMainDomains**
-
-```csharp
-public Nullable<long> ReferringMainDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringMainDomainsNofollow**
-
-```csharp
-public Nullable<long> ReferringMainDomainsNofollow { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringIps**
-
-```csharp
-public Nullable<long> ReferringIps { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringSubnets**
-
-```csharp
-public Nullable<long> ReferringSubnets { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringPages**
-
-```csharp
-public Nullable<long> ReferringPages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringPagesNofollow**
-
-```csharp
-public Nullable<long> ReferringPagesNofollow { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringLinksTld**
-
-```csharp
-public IDictionary<string, Nullable<long>> ReferringLinksTld { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringLinksTypes**
-
-```csharp
-public IDictionary<string, Nullable<long>> ReferringLinksTypes { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringLinksAttributes**
-
-```csharp
-public IDictionary<string, Nullable<long>> ReferringLinksAttributes { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringLinksPlatformTypes**
-
-```csharp
-public IDictionary<string, Nullable<long>> ReferringLinksPlatformTypes { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringLinksSemanticLocations**
-
-```csharp
-public IDictionary<string, Nullable<long>> ReferringLinksSemanticLocations { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringLinksCountries**
-
-```csharp
-public IDictionary<string, Nullable<long>> ReferringLinksCountries { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksBulkPagesSummaryLiveItem()**
-
-```csharp
-public BacklinksBulkPagesSummaryLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Url** | **string** | page URL |[optional]|
+**Rank** | **double?** | page rank<br>rank of the page on the target website<br>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
+**MainDomainRank** | **double?** | rank of the main domain<br>rank of the main domain is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
+**Backlinks** | **double?** | number of backlinks |[optional]|
+**FirstSeen** | **string** | date and time when our crawler found a backlink to this page for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**LostDate** | **string** | date and time when the last backlink to this page was lost<br>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
+**BacklinksSpamScore** | **double?** | average spam score of the backlinks pointing to the page<br>learn more about how the metric is calculated on this help center page |[optional]|
+**BrokenBacklinks** | **double?** | number of broken backlinks<br>number of broken backlinks pointing to the page |[optional]|
+**BrokenPages** | **double?** | number of broken pages<br>number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to |[optional]|
+**ReferringDomains** | **double?** | indicates the number domains referring to the page |[optional]|
+**ReferringDomainsNofollow** | **double?** | number of domains pointing at least one nofollow link to the target |[optional]|
+**ReferringMainDomains** | **double?** | indicates the number of referring main domains |[optional]|
+**ReferringMainDomainsNofollow** | **long?** |  |[optional]|
+**ReferringIps** | **double?** | number of referring IP addresses<br>number of IP addresses pointing to this page |[optional]|
+**ReferringSubnets** | **double?** | number of referring subnetworks |[optional]|
+**ReferringPages** | **double?** | indicates the number of pages pointing to the relevant url |[optional]|
+**ReferringPagesNofollow** | **double?** | number of referring pages pointing at least one nofollow link to the target |[optional]|
+**ReferringLinksTld** | **IDictionary<string, long?>** | top-level domains of the referring links<br>contains top level domains and referring link count per each |[optional]|
+**ReferringLinksTypes** | **IDictionary<string, long?>** | types of referring links<br>indicates the types of the referring links and link count per each type<br>possible values:<br>anchor, image, link, meta, canonical, alternate, redirect |[optional]|
+**ReferringLinksAttributes** | **IDictionary<string, long?>** | link attributes of the referring links<br>indicates link attributes of the referring links and link count per each attribute |[optional]|
+**ReferringLinksPlatformTypes** | **IDictionary<string, long?>** | types of referring platforms<br>indicates referring platform types and and link count per each platform<br>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization |[optional]|
+**ReferringLinksSemanticLocations** | **IDictionary<string, long?>** | semantic locations of the referring links<br>indicates semantic elements in HTML where the referring links are located and link count per each semantic location<br>you can get the full list of semantic elements here<br>examples:<br>article, section, footer |[optional]|
+**ReferringLinksCountries** | **IDictionary<string, long?>** | ISO country codes of the referring links<br>indicates ISO country codes of the domains where the referring links are located and the link count per each country |[optional]|

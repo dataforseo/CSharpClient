@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppDataAppleAppListingsSearchLiveRequestInfo
+
+    public class AppDataAppleAppListingsSearchLiveRequestInfo 
     {
+
         /// <summary>
         /// app categories
         /// <br/>optional field
@@ -12,8 +15,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can get the full list of available app listing categories by this link
         /// <br/>you can specify up to 10 categories
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Categories { get; set; }
+        [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Categories { get; set; }
 
         /// <summary>
         /// keyword in the app’s description
@@ -21,7 +24,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>keywords that occur in the description of the app;
         /// <br/>can contain up to 200 characters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
@@ -30,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>keywords that occur in the title of the app;
         /// <br/>can contain up to 200 characters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
@@ -39,14 +42,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like, not_like
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like, not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["rating.value","&gt;",3]
+        /// <br/>['rating.value','&gt;',3]
         /// <br/>you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/app_data/apple/app_listings/available_filters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// results sorting rules
@@ -57,14 +60,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>desc – results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting parameter
         /// <br/>example:
-        /// <br/>["item.rating.value,desc"]
+        /// <br/>['item.rating.value,desc']
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>["item.rating.value,desc","item.rating.value,desc"]
+        /// <br/>['item.rating.value,desc','item.rating.value,desc']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OrderBy { get; set; }
+        [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> OrderBy { get; set; }
 
         /// <summary>
         /// the maximum number of returned apps
@@ -72,7 +75,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 100
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
 
         /// <summary>
@@ -81,7 +84,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0
         /// <br/>if you specify the 10 value, the first ten entities in the results array will be omitted and the data will be provided for the successive entities
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
@@ -93,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>offset_token values are unique for each subsequent task
         /// <br/>Note: if the offset_token is specified in the request, all other parameters should be identical to the previous request
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("offset_token", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }
 
         /// <summary>
@@ -103,22 +106,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

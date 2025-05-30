@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class KeywordsDataGoogleTrendsExploreLiveRequestInfo
+
+    public class KeywordsDataGoogleTrendsExploreLiveRequestInfo 
     {
+
         /// <summary>
         /// keywords
         /// <br/>required field
@@ -12,12 +15,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the maximum number of characters you can specify in a keyword: 100
         /// <br/>the minimum number of characters must be greater than 1
         /// <br/>comma characters (,) in the specified keywords will be unset and ignored
-        /// <br/>Note: keywords cannot consist of a combination of the following characters: &lt; &gt; | \ " - + = ~ ! : * ( ) [ ] { }
+        /// <br/>Note: keywords cannot consist of a combination of the following characters: &lt; &gt; | \ ' - + = ~ ! : * ( ) [ ] { }
         /// <br/>Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Keywords { get; set; }
+        [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Keywords { get; set; }
 
         /// <summary>
         /// full name of search engine location
@@ -29,8 +32,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> LocationName { get; set; }
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
@@ -42,8 +45,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<int?> LocationCode { get; set; }
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationCode { get; set; }
 
         /// <summary>
         /// full name of search engine language
@@ -54,7 +57,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>English
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -66,13 +69,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>en
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -81,7 +84,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you don’t specify this field, the 0 value will be applied by default and the search will be carried out across all available categories
         /// <br/>you can receive the list of available categories with their category_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/google_trends/categories
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("category_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("category_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CategoryCode { get; set; }
 
         /// <summary>
@@ -90,22 +93,22 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you don’t specify this field, the current day and month of the preceding year will be used by default
         /// <br/>minimal value for the web type: 2004-01-01
         /// <br/>minimal value for other types: 2008-01-01
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2019-01-15"
+        /// <br/>'2019-01-15'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
         /// ending date of the time range
         /// <br/>optional field
         /// <br/>if you don’t specify this field, the today’s date will be used by default
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2019-01-15"
+        /// <br/>'2019-01-15'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
@@ -119,7 +122,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values for news, youtube, images, froogle:
         /// <br/>2008_present
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("time_range", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("time_range", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TimeRange { get; set; }
 
         /// <summary>
@@ -127,13 +130,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>to speed up the execution of the request, specify one item at a time;
         /// <br/>possible values:
-        /// <br/>"google_trends_graph", "google_trends_map", "google_trends_topics_list","google_trends_queries_list"
+        /// <br/>'google_trends_graph', 'google_trends_map', 'google_trends_topics_list','google_trends_queries_list'
         /// <br/>default value:
-        /// <br/>"google_trends_graph"
+        /// <br/>'google_trends_graph'
         /// <br/>Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword in the keywords field
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
+        [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -142,22 +145,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models.Responses
         /// details of the crawling session
         /// </summary>
         [Newtonsoft.Json.JsonProperty("crawl_status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public CrawlStatusInfo CrawlStatus { get; set; }
+        public CrawlStatus CrawlStatus { get; set; }
 
         /// <summary>
         /// microdata validation test results
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Responses
         /// number of items in the results array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

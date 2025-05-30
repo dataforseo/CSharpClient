@@ -1,69 +1,11 @@
 # KeywordsDataGoogleAdsStatusResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class KeywordsDataGoogleAdsStatusResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataGoogleAdsStatusResultInfo](./KeywordsDataGoogleAdsStatusResultInfo.md)
 
 ## Properties
 
-### **ActualData**
-
-```csharp
-public Nullable<bool> ActualData { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DateUpdate**
-
-```csharp
-public string DateUpdate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LastYearInMonthlySearches**
-
-```csharp
-public Nullable<int> LastYearInMonthlySearches { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LastMonthInMonthlySearches**
-
-```csharp
-public Nullable<int> LastMonthInMonthlySearches { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataGoogleAdsStatusResultInfo()**
-
-```csharp
-public KeywordsDataGoogleAdsStatusResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**ActualData** | **bool?** | indicates whether Google updated keyword data for the previous month<br>generally, Google updates keyword data in the middle of the month<br>if the value is true, Google currently provides up-to-date data for the previous month<br>if the value is false, we are not able to provide data for the previous month |[optional]|
+**DateUpdate** | **string** | date of the latest update of Google Ads data<br>indicates the latest date when Google updated search volume, CPC, and other keyword metrics<br>example:<br>2020-05-15 |[optional]|
+**LastYearInMonthlySearches** | **double?** | the latest year for which search volume data is available |[optional]|
+**LastMonthInMonthlySearches** | **double?** | the latest month for which search volume data is available |[optional]|

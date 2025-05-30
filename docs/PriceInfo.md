@@ -1,89 +1,13 @@
 # PriceInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class PriceInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [PriceInfo](./PriceInfo.md)
 
 ## Properties
 
-### **Current**
-
-```csharp
-public Nullable<double> Current { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Regular**
-
-```csharp
-public Nullable<double> Regular { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MaxValue**
-
-```csharp
-public Nullable<double> MaxValue { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Currency**
-
-```csharp
-public string Currency { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsPriceRange**
-
-```csharp
-public Nullable<bool> IsPriceRange { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DisplayedPrice**
-
-```csharp
-public string DisplayedPrice { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **PriceInfo()**
-
-```csharp
-public PriceInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Current** | **double?** | current price<br>indicates the current price of the product or service featured in the result |[optional]|
+**Regular** | **double?** | regular price<br>indicates the regular price of the product or service with no discounts applied |[optional]|
+**MaxValue** | **double?** | the maximum price<br>the maximum price of the product or service as indicated in the result |[optional]|
+**Currency** | **string** | currency of the listed price<br>ISO code of the currency applied to the price |[optional]|
+**IsPriceRange** | **bool?** | price is provided as a range<br>indicates whether a price is provided in a range |[optional]|
+**DisplayedPrice** | **string** | price string in the result<br>raw price string as provided in the result |[optional]|

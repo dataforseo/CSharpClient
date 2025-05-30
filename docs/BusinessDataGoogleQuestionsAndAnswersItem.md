@@ -1,159 +1,20 @@
 # BusinessDataGoogleQuestionsAndAnswersItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BusinessDataGoogleQuestionsAndAnswersItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataGoogleQuestionsAndAnswersItem](./BusinessDataGoogleQuestionsAndAnswersItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankGroup**
-
-```csharp
-public Nullable<int> RankGroup { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankAbsolute**
-
-```csharp
-public Nullable<int> RankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **QuestionId**
-
-```csharp
-public string QuestionId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ProfileImageUrl**
-
-```csharp
-public string ProfileImageUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ProfileUrl**
-
-```csharp
-public string ProfileUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ProfileName**
-
-```csharp
-public string ProfileName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **QuestionText**
-
-```csharp
-public string QuestionText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **OriginalQuestionText**
-
-```csharp
-public string OriginalQuestionText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **TimeAgo**
-
-```csharp
-public string TimeAgo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Timestamp**
-
-```csharp
-public string Timestamp { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Items**
-
-```csharp
-public ICollection<GoogleBusinessAnswerElement> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;GoogleBusinessAnswerElement&gt;](./GoogleBusinessAnswerElement.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataGoogleQuestionsAndAnswersItem()**
-
-```csharp
-public BusinessDataGoogleQuestionsAndAnswersItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**RankGroup** | **double?** | position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
+**RankAbsolute** | **double?** | absolute rank among all the elements |[optional]|
+**QuestionId** | **string** | ID of the question |[optional]|
+**Url** | **string** | URL of the question |[optional]|
+**ProfileImageUrl** | **string** | URL of the user’s profile image |[optional]|
+**ProfileUrl** | **string** | URL of the user’s profile |[optional]|
+**ProfileName** | **string** | displayed name of the user |[optional]|
+**QuestionText** | **string** | current text of the question |[optional]|
+**OriginalQuestionText** | **string** | original text of the question |[optional]|
+**TimeAgo** | **string** | estimated time when the question was posted |[optional]|
+**Timestamp** | **string** | exact time when the question was posted |[optional]|
+**Items** | **IEnumerable<GoogleBusinessAnswerElement>** | array of google business question items with answers<br>possible item types: google_business_question_item |[optional]|

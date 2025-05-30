@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models.Responses
         /// contains parameters you specified in the POST request
         /// </summary>
         [Newtonsoft.Json.JsonProperty("metadata", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, object> Metadata { get; set; }
+        public System.Collections.Generic.ICollection<string> Metadata { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

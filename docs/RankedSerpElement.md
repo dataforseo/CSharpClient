@@ -1,119 +1,16 @@
 # RankedSerpElement
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class RankedSerpElement
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [RankedSerpElement](./RankedSerpElement.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SerpItem**
-
-```csharp
-public BaseDataforseoLabsSerpElementItem SerpItem { get; set; }
-```
-
-#### Property Value
-
-[BaseDataforseoLabsSerpElementItem](./BaseDataforseoLabsSerpElementItem.md)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SerpItemTypes**
-
-```csharp
-public ICollection<string> SerpItemTypes { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SeResultsCount**
-
-```csharp
-public string SeResultsCount { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **KeywordDifficulty**
-
-```csharp
-public Nullable<int> KeywordDifficulty { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsLost**
-
-```csharp
-public Nullable<bool> IsLost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LastUpdatedTime**
-
-```csharp
-public string LastUpdatedTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PreviousUpdatedTime**
-
-```csharp
-public string PreviousUpdatedTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **RankedSerpElement()**
-
-```csharp
-public RankedSerpElement()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**SerpItem** | **BaseDataforseoLabsSerpElementItem** | contains data on the SERP element<br>the list of supported SERP elements can be found below |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
+**SerpItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP<br>possible item types:<br>answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box;<br>note that the actual results will be returned only for organic, paid, featured_snippet, and local_pack elements |[optional]|
+**SeResultsCount** | **double?** | number of search results for the returned keyword |[optional]|
+**KeywordDifficulty** | **double?** | difficulty of ranking in the first top-10 organic results for a keyword<br>indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;<br>calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;<br>learn more about the metric in this help center guide |[optional]|
+**IsLost** | **bool?** | lost ranked elements<br>indicates how many ranked elements of this domain were previously presented in SERPs, but weren’t found during the last check |[optional]|
+**LastUpdatedTime** | **string** | date and time when keyword data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**PreviousUpdatedTime** | **string** | previous to the most recent date and time when SERP data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-10-15 12:57:46 +00:00 |[optional]|

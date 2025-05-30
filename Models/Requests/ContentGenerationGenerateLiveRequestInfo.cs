@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ContentGenerationGenerateLiveRequestInfo
+
+    public class ContentGenerationGenerateLiveRequestInfo 
     {
+
         /// <summary>
         /// initial target text
         /// <br/>required field
@@ -12,7 +15,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can contain from 1 to 500 tokens
         /// <br/>learn more about tokens on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("text", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
 
         /// <summary>
@@ -23,7 +26,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note: the number does not include tokens specified in the text field;
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("max_new_tokens", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("max_new_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxNewTokens { get; set; }
 
         /// <summary>
@@ -34,7 +37,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note: the number includes tokens specified in the text field
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("max_tokens", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("max_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxTokens { get; set; }
 
         /// <summary>
@@ -46,7 +49,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0.8
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("creativity_index", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("creativity_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? CreativityIndex { get; set; }
 
         /// <summary>
@@ -56,7 +59,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can take values from 0.5 to 2;
         /// <br/>default value: 1
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("token_repetition_penalty", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("token_repetition_penalty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? TokenRepetitionPenalty { get; set; }
 
         /// <summary>
@@ -68,7 +71,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 40
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("top_k", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("top_k", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TopK { get; set; }
 
         /// <summary>
@@ -81,7 +84,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note:if both top_k and top_p are used, top_k acts first;
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("top_p", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? TopP { get; set; }
 
         /// <summary>
@@ -93,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0.7
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("temperature", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("temperature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? Temperature { get; set; }
 
         /// <summary>
@@ -101,30 +104,30 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can specify up to 50 terms;
         /// <br/>example:
-        /// <br/>["term", "optimization"]
+        /// <br/>['term', 'optimization']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("avoid_words", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> AvoidWords { get; set; }
+        [JsonProperty("avoid_words", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> AvoidWords { get; set; }
 
         /// <summary>
         /// words or phrases to avoid in the beginning of the generated text
         /// <br/>optional field
         /// <br/>you can specify up to 50 terms;
         /// <br/>example:
-        /// <br/>["SEO", "search engine optimization"]
+        /// <br/>['SEO', 'search engine optimization']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("avoid_starting_words", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> AvoidStartingWords { get; set; }
+        [JsonProperty("avoid_starting_words", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> AvoidStartingWords { get; set; }
 
         /// <summary>
         /// words or phrases to end the text
         /// <br/>optional field
         /// <br/>you can specify up to 50 terms;
         /// <br/>example:
-        /// <br/>["now","subscribe"]
+        /// <br/>['now','subscribe']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("stop_words", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> StopWords { get; set; }
+        [JsonProperty("stop_words", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> StopWords { get; set; }
 
         /// <summary>
         /// token for generating subsequent results
@@ -133,7 +136,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to continue the generation of text from the initial response
         /// <br/>supplement_token values are unique for each subsequent task
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("supplement_token", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("supplement_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SupplementToken { get; set; }
 
         /// <summary>
@@ -143,22 +146,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

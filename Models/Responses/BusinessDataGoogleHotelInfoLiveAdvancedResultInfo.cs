@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code in a POST array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -54,7 +54,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>class rating that ranges between 1-5 stars and displayed after review ratings in hotel summary
         /// </summary>
         [Newtonsoft.Json.JsonProperty("stars", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Stars { get; set; }
+        public double? Stars { get; set; }
 
         /// <summary>
         /// hotel class rating
@@ -88,7 +88,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>information about the location where the hotel is located
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public Location Location { get; set; }
+        public HotelLocationInfo Location { get; set; }
 
         /// <summary>
         /// hotel reviews by criteria

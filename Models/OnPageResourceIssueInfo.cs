@@ -1,32 +1,32 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    /// <summary>
-    /// resource errors and warnings
-    /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class OnPageResourceIssueInfo
+    public class OnPageResourceIssueInfo 
     {
+
         /// <summary>
         /// resource errors
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<OnPageResourceIssueItemInfo> Errors { get; set; }
+        [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<OnPageResourceIssueItemInfo> Errors { get; set; }
 
         /// <summary>
         /// resource warnings
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("warnings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<OnPageResourceIssueItemInfo> Warnings { get; set; }
+        [JsonProperty("warnings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<OnPageResourceIssueItemInfo> Warnings { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

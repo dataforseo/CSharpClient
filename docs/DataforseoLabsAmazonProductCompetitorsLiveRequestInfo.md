@@ -1,129 +1,17 @@
 # DataforseoLabsAmazonProductCompetitorsLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class DataforseoLabsAmazonProductCompetitorsLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsAmazonProductCompetitorsLiveRequestInfo](./DataforseoLabsAmazonProductCompetitorsLiveRequestInfo.md)
 
 ## Properties
 
-### **Asin**
-
-```csharp
-public string Asin { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationName**
-
-```csharp
-public string LocationName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Limit**
-
-```csharp
-public Nullable<int> Limit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Filters**
-
-```csharp
-public ICollection<object> Filters { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **OrderBy**
-
-```csharp
-public ICollection<string> OrderBy { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Offset**
-
-```csharp
-public Nullable<int> Offset { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsAmazonProductCompetitorsLiveRequestInfo()**
-
-```csharp
-public DataforseoLabsAmazonProductCompetitorsLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Asin** | **string** | product ID<br>required field<br>unique product identifier (ASIN) on Amazon;<br>you can receive the asin parameter by making a separate request to the Amazon Products endpoint |[optional]|
+**LocationName** | **string** | full name of the location<br>required field if don’t specify location_code<br>you can receive the list of available locations with their location_name by making a separate request to<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;<br>Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br>United States |[optional]|
+**LocationCode** | **int?** | location code<br>required field if don’t specify location_name<br>you can receive the list of available locations with their location_code by making a separate request to<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;<br>Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;<br>example:<br>2840 |[optional]|
+**LanguageName** | **string** | full name of the language<br>required field if don’t specify language_code<br>you can receive the list of available languages with their language_name by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>English |[optional]|
+**LanguageCode** | **string** | language code<br>required field if don’t specify language_name<br>you can receive the list of available languages with their language_code by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>en |[optional]|
+**Limit** | **int?** | the maximum number of products in the results array<br>optional field<br>default value: 100;<br>maximum value: 1000 |[optional]|
+**Filters** | **IEnumerable<object>** | array of results filtering parameters<br>optional field<br>you can add several filters at once (8 filters maximum)<br>you should set a logical operator and, or between the conditions<br>the following operators are supported:<br>regex, not_regex, <, <=, >, >=, =, <>, in, not_in, ilike, not_ilike, like, not_like, match, not_match<br>you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters<br>example:<br>['full_metrics.amazon_serp.pos_1','>', 20]<br>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide |[optional]|
+**OrderBy** | **IEnumerable<string>** | results sorting rules<br>optional field<br>you can use the same values as in the filters array to sort the results<br>possible sorting types:<br>asc – results will be sorted in the ascending order<br>desc – results will be sorted in the descending order<br>you should use a comma to set up a sorting parameter<br>example:<br>['full_metrics.amazon_serp.pos_1,desc']<br>note that you can set no more than three sorting rules in a single request<br>you should use a comma to separate several sorting rules<br>example:<br>['full_metrics.amazon_serp.pos_1,desc','avg_position,desc']<br>default rule:<br>['ranked_serp_element.serp_item.rank_group,asc'] |[optional]|
+**Offset** | **int?** | offset in the results array of returned product competitors<br>optional field<br>default value: 0<br>if you specify the 10 value, the first ten product competitors in the results array will be omitted and the data will be provided for the successive product competitors |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

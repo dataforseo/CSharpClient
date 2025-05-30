@@ -1,59 +1,10 @@
 # TableContentInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class TableContentInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [TableContentInfo](./TableContentInfo.md)
 
 ## Properties
 
-### **Header**
-
-```csharp
-public ICollection<TableContentItemInfo> Header { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;TableContentItemInfo&gt;](./TableContentItemInfo.md)<br>
-
-### **Body**
-
-```csharp
-public ICollection<TableContentItemInfo> Body { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;TableContentItemInfo&gt;](./TableContentItemInfo.md)<br>
-
-### **Footer**
-
-```csharp
-public ICollection<TableContentItemInfo> Footer { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;TableContentItemInfo&gt;](./TableContentItemInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **TableContentInfo()**
-
-```csharp
-public TableContentInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Header** | **IEnumerable<TableContentItemInfo>** | parsed content of the header |[optional]|
+**Body** | **IEnumerable<TableContentItemInfo>** | content of the body of the table |[optional]|
+**Footer** | **IEnumerable<TableContentItemInfo>** | content of the footer of the table |[optional]|

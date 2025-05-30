@@ -1,109 +1,15 @@
 # SerpGoogleFinanceMarketsTaskGetHtmlResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class SerpGoogleFinanceMarketsTaskGetHtmlResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpGoogleFinanceMarketsTaskGetHtmlResultInfo](./SerpGoogleFinanceMarketsTaskGetHtmlResultInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeDomain**
-
-```csharp
-public string SeDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<HtmlItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;HtmlItem&gt;](./HtmlItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpGoogleFinanceMarketsTaskGetHtmlResultInfo()**
-
-```csharp
-public SerpGoogleFinanceMarketsTaskGetHtmlResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword received in a POST array<br>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) |[optional]|
+**Type** | **string** | type of element |[optional]|
+**SeDomain** | **string** | search engine domain in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<SerpHtmlItemInfo>** | elements of search results found in SERP |[optional]|

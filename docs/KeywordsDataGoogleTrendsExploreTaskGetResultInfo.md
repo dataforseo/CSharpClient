@@ -1,109 +1,15 @@
 # KeywordsDataGoogleTrendsExploreTaskGetResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class KeywordsDataGoogleTrendsExploreTaskGetResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataGoogleTrendsExploreTaskGetResultInfo](./KeywordsDataGoogleTrendsExploreTaskGetResultInfo.md)
 
 ## Properties
 
-### **Keywords**
-
-```csharp
-public ICollection<string> Keywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BaseGoogleTrendsItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BaseGoogleTrendsItem&gt;](./BaseGoogleTrendsItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataGoogleTrendsExploreTaskGetResultInfo()**
-
-```csharp
-public KeywordsDataGoogleTrendsExploreTaskGetResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keywords** | **IEnumerable<string>** | keywords in a POST array |[optional]|
+**Type** | **string** | type of element |[optional]|
+**LocationCode** | **double?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
+**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
+**CheckUrl** | **string** | direct URL to the Google Trends results<br>you can use it to make sure that we provided accurate results |[optional]|
+**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<BaseGoogleTrendsItem>** | items on the Google Trends page |[optional]|

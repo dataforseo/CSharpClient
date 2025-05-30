@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SerpGoogleLocalFinderLiveAdvancedRequestInfo
+
+    public class SerpGoogleLocalFinderLiveAdvancedRequestInfo 
     {
+
         /// <summary>
         /// keyword
         /// <br/>required field
@@ -14,7 +17,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
@@ -26,7 +29,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>You will be additionally charged for the tasks with high execution priority.
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
@@ -37,7 +40,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>London,England,United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -48,7 +51,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -63,7 +66,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>52.6178549,-155.352142,20z
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_coordinate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
@@ -74,7 +77,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>English
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -84,7 +87,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:en
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -93,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("device", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
 
         /// <summary>
@@ -104,7 +107,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you specify mobile in the device field, choose from the following values: android, ios
         /// <br/>default value: android
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("os", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Os { get; set; }
 
         /// <summary>
@@ -119,7 +122,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>thus, setting a depth above 20 for desktop or above 10 for mobile may result in additional charges if the search engine returns more than 20 or 10 results respectively;
         /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
 
         /// <summary>
@@ -128,7 +131,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values for desktop: 3.5, 4, 4.5;
         /// <br/>possible values for mobile: 2, 2.5, 3, 3.5, 4, 4.5
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("min_rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("min_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? MinRating { get; set; }
 
         /// <summary>
@@ -136,12 +139,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>using this field, you can filter places in the results by the time a place is open for visitors
         /// <br/>note that Google may also provide results that do not match this filter
-        /// <br/>possible values: "open_now", "24_hours", "$day_value", "$day_value;$time_value";
-        /// <br/>instead of $day_value use one of these values: "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday";
-        /// <br/>instead of $time_value use one of these values: "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"
-        /// <br/>example: "tuesday;18"
+        /// <br/>possible values: 'open_now', '24_hours', '$day_value', '$day_value;$time_value';
+        /// <br/>instead of $day_value use one of these values: 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday';
+        /// <br/>instead of $time_value use one of these values: '00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23'
+        /// <br/>example: 'tuesday;18'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("time_filter", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("time_filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TimeFilter { get; set; }
 
         /// <summary>
@@ -151,22 +154,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

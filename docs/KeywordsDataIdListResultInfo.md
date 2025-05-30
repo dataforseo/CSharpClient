@@ -1,99 +1,14 @@
 # KeywordsDataIdListResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class KeywordsDataIdListResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataIdListResultInfo](./KeywordsDataIdListResultInfo.md)
 
 ## Properties
 
-### **Id**
-
-```csharp
-public string Id { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DatetimePosted**
-
-```csharp
-public string DatetimePosted { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DatetimeDone**
-
-```csharp
-public string DatetimeDone { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Status**
-
-```csharp
-public string Status { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Cost**
-
-```csharp
-public Nullable<float> Cost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Metadata**
-
-```csharp
-public IDictionary<string, object> Metadata { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataIdListResultInfo()**
-
-```csharp
-public KeywordsDataIdListResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Id** | **string** | id of the task |[optional]|
+**Url** | **string** | URL of the task<br>URL you used for making an API call |[optional]|
+**DatetimePosted** | **string** | date and time when the task was made<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2023-01-15 12:57:46 +00:00 |[optional]|
+**DatetimeDone** | **string** | date and time when the task was completed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2023-01-15 12:57:46 +00:00 |[optional]|
+**Status** | **string** | informational message of the task<br>you can find the full list of general informational messages here |[optional]|
+**Cost** | **float?** | cost of the task, USD |[optional]|
+**Metadata** | **IDictionary<string, object>** | contains parameters you specified in the POST request |[optional]|

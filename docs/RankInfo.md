@@ -1,49 +1,9 @@
 # RankInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class RankInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [RankInfo](./RankInfo.md)
 
 ## Properties
 
-### **PageRank**
-
-```csharp
-public Nullable<int> PageRank { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MainDomainRank**
-
-```csharp
-public Nullable<int> MainDomainRank { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **RankInfo()**
-
-```csharp
-public RankInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**PageRank** | **double?** | page rank<br>page_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm;<br>learn more about the metric and how it is calculated in this help center article |[optional]|
+**MainDomainRank** | **double?** | main domain rank<br>main_domain_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|

@@ -1,119 +1,16 @@
 # AppDataAppleAppListTaskGetAdvancedResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class AppDataAppleAppListTaskGetAdvancedResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppDataAppleAppListTaskGetAdvancedResultInfo](./AppDataAppleAppListTaskGetAdvancedResultInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeDomain**
-
-```csharp
-public string SeDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeResultsCount**
-
-```csharp
-public Nullable<long> SeResultsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BaseAppDataSerpElementItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BaseAppDataSerpElementItem&gt;](./BaseAppDataSerpElementItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AppDataAppleAppListTaskGetAdvancedResultInfo()**
-
-```csharp
-public AppDataAppleAppListTaskGetAdvancedResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | app collection received in a POST array |[optional]|
+**SeDomain** | **string** | search engine domain in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>in this case, the value will be null |[optional]|
+**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**SeResultsCount** | **double?** | the total number of results |[optional]|
+**ItemsCount** | **double?** | the number of app items in the results array<br>you can get more results by using the depth parameter when setting a task |[optional]|
+**Items** | **IEnumerable<BaseAppDataSerpElementItem>** | found apps<br>you can get more results by using the depth parameter when setting a task |[optional]|

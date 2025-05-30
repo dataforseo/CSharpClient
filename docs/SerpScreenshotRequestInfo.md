@@ -1,79 +1,13 @@
 # SerpScreenshotRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class SerpScreenshotRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpScreenshotRequestInfo](./SerpScreenshotRequestInfo.md)
 
 ## Properties
 
-### **TaskId**
-
-```csharp
-public string TaskId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **BrowserPreset**
-
-```csharp
-public string BrowserPreset { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **BrowserScreenWidth**
-
-```csharp
-public Nullable<long> BrowserScreenWidth { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **BrowserScreenHeight**
-
-```csharp
-public Nullable<int> BrowserScreenHeight { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **BrowserScreenScaleFactor**
-
-```csharp
-public Nullable<float> BrowserScreenScaleFactor { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpScreenshotRequestInfo()**
-
-```csharp
-public SerpScreenshotRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**TaskId** | **string** | task identifier<br>required field<br>unique identifier of the associated task in the UUID format<br>you will be able to use it within 7 days to request the results of the task at any time |[optional]|
+**BrowserPreset** | **string** | browser resolution preset<br>optional field<br>browser preset associated with a certain device type<br>can take the following values: desktop, tablet, mobile<br>note: by default, browser preset corresponds to the device type specified in the POST request |[optional]|
+**BrowserScreenWidth** | **long?** | width of the browser resolution<br>optional field<br>can be specified in the following range: 240-9999 |[optional]|
+**BrowserScreenHeight** | **int?** | height of the browser resolution<br>optional field<br>can be specified in the following range: 240-9999 |[optional]|
+**BrowserScreenScaleFactor** | **float?** | browser scale factor<br>optional field<br>can be specified in the following range: 0.5-3 |[optional]|
+**Page** | **int?** | number of SERP pages<br>optional field<br>if depth in the corresponding Task POST request exceeds 100 results (or 1 SERP page), specify the number of SERP pages to screenshot;<br>default value: 1 |[optional]|

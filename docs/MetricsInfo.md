@@ -1,229 +1,43 @@
 # MetricsInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class MetricsInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MetricsInfo](./MetricsInfo.md)
 
 ## Properties
 
-### **Pos1**
-
-```csharp
-public Nullable<int> Pos1 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos23**
-
-```csharp
-public Nullable<int> Pos23 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos410**
-
-```csharp
-public Nullable<int> Pos410 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos1120**
-
-```csharp
-public Nullable<int> Pos1120 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos2130**
-
-```csharp
-public Nullable<int> Pos2130 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos3140**
-
-```csharp
-public Nullable<int> Pos3140 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos4150**
-
-```csharp
-public Nullable<int> Pos4150 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos5160**
-
-```csharp
-public Nullable<int> Pos5160 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos6170**
-
-```csharp
-public Nullable<int> Pos6170 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos7180**
-
-```csharp
-public Nullable<int> Pos7180 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos8190**
-
-```csharp
-public Nullable<int> Pos8190 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Pos91100**
-
-```csharp
-public Nullable<int> Pos91100 { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Etv**
-
-```csharp
-public Nullable<float> Etv { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ImpressionsEtv**
-
-```csharp
-public Nullable<float> ImpressionsEtv { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Count**
-
-```csharp
-public Nullable<long> Count { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **EstimatedPaidTrafficCost**
-
-```csharp
-public Nullable<float> EstimatedPaidTrafficCost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsNew**
-
-```csharp
-public Nullable<long> IsNew { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsUp**
-
-```csharp
-public Nullable<long> IsUp { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsDown**
-
-```csharp
-public Nullable<long> IsDown { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsLost**
-
-```csharp
-public Nullable<long> IsLost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **MetricsInfo()**
-
-```csharp
-public MetricsInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Timestamp** | **string** | date and time of the value readout<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2025-02-10 09:40:00 +00:00 |[optional]|
+**Revenue** | **float?** | revenue value |[optional]|
+**RevenueDelta** | **float?** | change in revenue |[optional]|
+**OperatingExpense** | **float?** | operating expense value |[optional]|
+**OperatingExpenseDelta** | **float?** | change in operating expense |[optional]|
+**NetIncome** | **float?** | net income value |[optional]|
+**NetIncomeDelta** | **float?** | change in net income |[optional]|
+**NetProfitMargin** | **float?** | net profit margin value |[optional]|
+**NetProfitMarginDelta** | **float?** | change in net profit margin |[optional]|
+**EarningsPerShare** | **float?** | earnings per share value |[optional]|
+**EarningsPerShareDelta** | **float?** | change in earnings per share |[optional]|
+**Ebitda** | **float?** | earnings before interest, taxes, deprecation, amortisation |[optional]|
+**EbitdaDelta** | **float?** | change in ebitda |[optional]|
+**EffectiveTaxRate** | **float?** | effective tax rate value |[optional]|
+**CashAndShortTermInvestments** | **float?** | cash and short-term investments value |[optional]|
+**CashAndShortTermInvestmentsDelta** | **float?** | change in cash and short-term investments |[optional]|
+**TotalAssets** | **float?** | total assets value |[optional]|
+**TotalAssetsDelta** | **float?** | change in total assets |[optional]|
+**TotalLiabilities** | **float?** | total liabilities value |[optional]|
+**TotalLiabilitiesDelta** | **float?** | change in total liabilities |[optional]|
+**TotalEquity** | **float?** | total equity value |[optional]|
+**SharesOutstanding** | **float?** | outstanding shares value |[optional]|
+**PriceToBook** | **float?** | price to book |[optional]|
+**ReturnOnAssets** | **float?** | return on assets |[optional]|
+**ReturnOnCapital** | **float?** | return on capital |[optional]|
+**CashFromOperations** | **float?** | cash from operations |[optional]|
+**CashFromOperationsDelta** | **float?** | change in cash from operations |[optional]|
+**CashFromInvesting** | **float?** | cash from investing |[optional]|
+**CashFromInvestingDelta** | **float?** | change in cash from investing |[optional]|
+**CashFromFinancing** | **float?** | cash from financing/em> |[optional]|
+**CashFromFinancingDelta** | **float?** | change in cash from financing |[optional]|
+**NetChangeInCash** | **float?** | net change in cash |[optional]|
+**NetChangeInCashDelta** | **float?** | change in net change in cash |[optional]|
+**FreeCashFlow** | **float?** | free cash flow value |[optional]|
+**FreeCashFlowDelta** | **float?** | change in free cash flow |[optional]|

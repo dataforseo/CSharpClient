@@ -1,59 +1,10 @@
 # BacklinksBulkNewLostBacklinksLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BacklinksBulkNewLostBacklinksLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksBulkNewLostBacklinksLiveItem](./BacklinksBulkNewLostBacklinksLiveItem.md)
 
 ## Properties
 
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **NewBacklinks**
-
-```csharp
-public Nullable<long> NewBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LostBacklinks**
-
-```csharp
-public Nullable<long> LostBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksBulkNewLostBacklinksLiveItem()**
-
-```csharp
-public BacklinksBulkNewLostBacklinksLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Target** | **string** | domain, subdomain or webpage from a POST array |[optional]|
+**NewBacklinks** | **double?** | number of new backlinks<br>number of new backlinks pointing to the target |[optional]|
+**LostBacklinks** | **double?** | number of lost backlinks<br>number of lost backlinks of the target |[optional]|

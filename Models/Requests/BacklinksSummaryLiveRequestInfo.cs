@@ -1,17 +1,20 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BacklinksSummaryLiveRequestInfo
+
+    public class BacklinksSummaryLiveRequestInfo 
     {
+
         /// <summary>
         /// domain, subdomain or webpage to get data for
         /// <br/>required field
         /// <br/>a domain or a subdomain should be specified without https:// and www.
         /// <br/>a page should be specified with absolute URL (including http:// or https://)
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("target", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
 
         /// <summary>
@@ -20,7 +23,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, the subdomains will be ignored
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_subdomains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
@@ -30,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, indirect links will be ignored
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_indirect_links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_indirect_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeIndirectLinks { get; set; }
 
         /// <summary>
@@ -40,7 +43,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, internal links will be included in the results
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("exclude_internal_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("exclude_internal_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExcludeInternalBacklinks { get; set; }
 
         /// <summary>
@@ -55,7 +58,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 10
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("internal_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }
 
         /// <summary>
@@ -68,7 +71,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>lost – lost backlinks will be returned and counted;
         /// <br/>default value: live
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("backlinks_status_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("backlinks_status_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BacklinksStatusType { get; set; }
 
         /// <summary>
@@ -78,10 +81,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can filter the backlinks by all fields available in the response of this endpoint
         /// <br/>using this parameter, you can include only dofollow backlinks in the response and create a flexible backlinks dataset to calculate the metrics for
         /// <br/>example:
-        /// <br/>"backlinks_filters": ["dofollow", "=", true]
+        /// <br/>'backlinks_filters': ['dofollow', '=', true]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("backlinks_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> BacklinksFilters { get; set; }
+        [JsonProperty("backlinks_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> BacklinksFilters { get; set; }
 
         /// <summary>
         /// defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
@@ -93,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: one_thousand
         /// <br/>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_scale", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
 
         /// <summary>
@@ -103,22 +106,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

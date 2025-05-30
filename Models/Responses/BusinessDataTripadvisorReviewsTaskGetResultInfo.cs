@@ -57,14 +57,14 @@ namespace DataForSeo.Client.Models.Responses
         /// the total number of reviews
         /// </summary>
         [Newtonsoft.Json.JsonProperty("reviews_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReviewsCount { get; set; }
+        public double? ReviewsCount { get; set; }
 
         /// <summary>
         /// rating of the corresponding local establishment
         /// <br/>popularity rate based on reviews and displayed in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public BusinessDataRatingInfo Rating { get; set; }
 
         /// <summary>
         /// rating distribution by votes
@@ -78,7 +78,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// found reviews

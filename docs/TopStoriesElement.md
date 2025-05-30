@@ -1,129 +1,17 @@
 # TopStoriesElement
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class TopStoriesElement
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [TopStoriesElement](./TopStoriesElement.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Source**
-
-```csharp
-public string Source { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Date**
-
-```csharp
-public string Date { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AmpVersion**
-
-```csharp
-public Nullable<bool> AmpVersion { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Timestamp**
-
-```csharp
-public string Timestamp { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ImageUrl**
-
-```csharp
-public string ImageUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Badges**
-
-```csharp
-public ICollection<string> Badges { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **TopStoriesElement()**
-
-```csharp
-public TopStoriesElement()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Source** | **string** | source of the element<br>indicates the source of information included in the top_stories_element |[optional]|
+**Domain** | **string** | website domain |[optional]|
+**Title** | **string** | title of a given link element |[optional]|
+**Date** | **string** | the date when the page source of the element was published |[optional]|
+**AmpVersion** | **bool?** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
+**Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Url** | **string** | URL |[optional]|
+**ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**Badges** | **IEnumerable<string>** | badges relevant to the element |[optional]|

@@ -1,69 +1,11 @@
 # ContentGenerationCheckGrammarLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class ContentGenerationCheckGrammarLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ContentGenerationCheckGrammarLiveRequestInfo](./ContentGenerationCheckGrammarLiveRequestInfo.md)
 
 ## Properties
 
-### **Text**
-
-```csharp
-public string Text { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **ContentGenerationCheckGrammarLiveRequestInfo()**
-
-```csharp
-public ContentGenerationCheckGrammarLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Text** | **string** | target text<br>required field<br>can contain from 1 to 10000 tokens<br>learn more about tokens on our help center |[optional]|
+**LanguageCode** | **string** | code of the text language<br>required field if you do not specify language_name<br>see the List of Languages for Content Generation Check Grammar API |[optional]|
+**LanguageName** | **string** | name of the text language<br>required field if you do not specify language_code<br>see the List of Languages for Content Generation Check Grammar API |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

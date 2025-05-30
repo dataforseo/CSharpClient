@@ -1,89 +1,13 @@
 # SerpInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class SerpInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpInfo](./SerpInfo.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SerpItemTypes**
-
-```csharp
-public ICollection<string> SerpItemTypes { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SeResultsCount**
-
-```csharp
-public Nullable<long> SeResultsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LastUpdatedTime**
-
-```csharp
-public string LastUpdatedTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PreviousUpdatedTime**
-
-```csharp
-public string PreviousUpdatedTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpInfo()**
-
-```csharp
-public SerpInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
+**SerpItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP<br>possible item types:<br>answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box;<br>note that the actual results will be returned only for organic, paid, featured_snippet, and local_pack elements |[optional]|
+**SeResultsCount** | **long?** | number of search results for the returned keyword |[optional]|
+**LastUpdatedTime** | **string** | date and time when search intent data was last updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**PreviousUpdatedTime** | **string** | previous to the most recent date and time when SERP data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-10-15 12:57:46 +00:00 |[optional]|

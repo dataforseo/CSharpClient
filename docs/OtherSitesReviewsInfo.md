@@ -1,69 +1,11 @@
 # OtherSitesReviewsInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class OtherSitesReviewsInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [OtherSitesReviewsInfo](./OtherSitesReviewsInfo.md)
 
 ## Properties
 
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ReviewText**
-
-```csharp
-public string ReviewText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Rating**
-
-```csharp
-public RatingInfo Rating { get; set; }
-```
-
-#### Property Value
-
-[RatingInfo](./RatingInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **OtherSitesReviewsInfo()**
-
-```csharp
-public OtherSitesReviewsInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Title** | **string** | review title<br>contains a name of the third-party site where review initially appeared |[optional]|
+**Url** | **string** | review url<br>URL to the a third-party site where review initially appeared |[optional]|
+**ReviewText** | **string** | review text<br>text of the review |[optional]|
+**Rating** | **BusinessDataRatingInfo** | rating in the review<br>information about the rating enclosed in the review on a third-party site |[optional]|

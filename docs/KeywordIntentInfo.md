@@ -1,49 +1,9 @@
 # KeywordIntentInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class KeywordIntentInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordIntentInfo](./KeywordIntentInfo.md)
 
 ## Properties
 
-### **Label**
-
-```csharp
-public string Label { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Probability**
-
-```csharp
-public Nullable<float> Probability { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordIntentInfo()**
-
-```csharp
-public KeywordIntentInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Label** | **string** | search intent name<br>possible values: informational, navigational, commercial, transactional |[optional]|
+**Probability** | **float?** | search intent probability<br>1 indicates the highest probability |[optional]|

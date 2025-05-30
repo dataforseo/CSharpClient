@@ -18,17 +18,23 @@ namespace DataForSeo.Client.Models.Responses
         [Newtonsoft.Json.JsonProperty("crawl_status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public CrawlStatusInfo CrawlStatus { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("search_after_token", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SearchAfterToken { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("current_offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? CurrentOffset { get; set; }
+
         /// <summary>
         /// total number of relevant items in the database
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalItemsCount { get; set; }
+        public double? TotalItemsCount { get; set; }
 
         /// <summary>
         /// number of items in the results array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

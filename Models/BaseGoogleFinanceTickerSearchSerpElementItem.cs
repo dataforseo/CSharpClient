@@ -1,17 +1,21 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("google_finance_asset_pair", typeof(GoogleFinanceAssetPairSerpElementItem))]
+    [JsonInheritance("google_finance_market_instrument", typeof(GoogleFinanceMarketInstrumentSerpElementItem))]
+    [JsonInheritance("google_finance_market_index", typeof(GoogleFinanceMarketIndexSerpElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("google_finance_asset_pair", typeof(GoogleFinanceAssetPairSerpElementItem))]
-    [JsonInheritanceAttribute("google_finance_market_instrument", typeof(GoogleFinanceMarketInstrumentSerpElementItem))]
-    [JsonInheritanceAttribute("google_finance_market_index", typeof(GoogleFinanceMarketIndexSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseGoogleFinanceTickerSearchSerpElementItem
+    public class BaseGoogleFinanceTickerSearchSerpElementItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -19,49 +23,49 @@ namespace DataForSeo.Client.Models
         /// <br/>position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
 
         /// <summary>
         /// identifier of the element
         /// <br/>full identifier of the element that consists from ticker and market_identifier
         /// <br/>example: PX1:INDEXDB
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("identifier", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Identifier { get; set; }
 
         /// <summary>
         /// name of the market index as displayed on Google Finance
         /// <br/>example: CAC 40
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("displayed_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("displayed_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayedName { get; set; }
 
         /// <summary>
         /// URL to the page of the market index on Google Finance
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// location of the market index
         /// <br/>example: Europe/Paris
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Location { get; set; }
 
         /// <summary>
         /// growth trend of the market index
         /// <br/>possible values: up, down, stable
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("trend", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("trend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Trend { get; set; }
 
         /// <summary>
@@ -70,14 +74,22 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2025-02-10 09:40:00 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("timestamp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
 
         /// <summary>
         /// percentage of change in value of the market index
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("percentage_delta", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("percentage_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? PercentageDelta { get; set; }
 
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

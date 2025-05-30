@@ -37,13 +37,13 @@ namespace DataForSeo.Client.Models.Responses
         public string Tag { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Google app_list task
+        /// URL for collecting the results of the Google App List task
         /// </summary>
         [Newtonsoft.Json.JsonProperty("endpoint_advanced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Google app_list HTML task
+        /// URL for collecting the results of the Google App List HTML task
         /// <br/>if HTML tasks are not supported in the specified endpoint, the value will be null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("endpoint_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]

@@ -1,38 +1,42 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class TrustpilotReviewSearchBusinessDataSerpElementItem : BaseBusinessDataSerpElementItem
+    public class TrustpilotReviewSearchBusinessDataSerpElementItem  : BaseBusinessDataSerpElementItem 
     {
+
         /// <summary>
         /// the alignment of the review in SERP
         /// <br/>can take the following values: right
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
         /// the URL of the review
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// the rating score submitted by the reviewer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public BusinessDataRatingInfo Rating { get; set; }
 
         /// <summary>
         /// indicates whether the review has the “Verified” mark
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("verified", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Verified { get; set; }
 
         /// <summary>
         /// the language of the review
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Language { get; set; }
 
         /// <summary>
@@ -41,19 +45,19 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("timestamp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
 
         /// <summary>
         /// the title of the review
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// the content of the review
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("review_text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("review_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ReviewText { get; set; }
 
         /// <summary>
@@ -61,29 +65,28 @@ namespace DataForSeo.Client.Models
         /// <br/>displays URLs to the images provided by the author of the review;
         /// <br/>please note that Trustpilot doesn’t allow adding images to reviews, so the review_images parameter will always equal null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("review_images", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> ReviewImages { get; set; }
+        [JsonProperty("review_images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ReviewImages { get; set; }
 
         /// <summary>
         /// user profile of the reviewer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("user_profile", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("user_profile", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BusinessDataUserProfileInfo UserProfile { get; set; }
 
         /// <summary>
         /// owner’s response to the submitted review
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("responses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ReviewResponseItemInfo> Responses { get; set; }
+        [JsonProperty("responses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ReviewResponseItemInfo> Responses { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

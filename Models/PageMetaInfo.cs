@@ -1,204 +1,207 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class PageMetaInfo
+    public class PageMetaInfo 
     {
+
         /// <summary>
         /// page title
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// code page
         /// <br/>example: 65001
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("charset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Charset { get; set; }
+        [JsonProperty("charset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Charset { get; set; }
 
         /// <summary>
         /// indicates whether a page’s ‘meta robots’ allows crawlers to follow the links on the page
         /// <br/>if false, the page’s ‘meta robots’ tag contains “nofollow” parameter instructing crawlers not to follow the links on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("follow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("follow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Follow { get; set; }
 
         /// <summary>
         /// meta tag generator
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("generator", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("generator", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Generator { get; set; }
 
         /// <summary>
         /// HTML header tags
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("htags", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Htags { get; set; }
+        [JsonProperty("htags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Htags { get; set; }
 
         /// <summary>
         /// content of the meta description tag
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
         /// favicon of the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("favicon", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("favicon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Favicon { get; set; }
 
         /// <summary>
         /// content of the keywords meta tag
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("meta_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("meta_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MetaKeywords { get; set; }
 
         /// <summary>
         /// canonical page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("canonical", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("canonical", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Canonical { get; set; }
 
         /// <summary>
         /// number of internal links on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("internal_links_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? InternalLinksCount { get; set; }
+        [JsonProperty("internal_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? InternalLinksCount { get; set; }
 
         /// <summary>
         /// number of external links on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("external_links_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExternalLinksCount { get; set; }
+        [JsonProperty("external_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ExternalLinksCount { get; set; }
 
         /// <summary>
         /// number of internal links pointing at the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("inbound_links_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? InboundLinksCount { get; set; }
+        [JsonProperty("inbound_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? InboundLinksCount { get; set; }
 
         /// <summary>
         /// number of images on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("images_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ImagesCount { get; set; }
+        [JsonProperty("images_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ImagesCount { get; set; }
 
         /// <summary>
         /// total size of images on the page measured in bytes
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("images_size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ImagesSize { get; set; }
+        [JsonProperty("images_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ImagesSize { get; set; }
 
         /// <summary>
         /// number of scripts on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("scripts_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ScriptsCount { get; set; }
+        [JsonProperty("scripts_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ScriptsCount { get; set; }
 
         /// <summary>
         /// total size of scripts on the page measured in bytes
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("scripts_size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ScriptsSize { get; set; }
+        [JsonProperty("scripts_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ScriptsSize { get; set; }
 
         /// <summary>
         /// number of stylesheets on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("stylesheets_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? StylesheetsCount { get; set; }
+        [JsonProperty("stylesheets_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? StylesheetsCount { get; set; }
 
         /// <summary>
         /// total size of stylesheets on the page measured in bytes
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("stylesheets_size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? StylesheetsSize { get; set; }
+        [JsonProperty("stylesheets_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? StylesheetsSize { get; set; }
 
         /// <summary>
         /// length of the title tag in characters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title_length", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? TitleLength { get; set; }
+        [JsonProperty("title_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TitleLength { get; set; }
 
         /// <summary>
         /// length of the description tag in characters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description_length", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DescriptionLength { get; set; }
+        [JsonProperty("description_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? DescriptionLength { get; set; }
 
         /// <summary>
         /// number of scripts on the page that block page rendering
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("render_blocking_scripts_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? RenderBlockingScriptsCount { get; set; }
+        [JsonProperty("render_blocking_scripts_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RenderBlockingScriptsCount { get; set; }
 
         /// <summary>
         /// number of CSS styles on the page that block page rendering
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("render_blocking_stylesheets_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? RenderBlockingStylesheetsCount { get; set; }
+        [JsonProperty("render_blocking_stylesheets_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RenderBlockingStylesheetsCount { get; set; }
 
         /// <summary>
         /// Core Web Vitals metric measuring the layout stability of the page
         /// <br/>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("cumulative_layout_shift", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("cumulative_layout_shift", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? CumulativeLayoutShift { get; set; }
 
         /// <summary>
         /// meta title of the page
         /// <br/>meta tag in the head section of an HTML document that defines the title of a page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("meta_title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("meta_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MetaTitle { get; set; }
 
         /// <summary>
         /// overall information about content of the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public HtmlContentInfo Content { get; set; }
 
         /// <summary>
         /// deprecated tags on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("deprecated_tags", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> DeprecatedTags { get; set; }
+        [JsonProperty("deprecated_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> DeprecatedTags { get; set; }
 
         /// <summary>
         /// duplicate meta tags on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("duplicate_meta_tags", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> DuplicateMetaTags { get; set; }
+        [JsonProperty("duplicate_meta_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> DuplicateMetaTags { get; set; }
 
         /// <summary>
-        /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// spellcheck
+        /// <br/>hunspell spellcheck errors
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SpellInfo Spell { get; set; }
+        [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public HunspellInfo Spell { get; set; }
 
         /// <summary>
         /// object of social media tags found on the page
         /// <br/>contains social media tags and their content
         /// <br/>supported tags include but are not limited to Open Graph and Twitter card
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("social_media_tags", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> SocialMediaTags { get; set; }
+        [JsonProperty("social_media_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, string> SocialMediaTags { get; set; }
 
         /// <summary>
         /// resource errors and warnings
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("broken_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("broken_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public OnPageResourceIssueInfo BrokenHtml { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

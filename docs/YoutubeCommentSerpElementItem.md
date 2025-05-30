@@ -1,139 +1,15 @@
 # YoutubeCommentSerpElementItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class YoutubeCommentSerpElementItem : BaseYoutubeSerpElementItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseYoutubeSerpElementItem](./BaseYoutubeSerpElementItem.md) → [YoutubeCommentSerpElementItem](./YoutubeCommentSerpElementItem.md)
 
 ## Properties
 
-### **AuthorName**
-
-```csharp
-public string AuthorName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AuthorThumbnail**
-
-```csharp
-public string AuthorThumbnail { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AuthorUrl**
-
-```csharp
-public string AuthorUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Text**
-
-```csharp
-public string Text { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PublicationDate**
-
-```csharp
-public string PublicationDate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Timestamp**
-
-```csharp
-public string Timestamp { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LikesCount**
-
-```csharp
-public Nullable<long> LikesCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReplyCount**
-
-```csharp
-public Nullable<long> ReplyCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankGroup**
-
-```csharp
-public Nullable<int> RankGroup { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankAbsolute**
-
-```csharp
-public Nullable<int> RankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **YoutubeCommentSerpElementItem()**
-
-```csharp
-public YoutubeCommentSerpElementItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**AuthorName** | **string** | name of the author of the comment |[optional]|
+**AuthorThumbnail** | **string** | the URL of the page where the author’s channel logo is hosted |[optional]|
+**AuthorUrl** | **string** | URL of the author’s channel |[optional]|
+**Text** | **string** | text of the comment |[optional]|
+**PublicationDate** | **string** | displayed publication date |[optional]|
+**Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-15 12:57:46 +00:00 |[optional]|
+**LikesCount** | **double?** | number of likes on the comment |[optional]|
+**ReplyCount** | **double?** | number of replies on the comment |[optional]|

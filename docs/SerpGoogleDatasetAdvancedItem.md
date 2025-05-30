@@ -1,239 +1,28 @@
 # SerpGoogleDatasetAdvancedItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class SerpGoogleDatasetAdvancedItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpGoogleDatasetAdvancedItem](./SerpGoogleDatasetAdvancedItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankGroup**
-
-```csharp
-public Nullable<int> RankGroup { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankAbsolute**
-
-```csharp
-public Nullable<int> RankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Position**
-
-```csharp
-public string Position { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Xpath**
-
-```csharp
-public string Xpath { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DatasetId**
-
-```csharp
-public string DatasetId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ImageUrl**
-
-```csharp
-public string ImageUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ScholarlyCitationsCount**
-
-```csharp
-public Nullable<long> ScholarlyCitationsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ScholarlyArticlesUrl**
-
-```csharp
-public string ScholarlyArticlesUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **UniqueIdentifier**
-
-```csharp
-public string UniqueIdentifier { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RelatedArticle**
-
-```csharp
-public string RelatedArticle { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Links**
-
-```csharp
-public ICollection<LinkElement> Links { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;LinkElement&gt;](./LinkElement.md)<br>
-
-### **DatasetProviders**
-
-```csharp
-public ICollection<LicensesElement> DatasetProviders { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;LicensesElement&gt;](./LicensesElement.md)<br>
-
-### **Formats**
-
-```csharp
-public ICollection<FormatsElement> Formats { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;FormatsElement&gt;](./FormatsElement.md)<br>
-
-### **Authors**
-
-```csharp
-public ICollection<AuthorsElement> Authors { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;AuthorsElement&gt;](./AuthorsElement.md)<br>
-
-### **Licenses**
-
-```csharp
-public ICollection<LicensesElement> Licenses { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;LicensesElement&gt;](./LicensesElement.md)<br>
-
-### **UpdatedDate**
-
-```csharp
-public string UpdatedDate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AreaCovered**
-
-```csharp
-public ICollection<string> AreaCovered { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PeriodCovered**
-
-```csharp
-public PeriodCovered PeriodCovered { get; set; }
-```
-
-#### Property Value
-
-[PeriodCovered](./PeriodCovered.md)<br>
-
-### **DatasetDescription**
-
-```csharp
-public DatasetDescription DatasetDescription { get; set; }
-```
-
-#### Property Value
-
-[DatasetDescription](./DatasetDescription.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpGoogleDatasetAdvancedItem()**
-
-```csharp
-public SerpGoogleDatasetAdvancedItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**RankGroup** | **double?** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
+**RankAbsolute** | **double?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
+**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
+**Xpath** | **string** | the XPath of the element |[optional]|
+**DatasetId** | **string** | ID of the dataset |[optional]|
+**Title** | **string** | title of the element |[optional]|
+**ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**ScholarlyCitationsCount** | **double?** | count of articles that refer to the dataset |[optional]|
+**ScholarlyArticlesUrl** | **string** | url of scholarly articles<br>link to the list of scholarly articles on Google Scholar<br>example: https://scholar.google.com/scholar?q=%2210.6084%20m9%20figshare%207427933%20v1%22 |[optional]|
+**UniqueIdentifier** | **string** | digital identifier of an object<br>unique digital identifier of the dataset<br>example: https://doi.org/10.5061/dryad.hmgqnk9m3 |[optional]|
+**RelatedArticle** | **string** | link to related article<br>link to the published article that is related to the dataset |[optional]|
+**Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some of Google Dataset’s search results<br>if there are none, equals null |[optional]|
+**DatasetProviders** | **IEnumerable<LicensesElement>** | the list of institutions that provided the dataset |[optional]|
+**Formats** | **IEnumerable<FormatsElement>** | the list of file formats of the dataset |[optional]|
+**Authors** | **IEnumerable<AuthorsElement>** | the list of authors of the dataset |[optional]|
+**Licenses** | **IEnumerable<LicensesElement>** | the list of licenses issued to the dataset |[optional]|
+**UpdatedDate** | **string** | date and time when the result was last updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-27 02:00:00 +00:00 |[optional]|
+**AreaCovered** | **IEnumerable<string>** | the list of areas covered in the dataset<br>for example: Africa, Global |[optional]|
+**PeriodCovered** | **PeriodCovered** | period covered in the dataset |[optional]|
+**DatasetDescription** | **DatasetDescription** | description of the dataset |[optional]|

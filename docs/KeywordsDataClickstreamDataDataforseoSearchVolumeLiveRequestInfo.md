@@ -1,99 +1,14 @@
 # KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo](./KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo.md)
 
 ## Properties
 
-### **Keywords**
-
-```csharp
-public ICollection<string> Keywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LocationName**
-
-```csharp
-public string LocationName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **UseClickstream**
-
-```csharp
-public Nullable<bool> UseClickstream { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo()**
-
-```csharp
-public KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keywords** | **IEnumerable<string>** | target keywords<br>required field<br>UTF-8 encoding<br>maximum number of keywords you can specify in this array: 1000<br>the keywords will be converted to lowercase format<br>Note: certain symbols and characters (e.g., UTF symbols, emojis) are not allowed<br>to learn more about which symbols and characters can be used, please refer to this article<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**LocationName** | **string** | full name of search engine location<br>required field if you don’t specify location_code <br>you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages<br>example:<br>London,England,United Kingdom |[optional]|
+**LocationCode** | **int?** | search engine location code<br>required field if you don’t specify location_name<br>if you use this field, you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages<br>example:<br>2840 |[optional]|
+**LanguageName** | **string** | full name of search engine language<br>required field if don’t specify language_code<br>you can receive the list of available languages with their language_name by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages<br>example:<br>English |[optional]|
+**LanguageCode** | **string** | search engine language code<br>required field if don’t specify language_name<br>you can receive the list of available languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages<br>example:<br>en |[optional]|
+**UseClickstream** | **bool?** | use clickstream data to provide results<br>optional field<br>if set to true, you will get DataForSEO search volume values based on clickstream data;<br>if set to false, Bing search volume data will be used to calculate DataForSEO search volume;<br>default value: true;<br>Note: Bing search volume is available for locations provided in Bing Search Volume History Locations and Bing Ads Locations endpoints; search volume values for any other location are calculated based on clickstream data even if you set this parameter to false |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

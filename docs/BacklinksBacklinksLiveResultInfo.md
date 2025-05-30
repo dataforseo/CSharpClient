@@ -1,99 +1,14 @@
 # BacklinksBacklinksLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class BacklinksBacklinksLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksBacklinksLiveResultInfo](./BacklinksBacklinksLiveResultInfo.md)
 
 ## Properties
 
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Mode**
-
-```csharp
-public string Mode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CustomMode**
-
-```csharp
-public IDictionary<string, object> CustomMode { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TotalCount**
-
-```csharp
-public Nullable<long> TotalCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BacklinksBacklinksLiveItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BacklinksBacklinksLiveItem&gt;](./BacklinksBacklinksLiveItem.md)<br>
-
-### **SearchAfterToken**
-
-```csharp
-public string SearchAfterToken { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksBacklinksLiveResultInfo()**
-
-```csharp
-public BacklinksBacklinksLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Target** | **string** | target domain in a POST array |[optional]|
+**Mode** | **string** | mode specified in a POST array |[optional]|
+**CustomMode** | **IDictionary<string, object>** | custom mode specified in a POST array |[optional]|
+**TotalCount** | **double?** | total amount of results relevant the request |[optional]|
+**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<BacklinksBacklinksLiveItem>** | contains relevant backlinks and referring domains data |[optional]|
+**SearchAfterToken** | **string** | token for subsequent requests<br>by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;<br>search_after_token values are unique for each subsequent task |[optional]|

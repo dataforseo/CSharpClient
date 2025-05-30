@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -35,13 +35,13 @@ namespace DataForSeo.Client.Models.Responses
         /// total amount of results in our database relevant to your request
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        public double? TotalCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// relevant pages and related data

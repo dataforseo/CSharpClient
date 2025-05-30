@@ -1,69 +1,11 @@
 # ContentAnalysisSearchLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class ContentAnalysisSearchLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ContentAnalysisSearchLiveResultInfo](./ContentAnalysisSearchLiveResultInfo.md)
 
 ## Properties
 
-### **OffsetToken**
-
-```csharp
-public string OffsetToken { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **TotalCount**
-
-```csharp
-public Nullable<long> TotalCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<ContentAnalysisSearchLiveItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;ContentAnalysisSearchLiveItem&gt;](./ContentAnalysisSearchLiveItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **ContentAnalysisSearchLiveResultInfo()**
-
-```csharp
-public ContentAnalysisSearchLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**OffsetToken** | **string** | offset token for subsequent requests<br>you can use the string provided in this field to get the subsequent results of the initial task;<br>note: offset_token values are unique for each subsequent task |[optional]|
+**TotalCount** | **double?** | total amount of results in our database relevant to your request |[optional]|
+**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<ContentAnalysisSearchLiveItem>** | contains citations and related data |[optional]|

@@ -1,79 +1,12 @@
 # KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo](./KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo.md)
 
 ## Properties
 
-### **LocationCode**
-
-```csharp
-public string LocationCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **UseClickstream**
-
-```csharp
-public Nullable<bool> UseClickstream { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public string ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Items**
-
-```csharp
-public ICollection<KeywordsDataClickstreamDataSearchVolumeLiveItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;KeywordsDataClickstreamDataSearchVolumeLiveItem&gt;](./KeywordsDataClickstreamDataSearchVolumeLiveItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo()**
-
-```csharp
-public KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**LocationCode** | **double?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
+**LanguageCode** | **string** | language code in a POST array<br><br>Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;<br>we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link |[optional]|
+**UseClickstream** | **bool?** | indicates if the use_clickstream parameter is active<br>possible values: true, false |[optional]|
+**ItemsCount** | **double?** | ithe number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<KeywordsDataClickstreamDataSearchVolumeLiveItem>** | array of keywords<br>contains keywords and their search volume rates |[optional]|

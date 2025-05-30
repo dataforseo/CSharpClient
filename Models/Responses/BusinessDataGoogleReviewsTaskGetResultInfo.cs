@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code in a POST array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -71,7 +71,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>popularity rate based on reviews and displayed in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public BusinessDataRatingInfo Rating { get; set; }
 
         /// <summary>
         /// the unique identifier of the ‘reviews’ element in SERP
@@ -99,14 +99,14 @@ namespace DataForSeo.Client.Models.Responses
         /// the total number of reviews
         /// </summary>
         [Newtonsoft.Json.JsonProperty("reviews_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReviewsCount { get; set; }
+        public double? ReviewsCount { get; set; }
 
         /// <summary>
         /// the number of reviews items in the results array
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// found reviews

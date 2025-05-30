@@ -1,13 +1,17 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SerpGoogleAutocompleteAdvancedItem
+    public class SerpGoogleAutocompleteAdvancedItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -15,15 +19,15 @@ namespace DataForSeo.Client.Models
         /// <br/>position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
 
         /// <summary>
         /// relevance of suggested keyword
@@ -33,13 +37,13 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: only available for the following client:
         /// <br/>chrome/chrome-omni
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("relevance", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Relevance { get; set; }
+        [JsonProperty("relevance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Relevance { get; set; }
 
         /// <summary>
         /// google autocomplete keyword suggestion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("suggestion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("suggestion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Suggestion { get; set; }
 
         /// <summary>
@@ -47,14 +51,14 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: only available for the following client:
         /// <br/>chrome/chrome-omni
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("suggestion_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("suggestion_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SuggestionType { get; set; }
 
         /// <summary>
         /// url to search results
         /// <br/>url to search results relevant to the google autocomplete suggestion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("search_query_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_query_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchQueryUrl { get; set; }
 
         /// <summary>
@@ -64,7 +68,7 @@ namespace DataForSeo.Client.Models
         /// <br/>gws-wiz
         /// <br/>gws-wiz-serp
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("thumbnail_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("thumbnail_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ThumbnailUrl { get; set; }
 
         /// <summary>
@@ -75,17 +79,16 @@ namespace DataForSeo.Client.Models
         /// <br/>psy-ab
         /// <br/>gws-wiz-local
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("highlighted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Highlighted { get; set; }
+        [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Highlighted { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

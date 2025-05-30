@@ -1,30 +1,33 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class WorkHours
+    public class WorkHours 
     {
+
         /// <summary>
         /// work hours timetable
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("timetable", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<WorkDayInfo>> Timetable { get; set; }
+        [JsonProperty("timetable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<WorkDayInfo>> Timetable { get; set; }
 
         /// <summary>
         /// current status of the establishment
         /// <br/>indicates whether the establishment is opened or closed
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("current_status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("current_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CurrentStatus { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

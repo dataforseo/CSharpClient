@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -17,15 +17,8 @@ namespace DataForSeo.Client.Models.Responses
         [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
-        /// <summary>
-        /// the name of the superordinate location
-        /// <br/>example:
-        /// <br/>"location_code": 9041134,
-        /// <br/>"location_name": "Vienna International Airport,Lower Austria,Austria",
-        /// <br/>"location_name_parent": "Lower Austria,Austria"
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name_parent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string LocationNameParent { get; set; }
+        [Newtonsoft.Json.JsonProperty("location_code_parent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location

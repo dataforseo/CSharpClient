@@ -1,13 +1,23 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class HotelsPackDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
+    public class HotelsPackDataforseoLabsSerpElementItem  : BaseDataforseoLabsSerpElementItem 
     {
+
+        /// <summary>
+        /// search engine type
+        /// </summary>
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
         /// <summary>
         /// title of the result in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
@@ -16,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
@@ -25,24 +35,22 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-17
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// elements of search results found in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<HotelsPackElement> Items { get; set; }
+        [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<HotelsPackElement> Items { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

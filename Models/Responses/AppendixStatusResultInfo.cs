@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// current status
-        /// <br/>you can find all information about your API statuses for the last 60 days here
+        /// <br/>you can find all information about the statuses of our endpoints for the last 60 days here
         /// <br/>the list of possible current statuses:
         /// <br/>major_outage
         /// <br/>partial_outage

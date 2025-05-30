@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models.Responses
         /// error code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("error_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ErrorCode { get; set; }
+        public double? ErrorCode { get; set; }
 
         /// <summary>
         /// error message or error URL
@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models.Responses
         /// HTTP status code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("http_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? HttpCode { get; set; }
+        public double? HttpCode { get; set; }
 
         /// <summary>
         /// time taken by HTTP request

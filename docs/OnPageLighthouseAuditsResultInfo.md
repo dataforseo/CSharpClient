@@ -1,39 +1,8 @@
 # OnPageLighthouseAuditsResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class OnPageLighthouseAuditsResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [OnPageLighthouseAuditsResultInfo](./OnPageLighthouseAuditsResultInfo.md)
 
 ## Properties
 
-### **Audits**
-
-```csharp
-public ICollection<string> Audits { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **OnPageLighthouseAuditsResultInfo()**
-
-```csharp
-public OnPageLighthouseAuditsResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Audits** | **IEnumerable<string>** | the list of available lighthouse audits<br>an array containing the titles of available audits;<br>Note: the titles can change depending on if the audit passed or failed and may contain markdown code;<br>Note #2: if you’re using the audit that contains a slash (/) in its name, search by the last word after the slash |[optional]|

@@ -1,53 +1,44 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppendixPriceData
+    public class AppendixPriceData 
     {
-        [Newtonsoft.Json.JsonProperty("keywords_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keywords_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixKeywordsDataPriceData KeywordsData { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("merchant", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("merchant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixMerchantPriceData Merchant { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("serp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("serp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixSerpPriceData Serp { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("appendix", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("appendix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixAppendixPriceData Appendix { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("app_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("app_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixAppDataPriceData AppData { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBacklinksPriceData Backlinks { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("business_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("business_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessDataPriceData BusinessData { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("content_analysis", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("content_analysis", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixContentAnalysisPriceData ContentAnalysis { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("content_generation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixContentGenerationPriceData ContentGeneration { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("dataforseo_labs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("dataforseo_labs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixDataforseoLabsPriceData DataforseoLabs { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("domain_analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixDomainAnalyticsPriceData DomainAnalytics { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("on_page", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("on_page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixOnPagePriceData OnPage { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

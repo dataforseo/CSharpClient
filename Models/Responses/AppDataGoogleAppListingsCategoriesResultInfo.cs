@@ -6,16 +6,29 @@ namespace DataForSeo.Client.Models.Responses
     public partial class AppDataGoogleAppListingsCategoriesResultInfo
     {
         /// <summary>
-        /// name of the supported app category
+        /// task identifier
+        /// <br/>unique task identifier in our system in the UUID format
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("category", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Category { get; set; }
+        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Id { get; set; }
 
-        /// <summary>
-        /// number of app listings that make up the supported app category
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Count { get; set; }
+        [Newtonsoft.Json.JsonProperty("se", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Se { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("date_posted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string DatePosted { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Tag { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("endpoint_advanced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string EndpointAdvanced { get; set; }
+
+        [Newtonsoft.Json.JsonProperty("endpoint_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string EndpointHtml { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

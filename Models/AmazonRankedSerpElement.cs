@@ -1,27 +1,31 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AmazonRankedSerpElement
+    public class AmazonRankedSerpElement 
     {
+
         /// <summary>
         /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
         /// contains data on the SERP element
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("serp_item", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("serp_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BaseAmazonSerpElementItem SerpItem { get; set; }
 
         /// <summary>
         /// direct URL to Amazon results
         /// <br/>you can use it to make sure that we provided accurate results
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("check_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
 
         /// <summary>
@@ -30,14 +34,14 @@ namespace DataForSeo.Client.Models
         /// <br/>possible item types:
         /// <br/>amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("serp_item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> SerpItemTypes { get; set; }
+        [JsonProperty("serp_item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> SerpItemTypes { get; set; }
 
         /// <summary>
         /// total number of results in Amazon SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_results_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SeResultsCount { get; set; }
+        [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? SeResultsCount { get; set; }
 
         /// <summary>
         /// date and time when SERP data was last updated
@@ -45,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("last_updated_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("last_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }
 
         /// <summary>
@@ -54,17 +58,16 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2020-09-12T00:07:43.0733218Z
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("previous_updated_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("previous_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PreviousUpdatedTime { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

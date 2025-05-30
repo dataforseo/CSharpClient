@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo
+
+    public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo 
     {
+
         /// <summary>
         /// target technology paths
         /// <br/>required field if you don’t specify groups, technologies and categories
@@ -13,10 +16,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can find the full list of technology group ids, category ids and technology names on this page
         /// <br/>note: you can specify up to 10 technology paths in this array
         /// <br/>example:
-        /// <br/>[{"path": "content.cms","name": "wordpress"}, {"path": "marketing.crm","name": "salesforce"}]
+        /// <br/>[{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("technology_paths", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> TechnologyPaths { get; set; }
+        [JsonProperty("technology_paths", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> TechnologyPaths { get; set; }
 
         /// <summary>
         /// ids of the target technology groups
@@ -24,10 +27,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can find the full list of technology group ids on this page
         /// <br/>note: you can specify up to 10 technology groups in this array
         /// <br/>example:
-        /// <br/>["sales", "marketing"]
+        /// <br/>['sales', 'marketing']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("groups", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Groups { get; set; }
+        [JsonProperty("groups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Groups { get; set; }
 
         /// <summary>
         /// ids of the target technology categories
@@ -35,10 +38,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can find the full list of technology category ids on this page
         /// <br/>note: you can specify up to 10 technology categories in this array
         /// <br/>example:
-        /// <br/>["payment_processors","crm"]
+        /// <br/>['payment_processors','crm']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Categories { get; set; }
+        [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Categories { get; set; }
 
         /// <summary>
         /// target technologies
@@ -46,10 +49,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can find the full list of technologies you can specify here on this page
         /// <br/>note: you can specify up to 10 technologies in this array
         /// <br/>example:
-        /// <br/>["Google Pay","Salesforce"]
+        /// <br/>['Google Pay','Salesforce']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("technologies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Technologies { get; set; }
+        [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Technologies { get; set; }
 
         /// <summary>
         /// target keywords in the domain’s title, description or meta keywords
@@ -57,11 +60,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify the maximum of 10 keywords;
         /// <br/>UTF-8 encoding;
         /// <br/>example:
-        /// <br/>["seo","software"]
+        /// <br/>['seo','software']
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Keywords { get; set; }
+        [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Keywords { get; set; }
 
         /// <summary>
         /// search mode
@@ -71,7 +74,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>entry – search for results matching a part of the specified group ids, category ids, or technology names
         /// <br/>default value: as_is
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("mode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Mode { get; set; }
 
         /// <summary>
@@ -80,17 +83,17 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>&lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like,not_like
+        /// <br/>&lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like,not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>you can use the following parameters to filter the results: domain_rank, last_visited, country_iso_code, language_code, content_language_code
         /// <br/>example:
-        /// <br/>[["country_iso_code","=","US"],
-        /// <br/>"and",
-        /// <br/>["domain_rank","&gt;",800]]
+        /// <br/>[['country_iso_code','=','US'],
+        /// <br/>'and',
+        /// <br/>['domain_rank','&gt;',800]]
         /// <br/>for more information about filters, please refer to Domain Analytics Technologies API – Filters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// maximum number of elements within internal arrays
@@ -101,7 +104,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: 1
         /// <br/>maximum value: 10000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("internal_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }
 
         /// <summary>
@@ -111,22 +114,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

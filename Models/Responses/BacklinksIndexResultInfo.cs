@@ -9,19 +9,13 @@ namespace DataForSeo.Client.Models.Responses
         /// total number of backlinks our database contains for the moment of checking
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalBacklinks { get; set; }
+        public double? TotalBacklinks { get; set; }
 
         /// <summary>
         /// total number of pages our database contains for the moment of checking
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalPages { get; set; }
-
-        /// <summary>
-        /// total number of domains our database contains for the moment of checking
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("total_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalDomains { get; set; }
+        public double? TotalPages { get; set; }
 
         /// <summary>
         /// index volume data for the past 12 months

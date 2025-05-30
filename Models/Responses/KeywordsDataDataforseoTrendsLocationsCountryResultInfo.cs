@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>"location_name": "Lower Austria,Austria"
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code_parent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCodeParent { get; set; }
+        public double? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location
@@ -42,13 +42,6 @@ namespace DataForSeo.Client.Models.Responses
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string LocationType { get; set; }
-
-        /// <summary>
-        /// DataForSEO trends location name
-        /// <br/>you can use this field for matching obtained results with the location_name parameter specified in the request
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("geo_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string GeoName { get; set; }
 
         /// <summary>
         /// DataForSEO trends location identifier

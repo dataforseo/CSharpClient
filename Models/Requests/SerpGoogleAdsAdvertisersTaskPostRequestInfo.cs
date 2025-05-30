@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SerpGoogleAdsAdvertisersTaskPostRequestInfo
+
+    public class SerpGoogleAdsAdvertisersTaskPostRequestInfo 
     {
+
         /// <summary>
         /// keyword
         /// <br/>required field
@@ -14,7 +17,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
@@ -26,7 +29,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>London,England,United Kingdom
         /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -38,7 +41,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>2840
         /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -49,7 +52,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>52.6178549,-155.352142
         /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_coordinate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
@@ -61,7 +64,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>You will be additionally charged for the tasks with high execution priority.
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
@@ -71,7 +74,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
         /// <summary>
@@ -86,7 +89,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>i.a., the # character will be encoded into %23
         /// <br/>learn more on our Help Center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
@@ -96,7 +99,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>advanced
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("postback_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("postback_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
 
         /// <summary>
@@ -111,22 +114,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>i.a., the # character will be encoded into %23
         /// <br/>learn more on our Help Center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

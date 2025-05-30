@@ -1,37 +1,40 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class FetchTiming
+    public class FetchTiming 
     {
-        /// <summary>
-        /// indicates how many milliseconds it took to fetch a resource
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("duration_time", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? DurationTime { get; set; }
 
         /// <summary>
-        /// time to start downloading the resource
-        /// <br/>the amount of time a browser needs to start downloading a resource
+        /// indicates how many seconds it took to download a page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("fetch_start", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FetchStart { get; set; }
+        [JsonProperty("duration_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? DurationTime { get; set; }
 
         /// <summary>
-        /// time to complete downloading the resource
-        /// <br/>the amount of time a browser needs to complete downloading a resource
+        /// time to start downloading the HTML resource
+        /// <br/>the amount of time the browser needs to start downloading a page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("fetch_end", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? FetchEnd { get; set; }
+        [JsonProperty("fetch_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? FetchStart { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// time to complete downloading the HTML resource
+        /// <br/>the amount of time the browser needs to complete downloading a page
+        /// </summary>
+        [JsonProperty("fetch_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? FetchEnd { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,159 +1,20 @@
 # DataforseoLabsGoogleKeywordOverviewLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DataforseoLabsGoogleKeywordOverviewLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsGoogleKeywordOverviewLiveItem](./DataforseoLabsGoogleKeywordOverviewLiveItem.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SearchPartners**
-
-```csharp
-public Nullable<bool> SearchPartners { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **KeywordInfo**
-
-```csharp
-public KeywordInfo KeywordInfo { get; set; }
-```
-
-#### Property Value
-
-[KeywordInfo](./KeywordInfo.md)<br>
-
-### **KeywordInfoNormalizedWithBing**
-
-```csharp
-public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithBing { get; set; }
-```
-
-#### Property Value
-
-[KeywordInfoNormalizedWithInfo](./KeywordInfoNormalizedWithInfo.md)<br>
-
-### **KeywordInfoNormalizedWithClickstream**
-
-```csharp
-public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithClickstream { get; set; }
-```
-
-#### Property Value
-
-[KeywordInfoNormalizedWithInfo](./KeywordInfoNormalizedWithInfo.md)<br>
-
-### **ClickstreamKeywordInfo**
-
-```csharp
-public ClickstreamKeywordInfo ClickstreamKeywordInfo { get; set; }
-```
-
-#### Property Value
-
-[ClickstreamKeywordInfo](./ClickstreamKeywordInfo.md)<br>
-
-### **KeywordProperties**
-
-```csharp
-public KeywordProperties KeywordProperties { get; set; }
-```
-
-#### Property Value
-
-[KeywordProperties](./KeywordProperties.md)<br>
-
-### **SerpInfo**
-
-```csharp
-public SerpInfo SerpInfo { get; set; }
-```
-
-#### Property Value
-
-[SerpInfo](./SerpInfo.md)<br>
-
-### **AvgBacklinksInfo**
-
-```csharp
-public AvgBacklinksInfo AvgBacklinksInfo { get; set; }
-```
-
-#### Property Value
-
-[AvgBacklinksInfo](./AvgBacklinksInfo.md)<br>
-
-### **SearchIntentInfo**
-
-```csharp
-public SearchIntentInfo SearchIntentInfo { get; set; }
-```
-
-#### Property Value
-
-[SearchIntentInfo](./SearchIntentInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsGoogleKeywordOverviewLiveItem()**
-
-```csharp
-public DataforseoLabsGoogleKeywordOverviewLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**Keyword** | **string** | keyword<br>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |[optional]|
+**LocationCode** | **double?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**SearchPartners** | **bool?** | indicates data for Google and partner sites<br>if true, the results are returned for owned, operated, and syndicated networks across Google and partner sites that host Google search;<br>if false, the results are returned for Google search sites only |[optional]|
+**KeywordInfo** | **KeywordInfo** | keyword data for the returned keyword |[optional]|
+**KeywordInfoNormalizedWithBing** | **KeywordInfoNormalizedWithInfo** | contains keyword search volume normalized with Bing search volume |[optional]|
+**KeywordInfoNormalizedWithClickstream** | **KeywordInfoNormalizedWithInfo** | contains keyword search volume normalized with clickstream data |[optional]|
+**ClickstreamKeywordInfo** | **ClickstreamKeywordInfo** | clickstream data for the returned keyword<br>to retrieve results for this field, the parameter include_clickstream_data must be set to true |[optional]|
+**KeywordProperties** | **KeywordProperties** | additional information about the keyword |[optional]|
+**SerpInfo** | **SerpInfo** | SERP data<br>the value will be null if you didn’t set the field include_serp_info to true in the POST array or if there is no SERP data for this keyword in our database |[optional]|
+**AvgBacklinksInfo** | **AvgBacklinksInfo** | backlink data for the returned keyword<br>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 websites ranking organically for the keyword |[optional]|
+**SearchIntentInfo** | **SearchIntentInfo** | search intent info for the returned keyword<br>learn about search intent in this help center article |[optional]|

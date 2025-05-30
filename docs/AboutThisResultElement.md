@@ -1,119 +1,16 @@
 # AboutThisResultElement
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AboutThisResultElement
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AboutThisResultElement](./AboutThisResultElement.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Source**
-
-```csharp
-public string Source { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SourceInfo**
-
-```csharp
-public string SourceInfo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SourceUrl**
-
-```csharp
-public string SourceUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Language**
-
-```csharp
-public string Language { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Location**
-
-```csharp
-public string Location { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SearchTerms**
-
-```csharp
-public ICollection<string> SearchTerms { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RelatedTerms**
-
-```csharp
-public ICollection<string> RelatedTerms { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AboutThisResultElement()**
-
-```csharp
-public AboutThisResultElement()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Url** | **string** | result’s URL |[optional]|
+**Source** | **string** | source of additional information about the result |[optional]|
+**SourceInfo** | **string** | additional information about the result<br>description of the website from Wikipedia or another additional context |[optional]|
+**SourceUrl** | **string** | URL to full information from the 'source' |[optional]|
+**Language** | **string** | the language of the result |[optional]|
+**Location** | **string** | location for which the result is relevant |[optional]|
+**SearchTerms** | **IEnumerable<string>** | matching search terms that appear in the result |[optional]|
+**RelatedTerms** | **IEnumerable<string>** | related search terms that appear in the result |[optional]|

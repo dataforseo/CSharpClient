@@ -1,17 +1,21 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("youtube_video_info", typeof(YoutubeVideoInfoSerpElementItem))]
+    [JsonInheritance("youtube_subtitles", typeof(YoutubeSubtitlesSerpElementItem))]
+    [JsonInheritance("youtube_comment", typeof(YoutubeCommentSerpElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("youtube_video_info", typeof(YoutubeVideoInfoSerpElementItem))]
-    [JsonInheritanceAttribute("youtube_subtitles", typeof(YoutubeSubtitlesSerpElementItem))]
-    [JsonInheritanceAttribute("youtube_comment", typeof(YoutubeCommentSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseYoutubeSerpElementItem
+    public class BaseYoutubeSerpElementItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -19,15 +23,23 @@ namespace DataForSeo.Client.Models
         /// <br/>position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP for the target domain
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
 
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

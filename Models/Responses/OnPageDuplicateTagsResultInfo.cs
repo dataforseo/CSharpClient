@@ -16,27 +16,27 @@ namespace DataForSeo.Client.Models.Responses
         /// details of the crawling session
         /// </summary>
         [Newtonsoft.Json.JsonProperty("crawl_status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public CrawlStatusInfo CrawlStatus { get; set; }
+        public CrawlStatus CrawlStatus { get; set; }
 
         /// <summary>
         /// total number of pages with duplicate tags
         /// <br/>displays the total number of pages with duplicate tags of the target website
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_pages_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalPagesCount { get; set; }
+        public double? TotalPagesCount { get; set; }
 
         /// <summary>
         /// number of pages with duplicate tags in the response
         /// <br/>displays the number of pages with duplicate tags returned in the response
         /// </summary>
         [Newtonsoft.Json.JsonProperty("pages_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? PagesCount { get; set; }
+        public double? PagesCount { get; set; }
 
         /// <summary>
         /// number of items in the results array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

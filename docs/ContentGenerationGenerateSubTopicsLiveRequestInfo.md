@@ -1,59 +1,10 @@
 # ContentGenerationGenerateSubTopicsLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class ContentGenerationGenerateSubTopicsLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ContentGenerationGenerateSubTopicsLiveRequestInfo](./ContentGenerationGenerateSubTopicsLiveRequestInfo.md)
 
 ## Properties
 
-### **Topic**
-
-```csharp
-public string Topic { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CreativityIndex**
-
-```csharp
-public Nullable<float> CreativityIndex { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **ContentGenerationGenerateSubTopicsLiveRequestInfo()**
-
-```csharp
-public ContentGenerationGenerateSubTopicsLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Topic** | **string** | main topic of the content to generate<br>required field<br>main topic for content generation;<br>can contain from 1 to 50 tokens |[optional]|
+**CreativityIndex** | **float?** | creativity of content generation<br>optional field<br>the randomness of the selection of equally probable subsequent tokens;<br>can take values from 0 to 1<br>default value: 0.8<br>learn more about this parameter on our help center |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

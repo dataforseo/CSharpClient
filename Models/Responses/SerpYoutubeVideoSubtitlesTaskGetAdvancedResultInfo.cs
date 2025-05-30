@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code in a POST array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -51,13 +51,6 @@ namespace DataForSeo.Client.Models.Responses
         /// </summary>
         [Newtonsoft.Json.JsonProperty("spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
-
-        /// <summary>
-        /// search refinement chips
-        /// <br/>equals null
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("refinement_chips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
         /// types of search results in SERP
@@ -96,7 +89,7 @@ namespace DataForSeo.Client.Models.Responses
         /// number of subtitles in the video
         /// </summary>
         [Newtonsoft.Json.JsonProperty("subtitles_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SubtitlesCount { get; set; }
+        public double? SubtitlesCount { get; set; }
 
         /// <summary>
         /// title of the video
@@ -108,7 +101,7 @@ namespace DataForSeo.Client.Models.Responses
         /// the number of results returned in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// elements of search results found in SERP

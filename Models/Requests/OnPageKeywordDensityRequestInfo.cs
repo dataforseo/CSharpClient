@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class OnPageKeywordDensityRequestInfo
+
+    public class OnPageKeywordDensityRequestInfo 
     {
+
         /// <summary>
         /// ID of the task
         /// <br/>required field
@@ -12,7 +15,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>“07131248-1535-0216-1000-17384017ad04”
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
 
         /// <summary>
@@ -21,7 +24,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>1, 2, 3, 4, 5
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword_length", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword_length", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? KeywordLength { get; set; }
 
         /// <summary>
@@ -31,7 +34,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, the API response will contain only keywords from the specified page
         /// <br/>a page should be specified with absolute URL (including http:// or https://)
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
@@ -40,7 +43,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 100
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
 
         /// <summary>
@@ -49,20 +52,20 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, =, &lt; &gt;, in, not_in, like, not_like
+        /// <br/>regex, not_regex, =, &lt;&gt;, in, not_in, like, not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["keyword","=","%seo%"]
-        /// <br/>[["keyword","=","%seo%"],
-        /// <br/>"and",
-        /// <br/>["frequency","&lt;","6"]]
-        /// <br/>[["keyword","not_like","%seo%"],
-        /// <br/>"and",
-        /// <br/>[["frequency","&gt;","6"],"or",["density","&gt;","0.02"]]]
+        /// <br/>['keyword','=','%seo%']
+        /// <br/>[['keyword','=','%seo%'],
+        /// <br/>'and',
+        /// <br/>['frequency','&lt;','6']]
+        /// <br/>[['keyword','not_like','%seo%'],
+        /// <br/>'and',
+        /// <br/>[['frequency','&gt;','6'],'or',['density','&gt;','0.02']]]
         /// <br/>The full list of possible filters is available by this link.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// results sorting rules
@@ -73,14 +76,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>desc – results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting type
         /// <br/>example:
-        /// <br/>["frequency,desc"]
+        /// <br/>['frequency,desc']
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>["keyword,asc","frequency,desc"]
+        /// <br/>['keyword,asc','frequency,desc']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OrderBy { get; set; }
+        [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> OrderBy { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -89,22 +92,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

@@ -1,179 +1,22 @@
 # MerchantAmazonReviewsTaskGetAdvancedResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class MerchantAmazonReviewsTaskGetAdvancedResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MerchantAmazonReviewsTaskGetAdvancedResultInfo](./MerchantAmazonReviewsTaskGetAdvancedResultInfo.md)
 
 ## Properties
 
-### **Asin**
-
-```csharp
-public string Asin { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeDomain**
-
-```csharp
-public string SeDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Spell**
-
-```csharp
-public SpellInfo Spell { get; set; }
-```
-
-#### Property Value
-
-[SpellInfo](./SpellInfo.md)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Image**
-
-```csharp
-public ImagesElement Image { get; set; }
-```
-
-#### Property Value
-
-[ImagesElement](./ImagesElement.md)<br>
-
-### **Rating**
-
-```csharp
-public RatingElement Rating { get; set; }
-```
-
-#### Property Value
-
-[RatingElement](./RatingElement.md)<br>
-
-### **ReviewsCount**
-
-```csharp
-public Nullable<long> ReviewsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemTypes**
-
-```csharp
-public ICollection<string> ItemTypes { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BaseAmazonSerpElementItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BaseAmazonSerpElementItem&gt;](./BaseAmazonSerpElementItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **MerchantAmazonReviewsTaskGetAdvancedResultInfo()**
-
-```csharp
-public MerchantAmazonReviewsTaskGetAdvancedResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Asin** | **string** | asin received in a POST array |[optional]|
+**Type** | **string** | type of element |[optional]|
+**SeDomain** | **string** | search engine domain in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
+**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**Title** | **string** | title of the product on Amazon<br>the title of the product for which the reviews are collected |[optional]|
+**Image** | **ImagesElement** | product image data |[optional]|
+**Rating** | **RatingElement** | rating of the product on Amazon<br>popularity rate based on reviews and displayed in SERP |[optional]|
+**ReviewsCount** | **double?** | the total number of reviews |[optional]|
+**ItemTypes** | **IEnumerable<string>** | type of search results in Amazon SERP<br>contains types of search results (items) found in Amazon SERP;<br>possible item types:<br>amazon_review_item |[optional]|
+**ItemsCount** | **double?** | the number of reviews items in the results array<br>you can get more results by using the depth parameter when setting a task |[optional]|
+**Items** | **IEnumerable<BaseAmazonSerpElementItem>** | found reviews<br>you can get more results by using the depth parameter when setting a task |[optional]|

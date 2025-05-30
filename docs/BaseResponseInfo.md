@@ -1,99 +1,14 @@
 # BaseResponseInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class BaseResponseInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseResponseInfo](./BaseResponseInfo.md)
 
 ## Properties
 
-### **Version**
-
-```csharp
-public string Version { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **StatusCode**
-
-```csharp
-public Nullable<int> StatusCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **StatusMessage**
-
-```csharp
-public string StatusMessage { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Time**
-
-```csharp
-public string Time { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Cost**
-
-```csharp
-public Nullable<double> Cost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TasksCount**
-
-```csharp
-public Nullable<long> TasksCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TasksError**
-
-```csharp
-public Nullable<long> TasksError { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BaseResponseInfo()**
-
-```csharp
-public BaseResponseInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Version** | **string** | the current version of the API |[optional]|
+**StatusCode** | **int?** | general status code<br>you can find the full list of the response codes here |[optional]|
+**StatusMessage** | **string** | general informational message<br>you can find the full list of general informational messages here |[optional]|
+**Time** | **string** | total execution time, seconds |[optional]|
+**Cost** | **double?** | total tasks cost, USD |[optional]|
+**TasksCount** | **long?** | the number of tasks in the tasks array |[optional]|
+**TasksError** | **long?** | the number of tasks in the tasks array returned with an error |[optional]|

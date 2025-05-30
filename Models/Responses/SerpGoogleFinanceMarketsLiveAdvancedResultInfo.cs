@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code in a POST array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -54,7 +54,8 @@ namespace DataForSeo.Client.Models.Responses
 
         /// <summary>
         /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;
+        /// <br/>in this case, the value will be null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
@@ -78,13 +79,13 @@ namespace DataForSeo.Client.Models.Responses
         /// total number of results in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_results_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SeResultsCount { get; set; }
+        public double? SeResultsCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// market indexes related to the market trends element

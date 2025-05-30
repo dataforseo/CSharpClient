@@ -1,159 +1,20 @@
 # SerpGoogleAdsSearchTaskGetAdvancedItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class SerpGoogleAdsSearchTaskGetAdvancedItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpGoogleAdsSearchTaskGetAdvancedItem](./SerpGoogleAdsSearchTaskGetAdvancedItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankGroup**
-
-```csharp
-public Nullable<int> RankGroup { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankAbsolute**
-
-```csharp
-public Nullable<int> RankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdvertiserId**
-
-```csharp
-public string AdvertiserId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CreativeId**
-
-```csharp
-public string CreativeId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Verified**
-
-```csharp
-public Nullable<bool> Verified { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Format**
-
-```csharp
-public string Format { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PreviewImage**
-
-```csharp
-public PreviewImage PreviewImage { get; set; }
-```
-
-#### Property Value
-
-[PreviewImage](./PreviewImage.md)<br>
-
-### **PreviewUrl**
-
-```csharp
-public string PreviewUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **FirstShown**
-
-```csharp
-public string FirstShown { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LastShown**
-
-```csharp
-public string LastShown { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpGoogleAdsSearchTaskGetAdvancedItem()**
-
-```csharp
-public SerpGoogleAdsSearchTaskGetAdvancedItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**RankGroup** | **double?** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
+**RankAbsolute** | **double?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
+**AdvertiserId** | **string** | unique identifier of the advertiser account |[optional]|
+**CreativeId** | **string** | unique identifier of the advertisement |[optional]|
+**Title** | **string** | title of the element |[optional]|
+**Url** | **string** | search URL with refinement parameters |[optional]|
+**Verified** | **bool?** | verified advertiser account<br>equals true if advertiser account is verified by Google Ads |[optional]|
+**Format** | **string** | format of the advertisement<br>possible values: text, image, video |[optional]|
+**PreviewImage** | **PreviewImage** | preview image of the advertisement |[optional]|
+**PreviewUrl** | **string** | url pointing to the ad preview |[optional]|
+**FirstShown** | **string** | date and time when the ad was shown for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” |[optional]|
+**LastShown** | **string** | date and time when the ad was shown the last time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” |[optional]|

@@ -1,59 +1,10 @@
 # SectionContentItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class SectionContentItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SectionContentItemInfo](./SectionContentItemInfo.md)
 
 ## Properties
 
-### **Text**
-
-```csharp
-public string Text { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Urls**
-
-```csharp
-public ICollection<ContentUrlInfo> Urls { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;ContentUrlInfo&gt;](./ContentUrlInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SectionContentItemInfo()**
-
-```csharp
-public SectionContentItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Text** | **string** | secondary content on the page<br>you can find more information about content priority calculation in this help center article |[optional]|
+**Url** | **string** | page URL.<br>displayed in case the text is a link anchor |[optional]|
+**Urls** | **IEnumerable<ContentUrlInfo>** | contains other URLs and anchors found in the content element |[optional]|

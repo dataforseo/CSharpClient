@@ -1,32 +1,41 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AnswerBoxDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
+    public class AnswerBoxDataforseoLabsSerpElementItem  : BaseDataforseoLabsSerpElementItem 
     {
+
+        /// <summary>
+        /// search engine type
+        /// </summary>
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SeType { get; set; }
+
         /// <summary>
         /// text
         /// <br/>if there is none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Text { get; set; }
+        [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Text { get; set; }
 
         /// <summary>
         /// sitelinks
         /// <br/>the links shown below some of Google’s search results
         /// <br/>if there are none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkElement> Links { get; set; }
+        [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<LinkElement> Links { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

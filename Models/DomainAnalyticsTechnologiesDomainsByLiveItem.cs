@@ -1,48 +1,49 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    /// <summary>
-    /// items array
-    /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DomainAnalyticsTechnologiesDomainsByLiveItem
+    public class DomainAnalyticsTechnologiesDomainsByLiveItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// specified domain name
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
         /// domain meta title
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// domain meta description
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
         /// domain meta keywords
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("meta_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> MetaKeywords { get; set; }
+        [JsonProperty("meta_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> MetaKeywords { get; set; }
 
         /// <summary>
         /// backlink rank of the target domain
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain_rank", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string DomainRank { get; set; }
+        [JsonProperty("domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? DomainRank { get; set; }
 
         /// <summary>
         /// most recent date when our crawler visited the domain
@@ -50,67 +51,66 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2022-10-10 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("last_visited", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("last_visited", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastVisited { get; set; }
 
         /// <summary>
         /// domain ISO code
         /// <br/>ISO code of the country that target domain is determined to belong to
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("country_iso_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CountryIsoCode { get; set; }
 
         /// <summary>
         /// domain language
         /// <br/>code of the language that target domain is determined to be associated with
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
         /// content language
         /// <br/>code of the language that content on the target domain is written with
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("content_language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("content_language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ContentLanguageCode { get; set; }
 
         /// <summary>
         /// phone numbers of the target
         /// <br/>contact phone numbers indicated on the target website
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("phone_numbers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> PhoneNumbers { get; set; }
+        [JsonProperty("phone_numbers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> PhoneNumbers { get; set; }
 
         /// <summary>
         /// emails of the target
         /// <br/>emails indicated on the target website
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("emails", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Emails { get; set; }
+        [JsonProperty("emails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Emails { get; set; }
 
         /// <summary>
         /// social media links and handles
         /// <br/>social media URLs detected in the social graphs of the target website
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("social_graph_urls", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> SocialGraphUrls { get; set; }
+        [JsonProperty("social_graph_urls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> SocialGraphUrls { get; set; }
 
         /// <summary>
         /// technologies used by target domain
         /// <br/>contains objects with the names of technologies used on the website;
         /// <br/>to get a full list of technologies and their structure, refer to the technologies endpoint
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("technologies", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public TechnologiesInfo Technologies { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

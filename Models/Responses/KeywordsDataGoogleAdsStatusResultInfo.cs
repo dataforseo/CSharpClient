@@ -27,13 +27,13 @@ namespace DataForSeo.Client.Models.Responses
         /// the latest year for which search volume data is available
         /// </summary>
         [Newtonsoft.Json.JsonProperty("last_year_in_monthly_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LastYearInMonthlySearches { get; set; }
+        public double? LastYearInMonthlySearches { get; set; }
 
         /// <summary>
         /// the latest month for which search volume data is available
         /// </summary>
         [Newtonsoft.Json.JsonProperty("last_month_in_monthly_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LastMonthInMonthlySearches { get; set; }
+        public double? LastMonthInMonthlySearches { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

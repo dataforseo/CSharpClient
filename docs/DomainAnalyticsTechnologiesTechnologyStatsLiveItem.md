@@ -1,89 +1,13 @@
 # DomainAnalyticsTechnologiesTechnologyStatsLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DomainAnalyticsTechnologiesTechnologyStatsLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DomainAnalyticsTechnologiesTechnologyStatsLiveItem](./DomainAnalyticsTechnologiesTechnologyStatsLiveItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Date**
-
-```csharp
-public string Date { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DomainsCount**
-
-```csharp
-public Nullable<long> DomainsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Countries**
-
-```csharp
-public IDictionary<string, Nullable<long>> Countries { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Languages**
-
-```csharp
-public IDictionary<string, Nullable<long>> Languages { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DomainsRank**
-
-```csharp
-public IDictionary<string, Nullable<long>> DomainsRank { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DomainAnalyticsTechnologiesTechnologyStatsLiveItem()**
-
-```csharp
-public DomainAnalyticsTechnologiesTechnologyStatsLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Date** | **string** | date for which the data is provided |[optional]|
+**DomainsCount** | **long?** | number of domains that use the specified technology |[optional]|
+**Countries** | **IDictionary<string, long?>** | distribution of websites by country<br>contains country codes and number of websites per country |[optional]|
+**Languages** | **IDictionary<string, long?>** | distribution of websites by language<br>contains language codes and number of websites per language |[optional]|
+**DomainsRank** | **IDictionary<string, long?>** | distribution of websites by backlink rank<br>contains domain rank ranges and number of websites per range<br>learn more about rank and how it is calculated in this help center article |[optional]|

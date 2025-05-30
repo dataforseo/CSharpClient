@@ -1,159 +1,20 @@
 # SerpGoogleFinanceQuoteLiveAdvancedResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class SerpGoogleFinanceQuoteLiveAdvancedResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpGoogleFinanceQuoteLiveAdvancedResultInfo](./SerpGoogleFinanceQuoteLiveAdvancedResultInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeDomain**
-
-```csharp
-public string SeDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public string LocationCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Spell**
-
-```csharp
-public SpellInfo Spell { get; set; }
-```
-
-#### Property Value
-
-[SpellInfo](./SpellInfo.md)<br>
-
-### **RefinementChips**
-
-```csharp
-public RefinementChipsInfo RefinementChips { get; set; }
-```
-
-#### Property Value
-
-[RefinementChipsInfo](./RefinementChipsInfo.md)<br>
-
-### **ItemTypes**
-
-```csharp
-public ICollection<string> ItemTypes { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SeResultsCount**
-
-```csharp
-public Nullable<long> SeResultsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BaseGoogleFinanceSerpElementItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BaseGoogleFinanceSerpElementItem&gt;](./BaseGoogleFinanceSerpElementItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpGoogleFinanceQuoteLiveAdvancedResultInfo()**
-
-```csharp
-public SerpGoogleFinanceQuoteLiveAdvancedResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword received in a POST array<br>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |[optional]|
+**Type** | **string** | type of element |[optional]|
+**SeDomain** | **string** | search engine domain in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
+**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**RefinementChips** | **RefinementChipsInfo** | search refinement chips<br>in this case, the value will be null |[optional]|
+**ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP;<br>possible item types: google_finance_hero_groups, google_finance_quote, google_finance_compare_to, google_finance_news, google_finance_financial, google_finance_futures_chain, google_finance_details, google_finance_about, google_finance_interested, google_finance_people_also_search |[optional]|
+**SeResultsCount** | **double?** | total number of results in SERP |[optional]|
+**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<BaseGoogleFinanceSerpElementItem>** | market indexes related to the market trends element |[optional]|

@@ -1,69 +1,11 @@
 # OnPageContentParsingItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class OnPageContentParsingItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [OnPageContentParsingItem](./OnPageContentParsingItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **FetchTime**
-
-```csharp
-public string FetchTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **StatusCode**
-
-```csharp
-public Nullable<int> StatusCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PageContent**
-
-```csharp
-public PageContentInfo PageContent { get; set; }
-```
-
-#### Property Value
-
-[PageContentInfo](./PageContentInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **OnPageContentParsingItem()**
-
-```csharp
-public OnPageContentParsingItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**FetchTime** | **string** | date and time when the content was fethced<br>example:<br>'2022-11-01 10:02:52 +00:00' |[optional]|
+**StatusCode** | **double?** | status code of the page |[optional]|
+**PageContent** | **PageContentInfo** | parsed content of the page |[optional]|

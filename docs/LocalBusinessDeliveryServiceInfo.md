@@ -1,59 +1,10 @@
 # LocalBusinessDeliveryServiceInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class LocalBusinessDeliveryServiceInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [LocalBusinessDeliveryServiceInfo](./LocalBusinessDeliveryServiceInfo.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **LocalBusinessDeliveryServiceInfo()**
-
-```csharp
-public LocalBusinessDeliveryServiceInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Title** | **string** | title of the element<br>domain of the online food ordering system |[optional]|
+**Url** | **string** | URL to place an order |[optional]|

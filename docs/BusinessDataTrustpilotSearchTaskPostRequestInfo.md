@@ -1,89 +1,13 @@
 # BusinessDataTrustpilotSearchTaskPostRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class BusinessDataTrustpilotSearchTaskPostRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataTrustpilotSearchTaskPostRequestInfo](./BusinessDataTrustpilotSearchTaskPostRequestInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Priority**
-
-```csharp
-public Nullable<int> Priority { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Depth**
-
-```csharp
-public Nullable<int> Depth { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PostbackUrl**
-
-```csharp
-public string PostbackUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PingbackUrl**
-
-```csharp
-public string PingbackUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataTrustpilotSearchTaskPostRequestInfo()**
-
-```csharp
-public BusinessDataTrustpilotSearchTaskPostRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword<br>required field<br>the keyword you specify should indicate a business category or company name;<br>you can specify up to 700 characters in the keyword filed;<br>all %## will be decoded (plus character ‘+’ will be decoded to a space character);<br>if you need to use the “%” character for your keyword, please specify it as “%25”<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**Priority** | **int?** | task priority<br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priority<br>You will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the Pricing page. |[optional]|
+**Depth** | **int?** | parsing depth<br>optional field<br>number of search results to be returned from the API response<br>we strongly recommend setting the parsing depth in the multiples of twenty because our systems processes twenty search results in a row;<br>default value: 10;<br>maximum value: 140<br>Note: your account will be charged for every 10 search results returned, e.g. if you specify depth: 11, you will be charged as per 20 search results |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|
+**PostbackUrl** | **string** | return URL for sending task results<br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified<br>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.<br>example:<br>http://your-server.com/postbackscript?id=$id<br>http://your-server.com/postbackscript?id=$id&tag=$tag<br>Note: special characters in postback_url will be urlencoded;<br>i.a., the # character will be encoded into %23<br>learn more on our Help Center |[optional]|
+**PingbackUrl** | **string** | notification URL of a completed task<br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.<br>example:<br>http://your-server.com/pingscript?id=$id<br>http://your-server.com/pingscript?id=$id&tag=$tag<br>Note: special characters in pingback_url will be urlencoded;<br>i.a., the # character will be encoded into %23<br>learn more on our Help Center |[optional]|

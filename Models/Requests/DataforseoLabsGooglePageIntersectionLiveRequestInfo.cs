@@ -1,34 +1,37 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsGooglePageIntersectionLiveRequestInfo
+
+    public class DataforseoLabsGooglePageIntersectionLiveRequestInfo 
     {
+
         /// <summary>
         /// target URLs of pages
         /// <br/>required field
         /// <br/>you can set up to 20 pages in this object
         /// <br/>the pages should be specified with absolute URLs (including http:// or https://)
         /// <br/>example:
-        /// <br/>"pages": {
-        /// <br/>"1":"https://www.apple.com/mac/*",
-        /// <br/>"2":"https://dataforseo.com/*",
-        /// <br/>"3":"https://support.microsoft.com/"
+        /// <br/>'pages': {
+        /// <br/>'1':'https://www.apple.com/mac/*',
+        /// <br/>'2':'https://dataforseo.com/*',
+        /// <br/>'3':'https://support.microsoft.com/'
         /// <br/>}if you specify a single page here, we will return results only for this page;
         /// <br/>you can also use a wildcard (‘*’) character to specify the search pattern
         /// <br/>example:
-        /// <br/>"example.com"
+        /// <br/>'example.com'
         /// <br/>search for the exact URL
-        /// <br/>"example.com/eng/*"
+        /// <br/>'example.com/eng/*'
         /// <br/>search for the example.com page and all its related URLs which start with ‘/eng/’, such as “example.com/eng/index.html” and “example.com/eng/help/”, etc.
         /// <br/>note: a wilcard should be placed after the slash (‘/’) character in the end of the URL, it is not possible to place it after the domain in the following way:
         /// <br/>https://dataforseo.com*
         /// <br/>use https://dataforseo.com/* instead
         /// <br/>Note: this endpoint will not provide results if the number of intersecting keywords exceeds 10 million
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> Pages { get; set; }
+        [JsonProperty("pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, string> Pages { get; set; }
 
         /// <summary>
         /// URLs of pages you want to exclude
@@ -38,14 +41,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that if you specify this field, the results will be based on the keywords any URL from pages ranks for regardless of intersections between them. However, you can set intersection_mode to intersect and results will contain the keywords all URLs from pages rank for in the same SERP and URLs from exclude_pages do not.
         /// <br/>use a wildcard (‘*’) character to specify the search pattern
         /// <br/>example:
-        /// <br/>"exclude_pages": [
-        /// <br/>"https://www.apple.com/iphone/*",
-        /// <br/>"https://dataforseo.com/apis/*",
-        /// <br/>"https://www.microsoft.com/en-us/industry/services/"
+        /// <br/>'exclude_pages': [
+        /// <br/>'https://www.apple.com/iphone/*',
+        /// <br/>'https://dataforseo.com/apis/*',
+        /// <br/>'https://www.microsoft.com/en-us/industry/services/'
         /// <br/>]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("exclude_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> ExcludePages { get; set; }
+        [JsonProperty("exclude_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ExcludePages { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -56,7 +59,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -68,7 +71,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -80,7 +83,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>English
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -92,7 +95,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>en
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -100,12 +103,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>indicates type of search results included in the response
         /// <br/>optional field
         /// <br/>possible values:
-        /// <br/>["organic", "paid", "featured_snippet", "local_pack"]
+        /// <br/>['organic', 'paid', 'featured_snippet', 'local_pack']
         /// <br/>default value:
-        /// <br/>["organic", "paid"]
+        /// <br/>['organic', 'paid']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
+        [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
         /// the maximum number of returned keywords
@@ -113,7 +116,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 100
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
 
         /// <summary>
@@ -122,7 +125,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0
         /// <br/>if you specify 10 here, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
@@ -131,7 +134,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, the subdomains will be ignored
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_subdomains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
@@ -143,7 +146,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>intersect – results are based on the keywords all URLs from pages rank for in the same SERP:
         /// <br/>by default, results are based on the intersect mode if you specify only pages array. If you specify exclude_pages as well, results are based on the union mode
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("intersection_mode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("intersection_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string IntersectionMode { get; set; }
 
         /// <summary>
@@ -152,7 +155,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, we will return a serp_info array containing SERP data (number of search results, relevant URL, and SERP features) for every keyword in the response
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_serp_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_serp_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSerpInfo { get; set; }
 
         /// <summary>
@@ -163,7 +166,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>with this parameter enabled, you will be charged double the price for the request
         /// <br/>learn more about how clickstream-based metrics are calculated in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_clickstream_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeClickstreamData { get; set; }
 
         /// <summary>
@@ -172,7 +175,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true only core keywords will be returned, all highly similar keywords will be excluded;
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ignore_synonyms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ignore_synonyms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IgnoreSynonyms { get; set; }
 
         /// <summary>
@@ -181,23 +184,23 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, ilike, not_ilike, like, not_like, match, not_match
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, ilike, not_ilike, like, not_like, match, not_match
         /// <br/>you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters
         /// <br/>note that if you want to filter by any field in the intersection_result array you need to specify the number of corresponding page
         /// <br/>for instance, if you want to filter results by the ranking of the first specified URL, you should set the following filter:
-        /// <br/>[intersection_result.1.rank_absolute,"=",1]
+        /// <br/>[intersection_result.1.rank_absolute,'=',1]
         /// <br/>if you want to filter results and receive only organic listings for the third specified URL, you should set the following filter:
-        /// <br/>[intersection_result.3.type,"=","organic"] , etc.example:
-        /// <br/>["keyword_data.keyword_info.search_volume","in",[100,1000]]
-        /// <br/>[["intersection_result.1.etv","&gt;",0],"and",["intersection_result.1.description","like","%goat%"]][["keyword_data.keyword_info.search_volume","&gt;",100],
-        /// <br/>"and",
-        /// <br/>[["intersection_result.2.description","like","%goat%"],
-        /// <br/>"or",
-        /// <br/>["intersection_result.2.type","=","organic"]]]
+        /// <br/>[intersection_result.3.type,'=','organic'] , etc.example:
+        /// <br/>['keyword_data.keyword_info.search_volume','in',[100,1000]]
+        /// <br/>[['intersection_result.1.etv','&gt;',0],'and',['intersection_result.1.description','like','%goat%']][['keyword_data.keyword_info.search_volume','&gt;',100],
+        /// <br/>'and',
+        /// <br/>[['intersection_result.2.description','like','%goat%'],
+        /// <br/>'or',
+        /// <br/>['intersection_result.2.type','=','organic']]]
         /// <br/>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// results sorting rules
@@ -208,16 +211,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>desc – results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting parameter
         /// <br/>example:
-        /// <br/>["keyword_data.keyword_info.competition,desc"]
+        /// <br/>['keyword_data.keyword_info.competition,desc']
         /// <br/>default rule:
-        /// <br/>["keyword_data.keyword_info.search_volume,desc"]
+        /// <br/>['keyword_data.keyword_info.search_volume,desc']
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>["intersection_result.1.rank_group,asc","intersection_result.2.rank_absolute,asc"]
+        /// <br/>['intersection_result.1.rank_group,asc','intersection_result.2.rank_absolute,asc']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OrderBy { get; set; }
+        [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> OrderBy { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -226,22 +229,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

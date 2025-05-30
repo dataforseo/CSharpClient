@@ -1,48 +1,38 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class CurrencyBoxSerpElementItem : BaseSerpElementItem
+    public class CurrencyBoxSerpElementItem  : BaseSerpElementItem 
     {
-        /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Position { get; set; }
-
-        /// <summary>
-        /// the XPath of the element
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("xpath", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Xpath { get; set; }
 
         /// <summary>
         /// the value of the rating
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Value { get; set; }
+        [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Value { get; set; }
 
         /// <summary>
         /// value converted to a requested currency
         /// <br/>indicates the exact value based on Google Fincance data at the time when our API pulled the results
         /// <br/>note that exchange rates displayed in the currency_box element may be delayed according to the Google Finance disclaimer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("converted_value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("converted_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? ConvertedValue { get; set; }
 
         /// <summary>
         /// currency of the listed price
         /// <br/>ISO code of the currency applied to the price
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("currency", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
 
         /// <summary>
         /// converted currency
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("converted_currency", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("converted_currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ConvertedCurrency { get; set; }
 
         /// <summary>
@@ -51,20 +41,20 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("timestamp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
 
         /// <summary>
         /// results table
         /// <br/>if there are none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("table", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }
 
         /// <summary>
         /// contains data provided in the graph of the element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("graph", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("graph", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Graph Graph { get; set; }
 
         /// <summary>
@@ -72,17 +62,16 @@ namespace DataForSeo.Client.Models
         /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
         /// <br/>equals null if calculate_rectangles in the POST request is not set to true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rectangle", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Rectangle Rectangle { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

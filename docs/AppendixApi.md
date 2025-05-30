@@ -1,263 +1,184 @@
 # AppendixApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**userData**](AppendixApi.md#userData) | **GET**  /v3/appendix/user_data  |
+[**appendixErrors**](AppendixApi.md#appendixErrors) | **GET**  /v3/appendix/errors  |
+[**webhookResend**](AppendixApi.md#webhookResend) | **POST**  /v3/appendix/webhook_resend  |
+[**appendixStatus**](AppendixApi.md#appendixStatus) | **GET**  /v3/appendix/status  |
+
+<a id="userData"></a>
+# **userData**
+> AppendixUserDataResponseInfo userData()
+
+
+### Example
 ```csharp
-public class AppendixApi
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppendixApi.UserDataAsync();
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppendixApi](./AppendixApi.md)
+### Parameters
 
-## Properties
 
-### **BaseUrl**
+    
+This endpoint does not need any parameter.
+    
 
+
+### Return type
+
+[**AppendixUserDataResponseInfo**](AppendixUserDataResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="appendixErrors"></a>
+# **appendixErrors**
+> AppendixErrorsResponseInfo appendixErrors()
+
+
+### Example
 ```csharp
-public string BaseUrl { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppendixApi.AppendixErrorsAsync();
 ```
 
-#### Property Value
+### Parameters
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **ReadResponseAsString**
+    
+This endpoint does not need any parameter.
+    
 
+
+### Return type
+
+[**AppendixErrorsResponseInfo**](AppendixErrorsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="webhookResend"></a>
+# **webhookResend**
+> AppendixWebhookResendResponseInfo webhookResend()
+
+
+### Example
 ```csharp
-public bool ReadResponseAsString { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppendixApi.WebhookResendAsync(new List<AppendixWebhookResendRequestInfo>()
+{
+    new()
+    {
+        Id = "08161139-0001-0066-1000-06491d097ed5",
+    }
+});
 ```
 
-#### Property Value
+### Parameters
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppendixWebhookResendRequestInfo>&gt;**](IEnumerable<AppendixWebhookResendRequestInfo>.md)|  | [optional] |
 
-## Constructors
 
-### **AppendixApi(HttpClient)**
 
+### Return type
+
+[**AppendixWebhookResendResponseInfo**](AppendixWebhookResendResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="appendixStatus"></a>
+# **appendixStatus**
+> AppendixStatusResponseInfo appendixStatus()
+
+
+### Example
 ```csharp
-public AppendixApi(HttpClient httpClient)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppendixApi.AppendixStatusAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`httpClient` HttpClient<br>
 
-## Methods
+    
+This endpoint does not need any parameter.
+    
 
-### **UserDataAsync()**
 
-```csharp
-public Task<AppendixUserDataResponseInfo> UserDataAsync()
-```
+### Return type
 
-#### Returns
+[**AppendixStatusResponseInfo**](AppendixStatusResponseInfo.md)
 
-[Task&lt;AppendixUserDataResponseInfo&gt;](./AppendixUserDataResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-You will receive detailed information about your API usage, prices, spending and other account details by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/user_data/?bash'
-
-### **UserDataAsync(CancellationToken)**
-
-```csharp
-public Task<AppendixUserDataResponseInfo> UserDataAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppendixUserDataResponseInfo&gt;](./AppendixUserDataResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive detailed information about your API usage, prices, spending and other account details by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/user_data/?bash'
-
-### **AppendixErrorsAsync()**
-
-```csharp
-public Task<AppendixErrorsResponseInfo> AppendixErrorsAsync()
-```
-
-#### Returns
-
-[Task&lt;AppendixErrorsResponseInfo&gt;](./AppendixErrorsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint returns a list of possible DataForSEO API errors and general status codes. Below you will find a list of HTTP response codes and internal messages. We recommend storing the data connected to error codes in your application log and designing a necessary system for handling related exceptional or error conditions.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/errors/?bash'
-
-### **AppendixErrorsAsync(CancellationToken)**
-
-```csharp
-public Task<AppendixErrorsResponseInfo> AppendixErrorsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppendixErrorsResponseInfo&gt;](./AppendixErrorsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint returns a list of possible DataForSEO API errors and general status codes. Below you will find a list of HTTP response codes and internal messages. We recommend storing the data connected to error codes in your application log and designing a necessary system for handling related exceptional or error conditions.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/errors/?bash'
-
-### **WebhookResendAsync(IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;)**
-
-```csharp
-public Task<AppendixWebhookResendResponseInfo> WebhookResendAsync(IEnumerable<AppendixWebhookResendRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;](./AppendixWebhookResendRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppendixWebhookResendResponseInfo&gt;](./AppendixWebhookResendResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Using this endpoint you can resend webhooks (pingbacks and postbacks) for up to 100 specified tasks.
- <br>Note: Your account will not be double-charged for resending a webhook.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash'
-
-### **WebhookResendAsync(IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<AppendixWebhookResendResponseInfo> WebhookResendAsync(IEnumerable<AppendixWebhookResendRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppendixWebhookResendRequestInfo&gt;](./AppendixWebhookResendRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppendixWebhookResendResponseInfo&gt;](./AppendixWebhookResendResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Using this endpoint you can resend webhooks (pingbacks and postbacks) for up to 100 specified tasks.
- <br>Note: Your account will not be double-charged for resending a webhook.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash'
-
-### **AppendixStatusAsync()**
-
-```csharp
-public Task<AppendixStatusResponseInfo> AppendixStatusAsync()
-```
-
-#### Returns
-
-[Task&lt;AppendixStatusResponseInfo&gt;](./AppendixStatusResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this API you will receive detailed information about the current status of all our APIs and endpoints. You will also get a full issue description if a problem occurs.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/status/?bash'
-
-### **AppendixStatusAsync(CancellationToken)**
-
-```csharp
-public Task<AppendixStatusResponseInfo> AppendixStatusAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppendixStatusResponseInfo&gt;](./AppendixStatusResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this API you will receive detailed information about the current status of all our APIs and endpoints. You will also get a full issue description if a problem occurs.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/appendix/status/?bash'
-
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
-
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
-
-#### Type Parameters
-
-`T`<br>
-
-#### Parameters
-
-`response` HttpResponseMessage<br>
-
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-
-#### Returns
-
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

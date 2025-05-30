@@ -1,79 +1,13 @@
 # AppendixUserDataResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class AppendixUserDataResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppendixUserDataResultInfo](./AppendixUserDataResultInfo.md)
 
 ## Properties
 
-### **Login**
-
-```csharp
-public string Login { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Timezone**
-
-```csharp
-public string Timezone { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Rates**
-
-```csharp
-public AppendixRatesData Rates { get; set; }
-```
-
-#### Property Value
-
-[AppendixRatesData](./AppendixRatesData.md)<br>
-
-### **Money**
-
-```csharp
-public AppendixMoneyData Money { get; set; }
-```
-
-#### Property Value
-
-[AppendixMoneyData](./AppendixMoneyData.md)<br>
-
-### **Price**
-
-```csharp
-public AppendixPriceData Price { get; set; }
-```
-
-#### Property Value
-
-[AppendixPriceData](./AppendixPriceData.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AppendixUserDataResultInfo()**
-
-```csharp
-public AppendixUserDataResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Login** | **string** | your login |[optional]|
+**Timezone** | **string** | your time zone<br>can be set in your profile settings |[optional]|
+**Rates** | **AppendixRatesData** | your API rates |[optional]|
+**Money** | **AppendixMoneyData** | section of your spending, USD |[optional]|
+**Price** | **AppendixPriceData** | pricing |[optional]|
+**BacklinksSubscriptionExpiryDate** | **string** | expiry date of the backlinks api subscription<br>date and time when the current subscription to Backlinks API expires;<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2025-06-15 12:57:46 +00:00<br>Note: if there is no active subscription to Backlinks API, the value equals null |[optional]|

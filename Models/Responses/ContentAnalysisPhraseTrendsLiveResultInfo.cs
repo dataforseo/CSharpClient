@@ -21,21 +21,21 @@ namespace DataForSeo.Client.Models.Responses
         /// total number of results in our database relevant to your request
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        public double? TotalCount { get; set; }
 
         /// <summary>
         /// rank of all URLs citing the keyword
         /// <br/>normalized sum of ranks of all URLs citing the target keyword for the given date
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Rank { get; set; }
+        public double? Rank { get; set; }
 
         /// <summary>
         /// top domains citing the target keyword
         /// <br/>contains objects with top domains citing the target keyword and citation count per each domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("top_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<TopDomainInfo> TopDomains { get; set; }
+        public System.Collections.Generic.ICollection<TopDomainCountInfo> TopDomains { get; set; }
 
         /// <summary>
         /// sentiment connotations

@@ -1,49 +1,9 @@
 # SpellInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class SpellInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SpellInfo](./SpellInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SpellInfo()**
-
-```csharp
-public SpellInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword obtained as a result of search engine autocorrection<br> the results will be provided for the corrected keyword |[optional]|
+**Type** | **string** | type of autocorrection<br> possible values:<br> did_you_mean, showing_results_for, no_results_found_for, including_results_for<br> note: Yahoo and Yandex support only the following autocorrection type:<br> including_results_for |[optional]|

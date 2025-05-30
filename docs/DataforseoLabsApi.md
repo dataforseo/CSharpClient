@@ -1,3270 +1,3155 @@
 # DataforseoLabsApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
+
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**dataforseoLabsIdList**](DataforseoLabsApi.md#dataforseoLabsIdList) | **POST**  /v3/dataforseo_labs/id_list  |
+[**dataforseoLabsStatus**](DataforseoLabsApi.md#dataforseoLabsStatus) | **GET**  /v3/dataforseo_labs/status  |
+[**dataforseoLabsErrors**](DataforseoLabsApi.md#dataforseoLabsErrors) | **POST**  /v3/dataforseo_labs/errors  |
+[**availableFilters**](DataforseoLabsApi.md#availableFilters) | **GET**  /v3/dataforseo_labs/available_filters  |
+[**dataforseoLabsLocationsAndLanguages**](DataforseoLabsApi.md#dataforseoLabsLocationsAndLanguages) | **GET**  /v3/dataforseo_labs/locations_and_languages  |
+[**categories**](DataforseoLabsApi.md#categories) | **GET**  /v3/dataforseo_labs/categories  |
+[**googleAvailableHistory**](DataforseoLabsApi.md#googleAvailableHistory) | **GET**  /v3/dataforseo_labs/google/available_history  |
+[**googleKeywordsForSiteLive**](DataforseoLabsApi.md#googleKeywordsForSiteLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_site/live  |
+[**googleRelatedKeywordsLive**](DataforseoLabsApi.md#googleRelatedKeywordsLive) | **POST**  /v3/dataforseo_labs/google/related_keywords/live  |
+[**googleKeywordSuggestionsLive**](DataforseoLabsApi.md#googleKeywordSuggestionsLive) | **POST**  /v3/dataforseo_labs/google/keyword_suggestions/live  |
+[**googleKeywordIdeasLive**](DataforseoLabsApi.md#googleKeywordIdeasLive) | **POST**  /v3/dataforseo_labs/google/keyword_ideas/live  |
+[**googleBulkKeywordDifficultyLive**](DataforseoLabsApi.md#googleBulkKeywordDifficultyLive) | **POST**  /v3/dataforseo_labs/google/bulk_keyword_difficulty/live  |
+[**googleSearchIntentLive**](DataforseoLabsApi.md#googleSearchIntentLive) | **POST**  /v3/dataforseo_labs/google/search_intent/live  |
+[**dataforseoLabsGoogleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#dataforseoLabsGoogleCategoriesForKeywordsLanguages) | **GET**  /v3/dataforseo_labs/google/categories_for_keywords/languages  |
+[**googleCategoriesForDomainLive**](DataforseoLabsApi.md#googleCategoriesForDomainLive) | **POST**  /v3/dataforseo_labs/google/categories_for_domain/live  |
+[**googleCategoriesForKeywordsLive**](DataforseoLabsApi.md#googleCategoriesForKeywordsLive) | **POST**  /v3/dataforseo_labs/google/categories_for_keywords/live  |
+[**googleKeywordsForCategoriesLive**](DataforseoLabsApi.md#googleKeywordsForCategoriesLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_categories/live  |
+[**googleDomainMetricsByCategoriesLive**](DataforseoLabsApi.md#googleDomainMetricsByCategoriesLive) | **POST**  /v3/dataforseo_labs/google/domain_metrics_by_categories/live  |
+[**googleTopSearchesLive**](DataforseoLabsApi.md#googleTopSearchesLive) | **POST**  /v3/dataforseo_labs/google/top_searches/live  |
+[**googleDomainWhoisOverviewLive**](DataforseoLabsApi.md#googleDomainWhoisOverviewLive) | **POST**  /v3/dataforseo_labs/google/domain_whois_overview/live  |
+[**googleRankedKeywordsLive**](DataforseoLabsApi.md#googleRankedKeywordsLive) | **POST**  /v3/dataforseo_labs/google/ranked_keywords/live  |
+[**googleSerpCompetitorsLive**](DataforseoLabsApi.md#googleSerpCompetitorsLive) | **POST**  /v3/dataforseo_labs/google/serp_competitors/live  |
+[**googleCompetitorsDomainLive**](DataforseoLabsApi.md#googleCompetitorsDomainLive) | **POST**  /v3/dataforseo_labs/google/competitors_domain/live  |
+[**googleDomainIntersectionLive**](DataforseoLabsApi.md#googleDomainIntersectionLive) | **POST**  /v3/dataforseo_labs/google/domain_intersection/live  |
+[**googleSubdomainsLive**](DataforseoLabsApi.md#googleSubdomainsLive) | **POST**  /v3/dataforseo_labs/google/subdomains/live  |
+[**googleRelevantPagesLive**](DataforseoLabsApi.md#googleRelevantPagesLive) | **POST**  /v3/dataforseo_labs/google/relevant_pages/live  |
+[**googleDomainRankOverviewLive**](DataforseoLabsApi.md#googleDomainRankOverviewLive) | **POST**  /v3/dataforseo_labs/google/domain_rank_overview/live  |
+[**googleHistoricalSerpsLive**](DataforseoLabsApi.md#googleHistoricalSerpsLive) | **POST**  /v3/dataforseo_labs/google/historical_serps/live  |
+[**googleHistoricalRankOverviewLive**](DataforseoLabsApi.md#googleHistoricalRankOverviewLive) | **POST**  /v3/dataforseo_labs/google/historical_rank_overview/live  |
+[**googlePageIntersectionLive**](DataforseoLabsApi.md#googlePageIntersectionLive) | **POST**  /v3/dataforseo_labs/google/page_intersection/live  |
+[**googleBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleBulkTrafficEstimationLive) | **POST**  /v3/dataforseo_labs/google/bulk_traffic_estimation/live  |
+[**googleHistoricalBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleHistoricalBulkTrafficEstimationLive) | **POST**  /v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live  |
+[**googleHistoricalKeywordDataLive**](DataforseoLabsApi.md#googleHistoricalKeywordDataLive) | **POST**  /v3/dataforseo_labs/google/historical_keyword_data/live  |
+[**googleKeywordOverviewLive**](DataforseoLabsApi.md#googleKeywordOverviewLive) | **POST**  /v3/dataforseo_labs/google/keyword_overview/live  |
+[**amazonBulkSearchVolumeLive**](DataforseoLabsApi.md#amazonBulkSearchVolumeLive) | **POST**  /v3/dataforseo_labs/amazon/bulk_search_volume/live  |
+[**amazonRelatedKeywordsLive**](DataforseoLabsApi.md#amazonRelatedKeywordsLive) | **POST**  /v3/dataforseo_labs/amazon/related_keywords/live  |
+[**amazonRankedKeywordsLive**](DataforseoLabsApi.md#amazonRankedKeywordsLive) | **POST**  /v3/dataforseo_labs/amazon/ranked_keywords/live  |
+[**amazonProductRankOverviewLive**](DataforseoLabsApi.md#amazonProductRankOverviewLive) | **POST**  /v3/dataforseo_labs/amazon/product_rank_overview/live  |
+[**amazonProductCompetitorsLive**](DataforseoLabsApi.md#amazonProductCompetitorsLive) | **POST**  /v3/dataforseo_labs/amazon/product_competitors/live  |
+[**amazonProductKeywordIntersectionsLive**](DataforseoLabsApi.md#amazonProductKeywordIntersectionsLive) | **POST**  /v3/dataforseo_labs/amazon/product_keyword_intersections/live  |
+[**bingBulkKeywordDifficultyLive**](DataforseoLabsApi.md#bingBulkKeywordDifficultyLive) | **POST**  /v3/dataforseo_labs/bing/bulk_keyword_difficulty/live  |
+[**bingBulkTrafficEstimationLive**](DataforseoLabsApi.md#bingBulkTrafficEstimationLive) | **POST**  /v3/dataforseo_labs/bing/bulk_traffic_estimation/live  |
+[**bingCompetitorsDomainLive**](DataforseoLabsApi.md#bingCompetitorsDomainLive) | **POST**  /v3/dataforseo_labs/bing/competitors_domain/live  |
+[**bingDomainIntersectionLive**](DataforseoLabsApi.md#bingDomainIntersectionLive) | **POST**  /v3/dataforseo_labs/bing/domain_intersection/live  |
+[**bingDomainRankOverviewLive**](DataforseoLabsApi.md#bingDomainRankOverviewLive) | **POST**  /v3/dataforseo_labs/bing/domain_rank_overview/live  |
+[**bingPageIntersectionLive**](DataforseoLabsApi.md#bingPageIntersectionLive) | **POST**  /v3/dataforseo_labs/bing/page_intersection/live  |
+[**bingRankedKeywordsLive**](DataforseoLabsApi.md#bingRankedKeywordsLive) | **POST**  /v3/dataforseo_labs/bing/ranked_keywords/live  |
+[**bingRelatedKeywordsLive**](DataforseoLabsApi.md#bingRelatedKeywordsLive) | **POST**  /v3/dataforseo_labs/bing/related_keywords/live  |
+[**bingRelevantPagesLive**](DataforseoLabsApi.md#bingRelevantPagesLive) | **POST**  /v3/dataforseo_labs/bing/relevant_pages/live  |
+[**bingSerpCompetitorsLive**](DataforseoLabsApi.md#bingSerpCompetitorsLive) | **POST**  /v3/dataforseo_labs/bing/serp_competitors/live  |
+[**bingSubdomainsLive**](DataforseoLabsApi.md#bingSubdomainsLive) | **POST**  /v3/dataforseo_labs/bing/subdomains/live  |
+[**googleBulkAppMetricsLive**](DataforseoLabsApi.md#googleBulkAppMetricsLive) | **POST**  /v3/dataforseo_labs/google/bulk_app_metrics/live  |
+[**googleKeywordsForAppLive**](DataforseoLabsApi.md#googleKeywordsForAppLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_app/live  |
+[**googleAppCompetitorsLive**](DataforseoLabsApi.md#googleAppCompetitorsLive) | **POST**  /v3/dataforseo_labs/google/app_competitors/live  |
+[**googleAppIntersectionLive**](DataforseoLabsApi.md#googleAppIntersectionLive) | **POST**  /v3/dataforseo_labs/google/app_intersection/live  |
+[**appleBulkAppMetricsLive**](DataforseoLabsApi.md#appleBulkAppMetricsLive) | **POST**  /v3/dataforseo_labs/apple/bulk_app_metrics/live  |
+[**appleKeywordsForAppLive**](DataforseoLabsApi.md#appleKeywordsForAppLive) | **POST**  /v3/dataforseo_labs/apple/keywords_for_app/live  |
+[**appleAppCompetitorsLive**](DataforseoLabsApi.md#appleAppCompetitorsLive) | **POST**  /v3/dataforseo_labs/apple/app_competitors/live  |
+[**appleAppIntersectionLive**](DataforseoLabsApi.md#appleAppIntersectionLive) | **POST**  /v3/dataforseo_labs/apple/app_intersection/live  |
+
+<a id="dataforseoLabsIdList"></a>
+# **dataforseoLabsIdList**
+> DataforseoLabsIdListResponseInfo dataforseoLabsIdList()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new List<DataforseoLabsIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 10:57:34 +00:00",
+        DatetimeTo = "2025-04-30 10:57:34 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsIdListRequestInfo>&gt;**](IEnumerable<DataforseoLabsIdListRequestInfo>.md)|  | [optional] |
 
-```csharp
-public class DataforseoLabsApi
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsApi](./DataforseoLabsApi.md)
-
-## Properties
 
-### **BaseUrl**
 
-```csharp
-public string BaseUrl { get; set; }
-```
+### Return type
 
-#### Property Value
+[**DataforseoLabsIdListResponseInfo**](DataforseoLabsIdListResponseInfo.md)
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+### Authorization
 
-### **ReadResponseAsString**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-public bool ReadResponseAsString { get; set; }
-```
+### HTTP request headers
 
-#### Property Value
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-## Constructors
+<a id="dataforseoLabsStatus"></a>
+# **dataforseoLabsStatus**
+> DataforseoLabsStatusResponseInfo dataforseoLabsStatus()
 
-### **DataforseoLabsApi(HttpClient)**
 
+### Example
 ```csharp
-public DataforseoLabsApi(HttpClient httpClient)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
+});
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsStatusAsync();
+```
 
-`httpClient` HttpClient<br>
+### Parameters
 
-## Methods
 
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
 
-#### Type Parameters
+### Return type
 
-`T`<br>
+[**DataforseoLabsStatusResponseInfo**](DataforseoLabsStatusResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`response` HttpResponseMessage<br>
+[basicAuth](../README.md#basicAuth)
 
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+<a id="dataforseoLabsErrors"></a>
+# **dataforseoLabsErrors**
+> DataforseoLabsErrorsResponseInfo dataforseoLabsErrors()
 
-### **DataforseoLabsIdListAsync(IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsIdListResponseInfo> DataforseoLabsIdListAsync(IEnumerable<DataforseoLabsIdListRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsErrorsAsync(new List<DataforseoLabsErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;](./DataforseoLabsIdListRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsErrorsRequestInfo>&gt;**](IEnumerable<DataforseoLabsErrorsRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;DataforseoLabsIdListResponseInfo&gt;](./DataforseoLabsIdListResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DataforseoLabsErrorsResponseInfo**](DataforseoLabsErrorsResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed DataForSEO Labs tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **DataforseoLabsIdListAsync(IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<DataforseoLabsIdListResponseInfo> DataforseoLabsIdListAsync(IEnumerable<DataforseoLabsIdListRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;DataforseoLabsIdListRequestInfo&gt;](./DataforseoLabsIdListRequestInfo.md)<br>
+<a id="availableFilters"></a>
+# **availableFilters**
+> DataforseoLabsAvailableFiltersResponseInfo availableFilters()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsIdListResponseInfo&gt;](./DataforseoLabsIdListResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.AvailableFiltersAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed DataForSEO Labs tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash'
 
-### **DataforseoLabsStatusAsync()**
+### Return type
 
-```csharp
-public Task<DataforseoLabsStatusResponseInfo> DataforseoLabsStatusAsync()
-```
+[**DataforseoLabsAvailableFiltersResponseInfo**](DataforseoLabsAvailableFiltersResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsStatusResponseInfo&gt;](./DataforseoLabsStatusResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash'
+<a id="dataforseoLabsLocationsAndLanguages"></a>
+# **dataforseoLabsLocationsAndLanguages**
+> DataforseoLabsLocationsAndLanguagesResponseInfo dataforseoLabsLocationsAndLanguages()
 
-### **DataforseoLabsStatusAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsStatusResponseInfo> DataforseoLabsStatusAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsStatusResponseInfo&gt;](./DataforseoLabsStatusResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsLocationsAndLanguagesAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash'
 
-### **DataforseoLabsErrorsAsync(IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<DataforseoLabsErrorsResponseInfo> DataforseoLabsErrorsAsync(IEnumerable<DataforseoLabsErrorsRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;](./DataforseoLabsErrorsRequestInfo.md)<br>
+[**DataforseoLabsLocationsAndLanguagesResponseInfo**](DataforseoLabsLocationsAndLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsErrorsResponseInfo&gt;](./DataforseoLabsErrorsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
+<a id="categories"></a>
+# **categories**
+> DataforseoLabsCategoriesResponseInfo categories()
 
-### **DataforseoLabsErrorsAsync(IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsErrorsResponseInfo> DataforseoLabsErrorsAsync(IEnumerable<DataforseoLabsErrorsRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.CategoriesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsErrorsRequestInfo&gt;](./DataforseoLabsErrorsRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;DataforseoLabsErrorsResponseInfo&gt;](./DataforseoLabsErrorsResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsCategoriesResponseInfo**](DataforseoLabsCategoriesResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash'
+### HTTP request headers
 
-### **AvailableFiltersAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsAvailableFiltersResponseInfo> AvailableFiltersAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleAvailableHistory"></a>
+# **googleAvailableHistory**
+> DataforseoLabsGoogleAvailableHistoryResponseInfo googleAvailableHistory()
 
-[Task&lt;DataforseoLabsAvailableFiltersResponseInfo&gt;](./DataforseoLabsAvailableFiltersResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleAvailableHistoryAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash'
 
-### **AvailableFiltersAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<DataforseoLabsAvailableFiltersResponseInfo> AvailableFiltersAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleAvailableHistoryResponseInfo**](DataforseoLabsGoogleAvailableHistoryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsAvailableFiltersResponseInfo&gt;](./DataforseoLabsAvailableFiltersResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash'
+<a id="googleKeywordsForSiteLive"></a>
+# **googleKeywordsForSiteLive**
+> DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo googleKeywordsForSiteLive()
 
-### **DataforseoLabsLocationsAndLanguagesAsync()**
 
+### Example
 ```csharp
-public Task<DataforseoLabsLocationsAndLanguagesResponseInfo> DataforseoLabsLocationsAndLanguagesAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForSiteLiveAsync(new List<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "apple.com",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        IncludeSerpInfo = true,
+        IncludeSubdomains = true,
+        Limit = 3,
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsLocationsAndLanguagesResponseInfo&gt;](./DataforseoLabsLocationsAndLanguagesResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash'
+[**DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo**](DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo.md)
 
-### **DataforseoLabsLocationsAndLanguagesAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsLocationsAndLanguagesResponseInfo> DataforseoLabsLocationsAndLanguagesAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsLocationsAndLanguagesResponseInfo&gt;](./DataforseoLabsLocationsAndLanguagesResponseInfo.md)<br>
-Successful operation
+<a id="googleRelatedKeywordsLive"></a>
+# **googleRelatedKeywordsLive**
+> DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo googleRelatedKeywordsLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleRelatedKeywordsLiveAsync(new List<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "phone",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+    }
+});
+```
 
-‌
- <br>Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash'
+### Parameters
 
-### **CategoriesAsync()**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsCategoriesResponseInfo> CategoriesAsync()
-```
 
-#### Returns
 
-[Task&lt;DataforseoLabsCategoriesResponseInfo&gt;](./DataforseoLabsCategoriesResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo**](DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-We use Google product and service categories. This endpoint will provide you with the full list of available categories.
- <br>You can also download the CSV file by this link.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash'
+### HTTP request headers
 
-### **CategoriesAsync(CancellationToken)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsCategoriesResponseInfo> CategoriesAsync(CancellationToken cancellationToken)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleKeywordSuggestionsLive"></a>
+# **googleKeywordSuggestionsLive**
+> DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo googleKeywordSuggestionsLive()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsCategoriesResponseInfo&gt;](./DataforseoLabsCategoriesResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordSuggestionsLiveAsync(new List<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "phone",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        IncludeSeedKeyword = true,
+        IncludeSerpInfo = true,
+        Limit = 1,
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-We use Google product and service categories. This endpoint will provide you with the full list of available categories.
- <br>You can also download the CSV file by this link.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash'
 
-### **GoogleAvailableHistoryAsync()**
+### Return type
 
-```csharp
-public Task<DataforseoLabsGoogleAvailableHistoryResponseInfo> GoogleAvailableHistoryAsync()
-```
+[**DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo**](DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleAvailableHistoryResponseInfo&gt;](./DataforseoLabsGoogleAvailableHistoryResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash'
+<a id="googleKeywordIdeasLive"></a>
+# **googleKeywordIdeasLive**
+> DataforseoLabsGoogleKeywordIdeasLiveResponseInfo googleKeywordIdeasLive()
 
-### **GoogleAvailableHistoryAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleAvailableHistoryResponseInfo> GoogleAvailableHistoryAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordIdeasLiveAsync(new List<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "phone",
+            "watch",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+        IncludeSerpInfo = true,
+        Limit = 3,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleAvailableHistoryResponseInfo&gt;](./DataforseoLabsGoogleAvailableHistoryResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash'
+[**DataforseoLabsGoogleKeywordIdeasLiveResponseInfo**](DataforseoLabsGoogleKeywordIdeasLiveResponseInfo.md)
 
-### **GoogleKeywordsForSiteLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo> GoogleKeywordsForSiteLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleBulkKeywordDifficultyLive"></a>
+# **googleBulkKeywordDifficultyLive**
+> DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo googleBulkKeywordDifficultyLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleBulkKeywordDifficultyLiveAsync(new List<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "dentist new york",
+            "pizza brooklyn",
+            "car dealer los angeles",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash'
+### Parameters
 
-### **GoogleKeywordsForSiteLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo> GoogleKeywordsForSiteLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo**](DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash'
+<a id="googleSearchIntentLive"></a>
+# **googleSearchIntentLive**
+> DataforseoLabsGoogleSearchIntentLiveResponseInfo googleSearchIntentLive()
 
-### **GoogleRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo> GoogleRelatedKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo> body)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleSearchIntentLiveAsync(new List<DataforseoLabsGoogleSearchIntentLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "login page",
+            "audi a7",
+            "elon musk",
+            "milk store new york",
+        },
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleSearchIntentLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleSearchIntentLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-The Related Keywords endpoint provides keywords appearing in the
- <br>  "searches related to" SERP element
- <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
+[**DataforseoLabsGoogleSearchIntentLiveResponseInfo**](DataforseoLabsGoogleSearchIntentLiveResponseInfo.md)
 
-### **GoogleRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo> GoogleRelatedKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="dataforseoLabsGoogleCategoriesForKeywordsLanguages"></a>
+# **dataforseoLabsGoogleCategoriesForKeywordsLanguages**
+> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages()
 
-[Task&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync();
+```
 
-**Remarks:**
+### Parameters
 
-The Related Keywords endpoint provides keywords appearing in the
- <br>  "searches related to" SERP element
- <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash'
 
-### **GoogleKeywordSuggestionsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo> GoogleKeywordSuggestionsLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.md)<br>
+[**DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo**](DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>The Keyword Suggestions endpoint provides search queries that include the specified seed keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash'
+<a id="googleCategoriesForDomainLive"></a>
+# **googleCategoriesForDomainLive**
+> DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo googleCategoriesForDomainLive()
 
-### **GoogleKeywordSuggestionsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo> GoogleKeywordSuggestionsLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForDomainLiveAsync(new List<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationName = "United States",
+        LanguageCode = "en",
+        ItemTypes = new List<string>()
+        {
+            "paid",
+            "organic",
+            "featured_snippet",
+            "local_pack",
+        },
+        Limit = 3,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>The Keyword Suggestions endpoint provides search queries that include the specified seed keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash'
+[**DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo**](DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo.md)
 
-### **GoogleKeywordIdeasLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordIdeasLiveResponseInfo> GoogleKeywordIdeasLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordIdeasLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsGoogleKeywordIdeasLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordIdeasLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleCategoriesForKeywordsLive"></a>
+# **googleCategoriesForKeywordsLive**
+> DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo googleCategoriesForKeywordsLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForKeywordsLiveAsync(new List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "dentist new york",
+            "pizza brooklyn",
+            "car dealer los angeles",
+        },
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
+### Parameters
 
-### **GoogleKeywordIdeasLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordIdeasLiveResponseInfo> GoogleKeywordIdeasLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordIdeasLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordIdeasLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo**](DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleKeywordIdeasLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordIdeasLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash'
+<a id="googleKeywordsForCategoriesLive"></a>
+# **googleKeywordsForCategoriesLive**
+> DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo googleKeywordsForCategoriesLive()
 
-### **GoogleBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo> GoogleBulkKeywordDifficultyLiveAsync(IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;](./DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForCategoriesLiveAsync(new List<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo>()
+{
+    new()
+    {
+        CategoryCodes = new List<string>()
+        {
+            "12191",
+            "12193",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        IncludeSerpInfo = true,
+        Limit = 3,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo&gt;](./DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
+[**DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo**](DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo.md)
 
-### **GoogleBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo> GoogleBulkKeywordDifficultyLiveAsync(IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo&gt;](./DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleDomainMetricsByCategoriesLive"></a>
+# **googleDomainMetricsByCategoriesLive**
+> DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo googleDomainMetricsByCategoriesLive()
 
-[Task&lt;DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo&gt;](./DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLiveAsync(new List<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo>()
+{
+    new()
+    {
+        CategoryCodes = new List<string>()
+        {
+            "13418",
+            "11494",
+        },
+        FirstDate = "2025-02-28",
+        SecondDate = "2025-04-30",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Limit = 3,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo>.md)|  | [optional] |
 
-### **GoogleSearchIntentLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsGoogleSearchIntentLiveResponseInfo> GoogleSearchIntentLiveAsync(IEnumerable<DataforseoLabsGoogleSearchIntentLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;](./DataforseoLabsGoogleSearchIntentLiveRequestInfo.md)<br>
+[**DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo**](DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleSearchIntentLiveResponseInfo&gt;](./DataforseoLabsGoogleSearchIntentLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
+<a id="googleTopSearchesLive"></a>
+# **googleTopSearchesLive**
+> DataforseoLabsGoogleTopSearchesLiveResponseInfo googleTopSearchesLive()
 
-### **GoogleSearchIntentLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleSearchIntentLiveResponseInfo> GoogleSearchIntentLiveAsync(IEnumerable<DataforseoLabsGoogleSearchIntentLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleTopSearchesLiveAsync(new List<DataforseoLabsGoogleTopSearchesLiveRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSearchIntentLiveRequestInfo&gt;](./DataforseoLabsGoogleSearchIntentLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleTopSearchesLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleTopSearchesLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DataforseoLabsGoogleSearchIntentLiveResponseInfo&gt;](./DataforseoLabsGoogleSearchIntentLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsGoogleTopSearchesLiveResponseInfo**](DataforseoLabsGoogleTopSearchesLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash'
+### HTTP request headers
 
-### **DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleDomainWhoisOverviewLive"></a>
+# **googleDomainWhoisOverviewLive**
+> DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo googleDomainWhoisOverviewLive()
 
-[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainWhoisOverviewLiveAsync(new List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Limit = 2,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>.md)|  | [optional] |
 
-### **DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(CancellationToken)**
 
-```csharp
-public Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo**](DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash'
+<a id="googleRankedKeywordsLive"></a>
+# **googleRankedKeywordsLive**
+> DataforseoLabsGoogleRankedKeywordsLiveResponseInfo googleRankedKeywordsLive()
 
-### **GoogleCategoriesForDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo> GoogleCategoriesForDomainLiveAsync(IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;](./DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleRankedKeywordsLiveAsync(new List<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationName = "United States",
+        LanguageName = "English",
+        Limit = 3,
+        LoadRankAbsolute = true,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
+[**DataforseoLabsGoogleRankedKeywordsLiveResponseInfo**](DataforseoLabsGoogleRankedKeywordsLiveResponseInfo.md)
 
-### **GoogleCategoriesForDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo> GoogleCategoriesForDomainLiveAsync(IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo&gt;](./DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleSerpCompetitorsLive"></a>
+# **googleSerpCompetitorsLive**
+> DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo googleSerpCompetitorsLive()
 
-[Task&lt;DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleSerpCompetitorsLiveAsync(new List<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "phone",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        ItemTypes = new List<string>()
+        {
+            "organic",
+        },
+        Limit = 5,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo>.md)|  | [optional] |
 
-### **GoogleCategoriesForKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> GoogleCategoriesForKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo.md)<br>
+[**DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo**](DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash'
+<a id="googleCompetitorsDomainLive"></a>
+# **googleCompetitorsDomainLive**
+> DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo googleCompetitorsDomainLive()
 
-### **GoogleCategoriesForKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> GoogleCategoriesForKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleCompetitorsDomainLiveAsync(new List<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "newmouth.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+        IntersectingDomains = new List<string>()
+        {
+            "dentaly.org",
+            "health.com",
+            "trysnow.com",
+        },
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo**](DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash'
+### HTTP request headers
 
-### **GoogleKeywordsForCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo> GoogleKeywordsForCategoriesLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleDomainIntersectionLive"></a>
+# **googleDomainIntersectionLive**
+> DataforseoLabsGoogleDomainIntersectionLiveResponseInfo googleDomainIntersectionLive()
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainIntersectionLiveAsync(new List<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo>()
+{
+    new()
+    {
+        Target1 = "mom.com",
+        Target2 = "quora.com",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        IncludeSerpInfo = true,
+        Limit = 3,
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌
- <br>This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash'
 
-### **GoogleKeywordsForCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo> GoogleKeywordsForCategoriesLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[**DataforseoLabsGoogleDomainIntersectionLiveResponseInfo**](DataforseoLabsGoogleDomainIntersectionLiveResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleSubdomainsLive"></a>
+# **googleSubdomainsLive**
+> DataforseoLabsGoogleSubdomainsLiveResponseInfo googleSubdomainsLive()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash'
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleSubdomainsLiveAsync(new List<DataforseoLabsGoogleSubdomainsLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-### **GoogleDomainMetricsByCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo> GoogleDomainMetricsByCategoriesLiveAsync(IEnumerable<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo> body)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleSubdomainsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleSubdomainsLiveRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo.md)<br>
-Successful operation
+[**DataforseoLabsGoogleSubdomainsLiveResponseInfo**](DataforseoLabsGoogleSubdomainsLiveResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌
- <br>This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleDomainMetricsByCategoriesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo> GoogleDomainMetricsByCategoriesLiveAsync(IEnumerable<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="googleRelevantPagesLive"></a>
+# **googleRelevantPagesLive**
+> DataforseoLabsGoogleRelevantPagesLiveResponseInfo googleRelevantPagesLive()
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleRelevantPagesLiveAsync(new List<DataforseoLabsGoogleRelevantPagesLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "amazon.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleRelevantPagesLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleRelevantPagesLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash'
+[**DataforseoLabsGoogleRelevantPagesLiveResponseInfo**](DataforseoLabsGoogleRelevantPagesLiveResponseInfo.md)
 
-### **GoogleTopSearchesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleTopSearchesLiveResponseInfo> GoogleTopSearchesLiveAsync(IEnumerable<DataforseoLabsGoogleTopSearchesLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;](./DataforseoLabsGoogleTopSearchesLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;](./DataforseoLabsGoogleTopSearchesLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleDomainRankOverviewLive"></a>
+# **googleDomainRankOverviewLive**
+> DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo googleDomainRankOverviewLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainRankOverviewLiveAsync(new List<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-‌‌
- <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
+### Parameters
 
-### **GoogleTopSearchesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsGoogleTopSearchesLiveResponseInfo> GoogleTopSearchesLiveAsync(IEnumerable<DataforseoLabsGoogleTopSearchesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleTopSearchesLiveRequestInfo&gt;](./DataforseoLabsGoogleTopSearchesLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo**](DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;](./DataforseoLabsGoogleTopSearchesLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash'
+<a id="googleHistoricalSerpsLive"></a>
+# **googleHistoricalSerpsLive**
+> DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo googleHistoricalSerpsLive()
 
-### **GoogleDomainWhoisOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> GoogleDomainWhoisOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(new List<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        DateFrom = "2025-02-28",
+        DateTo = "2025-04-30",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash'
+[**DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo**](DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo.md)
 
-### **GoogleDomainWhoisOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> GoogleDomainWhoisOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleHistoricalRankOverviewLive"></a>
+# **googleHistoricalRankOverviewLive**
+> DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo googleHistoricalRankOverviewLive()
 
-[Task&lt;DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveAsync(new List<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        DateFrom = "2025-02-28",
+        DateTo = "2025-04-30",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo>.md)|  | [optional] |
 
-### **GoogleRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsGoogleRankedKeywordsLiveResponseInfo> GoogleRankedKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleRankedKeywordsLiveRequestInfo.md)<br>
+[**DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo**](DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleRankedKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleRankedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash'
+<a id="googlePageIntersectionLive"></a>
+# **googlePageIntersectionLive**
+> DataforseoLabsGooglePageIntersectionLiveResponseInfo googlePageIntersectionLive()
 
-### **GoogleRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleRankedKeywordsLiveResponseInfo> GoogleRankedKeywordsLiveAsync(IEnumerable<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.GooglePageIntersectionLiveAsync(new List<DataforseoLabsGooglePageIntersectionLiveRequestInfo>()
+{
+    new()
+    {
+        Pages = new Dictionary<string, string>()
+        {
+            ["1"] = "https://forbes.com",
+            ["2"] = "https://cnn.com/*",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+        IncludeSerpInfo = true,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRankedKeywordsLiveRequestInfo&gt;](./DataforseoLabsGoogleRankedKeywordsLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGooglePageIntersectionLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGooglePageIntersectionLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DataforseoLabsGoogleRankedKeywordsLiveResponseInfo&gt;](./DataforseoLabsGoogleRankedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsGooglePageIntersectionLiveResponseInfo**](DataforseoLabsGooglePageIntersectionLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash'
+### HTTP request headers
 
-### **GoogleSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo> GoogleSerpCompetitorsLiveAsync(IEnumerable<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleBulkTrafficEstimationLive"></a>
+# **googleBulkTrafficEstimationLive**
+> DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo googleBulkTrafficEstimationLive()
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;](./DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo&gt;](./DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleBulkTrafficEstimationLiveAsync(new List<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo>()
+{
+    new()
+    {
+        Targets = new List<string>()
+        {
+            "dataforseo.com",
+            "cnn.com",
+            "forbes.com",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+        ItemTypes = new List<string>()
+        {
+            "organic",
+            "paid",
+        },
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌
- <br>This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash'
 
-### **GoogleSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo> GoogleSerpCompetitorsLiveAsync(IEnumerable<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[**DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo**](DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo&gt;](./DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo&gt;](./DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleHistoricalBulkTrafficEstimationLive"></a>
+# **googleHistoricalBulkTrafficEstimationLive**
+> DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo googleHistoricalBulkTrafficEstimationLive()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash'
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstimationLiveAsync(new List<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo>()
+{
+    new()
+    {
+        Targets = new List<string>()
+        {
+            "dataforseo.com",
+            "cnn.com",
+            "forbes.com",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+        DateFrom = "2025-02-28",
+        DateTo = "2025-04-30",
+        ItemTypes = new List<string>()
+        {
+            "organic",
+            "paid",
+        },
+    }
+});
+```
 
-### **GoogleCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo> GoogleCompetitorsDomainLiveAsync(IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo> body)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;](./DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo&gt;](./DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo.md)<br>
-Successful operation
+[**DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo**](DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌
- <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo> GoogleCompetitorsDomainLiveAsync(IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="googleHistoricalKeywordDataLive"></a>
+# **googleHistoricalKeywordDataLive**
+> DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo googleHistoricalKeywordDataLive()
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo&gt;](./DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalKeywordDataLiveAsync(new List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "iphone",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo&gt;](./DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash'
+[**DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo**](DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)
 
-### **GoogleDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleDomainIntersectionLiveResponseInfo> GoogleDomainIntersectionLiveAsync(IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainIntersectionLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsGoogleDomainIntersectionLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainIntersectionLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleKeywordOverviewLive"></a>
+# **googleKeywordOverviewLive**
+> DataforseoLabsGoogleKeywordOverviewLiveResponseInfo googleKeywordOverviewLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordOverviewLiveAsync(new List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "iphone",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+        IncludeSerpInfo = true,
+        IncludeClickstreamData = true,
+    }
+});
+```
 
-‌
- <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash'
+### Parameters
 
-### **GoogleDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsGoogleDomainIntersectionLiveResponseInfo> GoogleDomainIntersectionLiveAsync(IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainIntersectionLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainIntersectionLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleKeywordOverviewLiveResponseInfo**](DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleDomainIntersectionLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainIntersectionLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash'
+<a id="amazonBulkSearchVolumeLive"></a>
+# **amazonBulkSearchVolumeLive**
+> DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo amazonBulkSearchVolumeLive()
 
-### **GoogleSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleSubdomainsLiveResponseInfo> GoogleSubdomainsLiveAsync(IEnumerable<DataforseoLabsGoogleSubdomainsLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;](./DataforseoLabsGoogleSubdomainsLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.AmazonBulkSearchVolumeLiveAsync(new List<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "buy laptop",
+            "cheap laptops for sale",
+            "purchase laptop",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleSubdomainsLiveResponseInfo&gt;](./DataforseoLabsGoogleSubdomainsLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash'
+[**DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo**](DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo.md)
 
-### **GoogleSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleSubdomainsLiveResponseInfo> GoogleSubdomainsLiveAsync(IEnumerable<DataforseoLabsGoogleSubdomainsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleSubdomainsLiveRequestInfo&gt;](./DataforseoLabsGoogleSubdomainsLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="amazonRelatedKeywordsLive"></a>
+# **amazonRelatedKeywordsLive**
+> DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo amazonRelatedKeywordsLive()
 
-[Task&lt;DataforseoLabsGoogleSubdomainsLiveResponseInfo&gt;](./DataforseoLabsGoogleSubdomainsLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.AmazonRelatedKeywordsLiveAsync(new List<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "computer mouse",
+        LocationCode = 2840,
+        LanguageName = "English",
+        IncludeSeedKeyword = true,
+        Limit = 5,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-### **GoogleRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsGoogleRelevantPagesLiveResponseInfo> GoogleRelevantPagesLiveAsync(IEnumerable<DataforseoLabsGoogleRelevantPagesLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;](./DataforseoLabsGoogleRelevantPagesLiveRequestInfo.md)<br>
+[**DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo**](DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleRelevantPagesLiveResponseInfo&gt;](./DataforseoLabsGoogleRelevantPagesLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash'
+<a id="amazonRankedKeywordsLive"></a>
+# **amazonRankedKeywordsLive**
+> DataforseoLabsAmazonRankedKeywordsLiveResponseInfo amazonRankedKeywordsLive()
 
-### **GoogleRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleRelevantPagesLiveResponseInfo> GoogleRelevantPagesLiveAsync(IEnumerable<DataforseoLabsGoogleRelevantPagesLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.AmazonRankedKeywordsLiveAsync(new List<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Asin = "B00R92CL5E",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleRelevantPagesLiveRequestInfo&gt;](./DataforseoLabsGoogleRelevantPagesLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DataforseoLabsGoogleRelevantPagesLiveResponseInfo&gt;](./DataforseoLabsGoogleRelevantPagesLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsAmazonRankedKeywordsLiveResponseInfo**](DataforseoLabsAmazonRankedKeywordsLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash'
+### HTTP request headers
 
-### **GoogleDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo> GoogleDomainRankOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="amazonProductRankOverviewLive"></a>
+# **amazonProductRankOverviewLive**
+> DataforseoLabsAmazonProductRankOverviewLiveResponseInfo amazonProductRankOverviewLive()
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.AmazonProductRankOverviewLiveAsync(new List<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Asins = new List<string>()
+        {
+            "B001TJ3HUG",
+            "B01LW2SL7R",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌
- <br>This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash'
 
-### **GoogleDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo> GoogleDomainRankOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[**DataforseoLabsAmazonProductRankOverviewLiveResponseInfo**](DataforseoLabsAmazonProductRankOverviewLiveResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="amazonProductCompetitorsLive"></a>
+# **amazonProductCompetitorsLive**
+> DataforseoLabsAmazonProductCompetitorsLiveResponseInfo amazonProductCompetitorsLive()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash'
+});
+var result = await dfsClient.DataforseoLabsApi.AmazonProductCompetitorsLiveAsync(new List<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo>()
+{
+    new()
+    {
+        Asin = "019005476X",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-### **GoogleHistoricalSerpsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo> GoogleHistoricalSerpsLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo> body)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo.md)<br>
-Successful operation
+[**DataforseoLabsAmazonProductCompetitorsLiveResponseInfo**](DataforseoLabsAmazonProductCompetitorsLiveResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌
- <br>This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleHistoricalSerpsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo> GoogleHistoricalSerpsLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="amazonProductKeywordIntersectionsLive"></a>
+# **amazonProductKeywordIntersectionsLive**
+> DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo amazonProductKeywordIntersectionsLive()
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.AmazonProductKeywordIntersectionsLiveAsync(new List<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo>()
+{
+    new()
+    {
+        Asins = new Dictionary<string, string>()
+        {
+            ["1"] = "B09172433Z",
+            ["2"] = "B07GBZ4Q68",
+            ["3"] = "B07GCKQD77",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash'
+[**DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo**](DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo.md)
 
-### **GoogleHistoricalRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo> GoogleHistoricalRankOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo.md)<br>
-Successful operation
+<a id="bingBulkKeywordDifficultyLive"></a>
+# **bingBulkKeywordDifficultyLive**
+> DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo bingBulkKeywordDifficultyLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.BingBulkKeywordDifficultyLiveAsync(new List<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "dentist new york",
+            "pizza brooklyn",
+            "car dealer los angeles",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash'
+### Parameters
 
-### **GoogleHistoricalRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo> GoogleHistoricalRankOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo**](DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash'
+<a id="bingBulkTrafficEstimationLive"></a>
+# **bingBulkTrafficEstimationLive**
+> DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo bingBulkTrafficEstimationLive()
 
-### **GooglePageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGooglePageIntersectionLiveResponseInfo> GooglePageIntersectionLiveAsync(IEnumerable<DataforseoLabsGooglePageIntersectionLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;](./DataforseoLabsGooglePageIntersectionLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.BingBulkTrafficEstimationLiveAsync(new List<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo>()
+{
+    new()
+    {
+        Targets = new List<string>()
+        {
+            "dataforseo.com",
+            "cnn.com",
+            "forbes.com",
+        },
+        LocationCode = 2840,
+        LanguageCode = "en",
+        ItemTypes = new List<string>()
+        {
+            "organic",
+            "paid",
+        },
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGooglePageIntersectionLiveResponseInfo&gt;](./DataforseoLabsGooglePageIntersectionLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash'
+[**DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo**](DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo.md)
 
-### **GooglePageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGooglePageIntersectionLiveResponseInfo> GooglePageIntersectionLiveAsync(IEnumerable<DataforseoLabsGooglePageIntersectionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGooglePageIntersectionLiveRequestInfo&gt;](./DataforseoLabsGooglePageIntersectionLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="bingCompetitorsDomainLive"></a>
+# **bingCompetitorsDomainLive**
+> DataforseoLabsBingCompetitorsDomainLiveResponseInfo bingCompetitorsDomainLive()
 
-[Task&lt;DataforseoLabsGooglePageIntersectionLiveResponseInfo&gt;](./DataforseoLabsGooglePageIntersectionLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.BingCompetitorsDomainLiveAsync(new List<DataforseoLabsBingCompetitorsDomainLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "newmouth.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+        IntersectingDomains = new List<string>()
+        {
+            "dentaly.org",
+            "health.com",
+            "trysnow.com",
+        },
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingCompetitorsDomainLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingCompetitorsDomainLiveRequestInfo>.md)|  | [optional] |
 
-### **GoogleBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo> GoogleBulkTrafficEstimationLiveAsync(IEnumerable<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;](./DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo.md)<br>
+[**DataforseoLabsBingCompetitorsDomainLiveResponseInfo**](DataforseoLabsBingCompetitorsDomainLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo&gt;](./DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains, subdomains, or webpages. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash'
+<a id="bingDomainIntersectionLive"></a>
+# **bingDomainIntersectionLive**
+> DataforseoLabsBingDomainIntersectionLiveResponseInfo bingDomainIntersectionLive()
 
-### **GoogleBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo> GoogleBulkTrafficEstimationLiveAsync(IEnumerable<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.BingDomainIntersectionLiveAsync(new List<DataforseoLabsBingDomainIntersectionLiveRequestInfo>()
+{
+    new()
+    {
+        Target1 = "mom.me",
+        Target2 = "quora.com",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Limit = 5,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo&gt;](./DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingDomainIntersectionLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingDomainIntersectionLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo&gt;](./DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsBingDomainIntersectionLiveResponseInfo**](DataforseoLabsBingDomainIntersectionLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains, subdomains, or webpages. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash'
+### HTTP request headers
 
-### **GoogleHistoricalBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo> GoogleHistoricalBulkTrafficEstimationLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="bingDomainRankOverviewLive"></a>
+# **bingDomainRankOverviewLive**
+> DataforseoLabsBingDomainRankOverviewLiveResponseInfo bingDomainRankOverviewLive()
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.BingDomainRankOverviewLiveAsync(new List<DataforseoLabsBingDomainRankOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingDomainRankOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingDomainRankOverviewLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌
- <br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
 
-### **GoogleHistoricalBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo> GoogleHistoricalBulkTrafficEstimationLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[**DataforseoLabsBingDomainRankOverviewLiveResponseInfo**](DataforseoLabsBingDomainRankOverviewLiveResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="bingPageIntersectionLive"></a>
+# **bingPageIntersectionLive**
+> DataforseoLabsBingPageIntersectionLiveResponseInfo bingPageIntersectionLive()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash'
+});
+var result = await dfsClient.DataforseoLabsApi.BingPageIntersectionLiveAsync(new List<DataforseoLabsBingPageIntersectionLiveRequestInfo>()
+{
+    new()
+    {
+        Pages = new Dictionary<string, string>()
+        {
+            ["1"] = "https://dataforseo.com",
+            ["2"] = "https://ahrefs.com/*",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+    }
+});
+```
 
-### **GoogleHistoricalKeywordDataLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> GoogleHistoricalKeywordDataLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> body)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingPageIntersectionLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingPageIntersectionLiveRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)<br>
-Successful operation
+[**DataforseoLabsBingPageIntersectionLiveResponseInfo**](DataforseoLabsBingPageIntersectionLiveResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌‌ 
- <br>This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleHistoricalKeywordDataLiveAsync(IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> GoogleHistoricalKeywordDataLiveAsync(IEnumerable<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="bingRankedKeywordsLive"></a>
+# **bingRankedKeywordsLive**
+> DataforseoLabsBingRankedKeywordsLiveResponseInfo bingRankedKeywordsLive()
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.BingRankedKeywordsLiveAsync(new List<DataforseoLabsBingRankedKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationName = "United States",
+        LanguageName = "English",
+        Limit = 3,
+        LoadRankAbsolute = true,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo&gt;](./DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingRankedKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingRankedKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌ 
- <br>This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash'
+[**DataforseoLabsBingRankedKeywordsLiveResponseInfo**](DataforseoLabsBingRankedKeywordsLiveResponseInfo.md)
 
-### **GoogleKeywordOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> GoogleKeywordOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsGoogleKeywordOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)<br>
-Successful operation
+<a id="bingRelatedKeywordsLive"></a>
+# **bingRelatedKeywordsLive**
+> DataforseoLabsBingRelatedKeywordsLiveResponseInfo bingRelatedKeywordsLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.BingRelatedKeywordsLiveAsync(new List<DataforseoLabsBingRelatedKeywordsLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "phone",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 3,
+    }
+});
+```
 
-‌‌ 
- <br>This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash'
+### Parameters
 
-### **GoogleKeywordOverviewLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingRelatedKeywordsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingRelatedKeywordsLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> GoogleKeywordOverviewLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsBingRelatedKeywordsLiveResponseInfo**](DataforseoLabsBingRelatedKeywordsLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsGoogleKeywordOverviewLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌ 
- <br>This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash'
+<a id="bingRelevantPagesLive"></a>
+# **bingRelevantPagesLive**
+> DataforseoLabsBingRelevantPagesLiveResponseInfo bingRelevantPagesLive()
 
-### **AmazonBulkSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo> AmazonBulkSearchVolumeLiveAsync(IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;](./DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.BingRelevantPagesLiveAsync(new List<DataforseoLabsBingRelevantPagesLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 5,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo&gt;](./DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingRelevantPagesLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingRelevantPagesLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash'
+[**DataforseoLabsBingRelevantPagesLiveResponseInfo**](DataforseoLabsBingRelevantPagesLiveResponseInfo.md)
 
-### **AmazonBulkSearchVolumeLiveAsync(IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo> AmazonBulkSearchVolumeLiveAsync(IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo&gt;](./DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="bingSerpCompetitorsLive"></a>
+# **bingSerpCompetitorsLive**
+> DataforseoLabsBingSerpCompetitorsLiveResponseInfo bingSerpCompetitorsLive()
 
-[Task&lt;DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo&gt;](./DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.BingSerpCompetitorsLiveAsync(new List<DataforseoLabsBingSerpCompetitorsLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "phone",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        ItemTypes = new List<string>()
+        {
+            "organic",
+        },
+        Limit = 5,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingSerpCompetitorsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingSerpCompetitorsLiveRequestInfo>.md)|  | [optional] |
 
-### **AmazonRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo> AmazonRelatedKeywordsLiveAsync(IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;](./DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo.md)<br>
+[**DataforseoLabsBingSerpCompetitorsLiveResponseInfo**](DataforseoLabsBingSerpCompetitorsLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo&gt;](./DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>The Related Keywords endpoint provides keywords appearing in the  "Related Searches" section on Amazon.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash'
+<a id="bingSubdomainsLive"></a>
+# **bingSubdomainsLive**
+> DataforseoLabsBingSubdomainsLiveResponseInfo bingSubdomainsLive()
 
-### **AmazonRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo> AmazonRelatedKeywordsLiveAsync(IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DataforseoLabsApi.BingSubdomainsLiveAsync(new List<DataforseoLabsBingSubdomainsLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 5,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo&gt;](./DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsBingSubdomainsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsBingSubdomainsLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo&gt;](./DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DataforseoLabsBingSubdomainsLiveResponseInfo**](DataforseoLabsBingSubdomainsLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>The Related Keywords endpoint provides keywords appearing in the  "Related Searches" section on Amazon.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash'
+### HTTP request headers
 
-### **AmazonRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<DataforseoLabsAmazonRankedKeywordsLiveResponseInfo> AmazonRankedKeywordsLiveAsync(IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleBulkAppMetricsLive"></a>
+# **googleBulkAppMetricsLive**
+> DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo googleBulkAppMetricsLive()
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;](./DataforseoLabsAmazonRankedKeywordsLiveRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;DataforseoLabsAmazonRankedKeywordsLiveResponseInfo&gt;](./DataforseoLabsAmazonRankedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleBulkAppMetricsLiveAsync(new List<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo>()
+{
+    new()
+    {
+        AppIds = new List<string>()
+        {
+            "org.telegram.messenger",
+            "com.zhiliaoapp.musically",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌
- <br>This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash'
 
-### **AmazonRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<DataforseoLabsAmazonRankedKeywordsLiveResponseInfo> AmazonRankedKeywordsLiveAsync(IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[**DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo**](DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonRankedKeywordsLiveRequestInfo&gt;](./DataforseoLabsAmazonRankedKeywordsLiveRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;DataforseoLabsAmazonRankedKeywordsLiveResponseInfo&gt;](./DataforseoLabsAmazonRankedKeywordsLiveResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleKeywordsForAppLive"></a>
+# **googleKeywordsForAppLive**
+> DataforseoLabsGoogleKeywordsForAppLiveResponseInfo googleKeywordsForAppLive()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash'
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForAppLiveAsync(new List<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo>()
+{
+    new()
+    {
+        AppId = "org.telegram.messenger",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
+    }
+});
+```
 
-### **AmazonProductRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<DataforseoLabsAmazonProductRankOverviewLiveResponseInfo> AmazonProductRankOverviewLiveAsync(IEnumerable<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo> body)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;](./DataforseoLabsAmazonProductRankOverviewLiveRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;DataforseoLabsAmazonProductRankOverviewLiveResponseInfo&gt;](./DataforseoLabsAmazonProductRankOverviewLiveResponseInfo.md)<br>
-Successful operation
+[**DataforseoLabsGoogleKeywordsForAppLiveResponseInfo**](DataforseoLabsGoogleKeywordsForAppLiveResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌
- <br>This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **AmazonProductRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<DataforseoLabsAmazonProductRankOverviewLiveResponseInfo> AmazonProductRankOverviewLiveAsync(IEnumerable<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="googleAppCompetitorsLive"></a>
+# **googleAppCompetitorsLive**
+> DataforseoLabsGoogleAppCompetitorsLiveResponseInfo googleAppCompetitorsLive()
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductRankOverviewLiveRequestInfo&gt;](./DataforseoLabsAmazonProductRankOverviewLiveRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleAppCompetitorsLiveAsync(new List<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo>()
+{
+    new()
+    {
+        AppId = "org.telegram.messenger",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsAmazonProductRankOverviewLiveResponseInfo&gt;](./DataforseoLabsAmazonProductRankOverviewLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash'
+[**DataforseoLabsGoogleAppCompetitorsLiveResponseInfo**](DataforseoLabsGoogleAppCompetitorsLiveResponseInfo.md)
 
-### **AmazonProductCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsAmazonProductCompetitorsLiveResponseInfo> AmazonProductCompetitorsLiveAsync(IEnumerable<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;](./DataforseoLabsAmazonProductCompetitorsLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;DataforseoLabsAmazonProductCompetitorsLiveResponseInfo&gt;](./DataforseoLabsAmazonProductCompetitorsLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleAppIntersectionLive"></a>
+# **googleAppIntersectionLive**
+> DataforseoLabsGoogleAppIntersectionLiveResponseInfo googleAppIntersectionLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(new List<DataforseoLabsGoogleAppIntersectionLiveRequestInfo>()
+{
+    new()
+    {
+        AppIds = new Dictionary<string, string>()
+        {
+            ["1"] = "686449807",
+            ["2"] = "382617920",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
+    }
+});
+```
 
-‌
- <br>This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash'
+### Parameters
 
-### **AmazonProductCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleAppIntersectionLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleAppIntersectionLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<DataforseoLabsAmazonProductCompetitorsLiveResponseInfo> AmazonProductCompetitorsLiveAsync(IEnumerable<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductCompetitorsLiveRequestInfo&gt;](./DataforseoLabsAmazonProductCompetitorsLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**DataforseoLabsGoogleAppIntersectionLiveResponseInfo**](DataforseoLabsGoogleAppIntersectionLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsAmazonProductCompetitorsLiveResponseInfo&gt;](./DataforseoLabsAmazonProductCompetitorsLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash'
+<a id="appleBulkAppMetricsLive"></a>
+# **appleBulkAppMetricsLive**
+> DataforseoLabsAppleBulkAppMetricsLiveResponseInfo appleBulkAppMetricsLive()
 
-### **AmazonProductKeywordIntersectionsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo> AmazonProductKeywordIntersectionsLiveAsync(IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;](./DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.DataforseoLabsApi.AppleBulkAppMetricsLiveAsync(new List<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo>()
+{
+    new()
+    {
+        AppIds = new List<string>()
+        {
+            "686449807",
+            "382617920",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo&gt;](./DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash'
+[**DataforseoLabsAppleBulkAppMetricsLiveResponseInfo**](DataforseoLabsAppleBulkAppMetricsLiveResponseInfo.md)
 
-### **AmazonProductKeywordIntersectionsLiveAsync(IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo> AmazonProductKeywordIntersectionsLiveAsync(IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo&gt;](./DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="appleKeywordsForAppLive"></a>
+# **appleKeywordsForAppLive**
+> DataforseoLabsAppleKeywordsForAppLiveResponseInfo appleKeywordsForAppLive()
 
-[Task&lt;DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo&gt;](./DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.DataforseoLabsApi.AppleKeywordsForAppLiveAsync(new List<DataforseoLabsAppleKeywordsForAppLiveRequestInfo>()
+{
+    new()
+    {
+        AppId = "686449807",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAppleKeywordsForAppLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAppleKeywordsForAppLiveRequestInfo>.md)|  | [optional] |
 
-### **BingBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;)**
 
-```csharp
-public Task<DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo> BingBulkKeywordDifficultyLiveAsync(IEnumerable<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;](./DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo.md)<br>
+[**DataforseoLabsAppleKeywordsForAppLiveResponseInfo**](DataforseoLabsAppleKeywordsForAppLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo&gt;](./DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash'
+<a id="appleAppCompetitorsLive"></a>
+# **appleAppCompetitorsLive**
+> DataforseoLabsAppleAppCompetitorsLiveResponseInfo appleAppCompetitorsLive()
 
-### **BingBulkKeywordDifficultyLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo> BingBulkKeywordDifficultyLiveAsync(IEnumerable<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
+});
+var result = await dfsClient.DataforseoLabsApi.AppleAppCompetitorsLiveAsync(new List<DataforseoLabsAppleAppCompetitorsLiveRequestInfo>()
+{
+    new()
+    {
+        AppId = "686449807",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
+    }
+});
+```
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo&gt;](./DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo.md)<br>
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAppleAppCompetitorsLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAppleAppCompetitorsLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo&gt;](./DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DataforseoLabsAppleAppCompetitorsLiveResponseInfo**](DataforseoLabsAppleAppCompetitorsLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **BingBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;)**
+### HTTP request headers
 
-```csharp
-public Task<DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo> BingBulkTrafficEstimationLiveAsync(IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo> body)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;](./DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.md)<br>
+<a id="appleAppIntersectionLive"></a>
+# **appleAppIntersectionLive**
+> DataforseoLabsAppleAppIntersectionLiveResponseInfo appleAppIntersectionLive()
 
-#### Returns
 
-[Task&lt;DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo&gt;](./DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo.md)<br>
-Successful operation
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
+});
+var result = await dfsClient.DataforseoLabsApi.AppleAppIntersectionLiveAsync(new List<DataforseoLabsAppleAppIntersectionLiveRequestInfo>()
+{
+    new()
+    {
+        AppIds = new Dictionary<string, string>()
+        {
+            ["1"] = "686449807",
+            ["2"] = "382617920",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
+    }
+});
+```
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Parameters
 
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains, subdomains, and pages. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash'
-
-### **BingBulkTrafficEstimationLiveAsync(IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo> BingBulkTrafficEstimationLiveAsync(IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo&gt;](./DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo&gt;](./DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains, subdomains, and pages. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash'
-
-### **BingCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingCompetitorsDomainLiveResponseInfo> BingCompetitorsDomainLiveAsync(IEnumerable<DataforseoLabsBingCompetitorsDomainLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;](./DataforseoLabsBingCompetitorsDomainLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingCompetitorsDomainLiveResponseInfo&gt;](./DataforseoLabsBingCompetitorsDomainLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash'
-
-### **BingCompetitorsDomainLiveAsync(IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingCompetitorsDomainLiveResponseInfo> BingCompetitorsDomainLiveAsync(IEnumerable<DataforseoLabsBingCompetitorsDomainLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingCompetitorsDomainLiveRequestInfo&gt;](./DataforseoLabsBingCompetitorsDomainLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingCompetitorsDomainLiveResponseInfo&gt;](./DataforseoLabsBingCompetitorsDomainLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash'
-
-### **BingDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingDomainIntersectionLiveResponseInfo> BingDomainIntersectionLiveAsync(IEnumerable<DataforseoLabsBingDomainIntersectionLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;](./DataforseoLabsBingDomainIntersectionLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingDomainIntersectionLiveResponseInfo&gt;](./DataforseoLabsBingDomainIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash'
-
-### **BingDomainIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingDomainIntersectionLiveResponseInfo> BingDomainIntersectionLiveAsync(IEnumerable<DataforseoLabsBingDomainIntersectionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingDomainIntersectionLiveRequestInfo&gt;](./DataforseoLabsBingDomainIntersectionLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingDomainIntersectionLiveResponseInfo&gt;](./DataforseoLabsBingDomainIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash'
-
-### **BingDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingDomainRankOverviewLiveResponseInfo> BingDomainRankOverviewLiveAsync(IEnumerable<DataforseoLabsBingDomainRankOverviewLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;](./DataforseoLabsBingDomainRankOverviewLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingDomainRankOverviewLiveResponseInfo&gt;](./DataforseoLabsBingDomainRankOverviewLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash'
-
-### **BingDomainRankOverviewLiveAsync(IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingDomainRankOverviewLiveResponseInfo> BingDomainRankOverviewLiveAsync(IEnumerable<DataforseoLabsBingDomainRankOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingDomainRankOverviewLiveRequestInfo&gt;](./DataforseoLabsBingDomainRankOverviewLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingDomainRankOverviewLiveResponseInfo&gt;](./DataforseoLabsBingDomainRankOverviewLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash'
-
-### **BingPageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingPageIntersectionLiveResponseInfo> BingPageIntersectionLiveAsync(IEnumerable<DataforseoLabsBingPageIntersectionLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;](./DataforseoLabsBingPageIntersectionLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingPageIntersectionLiveResponseInfo&gt;](./DataforseoLabsBingPageIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash'
-
-### **BingPageIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingPageIntersectionLiveResponseInfo> BingPageIntersectionLiveAsync(IEnumerable<DataforseoLabsBingPageIntersectionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingPageIntersectionLiveRequestInfo&gt;](./DataforseoLabsBingPageIntersectionLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingPageIntersectionLiveResponseInfo&gt;](./DataforseoLabsBingPageIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash'
-
-### **BingRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingRankedKeywordsLiveResponseInfo> BingRankedKeywordsLiveAsync(IEnumerable<DataforseoLabsBingRankedKeywordsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;](./DataforseoLabsBingRankedKeywordsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingRankedKeywordsLiveResponseInfo&gt;](./DataforseoLabsBingRankedKeywordsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash'
-
-### **BingRankedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingRankedKeywordsLiveResponseInfo> BingRankedKeywordsLiveAsync(IEnumerable<DataforseoLabsBingRankedKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingRankedKeywordsLiveRequestInfo&gt;](./DataforseoLabsBingRankedKeywordsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingRankedKeywordsLiveResponseInfo&gt;](./DataforseoLabsBingRankedKeywordsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash'
-
-### **BingRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingRelatedKeywordsLiveResponseInfo> BingRelatedKeywordsLiveAsync(IEnumerable<DataforseoLabsBingRelatedKeywordsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;](./DataforseoLabsBingRelatedKeywordsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingRelatedKeywordsLiveResponseInfo&gt;](./DataforseoLabsBingRelatedKeywordsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element.
- <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash'
-
-### **BingRelatedKeywordsLiveAsync(IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingRelatedKeywordsLiveResponseInfo> BingRelatedKeywordsLiveAsync(IEnumerable<DataforseoLabsBingRelatedKeywordsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingRelatedKeywordsLiveRequestInfo&gt;](./DataforseoLabsBingRelatedKeywordsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingRelatedKeywordsLiveResponseInfo&gt;](./DataforseoLabsBingRelatedKeywordsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element.
- <br>You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash'
-
-### **BingRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingRelevantPagesLiveResponseInfo> BingRelevantPagesLiveAsync(IEnumerable<DataforseoLabsBingRelevantPagesLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;](./DataforseoLabsBingRelevantPagesLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingRelevantPagesLiveResponseInfo&gt;](./DataforseoLabsBingRelevantPagesLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with rankings and traffic data for the web pages of the specified domain. You will be able to review each page’s ranking distribution and estimated monthly traffic volume from both organic and paid searches.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash'
-
-### **BingRelevantPagesLiveAsync(IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingRelevantPagesLiveResponseInfo> BingRelevantPagesLiveAsync(IEnumerable<DataforseoLabsBingRelevantPagesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingRelevantPagesLiveRequestInfo&gt;](./DataforseoLabsBingRelevantPagesLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingRelevantPagesLiveResponseInfo&gt;](./DataforseoLabsBingRelevantPagesLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with rankings and traffic data for the web pages of the specified domain. You will be able to review each page’s ranking distribution and estimated monthly traffic volume from both organic and paid searches.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash'
-
-### **BingSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingSerpCompetitorsLiveResponseInfo> BingSerpCompetitorsLiveAsync(IEnumerable<DataforseoLabsBingSerpCompetitorsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;](./DataforseoLabsBingSerpCompetitorsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingSerpCompetitorsLiveResponseInfo&gt;](./DataforseoLabsBingSerpCompetitorsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash'
-
-### **BingSerpCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingSerpCompetitorsLiveResponseInfo> BingSerpCompetitorsLiveAsync(IEnumerable<DataforseoLabsBingSerpCompetitorsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingSerpCompetitorsLiveRequestInfo&gt;](./DataforseoLabsBingSerpCompetitorsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingSerpCompetitorsLiveResponseInfo&gt;](./DataforseoLabsBingSerpCompetitorsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash'
-
-### **BingSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsBingSubdomainsLiveResponseInfo> BingSubdomainsLiveAsync(IEnumerable<DataforseoLabsBingSubdomainsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;](./DataforseoLabsBingSubdomainsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingSubdomainsLiveResponseInfo&gt;](./DataforseoLabsBingSubdomainsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash'
-
-### **BingSubdomainsLiveAsync(IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsBingSubdomainsLiveResponseInfo> BingSubdomainsLiveAsync(IEnumerable<DataforseoLabsBingSubdomainsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsBingSubdomainsLiveRequestInfo&gt;](./DataforseoLabsBingSubdomainsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsBingSubdomainsLiveResponseInfo&gt;](./DataforseoLabsBingSubdomainsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash'
-
-### **GoogleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo> GoogleBulkAppMetricsLiveAsync(IEnumerable<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;](./DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo&gt;](./DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with ranking metrics for up to 1000 Google Play applications.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash'
-
-### **GoogleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo> GoogleBulkAppMetricsLiveAsync(IEnumerable<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo&gt;](./DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo&gt;](./DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with ranking metrics for up to 1000 Google Play applications.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash'
-
-### **GoogleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsGoogleKeywordsForAppLiveResponseInfo> GoogleKeywordsForAppLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordsForAppLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleKeywordsForAppLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordsForAppLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash'
-
-### **GoogleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsGoogleKeywordsForAppLiveResponseInfo> GoogleKeywordsForAppLiveAsync(IEnumerable<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleKeywordsForAppLiveRequestInfo&gt;](./DataforseoLabsGoogleKeywordsForAppLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleKeywordsForAppLiveResponseInfo&gt;](./DataforseoLabsGoogleKeywordsForAppLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash'
-
-### **GoogleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsGoogleAppCompetitorsLiveResponseInfo> GoogleAppCompetitorsLiveAsync(IEnumerable<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;](./DataforseoLabsGoogleAppCompetitorsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleAppCompetitorsLiveResponseInfo&gt;](./DataforseoLabsGoogleAppCompetitorsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash'
-
-### **GoogleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsGoogleAppCompetitorsLiveResponseInfo> GoogleAppCompetitorsLiveAsync(IEnumerable<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppCompetitorsLiveRequestInfo&gt;](./DataforseoLabsGoogleAppCompetitorsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleAppCompetitorsLiveResponseInfo&gt;](./DataforseoLabsGoogleAppCompetitorsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash'
-
-### **GoogleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsGoogleAppIntersectionLiveResponseInfo> GoogleAppIntersectionLiveAsync(IEnumerable<DataforseoLabsGoogleAppIntersectionLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;](./DataforseoLabsGoogleAppIntersectionLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleAppIntersectionLiveResponseInfo&gt;](./DataforseoLabsGoogleAppIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash'
-
-### **GoogleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsGoogleAppIntersectionLiveResponseInfo> GoogleAppIntersectionLiveAsync(IEnumerable<DataforseoLabsGoogleAppIntersectionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsGoogleAppIntersectionLiveRequestInfo&gt;](./DataforseoLabsGoogleAppIntersectionLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsGoogleAppIntersectionLiveResponseInfo&gt;](./DataforseoLabsGoogleAppIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash'
-
-### **AppleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsAppleBulkAppMetricsLiveResponseInfo> AppleBulkAppMetricsLiveAsync(IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;](./DataforseoLabsAppleBulkAppMetricsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleBulkAppMetricsLiveResponseInfo&gt;](./DataforseoLabsAppleBulkAppMetricsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with ranking metrics for up to 1000 App Store applications.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash'
-
-### **AppleBulkAppMetricsLiveAsync(IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsAppleBulkAppMetricsLiveResponseInfo> AppleBulkAppMetricsLiveAsync(IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleBulkAppMetricsLiveRequestInfo&gt;](./DataforseoLabsAppleBulkAppMetricsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleBulkAppMetricsLiveResponseInfo&gt;](./DataforseoLabsAppleBulkAppMetricsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with ranking metrics for up to 1000 App Store applications.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash'
-
-### **AppleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsAppleKeywordsForAppLiveResponseInfo> AppleKeywordsForAppLiveAsync(IEnumerable<DataforseoLabsAppleKeywordsForAppLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;](./DataforseoLabsAppleKeywordsForAppLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleKeywordsForAppLiveResponseInfo&gt;](./DataforseoLabsAppleKeywordsForAppLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash'
-
-### **AppleKeywordsForAppLiveAsync(IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsAppleKeywordsForAppLiveResponseInfo> AppleKeywordsForAppLiveAsync(IEnumerable<DataforseoLabsAppleKeywordsForAppLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleKeywordsForAppLiveRequestInfo&gt;](./DataforseoLabsAppleKeywordsForAppLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleKeywordsForAppLiveResponseInfo&gt;](./DataforseoLabsAppleKeywordsForAppLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash'
-
-### **AppleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsAppleAppCompetitorsLiveResponseInfo> AppleAppCompetitorsLiveAsync(IEnumerable<DataforseoLabsAppleAppCompetitorsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;](./DataforseoLabsAppleAppCompetitorsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleAppCompetitorsLiveResponseInfo&gt;](./DataforseoLabsAppleAppCompetitorsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash'
-
-### **AppleAppCompetitorsLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsAppleAppCompetitorsLiveResponseInfo> AppleAppCompetitorsLiveAsync(IEnumerable<DataforseoLabsAppleAppCompetitorsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleAppCompetitorsLiveRequestInfo&gt;](./DataforseoLabsAppleAppCompetitorsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleAppCompetitorsLiveResponseInfo&gt;](./DataforseoLabsAppleAppCompetitorsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash'
-
-### **AppleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DataforseoLabsAppleAppIntersectionLiveResponseInfo> AppleAppIntersectionLiveAsync(IEnumerable<DataforseoLabsAppleAppIntersectionLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;](./DataforseoLabsAppleAppIntersectionLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DataforseoLabsAppleAppIntersectionLiveResponseInfo&gt;](./DataforseoLabsAppleAppIntersectionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
-
-### **AppleAppIntersectionLiveAsync(IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DataforseoLabsAppleAppIntersectionLiveResponseInfo> AppleAppIntersectionLiveAsync(IEnumerable<DataforseoLabsAppleAppIntersectionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsAppleAppIntersectionLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsAppleAppIntersectionLiveRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;DataforseoLabsAppleAppIntersectionLiveRequestInfo&gt;](./DataforseoLabsAppleAppIntersectionLiveRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**DataforseoLabsAppleAppIntersectionLiveResponseInfo**](DataforseoLabsAppleAppIntersectionLiveResponseInfo.md)
 
-[Task&lt;DataforseoLabsAppleAppIntersectionLiveResponseInfo&gt;](./DataforseoLabsAppleAppIntersectionLiveResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

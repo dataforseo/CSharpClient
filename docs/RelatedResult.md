@@ -1,239 +1,28 @@
 # RelatedResult
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class RelatedResult
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [RelatedResult](./RelatedResult.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Xpath**
-
-```csharp
-public string Xpath { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CacheUrl**
-
-```csharp
-public string CacheUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RelatedSearchUrl**
-
-```csharp
-public string RelatedSearchUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Breadcrumb**
-
-```csharp
-public string Breadcrumb { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **WebsiteName**
-
-```csharp
-public string WebsiteName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsImage**
-
-```csharp
-public Nullable<bool> IsImage { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsVideo**
-
-```csharp
-public Nullable<bool> IsVideo { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Description**
-
-```csharp
-public string Description { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PreSnippet**
-
-```csharp
-public string PreSnippet { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ExtendedSnippet**
-
-```csharp
-public string ExtendedSnippet { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Images**
-
-```csharp
-public ICollection<ImagesElement> Images { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;ImagesElement&gt;](./ImagesElement.md)<br>
-
-### **AmpVersion**
-
-```csharp
-public Nullable<bool> AmpVersion { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Rating**
-
-```csharp
-public RatingInfo Rating { get; set; }
-```
-
-#### Property Value
-
-[RatingInfo](./RatingInfo.md)<br>
-
-### **Price**
-
-```csharp
-public PriceInfo Price { get; set; }
-```
-
-#### Property Value
-
-[PriceInfo](./PriceInfo.md)<br>
-
-### **Highlighted**
-
-```csharp
-public ICollection<string> Highlighted { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AboutThisResult**
-
-```csharp
-public AboutThisResultElement AboutThisResult { get; set; }
-```
-
-#### Property Value
-
-[AboutThisResultElement](./AboutThisResultElement.md)<br>
-
-### **Timestamp**
-
-```csharp
-public string Timestamp { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **RelatedResult()**
-
-```csharp
-public RelatedResult()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Xpath** | **string** | the XPath of the element |[optional]|
+**Domain** | **string** | domain where a link points |[optional]|
+**Title** | **string** | title of a given link element |[optional]|
+**Url** | **string** | reference page URL |[optional]|
+**CacheUrl** | **string** | cached version of the page |[optional]|
+**RelatedSearchUrl** | **string** | URL to a similar search<br>URL to a new search for the same keyword(s) on related sites |[optional]|
+**Breadcrumb** | **string** | breadcrumb in SERP |[optional]|
+**WebsiteName** | **string** | name of the website in the ad element |[optional]|
+**IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
+**IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
+**Description** | **string** | description of the hotel booking element |[optional]|
+**PreSnippet** | **string** | includes additional information appended before the result description in SERP |[optional]|
+**ExtendedSnippet** | **string** | includes additional information appended after the result description in SERP |[optional]|
+**Images** | **IEnumerable<ImagesElement>** | images of the element |[optional]|
+**AmpVersion** | **bool?** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
+**Rating** | **BusinessDataRatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
+**Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
+**AboutThisResult** | **AboutThisResultElement** | contains information from the ‘About this result’ panel<br>‘About this result’ panel provides additional context about why Google returned this result for the given query;<br>this feature appears after clicking on the three dots next to most results |[optional]|
+**Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|

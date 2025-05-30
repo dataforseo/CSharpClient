@@ -1,16 +1,19 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ContentAnalysisCategoryTrendsLiveRequestInfo
+
+    public class ContentAnalysisCategoryTrendsLiveRequestInfo 
     {
+
         /// <summary>
         /// target category code
         /// <br/>required field
         /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("category_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("category_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string CategoryCode { get; set; }
 
         /// <summary>
@@ -18,10 +21,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>use this parameter to filter the dataset by page types
         /// <br/>possible values:
-        /// <br/>"ecommerce", "news", "blogs", "message-boards", "organization"
+        /// <br/>'ecommerce', 'news', 'blogs', 'message-boards', 'organization'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> PageType { get; set; }
+        [JsonProperty("page_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> PageType { get; set; }
 
         /// <summary>
         /// results grouping type
@@ -31,7 +34,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>one_per_domain – returns data on one citation of the category_code per domain
         /// <br/>default value: as_is
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("search_mode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchMode { get; set; }
 
         /// <summary>
@@ -46,28 +49,28 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 1
         /// <br/>maximum value: 20
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("internal_list_limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }
 
         /// <summary>
         /// starting date of the time range
         /// <br/>required field
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2019-01-15"
+        /// <br/>'2019-01-15'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_from", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
         /// ending date of the time range
         /// <br/>optional field
         /// <br/>if you don’t specify this field, today’s date will be used by default
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2019-01-15"
+        /// <br/>'2019-01-15'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
@@ -76,29 +79,30 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: month
         /// <br/>possible values: day, week, month
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateGroup { get; set; }
 
         /// <summary>
         /// initial dataset filtering parameters
         /// <br/>optional field
+        /// <br/>initial filtering parameters that apply to fields in the Search endpoint;
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like,not_like, has, has_not, match, not_match
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like,not_like, has, has_not, match, not_match
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["domain","&lt; &gt;", "logitech.com"]
-        /// <br/>[["domain","&lt; &gt;","logitech.com"],"and",["content_info.connotation_types.negative","&gt;",1000]]
-        /// <br/>[["domain","&lt; &gt;","logitech.com"]],
-        /// <br/>"and",
-        /// <br/>[["content_info.connotation_types.negative","&gt;",1000],
-        /// <br/>"or",
-        /// <br/>["content_info.text_category","has",10994]]]
+        /// <br/>['domain','&lt;&gt;', 'logitech.com']
+        /// <br/>[['domain','&lt;&gt;','logitech.com'],'and',['content_info.connotation_types.negative','&gt;',1000]]
+        /// <br/>[['domain','&lt;&gt;','logitech.com']],
+        /// <br/>'and',
+        /// <br/>[['content_info.connotation_types.negative','&gt;',1000],
+        /// <br/>'or',
+        /// <br/>['content_info.text_category','has',10994]]]
         /// <br/>for more information about filters, please refer to Content Analysis API – Filters
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("initial_dataset_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> InitialDatasetFilters { get; set; }
+        [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> InitialDatasetFilters { get; set; }
 
         /// <summary>
         /// defines the scale used for calculating and displaying the rank values
@@ -110,7 +114,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: one_thousand
         /// <br/>learn more about how this parameter works in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_scale", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
 
         /// <summary>
@@ -120,22 +124,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

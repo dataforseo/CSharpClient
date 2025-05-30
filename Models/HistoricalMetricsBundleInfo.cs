@@ -1,41 +1,44 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class HistoricalMetricsBundleInfo
+    public class HistoricalMetricsBundleInfo 
     {
+
         /// <summary>
         /// traffic data from organic search
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("organic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<HistoricalMetricsInfo> Organic { get; set; }
+        [JsonProperty("organic", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<HistoricalMetricsInfo> Organic { get; set; }
 
         /// <summary>
         /// traffic data from paid search
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("paid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<HistoricalMetricsInfo> Paid { get; set; }
-
-        /// <summary>
-        /// traffic data from the featured snippet results in Google SERP
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("local_pack", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<HistoricalMetricsInfo> LocalPack { get; set; }
+        [JsonProperty("paid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<HistoricalMetricsInfo> Paid { get; set; }
 
         /// <summary>
         /// traffic data from the local pack results in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("featured_snippet", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<HistoricalMetricsInfo> FeaturedSnippet { get; set; }
+        [JsonProperty("local_pack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<HistoricalMetricsInfo> LocalPack { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// traffic data from the featured snippet results in Google SERP
+        /// </summary>
+        [JsonProperty("featured_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<HistoricalMetricsInfo> FeaturedSnippet { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

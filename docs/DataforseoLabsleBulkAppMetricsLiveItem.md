@@ -1,59 +1,10 @@
 # DataforseoLabsleBulkAppMetricsLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DataforseoLabsleBulkAppMetricsLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsleBulkAppMetricsLiveItem](./DataforseoLabsleBulkAppMetricsLiveItem.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AppId**
-
-```csharp
-public string AppId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Metrics**
-
-```csharp
-public IDictionary<string, AppMetricsInfo> Metrics { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, AppMetricsInfo&gt;](./AppMetricsInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsleBulkAppMetricsLiveItem()**
-
-```csharp
-public DataforseoLabsleBulkAppMetricsLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**AppId** | **string** | id of the app in a POST array |[optional]|
+**Metrics** | **IDictionary<string, AppMetricsInfo>** | metrics for the ranking keywords of the app<br>ranking data relevant to the keywords that the provided application ranks for on Google Play |[optional]|

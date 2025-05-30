@@ -1,59 +1,10 @@
 # MerchantGoogleSellersAdUrlResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class MerchantGoogleSellersAdUrlResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MerchantGoogleSellersAdUrlResultInfo](./MerchantGoogleSellersAdUrlResultInfo.md)
 
 ## Properties
 
-### **AdAclk**
-
-```csharp
-public string AdAclk { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdUrl**
-
-```csharp
-public string AdUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdUrlRedirects**
-
-```csharp
-public ICollection<string> AdUrlRedirects { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **MerchantGoogleSellersAdUrlResultInfo()**
-
-```csharp
-public MerchantGoogleSellersAdUrlResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**AdAclk** | **string** | unique ad click referral parameter |[optional]|
+**AdUrl** | **string** | full URL of the advertisement |[optional]|
+**AdUrlRedirects** | **IEnumerable<string>** | URLs where the link from Google Shopping redirects before reaching a final URL<br>includes up to 10 URLs of the ad’s redirect path to the seller’s ad_url |[optional]|

@@ -1,129 +1,17 @@
 # KeywordsDataErrorsResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class KeywordsDataErrorsResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataErrorsResultInfo](./KeywordsDataErrorsResultInfo.md)
 
 ## Properties
 
-### **Id**
-
-```csharp
-public string Id { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Function**
-
-```csharp
-public string Function { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ErrorCode**
-
-```csharp
-public Nullable<int> ErrorCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ErrorMessage**
-
-```csharp
-public string ErrorMessage { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **HttpUrl**
-
-```csharp
-public string HttpUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **HttpMethod**
-
-```csharp
-public string HttpMethod { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **HttpCode**
-
-```csharp
-public Nullable<int> HttpCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **HttpTime**
-
-```csharp
-public Nullable<float> HttpTime { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **HttpResponse**
-
-```csharp
-public string HttpResponse { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataErrorsResultInfo()**
-
-```csharp
-public KeywordsDataErrorsResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Id** | **string** | id of the task |[optional]|
+**Datetime** | **string** | date and time when an error occurred<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Function** | **string** | corresponding API function |[optional]|
+**ErrorCode** | **double?** | error code |[optional]|
+**ErrorMessage** | **string** | error message or error URL<br>error message (see full list) or URL that caused an error |[optional]|
+**HttpUrl** | **string** | URL that caused an error<br>URL you used for making an API call or pingback/postback URL |[optional]|
+**HttpMethod** | **string** | HTTP method |[optional]|
+**HttpCode** | **double?** | HTTP status code |[optional]|
+**HttpTime** | **float?** | time taken by HTTP request<br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
+**HttpResponse** | **string** | HTTP response<br>server response |[optional]|

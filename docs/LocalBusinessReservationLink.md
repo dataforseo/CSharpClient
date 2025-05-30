@@ -1,59 +1,9 @@
 # LocalBusinessReservationLink
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class LocalBusinessReservationLink : BaseLocalBusinessLink
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseLocalBusinessLink](./BaseLocalBusinessLink.md) → [LocalBusinessReservationLink](./LocalBusinessReservationLink.md)
 
 ## Properties
 
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-## Constructors
-
-### **LocalBusinessReservationLink()**
-
-```csharp
-public LocalBusinessReservationLink()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Title** | **string** | title of the element<br>domain of the reservation software |[optional]|
+**Url** | **string** | URL to make a reservation |[optional]|

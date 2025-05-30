@@ -1,150 +1,239 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class MetricsInfo
+    public class MetricsInfo 
     {
-        /// <summary>
-        /// number of organic SERPs where the domain ranks #1
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_1", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos1 { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #2-3
+        /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_2_3", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos23 { get; set; }
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Type { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #4-10
+        /// date and time of the value readout
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2025-02-10 09:40:00 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_4_10", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos410 { get; set; }
+        [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Timestamp { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #11-20
+        /// revenue value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_11_20", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos1120 { get; set; }
+        [JsonProperty("revenue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? Revenue { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #21-30
+        /// change in revenue
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_21_30", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos2130 { get; set; }
+        [JsonProperty("revenue_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? RevenueDelta { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #31-40
+        /// operating expense value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_31_40", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos3140 { get; set; }
+        [JsonProperty("operating_expense", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? OperatingExpense { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #41-50
+        /// change in operating expense
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_41_50", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos4150 { get; set; }
+        [JsonProperty("operating_expense_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? OperatingExpenseDelta { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #51-60
+        /// net income value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_51_60", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos5160 { get; set; }
+        [JsonProperty("net_income", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? NetIncome { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #61-70
+        /// change in net income
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_61_70", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos6170 { get; set; }
+        [JsonProperty("net_income_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? NetIncomeDelta { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #71-80
+        /// net profit margin value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_71_80", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos7180 { get; set; }
+        [JsonProperty("net_profit_margin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? NetProfitMargin { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #81-90
+        /// change in net profit margin
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_81_90", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos8190 { get; set; }
+        [JsonProperty("net_profit_margin_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? NetProfitMarginDelta { get; set; }
 
         /// <summary>
-        /// number of organic SERPs where the domain ranks #91-100
+        /// earnings per share value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pos_91_100", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Pos91100 { get; set; }
+        [JsonProperty("earnings_per_share", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? EarningsPerShare { get; set; }
 
         /// <summary>
-        /// estimated traffic volume
-        /// <br/>estimated organic monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// change in earnings per share
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public float? Etv { get; set; }
+        [JsonProperty("earnings_per_share_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? EarningsPerShareDelta { get; set; }
 
         /// <summary>
-        /// estimated traffic volume based on impressions
-        /// <br/>estimated organic monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and impressions values of all keywords the domain ranks for
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// earnings before interest, taxes, deprecation, amortisation
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("impressions_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public float? ImpressionsEtv { get; set; }
+        [JsonProperty("ebitda", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? Ebitda { get; set; }
 
         /// <summary>
-        /// total count of organic SERPs that contain the domain
+        /// change in ebitda
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Count { get; set; }
+        [JsonProperty("ebitda_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? EbitdaDelta { get; set; }
 
         /// <summary>
-        /// estimated cost of converting organic search traffic into paid
-        /// <br/>represents the estimated monthly cost of running ads (USD) for all keywords a domain ranks for
-        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// effective tax rate value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("estimated_paid_traffic_cost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public float? EstimatedPaidTrafficCost { get; set; }
+        [JsonProperty("effective_tax_rate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? EffectiveTaxRate { get; set; }
 
         /// <summary>
-        /// number of new ranked elements
-        /// <br/>indicates how many new ranked elements were found for this domain
+        /// cash and short-term investments value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_new", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? IsNew { get; set; }
+        [JsonProperty("cash_and_short_term_investments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashAndShortTermInvestments { get; set; }
 
         /// <summary>
-        /// rank went up
-        /// <br/>indicates how many ranked elements of this domain went up in Google Search
+        /// change in cash and short-term investments
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_up", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? IsUp { get; set; }
+        [JsonProperty("cash_and_short_term_investments_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashAndShortTermInvestmentsDelta { get; set; }
 
         /// <summary>
-        /// rank went down
-        /// <br/>indicates how many ranked elements of this domain went down in Google Search
+        /// total assets value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_down", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? IsDown { get; set; }
+        [JsonProperty("total_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? TotalAssets { get; set; }
 
         /// <summary>
-        /// lost ranked elements
-        /// <br/>indicates how many ranked elements of this domain were previously presented in SERPs, but weren’t found during the last check
+        /// change in total assets
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_lost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? IsLost { get; set; }
+        [JsonProperty("total_assets_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? TotalAssetsDelta { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// total liabilities value
+        /// </summary>
+        [JsonProperty("total_liabilities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? TotalLiabilities { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        /// <summary>
+        /// change in total liabilities
+        /// </summary>
+        [JsonProperty("total_liabilities_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? TotalLiabilitiesDelta { get; set; }
+
+        /// <summary>
+        /// total equity value
+        /// </summary>
+        [JsonProperty("total_equity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? TotalEquity { get; set; }
+
+        /// <summary>
+        /// outstanding shares value
+        /// </summary>
+        [JsonProperty("shares_outstanding", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? SharesOutstanding { get; set; }
+
+        /// <summary>
+        /// price to book
+        /// </summary>
+        [JsonProperty("price_to_book", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? PriceToBook { get; set; }
+
+        /// <summary>
+        /// return on assets
+        /// </summary>
+        [JsonProperty("return_on_assets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? ReturnOnAssets { get; set; }
+
+        /// <summary>
+        /// return on capital
+        /// </summary>
+        [JsonProperty("return_on_capital", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? ReturnOnCapital { get; set; }
+
+        /// <summary>
+        /// cash from operations
+        /// </summary>
+        [JsonProperty("cash_from_operations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashFromOperations { get; set; }
+
+        /// <summary>
+        /// change in cash from operations
+        /// </summary>
+        [JsonProperty("cash_from_operations_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashFromOperationsDelta { get; set; }
+
+        /// <summary>
+        /// cash from investing
+        /// </summary>
+        [JsonProperty("cash_from_investing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashFromInvesting { get; set; }
+
+        /// <summary>
+        /// change in cash from investing
+        /// </summary>
+        [JsonProperty("cash_from_investing_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashFromInvestingDelta { get; set; }
+
+        /// <summary>
+        /// cash from financing/em&gt;
+        /// </summary>
+        [JsonProperty("cash_from_financing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashFromFinancing { get; set; }
+
+        /// <summary>
+        /// change in cash from financing
+        /// </summary>
+        [JsonProperty("cash_from_financing_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? CashFromFinancingDelta { get; set; }
+
+        /// <summary>
+        /// net change in cash
+        /// </summary>
+        [JsonProperty("net_change_in_cash", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? NetChangeInCash { get; set; }
+
+        /// <summary>
+        /// change in net change in cash
+        /// </summary>
+        [JsonProperty("net_change_in_cash_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? NetChangeInCashDelta { get; set; }
+
+        /// <summary>
+        /// free cash flow value
+        /// </summary>
+        [JsonProperty("free_cash_flow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? FreeCashFlow { get; set; }
+
+        /// <summary>
+        /// change in free cash flow
+        /// </summary>
+        [JsonProperty("free_cash_flow_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public float? FreeCashFlowDelta { get; set; }
+
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

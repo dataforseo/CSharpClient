@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class OnPageResourcesRequestInfo
+
+    public class OnPageResourcesRequestInfo 
     {
+
         /// <summary>
         /// ID of the task
         /// <br/>required field
@@ -12,7 +15,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>“07131248-1535-0216-1000-17384017ad04”
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
 
         /// <summary>
@@ -22,7 +25,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that to obtain resource’s meta from a particular URL, you should specify the URL in this field;
         /// <br/>if you do not indicate a url when setting a task, resource’s meta in the results will be returned based on the data from the page where our crawler first saw the resource
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
@@ -31,7 +34,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 100
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
 
         /// <summary>
@@ -40,7 +43,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0
         /// <br/>if you specify the 10 value, the first ten resources in the results array will be omitted and the data will be provided for the successive resources
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
@@ -49,17 +52,17 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like, not_like
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like, not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["resource_type","=","stylesheet"]
-        /// <br/>[["resource_type","=","image"],
-        /// <br/>"and",["checks.is_https","=",false]]
-        /// <br/>[["fetch_timing.duration_time","&gt;",1],"and",[["total_transfer_size","&gt;",100],"or",["checks.high_loading_time","=",true]]]
+        /// <br/>['resource_type','=','stylesheet']
+        /// <br/>[['resource_type','=','image'],
+        /// <br/>'and',['checks.is_https','=',false]]
+        /// <br/>[['fetch_timing.duration_time','&gt;',1],'and',[['total_transfer_size','&gt;',100],'or',['checks.high_loading_time','=',true]]]
         /// <br/>The full list of possible filters is available by this link.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// filter the resources by relevant pages
@@ -69,13 +72,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, like, not_like
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like, not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["checks.no_image_title","=",true]
+        /// <br/>['checks.no_image_title','=',true]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("relevant_pages_filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> RelevantPagesFilters { get; set; }
+        [JsonProperty("relevant_pages_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> RelevantPagesFilters { get; set; }
 
         /// <summary>
         /// results sorting rules
@@ -86,14 +89,26 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>desc – results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting type
         /// <br/>example:
-        /// <br/>["size,desc"]
+        /// <br/>['size,desc']
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>["size,desc","fetch_timing.fetch_end,desc"]
+        /// <br/>['size,desc','fetch_timing.fetch_end,desc']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OrderBy { get; set; }
+        [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> OrderBy { get; set; }
+
+        /// <summary>
+        /// token for subsequent requests
+        /// <br/>optional field
+        /// <br/>provided in the identical filed of the response to each request;
+        /// <br/>use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
+        /// <br/>by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
+        /// <br/>search_after_token values are unique for each subsequent task ;
+        /// <br/>Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+        /// </summary>
+        [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SearchAfterToken { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -102,22 +117,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

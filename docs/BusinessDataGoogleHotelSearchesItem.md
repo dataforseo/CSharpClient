@@ -1,119 +1,16 @@
 # BusinessDataGoogleHotelSearchesItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BusinessDataGoogleHotelSearchesItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataGoogleHotelSearchesItem](./BusinessDataGoogleHotelSearchesItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **HotelIdentifier**
-
-```csharp
-public string HotelIdentifier { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Stars**
-
-```csharp
-public Nullable<int> Stars { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsPaid**
-
-```csharp
-public Nullable<bool> IsPaid { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Location**
-
-```csharp
-public GpsCoordinatesLocationInfo Location { get; set; }
-```
-
-#### Property Value
-
-[GpsCoordinatesLocationInfo](./GpsCoordinatesLocationInfo.md)<br>
-
-### **Reviews**
-
-```csharp
-public HotelReviewInfo Reviews { get; set; }
-```
-
-#### Property Value
-
-[HotelReviewInfo](./HotelReviewInfo.md)<br>
-
-### **OverviewImages**
-
-```csharp
-public ICollection<string> OverviewImages { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Prices**
-
-```csharp
-public HotelPriceInfo Prices { get; set; }
-```
-
-#### Property Value
-
-[HotelPriceInfo](./HotelPriceInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataGoogleHotelSearchesItem()**
-
-```csharp
-public BusinessDataGoogleHotelSearchesItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**HotelIdentifier** | **string** | unique identifier of a hotel entity in Google search<br>example:<br>CgoI-KWyzenM_MV3EAE |[optional]|
+**Title** | **string** | title of the hotel |[optional]|
+**Stars** | **double?** | hotel class rating<br>class rating that ranges between 1-5 stars |[optional]|
+**IsPaid** | **bool?** | indicates a paid hotel listing<br>if true, related hotel_search_item is a paid ad<br>if false, related hotel_search_item is an organic hotel listing |[optional]|
+**Location** | **GpsCoordinatesLocationInfo** | GPS coordinates of the hotel’s location |[optional]|
+**Reviews** | **HotelReviewInfo** | hotel reviews and rating information |[optional]|
+**OverviewImages** | **IEnumerable<string>** | featured images for a hotel |[optional]|
+**Prices** | **HotelPriceInfo** | hotel price |[optional]|

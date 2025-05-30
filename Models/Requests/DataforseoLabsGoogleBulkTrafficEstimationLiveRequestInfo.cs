@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo
+
+    public class DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo 
     {
+
         /// <summary>
         /// target domains, subdomains, and webpages
         /// <br/>required field
@@ -13,8 +16,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>pages should be specified with absolute URL, including https:// and www.;
         /// <br/>you can set up to 1000 domains, subdomains or webpages
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("targets", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Targets { get; set; }
+        [JsonProperty("targets", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Targets { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -25,7 +28,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -37,7 +40,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -49,7 +52,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>English
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -61,7 +64,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>en
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -70,12 +73,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>indicates the type of search results included in the response
         /// <br/>Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array
         /// <br/>possible values:
-        /// <br/>["organic", "paid", "featured_snippet", "local_pack"]
+        /// <br/>['organic', 'paid', 'featured_snippet', 'local_pack']
         /// <br/>default value:
-        /// <br/>["organic", "paid"]
+        /// <br/>['organic', 'paid']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
+        [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
         /// ignore highly similar keywords
@@ -83,7 +86,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ignore_synonyms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ignore_synonyms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IgnoreSynonyms { get; set; }
 
         /// <summary>
@@ -93,22 +96,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

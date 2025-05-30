@@ -1,801 +1,690 @@
 # DomainAnalyticsApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**domainAnalyticsIdList**](DomainAnalyticsApi.md#domainAnalyticsIdList) | **POST**  /v3/domain_analytics/id_list  |
+[**domainAnalyticsErrors**](DomainAnalyticsApi.md#domainAnalyticsErrors) | **POST**  /v3/domain_analytics/errors  |
+[**technologiesAvailableFilters**](DomainAnalyticsApi.md#technologiesAvailableFilters) | **GET**  /v3/domain_analytics/technologies/available_filters  |
+[**domainAnalyticsTechnologiesLocations**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLocations) | **GET**  /v3/domain_analytics/technologies/locations  |
+[**domainAnalyticsTechnologiesLanguages**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLanguages) | **GET**  /v3/domain_analytics/technologies/languages  |
+[**technologiesTechnologies**](DomainAnalyticsApi.md#technologiesTechnologies) | **GET**  /v3/domain_analytics/technologies/technologies  |
+[**technologiesAggregationTechnologiesLive**](DomainAnalyticsApi.md#technologiesAggregationTechnologiesLive) | **POST**  /v3/domain_analytics/technologies/aggregation_technologies/live  |
+[**technologiesTechnologiesSummaryLive**](DomainAnalyticsApi.md#technologiesTechnologiesSummaryLive) | **POST**  /v3/domain_analytics/technologies/technologies_summary/live  |
+[**technologiesTechnologyStatsLive**](DomainAnalyticsApi.md#technologiesTechnologyStatsLive) | **POST**  /v3/domain_analytics/technologies/technology_stats/live  |
+[**technologiesDomainsByTechnologyLive**](DomainAnalyticsApi.md#technologiesDomainsByTechnologyLive) | **POST**  /v3/domain_analytics/technologies/domains_by_technology/live  |
+[**technologiesDomainsByHtmlTermsLive**](DomainAnalyticsApi.md#technologiesDomainsByHtmlTermsLive) | **POST**  /v3/domain_analytics/technologies/domains_by_html_terms/live  |
+[**technologiesDomainTechnologiesLive**](DomainAnalyticsApi.md#technologiesDomainTechnologiesLive) | **POST**  /v3/domain_analytics/technologies/domain_technologies/live  |
+[**whoisAvailableFilters**](DomainAnalyticsApi.md#whoisAvailableFilters) | **GET**  /v3/domain_analytics/whois/available_filters  |
+[**whoisOverviewLive**](DomainAnalyticsApi.md#whoisOverviewLive) | **POST**  /v3/domain_analytics/whois/overview/live  |
+
+<a id="domainAnalyticsIdList"></a>
+# **domainAnalyticsIdList**
+> DomainAnalyticsIdListResponseInfo domainAnalyticsIdList()
+
+
+### Example
 ```csharp
-public class DomainAnalyticsApi
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(new List<DomainAnalyticsIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 10:59:02 +00:00",
+        DatetimeTo = "2025-04-30 10:59:02 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DomainAnalyticsApi](./DomainAnalyticsApi.md)
+### Parameters
 
-## Properties
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsIdListRequestInfo>&gt;**](IEnumerable<DomainAnalyticsIdListRequestInfo>.md)|  | [optional] |
 
-### **BaseUrl**
 
+
+### Return type
+
+[**DomainAnalyticsIdListResponseInfo**](DomainAnalyticsIdListResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="domainAnalyticsErrors"></a>
+# **domainAnalyticsErrors**
+> DomainAnalyticsErrorsResponseInfo domainAnalyticsErrors()
+
+
+### Example
 ```csharp
-public string BaseUrl { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsErrorsAsync(new List<DomainAnalyticsErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
 
-#### Property Value
+### Parameters
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsErrorsRequestInfo>&gt;**](IEnumerable<DomainAnalyticsErrorsRequestInfo>.md)|  | [optional] |
 
-### **ReadResponseAsString**
 
+
+### Return type
+
+[**DomainAnalyticsErrorsResponseInfo**](DomainAnalyticsErrorsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesAvailableFilters"></a>
+# **technologiesAvailableFilters**
+> DomainAnalyticsTechnologiesAvailableFiltersResponseInfo technologiesAvailableFilters()
+
+
+### Example
 ```csharp
-public bool ReadResponseAsString { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesAvailableFiltersAsync();
 ```
 
-#### Property Value
+### Parameters
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
 
-## Constructors
+    
+This endpoint does not need any parameter.
+    
 
-### **DomainAnalyticsApi(HttpClient)**
 
+### Return type
+
+[**DomainAnalyticsTechnologiesAvailableFiltersResponseInfo**](DomainAnalyticsTechnologiesAvailableFiltersResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="domainAnalyticsTechnologiesLocations"></a>
+# **domainAnalyticsTechnologiesLocations**
+> DomainAnalyticsTechnologiesLocationsResponseInfo domainAnalyticsTechnologiesLocations()
+
+
+### Example
 ```csharp
-public DomainAnalyticsApi(HttpClient httpClient)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsTechnologiesLocationsAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`httpClient` HttpClient<br>
 
-## Methods
+    
+This endpoint does not need any parameter.
+    
 
-### **DomainAnalyticsIdListAsync(IEnumerable&lt;DomainAnalyticsIdListRequestInfo&gt;)**
 
+### Return type
+
+[**DomainAnalyticsTechnologiesLocationsResponseInfo**](DomainAnalyticsTechnologiesLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="domainAnalyticsTechnologiesLanguages"></a>
+# **domainAnalyticsTechnologiesLanguages**
+> DomainAnalyticsTechnologiesLanguagesResponseInfo domainAnalyticsTechnologiesLanguages()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsIdListResponseInfo> DomainAnalyticsIdListAsync(IEnumerable<DomainAnalyticsIdListRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsTechnologiesLanguagesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DomainAnalyticsIdListRequestInfo&gt;](./DomainAnalyticsIdListRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;DomainAnalyticsIdListResponseInfo&gt;](./DomainAnalyticsIdListResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DomainAnalyticsTechnologiesLanguagesResponseInfo**](DomainAnalyticsTechnologiesLanguagesResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Domain Analytics tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **DomainAnalyticsIdListAsync(IEnumerable&lt;DomainAnalyticsIdListRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesTechnologies"></a>
+# **technologiesTechnologies**
+> DomainAnalyticsTechnologiesTechnologiesResponseInfo technologiesTechnologies()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsIdListResponseInfo> DomainAnalyticsIdListAsync(IEnumerable<DomainAnalyticsIdListRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologiesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DomainAnalyticsIdListRequestInfo&gt;](./DomainAnalyticsIdListRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;DomainAnalyticsIdListResponseInfo&gt;](./DomainAnalyticsIdListResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DomainAnalyticsTechnologiesTechnologiesResponseInfo**](DomainAnalyticsTechnologiesTechnologiesResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Domain Analytics tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash'
+### HTTP request headers
 
-### **DomainAnalyticsErrorsAsync(IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesAggregationTechnologiesLive"></a>
+# **technologiesAggregationTechnologiesLive**
+> DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo technologiesAggregationTechnologiesLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsErrorsResponseInfo> DomainAnalyticsErrorsAsync(IEnumerable<DomainAnalyticsErrorsRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesAggregationTechnologiesLiveAsync(new List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>()
+{
+    new()
+    {
+        Technology = "Nginx",
+        Keyword = "WordPress",
+        Mode = "entry",
+        Limit = 10,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;](./DomainAnalyticsErrorsRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;DomainAnalyticsErrorsResponseInfo&gt;](./DomainAnalyticsErrorsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo**](DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **DomainAnalyticsErrorsAsync(IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesTechnologiesSummaryLive"></a>
+# **technologiesTechnologiesSummaryLive**
+> DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo technologiesTechnologiesSummaryLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsErrorsResponseInfo> DomainAnalyticsErrorsAsync(IEnumerable<DomainAnalyticsErrorsRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologiesSummaryLiveAsync(new List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>()
+{
+    new()
+    {
+        Technologies = new List<string>()
+        {
+            "Ngi",
+        },
+        Keywords = new List<string>()
+        {
+            "WordPress",
+        },
+        Mode = "entry",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;DomainAnalyticsErrorsRequestInfo&gt;](./DomainAnalyticsErrorsRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;DomainAnalyticsErrorsResponseInfo&gt;](./DomainAnalyticsErrorsResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo**](DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/errors/?bash'
+### HTTP request headers
 
-### **TechnologiesAvailableFiltersAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesTechnologyStatsLive"></a>
+# **technologiesTechnologyStatsLive**
+> DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo technologiesTechnologyStatsLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsTechnologiesAvailableFiltersResponseInfo> TechnologiesAvailableFiltersAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveAsync(new List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>()
+{
+    new()
+    {
+        Technology = "jQuery",
+        DateFrom = "2025-02-28",
+        DateTo = "2025-04-30",
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;DomainAnalyticsTechnologiesAvailableFiltersResponseInfo&gt;](./DomainAnalyticsTechnologiesAvailableFiltersResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash'
+[**DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo**](DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo.md)
 
-### **TechnologiesAvailableFiltersAsync(CancellationToken)**
+### Authorization
 
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesDomainsByTechnologyLive"></a>
+# **technologiesDomainsByTechnologyLive**
+> DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo technologiesDomainsByTechnologyLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsTechnologiesAvailableFiltersResponseInfo> TechnologiesAvailableFiltersAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByTechnologyLiveAsync(new List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>()
+{
+    new()
+    {
+        Technologies = new List<string>()
+        {
+            "Nginx",
+        },
+        Limit = 10,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;DomainAnalyticsTechnologiesAvailableFiltersResponseInfo&gt;](./DomainAnalyticsTechnologiesAvailableFiltersResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo**](DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **DomainAnalyticsTechnologiesLocationsAsync()**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesDomainsByHtmlTermsLive"></a>
+# **technologiesDomainsByHtmlTermsLive**
+> DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo technologiesDomainsByHtmlTermsLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsTechnologiesLocationsResponseInfo> DomainAnalyticsTechnologiesLocationsAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByHtmlTermsLiveAsync(new List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>()
+{
+    new()
+    {
+        SearchTerms = new List<string>()
+        {
+            "data-attrid",
+        },
+        Limit = 10,
+        Offset = 0,
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;DomainAnalyticsTechnologiesLocationsResponseInfo&gt;](./DomainAnalyticsTechnologiesLocationsResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-You will receive the list of locations by this API call.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash'
+[**DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo**](DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo.md)
 
-### **DomainAnalyticsTechnologiesLocationsAsync(CancellationToken)**
+### Authorization
 
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesDomainTechnologiesLive"></a>
+# **technologiesDomainTechnologiesLive**
+> DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo technologiesDomainTechnologiesLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsTechnologiesLocationsResponseInfo> DomainAnalyticsTechnologiesLocationsAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainTechnologiesLiveAsync(new List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;DomainAnalyticsTechnologiesLocationsResponseInfo&gt;](./DomainAnalyticsTechnologiesLocationsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo**](DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-You will receive the list of locations by this API call.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **DomainAnalyticsTechnologiesLanguagesAsync()**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="whoisAvailableFilters"></a>
+# **whoisAvailableFilters**
+> DomainAnalyticsWhoisAvailableFiltersResponseInfo whoisAvailableFilters()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsTechnologiesLanguagesResponseInfo> DomainAnalyticsTechnologiesLanguagesAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.WhoisAvailableFiltersAsync();
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;DomainAnalyticsTechnologiesLanguagesResponseInfo&gt;](./DomainAnalyticsTechnologiesLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash'
+[**DomainAnalyticsWhoisAvailableFiltersResponseInfo**](DomainAnalyticsWhoisAvailableFiltersResponseInfo.md)
 
-### **DomainAnalyticsTechnologiesLanguagesAsync(CancellationToken)**
+### Authorization
 
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="whoisOverviewLive"></a>
+# **whoisOverviewLive**
+> DomainAnalyticsWhoisOverviewLiveResponseInfo whoisOverviewLive()
+
+
+### Example
 ```csharp
-public Task<DomainAnalyticsTechnologiesLanguagesResponseInfo> DomainAnalyticsTechnologiesLanguagesAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.DomainAnalyticsApi.WhoisOverviewLiveAsync(new List<DomainAnalyticsWhoisOverviewLiveRequestInfo>()
+{
+    new()
+    {
+        Limit = 2,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DomainAnalyticsWhoisOverviewLiveRequestInfo>&gt;**](IEnumerable<DomainAnalyticsWhoisOverviewLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;DomainAnalyticsTechnologiesLanguagesResponseInfo&gt;](./DomainAnalyticsTechnologiesLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**DomainAnalyticsWhoisOverviewLiveResponseInfo**](DomainAnalyticsWhoisOverviewLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **TechnologiesTechnologiesAsync()**
+### HTTP request headers
 
-```csharp
-public Task<DomainAnalyticsTechnologiesTechnologiesResponseInfo> TechnologiesTechnologiesAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesTechnologiesResponseInfo&gt;](./DomainAnalyticsTechnologiesTechnologiesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with the full list of available technologies structured by technology groups and categories each particular technology belongs to.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash'
-
-### **TechnologiesTechnologiesAsync(CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesTechnologiesResponseInfo> TechnologiesTechnologiesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesTechnologiesResponseInfo&gt;](./DomainAnalyticsTechnologiesTechnologiesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with the full list of available technologies structured by technology groups and categories each particular technology belongs to.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash'
-
-### **TechnologiesAggregationTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo> TechnologiesAggregationTechnologiesLiveAsync(IEnumerable<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash'
-
-### **TechnologiesAggregationTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo> TechnologiesAggregationTechnologiesLiveAsync(IEnumerable<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash'
-
-### **TechnologiesTechnologiesSummaryLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo> TechnologiesTechnologiesSummaryLiveAsync(IEnumerable<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash'
-
-### **TechnologiesTechnologiesSummaryLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo> TechnologiesTechnologiesSummaryLiveAsync(IEnumerable<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash'
-
-### **TechnologiesTechnologyStatsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo> TechnologiesTechnologyStatsLiveAsync(IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash'
-
-### **TechnologiesTechnologyStatsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo> TechnologiesTechnologyStatsLiveAsync(IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash'
-
-### **TechnologiesDomainsByTechnologyLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo> TechnologiesDomainsByTechnologyLiveAsync(IEnumerable<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash'
-
-### **TechnologiesDomainsByTechnologyLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo> TechnologiesDomainsByTechnologyLiveAsync(IEnumerable<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash'
-
-### **TechnologiesDomainsByHtmlTermsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo> TechnologiesDomainsByHtmlTermsLiveAsync(IEnumerable<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash'
-
-### **TechnologiesDomainsByHtmlTermsLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo> TechnologiesDomainsByHtmlTermsLiveAsync(IEnumerable<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash'
-
-### **TechnologiesDomainTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo> TechnologiesDomainTechnologiesLiveAsync(IEnumerable<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Using this endpoint you will get a list of technologies used in a particular domain.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash'
-
-### **TechnologiesDomainTechnologiesLiveAsync(IEnumerable&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo> TechnologiesDomainTechnologiesLiveAsync(IEnumerable<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;](./DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo&gt;](./DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Using this endpoint you will get a list of technologies used in a particular domain.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash'
-
-### **WhoisAvailableFiltersAsync()**
-
-```csharp
-public Task<DomainAnalyticsWhoisAvailableFiltersResponseInfo> WhoisAvailableFiltersAsync()
-```
-
-#### Returns
-
-[Task&lt;DomainAnalyticsWhoisAvailableFiltersResponseInfo&gt;](./DomainAnalyticsWhoisAvailableFiltersResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash'
-
-### **WhoisAvailableFiltersAsync(CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsWhoisAvailableFiltersResponseInfo> WhoisAvailableFiltersAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsWhoisAvailableFiltersResponseInfo&gt;](./DomainAnalyticsWhoisAvailableFiltersResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash'
-
-### **WhoisOverviewLiveAsync(IEnumerable&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;)**
-
-```csharp
-public Task<DomainAnalyticsWhoisOverviewLiveResponseInfo> WhoisOverviewLiveAsync(IEnumerable<DomainAnalyticsWhoisOverviewLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;](./DomainAnalyticsWhoisOverviewLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;DomainAnalyticsWhoisOverviewLiveResponseInfo&gt;](./DomainAnalyticsWhoisOverviewLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash'
-
-### **WhoisOverviewLiveAsync(IEnumerable&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<DomainAnalyticsWhoisOverviewLiveResponseInfo> WhoisOverviewLiveAsync(IEnumerable<DomainAnalyticsWhoisOverviewLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;](./DomainAnalyticsWhoisOverviewLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;DomainAnalyticsWhoisOverviewLiveResponseInfo&gt;](./DomainAnalyticsWhoisOverviewLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash'
-
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
-
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
-
-#### Type Parameters
-
-`T`<br>
-
-#### Parameters
-
-`response` HttpResponseMessage<br>
-
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-
-#### Returns
-
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

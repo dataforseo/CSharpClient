@@ -1,35 +1,38 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class RowCellInfo
+    public class RowCellInfo 
     {
+
         /// <summary>
         /// content of the row cells of the header
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
 
         /// <summary>
         /// contains other URLs and anchors found in the content element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("urls", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ContentUrlInfo> Urls { get; set; }
+        [JsonProperty("urls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ContentUrlInfo> Urls { get; set; }
 
         /// <summary>
         /// content of the row cells of the header
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_header", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("is_header", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsHeader { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,27 +1,35 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoTrendsDemographyElementItem : BaseDataforseoTrendsItem
+    public class DataforseoTrendsDemographyElementItem  : BaseDataforseoTrendsItem 
     {
+
         /// <summary>
         /// demographic breakdown of keyword popularity data per each specified term
         /// <br/>conains keyword popularity data by age and gender
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("demography", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("demography", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Demography Demography { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("demography_comparison", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        /// <summary>
+        /// comparison of demographic data on keyword popularity for the specified parameters
+        /// <br/>conains keyword popularity data by age and gender
+        /// <br/>if you specified a single keyword, the value will be null
+        /// </summary>
+        [JsonProperty("demography_comparison", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DemographyComparisonInfo DemographyComparison { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

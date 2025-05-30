@@ -1,99 +1,10 @@
 # GoogleImageRelatedSearchesSerpElementItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class GoogleImageRelatedSearchesSerpElementItem : BaseGoogleImagesSerpElementItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseGoogleImagesSerpElementItem](./BaseGoogleImagesSerpElementItem.md) → [GoogleImageRelatedSearchesSerpElementItem](./GoogleImageRelatedSearchesSerpElementItem.md)
 
 ## Properties
 
-### **Position**
-
-```csharp
-public string Position { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Items**
-
-```csharp
-public ICollection<string> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Rectangle**
-
-```csharp
-public Rectangle Rectangle { get; set; }
-```
-
-#### Property Value
-
-[Rectangle](./Rectangle.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankGroup**
-
-```csharp
-public Nullable<int> RankGroup { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankAbsolute**
-
-```csharp
-public Nullable<int> RankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Xpath**
-
-```csharp
-public string Xpath { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-## Constructors
-
-### **GoogleImageRelatedSearchesSerpElementItem()**
-
-```csharp
-public GoogleImageRelatedSearchesSerpElementItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
+**Items** | **IEnumerable<string>** | items of the element |[optional]|
+**Rectangle** | **Rectangle** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>note: calculate_rectangles parameter is not yet available when setting tasks for this search engine type, that’s why rectangle always equals null |[optional]|

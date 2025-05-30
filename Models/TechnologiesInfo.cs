@@ -1,65 +1,52 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class TechnologiesInfo
+    public class TechnologiesInfo 
     {
-        [Newtonsoft.Json.JsonProperty("add_ons", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> AddOns { get; set; }
+        [JsonProperty("add_ons", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> AddOns { get; set; }
+        [JsonProperty("analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Analytics { get; set; }
+        [JsonProperty("web_development", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> WebDevelopment { get; set; }
+        [JsonProperty("security", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Security { get; set; }
+        [JsonProperty("business_tools", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> BusinessTools { get; set; }
+        [JsonProperty("sales", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Sales { get; set; }
+        [JsonProperty("other", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Other { get; set; }
+        [JsonProperty("user_generated_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> UserGeneratedContent { get; set; }
+        [JsonProperty("privacy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Privacy { get; set; }
+        [JsonProperty("servers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Servers { get; set; }
+        [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Location { get; set; }
+        [JsonProperty("content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Content { get; set; }
+        [JsonProperty("media", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Media { get; set; }
+        [JsonProperty("marketing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Marketing { get; set; }
+        [JsonProperty("communication", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Communication { get; set; }
+        [JsonProperty("utilities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Utilities { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("analytics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Analytics { get; set; }
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonProperty("web_development", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> WebDevelopment { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("security", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Security { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("business_tools", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> BusinessTools { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("sales", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Sales { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("other", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Other { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("user_generated_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> UserGeneratedContent { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("privacy", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Privacy { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("servers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Servers { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("location", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Location { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Content { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("media", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Media { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("marketing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Marketing { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("communication", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Communication { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("utilities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Utilities { get; set; }
-
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

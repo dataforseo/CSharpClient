@@ -1,49 +1,9 @@
 # MerchantAmazonLanguagesResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class MerchantAmazonLanguagesResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MerchantAmazonLanguagesResultInfo](./MerchantAmazonLanguagesResultInfo.md)
 
 ## Properties
 
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **MerchantAmazonLanguagesResultInfo()**
-
-```csharp
-public MerchantAmazonLanguagesResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**LanguageName** | **string** | language name |[optional]|
+**LanguageCode** | **string** | language code according to ISO 639-1 |[optional]|

@@ -1,79 +1,12 @@
 # BacklinksHistoryLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class BacklinksHistoryLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksHistoryLiveResultInfo](./BacklinksHistoryLiveResultInfo.md)
 
 ## Properties
 
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateFrom**
-
-```csharp
-public string DateFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateTo**
-
-```csharp
-public string DateTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BacklinksHistoryLiveItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BacklinksHistoryLiveItem&gt;](./BacklinksHistoryLiveItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksHistoryLiveResultInfo()**
-
-```csharp
-public BacklinksHistoryLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Target** | **string** | target from the POST array |[optional]|
+**DateFrom** | **string** | starting date of the time range<br>in the UTC format: “yyyy-mm-dd”<br>example:<br>2019-01-01 |[optional]|
+**DateTo** | **string** | ending date of the time range<br>in the UTC format: 'yyyy-mm-dd'<br>example:<br>'2019-01-15' |[optional]|
+**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**Items** | **IEnumerable<BacklinksHistoryLiveItem>** | contains historical backlink data for the specified domain<br>the data is provided month-by-month;<br>the metrics are aggregated according to the backlinks the specified domain had on the first day of each given month |[optional]|

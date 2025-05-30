@@ -1,49 +1,9 @@
 # TrendsTopicListDataInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class TrendsTopicListDataInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [TrendsTopicListDataInfo](./TrendsTopicListDataInfo.md)
 
 ## Properties
 
-### **Top**
-
-```csharp
-public ICollection<TopicListDataItemInfo> Top { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;TopicListDataItemInfo&gt;](./TopicListDataItemInfo.md)<br>
-
-### **Rising**
-
-```csharp
-public ICollection<TopicListDataItemInfo> Rising { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;TopicListDataItemInfo&gt;](./TopicListDataItemInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **TrendsTopicListDataInfo()**
-
-```csharp
-public TrendsTopicListDataInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Top** | **IEnumerable<TopicListDataItemInfo>** | the most popular related topics<br>represents the list of the most popular related topics |[optional]|
+**Rising** | **IEnumerable<TopicListDataItemInfo>** | emerging related topics<br>represents the list of related topics with the biggest increase in search frequency since the last time period |[optional]|

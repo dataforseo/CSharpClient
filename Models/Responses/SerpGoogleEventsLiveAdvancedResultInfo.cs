@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code in a POST array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code
@@ -79,13 +79,13 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>this search engine does not indicate the total number of results
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_results_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SeResultsCount { get; set; }
+        public double? SeResultsCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// items of the element

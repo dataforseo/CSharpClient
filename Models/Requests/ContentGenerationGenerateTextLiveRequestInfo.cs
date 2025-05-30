@@ -1,17 +1,20 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ContentGenerationGenerateTextLiveRequestInfo
+
+    public class ContentGenerationGenerateTextLiveRequestInfo 
     {
+
         /// <summary>
         /// main topic of the content to generate
         /// <br/>required field
         /// <br/>main topic for generating content;
         /// <br/>can contain from 1 to 50 tokens
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("topic", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("topic", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Topic { get; set; }
 
         /// <summary>
@@ -20,7 +23,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the number of tokens in the generated text;
         /// <br/>can take values from 1 to 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("word_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("word_count", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public long? WordCount { get; set; }
 
         /// <summary>
@@ -28,10 +31,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>secondary topics for generating content;
         /// <br/>can contain up to 10 terms;
-        /// <br/>example: "sub_topics": ["Apple","Pixar","Amazing Products"]
+        /// <br/>example: 'sub_topics': ['Apple','Pixar','Amazing Products']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("sub_topics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> SubTopics { get; set; }
+        [JsonProperty("sub_topics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> SubTopics { get; set; }
 
         /// <summary>
         /// meta description of the content to generate
@@ -39,7 +42,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can contain from 1 to 1000 tokens
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
@@ -47,10 +50,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>can contain up to 10 terms;
         /// <br/>learn more about this parameter on our help center
-        /// <br/>example: "meta_keywords": ["iPhone","sell","CEO"]
+        /// <br/>example: 'meta_keywords': ['iPhone','sell','CEO']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("meta_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> MetaKeywords { get; set; }
+        [JsonProperty("meta_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> MetaKeywords { get; set; }
 
         /// <summary>
         /// creativity of content generation
@@ -60,7 +63,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0.8
         /// <br/>learn more about this parameter on our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("creativity_index", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("creativity_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? CreativityIndex { get; set; }
 
         /// <summary>
@@ -68,7 +71,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if set to true, generated content will include a logical conclusion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_conclusion", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_conclusion", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeConclusion { get; set; }
 
         /// <summary>
@@ -78,7 +81,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to continue the generation of text from the initial response
         /// <br/>supplement_token values are unique for each subsequent task
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("supplement_token", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("supplement_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SupplementToken { get; set; }
 
         /// <summary>
@@ -88,22 +91,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

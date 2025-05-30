@@ -1,1703 +1,1465 @@
 # OnPageApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
+
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**onPageIdList**](OnPageApi.md#onPageIdList) | **POST**  /v3/on_page/id_list  |
+[**onPageErrors**](OnPageApi.md#onPageErrors) | **POST**  /v3/on_page/errors  |
+[**forceStop**](OnPageApi.md#forceStop) | **POST**  /v3/on_page/force_stop  |
+[**onPageAvailableFilters**](OnPageApi.md#onPageAvailableFilters) | **GET**  /v3/on_page/available_filters  |
+[**taskPost**](OnPageApi.md#taskPost) | **POST**  /v3/on_page/task_post  |
+[**onPageTasksReady**](OnPageApi.md#onPageTasksReady) | **GET**  /v3/on_page/tasks_ready  |
+[**summary**](OnPageApi.md#summary) | **GET**  /v3/on_page/summary/{id}  |
+[**pages**](OnPageApi.md#pages) | **POST**  /v3/on_page/pages  |
+[**pagesByResource**](OnPageApi.md#pagesByResource) | **POST**  /v3/on_page/pages_by_resource  |
+[**resources**](OnPageApi.md#resources) | **POST**  /v3/on_page/resources  |
+[**duplicateTags**](OnPageApi.md#duplicateTags) | **POST**  /v3/on_page/duplicate_tags  |
+[**duplicateContent**](OnPageApi.md#duplicateContent) | **POST**  /v3/on_page/duplicate_content  |
+[**links**](OnPageApi.md#links) | **POST**  /v3/on_page/links  |
+[**redirectChains**](OnPageApi.md#redirectChains) | **POST**  /v3/on_page/redirect_chains  |
+[**nonIndexable**](OnPageApi.md#nonIndexable) | **POST**  /v3/on_page/non_indexable  |
+[**waterfall**](OnPageApi.md#waterfall) | **POST**  /v3/on_page/waterfall  |
+[**keywordDensity**](OnPageApi.md#keywordDensity) | **POST**  /v3/on_page/keyword_density  |
+[**microdata**](OnPageApi.md#microdata) | **POST**  /v3/on_page/microdata  |
+[**rawHtml**](OnPageApi.md#rawHtml) | **POST**  /v3/on_page/raw_html  |
+[**pageScreenshot**](OnPageApi.md#pageScreenshot) | **POST**  /v3/on_page/page_screenshot  |
+[**contentParsing**](OnPageApi.md#contentParsing) | **POST**  /v3/on_page/content_parsing  |
+[**contentParsingLive**](OnPageApi.md#contentParsingLive) | **POST**  /v3/on_page/content_parsing/live  |
+[**instantPages**](OnPageApi.md#instantPages) | **POST**  /v3/on_page/instant_pages  |
+[**onPageLighthouseLanguages**](OnPageApi.md#onPageLighthouseLanguages) | **GET**  /v3/on_page/lighthouse/languages  |
+[**lighthouseAudits**](OnPageApi.md#lighthouseAudits) | **GET**  /v3/on_page/lighthouse/audits  |
+[**lighthouseVersions**](OnPageApi.md#lighthouseVersions) | **GET**  /v3/on_page/lighthouse/versions  |
+[**lighthouseTaskPost**](OnPageApi.md#lighthouseTaskPost) | **POST**  /v3/on_page/lighthouse/task_post  |
+[**lighthouseTasksReady**](OnPageApi.md#lighthouseTasksReady) | **GET**  /v3/on_page/lighthouse/tasks_ready  |
+[**lighthouseTaskGetJson**](OnPageApi.md#lighthouseTaskGetJson) | **GET**  /v3/on_page/lighthouse/task_get/json/{id}  |
+[**lighthouseLiveJson**](OnPageApi.md#lighthouseLiveJson) | **POST**  /v3/on_page/lighthouse/live/json  |
 
-```csharp
-public class OnPageApi
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [OnPageApi](./OnPageApi.md)
-
-## Properties
-
-### **BaseUrl**
-
-```csharp
-public string BaseUrl { get; set; }
-```
-
-#### Property Value
+<a id="onPageIdList"></a>
+# **onPageIdList**
+> OnPageIdListResponseInfo onPageIdList()
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **ReadResponseAsString**
-
+### Example
 ```csharp
-public bool ReadResponseAsString { get; set; }
-```
-
-#### Property Value
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
-
-## Constructors
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **OnPageApi(HttpClient)**
-
-```csharp
-public OnPageApi(HttpClient httpClient)
+});
+var result = await dfsClient.OnPageApi.OnPageIdListAsync(new List<OnPageIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 11:00:14 +00:00",
+        DatetimeTo = "2025-04-30 11:00:14 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`httpClient` HttpClient<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageIdListRequestInfo>&gt;**](IEnumerable<OnPageIdListRequestInfo>.md)|  | [optional] |
 
-## Methods
 
-### **OnPageIdListAsync(IEnumerable&lt;OnPageIdListRequestInfo&gt;)**
-
-```csharp
-public Task<OnPageIdListResponseInfo> OnPageIdListAsync(IEnumerable<OnPageIdListRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPageIdListRequestInfo&gt;](./OnPageIdListRequestInfo.md)<br>
+[**OnPageIdListResponseInfo**](OnPageIdListResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageIdListResponseInfo&gt;](./OnPageIdListResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed On Page tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/id_list/?bash'
+<a id="onPageErrors"></a>
+# **onPageErrors**
+> OnPageErrorsResponseInfo onPageErrors()
 
-### **OnPageIdListAsync(IEnumerable&lt;OnPageIdListRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageIdListResponseInfo> OnPageIdListAsync(IEnumerable<OnPageIdListRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageIdListRequestInfo&gt;](./OnPageIdListRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageIdListResponseInfo&gt;](./OnPageIdListResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed On Page tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/id_list/?bash'
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **OnPageErrorsAsync(IEnumerable&lt;OnPageErrorsRequestInfo&gt;)**
-
-```csharp
-public Task<OnPageErrorsResponseInfo> OnPageErrorsAsync(IEnumerable<OnPageErrorsRequestInfo> body)
+});
+var result = await dfsClient.OnPageApi.OnPageErrorsAsync(new List<OnPageErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageErrorsRequestInfo&gt;](./OnPageErrorsRequestInfo.md)<br>
-
-#### Returns
 
-[Task&lt;OnPageErrorsResponseInfo&gt;](./OnPageErrorsResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageErrorsRequestInfo>&gt;**](IEnumerable<OnPageErrorsRequestInfo>.md)|  | [optional] |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
-
-### **OnPageErrorsAsync(IEnumerable&lt;OnPageErrorsRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPageErrorsResponseInfo> OnPageErrorsAsync(IEnumerable<OnPageErrorsRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;OnPageErrorsRequestInfo&gt;](./OnPageErrorsRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageErrorsResponseInfo**](OnPageErrorsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageErrorsResponseInfo&gt;](./OnPageErrorsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/errors/?bash'
+<a id="forceStop"></a>
+# **forceStop**
+> OnPageForceStopResponseInfo forceStop()
 
-### **ForceStopAsync(IEnumerable&lt;OnPageForceStopRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<OnPageForceStopResponseInfo> ForceStopAsync(IEnumerable<OnPageForceStopRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageForceStopRequestInfo&gt;](./OnPageForceStopRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;OnPageForceStopResponseInfo&gt;](./OnPageForceStopResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌‌
- <br>This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/force_stop/?bash'
-
-### **ForceStopAsync(IEnumerable&lt;OnPageForceStopRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPageForceStopResponseInfo> ForceStopAsync(IEnumerable<OnPageForceStopRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.OnPageApi.ForceStopAsync(new List<OnPageForceStopRequestInfo>()
+{
+    new()
+    {
+        Id = "08121600-1535-0216-0000-37b4c7a34453",
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageForceStopRequestInfo&gt;](./OnPageForceStopRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Parameters
 
-#### Returns
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageForceStopRequestInfo>&gt;**](IEnumerable<OnPageForceStopRequestInfo>.md)|  | [optional] |
 
-[Task&lt;OnPageForceStopResponseInfo&gt;](./OnPageForceStopResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Return type
 
-**Remarks:**
-
-‌‌
- <br>This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/force_stop/?bash'
-
-### **OnPageAvailableFiltersAsync()**
-
-```csharp
-public Task<OnPageAvailableFiltersResponseInfo> OnPageAvailableFiltersAsync()
-```
+[**OnPageForceStopResponseInfo**](OnPageForceStopResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageAvailableFiltersResponseInfo&gt;](./OnPageAvailableFiltersResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-OnPage API supports plenty of customizable crawling parameters that allow you to adapt the extraction of website data to your requirements and modify the thresholds for various performance indicators.
- <br>‌‌
- <br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
+<a id="onPageAvailableFilters"></a>
+# **onPageAvailableFilters**
+> OnPageAvailableFiltersResponseInfo onPageAvailableFilters()
 
-### **OnPageAvailableFiltersAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageAvailableFiltersResponseInfo> OnPageAvailableFiltersAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageAvailableFiltersResponseInfo&gt;](./OnPageAvailableFiltersResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-OnPage API supports plenty of customizable crawling parameters that allow you to adapt the extraction of website data to your requirements and modify the thresholds for various performance indicators.
- <br>‌‌
- <br>Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash'
-
-### **TaskPostAsync(IEnumerable&lt;OnPageTaskPostRequestInfo&gt;)**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-```csharp
-public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskPostRequestInfo> body)
+});
+var result = await dfsClient.OnPageApi.OnPageAvailableFiltersAsync();
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageTaskPostRequestInfo&gt;](./OnPageTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;OnPageTaskPostResponseInfo&gt;](./OnPageTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
-
-‌
- <br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
-
-### **TaskPostAsync(IEnumerable&lt;OnPageTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPageTaskPostResponseInfo> TaskPostAsync(IEnumerable<OnPageTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`body` [IEnumerable&lt;OnPageTaskPostRequestInfo&gt;](./OnPageTaskPostRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageAvailableFiltersResponseInfo**](OnPageAvailableFiltersResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageTaskPostResponseInfo&gt;](./OnPageTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/task_post/?bash'
+<a id="taskPost"></a>
+# **taskPost**
+> OnPageTaskPostResponseInfo taskPost()
 
-### **OnPageTasksReadyAsync()**
 
+### Example
 ```csharp
-public Task<OnPageTasksReadyResponseInfo> OnPageTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;OnPageTasksReadyResponseInfo&gt;](./OnPageTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
-
-### **OnPageTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<OnPageTasksReadyResponseInfo> OnPageTasksReadyAsync(CancellationToken cancellationToken)
+});
+var result = await dfsClient.OnPageApi.TaskPostAsync(new List<OnPageTaskPostRequestInfo>()
+{
+    new()
+    {
+        Target = "dataforseo.com",
+        MaxCrawlPages = 10,
+        LoadResources = true,
+        EnableJavascript = true,
+        CustomJs = "meta = {}; meta.url = document.URL; meta;",
+        Tag = "some_string_123",
+        PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageTaskPostRequestInfo>&gt;**](IEnumerable<OnPageTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;OnPageTasksReadyResponseInfo&gt;](./OnPageTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**OnPageTaskPostResponseInfo**](OnPageTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **SummaryAsync(String)**
+### HTTP request headers
 
-```csharp
-public Task<OnPageSummaryResponseInfo> SummaryAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>required field
- <br>you can get this ID in the response of the Task POST endpoint
- <br>example:
- <br>“07131248-1535-0216-1000-17384017ad04”
-
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;OnPageSummaryResponseInfo&gt;](./OnPageSummaryResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="onPageTasksReady"></a>
+# **onPageTasksReady**
+> OnPageTasksReadyResponseInfo onPageTasksReady()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
-
-‌
- <br>Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/summary/?bash'
-
-### **SummaryAsync(String, CancellationToken)**
-
+### Example
 ```csharp
-public Task<OnPageSummaryResponseInfo> SummaryAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>required field
- <br>you can get this ID in the response of the Task POST endpoint
- <br>example:
- <br>“07131248-1535-0216-1000-17384017ad04”
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageSummaryResponseInfo&gt;](./OnPageSummaryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/summary/?bash'
-
-### **PagesAsync(IEnumerable&lt;OnPagePagesRequestInfo&gt;)**
-
-```csharp
-public Task<OnPagePagesResponseInfo> PagesAsync(IEnumerable<OnPagePagesRequestInfo> body)
+});
+var result = await dfsClient.OnPageApi.OnPageTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;OnPagePagesRequestInfo&gt;](./OnPagePagesRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;OnPagePagesResponseInfo&gt;](./OnPagePagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**OnPageTasksReadyResponseInfo**](OnPageTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance.
- <br>Using this function you will get page-specific data with detailed information on how well your pages are optimized for search.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/pages/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **PagesAsync(IEnumerable&lt;OnPagePagesRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<OnPagePagesResponseInfo> PagesAsync(IEnumerable<OnPagePagesRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPagePagesRequestInfo&gt;](./OnPagePagesRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;OnPagePagesResponseInfo&gt;](./OnPagePagesResponseInfo.md)<br>
-Successful operation
+<a id="summary"></a>
+# **summary**
+> OnPageSummaryResponseInfo summary()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance.
- <br>Using this function you will get page-specific data with detailed information on how well your pages are optimized for search.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/pages/?bash'
-
-### **PagesByResourceAsync(IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;)**
-
+### Example
 ```csharp
-public Task<OnPagePagesByResourceResponseInfo> PagesByResourceAsync(IEnumerable<OnPagePagesByResourceRequestInfo> body)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;](./OnPagePagesByResourceRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;OnPagePagesByResourceResponseInfo&gt;](./OnPagePagesByResourceResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource.
- <br>You can get the URL of a resource using the Resources endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash'
-
-### **PagesByResourceAsync(IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPagePagesByResourceResponseInfo> PagesByResourceAsync(IEnumerable<OnPagePagesByResourceRequestInfo> body, CancellationToken cancellationToken)
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.OnPageApi.SummaryAsync(id);
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPagePagesByResourceRequestInfo&gt;](./OnPagePagesByResourceRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;OnPagePagesByResourceResponseInfo&gt;](./OnPagePagesByResourceResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
-
-‌‌
- <br>This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource.
- <br>You can get the URL of a resource using the Resources endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash'
-
-### **ResourcesAsync(IEnumerable&lt;OnPageResourcesRequestInfo&gt;)**
-
-```csharp
-public Task<OnPageResourcesResponseInfo> ResourcesAsync(IEnumerable<OnPageResourcesRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPageResourcesRequestInfo&gt;](./OnPageResourcesRequestInfo.md)<br>
+[**OnPageSummaryResponseInfo**](OnPageSummaryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageResourcesResponseInfo&gt;](./OnPageResourcesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements.
- <br>You will get a detailed overview of every resource found on the crawled pages.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/resources/?bash'
+<a id="pages"></a>
+# **pages**
+> OnPagePagesResponseInfo pages()
 
-### **ResourcesAsync(IEnumerable&lt;OnPageResourcesRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageResourcesResponseInfo> ResourcesAsync(IEnumerable<OnPageResourcesRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageResourcesRequestInfo&gt;](./OnPageResourcesRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageResourcesResponseInfo&gt;](./OnPageResourcesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements.
- <br>You will get a detailed overview of every resource found on the crawled pages.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/resources/?bash'
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **DuplicateTagsAsync(IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;)**
-
-```csharp
-public Task<OnPageDuplicateTagsResponseInfo> DuplicateTagsAsync(IEnumerable<OnPageDuplicateTagsRequestInfo> body)
+});
+var result = await dfsClient.OnPageApi.PagesAsync(new List<OnPagePagesRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        Limit = 10,
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;](./OnPageDuplicateTagsRequestInfo.md)<br>
-
-#### Returns
 
-[Task&lt;OnPageDuplicateTagsResponseInfo&gt;](./OnPageDuplicateTagsResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPagePagesRequestInfo>&gt;**](IEnumerable<OnPagePagesRequestInfo>.md)|  | [optional] |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash'
-
-### **DuplicateTagsAsync(IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPageDuplicateTagsResponseInfo> DuplicateTagsAsync(IEnumerable<OnPageDuplicateTagsRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;OnPageDuplicateTagsRequestInfo&gt;](./OnPageDuplicateTagsRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPagePagesResponseInfo**](OnPagePagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageDuplicateTagsResponseInfo&gt;](./OnPageDuplicateTagsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash'
+<a id="pagesByResource"></a>
+# **pagesByResource**
+> OnPagePagesByResourceResponseInfo pagesByResource()
 
-### **DuplicateContentAsync(IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<OnPageDuplicateContentResponseInfo> DuplicateContentAsync(IEnumerable<OnPageDuplicateContentRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;](./OnPageDuplicateContentRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;OnPageDuplicateContentResponseInfo&gt;](./OnPageDuplicateContentResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌‌
- <br>This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash'
-
-### **DuplicateContentAsync(IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPageDuplicateContentResponseInfo> DuplicateContentAsync(IEnumerable<OnPageDuplicateContentRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.OnPageApi.PagesByResourceAsync(new List<OnPagePagesByResourceRequestInfo>()
+{
+    new()
+    {
+        Id = "02241700-1535-0216-0000-034137259bc1",
+        Url = "https://www.etsy.com/about/jobs.workco2018.js?",
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageDuplicateContentRequestInfo&gt;](./OnPageDuplicateContentRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageDuplicateContentResponseInfo&gt;](./OnPageDuplicateContentResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPagePagesByResourceRequestInfo>&gt;**](IEnumerable<OnPagePagesByResourceRequestInfo>.md)|  | [optional] |
 
-### **LinksAsync(IEnumerable&lt;OnPageLinksRequestInfo&gt;)**
 
-```csharp
-public Task<OnPageLinksResponseInfo> LinksAsync(IEnumerable<OnPageLinksRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPageLinksRequestInfo&gt;](./OnPageLinksRequestInfo.md)<br>
+[**OnPagePagesByResourceResponseInfo**](OnPagePagesByResourceResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageLinksResponseInfo&gt;](./OnPageLinksResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint will provide you with a list of internal and external links detected on a target website.
- <br>The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/links/?bash'
+<a id="resources"></a>
+# **resources**
+> OnPageResourcesResponseInfo resources()
 
-### **LinksAsync(IEnumerable&lt;OnPageLinksRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageLinksResponseInfo> LinksAsync(IEnumerable<OnPageLinksRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageLinksRequestInfo&gt;](./OnPageLinksRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageLinksResponseInfo&gt;](./OnPageLinksResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with a list of internal and external links detected on a target website.
- <br>The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/links/?bash'
-
-### **RedirectChainsAsync(IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;)**
-
-```csharp
-public Task<OnPageRedirectChainsResponseInfo> RedirectChainsAsync(IEnumerable<OnPageRedirectChainsRequestInfo> body)
+});
+var result = await dfsClient.OnPageApi.ResourcesAsync(new List<OnPageResourcesRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        Limit = 10,
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;](./OnPageRedirectChainsRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;OnPageRedirectChainsResponseInfo&gt;](./OnPageRedirectChainsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageResourcesRequestInfo>&gt;**](IEnumerable<OnPageResourcesRequestInfo>.md)|  | [optional] |
 
-### **RedirectChainsAsync(IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;, CancellationToken)**
 
-```csharp
-public Task<OnPageRedirectChainsResponseInfo> RedirectChainsAsync(IEnumerable<OnPageRedirectChainsRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPageRedirectChainsRequestInfo&gt;](./OnPageRedirectChainsRequestInfo.md)<br>
+[**OnPageResourcesResponseInfo**](OnPageResourcesResponseInfo.md)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Authorization
 
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;OnPageRedirectChainsResponseInfo&gt;](./OnPageRedirectChainsResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="duplicateTags"></a>
+# **duplicateTags**
+> OnPageDuplicateTagsResponseInfo duplicateTags()
 
-‌‌
- <br>Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash'
 
-### **NonIndexableAsync(IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;)**
-
+### Example
 ```csharp
-public Task<OnPageNonIndexableResponseInfo> NonIndexableAsync(IEnumerable<OnPageNonIndexableRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;](./OnPageNonIndexableRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;OnPageNonIndexableResponseInfo&gt;](./OnPageNonIndexableResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
-
-### **NonIndexableAsync(IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<OnPageNonIndexableResponseInfo> NonIndexableAsync(IEnumerable<OnPageNonIndexableRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.OnPageApi.DuplicateTagsAsync(new List<OnPageDuplicateTagsRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        Type = "duplicate_description",
+        Limit = 10,
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageNonIndexableRequestInfo&gt;](./OnPageNonIndexableRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageNonIndexableResponseInfo&gt;](./OnPageNonIndexableResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageDuplicateTagsRequestInfo>&gt;**](IEnumerable<OnPageDuplicateTagsRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌‌
- <br>This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/non_indexable/?bash'
 
-### **WaterfallAsync(IEnumerable&lt;OnPageWaterfallRequestInfo&gt;)**
+### Return type
 
-```csharp
-public Task<OnPageWaterfallResponseInfo> WaterfallAsync(IEnumerable<OnPageWaterfallRequestInfo> body)
-```
+[**OnPageDuplicateTagsResponseInfo**](OnPageDuplicateTagsResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;OnPageWaterfallRequestInfo&gt;](./OnPageWaterfallRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;OnPageWaterfallResponseInfo&gt;](./OnPageWaterfallResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="duplicateContent"></a>
+# **duplicateContent**
+> OnPageDuplicateContentResponseInfo duplicateContent()
 
-**Remarks:**
 
-‌‌
- <br>This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/waterfall/?bash'
-
-### **WaterfallAsync(IEnumerable&lt;OnPageWaterfallRequestInfo&gt;, CancellationToken)**
-
+### Example
 ```csharp
-public Task<OnPageWaterfallResponseInfo> WaterfallAsync(IEnumerable<OnPageWaterfallRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageWaterfallRequestInfo&gt;](./OnPageWaterfallRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;OnPageWaterfallResponseInfo&gt;](./OnPageWaterfallResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.OnPageApi.DuplicateContentAsync(new List<OnPageDuplicateContentRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        Url = "https://www.etsy.com/",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/waterfall/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageDuplicateContentRequestInfo>&gt;**](IEnumerable<OnPageDuplicateContentRequestInfo>.md)|  | [optional] |
 
-### **KeywordDensityAsync(IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;)**
 
-```csharp
-public Task<OnPageKeywordDensityResponseInfo> KeywordDensityAsync(IEnumerable<OnPageKeywordDensityRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;](./OnPageKeywordDensityRequestInfo.md)<br>
+[**OnPageDuplicateContentResponseInfo**](OnPageDuplicateContentResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageKeywordDensityResponseInfo&gt;](./OnPageKeywordDensityResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/keyword_density/?bash'
+<a id="links"></a>
+# **links**
+> OnPageLinksResponseInfo links()
 
-### **KeywordDensityAsync(IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageKeywordDensityResponseInfo> KeywordDensityAsync(IEnumerable<OnPageKeywordDensityRequestInfo> body, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageKeywordDensityRequestInfo&gt;](./OnPageKeywordDensityRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.OnPageApi.LinksAsync(new List<OnPageLinksRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        PageFrom = "/apis/google-trends-api",
+        Limit = 10,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;OnPageKeywordDensityResponseInfo&gt;](./OnPageKeywordDensityResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageLinksRequestInfo>&gt;**](IEnumerable<OnPageLinksRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/keyword_density/?bash'
+[**OnPageLinksResponseInfo**](OnPageLinksResponseInfo.md)
 
-### **MicrodataAsync(IEnumerable&lt;OnPageMicrodataRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<OnPageMicrodataResponseInfo> MicrodataAsync(IEnumerable<OnPageMicrodataRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;OnPageMicrodataRequestInfo&gt;](./OnPageMicrodataRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;OnPageMicrodataResponseInfo&gt;](./OnPageMicrodataResponseInfo.md)<br>
-Successful operation
+<a id="redirectChains"></a>
+# **redirectChains**
+> OnPageRedirectChainsResponseInfo redirectChains()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.OnPageApi.RedirectChainsAsync(new List<OnPageRedirectChainsRequestInfo>()
+{
+    new()
+    {
+        Id = "03051327-4536-0216-1000-3b458a2cfcca",
+        Url = "https://test_rdr.dataforseo.com/a/",
+    }
+});
+```
 
-‌‌
- <br>This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation.
- <br>To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/microdata/?bash'
+### Parameters
 
-### **MicrodataAsync(IEnumerable&lt;OnPageMicrodataRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageRedirectChainsRequestInfo>&gt;**](IEnumerable<OnPageRedirectChainsRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<OnPageMicrodataResponseInfo> MicrodataAsync(IEnumerable<OnPageMicrodataRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;OnPageMicrodataRequestInfo&gt;](./OnPageMicrodataRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageRedirectChainsResponseInfo**](OnPageRedirectChainsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageMicrodataResponseInfo&gt;](./OnPageMicrodataResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation.
- <br>To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/microdata/?bash'
+<a id="nonIndexable"></a>
+# **nonIndexable**
+> OnPageNonIndexableResponseInfo nonIndexable()
 
-### **RawHtmlAsync(IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<OnPageRawHtmlResponseInfo> RawHtmlAsync(IEnumerable<OnPageRawHtmlRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;](./OnPageRawHtmlRequestInfo.md)<br>
+});
+var result = await dfsClient.OnPageApi.NonIndexableAsync(new List<OnPageNonIndexableRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        Limit = 10,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;OnPageRawHtmlResponseInfo&gt;](./OnPageRawHtmlResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageNonIndexableRequestInfo>&gt;**](IEnumerable<OnPageNonIndexableRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>This endpoint returns the HTML of a page you indicate in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/raw_html/?bash'
+[**OnPageNonIndexableResponseInfo**](OnPageNonIndexableResponseInfo.md)
 
-### **RawHtmlAsync(IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<OnPageRawHtmlResponseInfo> RawHtmlAsync(IEnumerable<OnPageRawHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;OnPageRawHtmlRequestInfo&gt;](./OnPageRawHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="waterfall"></a>
+# **waterfall**
+> OnPageWaterfallResponseInfo waterfall()
 
-[Task&lt;OnPageRawHtmlResponseInfo&gt;](./OnPageRawHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.OnPageApi.WaterfallAsync(new List<OnPageWaterfallRequestInfo>()
+{
+    new()
+    {
+        Id = "08101204-0696-0216-0000-644a7b21a48a",
+        Url = "https://dataforseo.com/tag/broken-links",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>This endpoint returns the HTML of a page you indicate in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/raw_html/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageWaterfallRequestInfo>&gt;**](IEnumerable<OnPageWaterfallRequestInfo>.md)|  | [optional] |
 
-### **PageScreenshotAsync(IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;)**
 
-```csharp
-public Task<OnPagePageScreenshotResponseInfo> PageScreenshotAsync(IEnumerable<OnPagePageScreenshotRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;](./OnPagePageScreenshotRequestInfo.md)<br>
+[**OnPageWaterfallResponseInfo**](OnPageWaterfallResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPagePageScreenshotResponseInfo&gt;](./OnPagePageScreenshotResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash'
+<a id="keywordDensity"></a>
+# **keywordDensity**
+> OnPageKeywordDensityResponseInfo keywordDensity()
 
-### **PageScreenshotAsync(IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPagePageScreenshotResponseInfo> PageScreenshotAsync(IEnumerable<OnPagePageScreenshotRequestInfo> body, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;OnPagePageScreenshotRequestInfo&gt;](./OnPagePageScreenshotRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.OnPageApi.KeywordDensityAsync(new List<OnPageKeywordDensityRequestInfo>()
+{
+    new()
+    {
+        Id = "09101923-1535-0216-0000-2389a8854b70",
+        KeywordLength = 2,
+        Url = "https://dataforseo.com/",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;OnPagePageScreenshotResponseInfo&gt;](./OnPagePageScreenshotResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageKeywordDensityRequestInfo>&gt;**](IEnumerable<OnPageKeywordDensityRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash'
+[**OnPageKeywordDensityResponseInfo**](OnPageKeywordDensityResponseInfo.md)
 
-### **ContentParsingAsync(IEnumerable&lt;OnPageContentParsingRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<OnPageContentParsingResponseInfo> ContentParsingAsync(IEnumerable<OnPageContentParsingRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;OnPageContentParsingRequestInfo&gt;](./OnPageContentParsingRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;OnPageContentParsingResponseInfo&gt;](./OnPageContentParsingResponseInfo.md)<br>
-Successful operation
+<a id="microdata"></a>
+# **microdata**
+> OnPageMicrodataResponseInfo microdata()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.OnPageApi.MicrodataAsync(new List<OnPageMicrodataRequestInfo>()
+{
+    new()
+    {
+        Id = "02241700-1535-0216-0000-034137259bc1",
+        Url = "https://dataforseo.com/apis",
+    }
+});
+```
 
-‌‌
- <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/?bash'
+### Parameters
 
-### **ContentParsingAsync(IEnumerable&lt;OnPageContentParsingRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageMicrodataRequestInfo>&gt;**](IEnumerable<OnPageMicrodataRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<OnPageContentParsingResponseInfo> ContentParsingAsync(IEnumerable<OnPageContentParsingRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;OnPageContentParsingRequestInfo&gt;](./OnPageContentParsingRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageMicrodataResponseInfo**](OnPageMicrodataResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageContentParsingResponseInfo&gt;](./OnPageContentParsingResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/?bash'
+<a id="rawHtml"></a>
+# **rawHtml**
+> OnPageRawHtmlResponseInfo rawHtml()
 
-### **ContentParsingLiveAsync(IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<OnPageContentParsingLiveResponseInfo> ContentParsingLiveAsync(IEnumerable<OnPageContentParsingLiveRequestInfo> body)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;](./OnPageContentParsingLiveRequestInfo.md)<br>
+});
+var result = await dfsClient.OnPageApi.RawHtmlAsync(new List<OnPageRawHtmlRequestInfo>()
+{
+    new()
+    {
+        Id = "07281559-0695-0216-0000-c269be8b7592",
+        Url = "https://dataforseo.com/apis",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;OnPageContentParsingLiveResponseInfo&gt;](./OnPageContentParsingLiveResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageRawHtmlRequestInfo>&gt;**](IEnumerable<OnPageRawHtmlRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash'
+[**OnPageRawHtmlResponseInfo**](OnPageRawHtmlResponseInfo.md)
 
-### **ContentParsingLiveAsync(IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<OnPageContentParsingLiveResponseInfo> ContentParsingLiveAsync(IEnumerable<OnPageContentParsingLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;OnPageContentParsingLiveRequestInfo&gt;](./OnPageContentParsingLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="pageScreenshot"></a>
+# **pageScreenshot**
+> OnPagePageScreenshotResponseInfo pageScreenshot()
 
-[Task&lt;OnPageContentParsingLiveResponseInfo&gt;](./OnPageContentParsingLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.OnPageApi.PageScreenshotAsync(new List<OnPagePageScreenshotRequestInfo>()
+{
+    new()
+    {
+        Url = "https://dataforseo.com/apis",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPagePageScreenshotRequestInfo>&gt;**](IEnumerable<OnPagePageScreenshotRequestInfo>.md)|  | [optional] |
 
-### **InstantPagesAsync(IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;)**
 
-```csharp
-public Task<OnPageInstantPagesResponseInfo> InstantPagesAsync(IEnumerable<OnPageInstantPagesRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;](./OnPageInstantPagesRequestInfo.md)<br>
+[**OnPagePageScreenshotResponseInfo**](OnPagePageScreenshotResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageInstantPagesResponseInfo&gt;](./OnPageInstantPagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/instant_pages/?bash'
+<a id="contentParsing"></a>
+# **contentParsing**
+> OnPageContentParsingResponseInfo contentParsing()
 
-### **InstantPagesAsync(IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageInstantPagesResponseInfo> InstantPagesAsync(IEnumerable<OnPageInstantPagesRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.OnPageApi.ContentParsingAsync(new List<OnPageContentParsingRequestInfo>()
+{
+    new()
+    {
+        Url = "https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api",
+        Id = "11161551-1535-0216-0000-500b3f307f92",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;OnPageInstantPagesRequestInfo&gt;](./OnPageInstantPagesRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageContentParsingRequestInfo>&gt;**](IEnumerable<OnPageContentParsingRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;OnPageInstantPagesResponseInfo&gt;](./OnPageInstantPagesResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**OnPageContentParsingResponseInfo**](OnPageContentParsingResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/instant_pages/?bash'
+### HTTP request headers
 
-### **OnPageLighthouseLanguagesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<OnPageLighthouseLanguagesResponseInfo> OnPageLighthouseLanguagesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="contentParsingLive"></a>
+# **contentParsingLive**
+> OnPageContentParsingLiveResponseInfo contentParsingLive()
 
-[Task&lt;OnPageLighthouseLanguagesResponseInfo&gt;](./OnPageLighthouseLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.OnPageApi.ContentParsingLiveAsync(new List<OnPageContentParsingLiveRequestInfo>()
+{
+    new()
+    {
+        Url = "https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageContentParsingLiveRequestInfo>&gt;**](IEnumerable<OnPageContentParsingLiveRequestInfo>.md)|  | [optional] |
 
-### **OnPageLighthouseLanguagesAsync(CancellationToken)**
 
-```csharp
-public Task<OnPageLighthouseLanguagesResponseInfo> OnPageLighthouseLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageContentParsingLiveResponseInfo**](OnPageContentParsingLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageLighthouseLanguagesResponseInfo&gt;](./OnPageLighthouseLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash'
+<a id="instantPages"></a>
+# **instantPages**
+> OnPageInstantPagesResponseInfo instantPages()
 
-### **LighthouseAuditsAsync()**
 
+### Example
 ```csharp
-public Task<OnPageLighthouseAuditsResponseInfo> LighthouseAuditsAsync()
-```
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;OnPageLighthouseAuditsResponseInfo&gt;](./OnPageLighthouseAuditsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.OnPageApi.InstantPagesAsync(new List<OnPageInstantPagesRequestInfo>()
+{
+    new()
+    {
+        Url = "https://dataforseo.com/blog",
+        EnableJavascript = true,
+        CustomJs = "meta = {}; meta.url = document.URL; meta;",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-The OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageInstantPagesRequestInfo>&gt;**](IEnumerable<OnPageInstantPagesRequestInfo>.md)|  | [optional] |
 
-### **LighthouseAuditsAsync(CancellationToken)**
 
-```csharp
-public Task<OnPageLighthouseAuditsResponseInfo> LighthouseAuditsAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageInstantPagesResponseInfo**](OnPageInstantPagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageLighthouseAuditsResponseInfo&gt;](./OnPageLighthouseAuditsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-The OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash'
+<a id="onPageLighthouseLanguages"></a>
+# **onPageLighthouseLanguages**
+> OnPageLighthouseLanguagesResponseInfo onPageLighthouseLanguages()
 
-### **LighthouseVersionsAsync()**
 
+### Example
 ```csharp
-public Task<OnPageLighthouseVersionsResponseInfo> LighthouseVersionsAsync()
-```
-
-#### Returns
-
-[Task&lt;OnPageLighthouseVersionsResponseInfo&gt;](./OnPageLighthouseVersionsResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.OnPageApi.OnPageLighthouseLanguagesAsync();
+```
 
-**Remarks:**
+### Parameters
 
-OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash'
 
-### **LighthouseVersionsAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<OnPageLighthouseVersionsResponseInfo> LighthouseVersionsAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageLighthouseLanguagesResponseInfo**](OnPageLighthouseLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageLighthouseVersionsResponseInfo&gt;](./OnPageLighthouseVersionsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash'
+<a id="lighthouseAudits"></a>
+# **lighthouseAudits**
+> OnPageLighthouseAuditsResponseInfo lighthouseAudits()
 
-### **LighthouseTaskPostAsync(IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<OnPageLighthouseTaskPostResponseInfo> LighthouseTaskPostAsync(IEnumerable<OnPageLighthouseTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.OnPageApi.LighthouseAuditsAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;](./OnPageLighthouseTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;OnPageLighthouseTaskPostResponseInfo&gt;](./OnPageLighthouseTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**OnPageLighthouseAuditsResponseInfo**](OnPageLighthouseAuditsResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **LighthouseTaskPostAsync(IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<OnPageLighthouseTaskPostResponseInfo> LighthouseTaskPostAsync(IEnumerable<OnPageLighthouseTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;OnPageLighthouseTaskPostRequestInfo&gt;](./OnPageLighthouseTaskPostRequestInfo.md)<br>
+<a id="lighthouseVersions"></a>
+# **lighthouseVersions**
+> OnPageLighthouseVersionsResponseInfo lighthouseVersions()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;OnPageLighthouseTaskPostResponseInfo&gt;](./OnPageLighthouseTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.OnPageApi.LighthouseVersionsAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash'
 
-### **LighthouseTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<OnPageLighthouseTasksReadyResponseInfo> LighthouseTasksReadyAsync()
-```
+[**OnPageLighthouseVersionsResponseInfo**](OnPageLighthouseVersionsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageLighthouseTasksReadyResponseInfo&gt;](./OnPageLighthouseTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash'
+<a id="lighthouseTaskPost"></a>
+# **lighthouseTaskPost**
+> OnPageLighthouseTaskPostResponseInfo lighthouseTaskPost()
 
-### **LighthouseTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<OnPageLighthouseTasksReadyResponseInfo> LighthouseTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.OnPageApi.LighthouseTaskPostAsync(new List<OnPageLighthouseTaskPostRequestInfo>()
+{
+    new()
+    {
+        Url = "https://dataforseo.com",
+        ForMobile = true,
+        Tag = "some_string_123",
+        PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;OnPageLighthouseTasksReadyResponseInfo&gt;](./OnPageLighthouseTasksReadyResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageLighthouseTaskPostRequestInfo>&gt;**](IEnumerable<OnPageLighthouseTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash'
+[**OnPageLighthouseTaskPostResponseInfo**](OnPageLighthouseTaskPostResponseInfo.md)
 
-### **LighthouseTaskGetJsonAsync(String)**
+### Authorization
 
-```csharp
-public Task<OnPageLighthouseTaskGetJsonResponseInfo> LighthouseTaskGetJsonAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>required field
- <br>you can get this ID in the response of the Task POST endpoint
- <br>example:
- <br>“07131248-1535-0216-1000-17384017ad04”
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;OnPageLighthouseTaskGetJsonResponseInfo&gt;](./OnPageLighthouseTaskGetJsonResponseInfo.md)<br>
-Successful operation
+<a id="lighthouseTasksReady"></a>
+# **lighthouseTasksReady**
+> OnPageLighthouseTasksReadyResponseInfo lighthouseTasksReady()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.OnPageApi.LighthouseTasksReadyAsync();
+```
 
-‌
- <br>The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash'
+### Parameters
 
-### **LighthouseTaskGetJsonAsync(String, CancellationToken)**
 
-```csharp
-public Task<OnPageLighthouseTaskGetJsonResponseInfo> LighthouseTaskGetJsonAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>required field
- <br>you can get this ID in the response of the Task POST endpoint
- <br>example:
- <br>“07131248-1535-0216-1000-17384017ad04”
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**OnPageLighthouseTasksReadyResponseInfo**](OnPageLighthouseTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;OnPageLighthouseTaskGetJsonResponseInfo&gt;](./OnPageLighthouseTaskGetJsonResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash'
+<a id="lighthouseTaskGetJson"></a>
+# **lighthouseTaskGetJson**
+> OnPageLighthouseTaskGetJsonResponseInfo lighthouseTaskGetJson()
 
-### **LighthouseLiveJsonAsync(IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<OnPageLighthouseLiveJsonResponseInfo> LighthouseLiveJsonAsync(IEnumerable<OnPageLighthouseLiveJsonRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;](./OnPageLighthouseLiveJsonRequestInfo.md)<br>
-
-#### Returns
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.OnPageApi.LighthouseTaskGetJsonAsync(id);
+```
 
-[Task&lt;OnPageLighthouseLiveJsonResponseInfo&gt;](./OnPageLighthouseLiveJsonResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash'
+### Return type
 
-### **LighthouseLiveJsonAsync(IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;, CancellationToken)**
+[**OnPageLighthouseTaskGetJsonResponseInfo**](OnPageLighthouseTaskGetJsonResponseInfo.md)
 
-```csharp
-public Task<OnPageLighthouseLiveJsonResponseInfo> LighthouseLiveJsonAsync(IEnumerable<OnPageLighthouseLiveJsonRequestInfo> body, CancellationToken cancellationToken)
-```
+### Authorization
 
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`body` [IEnumerable&lt;OnPageLighthouseLiveJsonRequestInfo&gt;](./OnPageLighthouseLiveJsonRequestInfo.md)<br>
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;OnPageLighthouseLiveJsonResponseInfo&gt;](./OnPageLighthouseLiveJsonResponseInfo.md)<br>
-Successful operation
+<a id="lighthouseLiveJson"></a>
+# **lighthouseLiveJson**
+> OnPageLighthouseLiveJsonResponseInfo lighthouseLiveJson()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.OnPageApi.LighthouseLiveJsonAsync(new List<OnPageLighthouseLiveJsonRequestInfo>()
+{
+    new()
+    {
+        Url = "https://dataforseo.com",
+        ForMobile = true,
+        Tag = "some_string_123",
+    }
+});
+```
 
-‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash'
+### Parameters
 
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<OnPageLighthouseLiveJsonRequestInfo>&gt;**](IEnumerable<OnPageLighthouseLiveJsonRequestInfo>.md)|  | [optional] |
 
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
 
-#### Type Parameters
 
-`T`<br>
+### Return type
 
-#### Parameters
+[**OnPageLighthouseLiveJsonResponseInfo**](OnPageLighthouseLiveJsonResponseInfo.md)
 
-`response` HttpResponseMessage<br>
+### Authorization
 
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

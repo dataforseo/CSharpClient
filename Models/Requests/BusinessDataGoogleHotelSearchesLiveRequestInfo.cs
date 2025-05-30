@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BusinessDataGoogleHotelSearchesLiveRequestInfo
+
+    public class BusinessDataGoogleHotelSearchesLiveRequestInfo 
     {
+
         /// <summary>
         /// keyword
         /// <br/>optional field
@@ -16,7 +19,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note: in order to obtain accurate search results, the location name is appended to the keyword automatically
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
@@ -28,7 +31,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>London,England,United Kingdom
         /// <br/>Note: in order to obtain accurate search results, the location_name you specify will be automatically appended to the keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -39,7 +42,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -52,7 +55,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>53.476225,-2.243572
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_coordinate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
@@ -63,7 +66,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>English
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -74,7 +77,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>en
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -87,41 +90,41 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>thus, setting a depth above 20 may result in additional charges if Google Hotels return more than 20 results;
         /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
 
         /// <summary>
         /// check-in date
         /// <br/>optional field
         /// <br/>if you don’t specify this field, tomorrow’s date will be used by default;
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2019-01-15"
+        /// <br/>'2019-01-15'
         /// <br/>Note: the value cannot precede the today’s date
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("check_in", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("check_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckIn { get; set; }
 
         /// <summary>
         /// check-out date
         /// <br/>optional field
         /// <br/>if you don’t specify this field, our system will apply the date of two days from now by default;
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2019-01-15"
+        /// <br/>'2019-01-15'
         /// <br/>Note: the value cannot be less than or equal to check_in;
         /// <br/>the range between check_in and check_out values cannot exceed 30 days
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("check_out", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("check_out", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckOut { get; set; }
 
         /// <summary>
         /// currency
         /// <br/>optional field
         /// <br/>example:
-        /// <br/>"USD"
+        /// <br/>'USD'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("currency", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
 
         /// <summary>
@@ -132,7 +135,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>1
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("adults", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("adults", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Adults { get; set; }
 
         /// <summary>
@@ -146,8 +149,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set the following value if you want to include one 13-year-old child and one 8-year-old child:
         /// <br/>[13,8]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("children", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Children { get; set; }
+        [JsonProperty("children", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Children { get; set; }
 
         /// <summary>
         /// hotel stars
@@ -156,8 +159,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>[3,4,5]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("stars", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Stars { get; set; }
+        [JsonProperty("stars", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Stars { get; set; }
 
         /// <summary>
         /// minimum rating
@@ -166,7 +169,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2.5
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("min_rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("min_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? MinRating { get; set; }
 
         /// <summary>
@@ -180,7 +183,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>most_reviewed – sort by most reviewed
         /// <br/>default value: relevance
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("sort_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("sort_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SortBy { get; set; }
 
         /// <summary>
@@ -190,7 +193,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>100
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("min_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("min_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MinPrice { get; set; }
 
         /// <summary>
@@ -200,7 +203,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>600
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("max_price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("max_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxPrice { get; set; }
 
         /// <summary>
@@ -209,7 +212,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set this field to true if you want to get the list of hotels with free cancellation of reservations
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("free_cancellation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("free_cancellation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? FreeCancellation { get; set; }
 
         /// <summary>
@@ -218,7 +221,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set this field to true if you want to get the list of vacation rentals instead of hotels
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_vacation_rentals", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("is_vacation_rentals", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVacationRentals { get; set; }
 
         /// <summary>
@@ -227,32 +230,32 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this field to specify different hotel amenities
         /// <br/>example:
         /// <br/>  [
-        /// <br/>            "free_parking",
-        /// <br/>            "pets_allowed"
+        /// <br/>            'free_parking',
+        /// <br/>            'pets_allowed'
         /// <br/>        ]
         /// <br/>
         /// <br/>possible values:
-        /// <br/>"air_conditioning",
-        /// <br/>"all_inclusive_available",
-        /// <br/>"bar",
-        /// <br/>"free_breakfast",
-        /// <br/>"fitness_center",
-        /// <br/>"kid_friendly",
-        /// <br/>"free_parking",
-        /// <br/>"pets_allowed",
-        /// <br/>"pool",
-        /// <br/>"restaurant",
-        /// <br/>"room_service",
-        /// <br/>"spa",
-        /// <br/>"free_wifi",
-        /// <br/>"parking",
-        /// <br/>"indoor_pool",
-        /// <br/>"outdoor_pool",
-        /// <br/>"wheelchair_accessible",
-        /// <br/>"beach_access"
+        /// <br/>'air_conditioning',
+        /// <br/>'all_inclusive_available',
+        /// <br/>'bar',
+        /// <br/>'free_breakfast',
+        /// <br/>'fitness_center',
+        /// <br/>'kid_friendly',
+        /// <br/>'free_parking',
+        /// <br/>'pets_allowed',
+        /// <br/>'pool',
+        /// <br/>'restaurant',
+        /// <br/>'room_service',
+        /// <br/>'spa',
+        /// <br/>'free_wifi',
+        /// <br/>'parking',
+        /// <br/>'indoor_pool',
+        /// <br/>'outdoor_pool',
+        /// <br/>'wheelchair_accessible',
+        /// <br/>'beach_access'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("amenities", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Amenities { get; set; }
+        [JsonProperty("amenities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Amenities { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -261,22 +264,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

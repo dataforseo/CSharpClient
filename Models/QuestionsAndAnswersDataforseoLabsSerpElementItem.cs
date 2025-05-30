@@ -1,24 +1,32 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class QuestionsAndAnswersDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
+    public class QuestionsAndAnswersDataforseoLabsSerpElementItem  : BaseDataforseoLabsSerpElementItem 
     {
+
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<QuestionsAndAnswersElement> Items { get; set; }
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SeType { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        /// <summary>
+        /// elements of search results found in SERP
+        /// </summary>
+        [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<QuestionsAndAnswersElement> Items { get; set; }
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,47 +1,50 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo
+
+    public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo 
     {
+
         /// <summary>
         /// product and service categories
         /// <br/>required field
         /// <br/>The maximum number of categories you can specify: 5
         /// <br/>you can download the full list of possible categories
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("category_codes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> CategoryCodes { get; set; }
+        [JsonProperty("category_codes", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> CategoryCodes { get; set; }
 
         /// <summary>
         /// first date of comparison period
         /// <br/>required field
         /// <br/>first date for which domain metrics will be provided;
-        /// <br/>date format: "yyyy-mm-dd";
-        /// <br/>example: "2021-06-01";
+        /// <br/>date format: 'yyyy-mm-dd';
+        /// <br/>example: '2021-06-01';
         /// <br/>the list available dates is available through the available history endpoint;
         /// <br/>Note: first_date cannot be greater than today’s date;
         /// <br/>Also note: the dates specified in first_date and second_date cannot point to the same month of the same year;
         /// <br/>you can specify the dates in any order: first_date can be greater than second_date and vice versa;
-        /// <br/>minimum date: "2020-10-01"
+        /// <br/>minimum date: '2020-10-01'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("first_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("first_date", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstDate { get; set; }
 
         /// <summary>
         /// second date of comparison period
         /// <br/>required field
         /// <br/>second date for which domain metrics will be provided;
-        /// <br/>date format: "yyyy-mm-dd";
-        /// <br/>example: "2021-10-01";
+        /// <br/>date format: 'yyyy-mm-dd';
+        /// <br/>example: '2021-10-01';
         /// <br/>the list available dates is available through the available history endpoint;
         /// <br/>Note: second_date cannot be greater than today’s date;
         /// <br/>Also note: the dates specified in first_date and second_date cannot point to the same month of the same year;
         /// <br/>you can specify the dates in any order: second_date can be greater than first_date and vice versa;
-        /// <br/>minimum date: "2020-10-01"
+        /// <br/>minimum date: '2020-10-01'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("second_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("second_date", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string SecondDate { get; set; }
 
         /// <summary>
@@ -53,7 +56,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -65,7 +68,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -77,7 +80,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>English
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -88,7 +91,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>en
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -97,12 +100,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>indicates the type of search results included in the response;
         /// <br/>Note: if the item_types array contains item types that are different from the organic object, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response;
         /// <br/>possible values:
-        /// <br/>["organic", "paid", "featured_snippet", "local_pack"];
+        /// <br/>['organic', 'paid', 'featured_snippet', 'local_pack'];
         /// <br/>default value:
-        /// <br/>["organic", "paid"]
+        /// <br/>['organic', 'paid']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("item_types", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> ItemTypes { get; set; }
+        [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
         /// number of additional domain categories
@@ -113,7 +116,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note: top_categories_count cannot be less than the number of categories in the category_codes array;
         /// <br/>maximum value: 5
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("top_categories_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("top_categories_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TopCategoriesCount { get; set; }
 
         /// <summary>
@@ -123,7 +126,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if true, the API will return main_domain plus its subdomains (if available);
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_subdomains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
@@ -131,7 +134,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if specified, the API will return only domains with organic_etv greater than the specified value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("etv_min", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("etv_min", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? EtvMin { get; set; }
 
         /// <summary>
@@ -139,7 +142,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if specified, the API will return only domains with organic_etv lesser than the specified value
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("etv_max", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("etv_max", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? EtvMax { get; set; }
 
         /// <summary>
@@ -150,7 +153,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>this parameter is intended to mitigate any inconsistencies that may result from changes to our database;
         /// <br/>Note: we do not recommend setting correlate to false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("correlate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("correlate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Correlate { get; set; }
 
         /// <summary>
@@ -159,7 +162,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 100;
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
 
         /// <summary>
@@ -168,7 +171,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0;
         /// <br/>if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
@@ -177,33 +180,33 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum);
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt; &gt;, in, not_in, match, not_match, ilike, not_ilike, like, not_like;
+        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, match, not_match, ilike, not_ilike, like, not_like;
         /// <br/>you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters;
         /// <br/>example:
-        /// <br/>["metrics_history.202110.organic.pos_1", "&gt;", 15];
+        /// <br/>['metrics_history.202110.organic.pos_1', '&gt;', 15];
         /// <br/>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// results sorting rules
         /// <br/>optional field
         /// <br/>you can use the same values as in the filters array to sort the results;
-        /// <br/>default rule: ["organic_etv,desc"];
+        /// <br/>default rule: ['organic_etv,desc'];
         /// <br/>possible sorting types:
         /// <br/>asc – results will be sorted in ascending order
         /// <br/>desc – results will be sorted in descending order;
         /// <br/>you should use a comma to set up a sorting type;
         /// <br/>example:
-        /// <br/>["organic_count,desc"];
+        /// <br/>['organic_count,desc'];
         /// <br/>note that you can set no more than three sorting rules in a single request;
         /// <br/>you should use a comma to separate several sorting rules;
         /// <br/>example:
-        /// <br/>["organic_etv,desc","organic_count,asc"]
+        /// <br/>['organic_etv,desc','organic_count,asc']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OrderBy { get; set; }
+        [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> OrderBy { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -212,22 +215,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result;
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

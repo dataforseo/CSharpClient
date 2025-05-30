@@ -1,29 +1,33 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class KnowledgeGraphImagesItemDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
+    public class KnowledgeGraphImagesItemDataforseoLabsSerpElementItem  : BaseDataforseoLabsSerpElementItem 
     {
+
         /// <summary>
         /// link of the element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("link", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public LinkElement Link { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<KnowledgeGraphImagesElement> Items { get; set; }
+        [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<KnowledgeGraphImagesElement> Items { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

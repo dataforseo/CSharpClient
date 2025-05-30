@@ -1,30 +1,33 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BacklinksPageIntersectionLiveItem
+    public class BacklinksPageIntersectionLiveItem 
     {
+
         /// <summary>
         /// contains data on pages that link to the corresponding targets specified in the POST array
         /// <br/>data is provided in separate objects corresponding to pages specified in the targets object
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page_intersection", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<BacklinksPageIntersectionInfo>> PageIntersection { get; set; }
+        [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<BacklinksPageIntersection>> PageIntersection { get; set; }
 
         /// <summary>
         /// contains the page intersections summary
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("summary", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IntersectionSummaryInfo Summary { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

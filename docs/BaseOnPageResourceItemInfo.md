@@ -1,169 +1,22 @@
 # BaseOnPageResourceItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BaseOnPageResourceItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseOnPageResourceItemInfo](./BaseOnPageResourceItemInfo.md)
 
 ## Properties
 
-### **ResourceType**
-
-```csharp
-public string ResourceType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **StatusCode**
-
-```csharp
-public Nullable<int> StatusCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Location**
-
-```csharp
-public string Location { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ResourceErrors**
-
-```csharp
-public OnPageResourceIssueInfo ResourceErrors { get; set; }
-```
-
-#### Property Value
-
-[OnPageResourceIssueInfo](./OnPageResourceIssueInfo.md)<br>
-
-### **Size**
-
-```csharp
-public Nullable<int> Size { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **EncodedSize**
-
-```csharp
-public Nullable<int> EncodedSize { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TotalTransferSize**
-
-```csharp
-public Nullable<long> TotalTransferSize { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **FetchTime**
-
-```csharp
-public string FetchTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CacheControl**
-
-```csharp
-public CacheControl CacheControl { get; set; }
-```
-
-#### Property Value
-
-[CacheControl](./CacheControl.md)<br>
-
-### **Checks**
-
-```csharp
-public IDictionary<string, Nullable<bool>> Checks { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Boolean&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ContentEncoding**
-
-```csharp
-public string ContentEncoding { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MediaType**
-
-```csharp
-public string MediaType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Server**
-
-```csharp
-public string Server { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LastModified**
-
-```csharp
-public LastModified LastModified { get; set; }
-```
-
-#### Property Value
-
-[LastModified](./LastModified.md)<br>
-
-## Constructors
-
-### **BaseOnPageResourceItemInfo()**
-
-```csharp
-public BaseOnPageResourceItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**ResourceType** | **string** | type of the returned resource |[optional]|
+**StatusCode** | **double?** | status code of the page |[optional]|
+**Location** | **string** | location header<br>indicates the URL to redirect a page to |[optional]|
+**Url** | **string** | page URL |[optional]|
+**ResourceErrors** | **OnPageResourceIssueInfo** | resource errors and warnings |[optional]|
+**Size** | **double?** | resource size<br>indicates the size of a given page measured in bytes |[optional]|
+**EncodedSize** | **double?** | page size after encoding<br>indicates the size of the encoded page measured in bytes |[optional]|
+**TotalTransferSize** | **double?** | compressed page size<br>indicates the compressed size of a given page |[optional]|
+**FetchTime** | **string** | date and time when a resource was fetched<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**CacheControl** | **CacheControl** | instructions for caching |[optional]|
+**Checks** | **IDictionary<string, bool?>** | website checks<br>on-page check-ups related to the page |[optional]|
+**ContentEncoding** | **string** | type of encoding |[optional]|
+**MediaType** | **string** | types of media used to display a page |[optional]|
+**Server** | **string** | server version |[optional]|
+**LastModified** | **LastModified** | contains data on changes related to the resource<br>if there is no data, the value will be null |[optional]|

@@ -17,13 +17,13 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>example.com and blog.example.com are counted as one referring domain
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        public double? TotalCount { get; set; }
 
         /// <summary>
         /// number of items in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

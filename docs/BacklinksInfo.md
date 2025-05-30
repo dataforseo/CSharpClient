@@ -1,89 +1,13 @@
 # BacklinksInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BacklinksInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksInfo](./BacklinksInfo.md)
 
 ## Properties
 
-### **ReferringDomains**
-
-```csharp
-public Nullable<long> ReferringDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringMainDomains**
-
-```csharp
-public Nullable<long> ReferringMainDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ReferringPages**
-
-```csharp
-public Nullable<long> ReferringPages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Dofollow**
-
-```csharp
-public Nullable<long> Dofollow { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Backlinks**
-
-```csharp
-public Nullable<long> Backlinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TimeUpdate**
-
-```csharp
-public string TimeUpdate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksInfo()**
-
-```csharp
-public BacklinksInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**ReferringDomains** | **long?** | number of referring domains |[optional]|
+**ReferringMainDomains** | **long?** | number of referring main domains |[optional]|
+**ReferringPages** | **long?** | number of referring pages |[optional]|
+**Dofollow** | **long?** | number of dofollow links |[optional]|
+**Backlinks** | **long?** | total number of backlinks<br>the total number of backlinks, including dofollow and nofollow links |[optional]|
+**TimeUpdate** | **string** | date and time when backlink data was updated<br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|

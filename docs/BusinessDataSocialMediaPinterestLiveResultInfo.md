@@ -1,59 +1,10 @@
 # BusinessDataSocialMediaPinterestLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class BusinessDataSocialMediaPinterestLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataSocialMediaPinterestLiveResultInfo](./BusinessDataSocialMediaPinterestLiveResultInfo.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PageUrl**
-
-```csharp
-public string PageUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PinsCount**
-
-```csharp
-public Nullable<long> PinsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataSocialMediaPinterestLiveResultInfo()**
-
-```csharp
-public BusinessDataSocialMediaPinterestLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**PageUrl** | **string** | URL of the page the data is provided for<br>corresponding URL you specified in the targets array when setting a task |[optional]|
+**PinsCount** | **double?** | number of pins for the related page_url<br>pins on Pinterest correspond to content saves;<br>this field shows the number of content saves made from the related page_url using the Pinterest Save Button |[optional]|

@@ -1,129 +1,17 @@
 # ContentAnalysisRatingDistributionLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class ContentAnalysisRatingDistributionLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ContentAnalysisRatingDistributionLiveRequestInfo](./ContentAnalysisRatingDistributionLiveRequestInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **KeywordFields**
-
-```csharp
-public IDictionary<string, string> KeywordFields { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PageType**
-
-```csharp
-public ICollection<string> PageType { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **InternalListLimit**
-
-```csharp
-public Nullable<int> InternalListLimit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SearchMode**
-
-```csharp
-public string SearchMode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PositiveConnotationThreshold**
-
-```csharp
-public Nullable<float> PositiveConnotationThreshold { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SentimentsConnotationThreshold**
-
-```csharp
-public Nullable<float> SentimentsConnotationThreshold { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **InitialDatasetFilters**
-
-```csharp
-public ICollection<object> InitialDatasetFilters { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankScale**
-
-```csharp
-public string RankScale { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **ContentAnalysisRatingDistributionLiveRequestInfo()**
-
-```csharp
-public ContentAnalysisRatingDistributionLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | target keyword<br>required field<br>UTF-8 encoding<br>the keywords will be converted to a lowercase format;<br>Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;<br>example:<br>'keyword': '\'tesla palo alto\''<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**KeywordFields** | **IDictionary<string, string>** | target keyword fields and target keywords<br>optional field<br>use this parameter to filter the dataset by keywords that certain fields should contain;<br>fields you can specify: title, main_title, previous_title, snippet<br>you can indicate several fields;<br>Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;<br>example:<br>'keyword_fields': {<br>    'snippet': '\'logitech mouse\'',<br>    'main_title': 'sale'<br>} |[optional]|
+**PageType** | **IEnumerable<string>** | target page types<br>optional field<br>use this parameter to filter the dataset by page types<br>possible values:<br>'ecommerce', 'news', 'blogs', 'message-boards', 'organization' |[optional]|
+**InternalListLimit** | **int?** | maximum number of elements within internal arrays<br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br>top_domains<br>text_categories<br>page_categories<br>countries<br>languages<br>default value: 1<br>maximum value: 20 |[optional]|
+**SearchMode** | **string** | results grouping type<br>optional field<br>possible grouping types:<br>as_is – returns all citations for the target keyword<br>one_per_domain – returns one citation of the keyword per domain<br>default value: as_is |[optional]|
+**PositiveConnotationThreshold** | **float?** | positive connotation threshold<br>optional field<br>specified as the probability index threshold for positive sentiment related to the citation content<br>if you specify this field, connotation_types object in the response will only contain data on citations with positive sentiment probability more than or equal to the specified value<br>possible values: from 0 to 1<br>default value: 0.4 |[optional]|
+**SentimentsConnotationThreshold** | **float?** | sentiment connotation threshold<br>optional field<br>specified as the probability index threshold for sentiment connotations related to the citation content<br>if you specify this field, sentiment_connotations object in the response will only contain data on citations where the probability per each sentiment is more than or equal to the specified value<br>possible values: from 0 to 1<br>default value: 0.4 |[optional]|
+**InitialDatasetFilters** | **IEnumerable<object>** | initial dataset filtering parameters<br>optional field<br>initial filtering parameters that apply to fields in the Search endpoint<br>you can add several filters at once (8 filters maximum)<br>you should set a logical operator and, or between the conditions<br>the following operators are supported:<br>regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like,not_like, has, has_not, match, not_match<br>you can use the % operator with like and not_like to match any string of zero or more characters<br>example:<br>['domain','<>', 'logitech.com']<br>[['domain','<>','logitech.com'],'and',['content_info.connotation_types.negative','>',1000]]<br>[['domain','<>','logitech.com']],<br>'and',<br>[['content_info.connotation_types.negative','>',1000],<br>'or',<br>['content_info.text_category','has',10994]]]<br>for more information about filters, please refer to Content Analysis API – Filters |[optional]|
+**RankScale** | **string** | defines the scale used for calculating and displaying the rank values<br>optional field<br>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<br>possible values:<br>one_hundred — rank values are displayed on a 0–100 scale<br>one_thousand — rank values are displayed on a 0–1000 scale<br>default value: one_thousand<br>learn more about how this parameter works in this Help Center article |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

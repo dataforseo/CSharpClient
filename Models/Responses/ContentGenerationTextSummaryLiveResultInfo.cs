@@ -9,31 +9,31 @@ namespace DataForSeo.Client.Models.Responses
         /// number of sentences found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("sentences", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Sentences { get; set; }
+        public double? Sentences { get; set; }
 
         /// <summary>
         /// number of paragraphs found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("paragraphs", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Paragraphs { get; set; }
+        public double? Paragraphs { get; set; }
 
         /// <summary>
         /// number of words found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("words", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Words { get; set; }
+        public double? Words { get; set; }
 
         /// <summary>
         /// number of characters without spaces found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("characters_without_spaces", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CharactersWithoutSpaces { get; set; }
+        public double? CharactersWithoutSpaces { get; set; }
 
         /// <summary>
         /// number of characters with spaces found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("characters_with_spaces", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CharactersWithSpaces { get; set; }
+        public double? CharactersWithSpaces { get; set; }
 
         /// <summary>
         /// average number of words per sentence in the target text
@@ -88,13 +88,13 @@ namespace DataForSeo.Client.Models.Responses
         /// number of spelling errors found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("spelling_errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SpellingErrors { get; set; }
+        public double? SpellingErrors { get; set; }
 
         /// <summary>
         /// number of grammar errors found in the target text
         /// </summary>
         [Newtonsoft.Json.JsonProperty("grammar_errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? GrammarErrors { get; set; }
+        public double? GrammarErrors { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>this field shows the number of likes a page received through the Facebook Like Button embed
         /// </summary>
         [Newtonsoft.Json.JsonProperty("like_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? LikeCount { get; set; }
+        public double? LikeCount { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

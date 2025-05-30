@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Code { get; set; }
+        public double? Code { get; set; }
 
         /// <summary>
         /// message

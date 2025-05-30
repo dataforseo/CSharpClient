@@ -1,139 +1,18 @@
 # GoogleShoppingSponsoredCarouselElement
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class GoogleShoppingSponsoredCarouselElement
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [GoogleShoppingSponsoredCarouselElement](./GoogleShoppingSponsoredCarouselElement.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Xpath**
-
-```csharp
-public string Xpath { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tags**
-
-```csharp
-public ICollection<string> Tags { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Seller**
-
-```csharp
-public string Seller { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Price**
-
-```csharp
-public Nullable<float> Price { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Currency**
-
-```csharp
-public string Currency { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ProductRating**
-
-```csharp
-public RatingElement ProductRating { get; set; }
-```
-
-#### Property Value
-
-[RatingElement](./RatingElement.md)<br>
-
-### **ProductImages**
-
-```csharp
-public ICollection<string> ProductImages { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ShopAdAclk**
-
-```csharp
-public string ShopAdAclk { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DeliveryInfo**
-
-```csharp
-public DeliveryInfo DeliveryInfo { get; set; }
-```
-
-#### Property Value
-
-[DeliveryInfo](./DeliveryInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **GoogleShoppingSponsoredCarouselElement()**
-
-```csharp
-public GoogleShoppingSponsoredCarouselElement()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Xpath** | **string** | XPath of the element |[optional]|
+**Title** | **string** | product title |[optional]|
+**Tags** | **IEnumerable<string>** | tags assigned to the product |[optional]|
+**Seller** | **string** | name of the seller<br>the name of the company that placed a corresponding product on Google Shopping |[optional]|
+**Price** | **float?** | product price<br>example:<br>384.99 |[optional]|
+**Currency** | **string** | currency in the ISO format<br>example:<br>USD |[optional]|
+**ProductRating** | **RatingElement** | product rating<br>the product popularity rate based on product reviews |[optional]|
+**ProductImages** | **IEnumerable<string>** | URLs to the images of the product<br>the first URL in the array is the featured image of the product |[optional]|
+**ShopAdAclk** | **string** | unique ad click referral parameter<br>using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL |[optional]|
+**DeliveryInfo** | **DeliveryInfo** | delivery information<br>delivery information including free and fast delivery date ranges |[optional]|

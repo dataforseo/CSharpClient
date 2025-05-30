@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("domain_rank", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string DomainRank { get; set; }
+        public double? DomainRank { get; set; }
 
         /// <summary>
         /// most recent date when our crawler visited the domain

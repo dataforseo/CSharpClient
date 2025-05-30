@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// language name
         /// </summary>
         [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LanguageName { get; set; }
+        public string LanguageName { get; set; }
 
         /// <summary>
         /// language code

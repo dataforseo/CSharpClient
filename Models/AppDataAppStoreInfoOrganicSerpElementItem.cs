@@ -1,109 +1,113 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppDataAppStoreInfoOrganicSerpElementItem : BaseAppDataSerpElementItem
+    public class AppDataAppStoreInfoOrganicSerpElementItem  : BaseAppDataSerpElementItem 
     {
+
         /// <summary>
         /// ID of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("app_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("app_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AppId { get; set; }
 
         /// <summary>
         /// URL to the app page on App Store
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// URL to the app icon
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("icon", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("icon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Icon { get; set; }
 
         /// <summary>
         /// description of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
         /// the total number of reviews of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("reviews_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReviewsCount { get; set; }
+        [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ReviewsCount { get; set; }
 
         /// <summary>
         /// price of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
         /// indicates whether the app is free
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_free", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("is_free", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsFree { get; set; }
 
         /// <summary>
         /// main category/genre of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("main_category", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("main_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MainCategory { get; set; }
 
         /// <summary>
         /// all relevant categories/genres of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Categories { get; set; }
+        [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Categories { get; set; }
 
         /// <summary>
         /// languages supported in the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Languages { get; set; }
+        [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Languages { get; set; }
 
         /// <summary>
         /// age rating and age-based content advisories
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("advisories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Advisories { get; set; }
+        [JsonProperty("advisories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Advisories { get; set; }
 
         /// <summary>
         /// name of the app developer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("developer", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("developer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Developer { get; set; }
 
         /// <summary>
         /// ID of the app developer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("developer_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("developer_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DeveloperId { get; set; }
 
         /// <summary>
         /// URL to the developer page on App Store
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("developer_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("developer_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DeveloperUrl { get; set; }
 
         /// <summary>
         /// current version of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Version { get; set; }
 
         /// <summary>
         /// minimum OS version required to install the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("minimum_os_version", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("minimum_os_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MinimumOsVersion { get; set; }
 
         /// <summary>
         /// size of the app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Size { get; set; }
 
         /// <summary>
@@ -112,7 +116,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("released_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("released_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ReleasedDate { get; set; }
 
         /// <summary>
@@ -121,45 +125,44 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("last_update_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("last_update_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdateDate { get; set; }
 
         /// <summary>
         /// update notes
         /// <br/>contains the latest update notes from the developer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("update_notes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("update_notes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UpdateNotes { get; set; }
 
         /// <summary>
         /// app images
         /// <br/>contains URLs to the images used on the app page on App Store
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("images", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Images { get; set; }
+        [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Images { get; set; }
 
         /// <summary>
         /// similar apps
         /// <br/>displays apps similar to the app in a POST request
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("similar_apps", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AppsInfo> SimilarApps { get; set; }
+        [JsonProperty("similar_apps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AppsInfo> SimilarApps { get; set; }
 
         /// <summary>
         /// similar apps
         /// <br/>information about apps built by the same developer
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("more_apps_by_developer", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AppsInfo> MoreAppsByDeveloper { get; set; }
+        [JsonProperty("more_apps_by_developer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AppsInfo> MoreAppsByDeveloper { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

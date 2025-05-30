@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// location code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>the value will be null as Country is the only supported location_type for this API
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code_parent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCodeParent { get; set; }
+        public double? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location

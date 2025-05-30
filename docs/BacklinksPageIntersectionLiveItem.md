@@ -1,49 +1,9 @@
 # BacklinksPageIntersectionLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BacklinksPageIntersectionLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksPageIntersectionLiveItem](./BacklinksPageIntersectionLiveItem.md)
 
 ## Properties
 
-### **PageIntersection**
-
-```csharp
-public IDictionary<string, ICollection<BacklinksPageIntersectionInfo>> PageIntersection { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, ICollection&lt;BacklinksPageIntersectionInfo&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Summary**
-
-```csharp
-public IntersectionSummaryInfo Summary { get; set; }
-```
-
-#### Property Value
-
-[IntersectionSummaryInfo](./IntersectionSummaryInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksPageIntersectionLiveItem()**
-
-```csharp
-public BacklinksPageIntersectionLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**PageIntersection** | **IDictionary<string, IEnumerable<BacklinksPageIntersection>>** | contains data on pages that link to the corresponding targets specified in the POST array<br>data is provided in separate objects corresponding to pages specified in the targets object |[optional]|
+**Summary** | **IntersectionSummaryInfo** | contains the page intersections summary |[optional]|

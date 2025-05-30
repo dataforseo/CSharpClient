@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BusinessDataTripadvisorReviewsTaskPostRequestInfo
+
+    public class BusinessDataTripadvisorReviewsTaskPostRequestInfo 
     {
+
         /// <summary>
         /// URL path of the business entity
         /// <br/>required field if you do not specify keyword
@@ -13,7 +16,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
         /// <br/>https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url_path", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url_path", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UrlPath { get; set; }
 
         /// <summary>
@@ -24,7 +27,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character);
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
@@ -34,7 +37,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>London,England,United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -44,7 +47,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>1003854
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -56,7 +59,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>You will be additionally charged for the tasks with high execution priority.
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
@@ -69,7 +72,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>You will be additionally charged for setting a language parameter in this endpoint.
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -82,7 +85,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>You will be additionally charged for setting a language parameter in this endpoint.
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -93,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 10;
         /// <br/>max value: 4490
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
 
         /// <summary>
@@ -103,8 +106,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values: excellent, very_good, average, poor, terrible
         /// <br/>you can specify several values at once
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ratings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Ratings { get; set; }
+        [JsonProperty("ratings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Ratings { get; set; }
 
         /// <summary>
         /// filter by type of travelers who left a review
@@ -112,8 +115,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values: families, couples, solo, business, friends
         /// <br/>you can specify several values at once
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("visit_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> VisitType { get; set; }
+        [JsonProperty("visit_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> VisitType { get; set; }
 
         /// <summary>
         /// filter by months when a traveler made a visit
@@ -121,15 +124,15 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values: january, february, march, april, may, april, june, july, august, september, october, november, december
         /// <br/>you can specify several values at once
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("months", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Months { get; set; }
+        [JsonProperty("months", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Months { get; set; }
 
         /// <summary>
         /// search reviews containing a specified keyword
         /// <br/>example:
         /// <br/>dessert
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("search_reviews_keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_reviews_keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchReviewsKeyword { get; set; }
 
         /// <summary>
@@ -140,7 +143,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>most_recent
         /// <br/>detailed_reviews
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("sort_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("sort_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SortBy { get; set; }
 
         /// <summary>
@@ -151,7 +154,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: true
         /// <br/>you can learn more about how reviews are translated in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("translate_reviews", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("translate_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? TranslateReviews { get; set; }
 
         /// <summary>
@@ -161,7 +164,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
         /// <summary>
@@ -176,7 +179,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>i.a., the # character will be encoded into %23
         /// <br/>learn more on our Help Center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
@@ -191,22 +194,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>i.a., the # character will be encoded into %23
         /// <br/>learn more on our Help Center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

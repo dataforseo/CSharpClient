@@ -1,69 +1,11 @@
 # Rectangle
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class Rectangle
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [Rectangle](./Rectangle.md)
 
 ## Properties
 
-### **X**
-
-```csharp
-public Nullable<double> X { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Y**
-
-```csharp
-public Nullable<double> Y { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Width**
-
-```csharp
-public Nullable<double> Width { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Height**
-
-```csharp
-public Nullable<double> Height { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **Rectangle()**
-
-```csharp
-public Rectangle()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**X** | **double?** | x-axis coordinate<br>x-axis coordinate of the top-left corner of the result’s snippet, where top-left corner of the screen is the origin |[optional]|
+**Y** | **double?** | y-axis coordinate<br>y-axis coordinate of the top-left corner of the result’s snippet, where top-left corner of the screen is the origin |[optional]|
+**Width** | **double?** | width of the element in pixels |[optional]|
+**Height** | **double?** | height of the element in pixels |[optional]|

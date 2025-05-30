@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BacklinksBulkNewLostBacklinksLiveRequestInfo
+
+    public class BacklinksBulkNewLostBacklinksLiveRequestInfo 
     {
+
         /// <summary>
         /// domains, subdomains or webpages to get new &amp; lost backlinks for
         /// <br/>required field
@@ -12,21 +15,21 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the domain or subdomain should be specified without https:// and www.
         /// <br/>the page should be specified with absolute URL (including http:// or https://)
         /// <br/>example:
-        /// <br/>"targets": [
-        /// <br/>  "forbes.com",
-        /// <br/>  "cnn.com",
-        /// <br/>  "bbc.com",
-        /// <br/>  "yelp.com",
-        /// <br/>  "https://www.apple.com/iphone/",
-        /// <br/>  "https://ahrefs.com/blog/",
-        /// <br/>  "ibm.com",
-        /// <br/>  "https://variety.com/",
-        /// <br/>  "https://stackoverflow.com/",
-        /// <br/>  "www.trustpilot.com"
+        /// <br/>'targets': [
+        /// <br/>  'forbes.com',
+        /// <br/>  'cnn.com',
+        /// <br/>  'bbc.com',
+        /// <br/>  'yelp.com',
+        /// <br/>  'https://www.apple.com/iphone/',
+        /// <br/>  'https://ahrefs.com/blog/',
+        /// <br/>  'ibm.com',
+        /// <br/>  'https://variety.com/',
+        /// <br/>  'https://stackoverflow.com/',
+        /// <br/>  'www.trustpilot.com'
         /// <br/>]
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("targets", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Targets { get; set; }
+        [JsonProperty("targets", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Targets { get; set; }
 
         /// <summary>
         /// starting date of the time range
@@ -38,11 +41,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>e.g. if today is 2021-10-13, default date_from will be 2021-09-13.
         /// <br/>minimum value equals today’s date -(minus) one year;
         /// <br/>e.g. if today is 2021-10-13, minimum date_from will be 2020-10-13.
-        /// <br/>date format: "yyyy-mm-dd"
+        /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>"2021-01-01"
+        /// <br/>'2021-01-01'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
@@ -52,22 +55,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

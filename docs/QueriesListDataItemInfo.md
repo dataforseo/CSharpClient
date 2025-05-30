@@ -1,49 +1,9 @@
 # QueriesListDataItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class QueriesListDataItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [QueriesListDataItemInfo](./QueriesListDataItemInfo.md)
 
 ## Properties
 
-### **Query**
-
-```csharp
-public string Query { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Value**
-
-```csharp
-public string Value { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **QueriesListDataItemInfo()**
-
-```csharp
-public QueriesListDataItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Query** | **string** | related query |[optional]|
+**Value** | **double?** | search term popularity<br>represents the popularity of the topic. Scoring is on a relative scale where a value of 100 is the most commonly searched topic and a value of 50 is a topic searched half as often as the most popular term, and so on. |[optional]|

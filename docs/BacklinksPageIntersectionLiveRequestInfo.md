@@ -1,169 +1,21 @@
 # BacklinksPageIntersectionLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class BacklinksPageIntersectionLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksPageIntersectionLiveRequestInfo](./BacklinksPageIntersectionLiveRequestInfo.md)
 
 ## Properties
 
-### **Targets**
-
-```csharp
-public IDictionary<string, string> Targets { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ExcludeTargets**
-
-```csharp
-public ICollection<string> ExcludeTargets { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **BacklinksStatusType**
-
-```csharp
-public string BacklinksStatusType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Filters**
-
-```csharp
-public ICollection<object> Filters { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **OrderBy**
-
-```csharp
-public ICollection<string> OrderBy { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Offset**
-
-```csharp
-public Nullable<int> Offset { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Limit**
-
-```csharp
-public Nullable<int> Limit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **InternalListLimit**
-
-```csharp
-public Nullable<int> InternalListLimit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IncludeSubdomains**
-
-```csharp
-public Nullable<bool> IncludeSubdomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IncludeIndirectLinks**
-
-```csharp
-public Nullable<bool> IncludeIndirectLinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ExcludeInternalBacklinks**
-
-```csharp
-public Nullable<bool> ExcludeInternalBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IntersectionMode**
-
-```csharp
-public string IntersectionMode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankScale**
-
-```csharp
-public string RankScale { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksPageIntersectionLiveRequestInfo()**
-
-```csharp
-public BacklinksPageIntersectionLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Targets** | **IDictionary<string, string>** | domains, subdomains or webpages to get links for<br>required field<br>you can set up to 20 domains, subdomains or webpages<br>a domain or a subdomain should be specified without https:// and www.<br>a page should be specified with absolute URL (including http:// or https://)<br>example:<br>'targets': {<br>'1': 'http://planet.postgresql.org/',<br>'2': 'http://gborg.postgresql.org/'<br>} |[optional]|
+**ExcludeTargets** | **IEnumerable<string>** | domains, subdomains or webpages you want to exclude<br>optional field<br>you can set up to 10 domains, subdomains or webpages<br>if you use this array, results will contain the referring pages that link to targets but don’t link to exclude_targets<br>example:<br>'exclude_targets': [<br>'bbc.com',<br>'https://www.apple.com/iphone/*',<br>'https://dataforseo.com/apis/*'] |[optional]|
+**BacklinksStatusType** | **string** | set what backlinks to return and count<br>optional field<br>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your targets;<br>possible values:<br>all – all backlinks will be returned and counted;<br>live – backlinks found during the last check will be returned and counted;<br>lost – lost backlinks will be returned and counted;<br>default value: live |[optional]|
+**Filters** | **IEnumerable<object>** | array of results filtering parameters<br>optional field<br>you can add several filters at once (8 filters maximum)<br>you should set a logical operator and, or between the conditions<br>the following operators are supported:<br>regex, not_regex, =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match<br>you can use the % operator with like and not_like to match any string of zero or more characters<br>example:<br>['1.rank','>','80']<br>[['2.page_from_rank','>','55'],<br>'and',<br>['1.original','=','true']]<br>[['1.first_seen','>','2017-10-23 11:31:45 +00:00'],<br>'and',<br>[['1.acnhor','like','%seo%'],'or',['1.text_pre','not_like','%seo%']]]<br>The full list of possible filters is available here. |[optional]|
+**OrderBy** | **IEnumerable<string>** | results sorting rules<br>optional field<br>you can use the same values as in the filters array to sort the results<br>possible sorting types:<br>asc – results will be sorted in the ascending order<br>desc – results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br>['rank,desc']<br>note that you can set no more than three sorting rules in a single request<br>you should use a comma to separate several sorting rules<br>example:<br>['domain_from_rank,desc','page_from_rank,asc'] |[optional]|
+**Offset** | **int?** | offset in the results array of the returned backlinks<br>optional field<br>default value: 0<br>if you specify the 10 value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks |[optional]|
+**Limit** | **int?** | the maximum number of returned backlinks<br>optional field<br>default value: 100<br>maximum value: 1000 |[optional]|
+**InternalListLimit** | **int?** | maximum number of elements within internal arrays<br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br>attributes<br>domain_from_platform_type<br>default value: 10<br>maximum value: 1000 |[optional]|
+**IncludeSubdomains** | **bool?** | indicates if the subdomains of the targets will be included in the search<br>optional field<br>if set to false, the subdomains will be ignored<br>default value: true |[optional]|
+**IncludeIndirectLinks** | **bool?** | indicates if indirect links to the targets will be included in the results<br>optional field<br>if set to true, the results will include data on indirect links pointing to a page that either redirects to a target, or points to a canonical page<br>if set to false, indirect links will be ignored<br>default value: true |[optional]|
+**ExcludeInternalBacklinks** | **bool?** | indicates if internal backlinks from subdomains to the target will be excluded from the results<br>optional field<br>if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target<br>if set to false, internal links will be included in the result<br>default value: true |[optional]|
+**IntersectionMode** | **string** | indicates whether to intersect backlinks<br>optional field<br>use this field to intersect or merge results for the specified URLs<br>possible values: all, partial<br>all – results are based on all backlinks;<br>partial – results are based on the intersecting backlinks only;<br>default value: all |[optional]|
+**RankScale** | **string** | defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values<br>optional field<br>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<br>possible values:<br>one_hundred — rank values are displayed on a 0–100 scale<br>one_thousand — rank values are displayed on a 0–1000 scale<br>default value: one_thousand<br>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

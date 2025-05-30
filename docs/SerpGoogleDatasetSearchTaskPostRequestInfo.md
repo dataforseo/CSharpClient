@@ -1,189 +1,23 @@
 # SerpGoogleDatasetSearchTaskPostRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class SerpGoogleDatasetSearchTaskPostRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpGoogleDatasetSearchTaskPostRequestInfo](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Priority**
-
-```csharp
-public Nullable<int> Priority { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Depth**
-
-```csharp
-public Nullable<int> Depth { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Device**
-
-```csharp
-public string Device { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Os**
-
-```csharp
-public string Os { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LastUpdated**
-
-```csharp
-public string LastUpdated { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **FileFormats**
-
-```csharp
-public ICollection<string> FileFormats { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **UsageRights**
-
-```csharp
-public string UsageRights { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsFree**
-
-```csharp
-public Nullable<bool> IsFree { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Topics**
-
-```csharp
-public ICollection<string> Topics { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PostbackUrl**
-
-```csharp
-public string PostbackUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PostbackData**
-
-```csharp
-public string PostbackData { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PingbackUrl**
-
-```csharp
-public string PingbackUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpGoogleDatasetSearchTaskPostRequestInfo()**
-
-```csharp
-public SerpGoogleDatasetSearchTaskPostRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword<br>required field<br>you can specify up to 700 characters in the keyword field<br>all %## will be decoded (plus character ‘+’ will be decoded to a space character)<br>if you need to use the “%” character for your keyword, please specify it as “%25”;<br>if you need to use the “+” character for your keyword, please specify it as “%2B”.<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**Priority** | **int?** | task priority<br>optional field<br>can take the following values:<br>1 – normal execution priority (set by default)<br>2 – high execution priority<br>You will be additionally charged for the tasks with high execution priority.<br>The cost can be calculated on the Pricing page. |[optional]|
+**Depth** | **int?** | parsing depth<br>optional field<br>number of results in SERP<br>default value: 20<br>max value: 700<br>Note: your account will be billed per each SERP containing up to 20 results;<br>thus, setting a depth above 20 may result in additional charges if the search engine returns more than 20 results;<br>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance |[optional]|
+**LanguageName** | **string** | full name of search engine language<br>optional field<br>if you use this field, you don’t need to specify language_code<br>possible value:<br>English |[optional]|
+**LanguageCode** | **string** | search engine language code<br>optional field<br>possible value:<br>en |[optional]|
+**Device** | **string** | device type<br>optional field<br>possible value: desktop |[optional]|
+**Os** | **string** | device operating system<br>optional field<br>possible values: windows, macos<br>default value: windows |[optional]|
+**LastUpdated** | **string** | last time the dataset was updated<br>optional field<br>possible values: 1m, 1y, 3y |[optional]|
+**FileFormats** | **IEnumerable<string>** | file formats of the dataset<br>optional field<br>possible values: other, archive, text, image, document, tabular |[optional]|
+**UsageRights** | **string** | usage rights of the dataset<br>optional field<br>possible values: commercial, noncommercial |[optional]|
+**IsFree** | **bool?** | indicates whether displayed datasets are free<br>optional field<br>possible values: true, false |[optional]|
+**Topics** | **IEnumerable<string>** | dataset topics<br>optional field<br>possible values: humanities, social_sciences, life_sciences, agriculture, natural_sciences, geo, computer, architecture_and_urban_planning, engineering |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|
+**PostbackUrl** | **string** | return URL for sending task results<br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified<br>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request<br>example:<br>http://your-server.com/postbackscript?id=$id<br>http://your-server.com/postbackscript?id=$id&tag=$tag<br>Note: special characters in postback_url will be urlencoded;<br>i.a., the # character will be encoded into %23<br>learn more on our Help Center |[optional]|
+**PostbackData** | **string** | postback_url datatype<br>required field if you specify postback_url<br>corresponds to the datatype that will be sent to your server<br>only value: advanced |[optional]|
+**PingbackUrl** | **string** | notification URL of a completed task<br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.<br>example:<br>http://your-server.com/pingscript?id=$id<br>http://your-server.com/pingscript?id=$id&tag=$tag<br>Note: special characters in pingback_url will be urlencoded;<br>i.a., the # character will be encoded into %23<br>learn more on our Help Center |[optional]|

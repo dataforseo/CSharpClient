@@ -1,32 +1,36 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class HotelPriceInfo
+    public class HotelPriceInfo 
     {
+
         /// <summary>
         /// price per night
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("price", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Price { get; set; }
+        [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Price { get; set; }
 
         /// <summary>
         /// full price per night without a discount applied
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("price_without_discount", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? PriceWithoutDiscount { get; set; }
+        [JsonProperty("price_without_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? PriceWithoutDiscount { get; set; }
 
         /// <summary>
         /// price currency
         /// <br/>USD is applied by default, unless specified in the POST array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("currency", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
 
         /// <summary>
         /// text about a discount applied
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("discount_text", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("discount_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DiscountText { get; set; }
 
         /// <summary>
@@ -35,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("check_in", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("check_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckIn { get; set; }
 
         /// <summary>
@@ -44,31 +48,32 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("check_out", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("check_out", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckOut { get; set; }
 
         /// <summary>
         /// number of hotel visitors for this price
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("visitors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Visitors { get; set; }
+        [JsonProperty("visitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Visitors { get; set; }
 
         /// <summary>
         /// encountered item types
         /// <br/>types of search engine results encountered in the items array;
         /// <br/>possible item types: hotel_search_item
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<HotelPriceItemInfo> Items { get; set; }
+        [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<HotelPriceItemInfo> Items { get; set; }
+        [JsonProperty("prices_by_dates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<PricesByDates> PricesByDates { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,24 +1,36 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("product_information_details_item", typeof(ProductInformationDetailsItem))]
+    [JsonInheritance("product_information_text_item", typeof(ProductInformationTextItem))]
+    [JsonInheritance("product_information_extended_item", typeof(ProductInformationExtendedItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("product_information_details_item", typeof(ProductInformationDetailsItem))]
-    [JsonInheritanceAttribute("product_information_text_item", typeof(ProductInformationTextItem))]
-    [JsonInheritanceAttribute("product_information_extended_item", typeof(ProductInformationExtendedItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseProductInformationItem
+    public class BaseProductInformationItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// name of the section related to product information specified in the contents
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("section_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("section_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SectionName { get; set; }
 
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

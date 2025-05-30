@@ -1,80 +1,83 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem
+    public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem 
     {
+
         /// <summary>
         /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
         /// categories for which domains are collected
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("top_categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<int?> TopCategories { get; set; }
+        [JsonProperty("top_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<double?> TopCategories { get; set; }
 
         /// <summary>
         /// current organic ETV of the domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("organic_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("organic_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? OrganicEtv { get; set; }
 
         /// <summary>
         /// current total count of organic SERPs that contain the domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("organic_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? OrganicCount { get; set; }
+        [JsonProperty("organic_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? OrganicCount { get; set; }
 
         /// <summary>
         /// current number of lost ranked elements
         /// <br/>indicates how many ranked elements of the domain were previously presented in SERPs, but weren’t found during the last check
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("organic_is_lost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OrganicIsLost { get; set; }
+        [JsonProperty("organic_is_lost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? OrganicIsLost { get; set; }
 
         /// <summary>
         /// current number of new ranked elements
         /// <br/>indicates how many new ranked elements were found for the domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("organic_is_new", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OrganicIsNew { get; set; }
+        [JsonProperty("organic_is_new", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? OrganicIsNew { get; set; }
 
         /// <summary>
         /// domain found for the specified category
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
         /// primary domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("main_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("main_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MainDomain { get; set; }
 
         /// <summary>
         /// historical ranking and traffic data of the domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("metrics_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo>> MetricsHistory { get; set; }
+        [JsonProperty("metrics_history", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IDictionary<string, DataforseoLabsMetricsInfo>> MetricsHistory { get; set; }
 
         /// <summary>
         /// metrics difference between first_date and second_date
         /// <br/>calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("metrics_difference", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> MetricsDifference { get; set; }
+        [JsonProperty("metrics_difference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, DataforseoLabsMetricsInfo> MetricsDifference { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

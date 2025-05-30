@@ -1,67 +1,70 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class TopicInfo
+    public class TopicInfo 
     {
+
         /// <summary>
         /// meta title
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("h_title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("h_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HTitle { get; set; }
 
         /// <summary>
         /// main title of the block
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("main_title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("main_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MainTitle { get; set; }
 
         /// <summary>
         /// content author name
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("author", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("author", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Author { get; set; }
 
         /// <summary>
         /// content language
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Language { get; set; }
 
         /// <summary>
         /// HTML level
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("level", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Level { get; set; }
+        [JsonProperty("level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Level { get; set; }
 
         /// <summary>
         /// primary content on the page
         /// <br/>you can find more information about content priority calculation in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("primary_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<SectionContentItemInfo> PrimaryContent { get; set; }
+        [JsonProperty("primary_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<SectionContentItemInfo> PrimaryContent { get; set; }
 
         /// <summary>
         /// secondary content on the page
         /// <br/>you can find more information about content priority calculation in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("secondary_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<SectionContentItemInfo> SecondaryContent { get; set; }
+        [JsonProperty("secondary_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<SectionContentItemInfo> SecondaryContent { get; set; }
 
         /// <summary>
         /// content of the table on the page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("table_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<TableContentInfo> TableContent { get; set; }
+        [JsonProperty("table_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<TableContentInfo> TableContent { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

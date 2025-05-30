@@ -1,76 +1,80 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("paid", typeof(PaidSerpElementItem))]
+    [JsonInheritance("organic", typeof(OrganicSerpElementItem))]
+    [JsonInheritance("featured_snippet", typeof(FeaturedSnippetSerpElementItem))]
+    [JsonInheritance("knowledge_graph_carousel_item", typeof(KnowledgeGraphCarouselItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_description_item", typeof(KnowledgeGraphDescriptionItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_list_item", typeof(KnowledgeGraphListItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_row_item", typeof(KnowledgeGraphRowItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_expanded_item", typeof(KnowledgeGraphExpandedItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_part_item", typeof(KnowledgeGraphPartItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_shopping_item", typeof(KnowledgeGraphShoppingItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_hotels_booking_item", typeof(KnowledgeGraphHotelsBookingItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph_ai_overview_item", typeof(KnowledgeGraphAiOverviewItemSerpElementItem))]
+    [JsonInheritance("knowledge_graph", typeof(KnowledgeGraphSerpElementItem))]
+    [JsonInheritance("top_stories", typeof(TopStoriesSerpElementItem))]
+    [JsonInheritance("people_also_ask", typeof(PeopleAlsoAskSerpElementItem))]
+    [JsonInheritance("people_also_search", typeof(PeopleAlsoSearchSerpElementItem))]
+    [JsonInheritance("images", typeof(ImagesSerpElementItem))]
+    [JsonInheritance("twitter", typeof(TwitterSerpElementItem))]
+    [JsonInheritance("google_reviews", typeof(GoogleReviewsSerpElementItem))]
+    [JsonInheritance("jobs", typeof(JobsSerpElementItem))]
+    [JsonInheritance("map", typeof(MapSerpElementItem))]
+    [JsonInheritance("app", typeof(AppSerpElementItem))]
+    [JsonInheritance("local_pack", typeof(LocalPackSerpElementItem))]
+    [JsonInheritance("carousel", typeof(CarouselSerpElementItem))]
+    [JsonInheritance("video", typeof(VideoSerpElementItem))]
+    [JsonInheritance("answer_box", typeof(AnswerBoxSerpElementItem))]
+    [JsonInheritance("shopping", typeof(ShoppingSerpElementItem))]
+    [JsonInheritance("google_flights", typeof(GoogleFlightsSerpElementItem))]
+    [JsonInheritance("mention_carousel", typeof(MentionCarouselSerpElementItem))]
+    [JsonInheritance("events", typeof(EventsSerpElementItem))]
+    [JsonInheritance("related_searches", typeof(RelatedSearchesSerpElementItem))]
+    [JsonInheritance("multi_carousel", typeof(MultiCarouselSerpElementItem))]
+    [JsonInheritance("recipes", typeof(RecipesSerpElementItem))]
+    [JsonInheritance("top_sights", typeof(TopSightsSerpElementItem))]
+    [JsonInheritance("scholarly_articles", typeof(ScholarlyArticlesSerpElementItem))]
+    [JsonInheritance("popular_products", typeof(PopularProductsSerpElementItem))]
+    [JsonInheritance("podcasts", typeof(PodcastsSerpElementItem))]
+    [JsonInheritance("stocks_box", typeof(StocksBoxSerpElementItem))]
+    [JsonInheritance("find_results_on", typeof(FindResultsOnSerpElementItem))]
+    [JsonInheritance("questions_and_answers", typeof(QuestionsAndAnswersSerpElementItem))]
+    [JsonInheritance("hotels_pack", typeof(HotelsPackSerpElementItem))]
+    [JsonInheritance("visual_stories", typeof(VisualStoriesSerpElementItem))]
+    [JsonInheritance("commercial_units", typeof(CommercialUnitsSerpElementItem))]
+    [JsonInheritance("local_services", typeof(LocalServicesSerpElementItem))]
+    [JsonInheritance("google_hotels", typeof(GoogleHotelsSerpElementItem))]
+    [JsonInheritance("math_solver", typeof(MathSolverSerpElementItem))]
+    [JsonInheritance("currency_box", typeof(CurrencyBoxSerpElementItem))]
+    [JsonInheritance("google_posts", typeof(GooglePostsSerpElementItem))]
+    [JsonInheritance("product_considerations", typeof(ProductConsiderationsSerpElementItem))]
+    [JsonInheritance("found_on_web", typeof(FoundOnWebSerpElementItem))]
+    [JsonInheritance("short_videos", typeof(ShortVideosSerpElementItem))]
+    [JsonInheritance("refine_products", typeof(RefineProductsSerpElementItem))]
+    [JsonInheritance("explore_brands", typeof(ExploreBrandsSerpElementItem))]
+    [JsonInheritance("perspectives", typeof(PerspectivesSerpElementItem))]
+    [JsonInheritance("discussions_and_forums", typeof(DiscussionsAndForumsSerpElementItem))]
+    [JsonInheritance("compare_sites", typeof(CompareSitesSerpElementItem))]
+    [JsonInheritance("courses", typeof(CoursesSerpElementItem))]
+    [JsonInheritance("ai_overview", typeof(AiOverviewSerpElementItem))]
+    [JsonInheritance("third_party_reviews", typeof(ThirdPartyReviewsSerpElementItem))]
+    [JsonInheritance("event_item", typeof(EventItemSerpElementItem))]
+    [JsonInheritance("dictionary", typeof(DictionarySerpElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("paid", typeof(PaidSerpElementItem))]
-    [JsonInheritanceAttribute("organic", typeof(OrganicSerpElementItem))]
-    [JsonInheritanceAttribute("featured_snippet", typeof(FeaturedSnippetSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_carousel_item", typeof(KnowledgeGraphCarouselItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_description_item", typeof(KnowledgeGraphDescriptionItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_list_item", typeof(KnowledgeGraphListItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_row_item", typeof(KnowledgeGraphRowItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_expanded_item", typeof(KnowledgeGraphExpandedItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_part_item", typeof(KnowledgeGraphPartItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_shopping_item", typeof(KnowledgeGraphShoppingItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_hotels_booking_item", typeof(KnowledgeGraphHotelsBookingItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph_ai_overview_item", typeof(KnowledgeGraphAiOverviewItemSerpElementItem))]
-    [JsonInheritanceAttribute("knowledge_graph", typeof(KnowledgeGraphSerpElementItem))]
-    [JsonInheritanceAttribute("top_stories", typeof(TopStoriesSerpElementItem))]
-    [JsonInheritanceAttribute("people_also_ask", typeof(PeopleAlsoAskSerpElementItem))]
-    [JsonInheritanceAttribute("people_also_search", typeof(PeopleAlsoSearchSerpElementItem))]
-    [JsonInheritanceAttribute("images", typeof(ImagesSerpElementItem))]
-    [JsonInheritanceAttribute("twitter", typeof(TwitterSerpElementItem))]
-    [JsonInheritanceAttribute("google_reviews", typeof(GoogleReviewsSerpElementItem))]
-    [JsonInheritanceAttribute("jobs", typeof(JobsSerpElementItem))]
-    [JsonInheritanceAttribute("map", typeof(MapSerpElementItem))]
-    [JsonInheritanceAttribute("app", typeof(AppSerpElementItem))]
-    [JsonInheritanceAttribute("local_pack", typeof(LocalPackSerpElementItem))]
-    [JsonInheritanceAttribute("carousel", typeof(CarouselSerpElementItem))]
-    [JsonInheritanceAttribute("video", typeof(VideoSerpElementItem))]
-    [JsonInheritanceAttribute("answer_box", typeof(AnswerBoxSerpElementItem))]
-    [JsonInheritanceAttribute("shopping", typeof(ShoppingSerpElementItem))]
-    [JsonInheritanceAttribute("google_flights", typeof(GoogleFlightsSerpElementItem))]
-    [JsonInheritanceAttribute("mention_carousel", typeof(MentionCarouselSerpElementItem))]
-    [JsonInheritanceAttribute("events", typeof(EventsSerpElementItem))]
-    [JsonInheritanceAttribute("related_searches", typeof(RelatedSearchesSerpElementItem))]
-    [JsonInheritanceAttribute("multi_carousel", typeof(MultiCarouselSerpElementItem))]
-    [JsonInheritanceAttribute("recipes", typeof(RecipesSerpElementItem))]
-    [JsonInheritanceAttribute("top_sights", typeof(TopSightsSerpElementItem))]
-    [JsonInheritanceAttribute("scholarly_articles", typeof(ScholarlyArticlesSerpElementItem))]
-    [JsonInheritanceAttribute("popular_products", typeof(PopularProductsSerpElementItem))]
-    [JsonInheritanceAttribute("podcasts", typeof(PodcastsSerpElementItem))]
-    [JsonInheritanceAttribute("stocks_box", typeof(StocksBoxSerpElementItem))]
-    [JsonInheritanceAttribute("find_results_on", typeof(FindResultsOnSerpElementItem))]
-    [JsonInheritanceAttribute("questions_and_answers", typeof(QuestionsAndAnswersSerpElementItem))]
-    [JsonInheritanceAttribute("hotels_pack", typeof(HotelsPackSerpElementItem))]
-    [JsonInheritanceAttribute("visual_stories", typeof(VisualStoriesSerpElementItem))]
-    [JsonInheritanceAttribute("commercial_units", typeof(CommercialUnitsSerpElementItem))]
-    [JsonInheritanceAttribute("local_services", typeof(LocalServicesSerpElementItem))]
-    [JsonInheritanceAttribute("google_hotels", typeof(GoogleHotelsSerpElementItem))]
-    [JsonInheritanceAttribute("math_solver", typeof(MathSolverSerpElementItem))]
-    [JsonInheritanceAttribute("currency_box", typeof(CurrencyBoxSerpElementItem))]
-    [JsonInheritanceAttribute("google_posts", typeof(GooglePostsSerpElementItem))]
-    [JsonInheritanceAttribute("product_considerations", typeof(ProductConsiderationsSerpElementItem))]
-    [JsonInheritanceAttribute("found_on_web", typeof(FoundOnWebSerpElementItem))]
-    [JsonInheritanceAttribute("short_videos", typeof(ShortVideosSerpElementItem))]
-    [JsonInheritanceAttribute("refine_products", typeof(RefineProductsSerpElementItem))]
-    [JsonInheritanceAttribute("explore_brands", typeof(ExploreBrandsSerpElementItem))]
-    [JsonInheritanceAttribute("perspectives", typeof(PerspectivesSerpElementItem))]
-    [JsonInheritanceAttribute("discussions_and_forums", typeof(DiscussionsAndForumsSerpElementItem))]
-    [JsonInheritanceAttribute("compare_sites", typeof(CompareSitesSerpElementItem))]
-    [JsonInheritanceAttribute("courses", typeof(CoursesSerpElementItem))]
-    [JsonInheritanceAttribute("ai_overview", typeof(AiOverviewSerpElementItem))]
-    [JsonInheritanceAttribute("third_party_reviews", typeof(ThirdPartyReviewsSerpElementItem))]
-    [JsonInheritanceAttribute("event_item", typeof(EventItemSerpElementItem))]
-    [JsonInheritanceAttribute("dictionary", typeof(DictionarySerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseSerpElementItem
+    public class BaseSerpElementItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -78,15 +82,37 @@ namespace DataForSeo.Client.Models
         /// <br/>position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
 
+        /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
+
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

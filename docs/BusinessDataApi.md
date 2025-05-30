@@ -1,3083 +1,2666 @@
 # BusinessDataApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
+
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**businessDataIdList**](BusinessDataApi.md#businessDataIdList) | **POST**  /v3/business_data/id_list  |
+[**businessDataErrors**](BusinessDataApi.md#businessDataErrors) | **POST**  /v3/business_data/errors  |
+[**businessDataBusinessListingsLocations**](BusinessDataApi.md#businessDataBusinessListingsLocations) | **GET**  /v3/business_data/business_listings/locations  |
+[**businessListingsCategories**](BusinessDataApi.md#businessListingsCategories) | **GET**  /v3/business_data/business_listings/categories  |
+[**businessListingsAvailableFilters**](BusinessDataApi.md#businessListingsAvailableFilters) | **GET**  /v3/business_data/business_listings/available_filters  |
+[**businessListingsSearchLive**](BusinessDataApi.md#businessListingsSearchLive) | **POST**  /v3/business_data/business_listings/search/live  |
+[**businessListingsCategoriesAggregationLive**](BusinessDataApi.md#businessListingsCategoriesAggregationLive) | **POST**  /v3/business_data/business_listings/categories_aggregation/live  |
+[**businessDataGoogleLocations**](BusinessDataApi.md#businessDataGoogleLocations) | **GET**  /v3/business_data/google/locations  |
+[**businessDataGoogleLocationsCountry**](BusinessDataApi.md#businessDataGoogleLocationsCountry) | **GET**  /v3/business_data/google/locations/{country}  |
+[**businessDataGoogleLanguages**](BusinessDataApi.md#businessDataGoogleLanguages) | **GET**  /v3/business_data/google/languages  |
+[**googleMyBusinessInfoTaskPost**](BusinessDataApi.md#googleMyBusinessInfoTaskPost) | **POST**  /v3/business_data/google/my_business_info/task_post  |
+[**googleMyBusinessInfoTasksReady**](BusinessDataApi.md#googleMyBusinessInfoTasksReady) | **GET**  /v3/business_data/google/my_business_info/tasks_ready  |
+[**businessDataTasksReady**](BusinessDataApi.md#businessDataTasksReady) | **GET**  /v3/business_data/tasks_ready  |
+[**googleMyBusinessInfoTaskGet**](BusinessDataApi.md#googleMyBusinessInfoTaskGet) | **GET**  /v3/business_data/google/my_business_info/task_get/{id}  |
+[**googleMyBusinessInfoLive**](BusinessDataApi.md#googleMyBusinessInfoLive) | **POST**  /v3/business_data/google/my_business_info/live  |
+[**googleMyBusinessUpdatesTaskPost**](BusinessDataApi.md#googleMyBusinessUpdatesTaskPost) | **POST**  /v3/business_data/google/my_business_updates/task_post  |
+[**googleMyBusinessUpdatesTasksReady**](BusinessDataApi.md#googleMyBusinessUpdatesTasksReady) | **GET**  /v3/business_data/google/my_business_updates/tasks_ready  |
+[**googleMyBusinessUpdatesTaskGet**](BusinessDataApi.md#googleMyBusinessUpdatesTaskGet) | **GET**  /v3/business_data/google/my_business_updates/task_get/{id}  |
+[**googleHotelSearchesTaskPost**](BusinessDataApi.md#googleHotelSearchesTaskPost) | **POST**  /v3/business_data/google/hotel_searches/task_post  |
+[**googleHotelSearchesTasksReady**](BusinessDataApi.md#googleHotelSearchesTasksReady) | **GET**  /v3/business_data/google/hotel_searches/tasks_ready  |
+[**googleHotelSearchesTaskGet**](BusinessDataApi.md#googleHotelSearchesTaskGet) | **GET**  /v3/business_data/google/hotel_searches/task_get/{id}  |
+[**googleHotelSearchesLive**](BusinessDataApi.md#googleHotelSearchesLive) | **POST**  /v3/business_data/google/hotel_searches/live  |
+[**googleHotelInfoTaskPost**](BusinessDataApi.md#googleHotelInfoTaskPost) | **POST**  /v3/business_data/google/hotel_info/task_post  |
+[**googleHotelInfoTasksReady**](BusinessDataApi.md#googleHotelInfoTasksReady) | **GET**  /v3/business_data/google/hotel_info/tasks_ready  |
+[**googleHotelInfoTaskGetAdvanced**](BusinessDataApi.md#googleHotelInfoTaskGetAdvanced) | **GET**  /v3/business_data/google/hotel_info/task_get/advanced/{id}  |
+[**googleHotelInfoTaskGetHtml**](BusinessDataApi.md#googleHotelInfoTaskGetHtml) | **GET**  /v3/business_data/google/hotel_info/task_get/html/{id}  |
+[**googleHotelInfoLiveAdvanced**](BusinessDataApi.md#googleHotelInfoLiveAdvanced) | **POST**  /v3/business_data/google/hotel_info/live/advanced  |
+[**googleHotelInfoLiveHtml**](BusinessDataApi.md#googleHotelInfoLiveHtml) | **POST**  /v3/business_data/google/hotel_info/live/html  |
+[**googleReviewsTaskPost**](BusinessDataApi.md#googleReviewsTaskPost) | **POST**  /v3/business_data/google/reviews/task_post  |
+[**googleReviewsTasksReady**](BusinessDataApi.md#googleReviewsTasksReady) | **GET**  /v3/business_data/google/reviews/tasks_ready  |
+[**googleReviewsTaskGet**](BusinessDataApi.md#googleReviewsTaskGet) | **GET**  /v3/business_data/google/reviews/task_get/{id}  |
+[**googleExtendedReviewsTaskPost**](BusinessDataApi.md#googleExtendedReviewsTaskPost) | **POST**  /v3/business_data/google/extended_reviews/task_post  |
+[**googleExtendedReviewsTasksReady**](BusinessDataApi.md#googleExtendedReviewsTasksReady) | **GET**  /v3/business_data/google/extended_reviews/tasks_ready  |
+[**googleExtendedReviewsTaskGet**](BusinessDataApi.md#googleExtendedReviewsTaskGet) | **GET**  /v3/business_data/google/extended_reviews/task_get/{id}  |
+[**googleQuestionsAndAnswersTaskPost**](BusinessDataApi.md#googleQuestionsAndAnswersTaskPost) | **POST**  /v3/business_data/google/questions_and_answers/task_post  |
+[**googleQuestionsAndAnswersTasksReady**](BusinessDataApi.md#googleQuestionsAndAnswersTasksReady) | **GET**  /v3/business_data/google/questions_and_answers/tasks_ready  |
+[**googleQuestionsAndAnswersTaskGet**](BusinessDataApi.md#googleQuestionsAndAnswersTaskGet) | **GET**  /v3/business_data/google/questions_and_answers/task_get/{id}  |
+[**googleQuestionsAndAnswersLive**](BusinessDataApi.md#googleQuestionsAndAnswersLive) | **POST**  /v3/business_data/google/questions_and_answers/live  |
+[**trustpilotSearchTaskPost**](BusinessDataApi.md#trustpilotSearchTaskPost) | **POST**  /v3/business_data/trustpilot/search/task_post  |
+[**trustpilotSearchTasksReady**](BusinessDataApi.md#trustpilotSearchTasksReady) | **GET**  /v3/business_data/trustpilot/search/tasks_ready  |
+[**trustpilotSearchTaskGet**](BusinessDataApi.md#trustpilotSearchTaskGet) | **GET**  /v3/business_data/trustpilot/search/task_get/{id}  |
+[**trustpilotReviewsTaskPost**](BusinessDataApi.md#trustpilotReviewsTaskPost) | **POST**  /v3/business_data/trustpilot/reviews/task_post  |
+[**trustpilotReviewsTasksReady**](BusinessDataApi.md#trustpilotReviewsTasksReady) | **GET**  /v3/business_data/trustpilot/reviews/tasks_ready  |
+[**trustpilotReviewsTaskGet**](BusinessDataApi.md#trustpilotReviewsTaskGet) | **GET**  /v3/business_data/trustpilot/reviews/task_get/{id}  |
+[**businessDataTripadvisorLocations**](BusinessDataApi.md#businessDataTripadvisorLocations) | **GET**  /v3/business_data/tripadvisor/locations  |
+[**businessDataTripadvisorLocationsCountry**](BusinessDataApi.md#businessDataTripadvisorLocationsCountry) | **GET**  /v3/business_data/tripadvisor/locations/{country}  |
+[**businessDataTripadvisorLanguages**](BusinessDataApi.md#businessDataTripadvisorLanguages) | **GET**  /v3/business_data/tripadvisor/languages  |
+[**tripadvisorSearchTaskPost**](BusinessDataApi.md#tripadvisorSearchTaskPost) | **POST**  /v3/business_data/tripadvisor/search/task_post  |
+[**tripadvisorSearchTasksReady**](BusinessDataApi.md#tripadvisorSearchTasksReady) | **GET**  /v3/business_data/tripadvisor/search/tasks_ready  |
+[**tripadvisorSearchTaskGet**](BusinessDataApi.md#tripadvisorSearchTaskGet) | **GET**  /v3/business_data/tripadvisor/search/task_get/{id}  |
+[**tripadvisorReviewsTaskPost**](BusinessDataApi.md#tripadvisorReviewsTaskPost) | **POST**  /v3/business_data/tripadvisor/reviews/task_post  |
+[**tripadvisorReviewsTasksReady**](BusinessDataApi.md#tripadvisorReviewsTasksReady) | **GET**  /v3/business_data/tripadvisor/reviews/tasks_ready  |
+[**tripadvisorReviewsTaskGet**](BusinessDataApi.md#tripadvisorReviewsTaskGet) | **GET**  /v3/business_data/tripadvisor/reviews/task_get/{id}  |
+[**socialMediaPinterestLive**](BusinessDataApi.md#socialMediaPinterestLive) | **POST**  /v3/business_data/social_media/pinterest/live  |
+[**socialMediaFacebookLive**](BusinessDataApi.md#socialMediaFacebookLive) | **POST**  /v3/business_data/social_media/facebook/live  |
+[**socialMediaRedditLive**](BusinessDataApi.md#socialMediaRedditLive) | **POST**  /v3/business_data/social_media/reddit/live  |
+
+<a id="businessDataIdList"></a>
+# **businessDataIdList**
+> BusinessDataIdListResponseInfo businessDataIdList()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(new List<BusinessDataIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 11:02:35 +00:00",
+        DatetimeTo = "2025-04-30 11:02:35 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataIdListRequestInfo>&gt;**](IEnumerable<BusinessDataIdListRequestInfo>.md)|  | [optional] |
 
-```csharp
-public class BusinessDataApi
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataApi](./BusinessDataApi.md)
-
-## Properties
-
-### **BaseUrl**
-
-```csharp
-public string BaseUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ReadResponseAsString**
-
-```csharp
-public bool ReadResponseAsString { get; set; }
-```
-
-#### Property Value
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
-
-## Constructors
-
-### **BusinessDataApi(HttpClient)**
-
-```csharp
-public BusinessDataApi(HttpClient httpClient)
-```
-
-#### Parameters
-
-`httpClient` HttpClient<br>
-
-## Methods
-
-### **BusinessDataIdListAsync(IEnumerable&lt;BusinessDataIdListRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataIdListResponseInfo> BusinessDataIdListAsync(IEnumerable<BusinessDataIdListRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataIdListRequestInfo&gt;](./BusinessDataIdListRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataIdListResponseInfo&gt;](./BusinessDataIdListResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Business Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/id_list/?bash'
-
-### **BusinessDataIdListAsync(IEnumerable&lt;BusinessDataIdListRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataIdListResponseInfo> BusinessDataIdListAsync(IEnumerable<BusinessDataIdListRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataIdListRequestInfo&gt;](./BusinessDataIdListRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataIdListResponseInfo&gt;](./BusinessDataIdListResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Business Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/id_list/?bash'
-
-### **BusinessDataErrorsAsync(IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataErrorsResponseInfo> BusinessDataErrorsAsync(IEnumerable<BusinessDataErrorsRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;](./BusinessDataErrorsRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataErrorsResponseInfo&gt;](./BusinessDataErrorsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
-
-### **BusinessDataErrorsAsync(IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataErrorsResponseInfo> BusinessDataErrorsAsync(IEnumerable<BusinessDataErrorsRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataErrorsRequestInfo&gt;](./BusinessDataErrorsRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataErrorsResponseInfo&gt;](./BusinessDataErrorsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/errors/?bash'
-
-### **BusinessDataBusinessListingsLocationsAsync()**
-
-```csharp
-public Task<BusinessDataBusinessListingsLocationsResponseInfo> BusinessDataBusinessListingsLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;](./BusinessDataBusinessListingsLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
-
-### **BusinessDataBusinessListingsLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataBusinessListingsLocationsResponseInfo> BusinessDataBusinessListingsLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;](./BusinessDataBusinessListingsLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash'
-
-### **BusinessListingsCategoriesAsync()**
-
-```csharp
-public Task<BusinessDataBusinessListingsCategoriesResponseInfo> BusinessListingsCategoriesAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsCategoriesResponseInfo&gt;](./BusinessDataBusinessListingsCategoriesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with the list of top categories by business count.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash'
-
-### **BusinessListingsCategoriesAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataBusinessListingsCategoriesResponseInfo> BusinessListingsCategoriesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsCategoriesResponseInfo&gt;](./BusinessDataBusinessListingsCategoriesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with the list of top categories by business count.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash'
-
-### **BusinessListingsAvailableFiltersAsync()**
-
-```csharp
-public Task<BusinessDataBusinessListingsAvailableFiltersResponseInfo> BusinessListingsAvailableFiltersAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsAvailableFiltersResponseInfo&gt;](./BusinessDataBusinessListingsAvailableFiltersResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Business Listings API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash'
-
-### **BusinessListingsAvailableFiltersAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataBusinessListingsAvailableFiltersResponseInfo> BusinessListingsAvailableFiltersAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsAvailableFiltersResponseInfo&gt;](./BusinessDataBusinessListingsAvailableFiltersResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Business Listings API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash'
-
-### **BusinessListingsSearchLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataBusinessListingsSearchLiveResponseInfo> BusinessListingsSearchLiveAsync(IEnumerable<BusinessDataBusinessListingsSearchLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;](./BusinessDataBusinessListingsSearchLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsSearchLiveResponseInfo&gt;](./BusinessDataBusinessListingsSearchLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash'
-
-### **BusinessListingsSearchLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataBusinessListingsSearchLiveResponseInfo> BusinessListingsSearchLiveAsync(IEnumerable<BusinessDataBusinessListingsSearchLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataBusinessListingsSearchLiveRequestInfo&gt;](./BusinessDataBusinessListingsSearchLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsSearchLiveResponseInfo&gt;](./BusinessDataBusinessListingsSearchLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash'
-
-### **BusinessListingsCategoriesAggregationLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo> BusinessListingsCategoriesAggregationLiveAsync(IEnumerable<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;](./BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo&gt;](./BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash'
-
-### **BusinessListingsCategoriesAggregationLiveAsync(IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo> BusinessListingsCategoriesAggregationLiveAsync(IEnumerable<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo&gt;](./BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo&gt;](./BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash'
-
-### **BusinessDataGoogleLocationsAsync()**
-
-```csharp
-public Task<BusinessDataGoogleLocationsResponseInfo> BusinessDataGoogleLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleLocationsResponseInfo&gt;](./BusinessDataGoogleLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
-
-### **BusinessDataGoogleLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataGoogleLocationsResponseInfo> BusinessDataGoogleLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleLocationsResponseInfo&gt;](./BusinessDataGoogleLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
-
-### **BusinessDataGoogleLocationsCountryAsync(String)**
-
-```csharp
-public Task<BusinessDataGoogleLocationsCountryResponseInfo> BusinessDataGoogleLocationsCountryAsync(string country)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleLocationsCountryResponseInfo&gt;](./BusinessDataGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
-
-### **BusinessDataGoogleLocationsCountryAsync(String, CancellationToken)**
-
-```csharp
-public Task<BusinessDataGoogleLocationsCountryResponseInfo> BusinessDataGoogleLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleLocationsCountryResponseInfo&gt;](./BusinessDataGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/locations/?bash'
-
-### **BusinessDataGoogleLanguagesAsync()**
-
-```csharp
-public Task<BusinessDataGoogleLanguagesResponseInfo> BusinessDataGoogleLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleLanguagesResponseInfo&gt;](./BusinessDataGoogleLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
-
-### **BusinessDataGoogleLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataGoogleLanguagesResponseInfo> BusinessDataGoogleLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleLanguagesResponseInfo&gt;](./BusinessDataGoogleLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/languages/?bash'
-
-### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
-
-### **GoogleMyBusinessInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> GoogleMyBusinessInfoTaskPostAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash'
-
-### **GoogleMyBusinessInfoTasksReadyAsync()**
-
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo> GoogleMyBusinessInfoTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
-
-### **GoogleMyBusinessInfoTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo> GoogleMyBusinessInfoTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
-
-### **BusinessDataTasksReadyAsync()**
-
-```csharp
-public Task<BusinessDataTasksReadyResponseInfo> BusinessDataTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;BusinessDataTasksReadyResponseInfo&gt;](./BusinessDataTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
-
-### **BusinessDataTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<BusinessDataTasksReadyResponseInfo> BusinessDataTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataTasksReadyResponseInfo&gt;](./BusinessDataTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash'
-
-### **GoogleMyBusinessInfoTaskGetAsync(String)**
-
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo> GoogleMyBusinessInfoTaskGetAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_get/?bash'
 
-### **GoogleMyBusinessInfoTaskGetAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo> GoogleMyBusinessInfoTaskGetAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**BusinessDataIdListResponseInfo**](BusinessDataIdListResponseInfo.md)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Authorization
 
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="businessDataErrors"></a>
+# **businessDataErrors**
+> BusinessDataErrorsResponseInfo businessDataErrors()
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_get/?bash'
 
-### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;)**
-
+### Example
 ```csharp
-public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveRequestInfo.md)<br>
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;BusinessDataGoogleMyBusinessInfoLiveResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataErrorsAsync(new List<BusinessDataErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
+```
 
-‌‌
- <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash'
+### Parameters
 
-### **GoogleMyBusinessInfoLiveAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataErrorsRequestInfo>&gt;**](IEnumerable<BusinessDataErrorsRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> GoogleMyBusinessInfoLiveAsync(IEnumerable<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataErrorsResponseInfo**](BusinessDataErrorsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleMyBusinessInfoLiveResponseInfo&gt;](./BusinessDataGoogleMyBusinessInfoLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash'
+<a id="businessDataBusinessListingsLocations"></a>
+# **businessDataBusinessListingsLocations**
+> BusinessDataBusinessListingsLocationsResponseInfo businessDataBusinessListingsLocations()
 
-### **GoogleMyBusinessUpdatesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo> GoogleMyBusinessUpdatesTaskPostAsync(IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataBusinessListingsLocationsAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataBusinessListingsLocationsResponseInfo**](BusinessDataBusinessListingsLocationsResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleMyBusinessUpdatesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo> GoogleMyBusinessUpdatesTaskPostAsync(IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.md)<br>
+<a id="businessListingsCategories"></a>
+# **businessListingsCategories**
+> BusinessDataBusinessListingsCategoriesResponseInfo businessListingsCategories()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.BusinessDataApi.BusinessListingsCategoriesAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash'
 
-### **GoogleMyBusinessUpdatesTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo> GoogleMyBusinessUpdatesTasksReadyAsync()
-```
+[**BusinessDataBusinessListingsCategoriesResponseInfo**](BusinessDataBusinessListingsCategoriesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash'
+<a id="businessListingsAvailableFilters"></a>
+# **businessListingsAvailableFilters**
+> BusinessDataBusinessListingsAvailableFiltersResponseInfo businessListingsAvailableFilters()
 
-### **GoogleMyBusinessUpdatesTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo> GoogleMyBusinessUpdatesTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.BusinessDataApi.BusinessListingsAvailableFiltersAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash'
+[**BusinessDataBusinessListingsAvailableFiltersResponseInfo**](BusinessDataBusinessListingsAvailableFiltersResponseInfo.md)
 
-### **GoogleMyBusinessUpdatesTaskGetAsync(String)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo> GoogleMyBusinessUpdatesTaskGetAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo.md)<br>
-Successful operation
+<a id="businessListingsSearchLive"></a>
+# **businessListingsSearchLive**
+> BusinessDataBusinessListingsSearchLiveResponseInfo businessListingsSearchLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.BusinessListingsSearchLiveAsync(new List<BusinessDataBusinessListingsSearchLiveRequestInfo>()
+{
+    new()
+    {
+        Categories = new List<string>()
+        {
+            "pizza_restaurant",
+        },
+        Description = "pizza",
+        Title = "pizza",
+        IsClaimed = true,
+        LocationCoordinate = "53.476225,-2.243572,10",
+        Limit = 3,
+    }
+});
+```
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_get/?bash'
+### Parameters
 
-### **GoogleMyBusinessUpdatesTaskGetAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataBusinessListingsSearchLiveRequestInfo>&gt;**](IEnumerable<BusinessDataBusinessListingsSearchLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo> GoogleMyBusinessUpdatesTaskGetAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataBusinessListingsSearchLiveResponseInfo**](BusinessDataBusinessListingsSearchLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo&gt;](./BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_get/?bash'
+<a id="businessListingsCategoriesAggregationLive"></a>
+# **businessListingsCategoriesAggregationLive**
+> BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo businessListingsCategoriesAggregationLive()
 
-### **GoogleHotelSearchesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelSearchesTaskPostResponseInfo> GoogleHotelSearchesTaskPostAsync(IEnumerable<BusinessDataGoogleHotelSearchesTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.BusinessListingsCategoriesAggregationLiveAsync(new List<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo>()
+{
+    new()
+    {
+        Categories = new List<string>()
+        {
+            "pizza_restaurant",
+        },
+        Description = "pizza",
+        Title = "pizza",
+        IsClaimed = true,
+        LocationCoordinate = "53.476225,-2.243572,10",
+        Limit = 3,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;](./BusinessDataGoogleHotelSearchesTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo>&gt;**](IEnumerable<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskPostResponseInfo&gt;](./BusinessDataGoogleHotelSearchesTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo**](BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleHotelSearchesTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataGoogleHotelSearchesTaskPostResponseInfo> GoogleHotelSearchesTaskPostAsync(IEnumerable<BusinessDataGoogleHotelSearchesTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesTaskPostRequestInfo&gt;](./BusinessDataGoogleHotelSearchesTaskPostRequestInfo.md)<br>
+<a id="businessDataGoogleLocations"></a>
+# **businessDataGoogleLocations**
+> BusinessDataGoogleLocationsResponseInfo businessDataGoogleLocations()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskPostResponseInfo&gt;](./BusinessDataGoogleHotelSearchesTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataGoogleLocationsAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash'
 
-### **GoogleHotelSearchesTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleHotelSearchesTasksReadyResponseInfo> GoogleHotelSearchesTasksReadyAsync()
-```
+[**BusinessDataGoogleLocationsResponseInfo**](BusinessDataGoogleLocationsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelSearchesTasksReadyResponseInfo&gt;](./BusinessDataGoogleHotelSearchesTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash'
+<a id="businessDataGoogleLocationsCountry"></a>
+# **businessDataGoogleLocationsCountry**
+> BusinessDataGoogleLocationsCountryResponseInfo businessDataGoogleLocationsCountry()
 
-### **GoogleHotelSearchesTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelSearchesTasksReadyResponseInfo> GoogleHotelSearchesTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleHotelSearchesTasksReadyResponseInfo&gt;](./BusinessDataGoogleHotelSearchesTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var country = "us";
+var result = await dfsClient.BusinessDataApi.BusinessDataGoogleLocationsCountryAsync(country);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash'
 
-### **GoogleHotelSearchesTaskGetAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataGoogleHotelSearchesTaskGetResponseInfo> GoogleHotelSearchesTaskGetAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**BusinessDataGoogleLocationsCountryResponseInfo**](BusinessDataGoogleLocationsCountryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskGetResponseInfo&gt;](./BusinessDataGoogleHotelSearchesTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_get/?bash'
+<a id="businessDataGoogleLanguages"></a>
+# **businessDataGoogleLanguages**
+> BusinessDataGoogleLanguagesResponseInfo businessDataGoogleLanguages()
 
-### **GoogleHotelSearchesTaskGetAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelSearchesTaskGetResponseInfo> GoogleHotelSearchesTaskGetAsync(string id, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataGoogleLanguagesAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleHotelSearchesTaskGetResponseInfo&gt;](./BusinessDataGoogleHotelSearchesTaskGetResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_get/?bash'
+[**BusinessDataGoogleLanguagesResponseInfo**](BusinessDataGoogleLanguagesResponseInfo.md)
 
-### **GoogleHotelSearchesLiveAsync(IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleHotelSearchesLiveResponseInfo> GoogleHotelSearchesLiveAsync(IEnumerable<BusinessDataGoogleHotelSearchesLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;](./BusinessDataGoogleHotelSearchesLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleHotelSearchesLiveResponseInfo&gt;](./BusinessDataGoogleHotelSearchesLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleMyBusinessInfoTaskPost"></a>
+# **googleMyBusinessInfoTaskPost**
+> BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo googleMyBusinessInfoTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTaskPostAsync(new List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "RustyBrick, Inc.",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+    }
+});
+```
 
-‌‌
- <br>Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash'
+### Parameters
 
-### **GoogleHotelSearchesLiveAsync(IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleHotelSearchesLiveResponseInfo> GoogleHotelSearchesLiveAsync(IEnumerable<BusinessDataGoogleHotelSearchesLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelSearchesLiveRequestInfo&gt;](./BusinessDataGoogleHotelSearchesLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo**](BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelSearchesLiveResponseInfo&gt;](./BusinessDataGoogleHotelSearchesLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash'
+<a id="googleMyBusinessInfoTasksReady"></a>
+# **googleMyBusinessInfoTasksReady**
+> BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo googleMyBusinessInfoTasksReady()
 
-### **GoogleHotelInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelInfoTaskPostResponseInfo> GoogleHotelInfoTaskPostAsync(IEnumerable<BusinessDataGoogleHotelInfoTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;](./BusinessDataGoogleHotelInfoTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskPostResponseInfo&gt;](./BusinessDataGoogleHotelInfoTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo**](BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleHotelInfoTaskPostAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoTaskPostResponseInfo> GoogleHotelInfoTaskPostAsync(IEnumerable<BusinessDataGoogleHotelInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoTaskPostRequestInfo&gt;](./BusinessDataGoogleHotelInfoTaskPostRequestInfo.md)<br>
+<a id="businessDataTasksReady"></a>
+# **businessDataTasksReady**
+> BusinessDataTasksReadyResponseInfo businessDataTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskPostResponseInfo&gt;](./BusinessDataGoogleHotelInfoTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash'
 
-### **GoogleHotelInfoTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoTasksReadyResponseInfo> GoogleHotelInfoTasksReadyAsync()
-```
+[**BusinessDataTasksReadyResponseInfo**](BusinessDataTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelInfoTasksReadyResponseInfo&gt;](./BusinessDataGoogleHotelInfoTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash'
+<a id="googleMyBusinessInfoTaskGet"></a>
+# **googleMyBusinessInfoTaskGet**
+> BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo googleMyBusinessInfoTaskGet()
 
-### **GoogleHotelInfoTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelInfoTasksReadyResponseInfo> GoogleHotelInfoTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTaskGetAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleHotelInfoTasksReadyResponseInfo&gt;](./BusinessDataGoogleHotelInfoTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash'
+[**BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo**](BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo.md)
 
-### **GoogleHotelInfoTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo> GoogleHotelInfoTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo&gt;](./BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="googleMyBusinessInfoLive"></a>
+# **googleMyBusinessInfoLive**
+> BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoLiveAsync(new List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "RustyBrick, Inc.",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+    }
+});
+```
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_get/advanced/?bash'
+### Parameters
 
-### **GoogleHotelInfoTaskGetAdvancedAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleMyBusinessInfoLiveRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleMyBusinessInfoLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo> GoogleHotelInfoTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleMyBusinessInfoLiveResponseInfo**](BusinessDataGoogleMyBusinessInfoLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo&gt;](./BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_get/advanced/?bash'
+<a id="googleMyBusinessUpdatesTaskPost"></a>
+# **googleMyBusinessUpdatesTaskPost**
+> BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo googleMyBusinessUpdatesTaskPost()
 
-### **GoogleHotelInfoTaskGetHtmlAsync(String)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo> GoogleHotelInfoTaskGetHtmlAsync(string id)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+});
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTaskPostAsync(new List<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "RustyBrick, Inc.",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo&gt;](./BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_get/html/?bash'
+[**BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo**](BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo.md)
 
-### **GoogleHotelInfoTaskGetHtmlAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo> GoogleHotelInfoTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleMyBusinessUpdatesTasksReady"></a>
+# **googleMyBusinessUpdatesTasksReady**
+> BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo googleMyBusinessUpdatesTasksReady()
 
-[Task&lt;BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo&gt;](./BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_get/html/?bash'
 
-### **GoogleHotelInfoLiveAdvancedAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo> GoogleHotelInfoLiveAdvancedAsync(IEnumerable<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;](./BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo.md)<br>
+[**BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo**](BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo&gt;](./BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash'
+<a id="googleMyBusinessUpdatesTaskGet"></a>
+# **googleMyBusinessUpdatesTaskGet**
+> BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo googleMyBusinessUpdatesTaskGet()
 
-### **GoogleHotelInfoLiveAdvancedAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo> GoogleHotelInfoLiveAdvancedAsync(IEnumerable<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo&gt;](./BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTaskGetAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo&gt;](./BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash'
+[**BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo**](BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo.md)
 
-### **GoogleHotelInfoLiveHtmlAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoLiveHtmlResponseInfo> GoogleHotelInfoLiveHtmlAsync(IEnumerable<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;](./BusinessDataGoogleHotelInfoLiveHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveHtmlResponseInfo&gt;](./BusinessDataGoogleHotelInfoLiveHtmlResponseInfo.md)<br>
-Successful operation
+<a id="googleHotelSearchesTaskPost"></a>
+# **googleHotelSearchesTaskPost**
+> BusinessDataGoogleHotelSearchesTaskPostResponseInfo googleHotelSearchesTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskPostAsync(new List<BusinessDataGoogleHotelSearchesTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "cheap hotel",
+        Priority = 2,
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+        CheckIn = "2023-06-01",
+        CheckOut = "2023-06-30",
+        Currency = "USD",
+        Adults = 2,
+        Children = new List<string>()
+        {
+            "14",
+        },
+        SortBy = "highest_rating",
+        Tag = "example",
+    }
+});
+```
 
-‌‌
- <br>Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash'
+### Parameters
 
-### **GoogleHotelInfoLiveHtmlAsync(IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleHotelSearchesTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleHotelSearchesTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleHotelInfoLiveHtmlResponseInfo> GoogleHotelInfoLiveHtmlAsync(IEnumerable<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleHotelInfoLiveHtmlRequestInfo&gt;](./BusinessDataGoogleHotelInfoLiveHtmlRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleHotelSearchesTaskPostResponseInfo**](BusinessDataGoogleHotelSearchesTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleHotelInfoLiveHtmlResponseInfo&gt;](./BusinessDataGoogleHotelInfoLiveHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash'
+<a id="googleHotelSearchesTasksReady"></a>
+# **googleHotelSearchesTasksReady**
+> BusinessDataGoogleHotelSearchesTasksReadyResponseInfo googleHotelSearchesTasksReady()
 
-### **GoogleReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleReviewsTaskPostResponseInfo> GoogleReviewsTaskPostAsync(IEnumerable<BusinessDataGoogleReviewsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;](./BusinessDataGoogleReviewsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;BusinessDataGoogleReviewsTaskPostResponseInfo&gt;](./BusinessDataGoogleReviewsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataGoogleHotelSearchesTasksReadyResponseInfo**](BusinessDataGoogleHotelSearchesTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataGoogleReviewsTaskPostResponseInfo> GoogleReviewsTaskPostAsync(IEnumerable<BusinessDataGoogleReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataGoogleReviewsTaskPostRequestInfo&gt;](./BusinessDataGoogleReviewsTaskPostRequestInfo.md)<br>
+<a id="googleHotelSearchesTaskGet"></a>
+# **googleHotelSearchesTaskGet**
+> BusinessDataGoogleHotelSearchesTaskGetResponseInfo googleHotelSearchesTaskGet()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataGoogleReviewsTaskPostResponseInfo&gt;](./BusinessDataGoogleReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskGetAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash'
 
-### **GoogleReviewsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleReviewsTasksReadyResponseInfo> GoogleReviewsTasksReadyAsync()
-```
+[**BusinessDataGoogleHotelSearchesTaskGetResponseInfo**](BusinessDataGoogleHotelSearchesTaskGetResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleReviewsTasksReadyResponseInfo&gt;](./BusinessDataGoogleReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash'
+<a id="googleHotelSearchesLive"></a>
+# **googleHotelSearchesLive**
+> BusinessDataGoogleHotelSearchesLiveResponseInfo googleHotelSearchesLive()
 
-### **GoogleReviewsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleReviewsTasksReadyResponseInfo> GoogleReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesLiveAsync(new List<BusinessDataGoogleHotelSearchesLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "cheap hotel",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+        CheckIn = "2023-06-01",
+        CheckOut = "2023-06-30",
+        Currency = "USD",
+        Adults = 2,
+        Children = new List<string>()
+        {
+            "14",
+        },
+        SortBy = "highest_rating",
+        Tag = "example",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleReviewsTasksReadyResponseInfo&gt;](./BusinessDataGoogleReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleHotelSearchesLiveRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleHotelSearchesLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash'
+[**BusinessDataGoogleHotelSearchesLiveResponseInfo**](BusinessDataGoogleHotelSearchesLiveResponseInfo.md)
 
-### **GoogleReviewsTaskGetAsync(String)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleReviewsTaskGetResponseInfo> GoogleReviewsTaskGetAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleReviewsTaskGetResponseInfo&gt;](./BusinessDataGoogleReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+<a id="googleHotelInfoTaskPost"></a>
+# **googleHotelInfoTaskPost**
+> BusinessDataGoogleHotelInfoTaskPostResponseInfo googleHotelInfoTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskPostAsync(new List<BusinessDataGoogleHotelInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        HotelIdentifier = "ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+        Tag = "some_string_123",
+        PostbackUrl = "https://your-server.com/postbackscript.php",
+        PostbackData = "advanced",
+    }
+});
+```
 
-The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
+### Parameters
 
-### **GoogleReviewsTaskGetAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleHotelInfoTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleHotelInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleReviewsTaskGetResponseInfo> GoogleReviewsTaskGetAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleHotelInfoTaskPostResponseInfo**](BusinessDataGoogleHotelInfoTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleReviewsTaskGetResponseInfo&gt;](./BusinessDataGoogleReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash'
+<a id="googleHotelInfoTasksReady"></a>
+# **googleHotelInfoTasksReady**
+> BusinessDataGoogleHotelInfoTasksReadyResponseInfo googleHotelInfoTasksReady()
 
-### **GoogleExtendedReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> GoogleExtendedReviewsTaskPostAsync(IEnumerable<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;BusinessDataGoogleExtendedReviewsTaskPostResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataGoogleHotelInfoTasksReadyResponseInfo**](BusinessDataGoogleHotelInfoTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleExtendedReviewsTaskPostAsync(IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> GoogleExtendedReviewsTaskPostAsync(IEnumerable<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostRequestInfo.md)<br>
+<a id="googleHotelInfoTaskGetAdvanced"></a>
+# **googleHotelInfoTaskGetAdvanced**
+> BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo googleHotelInfoTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataGoogleExtendedReviewsTaskPostResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash'
 
-### **GoogleExtendedReviewsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> GoogleExtendedReviewsTasksReadyAsync()
-```
+[**BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo**](BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash'
+<a id="googleHotelInfoTaskGetHtml"></a>
+# **googleHotelInfoTaskGetHtml**
+> BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo googleHotelInfoTaskGetHtml()
 
-### **GoogleExtendedReviewsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> GoogleExtendedReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "88fa2621-45d1-4372-9005-b75cdbbb812f";
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskGetHtmlAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash'
+[**BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo**](BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo.md)
 
-### **GoogleExtendedReviewsTaskGetAsync(String)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> GoogleExtendedReviewsTaskGetAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleExtendedReviewsTaskGetResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+<a id="googleHotelInfoLiveAdvanced"></a>
+# **googleHotelInfoLiveAdvanced**
+> BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo googleHotelInfoLiveAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveAdvancedAsync(new List<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        HotelIdentifier = "CgoI-KWyzenM_MV3EAE",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+    }
+});
+```
 
-The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash'
+### Parameters
 
-### **GoogleExtendedReviewsTaskGetAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> GoogleExtendedReviewsTaskGetAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo**](BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleExtendedReviewsTaskGetResponseInfo&gt;](./BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash'
+<a id="googleHotelInfoLiveHtml"></a>
+# **googleHotelInfoLiveHtml**
+> BusinessDataGoogleHotelInfoLiveHtmlResponseInfo googleHotelInfoLiveHtml()
 
-### **GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveHtmlAsync(new List<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        HotelIdentifier = "ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE",
+        LocationName = "New York,New York,United States",
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataGoogleHotelInfoLiveHtmlResponseInfo**](BusinessDataGoogleHotelInfoLiveHtmlResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
- <br> 
- <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br> 
- <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> GoogleQuestionsAndAnswersTaskPostAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)<br>
+<a id="googleReviewsTaskPost"></a>
+# **googleReviewsTaskPost**
+> BusinessDataGoogleReviewsTaskPostResponseInfo googleReviewsTaskPost()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.BusinessDataApi.GoogleReviewsTaskPostAsync(new List<BusinessDataGoogleReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "hedonism wines",
+        LocationName = "London,England,United Kingdom",
+        LanguageName = "English",
+        Depth = 50,
+        SortBy = "highest_rating",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleReviewsTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌‌
- <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
- <br> 
- <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br> 
- <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash'
 
-### **GoogleQuestionsAndAnswersTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync()
-```
+[**BusinessDataGoogleReviewsTaskPostResponseInfo**](BusinessDataGoogleReviewsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash'
+<a id="googleReviewsTasksReady"></a>
+# **googleReviewsTasksReady**
+> BusinessDataGoogleReviewsTasksReadyResponseInfo googleReviewsTasksReady()
 
-### **GoogleQuestionsAndAnswersTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> GoogleQuestionsAndAnswersTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.BusinessDataApi.GoogleReviewsTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash'
 
-### **GoogleQuestionsAndAnswersTaskGetAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> GoogleQuestionsAndAnswersTaskGetAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**BusinessDataGoogleReviewsTasksReadyResponseInfo**](BusinessDataGoogleReviewsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash'
+<a id="googleReviewsTaskGet"></a>
+# **googleReviewsTaskGet**
+> BusinessDataGoogleReviewsTaskGetResponseInfo googleReviewsTaskGet()
 
-### **GoogleQuestionsAndAnswersTaskGetAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> GoogleQuestionsAndAnswersTaskGetAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleReviewsTaskGetAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash'
+[**BusinessDataGoogleReviewsTaskGetResponseInfo**](BusinessDataGoogleReviewsTaskGetResponseInfo.md)
 
-### **GoogleQuestionsAndAnswersLiveAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo.md)<br>
-Successful operation
+<a id="googleExtendedReviewsTaskPost"></a>
+# **googleExtendedReviewsTaskPost**
+> BusinessDataGoogleExtendedReviewsTaskPostResponseInfo googleExtendedReviewsTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTaskPostAsync(new List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Cid = "17626775537598922320",
+        LocationName = "London,England,United Kingdom",
+        LanguageName = "english",
+    }
+});
+```
 
-‌‌
- <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
- <br> 
- <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br> 
- <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash'
+### Parameters
 
-### **GoogleQuestionsAndAnswersLiveAsync(IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> GoogleQuestionsAndAnswersLiveAsync(IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleExtendedReviewsTaskPostResponseInfo**](BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo&gt;](./BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.
- <br> 
- <br>The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br> 
- <br>Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash'
+<a id="googleExtendedReviewsTasksReady"></a>
+# **googleExtendedReviewsTasksReady**
+> BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo googleExtendedReviewsTasksReady()
 
-### **TrustpilotSearchTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataTrustpilotSearchTaskPostResponseInfo> TrustpilotSearchTaskPostAsync(IEnumerable<BusinessDataTrustpilotSearchTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;](./BusinessDataTrustpilotSearchTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;BusinessDataTrustpilotSearchTaskPostResponseInfo&gt;](./BusinessDataTrustpilotSearchTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo**](BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **TrustpilotSearchTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataTrustpilotSearchTaskPostResponseInfo> TrustpilotSearchTaskPostAsync(IEnumerable<BusinessDataTrustpilotSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotSearchTaskPostRequestInfo&gt;](./BusinessDataTrustpilotSearchTaskPostRequestInfo.md)<br>
+<a id="googleExtendedReviewsTaskGet"></a>
+# **googleExtendedReviewsTaskGet**
+> BusinessDataGoogleExtendedReviewsTaskGetResponseInfo googleExtendedReviewsTaskGet()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataTrustpilotSearchTaskPostResponseInfo&gt;](./BusinessDataTrustpilotSearchTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTaskGetAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash'
 
-### **TrustpilotSearchTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataTrustpilotSearchTasksReadyResponseInfo> TrustpilotSearchTasksReadyAsync()
-```
+[**BusinessDataGoogleExtendedReviewsTaskGetResponseInfo**](BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTrustpilotSearchTasksReadyResponseInfo&gt;](./BusinessDataTrustpilotSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash'
+<a id="googleQuestionsAndAnswersTaskPost"></a>
+# **googleQuestionsAndAnswersTaskPost**
+> BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo googleQuestionsAndAnswersTaskPost()
 
-### **TrustpilotSearchTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataTrustpilotSearchTasksReadyResponseInfo> TrustpilotSearchTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTaskPostAsync(new List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "The Last Bookstore",
+        LocationName = "Los Angeles,California,United States",
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataTrustpilotSearchTasksReadyResponseInfo&gt;](./BusinessDataTrustpilotSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash'
+[**BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo**](BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo.md)
 
-### **TrustpilotSearchTaskGetAsync(String)**
+### Authorization
 
-```csharp
-public Task<BusinessDataTrustpilotSearchTaskGetResponseInfo> TrustpilotSearchTaskGetAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataTrustpilotSearchTaskGetResponseInfo&gt;](./BusinessDataTrustpilotSearchTaskGetResponseInfo.md)<br>
-Successful operation
+<a id="googleQuestionsAndAnswersTasksReady"></a>
+# **googleQuestionsAndAnswersTasksReady**
+> BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo googleQuestionsAndAnswersTasksReady()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTasksReadyAsync();
+```
 
-This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the keyword specified in a POST request. We emulate set parameters with the highest accuracy so that the results you receive match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus will not be reflected in the returned results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash'
+### Parameters
 
-### **TrustpilotSearchTaskGetAsync(String, CancellationToken)**
 
-```csharp
-public Task<BusinessDataTrustpilotSearchTaskGetResponseInfo> TrustpilotSearchTaskGetAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo**](BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTrustpilotSearchTaskGetResponseInfo&gt;](./BusinessDataTrustpilotSearchTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the keyword specified in a POST request. We emulate set parameters with the highest accuracy so that the results you receive match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus will not be reflected in the returned results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash'
+<a id="googleQuestionsAndAnswersTaskGet"></a>
+# **googleQuestionsAndAnswersTaskGet**
+> BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo googleQuestionsAndAnswersTaskGet()
 
-### **TrustpilotReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataTrustpilotReviewsTaskPostResponseInfo> TrustpilotReviewsTaskPostAsync(IEnumerable<BusinessDataTrustpilotReviewsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTaskGetAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;](./BusinessDataTrustpilotReviewsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskPostResponseInfo&gt;](./BusinessDataTrustpilotReviewsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo**](BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **TrustpilotReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataTrustpilotReviewsTaskPostResponseInfo> TrustpilotReviewsTaskPostAsync(IEnumerable<BusinessDataTrustpilotReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;BusinessDataTrustpilotReviewsTaskPostRequestInfo&gt;](./BusinessDataTrustpilotReviewsTaskPostRequestInfo.md)<br>
+<a id="googleQuestionsAndAnswersLive"></a>
+# **googleQuestionsAndAnswersLive**
+> BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo googleQuestionsAndAnswersLive()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskPostResponseInfo&gt;](./BusinessDataTrustpilotReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersLiveAsync(new List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "The Last Bookstore",
+        LocationName = "Los Angeles,California,United States",
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo>&gt;**](IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌‌
- <br>This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash'
 
-### **TrustpilotReviewsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataTrustpilotReviewsTasksReadyResponseInfo> TrustpilotReviewsTasksReadyAsync()
-```
+[**BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo**](BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTrustpilotReviewsTasksReadyResponseInfo&gt;](./BusinessDataTrustpilotReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash'
+<a id="trustpilotSearchTaskPost"></a>
+# **trustpilotSearchTaskPost**
+> BusinessDataTrustpilotSearchTaskPostResponseInfo trustpilotSearchTaskPost()
 
-### **TrustpilotReviewsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataTrustpilotReviewsTasksReadyResponseInfo> TrustpilotReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;BusinessDataTrustpilotReviewsTasksReadyResponseInfo&gt;](./BusinessDataTrustpilotReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.BusinessDataApi.TrustpilotSearchTaskPostAsync(new List<BusinessDataTrustpilotSearchTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "pizza restaurant",
+        Depth = 20,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataTrustpilotSearchTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataTrustpilotSearchTaskPostRequestInfo>.md)|  | [optional] |
 
-### **TrustpilotReviewsTaskGetAsync(String)**
 
-```csharp
-public Task<BusinessDataTrustpilotReviewsTaskGetResponseInfo> TrustpilotReviewsTaskGetAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**BusinessDataTrustpilotSearchTaskPostResponseInfo**](BusinessDataTrustpilotSearchTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskGetResponseInfo&gt;](./BusinessDataTrustpilotReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint provides reviews published on the Trustpilot platform The returned results are specific to the indicated business entity. We emulate set parameters with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash'
+<a id="trustpilotSearchTasksReady"></a>
+# **trustpilotSearchTasksReady**
+> BusinessDataTrustpilotSearchTasksReadyResponseInfo trustpilotSearchTasksReady()
 
-### **TrustpilotReviewsTaskGetAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataTrustpilotReviewsTaskGetResponseInfo> TrustpilotReviewsTaskGetAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.TrustpilotSearchTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;BusinessDataTrustpilotReviewsTaskGetResponseInfo&gt;](./BusinessDataTrustpilotReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**BusinessDataTrustpilotSearchTasksReadyResponseInfo**](BusinessDataTrustpilotSearchTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint provides reviews published on the Trustpilot platform The returned results are specific to the indicated business entity. We emulate set parameters with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash'
+### HTTP request headers
 
-### **BusinessDataTripadvisorLocationsAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<BusinessDataTripadvisorLocationsResponseInfo> BusinessDataTripadvisorLocationsAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="trustpilotSearchTaskGet"></a>
+# **trustpilotSearchTaskGet**
+> BusinessDataTrustpilotSearchTaskGetResponseInfo trustpilotSearchTaskGet()
 
-[Task&lt;BusinessDataTripadvisorLocationsResponseInfo&gt;](./BusinessDataTripadvisorLocationsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.TrustpilotSearchTaskGetAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
 
-### **BusinessDataTripadvisorLocationsAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataTripadvisorLocationsResponseInfo> BusinessDataTripadvisorLocationsAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataTrustpilotSearchTaskGetResponseInfo**](BusinessDataTrustpilotSearchTaskGetResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTripadvisorLocationsResponseInfo&gt;](./BusinessDataTripadvisorLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
+<a id="trustpilotReviewsTaskPost"></a>
+# **trustpilotReviewsTaskPost**
+> BusinessDataTrustpilotReviewsTaskPostResponseInfo trustpilotReviewsTaskPost()
 
-### **BusinessDataTripadvisorLocationsCountryAsync(String)**
 
+### Example
 ```csharp
-public Task<BusinessDataTripadvisorLocationsCountryResponseInfo> BusinessDataTripadvisorLocationsCountryAsync(string country)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTaskPostAsync(new List<BusinessDataTrustpilotReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Domain = "www.thepearlsource.com",
+        Depth = 40,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataTrustpilotReviewsTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataTrustpilotReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;BusinessDataTripadvisorLocationsCountryResponseInfo&gt;](./BusinessDataTripadvisorLocationsCountryResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**BusinessDataTrustpilotReviewsTaskPostResponseInfo**](BusinessDataTrustpilotReviewsTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **BusinessDataTripadvisorLocationsCountryAsync(String, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<BusinessDataTripadvisorLocationsCountryResponseInfo> BusinessDataTripadvisorLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+<a id="trustpilotReviewsTasksReady"></a>
+# **trustpilotReviewsTasksReady**
+> BusinessDataTrustpilotReviewsTasksReadyResponseInfo trustpilotReviewsTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataTripadvisorLocationsCountryResponseInfo&gt;](./BusinessDataTripadvisorLocationsCountryResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash'
 
-### **BusinessDataTripadvisorLanguagesAsync()**
+### Return type
 
-```csharp
-public Task<BusinessDataTripadvisorLanguagesResponseInfo> BusinessDataTripadvisorLanguagesAsync()
-```
+[**BusinessDataTrustpilotReviewsTasksReadyResponseInfo**](BusinessDataTrustpilotReviewsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTripadvisorLanguagesResponseInfo&gt;](./BusinessDataTripadvisorLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash'
+<a id="trustpilotReviewsTaskGet"></a>
+# **trustpilotReviewsTaskGet**
+> BusinessDataTrustpilotReviewsTaskGetResponseInfo trustpilotReviewsTaskGet()
 
-### **BusinessDataTripadvisorLanguagesAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataTripadvisorLanguagesResponseInfo> BusinessDataTripadvisorLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;BusinessDataTripadvisorLanguagesResponseInfo&gt;](./BusinessDataTripadvisorLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTaskGetAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash'
 
-### **TripadvisorSearchTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataTripadvisorSearchTaskPostResponseInfo> TripadvisorSearchTaskPostAsync(IEnumerable<BusinessDataTripadvisorSearchTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;](./BusinessDataTripadvisorSearchTaskPostRequestInfo.md)<br>
+[**BusinessDataTrustpilotReviewsTaskGetResponseInfo**](BusinessDataTrustpilotReviewsTaskGetResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTripadvisorSearchTaskPostResponseInfo&gt;](./BusinessDataTripadvisorSearchTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash'
+<a id="businessDataTripadvisorLocations"></a>
+# **businessDataTripadvisorLocations**
+> BusinessDataTripadvisorLocationsResponseInfo businessDataTripadvisorLocations()
 
-### **TripadvisorSearchTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataTripadvisorSearchTaskPostResponseInfo> TripadvisorSearchTaskPostAsync(IEnumerable<BusinessDataTripadvisorSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLocationsAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorSearchTaskPostRequestInfo&gt;](./BusinessDataTripadvisorSearchTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;BusinessDataTripadvisorSearchTaskPostResponseInfo&gt;](./BusinessDataTripadvisorSearchTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**BusinessDataTripadvisorLocationsResponseInfo**](BusinessDataTripadvisorLocationsResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash'
+### HTTP request headers
 
-### **TripadvisorSearchTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<BusinessDataTripadvisorSearchTasksReadyResponseInfo> TripadvisorSearchTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="businessDataTripadvisorLocationsCountry"></a>
+# **businessDataTripadvisorLocationsCountry**
+> BusinessDataTripadvisorLocationsCountryResponseInfo businessDataTripadvisorLocationsCountry()
 
-[Task&lt;BusinessDataTripadvisorSearchTasksReadyResponseInfo&gt;](./BusinessDataTripadvisorSearchTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var country = "us";
+var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLocationsCountryAsync(country);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash'
 
-### **TripadvisorSearchTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataTripadvisorSearchTasksReadyResponseInfo> TripadvisorSearchTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataTripadvisorLocationsCountryResponseInfo**](BusinessDataTripadvisorLocationsCountryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTripadvisorSearchTasksReadyResponseInfo&gt;](./BusinessDataTripadvisorSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash'
+<a id="businessDataTripadvisorLanguages"></a>
+# **businessDataTripadvisorLanguages**
+> BusinessDataTripadvisorLanguagesResponseInfo businessDataTripadvisorLanguages()
 
-### **TripadvisorSearchTaskGetAsync(String)**
 
+### Example
 ```csharp
-public Task<BusinessDataTripadvisorSearchTaskGetResponseInfo> TripadvisorSearchTaskGetAsync(string id)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLanguagesAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataTripadvisorSearchTaskGetResponseInfo&gt;](./BusinessDataTripadvisorSearchTaskGetResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-This endpoint will provide you with data on businesses listed on the Tripadvisor platform. The results obtained through this endpoint are specific to the location (see the List of Tripadvisor Locations) and keyword parameters used in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash'
+[**BusinessDataTripadvisorLanguagesResponseInfo**](BusinessDataTripadvisorLanguagesResponseInfo.md)
 
-### **TripadvisorSearchTaskGetAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<BusinessDataTripadvisorSearchTaskGetResponseInfo> TripadvisorSearchTaskGetAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="tripadvisorSearchTaskPost"></a>
+# **tripadvisorSearchTaskPost**
+> BusinessDataTripadvisorSearchTaskPostResponseInfo tripadvisorSearchTaskPost()
 
-[Task&lt;BusinessDataTripadvisorSearchTaskGetResponseInfo&gt;](./BusinessDataTripadvisorSearchTaskGetResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.BusinessDataApi.TripadvisorSearchTaskPostAsync(new List<BusinessDataTripadvisorSearchTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "pizza",
+        LocationCode = 1003854,
+        Depth = 30,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-This endpoint will provide you with data on businesses listed on the Tripadvisor platform. The results obtained through this endpoint are specific to the location (see the List of Tripadvisor Locations) and keyword parameters used in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataTripadvisorSearchTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataTripadvisorSearchTaskPostRequestInfo>.md)|  | [optional] |
 
-### **TripadvisorReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;)**
 
-```csharp
-public Task<BusinessDataTripadvisorReviewsTaskPostResponseInfo> TripadvisorReviewsTaskPostAsync(IEnumerable<BusinessDataTripadvisorReviewsTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;](./BusinessDataTripadvisorReviewsTaskPostRequestInfo.md)<br>
+[**BusinessDataTripadvisorSearchTaskPostResponseInfo**](BusinessDataTripadvisorSearchTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskPostResponseInfo&gt;](./BusinessDataTripadvisorReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash'
+<a id="tripadvisorSearchTasksReady"></a>
+# **tripadvisorSearchTasksReady**
+> BusinessDataTripadvisorSearchTasksReadyResponseInfo tripadvisorSearchTasksReady()
 
-### **TripadvisorReviewsTaskPostAsync(IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataTripadvisorReviewsTaskPostResponseInfo> TripadvisorReviewsTaskPostAsync(IEnumerable<BusinessDataTripadvisorReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.BusinessDataApi.TripadvisorSearchTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;BusinessDataTripadvisorReviewsTaskPostRequestInfo&gt;](./BusinessDataTripadvisorReviewsTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskPostResponseInfo&gt;](./BusinessDataTripadvisorReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**BusinessDataTripadvisorSearchTasksReadyResponseInfo**](BusinessDataTripadvisorSearchTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash'
+### HTTP request headers
 
-### **TripadvisorReviewsTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<BusinessDataTripadvisorReviewsTasksReadyResponseInfo> TripadvisorReviewsTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="tripadvisorSearchTaskGet"></a>
+# **tripadvisorSearchTaskGet**
+> BusinessDataTripadvisorSearchTaskGetResponseInfo tripadvisorSearchTaskGet()
 
-[Task&lt;BusinessDataTripadvisorReviewsTasksReadyResponseInfo&gt;](./BusinessDataTripadvisorReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.TripadvisorSearchTaskGetAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash'
 
-### **TripadvisorReviewsTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataTripadvisorReviewsTasksReadyResponseInfo> TripadvisorReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataTripadvisorSearchTaskGetResponseInfo**](BusinessDataTripadvisorSearchTaskGetResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataTripadvisorReviewsTasksReadyResponseInfo&gt;](./BusinessDataTripadvisorReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash'
+<a id="tripadvisorReviewsTaskPost"></a>
+# **tripadvisorReviewsTaskPost**
+> BusinessDataTripadvisorReviewsTaskPostResponseInfo tripadvisorReviewsTaskPost()
 
-### **TripadvisorReviewsTaskGetAsync(String)**
 
+### Example
 ```csharp
-public Task<BusinessDataTripadvisorReviewsTaskGetResponseInfo> TripadvisorReviewsTaskGetAsync(string id)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTaskPostAsync(new List<BusinessDataTripadvisorReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        UrlPath = "Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html",
+        LocationCode = 1003854,
+        Tag = "some_string_123",
+        PingbackUrl = "https://your-server.com/pingback.php?id=$id&tag=$tag",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskGetResponseInfo&gt;](./BusinessDataTripadvisorReviewsTaskGetResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataTripadvisorReviewsTaskPostRequestInfo>&gt;**](IEnumerable<BusinessDataTripadvisorReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-This endpoint provides feedback data on businesses listed on the Tripadvisor platform, including their locations, ratings, review content and count. The results are specific to the URL path indicated in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
+[**BusinessDataTripadvisorReviewsTaskPostResponseInfo**](BusinessDataTripadvisorReviewsTaskPostResponseInfo.md)
 
-### **TripadvisorReviewsTaskGetAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<BusinessDataTripadvisorReviewsTaskGetResponseInfo> TripadvisorReviewsTaskGetAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="tripadvisorReviewsTasksReady"></a>
+# **tripadvisorReviewsTasksReady**
+> BusinessDataTripadvisorReviewsTasksReadyResponseInfo tripadvisorReviewsTasksReady()
 
-[Task&lt;BusinessDataTripadvisorReviewsTaskGetResponseInfo&gt;](./BusinessDataTripadvisorReviewsTaskGetResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-This endpoint provides feedback data on businesses listed on the Tripadvisor platform, including their locations, ratings, review content and count. The results are specific to the URL path indicated in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash'
 
-### **SocialMediaPinterestLiveAsync(IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<BusinessDataSocialMediaPinterestLiveResponseInfo> SocialMediaPinterestLiveAsync(IEnumerable<BusinessDataSocialMediaPinterestLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;](./BusinessDataSocialMediaPinterestLiveRequestInfo.md)<br>
+[**BusinessDataTripadvisorReviewsTasksReadyResponseInfo**](BusinessDataTripadvisorReviewsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataSocialMediaPinterestLiveResponseInfo&gt;](./BusinessDataSocialMediaPinterestLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash'
+<a id="tripadvisorReviewsTaskGet"></a>
+# **tripadvisorReviewsTaskGet**
+> BusinessDataTripadvisorReviewsTaskGetResponseInfo tripadvisorReviewsTaskGet()
 
-### **SocialMediaPinterestLiveAsync(IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<BusinessDataSocialMediaPinterestLiveResponseInfo> SocialMediaPinterestLiveAsync(IEnumerable<BusinessDataSocialMediaPinterestLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataSocialMediaPinterestLiveRequestInfo&gt;](./BusinessDataSocialMediaPinterestLiveRequestInfo.md)<br>
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTaskGetAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;BusinessDataSocialMediaPinterestLiveResponseInfo&gt;](./BusinessDataSocialMediaPinterestLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash'
+[**BusinessDataTripadvisorReviewsTaskGetResponseInfo**](BusinessDataTripadvisorReviewsTaskGetResponseInfo.md)
 
-### **SocialMediaFacebookLiveAsync(IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<BusinessDataSocialMediaFacebookLiveResponseInfo> SocialMediaFacebookLiveAsync(IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;](./BusinessDataSocialMediaFacebookLiveRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataSocialMediaFacebookLiveResponseInfo&gt;](./BusinessDataSocialMediaFacebookLiveResponseInfo.md)<br>
-Successful operation
+<a id="socialMediaPinterestLive"></a>
+# **socialMediaPinterestLive**
+> BusinessDataSocialMediaPinterestLiveResponseInfo socialMediaPinterestLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.SocialMediaPinterestLiveAsync(new List<BusinessDataSocialMediaPinterestLiveRequestInfo>()
+{
+    new()
+    {
+        Targets = new List<string>()
+        {
+            "https://www.simplyrecipes.com/recipes/grilled_salmon_with_cucumber_mango_salsa/",
+            "https://tasty.co/recipe/classic-lasagna",
+            "https://www.allrecipes.com/recipe/255263/sicilian-roasted-chicken/",
+        },
+        Tag = "some_string_123",
+    }
+});
+```
 
-‌‌
- <br>Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash'
+### Parameters
 
-### **SocialMediaFacebookLiveAsync(IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataSocialMediaPinterestLiveRequestInfo>&gt;**](IEnumerable<BusinessDataSocialMediaPinterestLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<BusinessDataSocialMediaFacebookLiveResponseInfo> SocialMediaFacebookLiveAsync(IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaFacebookLiveRequestInfo&gt;](./BusinessDataSocialMediaFacebookLiveRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**BusinessDataSocialMediaPinterestLiveResponseInfo**](BusinessDataSocialMediaPinterestLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;BusinessDataSocialMediaFacebookLiveResponseInfo&gt;](./BusinessDataSocialMediaFacebookLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash'
+<a id="socialMediaFacebookLive"></a>
+# **socialMediaFacebookLive**
+> BusinessDataSocialMediaFacebookLiveResponseInfo socialMediaFacebookLive()
 
-### **SocialMediaRedditLiveAsync(IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<BusinessDataSocialMediaRedditLiveResponseInfo> SocialMediaRedditLiveAsync(IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo> body)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;](./BusinessDataSocialMediaRedditLiveRequestInfo.md)<br>
-
-#### Returns
+});
+var result = await dfsClient.BusinessDataApi.SocialMediaFacebookLiveAsync(new List<BusinessDataSocialMediaFacebookLiveRequestInfo>()
+{
+    new()
+    {
+        Targets = new List<string>()
+        {
+            "https://prnt.sc/",
+            "https://developers.facebook.com/docs/plugins/like-button/",
+            "https://www.shbarcelona.com/blog/en/salsa-dance-clubs-in-barcelona/",
+        },
+        Tag = "some_string_123",
+    }
+});
+```
 
-[Task&lt;BusinessDataSocialMediaRedditLiveResponseInfo&gt;](./BusinessDataSocialMediaRedditLiveResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo>&gt;**](IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo>.md)|  | [optional] |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
 
-Social Media Reddit API provides information for each share of the target webpage on Reddit. For each specified Reddit URL, you will get subreddit and author names, permalink, title, and the number of subreddit members.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash'
+### Return type
 
-### **SocialMediaRedditLiveAsync(IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;, CancellationToken)**
+[**BusinessDataSocialMediaFacebookLiveResponseInfo**](BusinessDataSocialMediaFacebookLiveResponseInfo.md)
 
-```csharp
-public Task<BusinessDataSocialMediaRedditLiveResponseInfo> SocialMediaRedditLiveAsync(IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+### Authorization
 
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`body` [IEnumerable&lt;BusinessDataSocialMediaRedditLiveRequestInfo&gt;](./BusinessDataSocialMediaRedditLiveRequestInfo.md)<br>
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;BusinessDataSocialMediaRedditLiveResponseInfo&gt;](./BusinessDataSocialMediaRedditLiveResponseInfo.md)<br>
-Successful operation
+<a id="socialMediaRedditLive"></a>
+# **socialMediaRedditLive**
+> BusinessDataSocialMediaRedditLiveResponseInfo socialMediaRedditLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.BusinessDataApi.SocialMediaRedditLiveAsync(new List<BusinessDataSocialMediaRedditLiveRequestInfo>()
+{
+    new()
+    {
+        Targets = new List<string>()
+        {
+            "https://vk.com/",
+            "https://ahrefs.com/",
+            "https://google.com/",
+            "https://twitter.com/",
+            "https://reddit.com/",
+            "https://facebook.com/",
+        },
+        Tag = "some_string_123",
+    }
+});
+```
 
-Social Media Reddit API provides information for each share of the target webpage on Reddit. For each specified Reddit URL, you will get subreddit and author names, permalink, title, and the number of subreddit members.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash'
+### Parameters
 
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo>&gt;**](IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
 
-#### Type Parameters
 
-`T`<br>
+### Return type
 
-#### Parameters
+[**BusinessDataSocialMediaRedditLiveResponseInfo**](BusinessDataSocialMediaRedditLiveResponseInfo.md)
 
-`response` HttpResponseMessage<br>
+### Authorization
 
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

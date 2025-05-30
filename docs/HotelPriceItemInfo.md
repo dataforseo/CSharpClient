@@ -1,119 +1,16 @@
 # HotelPriceItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class HotelPriceItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [HotelPriceItemInfo](./HotelPriceItemInfo.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Price**
-
-```csharp
-public Nullable<int> Price { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Currency**
-
-```csharp
-public string Currency { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsPaid**
-
-```csharp
-public Nullable<bool> IsPaid { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **FreeCancellationUntil**
-
-```csharp
-public string FreeCancellationUntil { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Offers**
-
-```csharp
-public ICollection<HotelInfoPriceOffer> Offers { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;HotelInfoPriceOffer&gt;](./HotelInfoPriceOffer.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **HotelPriceItemInfo()**
-
-```csharp
-public HotelPriceItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Title** | **string** | title of the hotel |[optional]|
+**Price** | **double?** | price per night |[optional]|
+**Currency** | **string** | price currency<br>USD is applied by default, unless specified in the POST array |[optional]|
+**Url** | **string** | third-party page url<br>URL to the third-party website page with pricing information |[optional]|
+**Domain** | **string** | third-party domain<br>domain of the third-party website page with pricing information |[optional]|
+**IsPaid** | **bool?** | indicates a paid hotel listing<br>if true, related hotel_search_item is a paid ad<br>if false, related hotel_search_item is an organic hotel listing |[optional]|
+**FreeCancellationUntil** | **string** | date until which free cancellation is available<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>equals null if free cancellation is not available for the selected dates |[optional]|
+**Offers** | **IEnumerable<HotelInfoPriceOffer>** | featured price offers |[optional]|

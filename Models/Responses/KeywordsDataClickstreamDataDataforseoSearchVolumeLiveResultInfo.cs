@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models.Responses
         /// ithe number of results returned in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// array of keywords

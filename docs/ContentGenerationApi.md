@@ -1,605 +1,511 @@
 # ContentGenerationApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**generateLive**](ContentGenerationApi.md#generateLive) | **POST**  /v3/content_generation/generate/live  |
+[**generateTextLive**](ContentGenerationApi.md#generateTextLive) | **POST**  /v3/content_generation/generate_text/live  |
+[**generateMetaTagsLive**](ContentGenerationApi.md#generateMetaTagsLive) | **POST**  /v3/content_generation/generate_meta_tags/live  |
+[**generateSubTopicsLive**](ContentGenerationApi.md#generateSubTopicsLive) | **POST**  /v3/content_generation/generate_sub_topics/live  |
+[**paraphraseLive**](ContentGenerationApi.md#paraphraseLive) | **POST**  /v3/content_generation/paraphrase/live  |
+[**checkGrammarLive**](ContentGenerationApi.md#checkGrammarLive) | **POST**  /v3/content_generation/check_grammar/live  |
+[**contentGenerationCheckGrammarLanguages**](ContentGenerationApi.md#contentGenerationCheckGrammarLanguages) | **GET**  /v3/content_generation/check_grammar/languages  |
+[**grammarRules**](ContentGenerationApi.md#grammarRules) | **GET**  /v3/content_generation/grammar_rules  |
+[**textSummaryLive**](ContentGenerationApi.md#textSummaryLive) | **POST**  /v3/content_generation/text_summary/live  |
+[**contentGenerationTextSummaryLanguages**](ContentGenerationApi.md#contentGenerationTextSummaryLanguages) | **GET**  /v3/content_generation/text_summary/languages  |
+
+<a id="generateLive"></a>
+# **generateLive**
+> ContentGenerationGenerateLiveResponseInfo generateLive()
+
+
+### Example
 ```csharp
-public class ContentGenerationApi
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.GenerateLiveAsync(new List<ContentGenerationGenerateLiveRequestInfo>()
+{
+    new()
+    {
+        Text = "SEO is",
+        MaxNewTokens = 100,
+        CreativityIndex = 1f,
+        AvoidStartingWords = new List<string>()
+        {
+            "SEO",
+            "search engine optimization",
+            "SEO is",
+        },
+        StopWords = new List<string>()
+        {
+            "123",
+            "\n",
+        },
+    }
+});
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ContentGenerationApi](./ContentGenerationApi.md)
+### Parameters
 
-## Properties
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationGenerateLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationGenerateLiveRequestInfo>.md)|  | [optional] |
 
-### **BaseUrl**
 
+
+### Return type
+
+[**ContentGenerationGenerateLiveResponseInfo**](ContentGenerationGenerateLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="generateTextLive"></a>
+# **generateTextLive**
+> ContentGenerationGenerateTextLiveResponseInfo generateTextLive()
+
+
+### Example
 ```csharp
-public string BaseUrl { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.GenerateTextLiveAsync(new List<ContentGenerationGenerateTextLiveRequestInfo>()
+{
+    new()
+    {
+        Topic = "Steve Jobs",
+        WordCount = 50,
+        SubTopics = new List<string>()
+        {
+            "Apple",
+            "Pixar",
+            "Amazing Products",
+        },
+        Description = "Take a closer look at Steve Jobs' life and his incredible impact on the tech industry, with a special focus on the development of the iPhone.",
+        MetaKeywords = new List<string>()
+        {
+            "iPhone",
+            "sell",
+            "CEO",
+        },
+        CreativityIndex = 0.8f,
+        IncludeConclusion = true,
+    }
+});
 ```
 
-#### Property Value
+### Parameters
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationGenerateTextLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationGenerateTextLiveRequestInfo>.md)|  | [optional] |
 
-### **ReadResponseAsString**
 
+
+### Return type
+
+[**ContentGenerationGenerateTextLiveResponseInfo**](ContentGenerationGenerateTextLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="generateMetaTagsLive"></a>
+# **generateMetaTagsLive**
+> ContentGenerationGenerateMetaTagsLiveResponseInfo generateMetaTagsLive()
+
+
+### Example
 ```csharp
-public bool ReadResponseAsString { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.GenerateMetaTagsLiveAsync(new List<ContentGenerationGenerateMetaTagsLiveRequestInfo>()
+{
+    new()
+    {
+        Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.\n\n“We started to develop the idea of ​​our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.",
+    }
+});
 ```
 
-#### Property Value
+### Parameters
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationGenerateMetaTagsLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationGenerateMetaTagsLiveRequestInfo>.md)|  | [optional] |
 
-## Constructors
 
-### **ContentGenerationApi(HttpClient)**
 
+### Return type
+
+[**ContentGenerationGenerateMetaTagsLiveResponseInfo**](ContentGenerationGenerateMetaTagsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="generateSubTopicsLive"></a>
+# **generateSubTopicsLive**
+> ContentGenerationGenerateSubTopicsLiveResponseInfo generateSubTopicsLive()
+
+
+### Example
 ```csharp
-public ContentGenerationApi(HttpClient httpClient)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.GenerateSubTopicsLiveAsync(new List<ContentGenerationGenerateSubTopicsLiveRequestInfo>()
+{
+    new()
+    {
+        Topic = "Steve Jobs",
+        CreativityIndex = 0.9f,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`httpClient` HttpClient<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationGenerateSubTopicsLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationGenerateSubTopicsLiveRequestInfo>.md)|  | [optional] |
 
-## Methods
 
-### **GenerateLiveAsync(IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;)**
 
+### Return type
+
+[**ContentGenerationGenerateSubTopicsLiveResponseInfo**](ContentGenerationGenerateSubTopicsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="paraphraseLive"></a>
+# **paraphraseLive**
+> ContentGenerationParaphraseLiveResponseInfo paraphraseLive()
+
+
+### Example
 ```csharp
-public Task<ContentGenerationGenerateLiveResponseInfo> GenerateLiveAsync(IEnumerable<ContentGenerationGenerateLiveRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.ParaphraseLiveAsync(new List<ContentGenerationParaphraseLiveRequestInfo>()
+{
+    new()
+    {
+        Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings.",
+        CreativityIndex = 0.8f,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;](./ContentGenerationGenerateLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationParaphraseLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationParaphraseLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;ContentGenerationGenerateLiveResponseInfo&gt;](./ContentGenerationGenerateLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**ContentGenerationParaphraseLiveResponseInfo**](ContentGenerationParaphraseLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>This endpoint will provide you with a text generated based on the part of the text you define and other available parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate/live/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GenerateLiveAsync(IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="checkGrammarLive"></a>
+# **checkGrammarLive**
+> ContentGenerationCheckGrammarLiveResponseInfo checkGrammarLive()
+
+
+### Example
 ```csharp
-public Task<ContentGenerationGenerateLiveResponseInfo> GenerateLiveAsync(IEnumerable<ContentGenerationGenerateLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.CheckGrammarLiveAsync(new List<ContentGenerationCheckGrammarLiveRequestInfo>()
+{
+    new()
+    {
+        Text = "Hello, my name is John! And I'm very glad to work with you toda",
+        LanguageCode = "en-US",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateLiveRequestInfo&gt;](./ContentGenerationGenerateLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationCheckGrammarLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationCheckGrammarLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;ContentGenerationGenerateLiveResponseInfo&gt;](./ContentGenerationGenerateLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**ContentGenerationCheckGrammarLiveResponseInfo**](ContentGenerationCheckGrammarLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>This endpoint will provide you with a text generated based on the part of the text you define and other available parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate/live/?bash'
+### HTTP request headers
 
-### **GenerateTextLiveAsync(IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentGenerationCheckGrammarLanguages"></a>
+# **contentGenerationCheckGrammarLanguages**
+> ContentGenerationCheckGrammarLanguagesResponseInfo contentGenerationCheckGrammarLanguages()
+
+
+### Example
 ```csharp
-public Task<ContentGenerationGenerateTextLiveResponseInfo> GenerateTextLiveAsync(IEnumerable<ContentGenerationGenerateTextLiveRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.ContentGenerationCheckGrammarLanguagesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;](./ContentGenerationGenerateTextLiveRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;ContentGenerationGenerateTextLiveResponseInfo&gt;](./ContentGenerationGenerateTextLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**ContentGenerationCheckGrammarLanguagesResponseInfo**](ContentGenerationCheckGrammarLanguagesResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>This endpoint will provide you with a text generated based on the topic and other parameters you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate_text/live/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GenerateTextLiveAsync(IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="grammarRules"></a>
+# **grammarRules**
+> ContentGenerationGrammarRulesResponseInfo grammarRules()
+
+
+### Example
 ```csharp
-public Task<ContentGenerationGenerateTextLiveResponseInfo> GenerateTextLiveAsync(IEnumerable<ContentGenerationGenerateTextLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.GrammarRulesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateTextLiveRequestInfo&gt;](./ContentGenerationGenerateTextLiveRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;ContentGenerationGenerateTextLiveResponseInfo&gt;](./ContentGenerationGenerateTextLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**ContentGenerationGrammarRulesResponseInfo**](ContentGenerationGrammarRulesResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>This endpoint will provide you with a text generated based on the topic and other parameters you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate_text/live/?bash'
+### HTTP request headers
 
-### **GenerateMetaTagsLiveAsync(IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="textSummaryLive"></a>
+# **textSummaryLive**
+> ContentGenerationTextSummaryLiveResponseInfo textSummaryLive()
+
+
+### Example
 ```csharp
-public Task<ContentGenerationGenerateMetaTagsLiveResponseInfo> GenerateMetaTagsLiveAsync(IEnumerable<ContentGenerationGenerateMetaTagsLiveRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.TextSummaryLiveAsync(new List<ContentGenerationTextSummaryLiveRequestInfo>()
+{
+    new()
+    {
+        Text = "Removing [RequireHttps] does nothing but break the https redirection, and doesn't enforce an https url on my route. I've got one method which i want to expose over http and a different one over https. If i accidentally enter http in my url for the https-only method, it should redirect. It currently works as is, the problem is that there is an undocument (seemingly unrelated) setting I have to add to get it all working. And that is the SslPort thing",
+        LanguageName = "English (United States)",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;](./ContentGenerationGenerateMetaTagsLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentGenerationTextSummaryLiveRequestInfo>&gt;**](IEnumerable<ContentGenerationTextSummaryLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;ContentGenerationGenerateMetaTagsLiveResponseInfo&gt;](./ContentGenerationGenerateMetaTagsLiveResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**ContentGenerationTextSummaryLiveResponseInfo**](ContentGenerationTextSummaryLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>This endpoint is designed to generate title and description meta tags for a text specified in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate_meta_tags/live/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GenerateMetaTagsLiveAsync(IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentGenerationTextSummaryLanguages"></a>
+# **contentGenerationTextSummaryLanguages**
+> ContentGenerationTextSummaryLanguagesResponseInfo contentGenerationTextSummaryLanguages()
+
+
+### Example
 ```csharp
-public Task<ContentGenerationGenerateMetaTagsLiveResponseInfo> GenerateMetaTagsLiveAsync(IEnumerable<ContentGenerationGenerateMetaTagsLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentGenerationApi.ContentGenerationTextSummaryLanguagesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentGenerationGenerateMetaTagsLiveRequestInfo&gt;](./ContentGenerationGenerateMetaTagsLiveRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;ContentGenerationGenerateMetaTagsLiveResponseInfo&gt;](./ContentGenerationGenerateMetaTagsLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**ContentGenerationTextSummaryLanguagesResponseInfo**](ContentGenerationTextSummaryLanguagesResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>This endpoint is designed to generate title and description meta tags for a text specified in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate_meta_tags/live/?bash'
+### HTTP request headers
 
-### **GenerateSubTopicsLiveAsync(IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<ContentGenerationGenerateSubTopicsLiveResponseInfo> GenerateSubTopicsLiveAsync(IEnumerable<ContentGenerationGenerateSubTopicsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;](./ContentGenerationGenerateSubTopicsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentGenerationGenerateSubTopicsLiveResponseInfo&gt;](./ContentGenerationGenerateSubTopicsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with 10 subtopics generated based on the topic and other parameters you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate_sub_topics/live/?bash'
-
-### **GenerateSubTopicsLiveAsync(IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentGenerationGenerateSubTopicsLiveResponseInfo> GenerateSubTopicsLiveAsync(IEnumerable<ContentGenerationGenerateSubTopicsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationGenerateSubTopicsLiveRequestInfo&gt;](./ContentGenerationGenerateSubTopicsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationGenerateSubTopicsLiveResponseInfo&gt;](./ContentGenerationGenerateSubTopicsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with 10 subtopics generated based on the topic and other parameters you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/generate_sub_topics/live/?bash'
-
-### **ParaphraseLiveAsync(IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentGenerationParaphraseLiveResponseInfo> ParaphraseLiveAsync(IEnumerable<ContentGenerationParaphraseLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;](./ContentGenerationParaphraseLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentGenerationParaphraseLiveResponseInfo&gt;](./ContentGenerationParaphraseLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a paraphrased version of the text you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/paraphrase/live/?bash'
-
-### **ParaphraseLiveAsync(IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentGenerationParaphraseLiveResponseInfo> ParaphraseLiveAsync(IEnumerable<ContentGenerationParaphraseLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationParaphraseLiveRequestInfo&gt;](./ContentGenerationParaphraseLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationParaphraseLiveResponseInfo&gt;](./ContentGenerationParaphraseLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with a paraphrased version of the text you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/paraphrase/live/?bash'
-
-### **CheckGrammarLiveAsync(IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentGenerationCheckGrammarLiveResponseInfo> CheckGrammarLiveAsync(IEnumerable<ContentGenerationCheckGrammarLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;](./ContentGenerationCheckGrammarLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentGenerationCheckGrammarLiveResponseInfo&gt;](./ContentGenerationCheckGrammarLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with grammar and spelling corrections for the text you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/check_grammar/live/?bash'
-
-### **CheckGrammarLiveAsync(IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentGenerationCheckGrammarLiveResponseInfo> CheckGrammarLiveAsync(IEnumerable<ContentGenerationCheckGrammarLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationCheckGrammarLiveRequestInfo&gt;](./ContentGenerationCheckGrammarLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationCheckGrammarLiveResponseInfo&gt;](./ContentGenerationCheckGrammarLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with grammar and spelling corrections for the text you specify.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/check_grammar/live/?bash'
-
-### **ContentGenerationCheckGrammarLanguagesAsync()**
-
-```csharp
-public Task<ContentGenerationCheckGrammarLanguagesResponseInfo> ContentGenerationCheckGrammarLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;ContentGenerationCheckGrammarLanguagesResponseInfo&gt;](./ContentGenerationCheckGrammarLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/check_grammar/languages/?bash'
-
-### **ContentGenerationCheckGrammarLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<ContentGenerationCheckGrammarLanguagesResponseInfo> ContentGenerationCheckGrammarLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationCheckGrammarLanguagesResponseInfo&gt;](./ContentGenerationCheckGrammarLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/check_grammar/languages/?bash'
-
-### **GrammarRulesAsync()**
-
-```csharp
-public Task<ContentGenerationGrammarRulesResponseInfo> GrammarRulesAsync()
-```
-
-#### Returns
-
-[Task&lt;ContentGenerationGrammarRulesResponseInfo&gt;](./ContentGenerationGrammarRulesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of grammar rules by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/grammar_rules/?bash'
-
-### **GrammarRulesAsync(CancellationToken)**
-
-```csharp
-public Task<ContentGenerationGrammarRulesResponseInfo> GrammarRulesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationGrammarRulesResponseInfo&gt;](./ContentGenerationGrammarRulesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of grammar rules by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/grammar_rules/?bash'
-
-### **TextSummaryLiveAsync(IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentGenerationTextSummaryLiveResponseInfo> TextSummaryLiveAsync(IEnumerable<ContentGenerationTextSummaryLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;](./ContentGenerationTextSummaryLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentGenerationTextSummaryLiveResponseInfo&gt;](./ContentGenerationTextSummaryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with statistical data based on the given text, such as the number of words and sentences, vocabulary density, and text readability.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/text_summary/live/?bash'
-
-### **TextSummaryLiveAsync(IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentGenerationTextSummaryLiveResponseInfo> TextSummaryLiveAsync(IEnumerable<ContentGenerationTextSummaryLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentGenerationTextSummaryLiveRequestInfo&gt;](./ContentGenerationTextSummaryLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationTextSummaryLiveResponseInfo&gt;](./ContentGenerationTextSummaryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with statistical data based on the given text, such as the number of words and sentences, vocabulary density, and text readability.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/text_summary/live/?bash'
-
-### **ContentGenerationTextSummaryLanguagesAsync()**
-
-```csharp
-public Task<ContentGenerationTextSummaryLanguagesResponseInfo> ContentGenerationTextSummaryLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;ContentGenerationTextSummaryLanguagesResponseInfo&gt;](./ContentGenerationTextSummaryLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/text_summary/languages/?bash'
-
-### **ContentGenerationTextSummaryLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<ContentGenerationTextSummaryLanguagesResponseInfo> ContentGenerationTextSummaryLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentGenerationTextSummaryLanguagesResponseInfo&gt;](./ContentGenerationTextSummaryLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_generation/text_summary/languages/?bash'
-
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
-
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
-
-#### Type Parameters
-
-`T`<br>
-
-#### Parameters
-
-`response` HttpResponseMessage<br>
-
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-
-#### Returns
-
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

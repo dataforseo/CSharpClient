@@ -1,44 +1,64 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("amazon_serp", typeof(AmazonAmazonSerpSerpElementItem))]
+    [JsonInheritance("amazon_paid", typeof(AmazonAmazonPaidSerpElementItem))]
+    [JsonInheritance("editorial_recommendations", typeof(AmazonEditorialRecommendationsSerpElementItem))]
+    [JsonInheritance("related_searches", typeof(AmazonRelatedSearchesSerpElementItem))]
+    [JsonInheritance("top_rated_from_our_brands", typeof(AmazonTopRatedFromOurBrandsSerpElementItem))]
+    [JsonInheritance("amazon_review_item", typeof(AmazonAmazonReviewItemSerpElementItem))]
+    [JsonInheritance("amazon_product_info", typeof(AmazonAmazonProductInfoSerpElementItem))]
+    [JsonInheritance("amazon_seller_main_item", typeof(AmazonAmazonSellerMainItemSerpElementItem))]
+    [JsonInheritance("amazon_seller_item", typeof(AmazonAmazonSellerItemSerpElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("amazon_serp", typeof(AmazonAmazonSerpSerpElementItem))]
-    [JsonInheritanceAttribute("amazon_paid", typeof(AmazonAmazonPaidSerpElementItem))]
-    [JsonInheritanceAttribute("editorial_recommendations", typeof(AmazonEditorialRecommendationsSerpElementItem))]
-    [JsonInheritanceAttribute("related_searches", typeof(AmazonRelatedSearchesSerpElementItem))]
-    [JsonInheritanceAttribute("top_rated_from_our_brands", typeof(AmazonTopRatedFromOurBrandsSerpElementItem))]
-    [JsonInheritanceAttribute("amazon_review_item", typeof(AmazonAmazonReviewItemSerpElementItem))]
-    [JsonInheritanceAttribute("amazon_product_info", typeof(AmazonAmazonProductInfoSerpElementItem))]
-    [JsonInheritanceAttribute("amazon_seller_main_item", typeof(AmazonAmazonSellerMainItemSerpElementItem))]
-    [JsonInheritanceAttribute("amazon_seller_item", typeof(AmazonAmazonSellerItemSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseAmazonSerpElementItem
+    public class BaseAmazonSerpElementItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in Amazon SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
+
+        /// <summary>
+        /// the alignment of the element in Amazon SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
 
         /// <summary>
         /// the XPath of the element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("xpath", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
 
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

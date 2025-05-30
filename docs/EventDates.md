@@ -1,59 +1,10 @@
 # EventDates
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class EventDates
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [EventDates](./EventDates.md)
 
 ## Properties
 
-### **StartDatetime**
-
-```csharp
-public string StartDatetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **EndDatetime**
-
-```csharp
-public string EndDatetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DisplayedDates**
-
-```csharp
-public string DisplayedDates { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **EventDates()**
-
-```csharp
-public EventDates()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**StartDatetime** | **string** | date and time when the event starts<br>if time zone is specified in the event, value will be returned in the UTC format:<br>“yyyy-mm-ddThh-mm-ss+00:00”<br>example:<br>2019-11-15T12:57:46+00:00<br>if time zone is not specified in the event, unspecified local time will be returned in the following format:<br>“yyyy-mm-ddThh-mm-ss”<br>example:<br>2019-11-15T12:57:46 |[optional]|
+**EndDatetime** | **string** | date and time when the event ends<br>if time zone is specified in the event, value will be returned in the UTC format:<br>“yyyy-mm-ddThh-mm-ss+00:00”<br>example:<br>2019-11-15T12:57:46+00:00<br>if time zone is not specified in the event, unspecified local time will be returned in the following format:<br>“yyyy-mm-ddThh-mm-ss”<br>example:<br>2019-11-15T12:57:46 |[optional]|
+**DisplayedDates** | **string** | date or date range as it is displayed in SERP |[optional]|

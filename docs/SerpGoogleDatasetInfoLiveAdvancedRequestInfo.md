@@ -1,89 +1,13 @@
 # SerpGoogleDatasetInfoLiveAdvancedRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpGoogleDatasetInfoLiveAdvancedRequestInfo](./SerpGoogleDatasetInfoLiveAdvancedRequestInfo.md)
 
 ## Properties
 
-### **DatasetId**
-
-```csharp
-public string DatasetId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Device**
-
-```csharp
-public string Device { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Os**
-
-```csharp
-public string Os { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **SerpGoogleDatasetInfoLiveAdvancedRequestInfo()**
-
-```csharp
-public SerpGoogleDatasetInfoLiveAdvancedRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**DatasetId** | **string** | ID of the dataset<br>required field<br>you can find dataset ID in the dataset URL or dataset item of Google Dataset Search result<br>example:<br>L2cvMTFqbl85ZHN6MQ== |[optional]|
+**LanguageName** | **string** | full name of search engine language<br>optional field<br>if you use this field, you don’t need to specify language_code<br>possible value:<br>English |[optional]|
+**LanguageCode** | **string** | search engine language code<br>optional field<br>if you use this field, you don’t need to specify language_name<br>possible value:<br>en |[optional]|
+**Device** | **string** | device type<br>optional field<br>possible value: desktop |[optional]|
+**Os** | **string** | device operating system<br>optional field<br>possible values: windows, macos<br>default value: windows |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

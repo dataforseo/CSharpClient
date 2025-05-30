@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// unique google trends category identifier
         /// </summary>
         [Newtonsoft.Json.JsonProperty("category_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CategoryCode { get; set; }
+        public double? CategoryCode { get; set; }
 
         /// <summary>
         /// name of the google trends category
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>"category_name": "Action &amp; Adventure Films"
         /// </summary>
         [Newtonsoft.Json.JsonProperty("category_code_parent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CategoryCodeParent { get; set; }
+        public double? CategoryCodeParent { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

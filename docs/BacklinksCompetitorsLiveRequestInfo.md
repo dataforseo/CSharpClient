@@ -1,129 +1,17 @@
 # BacklinksCompetitorsLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class BacklinksCompetitorsLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksCompetitorsLiveRequestInfo](./BacklinksCompetitorsLiveRequestInfo.md)
 
 ## Properties
 
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Limit**
-
-```csharp
-public Nullable<int> Limit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Offset**
-
-```csharp
-public Nullable<int> Offset { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Filters**
-
-```csharp
-public ICollection<object> Filters { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **OrderBy**
-
-```csharp
-public ICollection<string> OrderBy { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MainDomain**
-
-```csharp
-public Nullable<bool> MainDomain { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ExcludeLargeDomains**
-
-```csharp
-public Nullable<bool> ExcludeLargeDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ExcludeInternalBacklinks**
-
-```csharp
-public Nullable<bool> ExcludeInternalBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankScale**
-
-```csharp
-public string RankScale { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksCompetitorsLiveRequestInfo()**
-
-```csharp
-public BacklinksCompetitorsLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Target** | **string** | domain, subdomain or webpage to get competitor domains for<br>required field<br>a domain or a subdomain should be specified without https:// and www.<br>a page should be specified with absolute URL (including http:// or https://) |[optional]|
+**Limit** | **int?** | the maximum number of returned domains<br>optional field<br>default value: 100<br>maximum value: 1000 |[optional]|
+**Offset** | **int?** | offset in the results array of returned domains<br>optional field<br>default value: 0<br>if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive pages |[optional]|
+**Filters** | **IEnumerable<object>** | array of results filtering parameters<br>optional field<br>you can add several filters at once (8 filters maximum)<br>you should set a logical operator and, or between the conditions<br>the following operators are supported:<br>regex, not_regex, =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match<br>you can use the % operator with like and not_like to match any string of zero or more characters<br>example:<br>['rank','>','100']<br>[['target','like','%forbes%'],<br>'and',<br>[['rank','>','100'],'or',['intersections','>','5']]]<br>The full list of possible filters is available here. |[optional]|
+**OrderBy** | **IEnumerable<string>** | results sorting rules<br>optional field<br>you can use the same values as in the filters array to sort the results<br>possible sorting types:<br>asc – results will be sorted in the ascending order<br>desc – results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br>['rank,desc']<br>note that you can set no more than three sorting rules in a single request<br>you should use a comma to separate several sorting rules<br>example:<br>['intersections,desc','rank,asc'] |[optional]|
+**MainDomain** | **bool?** | indicates if only main domain of the target will be included in the search<br>optional field<br>if set to true, only the main domain will be included in search;<br>default value: true |[optional]|
+**ExcludeLargeDomains** | **bool?** | indicates whether large domain will appear in results<br>optional field<br>if set to true, the results from the large domain (google.com, amazon.com, etc.) will be omitted;<br>default value: true |[optional]|
+**ExcludeInternalBacklinks** | **bool?** | indicates if internal backlinks from subdomains to the target will be excluded from the results<br>optional field<br>if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target<br>if set to false, internal links will be included in the results<br>default value: true |[optional]|
+**RankScale** | **string** | defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values<br>optional field<br>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<br>possible values:<br>one_hundred — rank values are displayed on a 0–100 scale<br>one_thousand — rank values are displayed on a 0–1000 scale<br>default value: one_thousand<br>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

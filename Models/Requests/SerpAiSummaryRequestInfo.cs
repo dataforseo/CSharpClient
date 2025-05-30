@@ -1,17 +1,20 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SerpAiSummaryRequestInfo
+
+    public class SerpAiSummaryRequestInfo 
     {
+
         /// <summary>
         /// task identifier
         /// <br/>required field
         /// <br/>unique identifier of the associated task in the UUID format
         /// <br/>you will be able to use it within 30 days to request the results of the task at any time
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("task_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("task_id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string TaskId { get; set; }
 
         /// <summary>
@@ -22,7 +25,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>max number of symbols or characters you can specify: 2000;
         /// <br/>note: your prompt has to be relevant to the keyword specified in the POST request to SERP API
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("prompt", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("prompt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Prompt { get; set; }
 
         /// <summary>
@@ -31,7 +34,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, the AI model will consider the following extra SERP features, in addition to organic results: answer_box, knowledge_graph, featured_snippet;
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("support_extra", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("support_extra", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SupportExtra { get; set; }
 
         /// <summary>
@@ -40,7 +43,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, the API will fetch the content from pages featured in SERP results, and the AI model will consider this content when generating the summary in the result;
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("fetch_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("fetch_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? FetchContent { get; set; }
 
         /// <summary>
@@ -49,22 +52,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, the summary field in the API response will contain links to sources of the generated summary;
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeLinks { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

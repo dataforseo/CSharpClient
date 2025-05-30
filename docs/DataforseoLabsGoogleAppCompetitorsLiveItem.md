@@ -1,99 +1,14 @@
 # DataforseoLabsGoogleAppCompetitorsLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DataforseoLabsGoogleAppCompetitorsLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsGoogleAppCompetitorsLiveItem](./DataforseoLabsGoogleAppCompetitorsLiveItem.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AppId**
-
-```csharp
-public string AppId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AvgPosition**
-
-```csharp
-public Nullable<float> AvgPosition { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SumPosition**
-
-```csharp
-public Nullable<int> SumPosition { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Intersections**
-
-```csharp
-public Nullable<int> Intersections { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **CompetitorMetrics**
-
-```csharp
-public GooglePlayMetricsBundleInfo CompetitorMetrics { get; set; }
-```
-
-#### Property Value
-
-[GooglePlayMetricsBundleInfo](./GooglePlayMetricsBundleInfo.md)<br>
-
-### **FullMetrics**
-
-```csharp
-public GooglePlayMetricsBundleInfo FullMetrics { get; set; }
-```
-
-#### Property Value
-
-[GooglePlayMetricsBundleInfo](./GooglePlayMetricsBundleInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsGoogleAppCompetitorsLiveItem()**
-
-```csharp
-public DataforseoLabsGoogleAppCompetitorsLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**AppId** | **string** | id of the competitor app |[optional]|
+**AvgPosition** | **float?** | average position of the app in Google Play SERP<br>Note: average position is calculated for intersected keywords only;<br>the value for a given application may differ when combined with different target applications |[optional]|
+**SumPosition** | **double?** | sum of all app positions in Google Play SERP<br>Note: sum position is calculated for intersected keywords only;<br>the value for a given application may differ when combined with different target applications |[optional]|
+**Intersections** | **double?** | number of intersecting keywords |[optional]|
+**CompetitorMetrics** | **GooglePlayMetricsBundleInfo** | metrics for intersecting keywords<br>ranking data relevant to the keywords that the provided competitor application shares with the app in a POST request;<br>note: in this array ranking data is provided for the returned competitor’s app_id |[optional]|
+**FullMetrics** | **GooglePlayMetricsBundleInfo** | metrics for all keywords of the application<br>full overview of ranking data relevant to all keywords that the provided app_id is ranking for |[optional]|

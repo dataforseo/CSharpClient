@@ -1,109 +1,16 @@
 # HotelPriceInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class HotelPriceInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [HotelPriceInfo](./HotelPriceInfo.md)
 
 ## Properties
 
-### **Price**
-
-```csharp
-public Nullable<int> Price { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PriceWithoutDiscount**
-
-```csharp
-public Nullable<long> PriceWithoutDiscount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Currency**
-
-```csharp
-public string Currency { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DiscountText**
-
-```csharp
-public string DiscountText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckIn**
-
-```csharp
-public string CheckIn { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckOut**
-
-```csharp
-public string CheckOut { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Visitors**
-
-```csharp
-public Nullable<int> Visitors { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<HotelPriceItemInfo> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;HotelPriceItemInfo&gt;](./HotelPriceItemInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **HotelPriceInfo()**
-
-```csharp
-public HotelPriceInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Price** | **double?** | price per night |[optional]|
+**PriceWithoutDiscount** | **double?** | full price per night without a discount applied |[optional]|
+**Currency** | **string** | price currency<br>USD is applied by default, unless specified in the POST array |[optional]|
+**DiscountText** | **string** | text about a discount applied |[optional]|
+**CheckIn** | **string** | check-in date and time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**CheckOut** | **string** | check-out date and time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Visitors** | **double?** | number of hotel visitors for this price |[optional]|
+**Items** | **IEnumerable<HotelPriceItemInfo>** | encountered item types<br>types of search engine results encountered in the items array;<br>possible item types: hotel_search_item |[optional]|
+**PricesByDates** | **IEnumerable<PricesByDates>** |  |[optional]|

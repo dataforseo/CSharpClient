@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>2020
         /// </summary>
         [Newtonsoft.Json.JsonProperty("year", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Year { get; set; }
+        public double? Year { get; set; }
 
         /// <summary>
         /// indicates the month for which the data is provided for
@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>10
         /// </summary>
         [Newtonsoft.Json.JsonProperty("month", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Month { get; set; }
+        public double? Month { get; set; }
 
         /// <summary>
         /// object containing keyword metrics

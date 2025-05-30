@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SerpSeznamOrganicTaskPostRequestInfo
+
+    public class SerpSeznamOrganicTaskPostRequestInfo 
     {
+
         /// <summary>
         /// keyword
         /// <br/>required field
@@ -14,7 +17,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
@@ -25,7 +28,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>London,England,United Kingdom
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
@@ -36,7 +39,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>2840
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
@@ -47,7 +50,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>Czech
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
@@ -58,7 +61,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>cs
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -68,7 +71,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL;
         /// <br/>in most cases, we wouldn’t recommend using this method.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
@@ -80,7 +83,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>You will be additionally charged for the tasks with high execution priority.
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
@@ -93,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>thus, setting a depth above 10 may result in additional charges if the search engine returns more than 10 results;
         /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("depth", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
 
         /// <summary>
@@ -104,7 +107,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note: the max_crawl_pages and depth parameters complement each other;
         /// <br/>learn more at our help center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("max_crawl_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("max_crawl_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxCrawlPages { get; set; }
 
         /// <summary>
@@ -113,7 +116,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("device", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
 
         /// <summary>
@@ -124,7 +127,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you specify mobile in the device field, choose from the following values: android, ios
         /// <br/>default value: android
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("os", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Os { get; set; }
 
         /// <summary>
@@ -135,25 +138,25 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>search.seznam.cz
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeDomain { get; set; }
 
         /// <summary>
         /// additional parameters of the search query
         /// <br/>optional field
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("search_param", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_param", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchParam { get; set; }
 
         /// <summary>
         /// calcualte pixel rankings for SERP elements in advanced results
         /// <br/>optional field
         /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
-        /// <br/>Visit Help Center to learn more&gt; &gt;
+        /// <br/>Visit Help Center to learn more&gt;&gt;
         /// <br/>by default, the parameter is set to false
         /// <br/>Note: if set to true, the charge per task will be multiplied by 2
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("calculate_rectangles", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("calculate_rectangles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CalculateRectangles { get; set; }
 
         /// <summary>
@@ -163,7 +166,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
         /// <summary>
@@ -178,7 +181,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>i.a., the # character will be encoded into %23
         /// <br/>learn more on our Help Center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("postback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
@@ -188,7 +191,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>regular, advanced, html
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("postback_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("postback_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
 
         /// <summary>
@@ -203,22 +206,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>i.a., the # character will be encoded into %23
         /// <br/>learn more on our Help Center
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("pingback_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

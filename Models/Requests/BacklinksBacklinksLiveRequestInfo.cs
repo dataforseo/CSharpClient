@@ -1,17 +1,20 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BacklinksBacklinksLiveRequestInfo
+
+    public class BacklinksBacklinksLiveRequestInfo 
     {
+
         /// <summary>
         /// domain, subdomain or webpage to get backlinks for
         /// <br/>required field
         /// <br/>a domain or a subdomain should be specified without https:// and www.
         /// <br/>a page should be specified with absolute URL (including http:// or https://)
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("target", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
 
         /// <summary>
@@ -23,7 +26,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>one_per_anchor – returns one backlink per anchor
         /// <br/>default value: as_is
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("mode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Mode { get; set; }
 
         /// <summary>
@@ -32,10 +35,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>use this object to get a specific number of backlinks per field
         /// <br/>if you use custom_mode, then mode will be ignored
         /// <br/>example:
-        /// <br/>"custom_mode": {"field": "domain", "value": 100}
+        /// <br/>'custom_mode': {'field': 'domain', 'value': 100}
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("custom_mode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, object> CustomMode { get; set; }
+        [JsonProperty("custom_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, object> CustomMode { get; set; }
 
         /// <summary>
         /// response field
@@ -51,7 +54,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>page_from_status_code
         /// <br/>semantic_location
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("field", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Field { get; set; }
 
         /// <summary>
@@ -59,7 +62,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you choose to specify custom_mode
         /// <br/>can be set from 1 to 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Value { get; set; }
 
         /// <summary>
@@ -68,20 +71,20 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>=, &lt; &gt;, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex, match, not_match
+        /// <br/>=, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex, match, not_match
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>["rank","&gt;","80"]
-        /// <br/>[["page_from_rank","&gt;","55"],
-        /// <br/>"and",
-        /// <br/>["dofollow","=",true]]
-        /// <br/>[["first_seen","&gt;","2017-10-23 11:31:45 +00:00"],
-        /// <br/>"and",
-        /// <br/>[["anchor","like","%seo%"],"or",["text_pre","like","%seo%"]]]
+        /// <br/>['rank','&gt;','80']
+        /// <br/>[['page_from_rank','&gt;','55'],
+        /// <br/>'and',
+        /// <br/>['dofollow','=',true]]
+        /// <br/>[['first_seen','&gt;','2017-10-23 11:31:45 +00:00'],
+        /// <br/>'and',
+        /// <br/>[['anchor','like','%seo%'],'or',['text_pre','like','%seo%']]]
         /// <br/>The full list of possible filters is available here.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("filters", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<object> Filters { get; set; }
+        [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<object> Filters { get; set; }
 
         /// <summary>
         /// results sorting rules
@@ -92,14 +95,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>desc – results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting type
         /// <br/>example:
-        /// <br/>["rank,desc"]
+        /// <br/>['rank,desc']
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>["domain_from_rank,desc","page_from_rank,asc"]
+        /// <br/>['domain_from_rank,desc','page_from_rank,asc']
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("order_by", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OrderBy { get; set; }
+        [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> OrderBy { get; set; }
 
         /// <summary>
         /// offset in the results array of the returned backlinks
@@ -108,7 +111,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you specify the 10 value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks;
         /// <br/>Note: the maximum value is 20,000, use the search_after_token if you would like to offset more results
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
@@ -120,7 +123,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>search_after_token values are unique for each subsequent task ;
         /// <br/>Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("search_after_token", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchAfterToken { get; set; }
 
         /// <summary>
@@ -129,7 +132,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 100
         /// <br/>maximum value: 1000
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("limit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
 
         /// <summary>
@@ -142,7 +145,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>lost – lost backlinks will be returned and counted;
         /// <br/>default value: live
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("backlinks_status_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("backlinks_status_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BacklinksStatusType { get; set; }
 
         /// <summary>
@@ -151,7 +154,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, the subdomains will be ignored
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_subdomains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
@@ -161,7 +164,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, indirect links will be ignored
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("include_indirect_links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("include_indirect_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeIndirectLinks { get; set; }
 
         /// <summary>
@@ -171,7 +174,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to false, internal links will be included in the results
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("exclude_internal_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("exclude_internal_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExcludeInternalBacklinks { get; set; }
 
         /// <summary>
@@ -184,7 +187,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: one_thousand
         /// <br/>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_scale", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
 
         /// <summary>
@@ -194,22 +197,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can use this parameter to identify the task and match it with the result
         /// <br/>you will find the specified tag value in the data object of the response
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("tag", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

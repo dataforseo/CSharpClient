@@ -1,69 +1,11 @@
 # TopicListDataItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class TopicListDataItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [TopicListDataItemInfo](./TopicListDataItemInfo.md)
 
 ## Properties
 
-### **TopicId**
-
-```csharp
-public string TopicId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **TopicTitle**
-
-```csharp
-public string TopicTitle { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **TopicType**
-
-```csharp
-public string TopicType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Value**
-
-```csharp
-public string Value { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **TopicListDataItemInfo()**
-
-```csharp
-public TopicListDataItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**TopicId** | **string** | unique topic identifier in Google Trends |[optional]|
+**TopicTitle** | **string** | title of the topic |[optional]|
+**TopicType** | **string** | type of the topic<br>represents the general type of the topic |[optional]|
+**Value** | **double?** | search term popularity<br>represents the popularity of the topic. Scoring is on a relative scale where a value of 100 is the most commonly searched topic and a value of 50 is a topic searched half as often as the most popular term, and so on. |[optional]|

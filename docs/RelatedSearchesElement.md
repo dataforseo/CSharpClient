@@ -1,79 +1,12 @@
 # RelatedSearchesElement
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class RelatedSearchesElement
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [RelatedSearchesElement](./RelatedSearchesElement.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ImageAlt**
-
-```csharp
-public string ImageAlt { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ImageUrl**
-
-```csharp
-public string ImageUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **RelatedSearchesElement()**
-
-```csharp
-public RelatedSearchesElement()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Title** | **string** | product title |[optional]|
+**Url** | **string** | the URL of the product page |[optional]|
+**ImageAlt** | **string** | the alt tag of the product image featured in the results |[optional]|
+**ImageUrl** | **string** | URL of the product image featured in the results |[optional]|

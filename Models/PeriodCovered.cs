@@ -1,16 +1,20 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class PeriodCovered
+    public class PeriodCovered 
     {
+
         /// <summary>
         /// date and time when the period starts
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2020-03-02 02:00:00 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("start_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string StartDate { get; set; }
 
         /// <summary>
@@ -19,7 +23,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2022-12-09 02:00:00 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("end_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndDate { get; set; }
 
         /// <summary>
@@ -27,17 +31,16 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>Mar 2, 2020 - Dec 9, 2022
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("displayed_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("displayed_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayedDate { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,26 +1,30 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class OnPageResourceIssueItemInfo
+    public class OnPageResourceIssueItemInfo 
     {
+
         /// <summary>
         /// line where the error was found
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("line", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Line { get; set; }
+        [JsonProperty("line", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Line { get; set; }
 
         /// <summary>
         /// column where the error was found
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("column", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Column { get; set; }
+        [JsonProperty("column", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Column { get; set; }
 
         /// <summary>
         /// text message of the error
         /// <br/>the full list of possible HTML errors can be found here
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("message", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Message { get; set; }
 
         /// <summary>
@@ -35,17 +39,16 @@ namespace DataForSeo.Client.Models
         /// <br/>3503 — Image Size Is Zero;
         /// <br/>3504 — Image Format Invalid
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("status_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? StatusCode { get; set; }
+        [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? StatusCode { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

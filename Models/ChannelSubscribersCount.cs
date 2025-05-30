@@ -1,30 +1,33 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ChannelSubscribersCount
+    public class ChannelSubscribersCount 
     {
+
         /// <summary>
         /// displayed subscriber count
         /// <br/>subscriber count as displayed on YouTube
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("displayed_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("displayed_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayedCount { get; set; }
 
         /// <summary>
         /// subscriber count
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Count { get; set; }
+        [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Count { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,49 +1,9 @@
 # AppendixPriorityTasksReadyKeywordsDataPriceDataInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AppendixPriorityTasksReadyKeywordsDataPriceDataInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppendixPriorityTasksReadyKeywordsDataPriceDataInfo](./AppendixPriorityTasksReadyKeywordsDataPriceDataInfo.md)
 
 ## Properties
 
-### **CostType**
-
-```csharp
-public string CostType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Cost**
-
-```csharp
-public Nullable<double> Cost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AppendixPriorityTasksReadyKeywordsDataPriceDataInfo()**
-
-```csharp
-public AppendixPriorityTasksReadyKeywordsDataPriceDataInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**CostType** | **string** | charge type<br>can take the following values:<br>per_result – charge for every row in the result array<br>per_request – charge for a GET or POST request |[optional]|
+**Cost** | **double?** | cost, USD |[optional]|

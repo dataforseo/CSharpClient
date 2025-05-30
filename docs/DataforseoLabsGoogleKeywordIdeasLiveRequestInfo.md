@@ -1,179 +1,22 @@
 # DataforseoLabsGoogleKeywordIdeasLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsGoogleKeywordIdeasLiveRequestInfo](./DataforseoLabsGoogleKeywordIdeasLiveRequestInfo.md)
 
 ## Properties
 
-### **Keywords**
-
-```csharp
-public ICollection<string> Keywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LocationName**
-
-```csharp
-public string LocationName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CloselyVariants**
-
-```csharp
-public Nullable<bool> CloselyVariants { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IgnoreSynonyms**
-
-```csharp
-public Nullable<bool> IgnoreSynonyms { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IncludeSerpInfo**
-
-```csharp
-public Nullable<bool> IncludeSerpInfo { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IncludeClickstreamData**
-
-```csharp
-public Nullable<bool> IncludeClickstreamData { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Limit**
-
-```csharp
-public Nullable<int> Limit { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Offset**
-
-```csharp
-public Nullable<int> Offset { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **OffsetToken**
-
-```csharp
-public string OffsetToken { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Filters**
-
-```csharp
-public ICollection<object> Filters { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **OrderBy**
-
-```csharp
-public ICollection<string> OrderBy { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsGoogleKeywordIdeasLiveRequestInfo()**
-
-```csharp
-public DataforseoLabsGoogleKeywordIdeasLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keywords** | **IEnumerable<string>** | keywords<br>required field<br>UTF-8 encoding<br>The maximum number of keywords you can specify: 200.<br>The keywords will be converted to lowercase format<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**LocationName** | **string** | full name of the location<br>required field if you don’t specify location_code<br>Note: it is required to specify either location_name or location_code<br>you can receive the list of available locations with their location_name by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>United Kingdom |[optional]|
+**LocationCode** | **int?** | unique location identifier<br>required field if you don’t specify location_name<br>Note: it is required to specify either location_name or location_code<br>you can receive the list of available locations with their location_code by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>2840 |[optional]|
+**LanguageName** | **string** | full name of the language<br>optional field<br>if you use this field, you don’t need to specify language_code<br>you can receive the list of available languages with their language_name by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>English<br>Note: if omitted, results default to the language with the most keyword records in the specified location;<br>refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language |[optional]|
+**LanguageCode** | **string** | language code<br>optional field<br>if you use this field, you don’t need to specify language_name<br>you can receive the list of available languages with their language_code by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>en<br>Note: if omitted, results default to the language with the most keyword records in the specified location;<br>refer to the available_languages.keywords field of the Locations and Languages endpoint to determine the default language |[optional]|
+**CloselyVariants** | **bool?** | search mode<br>optional field<br>if set to true the results will be based on the phrase-match search algorithm<br>if set to false the results will be based on the broad-match search algorithm<br>default value: false |[optional]|
+**IgnoreSynonyms** | **bool?** | ignore highly similar keywords<br>optional field<br>if set to true only core keywords will be returned, all highly similar keywords will be excluded;<br>default value: false |[optional]|
+**IncludeSerpInfo** | **bool?** | include data from SERP for each keyword<br>optional field<br>if set to true, we will return a serp_info array containing SERP data (number of search results, relevant URL, and SERP features) for every keyword in the response<br>default value: false |[optional]|
+**IncludeClickstreamData** | **bool?** | include or exclude data from clickstream-based metrics in the result<br>optional field<br>if the parameter is set to true, you will receive clickstream_keyword_info, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response<br>default value: false<br>with this parameter enabled, you will be charged double the price for the request<br>learn more about how clickstream-based metrics are calculated in this help center article |[optional]|
+**Limit** | **int?** | the maximum number of keywords in the results array<br>optional field<br>default value: 700<br>maximum value: 1000 |[optional]|
+**Offset** | **int?** | offset in the results array of returned keywords<br>optional field<br>default value: 0<br>if you specify the 10 value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords |[optional]|
+**OffsetToken** | **string** | offset token for subsequent requests<br>optional field<br>provided in the identical filed of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over 10,000 results in a single request;<br>by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;<br>offset_token values are unique for each subsequent task<br>Note: if the offset_token is specified in the request, all other parameters except limit will not be taken into account when processing a task. |[optional]|
+**Filters** | **IEnumerable<object>** | array of results filtering parameters<br>optional field<br>you can add several filters at once (8 filters maximum)<br>you should set a logical operator and, or between the conditions<br>the following operators are supported:<br>regex, not_regex, <, <=, >, >=, =, <>, in, not_in, match, not_match, ilike, not_ilike, like, not_like<br>you can use the % operator with like and not_like,as well as ilike, not_ilike to match any string of zero or more characters<br>note that you can not filter the results by relevance<br>example:<br>['keyword_info.search_volume','>',0]<br>[['keyword_info.search_volume','in',[0,1000]],<br>'and',<br>['keyword_info.competition_level','=','LOW']]<br>[['keyword_info.search_volume','>',100],<br>'and',<br>[['keyword_info.cpc','<',0.5],<br>'or',<br>['keyword_info.high_top_of_page_bid','<=',0.5]]]<br>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide |[optional]|
+**OrderBy** | **IEnumerable<string>** | results sorting rules<br>optional field<br>you can use the same values as in the filters array to sort the results<br>possible sorting types:<br>asc – results will be sorted in the ascending order<br>desc – results will be sorted in the descending order<br>you should use a comma to set up a sorting parameter<br>default rule:<br>['relevance,desc']<br>relevance is used as the default sorting rule to provide you with the closest keyword ideas. We recommend using this sorting rule to get highly-relevant search terms. Note that relevance is only our internal system identifier, so it can not be used as a filter, and you will not find this field in the result array. The relevance score is based on a similar principle as used in the Keywords For Keywords endpoint.<br>note that you can set no more than three sorting rules in a single request<br>you should use a comma to separate several sorting rules<br>example:<br>['relevance,desc','keyword_info.search_volume,desc'] |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

@@ -1,35 +1,32 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SentimentConnotationDistribution
+    public class SentimentConnotationDistribution 
     {
-        [Newtonsoft.Json.JsonProperty("anger", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("anger", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentAnalysisSummaryInfo Anger { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("happiness", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("happiness", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentAnalysisSummaryInfo Happiness { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("love", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("love", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentAnalysisSummaryInfo Love { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("sadness", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("sadness", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentAnalysisSummaryInfo Sadness { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("share", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("share", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentAnalysisSummaryInfo Share { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("fun", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("fun", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentAnalysisSummaryInfo Fun { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -9,19 +9,19 @@ namespace DataForSeo.Client.Models.Responses
         /// the total number of relevant results in the database
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        public double? TotalCount { get; set; }
 
         /// <summary>
         /// the number of items in the results array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Count { get; set; }
+        public double? Count { get; set; }
 
         /// <summary>
         /// offset in the results array of returned apps
         /// </summary>
         [Newtonsoft.Json.JsonProperty("offset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Offset { get; set; }
+        public double? Offset { get; set; }
 
         /// <summary>
         /// token for subsequent requests

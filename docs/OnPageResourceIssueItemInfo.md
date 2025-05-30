@@ -1,69 +1,11 @@
 # OnPageResourceIssueItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class OnPageResourceIssueItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [OnPageResourceIssueItemInfo](./OnPageResourceIssueItemInfo.md)
 
 ## Properties
 
-### **Line**
-
-```csharp
-public Nullable<int> Line { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Column**
-
-```csharp
-public Nullable<int> Column { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Message**
-
-```csharp
-public string Message { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **StatusCode**
-
-```csharp
-public Nullable<int> StatusCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **OnPageResourceIssueItemInfo()**
-
-```csharp
-public OnPageResourceIssueItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Line** | **double?** | line where the error was found |[optional]|
+**Column** | **double?** | column where the error was found |[optional]|
+**Message** | **string** | text message of the error<br>the full list of possible HTML errors can be found here |[optional]|
+**StatusCode** | **double?** | status code of the error<br>possible values:<br>0 — Unidentified Error;<br>501 — Html Parse Error;<br>1501 — JS Parse Error;<br>2501 — CSS Parse Error;<br>3501 — Image Parse Error;<br>3502 — Image Scale Is Zero;<br>3503 — Image Size Is Zero;<br>3504 — Image Format Invalid |[optional]|

@@ -1,399 +1,45 @@
 # AppendixDataforseoLabsLimitsRatesDataInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AppendixDataforseoLabsLimitsRatesDataInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppendixDataforseoLabsLimitsRatesDataInfo](./AppendixDataforseoLabsLimitsRatesDataInfo.md)
 
 ## Properties
 
-### **LocationsAndLanguages**
-
-```csharp
-public Nullable<double> LocationsAndLanguages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Categories**
-
-```csharp
-public Nullable<double> Categories { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Errors**
-
-```csharp
-public Nullable<double> Errors { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ProductCompetitors**
-
-```csharp
-public AppendixInfo ProductCompetitors { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **ProductKeywordIntersections**
-
-```csharp
-public AppendixInfo ProductKeywordIntersections { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **ProductRankOverview**
-
-```csharp
-public AppendixInfo ProductRankOverview { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **RankedKeywords**
-
-```csharp
-public AppendixInfo RankedKeywords { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **SerpCompetitors**
-
-```csharp
-public AppendixInfo SerpCompetitors { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **Subdomains**
-
-```csharp
-public AppendixInfo Subdomains { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **RelevantPages**
-
-```csharp
-public AppendixInfo RelevantPages { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **CompetitorsDomain**
-
-```csharp
-public AppendixInfo CompetitorsDomain { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **RelatedKeywords**
-
-```csharp
-public AppendixInfo RelatedKeywords { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **DomainRankOverview**
-
-```csharp
-public AppendixInfo DomainRankOverview { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **DomainIntersection**
-
-```csharp
-public AppendixInfo DomainIntersection { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **PageIntersection**
-
-```csharp
-public AppendixInfo PageIntersection { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **BulkTrafficEstimation**
-
-```csharp
-public AppendixInfo BulkTrafficEstimation { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **BulkKeywordDifficulty**
-
-```csharp
-public AppendixInfo BulkKeywordDifficulty { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **BulkSearchVolume**
-
-```csharp
-public AppendixInfo BulkSearchVolume { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **KeywordsForSite**
-
-```csharp
-public AppendixInfo KeywordsForSite { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **KeywordSuggestions**
-
-```csharp
-public AppendixInfo KeywordSuggestions { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **KeywordIdeas**
-
-```csharp
-public AppendixInfo KeywordIdeas { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **CategoriesForDomain**
-
-```csharp
-public AppendixInfo CategoriesForDomain { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **DomainMetricsByCategories**
-
-```csharp
-public AppendixInfo DomainMetricsByCategories { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **TopSearches**
-
-```csharp
-public AppendixInfo TopSearches { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **DomainWhoisOverview**
-
-```csharp
-public AppendixInfo DomainWhoisOverview { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **HistoricalRankOverview**
-
-```csharp
-public AppendixInfo HistoricalRankOverview { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **KeywordsForCategories**
-
-```csharp
-public AppendixInfo KeywordsForCategories { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **HistoricalSerps**
-
-```csharp
-public AppendixInfo HistoricalSerps { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **AppCompetitors**
-
-```csharp
-public AppendixInfo AppCompetitors { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **KeywordsForApp**
-
-```csharp
-public AppendixInfo KeywordsForApp { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **AppIntersection**
-
-```csharp
-public AppendixInfo AppIntersection { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **BulkAppMetrics**
-
-```csharp
-public AppendixInfo BulkAppMetrics { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **SearchIntent**
-
-```csharp
-public AppendixInfo SearchIntent { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **HistoricalBulkTrafficEstimation**
-
-```csharp
-public AppendixInfo HistoricalBulkTrafficEstimation { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **CategoriesForKeywords**
-
-```csharp
-public AppendixInfo CategoriesForKeywords { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **KeywordOverview**
-
-```csharp
-public AppendixInfo KeywordOverview { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **HistoricalKeywordData**
-
-```csharp
-public AppendixInfo HistoricalKeywordData { get; set; }
-```
-
-#### Property Value
-
-[AppendixInfo](./AppendixInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AppendixDataforseoLabsLimitsRatesDataInfo()**
-
-```csharp
-public AppendixDataforseoLabsLimitsRatesDataInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**LocationsAndLanguages** | **double?** |  |[optional]|
+**Categories** | **double?** |  |[optional]|
+**Errors** | **double?** |  |[optional]|
+**ProductCompetitors** | **AppendixInfo** |  |[optional]|
+**ProductKeywordIntersections** | **AppendixInfo** |  |[optional]|
+**ProductRankOverview** | **AppendixInfo** |  |[optional]|
+**RankedKeywords** | **AppendixInfo** |  |[optional]|
+**SerpCompetitors** | **AppendixInfo** |  |[optional]|
+**Subdomains** | **AppendixInfo** |  |[optional]|
+**RelevantPages** | **AppendixInfo** |  |[optional]|
+**CompetitorsDomain** | **AppendixInfo** |  |[optional]|
+**RelatedKeywords** | **AppendixInfo** |  |[optional]|
+**DomainRankOverview** | **AppendixInfo** |  |[optional]|
+**DomainIntersection** | **AppendixInfo** |  |[optional]|
+**PageIntersection** | **AppendixInfo** |  |[optional]|
+**BulkTrafficEstimation** | **AppendixInfo** |  |[optional]|
+**BulkKeywordDifficulty** | **AppendixInfo** |  |[optional]|
+**BulkSearchVolume** | **AppendixInfo** |  |[optional]|
+**KeywordsForSite** | **AppendixInfo** |  |[optional]|
+**KeywordSuggestions** | **AppendixInfo** |  |[optional]|
+**KeywordIdeas** | **AppendixInfo** |  |[optional]|
+**HistoricalSearchVolume** | **AppendixInfo** |  |[optional]|
+**CategoriesForDomain** | **AppendixInfo** |  |[optional]|
+**DomainMetricsByCategories** | **AppendixInfo** |  |[optional]|
+**TopSearches** | **AppendixInfo** |  |[optional]|
+**DomainWhoisOverview** | **AppendixInfo** |  |[optional]|
+**HistoricalRankOverview** | **AppendixInfo** |  |[optional]|
+**KeywordsForCategories** | **AppendixInfo** |  |[optional]|
+**HistoricalSerps** | **AppendixInfo** |  |[optional]|
+**AppCompetitors** | **AppendixInfo** |  |[optional]|
+**KeywordsForApp** | **AppendixInfo** |  |[optional]|
+**AppIntersection** | **AppendixInfo** |  |[optional]|
+**BulkAppMetrics** | **AppendixInfo** |  |[optional]|
+**SearchIntent** | **AppendixInfo** |  |[optional]|
+**HistoricalBulkTrafficEstimation** | **AppendixInfo** |  |[optional]|
+**CategoriesForKeywords** | **AppendixInfo** |  |[optional]|
+**KeywordOverview** | **AppendixInfo** |  |[optional]|
+**HistoricalKeywordData** | **AppendixInfo** |  |[optional]|

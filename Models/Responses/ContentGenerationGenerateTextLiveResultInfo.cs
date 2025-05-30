@@ -9,19 +9,19 @@ namespace DataForSeo.Client.Models.Responses
         /// number of input tokens
         /// </summary>
         [Newtonsoft.Json.JsonProperty("input_tokens", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? InputTokens { get; set; }
+        public double? InputTokens { get; set; }
 
         /// <summary>
         /// number of output tokens
         /// </summary>
         [Newtonsoft.Json.JsonProperty("output_tokens", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? OutputTokens { get; set; }
+        public double? OutputTokens { get; set; }
 
         /// <summary>
         /// number of new tokens
         /// </summary>
         [Newtonsoft.Json.JsonProperty("new_tokens", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? NewTokens { get; set; }
+        public double? NewTokens { get; set; }
 
         /// <summary>
         /// resulting text

@@ -1,2307 +1,1938 @@
 # AppDataApi
 
-Namespace: DataForSeo.Client.Api
-
-```csharp
-public class AppDataApi
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppDataApi](./AppDataApi.md)
-
-## Properties
-
-### **BaseUrl**
-
-```csharp
-public string BaseUrl { get; set; }
+All URIs are relative to *https://api.dataforseo.com*
+
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**appDataIdList**](AppDataApi.md#appDataIdList) | **POST**  /v3/app_data/id_list  |
+[**appDataErrors**](AppDataApi.md#appDataErrors) | **POST**  /v3/app_data/errors  |
+[**googleCategories**](AppDataApi.md#googleCategories) | **GET**  /v3/app_data/google/categories  |
+[**appDataGoogleLocations**](AppDataApi.md#appDataGoogleLocations) | **GET**  /v3/app_data/google/locations  |
+[**appDataGoogleLocationsCountry**](AppDataApi.md#appDataGoogleLocationsCountry) | **GET**  /v3/app_data/google/locations/{country}  |
+[**appDataGoogleLanguages**](AppDataApi.md#appDataGoogleLanguages) | **GET**  /v3/app_data/google/languages  |
+[**googleAppSearchesTaskPost**](AppDataApi.md#googleAppSearchesTaskPost) | **POST**  /v3/app_data/google/app_searches/task_post  |
+[**googleAppSearchesTasksReady**](AppDataApi.md#googleAppSearchesTasksReady) | **GET**  /v3/app_data/google/app_searches/tasks_ready  |
+[**appDataTasksReady**](AppDataApi.md#appDataTasksReady) | **GET**  /v3/app_data/tasks_ready  |
+[**googleAppSearchesTaskGetAdvanced**](AppDataApi.md#googleAppSearchesTaskGetAdvanced) | **GET**  /v3/app_data/google/app_searches/task_get/advanced/{id}  |
+[**googleAppSearchesTaskGetHtml**](AppDataApi.md#googleAppSearchesTaskGetHtml) | **GET**  /v3/app_data/google/app_searches/task_get/html/{id}  |
+[**googleAppListTaskPost**](AppDataApi.md#googleAppListTaskPost) | **POST**  /v3/app_data/google/app_list/task_post  |
+[**googleAppListTasksReady**](AppDataApi.md#googleAppListTasksReady) | **GET**  /v3/app_data/google/app_list/tasks_ready  |
+[**googleAppListTaskGetAdvanced**](AppDataApi.md#googleAppListTaskGetAdvanced) | **GET**  /v3/app_data/google/app_list/task_get/advanced/{id}  |
+[**googleAppListTaskGetHtml**](AppDataApi.md#googleAppListTaskGetHtml) | **GET**  /v3/app_data/google/app_list/task_get/html/{id}  |
+[**googleAppInfoTaskPost**](AppDataApi.md#googleAppInfoTaskPost) | **POST**  /v3/app_data/google/app_info/task_post  |
+[**googleAppInfoTasksReady**](AppDataApi.md#googleAppInfoTasksReady) | **GET**  /v3/app_data/google/app_info/tasks_ready  |
+[**googleAppInfoTaskGetAdvanced**](AppDataApi.md#googleAppInfoTaskGetAdvanced) | **GET**  /v3/app_data/google/app_info/task_get/advanced/{id}  |
+[**googleAppInfoTaskGetHtml**](AppDataApi.md#googleAppInfoTaskGetHtml) | **GET**  /v3/app_data/google/app_info/task_get/html/{id}  |
+[**googleAppReviewsTaskPost**](AppDataApi.md#googleAppReviewsTaskPost) | **POST**  /v3/app_data/google/app_reviews/task_post  |
+[**googleAppReviewsTasksReady**](AppDataApi.md#googleAppReviewsTasksReady) | **GET**  /v3/app_data/google/app_reviews/tasks_ready  |
+[**googleAppReviewsTaskGetAdvanced**](AppDataApi.md#googleAppReviewsTaskGetAdvanced) | **GET**  /v3/app_data/google/app_reviews/task_get/advanced/{id}  |
+[**googleAppReviewsTaskGetHtml**](AppDataApi.md#googleAppReviewsTaskGetHtml) | **GET**  /v3/app_data/google/app_reviews/task_get/html/{id}  |
+[**googleAppListingsCategories**](AppDataApi.md#googleAppListingsCategories) | **GET**  /v3/app_data/google/app_listings/categories  |
+[**googleAppListingsSearchLive**](AppDataApi.md#googleAppListingsSearchLive) | **POST**  /v3/app_data/google/app_listings/search/live  |
+[**appleCategories**](AppDataApi.md#appleCategories) | **GET**  /v3/app_data/apple/categories  |
+[**appDataAppleLocations**](AppDataApi.md#appDataAppleLocations) | **GET**  /v3/app_data/apple/locations  |
+[**appDataAppleLanguages**](AppDataApi.md#appDataAppleLanguages) | **GET**  /v3/app_data/apple/languages  |
+[**appleAppSearchesTaskPost**](AppDataApi.md#appleAppSearchesTaskPost) | **POST**  /v3/app_data/apple/app_searches/task_post  |
+[**appleAppSearchesTasksReady**](AppDataApi.md#appleAppSearchesTasksReady) | **GET**  /v3/app_data/apple/app_searches/tasks_ready  |
+[**appleAppSearchesTaskGetAdvanced**](AppDataApi.md#appleAppSearchesTaskGetAdvanced) | **GET**  /v3/app_data/apple/app_searches/task_get/advanced/{id}  |
+[**appleAppInfoTaskPost**](AppDataApi.md#appleAppInfoTaskPost) | **POST**  /v3/app_data/apple/app_info/task_post  |
+[**appleAppInfoTasksReady**](AppDataApi.md#appleAppInfoTasksReady) | **GET**  /v3/app_data/apple/app_info/tasks_ready  |
+[**appleAppInfoTaskGetAdvanced**](AppDataApi.md#appleAppInfoTaskGetAdvanced) | **GET**  /v3/app_data/apple/app_info/task_get/advanced/{id}  |
+[**appleAppListTaskPost**](AppDataApi.md#appleAppListTaskPost) | **POST**  /v3/app_data/apple/app_list/task_post  |
+[**appleAppListTasksReady**](AppDataApi.md#appleAppListTasksReady) | **GET**  /v3/app_data/apple/app_list/tasks_ready  |
+[**appleAppListTaskGetAdvanced**](AppDataApi.md#appleAppListTaskGetAdvanced) | **GET**  /v3/app_data/apple/app_list/task_get/advanced/{id}  |
+[**appleAppReviewsTaskPost**](AppDataApi.md#appleAppReviewsTaskPost) | **POST**  /v3/app_data/apple/app_reviews/task_post  |
+[**appleAppReviewsTasksReady**](AppDataApi.md#appleAppReviewsTasksReady) | **GET**  /v3/app_data/apple/app_reviews/tasks_ready  |
+[**appleAppReviewsTaskGetAdvanced**](AppDataApi.md#appleAppReviewsTaskGetAdvanced) | **GET**  /v3/app_data/apple/app_reviews/task_get/advanced/{id}  |
+[**appleAppListingsCategories**](AppDataApi.md#appleAppListingsCategories) | **GET**  /v3/app_data/apple/app_listings/categories  |
+[**appleAppListingsSearchLive**](AppDataApi.md#appleAppListingsSearchLive) | **POST**  /v3/app_data/apple/app_listings/search/live  |
+
+<a id="appDataIdList"></a>
+# **appDataIdList**
+> AppDataIdListResponseInfo appDataIdList()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.AppDataIdListAsync(new List<AppDataIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 11:02:06 +00:00",
+        DatetimeTo = "2025-04-30 11:02:06 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
 ```
 
-#### Property Value
+### Parameters
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataIdListRequestInfo>&gt;**](IEnumerable<AppDataIdListRequestInfo>.md)|  | [optional] |
 
-### **ReadResponseAsString**
 
-```csharp
-public bool ReadResponseAsString { get; set; }
-```
 
-#### Property Value
+### Return type
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
+[**AppDataIdListResponseInfo**](AppDataIdListResponseInfo.md)
 
-## Constructors
+### Authorization
 
-### **AppDataApi(HttpClient)**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-public AppDataApi(HttpClient httpClient)
-```
+### HTTP request headers
 
-#### Parameters
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`httpClient` HttpClient<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-## Methods
+<a id="appDataErrors"></a>
+# **appDataErrors**
+> AppDataErrorsResponseInfo appDataErrors()
 
-### **AppDataIdListAsync(IEnumerable&lt;AppDataIdListRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<AppDataIdListResponseInfo> AppDataIdListAsync(IEnumerable<AppDataIdListRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataIdListRequestInfo&gt;](./AppDataIdListRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppDataIdListResponseInfo&gt;](./AppDataIdListResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed App Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/id_list/?bash'
-
-### **AppDataIdListAsync(IEnumerable&lt;AppDataIdListRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<AppDataIdListResponseInfo> AppDataIdListAsync(IEnumerable<AppDataIdListRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.AppDataApi.AppDataErrorsAsync(new List<AppDataErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataIdListRequestInfo&gt;](./AppDataIdListRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Parameters
 
-#### Returns
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataErrorsRequestInfo>&gt;**](IEnumerable<AppDataErrorsRequestInfo>.md)|  | [optional] |
 
-[Task&lt;AppDataIdListResponseInfo&gt;](./AppDataIdListResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Return type
 
-**Remarks:**
+[**AppDataErrorsResponseInfo**](AppDataErrorsResponseInfo.md)
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed App Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/id_list/?bash'
+### Authorization
 
-### **AppDataErrorsAsync(IEnumerable&lt;AppDataErrorsRequestInfo&gt;)**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-public Task<AppDataErrorsResponseInfo> AppDataErrorsAsync(IEnumerable<AppDataErrorsRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataErrorsRequestInfo&gt;](./AppDataErrorsRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppDataErrorsResponseInfo&gt;](./AppDataErrorsResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="googleCategories"></a>
+# **googleCategories**
+> AppDataGoogleCategoriesResponseInfo googleCategories()
 
-By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
 
-### **AppDataErrorsAsync(IEnumerable&lt;AppDataErrorsRequestInfo&gt;, CancellationToken)**
-
+### Example
 ```csharp
-public Task<AppDataErrorsResponseInfo> AppDataErrorsAsync(IEnumerable<AppDataErrorsRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataErrorsRequestInfo&gt;](./AppDataErrorsRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataErrorsResponseInfo&gt;](./AppDataErrorsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/errors/?bash'
-
-### **GoogleCategoriesAsync()**
-
-```csharp
-public Task<AppDataGoogleCategoriesResponseInfo> GoogleCategoriesAsync()
+});
+var result = await dfsClient.AppDataApi.GoogleCategoriesAsync();
 ```
-
-#### Returns
-
-[Task&lt;AppDataGoogleCategoriesResponseInfo&gt;](./AppDataGoogleCategoriesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-This endpoint will provide you with a full list of app categories available on Google Play.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/categories/?bash'
-
-### **GoogleCategoriesAsync(CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleCategoriesResponseInfo> GoogleCategoriesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataGoogleCategoriesResponseInfo**](AppDataGoogleCategoriesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleCategoriesResponseInfo&gt;](./AppDataGoogleCategoriesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a full list of app categories available on Google Play.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/categories/?bash'
+<a id="appDataGoogleLocations"></a>
+# **appDataGoogleLocations**
+> AppDataGoogleLocationsResponseInfo appDataGoogleLocations()
 
-### **AppDataGoogleLocationsAsync()**
 
+### Example
 ```csharp
-public Task<AppDataGoogleLocationsResponseInfo> AppDataGoogleLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;AppDataGoogleLocationsResponseInfo&gt;](./AppDataGoogleLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-By calling this endpoint you will receive the list of Google locations supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
-
-### **AppDataGoogleLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleLocationsResponseInfo> AppDataGoogleLocationsAsync(CancellationToken cancellationToken)
+});
+var result = await dfsClient.AppDataApi.AppDataGoogleLocationsAsync();
 ```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;AppDataGoogleLocationsResponseInfo&gt;](./AppDataGoogleLocationsResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-By calling this endpoint you will receive the list of Google locations supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
+### Return type
 
-### **AppDataGoogleLocationsCountryAsync(String)**
+[**AppDataGoogleLocationsResponseInfo**](AppDataGoogleLocationsResponseInfo.md)
 
-```csharp
-public Task<AppDataGoogleLocationsCountryResponseInfo> AppDataGoogleLocationsCountryAsync(string country)
-```
-
-#### Parameters
+### Authorization
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;AppDataGoogleLocationsCountryResponseInfo&gt;](./AppDataGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="appDataGoogleLocationsCountry"></a>
+# **appDataGoogleLocationsCountry**
+> AppDataGoogleLocationsCountryResponseInfo appDataGoogleLocationsCountry()
 
-**Remarks:**
 
-By calling this endpoint you will receive the list of Google locations supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
-
-### **AppDataGoogleLocationsCountryAsync(String, CancellationToken)**
-
+### Example
 ```csharp
-public Task<AppDataGoogleLocationsCountryResponseInfo> AppDataGoogleLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleLocationsCountryResponseInfo&gt;](./AppDataGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
-
-By calling this endpoint you will receive the list of Google locations supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/locations/?bash'
-
-### **AppDataGoogleLanguagesAsync()**
-
-```csharp
-public Task<AppDataGoogleLanguagesResponseInfo> AppDataGoogleLanguagesAsync()
+});
+var country = "us";
+var result = await dfsClient.AppDataApi.AppDataGoogleLocationsCountryAsync(country);
 ```
-
-#### Returns
-
-[Task&lt;AppDataGoogleLanguagesResponseInfo&gt;](./AppDataGoogleLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-By calling this endpoint you will receive the list of Google languages supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
 
-### **AppDataGoogleLanguagesAsync(CancellationToken)**
+### Return type
 
-```csharp
-public Task<AppDataGoogleLanguagesResponseInfo> AppDataGoogleLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+[**AppDataGoogleLocationsCountryResponseInfo**](AppDataGoogleLocationsCountryResponseInfo.md)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Authorization
 
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;AppDataGoogleLanguagesResponseInfo&gt;](./AppDataGoogleLanguagesResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="appDataGoogleLanguages"></a>
+# **appDataGoogleLanguages**
+> AppDataGoogleLanguagesResponseInfo appDataGoogleLanguages()
 
-By calling this endpoint you will receive the list of Google languages supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/languages/?bash'
 
-### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;)**
-
+### Example
 ```csharp
-public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;](./AppDataGoogleAppSearchesTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;](./AppDataGoogleAppSearchesTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
-
-### **GoogleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleAppSearchesTaskPostResponseInfo> GoogleAppSearchesTaskPostAsync(IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.AppDataApi.AppDataGoogleLanguagesAsync();
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;](./AppDataGoogleAppSearchesTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;](./AppDataGoogleAppSearchesTaskPostResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-‌‌
- <br>This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash'
+### Return type
 
-### **GoogleAppSearchesTasksReadyAsync()**
+[**AppDataGoogleLanguagesResponseInfo**](AppDataGoogleLanguagesResponseInfo.md)
 
-```csharp
-public Task<AppDataGoogleAppSearchesTasksReadyResponseInfo> GoogleAppSearchesTasksReadyAsync()
-```
-
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./AppDataGoogleAppSearchesTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+<a id="googleAppSearchesTaskPost"></a>
+# **googleAppSearchesTaskPost**
+> AppDataGoogleAppSearchesTaskPostResponseInfo googleAppSearchesTaskPost()
 
-### **GoogleAppSearchesTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppSearchesTasksReadyResponseInfo> GoogleAppSearchesTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppSearchesTasksReadyResponseInfo&gt;](./AppDataGoogleAppSearchesTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **AppDataTasksReadyAsync()**
-
-```csharp
-public Task<AppDataTasksReadyResponseInfo> AppDataTasksReadyAsync()
+});
+var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskPostAsync(new List<AppDataGoogleAppSearchesTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "vpn",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 30,
+    }
+});
 ```
-
-#### Returns
-
-[Task&lt;AppDataTasksReadyResponseInfo&gt;](./AppDataTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo>&gt;**](IEnumerable<AppDataGoogleAppSearchesTaskPostRequestInfo>.md)|  | [optional] |
 
-### **AppDataTasksReadyAsync(CancellationToken)**
 
-```csharp
-public Task<AppDataTasksReadyResponseInfo> AppDataTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataGoogleAppSearchesTaskPostResponseInfo**](AppDataGoogleAppSearchesTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataTasksReadyResponseInfo&gt;](./AppDataTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash'
+<a id="googleAppSearchesTasksReady"></a>
+# **googleAppSearchesTasksReady**
+> AppDataGoogleAppSearchesTasksReadyResponseInfo googleAppSearchesTasksReady()
 
-### **GoogleAppSearchesTaskGetAdvancedAsync(String)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo> GoogleAppSearchesTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with a list of apps ranking on Google Play for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash'
-
-### **GoogleAppSearchesTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo> GoogleAppSearchesTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+});
+var result = await dfsClient.AppDataApi.GoogleAppSearchesTasksReadyAsync();
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Parameters
 
-**Remarks:**
 
-This endpoint will provide you with a list of apps ranking on Google Play for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash'
+    
+This endpoint does not need any parameter.
+    
 
-### **GoogleAppSearchesTaskGetHtmlAsync(String)**
 
-```csharp
-public Task<AppDataGoogleAppSearchesTaskGetHtmlResponseInfo> GoogleAppSearchesTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+[**AppDataGoogleAppSearchesTasksReadyResponseInfo**](AppDataGoogleAppSearchesTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleAppSearchesTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppSearchesTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash'
+<a id="appDataTasksReady"></a>
+# **appDataTasksReady**
+> AppDataTasksReadyResponseInfo appDataTasksReady()
 
-### **GoogleAppSearchesTaskGetHtmlAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppSearchesTaskGetHtmlResponseInfo> GoogleAppSearchesTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppSearchesTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppSearchesTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash'
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **GoogleAppListTaskPostAsync(IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<AppDataGoogleAppListTaskPostResponseInfo> GoogleAppListTaskPostAsync(IEnumerable<AppDataGoogleAppListTaskPostRequestInfo> body)
+});
+var result = await dfsClient.AppDataApi.AppDataTasksReadyAsync();
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;](./AppDataGoogleAppListTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppListTaskPostResponseInfo&gt;](./AppDataGoogleAppListTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash'
 
-### **GoogleAppListTaskPostAsync(IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<AppDataGoogleAppListTaskPostResponseInfo> GoogleAppListTaskPostAsync(IEnumerable<AppDataGoogleAppListTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
+[**AppDataTasksReadyResponseInfo**](AppDataTasksReadyResponseInfo.md)
 
-`body` [IEnumerable&lt;AppDataGoogleAppListTaskPostRequestInfo&gt;](./AppDataGoogleAppListTaskPostRequestInfo.md)<br>
+### Authorization
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;AppDataGoogleAppListTaskPostResponseInfo&gt;](./AppDataGoogleAppListTaskPostResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="googleAppSearchesTaskGetAdvanced"></a>
+# **googleAppSearchesTaskGetAdvanced**
+> AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo googleAppSearchesTaskGetAdvanced()
 
-**Remarks:**
 
-‌‌
- <br>This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash'
-
-### **GoogleAppListTasksReadyAsync()**
-
+### Example
 ```csharp
-public Task<AppDataGoogleAppListTasksReadyResponseInfo> GoogleAppListTasksReadyAsync()
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;AppDataGoogleAppListTasksReadyResponseInfo&gt;](./AppDataGoogleAppListTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash'
-
-### **GoogleAppListTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleAppListTasksReadyResponseInfo> GoogleAppListTasksReadyAsync(CancellationToken cancellationToken)
+});
+var id = "56ab389d-7d71-4bbf-9673-57d3637c5289";
+var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskGetAdvancedAsync(id);
 ```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppListTasksReadyResponseInfo&gt;](./AppDataGoogleAppListTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Parameters
 
-**Remarks:**
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash'
+    
+This endpoint does not need any parameter.
+    
 
-### **GoogleAppListTaskGetAdvancedAsync(String)**
 
-```csharp
-public Task<AppDataGoogleAppListTaskGetAdvancedResponseInfo> GoogleAppListTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo**](AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleAppListTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppListTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a list of applications published in the top charts on the Google Play platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash'
+<a id="googleAppSearchesTaskGetHtml"></a>
+# **googleAppSearchesTaskGetHtml**
+> AppDataGoogleAppSearchesTaskGetHtmlResponseInfo googleAppSearchesTaskGetHtml()
 
-### **GoogleAppListTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppListTaskGetAdvancedResponseInfo> GoogleAppListTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppListTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppListTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint will provide you with a list of applications published in the top charts on the Google Play platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash'
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **GoogleAppListTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<AppDataGoogleAppListTaskGetHtmlResponseInfo> GoogleAppListTaskGetHtmlAsync(string id)
+});
+var id = "9f34e94e-6325-4b20-8170-eda129fede55";
+var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskGetHtmlAsync(id);
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppListTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppListTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash'
 
-### **GoogleAppListTaskGetHtmlAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<AppDataGoogleAppListTaskGetHtmlResponseInfo> GoogleAppListTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
+[**AppDataGoogleAppSearchesTaskGetHtmlResponseInfo**](AppDataGoogleAppSearchesTaskGetHtmlResponseInfo.md)
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### Authorization
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;AppDataGoogleAppListTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppListTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="googleAppListTaskPost"></a>
+# **googleAppListTaskPost**
+> AppDataGoogleAppListTaskPostResponseInfo googleAppListTaskPost()
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash'
-
-### **GoogleAppInfoTaskPostAsync(IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;)**
-
+### Example
 ```csharp
-public Task<AppDataGoogleAppInfoTaskPostResponseInfo> GoogleAppInfoTaskPostAsync(IEnumerable<AppDataGoogleAppInfoTaskPostRequestInfo> body)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;](./AppDataGoogleAppInfoTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppInfoTaskPostResponseInfo&gt;](./AppDataGoogleAppInfoTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash'
-
-### **GoogleAppInfoTaskPostAsync(IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleAppInfoTaskPostResponseInfo> GoogleAppInfoTaskPostAsync(IEnumerable<AppDataGoogleAppInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.AppDataApi.GoogleAppListTaskPostAsync(new List<AppDataGoogleAppListTaskPostRequestInfo>()
+{
+    new()
+    {
+        AppCollection = "topselling_free",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 100,
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataGoogleAppInfoTaskPostRequestInfo&gt;](./AppDataGoogleAppInfoTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Parameters
 
-[Task&lt;AppDataGoogleAppInfoTaskPostResponseInfo&gt;](./AppDataGoogleAppInfoTaskPostResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataGoogleAppListTaskPostRequestInfo>&gt;**](IEnumerable<AppDataGoogleAppListTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash'
+[**AppDataGoogleAppListTaskPostResponseInfo**](AppDataGoogleAppListTaskPostResponseInfo.md)
 
-### **GoogleAppInfoTasksReadyAsync()**
+### Authorization
 
-```csharp
-public Task<AppDataGoogleAppInfoTasksReadyResponseInfo> GoogleAppInfoTasksReadyAsync()
-```
-
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;AppDataGoogleAppInfoTasksReadyResponseInfo&gt;](./AppDataGoogleAppInfoTasksReadyResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="googleAppListTasksReady"></a>
+# **googleAppListTasksReady**
+> AppDataGoogleAppListTasksReadyResponseInfo googleAppListTasksReady()
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash'
 
-### **GoogleAppInfoTasksReadyAsync(CancellationToken)**
-
+### Example
 ```csharp
-public Task<AppDataGoogleAppInfoTasksReadyResponseInfo> GoogleAppInfoTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppInfoTasksReadyResponseInfo&gt;](./AppDataGoogleAppInfoTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash'
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-### **GoogleAppInfoTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<AppDataGoogleAppInfoTaskGetAdvancedResponseInfo> GoogleAppInfoTaskGetAdvancedAsync(string id)
+});
+var result = await dfsClient.AppDataApi.GoogleAppListTasksReadyAsync();
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppInfoTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, number of installs, images, and other data. The results are specific to the app_id parameter specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash'
 
-### **GoogleAppInfoTaskGetAdvancedAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<AppDataGoogleAppInfoTaskGetAdvancedResponseInfo> GoogleAppInfoTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
+[**AppDataGoogleAppListTasksReadyResponseInfo**](AppDataGoogleAppListTasksReadyResponseInfo.md)
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Authorization
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;AppDataGoogleAppInfoTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="googleAppListTaskGetAdvanced"></a>
+# **googleAppListTaskGetAdvanced**
+> AppDataGoogleAppListTaskGetAdvancedResponseInfo googleAppListTaskGetAdvanced()
 
-**Remarks:**
 
-This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, number of installs, images, and other data. The results are specific to the app_id parameter specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash'
-
-### **GoogleAppInfoTaskGetHtmlAsync(String)**
-
+### Example
 ```csharp
-public Task<AppDataGoogleAppInfoTaskGetHtmlResponseInfo> GoogleAppInfoTaskGetHtmlAsync(string id)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppInfoTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppInfoTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash'
-
-### **GoogleAppInfoTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<AppDataGoogleAppInfoTaskGetHtmlResponseInfo> GoogleAppInfoTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+});
+var id = "f4da2498-af5d-4140-af6d-2f3810373d8d";
+var result = await dfsClient.AppDataApi.GoogleAppListTaskGetAdvancedAsync(id);
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Parameters
 
-[Task&lt;AppDataGoogleAppInfoTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppInfoTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash'
+[**AppDataGoogleAppListTaskGetAdvancedResponseInfo**](AppDataGoogleAppListTaskGetAdvancedResponseInfo.md)
 
-### **GoogleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<AppDataGoogleAppReviewsTaskPostResponseInfo> GoogleAppReviewsTaskPostAsync(IEnumerable<AppDataGoogleAppReviewsTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;](./AppDataGoogleAppReviewsTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppReviewsTaskPostResponseInfo&gt;](./AppDataGoogleAppReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash'
+<a id="googleAppListTaskGetHtml"></a>
+# **googleAppListTaskGetHtml**
+> AppDataGoogleAppListTaskGetHtmlResponseInfo googleAppListTaskGetHtml()
 
-### **GoogleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppReviewsTaskPostResponseInfo> GoogleAppReviewsTaskPostAsync(IEnumerable<AppDataGoogleAppReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataGoogleAppReviewsTaskPostRequestInfo&gt;](./AppDataGoogleAppReviewsTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppReviewsTaskPostResponseInfo&gt;](./AppDataGoogleAppReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash'
-
-### **GoogleAppReviewsTasksReadyAsync()**
-
-```csharp
-public Task<AppDataGoogleAppReviewsTasksReadyResponseInfo> GoogleAppReviewsTasksReadyAsync()
+});
+var id = "785fe2b3-9a53-494a-add4-d498dbf5f8a5";
+var result = await dfsClient.AppDataApi.GoogleAppListTaskGetHtmlAsync(id);
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;AppDataGoogleAppReviewsTasksReadyResponseInfo&gt;](./AppDataGoogleAppReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash'
+[**AppDataGoogleAppListTaskGetHtmlResponseInfo**](AppDataGoogleAppListTaskGetHtmlResponseInfo.md)
 
-### **GoogleAppReviewsTasksReadyAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<AppDataGoogleAppReviewsTasksReadyResponseInfo> GoogleAppReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;AppDataGoogleAppReviewsTasksReadyResponseInfo&gt;](./AppDataGoogleAppReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleAppInfoTaskPost"></a>
+# **googleAppInfoTaskPost**
+> AppDataGoogleAppInfoTaskPostResponseInfo googleAppInfoTaskPost()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash'
-
-### **GoogleAppReviewsTaskGetAdvancedAsync(String)**
-
+### Example
 ```csharp
-public Task<AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo> GoogleAppReviewsTaskGetAdvancedAsync(string id)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+});
+var result = await dfsClient.AppDataApi.GoogleAppInfoTaskPostAsync(new List<AppDataGoogleAppInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        AppId = "org.telegram.messenger",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-This endpoint will provide you with feedback data on applications listed on the Google Play platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash'
+### Parameters
 
-### **GoogleAppReviewsTaskGetAdvancedAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataGoogleAppInfoTaskPostRequestInfo>&gt;**](IEnumerable<AppDataGoogleAppInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo> GoogleAppReviewsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataGoogleAppInfoTaskPostResponseInfo**](AppDataGoogleAppInfoTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo&gt;](./AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with feedback data on applications listed on the Google Play platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash'
+<a id="googleAppInfoTasksReady"></a>
+# **googleAppInfoTasksReady**
+> AppDataGoogleAppInfoTasksReadyResponseInfo googleAppInfoTasksReady()
 
-### **GoogleAppReviewsTaskGetHtmlAsync(String)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppReviewsTaskGetHtmlResponseInfo> GoogleAppReviewsTaskGetHtmlAsync(string id)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.GoogleAppInfoTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppReviewsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**AppDataGoogleAppInfoTasksReadyResponseInfo**](AppDataGoogleAppInfoTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleAppReviewsTaskGetHtmlAsync(String, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<AppDataGoogleAppReviewsTaskGetHtmlResponseInfo> GoogleAppReviewsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+<a id="googleAppInfoTaskGetAdvanced"></a>
+# **googleAppInfoTaskGetAdvanced**
+> AppDataGoogleAppInfoTaskGetAdvancedResponseInfo googleAppInfoTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataGoogleAppReviewsTaskGetHtmlResponseInfo&gt;](./AppDataGoogleAppReviewsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+});
+var id = "accfd6da-b68e-4a40-bba0-de16f09bb0c0";
+var result = await dfsClient.AppDataApi.GoogleAppInfoTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash'
 
-### **GoogleAppListingsCategoriesAsync()**
+### Return type
 
-```csharp
-public Task<AppDataGoogleAppListingsCategoriesResponseInfo> GoogleAppListingsCategoriesAsync()
-```
+[**AppDataGoogleAppInfoTaskGetAdvancedResponseInfo**](AppDataGoogleAppInfoTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleAppListingsCategoriesResponseInfo&gt;](./AppDataGoogleAppListingsCategoriesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a full list of app categories available on Google Play.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash'
+<a id="googleAppInfoTaskGetHtml"></a>
+# **googleAppInfoTaskGetHtml**
+> AppDataGoogleAppInfoTaskGetHtmlResponseInfo googleAppInfoTaskGetHtml()
 
-### **GoogleAppListingsCategoriesAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppListingsCategoriesResponseInfo> GoogleAppListingsCategoriesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;AppDataGoogleAppListingsCategoriesResponseInfo&gt;](./AppDataGoogleAppListingsCategoriesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "3005591c-60b5-4333-a456-a314c25502ad";
+var result = await dfsClient.AppDataApi.GoogleAppInfoTaskGetHtmlAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-This endpoint will provide you with a full list of app categories available on Google Play.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash'
 
-### **GoogleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<AppDataGoogleAppListingsSearchLiveResponseInfo> GoogleAppListingsSearchLiveAsync(IEnumerable<AppDataGoogleAppListingsSearchLiveRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;](./AppDataGoogleAppListingsSearchLiveRequestInfo.md)<br>
+[**AppDataGoogleAppInfoTaskGetHtmlResponseInfo**](AppDataGoogleAppInfoTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataGoogleAppListingsSearchLiveResponseInfo&gt;](./AppDataGoogleAppListingsSearchLiveResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a list of apps published on Google Play along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash'
+<a id="googleAppReviewsTaskPost"></a>
+# **googleAppReviewsTaskPost**
+> AppDataGoogleAppReviewsTaskPostResponseInfo googleAppReviewsTaskPost()
 
-### **GoogleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataGoogleAppListingsSearchLiveResponseInfo> GoogleAppListingsSearchLiveAsync(IEnumerable<AppDataGoogleAppListingsSearchLiveRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskPostAsync(new List<AppDataGoogleAppReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        AppId = "org.telegram.messenger",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 150,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;AppDataGoogleAppListingsSearchLiveRequestInfo&gt;](./AppDataGoogleAppListingsSearchLiveRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataGoogleAppReviewsTaskPostRequestInfo>&gt;**](IEnumerable<AppDataGoogleAppReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;AppDataGoogleAppListingsSearchLiveResponseInfo&gt;](./AppDataGoogleAppListingsSearchLiveResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**AppDataGoogleAppReviewsTaskPostResponseInfo**](AppDataGoogleAppReviewsTaskPostResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint will provide you with a list of apps published on Google Play along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash'
+### HTTP request headers
 
-### **AppleCategoriesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<AppDataAppleCategoriesResponseInfo> AppleCategoriesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleAppReviewsTasksReady"></a>
+# **googleAppReviewsTasksReady**
+> AppDataGoogleAppReviewsTasksReadyResponseInfo googleAppReviewsTasksReady()
 
-[Task&lt;AppDataAppleCategoriesResponseInfo&gt;](./AppDataAppleCategoriesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.AppDataApi.GoogleAppReviewsTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-This endpoint will provide you with a full list of app categories available on App Store.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/categories/?bash'
 
-### **AppleCategoriesAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<AppDataAppleCategoriesResponseInfo> AppleCategoriesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataGoogleAppReviewsTasksReadyResponseInfo**](AppDataGoogleAppReviewsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleCategoriesResponseInfo&gt;](./AppDataAppleCategoriesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a full list of app categories available on App Store.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/categories/?bash'
+<a id="googleAppReviewsTaskGetAdvanced"></a>
+# **googleAppReviewsTaskGetAdvanced**
+> AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo googleAppReviewsTaskGetAdvanced()
 
-### **AppDataAppleLocationsAsync()**
 
+### Example
 ```csharp
-public Task<AppDataAppleLocationsResponseInfo> AppDataAppleLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;AppDataAppleLocationsResponseInfo&gt;](./AppDataAppleLocationsResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "2a851e3a-e5fc-47ca-8186-607250c43ae4";
+var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskGetAdvancedAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-By calling this endpoint you will receive the list of Apple locations supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/locations/?bash'
 
-### **AppDataAppleLocationsAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<AppDataAppleLocationsResponseInfo> AppDataAppleLocationsAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo**](AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleLocationsResponseInfo&gt;](./AppDataAppleLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-By calling this endpoint you will receive the list of Apple locations supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/locations/?bash'
+<a id="googleAppReviewsTaskGetHtml"></a>
+# **googleAppReviewsTaskGetHtml**
+> AppDataGoogleAppReviewsTaskGetHtmlResponseInfo googleAppReviewsTaskGetHtml()
 
-### **AppDataAppleLanguagesAsync()**
 
+### Example
 ```csharp
-public Task<AppDataAppleLanguagesResponseInfo> AppDataAppleLanguagesAsync()
-```
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataAppleLanguagesResponseInfo&gt;](./AppDataAppleLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "e2f1fad6-04fb-45a2-b524-9f67a99fc014";
+var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskGetHtmlAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-By calling this endpoint you will receive the list of Apple languages supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
 
-### **AppDataAppleLanguagesAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<AppDataAppleLanguagesResponseInfo> AppDataAppleLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataGoogleAppReviewsTaskGetHtmlResponseInfo**](AppDataGoogleAppReviewsTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleLanguagesResponseInfo&gt;](./AppDataAppleLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-By calling this endpoint you will receive the list of Apple languages supported in App Data API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/languages/?bash'
+<a id="googleAppListingsCategories"></a>
+# **googleAppListingsCategories**
+> AppDataGoogleAppListingsCategoriesResponseInfo googleAppListingsCategories()
 
-### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.GoogleAppListingsCategoriesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;](./AppDataAppleAppSearchesTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;](./AppDataAppleAppSearchesTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**AppDataGoogleAppListingsCategoriesResponseInfo**](AppDataGoogleAppListingsCategoriesResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AppleAppSearchesTaskPostAsync(IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<AppDataAppleAppSearchesTaskPostResponseInfo> AppleAppSearchesTaskPostAsync(IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;](./AppDataAppleAppSearchesTaskPostRequestInfo.md)<br>
+<a id="googleAppListingsSearchLive"></a>
+# **googleAppListingsSearchLive**
+> AppDataGoogleAppListingsSearchLiveResponseInfo googleAppListingsSearchLive()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;](./AppDataAppleAppSearchesTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.AppDataApi.GoogleAppListingsSearchLiveAsync(new List<AppDataGoogleAppListingsSearchLiveRequestInfo>()
+{
+    new()
+    {
+        Categories = new List<string>()
+        {
+            "Tools",
+        },
+        Description = "vpn",
+        Title = "vpn",
+        Limit = 10,
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataGoogleAppListingsSearchLiveRequestInfo>&gt;**](IEnumerable<AppDataGoogleAppListingsSearchLiveRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌‌
- <br>This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash'
 
-### **AppleAppSearchesTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<AppDataAppleAppSearchesTasksReadyResponseInfo> AppleAppSearchesTasksReadyAsync()
-```
+[**AppDataGoogleAppListingsSearchLiveResponseInfo**](AppDataGoogleAppListingsSearchLiveResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppSearchesTasksReadyResponseInfo&gt;](./AppDataAppleAppSearchesTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash'
+<a id="appleCategories"></a>
+# **appleCategories**
+> AppDataAppleCategoriesResponseInfo appleCategories()
 
-### **AppleAppSearchesTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppSearchesTasksReadyResponseInfo> AppleAppSearchesTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.AppDataApi.AppleCategoriesAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;AppDataAppleAppSearchesTasksReadyResponseInfo&gt;](./AppDataAppleAppSearchesTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash'
+[**AppDataAppleCategoriesResponseInfo**](AppDataAppleCategoriesResponseInfo.md)
 
-### **AppleAppSearchesTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<AppDataAppleAppSearchesTaskGetAdvancedResponseInfo> AppleAppSearchesTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;AppDataAppleAppSearchesTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppSearchesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="appDataAppleLocations"></a>
+# **appDataAppleLocations**
+> AppDataAppleLocationsResponseInfo appDataAppleLocations()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.AppDataApi.AppDataAppleLocationsAsync();
+```
 
-This endpoint will provide you with a list of apps ranking on the App Store for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash'
+### Parameters
 
-### **AppleAppSearchesTaskGetAdvancedAsync(String, CancellationToken)**
 
-```csharp
-public Task<AppDataAppleAppSearchesTaskGetAdvancedResponseInfo> AppleAppSearchesTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataAppleLocationsResponseInfo**](AppDataAppleLocationsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppSearchesTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppSearchesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a list of apps ranking on the App Store for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash'
+<a id="appDataAppleLanguages"></a>
+# **appDataAppleLanguages**
+> AppDataAppleLanguagesResponseInfo appDataAppleLanguages()
 
-### **AppleAppInfoTaskPostAsync(IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppInfoTaskPostResponseInfo> AppleAppInfoTaskPostAsync(IEnumerable<AppDataAppleAppInfoTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.AppDataAppleLanguagesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;](./AppDataAppleAppInfoTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;AppDataAppleAppInfoTaskPostResponseInfo&gt;](./AppDataAppleAppInfoTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**AppDataAppleLanguagesResponseInfo**](AppDataAppleLanguagesResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AppleAppInfoTaskPostAsync(IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<AppDataAppleAppInfoTaskPostResponseInfo> AppleAppInfoTaskPostAsync(IEnumerable<AppDataAppleAppInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;AppDataAppleAppInfoTaskPostRequestInfo&gt;](./AppDataAppleAppInfoTaskPostRequestInfo.md)<br>
+<a id="appleAppSearchesTaskPost"></a>
+# **appleAppSearchesTaskPost**
+> AppDataAppleAppSearchesTaskPostResponseInfo appleAppSearchesTaskPost()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataAppleAppInfoTaskPostResponseInfo&gt;](./AppDataAppleAppInfoTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.AppDataApi.AppleAppSearchesTaskPostAsync(new List<AppDataAppleAppSearchesTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "vpn",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 200,
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo>&gt;**](IEnumerable<AppDataAppleAppSearchesTaskPostRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌‌
- <br>This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash'
 
-### **AppleAppInfoTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<AppDataAppleAppInfoTasksReadyResponseInfo> AppleAppInfoTasksReadyAsync()
-```
+[**AppDataAppleAppSearchesTaskPostResponseInfo**](AppDataAppleAppSearchesTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppInfoTasksReadyResponseInfo&gt;](./AppDataAppleAppInfoTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash'
+<a id="appleAppSearchesTasksReady"></a>
+# **appleAppSearchesTasksReady**
+> AppDataAppleAppSearchesTasksReadyResponseInfo appleAppSearchesTasksReady()
 
-### **AppleAppInfoTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppInfoTasksReadyResponseInfo> AppleAppInfoTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.AppDataApi.AppleAppSearchesTasksReadyAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;AppDataAppleAppInfoTasksReadyResponseInfo&gt;](./AppDataAppleAppInfoTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash'
+[**AppDataAppleAppSearchesTasksReadyResponseInfo**](AppDataAppleAppSearchesTasksReadyResponseInfo.md)
 
-### **AppleAppInfoTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<AppDataAppleAppInfoTaskGetAdvancedResponseInfo> AppleAppInfoTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;AppDataAppleAppInfoTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="appleAppSearchesTaskGetAdvanced"></a>
+# **appleAppSearchesTaskGetAdvanced**
+> AppDataAppleAppSearchesTaskGetAdvancedResponseInfo appleAppSearchesTaskGetAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "a950c217-8459-49fe-8834-fe5f83e5e84e";
+var result = await dfsClient.AppDataApi.AppleAppSearchesTaskGetAdvancedAsync(id);
+```
 
-This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, images, and other data. The results are specific to the app_id parameter specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash'
+### Parameters
 
-### **AppleAppInfoTaskGetAdvancedAsync(String, CancellationToken)**
 
-```csharp
-public Task<AppDataAppleAppInfoTaskGetAdvancedResponseInfo> AppleAppInfoTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataAppleAppSearchesTaskGetAdvancedResponseInfo**](AppDataAppleAppSearchesTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppInfoTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, images, and other data. The results are specific to the app_id parameter specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash'
+<a id="appleAppInfoTaskPost"></a>
+# **appleAppInfoTaskPost**
+> AppDataAppleAppInfoTaskPostResponseInfo appleAppInfoTaskPost()
 
-### **AppleAppListTaskPostAsync(IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppListTaskPostResponseInfo> AppleAppListTaskPostAsync(IEnumerable<AppDataAppleAppListTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.AppleAppInfoTaskPostAsync(new List<AppDataAppleAppInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        AppId = "835599320",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;](./AppDataAppleAppListTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataAppleAppInfoTaskPostRequestInfo>&gt;**](IEnumerable<AppDataAppleAppInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;AppDataAppleAppListTaskPostResponseInfo&gt;](./AppDataAppleAppListTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**AppDataAppleAppInfoTaskPostResponseInfo**](AppDataAppleAppInfoTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AppleAppListTaskPostAsync(IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<AppDataAppleAppListTaskPostResponseInfo> AppleAppListTaskPostAsync(IEnumerable<AppDataAppleAppListTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;AppDataAppleAppListTaskPostRequestInfo&gt;](./AppDataAppleAppListTaskPostRequestInfo.md)<br>
+<a id="appleAppInfoTasksReady"></a>
+# **appleAppInfoTasksReady**
+> AppDataAppleAppInfoTasksReadyResponseInfo appleAppInfoTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataAppleAppListTaskPostResponseInfo&gt;](./AppDataAppleAppListTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.AppDataApi.AppleAppInfoTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash'
 
-### **AppleAppListTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<AppDataAppleAppListTasksReadyResponseInfo> AppleAppListTasksReadyAsync()
-```
+[**AppDataAppleAppInfoTasksReadyResponseInfo**](AppDataAppleAppInfoTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppListTasksReadyResponseInfo&gt;](./AppDataAppleAppListTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash'
+<a id="appleAppInfoTaskGetAdvanced"></a>
+# **appleAppInfoTaskGetAdvanced**
+> AppDataAppleAppInfoTaskGetAdvancedResponseInfo appleAppInfoTaskGetAdvanced()
 
-### **AppleAppListTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppListTasksReadyResponseInfo> AppleAppListTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "96a03976-e950-4ffe-91d5-644011d719e4";
+var result = await dfsClient.AppDataApi.AppleAppInfoTaskGetAdvancedAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;AppDataAppleAppListTasksReadyResponseInfo&gt;](./AppDataAppleAppListTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash'
+[**AppDataAppleAppInfoTaskGetAdvancedResponseInfo**](AppDataAppleAppInfoTaskGetAdvancedResponseInfo.md)
 
-### **AppleAppListTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<AppDataAppleAppListTaskGetAdvancedResponseInfo> AppleAppListTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;AppDataAppleAppListTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppListTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="appleAppListTaskPost"></a>
+# **appleAppListTaskPost**
+> AppDataAppleAppListTaskPostResponseInfo appleAppListTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.AppDataApi.AppleAppListTaskPostAsync(new List<AppDataAppleAppListTaskPostRequestInfo>()
+{
+    new()
+    {
+        AppCollection = "top_free_ios",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 200,
+        AppCategory = "games",
+    }
+});
+```
 
-This endpoint will provide you with a list of applications published in the top app charts on the App Store platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash'
+### Parameters
 
-### **AppleAppListTaskGetAdvancedAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataAppleAppListTaskPostRequestInfo>&gt;**](IEnumerable<AppDataAppleAppListTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<AppDataAppleAppListTaskGetAdvancedResponseInfo> AppleAppListTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataAppleAppListTaskPostResponseInfo**](AppDataAppleAppListTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppListTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppListTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a list of applications published in the top app charts on the App Store platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash'
+<a id="appleAppListTasksReady"></a>
+# **appleAppListTasksReady**
+> AppDataAppleAppListTasksReadyResponseInfo appleAppListTasksReady()
 
-### **AppleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppReviewsTaskPostResponseInfo> AppleAppReviewsTaskPostAsync(IEnumerable<AppDataAppleAppReviewsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.AppleAppListTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;](./AppDataAppleAppReviewsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;AppDataAppleAppReviewsTaskPostResponseInfo&gt;](./AppDataAppleAppReviewsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**AppDataAppleAppListTasksReadyResponseInfo**](AppDataAppleAppListTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AppleAppReviewsTaskPostAsync(IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<AppDataAppleAppReviewsTaskPostResponseInfo> AppleAppReviewsTaskPostAsync(IEnumerable<AppDataAppleAppReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;AppDataAppleAppReviewsTaskPostRequestInfo&gt;](./AppDataAppleAppReviewsTaskPostRequestInfo.md)<br>
+<a id="appleAppListTaskGetAdvanced"></a>
+# **appleAppListTaskGetAdvanced**
+> AppDataAppleAppListTaskGetAdvancedResponseInfo appleAppListTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;AppDataAppleAppReviewsTaskPostResponseInfo&gt;](./AppDataAppleAppReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "9370611b-cb73-4dde-b838-d39aa5e31ae0";
+var result = await dfsClient.AppDataApi.AppleAppListTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash'
 
-### **AppleAppReviewsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<AppDataAppleAppReviewsTasksReadyResponseInfo> AppleAppReviewsTasksReadyAsync()
-```
+[**AppDataAppleAppListTaskGetAdvancedResponseInfo**](AppDataAppleAppListTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppReviewsTasksReadyResponseInfo&gt;](./AppDataAppleAppReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash'
+<a id="appleAppReviewsTaskPost"></a>
+# **appleAppReviewsTaskPost**
+> AppDataAppleAppReviewsTaskPostResponseInfo appleAppReviewsTaskPost()
 
-### **AppleAppReviewsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppReviewsTasksReadyResponseInfo> AppleAppReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;AppDataAppleAppReviewsTasksReadyResponseInfo&gt;](./AppDataAppleAppReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.AppDataApi.AppleAppReviewsTaskPostAsync(new List<AppDataAppleAppReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        AppId = "835599320",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 200,
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataAppleAppReviewsTaskPostRequestInfo>&gt;**](IEnumerable<AppDataAppleAppReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-### **AppleAppReviewsTaskGetAdvancedAsync(String)**
 
-```csharp
-public Task<AppDataAppleAppReviewsTaskGetAdvancedResponseInfo> AppleAppReviewsTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**AppDataAppleAppReviewsTaskPostResponseInfo**](AppDataAppleAppReviewsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppReviewsTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppReviewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with feedback data on applications listed on the App Store platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash'
+<a id="appleAppReviewsTasksReady"></a>
+# **appleAppReviewsTasksReady**
+> AppDataAppleAppReviewsTasksReadyResponseInfo appleAppReviewsTasksReady()
 
-### **AppleAppReviewsTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppReviewsTaskGetAdvancedResponseInfo> AppleAppReviewsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.AppDataApi.AppleAppReviewsTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;AppDataAppleAppReviewsTaskGetAdvancedResponseInfo&gt;](./AppDataAppleAppReviewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**AppDataAppleAppReviewsTasksReadyResponseInfo**](AppDataAppleAppReviewsTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint will provide you with feedback data on applications listed on the App Store platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash'
+### HTTP request headers
 
-### **AppleAppListingsCategoriesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<AppDataAppleAppListingsCategoriesResponseInfo> AppleAppListingsCategoriesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="appleAppReviewsTaskGetAdvanced"></a>
+# **appleAppReviewsTaskGetAdvanced**
+> AppDataAppleAppReviewsTaskGetAdvancedResponseInfo appleAppReviewsTaskGetAdvanced()
 
-[Task&lt;AppDataAppleAppListingsCategoriesResponseInfo&gt;](./AppDataAppleAppListingsCategoriesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "e769bee6-6874-4872-9721-cb34ac1bf953";
+var result = await dfsClient.AppDataApi.AppleAppReviewsTaskGetAdvancedAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-This endpoint will provide you with a full list of app categories available on Apple App Store.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash'
 
-### **AppleAppListingsCategoriesAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<AppDataAppleAppListingsCategoriesResponseInfo> AppleAppListingsCategoriesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**AppDataAppleAppReviewsTaskGetAdvancedResponseInfo**](AppDataAppleAppReviewsTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;AppDataAppleAppListingsCategoriesResponseInfo&gt;](./AppDataAppleAppListingsCategoriesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with a full list of app categories available on Apple App Store.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash'
+<a id="appleAppListingsCategories"></a>
+# **appleAppListingsCategories**
+> AppDataAppleAppListingsCategoriesResponseInfo appleAppListingsCategories()
 
-### **AppleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<AppDataAppleAppListingsSearchLiveResponseInfo> AppleAppListingsSearchLiveAsync(IEnumerable<AppDataAppleAppListingsSearchLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;](./AppDataAppleAppListingsSearchLiveRequestInfo.md)<br>
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
+});
+var result = await dfsClient.AppDataApi.AppleAppListingsCategoriesAsync();
+```
 
-[Task&lt;AppDataAppleAppListingsSearchLiveResponseInfo&gt;](./AppDataAppleAppListingsSearchLiveResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-This endpoint will provide you with a list of apps published on App Store along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash'
+### Return type
 
-### **AppleAppListingsSearchLiveAsync(IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;, CancellationToken)**
+[**AppDataAppleAppListingsCategoriesResponseInfo**](AppDataAppleAppListingsCategoriesResponseInfo.md)
 
-```csharp
-public Task<AppDataAppleAppListingsSearchLiveResponseInfo> AppleAppListingsSearchLiveAsync(IEnumerable<AppDataAppleAppListingsSearchLiveRequestInfo> body, CancellationToken cancellationToken)
-```
+### Authorization
 
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`body` [IEnumerable&lt;AppDataAppleAppListingsSearchLiveRequestInfo&gt;](./AppDataAppleAppListingsSearchLiveRequestInfo.md)<br>
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;AppDataAppleAppListingsSearchLiveResponseInfo&gt;](./AppDataAppleAppListingsSearchLiveResponseInfo.md)<br>
-Successful operation
+<a id="appleAppListingsSearchLive"></a>
+# **appleAppListingsSearchLive**
+> AppDataAppleAppListingsSearchLiveResponseInfo appleAppListingsSearchLive()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(new List<AppDataAppleAppListingsSearchLiveRequestInfo>()
+{
+    new()
+    {
+        Categories = new List<string>()
+        {
+            "Tools",
+        },
+        Description = "vpn",
+        Title = "vpn",
+        Limit = 10,
+    }
+});
+```
 
-This endpoint will provide you with a list of apps published on App Store along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash'
+### Parameters
 
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AppDataAppleAppListingsSearchLiveRequestInfo>&gt;**](IEnumerable<AppDataAppleAppListingsSearchLiveRequestInfo>.md)|  | [optional] |
 
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
 
-#### Type Parameters
 
-`T`<br>
+### Return type
 
-#### Parameters
+[**AppDataAppleAppListingsSearchLiveResponseInfo**](AppDataAppleAppListingsSearchLiveResponseInfo.md)
 
-`response` HttpResponseMessage<br>
+### Authorization
 
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

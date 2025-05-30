@@ -1,52 +1,58 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ContentCommentInfo
+    public class ContentCommentInfo 
     {
+
         /// <summary>
         /// product’s rating
         /// <br/>contains information about the rating a customer has given to the product
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rating", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentRatingInfo Rating { get; set; }
 
         /// <summary>
         /// title of the customer’s comment
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public double? Title { get; set; }
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Title { get; set; }
 
         /// <summary>
         /// date when the comment was published
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("publish_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("publish_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PublishDate { get; set; }
 
         /// <summary>
         /// author of the comment
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("author", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("author", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Author { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("have_form", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        /// <summary>
+        /// 
+        /// </summary>
+        [JsonProperty("have_form", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? HaveForm { get; set; }
 
         /// <summary>
         /// primary content on the page
         /// <br/>you can find more information about content priority calculation in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("primary_content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<SectionContentItemInfo> PrimaryContent { get; set; }
+        [JsonProperty("primary_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<SectionContentItemInfo> PrimaryContent { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

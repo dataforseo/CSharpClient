@@ -1,13 +1,17 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class SerpGoogleDatasetAdvancedItem
+    public class SerpGoogleDatasetAdvancedItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -15,61 +19,61 @@ namespace DataForSeo.Client.Models
         /// <br/>position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
 
         /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
         /// <br/>left, right
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
         /// the XPath of the element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("xpath", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
 
         /// <summary>
         /// ID of the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("dataset_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("dataset_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DatasetId { get; set; }
 
         /// <summary>
         /// title of the element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// URL of the image
         /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("image_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
 
         /// <summary>
         /// count of articles that refer to the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("scholarly_citations_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ScholarlyCitationsCount { get; set; }
+        [JsonProperty("scholarly_citations_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ScholarlyCitationsCount { get; set; }
 
         /// <summary>
         /// url of scholarly articles
         /// <br/>link to the list of scholarly articles on Google Scholar
         /// <br/>example: https://scholar.google.com/scholar?q=%2210.6084%20m9%20figshare%207427933%20v1%22
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("scholarly_articles_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("scholarly_articles_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ScholarlyArticlesUrl { get; set; }
 
         /// <summary>
@@ -77,14 +81,14 @@ namespace DataForSeo.Client.Models
         /// <br/>unique digital identifier of the dataset
         /// <br/>example: https://doi.org/10.5061/dryad.hmgqnk9m3
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("unique_identifier", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("unique_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UniqueIdentifier { get; set; }
 
         /// <summary>
         /// link to related article
         /// <br/>link to the published article that is related to the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("related_article", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("related_article", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RelatedArticle { get; set; }
 
         /// <summary>
@@ -92,32 +96,32 @@ namespace DataForSeo.Client.Models
         /// <br/>the links shown below some of Google Dataset’s search results
         /// <br/>if there are none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("links", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LinkElement> Links { get; set; }
+        [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<LinkElement> Links { get; set; }
 
         /// <summary>
         /// the list of institutions that provided the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("dataset_providers", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LicensesElement> DatasetProviders { get; set; }
+        [JsonProperty("dataset_providers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<LicensesElement> DatasetProviders { get; set; }
 
         /// <summary>
         /// the list of file formats of the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("formats", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<FormatsElement> Formats { get; set; }
+        [JsonProperty("formats", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<FormatsElement> Formats { get; set; }
 
         /// <summary>
         /// the list of authors of the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("authors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AuthorsElement> Authors { get; set; }
+        [JsonProperty("authors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AuthorsElement> Authors { get; set; }
 
         /// <summary>
         /// the list of licenses issued to the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("licenses", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<LicensesElement> Licenses { get; set; }
+        [JsonProperty("licenses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<LicensesElement> Licenses { get; set; }
 
         /// <summary>
         /// date and time when the result was last updated
@@ -125,36 +129,35 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2022-11-27 02:00:00 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("updated_date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("updated_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UpdatedDate { get; set; }
 
         /// <summary>
         /// the list of areas covered in the dataset
         /// <br/>for example: Africa, Global
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("area_covered", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> AreaCovered { get; set; }
+        [JsonProperty("area_covered", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> AreaCovered { get; set; }
 
         /// <summary>
         /// period covered in the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("period_covered", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("period_covered", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PeriodCovered PeriodCovered { get; set; }
 
         /// <summary>
         /// description of the dataset
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("dataset_description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("dataset_description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DatasetDescription DatasetDescription { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

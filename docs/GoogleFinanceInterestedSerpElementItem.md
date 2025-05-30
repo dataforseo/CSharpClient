@@ -1,49 +1,10 @@
 # GoogleFinanceInterestedSerpElementItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class GoogleFinanceInterestedSerpElementItem : BaseGoogleFinanceSerpElementItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseGoogleFinanceSerpElementItem](./BaseGoogleFinanceSerpElementItem.md) → [GoogleFinanceInterestedSerpElementItem](./GoogleFinanceInterestedSerpElementItem.md)
 
 ## Properties
 
-### **Items**
-
-```csharp
-public ICollection<GoogleFinanceAssetPairElement> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;GoogleFinanceAssetPairElement&gt;](./GoogleFinanceAssetPairElement.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-## Constructors
-
-### **GoogleFinanceInterestedSerpElementItem()**
-
-```csharp
-public GoogleFinanceInterestedSerpElementItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**RankGroup** | **double?** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
+**RankAbsolute** | **double?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
+**Items** | **IEnumerable<BaseGoogleFinanceSerpElementItem>** | market indexes data<br>array of items containing market indexes data;<br>possible type of items: google_finance_asset_pair_element, google_finance_market_instrument_element, google_finance_market_index_element |[optional]|

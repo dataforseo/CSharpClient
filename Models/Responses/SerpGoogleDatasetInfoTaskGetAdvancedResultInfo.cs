@@ -48,12 +48,6 @@ namespace DataForSeo.Client.Models.Responses
         public SpellInfo Spell { get; set; }
 
         /// <summary>
-        /// search refinement chips
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("refinement_chips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public RefinementChipsInfo RefinementChips { get; set; }
-
-        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item type: dataset
@@ -65,13 +59,13 @@ namespace DataForSeo.Client.Models.Responses
         /// total number of results in SERP
         /// </summary>
         [Newtonsoft.Json.JsonProperty("se_results_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SeResultsCount { get; set; }
+        public double? SeResultsCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// elements of search results found in SERP

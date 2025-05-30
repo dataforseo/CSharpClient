@@ -1,69 +1,11 @@
 # KeywordInfoNormalizedWithInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class KeywordInfoNormalizedWithInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordInfoNormalizedWithInfo](./KeywordInfoNormalizedWithInfo.md)
 
 ## Properties
 
-### **LastUpdatedTime**
-
-```csharp
-public string LastUpdatedTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SearchVolume**
-
-```csharp
-public string SearchVolume { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsNormalized**
-
-```csharp
-public string IsNormalized { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MonthlySearches**
-
-```csharp
-public ICollection<MonthlySearches> MonthlySearches { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;MonthlySearches&gt;](./MonthlySearches.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordInfoNormalizedWithInfo()**
-
-```csharp
-public KeywordInfoNormalizedWithInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**LastUpdatedTime** | **string** | date and time when the dataset was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**SearchVolume** | **string** | current search volume rate of a keyword |[optional]|
+**IsNormalized** | **string** | keyword info is normalized<br>if true, values are normalized with Bing data |[optional]|
+**MonthlySearches** | **IEnumerable<MonthlySearchesInfo>** | monthly search volume rates<br>array of objects with search volume rates in a certain month of a year |[optional]|

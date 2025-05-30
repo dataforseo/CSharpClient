@@ -1,10 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class OnPageInstantPagesRequestInfo
+
+    public class OnPageInstantPagesRequestInfo 
     {
+
         /// <summary>
         /// target page url
         /// <br/>required field
@@ -13,7 +16,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Note #2: to prevent denial-of-service events, tasks that contain a duplicate crawl host will be returned with a 40501 error;
         /// <br/>to prevent this error from occurring, avoid setting tasks with the same domain if at least one of your previous tasks with this domain (including a page URL on the domain) is still in a crawling queue
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
@@ -24,7 +27,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>
         /// <br/>default value: Mozilla/5.0 (compatible; RSiteAuditor)
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("custom_user_agent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("custom_user_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CustomUserAgent { get; set; }
 
         /// <summary>
@@ -45,7 +48,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>browser_screen_scale_factor: 2
         /// <br/>Note: to use this parameter, set enable_javascript or enable_browser_rendering to true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_preset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_preset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BrowserPreset { get; set; }
 
         /// <summary>
@@ -55,7 +58,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to indicate browser_preset as it will be ignored;Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value, in pixels: 240
         /// <br/>maximum value, in pixels: 9999
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_screen_width", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrowserScreenWidth { get; set; }
 
         /// <summary>
@@ -65,7 +68,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to indicate browser_preset as it will be ignored;Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value, in pixels: 240
         /// <br/>maximum value, in pixels: 9999
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_screen_height", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenHeight { get; set; }
 
         /// <summary>
@@ -75,7 +78,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to indicate browser_preset as it will be ignored;Note: to use this parameter, set enable_javascript or enable_browser_rendering to trueminimum value: 0.5
         /// <br/>maximum value: 3
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_screen_scale_factor", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? BrowserScreenScaleFactor { get; set; }
 
         /// <summary>
@@ -84,16 +87,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set to true if you want get the HTML of the page using the OnPage Raw HTML endpoint
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("store_raw_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("store_raw_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? StoreRawHtml { get; set; }
 
         /// <summary>
         /// language header for accessing the website
         /// <br/>optional field
         /// <br/>all locale formats are supported (xx, xx-XX, xxx-XX, etc.)
-        /// <br/>Note: if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the "type":"broken in the response array
+        /// <br/>Note: if you do not specify this parameter, some websites may deny access; in this case, pages will be returned with the 'type':'broken in the response array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("accept_language", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("accept_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AcceptLanguage { get; set; }
 
         /// <summary>
@@ -103,7 +106,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: false
         /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("load_resources", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("load_resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LoadResources { get; set; }
 
         /// <summary>
@@ -113,7 +116,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: false
         /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("enable_javascript", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("enable_javascript", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableJavascript { get; set; }
 
         /// <summary>
@@ -126,7 +129,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, parameters enable_javascript, and load_resources are enabled automatically;
         /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("enable_browser_rendering", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("enable_browser_rendering", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableBrowserRendering { get; set; }
 
         /// <summary>
@@ -136,7 +139,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value:
         /// <br/>false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("disable_cookie_popup", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("disable_cookie_popup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DisableCookiePopup { get; set; }
 
         /// <summary>
@@ -145,7 +148,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if true, the data will be provided on pages that failed to load within 120 seconds and responded with a timeout error;
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("return_despite_timeout", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("return_despite_timeout", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ReturnDespiteTimeout { get; set; }
 
         /// <summary>
@@ -155,23 +158,23 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value:
         /// <br/>falseif you use this field, enable_javascript must be set to true;
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("enable_xhr", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("enable_xhr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableXhr { get; set; }
 
         /// <summary>
         /// custom javascript
         /// <br/>optional fieldNote that the execution time for the script you enter here should be 700 ms maximum;
         /// <br/>for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute:
-        /// <br/>let meta = { haveGoogleAnalytics: false, haveTagManager: false };\r\nfor (var i = 0; i &lt; document.scripts.length; i++) {\r\n let src = document.scripts[i].getAttribute(\"src\");\r\n if (src != undefined) {\r\n if (src.indexOf(\"analytics.js\") &gt;= 0)\r\n      meta.haveGoogleAnalytics = true;\r\n\tif (src.indexOf(\"gtm.js\") &gt;= 0)\r\n      meta.haveTagManager = true;\r\n  }\r\n}\r\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script:
+        /// <br/>let meta = { haveGoogleAnalytics: false, haveTagManager: false };\r\nfor (var i = 0; i &lt; document.scripts.length; i++) {\r\n let src = document.scripts[i].getAttribute(\'src\');\r\n if (src != undefined) {\r\n if (src.indexOf(\'analytics.js\') &gt;= 0)\r\n      meta.haveGoogleAnalytics = true;\r\n\tif (src.indexOf(\'gtm.js\') &gt;= 0)\r\n      meta.haveTagManager = true;\r\n  }\r\n}\r\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script:
         /// <br/>meta = {}; meta.url = document.URL; meta.test = 'test'; meta;
         /// <br/>as a response you will receive the following data:
-        /// <br/>"custom_js_response": {
-        /// <br/>"url": "https://dataforseo.com/",
-        /// <br/>"test": "test"
+        /// <br/>'custom_js_response': {
+        /// <br/>'url': 'https://dataforseo.com/',
+        /// <br/>'test': 'test'
         /// <br/>}
         /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("custom_js", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("custom_js", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CustomJs { get; set; }
 
         /// <summary>
@@ -180,7 +183,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if set to true, you can use the OnPage API Microdata endpoint with the id of the task;
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("validate_micromarkup", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("validate_micromarkup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ValidateMicromarkup { get; set; }
 
         /// <summary>
@@ -189,7 +192,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set to true to check spelling on a website using Hunspell library
         /// <br/>default value: false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("check_spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("check_spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CheckSpell { get; set; }
 
         /// <summary>
@@ -198,8 +201,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify custom threshold values for the parameters included in the checks array of OnPage API responses;
         /// <br/>Note: only integer threshold values can be modified;
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("checks_threshold", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, long?> ChecksThreshold { get; set; }
+        [JsonProperty("checks_threshold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, long?> ChecksThreshold { get; set; }
 
         /// <summary>
         /// switch proxy pool
@@ -207,7 +210,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if true, additional proxy pools will be used to obtain the requested data;
         /// <br/>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("switch_pool", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("switch_pool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SwitchPool { get; set; }
 
         /// <summary>
@@ -217,22 +220,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors
         /// <br/>possible values: us, de
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ip_pool_for_scan", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ip_pool_for_scan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string IpPoolForScan { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

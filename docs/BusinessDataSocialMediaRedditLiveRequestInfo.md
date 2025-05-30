@@ -1,49 +1,9 @@
 # BusinessDataSocialMediaRedditLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class BusinessDataSocialMediaRedditLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataSocialMediaRedditLiveRequestInfo](./BusinessDataSocialMediaRedditLiveRequestInfo.md)
 
 ## Properties
 
-### **Targets**
-
-```csharp
-public ICollection<string> Targets { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataSocialMediaRedditLiveRequestInfo()**
-
-```csharp
-public BusinessDataSocialMediaRedditLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Targets** | **IEnumerable<string>** | target URLs<br>required field<br>target page should be specified with its absolute URL (including http:// or https://)<br>example:<br>https://dataforseo.com/<br>Note: you can specify 10 targets maximum. You will be charged per earch URL you specify in this array |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

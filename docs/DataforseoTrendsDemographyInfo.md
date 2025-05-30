@@ -1,79 +1,12 @@
 # DataforseoTrendsDemographyInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DataforseoTrendsDemographyInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoTrendsDemographyInfo](./DataforseoTrendsDemographyInfo.md)
 
 ## Properties
 
-### **Position**
-
-```csharp
-public Nullable<int> Position { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Keywords**
-
-```csharp
-public ICollection<string> Keywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Demography**
-
-```csharp
-public Demography Demography { get; set; }
-```
-
-#### Property Value
-
-[Demography](./Demography.md)<br>
-
-### **DemographyComparison**
-
-```csharp
-public DemographyComparisonInfo DemographyComparison { get; set; }
-```
-
-#### Property Value
-
-[DemographyComparisonInfo](./DemographyComparisonInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoTrendsDemographyInfo()**
-
-```csharp
-public DataforseoTrendsDemographyInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Position** | **double?** | the alignment of the element<br>can take the following values: 1, 2, 3, 4, etc. |[optional]|
+**Type** | **string** | type of element |[optional]|
+**Keywords** | **IEnumerable<string>** | relevant keywords<br>the data included in the demography and demography_comparison is based on the keywords listed in this array |[optional]|
+**Demography** | **Demography** | demographic breakdown of keyword popularity data per each specified term<br>conains keyword popularity data by age and gender |[optional]|
+**DemographyComparison** | **DemographyComparisonInfo** | comparison of demographic data on keyword popularity for the specified parameters<br>conains keyword popularity data by age and gender<br>if you specified a single keyword, the value will be null |[optional]|

@@ -35,13 +35,13 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("rank", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Rank { get; set; }
+        public double? Rank { get; set; }
 
         /// <summary>
         /// indicates the number of backlinks
         /// </summary>
         [Newtonsoft.Json.JsonProperty("backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Backlinks { get; set; }
+        public double? Backlinks { get; set; }
 
         /// <summary>
         /// spam score of the backlinks
@@ -49,13 +49,13 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>to learn more about how the metric is calculated, refer to this Help Center page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("backlinks_spam_score", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? BacklinksSpamScore { get; set; }
+        public double? BacklinksSpamScore { get; set; }
 
         /// <summary>
         /// number of crawled pages for the target
         /// </summary>
         [Newtonsoft.Json.JsonProperty("crawled_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CrawledPages { get; set; }
+        public double? CrawledPages { get; set; }
 
         /// <summary>
         /// information about the target
@@ -68,21 +68,21 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>calculated as the sum of internal links on the pages of the specified target
         /// </summary>
         [Newtonsoft.Json.JsonProperty("internal_links_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? InternalLinksCount { get; set; }
+        public double? InternalLinksCount { get; set; }
 
         /// <summary>
         /// number of external links on the page
         /// <br/>calculated as the sum of external links on the pages of the specified target
         /// </summary>
         [Newtonsoft.Json.JsonProperty("external_links_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ExternalLinksCount { get; set; }
+        public double? ExternalLinksCount { get; set; }
 
         /// <summary>
         /// number of broken backlinks
         /// <br/>number of broken backlinks pointing to the target
         /// </summary>
         [Newtonsoft.Json.JsonProperty("broken_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? BrokenBacklinks { get; set; }
+        public double? BrokenBacklinks { get; set; }
 
         /// <summary>
         /// number of broken pages
@@ -90,26 +90,26 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>note that the number of broken pages includes pages on the target discovered by following external links, but it may also include pages discovered by following the target’s sitemap
         /// </summary>
         [Newtonsoft.Json.JsonProperty("broken_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? BrokenPages { get; set; }
+        public double? BrokenPages { get; set; }
 
         /// <summary>
         /// indicates the number of referring domains
         /// <br/>referring domains include subdomains that are counted as separate domains for this metric
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringDomains { get; set; }
+        public double? ReferringDomains { get; set; }
 
         /// <summary>
         /// number of domains pointing at least one nofollow link to the target
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_domains_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringDomainsNofollow { get; set; }
+        public double? ReferringDomainsNofollow { get; set; }
 
         /// <summary>
         /// indicates the number of referring main domains
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_main_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringMainDomains { get; set; }
+        public double? ReferringMainDomains { get; set; }
 
         /// <summary>
         /// number of main domains pointing at least one nofollow link to the target
@@ -122,19 +122,25 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>number of IP addresses pointing to this page
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_ips", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringIps { get; set; }
+        public double? ReferringIps { get; set; }
 
         /// <summary>
         /// number of referring subnetworks
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_subnets", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringSubnets { get; set; }
+        public double? ReferringSubnets { get; set; }
 
         /// <summary>
         /// indicates the number of pages pointing to the target
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_pages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringPages { get; set; }
+        public double? ReferringPages { get; set; }
+
+        /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target
+        /// </summary>
+        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public double? ReferringPagesNofollow { get; set; }
 
         /// <summary>
         /// top-level domains of the referring links
@@ -185,12 +191,6 @@ namespace DataForSeo.Client.Models.Responses
         /// </summary>
         [Newtonsoft.Json.JsonProperty("referring_links_countries", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, long?> ReferringLinksCountries { get; set; }
-
-        /// <summary>
-        /// number of referring pages pointing at least one nofollow link to the target
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("referring_pages_nofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ReferringPagesNofollow { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

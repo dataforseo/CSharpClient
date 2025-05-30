@@ -1,19 +1,23 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsGoogleAppCompetitorsLiveItem
+    public class DataforseoLabsGoogleAppCompetitorsLiveItem 
     {
+
         /// <summary>
         /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
         /// id of the competitor app
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("app_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("app_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AppId { get; set; }
 
         /// <summary>
@@ -21,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: average position is calculated for intersected keywords only;
         /// <br/>the value for a given application may differ when combined with different target applications
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("avg_position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("avg_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? AvgPosition { get; set; }
 
         /// <summary>
@@ -29,38 +33,37 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: sum position is calculated for intersected keywords only;
         /// <br/>the value for a given application may differ when combined with different target applications
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("sum_position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SumPosition { get; set; }
+        [JsonProperty("sum_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? SumPosition { get; set; }
 
         /// <summary>
         /// number of intersecting keywords
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("intersections", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Intersections { get; set; }
+        [JsonProperty("intersections", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Intersections { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
         /// <br/>ranking data relevant to the keywords that the provided competitor application shares with the app in a POST request;
         /// <br/>note: in this array ranking data is provided for the returned competitor’s app_id
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("competitor_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("competitor_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public GooglePlayMetricsBundleInfo CompetitorMetrics { get; set; }
 
         /// <summary>
         /// metrics for all keywords of the application
         /// <br/>full overview of ranking data relevant to all keywords that the provided app_id is ranking for
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("full_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("full_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public GooglePlayMetricsBundleInfo FullMetrics { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -1,99 +1,14 @@
 # AppDataAppleAppListingsSearchLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AppDataAppleAppListingsSearchLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppDataAppleAppListingsSearchLiveItem](./AppDataAppleAppListingsSearchLiveItem.md)
 
 ## Properties
 
-### **AppId**
-
-```csharp
-public string AppId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeDomain**
-
-```csharp
-public string SeDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **TimeUpdate**
-
-```csharp
-public string TimeUpdate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Item**
-
-```csharp
-public AppDataAppStoreInfoOrganicSerpElementItem Item { get; set; }
-```
-
-#### Property Value
-
-[AppDataAppStoreInfoOrganicSerpElementItem](./AppDataAppStoreInfoOrganicSerpElementItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AppDataAppleAppListingsSearchLiveItem()**
-
-```csharp
-public AppDataAppleAppListingsSearchLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**AppId** | **string** | ID of the returned app |[optional]|
+**SeDomain** | **string** | search engine domain in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
+**TimeUpdate** | **string** | date and time when SERP data was last updated<br>in the ISO 8601 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”<br>example:<br>2023-05-23 10:16:19 +00:00 |[optional]|
+**Item** | **AppDataAppStoreInfoOrganicSerpElementItem** | detailed information about the app |[optional]|

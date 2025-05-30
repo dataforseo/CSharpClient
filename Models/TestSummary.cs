@@ -1,41 +1,44 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class TestSummary
+    public class TestSummary 
     {
+
         /// <summary>
         /// number of fatal microdata errors
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("fatal", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Fatal { get; set; }
+        [JsonProperty("fatal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Fatal { get; set; }
 
         /// <summary>
         /// number of serious microdata errors
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("error", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Error { get; set; }
+        [JsonProperty("error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Error { get; set; }
 
         /// <summary>
         /// number of microdata warnings
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("warning", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Warning { get; set; }
+        [JsonProperty("warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Warning { get; set; }
 
         /// <summary>
         /// number of microdata information flags
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Info { get; set; }
+        [JsonProperty("info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Info { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

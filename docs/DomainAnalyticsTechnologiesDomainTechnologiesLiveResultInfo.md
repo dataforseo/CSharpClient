@@ -1,169 +1,21 @@
 # DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo](./DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Description**
-
-```csharp
-public string Description { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MetaKeywords**
-
-```csharp
-public ICollection<string> MetaKeywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DomainRank**
-
-```csharp
-public string DomainRank { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LastVisited**
-
-```csharp
-public string LastVisited { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CountryIsoCode**
-
-```csharp
-public string CountryIsoCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ContentLanguageCode**
-
-```csharp
-public string ContentLanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PhoneNumbers**
-
-```csharp
-public ICollection<string> PhoneNumbers { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Emails**
-
-```csharp
-public ICollection<string> Emails { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SocialGraphUrls**
-
-```csharp
-public ICollection<string> SocialGraphUrls { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Technologies**
-
-```csharp
-public TechnologiesInfo Technologies { get; set; }
-```
-
-#### Property Value
-
-[TechnologiesInfo](./TechnologiesInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo()**
-
-```csharp
-public DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Domain** | **string** | specified domain name |[optional]|
+**Title** | **string** | domain meta title |[optional]|
+**Description** | **string** | domain meta description |[optional]|
+**MetaKeywords** | **IEnumerable<string>** | domain meta keywords |[optional]|
+**DomainRank** | **double?** | backlink rank of the target domain<br>learn more about the metric and how it is calculated in this help center article |[optional]|
+**LastVisited** | **string** | most recent date when our crawler visited the domain<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-10-10 12:57:46 +00:00 |[optional]|
+**CountryIsoCode** | **string** | domain ISO code<br>ISO code of the country that the target domain is determined to belong to |[optional]|
+**LanguageCode** | **string** | domain language<br>code of the language that the target domain is determined to be associated with |[optional]|
+**ContentLanguageCode** | **string** | content language<br>code of the language that content on the target domain is written in |[optional]|
+**PhoneNumbers** | **IEnumerable<string>** | phone numbers of the target<br>contact phone numbers indicated on the target website |[optional]|
+**Emails** | **IEnumerable<string>** | emails of the target<br>emails indicated on the target website |[optional]|
+**SocialGraphUrls** | **IEnumerable<string>** | social media links and handles<br>social media URLs detected in the social graphs of the target website |[optional]|
+**Technologies** | **TechnologiesInfo** | technologies used by target domain<br>contains objects with the names of technologies used on the website<br>see the full list of available technologies structured by groups and categories |[optional]|

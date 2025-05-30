@@ -1,6 +1,6 @@
 ## OVERVIEW
 
-This is a C# client providing you, as a developer, with a tool for obtaining the necessary data from DataForSEO APIs. You don't have to figure out how to make a request and process a response - all that is readily available in this client. 
+This is a C# client providing you, as a developer, with a tool for obtaining the necessary data from DataForSEO APIs. You don't have to figure out how to make a request and process a response - all that is readily available in this client.
 
 [![GitHub issues](https://img.shields.io/github/issues/dataforseo/CSharpClient.svg)](https://github.com/dataforseo/CSharpClient/issues)
 [![GitHub license](https://img.shields.io/github/license/dataforseo/CSharpClient.svg)](https://github.com/dataforseo/CSharpClient)
@@ -29,7 +29,7 @@ For more details, please follow [here](https://docs.dataforseo.com/v3/?bash)
 
 ## YAML Spec
 
-Our API description is based on the OpenAPI [syntax](https://spec.openapis.org/oas/v3.1.0) in YAML format. The YAML file attached to the project with the name [here](./openapi_specification.yaml) 
+Our API description is based on the OpenAPI [syntax](https://spec.openapis.org/oas/v3.1.0) in YAML format. The YAML file attached to the project with the name [here](./openapi_specification.yaml)
 
 ## Code generation
 
@@ -49,7 +49,11 @@ dotnet add package DataForSeo.Client
 
 Example of live request
 ```csharp
-var dfsClient = new DataForSeoClient("USERNAME", "PASSWORD");
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",    
+});
 var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
 {
     new()
@@ -64,8 +68,12 @@ var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<Ser
 
 Example of Task-based request
 ```csharp
-var dfsClient = new DataForSeoClient("USERNAME", "PASSWORD");
-var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",    
+});
+var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpTaskRequestInfo>()
 {
     new()
     {

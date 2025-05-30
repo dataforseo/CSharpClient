@@ -1,72 +1,75 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AboutThisResultElement
+    public class AboutThisResultElement 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// result’s URL
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// source of additional information about the result
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("source", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Source { get; set; }
 
         /// <summary>
         /// additional information about the result
         /// <br/>description of the website from Wikipedia or another additional context
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("source_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("source_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SourceInfo { get; set; }
 
         /// <summary>
         /// URL to full information from the 'source'
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("source_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("source_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SourceUrl { get; set; }
 
         /// <summary>
         /// the language of the result
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("language", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Language { get; set; }
 
         /// <summary>
         /// location for which the result is relevant
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("location", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Location { get; set; }
 
         /// <summary>
         /// matching search terms that appear in the result
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("search_terms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> SearchTerms { get; set; }
+        [JsonProperty("search_terms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> SearchTerms { get; set; }
 
         /// <summary>
         /// related search terms that appear in the result
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("related_terms", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> RelatedTerms { get; set; }
+        [JsonProperty("related_terms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> RelatedTerms { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

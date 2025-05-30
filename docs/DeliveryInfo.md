@@ -1,49 +1,9 @@
 # DeliveryInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DeliveryInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DeliveryInfo](./DeliveryInfo.md)
 
 ## Properties
 
-### **DeliveryMessage**
-
-```csharp
-public string DeliveryMessage { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DeliveryPrice**
-
-```csharp
-public PriceInfo DeliveryPrice { get; set; }
-```
-
-#### Property Value
-
-[PriceInfo](./PriceInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DeliveryInfo()**
-
-```csharp
-public DeliveryInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**DeliveryMessage** | **string** | delivery information<br>message accompanying the delivery information as posted by the seller |[optional]|
+**DeliveryPrice** | **PriceInfo** | price for the delivery<br>price of the delivery based on the location you specified in the POST request;<br>if free delivery is available, the value is null |[optional]|

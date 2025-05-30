@@ -1,20 +1,24 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class HistoricalMetricsInfo
+    public class HistoricalMetricsInfo 
     {
+
         /// <summary>
         /// year for which the data is provided
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("year", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Year { get; set; }
+        [JsonProperty("year", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Year { get; set; }
 
         /// <summary>
         /// month for which the data is provided
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("month", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Month { get; set; }
+        [JsonProperty("month", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Month { get; set; }
 
         /// <summary>
         /// estimated traffic volume
@@ -22,32 +26,22 @@ namespace DataForSeo.Client.Models
         /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? Etv { get; set; }
 
         /// <summary>
         /// total count of organic SERPs that contain the domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Count { get; set; }
+        [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Count { get; set; }
 
-        /// <summary>
-        /// estimated traffic volume based on clickstream data
-        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
-        /// <br/>learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("clickstream_etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? ClickstreamEtv { get; set; }
+        private IDictionary<string, object> _additionalProperties;
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

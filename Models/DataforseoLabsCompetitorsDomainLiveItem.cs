@@ -1,19 +1,23 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsCompetitorsDomainLiveItem
+    public class DataforseoLabsCompetitorsDomainLiveItem 
     {
+
         /// <summary>
         /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
         /// domain name
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
@@ -21,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: average position is calculated for intersected keywords only;
         /// <br/>the value for a given domain may differ when combined with different target websites
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("avg_position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("avg_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? AvgPosition { get; set; }
 
         /// <summary>
@@ -29,46 +33,45 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: average position is calculated for intersected keywords only;
         /// <br/>the value for a given domain may differ when combined with different target websites
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("sum_position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? SumPosition { get; set; }
+        [JsonProperty("sum_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? SumPosition { get; set; }
 
         /// <summary>
         /// number of intersecting keywords
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("intersections", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Intersections { get; set; }
+        [JsonProperty("intersections", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Intersections { get; set; }
 
         /// <summary>
         /// metrics for all keywords of the domain
         /// <br/>full overview of ranking and traffic data relevant to all keywords that the provided domain is ranking for
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("full_domain_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> FullDomainMetrics { get; set; }
+        [JsonProperty("full_domain_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, DataforseoLabsMetricsInfo> FullDomainMetrics { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
         /// <br/>ranking and traffic data relevant to the keywords that the provided domain shares with the target domain
         /// <br/>note: in this array ranking and traffic data is provided for the target considering the keywords target shares in search with the competitor’s domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
+        [JsonProperty("metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
         /// <br/>ranking and traffic data relevant to the keywords that the provided domain shares with the target domain
         /// <br/>note: in this array ranking and traffic data is provided for the returned competitor’s domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("competitor_metrics", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, DataforseoLabsMetricsInfo> CompetitorMetrics { get; set; }
+        [JsonProperty("competitor_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, DataforseoLabsMetricsInfo> CompetitorMetrics { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

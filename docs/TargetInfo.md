@@ -1,99 +1,14 @@
 # TargetInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class TargetInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [TargetInfo](./TargetInfo.md)
 
 ## Properties
 
-### **Server**
-
-```csharp
-public string Server { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Cms**
-
-```csharp
-public string Cms { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PlatformType**
-
-```csharp
-public ICollection<string> PlatformType { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IpAddress**
-
-```csharp
-public string IpAddress { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Country**
-
-```csharp
-public string Country { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsIp**
-
-```csharp
-public Nullable<bool> IsIp { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TargetSpamScore**
-
-```csharp
-public Nullable<int> TargetSpamScore { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **TargetInfo()**
-
-```csharp
-public TargetInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Server** | **string** | server |[optional]|
+**Cms** | **string** | content management system |[optional]|
+**PlatformType** | **IEnumerable<string>** | platform type |[optional]|
+**IpAddress** | **string** | IP address of the target |[optional]|
+**Country** | **string** | country code that the target domain is determined to belong to |[optional]|
+**IsIp** | **bool?** | indicates if the target is IP<br>if true, the domain, subdomain or webpage functions as an IP address and does not have a domain name |[optional]|
+**TargetSpamScore** | **double?** | spam score of the target<br>if the target is a domain/subdomain, this fields indicates the average spam score of all pages of that domain/subdomain;<br>learn more about how the metric is calculated on this help center page |[optional]|

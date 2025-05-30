@@ -1,17 +1,22 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json.Linq;
+using System.Reflection;
+using System;
+using System.Linq;
+
 namespace DataForSeo.Client.Models
 {
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public class JsonInheritanceConverter : Newtonsoft.Json.JsonConverter
+    public class JsonInheritanceConverter : JsonConverter
     {
         internal static readonly string DefaultDiscriminatorName = "discriminator";
 
         private readonly string _discriminatorName;
 
-        [System.ThreadStatic]
+        [ThreadStatic]
         private static bool _isReading;
 
-        [System.ThreadStatic]
+        [ThreadStatic]
         private static bool _isWriting;
 
         public JsonInheritanceConverter()
@@ -26,14 +31,14 @@ namespace DataForSeo.Client.Models
 
         public string DiscriminatorName { get { return _discriminatorName; } }
 
-        public override void WriteJson(Newtonsoft.Json.JsonWriter writer, object value, Newtonsoft.Json.JsonSerializer serializer)
+        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             try
             {
                 _isWriting = true;
 
-                var jObject = Newtonsoft.Json.Linq.JObject.FromObject(value, serializer);
-                jObject.AddFirst(new Newtonsoft.Json.Linq.JProperty(_discriminatorName, GetSubtypeDiscriminator(value.GetType())));
+                var jObject = JObject.FromObject(value, serializer);
+                jObject.AddFirst(new JProperty(_discriminatorName, GetSubtypeDiscriminator(value.GetType())));
                 writer.WriteToken(jObject.CreateReader());
             }
             finally
@@ -68,23 +73,23 @@ namespace DataForSeo.Client.Models
             }
         }
 
-        public override bool CanConvert(System.Type objectType)
+        public override bool CanConvert(Type objectType)
         {
             return true;
         }
 
-        public override object ReadJson(Newtonsoft.Json.JsonReader reader, System.Type objectType, object existingValue, Newtonsoft.Json.JsonSerializer serializer)
+        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            var jObject = serializer.Deserialize<Newtonsoft.Json.Linq.JObject>(reader);
+            var jObject = serializer.Deserialize<JObject>(reader);
             if (jObject == null)
                 return null;
 
             var discriminatorValue = jObject.GetValue(_discriminatorName);
-            var discriminator = discriminatorValue != null ? Newtonsoft.Json.Linq.Extensions.Value<string>(discriminatorValue) : null;
+            var discriminator = discriminatorValue != null ? Extensions.Value<string>(discriminatorValue) : null;
             var subtype = GetObjectSubtype(objectType, discriminator);
 
-            var objectContract = serializer.ContractResolver.ResolveContract(subtype) as Newtonsoft.Json.Serialization.JsonObjectContract;
-            if (objectContract == null || System.Linq.Enumerable.All(objectContract.Properties, p => p.PropertyName != _discriminatorName))
+            var objectContract = serializer.ContractResolver.ResolveContract(subtype) as JsonObjectContract;
+            if (objectContract == null || Enumerable.All(objectContract.Properties, p => p.PropertyName != _discriminatorName))
             {
                 jObject.Remove(_discriminatorName);
             }
@@ -100,9 +105,9 @@ namespace DataForSeo.Client.Models
             }
         }
 
-        private System.Type GetObjectSubtype(System.Type objectType, string discriminator)
+        private Type GetObjectSubtype(Type objectType, string discriminator)
         {
-            foreach (var attribute in System.Reflection.CustomAttributeExtensions.GetCustomAttributes<JsonInheritanceAttribute>(System.Reflection.IntrospectionExtensions.GetTypeInfo(objectType), true))
+            foreach (var attribute in CustomAttributeExtensions.GetCustomAttributes<JsonInheritanceAttribute>(IntrospectionExtensions.GetTypeInfo(objectType), true))
             {
                 if (attribute.Key == discriminator)
                     return attribute.Type;
@@ -111,9 +116,9 @@ namespace DataForSeo.Client.Models
             return objectType;
         }
 
-        private string GetSubtypeDiscriminator(System.Type objectType)
+        private string GetSubtypeDiscriminator(Type objectType)
         {
-            foreach (var attribute in System.Reflection.CustomAttributeExtensions.GetCustomAttributes<JsonInheritanceAttribute>(System.Reflection.IntrospectionExtensions.GetTypeInfo(objectType), true))
+            foreach (var attribute in CustomAttributeExtensions.GetCustomAttributes<JsonInheritanceAttribute>(IntrospectionExtensions.GetTypeInfo(objectType), true))
             {
                 if (attribute.Type == objectType)
                     return attribute.Key;

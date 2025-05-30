@@ -1,646 +1,558 @@
 # ContentAnalysisApi
 
-Namespace: DataForSeo.Client.Api
+All URIs are relative to *https://api.dataforseo.com*
 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**contentAnalysisIdList**](ContentAnalysisApi.md#contentAnalysisIdList) | **POST**  /v3/content_analysis/id_list  |
+[**contentAnalysisAvailableFilters**](ContentAnalysisApi.md#contentAnalysisAvailableFilters) | **GET**  /v3/content_analysis/available_filters  |
+[**contentAnalysisLocations**](ContentAnalysisApi.md#contentAnalysisLocations) | **GET**  /v3/content_analysis/locations  |
+[**contentAnalysisLanguages**](ContentAnalysisApi.md#contentAnalysisLanguages) | **GET**  /v3/content_analysis/languages  |
+[**contentAnalysisCategories**](ContentAnalysisApi.md#contentAnalysisCategories) | **GET**  /v3/content_analysis/categories  |
+[**searchLive**](ContentAnalysisApi.md#searchLive) | **POST**  /v3/content_analysis/search/live  |
+[**contentAnalysisSummaryLive**](ContentAnalysisApi.md#contentAnalysisSummaryLive) | **POST**  /v3/content_analysis/summary/live  |
+[**sentimentAnalysisLive**](ContentAnalysisApi.md#sentimentAnalysisLive) | **POST**  /v3/content_analysis/sentiment_analysis/live  |
+[**ratingDistributionLive**](ContentAnalysisApi.md#ratingDistributionLive) | **POST**  /v3/content_analysis/rating_distribution/live  |
+[**phraseTrendsLive**](ContentAnalysisApi.md#phraseTrendsLive) | **POST**  /v3/content_analysis/phrase_trends/live  |
+[**categoryTrendsLive**](ContentAnalysisApi.md#categoryTrendsLive) | **POST**  /v3/content_analysis/category_trends/live  |
+
+<a id="contentAnalysisIdList"></a>
+# **contentAnalysisIdList**
+> ContentAnalysisIdListResponseInfo contentAnalysisIdList()
+
+
+### Example
 ```csharp
-public class ContentAnalysisApi
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new List<ContentAnalysisIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 11:01:34 +00:00",
+        DatetimeTo = "2025-04-30 11:01:34 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
 ```
 
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ContentAnalysisApi](./ContentAnalysisApi.md)
+### Parameters
 
-## Properties
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisIdListRequestInfo>&gt;**](IEnumerable<ContentAnalysisIdListRequestInfo>.md)|  | [optional] |
 
-### **BaseUrl**
 
+
+### Return type
+
+[**ContentAnalysisIdListResponseInfo**](ContentAnalysisIdListResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentAnalysisAvailableFilters"></a>
+# **contentAnalysisAvailableFilters**
+> ContentAnalysisAvailableFiltersResponseInfo contentAnalysisAvailableFilters()
+
+
+### Example
 ```csharp
-public string BaseUrl { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisAvailableFiltersAsync();
 ```
 
-#### Property Value
+### Parameters
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
 
-### **ReadResponseAsString**
+    
+This endpoint does not need any parameter.
+    
 
+
+### Return type
+
+[**ContentAnalysisAvailableFiltersResponseInfo**](ContentAnalysisAvailableFiltersResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentAnalysisLocations"></a>
+# **contentAnalysisLocations**
+> ContentAnalysisLocationsResponseInfo contentAnalysisLocations()
+
+
+### Example
 ```csharp
-public bool ReadResponseAsString { get; set; }
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisLocationsAsync();
 ```
 
-#### Property Value
+### Parameters
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
 
-## Constructors
+    
+This endpoint does not need any parameter.
+    
 
-### **ContentAnalysisApi(HttpClient)**
 
+### Return type
+
+[**ContentAnalysisLocationsResponseInfo**](ContentAnalysisLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentAnalysisLanguages"></a>
+# **contentAnalysisLanguages**
+> ContentAnalysisLanguagesResponseInfo contentAnalysisLanguages()
+
+
+### Example
 ```csharp
-public ContentAnalysisApi(HttpClient httpClient)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisLanguagesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`httpClient` HttpClient<br>
 
-## Methods
+    
+This endpoint does not need any parameter.
+    
 
-### **ContentAnalysisIdListAsync(IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;)**
 
+### Return type
+
+[**ContentAnalysisLanguagesResponseInfo**](ContentAnalysisLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentAnalysisCategories"></a>
+# **contentAnalysisCategories**
+> ContentAnalysisCategoriesResponseInfo contentAnalysisCategories()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisIdListResponseInfo> ContentAnalysisIdListAsync(IEnumerable<ContentAnalysisIdListRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisCategoriesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;](./ContentAnalysisIdListRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;ContentAnalysisIdListResponseInfo&gt;](./ContentAnalysisIdListResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**ContentAnalysisCategoriesResponseInfo**](ContentAnalysisCategoriesResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Content Analysis tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/id_list/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **ContentAnalysisIdListAsync(IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="searchLive"></a>
+# **searchLive**
+> ContentAnalysisSearchLiveResponseInfo searchLive()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisIdListResponseInfo> ContentAnalysisIdListAsync(IEnumerable<ContentAnalysisIdListRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<ContentAnalysisSearchLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "logitech",
+        KeywordFields = new Dictionary<string, string>()
+        {
+            ["snippet"] = "logitech",
+        },
+        PageType = new List<string>()
+        {
+            "ecommerce",
+            "news",
+            "blogs",
+            "message-boards",
+            "organization",
+        },
+        SearchMode = "as_is",
+        Limit = 10,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;ContentAnalysisIdListRequestInfo&gt;](./ContentAnalysisIdListRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisSearchLiveRequestInfo>&gt;**](IEnumerable<ContentAnalysisSearchLiveRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;ContentAnalysisIdListResponseInfo&gt;](./ContentAnalysisIdListResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**ContentAnalysisSearchLiveResponseInfo**](ContentAnalysisSearchLiveResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Content Analysis tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/id_list/?bash'
+### HTTP request headers
 
-### **ContentAnalysisAvailableFiltersAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="contentAnalysisSummaryLive"></a>
+# **contentAnalysisSummaryLive**
+> ContentAnalysisSummaryLiveResponseInfo contentAnalysisSummaryLive()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisAvailableFiltersResponseInfo> ContentAnalysisAvailableFiltersAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(new List<ContentAnalysisSummaryLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "logitech",
+        PageType = new List<string>()
+        {
+            "ecommerce",
+            "news",
+            "blogs",
+            "message-boards",
+            "organization",
+        },
+        InternalListLimit = 8,
+        PositiveConnotationThreshold = 0.5f,
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;ContentAnalysisAvailableFiltersResponseInfo&gt;](./ContentAnalysisAvailableFiltersResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisSummaryLiveRequestInfo>&gt;**](IEnumerable<ContentAnalysisSummaryLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/filters/?bash'
+[**ContentAnalysisSummaryLiveResponseInfo**](ContentAnalysisSummaryLiveResponseInfo.md)
 
-### **ContentAnalysisAvailableFiltersAsync(CancellationToken)**
+### Authorization
 
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="sentimentAnalysisLive"></a>
+# **sentimentAnalysisLive**
+> ContentAnalysisSentimentAnalysisLiveResponseInfo sentimentAnalysisLive()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisAvailableFiltersResponseInfo> ContentAnalysisAvailableFiltersAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.SentimentAnalysisLiveAsync(new List<ContentAnalysisSentimentAnalysisLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "logitech",
+        InternalListLimit = 1,
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisSentimentAnalysisLiveRequestInfo>&gt;**](IEnumerable<ContentAnalysisSentimentAnalysisLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;ContentAnalysisAvailableFiltersResponseInfo&gt;](./ContentAnalysisAvailableFiltersResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**ContentAnalysisSentimentAnalysisLiveResponseInfo**](ContentAnalysisSentimentAnalysisLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/filters/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **ContentAnalysisLocationsAsync()**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="ratingDistributionLive"></a>
+# **ratingDistributionLive**
+> ContentAnalysisRatingDistributionLiveResponseInfo ratingDistributionLive()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisLocationsResponseInfo> ContentAnalysisLocationsAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(new List<ContentAnalysisRatingDistributionLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "logitech",
+        InternalListLimit = 10,
+        SearchMode = "as_is",
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;ContentAnalysisLocationsResponseInfo&gt;](./ContentAnalysisLocationsResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisRatingDistributionLiveRequestInfo>&gt;**](IEnumerable<ContentAnalysisRatingDistributionLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-You will receive the list of locations by this API call.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/locations/?bash'
+[**ContentAnalysisRatingDistributionLiveResponseInfo**](ContentAnalysisRatingDistributionLiveResponseInfo.md)
 
-### **ContentAnalysisLocationsAsync(CancellationToken)**
+### Authorization
 
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="phraseTrendsLive"></a>
+# **phraseTrendsLive**
+> ContentAnalysisPhraseTrendsLiveResponseInfo phraseTrendsLive()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisLocationsResponseInfo> ContentAnalysisLocationsAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<ContentAnalysisPhraseTrendsLiveRequestInfo>()
+{
+    new()
+    {
+        Keyword = "logitech",
+        SearchMode = "as_is",
+        DateFrom = "2025-02-28",
+        DateGroup = "month",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisPhraseTrendsLiveRequestInfo>&gt;**](IEnumerable<ContentAnalysisPhraseTrendsLiveRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;ContentAnalysisLocationsResponseInfo&gt;](./ContentAnalysisLocationsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**ContentAnalysisPhraseTrendsLiveResponseInfo**](ContentAnalysisPhraseTrendsLiveResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-You will receive the list of locations by this API call.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/locations/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **ContentAnalysisLanguagesAsync()**
+### HTTP request headers
 
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="categoryTrendsLive"></a>
+# **categoryTrendsLive**
+> ContentAnalysisCategoryTrendsLiveResponseInfo categoryTrendsLive()
+
+
+### Example
 ```csharp
-public Task<ContentAnalysisLanguagesResponseInfo> ContentAnalysisLanguagesAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List<ContentAnalysisCategoryTrendsLiveRequestInfo>()
+{
+    new()
+    {
+        CategoryCode = "10994",
+        SearchMode = "as_is",
+        DateFrom = "2025-02-28",
+        DateGroup = "month",
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;ContentAnalysisLanguagesResponseInfo&gt;](./ContentAnalysisLanguagesResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<ContentAnalysisCategoryTrendsLiveRequestInfo>&gt;**](IEnumerable<ContentAnalysisCategoryTrendsLiveRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/languages/?bash'
+[**ContentAnalysisCategoryTrendsLiveResponseInfo**](ContentAnalysisCategoryTrendsLiveResponseInfo.md)
 
-### **ContentAnalysisLanguagesAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<ContentAnalysisLanguagesResponseInfo> ContentAnalysisLanguagesAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
-
-[Task&lt;ContentAnalysisLanguagesResponseInfo&gt;](./ContentAnalysisLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br> 
- <br>As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/languages/?bash'
-
-### **ContentAnalysisCategoriesAsync()**
-
-```csharp
-public Task<ContentAnalysisCategoriesResponseInfo> ContentAnalysisCategoriesAsync()
-```
-
-#### Returns
-
-[Task&lt;ContentAnalysisCategoriesResponseInfo&gt;](./ContentAnalysisCategoriesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-We use Google product and service categories. This endpoint will provide you with the full list of available categories.
- <br>You can also download the CSV file by this link.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/categories/?bash'
-
-### **ContentAnalysisCategoriesAsync(CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisCategoriesResponseInfo> ContentAnalysisCategoriesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisCategoriesResponseInfo&gt;](./ContentAnalysisCategoriesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-We use Google product and service categories. This endpoint will provide you with the full list of available categories.
- <br>You can also download the CSV file by this link.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/categories/?bash'
-
-### **SearchLiveAsync(IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentAnalysisSearchLiveResponseInfo> SearchLiveAsync(IEnumerable<ContentAnalysisSearchLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;](./ContentAnalysisSearchLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentAnalysisSearchLiveResponseInfo&gt;](./ContentAnalysisSearchLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with detailed citation data available for the target keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/search/live/?bash'
-
-### **SearchLiveAsync(IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisSearchLiveResponseInfo> SearchLiveAsync(IEnumerable<ContentAnalysisSearchLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisSearchLiveRequestInfo&gt;](./ContentAnalysisSearchLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisSearchLiveResponseInfo&gt;](./ContentAnalysisSearchLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with detailed citation data available for the target keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/search/live/?bash'
-
-### **ContentAnalysisSummaryLiveAsync(IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentAnalysisSummaryLiveResponseInfo> ContentAnalysisSummaryLiveAsync(IEnumerable<ContentAnalysisSummaryLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;](./ContentAnalysisSummaryLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentAnalysisSummaryLiveResponseInfo&gt;](./ContentAnalysisSummaryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with an overview of citation data available for the target keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash'
-
-### **ContentAnalysisSummaryLiveAsync(IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisSummaryLiveResponseInfo> ContentAnalysisSummaryLiveAsync(IEnumerable<ContentAnalysisSummaryLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisSummaryLiveRequestInfo&gt;](./ContentAnalysisSummaryLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisSummaryLiveResponseInfo&gt;](./ContentAnalysisSummaryLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with an overview of citation data available for the target keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash'
-
-### **SentimentAnalysisLiveAsync(IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentAnalysisSentimentAnalysisLiveResponseInfo> SentimentAnalysisLiveAsync(IEnumerable<ContentAnalysisSentimentAnalysisLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;](./ContentAnalysisSentimentAnalysisLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentAnalysisSentimentAnalysisLiveResponseInfo&gt;](./ContentAnalysisSentimentAnalysisLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with sentiment analysis data for the citations available for the target keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash'
-
-### **SentimentAnalysisLiveAsync(IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisSentimentAnalysisLiveResponseInfo> SentimentAnalysisLiveAsync(IEnumerable<ContentAnalysisSentimentAnalysisLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;](./ContentAnalysisSentimentAnalysisLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisSentimentAnalysisLiveResponseInfo&gt;](./ContentAnalysisSentimentAnalysisLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with sentiment analysis data for the citations available for the target keyword.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash'
-
-### **RatingDistributionLiveAsync(IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentAnalysisRatingDistributionLiveResponseInfo> RatingDistributionLiveAsync(IEnumerable<ContentAnalysisRatingDistributionLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;](./ContentAnalysisRatingDistributionLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentAnalysisRatingDistributionLiveResponseInfo&gt;](./ContentAnalysisRatingDistributionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash'
-
-### **RatingDistributionLiveAsync(IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisRatingDistributionLiveResponseInfo> RatingDistributionLiveAsync(IEnumerable<ContentAnalysisRatingDistributionLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;](./ContentAnalysisRatingDistributionLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisRatingDistributionLiveResponseInfo&gt;](./ContentAnalysisRatingDistributionLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash'
-
-### **PhraseTrendsLiveAsync(IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentAnalysisPhraseTrendsLiveResponseInfo> PhraseTrendsLiveAsync(IEnumerable<ContentAnalysisPhraseTrendsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;](./ContentAnalysisPhraseTrendsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentAnalysisPhraseTrendsLiveResponseInfo&gt;](./ContentAnalysisPhraseTrendsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with data on all citations of the target keyword for the indicated date range.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash'
-
-### **PhraseTrendsLiveAsync(IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisPhraseTrendsLiveResponseInfo> PhraseTrendsLiveAsync(IEnumerable<ContentAnalysisPhraseTrendsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;](./ContentAnalysisPhraseTrendsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisPhraseTrendsLiveResponseInfo&gt;](./ContentAnalysisPhraseTrendsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with data on all citations of the target keyword for the indicated date range.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash'
-
-### **CategoryTrendsLiveAsync(IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;)**
-
-```csharp
-public Task<ContentAnalysisCategoryTrendsLiveResponseInfo> CategoryTrendsLiveAsync(IEnumerable<ContentAnalysisCategoryTrendsLiveRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;](./ContentAnalysisCategoryTrendsLiveRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;ContentAnalysisCategoryTrendsLiveResponseInfo&gt;](./ContentAnalysisCategoryTrendsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with data on all citations in the target category for the indicated date range.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash'
-
-### **CategoryTrendsLiveAsync(IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<ContentAnalysisCategoryTrendsLiveResponseInfo> CategoryTrendsLiveAsync(IEnumerable<ContentAnalysisCategoryTrendsLiveRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;](./ContentAnalysisCategoryTrendsLiveRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;ContentAnalysisCategoryTrendsLiveResponseInfo&gt;](./ContentAnalysisCategoryTrendsLiveResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>This endpoint will provide you with data on all citations in the target category for the indicated date range.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash'
-
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
-
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
-
-#### Type Parameters
-
-`T`<br>
-
-#### Parameters
-
-`response` HttpResponseMessage<br>
-
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-
-#### Returns
-
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

@@ -1,9 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class KeywordKpiInfo
+    public class KeywordKpiInfo 
     {
+
         /// <summary>
         /// represents the position of the relevant ad in SERP
         /// <br/>can take the following values:
@@ -22,58 +26,57 @@ namespace DataForSeo.Client.Models
         /// <br/>MainLine3: The third ad to appear at the top of the search results page
         /// <br/>MainLine4: The fourth ad to appear at the top of the search results page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ad_position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ad_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AdPosition { get; set; }
 
         /// <summary>
         /// ad clicks
         /// <br/>the number of clicks that the keyword and match type generated during the last month
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("clicks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Clicks { get; set; }
+        [JsonProperty("clicks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Clicks { get; set; }
 
         /// <summary>
         /// ad impressions
         /// <br/>the number of impressions that the keyword and match type generated during the last month
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("impressions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Impressions { get; set; }
+        [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Impressions { get; set; }
 
         /// <summary>
         /// average cost per click, USD
         /// <br/>calculated by dividing the cost of all clicks by the number of clicks
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("average_cpc", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("average_cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? AverageCpc { get; set; }
 
         /// <summary>
         /// click-through rate as a percentage
         /// <br/>calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ctr", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ctr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Ctr { get; set; }
 
         /// <summary>
         /// total cost of an ad, USD
         /// <br/>the cost of using the specified keyword and match type during the last month
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("total_cost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCost { get; set; }
+        [JsonProperty("total_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TotalCost { get; set; }
 
         /// <summary>
         /// average bid of the keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("average_bid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("average_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? AverageBid { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

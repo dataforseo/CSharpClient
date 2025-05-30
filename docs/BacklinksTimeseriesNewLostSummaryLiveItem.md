@@ -1,109 +1,15 @@
 # BacklinksTimeseriesNewLostSummaryLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BacklinksTimeseriesNewLostSummaryLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksTimeseriesNewLostSummaryLiveItem](./BacklinksTimeseriesNewLostSummaryLiveItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Date**
-
-```csharp
-public string Date { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **NewBacklinks**
-
-```csharp
-public Nullable<long> NewBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LostBacklinks**
-
-```csharp
-public Nullable<long> LostBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **NewReferringDomains**
-
-```csharp
-public Nullable<long> NewReferringDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LostReferringDomains**
-
-```csharp
-public Nullable<long> LostReferringDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **NewReferringMainDomains**
-
-```csharp
-public Nullable<long> NewReferringMainDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LostReferringMainDomains**
-
-```csharp
-public Nullable<long> LostReferringMainDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksTimeseriesNewLostSummaryLiveItem()**
-
-```csharp
-public BacklinksTimeseriesNewLostSummaryLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Date** | **string** | date and time when the data for the target was stored<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**NewBacklinks** | **double?** | number of new backlinks<br>number of new backlinks pointing to the target |[optional]|
+**LostBacklinks** | **double?** | number of lost backlinks<br>number of lost backlinks of the target |[optional]|
+**NewReferringDomains** | **double?** | number of new referring domains<br>number of new referring domains pointing to the target |[optional]|
+**LostReferringDomains** | **double?** | number of lost referring domains<br>number of lost referring domains of the target |[optional]|
+**NewReferringMainDomains** | **double?** | number of new referring main domains<br>number of new referring main domains pointing to the target |[optional]|
+**LostReferringMainDomains** | **double?** | number of lost referring main domains<br>number of lost referring main domains of the target |[optional]|

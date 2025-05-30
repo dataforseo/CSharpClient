@@ -1,109 +1,15 @@
 # BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo](./BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationName**
-
-```csharp
-public string LocationName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LocationCoordinate**
-
-```csharp
-public string LocationCoordinate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Depth**
-
-```csharp
-public Nullable<int> Depth { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo()**
-
-```csharp
-public BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword<br>required field<br>the keyword you specify should indicate the name of the local establishment<br>you can specify up to 700 characters in the keyword filed<br>all %## will be decoded (plus character ‘+’ will be decoded to a space character)<br>if you need to use the “%” character for your keyword, please specify it as “%25”; <br>this field can also be used to pass the following parameters:<br>cid – a unique, google-defined id of the business entity;<br>place_id – an identifier of the business entity in Google Maps;<br>spp – a unique identifier of local services featured in the local_pack element of Google SERP<br>example:<br>cid:194604053573767737<br>place_id:GhIJQWDl0CIeQUARxks3icF8U8A<br>spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30<br>learn more about the cid and place_id identifiers in this help center article<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**LocationName** | **string** | full name of search engine location<br>required field if you don’t specify location_code or location_coordinate<br>if you use this field, you don’t need to specify location_code or location_coordinate<br>you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations<br>example:<br>London,England,United Kingdom |[optional]|
+**LocationCode** | **int?** | search engine location code<br>required field if you don’t specify location_name or location_coordinate<br>if you use this field, you don’t need to specify location_name or location_coordinate<br>you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations<br>example:<br>2840 |[optional]|
+**LocationCoordinate** | **string** | GPS coordinates of a location<br>required field if you don’t specify location_name or location_code<br>if you use this field, you don’t need to specify location_name or location_code<br>location_coordinate parameter should be specified in the “latitude,longitude,radius” format<br>the maximum number of decimal digits for “latitude” and “longitude”: 7<br>the minimum value for “radius”: 199.9 (mm)<br>the maximum value for “radius”: 199999 (mm)<br>example:<br>53.476225,-2.243572,200 |[optional]|
+**LanguageName** | **string** | full name of search engine language<br>required field if you don’t specify language_code<br>if you use this field, you don’t need to specify language_code<br>you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages<br>example:<br>English |[optional]|
+**LanguageCode** | **string** | search engine language code<br>required field if you don’t specify language_name<br>if you use this field, you don’t need to specify language_name<br>you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages<br>example:<br>en |[optional]|
+**Depth** | **int?** | parsing depth<br>optional field<br>number of results in SERP<br>default value: 20<br>max value: 100<br>Note: your account will be billed per each SERP containing up to 20 results;<br>thus, setting a depth above 20 may result in additional charges if the search engine returns more than 20 results;<br>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

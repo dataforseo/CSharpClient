@@ -1,69 +1,11 @@
 # DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo](./DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo.md)
 
 ## Properties
 
-### **Countries**
-
-```csharp
-public IDictionary<string, Nullable<long>> Countries { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Languages**
-
-```csharp
-public IDictionary<string, Nullable<long>> Languages { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ContentLanguages**
-
-```csharp
-public IDictionary<string, Nullable<long>> ContentLanguages { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Keywords**
-
-```csharp
-public IDictionary<string, Nullable<long>> Keywords { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo()**
-
-```csharp
-public DomainAnalyticsTechnologiesTechnologiesSummaryLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Countries** | **IDictionary<string, long?>** | distribution of websites by country<br>contains country codes and number of websites per country |[optional]|
+**Languages** | **IDictionary<string, long?>** | distribution of websites by language<br>contains language codes and number of websites per language |[optional]|
+**ContentLanguages** | **IDictionary<string, long?>** | distribution of websites by content language<br>contains content language codes and number of websites per language |[optional]|
+**Keywords** | **IDictionary<string, long?>** | distribution of websites by keywords<br>contains keywords found in the websites’ titles, descriptions or meta keywords, and number of websites using each keyword |[optional]|

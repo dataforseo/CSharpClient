@@ -1,189 +1,23 @@
 # BusinessDataGoogleReviewsTaskGetResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class BusinessDataGoogleReviewsTaskGetResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BusinessDataGoogleReviewsTaskGetResultInfo](./BusinessDataGoogleReviewsTaskGetResultInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SeDomain**
-
-```csharp
-public string SeDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CheckUrl**
-
-```csharp
-public string CheckUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Datetime**
-
-```csharp
-public string Datetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SubTitle**
-
-```csharp
-public string SubTitle { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Rating**
-
-```csharp
-public RatingInfo Rating { get; set; }
-```
-
-#### Property Value
-
-[RatingInfo](./RatingInfo.md)<br>
-
-### **FeatureId**
-
-```csharp
-public string FeatureId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PlaceId**
-
-```csharp
-public string PlaceId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Cid**
-
-```csharp
-public string Cid { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ReviewsCount**
-
-```csharp
-public Nullable<long> ReviewsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ItemsCount**
-
-```csharp
-public Nullable<long> ItemsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Items**
-
-```csharp
-public ICollection<BaseBusinessDataSerpElementItem> Items { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;BaseBusinessDataSerpElementItem&gt;](./BaseBusinessDataSerpElementItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BusinessDataGoogleReviewsTaskGetResultInfo()**
-
-```csharp
-public BusinessDataGoogleReviewsTaskGetResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword received in a POST array<br>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |[optional]|
+**Type** | **string** | type of element |[optional]|
+**SeDomain** | **string** | search engine domain in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
+**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
+**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Title** | **string** | title of the ‘reviews’ element in SERP<br>the name of the local establishment for which the reviews are collected |[optional]|
+**SubTitle** | **string** | subtitle of the ‘reviews’ element in SERP<br>additional information (e.g., address) on the ‘reviews’ element for which the reviews are collected |[optional]|
+**Rating** | **BusinessDataRatingInfo** | rating of the corresponding local establishment<br>popularity rate based on reviews and displayed in SERP |[optional]|
+**FeatureId** | **string** | the unique identifier of the ‘reviews’ element in SERP<br>learn more about the identifier in this help center article |[optional]|
+**PlaceId** | **string** | unique identifier of a business location assigned by Google<br>learn more about the identifier in this help center article |[optional]|
+**Cid** | **string** | google-defined client id<br>unique id of a local establishment<br>learn more about the identifier in this help center article |[optional]|
+**ReviewsCount** | **double?** | the total number of reviews |[optional]|
+**ItemsCount** | **double?** | the number of reviews items in the results array<br>you can get more results by using the depth parameter when setting a task |[optional]|
+**Items** | **IEnumerable<BaseBusinessDataSerpElementItem>** | found reviews<br>you can get more results by using the depth parameter when setting a task |[optional]|

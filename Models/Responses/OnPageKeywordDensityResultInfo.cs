@@ -16,20 +16,20 @@ namespace DataForSeo.Client.Models.Responses
         /// details of the crawling session
         /// </summary>
         [Newtonsoft.Json.JsonProperty("crawl_status", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public CrawlStatusInfo CrawlStatus { get; set; }
+        public CrawlStatus CrawlStatus { get; set; }
 
         /// <summary>
         /// total number of relevant items
         /// <br/>total number of keywords on the specified website or web page matching the set keyword_length and filters
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalItemsCount { get; set; }
+        public double? TotalItemsCount { get; set; }
 
         /// <summary>
         /// number of items in the results array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

@@ -1,29 +1,12 @@
 # ClickstreamKeywordInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class ClickstreamKeywordInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [ClickstreamKeywordInfo](./ClickstreamKeywordInfo.md)
 
 ## Properties
 
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **ClickstreamKeywordInfo()**
-
-```csharp
-public ClickstreamKeywordInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SearchVolume** | **double?** | current search volume rate of a keyword |[optional]|
+**LastUpdatedTime** | **string** | date and time when backlink data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**GenderDistribution** | **IDictionary<string, long?>** | distribution of estimated clickstream-based metrics by gender<br>learn more about how the metric is calculated in this help center article |[optional]|
+**AgeDistribution** | **IDictionary<string, long?>** | distribution of clickstream-based metrics by age<br>learn more about how the metric is calculated in this help center article |[optional]|
+**MonthlySearches** | **IEnumerable<MonthlySearches>** | monthly searches<br>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations |[optional]|

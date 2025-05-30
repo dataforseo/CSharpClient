@@ -1,59 +1,10 @@
 # CrawlStatusInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class CrawlStatusInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [CrawlStatusInfo](./CrawlStatusInfo.md)
 
 ## Properties
 
-### **MaxCrawlPages**
-
-```csharp
-public Nullable<long> MaxCrawlPages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PagesInQueue**
-
-```csharp
-public Nullable<long> PagesInQueue { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PagesCrawled**
-
-```csharp
-public Nullable<long> PagesCrawled { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **CrawlStatusInfo()**
-
-```csharp
-public CrawlStatusInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**MaxCrawlPages** | **long?** | maximum number of pages to crawl<br> indicates the max_crawl_pages limit you specified when setting a task |[optional]|
+**PagesInQueue** | **long?** | number of pages that are currently in the crawling queue |[optional]|
+**PagesCrawled** | **long?** | number of crawled pages |[optional]|

@@ -1,149 +1,21 @@
 # BaseOnPageLinkItemInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BaseOnPageLinkItemInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseOnPageLinkItemInfo](./BaseOnPageLinkItemInfo.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DomainFrom**
-
-```csharp
-public string DomainFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DomainTo**
-
-```csharp
-public string DomainTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PageFrom**
-
-```csharp
-public string PageFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PageTo**
-
-```csharp
-public string PageTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LinkFrom**
-
-```csharp
-public string LinkFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LinkTo**
-
-```csharp
-public string LinkTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Dofollow**
-
-```csharp
-public Nullable<bool> Dofollow { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PageFromScheme**
-
-```csharp
-public string PageFromScheme { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PageToScheme**
-
-```csharp
-public string PageToScheme { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Direction**
-
-```csharp
-public string Direction { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsBroken**
-
-```csharp
-public Nullable<bool> IsBroken { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsLinkRelationConflict**
-
-```csharp
-public Nullable<bool> IsLinkRelationConflict { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BaseOnPageLinkItemInfo()**
-
-```csharp
-public BaseOnPageLinkItemInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**DomainFrom** | **string** | referring domain<br>the link was found on this domain |[optional]|
+**DomainTo** | **string** | referenced domain<br>the link is pointing to this domain |[optional]|
+**PageFrom** | **string** | referring page<br>relative URL of the page on which the link was found |[optional]|
+**PageTo** | **string** | referenced page<br>relative URL of the page to which the link is pointing |[optional]|
+**LinkFrom** | **string** | referring page<br>absolute URL of the page on which the link was found |[optional]|
+**LinkTo** | **string** | referenced page<br>absolute URL of the page to which the link is pointing |[optional]|
+**Dofollow** | **bool?** | indicates whether the link is dofollow<br>if the value is true, the link doesn’t have a rel='nofollow' attribute |[optional]|
+**PageFromScheme** | **string** | url scheme of the referring page |[optional]|
+**PageToScheme** | **string** | url scheme of the referenced page |[optional]|
+**Direction** | **string** | direction of the link<br>possible values: internal, external |[optional]|
+**IsBroken** | **bool?** | link is broken<br>indicates whether a link is directing to a broken page or resource |[optional]|
+**IsLinkRelationConflict** | **bool?** | indicates that the link may have a conflict with another link<br>if true, at least one link pointing to link_to has a rel='nofollow' attribute and at least one is dofollow |[optional]|
+**PageToStatusCode** | **double?** | status code of the referenced page<br>status code of the page to which the link is pointing |[optional]|

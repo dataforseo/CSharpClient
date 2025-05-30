@@ -1,209 +1,25 @@
 # BacklinksDomainPagesLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BacklinksDomainPagesLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BacklinksDomainPagesLiveItem](./BacklinksDomainPagesLiveItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MainDomain**
-
-```csharp
-public string MainDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tld**
-
-```csharp
-public string Tld { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Page**
-
-```csharp
-public string Page { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Ip**
-
-```csharp
-public string Ip { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **FirstVisited**
-
-```csharp
-public string FirstVisited { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PrevVisited**
-
-```csharp
-public string PrevVisited { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **FetchTime**
-
-```csharp
-public string FetchTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **StatusCode**
-
-```csharp
-public Nullable<int> StatusCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Location**
-
-```csharp
-public string Location { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Size**
-
-```csharp
-public Nullable<int> Size { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **EncodedSize**
-
-```csharp
-public Nullable<int> EncodedSize { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ContentEncoding**
-
-```csharp
-public string ContentEncoding { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MediaType**
-
-```csharp
-public string MediaType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Server**
-
-```csharp
-public string Server { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Meta**
-
-```csharp
-public BacklinksPageMeta Meta { get; set; }
-```
-
-#### Property Value
-
-[BacklinksPageMeta](./BacklinksPageMeta.md)<br>
-
-### **PageSummary**
-
-```csharp
-public PageSummary PageSummary { get; set; }
-```
-
-#### Property Value
-
-[PageSummary](./PageSummary.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BacklinksDomainPagesLiveItem()**
-
-```csharp
-public BacklinksDomainPagesLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**MainDomain** | **string** | main website domain<br>main website domain does not include subdomains |[optional]|
+**Domain** | **string** | domain<br>domain where the page was found |[optional]|
+**Tld** | **string** | top-level domain<br>top-level domain in the DNS root zone |[optional]|
+**Page** | **string** | page URL<br>relevant page URL |[optional]|
+**Ip** | **string** | Internet Protocol address |[optional]|
+**FirstVisited** | **string** | date and time of the first page visit<br>date and time when our crawler visited this page for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
+**PrevVisited** | **string** | previous to the most recent date when our crawler visited the page<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
+**FetchTime** | **string** | most recent date and time when our crawler visited the page<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
+**StatusCode** | **double?** | HTTP status code of the page |[optional]|
+**Location** | **string** | location header<br>indicates the URL to redirect a page to if exists |[optional]|
+**Size** | **double?** | indicates the page size, in bytes |[optional]|
+**EncodedSize** | **double?** | page size after encoding<br>indicates the size of the encoded page, in bytes |[optional]|
+**ContentEncoding** | **string** | type of encoding |[optional]|
+**MediaType** | **string** | types of media used to display a page |[optional]|
+**Server** | **string** | server version |[optional]|
+**Meta** | **BacklinksPageMeta** | page meta data |[optional]|
+**PageSummary** | **PageSummary** | contains backlink data for this page |[optional]|

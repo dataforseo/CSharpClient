@@ -1,109 +1,15 @@
 # HotelLocationInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class HotelLocationInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [HotelLocationInfo](./HotelLocationInfo.md)
 
 ## Properties
 
-### **Neighborhood**
-
-```csharp
-public string Neighborhood { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **NeighborhoodDescription**
-
-```csharp
-public string NeighborhoodDescription { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MapsUrl**
-
-```csharp
-public string MapsUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **OverallScore**
-
-```csharp
-public Nullable<float> OverallScore { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ScoreByCategories**
-
-```csharp
-public IDictionary<string, Nullable<double>> ScoreByCategories { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Double&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Latitude**
-
-```csharp
-public Nullable<float> Latitude { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Longitude**
-
-```csharp
-public Nullable<float> Longitude { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LocationChain**
-
-```csharp
-public ICollection<LocationChain> LocationChain { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;LocationChain&gt;](./LocationChain.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **HotelLocationInfo()**
-
-```csharp
-public HotelLocationInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Neighborhood** | **string** | name of the neighborhood where the hotel is located |[optional]|
+**NeighborhoodDescription** | **string** | description of the neighborhood where the hotel is located |[optional]|
+**MapsUrl** | **string** | url to the location of the hotel in google maps |[optional]|
+**OverallScore** | **float?** | overall score of the hotel location<br>indicates the overall score of the hotel’s location in the range from 1 to 5;<br>calculated based on data from the hotel’s proximity to nearby things to do and restaurants, transportation, and airports;<br>note that the criteria are not weighted equally in the overall score |[optional]|
+**ScoreByCategories** | **IDictionary<string, double?>** | category scores of the hotel location<br>the scores of the hotel’s location tied to the categories that indicate the proximity to nearby things to do, restaurants, transportation, and airports; |[optional]|
+**Latitude** | **float?** | hotel latitude<br>latitude coordinates of the hotel’s location<br>example:<br>39.4806397 |[optional]|
+**Longitude** | **float?** | hotel longitude<br>latitude coordinates of the hotel’s location<br>example:<br>-106.0512973 |[optional]|
+**LocationChain** | **IEnumerable<LocationChain>** | elements of the location chain<br>additional parameters of each element of the location chain |[optional]|

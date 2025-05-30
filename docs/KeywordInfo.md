@@ -1,139 +1,18 @@
 # KeywordInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class KeywordInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordInfo](./KeywordInfo.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LastUpdatedTime**
-
-```csharp
-public string LastUpdatedTime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Competition**
-
-```csharp
-public Nullable<float> Competition { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **CompetitionLevel**
-
-```csharp
-public string CompetitionLevel { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Cpc**
-
-```csharp
-public Nullable<float> Cpc { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SearchVolume**
-
-```csharp
-public Nullable<long> SearchVolume { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LowTopOfPageBid**
-
-```csharp
-public Nullable<float> LowTopOfPageBid { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **HighTopOfPageBid**
-
-```csharp
-public Nullable<float> HighTopOfPageBid { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Categories**
-
-```csharp
-public ICollection<int> Categories { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MonthlySearches**
-
-```csharp
-public ICollection<MonthlySearches> MonthlySearches { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;MonthlySearches&gt;](./MonthlySearches.md)<br>
-
-### **SearchVolumeTrend**
-
-```csharp
-public SearchVolumeTrend SearchVolumeTrend { get; set; }
-```
-
-#### Property Value
-
-[SearchVolumeTrend](./SearchVolumeTrend.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordInfo()**
-
-```csharp
-public KeywordInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**LastUpdatedTime** | **string** | date and time when keyword data was updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**Competition** | **float?** | competition<br>represents the relative amount of competition associated with the given keyword. This value is based on Google Ads data and can be between 0 and 1 (inclusive) |[optional]|
+**CompetitionLevel** | **string** | competition level<br>represents the relative level of competition associated with the given keyword in paid SERP only;<br>possible values: LOW, MEDIUM, HIGH<br>if competition level is unknown, the value is null;<br>learn more about the metric in this help center article |[optional]|
+**Cpc** | **float?** | cost-per-click<br>represents the average cost per click (USD) historically paid for the keyword |[optional]|
+**SearchVolume** | **double?** | average monthly search volume rate<br>represents the (approximate) number of searches for the given keyword idea on google.com |[optional]|
+**LowTopOfPageBid** | **float?** | minimum bid for the ad to be displayed at the top of the first page<br>indicates the value greater than about 20% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers)<br>the value may differ depending on the location specified in a POST request |[optional]|
+**HighTopOfPageBid** | **float?** | maximum bid for the ad to be displayed at the top of the first page<br>indicates the value greater than about 80% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers)<br>the value may differ depending on the location specified in a POST request |[optional]|
+**Categories** | **IEnumerable<double?>** | product and service categories<br>you can download the full list of possible categories |[optional]|
+**MonthlySearches** | **IEnumerable<MonthlySearches>** | monthly searches<br>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations |[optional]|
+**SearchVolumeTrend** | **SearchVolumeTrend** | search volume trend changes<br>represents search volume change in percent compared to the previous period |[optional]|

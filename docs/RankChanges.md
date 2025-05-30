@@ -1,69 +1,11 @@
 # RankChanges
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class RankChanges
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [RankChanges](./RankChanges.md)
 
 ## Properties
 
-### **PreviousRankAbsolute**
-
-```csharp
-public Nullable<int> PreviousRankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsNew**
-
-```csharp
-public Nullable<bool> IsNew { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsUp**
-
-```csharp
-public Nullable<bool> IsUp { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IsDown**
-
-```csharp
-public Nullable<bool> IsDown { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **RankChanges()**
-
-```csharp
-public RankChanges()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**PreviousRankAbsolute** | **double?** | previous absolute rank in SERP<br>indicates previous rank of the element in Google SERP;<br>if this element is new, the value will be null |[optional]|
+**IsNew** | **bool?** | element was previously present in SERP<br>if the value is true, previously collected SERP didn’t contain this element |[optional]|
+**IsUp** | **bool?** | rank of this element went up<br>if the value is true, position of the element in SERP is higher compared to the previous check |[optional]|
+**IsDown** | **bool?** | rank of this element went down<br>if the value is true, position of the element in SERP is lower compared to the previous check |[optional]|

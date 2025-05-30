@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// ID of the industry
         /// </summary>
         [Newtonsoft.Json.JsonProperty("industry_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? IndustryId { get; set; }
+        public double? IndustryId { get; set; }
 
         /// <summary>
         /// name of the industry

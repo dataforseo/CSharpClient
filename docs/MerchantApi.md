@@ -1,2306 +1,1870 @@
 # MerchantApi
 
-Namespace: DataForSeo.Client.Api
-
-```csharp
-public class MerchantApi
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [MerchantApi](./MerchantApi.md)
-
-## Properties
-
-### **BaseUrl**
-
-```csharp
-public string BaseUrl { get; set; }
+All URIs are relative to *https://api.dataforseo.com*
+
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**merchantIdList**](MerchantApi.md#merchantIdList) | **POST**  /v3/merchant/id_list  |
+[**merchantErrors**](MerchantApi.md#merchantErrors) | **POST**  /v3/merchant/errors  |
+[**merchantGoogleLanguages**](MerchantApi.md#merchantGoogleLanguages) | **GET**  /v3/merchant/google/languages  |
+[**merchantGoogleLocations**](MerchantApi.md#merchantGoogleLocations) | **GET**  /v3/merchant/google/locations  |
+[**merchantGoogleLocationsCountry**](MerchantApi.md#merchantGoogleLocationsCountry) | **GET**  /v3/merchant/google/locations/{country}  |
+[**googleProductsTaskPost**](MerchantApi.md#googleProductsTaskPost) | **POST**  /v3/merchant/google/products/task_post  |
+[**googleProductsTasksReady**](MerchantApi.md#googleProductsTasksReady) | **GET**  /v3/merchant/google/products/tasks_ready  |
+[**merchantTasksReady**](MerchantApi.md#merchantTasksReady) | **GET**  /v3/merchant/tasks_ready  |
+[**googleProductsTaskGetAdvanced**](MerchantApi.md#googleProductsTaskGetAdvanced) | **GET**  /v3/merchant/google/products/task_get/advanced/{id}  |
+[**googleProductsTaskGetHtml**](MerchantApi.md#googleProductsTaskGetHtml) | **GET**  /v3/merchant/google/products/task_get/html/{id}  |
+[**googleSellersTaskPost**](MerchantApi.md#googleSellersTaskPost) | **POST**  /v3/merchant/google/sellers/task_post  |
+[**googleSellersTasksReady**](MerchantApi.md#googleSellersTasksReady) | **GET**  /v3/merchant/google/sellers/tasks_ready  |
+[**googleSellersTaskGetAdvanced**](MerchantApi.md#googleSellersTaskGetAdvanced) | **GET**  /v3/merchant/google/sellers/task_get/advanced/{id}  |
+[**googleSellersTaskGetHtml**](MerchantApi.md#googleSellersTaskGetHtml) | **GET**  /v3/merchant/google/sellers/task_get/html/{id}  |
+[**googleProductSpecTaskPost**](MerchantApi.md#googleProductSpecTaskPost) | **POST**  /v3/merchant/google/product_spec/task_post  |
+[**googleProductSpecTasksReady**](MerchantApi.md#googleProductSpecTasksReady) | **GET**  /v3/merchant/google/product_spec/tasks_ready  |
+[**googleProductSpecTaskGetAdvanced**](MerchantApi.md#googleProductSpecTaskGetAdvanced) | **GET**  /v3/merchant/google/product_spec/task_get/advanced/{id}  |
+[**googleProductSpecTaskGetHtml**](MerchantApi.md#googleProductSpecTaskGetHtml) | **GET**  /v3/merchant/google/product_spec/task_get/html/{id}  |
+[**googleProductInfoTaskPost**](MerchantApi.md#googleProductInfoTaskPost) | **POST**  /v3/merchant/google/product_info/task_post  |
+[**googleProductInfoTasksReady**](MerchantApi.md#googleProductInfoTasksReady) | **GET**  /v3/merchant/google/product_info/tasks_ready  |
+[**googleProductInfoTaskGetAdvanced**](MerchantApi.md#googleProductInfoTaskGetAdvanced) | **GET**  /v3/merchant/google/product_info/task_get/advanced/{id}  |
+[**googleSellersAdUrl**](MerchantApi.md#googleSellersAdUrl) | **GET**  /v3/merchant/google/sellers/ad_url/{shop_ad_aclk}  |
+[**merchantAmazonLocations**](MerchantApi.md#merchantAmazonLocations) | **GET**  /v3/merchant/amazon/locations  |
+[**merchantAmazonLocationsCountry**](MerchantApi.md#merchantAmazonLocationsCountry) | **GET**  /v3/merchant/amazon/locations/{country}  |
+[**merchantAmazonLanguages**](MerchantApi.md#merchantAmazonLanguages) | **GET**  /v3/merchant/amazon/languages  |
+[**amazonProductsTaskPost**](MerchantApi.md#amazonProductsTaskPost) | **POST**  /v3/merchant/amazon/products/task_post  |
+[**amazonProductsTasksReady**](MerchantApi.md#amazonProductsTasksReady) | **GET**  /v3/merchant/amazon/products/tasks_ready  |
+[**amazonProductsTaskGetAdvanced**](MerchantApi.md#amazonProductsTaskGetAdvanced) | **GET**  /v3/merchant/amazon/products/task_get/advanced/{id}  |
+[**amazonProductsTaskGetHtml**](MerchantApi.md#amazonProductsTaskGetHtml) | **GET**  /v3/merchant/amazon/products/task_get/html/{id}  |
+[**amazonAsinTaskPost**](MerchantApi.md#amazonAsinTaskPost) | **POST**  /v3/merchant/amazon/asin/task_post  |
+[**amazonAsinTasksReady**](MerchantApi.md#amazonAsinTasksReady) | **GET**  /v3/merchant/amazon/asin/tasks_ready  |
+[**amazonAsinTaskGetAdvanced**](MerchantApi.md#amazonAsinTaskGetAdvanced) | **GET**  /v3/merchant/amazon/asin/task_get/advanced/{id}  |
+[**amazonAsinTaskGetHtml**](MerchantApi.md#amazonAsinTaskGetHtml) | **GET**  /v3/merchant/amazon/asin/task_get/html/{id}  |
+[**amazonSellersTaskPost**](MerchantApi.md#amazonSellersTaskPost) | **POST**  /v3/merchant/amazon/sellers/task_post  |
+[**amazonSellersTasksReady**](MerchantApi.md#amazonSellersTasksReady) | **GET**  /v3/merchant/amazon/sellers/tasks_ready  |
+[**amazonSellersTaskGetAdvanced**](MerchantApi.md#amazonSellersTaskGetAdvanced) | **GET**  /v3/merchant/amazon/sellers/task_get/advanced/{id}  |
+[**amazonSellersTaskGetHtml**](MerchantApi.md#amazonSellersTaskGetHtml) | **GET**  /v3/merchant/amazon/sellers/task_get/html/{id}  |
+[**amazonReviewsTaskPost**](MerchantApi.md#amazonReviewsTaskPost) | **POST**  /v3/merchant/amazon/reviews/task_post  |
+[**amazonReviewsTasksReady**](MerchantApi.md#amazonReviewsTasksReady) | **GET**  /v3/merchant/amazon/reviews/tasks_ready  |
+[**amazonReviewsTaskGetAdvanced**](MerchantApi.md#amazonReviewsTaskGetAdvanced) | **GET**  /v3/merchant/amazon/reviews/task_get/advanced/{id}  |
+[**amazonReviewsTaskGetHtml**](MerchantApi.md#amazonReviewsTaskGetHtml) | **GET**  /v3/merchant/amazon/reviews/task_get/html/{id}  |
+
+<a id="merchantIdList"></a>
+# **merchantIdList**
+> MerchantIdListResponseInfo merchantIdList()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 11:01:45 +00:00",
+        DatetimeTo = "2025-04-30 11:01:45 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
 ```
 
-#### Property Value
+### Parameters
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantIdListRequestInfo>&gt;**](IEnumerable<MerchantIdListRequestInfo>.md)|  | [optional] |
 
-### **ReadResponseAsString**
 
-```csharp
-public bool ReadResponseAsString { get; set; }
-```
 
-#### Property Value
+### Return type
 
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
+[**MerchantIdListResponseInfo**](MerchantIdListResponseInfo.md)
 
-## Constructors
+### Authorization
 
-### **MerchantApi(HttpClient)**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-public MerchantApi(HttpClient httpClient)
-```
+### HTTP request headers
 
-#### Parameters
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`httpClient` HttpClient<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-## Methods
+<a id="merchantErrors"></a>
+# **merchantErrors**
+> MerchantErrorsResponseInfo merchantErrors()
 
-### **MerchantIdListAsync(IEnumerable&lt;MerchantIdListRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<MerchantIdListResponseInfo> MerchantIdListAsync(IEnumerable<MerchantIdListRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantIdListRequestInfo&gt;](./MerchantIdListRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;MerchantIdListResponseInfo&gt;](./MerchantIdListResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Merchant tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/id_list/?bash'
-
-### **MerchantIdListAsync(IEnumerable&lt;MerchantIdListRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<MerchantIdListResponseInfo> MerchantIdListAsync(IEnumerable<MerchantIdListRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.MerchantApi.MerchantErrorsAsync(new List<MerchantErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantIdListRequestInfo&gt;](./MerchantIdListRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Parameters
 
-#### Returns
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantErrorsRequestInfo>&gt;**](IEnumerable<MerchantErrorsRequestInfo>.md)|  | [optional] |
 
-[Task&lt;MerchantIdListResponseInfo&gt;](./MerchantIdListResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Return type
 
-**Remarks:**
+[**MerchantErrorsResponseInfo**](MerchantErrorsResponseInfo.md)
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Merchant tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/id_list/?bash'
+### Authorization
 
-### **MerchantErrorsAsync(IEnumerable&lt;MerchantErrorsRequestInfo&gt;)**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-public Task<MerchantErrorsResponseInfo> MerchantErrorsAsync(IEnumerable<MerchantErrorsRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantErrorsRequestInfo&gt;](./MerchantErrorsRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;MerchantErrorsResponseInfo&gt;](./MerchantErrorsResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="merchantGoogleLanguages"></a>
+# **merchantGoogleLanguages**
+> MerchantGoogleLanguagesResponseInfo merchantGoogleLanguages()
 
-By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
 
-### **MerchantErrorsAsync(IEnumerable&lt;MerchantErrorsRequestInfo&gt;, CancellationToken)**
-
+### Example
 ```csharp
-public Task<MerchantErrorsResponseInfo> MerchantErrorsAsync(IEnumerable<MerchantErrorsRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantErrorsRequestInfo&gt;](./MerchantErrorsRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;MerchantErrorsResponseInfo&gt;](./MerchantErrorsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/errors/?bash'
-
-### **MerchantGoogleLanguagesAsync()**
-
-```csharp
-public Task<MerchantGoogleLanguagesResponseInfo> MerchantGoogleLanguagesAsync()
+});
+var result = await dfsClient.MerchantApi.MerchantGoogleLanguagesAsync();
 ```
-
-#### Returns
-
-[Task&lt;MerchantGoogleLanguagesResponseInfo&gt;](./MerchantGoogleLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-You will receive the list of supported Google Shopping languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/languages/?bash'
-
-### **MerchantGoogleLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleLanguagesResponseInfo> MerchantGoogleLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantGoogleLanguagesResponseInfo**](MerchantGoogleLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantGoogleLanguagesResponseInfo&gt;](./MerchantGoogleLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of supported Google Shopping languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/languages/?bash'
+<a id="merchantGoogleLocations"></a>
+# **merchantGoogleLocations**
+> MerchantGoogleLocationsResponseInfo merchantGoogleLocations()
 
-### **MerchantGoogleLocationsAsync()**
 
+### Example
 ```csharp
-public Task<MerchantGoogleLocationsResponseInfo> MerchantGoogleLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;MerchantGoogleLocationsResponseInfo&gt;](./MerchantGoogleLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/locations/?bash'
-
-### **MerchantGoogleLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleLocationsResponseInfo> MerchantGoogleLocationsAsync(CancellationToken cancellationToken)
+});
+var result = await dfsClient.MerchantApi.MerchantGoogleLocationsAsync();
 ```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;MerchantGoogleLocationsResponseInfo&gt;](./MerchantGoogleLocationsResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/locations/?bash'
+### Return type
 
-### **MerchantGoogleLocationsCountryAsync(String)**
+[**MerchantGoogleLocationsResponseInfo**](MerchantGoogleLocationsResponseInfo.md)
 
-```csharp
-public Task<MerchantGoogleLocationsCountryResponseInfo> MerchantGoogleLocationsCountryAsync(string country)
-```
-
-#### Parameters
+### Authorization
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;MerchantGoogleLocationsCountryResponseInfo&gt;](./MerchantGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="merchantGoogleLocationsCountry"></a>
+# **merchantGoogleLocationsCountry**
+> MerchantGoogleLocationsCountryResponseInfo merchantGoogleLocationsCountry()
 
-**Remarks:**
 
-for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/locations/?bash'
-
-### **MerchantGoogleLocationsCountryAsync(String, CancellationToken)**
-
+### Example
 ```csharp
-public Task<MerchantGoogleLocationsCountryResponseInfo> MerchantGoogleLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantGoogleLocationsCountryResponseInfo&gt;](./MerchantGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
-
-for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/locations/?bash'
-
-### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(IEnumerable<MerchantGoogleProductsTaskPostRequestInfo> body)
+});
+var country = "us";
+var result = await dfsClient.MerchantApi.MerchantGoogleLocationsCountryAsync(country);
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;](./MerchantGoogleProductsTaskPostRequestInfo.md)<br>
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;](./MerchantGoogleProductsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
-
-### **GoogleProductsTaskPostAsync(IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductsTaskPostResponseInfo> GoogleProductsTaskPostAsync(IEnumerable<MerchantGoogleProductsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductsTaskPostRequestInfo&gt;](./MerchantGoogleProductsTaskPostRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantGoogleLocationsCountryResponseInfo**](MerchantGoogleLocationsCountryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;](./MerchantGoogleProductsTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash'
+<a id="googleProductsTaskPost"></a>
+# **googleProductsTaskPost**
+> MerchantGoogleProductsTaskPostResponseInfo googleProductsTaskPost()
 
-### **GoogleProductsTasksReadyAsync()**
 
+### Example
 ```csharp
-public Task<MerchantGoogleProductsTasksReadyResponseInfo> GoogleProductsTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductsTasksReadyResponseInfo&gt;](./MerchantGoogleProductsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
-
-### **GoogleProductsTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductsTasksReadyResponseInfo> GoogleProductsTasksReadyAsync(CancellationToken cancellationToken)
+});
+var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(new List<MerchantGoogleProductsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "iphone",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        PriceMin = 5,
+    }
+});
 ```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductsTasksReadyResponseInfo&gt;](./MerchantGoogleProductsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantGoogleProductsTaskPostRequestInfo>&gt;**](IEnumerable<MerchantGoogleProductsTaskPostRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
 
-### **MerchantTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<MerchantTasksReadyResponseInfo> MerchantTasksReadyAsync()
-```
+[**MerchantGoogleProductsTaskPostResponseInfo**](MerchantGoogleProductsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantTasksReadyResponseInfo&gt;](./MerchantTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
+<a id="googleProductsTasksReady"></a>
+# **googleProductsTasksReady**
+> MerchantGoogleProductsTasksReadyResponseInfo googleProductsTasksReady()
 
-### **MerchantTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantTasksReadyResponseInfo> MerchantTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantTasksReadyResponseInfo&gt;](./MerchantTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash'
-
-### **GoogleProductsTaskGetAdvancedAsync(String)**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-```csharp
-public Task<MerchantGoogleProductsTaskGetAdvancedResponseInfo> GoogleProductsTaskGetAdvancedAsync(string id)
+});
+var result = await dfsClient.MerchantApi.GoogleProductsTasksReadyAsync();
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductsTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleProductsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Parameters
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash'
+    
+This endpoint does not need any parameter.
+    
 
-### **GoogleProductsTaskGetAdvancedAsync(String, CancellationToken)**
 
-```csharp
-public Task<MerchantGoogleProductsTaskGetAdvancedResponseInfo> GoogleProductsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**MerchantGoogleProductsTasksReadyResponseInfo**](MerchantGoogleProductsTasksReadyResponseInfo.md)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Authorization
 
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;MerchantGoogleProductsTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleProductsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="merchantTasksReady"></a>
+# **merchantTasksReady**
+> MerchantTasksReadyResponseInfo merchantTasksReady()
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash'
 
-### **GoogleProductsTaskGetHtmlAsync(String)**
-
+### Example
 ```csharp
-public Task<MerchantGoogleProductsTaskGetHtmlResponseInfo> GoogleProductsTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;MerchantGoogleProductsTaskGetHtmlResponseInfo&gt;](./MerchantGoogleProductsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash'
-
-### **GoogleProductsTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductsTaskGetHtmlResponseInfo> GoogleProductsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+});
+var result = await dfsClient.MerchantApi.MerchantTasksReadyAsync();
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;MerchantGoogleProductsTaskGetHtmlResponseInfo&gt;](./MerchantGoogleProductsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash'
+### Return type
 
-### **GoogleSellersTaskPostAsync(IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;)**
+[**MerchantTasksReadyResponseInfo**](MerchantTasksReadyResponseInfo.md)
 
-```csharp
-public Task<MerchantGoogleSellersTaskPostResponseInfo> GoogleSellersTaskPostAsync(IEnumerable<MerchantGoogleSellersTaskPostRequestInfo> body)
-```
-
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;](./MerchantGoogleSellersTaskPostRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;MerchantGoogleSellersTaskPostResponseInfo&gt;](./MerchantGoogleSellersTaskPostResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="googleProductsTaskGetAdvanced"></a>
+# **googleProductsTaskGetAdvanced**
+> MerchantGoogleProductsTaskGetAdvancedResponseInfo googleProductsTaskGetAdvanced()
 
-**Remarks:**
 
-‌‌
- <br>Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash'
-
-### **GoogleSellersTaskPostAsync(IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;, CancellationToken)**
-
+### Example
 ```csharp
-public Task<MerchantGoogleSellersTaskPostResponseInfo> GoogleSellersTaskPostAsync(IEnumerable<MerchantGoogleSellersTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantGoogleSellersTaskPostRequestInfo&gt;](./MerchantGoogleSellersTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantGoogleSellersTaskPostResponseInfo&gt;](./MerchantGoogleSellersTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
-
-‌‌
- <br>Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash'
-
-### **GoogleSellersTasksReadyAsync()**
-
-```csharp
-public Task<MerchantGoogleSellersTasksReadyResponseInfo> GoogleSellersTasksReadyAsync()
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.GoogleProductsTaskGetAdvancedAsync(id);
 ```
-
-#### Returns
-
-[Task&lt;MerchantGoogleSellersTasksReadyResponseInfo&gt;](./MerchantGoogleSellersTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash'
 
-### **GoogleSellersTasksReadyAsync(CancellationToken)**
+### Return type
 
-```csharp
-public Task<MerchantGoogleSellersTasksReadyResponseInfo> GoogleSellersTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+[**MerchantGoogleProductsTaskGetAdvancedResponseInfo**](MerchantGoogleProductsTaskGetAdvancedResponseInfo.md)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Authorization
 
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;MerchantGoogleSellersTasksReadyResponseInfo&gt;](./MerchantGoogleSellersTasksReadyResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="googleProductsTaskGetHtml"></a>
+# **googleProductsTaskGetHtml**
+> MerchantGoogleProductsTaskGetHtmlResponseInfo googleProductsTaskGetHtml()
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash'
 
-### **GoogleSellersTaskGetAdvancedAsync(String)**
-
+### Example
 ```csharp
-public Task<MerchantGoogleSellersTaskGetAdvancedResponseInfo> GoogleSellersTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;MerchantGoogleSellersTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleSellersTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash'
-
-### **GoogleSellersTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleSellersTaskGetAdvancedResponseInfo> GoogleSellersTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+});
+var id = "bd06b326-8968-4d9f-9e21-da9a45d0ea64";
+var result = await dfsClient.MerchantApi.GoogleProductsTaskGetHtmlAsync(id);
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;MerchantGoogleSellersTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleSellersTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash'
+### Return type
 
-### **GoogleSellersTaskGetHtmlAsync(String)**
+[**MerchantGoogleProductsTaskGetHtmlResponseInfo**](MerchantGoogleProductsTaskGetHtmlResponseInfo.md)
 
-```csharp
-public Task<MerchantGoogleSellersTaskGetHtmlResponseInfo> GoogleSellersTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
+### Authorization
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;MerchantGoogleSellersTaskGetHtmlResponseInfo&gt;](./MerchantGoogleSellersTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="googleSellersTaskPost"></a>
+# **googleSellersTaskPost**
+> MerchantGoogleSellersTaskPostResponseInfo googleSellersTaskPost()
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash'
-
-### **GoogleSellersTaskGetHtmlAsync(String, CancellationToken)**
-
+### Example
 ```csharp
-public Task<MerchantGoogleSellersTaskGetHtmlResponseInfo> GoogleSellersTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantGoogleSellersTaskGetHtmlResponseInfo&gt;](./MerchantGoogleSellersTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash'
-
-### **GoogleProductSpecTaskPostAsync(IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<MerchantGoogleProductSpecTaskPostResponseInfo> GoogleProductSpecTaskPostAsync(IEnumerable<MerchantGoogleProductSpecTaskPostRequestInfo> body)
+});
+var result = await dfsClient.MerchantApi.GoogleSellersTaskPostAsync(new List<MerchantGoogleSellersTaskPostRequestInfo>()
+{
+    new()
+    {
+        ProductId = "1113158713975221117",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;](./MerchantGoogleProductSpecTaskPostRequestInfo.md)<br>
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantGoogleProductSpecTaskPostResponseInfo&gt;](./MerchantGoogleProductSpecTaskPostResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantGoogleSellersTaskPostRequestInfo>&gt;**](IEnumerable<MerchantGoogleSellersTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash'
-
-### **GoogleProductSpecTaskPostAsync(IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductSpecTaskPostResponseInfo> GoogleProductSpecTaskPostAsync(IEnumerable<MerchantGoogleProductSpecTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductSpecTaskPostRequestInfo&gt;](./MerchantGoogleProductSpecTaskPostRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantGoogleSellersTaskPostResponseInfo**](MerchantGoogleSellersTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantGoogleProductSpecTaskPostResponseInfo&gt;](./MerchantGoogleProductSpecTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash'
+<a id="googleSellersTasksReady"></a>
+# **googleSellersTasksReady**
+> MerchantGoogleSellersTasksReadyResponseInfo googleSellersTasksReady()
 
-### **GoogleProductSpecTasksReadyAsync()**
 
+### Example
 ```csharp
-public Task<MerchantGoogleProductSpecTasksReadyResponseInfo> GoogleProductSpecTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductSpecTasksReadyResponseInfo&gt;](./MerchantGoogleProductSpecTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash'
-
-### **GoogleProductSpecTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductSpecTasksReadyResponseInfo> GoogleProductSpecTasksReadyAsync(CancellationToken cancellationToken)
+});
+var result = await dfsClient.MerchantApi.GoogleSellersTasksReadyAsync();
 ```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
 
-[Task&lt;MerchantGoogleProductSpecTasksReadyResponseInfo&gt;](./MerchantGoogleProductSpecTasksReadyResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash'
+### Return type
 
-### **GoogleProductSpecTaskGetAdvancedAsync(String)**
+[**MerchantGoogleSellersTasksReadyResponseInfo**](MerchantGoogleSellersTasksReadyResponseInfo.md)
 
-```csharp
-public Task<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> GoogleProductSpecTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
+### Authorization
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[basicAuth](../README.md#basicAuth)
 
-#### Returns
+### HTTP request headers
 
-[Task&lt;MerchantGoogleProductSpecTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleProductSpecTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Exceptions
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+<a id="googleSellersTaskGetAdvanced"></a>
+# **googleSellersTaskGetAdvanced**
+> MerchantGoogleSellersTaskGetAdvancedResponseInfo googleSellersTaskGetAdvanced()
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash'
-
-### **GoogleProductSpecTaskGetAdvancedAsync(String, CancellationToken)**
-
+### Example
 ```csharp
-public Task<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> GoogleProductSpecTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductSpecTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleProductSpecTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash'
-
-### **GoogleProductSpecTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<MerchantGoogleProductSpecTaskGetHtmlResponseInfo> GoogleProductSpecTaskGetHtmlAsync(string id)
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.GoogleSellersTaskGetAdvancedAsync(id);
 ```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantGoogleProductSpecTaskGetHtmlResponseInfo&gt;](./MerchantGoogleProductSpecTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash'
-
-### **GoogleProductSpecTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductSpecTaskGetHtmlResponseInfo> GoogleProductSpecTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantGoogleSellersTaskGetAdvancedResponseInfo**](MerchantGoogleSellersTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantGoogleProductSpecTaskGetHtmlResponseInfo&gt;](./MerchantGoogleProductSpecTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash'
+<a id="googleSellersTaskGetHtml"></a>
+# **googleSellersTaskGetHtml**
+> MerchantGoogleSellersTaskGetHtmlResponseInfo googleSellersTaskGetHtml()
 
-### **GoogleProductInfoTaskPostAsync(IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<MerchantGoogleProductInfoTaskPostResponseInfo> GoogleProductInfoTaskPostAsync(IEnumerable<MerchantGoogleProductInfoTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;](./MerchantGoogleProductInfoTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductInfoTaskPostResponseInfo&gt;](./MerchantGoogleProductInfoTaskPostResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the product_id.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash'
-
-### **GoogleProductInfoTaskPostAsync(IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductInfoTaskPostResponseInfo> GoogleProductInfoTaskPostAsync(IEnumerable<MerchantGoogleProductInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
+});
+var id = "3cfcc7d0-42b1-40c2-95bc-acf765dfaaf2";
+var result = await dfsClient.MerchantApi.GoogleSellersTaskGetHtmlAsync(id);
 ```
-
-#### Parameters
 
-`body` [IEnumerable&lt;MerchantGoogleProductInfoTaskPostRequestInfo&gt;](./MerchantGoogleProductInfoTaskPostRequestInfo.md)<br>
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;MerchantGoogleProductInfoTaskPostResponseInfo&gt;](./MerchantGoogleProductInfoTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**MerchantGoogleSellersTaskGetHtmlResponseInfo**](MerchantGoogleSellersTaskGetHtmlResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the product_id.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleProductInfoTasksReadyAsync()**
+### HTTP request headers
 
-```csharp
-public Task<MerchantGoogleProductInfoTasksReadyResponseInfo> GoogleProductInfoTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductInfoTasksReadyResponseInfo&gt;](./MerchantGoogleProductInfoTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash'
+<a id="googleProductSpecTaskPost"></a>
+# **googleProductSpecTaskPost**
+> MerchantGoogleProductSpecTaskPostResponseInfo googleProductSpecTaskPost()
 
-### **GoogleProductInfoTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantGoogleProductInfoTasksReadyResponseInfo> GoogleProductInfoTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantGoogleProductInfoTasksReadyResponseInfo&gt;](./MerchantGoogleProductInfoTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash'
-
-### **GoogleProductInfoTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<MerchantGoogleProductInfoTaskGetAdvancedResponseInfo> GoogleProductInfoTaskGetAdvancedAsync(string id)
+});
+var result = await dfsClient.MerchantApi.GoogleProductSpecTaskPostAsync(new List<MerchantGoogleProductSpecTaskPostRequestInfo>()
+{
+    new()
+    {
+        ProductId = "1113158713975221117",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
-
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Parameters
 
-#### Returns
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantGoogleProductSpecTaskPostRequestInfo>&gt;**](IEnumerable<MerchantGoogleProductSpecTaskPostRequestInfo>.md)|  | [optional] |
 
-[Task&lt;MerchantGoogleProductInfoTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleProductInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash'
-
-### **GoogleProductInfoTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<MerchantGoogleProductInfoTaskGetAdvancedResponseInfo> GoogleProductInfoTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantGoogleProductSpecTaskPostResponseInfo**](MerchantGoogleProductSpecTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantGoogleProductInfoTaskGetAdvancedResponseInfo&gt;](./MerchantGoogleProductInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash'
+<a id="googleProductSpecTasksReady"></a>
+# **googleProductSpecTasksReady**
+> MerchantGoogleProductSpecTasksReadyResponseInfo googleProductSpecTasksReady()
 
-### **GoogleSellersAdUrlAsync(String)**
 
+### Example
 ```csharp
-public Task<MerchantGoogleSellersAdUrlResponseInfo> GoogleSellersAdUrlAsync(string shop_ad_aclk)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.MerchantApi.GoogleProductSpecTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`shop_ad_aclk` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-unique ad click referral parameter
- <br>you can obtain this parameter with Google Shopping Products or Google Shopping Sellers
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;MerchantGoogleSellersAdUrlResponseInfo&gt;](./MerchantGoogleSellersAdUrlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**MerchantGoogleProductSpecTasksReadyResponseInfo**](MerchantGoogleProductSpecTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-Google Shopping Sellers Ad URL is designed to provide you with a full URL of the advertisement containing all additional parameters set by the seller.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleSellersAdUrlAsync(String, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<MerchantGoogleSellersAdUrlResponseInfo> GoogleSellersAdUrlAsync(string shop_ad_aclk, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`shop_ad_aclk` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-unique ad click referral parameter
- <br>you can obtain this parameter with Google Shopping Products or Google Shopping Sellers
+<a id="googleProductSpecTaskGetAdvanced"></a>
+# **googleProductSpecTaskGetAdvanced**
+> MerchantGoogleProductSpecTaskGetAdvancedResponseInfo googleProductSpecTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;MerchantGoogleSellersAdUrlResponseInfo&gt;](./MerchantGoogleSellersAdUrlResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.GoogleProductSpecTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Google Shopping Sellers Ad URL is designed to provide you with a full URL of the advertisement containing all additional parameters set by the seller.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash'
 
-### **MerchantAmazonLocationsAsync()**
+### Return type
 
-```csharp
-public Task<MerchantAmazonLocationsResponseInfo> MerchantAmazonLocationsAsync()
-```
+[**MerchantGoogleProductSpecTaskGetAdvancedResponseInfo**](MerchantGoogleProductSpecTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonLocationsResponseInfo&gt;](./MerchantAmazonLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+<a id="googleProductSpecTaskGetHtml"></a>
+# **googleProductSpecTaskGetHtml**
+> MerchantGoogleProductSpecTaskGetHtmlResponseInfo googleProductSpecTaskGetHtml()
 
-### **MerchantAmazonLocationsAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonLocationsResponseInfo> MerchantAmazonLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantAmazonLocationsResponseInfo&gt;](./MerchantAmazonLocationsResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "4c364fa9-7142-4b55-9ddc-a3697c0b3f58";
+var result = await dfsClient.MerchantApi.GoogleProductSpecTaskGetHtmlAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
 
-### **MerchantAmazonLocationsCountryAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<MerchantAmazonLocationsCountryResponseInfo> MerchantAmazonLocationsCountryAsync(string country)
-```
 
-#### Parameters
+### Return type
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+[**MerchantGoogleProductSpecTaskGetHtmlResponseInfo**](MerchantGoogleProductSpecTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonLocationsCountryResponseInfo&gt;](./MerchantAmazonLocationsCountryResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+<a id="googleProductInfoTaskPost"></a>
+# **googleProductInfoTaskPost**
+> MerchantGoogleProductInfoTaskPostResponseInfo googleProductInfoTaskPost()
 
-### **MerchantAmazonLocationsCountryAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonLocationsCountryResponseInfo> MerchantAmazonLocationsCountryAsync(string country, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.MerchantApi.GoogleProductInfoTaskPostAsync(new List<MerchantGoogleProductInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        ProductId = "1113158713975221117",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantGoogleProductInfoTaskPostRequestInfo>&gt;**](IEnumerable<MerchantGoogleProductInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;MerchantAmazonLocationsCountryResponseInfo&gt;](./MerchantAmazonLocationsCountryResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**MerchantGoogleProductInfoTaskPostResponseInfo**](MerchantGoogleProductInfoTaskPostResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash'
+### HTTP request headers
 
-### **MerchantAmazonLanguagesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<MerchantAmazonLanguagesResponseInfo> MerchantAmazonLanguagesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleProductInfoTasksReady"></a>
+# **googleProductInfoTasksReady**
+> MerchantGoogleProductInfoTasksReadyResponseInfo googleProductInfoTasksReady()
 
-[Task&lt;MerchantAmazonLanguagesResponseInfo&gt;](./MerchantAmazonLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.MerchantApi.GoogleProductInfoTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of supported Amazon languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash'
 
-### **MerchantAmazonLanguagesAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<MerchantAmazonLanguagesResponseInfo> MerchantAmazonLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantGoogleProductInfoTasksReadyResponseInfo**](MerchantGoogleProductInfoTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonLanguagesResponseInfo&gt;](./MerchantAmazonLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of supported Amazon languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash'
+<a id="googleProductInfoTaskGetAdvanced"></a>
+# **googleProductInfoTaskGetAdvanced**
+> MerchantGoogleProductInfoTaskGetAdvancedResponseInfo googleProductInfoTaskGetAdvanced()
 
-### **AmazonProductsTaskPostAsync(IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonProductsTaskPostResponseInfo> AmazonProductsTaskPostAsync(IEnumerable<MerchantAmazonProductsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.GoogleProductInfoTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;](./MerchantAmazonProductsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;MerchantAmazonProductsTaskPostResponseInfo&gt;](./MerchantAmazonProductsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**MerchantGoogleProductInfoTaskGetAdvancedResponseInfo**](MerchantGoogleProductInfoTaskGetAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AmazonProductsTaskPostAsync(IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<MerchantAmazonProductsTaskPostResponseInfo> AmazonProductsTaskPostAsync(IEnumerable<MerchantAmazonProductsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;MerchantAmazonProductsTaskPostRequestInfo&gt;](./MerchantAmazonProductsTaskPostRequestInfo.md)<br>
+<a id="googleSellersAdUrl"></a>
+# **googleSellersAdUrl**
+> MerchantGoogleSellersAdUrlResponseInfo googleSellersAdUrl()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;MerchantAmazonProductsTaskPostResponseInfo&gt;](./MerchantAmazonProductsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var shop_ad_aclk = "DChcSEwiSl5TKpbPoAhVFmdUKHfa_B_wYABADGgJ3cw&sig";
+var result = await dfsClient.MerchantApi.GoogleSellersAdUrlAsync(shop_ad_aclk);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash'
 
-### **AmazonProductsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<MerchantAmazonProductsTasksReadyResponseInfo> AmazonProductsTasksReadyAsync()
-```
+[**MerchantGoogleSellersAdUrlResponseInfo**](MerchantGoogleSellersAdUrlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonProductsTasksReadyResponseInfo&gt;](./MerchantAmazonProductsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash'
+<a id="merchantAmazonLocations"></a>
+# **merchantAmazonLocations**
+> MerchantAmazonLocationsResponseInfo merchantAmazonLocations()
 
-### **AmazonProductsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonProductsTasksReadyResponseInfo> AmazonProductsTasksReadyAsync(CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantAmazonProductsTasksReadyResponseInfo&gt;](./MerchantAmazonProductsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.MerchantApi.MerchantAmazonLocationsAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash'
 
-### **AmazonProductsTaskGetAdvancedAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<MerchantAmazonProductsTaskGetAdvancedResponseInfo> AmazonProductsTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**MerchantAmazonLocationsResponseInfo**](MerchantAmazonLocationsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonProductsTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonProductsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash'
+<a id="merchantAmazonLocationsCountry"></a>
+# **merchantAmazonLocationsCountry**
+> MerchantAmazonLocationsCountryResponseInfo merchantAmazonLocationsCountry()
 
-### **AmazonProductsTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonProductsTaskGetAdvancedResponseInfo> AmazonProductsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var country = "us";
+var result = await dfsClient.MerchantApi.MerchantAmazonLocationsCountryAsync(country);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantAmazonProductsTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonProductsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash'
+[**MerchantAmazonLocationsCountryResponseInfo**](MerchantAmazonLocationsCountryResponseInfo.md)
 
-### **AmazonProductsTaskGetHtmlAsync(String)**
+### Authorization
 
-```csharp
-public Task<MerchantAmazonProductsTaskGetHtmlResponseInfo> AmazonProductsTaskGetHtmlAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;MerchantAmazonProductsTaskGetHtmlResponseInfo&gt;](./MerchantAmazonProductsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+<a id="merchantAmazonLanguages"></a>
+# **merchantAmazonLanguages**
+> MerchantAmazonLanguagesResponseInfo merchantAmazonLanguages()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.MerchantApi.MerchantAmazonLanguagesAsync();
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash'
+### Parameters
 
-### **AmazonProductsTaskGetHtmlAsync(String, CancellationToken)**
 
-```csharp
-public Task<MerchantAmazonProductsTaskGetHtmlResponseInfo> AmazonProductsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantAmazonLanguagesResponseInfo**](MerchantAmazonLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonProductsTaskGetHtmlResponseInfo&gt;](./MerchantAmazonProductsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash'
+<a id="amazonProductsTaskPost"></a>
+# **amazonProductsTaskPost**
+> MerchantAmazonProductsTaskPostResponseInfo amazonProductsTaskPost()
 
-### **AmazonAsinTaskPostAsync(IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonAsinTaskPostResponseInfo> AmazonAsinTaskPostAsync(IEnumerable<MerchantAmazonAsinTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.MerchantApi.AmazonProductsTaskPostAsync(new List<MerchantAmazonProductsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "shoes",
+        LocationCode = 2840,
+        LanguageCode = "en_US",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;](./MerchantAmazonAsinTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonProductsTaskPostRequestInfo>&gt;**](IEnumerable<MerchantAmazonProductsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;MerchantAmazonAsinTaskPostResponseInfo&gt;](./MerchantAmazonAsinTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**MerchantAmazonProductsTaskPostResponseInfo**](MerchantAmazonProductsTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint will provide you with a full list of ASINs assigned to different modifications of a product.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AmazonAsinTaskPostAsync(IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<MerchantAmazonAsinTaskPostResponseInfo> AmazonAsinTaskPostAsync(IEnumerable<MerchantAmazonAsinTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;MerchantAmazonAsinTaskPostRequestInfo&gt;](./MerchantAmazonAsinTaskPostRequestInfo.md)<br>
+<a id="amazonProductsTasksReady"></a>
+# **amazonProductsTasksReady**
+> MerchantAmazonProductsTasksReadyResponseInfo amazonProductsTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;MerchantAmazonAsinTaskPostResponseInfo&gt;](./MerchantAmazonAsinTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.MerchantApi.AmazonProductsTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint will provide you with a full list of ASINs assigned to different modifications of a product.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash'
 
-### **AmazonAsinTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<MerchantAmazonAsinTasksReadyResponseInfo> AmazonAsinTasksReadyAsync()
-```
+[**MerchantAmazonProductsTasksReadyResponseInfo**](MerchantAmazonProductsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonAsinTasksReadyResponseInfo&gt;](./MerchantAmazonAsinTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash'
+<a id="amazonProductsTaskGetAdvanced"></a>
+# **amazonProductsTaskGetAdvanced**
+> MerchantAmazonProductsTaskGetAdvancedResponseInfo amazonProductsTaskGetAdvanced()
 
-### **AmazonAsinTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonAsinTasksReadyResponseInfo> AmazonAsinTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;MerchantAmazonAsinTasksReadyResponseInfo&gt;](./MerchantAmazonAsinTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.AmazonProductsTaskGetAdvancedAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash'
 
-### **AmazonAsinTaskGetAdvancedAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<MerchantAmazonAsinTaskGetAdvancedResponseInfo> AmazonAsinTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**MerchantAmazonProductsTaskGetAdvancedResponseInfo**](MerchantAmazonProductsTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonAsinTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonAsinTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint will provide you with information about the product and ASINs of all its modifications listed on Amazon.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash'
+<a id="amazonProductsTaskGetHtml"></a>
+# **amazonProductsTaskGetHtml**
+> MerchantAmazonProductsTaskGetHtmlResponseInfo amazonProductsTaskGetHtml()
 
-### **AmazonAsinTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonAsinTaskGetAdvancedResponseInfo> AmazonAsinTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "b25b2e54-c0d7-46bc-9756-4da16315c690";
+var result = await dfsClient.MerchantApi.AmazonProductsTaskGetHtmlAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantAmazonAsinTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonAsinTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-This endpoint will provide you with information about the product and ASINs of all its modifications listed on Amazon.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash'
+[**MerchantAmazonProductsTaskGetHtmlResponseInfo**](MerchantAmazonProductsTaskGetHtmlResponseInfo.md)
 
-### **AmazonAsinTaskGetHtmlAsync(String)**
+### Authorization
 
-```csharp
-public Task<MerchantAmazonAsinTaskGetHtmlResponseInfo> AmazonAsinTaskGetHtmlAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;MerchantAmazonAsinTaskGetHtmlResponseInfo&gt;](./MerchantAmazonAsinTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+<a id="amazonAsinTaskPost"></a>
+# **amazonAsinTaskPost**
+> MerchantAmazonAsinTaskPostResponseInfo amazonAsinTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.MerchantApi.AmazonAsinTaskPostAsync(new List<MerchantAmazonAsinTaskPostRequestInfo>()
+{
+    new()
+    {
+        Asin = "B0756FCPPN",
+        LocationCode = 2840,
+        LanguageCode = "en_US",
+    }
+});
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash'
+### Parameters
 
-### **AmazonAsinTaskGetHtmlAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonAsinTaskPostRequestInfo>&gt;**](IEnumerable<MerchantAmazonAsinTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<MerchantAmazonAsinTaskGetHtmlResponseInfo> AmazonAsinTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantAmazonAsinTaskPostResponseInfo**](MerchantAmazonAsinTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonAsinTaskGetHtmlResponseInfo&gt;](./MerchantAmazonAsinTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash'
+<a id="amazonAsinTasksReady"></a>
+# **amazonAsinTasksReady**
+> MerchantAmazonAsinTasksReadyResponseInfo amazonAsinTasksReady()
 
-### **AmazonSellersTaskPostAsync(IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonSellersTaskPostResponseInfo> AmazonSellersTaskPostAsync(IEnumerable<MerchantAmazonSellersTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.MerchantApi.AmazonAsinTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;](./MerchantAmazonSellersTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;MerchantAmazonSellersTaskPostResponseInfo&gt;](./MerchantAmazonSellersTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**MerchantAmazonAsinTasksReadyResponseInfo**](MerchantAmazonAsinTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
- <br>The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AmazonSellersTaskPostAsync(IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<MerchantAmazonSellersTaskPostResponseInfo> AmazonSellersTaskPostAsync(IEnumerable<MerchantAmazonSellersTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;MerchantAmazonSellersTaskPostRequestInfo&gt;](./MerchantAmazonSellersTaskPostRequestInfo.md)<br>
+<a id="amazonAsinTaskGetAdvanced"></a>
+# **amazonAsinTaskGetAdvanced**
+> MerchantAmazonAsinTaskGetAdvancedResponseInfo amazonAsinTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;MerchantAmazonSellersTaskPostResponseInfo&gt;](./MerchantAmazonSellersTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.AmazonAsinTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
- <br>The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash'
 
-### **AmazonSellersTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<MerchantAmazonSellersTasksReadyResponseInfo> AmazonSellersTasksReadyAsync()
-```
+[**MerchantAmazonAsinTaskGetAdvancedResponseInfo**](MerchantAmazonAsinTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonSellersTasksReadyResponseInfo&gt;](./MerchantAmazonSellersTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash'
+<a id="amazonAsinTaskGetHtml"></a>
+# **amazonAsinTaskGetHtml**
+> MerchantAmazonAsinTaskGetHtmlResponseInfo amazonAsinTaskGetHtml()
 
-### **AmazonSellersTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonSellersTasksReadyResponseInfo> AmazonSellersTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;MerchantAmazonSellersTasksReadyResponseInfo&gt;](./MerchantAmazonSellersTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "3ea483df-14f6-4962-806a-ca0cb905fce8";
+var result = await dfsClient.MerchantApi.AmazonAsinTaskGetHtmlAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash'
 
-### **AmazonSellersTaskGetAdvancedAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<MerchantAmazonSellersTaskGetAdvancedResponseInfo> AmazonSellersTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**MerchantAmazonAsinTaskGetHtmlResponseInfo**](MerchantAmazonAsinTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonSellersTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonSellersTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash'
+<a id="amazonSellersTaskPost"></a>
+# **amazonSellersTaskPost**
+> MerchantAmazonSellersTaskPostResponseInfo amazonSellersTaskPost()
 
-### **AmazonSellersTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonSellersTaskGetAdvancedResponseInfo> AmazonSellersTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(new List<MerchantAmazonSellersTaskPostRequestInfo>()
+{
+    new()
+    {
+        Asin = "B085RFFC9Q",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantAmazonSellersTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonSellersTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonSellersTaskPostRequestInfo>&gt;**](IEnumerable<MerchantAmazonSellersTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash'
+[**MerchantAmazonSellersTaskPostResponseInfo**](MerchantAmazonSellersTaskPostResponseInfo.md)
 
-### **AmazonSellersTaskGetHtmlAsync(String)**
+### Authorization
 
-```csharp
-public Task<MerchantAmazonSellersTaskGetHtmlResponseInfo> AmazonSellersTaskGetHtmlAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;MerchantAmazonSellersTaskGetHtmlResponseInfo&gt;](./MerchantAmazonSellersTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+<a id="amazonSellersTasksReady"></a>
+# **amazonSellersTasksReady**
+> MerchantAmazonSellersTasksReadyResponseInfo amazonSellersTasksReady()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.MerchantApi.AmazonSellersTasksReadyAsync();
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash'
+### Parameters
 
-### **AmazonSellersTaskGetHtmlAsync(String, CancellationToken)**
 
-```csharp
-public Task<MerchantAmazonSellersTaskGetHtmlResponseInfo> AmazonSellersTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantAmazonSellersTasksReadyResponseInfo**](MerchantAmazonSellersTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonSellersTaskGetHtmlResponseInfo&gt;](./MerchantAmazonSellersTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash'
+<a id="amazonSellersTaskGetAdvanced"></a>
+# **amazonSellersTaskGetAdvanced**
+> MerchantAmazonSellersTaskGetAdvancedResponseInfo amazonSellersTaskGetAdvanced()
 
-### **AmazonReviewsTaskPostAsync(IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonReviewsTaskPostResponseInfo> AmazonReviewsTaskPostAsync(IEnumerable<MerchantAmazonReviewsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.AmazonSellersTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;](./MerchantAmazonReviewsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;](./MerchantAmazonReviewsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**MerchantAmazonSellersTaskGetAdvancedResponseInfo**](MerchantAmazonSellersTaskGetAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **AmazonReviewsTaskPostAsync(IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<MerchantAmazonReviewsTaskPostResponseInfo> AmazonReviewsTaskPostAsync(IEnumerable<MerchantAmazonReviewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;MerchantAmazonReviewsTaskPostRequestInfo&gt;](./MerchantAmazonReviewsTaskPostRequestInfo.md)<br>
+<a id="amazonSellersTaskGetHtml"></a>
+# **amazonSellersTaskGetHtml**
+> MerchantAmazonSellersTaskGetHtmlResponseInfo amazonSellersTaskGetHtml()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;](./MerchantAmazonReviewsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "ba31e277-244c-4584-bb69-38222eda5f86";
+var result = await dfsClient.MerchantApi.AmazonSellersTaskGetHtmlAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash'
 
-### **AmazonReviewsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<MerchantAmazonReviewsTasksReadyResponseInfo> AmazonReviewsTasksReadyAsync()
-```
+[**MerchantAmazonSellersTaskGetHtmlResponseInfo**](MerchantAmazonSellersTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonReviewsTasksReadyResponseInfo&gt;](./MerchantAmazonReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash'
+<a id="amazonReviewsTaskPost"></a>
+# **amazonReviewsTaskPost**
+> MerchantAmazonReviewsTaskPostResponseInfo amazonReviewsTaskPost()
 
-### **AmazonReviewsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonReviewsTasksReadyResponseInfo> AmazonReviewsTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.MerchantApi.AmazonReviewsTaskPostAsync(new List<MerchantAmazonReviewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Asin = "B0773ZY26F",
+        LocationCode = 2840,
+        LanguageCode = "en_US",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;MerchantAmazonReviewsTasksReadyResponseInfo&gt;](./MerchantAmazonReviewsTasksReadyResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonReviewsTaskPostRequestInfo>&gt;**](IEnumerable<MerchantAmazonReviewsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash'
+[**MerchantAmazonReviewsTaskPostResponseInfo**](MerchantAmazonReviewsTaskPostResponseInfo.md)
 
-### **AmazonReviewsTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<MerchantAmazonReviewsTaskGetAdvancedResponseInfo> AmazonReviewsTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;MerchantAmazonReviewsTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonReviewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="amazonReviewsTasksReady"></a>
+# **amazonReviewsTasksReady**
+> MerchantAmazonReviewsTasksReadyResponseInfo amazonReviewsTasksReady()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.MerchantApi.AmazonReviewsTasksReadyAsync();
+```
 
-This endpoint provides feedback data on products listed on the Amazon marketplace, including their titles, images, ratings, review content, user profile info, review publication dates, and more. The results are specific to the asin specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash'
+### Parameters
 
-### **AmazonReviewsTaskGetAdvancedAsync(String, CancellationToken)**
 
-```csharp
-public Task<MerchantAmazonReviewsTaskGetAdvancedResponseInfo> AmazonReviewsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**MerchantAmazonReviewsTasksReadyResponseInfo**](MerchantAmazonReviewsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;MerchantAmazonReviewsTaskGetAdvancedResponseInfo&gt;](./MerchantAmazonReviewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint provides feedback data on products listed on the Amazon marketplace, including their titles, images, ratings, review content, user profile info, review publication dates, and more. The results are specific to the asin specified in the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash'
+<a id="amazonReviewsTaskGetAdvanced"></a>
+# **amazonReviewsTaskGetAdvanced**
+> MerchantAmazonReviewsTaskGetAdvancedResponseInfo amazonReviewsTaskGetAdvanced()
 
-### **AmazonReviewsTaskGetHtmlAsync(String)**
 
+### Example
 ```csharp
-public Task<MerchantAmazonReviewsTaskGetHtmlResponseInfo> AmazonReviewsTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetAdvancedAsync(id);
+```
 
-[Task&lt;MerchantAmazonReviewsTaskGetHtmlResponseInfo&gt;](./MerchantAmazonReviewsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash'
+### Return type
 
-### **AmazonReviewsTaskGetHtmlAsync(String, CancellationToken)**
+[**MerchantAmazonReviewsTaskGetAdvancedResponseInfo**](MerchantAmazonReviewsTaskGetAdvancedResponseInfo.md)
 
-```csharp
-public Task<MerchantAmazonReviewsTaskGetHtmlResponseInfo> AmazonReviewsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+### Authorization
 
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;MerchantAmazonReviewsTaskGetHtmlResponseInfo&gt;](./MerchantAmazonReviewsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+<a id="amazonReviewsTaskGetHtml"></a>
+# **amazonReviewsTaskGetHtml**
+> MerchantAmazonReviewsTaskGetHtmlResponseInfo amazonReviewsTaskGetHtml()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "d94388d4-1bd6-455a-97a3-e1336640234a";
+var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetHtmlAsync(id);
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash'
+### Parameters
 
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
 
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Type Parameters
 
-`T`<br>
+### Return type
 
-#### Parameters
+[**MerchantAmazonReviewsTaskGetHtmlResponseInfo**](MerchantAmazonReviewsTaskGetHtmlResponseInfo.md)
 
-`response` HttpResponseMessage<br>
+### Authorization
 
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

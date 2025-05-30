@@ -1,69 +1,11 @@
 # TrendsMapDataInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class TrendsMapDataInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [TrendsMapDataInfo](./TrendsMapDataInfo.md)
 
 ## Properties
 
-### **GeoId**
-
-```csharp
-public string GeoId { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **GeoName**
-
-```csharp
-public string GeoName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Values**
-
-```csharp
-public ICollection<object> Values { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MaxValueIndex**
-
-```csharp
-public Nullable<int> MaxValueIndex { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **TrendsMapDataInfo()**
-
-```csharp
-public TrendsMapDataInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**GeoId** | **string** | Google Trends location identifier<br>you can use this field for matching obtained results with location parameters specified in the request<br>example:<br>US-NY |[optional]|
+**GeoName** | **string** | Google Trends location name<br>you can use this field for matching obtained results with location parameters specified in the request |[optional]|
+**Values** | **IEnumerable<string>** | relative keyword popularity rate in a given location<br>represents the location-specific keyword popularity rate over the given time range<br>if you specify more than one keyword, the values will be averaged to the highest value across all specified keywords<br>a value of 100 is the peak popularity for the term<br>a value of 50 means that the term is half as popular<br>a value of 0 means there was not enough data for this term |[optional]|
+**MaxValueIndex** | **double?** | max value among comparable terms<br>represents the maximum value if you specified more than two keywords in a POST array<br>if you specified only one keyword, the value will be null |[optional]|

@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SearchVolume { get; set; }
+        public double? SearchVolume { get; set; }
 
         /// <summary>
         /// product and service categories

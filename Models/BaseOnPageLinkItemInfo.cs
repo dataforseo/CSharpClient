@@ -1,101 +1,123 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("anchor", typeof(AnchorLinkElementItem))]
+    [JsonInheritance("image", typeof(ImageLinkElementItem))]
+    [JsonInheritance("canonical", typeof(CanonicalLinkElementItem))]
+    [JsonInheritance("alternate", typeof(AlternateLinkElementItem))]
+    [JsonInheritance("link", typeof(LinkLinkElementItem))]
+    [JsonInheritance("redirect", typeof(RedirectLinkElementItem))]
+    [JsonInheritance("meta", typeof(MetaLinkElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("anchor", typeof(AnchorLinkElementItem))]
-    [JsonInheritanceAttribute("image", typeof(ImageLinkElementItem))]
-    [JsonInheritanceAttribute("alternate", typeof(AlternateLinkElementItem))]
-    [JsonInheritanceAttribute("redirect", typeof(RedirectLinkElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseOnPageLinkItemInfo
+    public class BaseOnPageLinkItemInfo 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// referring domain
         /// <br/>the link was found on this domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DomainFrom { get; set; }
 
         /// <summary>
         /// referenced domain
         /// <br/>the link is pointing to this domain
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DomainTo { get; set; }
 
         /// <summary>
         /// referring page
         /// <br/>relative URL of the page on which the link was found
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("page_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageFrom { get; set; }
 
         /// <summary>
         /// referenced page
         /// <br/>relative URL of the page to which the link is pointing
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("page_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageTo { get; set; }
 
         /// <summary>
         /// referring page
         /// <br/>absolute URL of the page on which the link was found
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("link_from", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("link_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LinkFrom { get; set; }
 
         /// <summary>
         /// referenced page
         /// <br/>absolute URL of the page to which the link is pointing
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("link_to", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("link_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LinkTo { get; set; }
 
         /// <summary>
         /// indicates whether the link is dofollow
-        /// <br/>if the value is true, the link doesn’t have a rel="nofollow" attribute
+        /// <br/>if the value is true, the link doesn’t have a rel='nofollow' attribute
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("dofollow", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("dofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Dofollow { get; set; }
 
         /// <summary>
         /// url scheme of the referring page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page_from_scheme", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("page_from_scheme", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageFromScheme { get; set; }
 
         /// <summary>
         /// url scheme of the referenced page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page_to_scheme", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("page_to_scheme", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageToScheme { get; set; }
 
         /// <summary>
         /// direction of the link
         /// <br/>possible values: internal, external
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("direction", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("direction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Direction { get; set; }
 
         /// <summary>
         /// link is broken
         /// <br/>indicates whether a link is directing to a broken page or resource
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_broken", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("is_broken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsBroken { get; set; }
 
         /// <summary>
         /// indicates that the link may have a conflict with another link
-        /// <br/>if true, at least one link pointing to link_to has a rel="nofollow" attribute and at least one is dofollow
+        /// <br/>if true, at least one link pointing to link_to has a rel='nofollow' attribute and at least one is dofollow
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("is_link_relation_conflict", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("is_link_relation_conflict", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsLinkRelationConflict { get; set; }
 
+        /// <summary>
+        /// status code of the referenced page
+        /// <br/>status code of the page to which the link is pointing
+        /// </summary>
+        [JsonProperty("page_to_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? PageToStatusCode { get; set; }
+
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

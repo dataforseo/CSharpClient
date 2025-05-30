@@ -1,99 +1,14 @@
 # AppendixMerchantLimitsRatesDataInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AppendixMerchantLimitsRatesDataInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AppendixMerchantLimitsRatesDataInfo](./AppendixMerchantLimitsRatesDataInfo.md)
 
 ## Properties
 
-### **Google**
-
-```csharp
-public AppendixMerchantGoogleInfo Google { get; set; }
-```
-
-#### Property Value
-
-[AppendixMerchantGoogleInfo](./AppendixMerchantGoogleInfo.md)<br>
-
-### **Amazon**
-
-```csharp
-public AppendixMerchantAmazonInfo Amazon { get; set; }
-```
-
-#### Property Value
-
-[AppendixMerchantAmazonInfo](./AppendixMerchantAmazonInfo.md)<br>
-
-### **Locations**
-
-```csharp
-public Nullable<double> Locations { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Languages**
-
-```csharp
-public Nullable<double> Languages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Errors**
-
-```csharp
-public Nullable<double> Errors { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Reviews**
-
-```csharp
-public AppendixSerpsRatesDataInfo Reviews { get; set; }
-```
-
-#### Property Value
-
-[AppendixSerpsRatesDataInfo](./AppendixSerpsRatesDataInfo.md)<br>
-
-### **TasksReady**
-
-```csharp
-public Nullable<double> TasksReady { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Double&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AppendixMerchantLimitsRatesDataInfo()**
-
-```csharp
-public AppendixMerchantLimitsRatesDataInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Google** | **AppendixMerchantGoogleInfo** |  |[optional]|
+**Amazon** | **AppendixMerchantAmazonInfo** |  |[optional]|
+**Locations** | **double?** |  |[optional]|
+**Languages** | **double?** |  |[optional]|
+**Errors** | **double?** |  |[optional]|
+**Reviews** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**TasksReady** | **double?** |  |[optional]|

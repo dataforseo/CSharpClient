@@ -1,13 +1,17 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BacklinksTimeseriesNewLostSummaryLiveItem
+    public class BacklinksTimeseriesNewLostSummaryLiveItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
@@ -16,59 +20,58 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }
 
         /// <summary>
         /// number of new backlinks
         /// <br/>number of new backlinks pointing to the target
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("new_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? NewBacklinks { get; set; }
+        [JsonProperty("new_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? NewBacklinks { get; set; }
 
         /// <summary>
         /// number of lost backlinks
         /// <br/>number of lost backlinks of the target
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("lost_backlinks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? LostBacklinks { get; set; }
+        [JsonProperty("lost_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? LostBacklinks { get; set; }
 
         /// <summary>
         /// number of new referring domains
         /// <br/>number of new referring domains pointing to the target
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("new_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? NewReferringDomains { get; set; }
+        [JsonProperty("new_referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? NewReferringDomains { get; set; }
 
         /// <summary>
         /// number of lost referring domains
         /// <br/>number of lost referring domains of the target
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("lost_referring_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? LostReferringDomains { get; set; }
+        [JsonProperty("lost_referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? LostReferringDomains { get; set; }
 
         /// <summary>
         /// number of new referring main domains
         /// <br/>number of new referring main domains pointing to the target
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("new_referring_main_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? NewReferringMainDomains { get; set; }
+        [JsonProperty("new_referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? NewReferringMainDomains { get; set; }
 
         /// <summary>
         /// number of lost referring main domains
         /// <br/>number of lost referring main domains of the target
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("lost_referring_main_domains", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? LostReferringMainDomains { get; set; }
+        [JsonProperty("lost_referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? LostReferringMainDomains { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

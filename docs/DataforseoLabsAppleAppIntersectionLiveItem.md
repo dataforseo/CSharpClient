@@ -1,59 +1,10 @@
 # DataforseoLabsAppleAppIntersectionLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DataforseoLabsAppleAppIntersectionLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsAppleAppIntersectionLiveItem](./DataforseoLabsAppleAppIntersectionLiveItem.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **KeywordData**
-
-```csharp
-public KeywordDataInfo KeywordData { get; set; }
-```
-
-#### Property Value
-
-[KeywordDataInfo](./KeywordDataInfo.md)<br>
-
-### **IntersectionResult**
-
-```csharp
-public IDictionary<string, AppDataAppStoreSearchOrganicSerpElementItem> IntersectionResult { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, AppDataAppStoreSearchOrganicSerpElementItem&gt;](./AppDataAppStoreSearchOrganicSerpElementItem.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsAppleAppIntersectionLiveItem()**
-
-```csharp
-public DataforseoLabsAppleAppIntersectionLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**KeywordData** | **KeywordDataInfo** | keyword data for the returned keyword |[optional]|
+**IntersectionResult** | **IDictionary<string, DataforseoLabsAppDataIntersectionLiveItem>** | contains SERP data for the returned keyword<br>data will be provided in separate arrays for each app ID you specified in the app_ids object when setting a task;<br>depending on the number of specified app IDs, it can contain from 1 to 20 arrays named respectively |[optional]|

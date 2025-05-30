@@ -1,219 +1,26 @@
 # AnalysisContentInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class AnalysisContentInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [AnalysisContentInfo](./AnalysisContentInfo.md)
 
 ## Properties
 
-### **ContentType**
-
-```csharp
-public string ContentType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MainTitle**
-
-```csharp
-public string MainTitle { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PreviousTitle**
-
-```csharp
-public string PreviousTitle { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Level**
-
-```csharp
-public Nullable<int> Level { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Author**
-
-```csharp
-public string Author { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Snippet**
-
-```csharp
-public string Snippet { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SnippetLength**
-
-```csharp
-public Nullable<int> SnippetLength { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SocialMetrics**
-
-```csharp
-public ICollection<SocialMetricsInfo> SocialMetrics { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;SocialMetricsInfo&gt;](./SocialMetricsInfo.md)<br>
-
-### **HighlightedText**
-
-```csharp
-public string HighlightedText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Language**
-
-```csharp
-public string Language { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SentimentConnotations**
-
-```csharp
-public IDictionary<string, Nullable<long>> SentimentConnotations { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ConnotationTypes**
-
-```csharp
-public IDictionary<string, Nullable<long>> ConnotationTypes { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Nullable&lt;Int64&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TextCategory**
-
-```csharp
-public ICollection<int> TextCategory { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DatePublished**
-
-```csharp
-public string DatePublished { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ContentQualityScore**
-
-```csharp
-public Nullable<int> ContentQualityScore { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SemanticLocation**
-
-```csharp
-public string SemanticLocation { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Rating**
-
-```csharp
-public ContentRatingInfo Rating { get; set; }
-```
-
-#### Property Value
-
-[ContentRatingInfo](./ContentRatingInfo.md)<br>
-
-### **GroupDate**
-
-```csharp
-public string GroupDate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **AnalysisContentInfo()**
-
-```csharp
-public AnalysisContentInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**ContentType** | **string** | type of content<br>example:<br>page_content, comment |[optional]|
+**Title** | **string** | title of the result |[optional]|
+**MainTitle** | **string** | page title |[optional]|
+**PreviousTitle** | **string** | title of the previous content block |[optional]|
+**Level** | **double?** | title heading level<br>indicates h-tag level from 1 (top) to 6 (bottom) |[optional]|
+**Author** | **string** | author of the content |[optional]|
+**Snippet** | **string** | content snippet |[optional]|
+**SnippetLength** | **double?** | character length of the snippet |[optional]|
+**SocialMetrics** | **IEnumerable<Facebook>** | social media engagement metrics<br>data on social media interactions associated with the content based on website embeds developed and supported by social media platforms |[optional]|
+**HighlightedText** | **string** | highlighted text from the snippet |[optional]|
+**Language** | **string** | content language<br>to obtain a full list of available languages, refer to the Languages endpoint |[optional]|
+**SentimentConnotations** | **IDictionary<string, long?>** | sentiment connotations<br>contains sentiments (emotional reactions) related to the given citation and probability index per each sentiment<br>possible sentiment connotations: anger, happiness, love, sadness, share, fun |[optional]|
+**ConnotationTypes** | **IDictionary<string, long?>** | connotation types<br>contains types of sentiments (sentiment polarity) related to the given citation and probability index per each sentiment type<br>possible sentiment connotation types: positive, negative, neutral |[optional]|
+**TextCategory** | **IEnumerable<double?>** | text category<br>to obtain a full list of available categories, refer to the Categories endpoint |[optional]|
+**DatePublished** | **string** | date and time when the content was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
+**ContentQualityScore** | **double?** | content quality score<br>this value is calculated based on the number of words, sentences and characters the content contains |[optional]|
+**SemanticLocation** | **string** | semantic location<br>indicates semantic element in HTML where the target keyword citation is located<br>example:<br>article, header |[optional]|
+**Rating** | **ContentRatingInfo** | content rating<br>rating related to content_info |[optional]|
+**GroupDate** | **string** | citation group date and time<br>indicates content publication date or date and time when our crawler visited the page for the first time;<br>this field can be used to group citations by date and display citation trends;<br>date and time are provided in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|

@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [Newtonsoft.Json.JsonProperty("items_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
+        public double? ItemsCount { get; set; }
 
         /// <summary>
         /// found reviews

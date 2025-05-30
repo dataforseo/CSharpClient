@@ -40,14 +40,8 @@ namespace DataForSeo.Client.Models.Responses
         /// <summary>
         /// URL for collecting the results of the task
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("endpoint_advanced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string EndpointAdvanced { get; set; }
-
-        /// <summary>
-        /// URL for collecting the results of the task
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("endpoint_html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string EndpointHtml { get; set; }
+        [Newtonsoft.Json.JsonProperty("endpoint", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Endpoint { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

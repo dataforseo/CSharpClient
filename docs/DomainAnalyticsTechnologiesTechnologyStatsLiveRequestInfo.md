@@ -1,69 +1,11 @@
 # DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo](./DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo.md)
 
 ## Properties
 
-### **Technology**
-
-```csharp
-public string Technology { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateFrom**
-
-```csharp
-public string DateFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateTo**
-
-```csharp
-public string DateTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()**
-
-```csharp
-public DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Technology** | **string** | target technology<br>required field<br>you can find the full list of technologies you can specify here on this page<br>example:<br>'Salesforce' |[optional]|
+**DateFrom** | **string** | starting date of the time range<br>optional field<br>minimum value 2022-10-31<br>if you don’t specify this field, the minimum value will be used by default<br>date format: 'yyyy-mm-dd'<br>example:<br>'2023-06-01' |[optional]|
+**DateTo** | **string** | ending date of the time range<br>optional field<br>if you don’t specify this field, the today’s date will be used by default<br>date format: 'yyyy-mm-dd'<br>example:<br>'2023-01-15' |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

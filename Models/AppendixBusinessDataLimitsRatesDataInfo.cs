@@ -1,47 +1,40 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppendixBusinessDataLimitsRatesDataInfo
+    public class AppendixBusinessDataLimitsRatesDataInfo 
     {
-        [Newtonsoft.Json.JsonProperty("google", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("google", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessDataGoogleInfo Google { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("locations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Locations { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Languages { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Errors { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("yelp", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("yelp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessDataDayLimitsRatesDataInfo Yelp { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("social_media", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("social_media", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixSocialMediaBusinessDataLimitsRatesDataInfo SocialMedia { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("tripadvisor", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tripadvisor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessDataDayLimitsRatesDataInfo Tripadvisor { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("trustpilot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("trustpilot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessDataDayLimitsRatesDataInfo Trustpilot { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("business_listings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("business_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo BusinessListings { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("tasks_ready", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

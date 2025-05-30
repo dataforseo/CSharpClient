@@ -1,329 +1,37 @@
 # PageMetaInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class PageMetaInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [PageMetaInfo](./PageMetaInfo.md)
 
 ## Properties
 
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Charset**
-
-```csharp
-public Nullable<int> Charset { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Follow**
-
-```csharp
-public Nullable<bool> Follow { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Generator**
-
-```csharp
-public string Generator { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Htags**
-
-```csharp
-public IDictionary<string, ICollection<string>> Htags { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, ICollection&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Description**
-
-```csharp
-public string Description { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Favicon**
-
-```csharp
-public string Favicon { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MetaKeywords**
-
-```csharp
-public string MetaKeywords { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Canonical**
-
-```csharp
-public string Canonical { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **InternalLinksCount**
-
-```csharp
-public Nullable<long> InternalLinksCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ExternalLinksCount**
-
-```csharp
-public Nullable<long> ExternalLinksCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **InboundLinksCount**
-
-```csharp
-public Nullable<long> InboundLinksCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ImagesCount**
-
-```csharp
-public Nullable<long> ImagesCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ImagesSize**
-
-```csharp
-public Nullable<int> ImagesSize { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ScriptsCount**
-
-```csharp
-public Nullable<long> ScriptsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ScriptsSize**
-
-```csharp
-public Nullable<int> ScriptsSize { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **StylesheetsCount**
-
-```csharp
-public Nullable<long> StylesheetsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **StylesheetsSize**
-
-```csharp
-public Nullable<int> StylesheetsSize { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TitleLength**
-
-```csharp
-public Nullable<int> TitleLength { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DescriptionLength**
-
-```csharp
-public Nullable<int> DescriptionLength { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RenderBlockingScriptsCount**
-
-```csharp
-public Nullable<long> RenderBlockingScriptsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RenderBlockingStylesheetsCount**
-
-```csharp
-public Nullable<long> RenderBlockingStylesheetsCount { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **CumulativeLayoutShift**
-
-```csharp
-public Nullable<float> CumulativeLayoutShift { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MetaTitle**
-
-```csharp
-public string MetaTitle { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Content**
-
-```csharp
-public HtmlContentInfo Content { get; set; }
-```
-
-#### Property Value
-
-[HtmlContentInfo](./HtmlContentInfo.md)<br>
-
-### **DeprecatedTags**
-
-```csharp
-public ICollection<string> DeprecatedTags { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DuplicateMetaTags**
-
-```csharp
-public ICollection<string> DuplicateMetaTags { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Spell**
-
-```csharp
-public SpellInfo Spell { get; set; }
-```
-
-#### Property Value
-
-[SpellInfo](./SpellInfo.md)<br>
-
-### **SocialMediaTags**
-
-```csharp
-public IDictionary<string, string> SocialMediaTags { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **BrokenHtml**
-
-```csharp
-public OnPageResourceIssueInfo BrokenHtml { get; set; }
-```
-
-#### Property Value
-
-[OnPageResourceIssueInfo](./OnPageResourceIssueInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **PageMetaInfo()**
-
-```csharp
-public PageMetaInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Title** | **string** | page title |[optional]|
+**Charset** | **double?** | code page<br>example: 65001 |[optional]|
+**Follow** | **bool?** | indicates whether a page’s ‘meta robots’ allows crawlers to follow the links on the page<br>if false, the page’s ‘meta robots’ tag contains “nofollow” parameter instructing crawlers not to follow the links on the page |[optional]|
+**Generator** | **string** | meta tag generator |[optional]|
+**Htags** | **IDictionary<string, IEnumerable<string>>** | HTML header tags |[optional]|
+**Description** | **string** | content of the meta description tag |[optional]|
+**Favicon** | **string** | favicon of the page |[optional]|
+**MetaKeywords** | **string** | content of the keywords meta tag |[optional]|
+**Canonical** | **string** | canonical page |[optional]|
+**InternalLinksCount** | **double?** | number of internal links on the page |[optional]|
+**ExternalLinksCount** | **double?** | number of external links on the page |[optional]|
+**InboundLinksCount** | **double?** | number of internal links pointing at the page |[optional]|
+**ImagesCount** | **double?** | number of images on the page |[optional]|
+**ImagesSize** | **double?** | total size of images on the page measured in bytes |[optional]|
+**ScriptsCount** | **double?** | number of scripts on the page |[optional]|
+**ScriptsSize** | **double?** | total size of scripts on the page measured in bytes |[optional]|
+**StylesheetsCount** | **double?** | number of stylesheets on the page |[optional]|
+**StylesheetsSize** | **double?** | total size of stylesheets on the page measured in bytes |[optional]|
+**TitleLength** | **double?** | length of the title tag in characters |[optional]|
+**DescriptionLength** | **double?** | length of the description tag in characters |[optional]|
+**RenderBlockingScriptsCount** | **double?** | number of scripts on the page that block page rendering |[optional]|
+**RenderBlockingStylesheetsCount** | **double?** | number of CSS styles on the page that block page rendering |[optional]|
+**CumulativeLayoutShift** | **float?** | Core Web Vitals metric measuring the layout stability of the page<br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more. |[optional]|
+**MetaTitle** | **string** | meta title of the page<br>meta tag in the head section of an HTML document that defines the title of a page |[optional]|
+**Content** | **HtmlContentInfo** | overall information about content of the page |[optional]|
+**DeprecatedTags** | **IEnumerable<string>** | deprecated tags on the page |[optional]|
+**DuplicateMetaTags** | **IEnumerable<string>** | duplicate meta tags on the page |[optional]|
+**Spell** | **HunspellInfo** | spellcheck<br>hunspell spellcheck errors |[optional]|
+**SocialMediaTags** | **IDictionary<string, string>** | object of social media tags found on the page<br>contains social media tags and their content<br>supported tags include but are not limited to Open Graph and Twitter card |[optional]|
+**BrokenHtml** | **OnPageResourceIssueInfo** | resource errors and warnings |[optional]|

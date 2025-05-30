@@ -1,26 +1,26 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppendixTaskKeywordsDataPriceDataInfo
+    public class AppendixTaskKeywordsDataPriceDataInfo 
     {
-        [Newtonsoft.Json.JsonProperty("priority_low", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> PriorityLow { get; set; }
+        [JsonProperty("priority_low", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> PriorityLow { get; set; }
+        [JsonProperty("priority_normal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> PriorityNormal { get; set; }
+        [JsonProperty("priority_high", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> PriorityHigh { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("priority_normal", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> PriorityNormal { get; set; }
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonProperty("priority_high", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo> PriorityHigh { get; set; }
-
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

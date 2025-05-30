@@ -1,179 +1,22 @@
 # KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo](./KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.md)
 
 ## Properties
 
-### **Keywords**
-
-```csharp
-public ICollection<string> Keywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationName**
-
-```csharp
-public string LocationName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LocationCoordinate**
-
-```csharp
-public string LocationCoordinate { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SearchPartners**
-
-```csharp
-public Nullable<bool> SearchPartners { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **DateFrom**
-
-```csharp
-public string DateFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateTo**
-
-```csharp
-public string DateTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SortBy**
-
-```csharp
-public string SortBy { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IncludeAdultKeywords**
-
-```csharp
-public Nullable<bool> IncludeAdultKeywords { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **PostbackUrl**
-
-```csharp
-public string PostbackUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **PingbackUrl**
-
-```csharp
-public string PingbackUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo()**
-
-```csharp
-public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keywords** | **IEnumerable<string>** | keywords<br>required field<br>The maximum number of keywords you can specify: 20<br>The maximum number of characters for each keyword: 80<br>the keywords you specify will be converted to a lowercase format<br>Note: Google Ads may return no data for certain groups of keywords<br>visit our Help Center to learn more<br>Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task;<br>to learn more about which symbols and characters can be used, please refer to this article<br>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |[optional]|
+**Target** | **string** | target website<br>optional field<br>specify a website or URL to get a list of keywords relevant to it;<br>Note: if a website url is specified, you will still get keywords relevant for the entire website |[optional]|
+**LocationName** | **string** | full name of search engine location<br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br>if you use this field, you don’t need to specify location_code or location_coordinate<br>you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations<br>example:<br>London,England,United Kingdom |[optional]|
+**LocationCode** | **int?** | search engine location code<br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br>if you use this field, you don’t need to specify location_name or location_coordinate;<br>you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations<br>example:<br>2840 |[optional]|
+**LocationCoordinate** | **string** | GPS coordinates of a location<br>optional field<br>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;<br>if you use this field, you don’t need to specify location_name or location_code;<br>location_coordinate parameter should be specified in the “latitude,longitude” format;<br>the data will be provided for the country the specified coordinates belong to;<br>example:<br>52.6178549,-155.352142 |[optional]|
+**LanguageName** | **string** | full name of search engine language<br>optional field<br>you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/languages<br>example:<br>English |[optional]|
+**LanguageCode** | **string** | search engine language code<br>optional field<br>you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/languages<br>example:<br>en |[optional]|
+**SearchPartners** | **bool?** | include Google search partners<br>optional field<br>if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search;<br>default value: false – results are returned for Google search sites |[optional]|
+**DateFrom** | **string** | starting date of the time range<br>optional field<br>date format: 'yyyy-mm-dd'<br>minimal value: 4 years from the current date<br>by default, data is returned for the past 12 months;<br>Note: the indicated date cannot be greater than that specified in date_to and/or yesterday’s date;if Status endpoint returns false in the actual_data field, date_from can be set to the month before last and prior;<br>if Status endpoint returns true in the actual_data field, date_from can be set to the last month and prior |[optional]|
+**DateTo** | **string** | ending date of the time range<br>optional field<br>Note: the indicated date cannot be greater than yesterday’s date;<br>if you don’t specify this field, yesterday’s date will be used by default<br>date format: 'yyyy-mm-dd'<br>example:<br>'2022-11-30' |[optional]|
+**SortBy** | **string** | results sorting parameters<br>optional field<br>Use these parameters to sort the results by relevance, search_volume, competition_index, low_top_of_page_bid, or high_top_of_page_bid in descending order<br>default value: relevance |[optional]|
+**IncludeAdultKeywords** | **bool?** | include keywords associated with adult content<br>optional field<br>if set to true, adult keywords will be included in the response<br>default value: false<br>note that the API may return no data for such keywords due to Google Ads restrictions |[optional]|
+**PostbackUrl** | **string** | return URL for sending task results<br>optional field<br>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified<br>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.<br>example:<br>http://your-server.com/postbackscript?id=$id<br>http://your-server.com/postbackscript?id=$id&tag=$tag<br>Note: special characters in postback_url will be urlencoded;<br>i.a., the # character will be encoded into %23<br>learn more on our Help Center |[optional]|
+**PingbackUrl** | **string** | notification URL of a completed task<br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request<br>example:<br>http://your-server.com/pingscript?id=$id<br>http://your-server.com/pingscript?id=$id&tag=$tag<br>Note: special characters in pingback_url will be urlencoded;<br>i.a., the # character will be encoded into %23<br>learn more on our Help Center |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

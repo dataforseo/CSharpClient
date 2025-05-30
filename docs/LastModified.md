@@ -1,59 +1,10 @@
 # LastModified
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class LastModified
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [LastModified](./LastModified.md)
 
 ## Properties
 
-### **Header**
-
-```csharp
-public string Header { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Sitemap**
-
-```csharp
-public string Sitemap { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **MetaTag**
-
-```csharp
-public string MetaTag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **LastModified()**
-
-```csharp
-public LastModified()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Header** | **string** | date and time when the header was last modified<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00<br>if there is no data, the value will be null |[optional]|
+**Sitemap** | **string** | date and time when the sitemap was last modified<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00<br>if there is no data, the value will be null |[optional]|
+**MetaTag** | **string** | date and time when the meta tag was last modified<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00<br>if there is no data, the value will be null |[optional]|

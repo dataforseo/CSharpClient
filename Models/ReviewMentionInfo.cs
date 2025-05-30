@@ -1,54 +1,57 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ReviewMentionInfo
+    public class ReviewMentionInfo 
     {
+
         /// <summary>
         /// title of the evaluated criterion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// positive score by criterion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("positive_score", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("positive_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? PositiveScore { get; set; }
 
         /// <summary>
         /// count of positive reviews by criterion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("positive_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? PositiveCount { get; set; }
+        [JsonProperty("positive_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? PositiveCount { get; set; }
 
         /// <summary>
         /// count of negative reviews by criterion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("negative_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? NegativeCount { get; set; }
+        [JsonProperty("negative_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? NegativeCount { get; set; }
 
         /// <summary>
         /// count of all reviews by criterion
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("total_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TotalCount { get; set; }
 
         /// <summary>
         /// element is visible by default
         /// <br/>indicates whether the review element is visible by default
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("visible_by_default", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("visible_by_default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? VisibleByDefault { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

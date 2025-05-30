@@ -1,59 +1,11 @@
 # BaseGoogleTrendsItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class BaseGoogleTrendsItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseGoogleTrendsItem](./BaseGoogleTrendsItem.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Position**
-
-```csharp
-public Nullable<int> Position { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Keywords**
-
-```csharp
-public ICollection<string> Keywords { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **BaseGoogleTrendsItem()**
-
-```csharp
-public BaseGoogleTrendsItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Position** | **double?** | the alignment of the element in Google Trends<br>can take the following values: 1, 2, 3, 4, etc. |[optional]|
+**Title** | **string** | title of the element in Google Trends |[optional]|
+**Keywords** | **IEnumerable<string>** | relevant keywords<br>the data included in the google_trends_graph element is based on the keywords listed in this array |[optional]|

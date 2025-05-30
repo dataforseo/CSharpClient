@@ -1,9586 +1,8109 @@
 # SerpApi
 
-Namespace: DataForSeo.Client.Api
-
-```csharp
-public class SerpApi
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [SerpApi](./SerpApi.md)
-
-## Properties
-
-### **BaseUrl**
-
-```csharp
-public string BaseUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ReadResponseAsString**
-
-```csharp
-public bool ReadResponseAsString { get; set; }
-```
-
-#### Property Value
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/Boolean)<br>
-
-## Constructors
-
-### **SerpApi(HttpClient)**
-
-```csharp
-public SerpApi(HttpClient httpClient)
-```
-
-#### Parameters
-
-`httpClient` HttpClient<br>
-
-## Methods
-
-### **YahooOrganicTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetAdvancedResponseInfo> YahooOrganicTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./SerpYahooOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash'
-
-### **YahooOrganicTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetAdvancedResponseInfo> YahooOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetAdvancedResponseInfo&gt;](./SerpYahooOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash'
-
-### **YahooOrganicTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetHtmlResponseInfo> YahooOrganicTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./SerpYahooOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash'
-
-### **YahooOrganicTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicTaskGetHtmlResponseInfo> YahooOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicTaskGetHtmlResponseInfo&gt;](./SerpYahooOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash'
-
-### **YahooOrganicLiveRegularAsync(IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;)**
-
-```csharp
-public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsync(IEnumerable<SerpYahooOrganicLiveRegularRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;](./SerpYahooOrganicLiveRegularRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./SerpYahooOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash'
-
-### **YahooOrganicLiveRegularAsync(IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicLiveRegularResponseInfo> YahooOrganicLiveRegularAsync(IEnumerable<SerpYahooOrganicLiveRegularRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;](./SerpYahooOrganicLiveRegularRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveRegularResponseInfo&gt;](./SerpYahooOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash'
-
-### **YahooOrganicLiveAdvancedAsync(IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;)**
-
-```csharp
-public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAsync(IEnumerable<SerpYahooOrganicLiveAdvancedRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;](./SerpYahooOrganicLiveAdvancedRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./SerpYahooOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash'
-
-### **YahooOrganicLiveAdvancedAsync(IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicLiveAdvancedResponseInfo> YahooOrganicLiveAdvancedAsync(IEnumerable<SerpYahooOrganicLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;](./SerpYahooOrganicLiveAdvancedRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveAdvancedResponseInfo&gt;](./SerpYahooOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash'
-
-### **YahooOrganicLiveHtmlAsync(IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;)**
-
-```csharp
-public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnumerable<SerpYahooOrganicLiveHtmlRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;](./SerpYahooOrganicLiveHtmlRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./SerpYahooOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash'
-
-### **YahooOrganicLiveHtmlAsync(IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpYahooOrganicLiveHtmlResponseInfo> YahooOrganicLiveHtmlAsync(IEnumerable<SerpYahooOrganicLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;](./SerpYahooOrganicLiveHtmlRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpYahooOrganicLiveHtmlResponseInfo&gt;](./SerpYahooOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash'
-
-### **SerpBaiduLocationsAsync()**
-
-```csharp
-public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./SerpBaiduLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsResponseInfo&gt;](./SerpBaiduLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLocationsCountryAsync(String)**
-
-```csharp
-public Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./SerpBaiduLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLocationsCountryAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduLocationsCountryResponseInfo&gt;](./SerpBaiduLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/locations/?bash'
-
-### **SerpBaiduLanguagesAsync()**
-
-```csharp
-public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./SerpBaiduLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
-
-### **SerpBaiduLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduLanguagesResponseInfo&gt;](./SerpBaiduLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02).
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/languages/?bash'
-
-### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnumerable<SerpBaiduOrganicTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./SerpBaiduOrganicTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./SerpBaiduOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash'
-
-### **BaiduOrganicTaskPostAsync(IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskPostResponseInfo> BaiduOrganicTaskPostAsync(IEnumerable<SerpBaiduOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;](./SerpBaiduOrganicTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskPostResponseInfo&gt;](./SerpBaiduOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash'
-
-### **BaiduOrganicTasksReadyAsync()**
-
-```csharp
-public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./SerpBaiduOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
-
-### **BaiduOrganicTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTasksReadyResponseInfo> BaiduOrganicTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksReadyResponseInfo&gt;](./SerpBaiduOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash'
-
-### **BaiduOrganicTasksFixedAsync()**
-
-```csharp
-public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./SerpBaiduOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash'
-
-### **BaiduOrganicTasksFixedAsync(CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTasksFixedResponseInfo> BaiduOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTasksFixedResponseInfo&gt;](./SerpBaiduOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash'
-
-### **BaiduOrganicTaskGetRegularAsync(String)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetRegularResponseInfo> BaiduOrganicTaskGetRegularAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./SerpBaiduOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash'
-
-### **BaiduOrganicTaskGetRegularAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetRegularResponseInfo> BaiduOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetRegularResponseInfo&gt;](./SerpBaiduOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash'
-
-### **BaiduOrganicTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetAdvancedResponseInfo> BaiduOrganicTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash'
-
-### **BaiduOrganicTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetAdvancedResponseInfo> BaiduOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash'
-
-### **BaiduOrganicTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetHtmlResponseInfo> BaiduOrganicTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./SerpBaiduOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
-
-### **BaiduOrganicTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpBaiduOrganicTaskGetHtmlResponseInfo> BaiduOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBaiduOrganicTaskGetHtmlResponseInfo&gt;](./SerpBaiduOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash'
-
-### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnumerable<SerpNaverOrganicTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;](./SerpNaverOrganicTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskPostResponseInfo&gt;](./SerpNaverOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Naver SERP API provides top 100 search engine results. Naver search results do not vary by location and language, and the search parameters for this search engine do not contain language and location variables. However, you can specify a keyword in any language, and the search engine results may vary depending on the language you used for specifying the search query.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_post/?bash'
-
-### **NaverOrganicTaskPostAsync(IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpNaverOrganicTaskPostResponseInfo> NaverOrganicTaskPostAsync(IEnumerable<SerpNaverOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpNaverOrganicTaskPostRequestInfo&gt;](./SerpNaverOrganicTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskPostResponseInfo&gt;](./SerpNaverOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Naver SERP API provides top 100 search engine results. Naver search results do not vary by location and language, and the search parameters for this search engine do not contain language and location variables. However, you can specify a keyword in any language, and the search engine results may vary depending on the language you used for specifying the search query.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_post/?bash'
-
-### **NaverOrganicTasksReadyAsync()**
-
-```csharp
-public Task<SerpNaverOrganicTasksReadyResponseInfo> NaverOrganicTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTasksReadyResponseInfo&gt;](./SerpNaverOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash'
-
-### **NaverOrganicTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpNaverOrganicTasksReadyResponseInfo> NaverOrganicTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTasksReadyResponseInfo&gt;](./SerpNaverOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash'
-
-### **NaverOrganicTasksFixedAsync()**
-
-```csharp
-public Task<SerpNaverOrganicTasksFixedResponseInfo> NaverOrganicTasksFixedAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTasksFixedResponseInfo&gt;](./SerpNaverOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_fixed/?bash'
-
-### **NaverOrganicTasksFixedAsync(CancellationToken)**
-
-```csharp
-public Task<SerpNaverOrganicTasksFixedResponseInfo> NaverOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTasksFixedResponseInfo&gt;](./SerpNaverOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/tasks_fixed/?bash'
-
-### **NaverOrganicTaskGetRegularAsync(String)**
-
-```csharp
-public Task<SerpNaverOrganicTaskGetRegularResponseInfo> NaverOrganicTaskGetRegularAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskGetRegularResponseInfo&gt;](./SerpNaverOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_get/regular/?bash'
-
-### **NaverOrganicTaskGetRegularAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpNaverOrganicTaskGetRegularResponseInfo> NaverOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskGetRegularResponseInfo&gt;](./SerpNaverOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_get/regular/?bash'
-
-### **NaverOrganicTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpNaverOrganicTaskGetAdvancedResponseInfo> NaverOrganicTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskGetAdvancedResponseInfo&gt;](./SerpNaverOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_get/advanced/?bash'
-
-### **NaverOrganicTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpNaverOrganicTaskGetAdvancedResponseInfo> NaverOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskGetAdvancedResponseInfo&gt;](./SerpNaverOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_get/advanced/?bash'
-
-### **NaverOrganicTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpNaverOrganicTaskGetHtmlResponseInfo> NaverOrganicTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskGetHtmlResponseInfo&gt;](./SerpNaverOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_get/html/?bash'
-
-### **NaverOrganicTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpNaverOrganicTaskGetHtmlResponseInfo> NaverOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpNaverOrganicTaskGetHtmlResponseInfo&gt;](./SerpNaverOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/naver/organic/task_get/html/?bash'
-
-### **SerpSeznamLocationsAsync()**
-
-```csharp
-public Task<SerpSeznamLocationsResponseInfo> SerpSeznamLocationsAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpSeznamLocationsResponseInfo&gt;](./SerpSeznamLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/locations/?bash'
-
-### **SerpSeznamLocationsAsync(CancellationToken)**
-
-```csharp
-public Task<SerpSeznamLocationsResponseInfo> SerpSeznamLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamLocationsResponseInfo&gt;](./SerpSeznamLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/locations/?bash'
-
-### **SerpSeznamLocationsCountryAsync(String)**
-
-```csharp
-public Task<SerpSeznamLocationsCountryResponseInfo> SerpSeznamLocationsCountryAsync(string country)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-#### Returns
-
-[Task&lt;SerpSeznamLocationsCountryResponseInfo&gt;](./SerpSeznamLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/locations/?bash'
-
-### **SerpSeznamLocationsCountryAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpSeznamLocationsCountryResponseInfo> SerpSeznamLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamLocationsCountryResponseInfo&gt;](./SerpSeznamLocationsCountryResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/locations/?bash'
-
-### **SerpSeznamLanguagesAsync()**
-
-```csharp
-public Task<SerpSeznamLanguagesResponseInfo> SerpSeznamLanguagesAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpSeznamLanguagesResponseInfo&gt;](./SerpSeznamLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/languages/?bash'
-
-### **SerpSeznamLanguagesAsync(CancellationToken)**
-
-```csharp
-public Task<SerpSeznamLanguagesResponseInfo> SerpSeznamLanguagesAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamLanguagesResponseInfo&gt;](./SerpSeznamLanguagesResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/languages/?bash'
-
-### **SeznamOrganicTaskPostAsync(IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IEnumerable<SerpSeznamOrganicTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;](./SerpSeznamOrganicTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskPostResponseInfo&gt;](./SerpSeznamOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Seznam SERP API provides top 10 search engine results from one of the most popular search engines in the Czech Republic. Seznam is focused on the local search market, and thus supports the Czech language only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_post/?bash'
-
-### **SeznamOrganicTaskPostAsync(IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskPostResponseInfo> SeznamOrganicTaskPostAsync(IEnumerable<SerpSeznamOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;](./SerpSeznamOrganicTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskPostResponseInfo&gt;](./SerpSeznamOrganicTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌‌
- <br>Seznam SERP API provides top 10 search engine results from one of the most popular search engines in the Czech Republic. Seznam is focused on the local search market, and thus supports the Czech language only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_post/?bash'
-
-### **SeznamOrganicTasksReadyAsync()**
-
-```csharp
-public Task<SerpSeznamOrganicTasksReadyResponseInfo> SeznamOrganicTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTasksReadyResponseInfo&gt;](./SerpSeznamOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash'
-
-### **SeznamOrganicTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpSeznamOrganicTasksReadyResponseInfo> SeznamOrganicTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTasksReadyResponseInfo&gt;](./SerpSeznamOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash'
-
-### **SeznamOrganicTasksFixedAsync()**
-
-```csharp
-public Task<SerpSeznamOrganicTasksFixedResponseInfo> SeznamOrganicTasksFixedAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTasksFixedResponseInfo&gt;](./SerpSeznamOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_fixed/?bash'
-
-### **SeznamOrganicTasksFixedAsync(CancellationToken)**
-
-```csharp
-public Task<SerpSeznamOrganicTasksFixedResponseInfo> SeznamOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTasksFixedResponseInfo&gt;](./SerpSeznamOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_fixed/?bash'
-
-### **SeznamOrganicTaskGetRegularAsync(String)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskGetRegularResponseInfo> SeznamOrganicTaskGetRegularAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskGetRegularResponseInfo&gt;](./SerpSeznamOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/regular/?bash'
-
-### **SeznamOrganicTaskGetRegularAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskGetRegularResponseInfo> SeznamOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskGetRegularResponseInfo&gt;](./SerpSeznamOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/regular/?bash'
-
-### **SeznamOrganicTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskGetAdvancedResponseInfo> SeznamOrganicTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskGetAdvancedResponseInfo&gt;](./SerpSeznamOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/advanced/?bash'
-
-### **SeznamOrganicTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskGetAdvancedResponseInfo> SeznamOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskGetAdvancedResponseInfo&gt;](./SerpSeznamOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/advanced/?bash'
-
-### **SeznamOrganicTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskGetHtmlResponseInfo> SeznamOrganicTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskGetHtmlResponseInfo&gt;](./SerpSeznamOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/html/?bash'
-
-### **SeznamOrganicTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpSeznamOrganicTaskGetHtmlResponseInfo> SeznamOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpSeznamOrganicTaskGetHtmlResponseInfo&gt;](./SerpSeznamOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/html/?bash'
-
-### **GoogleFinanceExploreTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTaskPostResponseInfo> GoogleFinanceExploreTaskPostAsync(IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;](./SerpGoogleFinanceExploreTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTaskPostResponseInfo&gt;](./SerpGoogleFinanceExploreTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash'
-
-### **GoogleFinanceExploreTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTaskPostResponseInfo> GoogleFinanceExploreTaskPostAsync(IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;](./SerpGoogleFinanceExploreTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTaskPostResponseInfo&gt;](./SerpGoogleFinanceExploreTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash'
-
-### **GoogleFinanceExploreTasksReadyAsync()**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTasksReadyResponseInfo> GoogleFinanceExploreTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTasksReadyResponseInfo&gt;](./SerpGoogleFinanceExploreTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash'
-
-### **GoogleFinanceExploreTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTasksReadyResponseInfo> GoogleFinanceExploreTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTasksReadyResponseInfo&gt;](./SerpGoogleFinanceExploreTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash'
-
-### **GoogleFinanceExploreTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> GoogleFinanceExploreTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash'
-
-### **GoogleFinanceExploreTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> GoogleFinanceExploreTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash'
-
-### **GoogleFinanceExploreTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> GoogleFinanceExploreTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash'
-
-### **GoogleFinanceExploreTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> GoogleFinanceExploreTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash'
-
-### **GoogleFinanceExploreLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> GoogleFinanceExploreLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash'
-
-### **GoogleFinanceExploreLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> GoogleFinanceExploreLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash'
-
-### **GoogleFinanceExploreLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreLiveHtmlResponseInfo> GoogleFinanceExploreLiveHtmlAsync(IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash'
-
-### **GoogleFinanceExploreLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceExploreLiveHtmlResponseInfo> GoogleFinanceExploreLiveHtmlAsync(IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceExploreLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash'
-
-### **GoogleFinanceMarketsTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTaskPostResponseInfo> GoogleFinanceMarketsTaskPostAsync(IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;](./SerpGoogleFinanceMarketsTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTaskPostResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash'
-
-### **GoogleFinanceMarketsTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTaskPostResponseInfo> GoogleFinanceMarketsTaskPostAsync(IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;](./SerpGoogleFinanceMarketsTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTaskPostResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash'
-
-### **GoogleFinanceMarketsTasksReadyAsync()**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTasksReadyResponseInfo> GoogleFinanceMarketsTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTasksReadyResponseInfo&gt;](./SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash'
-
-### **GoogleFinanceMarketsTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTasksReadyResponseInfo> GoogleFinanceMarketsTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTasksReadyResponseInfo&gt;](./SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash'
-
-### **GoogleFinanceMarketsTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> GoogleFinanceMarketsTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash'
-
-### **GoogleFinanceMarketsTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> GoogleFinanceMarketsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash'
-
-### **GoogleFinanceMarketsTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> GoogleFinanceMarketsTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash'
-
-### **GoogleFinanceMarketsTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> GoogleFinanceMarketsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash'
-
-### **GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash'
-
-### **GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> GoogleFinanceMarketsLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash'
-
-### **GoogleFinanceMarketsLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> GoogleFinanceMarketsLiveHtmlAsync(IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash'
-
-### **GoogleFinanceMarketsLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> GoogleFinanceMarketsLiveHtmlAsync(IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceMarketsLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash'
-
-### **GoogleFinanceQuoteTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTaskPostResponseInfo> GoogleFinanceQuoteTaskPostAsync(IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;](./SerpGoogleFinanceQuoteTaskPostRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTaskPostResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash'
-
-### **GoogleFinanceQuoteTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTaskPostResponseInfo> GoogleFinanceQuoteTaskPostAsync(IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;](./SerpGoogleFinanceQuoteTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTaskPostResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash'
-
-### **GoogleFinanceQuoteTasksReadyAsync()**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTasksReadyResponseInfo> GoogleFinanceQuoteTasksReadyAsync()
-```
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTasksReadyResponseInfo&gt;](./SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash'
-
-### **GoogleFinanceQuoteTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTasksReadyResponseInfo> GoogleFinanceQuoteTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTasksReadyResponseInfo&gt;](./SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash'
-
-### **GoogleFinanceQuoteTaskGetAdvancedAsync(String)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
-
-### **GoogleFinanceQuoteTaskGetAdvancedAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> GoogleFinanceQuoteTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash'
-
-### **GoogleFinanceQuoteTaskGetHtmlAsync(String)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> GoogleFinanceQuoteTaskGetHtmlAsync(string id)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash'
-
-### **GoogleFinanceQuoteTaskGetHtmlAsync(String, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> GoogleFinanceQuoteTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash'
-
-### **GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> body)
+All URIs are relative to *https://api.dataforseo.com*
+
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+[**serpIdList**](SerpApi.md#serpIdList) | **POST**  /v3/serp/id_list  |
+[**serpErrors**](SerpApi.md#serpErrors) | **POST**  /v3/serp/errors  |
+[**screenshot**](SerpApi.md#screenshot) | **POST**  /v3/serp/screenshot  |
+[**aiSummary**](SerpApi.md#aiSummary) | **POST**  /v3/serp/ai_summary  |
+[**serpGoogleLocations**](SerpApi.md#serpGoogleLocations) | **GET**  /v3/serp/google/locations  |
+[**serpGoogleLocationsCountry**](SerpApi.md#serpGoogleLocationsCountry) | **GET**  /v3/serp/google/locations/{country}  |
+[**serpGoogleLanguages**](SerpApi.md#serpGoogleLanguages) | **GET**  /v3/serp/google/languages  |
+[**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST**  /v3/serp/google/organic/task_post  |
+[**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET**  /v3/serp/google/organic/tasks_ready  |
+[**tasksReady**](SerpApi.md#tasksReady) | **GET**  /v3/serp/tasks_ready  |
+[**googleOrganicTasksFixed**](SerpApi.md#googleOrganicTasksFixed) | **GET**  /v3/serp/google/organic/tasks_fixed  |
+[**googleOrganicTaskGetRegular**](SerpApi.md#googleOrganicTaskGetRegular) | **GET**  /v3/serp/google/organic/task_get/regular/{id}  |
+[**googleOrganicTaskGetAdvanced**](SerpApi.md#googleOrganicTaskGetAdvanced) | **GET**  /v3/serp/google/organic/task_get/advanced/{id}  |
+[**googleOrganicTaskGetHtml**](SerpApi.md#googleOrganicTaskGetHtml) | **GET**  /v3/serp/google/organic/task_get/html/{id}  |
+[**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST**  /v3/serp/google/organic/live/regular  |
+[**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST**  /v3/serp/google/organic/live/advanced  |
+[**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST**  /v3/serp/google/organic/live/html  |
+[**googleMapsTaskPost**](SerpApi.md#googleMapsTaskPost) | **POST**  /v3/serp/google/maps/task_post  |
+[**googleMapsTasksReady**](SerpApi.md#googleMapsTasksReady) | **GET**  /v3/serp/google/maps/tasks_ready  |
+[**googleMapsTasksFixed**](SerpApi.md#googleMapsTasksFixed) | **GET**  /v3/serp/google/maps/tasks_fixed  |
+[**googleMapsTaskGetAdvanced**](SerpApi.md#googleMapsTaskGetAdvanced) | **GET**  /v3/serp/google/maps/task_get/advanced/{id}  |
+[**googleMapsLiveAdvanced**](SerpApi.md#googleMapsLiveAdvanced) | **POST**  /v3/serp/google/maps/live/advanced  |
+[**googleLocalFinderTaskPost**](SerpApi.md#googleLocalFinderTaskPost) | **POST**  /v3/serp/google/local_finder/task_post  |
+[**googleLocalFinderTasksReady**](SerpApi.md#googleLocalFinderTasksReady) | **GET**  /v3/serp/google/local_finder/tasks_ready  |
+[**googleLocalFinderTasksFixed**](SerpApi.md#googleLocalFinderTasksFixed) | **GET**  /v3/serp/google/local_finder/tasks_fixed  |
+[**googleLocalFinderTaskGetAdvanced**](SerpApi.md#googleLocalFinderTaskGetAdvanced) | **GET**  /v3/serp/google/local_finder/task_get/advanced/{id}  |
+[**googleLocalFinderTaskGetHtml**](SerpApi.md#googleLocalFinderTaskGetHtml) | **GET**  /v3/serp/google/local_finder/task_get/html/{id}  |
+[**googleLocalFinderLiveAdvanced**](SerpApi.md#googleLocalFinderLiveAdvanced) | **POST**  /v3/serp/google/local_finder/live/advanced  |
+[**googleLocalFinderLiveHtml**](SerpApi.md#googleLocalFinderLiveHtml) | **POST**  /v3/serp/google/local_finder/live/html  |
+[**googleNewsTaskPost**](SerpApi.md#googleNewsTaskPost) | **POST**  /v3/serp/google/news/task_post  |
+[**googleNewsTasksReady**](SerpApi.md#googleNewsTasksReady) | **GET**  /v3/serp/google/news/tasks_ready  |
+[**googleNewsTasksFixed**](SerpApi.md#googleNewsTasksFixed) | **GET**  /v3/serp/google/news/tasks_fixed  |
+[**googleNewsTaskGetAdvanced**](SerpApi.md#googleNewsTaskGetAdvanced) | **GET**  /v3/serp/google/news/task_get/advanced/{id}  |
+[**googleNewsTaskGetHtml**](SerpApi.md#googleNewsTaskGetHtml) | **GET**  /v3/serp/google/news/task_get/html/{id}  |
+[**googleNewsLiveAdvanced**](SerpApi.md#googleNewsLiveAdvanced) | **POST**  /v3/serp/google/news/live/advanced  |
+[**googleNewsLiveHtml**](SerpApi.md#googleNewsLiveHtml) | **POST**  /v3/serp/google/news/live/html  |
+[**googleEventsTaskPost**](SerpApi.md#googleEventsTaskPost) | **POST**  /v3/serp/google/events/task_post  |
+[**googleEventsTasksReady**](SerpApi.md#googleEventsTasksReady) | **GET**  /v3/serp/google/events/tasks_ready  |
+[**googleEventsTasksFixed**](SerpApi.md#googleEventsTasksFixed) | **GET**  /v3/serp/google/events/tasks_fixed  |
+[**googleEventsTaskGetAdvanced**](SerpApi.md#googleEventsTaskGetAdvanced) | **GET**  /v3/serp/google/events/task_get/advanced/{id}  |
+[**googleEventsLiveAdvanced**](SerpApi.md#googleEventsLiveAdvanced) | **POST**  /v3/serp/google/events/live/advanced  |
+[**googleImagesTaskPost**](SerpApi.md#googleImagesTaskPost) | **POST**  /v3/serp/google/images/task_post  |
+[**googleImagesTasksReady**](SerpApi.md#googleImagesTasksReady) | **GET**  /v3/serp/google/images/tasks_ready  |
+[**googleImagesTasksFixed**](SerpApi.md#googleImagesTasksFixed) | **GET**  /v3/serp/google/images/tasks_fixed  |
+[**googleImagesTaskGetAdvanced**](SerpApi.md#googleImagesTaskGetAdvanced) | **GET**  /v3/serp/google/images/task_get/advanced/{id}  |
+[**googleImagesTaskGetHtml**](SerpApi.md#googleImagesTaskGetHtml) | **GET**  /v3/serp/google/images/task_get/html/{id}  |
+[**googleImagesLiveAdvanced**](SerpApi.md#googleImagesLiveAdvanced) | **POST**  /v3/serp/google/images/live/advanced  |
+[**googleImagesLiveHtml**](SerpApi.md#googleImagesLiveHtml) | **POST**  /v3/serp/google/images/live/html  |
+[**googleSearchByImageTaskPost**](SerpApi.md#googleSearchByImageTaskPost) | **POST**  /v3/serp/google/search_by_image/task_post  |
+[**googleSearchByImageTasksReady**](SerpApi.md#googleSearchByImageTasksReady) | **GET**  /v3/serp/google/search_by_image/tasks_ready  |
+[**googleSearchByImageTasksFixed**](SerpApi.md#googleSearchByImageTasksFixed) | **GET**  /v3/serp/google/search_by_image/tasks_fixed  |
+[**googleSearchByImageTaskGetAdvanced**](SerpApi.md#googleSearchByImageTaskGetAdvanced) | **GET**  /v3/serp/google/search_by_image/task_get/advanced/{id}  |
+[**googleJobsTaskPost**](SerpApi.md#googleJobsTaskPost) | **POST**  /v3/serp/google/jobs/task_post  |
+[**googleJobsTasksReady**](SerpApi.md#googleJobsTasksReady) | **GET**  /v3/serp/google/jobs/tasks_ready  |
+[**googleJobsTasksFixed**](SerpApi.md#googleJobsTasksFixed) | **GET**  /v3/serp/google/jobs/tasks_fixed  |
+[**googleJobsTaskGetAdvanced**](SerpApi.md#googleJobsTaskGetAdvanced) | **GET**  /v3/serp/google/jobs/task_get/advanced/{id}  |
+[**googleJobsTaskGetHtml**](SerpApi.md#googleJobsTaskGetHtml) | **GET**  /v3/serp/google/jobs/task_get/html/{id}  |
+[**googleAutocompleteTaskPost**](SerpApi.md#googleAutocompleteTaskPost) | **POST**  /v3/serp/google/autocomplete/task_post  |
+[**googleAutocompleteTasksReady**](SerpApi.md#googleAutocompleteTasksReady) | **GET**  /v3/serp/google/autocomplete/tasks_ready  |
+[**googleAutocompleteTasksFixed**](SerpApi.md#googleAutocompleteTasksFixed) | **GET**  /v3/serp/google/autocomplete/tasks_fixed  |
+[**googleAutocompleteTaskGetAdvanced**](SerpApi.md#googleAutocompleteTaskGetAdvanced) | **GET**  /v3/serp/google/autocomplete/task_get/advanced/{id}  |
+[**googleAutocompleteLiveAdvanced**](SerpApi.md#googleAutocompleteLiveAdvanced) | **POST**  /v3/serp/google/autocomplete/live/advanced  |
+[**googleDatasetSearchTaskPost**](SerpApi.md#googleDatasetSearchTaskPost) | **POST**  /v3/serp/google/dataset_search/task_post  |
+[**googleDatasetSearchTasksReady**](SerpApi.md#googleDatasetSearchTasksReady) | **GET**  /v3/serp/google/dataset_search/tasks_ready  |
+[**googleDatasetSearchTasksFixed**](SerpApi.md#googleDatasetSearchTasksFixed) | **GET**  /v3/serp/google/dataset_search/tasks_fixed  |
+[**googleDatasetSearchTaskGetAdvanced**](SerpApi.md#googleDatasetSearchTaskGetAdvanced) | **GET**  /v3/serp/google/dataset_search/task_get/advanced/{id}  |
+[**googleDatasetSearchLiveAdvanced**](SerpApi.md#googleDatasetSearchLiveAdvanced) | **POST**  /v3/serp/google/dataset_search/live/advanced  |
+[**googleDatasetInfoTaskPost**](SerpApi.md#googleDatasetInfoTaskPost) | **POST**  /v3/serp/google/dataset_info/task_post  |
+[**googleDatasetInfoTasksReady**](SerpApi.md#googleDatasetInfoTasksReady) | **GET**  /v3/serp/google/dataset_info/tasks_ready  |
+[**googleDatasetInfoTasksFixed**](SerpApi.md#googleDatasetInfoTasksFixed) | **GET**  /v3/serp/google/dataset_info/tasks_fixed  |
+[**googleDatasetInfoTaskGetAdvanced**](SerpApi.md#googleDatasetInfoTaskGetAdvanced) | **GET**  /v3/serp/google/dataset_info/task_get/advanced/{id}  |
+[**googleDatasetInfoLiveAdvanced**](SerpApi.md#googleDatasetInfoLiveAdvanced) | **POST**  /v3/serp/google/dataset_info/live/advanced  |
+[**serpGoogleAdsAdvertisersLocations**](SerpApi.md#serpGoogleAdsAdvertisersLocations) | **GET**  /v3/serp/google/ads_advertisers/locations  |
+[**googleAdsAdvertisersTaskPost**](SerpApi.md#googleAdsAdvertisersTaskPost) | **POST**  /v3/serp/google/ads_advertisers/task_post  |
+[**googleAdsAdvertisersTasksReady**](SerpApi.md#googleAdsAdvertisersTasksReady) | **GET**  /v3/serp/google/ads_advertisers/tasks_ready  |
+[**googleAdsAdvertisersTaskGetAdvanced**](SerpApi.md#googleAdsAdvertisersTaskGetAdvanced) | **GET**  /v3/serp/google/ads_advertisers/task_get/advanced/{id}  |
+[**serpGoogleAdsSearchLocations**](SerpApi.md#serpGoogleAdsSearchLocations) | **GET**  /v3/serp/google/ads_search/locations  |
+[**googleAdsSearchTaskPost**](SerpApi.md#googleAdsSearchTaskPost) | **POST**  /v3/serp/google/ads_search/task_post  |
+[**googleAdsSearchTasksReady**](SerpApi.md#googleAdsSearchTasksReady) | **GET**  /v3/serp/google/ads_search/tasks_ready  |
+[**googleAdsSearchTaskGetAdvanced**](SerpApi.md#googleAdsSearchTaskGetAdvanced) | **GET**  /v3/serp/google/ads_search/task_get/advanced/{id}  |
+[**serpBingLocations**](SerpApi.md#serpBingLocations) | **GET**  /v3/serp/bing/locations  |
+[**serpBingLocationsCountry**](SerpApi.md#serpBingLocationsCountry) | **GET**  /v3/serp/bing/locations/{country}  |
+[**serpBingLanguages**](SerpApi.md#serpBingLanguages) | **GET**  /v3/serp/bing/languages  |
+[**bingOrganicTaskPost**](SerpApi.md#bingOrganicTaskPost) | **POST**  /v3/serp/bing/organic/task_post  |
+[**bingOrganicTasksReady**](SerpApi.md#bingOrganicTasksReady) | **GET**  /v3/serp/bing/organic/tasks_ready  |
+[**bingOrganicTasksFixed**](SerpApi.md#bingOrganicTasksFixed) | **GET**  /v3/serp/bing/organic/tasks_fixed  |
+[**bingOrganicTaskGetRegular**](SerpApi.md#bingOrganicTaskGetRegular) | **GET**  /v3/serp/bing/organic/task_get/regular/{id}  |
+[**bingOrganicTaskGetAdvanced**](SerpApi.md#bingOrganicTaskGetAdvanced) | **GET**  /v3/serp/bing/organic/task_get/advanced/{id}  |
+[**bingOrganicTaskGetHtml**](SerpApi.md#bingOrganicTaskGetHtml) | **GET**  /v3/serp/bing/organic/task_get/html/{id}  |
+[**bingOrganicLiveRegular**](SerpApi.md#bingOrganicLiveRegular) | **POST**  /v3/serp/bing/organic/live/regular  |
+[**bingOrganicLiveAdvanced**](SerpApi.md#bingOrganicLiveAdvanced) | **POST**  /v3/serp/bing/organic/live/advanced  |
+[**bingOrganicLiveHtml**](SerpApi.md#bingOrganicLiveHtml) | **POST**  /v3/serp/bing/organic/live/html  |
+[**bingLocalPackTaskPost**](SerpApi.md#bingLocalPackTaskPost) | **POST**  /v3/serp/bing/local_pack/task_post  |
+[**bingLocalPackTasksReady**](SerpApi.md#bingLocalPackTasksReady) | **GET**  /v3/serp/bing/local_pack/tasks_ready  |
+[**bingLocalPackTasksFixed**](SerpApi.md#bingLocalPackTasksFixed) | **GET**  /v3/serp/bing/local_pack/tasks_fixed  |
+[**bingLocalPackTaskGetRegular**](SerpApi.md#bingLocalPackTaskGetRegular) | **GET**  /v3/serp/bing/local_pack/task_get/regular/{id}  |
+[**bingLocalPackTaskGetHtml**](SerpApi.md#bingLocalPackTaskGetHtml) | **GET**  /v3/serp/bing/local_pack/task_get/html/{id}  |
+[**bingLocalPackLiveRegular**](SerpApi.md#bingLocalPackLiveRegular) | **POST**  /v3/serp/bing/local_pack/live/regular  |
+[**bingLocalPackLiveHtml**](SerpApi.md#bingLocalPackLiveHtml) | **POST**  /v3/serp/bing/local_pack/live/html  |
+[**serpYoutubeLocations**](SerpApi.md#serpYoutubeLocations) | **GET**  /v3/serp/youtube/locations  |
+[**serpYoutubeLocationsCountry**](SerpApi.md#serpYoutubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
+[**serpYoutubeLanguages**](SerpApi.md#serpYoutubeLanguages) | **GET**  /v3/serp/youtube/languages  |
+[**youtubeVideoInfoTaskPost**](SerpApi.md#youtubeVideoInfoTaskPost) | **POST**  /v3/serp/youtube/video_info/task_post  |
+[**youtubeVideoInfoTasksReady**](SerpApi.md#youtubeVideoInfoTasksReady) | **GET**  /v3/serp/youtube/video_info/tasks_ready  |
+[**youtubeVideoInfoTasksFixed**](SerpApi.md#youtubeVideoInfoTasksFixed) | **GET**  /v3/serp/youtube/video_info/tasks_fixed  |
+[**youtubeVideoInfoTaskGetAdvanced**](SerpApi.md#youtubeVideoInfoTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_info/task_get/advanced/{id}  |
+[**youtubeVideoInfoLiveAdvanced**](SerpApi.md#youtubeVideoInfoLiveAdvanced) | **POST**  /v3/serp/youtube/video_info/live/advanced  |
+[**youtubeVideoSubtitlesTaskPost**](SerpApi.md#youtubeVideoSubtitlesTaskPost) | **POST**  /v3/serp/youtube/video_subtitles/task_post  |
+[**youtubeVideoSubtitlesTasksReady**](SerpApi.md#youtubeVideoSubtitlesTasksReady) | **GET**  /v3/serp/youtube/video_subtitles/tasks_ready  |
+[**youtubeVideoSubtitlesTasksFixed**](SerpApi.md#youtubeVideoSubtitlesTasksFixed) | **GET**  /v3/serp/youtube/video_subtitles/tasks_fixed  |
+[**youtubeVideoSubtitlesTaskGetAdvanced**](SerpApi.md#youtubeVideoSubtitlesTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_subtitles/task_get/advanced/{id}  |
+[**youtubeVideoSubtitlesLiveAdvanced**](SerpApi.md#youtubeVideoSubtitlesLiveAdvanced) | **POST**  /v3/serp/youtube/video_subtitles/live/advanced  |
+[**youtubeVideoCommentsTaskPost**](SerpApi.md#youtubeVideoCommentsTaskPost) | **POST**  /v3/serp/youtube/video_comments/task_post  |
+[**youtubeVideoCommentsTasksReady**](SerpApi.md#youtubeVideoCommentsTasksReady) | **GET**  /v3/serp/youtube/video_comments/tasks_ready  |
+[**youtubeVideoCommentsTasksFixed**](SerpApi.md#youtubeVideoCommentsTasksFixed) | **GET**  /v3/serp/youtube/video_comments/tasks_fixed  |
+[**youtubeVideoCommentsTaskGetAdvanced**](SerpApi.md#youtubeVideoCommentsTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_comments/task_get/advanced/{id}  |
+[**youtubeVideoCommentsLiveAdvanced**](SerpApi.md#youtubeVideoCommentsLiveAdvanced) | **POST**  /v3/serp/youtube/video_comments/live/advanced  |
+[**serpYahooLocations**](SerpApi.md#serpYahooLocations) | **GET**  /v3/serp/yahoo/locations  |
+[**serpYahooLocationsCountry**](SerpApi.md#serpYahooLocationsCountry) | **GET**  /v3/serp/yahoo/locations/{country}  |
+[**serpYahooLanguages**](SerpApi.md#serpYahooLanguages) | **GET**  /v3/serp/yahoo/languages  |
+[**yahooOrganicTaskPost**](SerpApi.md#yahooOrganicTaskPost) | **POST**  /v3/serp/yahoo/organic/task_post  |
+[**yahooOrganicTasksReady**](SerpApi.md#yahooOrganicTasksReady) | **GET**  /v3/serp/yahoo/organic/tasks_ready  |
+[**yahooOrganicTasksFixed**](SerpApi.md#yahooOrganicTasksFixed) | **GET**  /v3/serp/yahoo/organic/tasks_fixed  |
+[**yahooOrganicTaskGetRegular**](SerpApi.md#yahooOrganicTaskGetRegular) | **GET**  /v3/serp/yahoo/organic/task_get/regular/{id}  |
+[**yahooOrganicTaskGetAdvanced**](SerpApi.md#yahooOrganicTaskGetAdvanced) | **GET**  /v3/serp/yahoo/organic/task_get/advanced/{id}  |
+[**yahooOrganicTaskGetHtml**](SerpApi.md#yahooOrganicTaskGetHtml) | **GET**  /v3/serp/yahoo/organic/task_get/html/{id}  |
+[**yahooOrganicLiveRegular**](SerpApi.md#yahooOrganicLiveRegular) | **POST**  /v3/serp/yahoo/organic/live/regular  |
+[**yahooOrganicLiveAdvanced**](SerpApi.md#yahooOrganicLiveAdvanced) | **POST**  /v3/serp/yahoo/organic/live/advanced  |
+[**yahooOrganicLiveHtml**](SerpApi.md#yahooOrganicLiveHtml) | **POST**  /v3/serp/yahoo/organic/live/html  |
+[**serpBaiduLocations**](SerpApi.md#serpBaiduLocations) | **GET**  /v3/serp/baidu/locations  |
+[**serpBaiduLocationsCountry**](SerpApi.md#serpBaiduLocationsCountry) | **GET**  /v3/serp/baidu/locations/{country}  |
+[**serpBaiduLanguages**](SerpApi.md#serpBaiduLanguages) | **GET**  /v3/serp/baidu/languages  |
+[**baiduOrganicTaskPost**](SerpApi.md#baiduOrganicTaskPost) | **POST**  /v3/serp/baidu/organic/task_post  |
+[**baiduOrganicTasksReady**](SerpApi.md#baiduOrganicTasksReady) | **GET**  /v3/serp/baidu/organic/tasks_ready  |
+[**baiduOrganicTasksFixed**](SerpApi.md#baiduOrganicTasksFixed) | **GET**  /v3/serp/baidu/organic/tasks_fixed  |
+[**baiduOrganicTaskGetRegular**](SerpApi.md#baiduOrganicTaskGetRegular) | **GET**  /v3/serp/baidu/organic/task_get/regular/{id}  |
+[**baiduOrganicTaskGetAdvanced**](SerpApi.md#baiduOrganicTaskGetAdvanced) | **GET**  /v3/serp/baidu/organic/task_get/advanced/{id}  |
+[**baiduOrganicTaskGetHtml**](SerpApi.md#baiduOrganicTaskGetHtml) | **GET**  /v3/serp/baidu/organic/task_get/html/{id}  |
+[**naverOrganicTaskPost**](SerpApi.md#naverOrganicTaskPost) | **POST**  /v3/serp/naver/organic/task_post  |
+[**naverOrganicTasksReady**](SerpApi.md#naverOrganicTasksReady) | **GET**  /v3/serp/naver/organic/tasks_ready  |
+[**naverOrganicTasksFixed**](SerpApi.md#naverOrganicTasksFixed) | **GET**  /v3/serp/naver/organic/tasks_fixed  |
+[**naverOrganicTaskGetRegular**](SerpApi.md#naverOrganicTaskGetRegular) | **GET**  /v3/serp/naver/organic/task_get/regular/{id}  |
+[**naverOrganicTaskGetAdvanced**](SerpApi.md#naverOrganicTaskGetAdvanced) | **GET**  /v3/serp/naver/organic/task_get/advanced/{id}  |
+[**naverOrganicTaskGetHtml**](SerpApi.md#naverOrganicTaskGetHtml) | **GET**  /v3/serp/naver/organic/task_get/html/{id}  |
+[**serpSeznamLocations**](SerpApi.md#serpSeznamLocations) | **GET**  /v3/serp/seznam/locations  |
+[**serpSeznamLocationsCountry**](SerpApi.md#serpSeznamLocationsCountry) | **GET**  /v3/serp/seznam/locations/{country}  |
+[**serpSeznamLanguages**](SerpApi.md#serpSeznamLanguages) | **GET**  /v3/serp/seznam/languages  |
+[**seznamOrganicTaskPost**](SerpApi.md#seznamOrganicTaskPost) | **POST**  /v3/serp/seznam/organic/task_post  |
+[**seznamOrganicTasksReady**](SerpApi.md#seznamOrganicTasksReady) | **GET**  /v3/serp/seznam/organic/tasks_ready  |
+[**seznamOrganicTasksFixed**](SerpApi.md#seznamOrganicTasksFixed) | **GET**  /v3/serp/seznam/organic/tasks_fixed  |
+[**seznamOrganicTaskGetRegular**](SerpApi.md#seznamOrganicTaskGetRegular) | **GET**  /v3/serp/seznam/organic/task_get/regular/{id}  |
+[**seznamOrganicTaskGetAdvanced**](SerpApi.md#seznamOrganicTaskGetAdvanced) | **GET**  /v3/serp/seznam/organic/task_get/advanced/{id}  |
+[**seznamOrganicTaskGetHtml**](SerpApi.md#seznamOrganicTaskGetHtml) | **GET**  /v3/serp/seznam/organic/task_get/html/{id}  |
+[**googleFinanceExploreTaskPost**](SerpApi.md#googleFinanceExploreTaskPost) | **POST**  /v3/serp/google/finance_explore/task_post  |
+[**googleFinanceExploreTasksReady**](SerpApi.md#googleFinanceExploreTasksReady) | **GET**  /v3/serp/google/finance_explore/tasks_ready  |
+[**googleFinanceExploreTaskGetAdvanced**](SerpApi.md#googleFinanceExploreTaskGetAdvanced) | **GET**  /v3/serp/google/finance_explore/task_get/advanced/{id}  |
+[**googleFinanceExploreTaskGetHtml**](SerpApi.md#googleFinanceExploreTaskGetHtml) | **GET**  /v3/serp/google/finance_explore/task_get/html/{id}  |
+[**googleFinanceExploreLiveAdvanced**](SerpApi.md#googleFinanceExploreLiveAdvanced) | **POST**  /v3/serp/google/finance_explore/live/advanced  |
+[**googleFinanceExploreLiveHtml**](SerpApi.md#googleFinanceExploreLiveHtml) | **POST**  /v3/serp/google/finance_explore/live/html  |
+[**googleFinanceMarketsTaskPost**](SerpApi.md#googleFinanceMarketsTaskPost) | **POST**  /v3/serp/google/finance_markets/task_post  |
+[**googleFinanceMarketsTasksReady**](SerpApi.md#googleFinanceMarketsTasksReady) | **GET**  /v3/serp/google/finance_markets/tasks_ready  |
+[**googleFinanceMarketsTaskGetAdvanced**](SerpApi.md#googleFinanceMarketsTaskGetAdvanced) | **GET**  /v3/serp/google/finance_markets/task_get/advanced/{id}  |
+[**googleFinanceMarketsTaskGetHtml**](SerpApi.md#googleFinanceMarketsTaskGetHtml) | **GET**  /v3/serp/google/finance_markets/task_get/html/{id}  |
+[**googleFinanceMarketsLiveAdvanced**](SerpApi.md#googleFinanceMarketsLiveAdvanced) | **POST**  /v3/serp/google/finance_markets/live/advanced  |
+[**googleFinanceMarketsLiveHtml**](SerpApi.md#googleFinanceMarketsLiveHtml) | **POST**  /v3/serp/google/finance_markets/live/html  |
+[**googleFinanceQuoteTaskPost**](SerpApi.md#googleFinanceQuoteTaskPost) | **POST**  /v3/serp/google/finance_quote/task_post  |
+[**googleFinanceQuoteTasksReady**](SerpApi.md#googleFinanceQuoteTasksReady) | **GET**  /v3/serp/google/finance_quote/tasks_ready  |
+[**googleFinanceQuoteTaskGetAdvanced**](SerpApi.md#googleFinanceQuoteTaskGetAdvanced) | **GET**  /v3/serp/google/finance_quote/task_get/advanced/{id}  |
+[**googleFinanceQuoteTaskGetHtml**](SerpApi.md#googleFinanceQuoteTaskGetHtml) | **GET**  /v3/serp/google/finance_quote/task_get/html/{id}  |
+[**googleFinanceQuoteLiveAdvanced**](SerpApi.md#googleFinanceQuoteLiveAdvanced) | **POST**  /v3/serp/google/finance_quote/live/advanced  |
+[**googleFinanceQuoteLiveHtml**](SerpApi.md#googleFinanceQuoteLiveHtml) | **POST**  /v3/serp/google/finance_quote/live/html  |
+[**googleFinanceTickerSearchTaskPost**](SerpApi.md#googleFinanceTickerSearchTaskPost) | **POST**  /v3/serp/google/finance_ticker_search/task_post  |
+[**googleFinanceTickerSearchTasksReady**](SerpApi.md#googleFinanceTickerSearchTasksReady) | **GET**  /v3/serp/google/finance_ticker_search/tasks_ready  |
+[**googleFinanceTickerSearchTaskGetAdvanced**](SerpApi.md#googleFinanceTickerSearchTaskGetAdvanced) | **GET**  /v3/serp/google/finance_ticker_search/task_get/advanced/{id}  |
+[**googleFinanceTickerSearchLiveAdvanced**](SerpApi.md#googleFinanceTickerSearchLiveAdvanced) | **POST**  /v3/serp/google/finance_ticker_search/live/advanced  |
+
+<a id="serpIdList"></a>
+# **serpIdList**
+> SerpIdListResponseInfo serpIdList()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SerpIdListAsync(new List<SerpIdListRequestInfo>()
+{
+    new()
+    {
+        DatetimeFrom = "2025-02-28 10:55:23 +00:00",
+        DatetimeTo = "2025-04-30 10:55:23 +00:00",
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpIdListRequestInfo>&gt;**](IEnumerable<SerpIdListRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpIdListResponseInfo**](SerpIdListResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpErrors"></a>
+# **serpErrors**
+> SerpErrorsResponseInfo serpErrors()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SerpErrorsAsync(new List<SerpErrorsRequestInfo>()
+{
+    new()
+    {
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpErrorsRequestInfo>&gt;**](IEnumerable<SerpErrorsRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpErrorsResponseInfo**](SerpErrorsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="screenshot"></a>
+# **screenshot**
+> SerpScreenshotResponseInfo screenshot()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.ScreenshotAsync(new List<SerpScreenshotRequestInfo>()
+{
+    new()
+    {
+        TaskId = "06211235-0696-0139-1000-36727fbd3c90",
+        BrowserScreenScaleFactor = 0.5f,
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Parameters
 
-‌
- <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpScreenshotRequestInfo>&gt;**](IEnumerable<SerpScreenshotRequestInfo>.md)|  | [optional] |
 
-### **GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
-```csharp
-public Task<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> GoogleFinanceQuoteLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)<br>
+[**SerpScreenshotResponseInfo**](SerpScreenshotResponseInfo.md)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Authorization
 
-#### Returns
+[basicAuth](../README.md#basicAuth)
 
-[Task&lt;SerpGoogleFinanceQuoteLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### HTTP request headers
 
-#### Exceptions
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-**Remarks:**
+<a id="aiSummary"></a>
+# **aiSummary**
+> SerpAiSummaryResponseInfo aiSummary()
 
-‌
- <br>Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash'
 
-### **GoogleFinanceQuoteLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;)**
-
+### Example
 ```csharp
-public Task<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> GoogleFinanceQuoteLiveHtmlAsync(IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)<br>
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceQuoteLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
-
-### **GoogleFinanceQuoteLiveHtmlAsync(IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;, CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> GoogleFinanceQuoteLiveHtmlAsync(IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
+});
+var result = await dfsClient.SerpApi.AiSummaryAsync(new List<SerpAiSummaryRequestInfo>()
+{
+    new()
+    {
+        TaskId = "07031739-1535-0139-0000-9d1e639a5b7d",
+        Prompt = "explain what DataForSEO is",
+        FetchContent = true,
+        IncludeLinks = true,
+    }
+});
 ```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Parameters
 
-#### Returns
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpAiSummaryRequestInfo>&gt;**](IEnumerable<SerpAiSummaryRequestInfo>.md)|  | [optional] |
 
-[Task&lt;SerpGoogleFinanceQuoteLiveHtmlResponseInfo&gt;](./SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Return type
 
-**Remarks:**
+[**SerpAiSummaryResponseInfo**](SerpAiSummaryResponseInfo.md)
 
-‌
- <br>Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash'
+### Authorization
 
-### **GoogleFinanceTickerSearchTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;)**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-public Task<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> GoogleFinanceTickerSearchTaskPostAsync(IEnumerable<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> body)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostRequestInfo.md)<br>
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleFinanceTickerSearchTaskPostResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="serpGoogleLocations"></a>
+# **serpGoogleLocations**
+> SerpGoogleLocationsResponseInfo serpGoogleLocations()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
-
-‌
- <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash'
-
-### **GoogleFinanceTickerSearchTaskPostAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;, CancellationToken)**
-
+### Example
 ```csharp
-public Task<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> GoogleFinanceTickerSearchTaskPostAsync(IEnumerable<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleFinanceTickerSearchTaskPostResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskPostResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
-
-**Remarks:**
-
-‌
- <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash'
-
-### **GoogleFinanceTickerSearchTasksReadyAsync()**
-
-```csharp
-public Task<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> GoogleFinanceTickerSearchTasksReadyAsync()
+});
+var result = await dfsClient.SerpApi.SerpGoogleLocationsAsync();
 ```
-
-#### Returns
 
-[Task&lt;SerpGoogleFinanceTickerSearchTasksReadyResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
-
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash'
-
-### **GoogleFinanceTickerSearchTasksReadyAsync(CancellationToken)**
-
-```csharp
-public Task<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> GoogleFinanceTickerSearchTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleLocationsResponseInfo**](SerpGoogleLocationsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleFinanceTickerSearchTasksReadyResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash'
+<a id="serpGoogleLocationsCountry"></a>
+# **serpGoogleLocationsCountry**
+> SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry()
 
-### **GoogleFinanceTickerSearchTaskGetAdvancedAsync(String)**
 
+### Example
 ```csharp
-public Task<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> GoogleFinanceTickerSearchTaskGetAdvancedAsync(string id)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var country = "us";
+var result = await dfsClient.SerpApi.SerpGoogleLocationsCountryAsync(country);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash'
+[**SerpGoogleLocationsCountryResponseInfo**](SerpGoogleLocationsCountryResponseInfo.md)
 
-### **GoogleFinanceTickerSearchTaskGetAdvancedAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> GoogleFinanceTickerSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="serpGoogleLanguages"></a>
+# **serpGoogleLanguages**
+> SerpGoogleLanguagesResponseInfo serpGoogleLanguages()
 
-[Task&lt;SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.SerpGoogleLanguagesAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash'
 
-### **GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo.md)<br>
+[**SerpGoogleLanguagesResponseInfo**](SerpGoogleLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash'
+<a id="googleOrganicTaskPost"></a>
+# **googleOrganicTaskPost**
+> SerpGoogleOrganicTaskPostResponseInfo googleOrganicTaskPost()
 
-### **GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> GoogleFinanceTickerSearchLiveAdvancedAsync(IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo.md)<br>
+});
+var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Parameters
 
-#### Returns
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicTaskPostRequestInfo>.md)|  | [optional] |
 
-[Task&lt;SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo&gt;](./SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Return type
 
-**Remarks:**
+[**SerpGoogleOrganicTaskPostResponseInfo**](SerpGoogleOrganicTaskPostResponseInfo.md)
 
-‌
- <br>Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash'
+### Authorization
 
-### **ReadObjectResponseAsync&lt;T&gt;(HttpResponseMessage, IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;, CancellationToken)**
+[basicAuth](../README.md#basicAuth)
 
-```csharp
-protected Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(HttpResponseMessage response, IReadOnlyDictionary<string, IEnumerable<string>> headers, CancellationToken cancellationToken)
-```
+### HTTP request headers
 
-#### Type Parameters
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`T`<br>
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleOrganicTasksReady"></a>
+# **googleOrganicTasksReady**
+> SerpGoogleOrganicTasksReadyResponseInfo googleOrganicTasksReady()
 
-`response` HttpResponseMessage<br>
 
-`headers` [IReadOnlyDictionary&lt;String, IEnumerable&lt;String&gt;&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
+});
+var result = await dfsClient.SerpApi.GoogleOrganicTasksReadyAsync();
+```
 
-#### Returns
+### Parameters
 
-Task&lt;ObjectResponseResult&lt;T&gt;&gt;<br>
 
-### **GoogleAutocompleteTaskGetAdvancedAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo> GoogleAutocompleteTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**SerpGoogleOrganicTasksReadyResponseInfo**](SerpGoogleOrganicTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAutocompleteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash'
+<a id="tasksReady"></a>
+# **tasksReady**
+> SerpTasksReadyResponseInfo tasksReady()
 
-### **GoogleAutocompleteTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAutocompleteTaskGetAdvancedResponseInfo> GoogleAutocompleteTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.TasksReadyAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleAutocompleteTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash'
+[**SerpTasksReadyResponseInfo**](SerpTasksReadyResponseInfo.md)
 
-### **GoogleAutocompleteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleAutocompleteLiveAdvancedResponseInfo> GoogleAutocompleteLiveAdvancedAsync(IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleAutocompleteLiveAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="googleOrganicTasksFixed"></a>
+# **googleOrganicTasksFixed**
+> SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleOrganicTasksFixedAsync();
+```
 
-‌‌
- <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash'
+### Parameters
 
-### **GoogleAutocompleteLiveAdvancedAsync(IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
-```csharp
-public Task<SerpGoogleAutocompleteLiveAdvancedResponseInfo> GoogleAutocompleteLiveAdvancedAsync(IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleOrganicTasksFixedResponseInfo**](SerpGoogleOrganicTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAutocompleteLiveAdvancedResponseInfo&gt;](./SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash'
+<a id="googleOrganicTaskGetRegular"></a>
+# **googleOrganicTaskGetRegular**
+> SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular()
 
-### **GoogleDatasetSearchTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTaskPostAsync(IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleOrganicTaskGetRegularAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./SerpGoogleDatasetSearchTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleOrganicTaskGetRegularResponseInfo**](SerpGoogleOrganicTaskGetRegularResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleDatasetSearchTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleDatasetSearchTaskPostResponseInfo> GoogleDatasetSearchTaskPostAsync(IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;](./SerpGoogleDatasetSearchTaskPostRequestInfo.md)<br>
+<a id="googleOrganicTaskGetAdvanced"></a>
+# **googleOrganicTaskGetAdvanced**
+> SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleDatasetSearchTaskPostResponseInfo&gt;](./SerpGoogleDatasetSearchTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleOrganicTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash'
 
-### **GoogleDatasetSearchTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTasksReadyAsync()
-```
+[**SerpGoogleOrganicTaskGetAdvancedResponseInfo**](SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./SerpGoogleDatasetSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
+<a id="googleOrganicTaskGetHtml"></a>
+# **googleOrganicTaskGetHtml**
+> SerpGoogleOrganicTaskGetHtmlResponseInfo googleOrganicTaskGetHtml()
 
-### **GoogleDatasetSearchTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetSearchTasksReadyResponseInfo> GoogleDatasetSearchTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleDatasetSearchTasksReadyResponseInfo&gt;](./SerpGoogleDatasetSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+});
+var id = "88982557-e157-45a2-a312-afc7fc3c09d7";
+var result = await dfsClient.SerpApi.GoogleOrganicTaskGetHtmlAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash'
 
-### **GoogleDatasetSearchTasksFixedAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTasksFixedAsync()
-```
+[**SerpGoogleOrganicTaskGetHtmlResponseInfo**](SerpGoogleOrganicTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./SerpGoogleDatasetSearchTasksFixedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash'
+<a id="googleOrganicLiveRegular"></a>
+# **googleOrganicLiveRegular**
+> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular()
 
-### **GoogleDatasetSearchTasksFixedAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetSearchTasksFixedResponseInfo> GoogleDatasetSearchTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleDatasetSearchTasksFixedResponseInfo&gt;](./SerpGoogleDatasetSearchTasksFixedResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(new List<SerpGoogleOrganicLiveRegularRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo>.md)|  | [optional] |
 
-### **GoogleDatasetSearchTaskGetAdvancedAsync(String)**
 
-```csharp
-public Task<SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo> GoogleDatasetSearchTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**SerpGoogleOrganicLiveRegularResponseInfo**](SerpGoogleOrganicLiveRegularResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
+<a id="googleOrganicLiveAdvanced"></a>
+# **googleOrganicLiveAdvanced**
+> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced()
 
-### **GoogleDatasetSearchTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo> GoogleDatasetSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        CalculateRectangles = true,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash'
+[**SerpGoogleOrganicLiveAdvancedResponseInfo**](SerpGoogleOrganicLiveAdvancedResponseInfo.md)
 
-### **GoogleDatasetSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleDatasetSearchLiveAdvancedResponseInfo> GoogleDatasetSearchLiveAdvancedAsync(IEnumerable<SerpGoogleDatasetSearchLiveAdvancedRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;](./SerpGoogleDatasetSearchLiveAdvancedRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleDatasetSearchLiveAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchLiveAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="googleOrganicLiveHtml"></a>
+# **googleOrganicLiveHtml**
+> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoogleOrganicLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>Live Google Dataset Search provides real-time data on the top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced/?bash'
+### Parameters
 
-### **GoogleDatasetSearchLiveAdvancedAsync(IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleDatasetSearchLiveAdvancedResponseInfo> GoogleDatasetSearchLiveAdvancedAsync(IEnumerable<SerpGoogleDatasetSearchLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;](./SerpGoogleDatasetSearchLiveAdvancedRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleOrganicLiveHtmlResponseInfo**](SerpGoogleOrganicLiveHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetSearchLiveAdvancedResponseInfo&gt;](./SerpGoogleDatasetSearchLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live Google Dataset Search provides real-time data on the top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced/?bash'
+<a id="googleMapsTaskPost"></a>
+# **googleMapsTaskPost**
+> SerpGoogleMapsTaskPostResponseInfo googleMapsTaskPost()
 
-### **GoogleDatasetInfoTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetInfoTaskPostResponseInfo> GoogleDatasetInfoTaskPostAsync(IEnumerable<SerpGoogleDatasetInfoTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleMapsTaskPostAsync(new List<SerpGoogleMapsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;](./SerpGoogleDatasetInfoTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleMapsTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleMapsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpGoogleDatasetInfoTaskPostResponseInfo&gt;](./SerpGoogleDatasetInfoTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleMapsTaskPostResponseInfo**](SerpGoogleMapsTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Google Dataset Info API provides detailed information about the dataset you specify in the POST request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleDatasetInfoTaskPostAsync(IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleDatasetInfoTaskPostResponseInfo> GoogleDatasetInfoTaskPostAsync(IEnumerable<SerpGoogleDatasetInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;](./SerpGoogleDatasetInfoTaskPostRequestInfo.md)<br>
+<a id="googleMapsTasksReady"></a>
+# **googleMapsTasksReady**
+> SerpGoogleMapsTasksReadyResponseInfo googleMapsTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleDatasetInfoTaskPostResponseInfo&gt;](./SerpGoogleDatasetInfoTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleMapsTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Google Dataset Info API provides detailed information about the dataset you specify in the POST request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/task_post/?bash'
 
-### **GoogleDatasetInfoTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleDatasetInfoTasksReadyResponseInfo> GoogleDatasetInfoTasksReadyAsync()
-```
+[**SerpGoogleMapsTasksReadyResponseInfo**](SerpGoogleMapsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetInfoTasksReadyResponseInfo&gt;](./SerpGoogleDatasetInfoTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash'
+<a id="googleMapsTasksFixed"></a>
+# **googleMapsTasksFixed**
+> SerpGoogleMapsTasksFixedResponseInfo googleMapsTasksFixed()
 
-### **GoogleDatasetInfoTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetInfoTasksReadyResponseInfo> GoogleDatasetInfoTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;SerpGoogleDatasetInfoTasksReadyResponseInfo&gt;](./SerpGoogleDatasetInfoTasksReadyResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleMapsTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash'
 
-### **GoogleDatasetInfoTasksFixedAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleDatasetInfoTasksFixedResponseInfo> GoogleDatasetInfoTasksFixedAsync()
-```
+[**SerpGoogleMapsTasksFixedResponseInfo**](SerpGoogleMapsTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetInfoTasksFixedResponseInfo&gt;](./SerpGoogleDatasetInfoTasksFixedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_fixed/?bash'
+<a id="googleMapsTaskGetAdvanced"></a>
+# **googleMapsTaskGetAdvanced**
+> SerpGoogleMapsTaskGetAdvancedResponseInfo googleMapsTaskGetAdvanced()
 
-### **GoogleDatasetInfoTasksFixedAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetInfoTasksFixedResponseInfo> GoogleDatasetInfoTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleMapsTaskGetAdvancedAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleDatasetInfoTasksFixedResponseInfo&gt;](./SerpGoogleDatasetInfoTasksFixedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_fixed/?bash'
+[**SerpGoogleMapsTaskGetAdvancedResponseInfo**](SerpGoogleMapsTaskGetAdvancedResponseInfo.md)
 
-### **GoogleDatasetInfoTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo> GoogleDatasetInfoTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="googleMapsLiveAdvanced"></a>
+# **googleMapsLiveAdvanced**
+> SerpGoogleMapsLiveAdvancedResponseInfo googleMapsLiveAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleMapsLiveAdvancedAsync(new List<SerpGoogleMapsLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/task_get/advanced/?bash'
+### Parameters
 
-### **GoogleDatasetInfoTaskGetAdvancedAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleMapsLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleMapsLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo> GoogleDatasetInfoTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleMapsLiveAdvancedResponseInfo**](SerpGoogleMapsLiveAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo&gt;](./SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/task_get/advanced/?bash'
+<a id="googleLocalFinderTaskPost"></a>
+# **googleLocalFinderTaskPost**
+> SerpGoogleLocalFinderTaskPostResponseInfo googleLocalFinderTaskPost()
 
-### **GoogleDatasetInfoLiveAdvancedAsync(IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleDatasetInfoLiveAdvancedResponseInfo> GoogleDatasetInfoLiveAdvancedAsync(IEnumerable<SerpGoogleDatasetInfoLiveAdvancedRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<SerpGoogleLocalFinderTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "local nail services",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        MinRating = 4.5f,
+        TimeFilter = "monday",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;](./SerpGoogleDatasetInfoLiveAdvancedRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleLocalFinderTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleLocalFinderTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpGoogleDatasetInfoLiveAdvancedResponseInfo&gt;](./SerpGoogleDatasetInfoLiveAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleLocalFinderTaskPostResponseInfo**](SerpGoogleLocalFinderTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>Live Google Dataset Info provides real-time data on the dataset you specify in the request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/live/advanced/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleDatasetInfoLiveAdvancedAsync(IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleDatasetInfoLiveAdvancedResponseInfo> GoogleDatasetInfoLiveAdvancedAsync(IEnumerable<SerpGoogleDatasetInfoLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;](./SerpGoogleDatasetInfoLiveAdvancedRequestInfo.md)<br>
+<a id="googleLocalFinderTasksReady"></a>
+# **googleLocalFinderTasksReady**
+> SerpGoogleLocalFinderTasksReadyResponseInfo googleLocalFinderTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleDatasetInfoLiveAdvancedResponseInfo&gt;](./SerpGoogleDatasetInfoLiveAdvancedResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleLocalFinderTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌
- <br>Live Google Dataset Info provides real-time data on the dataset you specify in the request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/dataset_info/live/advanced/?bash'
 
-### **SerpGoogleAdsAdvertisersLocationsAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleAdsAdvertisersLocationsResponseInfo> SerpGoogleAdsAdvertisersLocationsAsync()
-```
+[**SerpGoogleLocalFinderTasksReadyResponseInfo**](SerpGoogleLocalFinderTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAdsAdvertisersLocationsResponseInfo&gt;](./SerpGoogleAdsAdvertisersLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash'
+<a id="googleLocalFinderTasksFixed"></a>
+# **googleLocalFinderTasksFixed**
+> SerpGoogleLocalFinderTasksFixedResponseInfo googleLocalFinderTasksFixed()
 
-### **SerpGoogleAdsAdvertisersLocationsAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAdsAdvertisersLocationsResponseInfo> SerpGoogleAdsAdvertisersLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleAdsAdvertisersLocationsResponseInfo&gt;](./SerpGoogleAdsAdvertisersLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleLocalFinderTasksFixedAsync();
+```
 
-**Remarks:**
+### Parameters
 
-for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash'
 
-### **GoogleAdsAdvertisersTaskPostAsync(IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleAdsAdvertisersTaskPostResponseInfo> GoogleAdsAdvertisersTaskPostAsync(IEnumerable<SerpGoogleAdsAdvertisersTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)<br>
+[**SerpGoogleLocalFinderTasksFixedResponseInfo**](SerpGoogleLocalFinderTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAdsAdvertisersTaskPostResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash'
+<a id="googleLocalFinderTaskGetAdvanced"></a>
+# **googleLocalFinderTaskGetAdvanced**
+> SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced()
 
-### **GoogleAdsAdvertisersTaskPostAsync(IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAdsAdvertisersTaskPostResponseInfo> GoogleAdsAdvertisersTaskPostAsync(IEnumerable<SerpGoogleAdsAdvertisersTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleLocalFinderTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleAdsAdvertisersTaskPostResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleLocalFinderTaskGetAdvancedResponseInfo**](SerpGoogleLocalFinderTaskGetAdvancedResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash'
+### HTTP request headers
 
-### **GoogleAdsAdvertisersTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleAdsAdvertisersTasksReadyResponseInfo> GoogleAdsAdvertisersTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleLocalFinderTaskGetHtml"></a>
+# **googleLocalFinderTaskGetHtml**
+> SerpGoogleLocalFinderTaskGetHtmlResponseInfo googleLocalFinderTaskGetHtml()
 
-[Task&lt;SerpGoogleAdsAdvertisersTasksReadyResponseInfo&gt;](./SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "d522ac50-e51e-49a3-868b-def0ef7748e2";
+var result = await dfsClient.SerpApi.GoogleLocalFinderTaskGetHtmlAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash'
 
-### **GoogleAdsAdvertisersTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleAdsAdvertisersTasksReadyResponseInfo> GoogleAdsAdvertisersTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleLocalFinderTaskGetHtmlResponseInfo**](SerpGoogleLocalFinderTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAdsAdvertisersTasksReadyResponseInfo&gt;](./SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash'
+<a id="googleLocalFinderLiveAdvanced"></a>
+# **googleLocalFinderLiveAdvanced**
+> SerpGoogleLocalFinderLiveAdvancedResponseInfo googleLocalFinderLiveAdvanced()
 
-### **GoogleAdsAdvertisersTaskGetAdvancedAsync(String)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo> GoogleAdsAdvertisersTaskGetAdvancedAsync(string id)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List<SerpGoogleLocalFinderLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "local nail services",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        MinRating = 4.5f,
+        TimeFilter = "monday",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleLocalFinderLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleLocalFinderLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleLocalFinderLiveAdvancedResponseInfo**](SerpGoogleLocalFinderLiveAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleAdsAdvertisersTaskGetAdvancedAsync(String, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo> GoogleAdsAdvertisersTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+<a id="googleLocalFinderLiveHtml"></a>
+# **googleLocalFinderLiveHtml**
+> SerpGoogleLocalFinderLiveHtmlResponseInfo googleLocalFinderLiveHtml()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleLocalFinderLiveHtmlAsync(new List<SerpGoogleLocalFinderLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleLocalFinderLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleLocalFinderLiveHtmlRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash'
 
-### **SerpGoogleAdsSearchLocationsAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleAdsSearchLocationsResponseInfo> SerpGoogleAdsSearchLocationsAsync()
-```
+[**SerpGoogleLocalFinderLiveHtmlResponseInfo**](SerpGoogleLocalFinderLiveHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAdsSearchLocationsResponseInfo&gt;](./SerpGoogleAdsSearchLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash'
+<a id="googleNewsTaskPost"></a>
+# **googleNewsTaskPost**
+> SerpGoogleNewsTaskPostResponseInfo googleNewsTaskPost()
 
-### **SerpGoogleAdsSearchLocationsAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAdsSearchLocationsResponseInfo> SerpGoogleAdsSearchLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpGoogleAdsSearchLocationsResponseInfo&gt;](./SerpGoogleAdsSearchLocationsResponseInfo.md)<br>
-Successful operation
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleNewsTaskPostAsync(new List<SerpGoogleNewsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleNewsTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleNewsTaskPostRequestInfo>.md)|  | [optional] |
 
-### **GoogleAdsSearchTaskPostAsync(IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;)**
 
-```csharp
-public Task<SerpGoogleAdsSearchTaskPostResponseInfo> GoogleAdsSearchTaskPostAsync(IEnumerable<SerpGoogleAdsSearchTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;](./SerpGoogleAdsSearchTaskPostRequestInfo.md)<br>
+[**SerpGoogleNewsTaskPostResponseInfo**](SerpGoogleNewsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAdsSearchTaskPostResponseInfo&gt;](./SerpGoogleAdsSearchTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash'
+<a id="googleNewsTasksReady"></a>
+# **googleNewsTasksReady**
+> SerpGoogleNewsTasksReadyResponseInfo googleNewsTasksReady()
 
-### **GoogleAdsSearchTaskPostAsync(IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAdsSearchTaskPostResponseInfo> GoogleAdsSearchTaskPostAsync(IEnumerable<SerpGoogleAdsSearchTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleNewsTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;](./SerpGoogleAdsSearchTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleAdsSearchTaskPostResponseInfo&gt;](./SerpGoogleAdsSearchTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleNewsTasksReadyResponseInfo**](SerpGoogleNewsTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash'
+### HTTP request headers
 
-### **GoogleAdsSearchTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleAdsSearchTasksReadyResponseInfo> GoogleAdsSearchTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleNewsTasksFixed"></a>
+# **googleNewsTasksFixed**
+> SerpGoogleNewsTasksFixedResponseInfo googleNewsTasksFixed()
 
-[Task&lt;SerpGoogleAdsSearchTasksReadyResponseInfo&gt;](./SerpGoogleAdsSearchTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleNewsTasksFixedAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash'
 
-### **GoogleAdsSearchTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleAdsSearchTasksReadyResponseInfo> GoogleAdsSearchTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleNewsTasksFixedResponseInfo**](SerpGoogleNewsTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAdsSearchTasksReadyResponseInfo&gt;](./SerpGoogleAdsSearchTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash'
+<a id="googleNewsTaskGetAdvanced"></a>
+# **googleNewsTaskGetAdvanced**
+> SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced()
 
-### **GoogleAdsSearchTaskGetAdvancedAsync(String)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAdsSearchTaskGetAdvancedResponseInfo> GoogleAdsSearchTaskGetAdvancedAsync(string id)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleNewsTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleAdsSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleNewsTaskGetAdvancedResponseInfo**](SerpGoogleNewsTaskGetAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleAdsSearchTaskGetAdvancedAsync(String, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleAdsSearchTaskGetAdvancedResponseInfo> GoogleAdsSearchTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+<a id="googleNewsTaskGetHtml"></a>
+# **googleNewsTaskGetHtml**
+> SerpGoogleNewsTaskGetHtmlResponseInfo googleNewsTaskGetHtml()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleAdsSearchTaskGetAdvancedResponseInfo&gt;](./SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+});
+var id = "7119b902-7483-4523-a64c-f057635b9b80";
+var result = await dfsClient.SerpApi.GoogleNewsTaskGetHtmlAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash'
 
-### **SerpBingLocationsAsync()**
+### Return type
 
-```csharp
-public Task<SerpBingLocationsResponseInfo> SerpBingLocationsAsync()
-```
+[**SerpGoogleNewsTaskGetHtmlResponseInfo**](SerpGoogleNewsTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLocationsResponseInfo&gt;](./SerpBingLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/locations/?bash'
+<a id="googleNewsLiveAdvanced"></a>
+# **googleNewsLiveAdvanced**
+> SerpGoogleNewsLiveAdvancedResponseInfo googleNewsLiveAdvanced()
 
-### **SerpBingLocationsAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingLocationsResponseInfo> SerpBingLocationsAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
-
-[Task&lt;SerpBingLocationsResponseInfo&gt;](./SerpBingLocationsResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleNewsLiveAdvancedAsync(new List<SerpGoogleNewsLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "android",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/locations/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleNewsLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleNewsLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-### **SerpBingLocationsCountryAsync(String)**
 
-```csharp
-public Task<SerpBingLocationsCountryResponseInfo> SerpBingLocationsCountryAsync(string country)
-```
 
-#### Parameters
+### Return type
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+[**SerpGoogleNewsLiveAdvancedResponseInfo**](SerpGoogleNewsLiveAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLocationsCountryResponseInfo&gt;](./SerpBingLocationsCountryResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/locations/?bash'
+<a id="googleNewsLiveHtml"></a>
+# **googleNewsLiveHtml**
+> SerpGoogleNewsLiveHtmlResponseInfo googleNewsLiveHtml()
 
-### **SerpBingLocationsCountryAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingLocationsCountryResponseInfo> SerpBingLocationsCountryAsync(string country, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleNewsLiveHtmlAsync(new List<SerpGoogleNewsLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleNewsLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleNewsLiveHtmlRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;SerpBingLocationsCountryResponseInfo&gt;](./SerpBingLocationsCountryResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleNewsLiveHtmlResponseInfo**](SerpGoogleNewsLiveHtmlResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/locations/?bash'
+### HTTP request headers
 
-### **SerpBingLanguagesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpBingLanguagesResponseInfo> SerpBingLanguagesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleEventsTaskPost"></a>
+# **googleEventsTaskPost**
+> SerpGoogleEventsTaskPostResponseInfo googleEventsTaskPost()
 
-[Task&lt;SerpBingLanguagesResponseInfo&gt;](./SerpBingLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleEventsTaskPostAsync(new List<SerpGoogleEventsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/languages/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleEventsTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleEventsTaskPostRequestInfo>.md)|  | [optional] |
 
-### **SerpBingLanguagesAsync(CancellationToken)**
 
-```csharp
-public Task<SerpBingLanguagesResponseInfo> SerpBingLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleEventsTaskPostResponseInfo**](SerpGoogleEventsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLanguagesResponseInfo&gt;](./SerpBingLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/languages/?bash'
+<a id="googleEventsTasksReady"></a>
+# **googleEventsTasksReady**
+> SerpGoogleEventsTasksReadyResponseInfo googleEventsTasksReady()
 
-### **BingOrganicTaskPostAsync(IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnumerable<SerpBingOrganicTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleEventsTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;](./SerpBingOrganicTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpBingOrganicTaskPostResponseInfo&gt;](./SerpBingOrganicTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleEventsTasksReadyResponseInfo**](SerpGoogleEventsTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **BingOrganicTaskPostAsync(IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpBingOrganicTaskPostResponseInfo> BingOrganicTaskPostAsync(IEnumerable<SerpBingOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpBingOrganicTaskPostRequestInfo&gt;](./SerpBingOrganicTaskPostRequestInfo.md)<br>
+<a id="googleEventsTasksFixed"></a>
+# **googleEventsTasksFixed**
+> SerpGoogleEventsTasksFixedResponseInfo googleEventsTasksFixed()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpBingOrganicTaskPostResponseInfo&gt;](./SerpBingOrganicTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleEventsTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_post/?bash'
 
-### **BingOrganicTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpBingOrganicTasksReadyResponseInfo> BingOrganicTasksReadyAsync()
-```
+[**SerpGoogleEventsTasksFixedResponseInfo**](SerpGoogleEventsTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingOrganicTasksReadyResponseInfo&gt;](./SerpBingOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash'
+<a id="googleEventsTaskGetAdvanced"></a>
+# **googleEventsTaskGetAdvanced**
+> SerpGoogleEventsTaskGetAdvancedResponseInfo googleEventsTaskGetAdvanced()
 
-### **BingOrganicTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingOrganicTasksReadyResponseInfo> BingOrganicTasksReadyAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
-
-[Task&lt;SerpBingOrganicTasksReadyResponseInfo&gt;](./SerpBingOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleEventsTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash'
 
-### **BingOrganicTasksFixedAsync()**
+### Return type
 
-```csharp
-public Task<SerpBingOrganicTasksFixedResponseInfo> BingOrganicTasksFixedAsync()
-```
+[**SerpGoogleEventsTaskGetAdvancedResponseInfo**](SerpGoogleEventsTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingOrganicTasksFixedResponseInfo&gt;](./SerpBingOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_fixed/?bash'
+<a id="googleEventsLiveAdvanced"></a>
+# **googleEventsLiveAdvanced**
+> SerpGoogleEventsLiveAdvancedResponseInfo googleEventsLiveAdvanced()
 
-### **BingOrganicTasksFixedAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingOrganicTasksFixedResponseInfo> BingOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
-
-#### Returns
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpBingOrganicTasksFixedResponseInfo&gt;](./SerpBingOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
-
-#### Exceptions
-
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(new List<SerpGoogleEventsLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "concerts",
+        LocationName = "Los Angeles,California,United States",
+        DateRange = "today",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/tasks_fixed/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleEventsLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleEventsLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-### **BingOrganicTaskGetRegularAsync(String)**
 
-```csharp
-public Task<SerpBingOrganicTaskGetRegularResponseInfo> BingOrganicTaskGetRegularAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**SerpGoogleEventsLiveAdvancedResponseInfo**](SerpGoogleEventsLiveAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingOrganicTaskGetRegularResponseInfo&gt;](./SerpBingOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/regular/?bash'
+<a id="googleImagesTaskPost"></a>
+# **googleImagesTaskPost**
+> SerpGoogleImagesTaskPostResponseInfo googleImagesTaskPost()
 
-### **BingOrganicTaskGetRegularAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingOrganicTaskGetRegularResponseInfo> BingOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.GoogleImagesTaskPostAsync(new List<SerpGoogleImagesTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpBingOrganicTaskGetRegularResponseInfo&gt;](./SerpBingOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleImagesTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleImagesTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/regular/?bash'
+[**SerpGoogleImagesTaskPostResponseInfo**](SerpGoogleImagesTaskPostResponseInfo.md)
 
-### **BingOrganicTaskGetAdvancedAsync(String)**
+### Authorization
 
-```csharp
-public Task<SerpBingOrganicTaskGetAdvancedResponseInfo> BingOrganicTaskGetAdvancedAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpBingOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBingOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="googleImagesTasksReady"></a>
+# **googleImagesTasksReady**
+> SerpGoogleImagesTasksReadyResponseInfo googleImagesTasksReady()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleImagesTasksReadyAsync();
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/advanced/?bash'
+### Parameters
 
-### **BingOrganicTaskGetAdvancedAsync(String, CancellationToken)**
 
-```csharp
-public Task<SerpBingOrganicTaskGetAdvancedResponseInfo> BingOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleImagesTasksReadyResponseInfo**](SerpGoogleImagesTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingOrganicTaskGetAdvancedResponseInfo&gt;](./SerpBingOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/advanced/?bash'
+<a id="googleImagesTasksFixed"></a>
+# **googleImagesTasksFixed**
+> SerpGoogleImagesTasksFixedResponseInfo googleImagesTasksFixed()
 
-### **BingOrganicTaskGetHtmlAsync(String)**
 
+### Example
 ```csharp
-public Task<SerpBingOrganicTaskGetHtmlResponseInfo> BingOrganicTaskGetHtmlAsync(string id)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+});
+var result = await dfsClient.SerpApi.GoogleImagesTasksFixedAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpBingOrganicTaskGetHtmlResponseInfo&gt;](./SerpBingOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/html/?bash'
+[**SerpGoogleImagesTasksFixedResponseInfo**](SerpGoogleImagesTasksFixedResponseInfo.md)
 
-### **BingOrganicTaskGetHtmlAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpBingOrganicTaskGetHtmlResponseInfo> BingOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleImagesTaskGetAdvanced"></a>
+# **googleImagesTaskGetAdvanced**
+> SerpGoogleImagesTaskGetAdvancedResponseInfo googleImagesTaskGetAdvanced()
 
-[Task&lt;SerpBingOrganicTaskGetHtmlResponseInfo&gt;](./SerpBingOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleImagesTaskGetAdvancedAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/task_get/html/?bash'
 
-### **BingOrganicLiveRegularAsync(IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(IEnumerable<SerpBingOrganicLiveRegularRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;](./SerpBingOrganicLiveRegularRequestInfo.md)<br>
+[**SerpGoogleImagesTaskGetAdvancedResponseInfo**](SerpGoogleImagesTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingOrganicLiveRegularResponseInfo&gt;](./SerpBingOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/regular/?bash'
+<a id="googleImagesTaskGetHtml"></a>
+# **googleImagesTaskGetHtml**
+> SerpGoogleImagesTaskGetHtmlResponseInfo googleImagesTaskGetHtml()
 
-### **BingOrganicLiveRegularAsync(IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingOrganicLiveRegularResponseInfo> BingOrganicLiveRegularAsync(IEnumerable<SerpBingOrganicLiveRegularRequestInfo> body, CancellationToken cancellationToken)
-```
-
-#### Parameters
-
-`body` [IEnumerable&lt;SerpBingOrganicLiveRegularRequestInfo&gt;](./SerpBingOrganicLiveRegularRequestInfo.md)<br>
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
+});
+var id = "fc90a8ec-249e-4fba-b7f8-1977a536caa2";
+var result = await dfsClient.SerpApi.GoogleImagesTaskGetHtmlAsync(id);
+```
 
-[Task&lt;SerpBingOrganicLiveRegularResponseInfo&gt;](./SerpBingOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-‌‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/regular/?bash'
+### Return type
 
-### **BingOrganicLiveAdvancedAsync(IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;)**
+[**SerpGoogleImagesTaskGetHtmlResponseInfo**](SerpGoogleImagesTaskGetHtmlResponseInfo.md)
 
-```csharp
-public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsync(IEnumerable<SerpBingOrganicLiveAdvancedRequestInfo> body)
-```
+### Authorization
 
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`body` [IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;](./SerpBingOrganicLiveAdvancedRequestInfo.md)<br>
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpBingOrganicLiveAdvancedResponseInfo&gt;](./SerpBingOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleImagesLiveAdvanced"></a>
+# **googleImagesLiveAdvanced**
+> SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/advanced/?bash'
+});
+var result = await dfsClient.SerpApi.GoogleImagesLiveAdvancedAsync(new List<SerpGoogleImagesLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-### **BingOrganicLiveAdvancedAsync(IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;, CancellationToken)**
+### Parameters
 
-```csharp
-public Task<SerpBingOrganicLiveAdvancedResponseInfo> BingOrganicLiveAdvancedAsync(IEnumerable<SerpBingOrganicLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleImagesLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleImagesLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;](./SerpBingOrganicLiveAdvancedRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpGoogleImagesLiveAdvancedResponseInfo**](SerpGoogleImagesLiveAdvancedResponseInfo.md)
 
-[Task&lt;SerpBingOrganicLiveAdvancedResponseInfo&gt;](./SerpBingOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/advanced/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **BingOrganicLiveHtmlAsync(IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;)**
+<a id="googleImagesLiveHtml"></a>
+# **googleImagesLiveHtml**
+> SerpGoogleImagesLiveHtmlResponseInfo googleImagesLiveHtml()
 
-```csharp
-public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnumerable<SerpBingOrganicLiveHtmlRequestInfo> body)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;](./SerpBingOrganicLiveHtmlRequestInfo.md)<br>
+});
+var result = await dfsClient.SerpApi.GoogleImagesLiveHtmlAsync(new List<SerpGoogleImagesLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpBingOrganicLiveHtmlResponseInfo&gt;](./SerpBingOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleImagesLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleImagesLiveHtmlRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/html/?bash'
+[**SerpGoogleImagesLiveHtmlResponseInfo**](SerpGoogleImagesLiveHtmlResponseInfo.md)
 
-### **BingOrganicLiveHtmlAsync(IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpBingOrganicLiveHtmlResponseInfo> BingOrganicLiveHtmlAsync(IEnumerable<SerpBingOrganicLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;](./SerpBingOrganicLiveHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleSearchByImageTaskPost"></a>
+# **googleSearchByImageTaskPost**
+> SerpGoogleSearchByImageTaskPostResponseInfo googleSearchByImageTaskPost()
 
-[Task&lt;SerpBingOrganicLiveHtmlResponseInfo&gt;](./SerpBingOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleSearchByImageTaskPostAsync(new List<SerpGoogleSearchByImageTaskPostRequestInfo>()
+{
+    new()
+    {
+        ImageUrl = "https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/organic/live/html/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleSearchByImageTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleSearchByImageTaskPostRequestInfo>.md)|  | [optional] |
 
-### **BingLocalPackTaskPostAsync(IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;)**
 
-```csharp
-public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IEnumerable<SerpBingLocalPackTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;](./SerpBingLocalPackTaskPostRequestInfo.md)<br>
+[**SerpGoogleSearchByImageTaskPostResponseInfo**](SerpGoogleSearchByImageTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLocalPackTaskPostResponseInfo&gt;](./SerpBingLocalPackTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_post/?bash'
+<a id="googleSearchByImageTasksReady"></a>
+# **googleSearchByImageTasksReady**
+> SerpGoogleSearchByImageTasksReadyResponseInfo googleSearchByImageTasksReady()
 
-### **BingLocalPackTaskPostAsync(IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingLocalPackTaskPostResponseInfo> BingLocalPackTaskPostAsync(IEnumerable<SerpBingLocalPackTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleSearchByImageTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpBingLocalPackTaskPostRequestInfo&gt;](./SerpBingLocalPackTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpBingLocalPackTaskPostResponseInfo&gt;](./SerpBingLocalPackTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleSearchByImageTasksReadyResponseInfo**](SerpGoogleSearchByImageTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_post/?bash'
+### HTTP request headers
 
-### **BingLocalPackTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpBingLocalPackTasksReadyResponseInfo> BingLocalPackTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleSearchByImageTasksFixed"></a>
+# **googleSearchByImageTasksFixed**
+> SerpGoogleSearchByImageTasksFixedResponseInfo googleSearchByImageTasksFixed()
 
-[Task&lt;SerpBingLocalPackTasksReadyResponseInfo&gt;](./SerpBingLocalPackTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleSearchByImageTasksFixedAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash'
 
-### **BingLocalPackTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpBingLocalPackTasksReadyResponseInfo> BingLocalPackTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleSearchByImageTasksFixedResponseInfo**](SerpGoogleSearchByImageTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLocalPackTasksReadyResponseInfo&gt;](./SerpBingLocalPackTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash'
+<a id="googleSearchByImageTaskGetAdvanced"></a>
+# **googleSearchByImageTaskGetAdvanced**
+> SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced()
 
-### **BingLocalPackTasksFixedAsync()**
 
+### Example
 ```csharp
-public Task<SerpBingLocalPackTasksFixedResponseInfo> BingLocalPackTasksFixedAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleSearchByImageTaskGetAdvancedAsync(id);
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpBingLocalPackTasksFixedResponseInfo&gt;](./SerpBingLocalPackTasksFixedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_fixed/?bash'
+[**SerpGoogleSearchByImageTaskGetAdvancedResponseInfo**](SerpGoogleSearchByImageTaskGetAdvancedResponseInfo.md)
 
-### **BingLocalPackTasksFixedAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpBingLocalPackTasksFixedResponseInfo> BingLocalPackTasksFixedAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpBingLocalPackTasksFixedResponseInfo&gt;](./SerpBingLocalPackTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="googleJobsTaskPost"></a>
+# **googleJobsTaskPost**
+> SerpGoogleJobsTaskPostResponseInfo googleJobsTaskPost()
 
-#### Exceptions
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleJobsTaskPostAsync(new List<SerpGoogleJobsTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = ".net developer",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_fixed/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleJobsTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleJobsTaskPostRequestInfo>.md)|  | [optional] |
 
-### **BingLocalPackTaskGetRegularAsync(String)**
 
-```csharp
-public Task<SerpBingLocalPackTaskGetRegularResponseInfo> BingLocalPackTaskGetRegularAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**SerpGoogleJobsTaskPostResponseInfo**](SerpGoogleJobsTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLocalPackTaskGetRegularResponseInfo&gt;](./SerpBingLocalPackTaskGetRegularResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/regular/?bash'
+<a id="googleJobsTasksReady"></a>
+# **googleJobsTasksReady**
+> SerpGoogleJobsTasksReadyResponseInfo googleJobsTasksReady()
 
-### **BingLocalPackTaskGetRegularAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpBingLocalPackTaskGetRegularResponseInfo> BingLocalPackTaskGetRegularAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleJobsTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpBingLocalPackTaskGetRegularResponseInfo&gt;](./SerpBingLocalPackTaskGetRegularResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleJobsTasksReadyResponseInfo**](SerpGoogleJobsTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/regular/?bash'
+### HTTP request headers
 
-### **BingLocalPackTaskGetHtmlAsync(String)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpBingLocalPackTaskGetHtmlResponseInfo> BingLocalPackTaskGetHtmlAsync(string id)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleJobsTasksFixed"></a>
+# **googleJobsTasksFixed**
+> SerpGoogleJobsTasksFixedResponseInfo googleJobsTasksFixed()
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpBingLocalPackTaskGetHtmlResponseInfo&gt;](./SerpBingLocalPackTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleJobsTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/html/?bash'
 
-### **BingLocalPackTaskGetHtmlAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpBingLocalPackTaskGetHtmlResponseInfo> BingLocalPackTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+[**SerpGoogleJobsTasksFixedResponseInfo**](SerpGoogleJobsTasksFixedResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpBingLocalPackTaskGetHtmlResponseInfo&gt;](./SerpBingLocalPackTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleJobsTaskGetAdvanced"></a>
+# **googleJobsTaskGetAdvanced**
+> SerpGoogleJobsTaskGetAdvancedResponseInfo googleJobsTaskGetAdvanced()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/html/?bash'
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleJobsTaskGetAdvancedAsync(id);
+```
 
-### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAsync(IEnumerable<SerpBingLocalPackLiveRegularRequestInfo> body)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`body` [IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;](./SerpBingLocalPackLiveRegularRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;SerpBingLocalPackLiveRegularResponseInfo&gt;](./SerpBingLocalPackLiveRegularResponseInfo.md)<br>
-Successful operation
+[**SerpGoogleJobsTaskGetAdvancedResponseInfo**](SerpGoogleJobsTaskGetAdvancedResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌‌
- <br>Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **BingLocalPackLiveRegularAsync(IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<SerpBingLocalPackLiveRegularResponseInfo> BingLocalPackLiveRegularAsync(IEnumerable<SerpBingLocalPackLiveRegularRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="googleJobsTaskGetHtml"></a>
+# **googleJobsTaskGetHtml**
+> SerpGoogleJobsTaskGetHtmlResponseInfo googleJobsTaskGetHtml()
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;](./SerpBingLocalPackLiveRegularRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "897da52f-6b87-4565-adb5-e452e6a912ce";
+var result = await dfsClient.SerpApi.GoogleJobsTaskGetHtmlAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpBingLocalPackLiveRegularResponseInfo&gt;](./SerpBingLocalPackLiveRegularResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash'
+[**SerpGoogleJobsTaskGetHtmlResponseInfo**](SerpGoogleJobsTaskGetHtmlResponseInfo.md)
 
-### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;](./SerpBingLocalPackLiveHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpBingLocalPackLiveHtmlResponseInfo&gt;](./SerpBingLocalPackLiveHtmlResponseInfo.md)<br>
-Successful operation
+<a id="googleAutocompleteTaskPost"></a>
+# **googleAutocompleteTaskPost**
+> SerpGoogleAutocompleteTaskPostResponseInfo googleAutocompleteTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleAutocompleteTaskPostAsync(new List<SerpGoogleAutocompleteTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        CursorPointer = 6,
+    }
+});
+```
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/html/?bash'
+### Parameters
 
-### **BingLocalPackLiveHtmlAsync(IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpBingLocalPackLiveHtmlResponseInfo> BingLocalPackLiveHtmlAsync(IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;](./SerpBingLocalPackLiveHtmlRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleAutocompleteTaskPostResponseInfo**](SerpGoogleAutocompleteTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpBingLocalPackLiveHtmlResponseInfo&gt;](./SerpBingLocalPackLiveHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/bing/local_pack/live/html/?bash'
+<a id="googleAutocompleteTasksReady"></a>
+# **googleAutocompleteTasksReady**
+> SerpGoogleAutocompleteTasksReadyResponseInfo googleAutocompleteTasksReady()
 
-### **SerpYoutubeLocationsAsync()**
 
+### Example
 ```csharp
-public Task<SerpYoutubeLocationsResponseInfo> SerpYoutubeLocationsAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleAutocompleteTasksReadyAsync();
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpYoutubeLocationsResponseInfo&gt;](./SerpYoutubeLocationsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/locations/?bash'
+[**SerpGoogleAutocompleteTasksReadyResponseInfo**](SerpGoogleAutocompleteTasksReadyResponseInfo.md)
 
-### **SerpYoutubeLocationsAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpYoutubeLocationsResponseInfo> SerpYoutubeLocationsAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
 
-#### Parameters
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleAutocompleteTasksFixed"></a>
+# **googleAutocompleteTasksFixed**
+> SerpGoogleAutocompleteTasksFixedResponseInfo googleAutocompleteTasksFixed()
 
-[Task&lt;SerpYoutubeLocationsResponseInfo&gt;](./SerpYoutubeLocationsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleAutocompleteTasksFixedAsync();
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/locations/?bash'
 
-### **SerpYoutubeLocationsCountryAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpYoutubeLocationsCountryResponseInfo> SerpYoutubeLocationsCountryAsync(string country)
-```
 
-#### Parameters
+### Return type
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+[**SerpGoogleAutocompleteTasksFixedResponseInfo**](SerpGoogleAutocompleteTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeLocationsCountryResponseInfo&gt;](./SerpYoutubeLocationsCountryResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/locations/?bash'
+<a id="googleAutocompleteTaskGetAdvanced"></a>
+# **googleAutocompleteTaskGetAdvanced**
+> SerpGoogleAutocompleteTaskGetAdvancedResponseInfo googleAutocompleteTaskGetAdvanced()
 
-### **SerpYoutubeLocationsCountryAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeLocationsCountryResponseInfo> SerpYoutubeLocationsCountryAsync(string country, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleAutocompleteTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpYoutubeLocationsCountryResponseInfo&gt;](./SerpYoutubeLocationsCountryResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleAutocompleteTaskGetAdvancedResponseInfo**](SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/locations/?bash'
+### HTTP request headers
 
-### **SerpYoutubeLanguagesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpYoutubeLanguagesResponseInfo> SerpYoutubeLanguagesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleAutocompleteLiveAdvanced"></a>
+# **googleAutocompleteLiveAdvanced**
+> SerpGoogleAutocompleteLiveAdvancedResponseInfo googleAutocompleteLiveAdvanced()
 
-[Task&lt;SerpYoutubeLanguagesResponseInfo&gt;](./SerpYoutubeLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(new List<SerpGoogleAutocompleteLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Client = "gws-wiz-serp",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/languages/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleAutocompleteLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-### **SerpYoutubeLanguagesAsync(CancellationToken)**
 
-```csharp
-public Task<SerpYoutubeLanguagesResponseInfo> SerpYoutubeLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleAutocompleteLiveAdvancedResponseInfo**](SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeLanguagesResponseInfo&gt;](./SerpYoutubeLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/languages/?bash'
+<a id="googleDatasetSearchTaskPost"></a>
+# **googleDatasetSearchTaskPost**
+> SerpGoogleDatasetSearchTaskPostResponseInfo googleDatasetSearchTaskPost()
 
-### **YoutubeVideoInfoTaskPostAsync(IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoInfoTaskPostResponseInfo> YoutubeVideoInfoTaskPostAsync(IEnumerable<SerpYoutubeVideoInfoTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(new List<SerpGoogleDatasetSearchTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "water quality",
+        LastUpdated = "1m",
+        FileFormats = new List<string>()
+        {
+            "archive",
+            "image",
+        },
+        UsageRights = "noncommercial",
+        IsFree = true,
+        Topics = new List<string>()
+        {
+            "natural_sciences",
+            "geo",
+        },
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;](./SerpYoutubeVideoInfoTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleDatasetSearchTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpYoutubeVideoInfoTaskPostResponseInfo&gt;](./SerpYoutubeVideoInfoTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleDatasetSearchTaskPostResponseInfo**](SerpGoogleDatasetSearchTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>YouTube Video Info API provides detailed information about the video you specify in the POST request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YoutubeVideoInfoTaskPostAsync(IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpYoutubeVideoInfoTaskPostResponseInfo> YoutubeVideoInfoTaskPostAsync(IEnumerable<SerpYoutubeVideoInfoTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;](./SerpYoutubeVideoInfoTaskPostRequestInfo.md)<br>
+<a id="googleDatasetSearchTasksReady"></a>
+# **googleDatasetSearchTasksReady**
+> SerpGoogleDatasetSearchTasksReadyResponseInfo googleDatasetSearchTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpYoutubeVideoInfoTaskPostResponseInfo&gt;](./SerpYoutubeVideoInfoTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleDatasetSearchTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>YouTube Video Info API provides detailed information about the video you specify in the POST request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/task_post/?bash'
 
-### **YoutubeVideoInfoTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpYoutubeVideoInfoTasksReadyResponseInfo> YoutubeVideoInfoTasksReadyAsync()
-```
+[**SerpGoogleDatasetSearchTasksReadyResponseInfo**](SerpGoogleDatasetSearchTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeVideoInfoTasksReadyResponseInfo&gt;](./SerpYoutubeVideoInfoTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash'
+<a id="googleDatasetSearchTasksFixed"></a>
+# **googleDatasetSearchTasksFixed**
+> SerpGoogleDatasetSearchTasksFixedResponseInfo googleDatasetSearchTasksFixed()
 
-### **YoutubeVideoInfoTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoInfoTasksReadyResponseInfo> YoutubeVideoInfoTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleDatasetSearchTasksFixedAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpYoutubeVideoInfoTasksReadyResponseInfo&gt;](./SerpYoutubeVideoInfoTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleDatasetSearchTasksFixedResponseInfo**](SerpGoogleDatasetSearchTasksFixedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YoutubeVideoInfoTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpYoutubeVideoInfoTasksFixedResponseInfo> YoutubeVideoInfoTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpYoutubeVideoInfoTasksFixedResponseInfo&gt;](./SerpYoutubeVideoInfoTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="googleDatasetSearchTaskGetAdvanced"></a>
+# **googleDatasetSearchTaskGetAdvanced**
+> SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo googleDatasetSearchTaskGetAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskGetAdvancedAsync(id);
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_fixed/?bash'
+### Parameters
 
-### **YoutubeVideoInfoTasksFixedAsync(CancellationToken)**
 
-```csharp
-public Task<SerpYoutubeVideoInfoTasksFixedResponseInfo> YoutubeVideoInfoTasksFixedAsync(CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo**](SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)
 
-[Task&lt;SerpYoutubeVideoInfoTasksFixedResponseInfo&gt;](./SerpYoutubeVideoInfoTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **YoutubeVideoInfoTaskGetAdvancedAsync(String)**
+<a id="googleDatasetSearchLiveAdvanced"></a>
+# **googleDatasetSearchLiveAdvanced**
+> SerpGoogleDatasetSearchLiveAdvancedResponseInfo googleDatasetSearchLiveAdvanced()
 
-```csharp
-public Task<SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo> YoutubeVideoInfoTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(new List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "water quality",
+        LastUpdated = "1m",
+        FileFormats = new List<string>()
+        {
+            "archive",
+            "image",
+        },
+        UsageRights = "noncommercial",
+        IsFree = true,
+        Topics = new List<string>()
+        {
+            "natural_sciences",
+            "geo",
+        },
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo&gt;](./SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/task_get/advanced/?bash'
+[**SerpGoogleDatasetSearchLiveAdvancedResponseInfo**](SerpGoogleDatasetSearchLiveAdvancedResponseInfo.md)
 
-### **YoutubeVideoInfoTaskGetAdvancedAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo> YoutubeVideoInfoTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleDatasetInfoTaskPost"></a>
+# **googleDatasetInfoTaskPost**
+> SerpGoogleDatasetInfoTaskPostResponseInfo googleDatasetInfoTaskPost()
 
-[Task&lt;SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo&gt;](./SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskPostAsync(new List<SerpGoogleDatasetInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        DatasetId = "L2cvMTFqbl85ZHN6MQ==",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/task_get/advanced/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleDatasetInfoTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleDatasetInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-### **YoutubeVideoInfoLiveAdvancedAsync(IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;)**
 
-```csharp
-public Task<SerpYoutubeVideoInfoLiveAdvancedResponseInfo> YoutubeVideoInfoLiveAdvancedAsync(IEnumerable<SerpYoutubeVideoInfoLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;](./SerpYoutubeVideoInfoLiveAdvancedRequestInfo.md)<br>
+[**SerpGoogleDatasetInfoTaskPostResponseInfo**](SerpGoogleDatasetInfoTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeVideoInfoLiveAdvancedResponseInfo&gt;](./SerpYoutubeVideoInfoLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live YouTube Video Info provides real-time data on the video you specify in the request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/live/advanced/?bash'
+<a id="googleDatasetInfoTasksReady"></a>
+# **googleDatasetInfoTasksReady**
+> SerpGoogleDatasetInfoTasksReadyResponseInfo googleDatasetInfoTasksReady()
 
-### **YoutubeVideoInfoLiveAdvancedAsync(IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoInfoLiveAdvancedResponseInfo> YoutubeVideoInfoLiveAdvancedAsync(IEnumerable<SerpYoutubeVideoInfoLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleDatasetInfoTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;](./SerpYoutubeVideoInfoLiveAdvancedRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpYoutubeVideoInfoLiveAdvancedResponseInfo&gt;](./SerpYoutubeVideoInfoLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleDatasetInfoTasksReadyResponseInfo**](SerpGoogleDatasetInfoTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>Live YouTube Video Info provides real-time data on the video you specify in the request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_info/live/advanced/?bash'
+### HTTP request headers
 
-### **YoutubeVideoSubtitlesTaskPostAsync(IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetInfoTasksFixed"></a>
+# **googleDatasetInfoTasksFixed**
+> SerpGoogleDatasetInfoTasksFixedResponseInfo googleDatasetInfoTasksFixed()
+
+
+### Example
 ```csharp
-public Task<SerpYoutubeVideoSubtitlesTaskPostResponseInfo> YoutubeVideoSubtitlesTaskPostAsync(IEnumerable<SerpYoutubeVideoSubtitlesTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleDatasetInfoTasksFixedAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;](./SerpYoutubeVideoSubtitlesTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskPostResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleDatasetInfoTasksFixedResponseInfo**](SerpGoogleDatasetInfoTasksFixedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>YouTube Subtitles API provides data on all subtitles in the video you specify in the POST request. You will get data from the watching page containing subtitled text, its language, and duration in the video.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YoutubeVideoSubtitlesTaskPostAsync(IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesTaskPostResponseInfo> YoutubeVideoSubtitlesTaskPostAsync(IEnumerable<SerpYoutubeVideoSubtitlesTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;](./SerpYoutubeVideoSubtitlesTaskPostRequestInfo.md)<br>
+<a id="googleDatasetInfoTaskGetAdvanced"></a>
+# **googleDatasetInfoTaskGetAdvanced**
+> SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo googleDatasetInfoTaskGetAdvanced()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskPostResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>YouTube Subtitles API provides data on all subtitles in the video you specify in the POST request. You will get data from the watching page containing subtitled text, its language, and duration in the video.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_post/?bash'
 
-### **YoutubeVideoSubtitlesTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesTasksReadyResponseInfo> YoutubeVideoSubtitlesTasksReadyAsync()
-```
+[**SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo**](SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksReadyResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash'
+<a id="googleDatasetInfoLiveAdvanced"></a>
+# **googleDatasetInfoLiveAdvanced**
+> SerpGoogleDatasetInfoLiveAdvancedResponseInfo googleDatasetInfoLiveAdvanced()
 
-### **YoutubeVideoSubtitlesTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoSubtitlesTasksReadyResponseInfo> YoutubeVideoSubtitlesTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(new List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        DatasetId = "L2cvMTFqbl85ZHN6MQ==",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksReadyResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleDatasetInfoLiveAdvancedResponseInfo**](SerpGoogleDatasetInfoLiveAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YoutubeVideoSubtitlesTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesTasksFixedResponseInfo> YoutubeVideoSubtitlesTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksFixedResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="serpGoogleAdsAdvertisersLocations"></a>
+# **serpGoogleAdsAdvertisersLocations**
+> SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.SerpGoogleAdsAdvertisersLocationsAsync();
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_fixed/?bash'
+### Parameters
 
-### **YoutubeVideoSubtitlesTasksFixedAsync(CancellationToken)**
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesTasksFixedResponseInfo> YoutubeVideoSubtitlesTasksFixedAsync(CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpGoogleAdsAdvertisersLocationsResponseInfo**](SerpGoogleAdsAdvertisersLocationsResponseInfo.md)
 
-[Task&lt;SerpYoutubeVideoSubtitlesTasksFixedResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **YoutubeVideoSubtitlesTaskGetAdvancedAsync(String)**
+<a id="googleAdsAdvertisersTaskPost"></a>
+# **googleAdsAdvertisersTaskPost**
+> SerpGoogleAdsAdvertisersTaskPostResponseInfo googleAdsAdvertisersTaskPost()
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo> YoutubeVideoSubtitlesTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskPostAsync(new List<SerpGoogleAdsAdvertisersTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "apple",
+        LocationCode = 2840,
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAdsAdvertisersTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleAdsAdvertisersTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_get/advanced/?bash'
+[**SerpGoogleAdsAdvertisersTaskPostResponseInfo**](SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)
 
-### **YoutubeVideoSubtitlesTaskGetAdvancedAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo> YoutubeVideoSubtitlesTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleAdsAdvertisersTasksReady"></a>
+# **googleAdsAdvertisersTasksReady**
+> SerpGoogleAdsAdvertisersTasksReadyResponseInfo googleAdsAdvertisersTasksReady()
 
-[Task&lt;SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo&gt;](./SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_get/advanced/?bash'
 
-### **YoutubeVideoSubtitlesLiveAdvancedAsync(IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo> YoutubeVideoSubtitlesLiveAdvancedAsync(IEnumerable<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;](./SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.md)<br>
+[**SerpGoogleAdsAdvertisersTasksReadyResponseInfo**](SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo&gt;](./SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live YouTube Subtitles provides real-time data on subtitles in the video you specify in the request. You will get data from the watching page containing subtitled text, its language, and duration in the video.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/live/advanced/?bash'
+<a id="googleAdsAdvertisersTaskGetAdvanced"></a>
+# **googleAdsAdvertisersTaskGetAdvanced**
+> SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo googleAdsAdvertisersTaskGetAdvanced()
 
-### **YoutubeVideoSubtitlesLiveAdvancedAsync(IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo> YoutubeVideoSubtitlesLiveAdvancedAsync(IEnumerable<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;](./SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo&gt;](./SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo**](SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>Live YouTube Subtitles provides real-time data on subtitles in the video you specify in the request. You will get data from the watching page containing subtitled text, its language, and duration in the video.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/live/advanced/?bash'
+### HTTP request headers
 
-### **YoutubeVideoCommentsTaskPostAsync(IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpGoogleAdsSearchLocations"></a>
+# **serpGoogleAdsSearchLocations**
+> SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations()
+
+
+### Example
 ```csharp
-public Task<SerpYoutubeVideoCommentsTaskPostResponseInfo> YoutubeVideoCommentsTaskPostAsync(IEnumerable<SerpYoutubeVideoCommentsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SerpGoogleAdsSearchLocationsAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;](./SerpYoutubeVideoCommentsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpYoutubeVideoCommentsTaskPostResponseInfo&gt;](./SerpYoutubeVideoCommentsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleAdsSearchLocationsResponseInfo**](SerpGoogleAdsSearchLocationsResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>YouTube Comments API provides data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YoutubeVideoCommentsTaskPostAsync(IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpYoutubeVideoCommentsTaskPostResponseInfo> YoutubeVideoCommentsTaskPostAsync(IEnumerable<SerpYoutubeVideoCommentsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;](./SerpYoutubeVideoCommentsTaskPostRequestInfo.md)<br>
+<a id="googleAdsSearchTaskPost"></a>
+# **googleAdsSearchTaskPost**
+> SerpGoogleAdsSearchTaskPostResponseInfo googleAdsSearchTaskPost()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpYoutubeVideoCommentsTaskPostResponseInfo&gt;](./SerpYoutubeVideoCommentsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(new List<SerpGoogleAdsSearchTaskPostRequestInfo>()
+{
+    new()
+    {
+        AdvertiserIds = new List<string>()
+        {
+            "AR13752565271262920705",
+            "AR02439908557932462081",
+        },
+        LocationCode = 2840,
+        Platform = "google_search",
+    }
+});
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAdsSearchTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleAdsSearchTaskPostRequestInfo>.md)|  | [optional] |
 
-**Remarks:**
 
-‌‌
- <br>YouTube Comments API provides data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_post/?bash'
 
-### **YoutubeVideoCommentsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpYoutubeVideoCommentsTasksReadyResponseInfo> YoutubeVideoCommentsTasksReadyAsync()
-```
+[**SerpGoogleAdsSearchTaskPostResponseInfo**](SerpGoogleAdsSearchTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeVideoCommentsTasksReadyResponseInfo&gt;](./SerpYoutubeVideoCommentsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash'
+<a id="googleAdsSearchTasksReady"></a>
+# **googleAdsSearchTasksReady**
+> SerpGoogleAdsSearchTasksReadyResponseInfo googleAdsSearchTasksReady()
 
-### **YoutubeVideoCommentsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoCommentsTasksReadyResponseInfo> YoutubeVideoCommentsTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleAdsSearchTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpYoutubeVideoCommentsTasksReadyResponseInfo&gt;](./SerpYoutubeVideoCommentsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleAdsSearchTasksReadyResponseInfo**](SerpGoogleAdsSearchTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YoutubeVideoCommentsTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpYoutubeVideoCommentsTasksFixedResponseInfo> YoutubeVideoCommentsTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpYoutubeVideoCommentsTasksFixedResponseInfo&gt;](./SerpYoutubeVideoCommentsTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="googleAdsSearchTaskGetAdvanced"></a>
+# **googleAdsSearchTaskGetAdvanced**
+> SerpGoogleAdsSearchTaskGetAdvancedResponseInfo googleAdsSearchTaskGetAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleAdsSearchTaskGetAdvancedAsync(id);
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_fixed/?bash'
+### Parameters
 
-### **YoutubeVideoCommentsTasksFixedAsync(CancellationToken)**
 
-```csharp
-public Task<SerpYoutubeVideoCommentsTasksFixedResponseInfo> YoutubeVideoCommentsTasksFixedAsync(CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpGoogleAdsSearchTaskGetAdvancedResponseInfo**](SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)
 
-[Task&lt;SerpYoutubeVideoCommentsTasksFixedResponseInfo&gt;](./SerpYoutubeVideoCommentsTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **YoutubeVideoCommentsTaskGetAdvancedAsync(String)**
+<a id="serpBingLocations"></a>
+# **serpBingLocations**
+> SerpBingLocationsResponseInfo serpBingLocations()
 
-```csharp
-public Task<SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo> YoutubeVideoCommentsTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.SerpApi.SerpBingLocationsAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo&gt;](./SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_get/advanced/?bash'
+[**SerpBingLocationsResponseInfo**](SerpBingLocationsResponseInfo.md)
 
-### **YoutubeVideoCommentsTaskGetAdvancedAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo> YoutubeVideoCommentsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="serpBingLocationsCountry"></a>
+# **serpBingLocationsCountry**
+> SerpBingLocationsCountryResponseInfo serpBingLocationsCountry()
 
-[Task&lt;SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo&gt;](./SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var country = "us";
+var result = await dfsClient.SerpApi.SerpBingLocationsCountryAsync(country);
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_get/advanced/?bash'
 
-### **YoutubeVideoCommentsLiveAdvancedAsync(IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpYoutubeVideoCommentsLiveAdvancedResponseInfo> YoutubeVideoCommentsLiveAdvancedAsync(IEnumerable<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;](./SerpYoutubeVideoCommentsLiveAdvancedRequestInfo.md)<br>
+[**SerpBingLocationsCountryResponseInfo**](SerpBingLocationsCountryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYoutubeVideoCommentsLiveAdvancedResponseInfo&gt;](./SerpYoutubeVideoCommentsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live YouTube Comments provides real-time data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/live/advanced/?bash'
+<a id="serpBingLanguages"></a>
+# **serpBingLanguages**
+> SerpBingLanguagesResponseInfo serpBingLanguages()
 
-### **YoutubeVideoCommentsLiveAdvancedAsync(IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYoutubeVideoCommentsLiveAdvancedResponseInfo> YoutubeVideoCommentsLiveAdvancedAsync(IEnumerable<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SerpBingLanguagesAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;](./SerpYoutubeVideoCommentsLiveAdvancedRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpYoutubeVideoCommentsLiveAdvancedResponseInfo&gt;](./SerpYoutubeVideoCommentsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpBingLanguagesResponseInfo**](SerpBingLanguagesResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>Live YouTube Comments provides real-time data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/youtube/video_comments/live/advanced/?bash'
+### HTTP request headers
 
-### **SerpYahooLocationsAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpYahooLocationsResponseInfo> SerpYahooLocationsAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="bingOrganicTaskPost"></a>
+# **bingOrganicTaskPost**
+> SerpBingOrganicTaskPostResponseInfo bingOrganicTaskPost()
 
-[Task&lt;SerpYahooLocationsResponseInfo&gt;](./SerpYahooLocationsResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.BingOrganicTaskPostAsync(new List<SerpBingOrganicTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpBingOrganicTaskPostRequestInfo>.md)|  | [optional] |
 
-### **SerpYahooLocationsAsync(CancellationToken)**
 
-```csharp
-public Task<SerpYahooLocationsResponseInfo> SerpYahooLocationsAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpBingOrganicTaskPostResponseInfo**](SerpBingOrganicTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYahooLocationsResponseInfo&gt;](./SerpYahooLocationsResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash'
+<a id="bingOrganicTasksReady"></a>
+# **bingOrganicTasksReady**
+> SerpBingOrganicTasksReadyResponseInfo bingOrganicTasksReady()
 
-### **SerpYahooLocationsCountryAsync(String)**
 
+### Example
 ```csharp
-public Task<SerpYahooLocationsCountryResponseInfo> SerpYahooLocationsCountryAsync(string country)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.BingOrganicTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpYahooLocationsCountryResponseInfo&gt;](./SerpYahooLocationsCountryResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpBingOrganicTasksReadyResponseInfo**](SerpBingOrganicTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **SerpYahooLocationsCountryAsync(String, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpYahooLocationsCountryResponseInfo> SerpYahooLocationsCountryAsync(string country, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+<a id="bingOrganicTasksFixed"></a>
+# **bingOrganicTasksFixed**
+> SerpBingOrganicTasksFixedResponseInfo bingOrganicTasksFixed()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpYahooLocationsCountryResponseInfo&gt;](./SerpYahooLocationsCountryResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.BingOrganicTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash'
 
-### **SerpYahooLanguagesAsync()**
+### Return type
 
-```csharp
-public Task<SerpYahooLanguagesResponseInfo> SerpYahooLanguagesAsync()
-```
+[**SerpBingOrganicTasksFixedResponseInfo**](SerpBingOrganicTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYahooLanguagesResponseInfo&gt;](./SerpYahooLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/languages/?bash'
+<a id="bingOrganicTaskGetRegular"></a>
+# **bingOrganicTaskGetRegular**
+> SerpBingOrganicTaskGetRegularResponseInfo bingOrganicTaskGetRegular()
 
-### **SerpYahooLanguagesAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYahooLanguagesResponseInfo> SerpYahooLanguagesAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.BingOrganicTaskGetRegularAsync(id);
 ```
+
+### Parameters
+
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Return type
 
-[Task&lt;SerpYahooLanguagesResponseInfo&gt;](./SerpYahooLanguagesResponseInfo.md)<br>
-Successful operation
+[**SerpBingOrganicTaskGetRegularResponseInfo**](SerpBingOrganicTaskGetRegularResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/languages/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **YahooOrganicTaskPostAsync(IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
+<a id="bingOrganicTaskGetAdvanced"></a>
+# **bingOrganicTaskGetAdvanced**
+> SerpBingOrganicTaskGetAdvancedResponseInfo bingOrganicTaskGetAdvanced()
+
+
+### Example
 ```csharp
-public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnumerable<SerpYahooOrganicTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.BingOrganicTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;](./SerpYahooOrganicTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpYahooOrganicTaskPostResponseInfo&gt;](./SerpYahooOrganicTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpBingOrganicTaskGetAdvancedResponseInfo**](SerpBingOrganicTaskGetAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>SERP API provides top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YahooOrganicTaskPostAsync(IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpYahooOrganicTaskPostResponseInfo> YahooOrganicTaskPostAsync(IEnumerable<SerpYahooOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpYahooOrganicTaskPostRequestInfo&gt;](./SerpYahooOrganicTaskPostRequestInfo.md)<br>
+<a id="bingOrganicTaskGetHtml"></a>
+# **bingOrganicTaskGetHtml**
+> SerpBingOrganicTaskGetHtmlResponseInfo bingOrganicTaskGetHtml()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpYahooOrganicTaskPostResponseInfo&gt;](./SerpYahooOrganicTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var id = "89ae2456-6535-4173-b5c9-e4516cd66890";
+var result = await dfsClient.SerpApi.BingOrganicTaskGetHtmlAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>SERP API provides top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_post/?bash'
 
-### **YahooOrganicTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpYahooOrganicTasksReadyResponseInfo> YahooOrganicTasksReadyAsync()
-```
+[**SerpBingOrganicTaskGetHtmlResponseInfo**](SerpBingOrganicTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpYahooOrganicTasksReadyResponseInfo&gt;](./SerpYahooOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash'
+<a id="bingOrganicLiveRegular"></a>
+# **bingOrganicLiveRegular**
+> SerpBingOrganicLiveRegularResponseInfo bingOrganicLiveRegular()
 
-### **YahooOrganicTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpYahooOrganicTasksReadyResponseInfo> YahooOrganicTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.BingOrganicLiveRegularAsync(new List<SerpBingOrganicLiveRegularRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingOrganicLiveRegularRequestInfo>&gt;**](IEnumerable<SerpBingOrganicLiveRegularRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpYahooOrganicTasksReadyResponseInfo&gt;](./SerpYahooOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpBingOrganicLiveRegularResponseInfo**](SerpBingOrganicLiveRegularResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **YahooOrganicTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpYahooOrganicTasksFixedResponseInfo> YahooOrganicTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpYahooOrganicTasksFixedResponseInfo&gt;](./SerpYahooOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="bingOrganicLiveAdvanced"></a>
+# **bingOrganicLiveAdvanced**
+> SerpBingOrganicLiveAdvancedResponseInfo bingOrganicLiveAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.BingOrganicLiveAdvancedAsync(new List<SerpBingOrganicLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "flight ticket new york san francisco",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_fixed/?bash'
+### Parameters
 
-### **YahooOrganicTasksFixedAsync(CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingOrganicLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpBingOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpYahooOrganicTasksFixedResponseInfo> YahooOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpBingOrganicLiveAdvancedResponseInfo**](SerpBingOrganicLiveAdvancedResponseInfo.md)
 
-[Task&lt;SerpYahooOrganicTasksFixedResponseInfo&gt;](./SerpYahooOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **YahooOrganicTaskGetRegularAsync(String)**
+<a id="bingOrganicLiveHtml"></a>
+# **bingOrganicLiveHtml**
+> SerpBingOrganicLiveHtmlResponseInfo bingOrganicLiveHtml()
 
-```csharp
-public Task<SerpYahooOrganicTaskGetRegularResponseInfo> YahooOrganicTaskGetRegularAsync(string id)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(new List<SerpBingOrganicLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpYahooOrganicTaskGetRegularResponseInfo&gt;](./SerpYahooOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingOrganicLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpBingOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/regular/?bash'
+[**SerpBingOrganicLiveHtmlResponseInfo**](SerpBingOrganicLiveHtmlResponseInfo.md)
 
-### **YahooOrganicTaskGetRegularAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpYahooOrganicTaskGetRegularResponseInfo> YahooOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="bingLocalPackTaskPost"></a>
+# **bingLocalPackTaskPost**
+> SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost()
 
-[Task&lt;SerpYahooOrganicTaskGetRegularResponseInfo&gt;](./SerpYahooOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.BingLocalPackTaskPostAsync(new List<SerpBingLocalPackTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/regular/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingLocalPackTaskPostRequestInfo>&gt;**](IEnumerable<SerpBingLocalPackTaskPostRequestInfo>.md)|  | [optional] |
 
-### **SerpIdListAsync(IEnumerable&lt;SerpIdListRequestInfo&gt;)**
 
-```csharp
-public Task<SerpIdListResponseInfo> SerpIdListAsync(IEnumerable<SerpIdListRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpIdListRequestInfo&gt;](./SerpIdListRequestInfo.md)<br>
+[**SerpBingLocalPackTaskPostResponseInfo**](SerpBingLocalPackTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpIdListResponseInfo&gt;](./SerpIdListResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed SERP tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/id_list/?bash'
+<a id="bingLocalPackTasksReady"></a>
+# **bingLocalPackTasksReady**
+> SerpBingLocalPackTasksReadyResponseInfo bingLocalPackTasksReady()
 
-### **SerpIdListAsync(IEnumerable&lt;SerpIdListRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpIdListResponseInfo> SerpIdListAsync(IEnumerable<SerpIdListRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.BingLocalPackTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpIdListRequestInfo&gt;](./SerpIdListRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpIdListResponseInfo&gt;](./SerpIdListResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpBingLocalPackTasksReadyResponseInfo**](SerpBingLocalPackTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-This endpoint is designed to provide you with the list of IDs and metadata of the completed SERP tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/id_list/?bash'
+### HTTP request headers
 
-### **SerpErrorsAsync(IEnumerable&lt;SerpErrorsRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpErrorsResponseInfo> SerpErrorsAsync(IEnumerable<SerpErrorsRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="bingLocalPackTasksFixed"></a>
+# **bingLocalPackTasksFixed**
+> SerpBingLocalPackTasksFixedResponseInfo bingLocalPackTasksFixed()
 
-`body` [IEnumerable&lt;SerpErrorsRequestInfo&gt;](./SerpErrorsRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpErrorsResponseInfo&gt;](./SerpErrorsResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.BingLocalPackTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/errors/?bash'
 
-### **SerpErrorsAsync(IEnumerable&lt;SerpErrorsRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpErrorsResponseInfo> SerpErrorsAsync(IEnumerable<SerpErrorsRequestInfo> body, CancellationToken cancellationToken)
-```
+[**SerpBingLocalPackTasksFixedResponseInfo**](SerpBingLocalPackTasksFixedResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;SerpErrorsRequestInfo&gt;](./SerpErrorsRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpErrorsResponseInfo&gt;](./SerpErrorsResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="bingLocalPackTaskGetRegular"></a>
+# **bingLocalPackTaskGetRegular**
+> SerpBingLocalPackTaskGetRegularResponseInfo bingLocalPackTaskGetRegular()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/errors/?bash'
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.BingLocalPackTaskGetRegularAsync(id);
+```
 
-### **ScreenshotAsync(IEnumerable&lt;SerpScreenshotRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpScreenshotResponseInfo> ScreenshotAsync(IEnumerable<SerpScreenshotRequestInfo> body)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`body` [IEnumerable&lt;SerpScreenshotRequestInfo&gt;](./SerpScreenshotRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;SerpScreenshotResponseInfo&gt;](./SerpScreenshotResponseInfo.md)<br>
-Successful operation
+[**SerpBingLocalPackTaskGetRegularResponseInfo**](SerpBingLocalPackTaskGetRegularResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌‌
- <br>Using the Live Page Screenshot endpoint, you can capture a screenshot of any SERP page.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/screenshot/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **ScreenshotAsync(IEnumerable&lt;SerpScreenshotRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<SerpScreenshotResponseInfo> ScreenshotAsync(IEnumerable<SerpScreenshotRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="bingLocalPackTaskGetHtml"></a>
+# **bingLocalPackTaskGetHtml**
+> SerpBingLocalPackTaskGetHtmlResponseInfo bingLocalPackTaskGetHtml()
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpScreenshotRequestInfo&gt;](./SerpScreenshotRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var id = "fa099002-f408-46ed-aa6b-92a30c0e9680";
+var result = await dfsClient.SerpApi.BingLocalPackTaskGetHtmlAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpScreenshotResponseInfo&gt;](./SerpScreenshotResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Using the Live Page Screenshot endpoint, you can capture a screenshot of any SERP page.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/screenshot/?bash'
+[**SerpBingLocalPackTaskGetHtmlResponseInfo**](SerpBingLocalPackTaskGetHtmlResponseInfo.md)
 
-### **AiSummaryAsync(IEnumerable&lt;SerpAiSummaryRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpAiSummaryResponseInfo> AiSummaryAsync(IEnumerable<SerpAiSummaryRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpAiSummaryRequestInfo&gt;](./SerpAiSummaryRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpAiSummaryResponseInfo&gt;](./SerpAiSummaryResponseInfo.md)<br>
-Successful operation
+<a id="bingLocalPackLiveRegular"></a>
+# **bingLocalPackLiveRegular**
+> SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.BingLocalPackLiveRegularAsync(new List<SerpBingLocalPackLiveRegularRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌‌
- <br>The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt.
- <br>To obtain results, you have to specify task_id, which you can find in the response to the POST request.
- <br>Learn more in our Help Center.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/ai_summary/?bash'
+### Parameters
 
-### **AiSummaryAsync(IEnumerable&lt;SerpAiSummaryRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingLocalPackLiveRegularRequestInfo>&gt;**](IEnumerable<SerpBingLocalPackLiveRegularRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpAiSummaryResponseInfo> AiSummaryAsync(IEnumerable<SerpAiSummaryRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpAiSummaryRequestInfo&gt;](./SerpAiSummaryRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpBingLocalPackLiveRegularResponseInfo**](SerpBingLocalPackLiveRegularResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpAiSummaryResponseInfo&gt;](./SerpAiSummaryResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt.
- <br>To obtain results, you have to specify task_id, which you can find in the response to the POST request.
- <br>Learn more in our Help Center.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/ai_summary/?bash'
+<a id="bingLocalPackLiveHtml"></a>
+# **bingLocalPackLiveHtml**
+> SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml()
 
-### **SerpGoogleLocationsAsync()**
 
+### Example
 ```csharp
-public Task<SerpGoogleLocationsResponseInfo> SerpGoogleLocationsAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.BingLocalPackLiveHtmlAsync(new List<SerpBingLocalPackLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleLocationsResponseInfo&gt;](./SerpGoogleLocationsResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/locations/?bash'
+[**SerpBingLocalPackLiveHtmlResponseInfo**](SerpBingLocalPackLiveHtmlResponseInfo.md)
 
-### **SerpGoogleLocationsAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleLocationsResponseInfo> SerpGoogleLocationsAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleLocationsResponseInfo&gt;](./SerpGoogleLocationsResponseInfo.md)<br>
-Successful operation
+<a id="serpYoutubeLocations"></a>
+# **serpYoutubeLocations**
+> SerpYoutubeLocationsResponseInfo serpYoutubeLocations()
 
-#### Exceptions
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.SerpYoutubeLocationsAsync();
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/locations/?bash'
 
-### **SerpGoogleLocationsCountryAsync(String)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleLocationsCountryResponseInfo> SerpGoogleLocationsCountryAsync(string country)
-```
 
-#### Parameters
+### Return type
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
+[**SerpYoutubeLocationsResponseInfo**](SerpYoutubeLocationsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleLocationsCountryResponseInfo&gt;](./SerpGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/locations/?bash'
+<a id="serpYoutubeLocationsCountry"></a>
+# **serpYoutubeLocationsCountry**
+> SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry()
 
-### **SerpGoogleLocationsCountryAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleLocationsCountryResponseInfo> SerpGoogleLocationsCountryAsync(string country, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var country = "us";
+var result = await dfsClient.SerpApi.SerpYoutubeLocationsCountryAsync(country);
 ```
 
-#### Parameters
+### Parameters
 
-`country` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-country ISO code
- <br>optional field
- <br>specify the ISO code if you want to filter the list of locations by country
- <br>example:
- <br>us
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleLocationsCountryResponseInfo&gt;](./SerpGoogleLocationsCountryResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYoutubeLocationsCountryResponseInfo**](SerpYoutubeLocationsCountryResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/locations/?bash'
+### HTTP request headers
 
-### **SerpGoogleLanguagesAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleLanguagesResponseInfo> SerpGoogleLanguagesAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="serpYoutubeLanguages"></a>
+# **serpYoutubeLanguages**
+> SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages()
 
-[Task&lt;SerpGoogleLanguagesResponseInfo&gt;](./SerpGoogleLanguagesResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.SerpYoutubeLanguagesAsync();
+```
 
-**Remarks:**
+### Parameters
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/languages/?bash'
 
-### **SerpGoogleLanguagesAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleLanguagesResponseInfo> SerpGoogleLanguagesAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpYoutubeLanguagesResponseInfo**](SerpYoutubeLanguagesResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleLanguagesResponseInfo&gt;](./SerpGoogleLanguagesResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-You will receive the list of languages by calling this API.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/languages/?bash'
+<a id="youtubeVideoInfoTaskPost"></a>
+# **youtubeVideoInfoTaskPost**
+> SerpYoutubeVideoInfoTaskPostResponseInfo youtubeVideoInfoTaskPost()
 
-### **GoogleOrganicTaskPostAsync(IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IEnumerable<SerpGoogleOrganicTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(new List<SerpYoutubeVideoInfoTaskPostRequestInfo>()
+{
+    new()
+    {
+        VideoId = "vQXvyV0zIP4",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;](./SerpGoogleOrganicTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeVideoInfoTaskPostRequestInfo>&gt;**](IEnumerable<SerpYoutubeVideoInfoTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpGoogleOrganicTaskPostResponseInfo&gt;](./SerpGoogleOrganicTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpYoutubeVideoInfoTaskPostResponseInfo**](SerpYoutubeVideoInfoTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleOrganicTaskPostAsync(IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleOrganicTaskPostResponseInfo> GoogleOrganicTaskPostAsync(IEnumerable<SerpGoogleOrganicTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;](./SerpGoogleOrganicTaskPostRequestInfo.md)<br>
+<a id="youtubeVideoInfoTasksReady"></a>
+# **youtubeVideoInfoTasksReady**
+> SerpYoutubeVideoInfoTasksReadyResponseInfo youtubeVideoInfoTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleOrganicTaskPostResponseInfo&gt;](./SerpGoogleOrganicTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.YoutubeVideoInfoTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_post/?bash'
 
-### **GoogleOrganicTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleOrganicTasksReadyResponseInfo> GoogleOrganicTasksReadyAsync()
-```
+[**SerpYoutubeVideoInfoTasksReadyResponseInfo**](SerpYoutubeVideoInfoTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleOrganicTasksReadyResponseInfo&gt;](./SerpGoogleOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+<a id="youtubeVideoInfoTasksFixed"></a>
+# **youtubeVideoInfoTasksFixed**
+> SerpYoutubeVideoInfoTasksFixedResponseInfo youtubeVideoInfoTasksFixed()
 
-### **GoogleOrganicTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleOrganicTasksReadyResponseInfo> GoogleOrganicTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YoutubeVideoInfoTasksFixedAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleOrganicTasksReadyResponseInfo&gt;](./SerpGoogleOrganicTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpYoutubeVideoInfoTasksFixedResponseInfo**](SerpYoutubeVideoInfoTasksFixedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **TasksReadyAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpTasksReadyResponseInfo> TasksReadyAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpTasksReadyResponseInfo&gt;](./SerpTasksReadyResponseInfo.md)<br>
-Successful operation
+<a id="youtubeVideoInfoTaskGetAdvanced"></a>
+# **youtubeVideoInfoTaskGetAdvanced**
+> SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo youtubeVideoInfoTaskGetAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskGetAdvancedAsync(id);
+```
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+### Parameters
 
-### **TasksReadyAsync(CancellationToken)**
 
-```csharp
-public Task<SerpTasksReadyResponseInfo> TasksReadyAsync(CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo**](SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo.md)
 
-[Task&lt;SerpTasksReadyResponseInfo&gt;](./SerpTasksReadyResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleOrganicTasksFixedAsync()**
+<a id="youtubeVideoInfoLiveAdvanced"></a>
+# **youtubeVideoInfoLiveAdvanced**
+> SerpYoutubeVideoInfoLiveAdvancedResponseInfo youtubeVideoInfoLiveAdvanced()
 
+
+### Example
 ```csharp
-public Task<SerpGoogleOrganicTasksFixedResponseInfo> GoogleOrganicTasksFixedAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(new List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        VideoId = "vQXvyV0zIP4",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleOrganicTasksFixedResponseInfo&gt;](./SerpGoogleOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_fixed/?bash'
+[**SerpYoutubeVideoInfoLiveAdvancedResponseInfo**](SerpYoutubeVideoInfoLiveAdvancedResponseInfo.md)
 
-### **GoogleOrganicTasksFixedAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleOrganicTasksFixedResponseInfo> GoogleOrganicTasksFixedAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleOrganicTasksFixedResponseInfo&gt;](./SerpGoogleOrganicTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="youtubeVideoSubtitlesTaskPost"></a>
+# **youtubeVideoSubtitlesTaskPost**
+> SerpYoutubeVideoSubtitlesTaskPostResponseInfo youtubeVideoSubtitlesTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(new List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>()
+{
+    new()
+    {
+        VideoId = "Y8Wu4rSNJms",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleOrganicTaskGetRegularAsync(String)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>&gt;**](IEnumerable<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleOrganicTaskGetRegularResponseInfo> GoogleOrganicTaskGetRegularAsync(string id)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-#### Returns
+[**SerpYoutubeVideoSubtitlesTaskPostResponseInfo**](SerpYoutubeVideoSubtitlesTaskPostResponseInfo.md)
 
-[Task&lt;SerpGoogleOrganicTaskGetRegularResponseInfo&gt;](./SerpGoogleOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/regular/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleOrganicTaskGetRegularAsync(String, CancellationToken)**
+<a id="youtubeVideoSubtitlesTasksReady"></a>
+# **youtubeVideoSubtitlesTasksReady**
+> SerpYoutubeVideoSubtitlesTasksReadyResponseInfo youtubeVideoSubtitlesTasksReady()
 
+
+### Example
 ```csharp
-public Task<SerpGoogleOrganicTaskGetRegularResponseInfo> GoogleOrganicTaskGetRegularAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleOrganicTaskGetRegularResponseInfo&gt;](./SerpGoogleOrganicTaskGetRegularResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYoutubeVideoSubtitlesTasksReadyResponseInfo**](SerpYoutubeVideoSubtitlesTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/regular/?bash'
+### HTTP request headers
 
-### **GoogleOrganicTaskGetAdvancedAsync(String)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleOrganicTaskGetAdvancedResponseInfo> GoogleOrganicTaskGetAdvancedAsync(string id)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="youtubeVideoSubtitlesTasksFixed"></a>
+# **youtubeVideoSubtitlesTasksFixed**
+> SerpYoutubeVideoSubtitlesTasksFixedResponseInfo youtubeVideoSubtitlesTasksFixed()
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleOrganicTaskGetAdvancedResponseInfo&gt;](./SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/advanced/?bash'
 
-### **GoogleOrganicTaskGetAdvancedAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpGoogleOrganicTaskGetAdvancedResponseInfo> GoogleOrganicTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[**SerpYoutubeVideoSubtitlesTasksFixedResponseInfo**](SerpYoutubeVideoSubtitlesTasksFixedResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleOrganicTaskGetAdvancedResponseInfo&gt;](./SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="youtubeVideoSubtitlesTaskGetAdvanced"></a>
+# **youtubeVideoSubtitlesTaskGetAdvanced**
+> SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo youtubeVideoSubtitlesTaskGetAdvanced()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/advanced/?bash'
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskGetAdvancedAsync(id);
+```
 
-### **GoogleOrganicTaskGetHtmlAsync(String)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleOrganicTaskGetHtmlResponseInfo> GoogleOrganicTaskGetHtmlAsync(string id)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-#### Returns
+### Return type
 
-[Task&lt;SerpGoogleOrganicTaskGetHtmlResponseInfo&gt;](./SerpGoogleOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[**SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo**](SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/html/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleOrganicTaskGetHtmlAsync(String, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
+<a id="youtubeVideoSubtitlesLiveAdvanced"></a>
+# **youtubeVideoSubtitlesLiveAdvanced**
+> SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo youtubeVideoSubtitlesLiveAdvanced()
+
+
+### Example
 ```csharp
-public Task<SerpGoogleOrganicTaskGetHtmlResponseInfo> GoogleOrganicTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(new List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        VideoId = "Y8Wu4rSNJms",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo**](SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo.md)
 
-[Task&lt;SerpGoogleOrganicTaskGetHtmlResponseInfo&gt;](./SerpGoogleOrganicTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/task_get/html/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleOrganicLiveRegularAsync(IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;)**
+<a id="youtubeVideoCommentsTaskPost"></a>
+# **youtubeVideoCommentsTaskPost**
+> SerpYoutubeVideoCommentsTaskPostResponseInfo youtubeVideoCommentsTaskPost()
 
-```csharp
-public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> body)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`body` [IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;](./SerpGoogleOrganicLiveRegularRequestInfo.md)<br>
+});
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(new List<SerpYoutubeVideoCommentsTaskPostRequestInfo>()
+{
+    new()
+    {
+        VideoId = "vQXvyV0zIP4",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;](./SerpGoogleOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeVideoCommentsTaskPostRequestInfo>&gt;**](IEnumerable<SerpYoutubeVideoCommentsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash'
+[**SerpYoutubeVideoCommentsTaskPostResponseInfo**](SerpYoutubeVideoCommentsTaskPostResponseInfo.md)
 
-### **GoogleOrganicLiveRegularAsync(IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;](./SerpGoogleOrganicLiveRegularRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="youtubeVideoCommentsTasksReady"></a>
+# **youtubeVideoCommentsTasksReady**
+> SerpYoutubeVideoCommentsTasksReadyResponseInfo youtubeVideoCommentsTasksReady()
 
-[Task&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;](./SerpGoogleOrganicLiveRegularResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash'
 
-### **GoogleOrganicLiveAdvancedAsync(IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;](./SerpGoogleOrganicLiveAdvancedRequestInfo.md)<br>
+[**SerpYoutubeVideoCommentsTasksReadyResponseInfo**](SerpYoutubeVideoCommentsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;](./SerpGoogleOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash'
+<a id="youtubeVideoCommentsTasksFixed"></a>
+# **youtubeVideoCommentsTasksFixed**
+> SerpYoutubeVideoCommentsTasksFixedResponseInfo youtubeVideoCommentsTasksFixed()
 
-### **GoogleOrganicLiveAdvancedAsync(IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsTasksFixedAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;](./SerpGoogleOrganicLiveAdvancedRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;](./SerpGoogleOrganicLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYoutubeVideoCommentsTasksFixedResponseInfo**](SerpYoutubeVideoCommentsTasksFixedResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌
- <br>Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash'
+### HTTP request headers
 
-### **GoogleOrganicLiveHtmlAsync(IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="youtubeVideoCommentsTaskGetAdvanced"></a>
+# **youtubeVideoCommentsTaskGetAdvanced**
+> SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo youtubeVideoCommentsTaskGetAdvanced()
 
-`body` [IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;](./SerpGoogleOrganicLiveHtmlRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleOrganicLiveHtmlResponseInfo&gt;](./SerpGoogleOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/html/?bash'
 
-### **GoogleOrganicLiveHtmlAsync(IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
+[**SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo**](SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;](./SerpGoogleOrganicLiveHtmlRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleOrganicLiveHtmlResponseInfo&gt;](./SerpGoogleOrganicLiveHtmlResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="youtubeVideoCommentsLiveAdvanced"></a>
+# **youtubeVideoCommentsLiveAdvanced**
+> SerpYoutubeVideoCommentsLiveAdvancedResponseInfo youtubeVideoCommentsLiveAdvanced()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/organic/live/html/?bash'
+});
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(new List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        VideoId = "vQXvyV0zIP4",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-### **GoogleMapsTaskPostAsync(IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleMapsTaskPostResponseInfo> GoogleMapsTaskPostAsync(IEnumerable<SerpGoogleMapsTaskPostRequestInfo> body)
-```
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;](./SerpGoogleMapsTaskPostRequestInfo.md)<br>
+### Return type
 
-#### Returns
+[**SerpYoutubeVideoCommentsLiveAdvancedResponseInfo**](SerpYoutubeVideoCommentsLiveAdvancedResponseInfo.md)
 
-[Task&lt;SerpGoogleMapsTaskPostResponseInfo&gt;](./SerpGoogleMapsTaskPostResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/task_post/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleMapsTaskPostAsync(IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;, CancellationToken)**
+<a id="serpYahooLocations"></a>
+# **serpYahooLocations**
+> SerpYahooLocationsResponseInfo serpYahooLocations()
 
+
+### Example
 ```csharp
-public Task<SerpGoogleMapsTaskPostResponseInfo> GoogleMapsTaskPostAsync(IEnumerable<SerpGoogleMapsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SerpYahooLocationsAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleMapsTaskPostRequestInfo&gt;](./SerpGoogleMapsTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleMapsTaskPostResponseInfo&gt;](./SerpGoogleMapsTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYahooLocationsResponseInfo**](SerpYahooLocationsResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/task_post/?bash'
+### HTTP request headers
 
-### **GoogleMapsTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleMapsTasksReadyResponseInfo> GoogleMapsTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="serpYahooLocationsCountry"></a>
+# **serpYahooLocationsCountry**
+> SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry()
 
-[Task&lt;SerpGoogleMapsTasksReadyResponseInfo&gt;](./SerpGoogleMapsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var country = "us";
+var result = await dfsClient.SerpApi.SerpYahooLocationsCountryAsync(country);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash'
 
-### **GoogleMapsTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleMapsTasksReadyResponseInfo> GoogleMapsTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpYahooLocationsCountryResponseInfo**](SerpYahooLocationsCountryResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleMapsTasksReadyResponseInfo&gt;](./SerpGoogleMapsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash'
+<a id="serpYahooLanguages"></a>
+# **serpYahooLanguages**
+> SerpYahooLanguagesResponseInfo serpYahooLanguages()
 
-### **GoogleMapsTasksFixedAsync()**
 
+### Example
 ```csharp
-public Task<SerpGoogleMapsTasksFixedResponseInfo> GoogleMapsTasksFixedAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SerpYahooLanguagesAsync();
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleMapsTasksFixedResponseInfo&gt;](./SerpGoogleMapsTasksFixedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_fixed/?bash'
+[**SerpYahooLanguagesResponseInfo**](SerpYahooLanguagesResponseInfo.md)
 
-### **GoogleMapsTasksFixedAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleMapsTasksFixedResponseInfo> GoogleMapsTasksFixedAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleMapsTasksFixedResponseInfo&gt;](./SerpGoogleMapsTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="yahooOrganicTaskPost"></a>
+# **yahooOrganicTaskPost**
+> SerpYahooOrganicTaskPostResponseInfo yahooOrganicTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.YahooOrganicTaskPostAsync(new List<SerpYahooOrganicTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleMapsTaskGetAdvancedAsync(String)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYahooOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpYahooOrganicTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleMapsTaskGetAdvancedResponseInfo> GoogleMapsTaskGetAdvancedAsync(string id)
-```
+
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>a universally unique identifier (UUID)
- <br>unique task identifier in our system
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**SerpYahooOrganicTaskPostResponseInfo**](SerpYahooOrganicTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleMapsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleMapsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/task_get/advanced/?bash'
+<a id="yahooOrganicTasksReady"></a>
+# **yahooOrganicTasksReady**
+> SerpYahooOrganicTasksReadyResponseInfo yahooOrganicTasksReady()
 
-### **GoogleMapsTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleMapsTaskGetAdvancedResponseInfo> GoogleMapsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YahooOrganicTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>a universally unique identifier (UUID)
- <br>unique task identifier in our system
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleMapsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleMapsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYahooOrganicTasksReadyResponseInfo**](SerpYahooOrganicTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/task_get/advanced/?bash'
+### HTTP request headers
 
-### **GoogleMapsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleMapsLiveAdvancedResponseInfo> GoogleMapsLiveAdvancedAsync(IEnumerable<SerpGoogleMapsLiveAdvancedRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="yahooOrganicTasksFixed"></a>
+# **yahooOrganicTasksFixed**
+> SerpYahooOrganicTasksFixedResponseInfo yahooOrganicTasksFixed()
 
-`body` [IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;](./SerpGoogleMapsLiveAdvancedRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleMapsLiveAdvancedResponseInfo&gt;](./SerpGoogleMapsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.YahooOrganicTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Live Google Maps SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/live/advanced/?bash'
 
-### **GoogleMapsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpGoogleMapsLiveAdvancedResponseInfo> GoogleMapsLiveAdvancedAsync(IEnumerable<SerpGoogleMapsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+[**SerpYahooOrganicTasksFixedResponseInfo**](SerpYahooOrganicTasksFixedResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;](./SerpGoogleMapsLiveAdvancedRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleMapsLiveAdvancedResponseInfo&gt;](./SerpGoogleMapsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="yahooOrganicTaskGetRegular"></a>
+# **yahooOrganicTaskGetRegular**
+> SerpYahooOrganicTaskGetRegularResponseInfo yahooOrganicTaskGetRegular()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌‌
- <br>Live Google Maps SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/maps/live/advanced/?bash'
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.YahooOrganicTaskGetRegularAsync(id);
+```
 
-### **GoogleLocalFinderTaskPostAsync(IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleLocalFinderTaskPostResponseInfo> GoogleLocalFinderTaskPostAsync(IEnumerable<SerpGoogleLocalFinderTaskPostRequestInfo> body)
-```
+
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;](./SerpGoogleLocalFinderTaskPostRequestInfo.md)<br>
+### Return type
 
-#### Returns
+[**SerpYahooOrganicTaskGetRegularResponseInfo**](SerpYahooOrganicTaskGetRegularResponseInfo.md)
 
-[Task&lt;SerpGoogleLocalFinderTaskPostResponseInfo&gt;](./SerpGoogleLocalFinderTaskPostResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌‌
- <br>Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleLocalFinderTaskPostAsync(IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;, CancellationToken)**
+<a id="yahooOrganicTaskGetAdvanced"></a>
+# **yahooOrganicTaskGetAdvanced**
+> SerpYahooOrganicTaskGetAdvancedResponseInfo yahooOrganicTaskGetAdvanced()
 
+
+### Example
 ```csharp
-public Task<SerpGoogleLocalFinderTaskPostResponseInfo> GoogleLocalFinderTaskPostAsync(IEnumerable<SerpGoogleLocalFinderTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.YahooOrganicTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;](./SerpGoogleLocalFinderTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskPostResponseInfo&gt;](./SerpGoogleLocalFinderTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYahooOrganicTaskGetAdvancedResponseInfo**](SerpYahooOrganicTaskGetAdvancedResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash'
+### HTTP request headers
 
-### **GoogleLocalFinderTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleLocalFinderTasksReadyResponseInfo> GoogleLocalFinderTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="yahooOrganicTaskGetHtml"></a>
+# **yahooOrganicTaskGetHtml**
+> SerpYahooOrganicTaskGetHtmlResponseInfo yahooOrganicTaskGetHtml()
 
-[Task&lt;SerpGoogleLocalFinderTasksReadyResponseInfo&gt;](./SerpGoogleLocalFinderTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "0ae36f7e-4e30-4ce6-9dbb-0eaa80f57f11";
+var result = await dfsClient.SerpApi.YahooOrganicTaskGetHtmlAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash'
 
-### **GoogleLocalFinderTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleLocalFinderTasksReadyResponseInfo> GoogleLocalFinderTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpYahooOrganicTaskGetHtmlResponseInfo**](SerpYahooOrganicTaskGetHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleLocalFinderTasksReadyResponseInfo&gt;](./SerpGoogleLocalFinderTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash'
+<a id="yahooOrganicLiveRegular"></a>
+# **yahooOrganicLiveRegular**
+> SerpYahooOrganicLiveRegularResponseInfo yahooOrganicLiveRegular()
 
-### **GoogleLocalFinderTasksFixedAsync()**
 
+### Example
 ```csharp
-public Task<SerpGoogleLocalFinderTasksFixedResponseInfo> GoogleLocalFinderTasksFixedAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YahooOrganicLiveRegularAsync(new List<SerpYahooOrganicLiveRegularRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleLocalFinderTasksFixedResponseInfo&gt;](./SerpGoogleLocalFinderTasksFixedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYahooOrganicLiveRegularRequestInfo>&gt;**](IEnumerable<SerpYahooOrganicLiveRegularRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_fixed/?bash'
+[**SerpYahooOrganicLiveRegularResponseInfo**](SerpYahooOrganicLiveRegularResponseInfo.md)
 
-### **GoogleLocalFinderTasksFixedAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleLocalFinderTasksFixedResponseInfo> GoogleLocalFinderTasksFixedAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleLocalFinderTasksFixedResponseInfo&gt;](./SerpGoogleLocalFinderTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="yahooOrganicLiveAdvanced"></a>
+# **yahooOrganicLiveAdvanced**
+> SerpYahooOrganicLiveAdvancedResponseInfo yahooOrganicLiveAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.YahooOrganicLiveAdvancedAsync(new List<SerpYahooOrganicLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleLocalFinderTaskGetAdvancedAsync(String)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYahooOrganicLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpYahooOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> GoogleLocalFinderTaskGetAdvancedAsync(string id)
-```
+
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>a universally unique identifier (UUID)
- <br>unique task identifier in our system
- <br>you will be able to use it within 30 days to request the results of the task at any time
+[**SerpYahooOrganicLiveAdvancedResponseInfo**](SerpYahooOrganicLiveAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleLocalFinderTaskGetAdvancedResponseInfo&gt;](./SerpGoogleLocalFinderTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/advanced/?bash'
+<a id="yahooOrganicLiveHtml"></a>
+# **yahooOrganicLiveHtml**
+> SerpYahooOrganicLiveHtmlResponseInfo yahooOrganicLiveHtml()
 
-### **GoogleLocalFinderTaskGetAdvancedAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> GoogleLocalFinderTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(new List<SerpYahooOrganicLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>a universally unique identifier (UUID)
- <br>unique task identifier in our system
- <br>you will be able to use it within 30 days to request the results of the task at any time
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYahooOrganicLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpYahooOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;SerpGoogleLocalFinderTaskGetAdvancedResponseInfo&gt;](./SerpGoogleLocalFinderTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpYahooOrganicLiveHtmlResponseInfo**](SerpYahooOrganicLiveHtmlResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/advanced/?bash'
+### HTTP request headers
 
-### **GoogleLocalFinderTaskGetHtmlAsync(String)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleLocalFinderTaskGetHtmlResponseInfo> GoogleLocalFinderTaskGetHtmlAsync(string id)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="serpBaiduLocations"></a>
+# **serpBaiduLocations**
+> SerpBaiduLocationsResponseInfo serpBaiduLocations()
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleLocalFinderTaskGetHtmlResponseInfo&gt;](./SerpGoogleLocalFinderTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.SerpBaiduLocationsAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/html/?bash'
 
-### **GoogleLocalFinderTaskGetHtmlAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpGoogleLocalFinderTaskGetHtmlResponseInfo> GoogleLocalFinderTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+[**SerpBaiduLocationsResponseInfo**](SerpBaiduLocationsResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleLocalFinderTaskGetHtmlResponseInfo&gt;](./SerpGoogleLocalFinderTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="serpBaiduLocationsCountry"></a>
+# **serpBaiduLocationsCountry**
+> SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/html/?bash'
+});
+var country = "us";
+var result = await dfsClient.SerpApi.SerpBaiduLocationsCountryAsync(country);
+```
 
-### **GoogleLocalFinderLiveAdvancedAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleLocalFinderLiveAdvancedResponseInfo> GoogleLocalFinderLiveAdvancedAsync(IEnumerable<SerpGoogleLocalFinderLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;](./SerpGoogleLocalFinderLiveAdvancedRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;SerpGoogleLocalFinderLiveAdvancedResponseInfo&gt;](./SerpGoogleLocalFinderLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[**SerpBaiduLocationsCountryResponseInfo**](SerpBaiduLocationsCountryResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌‌
- <br>Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleLocalFinderLiveAdvancedAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<SerpGoogleLocalFinderLiveAdvancedResponseInfo> GoogleLocalFinderLiveAdvancedAsync(IEnumerable<SerpGoogleLocalFinderLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="serpBaiduLanguages"></a>
+# **serpBaiduLanguages**
+> SerpBaiduLanguagesResponseInfo serpBaiduLanguages()
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;](./SerpGoogleLocalFinderLiveAdvancedRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.SerpBaiduLanguagesAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleLocalFinderLiveAdvancedResponseInfo&gt;](./SerpGoogleLocalFinderLiveAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌‌
- <br>Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash'
+[**SerpBaiduLanguagesResponseInfo**](SerpBaiduLanguagesResponseInfo.md)
 
-### **GoogleLocalFinderLiveHtmlAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleLocalFinderLiveHtmlResponseInfo> GoogleLocalFinderLiveHtmlAsync(IEnumerable<SerpGoogleLocalFinderLiveHtmlRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;](./SerpGoogleLocalFinderLiveHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleLocalFinderLiveHtmlResponseInfo&gt;](./SerpGoogleLocalFinderLiveHtmlResponseInfo.md)<br>
-Successful operation
+<a id="baiduOrganicTaskPost"></a>
+# **baiduOrganicTaskPost**
+> SerpBaiduOrganicTaskPostResponseInfo baiduOrganicTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.BaiduOrganicTaskPostAsync(new List<SerpBaiduOrganicTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "best iphone ever",
+        Priority = 2,
+        LocationCode = 2156,
+        Tag = "some_string_123",
+    }
+});
+```
 
-‌
- <br>Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
+### Parameters
 
-### **GoogleLocalFinderLiveHtmlAsync(IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpBaiduOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpBaiduOrganicTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleLocalFinderLiveHtmlResponseInfo> GoogleLocalFinderLiveHtmlAsync(IEnumerable<SerpGoogleLocalFinderLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;](./SerpGoogleLocalFinderLiveHtmlRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpBaiduOrganicTaskPostResponseInfo**](SerpBaiduOrganicTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleLocalFinderLiveHtmlResponseInfo&gt;](./SerpGoogleLocalFinderLiveHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash'
+<a id="baiduOrganicTasksReady"></a>
+# **baiduOrganicTasksReady**
+> SerpBaiduOrganicTasksReadyResponseInfo baiduOrganicTasksReady()
 
-### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumerable<SerpGoogleNewsTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.BaiduOrganicTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;](./SerpGoogleNewsTaskPostRequestInfo.md)<br>
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleNewsTaskPostResponseInfo&gt;](./SerpGoogleNewsTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpBaiduOrganicTasksReadyResponseInfo**](SerpBaiduOrganicTasksReadyResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleNewsTaskPostAsync(IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleNewsTaskPostResponseInfo> GoogleNewsTaskPostAsync(IEnumerable<SerpGoogleNewsTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleNewsTaskPostRequestInfo&gt;](./SerpGoogleNewsTaskPostRequestInfo.md)<br>
+<a id="baiduOrganicTasksFixed"></a>
+# **baiduOrganicTasksFixed**
+> SerpBaiduOrganicTasksFixedResponseInfo baiduOrganicTasksFixed()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleNewsTaskPostResponseInfo&gt;](./SerpGoogleNewsTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.BaiduOrganicTasksFixedAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_post/?bash'
 
-### **GoogleNewsTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleNewsTasksReadyResponseInfo> GoogleNewsTasksReadyAsync()
-```
+[**SerpBaiduOrganicTasksFixedResponseInfo**](SerpBaiduOrganicTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleNewsTasksReadyResponseInfo&gt;](./SerpGoogleNewsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash'
+<a id="baiduOrganicTaskGetRegular"></a>
+# **baiduOrganicTaskGetRegular**
+> SerpBaiduOrganicTaskGetRegularResponseInfo baiduOrganicTaskGetRegular()
 
-### **GoogleNewsTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleNewsTasksReadyResponseInfo> GoogleNewsTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.BaiduOrganicTaskGetRegularAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleNewsTasksReadyResponseInfo&gt;](./SerpGoogleNewsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpBaiduOrganicTaskGetRegularResponseInfo**](SerpBaiduOrganicTaskGetRegularResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleNewsTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleNewsTasksFixedResponseInfo> GoogleNewsTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleNewsTasksFixedResponseInfo&gt;](./SerpGoogleNewsTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="baiduOrganicTaskGetAdvanced"></a>
+# **baiduOrganicTaskGetAdvanced**
+> SerpBaiduOrganicTaskGetAdvancedResponseInfo baiduOrganicTaskGetAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.BaiduOrganicTaskGetAdvancedAsync(id);
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleNewsTasksFixedAsync(CancellationToken)**
 
-```csharp
-public Task<SerpGoogleNewsTasksFixedResponseInfo> GoogleNewsTasksFixedAsync(CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpBaiduOrganicTaskGetAdvancedResponseInfo**](SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)
 
-[Task&lt;SerpGoogleNewsTasksFixedResponseInfo&gt;](./SerpGoogleNewsTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleNewsTaskGetAdvancedAsync(String)**
+<a id="baiduOrganicTaskGetHtml"></a>
+# **baiduOrganicTaskGetHtml**
+> SerpBaiduOrganicTaskGetHtmlResponseInfo baiduOrganicTaskGetHtml()
 
-```csharp
-public Task<SerpGoogleNewsTaskGetAdvancedResponseInfo> GoogleNewsTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var id = "f52bcfda-8aac-476f-b901-ac197336c27b";
+var result = await dfsClient.SerpApi.BaiduOrganicTaskGetHtmlAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleNewsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleNewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_get/advanced/?bash'
+[**SerpBaiduOrganicTaskGetHtmlResponseInfo**](SerpBaiduOrganicTaskGetHtmlResponseInfo.md)
 
-### **GoogleNewsTaskGetAdvancedAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleNewsTaskGetAdvancedResponseInfo> GoogleNewsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="naverOrganicTaskPost"></a>
+# **naverOrganicTaskPost**
+> SerpNaverOrganicTaskPostResponseInfo naverOrganicTaskPost()
 
-[Task&lt;SerpGoogleNewsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleNewsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.NaverOrganicTaskPostAsync(new List<SerpNaverOrganicTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        Device = "desktop",
+        Tag = "some_string_123",
+        PostbackUrl = "https://your-server.com/postbackscript.php",
+        PostbackData = "regular",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_get/advanced/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpNaverOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpNaverOrganicTaskPostRequestInfo>.md)|  | [optional] |
 
-### **GoogleNewsTaskGetHtmlAsync(String)**
 
-```csharp
-public Task<SerpGoogleNewsTaskGetHtmlResponseInfo> GoogleNewsTaskGetHtmlAsync(string id)
-```
 
-#### Parameters
+### Return type
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+[**SerpNaverOrganicTaskPostResponseInfo**](SerpNaverOrganicTaskPostResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleNewsTaskGetHtmlResponseInfo&gt;](./SerpGoogleNewsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_get/html/?bash'
+<a id="naverOrganicTasksReady"></a>
+# **naverOrganicTasksReady**
+> SerpNaverOrganicTasksReadyResponseInfo naverOrganicTasksReady()
 
-### **GoogleNewsTaskGetHtmlAsync(String, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleNewsTaskGetHtmlResponseInfo> GoogleNewsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
-
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.NaverOrganicTasksReadyAsync();
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleNewsTaskGetHtmlResponseInfo&gt;](./SerpGoogleNewsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/task_get/html/?bash'
+[**SerpNaverOrganicTasksReadyResponseInfo**](SerpNaverOrganicTasksReadyResponseInfo.md)
 
-### **GoogleNewsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(IEnumerable<SerpGoogleNewsLiveAdvancedRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;](./SerpGoogleNewsLiveAdvancedRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleNewsLiveAdvancedResponseInfo&gt;](./SerpGoogleNewsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+<a id="naverOrganicTasksFixed"></a>
+# **naverOrganicTasksFixed**
+> SerpNaverOrganicTasksFixedResponseInfo naverOrganicTasksFixed()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.NaverOrganicTasksFixedAsync();
+```
 
-‌‌
- <br>Live Google News SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/advanced/?bash'
+### Parameters
 
-### **GoogleNewsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;, CancellationToken)**
 
-```csharp
-public Task<SerpGoogleNewsLiveAdvancedResponseInfo> GoogleNewsLiveAdvancedAsync(IEnumerable<SerpGoogleNewsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;](./SerpGoogleNewsLiveAdvancedRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpNaverOrganicTasksFixedResponseInfo**](SerpNaverOrganicTasksFixedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleNewsLiveAdvancedResponseInfo&gt;](./SerpGoogleNewsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Live Google News SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/advanced/?bash'
+<a id="naverOrganicTaskGetRegular"></a>
+# **naverOrganicTaskGetRegular**
+> SerpNaverOrganicTaskGetRegularResponseInfo naverOrganicTaskGetRegular()
 
-### **GoogleNewsLiveHtmlAsync(IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumerable<SerpGoogleNewsLiveHtmlRequestInfo> body)
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Parameters
-
-`body` [IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;](./SerpGoogleNewsLiveHtmlRequestInfo.md)<br>
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.NaverOrganicTaskGetRegularAsync(id);
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleNewsLiveHtmlResponseInfo&gt;](./SerpGoogleNewsLiveHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/html/?bash'
+[**SerpNaverOrganicTaskGetRegularResponseInfo**](SerpNaverOrganicTaskGetRegularResponseInfo.md)
 
-### **GoogleNewsLiveHtmlAsync(IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleNewsLiveHtmlResponseInfo> GoogleNewsLiveHtmlAsync(IEnumerable<SerpGoogleNewsLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;](./SerpGoogleNewsLiveHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="naverOrganicTaskGetAdvanced"></a>
+# **naverOrganicTaskGetAdvanced**
+> SerpNaverOrganicTaskGetAdvancedResponseInfo naverOrganicTaskGetAdvanced()
 
-[Task&lt;SerpGoogleNewsLiveHtmlResponseInfo&gt;](./SerpGoogleNewsLiveHtmlResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.NaverOrganicTaskGetAdvancedAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/news/live/html/?bash'
 
-### **GoogleEventsTaskPostAsync(IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleEventsTaskPostResponseInfo> GoogleEventsTaskPostAsync(IEnumerable<SerpGoogleEventsTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;](./SerpGoogleEventsTaskPostRequestInfo.md)<br>
+[**SerpNaverOrganicTaskGetAdvancedResponseInfo**](SerpNaverOrganicTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleEventsTaskPostResponseInfo&gt;](./SerpGoogleEventsTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>Google Events SERP provides data from Google Events Search for the specified keyword and location (see the List of Locations). Note that Google Events SERP API works for the English language only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/task_post/?bash'
+<a id="naverOrganicTaskGetHtml"></a>
+# **naverOrganicTaskGetHtml**
+> SerpNaverOrganicTaskGetHtmlResponseInfo naverOrganicTaskGetHtml()
 
-### **GoogleEventsTaskPostAsync(IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleEventsTaskPostResponseInfo> GoogleEventsTaskPostAsync(IEnumerable<SerpGoogleEventsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "378792fe-140e-429c-ad88-48f46c8f1d6e";
+var result = await dfsClient.SerpApi.NaverOrganicTaskGetHtmlAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleEventsTaskPostRequestInfo&gt;](./SerpGoogleEventsTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleEventsTaskPostResponseInfo&gt;](./SerpGoogleEventsTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpNaverOrganicTaskGetHtmlResponseInfo**](SerpNaverOrganicTaskGetHtmlResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>Google Events SERP provides data from Google Events Search for the specified keyword and location (see the List of Locations). Note that Google Events SERP API works for the English language only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/task_post/?bash'
+### HTTP request headers
 
-### **GoogleEventsTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleEventsTasksReadyResponseInfo> GoogleEventsTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="serpSeznamLocations"></a>
+# **serpSeznamLocations**
+> SerpSeznamLocationsResponseInfo serpSeznamLocations()
 
-[Task&lt;SerpGoogleEventsTasksReadyResponseInfo&gt;](./SerpGoogleEventsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.SerpSeznamLocationsAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash'
 
-### **GoogleEventsTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleEventsTasksReadyResponseInfo> GoogleEventsTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpSeznamLocationsResponseInfo**](SerpSeznamLocationsResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleEventsTasksReadyResponseInfo&gt;](./SerpGoogleEventsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash'
+<a id="serpSeznamLocationsCountry"></a>
+# **serpSeznamLocationsCountry**
+> SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry()
 
-### **GoogleEventsTasksFixedAsync()**
 
+### Example
 ```csharp
-public Task<SerpGoogleEventsTasksFixedResponseInfo> GoogleEventsTasksFixedAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var country = "us";
+var result = await dfsClient.SerpApi.SerpSeznamLocationsCountryAsync(country);
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleEventsTasksFixedResponseInfo&gt;](./SerpGoogleEventsTasksFixedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_fixed/?bash'
+[**SerpSeznamLocationsCountryResponseInfo**](SerpSeznamLocationsCountryResponseInfo.md)
 
-### **GoogleEventsTasksFixedAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleEventsTasksFixedResponseInfo> GoogleEventsTasksFixedAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleEventsTasksFixedResponseInfo&gt;](./SerpGoogleEventsTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="serpSeznamLanguages"></a>
+# **serpSeznamLanguages**
+> SerpSeznamLanguagesResponseInfo serpSeznamLanguages()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.SerpSeznamLanguagesAsync();
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleEventsTaskGetAdvancedAsync(String)**
 
-```csharp
-public Task<SerpGoogleEventsTaskGetAdvancedResponseInfo> GoogleEventsTaskGetAdvancedAsync(string id)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-#### Returns
+[**SerpSeznamLanguagesResponseInfo**](SerpSeznamLanguagesResponseInfo.md)
 
-[Task&lt;SerpGoogleEventsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleEventsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/task_get/advanced/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleEventsTaskGetAdvancedAsync(String, CancellationToken)**
+<a id="seznamOrganicTaskPost"></a>
+# **seznamOrganicTaskPost**
+> SerpSeznamOrganicTaskPostResponseInfo seznamOrganicTaskPost()
 
+
+### Example
 ```csharp
-public Task<SerpGoogleEventsTaskGetAdvancedResponseInfo> GoogleEventsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.SeznamOrganicTaskPostAsync(new List<SerpSeznamOrganicTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2203,
+        LanguageCode = "cs",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpSeznamOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpSeznamOrganicTaskPostRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;SerpGoogleEventsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleEventsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpSeznamOrganicTaskPostResponseInfo**](SerpSeznamOrganicTaskPostResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/task_get/advanced/?bash'
+### HTTP request headers
 
-### **GoogleEventsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleEventsLiveAdvancedResponseInfo> GoogleEventsLiveAdvancedAsync(IEnumerable<SerpGoogleEventsLiveAdvancedRequestInfo> body)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="seznamOrganicTasksReady"></a>
+# **seznamOrganicTasksReady**
+> SerpSeznamOrganicTasksReadyResponseInfo seznamOrganicTasksReady()
 
-`body` [IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;](./SerpGoogleEventsLiveAdvancedRequestInfo.md)<br>
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleEventsLiveAdvancedResponseInfo&gt;](./SerpGoogleEventsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.SeznamOrganicTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Live Google Events SERP provides real-time data from Google Events Search for the specified keyword and location. Note that Google Events SERP API works for the English language only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/live/advanced/?bash'
 
-### **GoogleEventsLiveAdvancedAsync(IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpGoogleEventsLiveAdvancedResponseInfo> GoogleEventsLiveAdvancedAsync(IEnumerable<SerpGoogleEventsLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+[**SerpSeznamOrganicTasksReadyResponseInfo**](SerpSeznamOrganicTasksReadyResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`body` [IEnumerable&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;](./SerpGoogleEventsLiveAdvancedRequestInfo.md)<br>
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleEventsLiveAdvancedResponseInfo&gt;](./SerpGoogleEventsLiveAdvancedResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="seznamOrganicTasksFixed"></a>
+# **seznamOrganicTasksFixed**
+> SerpSeznamOrganicTasksFixedResponseInfo seznamOrganicTasksFixed()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌‌
- <br>Live Google Events SERP provides real-time data from Google Events Search for the specified keyword and location. Note that Google Events SERP API works for the English language only.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/events/live/advanced/?bash'
+});
+var result = await dfsClient.SerpApi.SeznamOrganicTasksFixedAsync();
+```
 
-### **GoogleImagesTaskPostAsync(IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnumerable<SerpGoogleImagesTaskPostRequestInfo> body)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`body` [IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;](./SerpGoogleImagesTaskPostRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;SerpGoogleImagesTaskPostResponseInfo&gt;](./SerpGoogleImagesTaskPostResponseInfo.md)<br>
-Successful operation
+[**SerpSeznamOrganicTasksFixedResponseInfo**](SerpSeznamOrganicTasksFixedResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_post/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleImagesTaskPostAsync(IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
+<a id="seznamOrganicTaskGetRegular"></a>
+# **seznamOrganicTaskGetRegular**
+> SerpSeznamOrganicTaskGetRegularResponseInfo seznamOrganicTaskGetRegular()
+
+
+### Example
 ```csharp
-public Task<SerpGoogleImagesTaskPostResponseInfo> GoogleImagesTaskPostAsync(IEnumerable<SerpGoogleImagesTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.SeznamOrganicTaskGetRegularAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleImagesTaskPostRequestInfo&gt;](./SerpGoogleImagesTaskPostRequestInfo.md)<br>
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleImagesTaskPostResponseInfo&gt;](./SerpGoogleImagesTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpSeznamOrganicTaskGetRegularResponseInfo**](SerpSeznamOrganicTaskGetRegularResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_post/?bash'
+### HTTP request headers
 
-### **GoogleImagesTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleImagesTasksReadyResponseInfo> GoogleImagesTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="seznamOrganicTaskGetAdvanced"></a>
+# **seznamOrganicTaskGetAdvanced**
+> SerpSeznamOrganicTaskGetAdvancedResponseInfo seznamOrganicTaskGetAdvanced()
 
-[Task&lt;SerpGoogleImagesTasksReadyResponseInfo&gt;](./SerpGoogleImagesTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.SeznamOrganicTaskGetAdvancedAsync(id);
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash'
 
-### **GoogleImagesTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleImagesTasksReadyResponseInfo> GoogleImagesTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpSeznamOrganicTaskGetAdvancedResponseInfo**](SerpSeznamOrganicTaskGetAdvancedResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleImagesTasksReadyResponseInfo&gt;](./SerpGoogleImagesTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash'
+<a id="seznamOrganicTaskGetHtml"></a>
+# **seznamOrganicTaskGetHtml**
+> SerpSeznamOrganicTaskGetHtmlResponseInfo seznamOrganicTaskGetHtml()
 
-### **GoogleImagesTasksFixedAsync()**
 
+### Example
 ```csharp
-public Task<SerpGoogleImagesTasksFixedResponseInfo> GoogleImagesTasksFixedAsync()
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "518ce840-70c9-4725-bdb9-0e22cb6afd4f";
+var result = await dfsClient.SerpApi.SeznamOrganicTaskGetHtmlAsync(id);
 ```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleImagesTasksFixedResponseInfo&gt;](./SerpGoogleImagesTasksFixedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+    
+This endpoint does not need any parameter.
+    
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_fixed/?bash'
+[**SerpSeznamOrganicTaskGetHtmlResponseInfo**](SerpSeznamOrganicTaskGetHtmlResponseInfo.md)
 
-### **GoogleImagesTasksFixedAsync(CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleImagesTasksFixedResponseInfo> GoogleImagesTasksFixedAsync(CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleImagesTasksFixedResponseInfo&gt;](./SerpGoogleImagesTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="googleFinanceExploreTaskPost"></a>
+# **googleFinanceExploreTaskPost**
+> SerpGoogleFinanceExploreTaskPostResponseInfo googleFinanceExploreTaskPost()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(new List<SerpGoogleFinanceExploreTaskPostRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleImagesTaskGetAdvancedAsync(String)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceExploreTaskPostRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleImagesTaskGetAdvancedResponseInfo> GoogleImagesTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Return type
 
-#### Returns
+[**SerpGoogleFinanceExploreTaskPostResponseInfo**](SerpGoogleFinanceExploreTaskPostResponseInfo.md)
 
-[Task&lt;SerpGoogleImagesTaskGetAdvancedResponseInfo&gt;](./SerpGoogleImagesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_get/advanced/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleImagesTaskGetAdvancedAsync(String, CancellationToken)**
+<a id="googleFinanceExploreTasksReady"></a>
+# **googleFinanceExploreTasksReady**
+> SerpGoogleFinanceExploreTasksReadyResponseInfo googleFinanceExploreTasksReady()
 
+
+### Example
 ```csharp
-public Task<SerpGoogleImagesTaskGetAdvancedResponseInfo> GoogleImagesTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleFinanceExploreTasksReadyAsync();
 ```
 
-#### Parameters
+### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+    
+This endpoint does not need any parameter.
+    
 
-#### Returns
 
-[Task&lt;SerpGoogleImagesTaskGetAdvancedResponseInfo&gt;](./SerpGoogleImagesTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleFinanceExploreTasksReadyResponseInfo**](SerpGoogleFinanceExploreTasksReadyResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_get/advanced/?bash'
+### HTTP request headers
 
-### **GoogleImagesTaskGetHtmlAsync(String)**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleImagesTaskGetHtmlResponseInfo> GoogleImagesTaskGetHtmlAsync(string id)
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Parameters
+<a id="googleFinanceExploreTaskGetAdvanced"></a>
+# **googleFinanceExploreTaskGetAdvanced**
+> SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo googleFinanceExploreTaskGetAdvanced()
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleImagesTaskGetHtmlResponseInfo&gt;](./SerpGoogleImagesTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskGetAdvancedAsync(id);
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_get/html/?bash'
 
-### **GoogleImagesTaskGetHtmlAsync(String, CancellationToken)**
+### Return type
 
-```csharp
-public Task<SerpGoogleImagesTaskGetHtmlResponseInfo> GoogleImagesTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
+[**SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo**](SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)
 
-#### Parameters
+### Authorization
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleImagesTaskGetHtmlResponseInfo&gt;](./SerpGoogleImagesTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleFinanceExploreTaskGetHtml"></a>
+# **googleFinanceExploreTaskGetHtml**
+> SerpGoogleFinanceExploreTaskGetHtmlResponseInfo googleFinanceExploreTaskGetHtml()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/task_get/html/?bash'
+});
+var id = "55b8b354-be22-4a2a-8a16-245be4734b7d";
+var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskGetHtmlAsync(id);
+```
 
-### **GoogleImagesLiveAdvancedAsync(IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAsync(IEnumerable<SerpGoogleImagesLiveAdvancedRequestInfo> body)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`body` [IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;](./SerpGoogleImagesLiveAdvancedRequestInfo.md)<br>
 
-#### Returns
+### Return type
 
-[Task&lt;SerpGoogleImagesLiveAdvancedResponseInfo&gt;](./SerpGoogleImagesLiveAdvancedResponseInfo.md)<br>
-Successful operation
+[**SerpGoogleFinanceExploreTaskGetHtmlResponseInfo**](SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-‌
- <br>Live Google Images SERP provides real-time data on top 100 images results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/advanced/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleImagesLiveAdvancedAsync(IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<SerpGoogleImagesLiveAdvancedResponseInfo> GoogleImagesLiveAdvancedAsync(IEnumerable<SerpGoogleImagesLiveAdvancedRequestInfo> body, CancellationToken cancellationToken)
-```
+<a id="googleFinanceExploreLiveAdvanced"></a>
+# **googleFinanceExploreLiveAdvanced**
+> SerpGoogleFinanceExploreLiveAdvancedResponseInfo googleFinanceExploreLiveAdvanced()
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;](./SerpGoogleImagesLiveAdvancedRequestInfo.md)<br>
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(new List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleImagesLiveAdvancedResponseInfo&gt;](./SerpGoogleImagesLiveAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-‌
- <br>Live Google Images SERP provides real-time data on top 100 images results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/advanced/?bash'
+[**SerpGoogleFinanceExploreLiveAdvancedResponseInfo**](SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)
 
-### **GoogleImagesLiveHtmlAsync(IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnumerable<SerpGoogleImagesLiveHtmlRequestInfo> body)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`body` [IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;](./SerpGoogleImagesLiveHtmlRequestInfo.md)<br>
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleImagesLiveHtmlResponseInfo&gt;](./SerpGoogleImagesLiveHtmlResponseInfo.md)<br>
-Successful operation
+<a id="googleFinanceExploreLiveHtml"></a>
+# **googleFinanceExploreLiveHtml**
+> SerpGoogleFinanceExploreLiveHtmlResponseInfo googleFinanceExploreLiveHtml()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveHtmlAsync(new List<SerpGoogleFinanceExploreLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/html/?bash'
+### Parameters
 
-### **GoogleImagesLiveHtmlAsync(IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceExploreLiveHtmlRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleImagesLiveHtmlResponseInfo> GoogleImagesLiveHtmlAsync(IEnumerable<SerpGoogleImagesLiveHtmlRequestInfo> body, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;](./SerpGoogleImagesLiveHtmlRequestInfo.md)<br>
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleFinanceExploreLiveHtmlResponseInfo**](SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleImagesLiveHtmlResponseInfo&gt;](./SerpGoogleImagesLiveHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/images/live/html/?bash'
+<a id="googleFinanceMarketsTaskPost"></a>
+# **googleFinanceMarketsTaskPost**
+> SerpGoogleFinanceMarketsTaskPostResponseInfo googleFinanceMarketsTaskPost()
 
-### **GoogleSearchByImageTaskPostAsync(IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleSearchByImageTaskPostResponseInfo> GoogleSearchByImageTaskPostAsync(IEnumerable<SerpGoogleSearchByImageTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(new List<SerpGoogleFinanceMarketsTaskPostRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;](./SerpGoogleSearchByImageTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceMarketsTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpGoogleSearchByImageTaskPostResponseInfo&gt;](./SerpGoogleSearchByImageTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleFinanceMarketsTaskPostResponseInfo**](SerpGoogleFinanceMarketsTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Google Search By Image SERP API provides up to top 100 search engine results based on the image you specified. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleSearchByImageTaskPostAsync(IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleSearchByImageTaskPostResponseInfo> GoogleSearchByImageTaskPostAsync(IEnumerable<SerpGoogleSearchByImageTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;](./SerpGoogleSearchByImageTaskPostRequestInfo.md)<br>
+<a id="googleFinanceMarketsTasksReady"></a>
+# **googleFinanceMarketsTasksReady**
+> SerpGoogleFinanceMarketsTasksReadyResponseInfo googleFinanceMarketsTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleSearchByImageTaskPostResponseInfo&gt;](./SerpGoogleSearchByImageTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Google Search By Image SERP API provides up to top 100 search engine results based on the image you specified. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/task_post/?bash'
 
-### **GoogleSearchByImageTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleSearchByImageTasksReadyResponseInfo> GoogleSearchByImageTasksReadyAsync()
-```
+[**SerpGoogleFinanceMarketsTasksReadyResponseInfo**](SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleSearchByImageTasksReadyResponseInfo&gt;](./SerpGoogleSearchByImageTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_ready/?bash'
+<a id="googleFinanceMarketsTaskGetAdvanced"></a>
+# **googleFinanceMarketsTaskGetAdvanced**
+> SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo googleFinanceMarketsTaskGetAdvanced()
 
-### **GoogleSearchByImageTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleSearchByImageTasksReadyResponseInfo> GoogleSearchByImageTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleSearchByImageTasksReadyResponseInfo&gt;](./SerpGoogleSearchByImageTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo**](SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleSearchByImageTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleSearchByImageTasksFixedResponseInfo> GoogleSearchByImageTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleSearchByImageTasksFixedResponseInfo&gt;](./SerpGoogleSearchByImageTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="googleFinanceMarketsTaskGetHtml"></a>
+# **googleFinanceMarketsTaskGetHtml**
+> SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo googleFinanceMarketsTaskGetHtml()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var id = "5485175c-0b6a-4d61-855a-3039cbd7f935";
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskGetHtmlAsync(id);
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleSearchByImageTasksFixedAsync(CancellationToken)**
 
-```csharp
-public Task<SerpGoogleSearchByImageTasksFixedResponseInfo> GoogleSearchByImageTasksFixedAsync(CancellationToken cancellationToken)
-```
+    
+This endpoint does not need any parameter.
+    
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo**](SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)
 
-[Task&lt;SerpGoogleSearchByImageTasksFixedResponseInfo&gt;](./SerpGoogleSearchByImageTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-### **GoogleSearchByImageTaskGetAdvancedAsync(String)**
+<a id="googleFinanceMarketsLiveAdvanced"></a>
+# **googleFinanceMarketsLiveAdvanced**
+> SerpGoogleFinanceMarketsLiveAdvancedResponseInfo googleFinanceMarketsLiveAdvanced()
 
-```csharp
-public Task<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> GoogleSearchByImageTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+});
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(new List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleSearchByImageTaskGetAdvancedResponseInfo&gt;](./SerpGoogleSearchByImageTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/task_get/advanced/?bash'
+[**SerpGoogleFinanceMarketsLiveAdvancedResponseInfo**](SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)
 
-### **GoogleSearchByImageTaskGetAdvancedAsync(String, CancellationToken)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> GoogleSearchByImageTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleFinanceMarketsLiveHtml"></a>
+# **googleFinanceMarketsLiveHtml**
+> SerpGoogleFinanceMarketsLiveHtmlResponseInfo googleFinanceMarketsLiveHtml()
 
-[Task&lt;SerpGoogleSearchByImageTaskGetAdvancedResponseInfo&gt;](./SerpGoogleSearchByImageTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveHtmlAsync(new List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-**Remarks:**
+### Parameters
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/search_by_image/task_get/advanced/?bash'
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>.md)|  | [optional] |
 
-### **GoogleJobsTaskPostAsync(IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;)**
 
-```csharp
-public Task<SerpGoogleJobsTaskPostResponseInfo> GoogleJobsTaskPostAsync(IEnumerable<SerpGoogleJobsTaskPostRequestInfo> body)
-```
 
-#### Parameters
+### Return type
 
-`body` [IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;](./SerpGoogleJobsTaskPostRequestInfo.md)<br>
+[**SerpGoogleFinanceMarketsLiveHtmlResponseInfo**](SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleJobsTaskPostResponseInfo&gt;](./SerpGoogleJobsTaskPostResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌‌
- <br>This endpoint will provide you with SERP data from the Google Jobs search engine. The returned results are specific to the keyword as well as the language and location parameters of the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_post/?bash'
+<a id="googleFinanceQuoteTaskPost"></a>
+# **googleFinanceQuoteTaskPost**
+> SerpGoogleFinanceQuoteTaskPostResponseInfo googleFinanceQuoteTaskPost()
 
-### **GoogleJobsTaskPostAsync(IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;, CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleJobsTaskPostResponseInfo> GoogleJobsTaskPostAsync(IEnumerable<SerpGoogleJobsTaskPostRequestInfo> body, CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(new List<SerpGoogleFinanceQuoteTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = ".DJI:INDEXDJX",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleJobsTaskPostRequestInfo&gt;](./SerpGoogleJobsTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceQuoteTaskPostRequestInfo>.md)|  | [optional] |
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
 
-[Task&lt;SerpGoogleJobsTaskPostResponseInfo&gt;](./SerpGoogleJobsTaskPostResponseInfo.md)<br>
-Successful operation
+### Return type
 
-#### Exceptions
+[**SerpGoogleFinanceQuoteTaskPostResponseInfo**](SerpGoogleFinanceQuoteTaskPostResponseInfo.md)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Authorization
 
-**Remarks:**
+[basicAuth](../README.md#basicAuth)
 
-‌‌
- <br>This endpoint will provide you with SERP data from the Google Jobs search engine. The returned results are specific to the keyword as well as the language and location parameters of the POST request.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_post/?bash'
+### HTTP request headers
 
-### **GoogleJobsTasksReadyAsync()**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-```csharp
-public Task<SerpGoogleJobsTasksReadyResponseInfo> GoogleJobsTasksReadyAsync()
-```
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Returns
+<a id="googleFinanceQuoteTasksReady"></a>
+# **googleFinanceQuoteTasksReady**
+> SerpGoogleFinanceQuoteTasksReadyResponseInfo googleFinanceQuoteTasksReady()
 
-[Task&lt;SerpGoogleJobsTasksReadyResponseInfo&gt;](./SerpGoogleJobsTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+});
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteTasksReadyAsync();
+```
 
-**Remarks:**
+### Parameters
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash'
 
-### **GoogleJobsTasksReadyAsync(CancellationToken)**
+    
+This endpoint does not need any parameter.
+    
 
-```csharp
-public Task<SerpGoogleJobsTasksReadyResponseInfo> GoogleJobsTasksReadyAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleFinanceQuoteTasksReadyResponseInfo**](SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleJobsTasksReadyResponseInfo&gt;](./SerpGoogleJobsTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash'
+<a id="googleFinanceQuoteTaskGetAdvanced"></a>
+# **googleFinanceQuoteTaskGetAdvanced**
+> SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo googleFinanceQuoteTaskGetAdvanced()
 
-### **GoogleJobsTasksFixedAsync()**
 
+### Example
 ```csharp
-public Task<SerpGoogleJobsTasksFixedResponseInfo> GoogleJobsTasksFixedAsync()
-```
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-#### Returns
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskGetAdvancedAsync(id);
+```
 
-[Task&lt;SerpGoogleJobsTasksFixedResponseInfo&gt;](./SerpGoogleJobsTasksFixedResponseInfo.md)<br>
-Successful operation
+### Parameters
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+    
+This endpoint does not need any parameter.
+    
 
-**Remarks:**
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_fixed/?bash'
+### Return type
 
-### **GoogleJobsTasksFixedAsync(CancellationToken)**
+[**SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo**](SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)
 
-```csharp
-public Task<SerpGoogleJobsTasksFixedResponseInfo> GoogleJobsTasksFixedAsync(CancellationToken cancellationToken)
-```
+### Authorization
 
-#### Parameters
+[basicAuth](../README.md#basicAuth)
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### HTTP request headers
 
-#### Returns
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-[Task&lt;SerpGoogleJobsTasksFixedResponseInfo&gt;](./SerpGoogleJobsTasksFixedResponseInfo.md)<br>
-Successful operation
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-#### Exceptions
+<a id="googleFinanceQuoteTaskGetHtml"></a>
+# **googleFinanceQuoteTaskGetHtml**
+> SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo googleFinanceQuoteTaskGetHtml()
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/tasks_fixed/?bash'
+});
+var id = "ec37fb31-a868-4974-975d-9d3a0cca14d7";
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskGetHtmlAsync(id);
+```
 
-### **GoogleJobsTaskGetAdvancedAsync(String)**
+### Parameters
 
-```csharp
-public Task<SerpGoogleJobsTaskGetAdvancedResponseInfo> GoogleJobsTaskGetAdvancedAsync(string id)
-```
 
-#### Parameters
+    
+This endpoint does not need any parameter.
+    
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
 
-#### Returns
+### Return type
 
-[Task&lt;SerpGoogleJobsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleJobsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+[**SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo**](SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)
 
-#### Exceptions
+### Authorization
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[basicAuth](../README.md#basicAuth)
 
-**Remarks:**
+### HTTP request headers
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_get/advanced/?bash'
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-### **GoogleJobsTaskGetAdvancedAsync(String, CancellationToken)**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-```csharp
-public Task<SerpGoogleJobsTaskGetAdvancedResponseInfo> GoogleJobsTaskGetAdvancedAsync(string id, CancellationToken cancellationToken)
-```
+<a id="googleFinanceQuoteLiveAdvanced"></a>
+# **googleFinanceQuoteLiveAdvanced**
+> SerpGoogleFinanceQuoteLiveAdvancedResponseInfo googleFinanceQuoteLiveAdvanced()
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 30 days to request the results of the task at any time
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+});
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(new List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "CLW00:NYMEX",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
+```
 
-#### Returns
+### Parameters
 
-[Task&lt;SerpGoogleJobsTaskGetAdvancedResponseInfo&gt;](./SerpGoogleJobsTaskGetAdvancedResponseInfo.md)<br>
-Successful operation
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+### Return type
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_get/advanced/?bash'
+[**SerpGoogleFinanceQuoteLiveAdvancedResponseInfo**](SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)
 
-### **GoogleJobsTaskGetHtmlAsync(String)**
+### Authorization
 
-```csharp
-public Task<SerpGoogleJobsTaskGetHtmlResponseInfo> GoogleJobsTaskGetHtmlAsync(string id)
-```
+[basicAuth](../README.md#basicAuth)
 
-#### Parameters
+### HTTP request headers
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleJobsTaskGetHtmlResponseInfo&gt;](./SerpGoogleJobsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+<a id="googleFinanceQuoteLiveHtml"></a>
+# **googleFinanceQuoteLiveHtml**
+> SerpGoogleFinanceQuoteLiveHtmlResponseInfo googleFinanceQuoteLiveHtml()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveHtmlAsync(new List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "NASDAQ-100",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_get/html/?bash'
+### Parameters
 
-### **GoogleJobsTaskGetHtmlAsync(String, CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleJobsTaskGetHtmlResponseInfo> GoogleJobsTaskGetHtmlAsync(string id, CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`id` [String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-task identifier
- <br>unique task identifier in our system in the UUID format
- <br>you will be able to use it within 7 days to request the results of the task at any time
+### Return type
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+[**SerpGoogleFinanceQuoteLiveHtmlResponseInfo**](SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleJobsTaskGetHtmlResponseInfo&gt;](./SerpGoogleJobsTaskGetHtmlResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-Description of the fields for sending a request:
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/jobs/task_get/html/?bash'
+<a id="googleFinanceTickerSearchTaskPost"></a>
+# **googleFinanceTickerSearchTaskPost**
+> SerpGoogleFinanceTickerSearchTaskPostResponseInfo googleFinanceTickerSearchTaskPost()
 
-### **GoogleAutocompleteTaskPostAsync(IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAutocompleteTaskPostResponseInfo> GoogleAutocompleteTaskPostAsync(IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo> body)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(new List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "DJ",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Priority = 2,
+        Category = "all",
+    }
+});
 ```
 
-#### Parameters
+### Parameters
 
-`body` [IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;](./SerpGoogleAutocompleteTaskPostRequestInfo.md)<br>
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>.md)|  | [optional] |
 
-#### Returns
 
-[Task&lt;SerpGoogleAutocompleteTaskPostResponseInfo&gt;](./SerpGoogleAutocompleteTaskPostResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleFinanceTickerSearchTaskPostResponseInfo**](SerpGoogleFinanceTickerSearchTaskPostResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌‌
- <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleAutocompleteTaskPostAsync(IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;, CancellationToken)**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleAutocompleteTaskPostResponseInfo> GoogleAutocompleteTaskPostAsync(IEnumerable<SerpGoogleAutocompleteTaskPostRequestInfo> body, CancellationToken cancellationToken)
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Parameters
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-`body` [IEnumerable&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;](./SerpGoogleAutocompleteTaskPostRequestInfo.md)<br>
+<a id="googleFinanceTickerSearchTasksReady"></a>
+# **googleFinanceTickerSearchTasksReady**
+> SerpGoogleFinanceTickerSearchTasksReadyResponseInfo googleFinanceTickerSearchTasksReady()
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-[Task&lt;SerpGoogleAutocompleteTaskPostResponseInfo&gt;](./SerpGoogleAutocompleteTaskPostResponseInfo.md)<br>
-Successful operation
+});
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTasksReadyAsync();
+```
 
-#### Exceptions
+### Parameters
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
 
-**Remarks:**
+    
+This endpoint does not need any parameter.
+    
 
-‌‌
- <br>Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash'
 
-### **GoogleAutocompleteTasksReadyAsync()**
+### Return type
 
-```csharp
-public Task<SerpGoogleAutocompleteTasksReadyResponseInfo> GoogleAutocompleteTasksReadyAsync()
-```
+[**SerpGoogleFinanceTickerSearchTasksReadyResponseInfo**](SerpGoogleFinanceTickerSearchTasksReadyResponseInfo.md)
 
-#### Returns
+### Authorization
 
-[Task&lt;SerpGoogleAutocompleteTasksReadyResponseInfo&gt;](./SerpGoogleAutocompleteTasksReadyResponseInfo.md)<br>
-Successful operation
+[basicAuth](../README.md#basicAuth)
 
-#### Exceptions
+### HTTP request headers
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-**Remarks:**
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
+<a id="googleFinanceTickerSearchTaskGetAdvanced"></a>
+# **googleFinanceTickerSearchTaskGetAdvanced**
+> SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo googleFinanceTickerSearchTaskGetAdvanced()
 
-### **GoogleAutocompleteTasksReadyAsync(CancellationToken)**
 
+### Example
 ```csharp
-public Task<SerpGoogleAutocompleteTasksReadyResponseInfo> GoogleAutocompleteTasksReadyAsync(CancellationToken cancellationToken)
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskGetAdvancedAsync(id);
 ```
 
-#### Parameters
+### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
 
-#### Returns
+    
+This endpoint does not need any parameter.
+    
 
-[Task&lt;SerpGoogleAutocompleteTasksReadyResponseInfo&gt;](./SerpGoogleAutocompleteTasksReadyResponseInfo.md)<br>
-Successful operation
 
-#### Exceptions
+### Return type
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+[**SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo**](SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)
 
-**Remarks:**
+### Authorization
 
-‌
- <br>The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.
- <br>Learn more about task completion and obtaining a list of completed tasks in this help center article.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash'
+[basicAuth](../README.md#basicAuth)
 
-### **GoogleAutocompleteTasksFixedAsync()**
+### HTTP request headers
 
-```csharp
-public Task<SerpGoogleAutocompleteTasksFixedResponseInfo> GoogleAutocompleteTasksFixedAsync()
-```
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-#### Returns
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
-[Task&lt;SerpGoogleAutocompleteTasksFixedResponseInfo&gt;](./SerpGoogleAutocompleteTasksFixedResponseInfo.md)<br>
-Successful operation
+<a id="googleFinanceTickerSearchLiveAdvanced"></a>
+# **googleFinanceTickerSearchLiveAdvanced**
+> SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo googleFinanceTickerSearchLiveAdvanced()
 
-#### Exceptions
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
 
-**Remarks:**
+});
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(new List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "DJ",
+        LocationCode = 2840,
+        LanguageName = "English",
+        Category = "all",
+    }
+});
+```
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash'
+### Parameters
 
-### **GoogleAutocompleteTasksFixedAsync(CancellationToken)**
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>.md)|  | [optional] |
 
-```csharp
-public Task<SerpGoogleAutocompleteTasksFixedResponseInfo> GoogleAutocompleteTasksFixedAsync(CancellationToken cancellationToken)
-```
 
-#### Parameters
 
-`cancellationToken` [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/CancellationToken)<br>
-A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+### Return type
 
-#### Returns
+[**SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo**](SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)
 
-[Task&lt;SerpGoogleAutocompleteTasksFixedResponseInfo&gt;](./SerpGoogleAutocompleteTasksFixedResponseInfo.md)<br>
-Successful operation
+### Authorization
 
-#### Exceptions
+[basicAuth](../README.md#basicAuth)
 
-[ApiException](./ApiException.md)<br>
-A server side error occurred.
+### HTTP request headers
 
-**Remarks:**
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-‌
- <br>The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.
- <br>for more info please visit 'https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash'
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

@@ -1,129 +1,17 @@
 # KeywordsDataBingKeywordsForKeywordsLiveResultInfo
 
-Namespace: DataForSeo.Client.Models.Responses
-
-```csharp
-public class KeywordsDataBingKeywordsForKeywordsLiveResultInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [KeywordsDataBingKeywordsForKeywordsLiveResultInfo](./KeywordsDataBingKeywordsForKeywordsLiveResultInfo.md)
 
 ## Properties
 
-### **Keyword**
-
-```csharp
-public string Keyword { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **SearchPartners**
-
-```csharp
-public Nullable<bool> SearchPartners { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Device**
-
-```csharp
-public string Device { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Competition**
-
-```csharp
-public Nullable<float> Competition { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Cpc**
-
-```csharp
-public Nullable<float> Cpc { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **SearchVolume**
-
-```csharp
-public Nullable<long> SearchVolume { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Categories**
-
-```csharp
-public ICollection<string> Categories { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **MonthlySearches**
-
-```csharp
-public ICollection<MonthlySearches> MonthlySearches { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;MonthlySearches&gt;](./MonthlySearches.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **KeywordsDataBingKeywordsForKeywordsLiveResultInfo()**
-
-```csharp
-public KeywordsDataBingKeywordsForKeywordsLiveResultInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Keyword** | **string** | keyword in a POST array |[optional]|
+**LocationCode** | **double?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
+**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
+**SearchPartners** | **bool?** | indicates whether data from partner networks is included in the response |[optional]|
+**Device** | **string** | device type<br>indicates for what device type the data is provided;<br>possible values: all, mobile, desktop, tablet |[optional]|
+**Competition** | **float?** | competition<br>represents the relative amount of competition associated with the given keyword in paid SERP only. This value is based on Bing Ads data.<br>Possible values: 0.1, 0.5,0.90.1 – low competition,<br>0.5 – medium competition,<br>0.9 – high competition;<br>if there is no data the value is null |[optional]|
+**Cpc** | **float?** | cost-per-click<br>represents the average cost per click (USD) historically paid for the keyword.<br>if there is no data, then the value is null |[optional]|
+**SearchVolume** | **double?** | monthly average search volume rate<br>represents the (approximate) number of searches for the keyword on the Bing search engine, depending on the user’s targetingsearch volume is rounded to the closest decimal values<br>if there is no data, then the value is null |[optional]|
+**Categories** | **IEnumerable<string>** | product and service categories<br>legacy field, the value will always be null |[optional]|
+**MonthlySearches** | **IEnumerable<MonthlySearches>** | monthly searches<br>represents the (approximate) number of searches on this keyword (as available for the past twelve months), targeted to the specified geographic locations.<br>if there is no data, then the value is null |[optional]|

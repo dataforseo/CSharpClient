@@ -1,69 +1,10 @@
 # IndexHistory
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class IndexHistory
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [IndexHistory](./IndexHistory.md)
 
 ## Properties
 
-### **Date**
-
-```csharp
-public string Date { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **TotalBacklinks**
-
-```csharp
-public Nullable<long> TotalBacklinks { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TotalPages**
-
-```csharp
-public Nullable<long> TotalPages { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **TotalDomains**
-
-```csharp
-public Nullable<long> TotalDomains { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int64&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **IndexHistory()**
-
-```csharp
-public IndexHistory()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Date** | **string** | date for which index volume data is provided<br>in the UTC format: “yyyy-mm-dd”<br>example:<br>2021-10-01 |[optional]|
+**TotalBacklinks** | **double?** | total number of backlinks our database contained on the given date |[optional]|
+**TotalPages** | **double?** | total number of pages our database contained on the given date |[optional]|

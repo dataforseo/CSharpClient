@@ -11,12 +11,15 @@ namespace DataForSeo.Client.Models.Responses
         [Newtonsoft.Json.JsonProperty("keyword", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
+        [Newtonsoft.Json.JsonProperty("spell", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Spell { get; set; }
+
         /// <summary>
         /// location code in a POST array
         /// <br/>if there is no data, the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("location_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? LocationCode { get; set; }
+        public double? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -53,7 +56,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>learn more about the metric in this help center article
         /// </summary>
         [Newtonsoft.Json.JsonProperty("competition_index", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CompetitionIndex { get; set; }
+        public double? CompetitionIndex { get; set; }
 
         /// <summary>
         /// monthly average search volume rate
@@ -61,7 +64,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>if there is no data, the value is null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? SearchVolume { get; set; }
+        public double? SearchVolume { get; set; }
 
         /// <summary>
         /// minimum bid for the ad to be displayed at the top of the first page
@@ -93,12 +96,6 @@ namespace DataForSeo.Client.Models.Responses
         /// </summary>
         [Newtonsoft.Json.JsonProperty("monthly_searches", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<MonthlySearches> MonthlySearches { get; set; }
-
-        /// <summary>
-        /// the annotations for the keyword
-        /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword_annotations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public KeywordAnnotations KeywordAnnotations { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

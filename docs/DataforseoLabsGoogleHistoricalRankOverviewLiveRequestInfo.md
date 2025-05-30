@@ -1,139 +1,18 @@
 # DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo
 
-Namespace: DataForSeo.Client.Models.Requests
-
-```csharp
-public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo](./DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.md)
 
 ## Properties
 
-### **Target**
-
-```csharp
-public string Target { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationName**
-
-```csharp
-public string LocationName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LocationCode**
-
-```csharp
-public Nullable<int> LocationCode { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **LanguageName**
-
-```csharp
-public string LanguageName { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **LanguageCode**
-
-```csharp
-public string LanguageCode { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateFrom**
-
-```csharp
-public string DateFrom { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **DateTo**
-
-```csharp
-public string DateTo { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Correlate**
-
-```csharp
-public Nullable<bool> Correlate { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IgnoreSynonyms**
-
-```csharp
-public Nullable<bool> IgnoreSynonyms { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **IncludeClickstreamData**
-
-```csharp
-public Nullable<bool> IncludeClickstreamData { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tag**
-
-```csharp
-public string Tag { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo()**
-
-```csharp
-public DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Target** | **string** | domain<br>required field<br>the domain name of the target website<br>the domain should be specified without https:// and www. |[optional]|
+**LocationName** | **string** | full name of the location<br>required field if you don’t specify location_code<br>Note: it is required to specify either location_name or location_code<br>you can receive the list of available locations with their location_name by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>United Kingdom |[optional]|
+**LocationCode** | **int?** | location code<br>required field if you don’t specify location_name<br>Note: it is required to specify either location_name or location_code<br>you can receive the list of available locations with their location_code by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>2840 |[optional]|
+**LanguageName** | **string** | full name of the language<br>required field if you don’t specify language_code<br>Note: it is required to specify either language_name or language_code<br>you can receive the list of available locations with their language_name by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>English |[optional]|
+**LanguageCode** | **string** | language code<br>required field if you don’t specify language_name<br>Note: it is required to specify either language_name or language_code<br>you can receive the list of available locations with their language_code by making a separate request to the<br>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages<br>example:<br>en |[optional]|
+**DateFrom** | **string** | starting date of the time range<br>optional field<br>if you don’t specify this field, the data will be provided for the previous 6 months<br>minimal possible value: 2020-10-01<br>date format: 'yyyy-mm-dd' |[optional]|
+**DateTo** | **string** | ending date of the time range<br>optional field<br>if you don’t specify this field, the today’s date will be used by default<br>date format: 'yyyy-mm-dd'<br>example:<br>'2021-04-01' |[optional]|
+**Correlate** | **bool?** | correlate data with previously obtained datasets<br>optional field<br>default value: true<br>if you use this parameter, our system will correlate data you obtain now with previously obtained datasets<br>this parameter is intended to mitigate any inconsistencies that may result from changes to our database<br>we recommend always setting correlate to true |[optional]|
+**IgnoreSynonyms** | **bool?** | ignore highly similar keywords<br>optional field<br>if set to true, only data based on core keywords will be returned, data for all highly similar keywords will be excluded;<br>default value: false |[optional]|
+**IncludeClickstreamData** | **bool?** | include or exclude data from clickstream-based metrics in the result<br>optional field<br>if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response;<br>default value: false;<br>Note: historical clickstream data is available from 2024/05 (May, 2024);<br>with this parameter enabled, you will be charged double the price for the request;<br>learn more about how clickstream-based metrics are calculated in this help center article |[optional]|
+**Tag** | **string** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

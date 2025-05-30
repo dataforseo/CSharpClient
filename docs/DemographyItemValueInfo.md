@@ -1,49 +1,9 @@
 # DemographyItemValueInfo
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DemographyItemValueInfo
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DemographyItemValueInfo](./DemographyItemValueInfo.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Value**
-
-```csharp
-public Nullable<int> Value { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DemographyItemValueInfo()**
-
-```csharp
-public DemographyItemValueInfo()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Value** | **double?** | keyword popularity rate within the specified age range<br>using this value you can understand how popular a keyword is within each age range;<br>calculation: we determine the highest popularity value for the relevant keyword across all age groups, and then express all other values as a percentage of that highest value (100);<br>a value of 100 is the highest popularity for the term<br>a value of 0 means there was not enough data for this term |[optional]|

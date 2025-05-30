@@ -9,37 +9,37 @@ namespace DataForSeo.Client.Models.Responses
         /// monthly estimated impressions range
         /// </summary>
         [Newtonsoft.Json.JsonProperty("est_impressions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public EstInfo EstImpressions { get; set; }
+        public AudienceEstimationInfo EstImpressions { get; set; }
 
         /// <summary>
         /// monthly estimated reach user count range
         /// </summary>
         [Newtonsoft.Json.JsonProperty("est_audience_size", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public EstInfo EstAudienceSize { get; set; }
+        public AudienceEstimationInfo EstAudienceSize { get; set; }
 
         /// <summary>
         /// monthly estimated click count range
         /// </summary>
         [Newtonsoft.Json.JsonProperty("est_clicks", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public EstInfo EstClicks { get; set; }
+        public AudienceEstimationInfo EstClicks { get; set; }
 
         /// <summary>
         /// monthly estimated spending range
         /// </summary>
         [Newtonsoft.Json.JsonProperty("est_spend", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public EstInfo EstSpend { get; set; }
+        public AudienceEstimationInfo EstSpend { get; set; }
 
         /// <summary>
         /// indicates the estimated cost per event with range result
         /// </summary>
         [Newtonsoft.Json.JsonProperty("est_cost_per_event", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public EstCInfo EstCostPerEvent { get; set; }
+        public AudienceEstimationInfo EstCostPerEvent { get; set; }
 
         /// <summary>
         /// estimated click-through rate range
         /// </summary>
         [Newtonsoft.Json.JsonProperty("est_ctr", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public EstCInfo EstCtr { get; set; }
+        public AudienceEstimationInfo EstCtr { get; set; }
 
         /// <summary>
         /// suggested bid value under the current targeting
@@ -57,13 +57,13 @@ namespace DataForSeo.Client.Models.Responses
         /// indicates event lost count due to insufficient input bid
         /// </summary>
         [Newtonsoft.Json.JsonProperty("events_lost_to_bid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? EventsLostToBid { get; set; }
+        public double? EventsLostToBid { get; set; }
 
         /// <summary>
         /// indicates the event lost count due to insufficient input budget
         /// </summary>
         [Newtonsoft.Json.JsonProperty("events_lost_to_budget", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? EventsLostToBudget { get; set; }
+        public double? EventsLostToBudget { get; set; }
 
         /// <summary>
         /// monthly estimated user count

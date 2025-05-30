@@ -1,159 +1,20 @@
 # DataforseoLabsGoogleDomainWhoisOverviewLiveItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class DataforseoLabsGoogleDomainWhoisOverviewLiveItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [DataforseoLabsGoogleDomainWhoisOverviewLiveItem](./DataforseoLabsGoogleDomainWhoisOverviewLiveItem.md)
 
 ## Properties
 
-### **SeType**
-
-```csharp
-public string SeType { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **CreatedDatetime**
-
-```csharp
-public string CreatedDatetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ChangedDatetime**
-
-```csharp
-public string ChangedDatetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **ExpirationDatetime**
-
-```csharp
-public string ExpirationDatetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **UpdatedDatetime**
-
-```csharp
-public string UpdatedDatetime { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **FirstSeen**
-
-```csharp
-public string FirstSeen { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **EppStatusCodes**
-
-```csharp
-public ICollection<string> EppStatusCodes { get; set; }
-```
-
-#### Property Value
-
-[ICollection&lt;String&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Tld**
-
-```csharp
-public string Tld { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Registered**
-
-```csharp
-public Nullable<bool> Registered { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Registrar**
-
-```csharp
-public string Registrar { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Metrics**
-
-```csharp
-public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, DataforseoLabsMetricsInfo&gt;](./DataforseoLabsMetricsInfo.md)<br>
-
-### **BacklinksInfo**
-
-```csharp
-public BacklinksInfo BacklinksInfo { get; set; }
-```
-
-#### Property Value
-
-[BacklinksInfo](./BacklinksInfo.md)<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **DataforseoLabsGoogleDomainWhoisOverviewLiveItem()**
-
-```csharp
-public DataforseoLabsGoogleDomainWhoisOverviewLiveItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**Domain** | **string** | domain name |[optional]|
+**CreatedDatetime** | **string** | date and time of registration<br>date and time (in the ISO 8601 format) when the domain was first registered<br>example:<br>'1997-03-29 03:00:00 +00:00' |[optional]|
+**ChangedDatetime** | **string** | date and time when the domain entry was changed<br>date and time (in the ISO 8601 format) when the domain entry was last modified<br>example:<br>'2021-01-14 08:36:28 +00:00' |[optional]|
+**ExpirationDatetime** | **string** | date and time when the domain will expire<br>date and time (in the ISO 8601 format) when the domain is due to expire<br>example:<br>'2022-11-26 17:21:23 +00:00' |[optional]|
+**UpdatedDatetime** | **string** | date and time when the domain was updated<br>date and time (in the ISO 8601 format) when the domain was last updated<br>example:<br>'2021-01-29 13:59:38 +00:00' |[optional]|
+**FirstSeen** | **string** | date and time when our crawler found the domain for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>'2019-11-15 12:57:46 +00:00' |[optional]|
+**EppStatusCodes** | **IEnumerable<string>** | extensive provisioning protocol status codes<br>the status of a domain name registration as defined by ICANN |[optional]|
+**Tld** | **string** | top-level domain<br>top-level domain in the DNS root zone |[optional]|
+**Registered** | **bool?** | domain registration status<br>if false, the domain name registration has expired<br>Note: expired domains will remain in the database for only a short period of time |[optional]|
+**Registrar** | **string** | domain registrar<br>if null, the domain registrar is unknown<br>example:<br>NameCheap, Inc. |[optional]|
+**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain |[optional]|
+**BacklinksInfo** | **BacklinksInfo** | backlink data for the returned domain |[optional]|

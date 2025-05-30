@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models.Responses
         /// number of businesses in the category
         /// </summary>
         [Newtonsoft.Json.JsonProperty("business_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? BusinessCount { get; set; }
+        public double? BusinessCount { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]

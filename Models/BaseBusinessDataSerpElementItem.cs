@@ -1,36 +1,48 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("maps_search", typeof(MapsSearchBusinessDataSerpElementItem))]
+    [JsonInheritance("google_business_info", typeof(GoogleBusinessInfoBusinessDataSerpElementItem))]
+    [JsonInheritance("google_business_post", typeof(GoogleBusinessPostBusinessDataSerpElementItem))]
+    [JsonInheritance("google_reviews_search", typeof(GoogleReviewsSearchBusinessDataSerpElementItem))]
+    [JsonInheritance("trustpilot_search_organic", typeof(TrustpilotSearchOrganicBusinessDataSerpElementItem))]
+    [JsonInheritance("trustpilot_review_search", typeof(TrustpilotReviewSearchBusinessDataSerpElementItem))]
+    [JsonInheritance("tripadvisor_search_organic", typeof(TripadvisorSearchOrganicBusinessDataSerpElementItem))]
+    [JsonInheritance("tripadvisor_review_search", typeof(TripadvisorReviewSearchBusinessDataSerpElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("maps_search", typeof(MapsSearchBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("google_business_info", typeof(GoogleBusinessInfoBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("google_business_post", typeof(GoogleBusinessPostBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("google_reviews_search", typeof(GoogleReviewsSearchBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("trustpilot_search_organic", typeof(TrustpilotSearchOrganicBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("trustpilot_review_search", typeof(TrustpilotReviewSearchBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("tripadvisor_search_organic", typeof(TripadvisorSearchOrganicBusinessDataSerpElementItem))]
-    [JsonInheritanceAttribute("tripadvisor_review_search", typeof(TripadvisorReviewSearchBusinessDataSerpElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseBusinessDataSerpElementItem
+    public class BaseBusinessDataSerpElementItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// position within a group of elements with identical type values
         /// <br/>positions of elements with different type values are omitted from the rank_group
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_group", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankGroup { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank among all the elements
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_absolute", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? RankAbsolute { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? RankAbsolute { get; set; }
 
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

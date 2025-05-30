@@ -1,219 +1,23 @@
 # LocalPackDataforseoLabsSerpElementItem
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class LocalPackDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [BaseDataforseoLabsSerpElementItem](./BaseDataforseoLabsSerpElementItem.md) → [LocalPackDataforseoLabsSerpElementItem](./LocalPackDataforseoLabsSerpElementItem.md)
 
 ## Properties
 
-### **Title**
-
-```csharp
-public string Title { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Description**
-
-```csharp
-public string Description { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Phone**
-
-```csharp
-public string Phone { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **IsPaid**
-
-```csharp
-public Nullable<bool> IsPaid { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Rating**
-
-```csharp
-public RatingInfo Rating { get; set; }
-```
-
-#### Property Value
-
-[RatingInfo](./RatingInfo.md)<br>
-
-### **MainDomain**
-
-```csharp
-public string MainDomain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RelativeUrl**
-
-```csharp
-public string RelativeUrl { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Etv**
-
-```csharp
-public Nullable<float> Etv { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **ImpressionsEtv**
-
-```csharp
-public Nullable<float> ImpressionsEtv { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **EstimatedPaidTrafficCost**
-
-```csharp
-public Nullable<float> EstimatedPaidTrafficCost { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Single&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankChanges**
-
-```csharp
-public RankChanges RankChanges { get; set; }
-```
-
-#### Property Value
-
-[RankChanges](./RankChanges.md)<br>
-
-### **ClickstreamEtv**
-
-```csharp
-public Nullable<int> ClickstreamEtv { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **RankGroup**
-
-```csharp
-public Nullable<int> RankGroup { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **RankAbsolute**
-
-```csharp
-public Nullable<int> RankAbsolute { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **Position**
-
-```csharp
-public string Position { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Xpath**
-
-```csharp
-public string Xpath { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-## Constructors
-
-### **LocalPackDataforseoLabsSerpElementItem()**
-
-```csharp
-public LocalPackDataforseoLabsSerpElementItem()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**SeType** | **string** | search engine type |[optional]|
+**Title** | **string** | title of the result in SERP |[optional]|
+**Description** | **string** | description of the results element in SERP |[optional]|
+**Domain** | **string** | subdomain in SERP |[optional]|
+**Phone** | **string** | phone number |[optional]|
+**Url** | **string** | relevant URL in SERP |[optional]|
+**IsPaid** | **bool?** | indicates whether the element is an ad |[optional]|
+**Rating** | **BusinessDataRatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**MainDomain** | **string** | primary domain name in SERP |[optional]|
+**RelativeUrl** | **string** | URL in SERP that does not specify the HTTPs protocol and domain name |[optional]|
+**Etv** | **float?** | estimated traffic volume<br>estimated paid monthly traffic to the domain<br>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for<br>learn more about how the metric is calculated in this help center article |[optional]|
+**EstimatedPaidTrafficCost** | **float?** | estimated cost of monthly search traffic<br>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for<br>learn more about how the metric is calculated in this help center article |[optional]|
+**ClickstreamEtv** | **double?** | estimated traffic volume based on clickstream data<br>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for<br>to retrieve results for this field, the parameter include_clickstream_data must be set to true<br>learn more about how the metric is calculated in this help center article |[optional]|
+**RankChanges** | **RankChanges** | changes in rankings<br>contains information about the ranking changes of the SERP element since the previous_updated_time |[optional]|
+**BacklinksInfo** | **BacklinksInfo** | backlinks information for the target website |[optional]|
+**RankInfo** | **RankInfo** | page and domain rank information |[optional]|

@@ -9,14 +9,14 @@ namespace DataForSeo.Client.Models.Responses
         /// total number of results in our database relevant to your request
         /// </summary>
         [Newtonsoft.Json.JsonProperty("total_count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? TotalCount { get; set; }
+        public double? TotalCount { get; set; }
 
         /// <summary>
         /// item types
         /// <br/>the number of items in the items array
         /// </summary>
         [Newtonsoft.Json.JsonProperty("count", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? Count { get; set; }
+        public double? Count { get; set; }
 
         /// <summary>
         /// offset in the results array of returned businesses

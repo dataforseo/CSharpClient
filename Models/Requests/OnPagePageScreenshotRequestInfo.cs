@@ -1,26 +1,29 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models.Requests
 {
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class OnPagePageScreenshotRequestInfo
+
+    public class OnPagePageScreenshotRequestInfo 
     {
+
         /// <summary>
         /// page url
         /// <br/>required field
         /// <br/>absolute URL of the page to snap
-        /// <br/>note: if the URL you indicate here returns a 404 status code or the indicated value is not a valid URL, you will obtain "error_message":"Screenshot is empty" in the response array
+        /// <br/>note: if the URL you indicate here returns a 404 status code or the indicated value is not a valid URL, you will obtain 'error_message':'Screenshot is empty' in the response array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// language header for accessing the website
         /// <br/>optional field
         /// <br/>all locale formats are supported (xx, xx-XX, xxx-XX, etc.)
-        /// <br/>note: if you do not specify this parameter, some websites may deny access; in this case, you will obtain "error_message":"Screenshot is empty" in the response array
+        /// <br/>note: if you do not specify this parameter, some websites may deny access; in this case, you will obtain 'error_message':'Screenshot is empty' in the response array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("accept_language", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("accept_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AcceptLanguage { get; set; }
 
         /// <summary>
@@ -31,7 +34,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>
         /// <br/>default value: Mozilla/5.0 (compatible; RSiteAuditor)
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("custom_user_agent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("custom_user_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CustomUserAgent { get; set; }
 
         /// <summary>
@@ -54,7 +57,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>browser_screen_scale_factor: 2
         /// <br/>Note: in this endpoint, the enable_browser_rendering, enable_javascript, load_resources, and enable_xhr parameters are always enabled.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_preset", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_preset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BrowserPreset { get; set; }
 
         /// <summary>
@@ -65,7 +68,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value, in pixels: 240
         /// <br/>maximum value, in pixels: 9999
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_screen_width", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrowserScreenWidth { get; set; }
 
         /// <summary>
@@ -76,7 +79,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value, in pixels: 240
         /// <br/>maximum value, in pixels: 9999
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_screen_height", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenHeight { get; set; }
 
         /// <summary>
@@ -87,7 +90,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: 0.5
         /// <br/>maximum value: 3
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("browser_screen_scale_factor", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? BrowserScreenScaleFactor { get; set; }
 
         /// <summary>
@@ -96,7 +99,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set to false if you want to capture only the part of the page displayed before scrolling
         /// <br/>default value: true
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("full_page_screenshot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("full_page_screenshot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? FullPageScreenshot { get; set; }
 
         /// <summary>
@@ -106,7 +109,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value:
         /// <br/>false
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("disable_cookie_popup", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("disable_cookie_popup", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DisableCookiePopup { get; set; }
 
         /// <summary>
@@ -115,7 +118,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if true, additional proxy pools will be used to obtain the requested data;
         /// <br/>the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("switch_pool", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("switch_pool", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SwitchPool { get; set; }
 
         /// <summary>
@@ -125,22 +128,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors
         /// <br/>possible values: us, de
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ip_pool_for_scan", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ip_pool_for_scan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string IpPoolForScan { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get
-            {
-                return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>());
-            }
+        private IDictionary<string, object> _additionalProperties;
 
-            set
-            {
-                _additionalProperties = value;
-            }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
         }
     }
 }

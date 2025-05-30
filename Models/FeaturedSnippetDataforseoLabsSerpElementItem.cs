@@ -1,103 +1,120 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class FeaturedSnippetDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
+    public class FeaturedSnippetDataforseoLabsSerpElementItem  : BaseDataforseoLabsSerpElementItem 
     {
+
         /// <summary>
         /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
         /// subdomain in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
         /// title of the result in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// the title of the featured snippets source page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("featured_title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("featured_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FeaturedTitle { get; set; }
 
         /// <summary>
         /// description of the results element in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
         /// relevant URL in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// results table
         /// <br/>if there are none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("table", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }
 
         /// <summary>
         /// primary domain name in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("main_domain", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("main_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MainDomain { get; set; }
 
         /// <summary>
-        /// relative URL in SERP
+        /// URL in SERP that does not specify the HTTPs protocol and domain name
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("relative_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("relative_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RelativeUrl { get; set; }
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated organic monthly traffic to the domain;
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+        /// <br/>estimated paid monthly traffic to the domain
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("etv", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of converting organic search traffic into paid
-        /// <br/>represents the estimated monthly cost of running ads (USD) for the returned keyword;
-        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Bing Search
+        /// estimated cost of monthly search traffic
+        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("estimated_paid_traffic_cost", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? EstimatedPaidTrafficCost { get; set; }
+
+        /// <summary>
+        /// estimated traffic volume based on clickstream data
+        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
+        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
+        /// <br/>learn more about how the metric is calculated in this help center article
+        /// </summary>
+        [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? ClickstreamEtv { get; set; }
 
         /// <summary>
         /// changes in rankings
         /// <br/>contains information about the ranking changes of the SERP element since the previous_updated_time
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("rank_changes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("rank_changes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("backlinks_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        /// <summary>
+        /// backlinks information for the target website
+        /// </summary>
+        [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("rank_info", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        /// <summary>
+        /// page and domain rank information
+        /// </summary>
+        [JsonProperty("rank_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankInfo RankInfo { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

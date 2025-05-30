@@ -1,99 +1,14 @@
 # QuestionsAndAnswersElement
 
-Namespace: DataForSeo.Client.Models
-
-```csharp
-public class QuestionsAndAnswersElement
-```
-
-Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/Object) → [QuestionsAndAnswersElement](./QuestionsAndAnswersElement.md)
 
 ## Properties
 
-### **Type**
-
-```csharp
-public string Type { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Url**
-
-```csharp
-public string Url { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **QuestionText**
-
-```csharp
-public string QuestionText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **AnswerText**
-
-```csharp
-public string AnswerText { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Source**
-
-```csharp
-public string Source { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Domain**
-
-```csharp
-public string Domain { get; set; }
-```
-
-#### Property Value
-
-[String](https://docs.microsoft.com/en-us/dotnet/api/String)<br>
-
-### **Votes**
-
-```csharp
-public Nullable<int> Votes { get; set; }
-```
-
-#### Property Value
-
-[Nullable&lt;Int32&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-### **AdditionalProperties**
-
-```csharp
-public IDictionary<string, object> AdditionalProperties { get; set; }
-```
-
-#### Property Value
-
-[IDictionary&lt;String, Object&gt;](https://docs.microsoft.com/en-us/dotnet/api/0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]])<br>
-
-## Constructors
-
-### **QuestionsAndAnswersElement()**
-
-```csharp
-public QuestionsAndAnswersElement()
-```
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Type** | **string** | type of element |[optional]|
+**Url** | **string** | URL |[optional]|
+**QuestionText** | **string** | question included in the item |[optional]|
+**AnswerText** | **string** | answer included in the item |[optional]|
+**Source** | **string** | source of the element<br>indicates the source of information included in the top_stories_element |[optional]|
+**Domain** | **string** | website domain |[optional]|
+**Votes** | **double?** | answer upvotes from the source |[optional]|

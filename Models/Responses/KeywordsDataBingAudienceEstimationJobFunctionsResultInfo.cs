@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// ID of the job function
         /// </summary>
         [Newtonsoft.Json.JsonProperty("job_function_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long? JobFunctionId { get; set; }
+        public double? JobFunctionId { get; set; }
 
         /// <summary>
         /// name of the job function

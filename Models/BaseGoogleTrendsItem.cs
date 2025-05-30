@@ -1,39 +1,51 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("google_trends_graph", typeof(GoogleTrendsGraphElementItem))]
+    [JsonInheritance("google_trends_map", typeof(GoogleTrendsMapElementItem))]
+    [JsonInheritance("google_trends_queries_list", typeof(GoogleTrendsQueriesListElementItem))]
+    [JsonInheritance("google_trends_topics_list", typeof(GoogleTrendsTopicsListElementItem))]
 
-    [Newtonsoft.Json.JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritanceAttribute("google_trends_graph", typeof(GoogleTrendsGraphElementItem))]
-    [JsonInheritanceAttribute("google_trends_map", typeof(GoogleTrendsMapElementItem))]
-    [JsonInheritanceAttribute("google_trends_queries_list", typeof(GoogleTrendsQueriesListElementItem))]
-    [JsonInheritanceAttribute("google_trends_topics_list", typeof(GoogleTrendsTopicsListElementItem))]
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BaseGoogleTrendsItem
+    public class BaseGoogleTrendsItem 
     {
+
         /// <summary>
         /// type of element
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
 
         /// <summary>
         /// the alignment of the element in Google Trends
         /// <br/>can take the following values: 1, 2, 3, 4, etc.
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("position", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Position { get; set; }
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Position { get; set; }
 
         /// <summary>
         /// title of the element in Google Trends
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// relevant keywords
         /// <br/>the data included in the google_trends_graph element is based on the keywords listed in this array
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> Keywords { get; set; }
+        [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Keywords { get; set; }
 
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
     }
 }

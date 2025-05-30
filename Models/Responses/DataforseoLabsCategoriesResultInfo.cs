@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models.Responses
         /// category code
         /// </summary>
         [Newtonsoft.Json.JsonProperty("category_code", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CategoryCode { get; set; }
+        public double? CategoryCode { get; set; }
 
         /// <summary>
         /// full name of the category
@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models.Responses
         /// <br/>"category_code_parent": null
         /// </summary>
         [Newtonsoft.Json.JsonProperty("category_code_parent", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? CategoryCodeParent { get; set; }
+        public double? CategoryCodeParent { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
         [Newtonsoft.Json.JsonExtensionData]
