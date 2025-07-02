@@ -12,13 +12,13 @@ namespace DataForSeo.Client.Models
         /// ranking and traffic data from organic search
         /// </summary>
         [JsonProperty("organic", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public OrganicMetricsInfo Organic { get; set; }
+        public MetricsInfo Organic { get; set; }
 
         /// <summary>
         /// ranking and traffic data from paid search
         /// </summary>
         [JsonProperty("paid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public PaidMetricsInfo Paid { get; set; }
+        public MetricsInfo Paid { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

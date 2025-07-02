@@ -66,19 +66,19 @@ namespace DataForSeo.Client.Models
         /// number of views of the video
         /// </summary>
         [JsonProperty("views_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ViewsCount { get; set; }
+        public long? ViewsCount { get; set; }
 
         /// <summary>
         /// number of likes on the video
         /// </summary>
         [JsonProperty("likes_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LikesCount { get; set; }
+        public long? LikesCount { get; set; }
 
         /// <summary>
         /// number of comments on the video
         /// </summary>
         [JsonProperty("comments_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CommentsCount { get; set; }
+        public long? CommentsCount { get; set; }
 
         /// <summary>
         /// number of subscribers of the channel
@@ -135,7 +135,7 @@ namespace DataForSeo.Client.Models
         /// duration of the video in seconds
         /// </summary>
         [JsonProperty("duration_time_seconds", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DurationTimeSeconds { get; set; }
+        public int? DurationTimeSeconds { get; set; }
 
         /// <summary>
         /// array of elements describing properties of subtitles in the video

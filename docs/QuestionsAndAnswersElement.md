@@ -11,4 +11,4 @@
 **AnswerText** | **string** | answer included in the item |[optional]|
 **Source** | **string** | source of the element<br>indicates the source of information included in the top_stories_element |[optional]|
 **Domain** | **string** | website domain |[optional]|
-**Votes** | **double?** | answer upvotes from the source |[optional]|
+**Votes** | **int?** | answer upvotes from the source |[optional]|

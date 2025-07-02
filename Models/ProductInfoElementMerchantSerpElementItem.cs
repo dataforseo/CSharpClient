@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models
         /// <br/>number of reviews on the product seller’s account
         /// </summary>
         [JsonProperty("seller_reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SellerReviewsCount { get; set; }
+        public long? SellerReviewsCount { get; set; }
 
         /// <summary>
         /// sellers of the product

@@ -10,5 +10,5 @@
 **Locations** | **double?** |  |[optional]|
 **Languages** | **double?** |  |[optional]|
 **Errors** | **double?** |  |[optional]|
-**Reviews** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Reviews** | **AppendixSerpsRatesDataInfo** |  |[optional]|
 **TasksReady** | **double?** |  |[optional]|

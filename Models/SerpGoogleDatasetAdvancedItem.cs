@@ -20,14 +20,14 @@ namespace DataForSeo.Client.Models
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankGroup { get; set; }
+        public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankAbsolute { get; set; }
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// the alignment of the element in SERP
@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         /// count of articles that refer to the dataset
         /// </summary>
         [JsonProperty("scholarly_citations_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ScholarlyCitationsCount { get; set; }
+        public long? ScholarlyCitationsCount { get; set; }
 
         /// <summary>
         /// url of scholarly articles

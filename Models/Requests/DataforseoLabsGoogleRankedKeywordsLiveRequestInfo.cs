@@ -14,7 +14,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the domain name of the target website or URL of the target webpage;
         /// <br/>the domain name must be specified without https:// or www.;
         /// <br/>the webpage URL must be specified with https:// or www.
-        /// <br/>Note: if you specify the webpage URL without https:// or www., the result will be returned for the entire domain rather than the specific page
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }

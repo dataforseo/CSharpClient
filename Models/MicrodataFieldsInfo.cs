@@ -16,7 +16,8 @@ namespace DataForSeo.Client.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// list of microdata types
+        /// parent microdata types
+        /// <br/>for a full list of available types, please visit schema.org
         /// </summary>
         [JsonProperty("types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Types { get; set; }
@@ -29,17 +30,18 @@ namespace DataForSeo.Client.Models
         public string Value { get; set; }
 
         /// <summary>
-        /// list of microdata types
+        /// microdata validation test results
+        /// <br/>sub-type microdata test results that contain detected errors and related messages
         /// </summary>
         [JsonProperty("test_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<MessageInfo> TestResults { get; set; }
+        public MessageInfo TestResults { get; set; }
 
         /// <summary>
         /// microdata fields
         /// <br/>an array of objects containing data fields related to the certain microdata type
         /// </summary>
         [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public MicrodataFieldsInfo Fields { get; set; }
+        public IEnumerable<MicrodataFieldsInfo> Fields { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

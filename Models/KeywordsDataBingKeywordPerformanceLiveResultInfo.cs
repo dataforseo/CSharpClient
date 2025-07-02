@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// <br/>2020
         /// </summary>
         [JsonProperty("year", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Year { get; set; }
+        public int? Year { get; set; }
 
         /// <summary>
         /// indicates the month for which the data is provided for
@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models
         /// <br/>10
         /// </summary>
         [JsonProperty("month", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Month { get; set; }
+        public int? Month { get; set; }
 
         /// <summary>
         /// object containing keyword metrics

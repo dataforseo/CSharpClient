@@ -9,7 +9,7 @@
 **ContactUrl** | **string** | URL of the preferred contact page |[optional]|
 **ContributorUrl** | **string** | URL of the user’s or entity’s Local Guides profile, if available |[optional]|
 **BookOnlineUrl** | **string** | URL in the ‘book online’ button of the element<br>URL directing users to the online booking or order page of the business entity |[optional]|
-**HotelRating** | **double?** | hotel class rating<br>class ratings range between 1-5 stars, learn more<br>if there is no hotel class rating information, the value will be null |[optional]|
+**HotelRating** | **int?** | hotel class rating<br>class ratings range between 1-5 stars, learn more<br>if there is no hotel class rating information, the value will be null |[optional]|
 **PriceLevel** | **string** | property price level<br>can take values: inexpensive, moderate, expensive, very_expensive<br>if there is no price level information, the value will be null |[optional]|
 **Snippet** | **string** | element snippet<br>contains the address and other information about the local establishment featured in the element |[optional]|
 **Address** | **string** | address line<br>address of the local establishment featured in the element |[optional]|
@@ -17,7 +17,7 @@
 **PlaceId** | **string** | unique place identifier<br>place id of the local establishment featured in the element |[optional]|
 **Phone** | **string** | phone number<br>phone number of the local establishment featured in the element |[optional]|
 **MainImage** | **string** | URL of the main image featured in Google My Business profile |[optional]|
-**TotalPhotos** | **double?** | total count of images featured in Google My Business profile |[optional]|
+**TotalPhotos** | **long?** | total count of images featured in Google My Business profile |[optional]|
 **Category** | **string** | business category<br>Google My Business general category that best describes the services provided by the business entity |[optional]|
 **AdditionalCategories** | **IEnumerable<string>** | additional business categories<br>additional Google My Business categories that describe the services provided by the business entity in more detail |[optional]|
 **CategoryIds** | **IEnumerable<string>** | global category IDs<br>universal category IDs that do not change based on the selected country |[optional]|

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// code
         /// </summary>
         [JsonProperty("code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Code { get; set; }
+        public int? Code { get; set; }
 
         /// <summary>
         /// message

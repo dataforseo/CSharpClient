@@ -145,7 +145,7 @@ namespace DataForSeo.Client.Models
         /// total count of images featured in Google My Business profile
         /// </summary>
         [JsonProperty("total_photos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPhotos { get; set; }
+        public long? TotalPhotos { get; set; }
 
         /// <summary>
         /// additional information on the business entity
@@ -175,7 +175,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("is_claimed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsClaimed { get; set; }
         [JsonProperty("questions_and_answers_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? QuestionsAndAnswersCount { get; set; }
+        public int? QuestionsAndAnswersCount { get; set; }
 
         /// <summary>
         /// service details in a form of user-reviewed checks;
@@ -209,7 +209,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no hotel class rating information, the value will be null
         /// </summary>
         [JsonProperty("hotel_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? HotelRating { get; set; }
+        public int? HotelRating { get; set; }
 
         /// <summary>
         /// property price level
@@ -237,7 +237,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information related to operational hours of the business entity
         /// </summary>
         [JsonProperty("work_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessWorkHoursInfo WorkTime { get; set; }
+        public WorkTime WorkTime { get; set; }
 
         /// <summary>
         /// popular times

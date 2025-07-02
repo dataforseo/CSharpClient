@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// total number of results in Amazon SERP
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SeResultsCount { get; set; }
+        public long? SeResultsCount { get; set; }
 
         /// <summary>
         /// date and time when SERP data was last updated

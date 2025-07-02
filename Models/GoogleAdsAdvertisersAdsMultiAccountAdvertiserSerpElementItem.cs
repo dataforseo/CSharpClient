@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the approximate number of ads that are run by the advertiser across all available Google Ads platforms
         /// </summary>
         [JsonProperty("approx_ads_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ApproxAdsCount { get; set; }
+        public long? ApproxAdsCount { get; set; }
 
         /// <summary>
         /// associated advertiser accounts

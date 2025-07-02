@@ -9,6 +9,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// alignment of the element in SERP
+        /// <br/>possible values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
         /// business name of the seller
         /// </summary>
         [JsonProperty("seller_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

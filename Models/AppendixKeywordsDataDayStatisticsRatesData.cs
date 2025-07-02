@@ -1,86 +1,66 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AppendixKeywordsDataDayStatisticsRatesData
+    public class AppendixKeywordsDataDayStatisticsRatesData 
     {
-        [Newtonsoft.Json.JsonProperty("keywords_for_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keywords_for_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo KeywordsForKeywords { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("keywords_for_site", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keywords_for_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo KeywordsForSite { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("search_volume", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo SearchVolume { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("ad_traffic_by_keywords", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ad_traffic_by_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo AdTrafficByKeywords { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Languages { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("locations", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Locations { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("tasks_ready", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("explore", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("explore", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo Explore { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("categories", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Categories { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("errors", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Errors { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("bing", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("bing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataDayStatisticsDataInfo Bing { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("keyword_performance", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword_performance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo KeywordPerformance { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("locations_and_languages", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("locations_and_languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? LocationsAndLanguages { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("google_ads", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("google_ads", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo GoogleAds { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("dataforseo_trends", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("dataforseo_trends", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo DataforseoTrends { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("clickstream_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("clickstream_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo ClickstreamData { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("audience_estimation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("audience_estimation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo AudienceEstimation { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("keyword_suggestions_for_url", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword_suggestions_for_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo KeywordSuggestionsForUrl { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("google", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("google", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("industries", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("industries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Industries { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("id_list", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? IdList { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("search_volume_history", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("search_volume_history", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo SearchVolumeHistory { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("job_functions", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("job_functions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? JobFunctions { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

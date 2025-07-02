@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// price per night
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Price { get; set; }
+        public int? Price { get; set; }
 
         /// <summary>
         /// price currency
@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the maximum number of visitors for which the price offer is valid
         /// </summary>
         [JsonProperty("max_visitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? MaxVisitors { get; set; }
+        public int? MaxVisitors { get; set; }
 
         /// <summary>
         /// price offer images

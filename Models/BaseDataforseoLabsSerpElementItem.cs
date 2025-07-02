@@ -5,31 +5,37 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritance("local_pack", typeof(LocalPackDataforseoLabsSerpElementItem))]
-    [JsonInheritance("featured_snippet", typeof(FeaturedSnippetDataforseoLabsSerpElementItem))]
     [JsonInheritance("organic", typeof(OrganicDataforseoLabsSerpElementItem))]
-    [JsonInheritance("answer_box", typeof(AnswerBoxDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_description_item", typeof(KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_carousel_item", typeof(KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_row_item", typeof(KnowledgeGraphRowItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph", typeof(KnowledgeGraphDataforseoLabsSerpElementItem))]
+    [JsonInheritance("people_also_ask", typeof(PeopleAlsoAskDataforseoLabsSerpElementItem))]
+    [JsonInheritance("video", typeof(VideoDataforseoLabsSerpElementItem))]
+    [JsonInheritance("related_searches", typeof(RelatedSearchesDataforseoLabsSerpElementItem))]
+    [JsonInheritance("images", typeof(ImagesDataforseoLabsSerpElementItem))]
+    [JsonInheritance("people_also_search", typeof(PeopleAlsoSearchDataforseoLabsSerpElementItem))]
     [JsonInheritance("carousel", typeof(CarouselDataforseoLabsSerpElementItem))]
     [JsonInheritance("multi_carousel", typeof(MultiCarouselDataforseoLabsSerpElementItem))]
-    [JsonInheritance("google_flights", typeof(GoogleFlightsDataforseoLabsSerpElementItem))]
+    [JsonInheritance("top_stories", typeof(TopStoriesDataforseoLabsSerpElementItem))]
+    [JsonInheritance("answer_box", typeof(AnswerBoxDataforseoLabsSerpElementItem))]
+    [JsonInheritance("math_solver", typeof(MathSolverDataforseoLabsSerpElementItem))]
+    [JsonInheritance("map", typeof(MapDataforseoLabsSerpElementItem))]
+    [JsonInheritance("featured_snippet", typeof(FeaturedSnippetDataforseoLabsSerpElementItem))]
+    [JsonInheritance("local_pack", typeof(LocalPackDataforseoLabsSerpElementItem))]
+    [JsonInheritance("hotels_pack", typeof(HotelsPackDataforseoLabsSerpElementItem))]
+    [JsonInheritance("twitter", typeof(TwitterDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_list_item", typeof(KnowledgeGraphListItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_part_item", typeof(KnowledgeGraphPartItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_expanded_item", typeof(KnowledgeGraphExpandedItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("knowledge_graph_shopping_item", typeof(KnowledgeGraphShoppingItemDataforseoLabsSerpElementItem))]
+    [JsonInheritance("paid", typeof(PaidDataforseoLabsSerpElementItem))]
     [JsonInheritance("google_reviews", typeof(GoogleReviewsDataforseoLabsSerpElementItem))]
     [JsonInheritance("google_posts", typeof(GooglePostsDataforseoLabsSerpElementItem))]
-    [JsonInheritance("images", typeof(ImagesDataforseoLabsSerpElementItem))]
-    [JsonInheritance("jobs", typeof(JobsDataforseoLabsSerpElementItem))]
-    [JsonInheritance("knowledge_graph_description_item", typeof(KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem))]
-    [JsonInheritance("knowledge_graph_row_item", typeof(KnowledgeGraphRowItemDataforseoLabsSerpElementItem))]
-    [JsonInheritance("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemDataforseoLabsSerpElementItem))]
-    [JsonInheritance("knowledge_graph", typeof(KnowledgeGraphDataforseoLabsSerpElementItem))]
-    [JsonInheritance("hotels_pack", typeof(HotelsPackDataforseoLabsSerpElementItem))]
-    [JsonInheritance("map", typeof(MapDataforseoLabsSerpElementItem))]
-    [JsonInheritance("paid", typeof(PaidDataforseoLabsSerpElementItem))]
-    [JsonInheritance("people_also_ask", typeof(PeopleAlsoAskDataforseoLabsSerpElementItem))]
-    [JsonInheritance("related_searches", typeof(RelatedSearchesDataforseoLabsSerpElementItem))]
-    [JsonInheritance("people_also_search", typeof(PeopleAlsoSearchDataforseoLabsSerpElementItem))]
+    [JsonInheritance("google_flights", typeof(GoogleFlightsDataforseoLabsSerpElementItem))]
     [JsonInheritance("shopping", typeof(ShoppingDataforseoLabsSerpElementItem))]
-    [JsonInheritance("top_stories", typeof(TopStoriesDataforseoLabsSerpElementItem))]
-    [JsonInheritance("twitter", typeof(TwitterDataforseoLabsSerpElementItem))]
-    [JsonInheritance("video", typeof(VideoDataforseoLabsSerpElementItem))]
+    [JsonInheritance("jobs", typeof(JobsDataforseoLabsSerpElementItem))]
     [JsonInheritance("events", typeof(EventsDataforseoLabsSerpElementItem))]
     [JsonInheritance("mention_carousel", typeof(MentionCarouselDataforseoLabsSerpElementItem))]
     [JsonInheritance("recipes", typeof(RecipesDataforseoLabsSerpElementItem))]
@@ -40,10 +46,10 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("questions_and_answers", typeof(QuestionsAndAnswersDataforseoLabsSerpElementItem))]
     [JsonInheritance("find_results_on", typeof(FindResultsOnDataforseoLabsSerpElementItem))]
     [JsonInheritance("stocks_box", typeof(StocksBoxDataforseoLabsSerpElementItem))]
+    [JsonInheritance("visual_stories", typeof(VisualStoriesDataforseoLabsSerpElementItem))]
     [JsonInheritance("commercial_units", typeof(CommercialUnitsDataforseoLabsSerpElementItem))]
     [JsonInheritance("local_services", typeof(LocalServicesDataforseoLabsSerpElementItem))]
     [JsonInheritance("google_hotels", typeof(GoogleHotelsDataforseoLabsSerpElementItem))]
-    [JsonInheritance("math_solver", typeof(MathSolverDataforseoLabsSerpElementItem))]
 
     public class BaseDataforseoLabsSerpElementItem 
     {
@@ -59,14 +65,14 @@ namespace DataForSeo.Client.Models
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankGroup { get; set; }
+        public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankAbsolute { get; set; }
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// the alignment of the element in SERP

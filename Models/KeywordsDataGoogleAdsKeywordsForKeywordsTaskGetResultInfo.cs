@@ -13,15 +13,13 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
-        [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Spell { get; set; }
 
         /// <summary>
         /// location code in a POST array
         /// <br/>if there is no data, the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -58,7 +56,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric in this help center article
         /// </summary>
         [JsonProperty("competition_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CompetitionIndex { get; set; }
+        public int? CompetitionIndex { get; set; }
 
         /// <summary>
         /// monthly average search volume rate
@@ -66,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, the value is null
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// minimum bid for the ad to be displayed at the top of the first page
@@ -98,6 +96,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MonthlySearches> MonthlySearches { get; set; }
+
+        /// <summary>
+        /// the annotations for the keyword
+        /// </summary>
+        [JsonProperty("keyword_annotations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public KeywordAnnotations KeywordAnnotations { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

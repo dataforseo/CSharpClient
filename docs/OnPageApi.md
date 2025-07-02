@@ -46,14 +46,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.OnPageIdListAsync(new List<OnPageIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 11:00:14 +00:00",
-        DatetimeTo = "2025-04-30 11:00:14 +00:00",
+        DatetimeFrom = "2025-01-18 03:39:43 +00:00",
+        DatetimeTo = "2025-03-18 03:39:43 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -98,7 +97,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.OnPageErrorsAsync(new List<OnPageErrorsRequestInfo>()
 {
@@ -148,7 +146,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.ForceStopAsync(new List<OnPageForceStopRequestInfo>()
 {
@@ -196,7 +193,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.OnPageAvailableFiltersAsync();
 ```
@@ -238,7 +234,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.TaskPostAsync(new List<OnPageTaskPostRequestInfo>()
 {
@@ -292,7 +287,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.OnPageTasksReadyAsync();
 ```
@@ -334,7 +328,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.OnPageApi.SummaryAsync(id);
@@ -377,7 +370,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.PagesAsync(new List<OnPagePagesRequestInfo>()
 {
@@ -426,7 +418,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.PagesByResourceAsync(new List<OnPagePagesByResourceRequestInfo>()
 {
@@ -475,7 +466,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.ResourcesAsync(new List<OnPageResourcesRequestInfo>()
 {
@@ -524,7 +514,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.DuplicateTagsAsync(new List<OnPageDuplicateTagsRequestInfo>()
 {
@@ -574,7 +563,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.DuplicateContentAsync(new List<OnPageDuplicateContentRequestInfo>()
 {
@@ -623,7 +611,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.LinksAsync(new List<OnPageLinksRequestInfo>()
 {
@@ -673,7 +660,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.RedirectChainsAsync(new List<OnPageRedirectChainsRequestInfo>()
 {
@@ -722,7 +708,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.NonIndexableAsync(new List<OnPageNonIndexableRequestInfo>()
 {
@@ -771,7 +756,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.WaterfallAsync(new List<OnPageWaterfallRequestInfo>()
 {
@@ -820,7 +804,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.KeywordDensityAsync(new List<OnPageKeywordDensityRequestInfo>()
 {
@@ -870,7 +853,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.MicrodataAsync(new List<OnPageMicrodataRequestInfo>()
 {
@@ -919,7 +901,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.RawHtmlAsync(new List<OnPageRawHtmlRequestInfo>()
 {
@@ -968,7 +949,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.PageScreenshotAsync(new List<OnPagePageScreenshotRequestInfo>()
 {
@@ -1016,7 +996,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.ContentParsingAsync(new List<OnPageContentParsingRequestInfo>()
 {
@@ -1065,7 +1044,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.ContentParsingLiveAsync(new List<OnPageContentParsingLiveRequestInfo>()
 {
@@ -1113,7 +1091,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.InstantPagesAsync(new List<OnPageInstantPagesRequestInfo>()
 {
@@ -1163,7 +1140,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.OnPageLighthouseLanguagesAsync();
 ```
@@ -1205,7 +1181,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.LighthouseAuditsAsync();
 ```
@@ -1247,7 +1222,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.LighthouseVersionsAsync();
 ```
@@ -1289,7 +1263,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.LighthouseTaskPostAsync(new List<OnPageLighthouseTaskPostRequestInfo>()
 {
@@ -1340,7 +1313,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.LighthouseTasksReadyAsync();
 ```
@@ -1382,7 +1354,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.OnPageApi.LighthouseTaskGetJsonAsync(id);
@@ -1425,7 +1396,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.OnPageApi.LighthouseLiveJsonAsync(new List<OnPageLighthouseLiveJsonRequestInfo>()
 {

@@ -9,13 +9,28 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
+
+        /// <summary>
         /// title of the row
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// reference source name or title
+        /// source of the element
+        /// <br/>indicates the source of the video
         /// </summary>
         [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Source { get; set; }
@@ -33,13 +48,13 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// URL
+        /// source URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// domain in the URL
+        /// source domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }

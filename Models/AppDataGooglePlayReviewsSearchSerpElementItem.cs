@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates how many users considered the review helpful and voted with the thumbs up icon
         /// </summary>
         [JsonProperty("helpful_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? HelpfulCount { get; set; }
+        public long? HelpfulCount { get; set; }
 
         /// <summary>
         /// content of the review
@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
         /// response from the developer
         /// </summary>
         [JsonProperty("responses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object Responses { get; set; }
+        public IEnumerable<ResponseDataInfo> Responses { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

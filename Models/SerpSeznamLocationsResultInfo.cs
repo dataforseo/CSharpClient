@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// location code
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <br/>don’t match locations by location_code_parent because the results for Region and Country-level results for most countries are not supported by Baidu SERP API
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCodeParent { get; set; }
+        public int? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location

@@ -20,13 +20,13 @@ namespace DataForSeo.Client.Models
         /// <br/>example.com and blog.example.com are counted as one referring domain
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// number of items in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

@@ -80,7 +80,7 @@ namespace DataForSeo.Client.Models
         /// HTTP status code of the page
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StatusCode { get; set; }
+        public int? StatusCode { get; set; }
 
         /// <summary>
         /// location header
@@ -93,14 +93,14 @@ namespace DataForSeo.Client.Models
         /// indicates the page size, in bytes
         /// </summary>
         [JsonProperty("size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Size { get; set; }
+        public int? Size { get; set; }
 
         /// <summary>
         /// page size after encoding
         /// <br/>indicates the size of the encoded page, in bytes
         /// </summary>
         [JsonProperty("encoded_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? EncodedSize { get; set; }
+        public int? EncodedSize { get; set; }
 
         /// <summary>
         /// type of encoding

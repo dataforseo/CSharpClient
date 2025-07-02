@@ -1,0 +1,9 @@
+# BusyWorkingTimeInfo
+
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Time** | **WorkTimeInfo** | busy hours |[optional]|
+**PopularIndex** | **int?** | popularity index<br>relative time-bound popularity index measured from 0 to 100;<br>higher value corresponds to a busier time of a day |[optional]|

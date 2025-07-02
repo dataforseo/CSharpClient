@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -67,7 +67,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// product and service categories

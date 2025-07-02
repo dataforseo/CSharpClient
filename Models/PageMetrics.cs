@@ -13,60 +13,60 @@ namespace DataForSeo.Client.Models
         /// <br/>the number of links pointing to other websites
         /// </summary>
         [JsonProperty("links_external", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LinksExternal { get; set; }
+        public int? LinksExternal { get; set; }
 
         /// <summary>
         /// number of internal links
         /// <br/>the number of links pointing to other pages within the target website
         /// </summary>
         [JsonProperty("links_internal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LinksInternal { get; set; }
+        public int? LinksInternal { get; set; }
 
         /// <summary>
         /// number of pages with duplicate titles
         /// </summary>
         [JsonProperty("duplicate_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DuplicateTitle { get; set; }
+        public int? DuplicateTitle { get; set; }
 
         /// <summary>
         /// number of pages with duplicate descriptions
         /// </summary>
         [JsonProperty("duplicate_description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DuplicateDescription { get; set; }
+        public int? DuplicateDescription { get; set; }
 
         /// <summary>
         /// number of pages with duplicate content
         /// </summary>
         [JsonProperty("duplicate_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DuplicateContent { get; set; }
+        public int? DuplicateContent { get; set; }
 
         /// <summary>
         /// number of broken links
         /// <br/>number of broken links across all crawled pages on a target website
         /// </summary>
         [JsonProperty("broken_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BrokenLinks { get; set; }
+        public int? BrokenLinks { get; set; }
 
         /// <summary>
         /// number of broken resources
         /// <br/>the number of images and other resources with broken links
         /// </summary>
         [JsonProperty("broken_resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BrokenResources { get; set; }
+        public int? BrokenResources { get; set; }
 
         /// <summary>
         /// number of links present on the target website that may have a conflict
         /// <br/>for example, if 'links_relation_conflict': 2, the target website is referring to the same source by at least one internal link with the rel='nofollow' attribute and by at least one dofollow link
         /// </summary>
         [JsonProperty("links_relation_conflict", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LinksRelationConflict { get; set; }
+        public int? LinksRelationConflict { get; set; }
 
         /// <summary>
         /// number of redirect chains that start and end at the same URL
         /// <br/>number of redirect chains where the destination URL redirects back to the original URL
         /// </summary>
         [JsonProperty("redirect_loop", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RedirectLoop { get; set; }
+        public int? RedirectLoop { get; set; }
 
         /// <summary>
         /// shows how website is optimized on a 100-point scale
@@ -84,7 +84,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can receive a list of non-indexable URLs using this endpoint
         /// </summary>
         [JsonProperty("non_indexable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NonIndexable { get; set; }
+        public int? NonIndexable { get; set; }
 
         /// <summary>
         /// page-specific on-page check-ups

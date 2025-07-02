@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
         /// <br/>can take the following values: 1, 2, 3, 4, etc.
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Position { get; set; }
+        public int? Position { get; set; }
 
         /// <summary>
         /// relevant keywords

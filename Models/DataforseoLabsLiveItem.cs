@@ -1,35 +1,38 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class DataforseoLabsLiveItem
+    public class DataforseoLabsLiveItem 
     {
+
         /// <summary>
         /// search engine type
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("se_type", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
         /// keyword data for the returned keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("keyword_data", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("keyword_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public KeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
         /// contains data on the domain’s SERP element found for the returned keyword
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("ranked_serp_element", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("ranked_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankedSerpElement RankedSerpElement { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

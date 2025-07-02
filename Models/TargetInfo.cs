@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("target_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TargetSpamScore { get; set; }
+        public int? TargetSpamScore { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

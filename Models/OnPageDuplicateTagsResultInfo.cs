@@ -19,27 +19,27 @@ namespace DataForSeo.Client.Models
         /// details of the crawling session
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public CrawlStatus CrawlStatus { get; set; }
+        public CrawlStatusInfo CrawlStatus { get; set; }
 
         /// <summary>
         /// total number of pages with duplicate tags
         /// <br/>displays the total number of pages with duplicate tags of the target website
         /// </summary>
         [JsonProperty("total_pages_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPagesCount { get; set; }
+        public long? TotalPagesCount { get; set; }
 
         /// <summary>
         /// number of pages with duplicate tags in the response
         /// <br/>displays the number of pages with duplicate tags returned in the response
         /// </summary>
         [JsonProperty("pages_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PagesCount { get; set; }
+        public long? PagesCount { get; set; }
 
         /// <summary>
         /// number of items in the results array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

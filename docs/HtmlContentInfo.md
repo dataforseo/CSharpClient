@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**PlainTextSize** | **double?** | total size of the text on the page measured in bytes |[optional]|
+**PlainTextSize** | **int?** | total size of the text on the page measured in bytes |[optional]|
 **PlainTextRate** | **double?** | plaintext rate value<br>plain_text_size to size ratio |[optional]|
 **PlainTextWordCount** | **float?** | number of words on the page |[optional]|
 **AutomatedReadabilityIndex** | **float?** | Automated Readability Index |[optional]|

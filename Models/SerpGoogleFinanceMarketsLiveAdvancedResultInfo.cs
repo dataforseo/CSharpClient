@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public string LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -57,8 +57,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;
-        /// <br/>in this case, the value will be null
+        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
@@ -82,13 +81,13 @@ namespace DataForSeo.Client.Models
         /// total number of results in SERP
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SeResultsCount { get; set; }
+        public long? SeResultsCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// market indexes related to the market trends element

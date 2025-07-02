@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array

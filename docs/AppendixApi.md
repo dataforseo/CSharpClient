@@ -20,7 +20,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppendixApi.UserDataAsync();
 ```
@@ -62,7 +61,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppendixApi.AppendixErrorsAsync();
 ```
@@ -104,7 +102,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppendixApi.WebhookResendAsync(new List<AppendixWebhookResendRequestInfo>()
 {
@@ -152,7 +149,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppendixApi.AppendixStatusAsync();
 ```

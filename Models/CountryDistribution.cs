@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// search volume in a given country
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// percentage of global search volume

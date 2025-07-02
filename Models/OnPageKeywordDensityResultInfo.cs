@@ -19,20 +19,20 @@ namespace DataForSeo.Client.Models
         /// details of the crawling session
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public CrawlStatus CrawlStatus { get; set; }
+        public CrawlStatusInfo CrawlStatus { get; set; }
 
         /// <summary>
         /// total number of relevant items
         /// <br/>total number of keywords on the specified website or web page matching the set keyword_length and filters
         /// </summary>
         [JsonProperty("total_items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalItemsCount { get; set; }
+        public long? TotalItemsCount { get; set; }
 
         /// <summary>
         /// number of items in the results array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

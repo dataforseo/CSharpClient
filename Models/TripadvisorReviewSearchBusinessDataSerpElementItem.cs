@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// the rating score submitted by the reviewer
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// date of the reviewer’s visit to the local establishment
@@ -80,7 +80,7 @@ namespace DataForSeo.Client.Models
         /// <br/>contains highlighted review criteria and assessments
         /// </summary>
         [JsonProperty("review_highlights", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object ReviewHighlights { get; set; }
+        public IEnumerable<ReviewHighlights> ReviewHighlights { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

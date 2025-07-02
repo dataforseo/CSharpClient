@@ -6,8 +6,8 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**RankGroup** | **double?** | position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **double?** | absolute rank among all the elements |[optional]|
+**RankGroup** | **int?** | position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
+**RankAbsolute** | **int?** | absolute rank among all the elements |[optional]|
 **QuestionId** | **string** | ID of the question |[optional]|
 **Url** | **string** | URL of the question |[optional]|
 **ProfileImageUrl** | **string** | URL of the user’s profile image |[optional]|

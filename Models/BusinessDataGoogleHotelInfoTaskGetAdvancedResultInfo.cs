@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         /// <br/>class rating that ranges between 1-5 stars and displayed after review ratings in hotel summary
         /// </summary>
         [JsonProperty("stars", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Stars { get; set; }
+        public int? Stars { get; set; }
 
         /// <summary>
         /// hotel class rating

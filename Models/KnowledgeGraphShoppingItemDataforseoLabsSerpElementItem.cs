@@ -1,13 +1,17 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class KnowledgeGraphShoppingItemDataforseoLabsSerpElementItem : BaseDataforseoLabsSerpElementItem
+    public class KnowledgeGraphShoppingItemDataforseoLabsSerpElementItem  : BaseDataforseoLabsSerpElementItem 
     {
+
         /// <summary>
         /// title of the result in SERP
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
@@ -15,24 +19,23 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>action:listen_artist
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("data_attrid", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("data_attrid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }
 
         /// <summary>
         /// additional items present in the element
         /// <br/>if there are none, equals null
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("items", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<KnowledgeGraphShoppingElement> Items { get; set; }
+        [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<KnowledgeGraphShoppingElement> Items { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -9,23 +9,16 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// task identifier
-        /// <br/>unique task identifier in our system in the UUID format
+        /// name of the supported app category
         /// </summary>
-        [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Id { get; set; }
-        [JsonProperty("se", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Se { get; set; }
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-        [JsonProperty("date_posted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DatePosted { get; set; }
-        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Tag { get; set; }
-        [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string EndpointAdvanced { get; set; }
-        [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string EndpointHtml { get; set; }
+        [JsonProperty("category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Category { get; set; }
+
+        /// <summary>
+        /// number of app listings that make up the supported app category
+        /// </summary>
+        [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? Count { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

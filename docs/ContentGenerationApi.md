@@ -26,7 +26,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.GenerateLiveAsync(new List<ContentGenerationGenerateLiveRequestInfo>()
 {
@@ -87,7 +86,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.GenerateTextLiveAsync(new List<ContentGenerationGenerateTextLiveRequestInfo>()
 {
@@ -151,7 +149,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.GenerateMetaTagsLiveAsync(new List<ContentGenerationGenerateMetaTagsLiveRequestInfo>()
 {
@@ -199,7 +196,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.GenerateSubTopicsLiveAsync(new List<ContentGenerationGenerateSubTopicsLiveRequestInfo>()
 {
@@ -248,7 +244,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.ParaphraseLiveAsync(new List<ContentGenerationParaphraseLiveRequestInfo>()
 {
@@ -297,7 +292,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.CheckGrammarLiveAsync(new List<ContentGenerationCheckGrammarLiveRequestInfo>()
 {
@@ -346,7 +340,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.ContentGenerationCheckGrammarLanguagesAsync();
 ```
@@ -388,7 +381,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.GrammarRulesAsync();
 ```
@@ -430,7 +422,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.TextSummaryLiveAsync(new List<ContentGenerationTextSummaryLiveRequestInfo>()
 {
@@ -479,7 +470,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentGenerationApi.ContentGenerationTextSummaryLanguagesAsync();
 ```

@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can learn more about clickstream search volume in this Help Center article
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// distribution of clickstream by countries

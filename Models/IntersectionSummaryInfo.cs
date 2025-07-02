@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// total number of intersections
         /// </summary>
         [JsonProperty("intersections_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? IntersectionsCount { get; set; }
+        public long? IntersectionsCount { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

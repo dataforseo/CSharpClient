@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// location code
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public string LocationCode { get; set; }
 
         /// <summary>
         /// location name

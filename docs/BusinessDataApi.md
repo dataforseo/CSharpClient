@@ -72,14 +72,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(new List<BusinessDataIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 11:02:35 +00:00",
-        DatetimeTo = "2025-04-30 11:02:35 +00:00",
+        DatetimeFrom = "2025-01-18 03:42:51 +00:00",
+        DatetimeTo = "2025-03-18 03:42:51 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -124,7 +123,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataErrorsAsync(new List<BusinessDataErrorsRequestInfo>()
 {
@@ -174,7 +172,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataBusinessListingsLocationsAsync();
 ```
@@ -216,7 +213,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessListingsCategoriesAsync();
 ```
@@ -258,7 +254,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessListingsAvailableFiltersAsync();
 ```
@@ -300,7 +295,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessListingsSearchLiveAsync(new List<BusinessDataBusinessListingsSearchLiveRequestInfo>()
 {
@@ -356,7 +350,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessListingsCategoriesAggregationLiveAsync(new List<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo>()
 {
@@ -412,7 +405,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataGoogleLocationsAsync();
 ```
@@ -454,7 +446,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.BusinessDataApi.BusinessDataGoogleLocationsCountryAsync(country);
@@ -497,7 +488,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataGoogleLanguagesAsync();
 ```
@@ -539,7 +529,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTaskPostAsync(new List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo>()
 {
@@ -589,7 +578,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTasksReadyAsync();
 ```
@@ -631,7 +619,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataTasksReadyAsync();
 ```
@@ -673,7 +660,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTaskGetAsync(id);
@@ -716,7 +702,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoLiveAsync(new List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo>()
 {
@@ -766,7 +751,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTaskPostAsync(new List<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo>()
 {
@@ -816,7 +800,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTasksReadyAsync();
 ```
@@ -858,7 +841,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTaskGetAsync(id);
@@ -901,7 +883,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskPostAsync(new List<BusinessDataGoogleHotelSearchesTaskPostRequestInfo>()
 {
@@ -962,7 +943,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTasksReadyAsync();
 ```
@@ -1004,7 +984,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskGetAsync(id);
@@ -1047,7 +1026,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesLiveAsync(new List<BusinessDataGoogleHotelSearchesLiveRequestInfo>()
 {
@@ -1107,7 +1085,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskPostAsync(new List<BusinessDataGoogleHotelInfoTaskPostRequestInfo>()
 {
@@ -1160,7 +1137,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTasksReadyAsync();
 ```
@@ -1202,7 +1178,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskGetAdvancedAsync(id);
@@ -1245,9 +1220,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "88fa2621-45d1-4372-9005-b75cdbbb812f";
+var id = "6d5d97dc-711a-4d2c-82e1-cffe4a608416";
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskGetHtmlAsync(id);
 ```
 
@@ -1288,7 +1262,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveAdvancedAsync(new List<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo>()
 {
@@ -1338,7 +1311,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveHtmlAsync(new List<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo>()
 {
@@ -1388,7 +1360,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleReviewsTaskPostAsync(new List<BusinessDataGoogleReviewsTaskPostRequestInfo>()
 {
@@ -1440,7 +1411,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleReviewsTasksReadyAsync();
 ```
@@ -1482,7 +1452,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleReviewsTaskGetAsync(id);
@@ -1525,7 +1494,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTaskPostAsync(new List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo>()
 {
@@ -1575,7 +1543,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTasksReadyAsync();
 ```
@@ -1617,7 +1584,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTaskGetAsync(id);
@@ -1660,7 +1626,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTaskPostAsync(new List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo>()
 {
@@ -1710,7 +1675,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTasksReadyAsync();
 ```
@@ -1752,7 +1716,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTaskGetAsync(id);
@@ -1795,7 +1758,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersLiveAsync(new List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo>()
 {
@@ -1845,7 +1807,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TrustpilotSearchTaskPostAsync(new List<BusinessDataTrustpilotSearchTaskPostRequestInfo>()
 {
@@ -1894,7 +1855,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TrustpilotSearchTasksReadyAsync();
 ```
@@ -1936,7 +1896,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.TrustpilotSearchTaskGetAsync(id);
@@ -1979,7 +1938,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTaskPostAsync(new List<BusinessDataTrustpilotReviewsTaskPostRequestInfo>()
 {
@@ -2028,7 +1986,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTasksReadyAsync();
 ```
@@ -2070,7 +2027,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTaskGetAsync(id);
@@ -2113,7 +2069,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLocationsAsync();
 ```
@@ -2155,7 +2110,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLocationsCountryAsync(country);
@@ -2198,7 +2152,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLanguagesAsync();
 ```
@@ -2240,7 +2193,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TripadvisorSearchTaskPostAsync(new List<BusinessDataTripadvisorSearchTaskPostRequestInfo>()
 {
@@ -2290,7 +2242,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TripadvisorSearchTasksReadyAsync();
 ```
@@ -2332,7 +2283,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.TripadvisorSearchTaskGetAsync(id);
@@ -2375,7 +2325,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTaskPostAsync(new List<BusinessDataTripadvisorReviewsTaskPostRequestInfo>()
 {
@@ -2426,7 +2375,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTasksReadyAsync();
 ```
@@ -2468,7 +2416,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTaskGetAsync(id);
@@ -2511,7 +2458,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.SocialMediaPinterestLiveAsync(new List<BusinessDataSocialMediaPinterestLiveRequestInfo>()
 {
@@ -2565,7 +2511,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.SocialMediaFacebookLiveAsync(new List<BusinessDataSocialMediaFacebookLiveRequestInfo>()
 {
@@ -2619,7 +2564,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BusinessDataApi.SocialMediaRedditLiveAsync(new List<BusinessDataSocialMediaRedditLiveRequestInfo>()
 {

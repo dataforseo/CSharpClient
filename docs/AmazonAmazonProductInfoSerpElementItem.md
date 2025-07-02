@@ -5,6 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**Position** | **string** | the alignment of the element in Amazon SERP<br>possible values:<br>left, right |[optional]|
 **Title** | **string** | product title |[optional]|
 **Details** | **string** | product specs and other details |[optional]|
 **ImageUrl** | **string** | the URL of the product image |[optional]|

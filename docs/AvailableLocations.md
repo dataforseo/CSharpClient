@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationCode** | **double?** | location code |[optional]|
+**LocationCode** | **string** | location code |[optional]|
 **LocationName** | **string** | location name |[optional]|
 **CountryIsoCode** | **string** | ISO country code of the location |[optional]|
 **LocationType** | **string** | location type<br>possible values:<br>Country, Region |[optional]|

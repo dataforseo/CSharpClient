@@ -24,21 +24,21 @@ namespace DataForSeo.Client.Models
         /// total number of results in our database relevant to your request
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// rank of all URLs citing the keyword
         /// <br/>normalized sum of ranks of all URLs citing the target keyword for the given date
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rank { get; set; }
+        public int? Rank { get; set; }
 
         /// <summary>
         /// top domains citing the target keyword
         /// <br/>contains objects with top domains citing the target category and citation count per each domain
         /// </summary>
         [JsonProperty("top_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<TopDomainCountInfo> TopDomains { get; set; }
+        public IEnumerable<TopDomainInfo> TopDomains { get; set; }
 
         /// <summary>
         /// sentiment connotations

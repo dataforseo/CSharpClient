@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// number of businesses in the category
         /// </summary>
         [JsonProperty("business_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BusinessCount { get; set; }
+        public long? BusinessCount { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

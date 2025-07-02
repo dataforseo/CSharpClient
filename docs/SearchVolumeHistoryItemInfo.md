@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Year** | **double?** | year |[optional]|
-**Month** | **double?** | month |[optional]|
-**Day** | **double?** | day of the month |[optional]|
-**SearchVolume** | **double?** | search volume rate |[optional]|
+**Year** | **int?** | year |[optional]|
+**Month** | **int?** | month |[optional]|
+**Day** | **int?** | day of the month |[optional]|
+**SearchVolume** | **long?** | search volume rate |[optional]|

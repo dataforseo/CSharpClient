@@ -24,32 +24,32 @@ namespace DataForSeo.Client.Models
         /// number of internal links on the page
         /// </summary>
         [JsonProperty("internal_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? InternalLinksCount { get; set; }
+        public long? InternalLinksCount { get; set; }
 
         /// <summary>
         /// number of external links on the page
         /// </summary>
         [JsonProperty("external_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ExternalLinksCount { get; set; }
+        public long? ExternalLinksCount { get; set; }
 
         /// <summary>
         /// number of images on the page
         /// </summary>
         [JsonProperty("images_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ImagesCount { get; set; }
+        public long? ImagesCount { get; set; }
 
         /// <summary>
         /// number of words on the page
         /// </summary>
         [JsonProperty("words_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? WordsCount { get; set; }
+        public long? WordsCount { get; set; }
 
         /// <summary>
         /// spam score of the page
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("page_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageSpamScore { get; set; }
+        public int? PageSpamScore { get; set; }
 
         /// <summary>
         /// array of social media tags found on the page

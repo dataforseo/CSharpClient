@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// HTML level
         /// </summary>
         [JsonProperty("level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Level { get; set; }
+        public int? Level { get; set; }
 
         /// <summary>
         /// primary content on the page

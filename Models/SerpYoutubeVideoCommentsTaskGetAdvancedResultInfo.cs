@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -56,6 +56,13 @@ namespace DataForSeo.Client.Models
         public SpellInfo Spell { get; set; }
 
         /// <summary>
+        /// search refinement chips
+        /// <br/>equals null
+        /// </summary>
+        [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public RefinementChipsInfo RefinementChips { get; set; }
+
+        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item:
@@ -74,13 +81,13 @@ namespace DataForSeo.Client.Models
         /// number of comments on the video
         /// </summary>
         [JsonProperty("comments_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CommentsCount { get; set; }
+        public long? CommentsCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// elements of search results found in SERP

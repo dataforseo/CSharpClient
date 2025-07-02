@@ -30,13 +30,13 @@ namespace DataForSeo.Client.Models
         /// total amount of results relevant the request
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// contains relevant backlinks and referring domains data

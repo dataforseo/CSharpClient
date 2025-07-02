@@ -8,13 +8,13 @@ namespace DataForSeo.Client.Models
     public class AppendixMerchantGoogleInfo 
     {
         [JsonProperty("products", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo Products { get; set; }
+        public AppendixSerpsRatesDataInfo Products { get; set; }
         [JsonProperty("sellers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixSellersGoogleMerchantLimitsRatesDataInfo Sellers { get; set; }
         [JsonProperty("product_spec", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo ProductSpec { get; set; }
+        public AppendixSerpsRatesDataInfo ProductSpec { get; set; }
         [JsonProperty("product_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo ProductInfo { get; set; }
+        public AppendixSerpsRatesDataInfo ProductInfo { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

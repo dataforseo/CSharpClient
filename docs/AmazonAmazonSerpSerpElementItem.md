@@ -6,6 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **SeType** | **string** | search engine type |[optional]|
+**Position** | **string** | the alignment of the element in Amazon SERP<br>can take the following values:<br>left, right |[optional]|
 **Domain** | **string** | Amazon domain |[optional]|
 **Title** | **string** | product title |[optional]|
 **Url** | **string** | URL of the product page |[optional]|
@@ -19,6 +20,6 @@
 **IsAmazonChoice** | **bool?** | “Amazon’s choice” label<br>if the value is true, the product is marked with the “Amazon’s choice” label |[optional]|
 **Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **DeliveryInfo** | **AmazonDeliveryInfo** | delivery information<br>delivery information including free and fast delivery date ranges |[optional]|
-**BoughtPastMonth** | **double?** | number of product purchases in the past month |[optional]|
+**BoughtPastMonth** | **int?** | number of product purchases in the past month |[optional]|
 **Description** | **string** | description of the product |[optional]|
 **DataAsin** | **string** | unique product identifier on Amazon<br>note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon<br>example:<br>B07G82D89J |[optional]|

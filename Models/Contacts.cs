@@ -14,12 +14,6 @@ namespace DataForSeo.Client.Models
         [JsonProperty("telephones", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Telephones { get; set; }
 
-        /// <summary>
-        /// array of emails
-        /// </summary>
-        [JsonProperty("emails", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> Emails { get; set; }
-
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

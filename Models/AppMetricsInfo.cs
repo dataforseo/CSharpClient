@@ -12,37 +12,37 @@ namespace DataForSeo.Client.Models
         /// number of organic SERPs where the product ranks #1
         /// </summary>
         [JsonProperty("pos_1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Pos1 { get; set; }
+        public int? Pos1 { get; set; }
 
         /// <summary>
         /// number of organic SERPs where the product ranks #2-3
         /// </summary>
         [JsonProperty("pos_2_3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Pos23 { get; set; }
+        public int? Pos23 { get; set; }
 
         /// <summary>
         /// number of organic SERPs where the product ranks #4-10
         /// </summary>
         [JsonProperty("pos_4_10", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Pos410 { get; set; }
+        public int? Pos410 { get; set; }
 
         /// <summary>
         /// number of organic SERPs where the product ranks #11-100
         /// </summary>
         [JsonProperty("pos_11_100", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Pos11100 { get; set; }
+        public int? Pos11100 { get; set; }
 
         /// <summary>
         /// total count of Amazon organic SERPs that contain the product
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Count { get; set; }
+        public long? Count { get; set; }
 
         /// <summary>
         /// total search volume of the product’s ranking keywords in organic SERP
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

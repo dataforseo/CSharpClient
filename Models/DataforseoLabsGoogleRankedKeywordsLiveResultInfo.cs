@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -38,13 +38,13 @@ namespace DataForSeo.Client.Models
         /// total number of results in our database relevant to your request
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// ranking data relevant to the specified domain
@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// contains ranked keywords and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsRankedKeywordsLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

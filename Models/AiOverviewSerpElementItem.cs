@@ -9,6 +9,20 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
+
+        /// <summary>
         /// indicates whether the element is loaded asynchronically
         /// <br/>if true, the ai_overview element is loaded asynchronically;
         /// <br/>if false, the ai_overview element is loaded from cache;

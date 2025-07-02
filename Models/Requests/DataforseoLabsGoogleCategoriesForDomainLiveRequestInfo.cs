@@ -108,9 +108,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in
         /// <br/>example:
         /// <br/>['metrics.organic.pos_1,'&gt;',0]
+        /// <br/>[['metrics.organic.count','&gt;=',100],
+        /// <br/>'and',
+        /// <br/>['metrics.organic.impressions_etv','in',[10,100]]]
         /// <br/>[[['metrics.organic.count','&gt;=',100],'and',['metrics.organic.pos_1','&gt;',0]],
         /// <br/>'or',
-        /// <br/>['metrics.organic.etv','in',[10,100]]]
+        /// <br/>['metrics.organic.impressions_etv','in',[10,100]]]
         /// <br/>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

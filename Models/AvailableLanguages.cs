@@ -32,13 +32,13 @@ namespace DataForSeo.Client.Models
         /// the number of keywords available for the given location and language
         /// </summary>
         [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Keywords { get; set; }
+        public int? Keywords { get; set; }
 
         /// <summary>
         /// the number of SERP pages available for the given location and language
         /// </summary>
         [JsonProperty("serps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Serps { get; set; }
+        public int? Serps { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

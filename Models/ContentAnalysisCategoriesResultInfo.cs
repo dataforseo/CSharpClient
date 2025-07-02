@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// category code
         /// </summary>
         [JsonProperty("category_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CategoryCode { get; set; }
+        public int? CategoryCode { get; set; }
 
         /// <summary>
         /// full name of the category
@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'category_name': 'Apparel Accessories'
         /// </summary>
         [JsonProperty("category_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CategoryCodeParent { get; set; }
+        public int? CategoryCodeParent { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

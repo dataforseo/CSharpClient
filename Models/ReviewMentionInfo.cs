@@ -24,19 +24,19 @@ namespace DataForSeo.Client.Models
         /// count of positive reviews by criterion
         /// </summary>
         [JsonProperty("positive_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PositiveCount { get; set; }
+        public long? PositiveCount { get; set; }
 
         /// <summary>
         /// count of negative reviews by criterion
         /// </summary>
         [JsonProperty("negative_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NegativeCount { get; set; }
+        public long? NegativeCount { get; set; }
 
         /// <summary>
         /// count of all reviews by criterion
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// element is visible by default

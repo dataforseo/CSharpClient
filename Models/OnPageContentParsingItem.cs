@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// status code of the page
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StatusCode { get; set; }
+        public int? StatusCode { get; set; }
 
         /// <summary>
         /// parsed content of the page

@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// details of the crawling session
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public CrawlStatus CrawlStatus { get; set; }
+        public CrawlStatusInfo CrawlStatus { get; set; }
 
         /// <summary>
         /// microdata validation test results
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// number of items in the results array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

@@ -9,3 +9,4 @@
 **Text** | **string** | anchor text |[optional]|
 **ImageAlt** | **string** | alternative text for the image |[optional]|
 **ImageSrc** | **string** | url of the image |[optional]|
+**PageToStatusCode** | **int?** | status code of the referenced page<br>status code of the page to which the link is pointing |[optional]|

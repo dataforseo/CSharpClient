@@ -30,13 +30,13 @@ namespace DataForSeo.Client.Models
         /// the total number of reviews
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// the rating score of the establishment submitted by reviewers
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

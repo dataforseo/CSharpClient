@@ -60,14 +60,14 @@ namespace DataForSeo.Client.Models
         /// the total number of reviews
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// rating of the corresponding local establishment
         /// <br/>popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// rating distribution by votes
@@ -81,7 +81,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// found reviews

@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// the total number of reviews of the app
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// price of the app

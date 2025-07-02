@@ -106,12 +106,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// initial dataset filtering parameters
         /// <br/>optional field
-        /// <br/>initial filtering parameters that apply to fields in the Search endpoint;
-        /// <br/>you can add several filters at once (8 filters maximum);
-        /// <br/>you should set a logical operator and, or between the conditions;
+        /// <br/>you can add several filters at once (8 filters maximum)
+        /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
         /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like,not_like, has, has_not, match, not_match
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters;
+        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
         /// <br/>['domain','&lt;&gt;', 'logitech.com']
         /// <br/>[['domain','&lt;&gt;','logitech.com'],'and',['content_info.connotation_types.negative','&gt;',1000]]
@@ -122,8 +121,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>['content_info.text_category','has',10994]]]
         /// <br/>for more information about filters, please refer to Content Analysis API – Filters
         /// </summary>
-        [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<object> InitialDatasetFilters { get; set; }
+        [JsonProperty("initial_dataset_filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> InitialDatasetFilter { get; set; }
 
         /// <summary>
         /// defines the scale used for calculating and displaying the rank values

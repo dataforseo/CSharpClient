@@ -5,6 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
+**Xpath** | **string** | the XPath of the element |[optional]|
 **Title** | **string** | title of the link element |[optional]|
 **DataAttrid** | **string** | google defined data attribute ID<br>example:<br>ss:/webfacts:net_worth |[optional]|
 **Link** | **LinkElement** | link of the element |[optional]|

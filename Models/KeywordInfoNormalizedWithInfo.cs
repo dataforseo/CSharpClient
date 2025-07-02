@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         /// <br/>array of objects with search volume rates in a certain month of a year
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
+        public IEnumerable<MonthlySearches> MonthlySearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

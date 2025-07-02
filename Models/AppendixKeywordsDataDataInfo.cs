@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("google", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataLimitsRatesDataInfo Google { get; set; }
         [JsonProperty("keyword_ideas_ads_api", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo KeywordIdeasAdsApi { get; set; }
+        public AppendixSerpsRatesDataInfo KeywordIdeasAdsApi { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

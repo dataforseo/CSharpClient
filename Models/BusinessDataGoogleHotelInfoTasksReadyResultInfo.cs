@@ -43,8 +43,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// URL for collecting the results of the task
         /// </summary>
-        [JsonProperty("endpoint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Endpoint { get; set; }
+        [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string EndpointAdvanced { get; set; }
+
+        /// <summary>
+        /// URL for collecting the results of the task
+        /// </summary>
+        [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string EndpointHtml { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

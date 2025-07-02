@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         /// statistics of your spending
         /// </summary>
         [JsonProperty("statistics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixStatisticsDataInfo Statistics { get; set; }
+        public AppendixStatisticsMoneyData Statistics { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

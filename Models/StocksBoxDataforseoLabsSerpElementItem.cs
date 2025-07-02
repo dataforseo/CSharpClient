@@ -9,12 +9,6 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
         /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -22,7 +16,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// source of the element
-        /// <br/>indicates the source of information included in the top_stories_element
+        /// <br/>indicates the source of information included in the shopping_element
         /// </summary>
         [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Source { get; set; }
@@ -34,25 +28,26 @@ namespace DataForSeo.Client.Models
         public string Snippet { get; set; }
 
         /// <summary>
-        /// price indicated in the element
+        /// price of the shopping element
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// sitelink URL
+        /// relevant URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// domain in SERP
+        /// domain where a link points
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// table element
+        /// results table
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

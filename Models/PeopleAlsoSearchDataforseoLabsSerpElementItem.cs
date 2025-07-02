@@ -21,7 +21,8 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Items { get; set; }

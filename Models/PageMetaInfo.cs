@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example: 65001
         /// </summary>
         [JsonProperty("charset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Charset { get; set; }
+        public int? Charset { get; set; }
 
         /// <summary>
         /// indicates whether a page’s ‘meta robots’ allows crawlers to follow the links on the page
@@ -68,79 +68,79 @@ namespace DataForSeo.Client.Models
         /// number of internal links on the page
         /// </summary>
         [JsonProperty("internal_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? InternalLinksCount { get; set; }
+        public long? InternalLinksCount { get; set; }
 
         /// <summary>
         /// number of external links on the page
         /// </summary>
         [JsonProperty("external_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ExternalLinksCount { get; set; }
+        public long? ExternalLinksCount { get; set; }
 
         /// <summary>
         /// number of internal links pointing at the page
         /// </summary>
         [JsonProperty("inbound_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? InboundLinksCount { get; set; }
+        public long? InboundLinksCount { get; set; }
 
         /// <summary>
         /// number of images on the page
         /// </summary>
         [JsonProperty("images_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ImagesCount { get; set; }
+        public long? ImagesCount { get; set; }
 
         /// <summary>
         /// total size of images on the page measured in bytes
         /// </summary>
         [JsonProperty("images_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ImagesSize { get; set; }
+        public int? ImagesSize { get; set; }
 
         /// <summary>
         /// number of scripts on the page
         /// </summary>
         [JsonProperty("scripts_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ScriptsCount { get; set; }
+        public long? ScriptsCount { get; set; }
 
         /// <summary>
         /// total size of scripts on the page measured in bytes
         /// </summary>
         [JsonProperty("scripts_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ScriptsSize { get; set; }
+        public int? ScriptsSize { get; set; }
 
         /// <summary>
         /// number of stylesheets on the page
         /// </summary>
         [JsonProperty("stylesheets_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StylesheetsCount { get; set; }
+        public long? StylesheetsCount { get; set; }
 
         /// <summary>
         /// total size of stylesheets on the page measured in bytes
         /// </summary>
         [JsonProperty("stylesheets_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StylesheetsSize { get; set; }
+        public int? StylesheetsSize { get; set; }
 
         /// <summary>
         /// length of the title tag in characters
         /// </summary>
         [JsonProperty("title_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TitleLength { get; set; }
+        public int? TitleLength { get; set; }
 
         /// <summary>
         /// length of the description tag in characters
         /// </summary>
         [JsonProperty("description_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DescriptionLength { get; set; }
+        public int? DescriptionLength { get; set; }
 
         /// <summary>
         /// number of scripts on the page that block page rendering
         /// </summary>
         [JsonProperty("render_blocking_scripts_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RenderBlockingScriptsCount { get; set; }
+        public long? RenderBlockingScriptsCount { get; set; }
 
         /// <summary>
         /// number of CSS styles on the page that block page rendering
         /// </summary>
         [JsonProperty("render_blocking_stylesheets_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RenderBlockingStylesheetsCount { get; set; }
+        public long? RenderBlockingStylesheetsCount { get; set; }
 
         /// <summary>
         /// Core Web Vitals metric measuring the layout stability of the page
@@ -175,11 +175,11 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> DuplicateMetaTags { get; set; }
 
         /// <summary>
-        /// spellcheck
-        /// <br/>hunspell spellcheck errors
+        /// autocorrection of the search engine
+        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public HunspellInfo Spell { get; set; }
+        public SpellInfo Spell { get; set; }
 
         /// <summary>
         /// object of social media tags found on the page

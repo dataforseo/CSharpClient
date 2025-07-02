@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the item
+        /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google defined data attribute ID
         /// <br/>example:
-        /// <br/>action:listen_artist
+        /// <br/>ss:/webfacts:net_worth
         /// </summary>
         [JsonProperty("data_attrid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }

@@ -7,8 +7,8 @@
 |------------ | ------------- | ------------- | -------------|
 **SeType** | **string** | search engine type |[optional]|
 **Keyword** | **string** | keyword received in a POST array<br>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |[optional]|
-**LocationCode** | **double?** | location code in a POST array |[optional]|
+**LocationCode** | **int?** | location code in a POST array |[optional]|
 **LanguageCode** | **string** | language code in a POST array |[optional]|
-**TotalCount** | **double?** | the number of results returned in the items array |[optional]|
-**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**TotalCount** | **int?** | the number of results returned in the items array |[optional]|
+**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
 **Items** | **IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveItem>** | additional items present in the element<br>if there are none, equals null |[optional]|

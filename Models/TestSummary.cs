@@ -12,25 +12,25 @@ namespace DataForSeo.Client.Models
         /// number of fatal microdata errors
         /// </summary>
         [JsonProperty("fatal", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Fatal { get; set; }
+        public int? Fatal { get; set; }
 
         /// <summary>
         /// number of serious microdata errors
         /// </summary>
         [JsonProperty("error", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Error { get; set; }
+        public int? Error { get; set; }
 
         /// <summary>
         /// number of microdata warnings
         /// </summary>
         [JsonProperty("warning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Warning { get; set; }
+        public int? Warning { get; set; }
 
         /// <summary>
         /// number of microdata information flags
         /// </summary>
         [JsonProperty("info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Info { get; set; }
+        public int? Info { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

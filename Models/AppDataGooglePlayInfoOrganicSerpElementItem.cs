@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// the total number of reviews the app has
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// price of the app
@@ -68,7 +68,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the exact number of installs of the app
         /// </summary>
         [JsonProperty("installs_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? InstallsCount { get; set; }
+        public long? InstallsCount { get; set; }
 
         /// <summary>
         /// name of the app developer

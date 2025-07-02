@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// total count of duplicate pages
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// pages with duplicate tags

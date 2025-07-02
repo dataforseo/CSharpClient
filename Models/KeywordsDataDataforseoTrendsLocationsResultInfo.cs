@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// location code
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'location_name': 'Lower Austria,Austria'
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCodeParent { get; set; }
+        public int? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location
@@ -45,6 +45,13 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationType { get; set; }
+
+        /// <summary>
+        /// DataForSEO trends location name
+        /// <br/>you can use this field for matching obtained results with the location_name parameter specified in the request
+        /// </summary>
+        [JsonProperty("geo_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string GeoName { get; set; }
 
         /// <summary>
         /// DataForSEO trends location identifier

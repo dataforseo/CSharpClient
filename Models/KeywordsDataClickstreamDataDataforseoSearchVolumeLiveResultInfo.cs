@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public string LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         /// ithe number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public string ItemsCount { get; set; }
 
         /// <summary>
         /// array of keywords

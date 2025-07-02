@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// ID of the job function
         /// </summary>
         [JsonProperty("job_function_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? JobFunctionId { get; set; }
+        public long? JobFunctionId { get; set; }
 
         /// <summary>
         /// name of the job function

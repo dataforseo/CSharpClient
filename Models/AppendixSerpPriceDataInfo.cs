@@ -7,12 +7,12 @@ namespace DataForSeo.Client.Models
 
     public class AppendixSerpPriceDataInfo 
     {
+        [JsonProperty("html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
         [JsonProperty("advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Advanced { get; set; }
         [JsonProperty("regular", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Regular { get; set; }
-        [JsonProperty("html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixTaskKeywordsDataPriceDataInfo Html { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

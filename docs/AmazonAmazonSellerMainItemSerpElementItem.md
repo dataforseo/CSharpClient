@@ -5,6 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**Position** | **string** | alignment of the element in SERP<br>possible values:<br>left, right |[optional]|
 **SellerName** | **string** | business name of the seller |[optional]|
 **SellerUrl** | **string** | url forwarding to the seller’s page on Amazon |[optional]|
 **ShipsFrom** | **string** | sender company name |[optional]|

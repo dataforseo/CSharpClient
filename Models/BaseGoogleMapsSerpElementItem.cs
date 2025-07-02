@@ -23,14 +23,14 @@ namespace DataForSeo.Client.Models
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankGroup { get; set; }
+        public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankAbsolute { get; set; }
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// domain in SERP
@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// the distribution of ratings of the business entity

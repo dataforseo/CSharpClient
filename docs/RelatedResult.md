@@ -21,7 +21,7 @@
 **ExtendedSnippet** | **string** | includes additional information appended after the result description in SERP |[optional]|
 **Images** | **IEnumerable<ImagesElement>** | images of the element |[optional]|
 **AmpVersion** | **bool?** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
-**Rating** | **BusinessDataRatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
 **Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
 **AboutThisResult** | **AboutThisResultElement** | contains information from the ‘About this result’ panel<br>‘About this result’ panel provides additional context about why Google returned this result for the given query;<br>this feature appears after clicking on the three dots next to most results |[optional]|

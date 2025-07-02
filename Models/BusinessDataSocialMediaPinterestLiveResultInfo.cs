@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         /// <br/>this field shows the number of content saves made from the related page_url using the Pinterest Save Button
         /// </summary>
         [JsonProperty("pins_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PinsCount { get; set; }
+        public long? PinsCount { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

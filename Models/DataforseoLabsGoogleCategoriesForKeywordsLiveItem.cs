@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can download the full list of possible categories
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<double?> Categories { get; set; }
+        public IEnumerable<int?> Categories { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

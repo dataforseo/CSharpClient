@@ -9,19 +9,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
         /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MentionCarouselElement> Items { get; set; }

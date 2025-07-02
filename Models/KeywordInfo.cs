@@ -52,7 +52,7 @@ namespace DataForSeo.Client.Models
         /// <br/>represents the (approximate) number of searches for the given keyword idea on google.com
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// minimum bid for the ad to be displayed at the top of the first page
@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can download the full list of possible categories
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<double?> Categories { get; set; }
+        public IEnumerable<int?> Categories { get; set; }
 
         /// <summary>
         /// monthly searches

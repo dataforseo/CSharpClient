@@ -15,6 +15,14 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
+        /// the alignment of the element in Amazon SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
         /// Amazon domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -108,7 +116,7 @@ namespace DataForSeo.Client.Models
         /// number of product purchases in the past month
         /// </summary>
         [JsonProperty("bought_past_month", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BoughtPastMonth { get; set; }
+        public int? BoughtPastMonth { get; set; }
 
         /// <summary>
         /// description of the product

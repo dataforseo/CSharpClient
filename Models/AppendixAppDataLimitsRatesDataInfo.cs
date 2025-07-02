@@ -8,13 +8,13 @@ namespace DataForSeo.Client.Models
     public class AppendixAppDataLimitsRatesDataInfo 
     {
         [JsonProperty("app_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo AppInfo { get; set; }
+        public AppendixSerpsRatesDataInfo AppInfo { get; set; }
         [JsonProperty("app_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo AppList { get; set; }
+        public AppendixSerpsRatesDataInfo AppList { get; set; }
         [JsonProperty("app_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo AppReviews { get; set; }
+        public AppendixSerpsRatesDataInfo AppReviews { get; set; }
         [JsonProperty("app_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo AppSearches { get; set; }
+        public AppendixSerpsRatesDataInfo AppSearches { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Errors { get; set; }
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

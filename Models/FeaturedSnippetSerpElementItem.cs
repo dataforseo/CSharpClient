@@ -39,6 +39,20 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
+
+        /// <summary>
         /// title
         /// </summary>
         [JsonProperty("featured_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

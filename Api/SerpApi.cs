@@ -435,6 +435,320 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
+        public virtual async Task<SerpGoogleAiModeLanguagesResponseInfo> SerpGoogleAiModeLanguagesAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/languages"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeLanguagesResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeTaskPostResponseInfo> GoogleAiModeTaskPostAsync(IEnumerable<SerpGoogleAiModeTaskPostRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/task_post";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeTaskPostResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeTasksReadyResponseInfo> GoogleAiModeTasksReadyAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/tasks_ready"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeTasksReadyResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeTasksFixedResponseInfo> GoogleAiModeTasksFixedAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/tasks_fixed"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeTasksFixedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeTaskGetAdvancedResponseInfo> GoogleAiModeTaskGetAdvancedAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/task_get/advanced/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeTaskGetAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeTaskGetHtmlResponseInfo> GoogleAiModeTaskGetHtmlAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/task_get/html/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeTaskGetHtmlResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeLiveAdvancedResponseInfo> GoogleAiModeLiveAdvancedAsync(IEnumerable<SerpGoogleAiModeLiveAdvancedRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/live/advanced";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeLiveAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleAiModeLiveHtmlResponseInfo> GoogleAiModeLiveHtmlAsync(IEnumerable<SerpGoogleAiModeLiveHtmlRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/ai_mode/live/html";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeLiveHtmlResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
         public virtual async Task<SerpGoogleOrganicTasksFixedResponseInfo> GoogleOrganicTasksFixedAsync()
         {
             using (var request = new HttpRequestMessage())

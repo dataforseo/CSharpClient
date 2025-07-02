@@ -24,19 +24,19 @@ namespace DataForSeo.Client.Models
         /// video width in pixels
         /// </summary>
         [JsonProperty("width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Width { get; set; }
+        public long? Width { get; set; }
 
         /// <summary>
         /// video height in pixels
         /// </summary>
         [JsonProperty("height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Height { get; set; }
+        public int? Height { get; set; }
 
         /// <summary>
         /// bit rate of the video
         /// </summary>
         [JsonProperty("bitrate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Bitrate { get; set; }
+        public int? Bitrate { get; set; }
 
         /// <summary>
         /// media type of the video
@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// frame rate of the video
         /// </summary>
         [JsonProperty("fps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Fps { get; set; }
+        public int? Fps { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

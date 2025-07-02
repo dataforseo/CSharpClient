@@ -26,13 +26,13 @@ namespace DataForSeo.Client.Models
         /// number of unique websites
         /// </summary>
         [JsonProperty("websites_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? WebsitesCount { get; set; }
+        public long? WebsitesCount { get; set; }
 
         /// <summary>
         /// number of unique entities
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Count { get; set; }
+        public long? Count { get; set; }
 
         /// <summary>
         /// the most mentioned service details

@@ -1,9 +1,13 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class Values
+    public class Values 
     {
+
         /// <summary>
         /// location identifier
         /// <br/>you can use this field for matching obtained results with location parameters specified in the request
@@ -11,7 +15,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>US-NY
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("geo_id", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("geo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GeoId { get; set; }
 
         /// <summary>
@@ -21,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>Andorra
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("geo_name", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("geo_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GeoName { get; set; }
 
         /// <summary>
@@ -33,17 +37,16 @@ namespace DataForSeo.Client.Models
         /// <br/>a value of 50 means that the term is half as popular
         /// <br/>a value of 0 means there was not enough data for this term
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("value", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Value { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

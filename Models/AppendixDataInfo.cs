@@ -61,18 +61,18 @@ namespace DataForSeo.Client.Models
         public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
         [JsonProperty("total_content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalContentGeneration { get; set; }
-        [JsonProperty("total_traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalTrafficAnalytics { get; set; }
-        [JsonProperty("traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo TrafficAnalytics { get; set; }
         [JsonProperty("total_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalReviews { get; set; }
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo Reviews { get; set; }
+        public AppendixSerpsRatesDataInfo Reviews { get; set; }
         [JsonProperty("total_social", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalSocial { get; set; }
         [JsonProperty("social", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo Social { get; set; }
+        public AppendixSerpsRatesDataInfo Social { get; set; }
+        [JsonProperty("total_traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TotalTrafficAnalytics { get; set; }
+        [JsonProperty("traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixSerpsRatesDataInfo TrafficAnalytics { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

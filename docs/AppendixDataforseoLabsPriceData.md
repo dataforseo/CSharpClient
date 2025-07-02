@@ -23,7 +23,6 @@
 **HistoricalBulkTrafficEstimation** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **HistoricalKeywordData** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **HistoricalRankOverview** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
-**HistoricalSearchVolume** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **HistoricalSerps** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **KeywordIdeas** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **KeywordOverview** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

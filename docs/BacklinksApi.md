@@ -40,14 +40,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(new List<BacklinksIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 10:59:59 +00:00",
-        DatetimeTo = "2025-04-30 10:59:59 +00:00",
+        DatetimeFrom = "2025-01-18 03:39:12 +00:00",
+        DatetimeTo = "2025-03-18 03:39:12 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -92,7 +91,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BacklinksErrorsAsync(new List<BacklinksErrorsRequestInfo>()
 {
@@ -142,7 +140,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BacklinksAvailableFiltersAsync();
 ```
@@ -184,7 +181,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.IndexAsync();
 ```
@@ -226,7 +222,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.SummaryLiveAsync(new List<BacklinksSummaryLiveRequestInfo>()
 {
@@ -277,15 +272,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.HistoryLiveAsync(new List<BacklinksHistoryLiveRequestInfo>()
 {
     new()
     {
         Target = "cnn.com",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2020-01-01",
+        DateTo = "2021-01-01",
     }
 });
 ```
@@ -327,7 +321,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BacklinksLiveAsync(new List<BacklinksBacklinksLiveRequestInfo>()
 {
@@ -377,7 +370,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.AnchorsLiveAsync(new List<BacklinksAnchorsLiveRequestInfo>()
 {
@@ -426,7 +418,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.DomainPagesLiveAsync(new List<BacklinksDomainPagesLiveRequestInfo>()
 {
@@ -475,7 +466,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.DomainPagesSummaryLiveAsync(new List<BacklinksDomainPagesSummaryLiveRequestInfo>()
 {
@@ -524,7 +514,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.ReferringDomainsLiveAsync(new List<BacklinksReferringDomainsLiveRequestInfo>()
 {
@@ -574,7 +563,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.ReferringNetworksLiveAsync(new List<BacklinksReferringNetworksLiveRequestInfo>()
 {
@@ -625,7 +613,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.CompetitorsLiveAsync(new List<BacklinksCompetitorsLiveRequestInfo>()
 {
@@ -674,7 +661,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.DomainIntersectionLiveAsync(new List<BacklinksDomainIntersectionLiveRequestInfo>()
 {
@@ -733,7 +719,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.PageIntersectionLiveAsync(new List<BacklinksPageIntersectionLiveRequestInfo>()
 {
@@ -790,15 +775,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.TimeseriesSummaryLiveAsync(new List<BacklinksTimeseriesSummaryLiveRequestInfo>()
 {
     new()
     {
         Target = "dataforseo.com",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2021-12-01",
+        DateTo = "2022-02-01",
         GroupRange = "month",
     }
 });
@@ -841,15 +825,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.TimeseriesNewLostSummaryLiveAsync(new List<BacklinksTimeseriesNewLostSummaryLiveRequestInfo>()
 {
     new()
     {
         Target = "dataforseo.com",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2021-12-01",
+        DateTo = "2022-02-01",
         GroupRange = "month",
     }
 });
@@ -892,7 +875,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkRanksLiveAsync(new List<BacklinksBulkRanksLiveRequestInfo>()
 {
@@ -952,7 +934,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkBacklinksLiveAsync(new List<BacklinksBulkBacklinksLiveRequestInfo>()
 {
@@ -1012,7 +993,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkSpamScoreLiveAsync(new List<BacklinksBulkSpamScoreLiveRequestInfo>()
 {
@@ -1072,7 +1052,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkReferringDomainsLiveAsync(new List<BacklinksBulkReferringDomainsLiveRequestInfo>()
 {
@@ -1132,7 +1111,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(new List<BacklinksBulkNewLostBacklinksLiveRequestInfo>()
 {
@@ -1151,7 +1129,7 @@ var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(new List
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        DateFrom = "2025-02-28",
+        DateFrom = "2021-01-01",
     }
 });
 ```
@@ -1193,7 +1171,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(new List<BacklinksBulkNewLostReferringDomainsLiveRequestInfo>()
 {
@@ -1212,7 +1189,7 @@ var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(n
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        DateFrom = "2025-02-28",
+        DateFrom = "2023-09-01",
     }
 });
 ```
@@ -1254,7 +1231,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.BacklinksApi.BulkPagesSummaryLiveAsync(new List<BacklinksBulkPagesSummaryLiveRequestInfo>()
 {

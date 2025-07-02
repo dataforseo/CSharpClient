@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// found reviews

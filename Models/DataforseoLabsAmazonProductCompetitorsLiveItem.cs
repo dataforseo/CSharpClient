@@ -36,13 +36,13 @@ namespace DataForSeo.Client.Models
         /// <br/>the value for a given product may differ when combined with different target products
         /// </summary>
         [JsonProperty("sum_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SumPosition { get; set; }
+        public int? SumPosition { get; set; }
 
         /// <summary>
         /// number of intersecting keywords
         /// </summary>
         [JsonProperty("intersections", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Intersections { get; set; }
+        public int? Intersections { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords

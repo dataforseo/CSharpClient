@@ -21,6 +21,14 @@ namespace DataForSeo.Client.Models
         public string Source { get; set; }
 
         /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
         /// website domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

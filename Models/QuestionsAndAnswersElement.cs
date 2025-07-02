@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// answer upvotes from the source
         /// </summary>
         [JsonProperty("votes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Votes { get; set; }
+        public int? Votes { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

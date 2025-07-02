@@ -9,18 +9,6 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// time range within which a result was fetched
-        /// </summary>
-        [JsonProperty("fetch_timing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public FetchTiming FetchTiming { get; set; }
-
-        /// <summary>
-        /// indicates whether a page is a single resource
-        /// </summary>
-        [JsonProperty("is_resource", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IsResource { get; set; }
-
-        /// <summary>
         /// resource properties
         /// <br/>the value depends on the resource_type
         /// <br/>note that if you do not indicate a url when setting a task, resource’s meta is returned based on the data from the page where our crawler first saw the resource;
@@ -28,6 +16,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("meta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PageMetaInfo Meta { get; set; }
+
+        /// <summary>
+        /// resource fething time range
+        /// </summary>
+        [JsonProperty("fetch_timing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public FetchTiming FetchTiming { get; set; }
 
         /// <summary>
         /// indicates the expected type of resource

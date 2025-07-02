@@ -38,13 +38,13 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rank { get; set; }
+        public int? Rank { get; set; }
 
         /// <summary>
         /// indicates the number of backlinks
         /// </summary>
         [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Backlinks { get; set; }
+        public long? Backlinks { get; set; }
 
         /// <summary>
         /// spam score of the backlinks
@@ -52,13 +52,13 @@ namespace DataForSeo.Client.Models
         /// <br/>to learn more about how the metric is calculated, refer to this Help Center page
         /// </summary>
         [JsonProperty("backlinks_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BacklinksSpamScore { get; set; }
+        public long? BacklinksSpamScore { get; set; }
 
         /// <summary>
         /// number of crawled pages for the target
         /// </summary>
         [JsonProperty("crawled_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CrawledPages { get; set; }
+        public int? CrawledPages { get; set; }
 
         /// <summary>
         /// information about the target
@@ -71,21 +71,21 @@ namespace DataForSeo.Client.Models
         /// <br/>calculated as the sum of internal links on the pages of the specified target
         /// </summary>
         [JsonProperty("internal_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? InternalLinksCount { get; set; }
+        public long? InternalLinksCount { get; set; }
 
         /// <summary>
         /// number of external links on the page
         /// <br/>calculated as the sum of external links on the pages of the specified target
         /// </summary>
         [JsonProperty("external_links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ExternalLinksCount { get; set; }
+        public long? ExternalLinksCount { get; set; }
 
         /// <summary>
         /// number of broken backlinks
         /// <br/>number of broken backlinks pointing to the target
         /// </summary>
         [JsonProperty("broken_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BrokenBacklinks { get; set; }
+        public long? BrokenBacklinks { get; set; }
 
         /// <summary>
         /// number of broken pages
@@ -93,26 +93,26 @@ namespace DataForSeo.Client.Models
         /// <br/>note that the number of broken pages includes pages on the target discovered by following external links, but it may also include pages discovered by following the target’s sitemap
         /// </summary>
         [JsonProperty("broken_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BrokenPages { get; set; }
+        public int? BrokenPages { get; set; }
 
         /// <summary>
         /// indicates the number of referring domains
         /// <br/>referring domains include subdomains that are counted as separate domains for this metric
         /// </summary>
         [JsonProperty("referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringDomains { get; set; }
+        public long? ReferringDomains { get; set; }
 
         /// <summary>
         /// number of domains pointing at least one nofollow link to the target
         /// </summary>
         [JsonProperty("referring_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringDomainsNofollow { get; set; }
+        public long? ReferringDomainsNofollow { get; set; }
 
         /// <summary>
         /// indicates the number of referring main domains
         /// </summary>
         [JsonProperty("referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringMainDomains { get; set; }
+        public long? ReferringMainDomains { get; set; }
 
         /// <summary>
         /// number of main domains pointing at least one nofollow link to the target
@@ -125,25 +125,19 @@ namespace DataForSeo.Client.Models
         /// <br/>number of IP addresses pointing to this page
         /// </summary>
         [JsonProperty("referring_ips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringIps { get; set; }
+        public long? ReferringIps { get; set; }
 
         /// <summary>
         /// number of referring subnetworks
         /// </summary>
         [JsonProperty("referring_subnets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringSubnets { get; set; }
+        public long? ReferringSubnets { get; set; }
 
         /// <summary>
         /// indicates the number of pages pointing to the target
         /// </summary>
         [JsonProperty("referring_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringPages { get; set; }
-
-        /// <summary>
-        /// number of referring pages pointing at least one nofollow link to the target
-        /// </summary>
-        [JsonProperty("referring_pages_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringPagesNofollow { get; set; }
+        public long? ReferringPages { get; set; }
 
         /// <summary>
         /// top-level domains of the referring links
@@ -194,6 +188,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("referring_links_countries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ReferringLinksCountries { get; set; }
+
+        /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target
+        /// </summary>
+        [JsonProperty("referring_pages_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

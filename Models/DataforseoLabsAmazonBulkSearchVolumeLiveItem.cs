@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>represents the (approximate) number of searches for the returned keyword on Amazon
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

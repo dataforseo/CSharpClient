@@ -5,8 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
 **Title** | **string** | title of the result in SERP |[optional]|
-**Url** | **string** | sitelink URL |[optional]|
-**Domain** | **string** | domain in SERP |[optional]|
-**Items** | **IEnumerable<LocalServicesElement>** | elements of search results found in SERP |[optional]|
+**Url** | **string** | relevant URL |[optional]|
+**Domain** | **string** | domain where a link points |[optional]|
+**Items** | **IEnumerable<LocalServicesElement>** | additional items present in the element<br>if there are none, equals null |[optional]|

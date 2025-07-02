@@ -9,10 +9,24 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
+
+        /// <summary>
         /// the value of the rating
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Value { get; set; }
+        public int? Value { get; set; }
 
         /// <summary>
         /// value converted to a requested currency

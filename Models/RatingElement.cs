@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// the amount of feedbac
         /// </summary>
         [JsonProperty("votes_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? VotesCount { get; set; }
+        public long? VotesCount { get; set; }
 
         /// <summary>
         /// the maximum value for a rating_type

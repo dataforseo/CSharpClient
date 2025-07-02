@@ -30,9 +30,9 @@
 **TotalContentAnalysis** | **double?** |  |[optional]|
 **ContentGeneration** | **AppendixContentGenerationLimitsRatesDataInfo** |  |[optional]|
 **TotalContentGeneration** | **double?** |  |[optional]|
-**TotalTrafficAnalytics** | **double?** |  |[optional]|
-**TrafficAnalytics** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
 **TotalReviews** | **double?** |  |[optional]|
-**Reviews** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Reviews** | **AppendixSerpsRatesDataInfo** |  |[optional]|
 **TotalSocial** | **double?** |  |[optional]|
-**Social** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Social** | **AppendixSerpsRatesDataInfo** |  |[optional]|
+**TotalTrafficAnalytics** | **double?** |  |[optional]|
+**TrafficAnalytics** | **AppendixSerpsRatesDataInfo** |  |[optional]|

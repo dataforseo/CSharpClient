@@ -12,6 +12,6 @@
 **Images** | **IEnumerable<string>** | product images<br>contains urls to product images |[optional]|
 **Features** | **IEnumerable<string>** | product features<br>contains snippets with the description of product features |[optional]|
 **Rating** | **RatingElement** | product rating <br>the popularity rate based on reviews |[optional]|
-**SellerReviewsCount** | **double?** | number of seller reviews<br>number of reviews on the product seller’s account |[optional]|
+**SellerReviewsCount** | **long?** | number of seller reviews<br>number of reviews on the product seller’s account |[optional]|
 **Sellers** | **IEnumerable<ProductSeller>** | sellers of the product<br>number of reviews on the product seller’s account |[optional]|
 **Variations** | **IEnumerable<ProductVariation>** | variations of the product<br>contains brief information about different product variations |[optional]|

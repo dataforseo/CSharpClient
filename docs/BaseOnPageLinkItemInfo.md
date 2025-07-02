@@ -18,4 +18,3 @@
 **Direction** | **string** | direction of the link<br>possible values: internal, external |[optional]|
 **IsBroken** | **bool?** | link is broken<br>indicates whether a link is directing to a broken page or resource |[optional]|
 **IsLinkRelationConflict** | **bool?** | indicates that the link may have a conflict with another link<br>if true, at least one link pointing to link_to has a rel='nofollow' attribute and at least one is dofollow |[optional]|
-**PageToStatusCode** | **double?** | status code of the referenced page<br>status code of the page to which the link is pointing |[optional]|

@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// the distribution of ratings of the business entity
@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Models
         /// total count of images featured in Google My Business profile
         /// </summary>
         [JsonProperty("total_photos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string TotalPhotos { get; set; }
+        public long? TotalPhotos { get; set; }
 
         /// <summary>
         /// business category
@@ -113,7 +113,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no hotel class rating information, the value will be null
         /// </summary>
         [JsonProperty("hotel_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string HotelRating { get; set; }
+        public int? HotelRating { get; set; }
 
         /// <summary>
         /// global category IDs
@@ -127,7 +127,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information about work hours of the local establishment
         /// </summary>
         [JsonProperty("work_hours", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessWorkHoursInfo WorkHours { get; set; }
+        public WorkHours WorkHours { get; set; }
 
         /// <summary>
         /// the unique identifier of the element in SERP

@@ -30,13 +30,13 @@ namespace DataForSeo.Client.Models
         /// the latest year for which search volume data is available
         /// </summary>
         [JsonProperty("last_year_in_monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LastYearInMonthlySearches { get; set; }
+        public int? LastYearInMonthlySearches { get; set; }
 
         /// <summary>
         /// the latest month for which search volume data is available
         /// </summary>
         [JsonProperty("last_month_in_monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LastMonthInMonthlySearches { get; set; }
+        public int? LastMonthInMonthlySearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

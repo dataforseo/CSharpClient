@@ -39,13 +39,13 @@ namespace DataForSeo.Client.Models
         public string CardId { get; set; }
 
         /// <summary>
-        /// sitelink URL
+        /// relevant URL in SERP
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// URL of the image
+        /// URL of the image from knowledge graph
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
@@ -63,7 +63,8 @@ namespace DataForSeo.Client.Models
         public string Cid { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseDataforseoLabsSerpElementItem> Items { get; set; }

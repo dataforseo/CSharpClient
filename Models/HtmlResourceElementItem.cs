@@ -34,12 +34,11 @@ namespace DataForSeo.Client.Models
         /// total DOM size of a page
         /// </summary>
         [JsonProperty("total_dom_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalDomSize { get; set; }
+        public long? TotalDomSize { get; set; }
 
         /// <summary>
         /// the result of executing a specified JS script
-        /// <br/>note that you should specify a custom_js field when setting a task to receive this data and the field type and its value will totally depend on the script you specified;
-        /// <br/>you can also filter the results by this value specifying filters in the following way:
+        /// <br/>note that you should specify a custom_js field when setting a task to receive this data and the field type and its value will totally depend on the script you specified;you can also filter the results by this value specifying filters in the following way:
         /// <br/>['custom_js_response.url', 'like', 'pixel']
         /// </summary>
         [JsonProperty("custom_js_response", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -87,7 +86,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates the number of clicks from the homepage needed before landing at the target page
         /// </summary>
         [JsonProperty("click_depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ClickDepth { get; set; }
+        public int? ClickDepth { get; set; }
 
         /// <summary>
         /// indicates whether a page is a single resource
@@ -99,13 +98,13 @@ namespace DataForSeo.Client.Models
         /// page URL length in characters
         /// </summary>
         [JsonProperty("url_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? UrlLength { get; set; }
+        public int? UrlLength { get; set; }
 
         /// <summary>
         /// relative URL length in characters
         /// </summary>
         [JsonProperty("relative_url_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RelativeUrlLength { get; set; }
+        public int? RelativeUrlLength { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

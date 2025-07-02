@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models
         /// number of posts from the discussion on the related source
         /// </summary>
         [JsonProperty("posts_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PostsCount { get; set; }
+        public long? PostsCount { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

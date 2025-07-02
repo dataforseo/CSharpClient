@@ -27,13 +27,13 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rank { get; set; }
+        public int? Rank { get; set; }
 
         /// <summary>
         /// indicates the number of backlink intersections with the target specified in the POST array
         /// </summary>
         [JsonProperty("intersections", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Intersections { get; set; }
+        public int? Intersections { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

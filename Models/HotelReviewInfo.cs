@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the number of customer votes included in the calculation of the hotel rating
         /// </summary>
         [JsonProperty("votes_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? VotesCount { get; set; }
+        public long? VotesCount { get; set; }
 
         /// <summary>
         /// hotel mentions

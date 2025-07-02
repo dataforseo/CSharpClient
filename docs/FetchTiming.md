@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**DurationTime** | **double?** | indicates how many seconds it took to download a page |[optional]|
-**FetchStart** | **double?** | time to start downloading the HTML resource<br>the amount of time the browser needs to start downloading a page |[optional]|
-**FetchEnd** | **double?** | time to complete downloading the HTML resource<br>the amount of time the browser needs to complete downloading a page |[optional]|
+**DurationTime** | **int?** | indicates how many milliseconds it took to fetch a resource |[optional]|
+**FetchStart** | **int?** | time to start downloading the resource<br>the amount of time a browser needs to start downloading a resource |[optional]|
+**FetchEnd** | **int?** | time to complete downloading the resource<br>the amount of time a browser needs to complete downloading a resource |[optional]|

@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <br/>data is provided in separate objects corresponding to pages specified in the targets object
         /// </summary>
         [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, IEnumerable<BacklinksPageIntersection>> PageIntersection { get; set; }
+        public IDictionary<string, IEnumerable<BacklinksPageIntersectionInfo>> PageIntersection { get; set; }
 
         /// <summary>
         /// contains the page intersections summary

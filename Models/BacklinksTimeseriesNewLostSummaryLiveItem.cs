@@ -28,42 +28,42 @@ namespace DataForSeo.Client.Models
         /// <br/>number of new backlinks pointing to the target
         /// </summary>
         [JsonProperty("new_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NewBacklinks { get; set; }
+        public long? NewBacklinks { get; set; }
 
         /// <summary>
         /// number of lost backlinks
         /// <br/>number of lost backlinks of the target
         /// </summary>
         [JsonProperty("lost_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LostBacklinks { get; set; }
+        public long? LostBacklinks { get; set; }
 
         /// <summary>
         /// number of new referring domains
         /// <br/>number of new referring domains pointing to the target
         /// </summary>
         [JsonProperty("new_referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NewReferringDomains { get; set; }
+        public long? NewReferringDomains { get; set; }
 
         /// <summary>
         /// number of lost referring domains
         /// <br/>number of lost referring domains of the target
         /// </summary>
         [JsonProperty("lost_referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LostReferringDomains { get; set; }
+        public long? LostReferringDomains { get; set; }
 
         /// <summary>
         /// number of new referring main domains
         /// <br/>number of new referring main domains pointing to the target
         /// </summary>
         [JsonProperty("new_referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NewReferringMainDomains { get; set; }
+        public long? NewReferringMainDomains { get; set; }
 
         /// <summary>
         /// number of lost referring main domains
         /// <br/>number of lost referring main domains of the target
         /// </summary>
         [JsonProperty("lost_referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LostReferringMainDomains { get; set; }
+        public long? LostReferringMainDomains { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

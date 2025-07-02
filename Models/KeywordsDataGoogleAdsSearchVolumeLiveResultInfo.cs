@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -61,13 +61,15 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric in this help center article
         /// </summary>
         [JsonProperty("competition_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CompetitionIndex { get; set; }
+        public int? CompetitionIndex { get; set; }
 
         /// <summary>
-        /// monthly average search volume rate
+        /// monthly average search volume rate;
+        /// <br/>represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting;
+        /// <br/>if there is no data then the value is null
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// minimum bid for the ad to be displayed at the top of the first page

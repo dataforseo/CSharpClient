@@ -9,6 +9,20 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
+        /// the XPath of the element
+        /// </summary>
+        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Xpath { get; set; }
+
+        /// <summary>
         /// unique hotel identifier
         /// <br/>unique hotel identifier assigned by Google;
         /// <br/>example: 'CgoIjaeSlI6CnNpVEAE'
@@ -17,7 +31,7 @@ namespace DataForSeo.Client.Models
         public string HotelIdentifier { get; set; }
 
         /// <summary>
-        /// URL
+        /// source URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

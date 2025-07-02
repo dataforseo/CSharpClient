@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the amount of time the browser caches a resource
         /// </summary>
         [JsonProperty("ttl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Ttl { get; set; }
+        public int? Ttl { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

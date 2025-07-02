@@ -12,9 +12,7 @@
         <RepositoryUrl>https://github.com/dataforseo/CSharpClient</RepositoryUrl>
         <PackageProjectUrl>https://github.com/dataforseo/CSharpClient</PackageProjectUrl>
         <RootNamespace>DataForSeo.Client</RootNamespace>
-        <AssemblyVersion>2.0.0</AssemblyVersion>
-        <FileVersion>2.0.0</FileVersion>
-        <Version>2.0.0</Version>
+        <Version>1.0.26</Version>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>
@@ -22,9 +20,7 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="README.md" Pack="true" PackagePath="">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
-
-
 </Project>

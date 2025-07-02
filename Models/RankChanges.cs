@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if this element is new, the value will be null
         /// </summary>
         [JsonProperty("previous_rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PreviousRankAbsolute { get; set; }
+        public int? PreviousRankAbsolute { get; set; }
 
         /// <summary>
         /// element was previously present in SERP

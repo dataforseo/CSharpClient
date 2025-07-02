@@ -9,6 +9,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// the alignment of the element in Amazon SERP
+        /// <br/>possible values:
+        /// <br/>left, right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
         /// product title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

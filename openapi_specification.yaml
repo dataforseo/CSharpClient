@@ -245,6 +245,196 @@ paths:
                 nullable: true
       security:
         - basicAuth: [ ]
+  /v3/serp/google/ai_mode/languages:
+    get:
+      tags:
+        - Serp
+      description: "You will receive the list of languages by calling this API.\n \nAs a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks.\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/languages/?bash'"
+      operationId: SerpGoogleAiModeLanguages
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLanguagesResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  /v3/serp/google/ai_mode/task_post:
+    post:
+      tags:
+        - Serp
+      description: "‌‌\nGoogle AI Mode SERP API provides search results from the AI Mode feature of Google Search. The results are specific to the specified location (see the List of Locations) and language (see the List of Languages) parameters.\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/task_post/?bash'"
+      operationId: GoogleAiModeTaskPost
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskPostRequestInfo'
+                nullable: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskPostResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  /v3/serp/google/ai_mode/tasks_ready:
+    get:
+      tags:
+        - Serp
+      description: "‌\nThe ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint.\nLearn more about task completion and obtaining a list of completed tasks in this help center article.\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/tasks_ready/?bash'"
+      operationId: GoogleAiModeTasksReady
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTasksReadyResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  /v3/serp/google/ai_mode/tasks_fixed:
+    get:
+      tags:
+        - Serp
+      description: "‌\nThe ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint.\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/tasks_fixed/?bash'"
+      operationId: GoogleAiModeTasksFixed
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTasksFixedResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  '/v3/serp/google/ai_mode/task_get/advanced/{id}':
+    get:
+      tags:
+        - Serp
+      description: "Description of the fields for sending a request:\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/task_get/advanced/?bash'"
+      operationId: GoogleAiModeTaskGetAdvanced
+      parameters:
+        - name: id
+          in: path
+          description: "task identifier\na universally unique identifier (UUID)\nunique task identifier in our system\nyou will be able to use it within 30 days to request the results of the task at any time"
+          required: true
+          schema:
+            type: string
+          example: 00000000-0000-0000-0000-000000000000
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskGetAdvancedResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  '/v3/serp/google/ai_mode/task_get/html/{id}':
+    get:
+      tags:
+        - Serp
+      description: "Description of the fields for sending a request:\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/task_get/html/?bash'"
+      operationId: GoogleAiModeTaskGetHtml
+      parameters:
+        - name: id
+          in: path
+          description: "task identifier\nunique task identifier in our system in the UUID format\nyou will be able to use it within 7 days to request the results of the task at any time"
+          required: true
+          schema:
+            type: string
+          example: a39ec28a-4827-42ea-a3c8-b3e97b6d0777
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskGetHtmlResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  /v3/serp/google/ai_mode/live/advanced:
+    post:
+      tags:
+        - Serp
+      description: "‌‌\nGoogle AI Mode SERP API provides search results from the AI Mode feature of Google Search. The results are specific to the specified location (see the List of Locations) and language (see the List of Languages) parameters.\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/live/advanced/?bash'"
+      operationId: GoogleAiModeLiveAdvanced
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveAdvancedRequestInfo'
+                nullable: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveAdvancedResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
+  /v3/serp/google/ai_mode/live/html:
+    post:
+      tags:
+        - Serp
+      description: "‌\nLive SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location.\nfor more info please visit 'https://docs.dataforseo.com/v3/serp/google/ai_mode/live/html/?bash'"
+      operationId: GoogleAiModeLiveHtml
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveHtmlRequestInfo'
+                nullable: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveHtmlResponseInfo'
+                nullable: true
+      security:
+        - basicAuth: [ ]
   /v3/serp/google/organic/tasks_fixed:
     get:
       tags:
@@ -13234,13 +13424,6 @@ components:
           third_party_reviews: '#/components/schemas/ThirdPartyReviewsSerpElementItem'
           event_item: '#/components/schemas/EventItemSerpElementItem'
           dictionary: '#/components/schemas/DictionarySerpElementItem'
-          google_finance_hero_groups: '#/components/schemas/GoogleFinanceHeroGroupsSerpElementItem'
-          google_finance_interested: '#/components/schemas/GoogleFinanceInterestedSerpElementItem'
-          google_finance_news: '#/components/schemas/GoogleFinanceNewsSerpElementItem'
-          google_finance_earnings_calendar: '#/components/schemas/GoogleFinanceEarningsCalendarSerpElementItem'
-          google_finance_most_followed: '#/components/schemas/GoogleFinanceMostFollowedSerpElementItem'
-          google_finance_market_trends: '#/components/schemas/GoogleFinanceMarketTrendsSerpElementItem'
-          google_finance_people_also_search: '#/components/schemas/GoogleFinancePeopleAlsoSearchSerpElementItem'
     BaseGoogleFinanceSerpElementItem:
       type: object
       properties:
@@ -13251,6 +13434,14 @@ components:
       additionalProperties: false
       discriminator:
         propertyName: type
+        mapping:
+          google_finance_hero_groups: '#/components/schemas/GoogleFinanceHeroGroupsSerpElementItem'
+          google_finance_interested: '#/components/schemas/GoogleFinanceInterestedSerpElementItem'
+          google_finance_news: '#/components/schemas/GoogleFinanceNewsSerpElementItem'
+          google_finance_earnings_calendar: '#/components/schemas/GoogleFinanceEarningsCalendarSerpElementItem'
+          google_finance_most_followed: '#/components/schemas/GoogleFinanceMostFollowedSerpElementItem'
+          google_finance_market_trends: '#/components/schemas/GoogleFinanceMarketTrendsSerpElementItem'
+          google_finance_people_also_search: '#/components/schemas/GoogleFinancePeopleAlsoSearchSerpElementItem'
     BaseGoogleFinanceTickerSearchSerpElementItem:
       type: object
       properties:
@@ -16550,6 +16741,10 @@ components:
         source:
           type: string
           description: reference source name or title
+          nullable: true
+        position:
+          type: string
+          description: "the alignment of the element in SERP\ncan take the following values:\nleft, right"
           nullable: true
         domain:
           type: string
@@ -83823,6 +84018,978 @@ components:
                 nullable: true
               description: array of tasks
               nullable: true
+    SerpGoogleAiModeLanguagesResultInfo:
+      type: object
+      properties:
+        language_name:
+          type: string
+          description: language name
+          nullable: true
+        language_code:
+          type: string
+          description: language code according to ISO 639-1
+          nullable: true
+    SerpGoogleAiModeLanguagesTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLanguagesResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeLanguagesResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLanguagesTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    SerpGoogleAiModeTaskPostRequestInfo:
+      type: object
+      properties:
+        keyword:
+          type: string
+          description: "keyword\nrequired field\nyou can specify up to 700 characters in the keyword field\nall %## will be decoded (plus character ‘+’ will be decoded to a space character)\nif you need to use the “%” character for your keyword, please specify it as “%25”;\nif you need to use the “+” character for your keyword, please specify it as “%2B”\nlearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article"
+          example: what is google ai mode
+        priority:
+          type: integer
+          description: "task priority\noptional field\ncan take the following values:\n1 – normal execution priority (set by default)\n2 – high execution priority\nYou will be additionally charged for the tasks with high execution priority.\nThe cost can be calculated on the Pricing page."
+          nullable: true
+        location_name:
+          type: string
+          description: "full name of search engine location\nrequired field if you don’t specify location_code or location_coordinate\nif you use this field, you don’t need to specify location_code or location_coordinate\nyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations\nexample:\nLondon,England,United Kingdom"
+          nullable: true
+        location_code:
+          type: integer
+          description: "search engine location code\nrequired field if you don’t specify location_name or location_coordinate\nif you use this field, you don’t need to specify location_name or location_coordinate\nyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations\nexample:\n2840"
+          nullable: true
+          example: 2840
+        location_coordinate:
+          type: string
+          description: "GPS coordinates of a location\nrequired field if you don’t specify location_name or location_code\nif you use this field, you don’t need to specify location_name or location_code\nlocation_coordinate parameter should be specified in the “latitude,longitude,zoom” format\nif “zoom” is not specified, 9z will be applied as a default value\nthe maximum number of decimal digits for “latitude” and “longitude”: 7\nthe minimum value for “zoom”: 4z\nthe maximum value for “zoom”: 18z\nexample:\n52.6178549,-155.352142,18z"
+          nullable: true
+        language_name:
+          type: string
+          description: "full name of search engine language\nrequired field if you don’t specify language_code;\nif you use this field, you don’t need to specify language_code;\nyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;\nNote: currently, the only supported value is English"
+          nullable: true
+        language_code:
+          type: string
+          description: "search engine language code\nrequired field if you don’t specify language_name;\nif you use this field, you don’t need to specify language_name;\nyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages\nNote: currently, the only supported value is en"
+          nullable: true
+          example: en
+        device:
+          type: string
+          description: "device type\noptional field\ncan take the values:desktop, mobile\ndefault value: desktop"
+          nullable: true
+        os:
+          type: string
+          description: "device operating system\noptional field\nif you specify desktop in the device field, choose from the following values: windows, macos\ndefault value: windows\nif you specify mobile in the device field, choose from the following values: android, ios\ndefault value: android"
+          nullable: true
+        calculate_rectangles:
+          type: boolean
+          description: "calcualte pixel rankings for SERP elements in advanced results\noptional field\npixel ranking refers to the distance between the result snippet and top left corner of the screen;\nVisit Help Center to learn more>>\nby default, the parameter is set to false\nNote: if set to true, the charge per task will be multiplied by 2"
+          nullable: true
+        browser_screen_width:
+          type: integer
+          description: "browser screen width\noptional field\nyou can set a custom browser screen width to calculate pixel rankings for a particular device;\nby default, the parameter is set to:\n1920 for desktop;\n360 for mobile on android;\n375 for mobile on iOS;\nNote: to use this parameter, set calculate_rectangles to true"
+          format: int64
+          nullable: true
+        browser_screen_height:
+          type: integer
+          description: "browser screen height\noptional field\nyou can set a custom browser screen height to calculate pixel rankings for a particular device;\nby default, the parameter is set to:\n1080 for desktop;\n640 for mobile on android;\n812 for mobile on iOS;\nNote: to use this parameter, set calculate_rectangles to true"
+          nullable: true
+        browser_screen_resolution_ratio:
+          type: integer
+          description: "browser screen resolution ratio\noptional field\nyou can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;\nby default, the parameter is set to:\n1 for desktop;\n3 for mobile on android;\n3 for mobile on iOS;\nNote: to use this parameter, set calculate_rectangles to true"
+          nullable: true
+        tag:
+          type: string
+          description: "user-defined task identifier\noptional field\nthe character limit is 255\nyou can use this parameter to identify the task and match it with the result\nyou will find the specified tag value in the data object of the response"
+          nullable: true
+        postback_url:
+          type: string
+          description: "return URL for sending task results\noptional field\nonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified\nyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.\nexample:\nhttp://your-server.com/postbackscript?id=$id\nhttp://your-server.com/postbackscript?id=$id&tag=$tag\nNote: special characters in postback_url will be urlencoded;\ni.a., the # character will be encoded into %23\nlearn more on our Help Center"
+          nullable: true
+        postback_data:
+          type: string
+          description: "postback_url datatype\nrequired field if you specify postback_url\ncorresponds to the function you used for setting a task\npossible values:\nadvanced, html"
+          nullable: true
+        pingback_url:
+          type: string
+          description: "notification URL of a completed task\noptional field\nwhen a task is completed we will notify you by GET request sent to the URL you have specified\nyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.\nexample:\nhttp://your-server.com/pingscript?id=$id\nhttp://your-server.com/pingscript?id=$id&tag=$tag\nNote: special characters in pingback_url will be urlencoded;\ni.a., the # character will be encoded into %23\nlearn more on our Help Center"
+          nullable: true
+    SerpGoogleAiModeTaskPostTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: object
+              description: "array of results\nin this case, the value will be null"
+              nullable: true
+    SerpGoogleAiModeTaskPostResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskPostTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    SerpGoogleAiModeTasksReadyResultInfo:
+      type: object
+      properties:
+        id:
+          type: string
+          description: "task identifier of the completed task\nunique task identifier in our system in the UUID format"
+          nullable: true
+        se:
+          type: string
+          description: search engine specified when setting the task
+          nullable: true
+        se_type:
+          type: string
+          description: "type of search engine\nexample: ai_mode"
+          nullable: true
+        date_posted:
+          type: string
+          description: date when the task was posted (in the UTC format)
+          nullable: true
+        tag:
+          type: string
+          description: user-defined task identifier
+          nullable: true
+        endpoint_regular:
+          type: string
+          description: "URL for collecting the results of the SERP Regular task\nif SERP Regular is not supported in the specified endpoint, the value will be null"
+          nullable: true
+        endpoint_advanced:
+          type: string
+          description: "URL for collecting the results of the SERP Advanced task\nif SERP Advanced is not supported in the specified endpoint, the value will be null"
+          nullable: true
+        endpoint_html:
+          type: string
+          description: "URL for collecting the results of the SERP HTML task\nif SERP HTML is not supported in the specified endpoint, the value will be null"
+          nullable: true
+    SerpGoogleAiModeTasksReadyTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTasksReadyResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeTasksReadyResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTasksReadyTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    SerpGoogleAiModeTasksFixedResultInfo:
+      type: object
+      properties:
+        id:
+          type: string
+          description: "task identifier of the completed task\nunique task identifier in our system in the UUID format"
+          nullable: true
+        se:
+          type: string
+          description: search engine specified when setting the task
+          nullable: true
+        se_type:
+          type: string
+          description: "type of search engine\ncan take the following values: ai_mode"
+          nullable: true
+        date_fixed:
+          type: string
+          description: date when the task was fixed (in the UTC format)
+          nullable: true
+        tag:
+          type: string
+          description: user-defined task identifier
+          nullable: true
+        endpoint_regular:
+          type: string
+          description: "URL for collecting the results of the SERP Regular task\nif SERP Regular is not supported in the specified endpoint, the value will be null"
+          nullable: true
+        endpoint_advanced:
+          type: string
+          description: "URL for collecting the results of the SERP Advanced task\nif SERP Advanced is not supported in the specified endpoint, the value will be null"
+          nullable: true
+        endpoint_html:
+          type: string
+          description: "URL for collecting the results of the SERP HTML task\nif SERP HTML is not supported in the specified endpoint, the value will be null"
+          nullable: true
+    SerpGoogleAiModeTasksFixedTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTasksFixedResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeTasksFixedResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTasksFixedTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    AiModeLinkElement:
+      type: object
+      properties:
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        title:
+          type: string
+          description: title of the element
+          nullable: true
+        description:
+          type: string
+          description: link description
+          nullable: true
+        url:
+          type: string
+          description: search URL with refinement parameters
+          nullable: true
+        domain:
+          type: string
+          description: domain in SERP
+          nullable: true
+    AiModeAiOverviewReference:
+      type: object
+      properties:
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        position:
+          type: string
+          description: "the alignment of the element in SERP\ncan take the following values:\nleft, right"
+          nullable: true
+        source:
+          type: string
+          description: reference source name or title
+          nullable: true
+        domain:
+          type: string
+          description: domain in SERP
+          nullable: true
+        url:
+          type: string
+          description: link URL
+          nullable: true
+        title:
+          type: string
+          description: title of the element
+          nullable: true
+        text:
+          type: string
+          description: "reference text\ntext snippet from the page that was used to generate the ai_overview_element"
+          nullable: true
+    AiModeAiOverviewElement:
+      type: object
+      properties:
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        position:
+          type: string
+          description: "the alignment of the element in SERP\ncan take the following values:\nleft, right"
+          nullable: true
+        title:
+          type: string
+          description: title of the element
+          nullable: true
+        text:
+          type: string
+          description: text or description of the element in SERP
+          nullable: true
+        markdown:
+          type: string
+          description: content of the element in markdown format
+          nullable: true
+        links:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeLinkElement'
+            nullable: true
+          description: website links featured in the element
+          nullable: true
+        images:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/ImagesElement'
+            nullable: true
+          description: "images of the element\nif there are none, equals null"
+          nullable: true
+        references:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeAiOverviewReference'
+            nullable: true
+          description: "references relevant to the element\nincludes references to webpages that were used to generate the ai_overview_element"
+          nullable: true
+    AiModeReferences:
+      type: object
+      properties:
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        rank_group:
+          type: number
+          nullable: true
+        rank_absolute:
+          type: number
+          nullable: true
+        position:
+          type: string
+          description: "the alignment of the element in SERP\ncan take the following values:\nleft, right"
+          nullable: true
+        source:
+          type: string
+          description: reference source name or title
+          nullable: true
+        domain:
+          type: string
+          description: domain name of the reference
+          nullable: true
+        url:
+          type: string
+          description: reference page URL
+          nullable: true
+        title:
+          type: string
+          description: title of the element
+          nullable: true
+        text:
+          type: string
+          description: text or description of the element in SERP
+          nullable: true
+    AiModeAiOverviewExpandedComponent:
+      type: object
+      properties:
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        title:
+          type: string
+          description: reference page title
+          nullable: true
+        text:
+          type: string
+          description: text or description of the element in SERP
+          nullable: true
+        markdown:
+          type: string
+          description: "content of the element in markdown format\nthe text of the ai_overview formatted in the markdown markup language"
+          nullable: true
+        images:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/ImagesElement'
+            nullable: true
+          description: "images of the element\nif there are none, equals null"
+          nullable: true
+        links:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeLinkElement'
+            nullable: true
+          description: website links featured in the element
+          nullable: true
+        references:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeReferences'
+            nullable: true
+          description: "additional references relevant to the item\nincludes references to webpages that may have been used to generate the ai_overview"
+          nullable: true
+    AiModeAiOverview:
+      type: object
+      properties:
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        position:
+          type: string
+          description: "the alignment of the element in SERP\ncan take the following values:\nleft, right"
+          nullable: true
+        xpath:
+          type: string
+          description: the XPath of the element
+          nullable: true
+        markdown:
+          type: string
+          description: "content of the element in markdown format\nthe text of the ai_overview formatted in the markdown markup language"
+          nullable: true
+        items:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeAiOverviewElement'
+            nullable: true
+          description: items of the element
+          nullable: true
+        references:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeAiOverviewReference'
+            nullable: true
+          description: "references relevant to the element\nincludes references to webpages that were used to generate the ai_overview_element"
+          nullable: true
+        rectangle:
+          type: object
+          oneOf:
+            - $ref: '#/components/schemas/Rectangle'
+          description: "rectangle parameters\ncontains cartesian coordinates and pixel dimensions of the result’s snippet in SERP\nequals null if calculate_rectangles in the POST request is not set to true"
+          nullable: true
+    SerpGoogleAiModeTaskGetAdvancedResultInfo:
+      type: object
+      properties:
+        keyword:
+          type: string
+          description: "keyword received in a POST array\nthe keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)"
+          nullable: true
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        se_domain:
+          type: string
+          description: search engine domain in a POST array
+          nullable: true
+        location_code:
+          type: number
+          description: location code in a POST array
+          nullable: true
+        language_code:
+          type: string
+          description: language code in a POST array
+          nullable: true
+        check_url:
+          type: string
+          description: "direct URL to search engine results\nyou can use it to make sure that we provided exact results"
+          nullable: true
+        datetime:
+          type: string
+          description: "date and time when the result was received\nin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”\nexample:\n2019-11-15 12:57:46 +00:00"
+          nullable: true
+        spell:
+          type: object
+          oneOf:
+            - $ref: '#/components/schemas/SpellInfo'
+          description: "autocorrection of the search engine\nif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection"
+          nullable: true
+        refinement_chips:
+          type: object
+          oneOf:
+            - $ref: '#/components/schemas/RefinementChipsInfo'
+          description: search refinement chips
+          nullable: true
+        item_types:
+          type: array
+          items:
+            type: string
+            nullable: true
+          description: "types of search results in SERP\ncontains types of search results (items) found in SERP.\npossible item types:\nai_overview"
+          nullable: true
+        se_results_count:
+          type: number
+          description: total number of results in SERP
+          format: int64
+          nullable: true
+        items_count:
+          type: number
+          description: the number of results returned in the items array
+          format: int64
+          nullable: true
+        items:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeAiOverview'
+            nullable: true
+          description: elements of search results found in SERP
+          nullable: true
+    SerpGoogleAiModeTaskGetAdvancedTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskGetAdvancedResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeTaskGetAdvancedResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskGetAdvancedTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    SerpGoogleAiModeTaskGetHtmlResultInfo:
+      type: object
+      properties:
+        keyword:
+          type: string
+          description: "keyword received in a POST array\nkeyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)"
+          nullable: true
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        se_domain:
+          type: string
+          description: search engine domain in a POST array
+          nullable: true
+        location_code:
+          type: number
+          description: location code in a POST array
+          nullable: true
+        language_code:
+          type: string
+          description: language code in a POST array
+          nullable: true
+        datetime:
+          type: string
+          description: "date and time when the result was received\nin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”\nexample:\n2019-11-15 12:57:46 +00:00"
+          nullable: true
+        items_count:
+          type: number
+          description: the number of results returned in the items array
+          format: int64
+          nullable: true
+        items:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/HtmlItem'
+            nullable: true
+          description: elements of search results found in SERP
+          nullable: true
+    SerpGoogleAiModeTaskGetHtmlTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskGetHtmlResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeTaskGetHtmlResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeTaskGetHtmlTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    SerpGoogleAiModeLiveAdvancedRequestInfo:
+      type: object
+      properties:
+        keyword:
+          type: string
+          description: "keyword\nrequired field\nyou can specify up to 700 characters in the keyword field\nall %## will be decoded (plus character ‘+’ will be decoded to a space character)\nif you need to use the “%” character for your keyword, please specify it as “%25”;\nif you need to use the “+” character for your keyword, please specify it as “%2B”\nlearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article"
+          example: what is google ai mode
+        priority:
+          type: integer
+          description: "task priority\noptional field\ncan take the following values:\n1 – normal execution priority (set by default)\n2 – high execution priority\nYou will be additionally charged for the tasks with high execution priority.\nThe cost can be calculated on the Pricing page."
+          nullable: true
+        location_name:
+          type: string
+          description: "full name of search engine location\nrequired field if you don’t specify location_code or location_coordinate\nif you use this field, you don’t need to specify location_code or location_coordinate\nyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations\nexample:\nLondon,England,United Kingdom"
+          nullable: true
+        location_code:
+          type: integer
+          description: "search engine location code\nrequired field if you don’t specify location_name or location_coordinate\nif you use this field, you don’t need to specify location_name or location_coordinate\nyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations\nexample:\n2840"
+          nullable: true
+          example: 2840
+        location_coordinate:
+          type: string
+          description: "GPS coordinates of a location\nrequired field if you don’t specify location_name or location_code\nif you use this field, you don’t need to specify location_name or location_code\nlocation_coordinate parameter should be specified in the “latitude,longitude,zoom” format\nif “zoom” is not specified, 9z will be applied as a default value\nthe maximum number of decimal digits for “latitude” and “longitude”: 7\nthe minimum value for “zoom”: 4z\nthe maximum value for “zoom”: 18z\nexample:\n52.6178549,-155.352142,18z"
+          nullable: true
+        language_name:
+          type: string
+          description: "full name of search engine language\nrequired field if you don’t specify language_code;\nif you use this field, you don’t need to specify language_code;\nyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;\nNote: currently, the only supported value is English"
+          nullable: true
+        language_code:
+          type: string
+          description: "search engine language code\nrequired field if you don’t specify language_name;\nif you use this field, you don’t need to specify language_name;\nyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages\nNote: currently, the only supported value is en"
+          nullable: true
+          example: en
+        device:
+          type: string
+          description: "device type\noptional field\ncan take the values:desktop, mobile\ndefault value: desktop"
+          nullable: true
+        os:
+          type: string
+          description: "device operating system\noptional field\nif you specify desktop in the device field, choose from the following values: windows, macos\ndefault value: windows\nif you specify mobile in the device field, choose from the following values: android, ios\ndefault value: android"
+          nullable: true
+        calculate_rectangles:
+          type: boolean
+          description: "calcualte pixel rankings for SERP elements in advanced results\noptional field\npixel ranking refers to the distance between the result snippet and top left corner of the screen;\nVisit Help Center to learn more>>\nby default, the parameter is set to false\nNote: if set to true, the charge per task will be multiplied by 2"
+          nullable: true
+        browser_screen_width:
+          type: integer
+          description: "browser screen width\noptional field\nyou can set a custom browser screen width to calculate pixel rankings for a particular device;\nby default, the parameter is set to:\n1920 for desktop;\n360 for mobile on android;\n375 for mobile on iOS;\nNote: to use this parameter, set calculate_rectangles to true"
+          format: int64
+          nullable: true
+        browser_screen_height:
+          type: integer
+          description: "browser screen height\noptional field\nyou can set a custom browser screen height to calculate pixel rankings for a particular device;\nby default, the parameter is set to:\n1080 for desktop;\n640 for mobile on android;\n812 for mobile on iOS;\nNote: to use this parameter, set calculate_rectangles to true"
+          nullable: true
+        browser_screen_resolution_ratio:
+          type: integer
+          description: "browser screen resolution ratio\noptional field\nyou can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;\nby default, the parameter is set to:\n1 for desktop;\n3 for mobile on android;\n3 for mobile on iOS;\nNote: to use this parameter, set calculate_rectangles to true"
+          nullable: true
+        tag:
+          type: string
+          description: "user-defined task identifier\noptional field\nthe character limit is 255\nyou can use this parameter to identify the task and match it with the result\nyou will find the specified tag value in the data object of the response"
+          nullable: true
+    SerpGoogleAiModeLiveAdvancedResultInfo:
+      type: object
+      properties:
+        keyword:
+          type: string
+          description: "keyword received in a POST array\nthe keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)"
+          nullable: true
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        se_domain:
+          type: string
+          description: search engine domain in a POST array
+          nullable: true
+        location_code:
+          type: number
+          description: location code in a POST array
+          nullable: true
+        language_code:
+          type: string
+          description: language code in a POST array
+          nullable: true
+        check_url:
+          type: string
+          description: "direct URL to search engine results\nyou can use it to make sure that we provided exact results"
+          nullable: true
+        datetime:
+          type: string
+          description: "date and time when the result was received\nin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”\nexample:\n2019-11-15 12:57:46 +00:00"
+          nullable: true
+        spell:
+          type: object
+          oneOf:
+            - $ref: '#/components/schemas/SpellInfo'
+          description: "autocorrection of the search engine\nif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection"
+          nullable: true
+        refinement_chips:
+          type: object
+          oneOf:
+            - $ref: '#/components/schemas/RefinementChipsInfo'
+          description: search refinement chips
+          nullable: true
+        item_types:
+          type: array
+          items:
+            type: string
+            nullable: true
+          description: "types of search results in SERP\ncontains types of search results (items) found in SERP.\npossible item types:\nai_overview"
+          nullable: true
+        se_results_count:
+          type: number
+          description: total number of results in SERP
+          format: int64
+          nullable: true
+        items_count:
+          type: number
+          description: the number of results returned in the items array
+          format: int64
+          nullable: true
+        items:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/AiModeAiOverview'
+            nullable: true
+          description: elements of search results found in SERP
+          nullable: true
+    SerpGoogleAiModeLiveAdvancedTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveAdvancedResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeLiveAdvancedResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveAdvancedTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+    SerpGoogleAiModeLiveHtmlRequestInfo:
+      type: object
+      properties:
+        url:
+          type: string
+          description: "direct URL of the search query\noptional field\nyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.\nexample:\nhttps://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS"
+          nullable: true
+        keyword:
+          type: string
+          description: "keyword\nrequired field\nyou can specify up to 700 characters in the keyword field\nall %## will be decoded (plus character ‘+’ will be decoded to a space character)\nif you need to use the “%” character for your keyword, please specify it as “%25”;\nif you need to use the “+” character for your keyword, please specify it as “%2B”;\nif this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5\nNote: queries containing the ‘cache:’ parameter are not supported and will return a validation error"
+          example: albert einstein
+        location_name:
+          type: string
+          description: "full name of search engine location\nrequired field if you don’t specify location_code or location_coordinate\nif you use this field, you don’t need to specify location_code or location_coordinate\nyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations\nexample:\nLondon,England,United Kingdom"
+          nullable: true
+        location_code:
+          type: integer
+          description: "search engine location code\nrequired field if you don’t specify location_name or location_coordinate\nif you use this field, you don’t need to specify location_name or location_coordinate\nyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations\nexample:\n2840"
+          nullable: true
+          example: 2840
+        location_coordinate:
+          type: string
+          description: "GPS coordinates of a location\nrequired field if you don’t specify location_name or location_code\nif you use this field, you don’t need to specify location_name or location_code\nlocation_coordinate parameter should be specified in the “latitude,longitude,radius” format\nthe maximum number of decimal digits for “latitude” and “longitude”: 7\nthe minimum value for “radius”: 199.9 (mm)\nthe maximum value for “radius”: 199999 (mm)\nexample:\n53.476225,-2.243572,200"
+          nullable: true
+        language_name:
+          type: string
+          description: "full name of search engine language\nrequired field if you don’t specify language_code;\nif you use this field, you don’t need to specify language_code;\nyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;\nNote: currently, the only supported value is English"
+          nullable: true
+        language_code:
+          type: string
+          description: "search engine language code\nrequired field if you don’t specify language_name;\nif you use this field, you don’t need to specify language_name;\nyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages\nNote: currently, the only supported value is en"
+          nullable: true
+          example: en
+        device:
+          type: string
+          description: "device type\noptional field\ncan take the values:desktop, mobile\ndefault value: desktop"
+          nullable: true
+        os:
+          type: string
+          description: "device operating system\noptional field\nif you specify desktop in the device field, choose from the following values: windows, macos\ndefault value: windows\nif you specify mobile in the device field, choose from the following values: android, ios\ndefault value: android"
+          nullable: true
+        se_domain:
+          type: string
+          description: "search engine domain\noptional field\nwe choose the relevant search engine domain automatically according to the location and language you specify\nhowever, you can set a custom search engine domain in this field\nexample:\ngoogle.co.uk, google.com.au, google.de, etc."
+          nullable: true
+        depth:
+          type: integer
+          description: "parsing depth\noptional field\nnumber of results in SERP\ndefault value: 100\nmax value: 700\nNote: your account will be billed per each SERP containing up to 100 results;\nthus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;\nif the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance"
+          nullable: true
+        max_crawl_pages:
+          type: integer
+          description: "page crawl limit\noptional field\nnumber of search results pages to crawl\nmax value: 100\nNote: the max_crawl_pages and depth parameters complement each other;\nlearn more at our help center"
+          nullable: true
+        search_param:
+          type: string
+          description: "additional parameters of the search query\noptional field\nget the list of available parameters and additional details here"
+          nullable: true
+        load_async_ai_overview:
+          type: boolean
+          description: "load asynchronous ai overview\noptional field\nset to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;\nif set to false, you will only obtain ai_overview items from cache;\ndefault value: false\nNote your account will be billed $0.002 extra for each request;\nif the element is absent or contains \"asynchronous_ai_overview\": false, all extra charges will be returned to your account balance"
+          nullable: true
+        expand_ai_overview:
+          type: boolean
+          description: "expand ai overview\noptional field\nset to true to expand the ai_overview item;\ndefault value: false"
+          nullable: true
+        tag:
+          type: string
+          description: "user-defined task identifier\noptional field\nthe character limit is 255\nyou can use this parameter to identify the task and match it with the result\nyou will find the specified tag value in the data object of the response"
+          nullable: true
+    SerpGoogleAiModeLiveHtmlResultInfo:
+      type: object
+      properties:
+        keyword:
+          type: string
+          description: "keyword received in a POST array\nkeyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)"
+          nullable: true
+        type:
+          type: string
+          description: type of element
+          nullable: true
+        se_domain:
+          type: string
+          description: search engine domain in a POST array
+          nullable: true
+        location_code:
+          type: number
+          description: location code in a POST array
+          nullable: true
+        language_code:
+          type: string
+          description: language code in a POST array
+          nullable: true
+        datetime:
+          type: string
+          description: "date and time when the result was received\nin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”\nexample:\n2019-11-15 12:57:46 +00:00"
+          nullable: true
+        items_count:
+          type: number
+          description: the number of results returned in the items array
+          format: int64
+          nullable: true
+        items:
+          type: array
+          items:
+            type: object
+            oneOf:
+              - $ref: '#/components/schemas/HtmlItem'
+            nullable: true
+          description: elements of search results found in SERP
+          nullable: true
+    SerpGoogleAiModeLiveHtmlTaskInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseTaskInfo'
+        - type: object
+          properties:
+            result:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveHtmlResultInfo'
+                nullable: true
+              description: array of results
+              nullable: true
+    SerpGoogleAiModeLiveHtmlResponseInfo:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseResponseInfo'
+        - type: object
+          properties:
+            tasks:
+              type: array
+              items:
+                type: object
+                oneOf:
+                  - $ref: '#/components/schemas/SerpGoogleAiModeLiveHtmlTaskInfo'
+                nullable: true
+              description: array of tasks
+              nullable: true
+
   securitySchemes:
     basicAuth:
       type: http

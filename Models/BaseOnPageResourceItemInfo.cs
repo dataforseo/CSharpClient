@@ -6,11 +6,10 @@ namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "resource_type")]
     [JsonInheritance("html", typeof(HtmlResourceElementItem))]
-    [JsonInheritance("broken", typeof(BrokenResourceElementItem))]
-    [JsonInheritance("redirect", typeof(RedirectResourceElementItem))]
+    [JsonInheritance("stylesheet", typeof(StylesheetResourceElementItem))]
     [JsonInheritance("script", typeof(ScriptResourceElementItem))]
     [JsonInheritance("image", typeof(ImageResourceElementItem))]
-    [JsonInheritance("stylesheet", typeof(StylesheetResourceElementItem))]
+    [JsonInheritance("broken", typeof(BrokenResourceElementItem))]
 
     public class BaseOnPageResourceItemInfo 
     {
@@ -25,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// status code of the page
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StatusCode { get; set; }
+        public int? StatusCode { get; set; }
 
         /// <summary>
         /// location header
@@ -51,21 +50,21 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates the size of a given page measured in bytes
         /// </summary>
         [JsonProperty("size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Size { get; set; }
+        public int? Size { get; set; }
 
         /// <summary>
         /// page size after encoding
         /// <br/>indicates the size of the encoded page measured in bytes
         /// </summary>
         [JsonProperty("encoded_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? EncodedSize { get; set; }
+        public int? EncodedSize { get; set; }
 
         /// <summary>
         /// compressed page size
         /// <br/>indicates the compressed size of a given page
         /// </summary>
         [JsonProperty("total_transfer_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalTransferSize { get; set; }
+        public long? TotalTransferSize { get; set; }
 
         /// <summary>
         /// date and time when a resource was fetched

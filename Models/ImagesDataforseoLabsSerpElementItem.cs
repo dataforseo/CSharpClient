@@ -21,13 +21,14 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// sitelink URL
+        /// relevant URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ImagesElement> Items { get; set; }
@@ -37,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("related_image_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<RelatedImageSearchesElement> RelatedImageSearches { get; set; }
+        public RelatedImageSearchesElement RelatedImageSearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// categories for which domains are collected
         /// </summary>
         [JsonProperty("top_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<double?> TopCategories { get; set; }
+        public IEnumerable<int?> TopCategories { get; set; }
 
         /// <summary>
         /// current organic ETV of the domain
@@ -30,21 +30,21 @@ namespace DataForSeo.Client.Models
         /// current total count of organic SERPs that contain the domain
         /// </summary>
         [JsonProperty("organic_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OrganicCount { get; set; }
+        public long? OrganicCount { get; set; }
 
         /// <summary>
         /// current number of lost ranked elements
         /// <br/>indicates how many ranked elements of the domain were previously presented in SERPs, but weren’t found during the last check
         /// </summary>
         [JsonProperty("organic_is_lost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OrganicIsLost { get; set; }
+        public int? OrganicIsLost { get; set; }
 
         /// <summary>
         /// current number of new ranked elements
         /// <br/>indicates how many new ranked elements were found for the domain
         /// </summary>
         [JsonProperty("organic_is_new", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OrganicIsNew { get; set; }
+        public int? OrganicIsNew { get; set; }
 
         /// <summary>
         /// domain found for the specified category

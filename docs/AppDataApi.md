@@ -58,14 +58,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataIdListAsync(new List<AppDataIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 11:02:06 +00:00",
-        DatetimeTo = "2025-04-30 11:02:06 +00:00",
+        DatetimeFrom = "2025-01-18 03:41:46 +00:00",
+        DatetimeTo = "2025-03-18 03:41:46 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -110,7 +109,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataErrorsAsync(new List<AppDataErrorsRequestInfo>()
 {
@@ -160,7 +158,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleCategoriesAsync();
 ```
@@ -202,7 +199,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataGoogleLocationsAsync();
 ```
@@ -244,7 +240,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.AppDataApi.AppDataGoogleLocationsCountryAsync(country);
@@ -287,7 +282,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataGoogleLanguagesAsync();
 ```
@@ -329,7 +323,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskPostAsync(new List<AppDataGoogleAppSearchesTaskPostRequestInfo>()
 {
@@ -380,7 +373,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppSearchesTasksReadyAsync();
 ```
@@ -422,7 +414,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataTasksReadyAsync();
 ```
@@ -464,9 +455,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "56ab389d-7d71-4bbf-9673-57d3637c5289";
+var id = "4041d8ad-75ef-4c9d-a9fc-5b44a3a44965";
 var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskGetAdvancedAsync(id);
 ```
 
@@ -507,9 +497,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "9f34e94e-6325-4b20-8170-eda129fede55";
+var id = "6efb961f-bb81-4e51-833f-60592a4c87d7";
 var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskGetHtmlAsync(id);
 ```
 
@@ -550,7 +539,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppListTaskPostAsync(new List<AppDataGoogleAppListTaskPostRequestInfo>()
 {
@@ -601,7 +589,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppListTasksReadyAsync();
 ```
@@ -643,9 +630,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "f4da2498-af5d-4140-af6d-2f3810373d8d";
+var id = "4abf09ed-24cf-4baf-a080-d703f4b08bc3";
 var result = await dfsClient.AppDataApi.GoogleAppListTaskGetAdvancedAsync(id);
 ```
 
@@ -686,9 +672,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "785fe2b3-9a53-494a-add4-d498dbf5f8a5";
+var id = "9a173d90-ca0f-43a0-a142-d4bbfa40ed1b";
 var result = await dfsClient.AppDataApi.GoogleAppListTaskGetHtmlAsync(id);
 ```
 
@@ -729,7 +714,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppInfoTaskPostAsync(new List<AppDataGoogleAppInfoTaskPostRequestInfo>()
 {
@@ -779,7 +763,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppInfoTasksReadyAsync();
 ```
@@ -821,9 +804,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "accfd6da-b68e-4a40-bba0-de16f09bb0c0";
+var id = "17f96bbc-6d14-47ef-b811-afe68079d827";
 var result = await dfsClient.AppDataApi.GoogleAppInfoTaskGetAdvancedAsync(id);
 ```
 
@@ -864,9 +846,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "3005591c-60b5-4333-a456-a314c25502ad";
+var id = "78db88c1-366f-4728-a33d-ad2733848534";
 var result = await dfsClient.AppDataApi.GoogleAppInfoTaskGetHtmlAsync(id);
 ```
 
@@ -907,7 +888,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskPostAsync(new List<AppDataGoogleAppReviewsTaskPostRequestInfo>()
 {
@@ -958,7 +938,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppReviewsTasksReadyAsync();
 ```
@@ -1000,9 +979,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "2a851e3a-e5fc-47ca-8186-607250c43ae4";
+var id = "d401cf85-294b-41ab-9be7-66cc1629f552";
 var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskGetAdvancedAsync(id);
 ```
 
@@ -1043,9 +1021,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "e2f1fad6-04fb-45a2-b524-9f67a99fc014";
+var id = "fc5e00f9-351c-403d-b0b2-070845db19e3";
 var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskGetHtmlAsync(id);
 ```
 
@@ -1086,7 +1063,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppListingsCategoriesAsync();
 ```
@@ -1128,7 +1104,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.GoogleAppListingsSearchLiveAsync(new List<AppDataGoogleAppListingsSearchLiveRequestInfo>()
 {
@@ -1182,7 +1157,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleCategoriesAsync();
 ```
@@ -1224,7 +1198,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataAppleLocationsAsync();
 ```
@@ -1266,7 +1239,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppDataAppleLanguagesAsync();
 ```
@@ -1308,7 +1280,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppSearchesTaskPostAsync(new List<AppDataAppleAppSearchesTaskPostRequestInfo>()
 {
@@ -1359,7 +1330,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppSearchesTasksReadyAsync();
 ```
@@ -1401,9 +1371,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "a950c217-8459-49fe-8834-fe5f83e5e84e";
+var id = "8d1d2559-a1a5-4a66-a27a-b6b2ccfc01f9";
 var result = await dfsClient.AppDataApi.AppleAppSearchesTaskGetAdvancedAsync(id);
 ```
 
@@ -1444,7 +1413,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppInfoTaskPostAsync(new List<AppDataAppleAppInfoTaskPostRequestInfo>()
 {
@@ -1494,7 +1462,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppInfoTasksReadyAsync();
 ```
@@ -1536,9 +1503,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "96a03976-e950-4ffe-91d5-644011d719e4";
+var id = "65dd669e-0d17-461b-891c-821c862b71d1";
 var result = await dfsClient.AppDataApi.AppleAppInfoTaskGetAdvancedAsync(id);
 ```
 
@@ -1579,7 +1545,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppListTaskPostAsync(new List<AppDataAppleAppListTaskPostRequestInfo>()
 {
@@ -1631,7 +1596,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppListTasksReadyAsync();
 ```
@@ -1673,9 +1637,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "9370611b-cb73-4dde-b838-d39aa5e31ae0";
+var id = "310ee395-0683-4b68-b2e1-7757aea44f3c";
 var result = await dfsClient.AppDataApi.AppleAppListTaskGetAdvancedAsync(id);
 ```
 
@@ -1716,7 +1679,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppReviewsTaskPostAsync(new List<AppDataAppleAppReviewsTaskPostRequestInfo>()
 {
@@ -1767,7 +1729,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppReviewsTasksReadyAsync();
 ```
@@ -1809,9 +1770,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "e769bee6-6874-4872-9721-cb34ac1bf953";
+var id = "0294027f-ee61-4717-80fb-8841b96a9528";
 var result = await dfsClient.AppDataApi.AppleAppReviewsTaskGetAdvancedAsync(id);
 ```
 
@@ -1852,7 +1812,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppListingsCategoriesAsync();
 ```
@@ -1894,7 +1853,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(new List<AppDataAppleAppListingsSearchLiveRequestInfo>()
 {

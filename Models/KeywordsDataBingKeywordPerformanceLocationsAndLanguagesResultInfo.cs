@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// language name
         /// </summary>
         [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
+        public int? LanguageName { get; set; }
 
         /// <summary>
         /// language code

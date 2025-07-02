@@ -10,7 +10,6 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search engine type
-        /// <br/>possible values: google
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -25,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// keyword search depth
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Depth { get; set; }
+        public int? Depth { get; set; }
 
         /// <summary>
         /// list of related keywords

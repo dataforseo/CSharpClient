@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no hotel class rating information, the value will be null
         /// </summary>
         [JsonProperty("hotel_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? HotelRating { get; set; }
+        public int? HotelRating { get; set; }
 
         /// <summary>
         /// property price level
@@ -94,7 +94,7 @@ namespace DataForSeo.Client.Models
         /// total count of images featured in Google My Business profile
         /// </summary>
         [JsonProperty("total_photos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPhotos { get; set; }
+        public long? TotalPhotos { get; set; }
 
         /// <summary>
         /// business category

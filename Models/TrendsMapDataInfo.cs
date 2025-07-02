@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// <br/>a value of 0 means there was not enough data for this term
         /// </summary>
         [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> Values { get; set; }
+        public IEnumerable<object> Values { get; set; }
 
         /// <summary>
         /// max value among comparable terms
@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if you specified only one keyword, the value will be null
         /// </summary>
         [JsonProperty("max_value_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? MaxValueIndex { get; set; }
+        public int? MaxValueIndex { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

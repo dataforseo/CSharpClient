@@ -12,19 +12,19 @@ namespace DataForSeo.Client.Models
         /// number of input tokens
         /// </summary>
         [JsonProperty("input_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? InputTokens { get; set; }
+        public int? InputTokens { get; set; }
 
         /// <summary>
         /// number of output tokens
         /// </summary>
         [JsonProperty("output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OutputTokens { get; set; }
+        public int? OutputTokens { get; set; }
 
         /// <summary>
         /// number of new tokens
         /// </summary>
         [JsonProperty("new_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NewTokens { get; set; }
+        public int? NewTokens { get; set; }
 
         /// <summary>
         /// resulting text

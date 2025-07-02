@@ -12,19 +12,19 @@ namespace DataForSeo.Client.Models
         /// number of keywords for which the page is ranked in top 3 search results
         /// </summary>
         [JsonProperty("page_from_keywords_count_top_3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromKeywordsCountTop3 { get; set; }
+        public long? PageFromKeywordsCountTop3 { get; set; }
 
         /// <summary>
         /// number of keywords for which the page is ranked in top 10 search results
         /// </summary>
         [JsonProperty("page_from_keywords_count_top_10", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromKeywordsCountTop10 { get; set; }
+        public long? PageFromKeywordsCountTop10 { get; set; }
 
         /// <summary>
         /// number of keywords for which the page is ranked in top 100 search results
         /// </summary>
         [JsonProperty("page_from_keywords_count_top_100", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromKeywordsCountTop100 { get; set; }
+        public long? PageFromKeywordsCountTop100 { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

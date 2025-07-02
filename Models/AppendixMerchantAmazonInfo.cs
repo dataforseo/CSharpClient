@@ -8,11 +8,11 @@ namespace DataForSeo.Client.Models
     public class AppendixMerchantAmazonInfo 
     {
         [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo Asin { get; set; }
+        public AppendixSerpsRatesDataInfo Asin { get; set; }
         [JsonProperty("products", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo Products { get; set; }
+        public AppendixSerpsRatesDataInfo Products { get; set; }
         [JsonProperty("sellers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo Sellers { get; set; }
+        public AppendixSerpsRatesDataInfo Sellers { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

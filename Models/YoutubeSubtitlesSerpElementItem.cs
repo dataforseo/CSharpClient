@@ -18,19 +18,19 @@ namespace DataForSeo.Client.Models
         /// the second subtitled text starts
         /// </summary>
         [JsonProperty("start_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StartTime { get; set; }
+        public int? StartTime { get; set; }
 
         /// <summary>
         /// the second subtitled text ends
         /// </summary>
         [JsonProperty("end_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? EndTime { get; set; }
+        public int? EndTime { get; set; }
 
         /// <summary>
         /// duration of subtitles in seconds
         /// </summary>
         [JsonProperty("duration_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DurationTime { get; set; }
+        public int? DurationTime { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

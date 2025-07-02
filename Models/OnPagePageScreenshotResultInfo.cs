@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         /// number of items in the results array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

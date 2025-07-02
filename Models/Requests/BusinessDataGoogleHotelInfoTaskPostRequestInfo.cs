@@ -158,50 +158,6 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<string> Children { get; set; }
 
         /// <summary>
-        /// load hotel stay prices by dates
-        /// <br/>optional field
-        /// <br/>if you specify this parameter with true, the response will include the prices_by_dates array with hotel stay prices divided by dates
-        /// <br/>if you use this parameter, you will be charged double the base price for a request
-        /// </summary>
-        [JsonProperty("load_prices_by_dates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LoadPricesByDates { get; set; }
-
-        /// <summary>
-        /// start date to load prices by dates
-        /// <br/>optional field
-        /// <br/>to use this parameter, you must specify load_prices_by_dates with true
-        /// <br/>if this parameter is not specified, the start date is set to check_in date
-        /// <br/>date format: yyyy-mm-dd
-        /// <br/>example:
-        /// <br/>2025-05-20
-        /// </summary>
-        [JsonProperty("prices_start_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string PricesStartDate { get; set; }
-
-        /// <summary>
-        /// end date to load prices by dates
-        /// <br/>optional field
-        /// <br/>to use this parameter, you must specify load_prices_by_dates with true
-        /// <br/>if this parameter is not specified, you will get prices by date for the month
-        /// <br/>date format: yyyy-mm-dd
-        /// <br/>example:
-        /// <br/>2025-05-21
-        /// </summary>
-        [JsonProperty("prices_end_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string PricesEndDate { get; set; }
-
-        /// <summary>
-        /// predefined period for retrieving daily price data
-        /// <br/>optional field
-        /// <br/>to use this parameter, you must specify load_prices_by_dates with true
-        /// <br/>if the prices_start_date is not specified, the start date is set to check_in date
-        /// <br/>possible values: month, three_months, six_months, year
-        /// <br/>default value: month
-        /// </summary>
-        [JsonProperty("prices_date_range", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string PricesDateRange { get; set; }
-
-        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255;

@@ -12,19 +12,19 @@ namespace DataForSeo.Client.Models
         /// search volume change in percent compared to the previous month
         /// </summary>
         [JsonProperty("monthly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Monthly { get; set; }
+        public int? Monthly { get; set; }
 
         /// <summary>
         /// search volume change in percent compared to the previous quarter
         /// </summary>
         [JsonProperty("quarterly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Quarterly { get; set; }
+        public int? Quarterly { get; set; }
 
         /// <summary>
         /// search volume change in percent compared to the previous year
         /// </summary>
         [JsonProperty("yearly", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Yearly { get; set; }
+        public int? Yearly { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// <br/>an array of objects containing data fields related to the certain microdata type
         /// </summary>
         [JsonProperty("fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public MicrodataFieldsInfo Fields { get; set; }
+        public IEnumerable<MicrodataFieldsInfo> Fields { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

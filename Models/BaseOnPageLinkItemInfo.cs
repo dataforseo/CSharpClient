@@ -7,11 +7,8 @@ namespace DataForSeo.Client.Models
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
     [JsonInheritance("anchor", typeof(AnchorLinkElementItem))]
     [JsonInheritance("image", typeof(ImageLinkElementItem))]
-    [JsonInheritance("canonical", typeof(CanonicalLinkElementItem))]
     [JsonInheritance("alternate", typeof(AlternateLinkElementItem))]
-    [JsonInheritance("link", typeof(LinkLinkElementItem))]
     [JsonInheritance("redirect", typeof(RedirectLinkElementItem))]
-    [JsonInheritance("meta", typeof(MetaLinkElementItem))]
 
     public class BaseOnPageLinkItemInfo 
     {
@@ -103,13 +100,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("is_link_relation_conflict", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsLinkRelationConflict { get; set; }
-
-        /// <summary>
-        /// status code of the referenced page
-        /// <br/>status code of the page to which the link is pointing
-        /// </summary>
-        [JsonProperty("page_to_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageToStatusCode { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

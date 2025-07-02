@@ -34,14 +34,14 @@ namespace DataForSeo.Client.Models
         /// <br/>the number of clicks that the keyword and match type generated during the last month
         /// </summary>
         [JsonProperty("clicks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Clicks { get; set; }
+        public int? Clicks { get; set; }
 
         /// <summary>
         /// ad impressions
         /// <br/>the number of impressions that the keyword and match type generated during the last month
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Impressions { get; set; }
+        public int? Impressions { get; set; }
 
         /// <summary>
         /// average cost per click, USD
@@ -62,7 +62,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the cost of using the specified keyword and match type during the last month
         /// </summary>
         [JsonProperty("total_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCost { get; set; }
+        public long? TotalCost { get; set; }
 
         /// <summary>
         /// average bid of the keyword

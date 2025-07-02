@@ -7,11 +7,11 @@
 |------------ | ------------- | ------------- | -------------|
 **Title** | **string** | page title |[optional]|
 **Canonical** | **string** | canonical page |[optional]|
-**InternalLinksCount** | **double?** | number of internal links on the page |[optional]|
-**ExternalLinksCount** | **double?** | number of external links on the page |[optional]|
-**ImagesCount** | **double?** | number of images on the page |[optional]|
-**WordsCount** | **double?** | number of words on the page |[optional]|
-**PageSpamScore** | **double?** | spam score of the page<br>learn more about how the metric is calculated on this help center page |[optional]|
+**InternalLinksCount** | **long?** | number of internal links on the page |[optional]|
+**ExternalLinksCount** | **long?** | number of external links on the page |[optional]|
+**ImagesCount** | **long?** | number of images on the page |[optional]|
+**WordsCount** | **long?** | number of words on the page |[optional]|
+**PageSpamScore** | **int?** | spam score of the page<br>learn more about how the metric is calculated on this help center page |[optional]|
 **SocialMediaTags** | **IDictionary<string, string>** | array of social media tags found on the page<br>contains social media tags and their content<br>supported tags include but are not limited to Open Graph and Twitter card |[optional]|
 **H1** | **IEnumerable<string>** | h1 tag<br>content of h1 tags |[optional]|
 **H2** | **IEnumerable<string>** | h2 tag<br>content of h2 tags |[optional]|

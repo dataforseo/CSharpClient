@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// ID of the industry
         /// </summary>
         [JsonProperty("industry_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? IndustryId { get; set; }
+        public long? IndustryId { get; set; }
 
         /// <summary>
         /// name of the industry

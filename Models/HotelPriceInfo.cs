@@ -12,13 +12,13 @@ namespace DataForSeo.Client.Models
         /// price per night
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Price { get; set; }
+        public int? Price { get; set; }
 
         /// <summary>
         /// full price per night without a discount applied
         /// </summary>
         [JsonProperty("price_without_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PriceWithoutDiscount { get; set; }
+        public long? PriceWithoutDiscount { get; set; }
 
         /// <summary>
         /// price currency
@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
         /// number of hotel visitors for this price
         /// </summary>
         [JsonProperty("visitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Visitors { get; set; }
+        public int? Visitors { get; set; }
 
         /// <summary>
         /// encountered item types
@@ -64,8 +64,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HotelPriceItemInfo> Items { get; set; }
-        [JsonProperty("prices_by_dates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<PricesByDates> PricesByDates { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

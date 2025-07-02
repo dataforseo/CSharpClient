@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// subscriber count
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Count { get; set; }
+        public long? Count { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

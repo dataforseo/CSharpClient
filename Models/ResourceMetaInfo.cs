@@ -10,6 +10,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// content of the image alt attribute
+        /// <br/>the value depends on the resource_type
         /// </summary>
         [JsonProperty("alternative_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AlternativeText { get; set; }
@@ -24,25 +25,25 @@ namespace DataForSeo.Client.Models
         /// original image width in px
         /// </summary>
         [JsonProperty("original_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OriginalWidth { get; set; }
+        public long? OriginalWidth { get; set; }
 
         /// <summary>
         /// original image height in px
         /// </summary>
         [JsonProperty("original_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OriginalHeight { get; set; }
+        public int? OriginalHeight { get; set; }
 
         /// <summary>
         /// image width in px
         /// </summary>
         [JsonProperty("width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Width { get; set; }
+        public long? Width { get; set; }
 
         /// <summary>
         /// image height in px
         /// </summary>
         [JsonProperty("height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Height { get; set; }
+        public int? Height { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

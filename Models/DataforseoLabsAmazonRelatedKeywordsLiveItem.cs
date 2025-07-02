@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// keyword search depth
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Depth { get; set; }
+        public int? Depth { get; set; }
 
         /// <summary>
         /// list of related keywords

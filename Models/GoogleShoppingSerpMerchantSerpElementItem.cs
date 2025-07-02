@@ -59,13 +59,6 @@ namespace DataForSeo.Client.Models
         public float? Price { get; set; }
 
         /// <summary>
-        /// price multiplier for instalment plan
-        /// <br/>indicates the number of months covered by the monthly payment for the product
-        /// </summary>
-        [JsonProperty("price_multiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PriceMultiplier { get; set; }
-
-        /// <summary>
         /// product old price
         /// <br/>displayed if the product price has been changed
         /// <br/>example:
@@ -122,7 +115,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are no values, you will get null
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// “best match” label

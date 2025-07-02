@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models
         /// <br/>a value of 0 means there was not enough data for this term
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Value { get; set; }
+        public int? Value { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

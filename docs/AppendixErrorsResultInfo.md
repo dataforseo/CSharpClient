@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Code** | **double?** | code |[optional]|
+**Code** | **int?** | code |[optional]|
 **Message** | **string** | message |[optional]|

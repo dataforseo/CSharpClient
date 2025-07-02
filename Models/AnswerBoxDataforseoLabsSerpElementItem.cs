@@ -9,12 +9,6 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
         /// text
         /// <br/>if there is none, equals null
         /// </summary>

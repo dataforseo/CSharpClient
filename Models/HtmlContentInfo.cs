@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// total size of the text on the page measured in bytes
         /// </summary>
         [JsonProperty("plain_text_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PlainTextSize { get; set; }
+        public int? PlainTextSize { get; set; }
 
         /// <summary>
         /// plaintext rate value

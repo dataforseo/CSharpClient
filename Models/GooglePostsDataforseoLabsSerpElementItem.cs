@@ -9,12 +9,6 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
         /// the identifier of the google_posts feature
         /// </summary>
         [JsonProperty("posts_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -28,6 +22,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// google-defined client id
+        /// <br/>unique id of a local establishment;
+        /// <br/>can be used with Google Reviews API to get a full list of reviews
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }

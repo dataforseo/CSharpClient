@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
         /// contains parameters you specified in the POST request
         /// </summary>
         [JsonProperty("metadata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> Metadata { get; set; }
+        public IDictionary<string, object> Metadata { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

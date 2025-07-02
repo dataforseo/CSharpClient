@@ -12,37 +12,37 @@ namespace DataForSeo.Client.Models
         /// monthly estimated impressions range
         /// </summary>
         [JsonProperty("est_impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AudienceEstimationInfo EstImpressions { get; set; }
+        public EstInfo EstImpressions { get; set; }
 
         /// <summary>
         /// monthly estimated reach user count range
         /// </summary>
         [JsonProperty("est_audience_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AudienceEstimationInfo EstAudienceSize { get; set; }
+        public EstInfo EstAudienceSize { get; set; }
 
         /// <summary>
         /// monthly estimated click count range
         /// </summary>
         [JsonProperty("est_clicks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AudienceEstimationInfo EstClicks { get; set; }
+        public EstInfo EstClicks { get; set; }
 
         /// <summary>
         /// monthly estimated spending range
         /// </summary>
         [JsonProperty("est_spend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AudienceEstimationInfo EstSpend { get; set; }
+        public EstInfo EstSpend { get; set; }
 
         /// <summary>
         /// indicates the estimated cost per event with range result
         /// </summary>
         [JsonProperty("est_cost_per_event", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AudienceEstimationInfo EstCostPerEvent { get; set; }
+        public EstCInfo EstCostPerEvent { get; set; }
 
         /// <summary>
         /// estimated click-through rate range
         /// </summary>
         [JsonProperty("est_ctr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AudienceEstimationInfo EstCtr { get; set; }
+        public EstCInfo EstCtr { get; set; }
 
         /// <summary>
         /// suggested bid value under the current targeting
@@ -60,13 +60,13 @@ namespace DataForSeo.Client.Models
         /// indicates event lost count due to insufficient input bid
         /// </summary>
         [JsonProperty("events_lost_to_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? EventsLostToBid { get; set; }
+        public long? EventsLostToBid { get; set; }
 
         /// <summary>
         /// indicates the event lost count due to insufficient input budget
         /// </summary>
         [JsonProperty("events_lost_to_budget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? EventsLostToBudget { get; set; }
+        public int? EventsLostToBudget { get; set; }
 
         /// <summary>
         /// monthly estimated user count

@@ -19,14 +19,14 @@ namespace DataForSeo.Client.Models
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankGroup { get; set; }
+        public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank among all the listed reviews
         /// <br/>absolute position among all reviews on the list
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankAbsolute { get; set; }
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// the alignment of the review in SERP
@@ -74,19 +74,19 @@ namespace DataForSeo.Client.Models
         /// the rating score submitted by the reviewer
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// total number of reviews submitted by the reviewer
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// total number of photos submitted by the reviewer
         /// </summary>
         [JsonProperty("photos_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PhotosCount { get; set; }
+        public long? PhotosCount { get; set; }
 
         /// <summary>
         /// indicates whether the reviewer has a ‘local guide’ status

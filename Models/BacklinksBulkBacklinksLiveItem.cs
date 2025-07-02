@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// number of backlinks pointing to the target
         /// </summary>
         [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Backlinks { get; set; }
+        public long? Backlinks { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

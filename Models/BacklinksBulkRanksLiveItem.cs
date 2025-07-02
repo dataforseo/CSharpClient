@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rank { get; set; }
+        public int? Rank { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -9,13 +9,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
-        /// elements of search results found in SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<QuestionsAndAnswersElement> Items { get; set; }

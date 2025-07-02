@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// location code
         /// </summary>
         [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the location
@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the value will be null as Country is the only supported location_type for this API
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCodeParent { get; set; }
+        public int? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location

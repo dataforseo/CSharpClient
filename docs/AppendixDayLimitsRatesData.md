@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Serp** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Serp** | **AppendixSerpsRatesDataInfo** |  |[optional]|
 **Total** | **double?** | total amount of money deposited to your account |[optional]|
 **TotalSerp** | **double?** |  |[optional]|
-**KeywordsData** | **AppendixKeywordsDataDaysRatesDataInfo** |  |[optional]|
+**KeywordsData** | **AppendixKeywordsDatasRatesDataInfo** |  |[optional]|
 **TotalKeywordsData** | **double?** |  |[optional]|
 **Appendix** | **AppendixAppendixDaysRatesDataInfo** |  |[optional]|
 **TotalAppendix** | **double?** |  |[optional]|
@@ -30,6 +30,6 @@
 **TotalContentAnalysis** | **double?** |  |[optional]|
 **ContentGeneration** | **AppendixContentGenerationLimitsRatesDataInfo** |  |[optional]|
 **TotalContentGeneration** | **double?** |  |[optional]|
-**TotalTrafficAnalytics** | **double?** |  |[optional]|
 **TotalReviews** | **double?** |  |[optional]|
 **TotalSocial** | **double?** |  |[optional]|
+**TotalTrafficAnalytics** | **double?** |  |[optional]|

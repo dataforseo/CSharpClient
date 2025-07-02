@@ -7,9 +7,9 @@
 |------------ | ------------- | ------------- | -------------|
 **Keywords** | **IEnumerable<string>** | keywords in a POST array |[optional]|
 **Type** | **string** | type of element |[optional]|
-**LocationCode** | **double?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
+**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
 **LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
 **CheckUrl** | **string** | direct URL to the Google Trends results<br>you can use it to make sure that we provided accurate results |[optional]|
 **Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**ItemsCount** | **double?** | the number of results returned in the items array |[optional]|
+**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
 **Items** | **IEnumerable<BaseGoogleTrendsItem>** | items on the Google Trends page |[optional]|

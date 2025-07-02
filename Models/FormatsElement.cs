@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// file size in bytes
         /// </summary>
         [JsonProperty("size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Size { get; set; }
+        public long? Size { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// unique google trends category identifier
         /// </summary>
         [JsonProperty("category_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CategoryCode { get; set; }
+        public int? CategoryCode { get; set; }
 
         /// <summary>
         /// name of the google trends category
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'category_name': 'Action &amp; Adventure Films'
         /// </summary>
         [JsonProperty("category_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CategoryCodeParent { get; set; }
+        public int? CategoryCodeParent { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

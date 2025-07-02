@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**PreviousRankAbsolute** | **double?** | previous absolute rank in SERP<br>indicates previous rank of the element in Google SERP;<br>if this element is new, the value will be null |[optional]|
+**PreviousRankAbsolute** | **int?** | previous absolute rank in SERP<br>indicates previous rank of the element in Google SERP;<br>if this element is new, the value will be null |[optional]|
 **IsNew** | **bool?** | element was previously present in SERP<br>if the value is true, previously collected SERP didn’t contain this element |[optional]|
 **IsUp** | **bool?** | rank of this element went up<br>if the value is true, position of the element in SERP is higher compared to the previous check |[optional]|
 **IsDown** | **bool?** | rank of this element went down<br>if the value is true, position of the element in SERP is lower compared to the previous check |[optional]|

@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more in this help center article
         /// </summary>
         [JsonProperty("bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Bid { get; set; }
+        public long? Bid { get; set; }
 
         /// <summary>
         /// keywords match-type

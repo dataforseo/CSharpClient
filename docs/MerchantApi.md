@@ -57,14 +57,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 11:01:45 +00:00",
-        DatetimeTo = "2025-04-30 11:01:45 +00:00",
+        DatetimeFrom = "2025-01-18 03:40:44 +00:00",
+        DatetimeTo = "2025-03-18 03:40:44 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -109,7 +108,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantErrorsAsync(new List<MerchantErrorsRequestInfo>()
 {
@@ -159,7 +157,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantGoogleLanguagesAsync();
 ```
@@ -201,7 +198,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantGoogleLocationsAsync();
 ```
@@ -243,7 +239,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.MerchantApi.MerchantGoogleLocationsCountryAsync(country);
@@ -286,7 +281,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(new List<MerchantGoogleProductsTaskPostRequestInfo>()
 {
@@ -337,7 +331,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleProductsTasksReadyAsync();
 ```
@@ -379,7 +372,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantTasksReadyAsync();
 ```
@@ -421,7 +413,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.GoogleProductsTaskGetAdvancedAsync(id);
@@ -464,9 +455,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "bd06b326-8968-4d9f-9e21-da9a45d0ea64";
+var id = "48006dfe-9291-4f95-8857-9fb6a4cb18a3";
 var result = await dfsClient.MerchantApi.GoogleProductsTaskGetHtmlAsync(id);
 ```
 
@@ -507,7 +497,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleSellersTaskPostAsync(new List<MerchantGoogleSellersTaskPostRequestInfo>()
 {
@@ -557,7 +546,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleSellersTasksReadyAsync();
 ```
@@ -599,7 +587,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.GoogleSellersTaskGetAdvancedAsync(id);
@@ -642,9 +629,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "3cfcc7d0-42b1-40c2-95bc-acf765dfaaf2";
+var id = "2a4c259d-7dbc-4038-ba55-96be2799680a";
 var result = await dfsClient.MerchantApi.GoogleSellersTaskGetHtmlAsync(id);
 ```
 
@@ -685,7 +671,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleProductSpecTaskPostAsync(new List<MerchantGoogleProductSpecTaskPostRequestInfo>()
 {
@@ -735,7 +720,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleProductSpecTasksReadyAsync();
 ```
@@ -777,7 +761,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.GoogleProductSpecTaskGetAdvancedAsync(id);
@@ -820,9 +803,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "4c364fa9-7142-4b55-9ddc-a3697c0b3f58";
+var id = "5fe27954-de98-4545-a7cc-fb6c004f93fa";
 var result = await dfsClient.MerchantApi.GoogleProductSpecTaskGetHtmlAsync(id);
 ```
 
@@ -863,7 +845,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleProductInfoTaskPostAsync(new List<MerchantGoogleProductInfoTaskPostRequestInfo>()
 {
@@ -913,7 +894,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.GoogleProductInfoTasksReadyAsync();
 ```
@@ -955,7 +935,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.GoogleProductInfoTaskGetAdvancedAsync(id);
@@ -998,7 +977,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var shop_ad_aclk = "DChcSEwiSl5TKpbPoAhVFmdUKHfa_B_wYABADGgJ3cw&sig";
 var result = await dfsClient.MerchantApi.GoogleSellersAdUrlAsync(shop_ad_aclk);
@@ -1041,7 +1019,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantAmazonLocationsAsync();
 ```
@@ -1083,7 +1060,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.MerchantApi.MerchantAmazonLocationsCountryAsync(country);
@@ -1126,7 +1102,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.MerchantAmazonLanguagesAsync();
 ```
@@ -1168,7 +1143,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonProductsTaskPostAsync(new List<MerchantAmazonProductsTaskPostRequestInfo>()
 {
@@ -1218,7 +1192,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonProductsTasksReadyAsync();
 ```
@@ -1260,7 +1233,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.AmazonProductsTaskGetAdvancedAsync(id);
@@ -1303,9 +1275,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "b25b2e54-c0d7-46bc-9756-4da16315c690";
+var id = "b4b44ad9-e7eb-47c1-b950-c900c3d2aa01";
 var result = await dfsClient.MerchantApi.AmazonProductsTaskGetHtmlAsync(id);
 ```
 
@@ -1346,7 +1317,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonAsinTaskPostAsync(new List<MerchantAmazonAsinTaskPostRequestInfo>()
 {
@@ -1396,7 +1366,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonAsinTasksReadyAsync();
 ```
@@ -1438,7 +1407,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.AmazonAsinTaskGetAdvancedAsync(id);
@@ -1481,9 +1449,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "3ea483df-14f6-4962-806a-ca0cb905fce8";
+var id = "4db59c3b-39c3-4122-92b8-10979409c4dc";
 var result = await dfsClient.MerchantApi.AmazonAsinTaskGetHtmlAsync(id);
 ```
 
@@ -1524,7 +1491,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(new List<MerchantAmazonSellersTaskPostRequestInfo>()
 {
@@ -1574,7 +1540,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonSellersTasksReadyAsync();
 ```
@@ -1616,7 +1581,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.AmazonSellersTaskGetAdvancedAsync(id);
@@ -1659,9 +1623,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "ba31e277-244c-4584-bb69-38222eda5f86";
+var id = "24c561e5-6cac-4cda-8962-9993d8a0eab6";
 var result = await dfsClient.MerchantApi.AmazonSellersTaskGetHtmlAsync(id);
 ```
 
@@ -1702,7 +1665,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonReviewsTaskPostAsync(new List<MerchantAmazonReviewsTaskPostRequestInfo>()
 {
@@ -1752,7 +1714,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.MerchantApi.AmazonReviewsTasksReadyAsync();
 ```
@@ -1794,7 +1755,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetAdvancedAsync(id);
@@ -1837,9 +1797,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "d94388d4-1bd6-455a-97a3-e1336640234a";
+var id = "3595c771-ffc9-451b-b2f0-ba4245de8277";
 var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetHtmlAsync(id);
 ```
 

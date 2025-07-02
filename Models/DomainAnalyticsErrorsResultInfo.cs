@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// error code
         /// </summary>
         [JsonProperty("error_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ErrorCode { get; set; }
+        public int? ErrorCode { get; set; }
 
         /// <summary>
         /// error message or error URL
@@ -59,7 +59,7 @@ namespace DataForSeo.Client.Models
         /// HTTP status code
         /// </summary>
         [JsonProperty("http_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? HttpCode { get; set; }
+        public int? HttpCode { get; set; }
 
         /// <summary>
         /// time taken by HTTP request

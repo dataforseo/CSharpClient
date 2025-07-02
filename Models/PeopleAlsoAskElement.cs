@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// expanded element
         /// </summary>
         [JsonProperty("expanded_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BasePeopleAlsoAskExpandedElementItem> ExpandedElement { get; set; }
+        public IEnumerable<PeopleAlsoAskExpandedElement> ExpandedElement { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

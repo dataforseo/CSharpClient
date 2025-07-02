@@ -9,26 +9,11 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
-        /// </summary>
-        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankGroup { get; set; }
-
-        /// <summary>
-        /// absolute rank in SERP
-        /// <br/>absolute position among all the elements in SERP
-        /// </summary>
-        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankAbsolute { get; set; }
-
-        /// <summary>
         /// financial markets data
         /// <br/>array of items containing market indexes and other financial information related to these indexes
         /// </summary>
         [JsonProperty("markets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<Markets> Markets { get; set; }
+        public IEnumerable<GoogleFinanceMarketsInfo> Markets { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -9,12 +9,6 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
-        /// </summary>
-        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeType { get; set; }
-
-        /// <summary>
         /// unique hotel identifier
         /// <br/>unique hotel identifier assigned by Google;
         /// <br/>example: 'CgoIjaeSlI6CnNpVEAE'
@@ -23,7 +17,7 @@ namespace DataForSeo.Client.Models
         public string HotelIdentifier { get; set; }
 
         /// <summary>
-        /// sitelink URL
+        /// relevant URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

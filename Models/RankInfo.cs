@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("page_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageRank { get; set; }
+        public int? PageRank { get; set; }
 
         /// <summary>
         /// main domain rank
@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("main_domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? MainDomainRank { get; set; }
+        public int? MainDomainRank { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

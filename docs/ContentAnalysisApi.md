@@ -27,14 +27,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new List<ContentAnalysisIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 11:01:34 +00:00",
-        DatetimeTo = "2025-04-30 11:01:34 +00:00",
+        DatetimeFrom = "2025-01-18 03:40:30 +00:00",
+        DatetimeTo = "2025-03-18 03:40:30 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -79,7 +78,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.ContentAnalysisAvailableFiltersAsync();
 ```
@@ -121,7 +119,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.ContentAnalysisLocationsAsync();
 ```
@@ -163,7 +160,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.ContentAnalysisLanguagesAsync();
 ```
@@ -205,7 +201,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.ContentAnalysisCategoriesAsync();
 ```
@@ -247,7 +242,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<ContentAnalysisSearchLiveRequestInfo>()
 {
@@ -309,7 +303,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(new List<ContentAnalysisSummaryLiveRequestInfo>()
 {
@@ -367,7 +360,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.SentimentAnalysisLiveAsync(new List<ContentAnalysisSentimentAnalysisLiveRequestInfo>()
 {
@@ -416,15 +408,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(new List<ContentAnalysisRatingDistributionLiveRequestInfo>()
 {
     new()
     {
-        Keyword = "logitech",
-        InternalListLimit = 10,
-        SearchMode = "as_is",
     }
 });
 ```
@@ -466,7 +454,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<ContentAnalysisPhraseTrendsLiveRequestInfo>()
 {
@@ -474,7 +461,7 @@ var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<C
     {
         Keyword = "logitech",
         SearchMode = "as_is",
-        DateFrom = "2025-02-28",
+        DateFrom = "2022-09-01",
         DateGroup = "month",
     }
 });
@@ -517,7 +504,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List<ContentAnalysisCategoryTrendsLiveRequestInfo>()
 {
@@ -525,7 +511,7 @@ var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List
     {
         CategoryCode = "10994",
         SearchMode = "as_is",
-        DateFrom = "2025-02-28",
+        DateFrom = "2022-09-01",
         DateGroup = "month",
     }
 });

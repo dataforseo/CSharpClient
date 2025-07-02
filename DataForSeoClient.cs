@@ -8,8 +8,8 @@ namespace DataForSeo.Client
         private System.Net.Http.HttpClient _client;
 
         public SerpApi SerpApi { get; }
-        public DataforseoLabsApi DataforseoLabsApi { get; }
         public DomainAnalyticsApi DomainAnalyticsApi { get; }
+        public DataforseoLabsApi DataforseoLabsApi { get; }
         public KeywordsDataApi KeywordsDataApi { get; }
         public BacklinksApi BacklinksApi { get; }
         public OnPageApi OnPageApi { get; }
@@ -35,8 +35,8 @@ namespace DataForSeo.Client
             
 
             SerpApi = new SerpApi(_client);
-            DataforseoLabsApi = new DataforseoLabsApi(_client);
             DomainAnalyticsApi = new DomainAnalyticsApi(_client);
+            DataforseoLabsApi = new DataforseoLabsApi(_client);
             KeywordsDataApi = new KeywordsDataApi(_client);
             BacklinksApi = new BacklinksApi(_client);
             OnPageApi = new OnPageApi(_client);

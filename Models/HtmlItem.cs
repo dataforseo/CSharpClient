@@ -1,13 +1,17 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
 namespace DataForSeo.Client.Models
 {
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "1.0.0.0 (NJsonSchema v1.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class HtmlItem
+    public class HtmlItem 
     {
+
         /// <summary>
         /// serial number of the returned HTML page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("page", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Page { get; set; }
 
         /// <summary>
@@ -16,23 +20,22 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("date", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }
 
         /// <summary>
         /// HTML page
         /// </summary>
-        [Newtonsoft.Json.JsonProperty("html", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        [JsonProperty("html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Html { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+        private IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
         {
             get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
             set { _additionalProperties = value; }
         }
-
     }
 }

@@ -12,13 +12,13 @@ namespace DataForSeo.Client.Models
         /// line where the error was found
         /// </summary>
         [JsonProperty("line", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Line { get; set; }
+        public int? Line { get; set; }
 
         /// <summary>
         /// column where the error was found
         /// </summary>
         [JsonProperty("column", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Column { get; set; }
+        public int? Column { get; set; }
 
         /// <summary>
         /// text message of the error
@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// <br/>3504 — Image Format Invalid
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StatusCode { get; set; }
+        public int? StatusCode { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

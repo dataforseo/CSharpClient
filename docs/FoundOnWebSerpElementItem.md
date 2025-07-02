@@ -5,6 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
+**Xpath** | **string** | the XPath of the element |[optional]|
 **Title** | **string** | title of the row |[optional]|
 **RelatedSearches** | **IEnumerable<string>** | search queries related to the elment |[optional]|
 **Items** | **IEnumerable<FoundOnWebElement>** | contains arrays of specific images |[optional]|

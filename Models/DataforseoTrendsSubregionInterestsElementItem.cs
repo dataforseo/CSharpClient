@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// subregional keyword popuarity data for each specified term
         /// </summary>
         [JsonProperty("interests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoTrendsinterestsInfo> Interests { get; set; }
+        public IEnumerable<Interests> Interests { get; set; }
 
         /// <summary>
         /// comparison of data on subregional keyword popularity for the specified parameters

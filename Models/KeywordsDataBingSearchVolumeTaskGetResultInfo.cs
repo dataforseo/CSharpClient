@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -61,10 +61,12 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// monthly average search volume rate
+        /// <br/>represents either the (approximate) number of searches for the given keyword idea on bing search engine, depending on the user’s targeting
         /// <br/>search volume is rounded to the nearest tens
+        /// <br/>if there is no data then the value is null
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// product and service categories

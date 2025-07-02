@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -62,6 +62,16 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("keyword_properties", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public KeywordProperties KeywordProperties { get; set; }
+
+        /// <summary>
+        /// impressions data for the returned keyword idea
+        /// <br/>Note that all data in the impressions_info object is deprecated and provided only as legacy to avoid maintenance issues
+        /// <br/>daily_impressions values provide a more accurate alternative to Google search volume data;
+        /// <br/>the 999 bid is used to mitigate account-specific factors Google considers when calculating impressions
+        /// <br/>learn more about impressions in this help center article
+        /// </summary>
+        [JsonProperty("impressions_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ImpressionsInfo ImpressionsInfo { get; set; }
 
         /// <summary>
         /// SERP data

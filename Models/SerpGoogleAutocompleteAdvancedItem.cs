@@ -20,14 +20,14 @@ namespace DataForSeo.Client.Models
         /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankGroup { get; set; }
+        public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RankAbsolute { get; set; }
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// relevance of suggested keyword
@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// <br/>chrome/chrome-omni
         /// </summary>
         [JsonProperty("relevance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Relevance { get; set; }
+        public int? Relevance { get; set; }
 
         /// <summary>
         /// google autocomplete keyword suggestion

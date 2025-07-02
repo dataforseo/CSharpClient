@@ -11,5 +11,5 @@
 **Text** | **string** | text of the comment |[optional]|
 **PublicationDate** | **string** | displayed publication date |[optional]|
 **Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-15 12:57:46 +00:00 |[optional]|
-**LikesCount** | **double?** | number of likes on the comment |[optional]|
-**ReplyCount** | **double?** | number of replies on the comment |[optional]|
+**LikesCount** | **long?** | number of likes on the comment |[optional]|
+**ReplyCount** | **long?** | number of replies on the comment |[optional]|

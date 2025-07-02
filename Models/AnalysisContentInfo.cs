@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates h-tag level from 1 (top) to 6 (bottom)
         /// </summary>
         [JsonProperty("level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Level { get; set; }
+        public int? Level { get; set; }
 
         /// <summary>
         /// author of the content
@@ -57,14 +57,14 @@ namespace DataForSeo.Client.Models
         /// character length of the snippet
         /// </summary>
         [JsonProperty("snippet_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SnippetLength { get; set; }
+        public int? SnippetLength { get; set; }
 
         /// <summary>
         /// social media engagement metrics
         /// <br/>data on social media interactions associated with the content based on website embeds developed and supported by social media platforms
         /// </summary>
         [JsonProperty("social_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<Facebook> SocialMetrics { get; set; }
+        public IEnumerable<SocialMetricsInfo> SocialMetrics { get; set; }
 
         /// <summary>
         /// highlighted text from the snippet
@@ -100,7 +100,7 @@ namespace DataForSeo.Client.Models
         /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
         /// </summary>
         [JsonProperty("text_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<double?> TextCategory { get; set; }
+        public IEnumerable<int?> TextCategory { get; set; }
 
         /// <summary>
         /// date and time when the content was published
@@ -116,7 +116,7 @@ namespace DataForSeo.Client.Models
         /// <br/>this value is calculated based on the number of words, sentences and characters the content contains
         /// </summary>
         [JsonProperty("content_quality_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ContentQualityScore { get; set; }
+        public int? ContentQualityScore { get; set; }
 
         /// <summary>
         /// semantic location

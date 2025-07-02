@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// contains keywords and related keyword difficulty scores

@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// current search volume rate of a keyword
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SearchVolume { get; set; }
+        public long? SearchVolume { get; set; }
 
         /// <summary>
         /// monthly search volume rates

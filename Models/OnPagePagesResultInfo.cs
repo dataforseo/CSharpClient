@@ -20,22 +20,18 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public CrawlStatusInfo CrawlStatus { get; set; }
-        [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SearchAfterToken { get; set; }
-        [JsonProperty("current_offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CurrentOffset { get; set; }
 
         /// <summary>
         /// total number of relevant items in the database
         /// </summary>
         [JsonProperty("total_items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalItemsCount { get; set; }
+        public long? TotalItemsCount { get; set; }
 
         /// <summary>
         /// number of items in the results array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items array

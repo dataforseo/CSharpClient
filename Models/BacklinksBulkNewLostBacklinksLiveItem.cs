@@ -19,14 +19,14 @@ namespace DataForSeo.Client.Models
         /// <br/>number of new backlinks pointing to the target
         /// </summary>
         [JsonProperty("new_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? NewBacklinks { get; set; }
+        public long? NewBacklinks { get; set; }
 
         /// <summary>
         /// number of lost backlinks
         /// <br/>number of lost backlinks of the target
         /// </summary>
         [JsonProperty("lost_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LostBacklinks { get; set; }
+        public long? LostBacklinks { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

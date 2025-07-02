@@ -21,13 +21,19 @@ namespace DataForSeo.Client.Models
         /// total number of backlinks our database contained on the given date
         /// </summary>
         [JsonProperty("total_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalBacklinks { get; set; }
+        public long? TotalBacklinks { get; set; }
 
         /// <summary>
         /// total number of pages our database contained on the given date
         /// </summary>
         [JsonProperty("total_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPages { get; set; }
+        public long? TotalPages { get; set; }
+
+        /// <summary>
+        /// total number of domains our database contained on the given date
+        /// </summary>
+        [JsonProperty("total_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? TotalDomains { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

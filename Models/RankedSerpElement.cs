@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models
         /// number of search results for the returned keyword
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SeResultsCount { get; set; }
+        public string SeResultsCount { get; set; }
 
         /// <summary>
         /// difficulty of ranking in the first top-10 organic results for a keyword
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric in this help center guide
         /// </summary>
         [JsonProperty("keyword_difficulty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? KeywordDifficulty { get; set; }
+        public int? KeywordDifficulty { get; set; }
 
         /// <summary>
         /// lost ranked elements
@@ -61,7 +61,7 @@ namespace DataForSeo.Client.Models
         public bool? IsLost { get; set; }
 
         /// <summary>
-        /// date and time when keyword data was updated
+        /// date and time when search intent data was last updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("url_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? UrlRank { get; set; }
+        public int? UrlRank { get; set; }
 
         /// <summary>
         /// backlink spam score of the url
@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SpamScore { get; set; }
+        public string SpamScore { get; set; }
 
         /// <summary>
         /// rank of the domain
@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DomainRank { get; set; }
+        public string DomainRank { get; set; }
 
         /// <summary>
         /// date and time when our crawler visited the page
@@ -87,7 +87,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the higher the score, the more value the related citation has
         /// </summary>
         [JsonProperty("score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Score { get; set; }
+        public string Score { get; set; }
 
         /// <summary>
         /// contains all relevant page categories
@@ -95,7 +95,7 @@ namespace DataForSeo.Client.Models
         /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
         /// </summary>
         [JsonProperty("page_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<double?> PageCategory { get; set; }
+        public IEnumerable<int?> PageCategory { get; set; }
 
         /// <summary>
         /// page types

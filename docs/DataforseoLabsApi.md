@@ -75,14 +75,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new List<DataforseoLabsIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 10:57:34 +00:00",
-        DatetimeTo = "2025-04-30 10:57:34 +00:00",
+        DatetimeFrom = "2025-01-18 03:35:56 +00:00",
+        DatetimeTo = "2025-03-18 03:35:56 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -127,7 +126,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.DataforseoLabsStatusAsync();
 ```
@@ -169,7 +167,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.DataforseoLabsErrorsAsync(new List<DataforseoLabsErrorsRequestInfo>()
 {
@@ -218,7 +215,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AvailableFiltersAsync();
 ```
@@ -260,7 +256,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.DataforseoLabsLocationsAndLanguagesAsync();
 ```
@@ -302,7 +297,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.CategoriesAsync();
 ```
@@ -344,7 +338,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleAvailableHistoryAsync();
 ```
@@ -386,7 +379,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForSiteLiveAsync(new List<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo>()
 {
@@ -439,7 +431,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleRelatedKeywordsLiveAsync(new List<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo>()
 {
@@ -490,7 +481,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleKeywordSuggestionsLiveAsync(new List<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo>()
 {
@@ -543,7 +533,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleKeywordIdeasLiveAsync(new List<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo>()
 {
@@ -599,7 +588,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleBulkKeywordDifficultyLiveAsync(new List<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo>()
 {
@@ -654,7 +642,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleSearchIntentLiveAsync(new List<DataforseoLabsGoogleSearchIntentLiveRequestInfo>()
 {
@@ -709,7 +696,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync();
 ```
@@ -751,7 +737,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForDomainLiveAsync(new List<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo>()
 {
@@ -809,7 +794,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForKeywordsLiveAsync(new List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo>()
 {
@@ -863,7 +847,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForCategoriesLiveAsync(new List<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo>()
 {
@@ -919,7 +902,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLiveAsync(new List<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo>()
 {
@@ -930,8 +912,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-        FirstDate = "2025-02-28",
-        SecondDate = "2025-04-30",
+        FirstDate = "2021-06-01",
+        SecondDate = "2021-10-01",
         LocationCode = 2840,
         LanguageCode = "en",
         Limit = 3,
@@ -976,7 +958,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleTopSearchesLiveAsync(new List<DataforseoLabsGoogleTopSearchesLiveRequestInfo>()
 {
@@ -1026,7 +1007,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleDomainWhoisOverviewLiveAsync(new List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>()
 {
@@ -1074,7 +1054,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleRankedKeywordsLiveAsync(new List<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo>()
 {
@@ -1126,7 +1105,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleSerpCompetitorsLiveAsync(new List<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo>()
 {
@@ -1184,7 +1162,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleCompetitorsDomainLiveAsync(new List<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo>()
 {
@@ -1241,7 +1218,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleDomainIntersectionLiveAsync(new List<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo>()
 {
@@ -1294,7 +1270,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleSubdomainsLiveAsync(new List<DataforseoLabsGoogleSubdomainsLiveRequestInfo>()
 {
@@ -1344,7 +1319,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleRelevantPagesLiveAsync(new List<DataforseoLabsGoogleRelevantPagesLiveRequestInfo>()
 {
@@ -1395,7 +1369,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleDomainRankOverviewLiveAsync(new List<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo>()
 {
@@ -1445,15 +1418,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(new List<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo>()
 {
     new()
     {
         Keyword = "albert einstein",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2021-08-01",
+        DateTo = "2021-09-01",
         LocationCode = 2840,
         LanguageCode = "en",
     }
@@ -1497,7 +1469,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveAsync(new List<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo>()
 {
@@ -1506,8 +1477,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
         Target = "dataforseo.com",
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2021-01-01",
+        DateTo = "2021-03-29",
     }
 });
 ```
@@ -1549,7 +1520,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GooglePageIntersectionLiveAsync(new List<DataforseoLabsGooglePageIntersectionLiveRequestInfo>()
 {
@@ -1605,7 +1575,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleBulkTrafficEstimationLiveAsync(new List<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo>()
 {
@@ -1665,7 +1634,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstimationLiveAsync(new List<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo>()
 {
@@ -1679,8 +1647,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2021-01-01",
+        DateTo = "2021-03-29",
         ItemTypes = new List<string>()
         {
             "organic",
@@ -1727,7 +1695,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalKeywordDataLiveAsync(new List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo>()
 {
@@ -1780,7 +1747,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleKeywordOverviewLiveAsync(new List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo>()
 {
@@ -1835,7 +1801,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AmazonBulkSearchVolumeLiveAsync(new List<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo>()
 {
@@ -1890,7 +1855,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AmazonRelatedKeywordsLiveAsync(new List<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo>()
 {
@@ -1942,7 +1906,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AmazonRankedKeywordsLiveAsync(new List<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo>()
 {
@@ -1992,7 +1955,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AmazonProductRankOverviewLiveAsync(new List<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo>()
 {
@@ -2046,7 +2008,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AmazonProductCompetitorsLiveAsync(new List<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo>()
 {
@@ -2096,7 +2057,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AmazonProductKeywordIntersectionsLiveAsync(new List<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo>()
 {
@@ -2151,7 +2111,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingBulkKeywordDifficultyLiveAsync(new List<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo>()
 {
@@ -2206,7 +2165,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingBulkTrafficEstimationLiveAsync(new List<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo>()
 {
@@ -2266,7 +2224,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingCompetitorsDomainLiveAsync(new List<DataforseoLabsBingCompetitorsDomainLiveRequestInfo>()
 {
@@ -2323,7 +2280,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingDomainIntersectionLiveAsync(new List<DataforseoLabsBingDomainIntersectionLiveRequestInfo>()
 {
@@ -2375,7 +2331,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingDomainRankOverviewLiveAsync(new List<DataforseoLabsBingDomainRankOverviewLiveRequestInfo>()
 {
@@ -2425,7 +2380,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingPageIntersectionLiveAsync(new List<DataforseoLabsBingPageIntersectionLiveRequestInfo>()
 {
@@ -2480,7 +2434,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingRankedKeywordsLiveAsync(new List<DataforseoLabsBingRankedKeywordsLiveRequestInfo>()
 {
@@ -2532,7 +2485,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingRelatedKeywordsLiveAsync(new List<DataforseoLabsBingRelatedKeywordsLiveRequestInfo>()
 {
@@ -2583,7 +2535,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingRelevantPagesLiveAsync(new List<DataforseoLabsBingRelevantPagesLiveRequestInfo>()
 {
@@ -2634,7 +2585,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingSerpCompetitorsLiveAsync(new List<DataforseoLabsBingSerpCompetitorsLiveRequestInfo>()
 {
@@ -2692,7 +2642,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.BingSubdomainsLiveAsync(new List<DataforseoLabsBingSubdomainsLiveRequestInfo>()
 {
@@ -2743,7 +2692,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleBulkAppMetricsLiveAsync(new List<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo>()
 {
@@ -2797,7 +2745,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForAppLiveAsync(new List<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo>()
 {
@@ -2848,7 +2795,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleAppCompetitorsLiveAsync(new List<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo>()
 {
@@ -2899,20 +2845,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(new List<DataforseoLabsGoogleAppIntersectionLiveRequestInfo>()
 {
     new()
     {
-        AppIds = new Dictionary<string, string>()
-        {
-            ["1"] = "686449807",
-            ["2"] = "382617920",
-        },
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
     }
 });
 ```
@@ -2954,7 +2891,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AppleBulkAppMetricsLiveAsync(new List<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo>()
 {
@@ -3008,7 +2944,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AppleKeywordsForAppLiveAsync(new List<DataforseoLabsAppleKeywordsForAppLiveRequestInfo>()
 {
@@ -3059,7 +2994,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AppleAppCompetitorsLiveAsync(new List<DataforseoLabsAppleAppCompetitorsLiveRequestInfo>()
 {
@@ -3110,7 +3044,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DataforseoLabsApi.AppleAppIntersectionLiveAsync(new List<DataforseoLabsAppleAppIntersectionLiveRequestInfo>()
 {

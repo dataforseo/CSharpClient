@@ -51,13 +51,13 @@ namespace DataForSeo.Client.Models
         /// number of likes on the comment
         /// </summary>
         [JsonProperty("likes_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LikesCount { get; set; }
+        public long? LikesCount { get; set; }
 
         /// <summary>
         /// number of replies on the comment
         /// </summary>
         [JsonProperty("reply_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReplyCount { get; set; }
+        public long? ReplyCount { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -54,8 +54,7 @@ namespace DataForSeo.Client.Models
         /// <br/>date and time when the crawling was finished
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
-        /// <br/>Note: informative only if 'crawl_progress' is 'finished'
+        /// <br/>2019-11-15 12:57:46 +00:00note: informative only if 'crawl_progress' is 'finished'
         /// <br/>if 'crawl_progress' is in_progress, the value will be null
         /// </summary>
         [JsonProperty("crawl_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -96,14 +95,14 @@ namespace DataForSeo.Client.Models
         /// <br/>the total number of crawled pages
         /// </summary>
         [JsonProperty("total_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPages { get; set; }
+        public long? TotalPages { get; set; }
 
         /// <summary>
         /// status code returned by a non-existent page
         /// <br/>in most cases, it is recommended a server returns a 404 response code
         /// </summary>
         [JsonProperty("page_not_found_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageNotFoundStatusCode { get; set; }
+        public int? PageNotFoundStatusCode { get; set; }
 
         /// <summary>
         /// status code returned by a canonicalized page
@@ -111,7 +110,7 @@ namespace DataForSeo.Client.Models
         /// <br/>in most cases, it is recommended that canonicalized pages respond with a 301 or 302 status code
         /// </summary>
         [JsonProperty("canonicalization_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CanonicalizationStatusCode { get; set; }
+        public int? CanonicalizationStatusCode { get; set; }
 
         /// <summary>
         /// status code returned by a directory
@@ -119,7 +118,7 @@ namespace DataForSeo.Client.Models
         /// <br/>in most cases, it is recommended that directories respond with a 403 or 401 status code
         /// </summary>
         [JsonProperty("directory_browsing_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DirectoryBrowsingStatusCode { get; set; }
+        public int? DirectoryBrowsingStatusCode { get; set; }
 
         /// <summary>
         /// redirect status code
@@ -127,7 +126,7 @@ namespace DataForSeo.Client.Models
         /// <br/>in most cases, it is recommended that redirect returns a 301 status code
         /// </summary>
         [JsonProperty("www_redirect_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? WwwRedirectStatusCode { get; set; }
+        public int? WwwRedirectStatusCode { get; set; }
 
         /// <summary>
         /// root domain name

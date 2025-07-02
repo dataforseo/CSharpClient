@@ -30,14 +30,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(new List<DomainAnalyticsIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 10:59:02 +00:00",
-        DatetimeTo = "2025-04-30 10:59:02 +00:00",
+        DatetimeFrom = "2025-01-18 03:35:25 +00:00",
+        DatetimeTo = "2025-03-18 03:35:25 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -82,7 +81,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsErrorsAsync(new List<DomainAnalyticsErrorsRequestInfo>()
 {
@@ -132,7 +130,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesAvailableFiltersAsync();
 ```
@@ -174,7 +171,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsTechnologiesLocationsAsync();
 ```
@@ -216,7 +212,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsTechnologiesLanguagesAsync();
 ```
@@ -258,7 +253,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologiesAsync();
 ```
@@ -300,7 +294,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesAggregationTechnologiesLiveAsync(new List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>()
 {
@@ -351,7 +344,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologiesSummaryLiveAsync(new List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>()
 {
@@ -407,15 +399,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveAsync(new List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>()
 {
     new()
     {
         Technology = "jQuery",
-        DateFrom = "2025-02-28",
-        DateTo = "2025-04-30",
+        DateFrom = "2022-10-31",
+        DateTo = "2023-06-01",
     }
 });
 ```
@@ -457,7 +448,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByTechnologyLiveAsync(new List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>()
 {
@@ -509,7 +499,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByHtmlTermsLiveAsync(new List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>()
 {
@@ -562,7 +551,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainTechnologiesLiveAsync(new List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>()
 {
@@ -610,7 +598,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.WhoisAvailableFiltersAsync();
 ```
@@ -652,7 +639,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.DomainAnalyticsApi.WhoisOverviewLiveAsync(new List<DomainAnalyticsWhoisOverviewLiveRequestInfo>()
 {

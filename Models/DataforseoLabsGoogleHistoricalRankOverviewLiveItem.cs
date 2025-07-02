@@ -18,13 +18,13 @@ namespace DataForSeo.Client.Models
         /// year for which the data is provided
         /// </summary>
         [JsonProperty("year", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Year { get; set; }
+        public int? Year { get; set; }
 
         /// <summary>
         /// month for which the data is provided
         /// </summary>
         [JsonProperty("month", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Month { get; set; }
+        public int? Month { get; set; }
 
         /// <summary>
         /// ranking data relevant to the specified domain

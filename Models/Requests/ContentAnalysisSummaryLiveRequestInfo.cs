@@ -88,7 +88,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// initial dataset filtering parameters
         /// <br/>optional field
-        /// <br/>initial filtering parameters that apply to fields in the Search endpoint
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:

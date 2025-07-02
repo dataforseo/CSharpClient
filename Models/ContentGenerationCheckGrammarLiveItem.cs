@@ -30,13 +30,13 @@ namespace DataForSeo.Client.Models
         /// offset token for subsequent requests
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Offset { get; set; }
+        public int? Offset { get; set; }
 
         /// <summary>
         /// offset token for subsequent requests
         /// </summary>
         [JsonProperty("length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Length { get; set; }
+        public int? Length { get; set; }
 
         /// <summary>
         /// type of element

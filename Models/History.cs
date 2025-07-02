@@ -12,13 +12,13 @@ namespace DataForSeo.Client.Models
         /// year
         /// </summary>
         [JsonProperty("year", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Year { get; set; }
+        public int? Year { get; set; }
 
         /// <summary>
         /// month
         /// </summary>
         [JsonProperty("month", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Month { get; set; }
+        public int? Month { get; set; }
 
         /// <summary>
         /// historical data for the keyword

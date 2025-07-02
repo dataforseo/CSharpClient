@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// additional elements in the mention_carousel item

@@ -5,8 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**ReviewsCount** | **double?** | the number of reviews |[optional]|
-**Rating** | **BusinessDataRatingInfo** | the element’s rating<br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
+**Xpath** | **string** | the XPath of the element |[optional]|
+**ReviewsCount** | **long?** | the number of reviews |[optional]|
+**Rating** | **RatingInfo** | the element’s rating<br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **PlaceId** | **string** | the identifier of a place |[optional]|
 **Feature** | **string** | the additional feature of the review |[optional]|
 **Cid** | **string** | google-defined client id |[optional]|

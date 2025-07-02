@@ -9,7 +9,7 @@
 **Url** | **string** | URL to the app page on App Store |[optional]|
 **Icon** | **string** | URL to the app icon |[optional]|
 **Description** | **string** | description of the app |[optional]|
-**ReviewsCount** | **double?** | the total number of reviews of the app |[optional]|
+**ReviewsCount** | **long?** | the total number of reviews of the app |[optional]|
 **Price** | **PriceInfo** | price of the app |[optional]|
 **IsFree** | **bool?** | indicates whether the app is free |[optional]|
 **MainCategory** | **string** | main category/genre of the app |[optional]|

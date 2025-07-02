@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// <br/>class rating that ranges between 1-5 stars
         /// </summary>
         [JsonProperty("stars", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Stars { get; set; }
+        public int? Stars { get; set; }
 
         /// <summary>
         /// indicates a paid hotel listing

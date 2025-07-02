@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
         /// number of subreddit members
         /// </summary>
         [JsonProperty("subreddit_members", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SubredditMembers { get; set; }
+        public int? SubredditMembers { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the median of the values in the keywords_positions array
         /// </summary>
         [JsonProperty("median_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? MedianPosition { get; set; }
+        public int? MedianPosition { get; set; }
 
         /// <summary>
         /// the margin between the greatest possible and actual keyword positions
@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// <br/>calculated as sum(100-keywords_positions)
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rating { get; set; }
+        public int? Rating { get; set; }
 
         /// <summary>
         /// estimated traffic volume
@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
         /// the number of specified keywords the domain has positions for in SERPs
         /// </summary>
         [JsonProperty("keywords_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? KeywordsCount { get; set; }
+        public long? KeywordsCount { get; set; }
 
         /// <summary>
         /// SERP visibility rate
@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         /// <br/>represents the number of search results in SERP relevant to the domain for the specified keywords
         /// </summary>
         [JsonProperty("relevant_serp_items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RelevantSerpItems { get; set; }
+        public int? RelevantSerpItems { get; set; }
 
         /// <summary>
         /// keyword positions

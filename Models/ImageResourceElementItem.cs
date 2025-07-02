@@ -9,14 +9,16 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// page properties
+        /// resource properties
         /// <br/>the value depends on the resource_type
+        /// <br/>note that if you do not indicate a url when setting a task, resource’s meta is returned based on the data from the page where our crawler first saw the resource;
+        /// <br/>to obtain resource’s meta from a particular url, specify that URL when setting a task
         /// </summary>
         [JsonProperty("meta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ResourceMetaInfo Meta { get; set; }
 
         /// <summary>
-        /// time range within which a result was fetched
+        /// resource fething time range
         /// </summary>
         [JsonProperty("fetch_timing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public FetchTiming FetchTiming { get; set; }

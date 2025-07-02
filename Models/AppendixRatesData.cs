@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// statisctics for API calls
         /// </summary>
         [JsonProperty("statistics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixStatisticsDataInfo Statistics { get; set; }
+        public AppendixStatisticsRatesData Statistics { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

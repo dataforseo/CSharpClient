@@ -12,31 +12,31 @@ namespace DataForSeo.Client.Models
         /// number of sentences found in the target text
         /// </summary>
         [JsonProperty("sentences", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Sentences { get; set; }
+        public int? Sentences { get; set; }
 
         /// <summary>
         /// number of paragraphs found in the target text
         /// </summary>
         [JsonProperty("paragraphs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Paragraphs { get; set; }
+        public int? Paragraphs { get; set; }
 
         /// <summary>
         /// number of words found in the target text
         /// </summary>
         [JsonProperty("words", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Words { get; set; }
+        public int? Words { get; set; }
 
         /// <summary>
         /// number of characters without spaces found in the target text
         /// </summary>
         [JsonProperty("characters_without_spaces", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CharactersWithoutSpaces { get; set; }
+        public int? CharactersWithoutSpaces { get; set; }
 
         /// <summary>
         /// number of characters with spaces found in the target text
         /// </summary>
         [JsonProperty("characters_with_spaces", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CharactersWithSpaces { get; set; }
+        public int? CharactersWithSpaces { get; set; }
 
         /// <summary>
         /// average number of words per sentence in the target text
@@ -91,13 +91,13 @@ namespace DataForSeo.Client.Models
         /// number of spelling errors found in the target text
         /// </summary>
         [JsonProperty("spelling_errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SpellingErrors { get; set; }
+        public int? SpellingErrors { get; set; }
 
         /// <summary>
         /// number of grammar errors found in the target text
         /// </summary>
         [JsonProperty("grammar_errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? GrammarErrors { get; set; }
+        public int? GrammarErrors { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

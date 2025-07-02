@@ -51,6 +51,12 @@ namespace DataForSeo.Client.Models
         public SpellInfo Spell { get; set; }
 
         /// <summary>
+        /// search refinement chips
+        /// </summary>
+        [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public RefinementChipsInfo RefinementChips { get; set; }
+
+        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item type: dataset
@@ -62,13 +68,13 @@ namespace DataForSeo.Client.Models
         /// total number of results in SERP
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SeResultsCount { get; set; }
+        public long? SeResultsCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ItemsCount { get; set; }
+        public long? ItemsCount { get; set; }
 
         /// <summary>
         /// items of the element

@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// <br/>number of reviews on the product seller’s account
         /// </summary>
         [JsonProperty("seller_review_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SellerReviewCount { get; set; }
+        public int? SellerReviewCount { get; set; }
 
         /// <summary>
         /// product price

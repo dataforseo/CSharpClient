@@ -43,26 +43,26 @@ namespace DataForSeo.Client.Models
         /// product price without tax and shipping
         /// </summary>
         [JsonProperty("base_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BasePrice { get; set; }
+        public int? BasePrice { get; set; }
 
         /// <summary>
         /// the amount of tax
         /// <br/>tax is specified as the actual amount of money, not as the percentage
         /// </summary>
         [JsonProperty("tax", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Tax { get; set; }
+        public int? Tax { get; set; }
 
         /// <summary>
         /// product shipping price
         /// </summary>
         [JsonProperty("shipping_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ShippingPrice { get; set; }
+        public int? ShippingPrice { get; set; }
 
         /// <summary>
         /// product price including tax and shipping
         /// </summary>
         [JsonProperty("total_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPrice { get; set; }
+        public long? TotalPrice { get; set; }
 
         /// <summary>
         /// currency in the ISO format

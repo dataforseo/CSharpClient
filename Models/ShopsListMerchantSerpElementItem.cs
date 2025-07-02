@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// product price without tax and shipping
         /// </summary>
         [JsonProperty("base_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BasePrice { get; set; }
+        public int? BasePrice { get; set; }
 
         /// <summary>
         /// the amount of tax
@@ -78,7 +78,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates the number of months covered by the monthly payment for the product
         /// </summary>
         [JsonProperty("price_multiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PriceMultiplier { get; set; }
+        public int? PriceMultiplier { get; set; }
 
         /// <summary>
         /// name of the seller

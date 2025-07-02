@@ -37,21 +37,21 @@ namespace DataForSeo.Client.Models
         /// <br/>number of domains that match the parameters you specified and are using technologies from the indicated group
         /// </summary>
         [JsonProperty("groups_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? GroupsCount { get; set; }
+        public long? GroupsCount { get; set; }
 
         /// <summary>
         /// technology categories count
         /// <br/>number of domains that match the parameters you specified and are using technologies from the indicated category
         /// </summary>
         [JsonProperty("categories_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? CategoriesCount { get; set; }
+        public long? CategoriesCount { get; set; }
 
         /// <summary>
         /// technologies count
         /// <br/>number of domains that match the parameters you specified and are using the indicated technology
         /// </summary>
         [JsonProperty("technologies_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TechnologiesCount { get; set; }
+        public long? TechnologiesCount { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

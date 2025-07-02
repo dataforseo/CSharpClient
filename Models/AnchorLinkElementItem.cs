@@ -23,6 +23,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
 
+        /// <summary>
+        /// status code of the referenced page
+        /// <br/>status code of the page to which the link is pointing
+        /// </summary>
+        [JsonProperty("page_to_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? PageToStatusCode { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

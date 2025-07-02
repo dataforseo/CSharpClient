@@ -14,6 +14,14 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST**  /v3/serp/google/organic/task_post  |
 [**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET**  /v3/serp/google/organic/tasks_ready  |
 [**tasksReady**](SerpApi.md#tasksReady) | **GET**  /v3/serp/tasks_ready  |
+[**serpGoogleAiModeLanguages**](SerpApi.md#serpGoogleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
+[**googleAiModeTaskPost**](SerpApi.md#googleAiModeTaskPost) | **POST**  /v3/serp/google/ai_mode/task_post  |
+[**googleAiModeTasksReady**](SerpApi.md#googleAiModeTasksReady) | **GET**  /v3/serp/google/ai_mode/tasks_ready  |
+[**googleAiModeTasksFixed**](SerpApi.md#googleAiModeTasksFixed) | **GET**  /v3/serp/google/ai_mode/tasks_fixed  |
+[**googleAiModeTaskGetAdvanced**](SerpApi.md#googleAiModeTaskGetAdvanced) | **GET**  /v3/serp/google/ai_mode/task_get/advanced/{id}  |
+[**googleAiModeTaskGetHtml**](SerpApi.md#googleAiModeTaskGetHtml) | **GET**  /v3/serp/google/ai_mode/task_get/html/{id}  |
+[**googleAiModeLiveAdvanced**](SerpApi.md#googleAiModeLiveAdvanced) | **POST**  /v3/serp/google/ai_mode/live/advanced  |
+[**googleAiModeLiveHtml**](SerpApi.md#googleAiModeLiveHtml) | **POST**  /v3/serp/google/ai_mode/live/html  |
 [**googleOrganicTasksFixed**](SerpApi.md#googleOrganicTasksFixed) | **GET**  /v3/serp/google/organic/tasks_fixed  |
 [**googleOrganicTaskGetRegular**](SerpApi.md#googleOrganicTaskGetRegular) | **GET**  /v3/serp/google/organic/task_get/regular/{id}  |
 [**googleOrganicTaskGetAdvanced**](SerpApi.md#googleOrganicTaskGetAdvanced) | **GET**  /v3/serp/google/organic/task_get/advanced/{id}  |
@@ -191,14 +199,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpIdListAsync(new List<SerpIdListRequestInfo>()
 {
     new()
     {
-        DatetimeFrom = "2025-02-28 10:55:23 +00:00",
-        DatetimeTo = "2025-04-30 10:55:23 +00:00",
+        DatetimeFrom = "2025-01-18 03:17:37 +00:00",
+        DatetimeTo = "2025-03-18 03:17:37 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -243,7 +250,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpErrorsAsync(new List<SerpErrorsRequestInfo>()
 {
@@ -293,7 +299,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.ScreenshotAsync(new List<SerpScreenshotRequestInfo>()
 {
@@ -342,7 +347,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.AiSummaryAsync(new List<SerpAiSummaryRequestInfo>()
 {
@@ -393,7 +397,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpGoogleLocationsAsync();
 ```
@@ -435,7 +438,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.SerpApi.SerpGoogleLocationsCountryAsync(country);
@@ -478,7 +480,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpGoogleLanguagesAsync();
 ```
@@ -520,7 +521,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
 {
@@ -570,7 +570,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleOrganicTasksReadyAsync();
 ```
@@ -612,7 +611,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.TasksReadyAsync();
 ```
@@ -643,6 +641,360 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="serpGoogleAiModeLanguages"></a>
+# **serpGoogleAiModeLanguages**
+> SerpGoogleAiModeLanguagesResponseInfo serpGoogleAiModeLanguages()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.SerpGoogleAiModeLanguagesAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeLanguagesResponseInfo**](SerpGoogleAiModeLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTaskPost"></a>
+# **googleAiModeTaskPost**
+> SerpGoogleAiModeTaskPostResponseInfo googleAiModeTaskPost()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleAiModeTaskPostAsync(new List<SerpGoogleAiModeTaskPostRequestInfo>()
+{
+    new()
+    {
+        Keyword = "what is google ai mode",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAiModeTaskPostRequestInfo>&gt;**](IEnumerable<SerpGoogleAiModeTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAiModeTaskPostResponseInfo**](SerpGoogleAiModeTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTasksReady"></a>
+# **googleAiModeTasksReady**
+> SerpGoogleAiModeTasksReadyResponseInfo googleAiModeTasksReady()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleAiModeTasksReadyAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTasksReadyResponseInfo**](SerpGoogleAiModeTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTasksFixed"></a>
+# **googleAiModeTasksFixed**
+> SerpGoogleAiModeTasksFixedResponseInfo googleAiModeTasksFixed()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleAiModeTasksFixedAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTasksFixedResponseInfo**](SerpGoogleAiModeTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTaskGetAdvanced"></a>
+# **googleAiModeTaskGetAdvanced**
+> SerpGoogleAiModeTaskGetAdvancedResponseInfo googleAiModeTaskGetAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleAiModeTaskGetAdvancedAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTaskGetAdvancedResponseInfo**](SerpGoogleAiModeTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTaskGetHtml"></a>
+# **googleAiModeTaskGetHtml**
+> SerpGoogleAiModeTaskGetHtmlResponseInfo googleAiModeTaskGetHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "a39ec28a-4827-42ea-a3c8-b3e97b6d0777";
+var result = await dfsClient.SerpApi.GoogleAiModeTaskGetHtmlAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTaskGetHtmlResponseInfo**](SerpGoogleAiModeTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeLiveAdvanced"></a>
+# **googleAiModeLiveAdvanced**
+> SerpGoogleAiModeLiveAdvancedResponseInfo googleAiModeLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleAiModeLiveAdvancedAsync(new List<SerpGoogleAiModeLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "what is google ai mode",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAiModeLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleAiModeLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAiModeLiveAdvancedResponseInfo**](SerpGoogleAiModeLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeLiveHtml"></a>
+# **googleAiModeLiveHtml**
+> SerpGoogleAiModeLiveHtmlResponseInfo googleAiModeLiveHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleAiModeLiveHtmlAsync(new List<SerpGoogleAiModeLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleAiModeLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleAiModeLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAiModeLiveHtmlResponseInfo**](SerpGoogleAiModeLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="googleOrganicTasksFixed"></a>
 # **googleOrganicTasksFixed**
 > SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
@@ -654,7 +1006,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleOrganicTasksFixedAsync();
 ```
@@ -696,7 +1047,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleOrganicTaskGetRegularAsync(id);
@@ -739,7 +1089,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleOrganicTaskGetAdvancedAsync(id);
@@ -782,9 +1131,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "88982557-e157-45a2-a312-afc7fc3c09d7";
+var id = "bd350566-9848-4627-ad5e-82682be7c3b2";
 var result = await dfsClient.SerpApi.GoogleOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -825,7 +1173,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(new List<SerpGoogleOrganicLiveRegularRequestInfo>()
 {
@@ -875,7 +1222,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
 {
@@ -926,7 +1272,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoogleOrganicLiveHtmlRequestInfo>()
 {
@@ -976,7 +1321,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleMapsTaskPostAsync(new List<SerpGoogleMapsTaskPostRequestInfo>()
 {
@@ -1026,7 +1370,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleMapsTasksReadyAsync();
 ```
@@ -1068,7 +1411,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleMapsTasksFixedAsync();
 ```
@@ -1110,7 +1452,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleMapsTaskGetAdvancedAsync(id);
@@ -1153,7 +1494,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleMapsLiveAdvancedAsync(new List<SerpGoogleMapsLiveAdvancedRequestInfo>()
 {
@@ -1203,7 +1543,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<SerpGoogleLocalFinderTaskPostRequestInfo>()
 {
@@ -1255,7 +1594,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleLocalFinderTasksReadyAsync();
 ```
@@ -1297,7 +1635,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleLocalFinderTasksFixedAsync();
 ```
@@ -1339,7 +1676,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleLocalFinderTaskGetAdvancedAsync(id);
@@ -1382,9 +1718,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "d522ac50-e51e-49a3-868b-def0ef7748e2";
+var id = "b6b633f2-44d0-4354-8384-b9ef1e90b065";
 var result = await dfsClient.SerpApi.GoogleLocalFinderTaskGetHtmlAsync(id);
 ```
 
@@ -1425,7 +1760,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List<SerpGoogleLocalFinderLiveAdvancedRequestInfo>()
 {
@@ -1477,7 +1811,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleLocalFinderLiveHtmlAsync(new List<SerpGoogleLocalFinderLiveHtmlRequestInfo>()
 {
@@ -1527,7 +1860,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleNewsTaskPostAsync(new List<SerpGoogleNewsTaskPostRequestInfo>()
 {
@@ -1577,7 +1909,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleNewsTasksReadyAsync();
 ```
@@ -1619,7 +1950,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleNewsTasksFixedAsync();
 ```
@@ -1661,7 +1991,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleNewsTaskGetAdvancedAsync(id);
@@ -1704,9 +2033,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "7119b902-7483-4523-a64c-f057635b9b80";
+var id = "7f9a1e3b-1ed6-4f51-8651-05daa9712c63";
 var result = await dfsClient.SerpApi.GoogleNewsTaskGetHtmlAsync(id);
 ```
 
@@ -1747,7 +2075,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleNewsLiveAdvancedAsync(new List<SerpGoogleNewsLiveAdvancedRequestInfo>()
 {
@@ -1797,7 +2124,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleNewsLiveHtmlAsync(new List<SerpGoogleNewsLiveHtmlRequestInfo>()
 {
@@ -1847,7 +2173,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleEventsTaskPostAsync(new List<SerpGoogleEventsTaskPostRequestInfo>()
 {
@@ -1897,7 +2222,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleEventsTasksReadyAsync();
 ```
@@ -1939,7 +2263,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleEventsTasksFixedAsync();
 ```
@@ -1981,7 +2304,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleEventsTaskGetAdvancedAsync(id);
@@ -2024,7 +2346,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(new List<SerpGoogleEventsLiveAdvancedRequestInfo>()
 {
@@ -2074,7 +2395,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleImagesTaskPostAsync(new List<SerpGoogleImagesTaskPostRequestInfo>()
 {
@@ -2124,7 +2444,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleImagesTasksReadyAsync();
 ```
@@ -2166,7 +2485,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleImagesTasksFixedAsync();
 ```
@@ -2208,7 +2526,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleImagesTaskGetAdvancedAsync(id);
@@ -2251,9 +2568,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "fc90a8ec-249e-4fba-b7f8-1977a536caa2";
+var id = "0a1f486a-88fe-4593-a98e-56b52c9febdb";
 var result = await dfsClient.SerpApi.GoogleImagesTaskGetHtmlAsync(id);
 ```
 
@@ -2294,7 +2610,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleImagesLiveAdvancedAsync(new List<SerpGoogleImagesLiveAdvancedRequestInfo>()
 {
@@ -2344,7 +2659,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleImagesLiveHtmlAsync(new List<SerpGoogleImagesLiveHtmlRequestInfo>()
 {
@@ -2394,7 +2708,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleSearchByImageTaskPostAsync(new List<SerpGoogleSearchByImageTaskPostRequestInfo>()
 {
@@ -2444,7 +2757,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleSearchByImageTasksReadyAsync();
 ```
@@ -2486,7 +2798,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleSearchByImageTasksFixedAsync();
 ```
@@ -2528,7 +2839,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleSearchByImageTaskGetAdvancedAsync(id);
@@ -2571,7 +2881,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleJobsTaskPostAsync(new List<SerpGoogleJobsTaskPostRequestInfo>()
 {
@@ -2621,7 +2930,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleJobsTasksReadyAsync();
 ```
@@ -2663,7 +2971,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleJobsTasksFixedAsync();
 ```
@@ -2705,7 +3012,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleJobsTaskGetAdvancedAsync(id);
@@ -2748,9 +3054,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "897da52f-6b87-4565-adb5-e452e6a912ce";
+var id = "b89e31c7-b59c-4382-a926-527de229529f";
 var result = await dfsClient.SerpApi.GoogleJobsTaskGetHtmlAsync(id);
 ```
 
@@ -2791,7 +3096,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAutocompleteTaskPostAsync(new List<SerpGoogleAutocompleteTaskPostRequestInfo>()
 {
@@ -2842,7 +3146,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAutocompleteTasksReadyAsync();
 ```
@@ -2884,7 +3187,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAutocompleteTasksFixedAsync();
 ```
@@ -2926,7 +3228,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleAutocompleteTaskGetAdvancedAsync(id);
@@ -2969,7 +3270,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(new List<SerpGoogleAutocompleteLiveAdvancedRequestInfo>()
 {
@@ -3020,7 +3320,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(new List<SerpGoogleDatasetSearchTaskPostRequestInfo>()
 {
@@ -3081,7 +3380,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetSearchTasksReadyAsync();
 ```
@@ -3123,7 +3421,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetSearchTasksFixedAsync();
 ```
@@ -3165,7 +3462,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskGetAdvancedAsync(id);
@@ -3208,7 +3504,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(new List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>()
 {
@@ -3269,7 +3564,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskPostAsync(new List<SerpGoogleDatasetInfoTaskPostRequestInfo>()
 {
@@ -3317,7 +3611,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetInfoTasksReadyAsync();
 ```
@@ -3359,7 +3652,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetInfoTasksFixedAsync();
 ```
@@ -3401,7 +3693,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskGetAdvancedAsync(id);
@@ -3444,7 +3735,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(new List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>()
 {
@@ -3492,7 +3782,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpGoogleAdsAdvertisersLocationsAsync();
 ```
@@ -3534,7 +3823,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskPostAsync(new List<SerpGoogleAdsAdvertisersTaskPostRequestInfo>()
 {
@@ -3583,7 +3871,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTasksReadyAsync();
 ```
@@ -3625,7 +3912,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskGetAdvancedAsync(id);
@@ -3668,7 +3954,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpGoogleAdsSearchLocationsAsync();
 ```
@@ -3710,7 +3995,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(new List<SerpGoogleAdsSearchTaskPostRequestInfo>()
 {
@@ -3764,7 +4048,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleAdsSearchTasksReadyAsync();
 ```
@@ -3806,7 +4089,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleAdsSearchTaskGetAdvancedAsync(id);
@@ -3849,7 +4131,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpBingLocationsAsync();
 ```
@@ -3891,7 +4172,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.SerpApi.SerpBingLocationsCountryAsync(country);
@@ -3934,7 +4214,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpBingLanguagesAsync();
 ```
@@ -3976,7 +4255,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingOrganicTaskPostAsync(new List<SerpBingOrganicTaskPostRequestInfo>()
 {
@@ -4026,7 +4304,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingOrganicTasksReadyAsync();
 ```
@@ -4068,7 +4345,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingOrganicTasksFixedAsync();
 ```
@@ -4110,7 +4386,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BingOrganicTaskGetRegularAsync(id);
@@ -4153,7 +4428,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BingOrganicTaskGetAdvancedAsync(id);
@@ -4196,9 +4470,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "89ae2456-6535-4173-b5c9-e4516cd66890";
+var id = "dc352e3e-5632-4140-a4a1-4fb3c5338ebe";
 var result = await dfsClient.SerpApi.BingOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -4239,7 +4512,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingOrganicLiveRegularAsync(new List<SerpBingOrganicLiveRegularRequestInfo>()
 {
@@ -4289,7 +4561,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingOrganicLiveAdvancedAsync(new List<SerpBingOrganicLiveAdvancedRequestInfo>()
 {
@@ -4339,7 +4610,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(new List<SerpBingOrganicLiveHtmlRequestInfo>()
 {
@@ -4389,7 +4659,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingLocalPackTaskPostAsync(new List<SerpBingLocalPackTaskPostRequestInfo>()
 {
@@ -4439,7 +4708,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingLocalPackTasksReadyAsync();
 ```
@@ -4481,7 +4749,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingLocalPackTasksFixedAsync();
 ```
@@ -4523,7 +4790,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BingLocalPackTaskGetRegularAsync(id);
@@ -4566,9 +4832,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "fa099002-f408-46ed-aa6b-92a30c0e9680";
+var id = "f17106c5-43ba-44bd-a0cb-6a33c4dd53ea";
 var result = await dfsClient.SerpApi.BingLocalPackTaskGetHtmlAsync(id);
 ```
 
@@ -4609,7 +4874,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingLocalPackLiveRegularAsync(new List<SerpBingLocalPackLiveRegularRequestInfo>()
 {
@@ -4659,7 +4923,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BingLocalPackLiveHtmlAsync(new List<SerpBingLocalPackLiveHtmlRequestInfo>()
 {
@@ -4709,7 +4972,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpYoutubeLocationsAsync();
 ```
@@ -4751,7 +5013,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.SerpApi.SerpYoutubeLocationsCountryAsync(country);
@@ -4794,7 +5055,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpYoutubeLanguagesAsync();
 ```
@@ -4836,7 +5096,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(new List<SerpYoutubeVideoInfoTaskPostRequestInfo>()
 {
@@ -4886,7 +5145,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoInfoTasksReadyAsync();
 ```
@@ -4928,7 +5186,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoInfoTasksFixedAsync();
 ```
@@ -4970,7 +5227,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskGetAdvancedAsync(id);
@@ -5013,7 +5269,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(new List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>()
 {
@@ -5063,7 +5318,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(new List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>()
 {
@@ -5113,7 +5367,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTasksReadyAsync();
 ```
@@ -5155,7 +5408,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTasksFixedAsync();
 ```
@@ -5197,7 +5449,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskGetAdvancedAsync(id);
@@ -5240,7 +5491,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(new List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>()
 {
@@ -5290,7 +5540,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(new List<SerpYoutubeVideoCommentsTaskPostRequestInfo>()
 {
@@ -5340,7 +5589,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoCommentsTasksReadyAsync();
 ```
@@ -5382,7 +5630,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoCommentsTasksFixedAsync();
 ```
@@ -5424,7 +5671,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskGetAdvancedAsync(id);
@@ -5467,7 +5713,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(new List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>()
 {
@@ -5517,7 +5762,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpYahooLocationsAsync();
 ```
@@ -5559,7 +5803,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.SerpApi.SerpYahooLocationsCountryAsync(country);
@@ -5602,7 +5845,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpYahooLanguagesAsync();
 ```
@@ -5644,7 +5886,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YahooOrganicTaskPostAsync(new List<SerpYahooOrganicTaskPostRequestInfo>()
 {
@@ -5694,7 +5935,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YahooOrganicTasksReadyAsync();
 ```
@@ -5736,7 +5976,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YahooOrganicTasksFixedAsync();
 ```
@@ -5778,7 +6017,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.YahooOrganicTaskGetRegularAsync(id);
@@ -5821,7 +6059,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.YahooOrganicTaskGetAdvancedAsync(id);
@@ -5864,9 +6101,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "0ae36f7e-4e30-4ce6-9dbb-0eaa80f57f11";
+var id = "f445242d-b633-480c-9e47-b3860628a4d5";
 var result = await dfsClient.SerpApi.YahooOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -5907,7 +6143,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YahooOrganicLiveRegularAsync(new List<SerpYahooOrganicLiveRegularRequestInfo>()
 {
@@ -5957,7 +6192,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YahooOrganicLiveAdvancedAsync(new List<SerpYahooOrganicLiveAdvancedRequestInfo>()
 {
@@ -6007,7 +6241,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(new List<SerpYahooOrganicLiveHtmlRequestInfo>()
 {
@@ -6057,7 +6290,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpBaiduLocationsAsync();
 ```
@@ -6099,7 +6331,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.SerpApi.SerpBaiduLocationsCountryAsync(country);
@@ -6142,7 +6373,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpBaiduLanguagesAsync();
 ```
@@ -6184,7 +6414,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BaiduOrganicTaskPostAsync(new List<SerpBaiduOrganicTaskPostRequestInfo>()
 {
@@ -6235,7 +6464,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BaiduOrganicTasksReadyAsync();
 ```
@@ -6277,7 +6505,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.BaiduOrganicTasksFixedAsync();
 ```
@@ -6319,7 +6546,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BaiduOrganicTaskGetRegularAsync(id);
@@ -6362,7 +6588,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BaiduOrganicTaskGetAdvancedAsync(id);
@@ -6405,9 +6630,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "f52bcfda-8aac-476f-b901-ac197336c27b";
+var id = "a73d3b58-9708-4adc-9e7a-dee7a84c7676";
 var result = await dfsClient.SerpApi.BaiduOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -6448,7 +6672,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.NaverOrganicTaskPostAsync(new List<SerpNaverOrganicTaskPostRequestInfo>()
 {
@@ -6500,7 +6723,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.NaverOrganicTasksReadyAsync();
 ```
@@ -6542,7 +6764,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.NaverOrganicTasksFixedAsync();
 ```
@@ -6584,7 +6805,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.NaverOrganicTaskGetRegularAsync(id);
@@ -6627,7 +6847,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.NaverOrganicTaskGetAdvancedAsync(id);
@@ -6670,9 +6889,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "378792fe-140e-429c-ad88-48f46c8f1d6e";
+var id = "6c6a699d-bac4-4b63-80c0-61e2568e47b1";
 var result = await dfsClient.SerpApi.NaverOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -6713,7 +6931,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpSeznamLocationsAsync();
 ```
@@ -6755,7 +6972,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var country = "us";
 var result = await dfsClient.SerpApi.SerpSeznamLocationsCountryAsync(country);
@@ -6798,7 +7014,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SerpSeznamLanguagesAsync();
 ```
@@ -6840,7 +7055,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SeznamOrganicTaskPostAsync(new List<SerpSeznamOrganicTaskPostRequestInfo>()
 {
@@ -6890,7 +7104,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SeznamOrganicTasksReadyAsync();
 ```
@@ -6932,7 +7145,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.SeznamOrganicTasksFixedAsync();
 ```
@@ -6974,7 +7186,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.SeznamOrganicTaskGetRegularAsync(id);
@@ -7017,7 +7228,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.SeznamOrganicTaskGetAdvancedAsync(id);
@@ -7060,9 +7270,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "518ce840-70c9-4725-bdb9-0e22cb6afd4f";
+var id = "22f76705-efc0-411f-9e3c-3990439e2db5";
 var result = await dfsClient.SerpApi.SeznamOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -7103,7 +7312,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(new List<SerpGoogleFinanceExploreTaskPostRequestInfo>()
 {
@@ -7152,7 +7360,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceExploreTasksReadyAsync();
 ```
@@ -7194,7 +7401,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskGetAdvancedAsync(id);
@@ -7237,9 +7443,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "55b8b354-be22-4a2a-8a16-245be4734b7d";
+var id = "78a9d8e7-d4bc-4101-b8be-659958b4afd3";
 var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskGetHtmlAsync(id);
 ```
 
@@ -7280,7 +7485,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(new List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>()
 {
@@ -7329,7 +7533,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveHtmlAsync(new List<SerpGoogleFinanceExploreLiveHtmlRequestInfo>()
 {
@@ -7378,7 +7581,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(new List<SerpGoogleFinanceMarketsTaskPostRequestInfo>()
 {
@@ -7427,7 +7629,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsTasksReadyAsync();
 ```
@@ -7469,7 +7670,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskGetAdvancedAsync(id);
@@ -7512,9 +7712,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "5485175c-0b6a-4d61-855a-3039cbd7f935";
+var id = "c8c5a862-f7c2-4d9b-95c7-3fee7a284fb9";
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskGetHtmlAsync(id);
 ```
 
@@ -7555,7 +7754,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(new List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>()
 {
@@ -7604,7 +7802,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveHtmlAsync(new List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>()
 {
@@ -7653,7 +7850,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(new List<SerpGoogleFinanceQuoteTaskPostRequestInfo>()
 {
@@ -7703,7 +7899,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteTasksReadyAsync();
 ```
@@ -7745,7 +7940,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskGetAdvancedAsync(id);
@@ -7788,9 +7982,8 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
-var id = "ec37fb31-a868-4974-975d-9d3a0cca14d7";
+var id = "108fc499-866c-4cec-9644-0428ed812013";
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskGetHtmlAsync(id);
 ```
 
@@ -7831,7 +8024,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(new List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>()
 {
@@ -7881,7 +8073,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveHtmlAsync(new List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>()
 {
@@ -7931,7 +8122,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(new List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>()
 {
@@ -7983,7 +8173,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTasksReadyAsync();
 ```
@@ -8025,7 +8214,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskGetAdvancedAsync(id);
@@ -8068,7 +8256,6 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",
-
 });
 var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(new List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>()
 {

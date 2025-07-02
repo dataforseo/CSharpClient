@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// number of product purchases in the past month
         /// </summary>
         [JsonProperty("bought_past_month", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BoughtPastMonth { get; set; }
+        public int? BoughtPastMonth { get; set; }
 
         /// <summary>
         /// the regular price of a product

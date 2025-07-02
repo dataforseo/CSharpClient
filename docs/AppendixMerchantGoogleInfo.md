@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Products** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Products** | **AppendixSerpsRatesDataInfo** |  |[optional]|
 **Sellers** | **AppendixSellersGoogleMerchantLimitsRatesDataInfo** |  |[optional]|
-**ProductSpec** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
-**ProductInfo** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**ProductSpec** | **AppendixSerpsRatesDataInfo** |  |[optional]|
+**ProductInfo** | **AppendixSerpsRatesDataInfo** |  |[optional]|

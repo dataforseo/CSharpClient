@@ -18,13 +18,13 @@ namespace DataForSeo.Client.Models
         /// height of the preview image
         /// </summary>
         [JsonProperty("height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Height { get; set; }
+        public int? Height { get; set; }
 
         /// <summary>
         /// width of the preview image
         /// </summary>
         [JsonProperty("width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Width { get; set; }
+        public long? Width { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

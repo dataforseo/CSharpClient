@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric in this help center guide
         /// </summary>
         [JsonProperty("keyword_difficulty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? KeywordDifficulty { get; set; }
+        public int? KeywordDifficulty { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

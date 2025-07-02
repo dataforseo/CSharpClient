@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// keyword popularity values averaged over the whole time range
         /// </summary>
         [JsonProperty("averages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<double?> Averages { get; set; }
+        public IEnumerable<int?> Averages { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

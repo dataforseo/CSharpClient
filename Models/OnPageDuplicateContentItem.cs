@@ -18,13 +18,13 @@ namespace DataForSeo.Client.Models
         /// total count of duplicate pages
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// pages with duplicate content
         /// </summary>
         [JsonProperty("pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DuplicatePageInfo> Pages { get; set; }
+        public IEnumerable<Pages> Pages { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// number of stores that offer the product
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Count { get; set; }
+        public string Count { get; set; }
 
         /// <summary>
         /// text displayed on the Google Shopping page

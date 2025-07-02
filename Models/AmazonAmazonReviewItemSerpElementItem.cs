@@ -9,6 +9,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// the alignment of the review in SERP
+        /// <br/>can take the following values: right
+        /// </summary>
+        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Position { get; set; }
+
+        /// <summary>
         /// indicates whether the review has the “Verified Purchase” mark
         /// </summary>
         [JsonProperty("verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -25,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// <br/>number of users who clicked on the ‘Helpful” button under the review text
         /// </summary>
         [JsonProperty("helpful_votes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string HelpfulVotes { get; set; }
+        public int? HelpfulVotes { get; set; }
 
         /// <summary>
         /// images of the product submitted by the reviewer
@@ -76,7 +83,7 @@ namespace DataForSeo.Client.Models
         /// the rating score submitted by the reviewer
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BusinessDataRatingInfo Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

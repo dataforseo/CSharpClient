@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         /// total number of reviews submitted by the reviewer
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReviewsCount { get; set; }
+        public long? ReviewsCount { get; set; }
 
         /// <summary>
         /// country of the reviewer

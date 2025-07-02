@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Header** | **PageSectionContentInfo** | content of the header of the table |[optional]|
-**Footer** | **PageSectionContentInfo** | content of the footer of the table |[optional]|
+**Footer** | **PageSectionContentInfo** | parsed content of the footer |[optional]|
 **MainTopic** | **IEnumerable<TopicInfo>** | main topic on the page<br>you can find more information about topic priority calculation in this help center article |[optional]|
 **SecondaryTopic** | **IEnumerable<TopicInfo>** | secondary topic on the page<br>you can find more information about topic priority calculation in this help center article |[optional]|
 **Ratings** | **IEnumerable<ContentRatingInfo>** | contains objects with rating information for the products displayed on the page |[optional]|

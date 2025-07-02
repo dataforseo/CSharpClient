@@ -12,19 +12,19 @@ namespace DataForSeo.Client.Models
         /// the total number of relevant results in the database
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// the number of items in the results array
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Count { get; set; }
+        public long? Count { get; set; }
 
         /// <summary>
         /// offset in the results array of returned apps
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Offset { get; set; }
+        public int? Offset { get; set; }
 
         /// <summary>
         /// token for subsequent requests

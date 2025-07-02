@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <br/>data is provided in separate objects corresponding to domains, subdomains or pages specified in the targets object
         /// </summary>
         [JsonProperty("domain_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, BacklinksDomainIntersection> DomainIntersection { get; set; }
+        public IDictionary<string, BacklinksDomainIntersectionInfo> DomainIntersection { get; set; }
 
         /// <summary>
         /// contains the domain intersections summary

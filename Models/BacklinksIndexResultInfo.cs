@@ -12,13 +12,19 @@ namespace DataForSeo.Client.Models
         /// total number of backlinks our database contains for the moment of checking
         /// </summary>
         [JsonProperty("total_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalBacklinks { get; set; }
+        public long? TotalBacklinks { get; set; }
 
         /// <summary>
         /// total number of pages our database contains for the moment of checking
         /// </summary>
         [JsonProperty("total_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalPages { get; set; }
+        public long? TotalPages { get; set; }
+
+        /// <summary>
+        /// total number of domains our database contains for the moment of checking
+        /// </summary>
+        [JsonProperty("total_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? TotalDomains { get; set; }
 
         /// <summary>
         /// index volume data for the past 12 months
