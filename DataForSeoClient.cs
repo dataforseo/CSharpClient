@@ -27,8 +27,11 @@ namespace DataForSeo.Client
 
             _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.0");
 
-            foreach (var header in configuration.CustomHeaders)
-                _client.DefaultRequestHeaders.Add(header.Key, header.Value);
+            if (configuration.CustomHeaders != null && configuration.CustomHeaders.Count > 0)
+            {
+                foreach (var header in configuration.CustomHeaders)
+                    _client.DefaultRequestHeaders.Add(header.Key, header.Value);
+            }
 
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes($"{configuration.Username}:{configuration.Password}")));
             _client.DefaultRequestHeaders.AcceptEncoding.Add(new System.Net.Http.Headers.StringWithQualityHeaderValue("gzip"));
