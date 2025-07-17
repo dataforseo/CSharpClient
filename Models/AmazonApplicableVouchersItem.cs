@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// value of the fixed discount
         /// </summary>
         [JsonProperty("fixed_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? FixedDiscount { get; set; }
+        public double? FixedDiscount { get; set; }
 
         /// <summary>
         /// currency code of the fixed discount
@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if the discount is fixed, the value will be null
         /// </summary>
         [JsonProperty("percentage_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? PercentageDiscount { get; set; }
+        public double? PercentageDiscount { get; set; }
 
         /// <summary>
         /// important details about the terms of discount vouchers

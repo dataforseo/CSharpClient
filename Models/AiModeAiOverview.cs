@@ -15,6 +15,21 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// </summary>
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
+
+        /// <summary>
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements in SERP
+        /// </summary>
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
+
+        /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
         /// <br/>left, right
@@ -39,14 +54,14 @@ namespace DataForSeo.Client.Models
         /// items of the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeAiOverviewElement> Items { get; set; }
+        public IEnumerable<BaseSerpApiAiModeAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
-        /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// additional references relevant to the item
+        /// <br/>includes references to webpages that may have been used to generate the ai_overview
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeAiOverviewReference> References { get; set; }
+        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
 
         /// <summary>
         /// rectangle parameters
@@ -54,7 +69,7 @@ namespace DataForSeo.Client.Models
         /// <br/>equals null if calculate_rectangles in the POST request is not set to true
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Rectangle Rectangle { get; set; }
+        public RectangleInfo Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

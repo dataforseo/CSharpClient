@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("serp_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BaseDataforseoLabsSerpElementItem SerpItem { get; set; }
+        public BaseDataforseoLabsApiElementItem SerpItem { get; set; }
 
         /// <summary>
         /// direct URL to search engine results
@@ -31,9 +31,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP
-        /// <br/>possible item types:
+        /// <br/>all possible item types can be found here, they include:
         /// <br/>answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box;
-        /// <br/>note that the actual results will be returned only for organic, paid, featured_snippet, and local_pack elements
+        /// <br/>note that the actual results will be returned only for organic, paid, featured_snippet, local_pack, and ai_overview_reference elements
         /// </summary>
         [JsonProperty("serp_item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> SerpItemTypes { get; set; }
@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models
         /// number of search results for the returned keyword
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeResultsCount { get; set; }
+        public int? SeResultsCount { get; set; }
 
         /// <summary>
         /// difficulty of ranking in the first top-10 organic results for a keyword
@@ -61,7 +61,7 @@ namespace DataForSeo.Client.Models
         public bool? IsLost { get; set; }
 
         /// <summary>
-        /// date and time when search intent data was last updated
+        /// date and time when SERP data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

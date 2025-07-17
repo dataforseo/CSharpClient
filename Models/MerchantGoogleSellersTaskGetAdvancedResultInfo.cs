@@ -99,7 +99,7 @@ namespace DataForSeo.Client.Models
         /// items in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseMerchantSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseMerchantGoogleShoppingSellersElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

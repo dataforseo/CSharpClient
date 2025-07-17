@@ -340,7 +340,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates a URL or a sequence of URLs that lead to url_to
         /// </summary>
         [JsonProperty("indirect_link_path", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<Redirect> IndirectLinkPath { get; set; }
+        public IEnumerable<BacklinksRedirectInfo> IndirectLinkPath { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

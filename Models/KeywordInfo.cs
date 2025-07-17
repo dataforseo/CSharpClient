@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         /// <br/>represents the relative amount of competition associated with the given keyword. This value is based on Google Ads data and can be between 0 and 1 (inclusive)
         /// </summary>
         [JsonProperty("competition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Competition { get; set; }
+        public double? Competition { get; set; }
 
         /// <summary>
         /// competition level
@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         /// <br/>represents the average cost per click (USD) historically paid for the keyword
         /// </summary>
         [JsonProperty("cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Cpc { get; set; }
+        public double? Cpc { get; set; }
 
         /// <summary>
         /// average monthly search volume rate
@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the value may differ depending on the location specified in a POST request
         /// </summary>
         [JsonProperty("low_top_of_page_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? LowTopOfPageBid { get; set; }
+        public double? LowTopOfPageBid { get; set; }
 
         /// <summary>
         /// maximum bid for the ad to be displayed at the top of the first page
@@ -68,7 +68,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the value may differ depending on the location specified in a POST request
         /// </summary>
         [JsonProperty("high_top_of_page_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? HighTopOfPageBid { get; set; }
+        public double? HighTopOfPageBid { get; set; }
 
         /// <summary>
         /// product and service categories
@@ -82,7 +82,7 @@ namespace DataForSeo.Client.Models
         /// <br/>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<MonthlySearches> MonthlySearches { get; set; }
+        public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
 
         /// <summary>
         /// search volume trend changes

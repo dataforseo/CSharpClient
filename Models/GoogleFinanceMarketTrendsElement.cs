@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>array contains the following type of items: google_finance_asset_pair_element, google_finance_market_instrument_element, google_finance_market_index_element
         /// </summary>
         [JsonProperty("quote", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public GoogleFinanceAssetPairElement Quote { get; set; }
+        public BaseSerpApiGoogleFinanceElementItem Quote { get; set; }
 
         /// <summary>
         /// array of items

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// hours in the 24-hour format
         /// </summary>
         [JsonProperty("time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public WorkTimeInfo Time { get; set; }
+        public TimeInfo Time { get; set; }
 
         /// <summary>
         /// popularity index

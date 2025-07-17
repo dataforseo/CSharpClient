@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the median of the values in the keywords_positions array
         /// </summary>
         [JsonProperty("median_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? MedianPosition { get; set; }
+        public double? MedianPosition { get; set; }
 
         /// <summary>
         /// the margin between the greatest possible and actual keyword positions
@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// <br/>calculated as sum(100-keywords_positions)
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Rating { get; set; }
+        public double? Rating { get; set; }
 
         /// <summary>
         /// estimated traffic volume
@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Etv { get; set; }
+        public double? Etv { get; set; }
 
         /// <summary>
         /// the number of specified keywords the domain has positions for in SERPs
@@ -65,7 +65,7 @@ namespace DataForSeo.Client.Models
         /// <br/>keywords with positions from 20 to 100 have the visibility index equal to 0
         /// </summary>
         [JsonProperty("visibility", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Visibility { get; set; }
+        public double? Visibility { get; set; }
 
         /// <summary>
         /// the number of SERP elements relevant to the domain

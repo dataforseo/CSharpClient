@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// current organic ETV of the domain
         /// </summary>
         [JsonProperty("organic_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? OrganicEtv { get; set; }
+        public double? OrganicEtv { get; set; }
 
         /// <summary>
         /// current total count of organic SERPs that contain the domain

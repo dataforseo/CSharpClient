@@ -76,7 +76,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("onpage_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? OnpageScore { get; set; }
+        public double? OnpageScore { get; set; }
 
         /// <summary>
         /// number of non-indexable pages

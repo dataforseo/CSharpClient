@@ -21,21 +21,21 @@ namespace DataForSeo.Client.Models
         /// current search volume rate of a keyword
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SearchVolume { get; set; }
+        public int? SearchVolume { get; set; }
 
         /// <summary>
         /// keyword info is normalized
         /// <br/>if true, values are normalized with Bing data
         /// </summary>
         [JsonProperty("is_normalized", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string IsNormalized { get; set; }
+        public bool? IsNormalized { get; set; }
 
         /// <summary>
         /// monthly search volume rates
         /// <br/>array of objects with search volume rates in a certain month of a year
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<MonthlySearches> MonthlySearches { get; set; }
+        public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

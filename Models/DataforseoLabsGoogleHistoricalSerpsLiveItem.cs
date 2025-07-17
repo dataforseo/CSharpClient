@@ -94,16 +94,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseDataforseoLabsSerpElementItem> Items { get; set; }
-
-        /// <summary>
-        /// estimated traffic volume based on clickstream data
-        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
-        /// <br/>learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
-        /// </summary>
-        [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ClickstreamEtv { get; set; }
+        public IEnumerable<BaseDataforseoLabsApiElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

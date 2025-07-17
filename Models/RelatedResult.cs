@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the link
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -94,10 +94,11 @@ namespace DataForSeo.Client.Models
         public string ExtendedSnippet { get; set; }
 
         /// <summary>
-        /// images of the element
+        /// images of the component
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElement> Images { get; set; }
 
         /// <summary>
         /// Accelerated Mobile Pages
@@ -111,7 +112,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public RatingElement Rating { get; set; }
 
         /// <summary>
         /// price of booking a place for the specified dates of stay
@@ -134,7 +135,7 @@ namespace DataForSeo.Client.Models
         public AboutThisResultElement AboutThisResult { get; set; }
 
         /// <summary>
-        /// date and time when the result was published
+        /// date and time when the video was published or indexed
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

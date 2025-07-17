@@ -65,7 +65,7 @@ namespace DataForSeo.Client.Models
         /// found apps
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseAppDataSerpElementItem> Items { get; set; }
+        public IEnumerable<GooglePlaySearchOrganic> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

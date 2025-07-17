@@ -5,10 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
-**Title** | **string** | title of the result in SERP |[optional]|
-**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>kc:/local:place qa |[optional]|
+**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
+**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
+**Title** | **string** | reference page title |[optional]|
+**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
 **Text** | **string** | reference text<br>text snippet from the page that was used to generate the ai_overview_element |[optional]|
-**Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
-**Rectangle** | **Rectangle** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|
+**Links** | **IEnumerable<LinkElement>** | link of the element |[optional]|

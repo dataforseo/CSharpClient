@@ -10,5 +10,5 @@
 **SeType** | **string** | search engine type |[optional]|
 **DatePosted** | **string** | date when the task was posted (in the UTC format) |[optional]|
 **Tag** | **string** | user-defined task identifier |[optional]|
-**EndpointAdvanced** | **string** | URL for collecting the results of the Apple app_info task |[optional]|
-**EndpointHtml** | **string** | URL for collecting the results of the Apple app_info HTML task<br>if HTML tasks are not supported in the specified endpoint, the value will be null |[optional]|
+**EndpointAdvanced** | **string** | URL for collecting the results of the Apple App Info task |[optional]|
+**EndpointHtml** | **string** | URL for collecting the results of the Apple App Info HTML task<br>if HTML tasks are not supported in the specified endpoint, the value will be null |[optional]|

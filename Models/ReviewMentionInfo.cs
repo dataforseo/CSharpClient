@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// positive score by criterion
         /// </summary>
         [JsonProperty("positive_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? PositiveScore { get; set; }
+        public double? PositiveScore { get; set; }
 
         /// <summary>
         /// count of positive reviews by criterion

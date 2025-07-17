@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// <br/>1 indicates the highest probability
         /// </summary>
         [JsonProperty("probability", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Probability { get; set; }
+        public double? Probability { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

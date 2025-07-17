@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more in this help center article
         /// </summary>
         [JsonProperty("bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? Bid { get; set; }
+        public double? Bid { get; set; }
 
         /// <summary>
         /// keywords match-type
@@ -67,7 +67,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about impressions in this help center article
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Impressions { get; set; }
+        public int? Impressions { get; set; }
 
         /// <summary>
         /// projected click through rate (CTR) of the advertisement
@@ -91,7 +91,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Cost { get; set; }
+        public double? Cost { get; set; }
 
         /// <summary>
         /// number of clicks on an ad
@@ -99,7 +99,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("clicks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Clicks { get; set; }
+        public double? Clicks { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

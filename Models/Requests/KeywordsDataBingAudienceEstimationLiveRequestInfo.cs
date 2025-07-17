@@ -54,14 +54,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>maximum value: 1000
         /// </summary>
         [JsonProperty("bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Bid { get; set; }
+        public double? Bid { get; set; }
 
         /// <summary>
         /// daily campaign budget value in USD
         /// <br/>maximum value: 10000
         /// </summary>
         [JsonProperty("daily_budget", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? DailyBudget { get; set; }
+        public double? DailyBudget { get; set; }
 
         /// <summary>
         /// gender to target

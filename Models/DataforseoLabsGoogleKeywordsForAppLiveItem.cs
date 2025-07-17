@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// contains data on the domain’s SERP element found for the returned keyword
         /// </summary>
         [JsonProperty("ranked_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppRankedSerpElementInfo RankedSerpElement { get; set; }
+        public GooglePlayRankedSerpElementInfo RankedSerpElement { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -42,19 +42,19 @@ namespace DataForSeo.Client.Models
         /// average number of words per sentence in the target text
         /// </summary>
         [JsonProperty("words_per_sentence", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? WordsPerSentence { get; set; }
+        public int? WordsPerSentence { get; set; }
 
         /// <summary>
         /// average number of characters per word in the target text
         /// </summary>
         [JsonProperty("characters_per_word", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? CharactersPerWord { get; set; }
+        public int? CharactersPerWord { get; set; }
 
         /// <summary>
         /// vocabulary density of the target text
         /// </summary>
         [JsonProperty("vocabulary_density", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? VocabularyDensity { get; set; }
+        public int? VocabularyDensity { get; set; }
 
         /// <summary>
         /// keyword density of the target text
@@ -67,25 +67,25 @@ namespace DataForSeo.Client.Models
         /// Automated Readability Index
         /// </summary>
         [JsonProperty("automated_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? AutomatedReadabilityIndex { get; set; }
+        public int? AutomatedReadabilityIndex { get; set; }
 
         /// <summary>
         /// Coleman–Liau Index
         /// </summary>
         [JsonProperty("coleman_liau_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? ColemanLiauIndex { get; set; }
+        public int? ColemanLiauIndex { get; set; }
 
         /// <summary>
         /// Flesch–Kincaid Readability Index
         /// </summary>
         [JsonProperty("flesch_kincaid_grade_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? FleschKincaidGradeLevel { get; set; }
+        public int? FleschKincaidGradeLevel { get; set; }
 
         /// <summary>
         /// SMOG Readability Index
         /// </summary>
         [JsonProperty("smog_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? SmogReadabilityIndex { get; set; }
+        public int? SmogReadabilityIndex { get; set; }
 
         /// <summary>
         /// number of spelling errors found in the target text

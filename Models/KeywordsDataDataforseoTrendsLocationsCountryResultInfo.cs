@@ -47,13 +47,6 @@ namespace DataForSeo.Client.Models
         public string LocationType { get; set; }
 
         /// <summary>
-        /// DataForSEO trends location name
-        /// <br/>you can use this field for matching obtained results with the location_name parameter specified in the request
-        /// </summary>
-        [JsonProperty("geo_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string GeoName { get; set; }
-
-        /// <summary>
         /// DataForSEO trends location identifier
         /// <br/>you can use this field for matching obtained results with the location_code parameter specified in the request
         /// </summary>

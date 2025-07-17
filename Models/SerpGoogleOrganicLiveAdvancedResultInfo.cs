@@ -90,11 +90,10 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

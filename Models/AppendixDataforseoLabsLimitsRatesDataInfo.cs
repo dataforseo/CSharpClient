@@ -49,6 +49,8 @@ namespace DataForSeo.Client.Models
         public AppendixInfo KeywordSuggestions { get; set; }
         [JsonProperty("keyword_ideas", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo KeywordIdeas { get; set; }
+        [JsonProperty("historical_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixInfo HistoricalSearchVolume { get; set; }
         [JsonProperty("categories_for_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo CategoriesForDomain { get; set; }
         [JsonProperty("domain_metrics_by_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

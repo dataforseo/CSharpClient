@@ -10,4 +10,4 @@
 **LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
 **TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsBulkTrafficEstimationLiveItem>** | array of items with relevant traffic estimation data |[optional]|
+**Items** | **IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveItem>** | array of items with relevant traffic estimation data |[optional]|

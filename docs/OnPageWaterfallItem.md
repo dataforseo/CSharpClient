@@ -16,4 +16,4 @@
 **DurationTime** | **int?** | total time it takes until a browser receives a complete response from a server (in milliseconds) |[optional]|
 **FetchStart** | **int?** | time to start downloading the HTML resource<br>the amount of time the browser needs to start downloading a page |[optional]|
 **FetchEnd** | **int?** | time to complete downloading the HTML resource<br>the amount of time the browser needs to complete downloading a page |[optional]|
-**Resources** | **IEnumerable<BaseOnPageResourceItemInfo>** | resource-specific timing<br>contains separate arrays with timing for each resource found on the page |[optional]|
+**Resources** | **IEnumerable<WaterfallResourceInfo>** | resource-specific timing<br>contains separate arrays with timing for each resource found on the page |[optional]|

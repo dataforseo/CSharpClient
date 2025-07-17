@@ -27,13 +27,13 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rank { get; set; }
+        public int? Rank { get; set; }
 
         /// <summary>
         /// indicates the number of backlinks
         /// </summary>
         [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Backlinks { get; set; }
+        public long? Backlinks { get; set; }
 
         /// <summary>
         /// date and time when our crawler found the backlink from this target for the first time
@@ -59,74 +59,74 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("backlinks_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BacklinksSpamScore { get; set; }
+        public long? BacklinksSpamScore { get; set; }
 
         /// <summary>
         /// number of broken backlinks
         /// </summary>
         [JsonProperty("broken_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BrokenBacklinks { get; set; }
+        public long? BrokenBacklinks { get; set; }
 
         /// <summary>
         /// number of broken pages
         /// </summary>
         [JsonProperty("broken_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BrokenPages { get; set; }
+        public int? BrokenPages { get; set; }
 
         /// <summary>
         /// number of referring domains
         /// </summary>
         [JsonProperty("referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringDomains { get; set; }
+        public long? ReferringDomains { get; set; }
 
         /// <summary>
         /// number of domains pointing at least one nofollow link to the corresponding target
         /// </summary>
         [JsonProperty("referring_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringDomainsNofollow { get; set; }
+        public long? ReferringDomainsNofollow { get; set; }
 
         /// <summary>
         /// number of referring main domains
         /// </summary>
         [JsonProperty("referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringMainDomains { get; set; }
+        public long? ReferringMainDomains { get; set; }
 
         /// <summary>
         /// number of main domains pointing at least one nofollow link to the target
         /// </summary>
         [JsonProperty("referring_main_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringMainDomainsNofollow { get; set; }
+        public long? ReferringMainDomainsNofollow { get; set; }
 
         /// <summary>
         /// number of referring IP addresses
         /// </summary>
         [JsonProperty("referring_ips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringIps { get; set; }
+        public long? ReferringIps { get; set; }
 
         /// <summary>
         /// number of referring subnetworks
         /// </summary>
         [JsonProperty("referring_subnets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringSubnets { get; set; }
+        public long? ReferringSubnets { get; set; }
 
         /// <summary>
         /// indicates the number of pages pointing to the target
         /// </summary>
         [JsonProperty("referring_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringPages { get; set; }
+        public long? ReferringPages { get; set; }
 
         /// <summary>
         /// number of referring pages pointing at least one nofollow link to the target
         /// </summary>
         [JsonProperty("referring_pages_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? ReferringPagesNofollow { get; set; }
+        public long? ReferringPagesNofollow { get; set; }
 
         /// <summary>
         /// top level domains of the referring links
         /// <br/>contains top-level domains and referring link count per each
         /// </summary>
         [JsonProperty("referring_links_tld", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, double?> ReferringLinksTld { get; set; }
+        public IDictionary<string, int?> ReferringLinksTld { get; set; }
 
         /// <summary>
         /// types of the referring links
@@ -135,14 +135,14 @@ namespace DataForSeo.Client.Models
         /// <br/>anchor, image, link, meta, canonical, alternate, redirect
         /// </summary>
         [JsonProperty("referring_links_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, double?> ReferringLinksTypes { get; set; }
+        public IDictionary<string, int?> ReferringLinksTypes { get; set; }
 
         /// <summary>
         /// link attributes of the referring links
         /// <br/>indicates link attributes of the referring links and the link count per each attribute
         /// </summary>
         [JsonProperty("referring_links_attributes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, double?> ReferringLinksAttributes { get; set; }
+        public IDictionary<string, int?> ReferringLinksAttributes { get; set; }
 
         /// <summary>
         /// types of referring platforms
@@ -150,7 +150,7 @@ namespace DataForSeo.Client.Models
         /// <br/>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
         /// </summary>
         [JsonProperty("referring_links_platform_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, double?> ReferringLinksPlatformTypes { get; set; }
+        public IDictionary<string, int?> ReferringLinksPlatformTypes { get; set; }
 
         /// <summary>
         /// semantic locations of the referring links
@@ -158,7 +158,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get the full list of semantic elements here
         /// </summary>
         [JsonProperty("referring_links_semantic_locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, double?> ReferringLinksSemanticLocations { get; set; }
+        public IDictionary<string, int?> ReferringLinksSemanticLocations { get; set; }
 
         /// <summary>
         /// ISO country codes of the referring links

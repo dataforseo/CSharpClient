@@ -33,7 +33,7 @@ var result = await dfsClient.ContentGenerationApi.GenerateLiveAsync(new List<Con
     {
         Text = "SEO is",
         MaxNewTokens = 100,
-        CreativityIndex = 1f,
+        CreativityIndex = 1,
         AvoidStartingWords = new List<string>()
         {
             "SEO",
@@ -106,7 +106,7 @@ var result = await dfsClient.ContentGenerationApi.GenerateTextLiveAsync(new List
             "sell",
             "CEO",
         },
-        CreativityIndex = 0.8f,
+        CreativityIndex = 0.8,
         IncludeConclusion = true,
     }
 });
@@ -202,7 +202,7 @@ var result = await dfsClient.ContentGenerationApi.GenerateSubTopicsLiveAsync(new
     new()
     {
         Topic = "Steve Jobs",
-        CreativityIndex = 0.9f,
+        CreativityIndex = 0.9,
     }
 });
 ```
@@ -250,7 +250,7 @@ var result = await dfsClient.ContentGenerationApi.ParaphraseLiveAsync(new List<C
     new()
     {
         Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings.",
-        CreativityIndex = 0.8f,
+        CreativityIndex = 0.8,
     }
 });
 ```

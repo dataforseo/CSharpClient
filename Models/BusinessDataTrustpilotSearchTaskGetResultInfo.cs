@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseBusinessDataSerpElementItem> Items { get; set; }
+        public IEnumerable<TrustpilotSearchOrganic> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

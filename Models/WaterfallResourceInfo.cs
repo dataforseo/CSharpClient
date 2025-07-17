@@ -26,21 +26,21 @@ namespace DataForSeo.Client.Models
         /// total time it takes until a browser receives a complete response from a server (in milliseconds)
         /// </summary>
         [JsonProperty("duration_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DurationTime { get; set; }
+        public int? DurationTime { get; set; }
 
         /// <summary>
         /// time to start downloading the resource
         /// <br/>the amount of time the browser needs to start downloading a resource
         /// </summary>
         [JsonProperty("fetch_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? FetchStart { get; set; }
+        public int? FetchStart { get; set; }
 
         /// <summary>
         /// time to complete downloading the resource
         /// <br/>the amount of time the browser needs to complete downloading a resource
         /// </summary>
         [JsonProperty("fetch_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? FetchEnd { get; set; }
+        public int? FetchEnd { get; set; }
 
         /// <summary>
         /// location of the resource in the document

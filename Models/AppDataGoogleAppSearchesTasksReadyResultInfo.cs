@@ -40,13 +40,13 @@ namespace DataForSeo.Client.Models
         public string Tag { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Google app_searches task
+        /// URL for collecting the results of the Google App Searches task
         /// </summary>
         [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Google app_searches HTML task
+        /// URL for collecting the results of the Google App Searches HTML task
         /// <br/>if HTML tasks are not supported in the specified endpoint, the value will be null
         /// </summary>
         [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

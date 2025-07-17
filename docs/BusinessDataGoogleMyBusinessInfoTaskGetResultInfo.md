@@ -13,4 +13,4 @@
 **Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **ItemTypes** | **IEnumerable<string>** | item types<br>types of search engine results encountered in the items array;<br>possible item types: google_business_info |[optional]|
 **ItemsCount** | **long?** | item types<br>the number of items in the items array |[optional]|
-**Items** | **IEnumerable<BaseBusinessDataSerpElementItem>** | array of directory items |[optional]|
+**Items** | **IEnumerable<GoogleBusinessInfo>** | array of directory items |[optional]|

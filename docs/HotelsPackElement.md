@@ -13,4 +13,4 @@
 **Domain** | **string** | website domain |[optional]|
 **Url** | **string** | URL |[optional]|
 **IsPaid** | **bool?** | indicates whether the element is an ad |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|

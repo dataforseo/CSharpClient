@@ -8,8 +8,8 @@ namespace DataForSeo.Client
         private System.Net.Http.HttpClient _client;
 
         public SerpApi SerpApi { get; }
-        public DomainAnalyticsApi DomainAnalyticsApi { get; }
         public DataforseoLabsApi DataforseoLabsApi { get; }
+        public DomainAnalyticsApi DomainAnalyticsApi { get; }
         public KeywordsDataApi KeywordsDataApi { get; }
         public BacklinksApi BacklinksApi { get; }
         public OnPageApi OnPageApi { get; }
@@ -25,9 +25,9 @@ namespace DataForSeo.Client
             _client = new System.Net.Http.HttpClient(new System.Net.Http.HttpClientHandler { AutomaticDecompression = System.Net.DecompressionMethods.GZip, MaxConnectionsPerServer = 1000 });
             _client.Timeout = System.TimeSpan.FromMinutes(1);
 
-            _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.0");
+            _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.4");
 
-            if (configuration.CustomHeaders != null && configuration.CustomHeaders.Count > 0)
+            if (configuration.CustomHeaders != null)
             {
                 foreach (var header in configuration.CustomHeaders)
                     _client.DefaultRequestHeaders.Add(header.Key, header.Value);
@@ -38,8 +38,8 @@ namespace DataForSeo.Client
             
 
             SerpApi = new SerpApi(_client);
-            DomainAnalyticsApi = new DomainAnalyticsApi(_client);
             DataforseoLabsApi = new DataforseoLabsApi(_client);
+            DomainAnalyticsApi = new DomainAnalyticsApi(_client);
             KeywordsDataApi = new KeywordsDataApi(_client);
             BacklinksApi = new BacklinksApi(_client);
             OnPageApi = new OnPageApi(_client);

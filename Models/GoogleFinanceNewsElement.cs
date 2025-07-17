@@ -54,7 +54,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information about market indexes quoted in the google_finance_news_element
         /// </summary>
         [JsonProperty("quotes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<GoogleFinanceAssetPairElement> Quotes { get; set; }
+        public IEnumerable<BaseSerpApiGoogleFinanceElementItem> Quotes { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

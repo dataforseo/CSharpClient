@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **SeType** | **string** | search engine type |[optional]|
-**SerpItem** | **BaseAmazonSerpElementItem** | contains data on the SERP element<br>the list of supported SERP elements can be found below |[optional]|
+**SerpItem** | **AmazonInfo** | contains data on the SERP element<br>the list of supported SERP elements can be found below |[optional]|
 **CheckUrl** | **string** | direct URL to Amazon results<br>you can use it to make sure that we provided accurate results |[optional]|
 **SerpItemTypes** | **IEnumerable<string>** | direct URL to Amazon results<br>contains types of all search results (items) found in the returned SERP;<br>possible item types:<br>amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches |[optional]|
 **SeResultsCount** | **long?** | total number of results in Amazon SERP |[optional]|

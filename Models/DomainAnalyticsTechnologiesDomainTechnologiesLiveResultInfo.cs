@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DomainRank { get; set; }
+        public int? DomainRank { get; set; }
 
         /// <summary>
         /// most recent date when our crawler visited the domain

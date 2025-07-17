@@ -5,5 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LanguageName** | **string** | language name |[optional]|
-**LanguageCode** | **string** | language code according to ISO 639-1 |[optional]|
+**LocationCode** | **int?** |  |[optional]|
+**LocationName** | **string** |  |[optional]|
+**LocationCodeParent** | **int?** |  |[optional]|
+**CountryIsoCode** | **string** |  |[optional]|
+**LocationType** | **string** |  |[optional]|

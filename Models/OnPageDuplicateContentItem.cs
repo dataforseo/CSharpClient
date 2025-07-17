@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// pages with duplicate content
         /// </summary>
         [JsonProperty("pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<Pages> Pages { get; set; }
+        public IEnumerable<DuplicatePageInfo> Pages { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

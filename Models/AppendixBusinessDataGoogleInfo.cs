@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("my_business_updates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo MyBusinessUpdates { get; set; }
         [JsonProperty("hotel_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpsRatesDataInfo HotelInfo { get; set; }
+        public AppendixSerpDaysRatesDataInfo HotelInfo { get; set; }
         [JsonProperty("hotel_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo HotelSearches { get; set; }
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

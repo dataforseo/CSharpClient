@@ -13,4 +13,4 @@
 **Description** | **string** | description |[optional]|
 **Date** | **string** | the date when the page source of the element was published |[optional]|
 **ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|

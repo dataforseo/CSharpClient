@@ -170,7 +170,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>2.5
         /// </summary>
         [JsonProperty("min_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? MinRating { get; set; }
+        public double? MinRating { get; set; }
 
         /// <summary>
         /// results sorting parameters

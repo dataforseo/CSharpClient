@@ -139,7 +139,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'latitude': 51.584091
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Latitude { get; set; }
+        public double? Latitude { get; set; }
 
         /// <summary>
         /// longitude coordinate of the local establishment in google maps
@@ -147,7 +147,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'longitude': -0.31365919999999997
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Longitude { get; set; }
+        public double? Longitude { get; set; }
 
         /// <summary>
         /// shows whether the entity is verified by its owner on Google Maps
@@ -215,7 +215,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information related to operational hours of the business entity
         /// </summary>
         [JsonProperty("work_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public WorkTime WorkTime { get; set; }
+        public BusinessWorkHoursInfo WorkTime { get; set; }
 
         /// <summary>
         /// popular times

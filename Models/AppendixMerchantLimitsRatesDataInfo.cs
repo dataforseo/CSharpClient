@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Errors { get; set; }
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpsRatesDataInfo Reviews { get; set; }
+        public AppendixSerpDaysRatesDataInfo Reviews { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 

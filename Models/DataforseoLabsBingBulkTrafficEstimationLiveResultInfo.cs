@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// array of items with relevant traffic estimation data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsBulkTrafficEstimationLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsBingBulkTrafficEstimationLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

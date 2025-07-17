@@ -43,6 +43,8 @@ namespace DataForSeo.Client.Models
         public AppendixBingKeywordsDataPriceDataInfo HistoricalKeywordData { get; set; }
         [JsonProperty("historical_rank_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
+        [JsonProperty("historical_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo HistoricalSearchVolume { get; set; }
         [JsonProperty("historical_serps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalSerps { get; set; }
         [JsonProperty("keyword_ideas", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

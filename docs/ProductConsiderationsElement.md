@@ -8,4 +8,4 @@
 **Type** | **string** | type of element |[optional]|
 **Title** | **string** | title of a given link element |[optional]|
 **ConsiderationCategory** | **string** | category of the consideration element<br>the category is indicated just above the title fo the consideration element |[optional]|
-**ExpandedElement** | **ProductConsiderationsExpandedElement** | expanded element |[optional]|
+**ExpandedElement** | **IEnumerable<BaseSerpApiProductConsiderationExpandedElementItem>** | expanded element |[optional]|

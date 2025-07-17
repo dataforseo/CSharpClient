@@ -99,6 +99,18 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<string> OrderBy { get; set; }
 
         /// <summary>
+        /// token for subsequent requests
+        /// <br/>optional field
+        /// <br/>provided in the identical filed of the response to each request;
+        /// <br/>use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
+        /// <br/>by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
+        /// <br/>search_after_token values are unique for each subsequent task ;
+        /// <br/>Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+        /// </summary>
+        [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SearchAfterToken { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

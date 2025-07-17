@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// items array
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageResourceItemInfo> Items { get; set; }
+        public IEnumerable<BaseOnPageResourceItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

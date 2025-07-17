@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("serp_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BaseAmazonSerpElementItem SerpItem { get; set; }
+        public AmazonInfo SerpItem { get; set; }
 
         /// <summary>
         /// direct URL to Amazon results

@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// expanded element
         /// </summary>
         [JsonProperty("expanded_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ProductConsiderationsExpandedElement ExpandedElement { get; set; }
+        public IEnumerable<BaseSerpApiProductConsiderationExpandedElementItem> ExpandedElement { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -99,7 +99,7 @@ namespace DataForSeo.Client.Models
         /// items featured in the faq_box
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiGoogleSearchByImagesElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

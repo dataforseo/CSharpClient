@@ -64,9 +64,7 @@ namespace DataForSeo.Client.Models
         public int? CompetitionIndex { get; set; }
 
         /// <summary>
-        /// monthly average search volume rate;
-        /// <br/>represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting;
-        /// <br/>if there is no data then the value is null
+        /// monthly average search volume rate
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }
@@ -77,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the value may differ depending on the location specified in a POST request
         /// </summary>
         [JsonProperty("low_top_of_page_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? LowTopOfPageBid { get; set; }
+        public double? LowTopOfPageBid { get; set; }
 
         /// <summary>
         /// maximum bid for the ad to be displayed at the top of the first page
@@ -85,14 +83,14 @@ namespace DataForSeo.Client.Models
         /// <br/>the value may differ depending on the location specified in a POST request
         /// </summary>
         [JsonProperty("high_top_of_page_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? HighTopOfPageBid { get; set; }
+        public double? HighTopOfPageBid { get; set; }
 
         /// <summary>
         /// cost per click
         /// <br/>indicates the amount paid for each click on the ad displayed for a given keyword
         /// </summary>
         [JsonProperty("cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Cpc { get; set; }
+        public double? Cpc { get; set; }
 
         /// <summary>
         /// monthly searches
@@ -100,7 +98,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data then the value is null
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<MonthlySearches> MonthlySearches { get; set; }
+        public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

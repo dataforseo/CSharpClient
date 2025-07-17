@@ -62,7 +62,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the cost of using the specified keyword and match type during the last month
         /// </summary>
         [JsonProperty("total_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? TotalCost { get; set; }
+        public double? TotalCost { get; set; }
 
         /// <summary>
         /// average bid of the keyword

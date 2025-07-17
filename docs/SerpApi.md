@@ -14,6 +14,13 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST**  /v3/serp/google/organic/task_post  |
 [**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET**  /v3/serp/google/organic/tasks_ready  |
 [**tasksReady**](SerpApi.md#tasksReady) | **GET**  /v3/serp/tasks_ready  |
+[**googleOrganicTasksFixed**](SerpApi.md#googleOrganicTasksFixed) | **GET**  /v3/serp/google/organic/tasks_fixed  |
+[**googleOrganicTaskGetRegular**](SerpApi.md#googleOrganicTaskGetRegular) | **GET**  /v3/serp/google/organic/task_get/regular/{id}  |
+[**googleOrganicTaskGetAdvanced**](SerpApi.md#googleOrganicTaskGetAdvanced) | **GET**  /v3/serp/google/organic/task_get/advanced/{id}  |
+[**googleOrganicTaskGetHtml**](SerpApi.md#googleOrganicTaskGetHtml) | **GET**  /v3/serp/google/organic/task_get/html/{id}  |
+[**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST**  /v3/serp/google/organic/live/regular  |
+[**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST**  /v3/serp/google/organic/live/advanced  |
+[**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST**  /v3/serp/google/organic/live/html  |
 [**serpGoogleAiModeLanguages**](SerpApi.md#serpGoogleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
 [**googleAiModeTaskPost**](SerpApi.md#googleAiModeTaskPost) | **POST**  /v3/serp/google/ai_mode/task_post  |
 [**googleAiModeTasksReady**](SerpApi.md#googleAiModeTasksReady) | **GET**  /v3/serp/google/ai_mode/tasks_ready  |
@@ -22,13 +29,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleAiModeTaskGetHtml**](SerpApi.md#googleAiModeTaskGetHtml) | **GET**  /v3/serp/google/ai_mode/task_get/html/{id}  |
 [**googleAiModeLiveAdvanced**](SerpApi.md#googleAiModeLiveAdvanced) | **POST**  /v3/serp/google/ai_mode/live/advanced  |
 [**googleAiModeLiveHtml**](SerpApi.md#googleAiModeLiveHtml) | **POST**  /v3/serp/google/ai_mode/live/html  |
-[**googleOrganicTasksFixed**](SerpApi.md#googleOrganicTasksFixed) | **GET**  /v3/serp/google/organic/tasks_fixed  |
-[**googleOrganicTaskGetRegular**](SerpApi.md#googleOrganicTaskGetRegular) | **GET**  /v3/serp/google/organic/task_get/regular/{id}  |
-[**googleOrganicTaskGetAdvanced**](SerpApi.md#googleOrganicTaskGetAdvanced) | **GET**  /v3/serp/google/organic/task_get/advanced/{id}  |
-[**googleOrganicTaskGetHtml**](SerpApi.md#googleOrganicTaskGetHtml) | **GET**  /v3/serp/google/organic/task_get/html/{id}  |
-[**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST**  /v3/serp/google/organic/live/regular  |
-[**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST**  /v3/serp/google/organic/live/advanced  |
-[**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST**  /v3/serp/google/organic/live/html  |
 [**googleMapsTaskPost**](SerpApi.md#googleMapsTaskPost) | **POST**  /v3/serp/google/maps/task_post  |
 [**googleMapsTasksReady**](SerpApi.md#googleMapsTasksReady) | **GET**  /v3/serp/google/maps/tasks_ready  |
 [**googleMapsTasksFixed**](SerpApi.md#googleMapsTasksFixed) | **GET**  /v3/serp/google/maps/tasks_fixed  |
@@ -204,8 +204,8 @@ var result = await dfsClient.SerpApi.SerpIdListAsync(new List<SerpIdListRequestI
 {
     new()
     {
-        DatetimeFrom = "2025-01-18 03:17:37 +00:00",
-        DatetimeTo = "2025-03-18 03:17:37 +00:00",
+        DatetimeFrom = "2025-04-17 06:05:20 +00:00",
+        DatetimeTo = "2025-06-17 06:05:20 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -305,7 +305,7 @@ var result = await dfsClient.SerpApi.ScreenshotAsync(new List<SerpScreenshotRequ
     new()
     {
         TaskId = "06211235-0696-0139-1000-36727fbd3c90",
-        BrowserScreenScaleFactor = 0.5f,
+        BrowserScreenScaleFactor = 0.5,
     }
 });
 ```
@@ -641,6 +641,321 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="googleOrganicTasksFixed"></a>
+# **googleOrganicTasksFixed**
+> SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleOrganicTasksFixedAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleOrganicTasksFixedResponseInfo**](SerpGoogleOrganicTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicTaskGetRegular"></a>
+# **googleOrganicTaskGetRegular**
+> SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleOrganicTaskGetRegularAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleOrganicTaskGetRegularResponseInfo**](SerpGoogleOrganicTaskGetRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicTaskGetAdvanced"></a>
+# **googleOrganicTaskGetAdvanced**
+> SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.GoogleOrganicTaskGetAdvancedAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleOrganicTaskGetAdvancedResponseInfo**](SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicTaskGetHtml"></a>
+# **googleOrganicTaskGetHtml**
+> SerpGoogleOrganicTaskGetHtmlResponseInfo googleOrganicTaskGetHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "ea0a6ce2-0475-4df3-b2ec-55dfd875fd4a";
+var result = await dfsClient.SerpApi.GoogleOrganicTaskGetHtmlAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleOrganicTaskGetHtmlResponseInfo**](SerpGoogleOrganicTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicLiveRegular"></a>
+# **googleOrganicLiveRegular**
+> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(new List<SerpGoogleOrganicLiveRegularRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicLiveRegularResponseInfo**](SerpGoogleOrganicLiveRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicLiveAdvanced"></a>
+# **googleOrganicLiveAdvanced**
+> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        CalculateRectangles = true,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicLiveAdvancedResponseInfo**](SerpGoogleOrganicLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicLiveHtml"></a>
+# **googleOrganicLiveHtml**
+> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoogleOrganicLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        Keyword = "albert einstein",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicLiveHtmlResponseInfo**](SerpGoogleOrganicLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="serpGoogleAiModeLanguages"></a>
 # **serpGoogleAiModeLanguages**
 > SerpGoogleAiModeLanguagesResponseInfo serpGoogleAiModeLanguages()
@@ -867,7 +1182,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "a39ec28a-4827-42ea-a3c8-b3e97b6d0777";
+var id = "9525767b-1a1e-4c21-9d15-48c198690d78";
 var result = await dfsClient.SerpApi.GoogleAiModeTaskGetHtmlAsync(id);
 ```
 
@@ -980,321 +1295,6 @@ var result = await dfsClient.SerpApi.GoogleAiModeLiveHtmlAsync(new List<SerpGoog
 ### Return type
 
 [**SerpGoogleAiModeLiveHtmlResponseInfo**](SerpGoogleAiModeLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTasksFixed"></a>
-# **googleOrganicTasksFixed**
-> SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.GoogleOrganicTasksFixedAsync();
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpGoogleOrganicTasksFixedResponseInfo**](SerpGoogleOrganicTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskGetRegular"></a>
-# **googleOrganicTaskGetRegular**
-> SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.SerpApi.GoogleOrganicTaskGetRegularAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpGoogleOrganicTaskGetRegularResponseInfo**](SerpGoogleOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskGetAdvanced"></a>
-# **googleOrganicTaskGetAdvanced**
-> SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.SerpApi.GoogleOrganicTaskGetAdvancedAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpGoogleOrganicTaskGetAdvancedResponseInfo**](SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskGetHtml"></a>
-# **googleOrganicTaskGetHtml**
-> SerpGoogleOrganicTaskGetHtmlResponseInfo googleOrganicTaskGetHtml()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "bd350566-9848-4627-ad5e-82682be7c3b2";
-var result = await dfsClient.SerpApi.GoogleOrganicTaskGetHtmlAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpGoogleOrganicTaskGetHtmlResponseInfo**](SerpGoogleOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicLiveRegular"></a>
-# **googleOrganicLiveRegular**
-> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(new List<SerpGoogleOrganicLiveRegularRequestInfo>()
-{
-    new()
-    {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**SerpGoogleOrganicLiveRegularResponseInfo**](SerpGoogleOrganicLiveRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicLiveAdvanced"></a>
-# **googleOrganicLiveAdvanced**
-> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
-{
-    new()
-    {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        CalculateRectangles = true,
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**SerpGoogleOrganicLiveAdvancedResponseInfo**](SerpGoogleOrganicLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicLiveHtml"></a>
-# **googleOrganicLiveHtml**
-> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoogleOrganicLiveHtmlRequestInfo>()
-{
-    new()
-    {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**SerpGoogleOrganicLiveHtmlResponseInfo**](SerpGoogleOrganicLiveHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -1551,7 +1551,7 @@ var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<Ser
         Keyword = "local nail services",
         LocationCode = 2840,
         LanguageCode = "en",
-        MinRating = 4.5f,
+        MinRating = 4.5,
         TimeFilter = "monday",
     }
 });
@@ -1719,7 +1719,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "b6b633f2-44d0-4354-8384-b9ef1e90b065";
+var id = "90902cec-1adb-4c12-8191-056ad4d0df99";
 var result = await dfsClient.SerpApi.GoogleLocalFinderTaskGetHtmlAsync(id);
 ```
 
@@ -1768,7 +1768,7 @@ var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List
         Keyword = "local nail services",
         LocationCode = 2840,
         LanguageCode = "en",
-        MinRating = 4.5f,
+        MinRating = 4.5,
         TimeFilter = "monday",
     }
 });
@@ -2034,7 +2034,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "7f9a1e3b-1ed6-4f51-8651-05daa9712c63";
+var id = "080e51fa-1a85-4276-b70e-c508dca0633d";
 var result = await dfsClient.SerpApi.GoogleNewsTaskGetHtmlAsync(id);
 ```
 
@@ -2569,7 +2569,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "0a1f486a-88fe-4593-a98e-56b52c9febdb";
+var id = "81819d03-d6b8-4c7e-ae9a-eaaff352bef0";
 var result = await dfsClient.SerpApi.GoogleImagesTaskGetHtmlAsync(id);
 ```
 
@@ -3055,7 +3055,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "b89e31c7-b59c-4382-a926-527de229529f";
+var id = "d1bde53b-dfd2-4169-9778-6816e2c9b781";
 var result = await dfsClient.SerpApi.GoogleJobsTaskGetHtmlAsync(id);
 ```
 
@@ -4471,7 +4471,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "dc352e3e-5632-4140-a4a1-4fb3c5338ebe";
+var id = "ed2fd7a3-7879-4ead-a688-8cc669dd9587";
 var result = await dfsClient.SerpApi.BingOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -4833,7 +4833,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "f17106c5-43ba-44bd-a0cb-6a33c4dd53ea";
+var id = "114c9509-213a-46f5-bc48-f87b71661104";
 var result = await dfsClient.SerpApi.BingLocalPackTaskGetHtmlAsync(id);
 ```
 
@@ -6102,7 +6102,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "f445242d-b633-480c-9e47-b3860628a4d5";
+var id = "72217fe5-3b41-48bb-b6ba-94b297060d73";
 var result = await dfsClient.SerpApi.YahooOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -6631,7 +6631,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "a73d3b58-9708-4adc-9e7a-dee7a84c7676";
+var id = "817d4c16-a201-43f7-a029-72e692cf2eb6";
 var result = await dfsClient.SerpApi.BaiduOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -6890,7 +6890,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "6c6a699d-bac4-4b63-80c0-61e2568e47b1";
+var id = "880514c7-55ac-42f0-a7de-e608efff83a7";
 var result = await dfsClient.SerpApi.NaverOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -7271,7 +7271,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "22f76705-efc0-411f-9e3c-3990439e2db5";
+var id = "747b97b8-ee44-44d0-827b-82b7e854e8b8";
 var result = await dfsClient.SerpApi.SeznamOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -7444,7 +7444,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "78a9d8e7-d4bc-4101-b8be-659958b4afd3";
+var id = "13319545-cffb-44c7-8e83-ca04a91aa755";
 var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskGetHtmlAsync(id);
 ```
 
@@ -7713,7 +7713,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "c8c5a862-f7c2-4d9b-95c7-3fee7a284fb9";
+var id = "b9e2eebc-e319-447f-893f-792ee9892785";
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskGetHtmlAsync(id);
 ```
 
@@ -7983,7 +7983,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "108fc499-866c-4cec-9644-0428ed812013";
+var id = "f68de805-4b39-48d7-897c-64388a82a2c6";
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskGetHtmlAsync(id);
 ```
 

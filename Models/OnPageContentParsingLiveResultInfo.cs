@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// items array
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<OnPageContentParsingItem> Items { get; set; }
+        public IEnumerable<ContentParsingElement> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

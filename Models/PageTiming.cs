@@ -27,14 +27,14 @@ namespace DataForSeo.Client.Models
         /// <br/>The amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. Learn more.
         /// </summary>
         [JsonProperty("largest_contentful_paint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? LargestContentfulPaint { get; set; }
+        public double? LargestContentfulPaint { get; set; }
 
         /// <summary>
         /// Core Web Vitals metric indicating the responsiveness of a page
         /// <br/>The time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. Learn more.
         /// </summary>
         [JsonProperty("first_input_delay", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? FirstInputDelay { get; set; }
+        public double? FirstInputDelay { get; set; }
 
         /// <summary>
         /// time to connect to a server

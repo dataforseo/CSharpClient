@@ -5,46 +5,61 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class PaidSerpElementItem  : BaseSerpElementItem 
+    public class PaidSerpElementItem  : BaseSerpApiElementItem 
     {
 
         /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Position { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements found in SERP
+        /// <br/>note values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+        /// <br/>to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
         /// </summary>
-        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Xpath { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// title of the result in SERP
-        /// </summary>
-        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Title { get; set; }
-
-        /// <summary>
-        /// domain name of the reference
+        /// domain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// name of the website in SERP
+        /// title of the results element in SERP
         /// </summary>
-        [JsonProperty("website_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string WebsiteName { get; set; }
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Title { get; set; }
+
+        /// <summary>
+        /// description of the results element in SERP
+        /// </summary>
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Description { get; set; }
+
+        /// <summary>
+        /// relevant URL in SERP
+        /// </summary>
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Url { get; set; }
 
         /// <summary>
         /// breadcrumb in SERP
         /// </summary>
         [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Breadcrumb { get; set; }
+
+        /// <summary>
+        /// name of the website in SERP
+        /// </summary>
+        [JsonProperty("website_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string WebsiteName { get; set; }
 
         /// <summary>
         /// indicates whether the element contains an image
@@ -60,15 +75,10 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// images of the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ImagesElement> Images { get; set; }
-
-        /// <summary>
-        /// relevant URL in SERP
-        /// </summary>
-        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Url { get; set; }
+        public IEnumerable<AiModeImagesElement> Images { get; set; }
 
         /// <summary>
         /// words highlighted in bold within the results description
@@ -81,12 +91,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("extra", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> Extra { get; set; }
-
-        /// <summary>
-        /// description of the results element in SERP
-        /// </summary>
-        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Description { get; set; }
 
         /// <summary>
         /// extended description
@@ -115,15 +119,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
-
-        /// <summary>
-        /// rectangle parameters
-        /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-        /// <br/>equals null if calculate_rectangles in the POST request is not set to true
-        /// </summary>
-        [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Rectangle Rectangle { get; set; }
+        public RatingElement Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

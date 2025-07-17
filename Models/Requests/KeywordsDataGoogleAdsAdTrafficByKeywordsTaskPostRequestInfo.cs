@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>learn more in this help center article
         /// </summary>
         [JsonProperty("bid", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Bid { get; set; }
+        public double? Bid { get; set; }
 
         /// <summary>
         /// keywords match-type

@@ -24,8 +24,8 @@
 **MainImage** | **string** | URL of the main image featured in Google My Business profile |[optional]|
 **TotalPhotos** | **long?** | total count of images featured in Google My Business profile |[optional]|
 **Snippet** | **string** | additional information on the business entity |[optional]|
-**Latitude** | **float?** | latitude coordinate of the local establishments in google maps<br>example:<br>'latitude': 51.584091 |[optional]|
-**Longitude** | **float?** | longitude coordinate of the local establishment in google maps<br>example:<br>'longitude': -0.31365919999999997 |[optional]|
+**Latitude** | **double?** | latitude coordinate of the local establishments in google maps<br>example:<br>'latitude': 51.584091 |[optional]|
+**Longitude** | **double?** | longitude coordinate of the local establishment in google maps<br>example:<br>'longitude': -0.31365919999999997 |[optional]|
 **IsClaimed** | **bool?** | shows whether the entity is verified by its owner on Google Maps |[optional]|
 **Attributes** | **BusinessDataAttributesInfo** | service details in a form of user-reviewed checks;<br>service details of a business entity displayed in a form of checks and based on user feedback and business category |[optional]|
 **PlaceTopics** | **IDictionary<string, long?>** | keywords mentioned in customer reviews<br>contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword<br>example: <br>'place_topics': {<br>'egg roll': 48,<br>'birthday': 33<br>} |[optional]|
@@ -34,7 +34,7 @@
 **PriceLevel** | **string** | property price level<br>can take values: inexpensive, moderate, expensive, very_expensive<br>if there is no price level information, the value will be null |[optional]|
 **RatingDistribution** | **IDictionary<string, int?>** | the distribution of ratings of the business entity<br>the object displays the number of 1-star to 5-star ratings, as reviewed by users |[optional]|
 **PeopleAlsoSearch** | **IEnumerable<PeopleAlsoSearch>** | related business entities |[optional]|
-**WorkTime** | **WorkTime** | work time details<br>information related to operational hours of the business entity |[optional]|
+**WorkTime** | **BusinessWorkHoursInfo** | work time details<br>information related to operational hours of the business entity |[optional]|
 **PopularTimes** | **PopularTimes** | popular times<br>information related to busy hours of the business entity |[optional]|
 **LocalBusinessLinks** | **IEnumerable<BaseLocalBusinessLink>** | available interactions with the business<br>list of options to interact with the business directly from search results |[optional]|
 **ContactInfo** | **IEnumerable<BusinessDataContactInfo>** | available contacts of the business<br>list of contacts to interact with the business |[optional]|

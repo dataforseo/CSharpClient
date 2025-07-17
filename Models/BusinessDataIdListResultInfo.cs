@@ -50,13 +50,13 @@ namespace DataForSeo.Client.Models
         /// cost of the task, USD
         /// </summary>
         [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Cost { get; set; }
+        public double? Cost { get; set; }
 
         /// <summary>
         /// contains parameters you specified in the POST request
         /// </summary>
         [JsonProperty("metadata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, object> Metadata { get; set; }
+        public IEnumerable<string> Metadata { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

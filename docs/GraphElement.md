@@ -7,4 +7,4 @@
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
 **Date** | **string** | the posting date |[optional]|
-**Value** | **float?** | the value of the rating |[optional]|
+**Value** | **double?** | the value of the rating |[optional]|

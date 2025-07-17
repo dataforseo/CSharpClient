@@ -5,10 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
-**Title** | **string** | title of the row |[optional]|
+**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
+**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
+**Title** | **string** | reference page title |[optional]|
 **DateFrom** | **string** | starting date of stay<br>in the format “year-month-date”<br>example:<br>2019-11-15 |[optional]|
 **DateTo** | **string** | ending date of stay<br>in the format “year-month-date”<br>example:<br>2019-11-17 |[optional]|
 **Items** | **IEnumerable<HotelsPackElement>** | contains arrays of specific images |[optional]|
-**Rectangle** | **Rectangle** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Time** | **WorkTimeInfo** | hours in the 24-hour format |[optional]|
+**Time** | **TimeInfo** | hours in the 24-hour format |[optional]|
 **PopularIndex** | **int?** | popularity index<br>relative time-bound popularity index measured from 0 to 100;<br>higher value corresponds to a busier time of a day |[optional]|

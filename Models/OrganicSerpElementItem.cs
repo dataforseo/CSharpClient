@@ -5,40 +5,55 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class OrganicSerpElementItem  : BaseSerpElementItem 
+    public class OrganicSerpElementItem  : BaseSerpApiElementItem 
     {
 
         /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Position { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements found in SERP
+        /// <br/>note values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+        /// <br/>to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
         /// </summary>
-        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Xpath { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// domain name of the reference
+        /// domain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// title of the result in SERP
+        /// title of the results element in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
+
+        /// <summary>
+        /// description of the results element in SERP
+        /// </summary>
+        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Description { get; set; }
 
         /// <summary>
         /// relevant URL in SERP
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
+
+        /// <summary>
+        /// breadcrumb in SERP
+        /// </summary>
+        [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Breadcrumb { get; set; }
 
         /// <summary>
         /// cached version of the page
@@ -52,12 +67,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("related_search_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RelatedSearchUrl { get; set; }
-
-        /// <summary>
-        /// breadcrumb in SERP
-        /// </summary>
-        [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Breadcrumb { get; set; }
 
         /// <summary>
         /// name of the website in SERP
@@ -96,12 +105,6 @@ namespace DataForSeo.Client.Models
         public bool? IsWebStory { get; set; }
 
         /// <summary>
-        /// description of the results element in SERP
-        /// </summary>
-        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Description { get; set; }
-
-        /// <summary>
         /// includes additional information appended before the result description in SERP
         /// </summary>
         [JsonProperty("pre_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -115,9 +118,10 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// images of the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElement> Images { get; set; }
 
         /// <summary>
         /// Accelerated Mobile Pages
@@ -194,14 +198,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
-
-        /// <summary>
-        /// rectangle parameters
-        /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-        /// <br/>equals null if calculate_rectangles in the POST request is not set to true
-        /// </summary>
-        [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Rectangle Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>learn more about this parameter on our help center
         /// </summary>
         [JsonProperty("creativity_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? CreativityIndex { get; set; }
+        public double? CreativityIndex { get; set; }
 
         /// <summary>
         /// user-defined task identifier

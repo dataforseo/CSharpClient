@@ -13,4 +13,4 @@
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
 **Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain<br>ranking data is provided by the rank_group parameters that show the result’s rank considering only equivalent SERP elements |[optional]|
 **MetricsAbsolute** | **IDictionary<string, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain<br>ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements |[optional]|
-**Items** | **IEnumerable<DataforseoLabsLiveItem>** | contains ranked keywords and related data |[optional]|
+**Items** | **IEnumerable<DataforseoLabsRankedKeywordsLiveItem>** | contains ranked keywords and related data |[optional]|

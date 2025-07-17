@@ -29,12 +29,6 @@ namespace DataForSeo.Client.Models
         [JsonProperty("total_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalPages { get; set; }
 
-        /// <summary>
-        /// total number of domains our database contained on the given date
-        /// </summary>
-        [JsonProperty("total_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? TotalDomains { get; set; }
-
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

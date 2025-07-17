@@ -54,7 +54,7 @@ namespace DataForSeo.Client.Models
         /// <br/>values in this array represent percentages relative to the maximum value within each region
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseDataforseoTrendsItem> Items { get; set; }
+        public IEnumerable<DataforseoTrendsSubregionInterestsElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// elements of search results found in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseGoogleFinanceSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiGoogleFinanceElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

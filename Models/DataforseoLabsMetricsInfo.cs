@@ -87,16 +87,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Etv { get; set; }
-
-        /// <summary>
-        /// estimated traffic volume based on impressions
-        /// <br/>estimated organic monthly traffic to the domain or subdomain
-        /// <br/>calculated as the product of CTR (click-through-rate) and impressions values of all keywords in the category that the domain or subdomain ranks for
-        /// <br/>learn more about how the metric is calculated in this help center article
-        /// </summary>
-        [JsonProperty("impressions_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? ImpressionsEtv { get; set; }
+        public double? Etv { get; set; }
 
         /// <summary>
         /// total count of organic SERPs that contain the domain or subdomain
@@ -111,7 +102,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? EstimatedPaidTrafficCost { get; set; }
+        public double? EstimatedPaidTrafficCost { get; set; }
 
         /// <summary>
         /// number of new ranked elements
@@ -148,7 +139,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? ClickstreamEtv { get; set; }
+        public double? ClickstreamEtv { get; set; }
 
         /// <summary>
         /// distribution of estimated clickstream-based metrics by gender

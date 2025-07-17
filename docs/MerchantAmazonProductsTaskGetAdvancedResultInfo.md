@@ -17,4 +17,4 @@
 **SeResultsCount** | **long?** | search engine results count |[optional]|
 **Categories** | **IEnumerable<string>** | amazon product departments and subcategories |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseAmazonSerpElementItem>** | Amazon product items within the editorial_recommendations element |[optional]|
+**Items** | **IEnumerable<BaseMerchantAmazonElementItem>** | Amazon product items within the editorial_recommendations element |[optional]|

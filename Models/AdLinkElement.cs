@@ -15,19 +15,19 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of the element
+        /// reference page title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// description of the results element in SERP
+        /// link description
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
-        /// URL of element
+        /// reference page URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

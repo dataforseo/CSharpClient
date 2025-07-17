@@ -21,13 +21,13 @@ namespace DataForSeo.Client.Models
         /// point value on graph
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Value { get; set; }
+        public double? Value { get; set; }
 
         /// <summary>
         /// volume value on graph
         /// </summary>
         [JsonProperty("volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Volume { get; set; }
+        public double? Volume { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

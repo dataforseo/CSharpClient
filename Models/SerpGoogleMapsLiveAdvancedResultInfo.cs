@@ -94,7 +94,7 @@ namespace DataForSeo.Client.Models
         /// items of the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseGoogleMapsSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiGoogleMapsElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Asin** | **AppendixSerpsRatesDataInfo** |  |[optional]|
-**Products** | **AppendixSerpsRatesDataInfo** |  |[optional]|
-**Sellers** | **AppendixSerpsRatesDataInfo** |  |[optional]|
+**Asin** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Products** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**Sellers** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|

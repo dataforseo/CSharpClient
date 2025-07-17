@@ -80,8 +80,8 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 {
     new()
     {
-        DatetimeFrom = "2025-01-18 03:35:56 +00:00",
-        DatetimeTo = "2025-03-18 03:35:56 +00:00",
+        DatetimeFrom = "2025-04-17 06:07:06 +00:00",
+        DatetimeTo = "2025-06-17 06:07:06 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -912,8 +912,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-        FirstDate = "2021-06-01",
-        SecondDate = "2021-10-01",
+        FirstDate = "2025-04-17",
+        SecondDate = "2025-06-17",
         LocationCode = 2840,
         LanguageCode = "en",
         Limit = 3,
@@ -1424,8 +1424,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(ne
     new()
     {
         Keyword = "albert einstein",
-        DateFrom = "2021-08-01",
-        DateTo = "2021-09-01",
+        DateFrom = "2025-04-17",
+        DateTo = "2025-06-17",
         LocationCode = 2840,
         LanguageCode = "en",
     }
@@ -1477,8 +1477,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
         Target = "dataforseo.com",
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2021-01-01",
-        DateTo = "2021-03-29",
+        DateFrom = "2025-04-17",
+        DateTo = "2025-06-17",
     }
 });
 ```
@@ -1647,8 +1647,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2021-01-01",
-        DateTo = "2021-03-29",
+        DateFrom = "2025-04-17",
+        DateTo = "2025-06-17",
         ItemTypes = new List<string>()
         {
             "organic",
@@ -2850,6 +2850,14 @@ var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(ne
 {
     new()
     {
+        AppIds = new Dictionary<string, string>()
+        {
+            ["1"] = "686449807",
+            ["2"] = "382617920",
+        },
+        LocationCode = 2840,
+        LanguageName = "English",
+        Limit = 10,
     }
 });
 ```

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// overall hotel rating based on customer votes
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Value { get; set; }
+        public double? Value { get; set; }
 
         /// <summary>
         /// number of customer votes

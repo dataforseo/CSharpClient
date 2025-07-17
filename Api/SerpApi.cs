@@ -435,6 +435,284 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
+        public virtual async Task<SerpGoogleOrganicTasksFixedResponseInfo> GoogleOrganicTasksFixedAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/tasks_fixed"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTasksFixedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleOrganicTaskGetRegularResponseInfo> GoogleOrganicTaskGetRegularAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/task_get/regular/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTaskGetRegularResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleOrganicTaskGetAdvancedResponseInfo> GoogleOrganicTaskGetAdvancedAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/task_get/advanced/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTaskGetAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleOrganicTaskGetHtmlResponseInfo> GoogleOrganicTaskGetHtmlAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/task_get/html/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTaskGetHtmlResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/live/regular";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicLiveRegularResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/live/advanced";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicLiveAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/serp/google/organic/live/html";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicLiveHtmlResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
         public virtual async Task<SerpGoogleAiModeLanguagesResponseInfo> SerpGoogleAiModeLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
@@ -741,284 +1019,6 @@ namespace DataForSeo.Client.Api
                     if (status == 200)
                     {
                         var objectResponse = await ReadObjectResponseAsync<SerpGoogleAiModeLiveHtmlResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicTasksFixedResponseInfo> GoogleOrganicTasksFixedAsync()
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/tasks_fixed"
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTasksFixedResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicTaskGetRegularResponseInfo> GoogleOrganicTaskGetRegularAsync(string id)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/task_get/regular/{id}"
-        
-                    .Replace("{id}", id.ToString())
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTaskGetRegularResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicTaskGetAdvancedResponseInfo> GoogleOrganicTaskGetAdvancedAsync(string id)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/task_get/advanced/{id}"
-        
-                    .Replace("{id}", id.ToString())
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTaskGetAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicTaskGetHtmlResponseInfo> GoogleOrganicTaskGetHtmlAsync(string id)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/task_get/html/{id}"
-        
-                    .Replace("{id}", id.ToString())
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicTaskGetHtmlResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicLiveRegularResponseInfo> GoogleOrganicLiveRegularAsync(IEnumerable<SerpGoogleOrganicLiveRegularRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/live/regular";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicLiveRegularResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicLiveAdvancedResponseInfo> GoogleOrganicLiveAdvancedAsync(IEnumerable<SerpGoogleOrganicLiveAdvancedRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/live/advanced";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicLiveAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<SerpGoogleOrganicLiveHtmlResponseInfo> GoogleOrganicLiveHtmlAsync(IEnumerable<SerpGoogleOrganicLiveHtmlRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/serp/google/organic/live/html";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<SerpGoogleOrganicLiveHtmlResponseInfo>(response, headers).ConfigureAwait(false);
                         return objectResponse.Object;
                     }
 

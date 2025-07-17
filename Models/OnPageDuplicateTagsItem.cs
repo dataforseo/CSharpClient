@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// pages with duplicate tags
         /// </summary>
         [JsonProperty("pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageResourceItemInfo> Pages { get; set; }
+        public IEnumerable<BaseOnPageResourceItem> Pages { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

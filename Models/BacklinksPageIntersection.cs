@@ -77,7 +77,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("backlink_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? BacklinkSpamScore { get; set; }
+        public int? BacklinkSpamScore { get; set; }
 
         /// <summary>
         /// backlink rank
@@ -85,7 +85,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Rank { get; set; }
+        public int? Rank { get; set; }
 
         /// <summary>
         /// page rank of the referring page
@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("page_from_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromRank { get; set; }
+        public int? PageFromRank { get; set; }
 
         /// <summary>
         /// domain rank of the referring domain
@@ -102,7 +102,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("domain_from_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? DomainFromRank { get; set; }
+        public int? DomainFromRank { get; set; }
 
         /// <summary>
         /// platform types of the referring domain
@@ -134,13 +134,13 @@ namespace DataForSeo.Client.Models
         /// number of external links found on the referring page
         /// </summary>
         [JsonProperty("page_from_external_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromExternalLinks { get; set; }
+        public int? PageFromExternalLinks { get; set; }
 
         /// <summary>
         /// number of internal links found on the referring page
         /// </summary>
         [JsonProperty("page_from_internal_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromInternalLinks { get; set; }
+        public int? PageFromInternalLinks { get; set; }
 
         /// <summary>
         /// size of the referring page, in bytes
@@ -148,7 +148,7 @@ namespace DataForSeo.Client.Models
         /// <br/>63357
         /// </summary>
         [JsonProperty("page_from_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromSize { get; set; }
+        public int? PageFromSize { get; set; }
 
         /// <summary>
         /// character encoding of the referring page
@@ -179,7 +179,7 @@ namespace DataForSeo.Client.Models
         /// <br/>200
         /// </summary>
         [JsonProperty("page_from_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? PageFromStatusCode { get; set; }
+        public int? PageFromStatusCode { get; set; }
 
         /// <summary>
         /// date and time when our crawler found the backlink for the first time
@@ -275,14 +275,14 @@ namespace DataForSeo.Client.Models
         /// number of identical backlinks found on the referring page
         /// </summary>
         [JsonProperty("links_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LinksCount { get; set; }
+        public long? LinksCount { get; set; }
 
         /// <summary>
         /// indicates total number of backlinks from this domain
         /// <br/>for example, if mode is set to one_per_domain, this field will indicate the total number of backlinks coming from this domain
         /// </summary>
         [JsonProperty("group_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? GroupCount { get; set; }
+        public long? GroupCount { get; set; }
 
         /// <summary>
         /// indicates whether the backlink is broken
@@ -298,7 +298,7 @@ namespace DataForSeo.Client.Models
         /// <br/>200
         /// </summary>
         [JsonProperty("url_to_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? UrlToStatusCode { get; set; }
+        public int? UrlToStatusCode { get; set; }
 
         /// <summary>
         /// spam score of the referenced page
@@ -306,7 +306,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("url_to_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? UrlToSpamScore { get; set; }
+        public int? UrlToSpamScore { get; set; }
 
         /// <summary>
         /// target url of the redirect

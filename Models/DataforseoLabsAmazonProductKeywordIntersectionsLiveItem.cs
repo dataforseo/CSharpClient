@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// data on the intersection
         /// </summary>
         [JsonProperty("intersection_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, BaseAmazonSerpElementItem> IntersectionResult { get; set; }
+        public IDictionary<string, AmazonInfo> IntersectionResult { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

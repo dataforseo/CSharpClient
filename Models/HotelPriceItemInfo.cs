@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// price per night
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Price { get; set; }
+        public double? Price { get; set; }
 
         /// <summary>
         /// price currency

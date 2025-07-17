@@ -9,21 +9,21 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// indicates how many milliseconds it took to fetch a resource
+        /// indicates how many seconds it took to download a page
         /// </summary>
         [JsonProperty("duration_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DurationTime { get; set; }
 
         /// <summary>
-        /// time to start downloading the resource
-        /// <br/>the amount of time a browser needs to start downloading a resource
+        /// time to start downloading the HTML resource
+        /// <br/>the amount of time the browser needs to start downloading a page
         /// </summary>
         [JsonProperty("fetch_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FetchStart { get; set; }
 
         /// <summary>
-        /// time to complete downloading the resource
-        /// <br/>the amount of time a browser needs to complete downloading a resource
+        /// time to complete downloading the HTML resource
+        /// <br/>the amount of time the browser needs to complete downloading a page
         /// </summary>
         [JsonProperty("fetch_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FetchEnd { get; set; }

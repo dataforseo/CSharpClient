@@ -24,10 +24,10 @@
 **ReferringIps** | **long?** | number of referring IP addresses<br>number of IP addresses pointing to this page |[optional]|
 **ReferringSubnets** | **long?** | number of referring subnetworks |[optional]|
 **ReferringPages** | **long?** | indicates the number of pages pointing to the target |[optional]|
+**ReferringPagesNofollow** | **long?** | number of referring pages pointing at least one nofollow link to the target |[optional]|
 **ReferringLinksTld** | **IDictionary<string, long?>** | top-level domains of the referring links<br>contains top level domains and referring link count per each |[optional]|
 **ReferringLinksTypes** | **IDictionary<string, long?>** | types of referring links<br>indicates the types of the referring links and link count per each type<br>possible values:<br>anchor, image, link, meta, canonical, alternate, redirect |[optional]|
 **ReferringLinksAttributes** | **IDictionary<string, long?>** | link attributes of the referring links<br>indicates link attributes of the referring links and link count per each attribute<br>example values:<br>nofollow, noopener, noreferrer, external, ugc, sponsored |[optional]|
 **ReferringLinksPlatformTypes** | **IDictionary<string, long?>** | types of referring platforms<br>indicates referring platform types and and link count per each platform<br>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization |[optional]|
 **ReferringLinksSemanticLocations** | **IDictionary<string, long?>** | semantic locations of the referring links<br>indicates semantic elements in HTML where the referring links are located and link count per each semantic location<br>you can get the full list of semantic elements here<br>example values:<br>article, section, summary, '' |[optional]|
 **ReferringLinksCountries** | **IDictionary<string, long?>** | ISO country codes of the referring links<br>indicates ISO country codes of the domains where the referring links are located and the link count per each country |[optional]|
-**ReferringPagesNofollow** | **long?** | number of referring pages pointing at least one nofollow link to the target |[optional]|

@@ -7,18 +7,16 @@ namespace DataForSeo.Client.Models
 
     public class ContentAnalysisLanguagesResultInfo 
     {
-
-        /// <summary>
-        /// language name
-        /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
-
-        /// <summary>
-        /// language code according to ISO 639-1
-        /// </summary>
-        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageCode { get; set; }
+        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? LocationCode { get; set; }
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+        [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? LocationCodeParent { get; set; }
+        [JsonProperty("country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string CountryIsoCode { get; set; }
+        [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationType { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

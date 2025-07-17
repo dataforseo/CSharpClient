@@ -5,8 +5,25 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class FeaturedSnippetSerpElementItem  : BaseSerpElementItem 
+    public class FeaturedSnippetSerpElementItem  : BaseSerpApiElementItem 
     {
+
+        /// <summary>
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// </summary>
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
+
+        /// <summary>
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements found in SERP
+        /// <br/>note values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+        /// <br/>to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
+        /// </summary>
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// domain of the ad element in SERP
@@ -39,20 +56,6 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
-        /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Position { get; set; }
-
-        /// <summary>
-        /// the XPath of the element
-        /// </summary>
-        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Xpath { get; set; }
-
-        /// <summary>
         /// title
         /// </summary>
         [JsonProperty("featured_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -71,7 +74,7 @@ namespace DataForSeo.Client.Models
         /// images of the element
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElement> Images { get; set; }
 
         /// <summary>
         /// results table
@@ -79,14 +82,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }
-
-        /// <summary>
-        /// rectangle parameters
-        /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-        /// <br/>equals null if calculate_rectangles in the POST request is not set to true
-        /// </summary>
-        [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Rectangle Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

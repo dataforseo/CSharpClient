@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data the value is null
         /// </summary>
         [JsonProperty("competition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Competition { get; set; }
+        public double? Competition { get; set; }
 
         /// <summary>
         /// cost-per-click
@@ -58,13 +58,11 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data then the value is null
         /// </summary>
         [JsonProperty("cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Cpc { get; set; }
+        public double? Cpc { get; set; }
 
         /// <summary>
         /// monthly average search volume rate
-        /// <br/>represents either the (approximate) number of searches for the given keyword idea on bing search engine depending on the user’s targeting;
-        /// <br/>search volume is rounded to the nearest tens;
-        /// <br/>if there is no data, the value is null
+        /// <br/>search volume is rounded to the nearest tens
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }
@@ -82,7 +80,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data then the value is null
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<MonthlySearches> MonthlySearches { get; set; }
+        public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

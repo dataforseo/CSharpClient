@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseAppDataSerpElementItem> Items { get; set; }
+        public IEnumerable<AppStoreSearchOrganic> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

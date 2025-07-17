@@ -79,7 +79,7 @@ namespace DataForSeo.Client.Models
         /// array of google business question items without answers
         /// </summary>
         [JsonProperty("items_without_answers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ItemsWithoutAnswers> ItemsWithoutAnswers { get; set; }
+        public IEnumerable<GoogleBusinessQuestionItem> ItemsWithoutAnswers { get; set; }
 
         /// <summary>
         /// the number of items in the items array
@@ -94,7 +94,7 @@ namespace DataForSeo.Client.Models
         /// <br/>possible item types google_business_answer_element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BusinessDataGoogleQuestionsAndAnswersItem> Items { get; set; }
+        public IEnumerable<GoogleBusinessQuestionItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

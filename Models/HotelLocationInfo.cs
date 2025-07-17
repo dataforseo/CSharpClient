@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// <br/>note that the criteria are not weighted equally in the overall score
         /// </summary>
         [JsonProperty("overall_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? OverallScore { get; set; }
+        public double? OverallScore { get; set; }
 
         /// <summary>
         /// category scores of the hotel location
@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// <br/>39.4806397
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Latitude { get; set; }
+        public double? Latitude { get; set; }
 
         /// <summary>
         /// hotel longitude
@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models
         /// <br/>-106.0512973
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Longitude { get; set; }
+        public double? Longitude { get; set; }
 
         /// <summary>
         /// elements of the location chain

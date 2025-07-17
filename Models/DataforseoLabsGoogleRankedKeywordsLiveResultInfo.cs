@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// contains ranked keywords and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsRankedKeywordsLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

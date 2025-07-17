@@ -72,14 +72,14 @@ namespace DataForSeo.Client.Models.Requests
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// device type
+        /// device types
         /// <br/>optional field
-        /// <br/>specify this field if you want to get the data for a particular device type
+        /// <br/>specify this field if you want to get the data for a particular device types
         /// <br/>possible values: mobile, desktop, tablet, non_smartphones
-        /// <br/>default value:  mobile, desktop, tablet, non_smartphones
+        /// <br/>default value:  ['mobile', 'desktop', 'tablet', 'non_smartphones']
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Device { get; set; }
+        public IEnumerable<string> Device { get; set; }
 
         /// <summary>
         /// aggregates the returned data to a certain time period

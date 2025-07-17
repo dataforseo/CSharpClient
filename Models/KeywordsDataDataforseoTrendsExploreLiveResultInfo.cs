@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
         /// contains keyword popularity and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseDataforseoTrendsItem> Items { get; set; }
+        public IEnumerable<DataforseoTrendsDataforseoTrendsGraphElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

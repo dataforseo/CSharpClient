@@ -21,13 +21,13 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// description of the element
+        /// link description
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
-        /// relevant URL
+        /// search URL with refinement parameters
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

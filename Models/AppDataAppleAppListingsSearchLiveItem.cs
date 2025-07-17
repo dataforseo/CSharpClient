@@ -52,7 +52,7 @@ namespace DataForSeo.Client.Models
         /// detailed information about the app
         /// </summary>
         [JsonProperty("item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppDataAppStoreInfoOrganicSerpElementItem Item { get; set; }
+        public AppStoreInfoOrganic Item { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

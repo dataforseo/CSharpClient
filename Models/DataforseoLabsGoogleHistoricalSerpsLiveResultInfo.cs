@@ -46,8 +46,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// contains arrays of specific images
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveItem> Items { get; set; }

@@ -98,7 +98,7 @@ namespace DataForSeo.Client.Models
         /// <br/>contains all product attributes and related data listed on the product specification page
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseMerchantSerpElementItem> Items { get; set; }
+        public IEnumerable<ShoppingSpecification> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

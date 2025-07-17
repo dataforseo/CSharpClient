@@ -17,4 +17,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results found in SERP<br>possible item types:<br>event_item |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP<br>in this case, the value will be 0<br>this search engine does not indicate the total number of results |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpElementItem>** | items of the element |[optional]|
+**Items** | **IEnumerable<EventItem>** | items of the element |[optional]|

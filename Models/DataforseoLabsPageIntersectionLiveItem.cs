@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <br/>depending on the number of specified URLs, it can contain from 1 to 20 arrays named respectively
         /// </summary>
         [JsonProperty("intersection_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, BaseDataforseoLabsSerpElementItem> IntersectionResult { get; set; }
+        public IDictionary<string, BaseDataforseoLabsApiElementItem> IntersectionResult { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

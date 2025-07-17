@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models
         /// Amazon product items within the editorial_recommendations element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseAmazonSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseMerchantAmazonElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

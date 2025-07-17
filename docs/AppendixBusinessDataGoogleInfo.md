@@ -7,7 +7,7 @@
 |------------ | ------------- | ------------- | -------------|
 **MyBusinessInfo** | **AppendixInfo** |  |[optional]|
 **MyBusinessUpdates** | **AppendixInfo** |  |[optional]|
-**HotelInfo** | **AppendixSerpsRatesDataInfo** |  |[optional]|
+**HotelInfo** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
 **HotelSearches** | **AppendixInfo** |  |[optional]|
 **Reviews** | **AppendixInfo** |  |[optional]|
 **QuestionsAndAnswers** | **AppendixInfo** |  |[optional]|

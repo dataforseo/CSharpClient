@@ -20,6 +20,10 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public CrawlStatusInfo CrawlStatus { get; set; }
+        [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SearchAfterToken { get; set; }
+        [JsonProperty("current_offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? CurrentOffset { get; set; }
 
         /// <summary>
         /// total number of relevant items in the database
@@ -37,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// items array
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageResourceItemInfo> Items { get; set; }
+        public IEnumerable<BaseOnPageResourceItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

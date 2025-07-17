@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// images of the element
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElement> Images { get; set; }
 
         /// <summary>
         /// date and time when the result was published
@@ -60,7 +60,8 @@ namespace DataForSeo.Client.Models
         public string Timestamp { get; set; }
 
         /// <summary>
-        /// table element
+        /// table present in the element
+        /// <br/>the header and content of the table present in the element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

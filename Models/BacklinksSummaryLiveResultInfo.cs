@@ -140,6 +140,12 @@ namespace DataForSeo.Client.Models
         public long? ReferringPages { get; set; }
 
         /// <summary>
+        /// number of referring pages pointing at least one nofollow link to the target
+        /// </summary>
+        [JsonProperty("referring_pages_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? ReferringPagesNofollow { get; set; }
+
+        /// <summary>
         /// top-level domains of the referring links
         /// <br/>contains top level domains and referring link count per each
         /// </summary>
@@ -188,12 +194,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("referring_links_countries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ReferringLinksCountries { get; set; }
-
-        /// <summary>
-        /// number of referring pages pointing at least one nofollow link to the target
-        /// </summary>
-        [JsonProperty("referring_pages_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? ReferringPagesNofollow { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

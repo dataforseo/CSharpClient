@@ -35,8 +35,8 @@ var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(new L
 {
     new()
     {
-        DatetimeFrom = "2025-01-18 03:35:25 +00:00",
-        DatetimeTo = "2025-03-18 03:35:25 +00:00",
+        DatetimeFrom = "2025-04-17 06:08:16 +00:00",
+        DatetimeTo = "2025-06-17 06:08:16 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -405,8 +405,8 @@ var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveA
     new()
     {
         Technology = "jQuery",
-        DateFrom = "2022-10-31",
-        DateTo = "2023-06-01",
+        DateFrom = "2025-04-17",
+        DateTo = "2025-06-17",
     }
 });
 ```

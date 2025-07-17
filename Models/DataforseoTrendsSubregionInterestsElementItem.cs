@@ -5,14 +5,14 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class DataforseoTrendsSubregionInterestsElementItem  : BaseDataforseoTrendsItem 
+    public class DataforseoTrendsSubregionInterestsElementItem  : BaseKeywordDataDataforseoTrendsItem 
     {
 
         /// <summary>
         /// subregional keyword popuarity data for each specified term
         /// </summary>
         [JsonProperty("interests", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<Interests> Interests { get; set; }
+        public IEnumerable<DataforseoTrendsinterestsInfo> Interests { get; set; }
 
         /// <summary>
         /// comparison of data on subregional keyword popularity for the specified parameters

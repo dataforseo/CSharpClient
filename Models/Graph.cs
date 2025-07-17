@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// contains arrays of elements available in the list
+        /// items present in the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GraphElement> Items { get; set; }

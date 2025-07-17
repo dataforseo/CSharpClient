@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationCode { get; set; }
+        public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models
         /// market indexes related to the market trends element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseGoogleFinanceSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiGoogleFinanceElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

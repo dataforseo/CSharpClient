@@ -32,8 +32,8 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new L
 {
     new()
     {
-        DatetimeFrom = "2025-01-18 03:40:30 +00:00",
-        DatetimeTo = "2025-03-18 03:40:30 +00:00",
+        DatetimeFrom = "2025-04-17 06:10:06 +00:00",
+        DatetimeTo = "2025-06-17 06:10:06 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -318,7 +318,7 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(
             "organization",
         },
         InternalListLimit = 8,
-        PositiveConnotationThreshold = 0.5f,
+        PositiveConnotationThreshold = 0.5,
     }
 });
 ```
@@ -413,6 +413,9 @@ var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(new 
 {
     new()
     {
+        Keyword = "logitech",
+        InternalListLimit = 10,
+        SearchMode = "as_is",
     }
 });
 ```
@@ -461,7 +464,7 @@ var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<C
     {
         Keyword = "logitech",
         SearchMode = "as_is",
-        DateFrom = "2022-09-01",
+        DateFrom = "2025-04-17",
         DateGroup = "month",
     }
 });
@@ -511,7 +514,7 @@ var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List
     {
         CategoryCode = "10994",
         SearchMode = "as_is",
-        DateFrom = "2022-09-01",
+        DateFrom = "2025-04-17",
         DateGroup = "month",
     }
 });

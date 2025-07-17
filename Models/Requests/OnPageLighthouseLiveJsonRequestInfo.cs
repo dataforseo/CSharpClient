@@ -43,10 +43,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// Lighthouse audits
         /// <br/>optional field
-        /// <br/>audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition)  
-        /// <br/>if you ignore this field, we will return data for all audits
-        /// <br/>use this field to get data for specific audits you indicate here
-        /// <br/>note that some audits do not belong to a specific category and are stand-alone page quality measurements
+        /// <br/>audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition);  
+        /// <br/>if you ignore this field, we will return data for all audits;
+        /// <br/>use this field to get data for specific audits you indicate here;
+        /// <br/>Note: that some audits do not belong to a specific category and are stand-alone page quality measurements;
         /// <br/>in general, there can be several use cases:
         /// <br/>1. if you ignore categories, you can use this field to get data for the specified audits only
         /// <br/>for example, if you ignore 'categories' and specify 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get data only for these audits

@@ -58,6 +58,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// autocorrection of the search engine
         /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// <br/>equals null
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
@@ -91,11 +92,10 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// contains results featured in the ‘hotels_pack’ element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

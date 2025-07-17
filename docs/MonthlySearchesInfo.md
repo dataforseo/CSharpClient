@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Year** | **string** | year |[optional]|
-**Month** | **string** | month |[optional]|
-**SearchVolume** | **string** | monthly average search volume rate |[optional]|
+**Year** | **int?** | year |[optional]|
+**Month** | **int?** | month |[optional]|
+**SearchVolume** | **int?** | monthly average search volume rate |[optional]|

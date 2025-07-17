@@ -86,7 +86,7 @@ namespace DataForSeo.Client.Models
         /// <br/>contains separate arrays with timing for each resource found on the page
         /// </summary>
         [JsonProperty("resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageResourceItemInfo> Resources { get; set; }
+        public IEnumerable<WaterfallResourceInfo> Resources { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

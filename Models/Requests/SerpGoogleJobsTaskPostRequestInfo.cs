@@ -65,7 +65,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimal value: &gt; 0
         /// </summary>
         [JsonProperty("location_radius", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? LocationRadius { get; set; }
+        public double? LocationRadius { get; set; }
 
         /// <summary>
         /// full name of search engine language
@@ -111,19 +111,6 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("employment_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> EmploymentType { get; set; }
-
-        /// <summary>
-        /// job posting date
-        /// <br/>optional field
-        /// <br/>you can use this field to filter job vacancies by posting date;
-        /// <br/>possible values:
-        /// <br/>today — return job vacancies posted today;
-        /// <br/>3days — return job vacancies posted no longer than 3 days ago;
-        /// <br/>week — return job vacancies posted no longer than a week ago;
-        /// <br/>month — return job vacancies posted no longer than a month ago
-        /// </summary>
-        [JsonProperty("date_posted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DatePosted { get; set; }
 
         /// <summary>
         /// user-defined task identifier

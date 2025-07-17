@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Value** | **float?** | overall hotel rating based on customer votes |[optional]|
+**Value** | **double?** | overall hotel rating based on customer votes |[optional]|
 **VotesCount** | **long?** | number of customer votes<br>the number of customer votes included in the calculation of the hotel rating |[optional]|
 **Mentions** | **IEnumerable<ReviewMentionInfo>** | hotel mentions<br>information about hotel reviews by criteria |[optional]|
 **RatingDistribution** | **IDictionary<string, int?>** | rating distribution by votes<br>the distribution of votes across the rating in the range from 1 to 5 |[optional]|

@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// title of the customer’s comment
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Title { get; set; }
+        public string Title { get; set; }
 
         /// <summary>
         /// date when the comment was published

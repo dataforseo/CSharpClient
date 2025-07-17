@@ -29,6 +29,15 @@ namespace DataForSeo.Client.Models.Requests
         [JsonProperty("id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
 
+        /// <summary>
+        /// return page content as markdown
+        /// <br/>optional field
+        /// <br/>if set to true, the markdown-formatted content of the page will be returned in the page_as_markdown field of the response;
+        /// <br/>default value: false
+        /// </summary>
+        [JsonProperty("markdown_view", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? MarkdownView { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

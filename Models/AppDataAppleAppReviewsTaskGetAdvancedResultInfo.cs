@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         /// <br/>rating of the application for which the reviews are collected
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public RatingElement Rating { get; set; }
 
         /// <summary>
         /// the total number of reviews
@@ -86,7 +86,7 @@ namespace DataForSeo.Client.Models
         /// found reviews
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseAppDataSerpElementItem> Items { get; set; }
+        public IEnumerable<AppStoreReviewsSearch> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

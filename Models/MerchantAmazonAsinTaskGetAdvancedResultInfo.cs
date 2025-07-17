@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// Amazon product info items
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseAmazonSerpElementItem> Items { get; set; }
+        public IEnumerable<AmazonProductInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

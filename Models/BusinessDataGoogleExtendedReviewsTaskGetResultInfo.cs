@@ -74,7 +74,7 @@ namespace DataForSeo.Client.Models
         /// <br/>popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public RatingElement Rating { get; set; }
 
         /// <summary>
         /// the unique identifier of the ‘reviews’ element in SERP
@@ -116,7 +116,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BusinessDataGoogleExtendedReviewsTaskGetItem> Items { get; set; }
+        public IEnumerable<GoogleExtendedReviewsSearch> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

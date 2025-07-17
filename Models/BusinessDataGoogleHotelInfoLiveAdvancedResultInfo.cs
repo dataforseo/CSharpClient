@@ -91,7 +91,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information about the location where the hotel is located
         /// </summary>
         [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Location Location { get; set; }
+        public HotelLocationInfo Location { get; set; }
 
         /// <summary>
         /// hotel reviews by criteria

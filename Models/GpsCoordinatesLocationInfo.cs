@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'latitude': 51.584091
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Latitude { get; set; }
+        public double? Latitude { get; set; }
 
         /// <summary>
         /// longitude coordinate of the hotel in google maps
@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models
         /// <br/>'longitude': -0.31365919999999997
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Longitude { get; set; }
+        public double? Longitude { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -12,4 +12,4 @@
 **CheckUrl** | **string** | direct URL to the Google Trends results<br>you can use it to make sure that we provided accurate results |[optional]|
 **Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseGoogleTrendsItem>** | items on the Google Trends page |[optional]|
+**Items** | **IEnumerable<BaseKeywordDataGoogleTrendsItem>** | items on the Google Trends page |[optional]|

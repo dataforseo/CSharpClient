@@ -16,7 +16,7 @@
 **Address** | **string** | hotel address<br>physical address of the hotel |[optional]|
 **Phone** | **string** | hotel phone number<br>contact phone number of the hotel |[optional]|
 **About** | **HotelAboutInfo** | information about the hotel |[optional]|
-**Location** | **Location** | information about the hotel location<br>information about the location where the hotel is located |[optional]|
+**Location** | **HotelLocationInfo** | information about the hotel location<br>information about the location where the hotel is located |[optional]|
 **Reviews** | **HotelReviewInfo** | hotel reviews by criteria<br>information about reviews of the hotel entity |[optional]|
 **OverviewImages** | **IEnumerable<string>** | images displayed in the hotel overview<br>array containing URLs to images displayed in the hotel overview |[optional]|
 **Prices** | **HotelPriceInfo** | pricing details of the hotel entity<br>contains information about the hotel’s prices |[optional]|

@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
         /// <br/>49.98
         /// </summary>
         [JsonProperty("price_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? PriceFrom { get; set; }
+        public double? PriceFrom { get; set; }
 
         /// <summary>
         /// the upper limit of the product price range
@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// <br/>384.99
         /// </summary>
         [JsonProperty("price_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? PriceTo { get; set; }
+        public double? PriceTo { get; set; }
 
         /// <summary>
         /// currency in the ISO format

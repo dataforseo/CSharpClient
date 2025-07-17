@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// rows containing related product information
         /// </summary>
         [JsonProperty("rows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseProductInformationRowItem> Rows { get; set; }
+        public IEnumerable<BaseMerchantAmazonProductInformationRowElementItem> Rows { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

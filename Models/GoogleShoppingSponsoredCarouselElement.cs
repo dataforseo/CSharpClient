@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         /// <br/>384.99
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Price { get; set; }
+        public double? Price { get; set; }
 
         /// <summary>
         /// currency in the ISO format
@@ -82,6 +82,13 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("delivery_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DeliveryInfo DeliveryInfo { get; set; }
+
+        /// <summary>
+        /// special offer from the seller
+        /// <br/>information on the special offer from the seller, including discount and coupon info
+        /// </summary>
+        [JsonProperty("special_offer_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public SpecialOfferInfo SpecialOfferInfo { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

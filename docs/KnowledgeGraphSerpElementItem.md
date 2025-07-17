@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
+**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
+**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
 **Title** | **string** | title of the result in SERP |[optional]|
 **Subtitle** | **string** | subtitle of the item |[optional]|
 **Description** | **string** | description of the results element in SERP |[optional]|
@@ -15,5 +15,4 @@
 **ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
 **LogoUrl** | **string** | URL of the logo from knowledge graph |[optional]|
 **Cid** | **string** | google-defined client id<br>unique id of a local establishment;<br>can be used with Google Reviews API to get a full list of reviews |[optional]|
-**Items** | **IEnumerable<BaseSerpElementItem>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
-**Rectangle** | **Rectangle** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|
+**Items** | **IEnumerable<BaseSerpApiKnowledgeGraphElementItem>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|

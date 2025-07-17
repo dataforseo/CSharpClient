@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**AlternativeText** | **string** | content of the image alt attribute<br>the value depends on the resource_type |[optional]|
+**AlternativeText** | **string** | content of the image alt attribute |[optional]|
 **Title** | **string** | title |[optional]|
-**OriginalWidth** | **long?** | original image width in px |[optional]|
-**OriginalHeight** | **int?** | original image height in px |[optional]|
-**Width** | **long?** | image width in px |[optional]|
-**Height** | **int?** | image height in px |[optional]|
+**OriginalWidth** | **double?** | original image width in px |[optional]|
+**OriginalHeight** | **double?** | original image height in px |[optional]|
+**Width** | **double?** | image width in px |[optional]|
+**Height** | **double?** | image height in px |[optional]|

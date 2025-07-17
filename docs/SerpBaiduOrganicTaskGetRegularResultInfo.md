@@ -17,4 +17,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results found in SERP<br>contains types of all search results (items) found in the returned SERP<br>possible item types:<br>organic, paid |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpElementItem>** | items in SERP |[optional]|
+**Items** | **IEnumerable<BaseSerpApiElementItem>** | items in SERP |[optional]|

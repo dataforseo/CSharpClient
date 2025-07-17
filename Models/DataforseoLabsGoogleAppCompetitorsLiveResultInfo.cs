@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// contains data related to the app_id and competitor applications
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsGoogleAppCompetitorsLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsleAppCompetitorsLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

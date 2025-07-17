@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>learn more about this parameter on our help center
         /// </summary>
         [JsonProperty("creativity_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? CreativityIndex { get; set; }
+        public double? CreativityIndex { get; set; }
 
         /// <summary>
         /// token repetition
@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 1
         /// </summary>
         [JsonProperty("token_repetition_penalty", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? TokenRepetitionPenalty { get; set; }
+        public double? TokenRepetitionPenalty { get; set; }
 
         /// <summary>
         /// the number of initial tokens in each iteration for choosing a subsequent word
@@ -85,7 +85,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>learn more about this parameter on our help center
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? TopP { get; set; }
+        public double? TopP { get; set; }
 
         /// <summary>
         /// controls the randomness in the output
@@ -97,7 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>learn more about this parameter on our help center
         /// </summary>
         [JsonProperty("temperature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Temperature { get; set; }
+        public double? Temperature { get; set; }
 
         /// <summary>
         /// words or phrases to avoid when generating a text

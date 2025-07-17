@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models
         /// items on the Google Trends page
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseGoogleTrendsItem> Items { get; set; }
+        public IEnumerable<BaseKeywordDataGoogleTrendsItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

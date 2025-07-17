@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         /// product image data
         /// </summary>
         [JsonProperty("image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ImagesElement Image { get; set; }
+        public AiModeImagesElement Image { get; set; }
 
         /// <summary>
         /// rating of the product on Amazon
@@ -108,7 +108,7 @@ namespace DataForSeo.Client.Models
         /// <br/>you can get more results by using the depth parameter when setting a task
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseAmazonSerpElementItem> Items { get; set; }
+        public IEnumerable<AmazonReviewItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

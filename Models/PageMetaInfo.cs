@@ -147,7 +147,7 @@ namespace DataForSeo.Client.Models
         /// <br/>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more.
         /// </summary>
         [JsonProperty("cumulative_layout_shift", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? CumulativeLayoutShift { get; set; }
+        public double? CumulativeLayoutShift { get; set; }
 
         /// <summary>
         /// meta title of the page
@@ -175,11 +175,11 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> DuplicateMetaTags { get; set; }
 
         /// <summary>
-        /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// spellcheck
+        /// <br/>hunspell spellcheck errors
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public SpellInfo Spell { get; set; }
+        public HunspellInfo Spell { get; set; }
 
         /// <summary>
         /// object of social media tags found on the page

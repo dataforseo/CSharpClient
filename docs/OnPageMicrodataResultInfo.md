@@ -9,4 +9,4 @@
 **CrawlStatus** | **CrawlStatusInfo** | details of the crawling session |[optional]|
 **TestSummary** | **TestSummary** | microdata validation test results |[optional]|
 **ItemsCount** | **long?** | number of items in the results array |[optional]|
-**Items** | **IEnumerable<OnPageMicrodataItem>** | items array |[optional]|
+**Items** | **IEnumerable<OnPageMicrodataInfoItem>** | items array |[optional]|

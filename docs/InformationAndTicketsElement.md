@@ -7,6 +7,6 @@
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
 **Title** | **string** | title of the element |[optional]|
-**Description** | **string** | description of the element |[optional]|
-**Url** | **string** | relevant URL |[optional]|
+**Description** | **string** | link description |[optional]|
+**Url** | **string** | search URL with refinement parameters |[optional]|
 **Domain** | **string** | domain in SERP |[optional]|

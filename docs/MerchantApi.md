@@ -62,8 +62,8 @@ var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantId
 {
     new()
     {
-        DatetimeFrom = "2025-01-18 03:40:44 +00:00",
-        DatetimeTo = "2025-03-18 03:40:44 +00:00",
+        DatetimeFrom = "2025-04-17 06:10:12 +00:00",
+        DatetimeTo = "2025-06-17 06:10:12 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -456,7 +456,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "48006dfe-9291-4f95-8857-9fb6a4cb18a3";
+var id = "498cfea9-3737-4402-b7f9-f26ac8e0f0e9";
 var result = await dfsClient.MerchantApi.GoogleProductsTaskGetHtmlAsync(id);
 ```
 
@@ -630,7 +630,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "2a4c259d-7dbc-4038-ba55-96be2799680a";
+var id = "789e336d-df4d-4248-aba1-1bd133da39d1";
 var result = await dfsClient.MerchantApi.GoogleSellersTaskGetHtmlAsync(id);
 ```
 
@@ -804,7 +804,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "5fe27954-de98-4545-a7cc-fb6c004f93fa";
+var id = "cdbe18ce-3796-4ece-8972-31810c6d2538";
 var result = await dfsClient.MerchantApi.GoogleProductSpecTaskGetHtmlAsync(id);
 ```
 
@@ -1276,7 +1276,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "b4b44ad9-e7eb-47c1-b950-c900c3d2aa01";
+var id = "1509a15a-bb8d-49fb-8942-142ce925c5c8";
 var result = await dfsClient.MerchantApi.AmazonProductsTaskGetHtmlAsync(id);
 ```
 
@@ -1450,7 +1450,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "4db59c3b-39c3-4122-92b8-10979409c4dc";
+var id = "a46a0fbe-8d0c-4221-94e5-a318d43c891d";
 var result = await dfsClient.MerchantApi.AmazonAsinTaskGetHtmlAsync(id);
 ```
 
@@ -1498,7 +1498,7 @@ var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(new List<Mer
     {
         Asin = "B085RFFC9Q",
         LocationCode = 2840,
-        LanguageCode = "en",
+        LanguageCode = "en_US",
     }
 });
 ```
@@ -1624,7 +1624,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "24c561e5-6cac-4cda-8962-9993d8a0eab6";
+var id = "8f8c42b1-4fd3-4512-bf64-81b6bcb8df88";
 var result = await dfsClient.MerchantApi.AmazonSellersTaskGetHtmlAsync(id);
 ```
 
@@ -1798,7 +1798,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "3595c771-ffc9-451b-b2f0-ba4245de8277";
+var id = "8a79578b-24ca-47c4-a60c-795d4a8f1614";
 var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetHtmlAsync(id);
 ```
 

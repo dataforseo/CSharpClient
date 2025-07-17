@@ -50,10 +50,11 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// contains keyword popularity and related data
+        /// keyword popularity values per location
+        /// <br/>values in this array represent percentages relative to the maximum value within each region
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseDataforseoTrendsItem> Items { get; set; }
+        public IEnumerable<BaseKeywordDataDataforseoTrendsItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

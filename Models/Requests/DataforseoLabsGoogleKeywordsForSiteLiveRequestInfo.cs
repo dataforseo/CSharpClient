@@ -99,15 +99,6 @@ namespace DataForSeo.Client.Models.Requests
         public bool? IncludeClickstreamData { get; set; }
 
         /// <summary>
-        /// ignore highly similar keywords
-        /// <br/>optional field
-        /// <br/>if set to true only core keywords will be returned, all highly similar keywords will be excluded;
-        /// <br/>default value: false
-        /// </summary>
-        [JsonProperty("ignore_synonyms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IgnoreSynonyms { get; set; }
-
-        /// <summary>
         /// the maximum number of keywords in the results array
         /// <br/>optional field
         /// <br/>default value: 100
@@ -148,11 +139,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that you can not filter the results by relevance
         /// <br/>example:
         /// <br/>['keyword_info.search_volume','&gt;',0]
-        /// <br/>[['impressions_info.daily_impressions_average','in',[0,1000]],
-        /// <br/>'and',
-        /// <br/>['impressions_info.ad_position_average','&lt;',3]][['impressions_info.ad_position_average','&gt;',0],
-        /// <br/>'and',
-        /// <br/>[['impressions_info.cpc_max','&lt;',0.5],'or',['impressions_info.daily_clicks_max','&gt;=',10]]]
         /// <br/>for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

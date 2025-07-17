@@ -12,13 +12,13 @@ namespace DataForSeo.Client.Models
         /// opening time
         /// </summary>
         [JsonProperty("open", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public WorkTimeInfo Open { get; set; }
+        public TimeInfo Open { get; set; }
 
         /// <summary>
         /// closing time
         /// </summary>
         [JsonProperty("close", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public WorkTimeInfo Close { get; set; }
+        public TimeInfo Close { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

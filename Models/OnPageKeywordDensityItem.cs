@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <br/>calculated as a ratio of frequency to the total count of keywords with the set keyword_length on the web page or website
         /// </summary>
         [JsonProperty("density", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Density { get; set; }
+        public double? Density { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

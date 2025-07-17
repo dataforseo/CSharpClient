@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information about the rating enclosed in the review on a third-party site
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public RatingElement Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

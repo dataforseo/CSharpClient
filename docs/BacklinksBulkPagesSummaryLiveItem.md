@@ -18,7 +18,7 @@
 **ReferringDomains** | **long?** | indicates the number domains referring to the page |[optional]|
 **ReferringDomainsNofollow** | **long?** | number of domains pointing at least one nofollow link to the target |[optional]|
 **ReferringMainDomains** | **long?** | indicates the number of referring main domains |[optional]|
-**ReferringMainDomainsNofollow** | **long?** | number of main domains pointing at least one nofollow link to the target |[optional]|
+**ReferringMainDomainsNofollow** | **long?** |  |[optional]|
 **ReferringIps** | **long?** | number of referring IP addresses<br>number of IP addresses pointing to this page |[optional]|
 **ReferringSubnets** | **long?** | number of referring subnetworks |[optional]|
 **ReferringPages** | **long?** | indicates the number of pages pointing to the relevant url |[optional]|

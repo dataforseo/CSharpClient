@@ -15,11 +15,16 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// source of the element
-        /// <br/>indicates the source of information included in the top_stories_element
+        /// URL to the video source
         /// </summary>
         [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Source { get; set; }
+
+        /// <summary>
+        /// URL to the video preview image
+        /// </summary>
+        [JsonProperty("preview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Preview { get; set; }
 
         /// <summary>
         /// title of a given link element

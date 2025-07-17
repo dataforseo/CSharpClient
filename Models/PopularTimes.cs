@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <br/>information about busy hours of the local establishment on each day of the week
         /// </summary>
         [JsonProperty("popular_times_by_days", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, IEnumerable<BusyWorkingTimeInfo>> PopularTimesByDays { get; set; }
+        public IDictionary<string, IEnumerable<PopularWorkTimeInfo>> PopularTimesByDays { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

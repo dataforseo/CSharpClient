@@ -14,13 +14,13 @@ namespace DataForSeo.Client.Models
         /// <br/>can take values from 0 to 10
         /// </summary>
         [JsonProperty("similarity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Similarity { get; set; }
+        public int? Similarity { get; set; }
 
         /// <summary>
         /// information about the page with duplicate content
         /// </summary>
         [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageResourceItemInfo> Page { get; set; }
+        public IEnumerable<BaseOnPageResourceItem> Page { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

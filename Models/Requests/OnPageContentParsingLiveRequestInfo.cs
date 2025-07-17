@@ -86,7 +86,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>maximum value: 3
         /// </summary>
         [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? BrowserScreenScaleFactor { get; set; }
+        public double? BrowserScreenScaleFactor { get; set; }
 
         /// <summary>
         /// store HTML of a crawled page
@@ -168,6 +168,15 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("ip_pool_for_scan", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string IpPoolForScan { get; set; }
+
+        /// <summary>
+        /// return page content as markdown
+        /// <br/>optional field
+        /// <br/>if set to true, the markdown-formatted content of the page will be returned in the page_as_markdown field of the response;
+        /// <br/>default value: false
+        /// </summary>
+        [JsonProperty("markdown_view", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? MarkdownView { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

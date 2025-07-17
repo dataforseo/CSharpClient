@@ -12,43 +12,43 @@ namespace DataForSeo.Client.Models
         /// monthly estimated impressions range
         /// </summary>
         [JsonProperty("est_impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public EstInfo EstImpressions { get; set; }
+        public AudienceEstimationInfo EstImpressions { get; set; }
 
         /// <summary>
         /// monthly estimated reach user count range
         /// </summary>
         [JsonProperty("est_audience_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public EstInfo EstAudienceSize { get; set; }
+        public AudienceEstimationInfo EstAudienceSize { get; set; }
 
         /// <summary>
         /// monthly estimated click count range
         /// </summary>
         [JsonProperty("est_clicks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public EstInfo EstClicks { get; set; }
+        public AudienceEstimationInfo EstClicks { get; set; }
 
         /// <summary>
         /// monthly estimated spending range
         /// </summary>
         [JsonProperty("est_spend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public EstInfo EstSpend { get; set; }
+        public AudienceEstimationInfo EstSpend { get; set; }
 
         /// <summary>
         /// indicates the estimated cost per event with range result
         /// </summary>
         [JsonProperty("est_cost_per_event", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public EstCInfo EstCostPerEvent { get; set; }
+        public AudienceEstimationInfo EstCostPerEvent { get; set; }
 
         /// <summary>
         /// estimated click-through rate range
         /// </summary>
         [JsonProperty("est_ctr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public EstCInfo EstCtr { get; set; }
+        public AudienceEstimationInfo EstCtr { get; set; }
 
         /// <summary>
         /// suggested bid value under the current targeting
         /// </summary>
         [JsonProperty("suggested_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? SuggestedBid { get; set; }
+        public double? SuggestedBid { get; set; }
 
         /// <summary>
         /// suggested daily budget value under the current targeting and bid

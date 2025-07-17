@@ -18,13 +18,13 @@ namespace DataForSeo.Client.Models
         /// min rating on a distribution scale
         /// </summary>
         [JsonProperty("min", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Min { get; set; }
+        public double? Min { get; set; }
 
         /// <summary>
         /// max rating on a distribution scale
         /// </summary>
         [JsonProperty("max", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Max { get; set; }
+        public double? Max { get; set; }
 
         /// <summary>
         /// contains rating distribution metrics

@@ -56,13 +56,6 @@ namespace DataForSeo.Client.Models
         public SpellInfo Spell { get; set; }
 
         /// <summary>
-        /// search refinement chips
-        /// <br/>equals null
-        /// </summary>
-        [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RefinementChipsInfo RefinementChips { get; set; }
-
-        /// <summary>
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item:
@@ -81,7 +74,7 @@ namespace DataForSeo.Client.Models
         /// elements of search results found in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseYoutubeSerpElementItem> Items { get; set; }
+        public IEnumerable<YoutubeVideoInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -54,7 +54,8 @@ namespace DataForSeo.Client.Models
         /// <br/>date and time when the crawling was finished
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00note: informative only if 'crawl_progress' is 'finished'
+        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/>Note: informative only if 'crawl_progress' is 'finished'
         /// <br/>if 'crawl_progress' is in_progress, the value will be null
         /// </summary>
         [JsonProperty("crawl_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

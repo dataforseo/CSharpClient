@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// HTTP status code of the URL
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? StatusCode { get; set; }
+        public int? StatusCode { get; set; }
 
         /// <summary>
         /// indirect link URL

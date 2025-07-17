@@ -25,14 +25,14 @@ namespace DataForSeo.Client.Models
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("first_domain_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BaseDataforseoLabsSerpElementItem FirstDomainSerpElement { get; set; }
+        public BaseDataforseoLabsApiElementItem FirstDomainSerpElement { get; set; }
 
         /// <summary>
         /// contains data on the second domain’s SERP element found for the returned keyword
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("second_domain_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public BaseDataforseoLabsSerpElementItem SecondDomainSerpElement { get; set; }
+        public BaseDataforseoLabsApiElementItem SecondDomainSerpElement { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

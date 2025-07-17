@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// <br/>a value of 0 means there was not enough data for this term
         /// </summary>
         [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<int?> Values { get; set; }
+        public IEnumerable<string> Values { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -18,4 +18,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>organic,<br>images |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpElementItem>** | items featured in the faq_box |[optional]|
+**Items** | **IEnumerable<BaseSerpApiGoogleSearchByImagesElementItem>** | items featured in the faq_box |[optional]|

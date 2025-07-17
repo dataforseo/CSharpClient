@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated on this help center page
         /// </summary>
         [JsonProperty("spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SpamScore { get; set; }
+        public int? SpamScore { get; set; }
 
         /// <summary>
         /// rank of the domain
@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about the metric and how it is calculated in this help center article
         /// </summary>
         [JsonProperty("domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DomainRank { get; set; }
+        public int? DomainRank { get; set; }
 
         /// <summary>
         /// date and time when our crawler visited the page
@@ -87,7 +87,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the higher the score, the more value the related citation has
         /// </summary>
         [JsonProperty("score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Score { get; set; }
+        public double? Score { get; set; }
 
         /// <summary>
         /// contains all relevant page categories

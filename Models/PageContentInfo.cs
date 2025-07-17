@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         public PageSectionContentInfo Header { get; set; }
 
         /// <summary>
-        /// parsed content of the footer
+        /// content of the footer of the table
         /// </summary>
         [JsonProperty("footer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PageSectionContentInfo Footer { get; set; }

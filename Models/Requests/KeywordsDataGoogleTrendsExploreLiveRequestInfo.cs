@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>United Kingdom
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> LocationName { get; set; }
+        public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
@@ -46,7 +46,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>2840
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<int?> LocationCode { get; set; }
+        public string LocationCode { get; set; }
 
         /// <summary>
         /// full name of search engine language

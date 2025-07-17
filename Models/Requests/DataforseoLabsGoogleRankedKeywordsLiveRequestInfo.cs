@@ -14,6 +14,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the domain name of the target website or URL of the target webpage;
         /// <br/>the domain name must be specified without https:// or www.;
         /// <br/>the webpage URL must be specified with https:// or www.
+        /// <br/>Note: if you specify the webpage URL without https:// or www., the result will be returned for the entire domain rather than the specific page
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -85,7 +86,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>indicates the type of search results included in the response
         /// <br/>Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response;
         /// <br/>possible values:
-        /// <br/>['organic', 'paid', 'featured_snippet', 'local_pack']
+        /// <br/>['organic', 'paid', 'featured_snippet', 'local_pack', 'ai_overview_reference']
         /// <br/>default value:
         /// <br/>['organic', 'paid']
         /// </summary>

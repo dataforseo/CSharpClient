@@ -17,4 +17,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>carousel, images_search, related_searches |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseGoogleImagesSerpElementItem>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<BaseSerpApiGoogleImagesElementItem>** | elements of search results found in SERP |[optional]|

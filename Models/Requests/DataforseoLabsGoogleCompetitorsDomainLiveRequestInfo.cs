@@ -98,7 +98,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in
         /// <br/>example:
         /// <br/>['metrics.organic.count','&gt;',50]
-        /// <br/>[['metrics.organic.pos_1','&lt;&gt;',0],'and',['metrics.organic.impressions_etv','&gt;=','10']]
         /// <br/>[[['metrics.organic.count','&gt;=',50],'and',['metrics.organic.pos_1','in',[1,5]]],
         /// <br/>'or',
         /// <br/>['metrics.organic.etv','&gt;=','100']]

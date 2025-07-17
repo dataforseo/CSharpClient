@@ -17,4 +17,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>maps_search, maps_paid_item |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseGoogleMapsSerpElementItem>** | items of the element |[optional]|
+**Items** | **IEnumerable<BaseSerpApiGoogleMapsElementItem>** | items of the element |[optional]|

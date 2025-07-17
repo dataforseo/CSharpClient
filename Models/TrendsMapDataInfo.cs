@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// <br/>a value of 0 means there was not enough data for this term
         /// </summary>
         [JsonProperty("values", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<object> Values { get; set; }
+        public IEnumerable<string> Values { get; set; }
 
         /// <summary>
         /// max value among comparable terms

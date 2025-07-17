@@ -71,7 +71,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0.4
         /// </summary>
         [JsonProperty("positive_connotation_threshold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? PositiveConnotationThreshold { get; set; }
+        public double? PositiveConnotationThreshold { get; set; }
 
         /// <summary>
         /// sentiment connotation threshold
@@ -82,11 +82,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0.4
         /// </summary>
         [JsonProperty("sentiments_connotation_threshold", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? SentimentsConnotationThreshold { get; set; }
+        public double? SentimentsConnotationThreshold { get; set; }
 
         /// <summary>
         /// initial dataset filtering parameters
         /// <br/>optional field
+        /// <br/>initial filtering parameters that apply to fields in the Search endpoint
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:

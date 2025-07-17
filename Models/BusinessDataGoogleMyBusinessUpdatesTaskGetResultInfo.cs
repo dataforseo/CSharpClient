@@ -95,7 +95,7 @@ namespace DataForSeo.Client.Models
         /// <br/>possible item types: google_business_post
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseBusinessDataSerpElementItem> Items { get; set; }
+        public IEnumerable<GoogleBusinessPost> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -15,13 +15,13 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of the element
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// description content
+        /// content within the item
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
@@ -30,13 +30,14 @@ namespace DataForSeo.Client.Models
         /// images of the element
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElement> Images { get; set; }
 
         /// <summary>
         /// references relevant to the element
+        /// <br/>includes references to webpages that were used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiOverviewReference> References { get; set; }
+        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

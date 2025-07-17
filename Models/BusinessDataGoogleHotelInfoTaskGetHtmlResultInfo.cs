@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// HTML pages
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<HtmlItem> Items { get; set; }
+        public IEnumerable<SerpHtmlItemInfo> Items { get; set; }
         [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
         [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

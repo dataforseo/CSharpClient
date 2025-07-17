@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         /// array of directory items
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseBusinessDataSerpElementItem> Items { get; set; }
+        public IEnumerable<GoogleBusinessInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

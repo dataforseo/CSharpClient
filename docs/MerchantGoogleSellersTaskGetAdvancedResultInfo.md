@@ -18,4 +18,4 @@
 **Rating** | **RatingElement** | product rating<br>the product popularity rate based on product reviews |[optional]|
 **ItemTypes** | **IEnumerable<string>** | types of search results found in Google Shopping SERP<br>contains types of all search results (items) found in the returned SERP<br>possible item types:<br>shops_list, buy_on_google |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseMerchantSerpElementItem>** | items in SERP |[optional]|
+**Items** | **IEnumerable<BaseMerchantGoogleShoppingSellersElementItem>** | items in SERP |[optional]|

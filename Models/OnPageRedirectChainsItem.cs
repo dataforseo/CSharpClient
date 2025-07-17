@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// contains links that form a chain
         /// </summary>
         [JsonProperty("chain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageLinkItemInfo> Chain { get; set; }
+        public IEnumerable<BaseOnPageLinkItem> Chain { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

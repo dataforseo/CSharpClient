@@ -21,6 +21,18 @@ namespace DataForSeo.Client.Models
         public string Text { get; set; }
 
         /// <summary>
+        /// language of content
+        /// </summary>
+        [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Language { get; set; }
+
+        /// <summary>
+        /// response id
+        /// </summary>
+        [JsonProperty("response_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string ResponseId { get; set; }
+
+        /// <summary>
         /// the time of publication
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models
         /// elements of search results found in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<HtmlItem> Items { get; set; }
+        public IEnumerable<SerpHtmlItemInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

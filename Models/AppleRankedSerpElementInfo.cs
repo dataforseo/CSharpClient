@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("serp_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppDataAppStoreSearchOrganicSerpElementItem SerpItem { get; set; }
+        public AppStoreSearchOrganic SerpItem { get; set; }
 
         /// <summary>
         /// direct URL to search engine results
@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// number of search results for the returned keyword
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? SeResultsCount { get; set; }
+        public int? SeResultsCount { get; set; }
 
         /// <summary>
         /// date and time when SERP data was updated

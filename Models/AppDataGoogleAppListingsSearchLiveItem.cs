@@ -52,7 +52,7 @@ namespace DataForSeo.Client.Models
         /// detailed information about the app
         /// </summary>
         [JsonProperty("item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppDataGooglePlayInfoOrganicSerpElementItem Item { get; set; }
+        public GooglePlayInfoOrganic Item { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

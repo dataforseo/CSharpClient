@@ -5,22 +5,23 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class KnowledgeGraphSerpElementItem  : BaseSerpElementItem 
+    public class KnowledgeGraphSerpElementItem  : BaseSerpApiElementItem 
     {
 
         /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Position { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Xpath { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// title of the result in SERP
@@ -77,15 +78,7 @@ namespace DataForSeo.Client.Models
         /// contains results featured in the ‘hotels_pack’ element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpElementItem> Items { get; set; }
-
-        /// <summary>
-        /// rectangle parameters
-        /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-        /// <br/>equals null if calculate_rectangles in the POST request is not set to true
-        /// </summary>
-        [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Rectangle Rectangle { get; set; }
+        public IEnumerable<BaseSerpApiKnowledgeGraphElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

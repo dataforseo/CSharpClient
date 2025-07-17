@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates the version of X.509 used by an ssl certificate
         /// </summary>
         [JsonProperty("certificate_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string CertificateVersion { get; set; }
+        public int? CertificateVersion { get; set; }
 
         /// <summary>
         /// ssl certificate hash

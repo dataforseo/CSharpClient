@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         /// items in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
+**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
+**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
 **AsynchronousAiOverview** | **bool?** | indicates whether the element is loaded asynchronically<br>if true, the ai_overview element is loaded asynchronically;<br>if false, the ai_overview element is loaded from cache; |[optional]|
-**Items** | **IEnumerable<AiOverviewElement>** | contains arrays of specific images |[optional]|
-**References** | **IEnumerable<AiOverviewReference>** | additional references relevant to the item<br>includes references to webpages that may have been used to generate the ai_overview |[optional]|
-**Rectangle** | **Rectangle** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|
+**Markdown** | **string** | content of the element in markdown format |[optional]|
+**Items** | **IEnumerable<BaseSerpApiAiOverviewElementItem>** | contains arrays of specific images |[optional]|
+**References** | **IEnumerable<AiAiOverviewReferenceInfo>** | references relevant to the element<br>includes references to webpages that were used to generate the ai_overview_element |[optional]|

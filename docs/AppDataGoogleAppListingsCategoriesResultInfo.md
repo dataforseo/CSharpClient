@@ -5,5 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Category** | **string** | name of the supported app category |[optional]|
-**Count** | **long?** | number of app listings that make up the supported app category |[optional]|
+**Id** | **string** | task identifier<br>unique task identifier in our system in the UUID format |[optional]|
+**Se** | **string** |  |[optional]|
+**SeType** | **string** |  |[optional]|
+**DatePosted** | **string** |  |[optional]|
+**Tag** | **string** |  |[optional]|
+**EndpointAdvanced** | **string** |  |[optional]|
+**EndpointHtml** | **string** |  |[optional]|

@@ -8,8 +8,8 @@
 **SeType** | **string** | search engine type |[optional]|
 **SeedKeyword** | **string** | keyword in a POST array |[optional]|
 **SeedKeywordData** | **KeywordDataInfo** | keyword data for the seed keyword<br>fields in this object are identical to those of the items array |[optional]|
-**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
+**LocationCode** | **int?** | location code in a POST array |[optional]|
+**LanguageCode** | **string** | language code in a POST array |[optional]|
 **TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
 **Offset** | **int?** | current offset value |[optional]|

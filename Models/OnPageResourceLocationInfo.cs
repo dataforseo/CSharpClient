@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the number of the line on which the resource is located
         /// </summary>
         [JsonProperty("line", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Line { get; set; }
+        public int? Line { get; set; }
 
         /// <summary>
         /// position in line
@@ -22,14 +22,14 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: counts from 1, i.e. if the resource doesn’t have any characters to the left, the value will be 1
         /// </summary>
         [JsonProperty("offset_left", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OffsetLeft { get; set; }
+        public int? OffsetLeft { get; set; }
 
         /// <summary>
         /// position in the document
         /// <br/>the total number of characters between the resource and the top of HTML
         /// </summary>
         [JsonProperty("offset_top", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OffsetTop { get; set; }
+        public int? OffsetTop { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

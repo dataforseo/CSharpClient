@@ -7,7 +7,7 @@
 |------------ | ------------- | ------------- | -------------|
 **SeType** | **string** | search engine type |[optional]|
 **TopCategories** | **IEnumerable<int?>** | categories for which domains are collected |[optional]|
-**OrganicEtv** | **float?** | current organic ETV of the domain |[optional]|
+**OrganicEtv** | **double?** | current organic ETV of the domain |[optional]|
 **OrganicCount** | **long?** | current total count of organic SERPs that contain the domain |[optional]|
 **OrganicIsLost** | **int?** | current number of lost ranked elements<br>indicates how many ranked elements of the domain were previously presented in SERPs, but weren’t found during the last check |[optional]|
 **OrganicIsNew** | **int?** | current number of new ranked elements<br>indicates how many new ranked elements were found for the domain |[optional]|

@@ -21,12 +21,6 @@ namespace DataForSeo.Client.Models
         public long? TotalPages { get; set; }
 
         /// <summary>
-        /// total number of domains our database contains for the moment of checking
-        /// </summary>
-        [JsonProperty("total_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? TotalDomains { get; set; }
-
-        /// <summary>
         /// index volume data for the past 12 months
         /// </summary>
         [JsonProperty("index_history", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -10,5 +10,5 @@
 **Impressions** | **int?** | ad impressions<br>the number of impressions that the keyword and match type generated during the last month |[optional]|
 **AverageCpc** | **double?** | average cost per click, USD<br>calculated by dividing the cost of all clicks by the number of clicks |[optional]|
 **Ctr** | **double?** | click-through rate as a percentage<br>calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100 |[optional]|
-**TotalCost** | **long?** | total cost of an ad, USD<br>the cost of using the specified keyword and match type during the last month |[optional]|
+**TotalCost** | **double?** | total cost of an ad, USD<br>the cost of using the specified keyword and match type during the last month |[optional]|
 **AverageBid** | **double?** | average bid of the keyword |[optional]|

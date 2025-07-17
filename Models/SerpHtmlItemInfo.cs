@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// serial number of the returned HTML page
         /// </summary>
         [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Page { get; set; }
+        public int? Page { get; set; }
 
         /// <summary>
         /// date and time when the HTML page was scanned

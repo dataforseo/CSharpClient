@@ -5,28 +5,31 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class CurrencyBoxSerpElementItem  : BaseSerpElementItem 
+    public class CurrencyBoxSerpElementItem  : BaseSerpApiElementItem 
     {
 
         /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values;
+        /// <br/>positions of elements with different type values are omitted from rank_group;
+        /// <br/>always equals 0 for desktop
         /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Position { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements in SERP
+        /// <br/>always equals 0 for desktop
         /// </summary>
-        [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Xpath { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// the value of the rating
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Value { get; set; }
+        public double? Value { get; set; }
 
         /// <summary>
         /// value converted to a requested currency
@@ -34,7 +37,7 @@ namespace DataForSeo.Client.Models
         /// <br/>note that exchange rates displayed in the currency_box element may be delayed according to the Google Finance disclaimer
         /// </summary>
         [JsonProperty("converted_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? ConvertedValue { get; set; }
+        public double? ConvertedValue { get; set; }
 
         /// <summary>
         /// currency of the listed price
@@ -70,14 +73,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("graph", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Graph Graph { get; set; }
-
-        /// <summary>
-        /// rectangle parameters
-        /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-        /// <br/>equals null if calculate_rectangles in the POST request is not set to true
-        /// </summary>
-        [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Rectangle Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -91,7 +91,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>maximum value: 3
         /// </summary>
         [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? BrowserScreenScaleFactor { get; set; }
+        public double? BrowserScreenScaleFactor { get; set; }
 
         /// <summary>
         /// take a screenshot of the full page

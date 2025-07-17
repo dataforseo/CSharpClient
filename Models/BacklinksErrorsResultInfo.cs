@@ -65,7 +65,7 @@ namespace DataForSeo.Client.Models
         /// time taken by HTTP request
         /// </summary>
         [JsonProperty("http_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? HttpTime { get; set; }
+        public int? HttpTime { get; set; }
 
         /// <summary>
         /// HTTP response

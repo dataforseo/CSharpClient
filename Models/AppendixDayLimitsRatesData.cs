@@ -8,7 +8,7 @@ namespace DataForSeo.Client.Models
     public class AppendixDayLimitsRatesData 
     {
         [JsonProperty("serp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpsRatesDataInfo Serp { get; set; }
+        public AppendixSerpDaysRatesDataInfo Serp { get; set; }
 
         /// <summary>
         /// total amount of money deposited to your account
@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("total_serp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalSerp { get; set; }
         [JsonProperty("keywords_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixKeywordsDatasRatesDataInfo KeywordsData { get; set; }
+        public AppendixKeywordsDataDaysRatesDataInfo KeywordsData { get; set; }
         [JsonProperty("total_keywords_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalKeywordsData { get; set; }
         [JsonProperty("appendix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -61,12 +61,12 @@ namespace DataForSeo.Client.Models
         public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
         [JsonProperty("total_content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalContentGeneration { get; set; }
+        [JsonProperty("total_traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TotalTrafficAnalytics { get; set; }
         [JsonProperty("total_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalReviews { get; set; }
         [JsonProperty("total_social", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalSocial { get; set; }
-        [JsonProperty("total_traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalTrafficAnalytics { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

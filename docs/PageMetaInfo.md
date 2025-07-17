@@ -27,11 +27,11 @@
 **DescriptionLength** | **int?** | length of the description tag in characters |[optional]|
 **RenderBlockingScriptsCount** | **long?** | number of scripts on the page that block page rendering |[optional]|
 **RenderBlockingStylesheetsCount** | **long?** | number of CSS styles on the page that block page rendering |[optional]|
-**CumulativeLayoutShift** | **float?** | Core Web Vitals metric measuring the layout stability of the page<br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more. |[optional]|
+**CumulativeLayoutShift** | **double?** | Core Web Vitals metric measuring the layout stability of the page<br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more. |[optional]|
 **MetaTitle** | **string** | meta title of the page<br>meta tag in the head section of an HTML document that defines the title of a page |[optional]|
 **Content** | **HtmlContentInfo** | overall information about content of the page |[optional]|
 **DeprecatedTags** | **IEnumerable<string>** | deprecated tags on the page |[optional]|
 **DuplicateMetaTags** | **IEnumerable<string>** | duplicate meta tags on the page |[optional]|
-**Spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**Spell** | **HunspellInfo** | spellcheck<br>hunspell spellcheck errors |[optional]|
 **SocialMediaTags** | **IDictionary<string, string>** | object of social media tags found on the page<br>contains social media tags and their content<br>supported tags include but are not limited to Open Graph and Twitter card |[optional]|
 **BrokenHtml** | **OnPageResourceIssueInfo** | resource errors and warnings |[optional]|

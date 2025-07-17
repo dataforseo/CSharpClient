@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// percentage of global search volume
         /// </summary>
         [JsonProperty("percentage", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Percentage { get; set; }
+        public double? Percentage { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

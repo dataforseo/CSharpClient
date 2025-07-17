@@ -7,7 +7,7 @@
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
 **Title** | **string** | title of the hotel |[optional]|
-**Price** | **int?** | price per night |[optional]|
+**Price** | **double?** | price per night |[optional]|
 **Currency** | **string** | price currency<br>USD is applied by default, unless specified in the POST array |[optional]|
 **Url** | **string** | third-party page url<br>URL to the third-party website page with pricing information |[optional]|
 **Domain** | **string** | third-party domain<br>domain of the third-party website page with pricing information |[optional]|

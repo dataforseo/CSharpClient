@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// offset in the results array of returned categories
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Offset { get; set; }
+        public string Offset { get; set; }
 
         /// <summary>
         /// token for subsequent requests

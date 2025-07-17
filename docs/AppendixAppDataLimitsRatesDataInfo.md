@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**AppInfo** | **AppendixSerpsRatesDataInfo** |  |[optional]|
-**AppList** | **AppendixSerpsRatesDataInfo** |  |[optional]|
-**AppReviews** | **AppendixSerpsRatesDataInfo** |  |[optional]|
-**AppSearches** | **AppendixSerpsRatesDataInfo** |  |[optional]|
+**AppInfo** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**AppList** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**AppReviews** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**AppSearches** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
 **Errors** | **double?** |  |[optional]|
 **Languages** | **double?** |  |[optional]|
 **Locations** | **double?** |  |[optional]|

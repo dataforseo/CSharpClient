@@ -21,13 +21,13 @@ namespace DataForSeo.Client.Models
         public IEnumerable<HistoricalMetricsInfo> Paid { get; set; }
 
         /// <summary>
-        /// traffic data from the featured snippet results in Google SERP
+        /// traffic data from the local pack results in SERP
         /// </summary>
         [JsonProperty("local_pack", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HistoricalMetricsInfo> LocalPack { get; set; }
 
         /// <summary>
-        /// traffic data from the local pack results in SERP
+        /// traffic data from the featured snippet results in Google SERP
         /// </summary>
         [JsonProperty("featured_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HistoricalMetricsInfo> FeaturedSnippet { get; set; }

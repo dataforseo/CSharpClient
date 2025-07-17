@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         /// the value of the rating
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public float? Value { get; set; }
+        public double? Value { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

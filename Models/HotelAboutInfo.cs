@@ -27,14 +27,14 @@ namespace DataForSeo.Client.Models
         /// <br/>check-in time indicated in the hotel listing
         /// </summary>
         [JsonProperty("check_in_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public WorkTimeInfo CheckInTime { get; set; }
+        public TimeInfo CheckInTime { get; set; }
 
         /// <summary>
         /// hotel check-out time
         /// <br/>check-out time indicated in the hotel listing
         /// </summary>
         [JsonProperty("check_out_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public WorkTimeInfo CheckOutTime { get; set; }
+        public TimeInfo CheckOutTime { get; set; }
 
         /// <summary>
         /// full address of the hotel

@@ -16,8 +16,7 @@ namespace DataForSeo.Client.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// parent microdata types
-        /// <br/>for a full list of available types, please visit schema.org
+        /// list of microdata types
         /// </summary>
         [JsonProperty("types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Types { get; set; }

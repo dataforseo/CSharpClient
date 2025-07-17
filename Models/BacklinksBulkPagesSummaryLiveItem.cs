@@ -102,7 +102,7 @@ namespace DataForSeo.Client.Models
         public long? ReferringMainDomains { get; set; }
 
         /// <summary>
-        /// number of main domains pointing at least one nofollow link to the target
+        /// 
         /// </summary>
         [JsonProperty("referring_main_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringMainDomainsNofollow { get; set; }
