@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// contains arrays of specific images
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Items { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Items { get; set; }
 
         /// <summary>
         /// contains keywords and images related to the specified search term

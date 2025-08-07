@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// DataForSEO Trends data for the specified parameters
         /// </summary>
         [JsonProperty("data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<TrendsGraphDataInfo> Data { get; set; }
+        public IEnumerable<DataforseoTrendsGraphDataTrendsGraphDataInfo> Data { get; set; }
 
         /// <summary>
         /// keyword popularity values averaged over the whole time range

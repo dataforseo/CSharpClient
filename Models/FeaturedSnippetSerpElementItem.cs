@@ -72,13 +72,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// images of the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// results table
-        /// <br/>if there are none, equals null
+        /// table present in the element
+        /// <br/>the header and content of the table present in the element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

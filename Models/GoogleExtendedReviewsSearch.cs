@@ -160,7 +160,7 @@ namespace DataForSeo.Client.Models
         /// images submitted by the reviewer
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
         /// review highlights

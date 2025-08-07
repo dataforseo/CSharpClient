@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models
         /// response from the developer
         /// </summary>
         [JsonProperty("responses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object Responses { get; set; }
+        public IEnumerable<ResponseDataInfo> Responses { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

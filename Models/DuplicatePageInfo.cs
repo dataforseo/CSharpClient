@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// information about the page with duplicate content
         /// </summary>
         [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseOnPageResourceItem> Page { get; set; }
+        public IEnumerable<OnPageHtmlResourceItem> Page { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

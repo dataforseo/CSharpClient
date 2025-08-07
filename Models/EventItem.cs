@@ -84,7 +84,7 @@ namespace DataForSeo.Client.Models
         /// additional information and ticket purchase options
         /// </summary>
         [JsonProperty("information_and_tickets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<InformationAndTicketsElement> InformationAndTickets { get; set; }
+        public IEnumerable<AiModeLinkElementInfo> InformationAndTickets { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

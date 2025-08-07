@@ -9,13 +9,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the result in SERP
+        /// title of the element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// text or description of the element in SERP
+        /// text of the component
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
@@ -27,11 +27,11 @@ namespace DataForSeo.Client.Models
         public IEnumerable<AiOverviewExpandedComponent> Components { get; set; }
 
         /// <summary>
-        /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// additional references relevant to the item
+        /// <br/>includes references to webpages that may have been used to generate the ai_overview
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

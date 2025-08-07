@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// items array
+        /// items object
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public OnPageRawHtmlItem Items { get; set; }

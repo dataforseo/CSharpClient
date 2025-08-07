@@ -125,7 +125,7 @@ namespace DataForSeo.Client.Models
         /// <br/>in this case, will equal null
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RectangleInfo Rectangle { get; set; }
+        public AiModeRectangleInfo Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

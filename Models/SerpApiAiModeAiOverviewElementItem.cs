@@ -30,21 +30,21 @@ namespace DataForSeo.Client.Models
         /// website links featured in the element
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<InformationAndTicketsElement> Links { get; set; }
+        public IEnumerable<AiModeLinkElementInfo> Links { get; set; }
 
         /// <summary>
         /// images of the element
         /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
         /// references relevant to the element
         /// <br/>includes references to webpages that were used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

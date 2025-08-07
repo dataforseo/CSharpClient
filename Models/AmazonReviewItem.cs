@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// images of the product submitted by the reviewer
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
         /// videos of the product submitted by the reviewer

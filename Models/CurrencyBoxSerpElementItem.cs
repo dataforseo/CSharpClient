@@ -62,8 +62,8 @@ namespace DataForSeo.Client.Models
         public string Timestamp { get; set; }
 
         /// <summary>
-        /// results table
-        /// <br/>if there are none, equals null
+        /// table present in the element
+        /// <br/>the header and content of the table present in the element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

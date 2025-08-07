@@ -21,10 +21,16 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// description
+        /// description of the results element in SERP
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
+
+        /// <summary>
+        /// location for which the job vacancy is posted
+        /// </summary>
+        [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Location { get; set; }
 
         /// <summary>
         /// author

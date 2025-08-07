@@ -22,32 +22,30 @@ namespace DataForSeo.Client.Models
         public string Text { get; set; }
 
         /// <summary>
-        /// text of the component in the markdwon format
+        /// content of the element in markdown format
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
 
         /// <summary>
-        /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// website links featured in the element
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
 
         /// <summary>
-        /// images of the element
+        /// images of the component
         /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// additional references relevant to the item
-        /// <br/>includes references to webpages that may have been used to generate the product_considerations_ai_overview_expanded_element
+        /// references relevant to the element
+        /// <br/>includes references to webpages that were used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

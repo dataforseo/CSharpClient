@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         /// product image data
         /// </summary>
         [JsonProperty("image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AiModeImagesElement Image { get; set; }
+        public AiModeImagesElementInfo Image { get; set; }
 
         /// <summary>
         /// rating of the product on Amazon

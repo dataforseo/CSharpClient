@@ -15,7 +15,9 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// the posting date
+        /// date when the video was published or indexed
+        /// <br/>example:
+        /// <br/>Apr 26, 2024
         /// </summary>
         [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }

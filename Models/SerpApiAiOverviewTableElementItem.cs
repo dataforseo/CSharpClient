@@ -9,14 +9,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// content of the element in markdown format
+        /// text of the component in the markdwon format
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
 
         /// <summary>
-        /// results table
-        /// <br/>if there are none, equals null
+        /// table present in the element
+        /// <br/>the header and content of the table present in the element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

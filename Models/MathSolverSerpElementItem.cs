@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<MathSolverElement> Items { get; set; }
 
         /// <summary>
-        /// link of the element
+        /// website links featured in the element
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

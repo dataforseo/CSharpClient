@@ -92,7 +92,8 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiElementItem> Items { get; set; }

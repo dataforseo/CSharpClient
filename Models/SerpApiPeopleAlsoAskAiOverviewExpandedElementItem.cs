@@ -12,14 +12,14 @@ namespace DataForSeo.Client.Models
         /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiOverviewElement> Items { get; set; }
+        public IEnumerable<BaseSerpApiPeopleAlsoAskAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
-        /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// additional references relevant to the item
+        /// <br/>includes references to webpages that may have been used to generate the ai_overview
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// text alongside the link title
+        /// text alongside the title
         /// </summary>
         [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Snippet { get; set; }

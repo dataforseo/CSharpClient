@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// Google Trends data from the corresponding item
         /// </summary>
         [JsonProperty("data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public TrendsTopicListDataInfo Data { get; set; }
+        public ListDataInfo Data { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

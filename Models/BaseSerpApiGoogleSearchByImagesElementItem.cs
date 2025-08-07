@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// <br/>equals null if calculate_rectangles in the POST request is not set to true
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RectangleInfo Rectangle { get; set; }
+        public AiModeRectangleInfo Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

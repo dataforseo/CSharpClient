@@ -38,14 +38,14 @@ namespace DataForSeo.Client.Models
         /// images of the element
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
         /// references relevant to the element
         /// <br/>includes references to webpages that were used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -19,8 +19,18 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
-        [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? LocationCodeParent { get; set; }
+
+        /// <summary>
+        /// the name of the superordinate location
+        /// <br/>example:
+        /// <br/>'location_code': 1006473,
+        /// <br/>'location_name': 'Altrincham,England,United Kingdom',
+        /// <br/>'location_name_parent': 'England,United Kingdom', where location_name_parent corresponds to:
+        /// <br/>'location_code': 20339,
+        /// <br/>'location_name': 'England,United Kingdom'
+        /// </summary>
+        [JsonProperty("location_name_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationNameParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location

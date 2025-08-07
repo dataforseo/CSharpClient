@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// <br/>note: calculate_rectangles parameter is not yet available when setting tasks for this search engine type, that’s why rectangle always equals null
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RectangleInfo Rectangle { get; set; }
+        public AiModeRectangleInfo Rectangle { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

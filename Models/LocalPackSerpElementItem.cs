@@ -32,13 +32,13 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// description of the results element in SERP
+        /// link description
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
-        /// domain in the URL
+        /// domain name of the reference
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }

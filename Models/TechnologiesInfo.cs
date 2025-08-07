@@ -23,6 +23,8 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, IEnumerable<string>> Other { get; set; }
         [JsonProperty("user_generated_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IEnumerable<string>> UserGeneratedContent { get; set; }
+        [JsonProperty("booking", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, IEnumerable<string>> Booking { get; set; }
         [JsonProperty("privacy", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IEnumerable<string>> Privacy { get; set; }
         [JsonProperty("servers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

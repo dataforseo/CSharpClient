@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// description
+        /// description of the results element in SERP
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }

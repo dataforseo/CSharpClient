@@ -7,15 +7,16 @@ namespace DataForSeo.Client.Models
 
     public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo 
     {
-
-        /// <summary>
-        /// identifier received in a POST array
-        /// <br/>this field will contain the hotel_identifier parameter specified when setting a task;
-        /// <br/>example:
-        /// <br/>CgoI-KWyzenM_MV3EAE
-        /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
+
+        /// <summary>
+        /// type of element
+        /// </summary>
+        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Type { get; set; }
+        [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SeDomain { get; set; }
 
         /// <summary>
         /// location code in a POST array
@@ -48,11 +49,7 @@ namespace DataForSeo.Client.Models
         /// HTML pages
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SerpHtmlItemInfo> Items { get; set; }
-        [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Type { get; set; }
-        [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeDomain { get; set; }
+        public IEnumerable<HtmlItemInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

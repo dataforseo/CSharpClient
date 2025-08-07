@@ -37,8 +37,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don’t specify location_code or location_coordinate
         /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
         /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>example:
-        /// <br/>London,England,United Kingdom
+        /// <br/>Note: check  Google Search Help for the list of countries where AI Mode is currently available
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
@@ -48,8 +47,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don’t specify location_name or location_coordinate
         /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>example:
-        /// <br/>2840
+        /// <br/>Note: check  Google Search Help for the list of countries where AI Mode is currently available
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }

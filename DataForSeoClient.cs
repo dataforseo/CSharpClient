@@ -12,6 +12,7 @@ namespace DataForSeo.Client
         public DomainAnalyticsApi DomainAnalyticsApi { get; }
         public KeywordsDataApi KeywordsDataApi { get; }
         public BacklinksApi BacklinksApi { get; }
+        public AiOptimizationApi AiOptimizationApi { get; }
         public OnPageApi OnPageApi { get; }
         public ContentAnalysisApi ContentAnalysisApi { get; }
         public ContentGenerationApi ContentGenerationApi { get; }
@@ -25,12 +26,13 @@ namespace DataForSeo.Client
             _client = new System.Net.Http.HttpClient(new System.Net.Http.HttpClientHandler { AutomaticDecompression = System.Net.DecompressionMethods.GZip, MaxConnectionsPerServer = 1000 });
             _client.Timeout = System.TimeSpan.FromMinutes(1);
 
-            _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.4");
-
+            _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.5");
             if (configuration.CustomHeaders != null)
             {
                 foreach (var header in configuration.CustomHeaders)
+                {
                     _client.DefaultRequestHeaders.Add(header.Key, header.Value);
+                }
             }
 
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes($"{configuration.Username}:{configuration.Password}")));
@@ -42,6 +44,7 @@ namespace DataForSeo.Client
             DomainAnalyticsApi = new DomainAnalyticsApi(_client);
             KeywordsDataApi = new KeywordsDataApi(_client);
             BacklinksApi = new BacklinksApi(_client);
+            AiOptimizationApi = new AiOptimizationApi(_client);
             OnPageApi = new OnPageApi(_client);
             ContentAnalysisApi = new ContentAnalysisApi(_client);
             ContentGenerationApi = new ContentGenerationApi(_client);

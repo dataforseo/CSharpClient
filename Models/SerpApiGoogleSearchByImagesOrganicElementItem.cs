@@ -91,7 +91,7 @@ namespace DataForSeo.Client.Models
         /// images of the element
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeImagesElement> Images { get; set; }
+        public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
         /// Accelerated Mobile Pages

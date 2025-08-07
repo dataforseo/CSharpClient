@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         /// image of the element
         /// </summary>
         [JsonProperty("image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AiModeImagesElement Image { get; set; }
+        public AiModeImagesElementInfo Image { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

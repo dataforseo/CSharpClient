@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         /// HTML pages
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SerpHtmlItemInfo> Items { get; set; }
+        public IEnumerable<HtmlItemInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

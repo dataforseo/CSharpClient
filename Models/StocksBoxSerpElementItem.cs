@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// name of the source of the video
+        /// reference source name or title
         /// </summary>
         [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Source { get; set; }
@@ -56,14 +56,14 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// domain in the URL
+        /// domain name of the reference
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// results table
-        /// <br/>if there are none, equals null
+        /// table present in the element
+        /// <br/>the header and content of the table present in the element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

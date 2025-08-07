@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the header and content of the table present in the element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AiModeTable Table { get; set; }
+        public AiModeTableInfo Table { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

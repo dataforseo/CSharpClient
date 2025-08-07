@@ -20,12 +20,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("se", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Se { get; set; }
-
-        /// <summary>
-        /// type of the task
-        /// </summary>
-        [JsonProperty("function", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Function { get; set; }
+        [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SeType { get; set; }
 
         /// <summary>
         /// date when the task was posted (in the UTC format)
@@ -44,6 +40,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("endpoint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Endpoint { get; set; }
+
+        /// <summary>
+        /// type of the task
+        /// </summary>
+        [JsonProperty("function", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Function { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

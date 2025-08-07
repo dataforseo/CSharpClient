@@ -35,6 +35,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// content of the element in markdown format
+        /// <br/>the text of the ai_overview formatted in the markdown markup language
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
@@ -50,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>includes references to webpages that were used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

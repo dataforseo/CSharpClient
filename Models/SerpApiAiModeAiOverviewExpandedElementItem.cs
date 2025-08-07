@@ -25,14 +25,14 @@ namespace DataForSeo.Client.Models
         /// array of components of the element
         /// </summary>
         [JsonProperty("components", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeAiOverviewExpandedComponent> Components { get; set; }
+        public IEnumerable<AiModeAiOverviewExpandedComponentInfo> Components { get; set; }
 
         /// <summary>
         /// additional references relevant to the item
         /// <br/>includes references to webpages that may have been used to generate the ai_overview
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiAiOverviewReferenceInfo> References { get; set; }
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

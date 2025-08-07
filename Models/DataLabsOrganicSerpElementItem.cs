@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// subdomain in SERP
+        /// domain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// relevant URL in SERP
+        /// sitelink URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// relevant website name in SERP
+        /// name of the website in SERP
         /// </summary>
         [JsonProperty("website_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebsiteName { get; set; }
@@ -92,7 +92,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public RatingElement Rating { get; set; }
 
         /// <summary>
         /// words highlighted in bold within the results description
@@ -130,39 +130,34 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated paid monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for
+        /// <br/>estimated organic monthly traffic a featured URL delivers to the domain
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of monthly search traffic
-        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for
+        /// estimated cost of converting organic search traffic into paid
+        /// <br/>represents the estimated monthly cost of running ads for the returned keyword
+        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? EstimatedPaidTrafficCost { get; set; }
-
-        /// <summary>
-        /// estimated traffic volume based on clickstream data
-        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
-        /// <br/>learn more about how the metric is calculated in this help center article
-        /// </summary>
         [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ClickstreamEtv { get; set; }
 
         /// <summary>
         /// changes in rankings
-        /// <br/>contains information about the ranking changes of the SERP element since the previous_updated_time
+        /// <br/>ranking changes of the SERP element compared to the preceding month;
+        /// <br/>Note: the changes are calculated even if the preceding month is not included in a POST request
         /// </summary>
         [JsonProperty("rank_changes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }
 
         /// <summary>
-        /// backlinks information for the target website
+        /// backlinks information for the ranked website
         /// </summary>
         [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }

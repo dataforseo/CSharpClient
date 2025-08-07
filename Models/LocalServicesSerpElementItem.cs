@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// domain in the URL
+        /// domain name of the reference
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
