@@ -15,7 +15,7 @@
 **WebsiteName** | **string** | name of the website in SERP |[optional]|
 **IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
 **IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
-**Images** | **IEnumerable<AiModeImagesElement>** | images of the element<br>if there are none, equals null |[optional]|
+**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
 **Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
 **Extra** | **IDictionary<string, string>** | additional information about the result |[optional]|
 **DescriptionRows** | **IEnumerable<string>** | extended description<br>if there is none, equals null |[optional]|

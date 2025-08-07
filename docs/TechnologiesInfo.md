@@ -13,6 +13,7 @@
 **Sales** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|
 **Other** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|
 **UserGeneratedContent** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|
+**Booking** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|
 **Privacy** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|
 **Servers** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|
 **Location** | **IDictionary<string, IEnumerable<string>>** |  |[optional]|

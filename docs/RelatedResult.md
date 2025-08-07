@@ -19,7 +19,7 @@
 **Description** | **string** | description of the hotel booking element |[optional]|
 **PreSnippet** | **string** | includes additional information appended before the result description in SERP |[optional]|
 **ExtendedSnippet** | **string** | includes additional information appended after the result description in SERP |[optional]|
-**Images** | **IEnumerable<AiModeImagesElement>** | images of the component<br>if there are none, equals null |[optional]|
+**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the component<br>if there are none, equals null |[optional]|
 **AmpVersion** | **bool?** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
 **Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|

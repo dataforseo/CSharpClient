@@ -204,8 +204,8 @@ var result = await dfsClient.SerpApi.SerpIdListAsync(new List<SerpIdListRequestI
 {
     new()
     {
-        DatetimeFrom = "2025-04-17 06:05:20 +00:00",
-        DatetimeTo = "2025-06-17 06:05:20 +00:00",
+        DatetimeFrom = "2025-05-06 08:27:31 +00:00",
+        DatetimeTo = "2025-07-06 08:27:31 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -778,7 +778,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "ea0a6ce2-0475-4df3-b2ec-55dfd875fd4a";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -1182,7 +1182,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "9525767b-1a1e-4c21-9d15-48c198690d78";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleAiModeTaskGetHtmlAsync(id);
 ```
 
@@ -1719,7 +1719,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "90902cec-1adb-4c12-8191-056ad4d0df99";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleLocalFinderTaskGetHtmlAsync(id);
 ```
 
@@ -2034,7 +2034,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "080e51fa-1a85-4276-b70e-c508dca0633d";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleNewsTaskGetHtmlAsync(id);
 ```
 
@@ -2569,7 +2569,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "81819d03-d6b8-4c7e-ae9a-eaaff352bef0";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleImagesTaskGetHtmlAsync(id);
 ```
 
@@ -3055,7 +3055,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "d1bde53b-dfd2-4169-9778-6816e2c9b781";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleJobsTaskGetHtmlAsync(id);
 ```
 
@@ -4471,7 +4471,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "ed2fd7a3-7879-4ead-a688-8cc669dd9587";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BingOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -4833,7 +4833,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "114c9509-213a-46f5-bc48-f87b71661104";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BingLocalPackTaskGetHtmlAsync(id);
 ```
 
@@ -6102,7 +6102,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "72217fe5-3b41-48bb-b6ba-94b297060d73";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.YahooOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -6631,7 +6631,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "817d4c16-a201-43f7-a029-72e692cf2eb6";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.BaiduOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -6890,7 +6890,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "880514c7-55ac-42f0-a7de-e608efff83a7";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.NaverOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -7271,7 +7271,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "747b97b8-ee44-44d0-827b-82b7e854e8b8";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.SeznamOrganicTaskGetHtmlAsync(id);
 ```
 
@@ -7444,7 +7444,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "13319545-cffb-44c7-8e83-ca04a91aa755";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskGetHtmlAsync(id);
 ```
 
@@ -7713,7 +7713,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "b9e2eebc-e319-447f-893f-792ee9892785";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskGetHtmlAsync(id);
 ```
 
@@ -7983,7 +7983,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "f68de805-4b39-48d7-897c-64388a82a2c6";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskGetHtmlAsync(id);
 ```
 

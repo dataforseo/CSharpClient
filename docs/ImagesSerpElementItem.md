@@ -9,5 +9,5 @@
 **RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
 **Title** | **string** | reference page title |[optional]|
 **Url** | **string** | URL |[optional]|
-**Items** | **IEnumerable<AiModeImagesElement>** | contains arrays of specific images |[optional]|
+**Items** | **IEnumerable<AiModeImagesElementInfo>** | contains arrays of specific images |[optional]|
 **RelatedImageSearches** | **IEnumerable<RelatedImageSearchesElement>** | contains keywords and images related to the specified search term<br>if there are none, equals null |[optional]|

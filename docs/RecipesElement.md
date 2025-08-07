@@ -10,6 +10,6 @@
 **Url** | **string** | URL |[optional]|
 **Domain** | **string** | website domain |[optional]|
 **Source** | **string** | source of the element<br>indicates the source of information included in the top_stories_element |[optional]|
-**Description** | **string** | description |[optional]|
+**Description** | **string** | description of the results element in SERP |[optional]|
 **Time** | **string** | the total time it takes to prepare the cook the dish |[optional]|
 **Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|

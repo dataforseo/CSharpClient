@@ -12,4 +12,4 @@
 **LanguageCode** | **string** | language code in a POST array |[optional]|
 **Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<SerpHtmlItemInfo>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<HtmlItemInfo>** | elements of search results found in SERP |[optional]|

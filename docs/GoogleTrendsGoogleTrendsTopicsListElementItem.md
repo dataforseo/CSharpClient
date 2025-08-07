@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Data** | **TrendsTopicListDataInfo** | Google Trends data from the corresponding item |[optional]|
+**Data** | **ListDataInfo** | Google Trends data from the corresponding item |[optional]|

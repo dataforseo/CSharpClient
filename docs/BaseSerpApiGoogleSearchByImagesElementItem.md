@@ -12,4 +12,4 @@
 **Xpath** | **string** | the XPath of the element |[optional]|
 **Title** | **string** | title of the element |[optional]|
 **Url** | **string** | search URL with refinement parameters |[optional]|
-**Rectangle** | **RectangleInfo** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|
+**Rectangle** | **AiModeRectangleInfo** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|

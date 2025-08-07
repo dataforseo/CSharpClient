@@ -7,7 +7,8 @@
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
 **Title** | **string** | title of a given link element |[optional]|
-**Description** | **string** | description |[optional]|
+**Description** | **string** | description of the results element in SERP |[optional]|
+**Location** | **string** | location for which the job vacancy is posted |[optional]|
 **Author** | **string** | author |[optional]|
 **JobPostedTime** | **string** | the time when the job was posted |[optional]|
 **Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|

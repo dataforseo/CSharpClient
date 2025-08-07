@@ -91,8 +91,8 @@ var result = await dfsClient.KeywordsDataApi.KeywordsDataIdListAsync(new List<Ke
 {
     new()
     {
-        DatetimeFrom = "2025-04-17 06:08:20 +00:00",
-        DatetimeTo = "2025-06-17 06:08:20 +00:00",
+        DatetimeFrom = "2025-05-06 08:30:18 +00:00",
+        DatetimeTo = "2025-07-06 08:30:18 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -446,7 +446,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "cd8d055b-efc0-488d-a90a-7422f6f03521";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeTaskGetAsync(id);
 ```
 
@@ -500,7 +500,7 @@ var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(new 
         },
         LocationCode = 2840,
         SearchPartners = true,
-        DateFrom = "2025-04-17",
+        DateFrom = "2025-05-06",
     }
 });
 ```
@@ -632,7 +632,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "808ccc62-77f2-413d-985a-62c975562c92";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForSiteTaskGetAsync(id);
 ```
 
@@ -815,7 +815,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "fa3783b5-c9c6-4de3-9288-4898ae9490e4";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForKeywordsTaskGetAsync(id);
 ```
 
@@ -1004,7 +1004,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "2fefd35b-ddcd-425a-88d2-523fd333c10b";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.GoogleAdsAdTrafficByKeywordsTaskGetAsync(id);
 ```
 
@@ -1276,8 +1276,8 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(ne
         },
         Type = "youtube",
         CategoryCode = 3,
-        DateFrom = "2025-04-17",
-        DateTo = "2025-06-17",
+        DateFrom = "2025-05-06",
+        DateTo = "2025-07-06",
     }
 });
 ```
@@ -1361,7 +1361,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "41f93df3-f107-4caa-a683-d907feaa7db3";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskGetAsync(id);
 ```
 
@@ -1415,8 +1415,8 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(new Li
         LocationName = "United States",
         Type = "youtube",
         CategoryCode = 3,
-        DateFrom = "2025-04-17",
-        DateTo = "2025-06-17",
+        DateFrom = "2025-05-06",
+        DateTo = "2025-07-06",
     }
 });
 ```
@@ -1605,8 +1605,8 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsSubregionInterestsL
         },
         LocationName = "United States",
         Type = "web",
-        DateFrom = "2025-04-17",
-        DateTo = "2025-06-17",
+        DateFrom = "2025-05-06",
+        DateTo = "2025-07-06",
     }
 });
 ```
@@ -1660,8 +1660,8 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsDemographyLiveAsync
         },
         LocationName = "United States",
         Type = "web",
-        DateFrom = "2025-04-17",
-        DateTo = "2025-06-17",
+        DateFrom = "2025-05-06",
+        DateTo = "2025-07-06",
     }
 });
 ```
@@ -1715,8 +1715,8 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsMergedDataLiveAsync
         },
         LocationName = "United States",
         Type = "web",
-        DateFrom = "2025-04-17",
-        DateTo = "2025-06-17",
+        DateFrom = "2025-05-06",
+        DateTo = "2025-07-06",
     }
 });
 ```
@@ -1936,7 +1936,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "90124676-c060-4ece-af1c-e4610493f5d2";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.BingSearchVolumeTaskGetAsync(id);
 ```
 
@@ -2223,7 +2223,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "678a7766-a39c-4cb8-bdc6-3b87cbb82b3d";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.BingAudienceEstimationTaskGetAsync(id);
 ```
 
@@ -2423,7 +2423,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "c543528c-53d4-4694-ba0d-1a0b3234bac5";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.BingKeywordsForSiteTaskGetAsync(id);
 ```
 
@@ -2609,7 +2609,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "590a0c65-6eb0-40cb-8db3-48c9ea64028b";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.BingKeywordsForKeywordsTaskGetAsync(id);
 ```
 
@@ -2841,7 +2841,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "a4da66d6-e62b-4bde-b11b-5c2b6775f89a";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.BingKeywordPerformanceTaskGetAsync(id);
 ```
 
@@ -3071,7 +3071,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "b09a55a7-59b3-4355-a5fd-2800894e9480";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.KeywordsDataApi.BingSearchVolumeHistoryTaskGetAsync(id);
 ```
 

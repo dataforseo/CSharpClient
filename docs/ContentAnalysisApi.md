@@ -32,8 +32,8 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new L
 {
     new()
     {
-        DatetimeFrom = "2025-04-17 06:10:06 +00:00",
-        DatetimeTo = "2025-06-17 06:10:06 +00:00",
+        DatetimeFrom = "2025-05-06 08:32:04 +00:00",
+        DatetimeTo = "2025-07-06 08:32:04 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -250,7 +250,7 @@ var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<Content
         Keyword = "logitech",
         KeywordFields = new Dictionary<string, string>()
         {
-            ["snippet"] = "logitech",
+            ["Snippet"] = "logitech",
         },
         PageType = new List<string>()
         {
@@ -464,7 +464,7 @@ var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<C
     {
         Keyword = "logitech",
         SearchMode = "as_is",
-        DateFrom = "2025-04-17",
+        DateFrom = "2025-05-06",
         DateGroup = "month",
     }
 });
@@ -514,7 +514,7 @@ var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List
     {
         CategoryCode = "10994",
         SearchMode = "as_is",
-        DateFrom = "2025-04-17",
+        DateFrom = "2025-05-06",
         DateGroup = "month",
     }
 });

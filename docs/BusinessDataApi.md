@@ -77,8 +77,8 @@ var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(new List<Bu
 {
     new()
     {
-        DatetimeFrom = "2025-04-17 06:10:40 +00:00",
-        DatetimeTo = "2025-06-17 06:10:40 +00:00",
+        DatetimeFrom = "2025-05-06 08:32:32 +00:00",
+        DatetimeTo = "2025-07-06 08:32:32 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -1221,7 +1221,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var id = "28b3f00e-1c3a-464a-855b-f4ab88784f02";
+var id = "00000000-0000-0000-0000-000000000000";
 var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskGetHtmlAsync(id);
 ```
 

@@ -10,4 +10,4 @@
 **Title** | **string** | reference page title |[optional]|
 **Result** | **string** | solution to the equation<br>solution to the mathematical equation specified in the keyword field when setting a task |[optional]|
 **Items** | **IEnumerable<MathSolverElement>** | contains arrays of specific images |[optional]|
-**Links** | **IEnumerable<LinkElement>** | link of the element |[optional]|
+**Links** | **IEnumerable<LinkElement>** | website links featured in the element |[optional]|

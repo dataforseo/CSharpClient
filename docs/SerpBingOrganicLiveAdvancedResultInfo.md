@@ -17,4 +17,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>answer_box, carousel, events, featured_snippet, hotels_pack, images, jobs, local_pack, map, organic, paid, people_also_ask, people_also_search, questions_and_answers,recipes, related_searches, shopping, top_stories, video, ai_overview |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpApiElementItem>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**Items** | **IEnumerable<BaseSerpApiElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|
