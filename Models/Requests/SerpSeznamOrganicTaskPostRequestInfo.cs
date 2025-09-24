@@ -92,9 +92,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>number of results in SERP
         /// <br/>default value: 10;
         /// <br/>maximum value: 500;
-        /// <br/>Note: your account will be billed per each SERP containing up to 10 results;
-        /// <br/>thus, setting a depth above 10 may result in additional charges if the search engine returns more than 10 results;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+        /// <br/>Your account will be billed per each SERP containing up to 10 results;
+        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
@@ -103,6 +103,7 @@ namespace DataForSeo.Client.Models.Requests
         /// page crawl limit
         /// <br/>optional field
         /// <br/>number of search results pages to crawl
+        /// <br/>default value: 1
         /// <br/>max value: 10
         /// <br/>Note: the max_crawl_pages and depth parameters complement each other;
         /// <br/>learn more at our help center
@@ -149,7 +150,7 @@ namespace DataForSeo.Client.Models.Requests
         public string SearchParam { get; set; }
 
         /// <summary>
-        /// calcualte pixel rankings for SERP elements in advanced results
+        /// calculate pixel rankings for SERP elements in advanced results
         /// <br/>optional field
         /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
         /// <br/>Visit Help Center to learn more&gt;&gt;

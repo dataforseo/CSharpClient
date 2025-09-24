@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// lost ranked elements
-        /// <br/>indicates how many ranked elements of this domain were previously presented in SERPs, but weren’t found during the last check
+        /// <br/>indicates how many ranked elements of this target were previously presented in SERPs, but weren’t found during the last check
         /// </summary>
         [JsonProperty("is_lost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsLost { get; set; }

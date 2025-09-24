@@ -1,0 +1,33 @@
+# BingOrganicSerpElementItem
+
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+**Domain** | **string** | domain in SERP |[optional]|
+**Title** | **string** | title of the results element in SERP |[optional]|
+**Description** | **string** | description of the results element in SERP |[optional]|
+**Url** | **string** | relevant URL in SERP |[optional]|
+**Breadcrumb** | **string** | breadcrumb in SERP |[optional]|
+**CacheUrl** | **string** | cached version of the page |[optional]|
+**RelatedSearchUrl** | **string** | URL to a similar search<br>URL to a new search for the same keyword(s) on related sites |[optional]|
+**WebsiteName** | **string** | name of the source website |[optional]|
+**IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
+**IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
+**IsFeaturedSnippet** | **bool?** | indicates whether the element is a featured_snippet |[optional]|
+**IsMalicious** | **bool?** | indicates whether the element is marked as malicious |[optional]|
+**IsWebStory** | **bool?** | indicates whether the element is marked as a web story |[optional]|
+**PreSnippet** | **string** | includes additional information appended before the result description in SERP |[optional]|
+**ExtendedSnippet** | **string** | includes additional information appended after the result description in SERP |[optional]|
+**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element |[optional]|
+**AmpVersion** | **bool?** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
+**Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result |[optional]|
+**Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
+**Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some search results<br>if there are none, equals null |[optional]|
+**Faq** | **FaqBox** | frequently asked questions<br>questions and answers extension shown below some search results<br>if there are none, equals null |[optional]|
+**ExtendedPeopleAlsoSearch** | **IEnumerable<string>** | extension of the organic element<br>extension of the organic result containing related search queries<br>Note: extension appears in SERP upon clicking on the result and then bouncing back to search results |[optional]|
+**AboutThisResult** | **AboutThisResultElement** | contains information from the ‘About this result’ panel<br>note: about_this_result feature is not available in Bing search engine, that’s why it always equals null |[optional]|
+**RelatedResult** | **IEnumerable<RelatedResult>** | related result from the same domain<br>related result from the same domain appears as a part of the main result snippet;<br>note: related_result feature is not available in Bing search engine, that’s why it always equals null |[optional]|
+**Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|

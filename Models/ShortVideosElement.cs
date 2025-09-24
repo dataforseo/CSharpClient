@@ -21,16 +21,16 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// website domain
-        /// </summary>
-        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Domain { get; set; }
-
-        /// <summary>
         /// URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
+
+        /// <summary>
+        /// website domain
+        /// </summary>
+        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Domain { get; set; }
 
         /// <summary>
         /// source of the element

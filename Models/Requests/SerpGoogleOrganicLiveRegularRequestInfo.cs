@@ -124,11 +124,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 100
+        /// <br/>default value: 10
         /// <br/>max value: 700
-        /// <br/>Note: your account will be billed per each SERP containing up to 100 results;
-        /// <br/>thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+        /// <br/>Your account will be billed per each SERP containing up to 10 results;
+        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
@@ -165,7 +165,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>number of search results pages to crawl
         /// <br/>max value: 100
-        /// <br/>Note: the max_crawl_pages and depth parameters complement each other;
+        /// <br/>Note: you will be charged for each page crawled (10 organic results per page);
+        /// <br/>learn more about pricing on our Pricing page;
+        /// <br/>Note#2: the max_crawl_pages and depth parameters complement each other;
         /// <br/>learn more at our help center
         /// </summary>
         [JsonProperty("max_crawl_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -16,6 +16,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// current AI search volume rate of a keyword
+        /// <br/>learn more about this metric here
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }

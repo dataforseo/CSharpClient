@@ -25,8 +25,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
-        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’ the charge per task will be multiplied by 5
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’ the charge per task will be multiplied by 5learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -37,8 +36,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
         /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>The price per task with high execution priority is multiplied by 1.5, and the task is executed within 1 minute
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
@@ -123,11 +121,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 100
+        /// <br/>default value: 10
         /// <br/>max value: 700
-        /// <br/>Note: your account will be billed per each SERP containing up to 100 results;
-        /// <br/>thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+        /// <br/>Your account will be billed per each SERP containing up to 10 results;
+        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
@@ -136,6 +134,7 @@ namespace DataForSeo.Client.Models.Requests
         /// page crawl limit
         /// <br/>optional field
         /// <br/>number of search results pages to crawl
+        /// <br/>default value: 1
         /// <br/>max value: 100
         /// <br/>Note: the max_crawl_pages and depth parameters complement each other;
         /// <br/>learn more at our help center
@@ -144,12 +143,12 @@ namespace DataForSeo.Client.Models.Requests
         public int? MaxCrawlPages { get; set; }
 
         /// <summary>
-        /// calcualte pixel rankings for SERP elements in advanced results
+        /// calculate pixel rankings for SERP elements in advanced results
         /// <br/>optional field
         /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
         /// <br/>Visit Help Center to learn more&gt;&gt;
         /// <br/>by default, the parameter is set to false
-        /// <br/>Note: if set to true, the charge per task will be multiplied by 2
+        /// <br/>Note: you will be charged extra $0.002 for using this parameter
         /// </summary>
         [JsonProperty("calculate_rectangles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CalculateRectangles { get; set; }

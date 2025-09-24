@@ -118,9 +118,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>max value for desktop: 100
         /// <br/>default value for mobile: 10
         /// <br/>max value for mobile: 100
-        /// <br/>Note: your account will be billed per each SERP containing up to 20 results for desktop or up to 10 results for a mobile device;
-        /// <br/>thus, setting a depth above 20 for desktop or above 10 for mobile may result in additional charges if the search engine returns more than 20 or 10 results respectively;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
+        /// <br/>Your account will be billed per each SERP containing up to 20 results for desktop or up to 10 results for a mobile device;
+        /// <br/>Setting depth above 20 for desktop or above 10 for mobile may result in additional charges if the search engine returns more than 20 or 10 results respectively;;
+        /// <br/>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }

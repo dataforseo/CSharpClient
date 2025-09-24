@@ -5,9 +5,10 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
-    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
+    [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
     [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
+    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
+    [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
     [JsonInheritance("answer_box", typeof(DataLabsAnswerBoxSerpElementItem))]
     [JsonInheritance("carousel", typeof(DataLabsCarouselSerpElementItem))]
     [JsonInheritance("multi_carousel", typeof(DataLabsMultiCarouselSerpElementItem))]
@@ -19,7 +20,6 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("knowledge_graph", typeof(DataLabsKnowledgeGraphSerpElementItem))]
     [JsonInheritance("hotels_pack", typeof(DataLabsHotelsPackSerpElementItem))]
     [JsonInheritance("map", typeof(DataLabsMapSerpElementItem))]
-    [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
     [JsonInheritance("people_also_ask", typeof(DataLabsPeopleAlsoAskSerpElementItem))]
     [JsonInheritance("related_searches", typeof(DataLabsRelatedSearchesSerpElementItem))]
     [JsonInheritance("people_also_search", typeof(DataLabsPeopleAlsoSearchSerpElementItem))]

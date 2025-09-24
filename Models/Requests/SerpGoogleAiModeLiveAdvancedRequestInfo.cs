@@ -108,7 +108,7 @@ namespace DataForSeo.Client.Models.Requests
         public string Os { get; set; }
 
         /// <summary>
-        /// calcualte pixel rankings for SERP elements in advanced results
+        /// calculate pixel rankings for SERP elements in advanced results
         /// <br/>optional field
         /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
         /// <br/>Visit Help Center to learn more&gt;&gt;

@@ -113,6 +113,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("responses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ReviewResponseItemInfo> Responses { get; set; }
 
+        /// <summary>
+        /// review highlights
+        /// <br/>contains highlighted review criteria and assessments
+        /// </summary>
+        [JsonProperty("review_highlights", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public object ReviewHighlights { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

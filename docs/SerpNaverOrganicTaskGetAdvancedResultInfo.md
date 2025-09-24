@@ -16,5 +16,6 @@
 **RefinementChips** | **RefinementChipsInfo** | search refinement chips<br>equals null |[optional]|
 **ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>images, local_pack, map, organic, paid, related_searches, video |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
+**PagesCount** | **long?** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
 **Items** | **IEnumerable<BaseSerpApiElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|

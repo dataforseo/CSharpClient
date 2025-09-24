@@ -16,5 +16,6 @@
 **RefinementChips** | **RefinementChipsInfo** | search refinement chips<br>equals null |[optional]|
 **ItemTypes** | **IEnumerable<string>** | types of search results found in SERP<br>contains types of all search results (items) found in the returned SERP<br>possible item types:<br>images, local_pack, map, organic, paid, related_searches, video<br>note that this array contains all types of search results found in the returned SERP;<br>however, this endpoint provides data for organic and paid types only<br>to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the Naver Organiс Advanced SERP endpoint |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
+**PagesCount** | **long?** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
 **Items** | **IEnumerable<BaseSerpApiElementItem>** | items in SERP |[optional]|

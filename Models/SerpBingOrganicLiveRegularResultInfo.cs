@@ -84,6 +84,13 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
+        /// total pages retrieved
+        /// <br/>total number of retrieved SERPs in the result
+        /// </summary>
+        [JsonProperty("pages_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? PagesCount { get; set; }
+
+        /// <summary>
         /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -94,7 +101,7 @@ namespace DataForSeo.Client.Models
         /// <br/>array of 8 search queries related to the keyword
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpApiElementItem> Items { get; set; }
+        public IEnumerable<BaseBingSerpApiElementItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// elements of search results found in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ShortVideosElement> Items { get; set; }
+        public IEnumerable<FindResultsOnElement> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

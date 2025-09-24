@@ -16,6 +16,13 @@ namespace DataForSeo.Client.Models
         public int? PriceMultiplier { get; set; }
 
         /// <summary>
+        /// installment details as displayed in the results
+        /// <br/>shows how the product price can be broken down into monthly payments, if applicable
+        /// </summary>
+        [JsonProperty("displayed_payment_breakdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DisplayedPaymentBreakdown { get; set; }
+
+        /// <summary>
         /// indicated condition of the product
         /// <br/>possible values: Used, Refurbished, New, null
         /// </summary>

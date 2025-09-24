@@ -82,7 +82,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>number of reviews to be returned in the API response;
         /// <br/>we strongly recommend setting the parsing depth in the multiples of 50, because our system processes 50 reviews in a row;
         /// <br/>default value: 50;
-        /// <br/>maximum value: 500
+        /// <br/>maximum value: 500;
+        /// <br/>Your account will be billed per each SERP containing up to 50 results;
+        /// <br/>Setting depth above 50 may result in additional charges if the search engine returns more than 50 results;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }

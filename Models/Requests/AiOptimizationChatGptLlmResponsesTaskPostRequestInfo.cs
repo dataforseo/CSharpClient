@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: 0
         /// <br/>maximum value: 2
         /// <br/>default value: 0.94
-        /// <br/>Note: not supported in o4-mini, o3-mini, o1-pro, o1 models
+        /// <br/>Note: not supported in reasoning models
         /// </summary>
         [JsonProperty("temperature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Temperature { get; set; }
@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: 0
         /// <br/>maximum value: 1
         /// <br/>default value: 0.92
-        /// <br/>Note: not supported in o4-mini, o3-mini, o1-pro, o1 models
+        /// <br/>Note: not supported in reasoning models
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TopP { get; set; }

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpApiPeopleAlsoAskAiOverviewElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
         /// additional references relevant to the item

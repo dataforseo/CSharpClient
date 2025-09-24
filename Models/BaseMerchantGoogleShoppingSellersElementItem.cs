@@ -32,8 +32,8 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// alignment of the element in SERP
-        /// <br/>can take the following values:
+        /// the alignment of the element in Google Shopping SERP
+        /// <br/>possible values:
         /// <br/>left, right
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

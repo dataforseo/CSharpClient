@@ -7,6 +7,8 @@ namespace DataForSeo.Client.Models
 
     public class SerpApiGoogleNewsTopStoriesElementItem  : BaseSerpApiGoogleNewsElementItem 
     {
+        [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Page { get; set; }
 
         /// <summary>
         /// the alignment of the element in SERP

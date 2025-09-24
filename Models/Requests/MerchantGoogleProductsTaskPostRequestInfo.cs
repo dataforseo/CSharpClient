@@ -23,9 +23,8 @@ namespace DataForSeo.Client.Models.Requests
         /// direct URL of the search query
         /// <br/>optional field
         /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-        /// <br/>Note: you may use the &amp;udm=28 parameter in the direct URL to use the new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly);the maximum depth is 200; this parameter must be specified without tbm=shop ;
         /// <br/>example:
-        /// <br/>https:\/\/www.google.com\/search?q=fish&amp;hl=en&amp;gl=US&amp;gws_rd=cr&amp;uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc&amp;udm=28
+        /// <br/>https://www.google.com/search?q=fish&amp;hl=en&amp;gl=US&amp;gws_rd=cr&amp;uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -114,11 +113,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results to be retrieved from the Google Shopping results page
-        /// <br/>default value: 100
-        /// <br/>max value: 700
-        /// <br/>Note: your account will be billed per each results page containing up to 100 results;
-        /// <br/>thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+        /// <br/>default value: 40
+        /// <br/>max value: 120
+        /// <br/>Your account will be billed per each SERP containing up to 40 results;
+        /// <br/>Setting depth above 40 may result in additional charges if the search engine returns more than 40 results;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }

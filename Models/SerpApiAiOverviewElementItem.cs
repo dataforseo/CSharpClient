@@ -9,14 +9,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of a given link element
+        /// title of the element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// reference text
-        /// <br/>text snippet from the page that was used to generate the ai_overview_element
+        /// additional text of the element in SERP
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
@@ -28,14 +27,15 @@ namespace DataForSeo.Client.Models
         public string Markdown { get; set; }
 
         /// <summary>
-        /// website links featured in the element
+        /// sitelinks
+        /// <br/>the links shown below some of Google’s search results
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
 
         /// <summary>
-        /// images of the component
-        /// <br/>if there are none, equals null
+        /// images of the element
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }

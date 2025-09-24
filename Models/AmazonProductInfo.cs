@@ -101,6 +101,12 @@ namespace DataForSeo.Client.Models
         public double? PriceTo { get; set; }
 
         /// <summary>
+        /// value of the percentage discount
+        /// </summary>
+        [JsonProperty("percentage_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string PercentageDiscount { get; set; }
+
+        /// <summary>
         /// currency in the ISO format
         /// <br/>example:
         /// <br/>USD

@@ -15,6 +15,13 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
+        /// search results page number
+        /// <br/>indicates the number of the SERP page on which the element is located
+        /// </summary>
+        [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Page { get; set; }
+
+        /// <summary>
         /// the XPath of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

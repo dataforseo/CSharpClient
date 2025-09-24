@@ -17,4 +17,4 @@
 **ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>local_pack |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpApiElementItem>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<BaseBingSerpApiElementItem>** | elements of search results found in SERP |[optional]|

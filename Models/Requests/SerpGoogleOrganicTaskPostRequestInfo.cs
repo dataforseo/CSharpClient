@@ -38,8 +38,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default);
         /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority;
-        /// <br/>The cost can be calculated on the Pricing page
+        /// <br/>You will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
@@ -48,11 +48,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 100
+        /// <br/>default value: 10
         /// <br/>max value: 700
-        /// <br/>Note: your account will be billed per each SERP containing up to 100 results;
-        /// <br/>thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+        /// <br/>Your account will be billed per each SERP containing up to 10 results;
+        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
@@ -62,7 +62,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>number of search results pages to crawl
         /// <br/>max value: 100
-        /// <br/>Note: the max_crawl_pages and depth parameters complement each other;
+        /// <br/>Note: you will be charged for each page crawled (10 organic results per page);
+        /// <br/>learn more about pricing on our Pricing page;
+        /// <br/>Note#2: the max_crawl_pages and depth parameters complement each other;
         /// <br/>learn more at our help center
         /// </summary>
         [JsonProperty("max_crawl_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -173,7 +175,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
         /// <br/>Visit Help Center to learn more&gt;&gt;
         /// <br/>by default, the parameter is set to false
-        /// <br/>Note: if set to true, the charge per task will be multiplied by 2
+        /// <br/>Note: you will be charged extra $0.0006 for using this parameter
         /// </summary>
         [JsonProperty("calculate_rectangles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CalculateRectangles { get; set; }
@@ -234,7 +236,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
         /// <br/>if set to false, you will only obtain ai_overview items from cache;
         /// <br/>default value: false
-        /// <br/>Note your account will be billed $0.0006-$0.0012 extra for each request, depending on the priority;
+        /// <br/>Note: you will be charged extra $0.0006 for using this parameter;
         /// <br/>if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
         /// </summary>
         [JsonProperty("load_async_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

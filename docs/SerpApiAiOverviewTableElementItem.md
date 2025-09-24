@@ -5,5 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Markdown** | **string** | text of the component in the markdwon format |[optional]|
-**Table** | **Table** | table present in the element<br>the header and content of the table present in the element |[optional]|
+**Markdown** | **string** | content of the element in markdown format |[optional]|
+**Table** | **Table** | table element |[optional]|
+**References** | **IEnumerable<AiModeAiOverviewReferenceInfo>** | references relevant to the element |[optional]|

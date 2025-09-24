@@ -71,6 +71,18 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
+        /// value of the percentage discount
+        /// </summary>
+        [JsonProperty("percentage_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? PercentageDiscount { get; set; }
+
+        /// <summary>
+        /// array of objects containing information about applicable vouchers
+        /// </summary>
+        [JsonProperty("applicable_vouchers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AmazonApplicableVouchersItem> ApplicableVouchers { get; set; }
+
+        /// <summary>
         /// seller rating details
         /// <br/>seller popularity rate based on customer reviews
         /// </summary>

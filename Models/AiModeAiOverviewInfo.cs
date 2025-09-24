@@ -28,6 +28,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
+        [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Page { get; set; }
 
         /// <summary>
         /// the alignment of the element in SERP

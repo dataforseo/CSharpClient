@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpApiKnowledgeGraphAiOverviewElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
         /// additional references relevant to the item

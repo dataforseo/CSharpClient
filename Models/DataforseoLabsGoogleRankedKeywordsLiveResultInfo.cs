@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// target domain in a POST array
+        /// target domain or webpage in a POST array
         /// </summary>
         [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -47,14 +47,14 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// ranking data relevant to the specified domain
+        /// ranking data relevant to the specified domain or webpage 
         /// <br/>ranking data is provided by the rank_group parameters that show the result’s rank considering only equivalent SERP elements
         /// </summary>
         [JsonProperty("metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
-        /// ranking data relevant to the specified domain
+        /// ranking data relevant to the specified domain or webpage
         /// <br/>ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements
         /// </summary>
         [JsonProperty("metrics_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

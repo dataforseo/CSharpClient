@@ -9,12 +9,6 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// the time of publication
-        /// </summary>
-        [JsonProperty("response_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string ResponseId { get; set; }
-
-        /// <summary>
         /// the title of response
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -31,12 +25,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
-
-        /// <summary>
-        /// the time of publication
-        /// </summary>
-        [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Language { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

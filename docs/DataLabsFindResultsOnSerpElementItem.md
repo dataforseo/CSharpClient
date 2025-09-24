@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<ShortVideosElement>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<FindResultsOnElement>** | elements of search results found in SERP |[optional]|

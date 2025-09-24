@@ -9,17 +9,22 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// text of the component in the markdwon format
+        /// content of the element in markdown format
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
 
         /// <summary>
-        /// table present in the element
-        /// <br/>the header and content of the table present in the element
+        /// table element
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }
+
+        /// <summary>
+        /// references relevant to the element
+        /// </summary>
+        [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

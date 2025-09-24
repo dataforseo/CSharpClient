@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// contains arrays of specific images
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BaseSerpApiKnowledgeGraphAiOverviewElementItem> Items { get; set; }
+        public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
         /// references relevant to the element

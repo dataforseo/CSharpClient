@@ -116,9 +116,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>number of results in SERP
         /// <br/>default value: 100
         /// <br/>max value: 700
-        /// <br/>Note: your account will be billed per each SERP containing up to 100 results;
-        /// <br/>thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results;
-        /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+        /// <br/>Your account will be billed per each SERP containing up to 100 results;
+        /// <br/>Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;
+        /// <br/>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;
+        /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
