@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// domain in SERP of the Ad element
+        /// subdomain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public string Phone { get; set; }
 
         /// <summary>
-        /// result’s URL
+        /// relevant URL in SERP
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -73,8 +73,9 @@ namespace DataForSeo.Client.Models
         public double? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of paid monthly search traffic
-        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
+        /// estimated cost of converting organic search traffic into paid
+        /// <br/>represents the estimated monthly cost of running ads (USD) for the returned keyword
+        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

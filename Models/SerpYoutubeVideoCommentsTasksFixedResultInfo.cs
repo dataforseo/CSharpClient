@@ -27,12 +27,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
-
-        /// <summary>
-        /// date when the task was fixed (in the UTC format)
-        /// </summary>
-        [JsonProperty("date_fixed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DateFixed { get; set; }
+        [JsonProperty("date_posted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DatePosted { get; set; }
 
         /// <summary>
         /// user-defined task identifier

@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>model_nameconsists of the actual model name and version name;
         /// <br/>if the basic model name is specified, its latest version will be set by default;
-        /// <br/>you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_responses/models
+        /// <br/>you can receive the list of available LLM models by making a separate request to the following endpoint: https://api.dataforseo.com/v3/ai_optimization/perplexity/llm_responses/models
         /// </summary>
         [JsonProperty("model_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string ModelName { get; set; }

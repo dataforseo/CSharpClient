@@ -45,8 +45,8 @@ var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(new List<Backlink
 {
     new()
     {
-        DatetimeFrom = "2025-06-24 11:16:22 +00:00",
-        DatetimeTo = "2025-08-24 11:16:22 +00:00",
+        DatetimeFrom = "2025-07-14 10:26:34 +00:00",
+        DatetimeTo = "2025-09-14 10:26:34 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -278,8 +278,8 @@ var result = await dfsClient.BacklinksApi.HistoryLiveAsync(new List<BacklinksHis
     new()
     {
         Target = "cnn.com",
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
     }
 });
 ```
@@ -781,8 +781,8 @@ var result = await dfsClient.BacklinksApi.TimeseriesSummaryLiveAsync(new List<Ba
     new()
     {
         Target = "dataforseo.com",
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
         GroupRange = "month",
     }
 });
@@ -831,8 +831,8 @@ var result = await dfsClient.BacklinksApi.TimeseriesNewLostSummaryLiveAsync(new 
     new()
     {
         Target = "dataforseo.com",
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
         GroupRange = "month",
     }
 });
@@ -1129,7 +1129,7 @@ var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(new List
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        DateFrom = "2025-06-24",
+        DateFrom = "2025-07-14",
     }
 });
 ```
@@ -1189,7 +1189,7 @@ var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(n
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        DateFrom = "2025-06-24",
+        DateFrom = "2025-07-14",
     }
 });
 ```

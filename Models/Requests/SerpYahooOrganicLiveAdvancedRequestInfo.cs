@@ -123,10 +123,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 10
+        /// <br/>default value: 6
         /// <br/>max value: 700
-        /// <br/>Your account will be billed per each SERP containing up to 10 results;
-        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>Your account will be billed per each SERP;
+        /// <br/>Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -143,6 +143,23 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("max_crawl_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxCrawlPages { get; set; }
+
+        /// <summary>
+        /// target domain, subdomain, or webpage to get results for
+        /// <br/>optional field
+        /// <br/>a domain or a subdomain should be specified without https:// and www.
+        /// <br/>note that the results of target-specific tasks will only include SERP elements that contain a url string;
+        /// <br/>you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
+        /// <br/>examples:
+        /// <br/>example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
+        /// <br/>example.com* – returns results for the domain, including all its pages;
+        /// <br/>*example.com* – returns results for the entire domain, including all its pages and subdomains;
+        /// <br/>*example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com;
+        /// <br/>example.com/example-page  – returns results for the exact URL;
+        /// <br/>example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
+        /// </summary>
+        [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Target { get; set; }
 
         /// <summary>
         /// additional parameters of the search query

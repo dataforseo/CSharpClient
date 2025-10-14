@@ -135,10 +135,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 10
+        /// <br/>default value: 6
         /// <br/>max value: 700
-        /// <br/>Your account will be billed per each SERP containing up to 10 results;
-        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>Your account will be billed per each SERP;
+        /// <br/>Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

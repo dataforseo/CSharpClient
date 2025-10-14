@@ -266,7 +266,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>using this field, you can specify up to 10 parameters to remove from URLs in the result
         /// <br/>example:
         /// <br/>'remove_from_url': ['srsltid']
-        /// <br/>Note: if the target field is specified, the specified URL parameters will be removed before the search
         /// </summary>
         [JsonProperty("remove_from_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> RemoveFromUrl { get; set; }

@@ -144,7 +144,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>&amp;tbs=p_ord:pd – sort by descending price;
         /// <br/>&amp;tbs=p_ord:rv – sort by review score;
         /// <br/>&amp;tbs=ppr_max:50,p_ord:rv – sort by review score with the maximum price of 50 USD.;
-        /// <br/>&amp;udm=28 – use new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly);the maximum depth is 200; this parameter must be specified without tbm=shop in the url;
+        /// <br/>&amp;udm=28 – use new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly); the maximum depth is 200; this parameter must be specified without tbm=shop in the url;
+        /// <br/>&amp;shoprs=$value – specify advanced filtering and sorting in the new Shopping markup; replace $value with a string in protobuf Base64 format; learn more on our help center.
         /// <br/>Note that search_param values will be ignored if any of the following parameters are used: price_min, price_max, sort_by
         /// </summary>
         [JsonProperty("search_param", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

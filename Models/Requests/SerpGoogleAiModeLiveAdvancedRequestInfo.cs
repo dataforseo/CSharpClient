@@ -21,18 +21,6 @@ namespace DataForSeo.Client.Models.Requests
         public string Keyword { get; set; }
 
         /// <summary>
-        /// task priority
-        /// <br/>optional field
-        /// <br/>can take the following values:
-        /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
-        /// </summary>
-        [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Priority { get; set; }
-
-        /// <summary>
         /// full name of search engine location
         /// <br/>required field if you don’t specify location_code or location_coordinate
         /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate

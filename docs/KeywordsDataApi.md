@@ -91,8 +91,8 @@ var result = await dfsClient.KeywordsDataApi.KeywordsDataIdListAsync(new List<Ke
 {
     new()
     {
-        DatetimeFrom = "2025-06-24 11:16:05 +00:00",
-        DatetimeTo = "2025-08-24 11:16:05 +00:00",
+        DatetimeFrom = "2025-07-14 10:26:16 +00:00",
+        DatetimeTo = "2025-09-14 10:26:16 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -500,7 +500,7 @@ var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(new 
         },
         LocationCode = 2840,
         SearchPartners = true,
-        DateFrom = "2025-06-24",
+        DateFrom = "2025-07-14",
     }
 });
 ```
@@ -1276,8 +1276,8 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(ne
         },
         Type = "youtube",
         CategoryCode = 3,
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
     }
 });
 ```
@@ -1415,8 +1415,8 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(new Li
         LocationName = "United States",
         Type = "youtube",
         CategoryCode = 3,
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
     }
 });
 ```
@@ -1605,8 +1605,8 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsSubregionInterestsL
         },
         LocationName = "United States",
         Type = "web",
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
     }
 });
 ```
@@ -1660,8 +1660,8 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsDemographyLiveAsync
         },
         LocationName = "United States",
         Type = "web",
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
     }
 });
 ```
@@ -1715,8 +1715,8 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsMergedDataLiveAsync
         },
         LocationName = "United States",
         Type = "web",
-        DateFrom = "2025-06-24",
-        DateTo = "2025-08-24",
+        DateFrom = "2025-07-14",
+        DateTo = "2025-09-14",
     }
 });
 ```
