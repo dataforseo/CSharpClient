@@ -8,6 +8,13 @@ namespace DataForSeo.Client.Models
     public class GoogleShoppingSellersBuyOnGoogleElementItem  : BaseMerchantGoogleShoppingSellersElementItem 
     {
 
+        /// <summary>
+        /// shop rating
+        /// <br/>the shop popularity rate based on product reviews
+        /// </summary>
+        [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public RatingInfo Rating { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

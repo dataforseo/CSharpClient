@@ -112,13 +112,6 @@ namespace DataForSeo.Client.Models
         public string SellerName { get; set; }
 
         /// <summary>
-        /// shop rating
-        /// <br/>the shop popularity rate based on product reviews
-        /// </summary>
-        [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
-
-        /// <summary>
         /// unique ad click referral parameter
         /// <br/>using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
         /// </summary>

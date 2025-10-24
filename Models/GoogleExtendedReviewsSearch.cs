@@ -74,7 +74,7 @@ namespace DataForSeo.Client.Models
         /// the rating score submitted by the reviewer
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// total number of reviews submitted by the reviewer

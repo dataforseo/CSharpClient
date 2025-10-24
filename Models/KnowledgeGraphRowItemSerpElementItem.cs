@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// reference page title
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }

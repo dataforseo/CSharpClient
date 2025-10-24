@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<PeopleAlsoAskElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**Items** | **IEnumerable<PeopleAlsoAskElement>** | additional items present in the element<br>if there are none, equals null |[optional]|

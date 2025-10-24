@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         public long? ReviewsCount { get; set; }
 
         /// <summary>
-        /// reference page title
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -44,11 +44,11 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// the element’s rating
+        /// the item’s rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -71,7 +71,7 @@ namespace DataForSeo.Client.Models
         /// the rating score of the establishment submitted by the reviewers
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

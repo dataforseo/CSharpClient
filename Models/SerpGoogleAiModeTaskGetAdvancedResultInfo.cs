@@ -90,7 +90,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// items present in the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewInfo> Items { get; set; }

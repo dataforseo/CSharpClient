@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// primary domain name in SERP
@@ -65,17 +65,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated organic monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+        /// <br/>estimated paid monthly traffic to the target
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of converting organic search traffic into paid
-        /// <br/>represents the estimated monthly cost of running ads (USD) for the returned keyword
-        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
+        /// estimated cost of monthly search traffic
+        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -98,7 +97,7 @@ namespace DataForSeo.Client.Models
         public RankChanges RankChanges { get; set; }
 
         /// <summary>
-        /// backlinks information for the ranked website
+        /// backlinks information for the target website
         /// </summary>
         [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }

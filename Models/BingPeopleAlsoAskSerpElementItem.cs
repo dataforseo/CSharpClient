@@ -9,7 +9,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<PeopleAlsoAskElement> Items { get; set; }

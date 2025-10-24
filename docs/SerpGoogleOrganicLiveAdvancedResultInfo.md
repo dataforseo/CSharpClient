@@ -18,4 +18,4 @@
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **PagesCount** | **long?** | total search results pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpApiElementItem>** | contains arrays of elements available in the list |[optional]|
+**Items** | **IEnumerable<BaseSerpApiElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|

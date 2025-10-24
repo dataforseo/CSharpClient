@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// reference page title
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -38,13 +38,13 @@ namespace DataForSeo.Client.Models
         public string Source { get; set; }
 
         /// <summary>
-        /// text alongside the link title
+        /// description of the shopping element
         /// </summary>
         [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Snippet { get; set; }
 
         /// <summary>
-        /// price indicated in the element
+        /// price of the shopping element
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

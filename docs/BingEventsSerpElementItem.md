@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the item |[optional]|
-**Url** | **string** | URL |[optional]|
-**Items** | **IEnumerable<EventsElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**Title** | **string** | title of the result in SERP |[optional]|
+**Url** | **string** | relevant URL |[optional]|
+**Items** | **IEnumerable<EventsElement>** | additional items present in the element<br>if there are none, equals null |[optional]|

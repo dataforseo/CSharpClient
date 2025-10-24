@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Title** | **string** | title of a given shopping element |[optional]|
+**Title** | **string** | title of the result in SERP |[optional]|
 **Alt** | **string** | alt tag of the image |[optional]|
-**Url** | **string** | URL |[optional]|
-**ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**Url** | **string** | URL of the third-party review source |[optional]|
+**ImageUrl** | **string** | URL to the image thumbnail of the video |[optional]|

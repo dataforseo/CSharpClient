@@ -23,6 +23,13 @@ namespace DataForSeo.Client.Models
         public string DisplayedPaymentBreakdown { get; set; }
 
         /// <summary>
+        /// shop rating
+        /// <br/>the shop popularity rate based on product reviews
+        /// </summary>
+        [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public RatingElement Rating { get; set; }
+
+        /// <summary>
         /// indicated condition of the product
         /// <br/>possible values: Used, Refurbished, New, null
         /// </summary>

@@ -138,8 +138,7 @@ namespace DataForSeo.Client.Models
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result
+        /// price of booking a place for the specified dates of stay
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

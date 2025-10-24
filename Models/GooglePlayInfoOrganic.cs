@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// average rating of the app
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// price of the app

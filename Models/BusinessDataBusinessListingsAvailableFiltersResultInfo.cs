@@ -8,9 +8,9 @@ namespace DataForSeo.Client.Models
     public class BusinessDataBusinessListingsAvailableFiltersResultInfo 
     {
         [JsonProperty("search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, string> Search { get; set; }
+        public Info Search { get; set; }
         [JsonProperty("categories_aggregation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, string> CategoriesAggregation { get; set; }
+        public Info CategoriesAggregation { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

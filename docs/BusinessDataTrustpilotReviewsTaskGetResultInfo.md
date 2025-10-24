@@ -13,6 +13,6 @@
 **Title** | **string** | title of the ‘reviews’ element on Trustpilot<br>the name of the business entity for which the reviews are collected |[optional]|
 **Location** | **string** | location of the business entity as specified on Trustpilot<br>address of the business entity for which the reviews are collected |[optional]|
 **ReviewsCount** | **long?** | the total number of reviews |[optional]|
-**Rating** | **RatingElement** | rating of the corresponding business entity<br>popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingInfo** | rating of the corresponding business entity<br>popularity rate based on reviews and displayed in SERP |[optional]|
 **ItemsCount** | **long?** | the number of items in the results array<br>you can get more results by using the depth parameter when setting a task |[optional]|
 **Items** | **IEnumerable<TrustpilotReviewSearch>** | found reviews<br>you can get more results by using the depth parameter when setting a task |[optional]|

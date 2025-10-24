@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of a given shopping element
+        /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -27,14 +27,13 @@ namespace DataForSeo.Client.Models
         public string Alt { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of the third-party review source
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// URL of the image
-        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+        /// URL to the image thumbnail of the video
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }

@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         /// the maximum value for a rating_type
         /// </summary>
         [JsonProperty("rating_max", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? RatingMax { get; set; }
+        public int? RatingMax { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

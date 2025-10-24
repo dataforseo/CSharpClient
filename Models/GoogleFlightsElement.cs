@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

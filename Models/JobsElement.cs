@@ -15,7 +15,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the row
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         public string Salary { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

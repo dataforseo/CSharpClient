@@ -49,6 +49,6 @@
 **UrlToStatusCode** | **int?** | status code of the referenced page<br>if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to<br>example:<br>200 |[optional]|
 **UrlToSpamScore** | **int?** | spam score of the referenced page<br>if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to;<br>learn more about how the metric is calculated on this help center page |[optional]|
 **UrlToRedirectTarget** | **string** | target url of the redirect<br>target page the redirect is pointing to |[optional]|
-**RankedKeywordsInfo** | **RankedKeywordsInfo** | number of keywords for which the page is ranked in top search results |[optional]|
+**RankedKeywordsInfo** | **BacklinkRankedKeywordsInfo** | number of keywords for which the page is ranked in top search results |[optional]|
 **IsIndirectLink** | **bool?** | indicates whether the backlink is an indirect link<br>if true, the backlink is an indirect link pointing to a page that either redirects to url_to, or points to a canonical page |[optional]|
 **IndirectLinkPath** | **IEnumerable<BacklinksRedirectInfo>** | indirect link path<br>indicates a URL or a sequence of URLs that lead to url_to |[optional]|

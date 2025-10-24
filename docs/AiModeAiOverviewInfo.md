@@ -12,6 +12,6 @@
 **Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
 **Xpath** | **string** | the XPath of the element |[optional]|
 **Markdown** | **string** | content of the element in markdown format<br>the text of the ai_overview formatted in the markdown markup language |[optional]|
-**Items** | **IEnumerable<BaseSerpApiAiModeAiOverviewElementItem>** | items of the element |[optional]|
+**Items** | **IEnumerable<BaseSerpApiAiModeAiOverviewElementItem>** | elements of search results found in SERP |[optional]|
 **References** | **IEnumerable<AiModeAiOverviewReferenceInfo>** | additional references relevant to the item<br>includes references to webpages that may have been used to generate the ai_overview |[optional]|
 **Rectangle** | **AiModeRectangleInfo** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP<br>equals null if calculate_rectangles in the POST request is not set to true |[optional]|

@@ -181,6 +181,20 @@ namespace DataForSeo.Client.Models.Requests
         public bool? ExcludeTopDomains { get; set; }
 
         /// <summary>
+        /// exclude domains from the results
+        /// <br/>optional field
+        /// <br/>use this parameter to exclude specific domains from the results
+        /// <br/>Note: you can specify up to 1000 domains in this array
+        /// <br/>example:
+        /// <br/>'exclude_domains': [
+        /// <br/>'reddit.com',
+        /// <br/>'youtube.com'
+        /// <br/>]
+        /// </summary>
+        [JsonProperty("exclude_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> ExcludeDomains { get; set; }
+
+        /// <summary>
         /// additional domains for improving results accuracy
         /// <br/>optional field
         /// <br/>to improve the accuracy of the result, you can specify domains that are known to intersect with the target in SERPs;

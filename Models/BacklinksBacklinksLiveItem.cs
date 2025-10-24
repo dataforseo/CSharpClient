@@ -326,7 +326,7 @@ namespace DataForSeo.Client.Models
         /// number of keywords for which the page is ranked in top search results
         /// </summary>
         [JsonProperty("ranked_keywords_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RankedKeywordsInfo RankedKeywordsInfo { get; set; }
+        public BacklinkRankedKeywordsInfo RankedKeywordsInfo { get; set; }
 
         /// <summary>
         /// indicates whether the backlink is an indirect link

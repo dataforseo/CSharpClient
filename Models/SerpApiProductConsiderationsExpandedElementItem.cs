@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the row
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -27,19 +27,19 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// text alongside the title
+        /// additional information for the video
         /// </summary>
         [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Snippet { get; set; }
 
         /// <summary>
-        /// domain where a link points
+        /// source domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// URL of element
+        /// URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         public string Markdown { get; set; }
 
         /// <summary>
-        /// contains arrays of specific images
+        /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }

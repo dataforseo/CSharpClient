@@ -12,4 +12,4 @@
 **Domain** | **string** | domain of the establishment |[optional]|
 **Url** | **string** | URL to the establishment |[optional]|
 **ReviewsCount** | **long?** | the total number of reviews |[optional]|
-**Rating** | **RatingElement** | the rating score of the establishment submitted by reviewers |[optional]|
+**Rating** | **RatingInfo** | the rating score of the establishment submitted by reviewers |[optional]|

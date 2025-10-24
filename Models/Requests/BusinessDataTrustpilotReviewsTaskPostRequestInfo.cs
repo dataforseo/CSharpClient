@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>number of reviews to be returned from the API response
         /// <br/>we strongly recommend setting the parsing depth in the multiples of twenty, because our system processes twenty reviews in a row
         /// <br/>default value: 20
-        /// <br/>maximum value: 25000
+        /// <br/>maximum value: 200
         /// <br/>Your account will be billed per each SERP containing up to 20 results;
         /// <br/>Setting depth above 20 may result in additional charges if the search engine returns more than 20 results;
         /// <br/>The cost can be calculated on the Pricing page.

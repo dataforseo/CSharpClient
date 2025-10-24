@@ -108,8 +108,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<AdLinkElement> Links { get; set; }
 
         /// <summary>
-        /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result
+        /// price of booking a place for the specified dates of stay
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
@@ -119,7 +118,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

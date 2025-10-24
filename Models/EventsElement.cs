@@ -15,19 +15,19 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the row
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// text alongside the link title
+        /// text alongside the title
         /// </summary>
         [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Snippet { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

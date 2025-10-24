@@ -13,7 +13,7 @@
 **Title** | **string** | title of the ‘reviews’ element in SERP<br>the name of the local establishment for which the reviews are collected |[optional]|
 **Location** | **string** | location of the local establishment<br>address of the local establishment for which the reviews are collected |[optional]|
 **ReviewsCount** | **long?** | the total number of reviews |[optional]|
-**Rating** | **RatingElement** | rating of the corresponding local establishment<br>popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingInfo** | rating of the corresponding local establishment<br>popularity rate based on reviews and displayed in SERP |[optional]|
 **RatingDistribution** | **IDictionary<string, int?>** | rating distribution by votes<br>the distribution of votes across the rating in the range from 1 to 5 |[optional]|
 **ItemsCount** | **long?** | the number of reviews items in the results array<br>you can get more results by using the depth parameter when setting a task |[optional]|
 **Items** | **IEnumerable<TripadvisorReviewSearch>** | found reviews<br>you can get more results by using the depth parameter when setting a task |[optional]|

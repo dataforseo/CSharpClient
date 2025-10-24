@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// reference page title
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// contains arrays of specific images
+        /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleFlightsElement> Items { get; set; }

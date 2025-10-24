@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the item
+        /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// domain where the video is hosted
+        /// domain of the organic result
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public string Phone { get; set; }
 
         /// <summary>
-        /// URL
+        /// relevant URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -45,11 +45,11 @@ namespace DataForSeo.Client.Models
         public bool? IsPaid { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item’s rating
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// bing-defined client id

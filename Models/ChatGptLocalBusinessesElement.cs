@@ -61,7 +61,7 @@ namespace DataForSeo.Client.Models
         /// <br/>popularity rate based on reviews as displayed in the results
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

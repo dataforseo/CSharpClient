@@ -91,6 +91,33 @@ namespace DataForSeo.Client.Models
         public long? SellerReviewsCount { get; set; }
 
         /// <summary>
+        /// unique identifier of the SERP data element
+        /// <br/>note that there is no full list of possible values as the data_docid is a dynamic value assigned by Google
+        /// <br/>example:
+        /// <br/>17363035694596624076
+        /// </summary>
+        [JsonProperty("data_docid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DataDocid { get; set; }
+
+        /// <summary>
+        /// global product identifier on Google Shopping
+        /// <br/>note that there is no full list of possible values as the gid is a dynamic value assigned by Google
+        /// <br/>if there are no values, you will get null
+        /// <br/>example:
+        /// <br/>4702526954592161872
+        /// <br/>learn more about gid in this help center guide
+        /// </summary>
+        [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Gid { get; set; }
+
+        /// <summary>
+        /// product specifications
+        /// <br/>contains all product attributes and related data listed on the product specification page
+        /// </summary>
+        [JsonProperty("specifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ShoppingSpecification> Specifications { get; set; }
+
+        /// <summary>
         /// sellers of the product
         /// <br/>number of reviews on the product seller’s account
         /// </summary>

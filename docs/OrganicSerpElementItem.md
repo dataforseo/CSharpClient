@@ -25,7 +25,7 @@
 **Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
 **AmpVersion** | **bool?** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
 **Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
-**Price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result |[optional]|
+**Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
 **Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
 **Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
 **Faq** | **FaqBox** | frequently asked questions<br>questions and answers extension shown below some of Google’s search results<br>if there are none, equals null |[optional]|

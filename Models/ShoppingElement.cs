@@ -15,13 +15,13 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the row
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// price indicated in the element
+        /// price of the app element
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// merchant account provider
-        /// <br/>commerce site that hosts products or websites of individual sellers under the same merchant account
+        /// <br/>ecommerce site that hosts products or websites of individual sellers under the same merchant account
         /// <br/>example:
         /// <br/>by Google
         /// </summary>
@@ -49,24 +49,24 @@ namespace DataForSeo.Client.Models
         public string Marketplace { get; set; }
 
         /// <summary>
-        /// relevant marketplace URL
-        /// <br/>URL of the page on the marketplace website where the product is hosted
+        /// URL to the merchant account provider
+        /// <br/>ecommerce site that hosts products or websites of individual sellers under the same merchant account
         /// </summary>
         [JsonProperty("marketplace_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MarketplaceUrl { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of element
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the element’s rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

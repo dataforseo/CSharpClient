@@ -11,5 +11,5 @@
 **Domain** | **string** | domain in SERP |[optional]|
 **Title** | **string** | title of the element |[optional]|
 **Url** | **string** | search URL with refinement parameters |[optional]|
-**Rating** | **RatingElement** | the element’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingInfo** | the element’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **RatingDistribution** | **IDictionary<string, int?>** | the distribution of ratings of the business entity<br>the object displays the number of 1-star to 5-star ratings, as reviewed by users |[optional]|

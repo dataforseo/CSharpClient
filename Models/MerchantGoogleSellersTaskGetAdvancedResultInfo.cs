@@ -78,7 +78,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the product popularity rate based on product reviews
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingElement Rating { get; set; }
+        public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// types of search results found in Google Shopping SERP

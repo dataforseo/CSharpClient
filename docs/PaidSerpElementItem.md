@@ -20,5 +20,5 @@
 **Extra** | **IDictionary<string, string>** | additional information about the result |[optional]|
 **DescriptionRows** | **IEnumerable<string>** | extended description<br>if there is none, equals null |[optional]|
 **Links** | **IEnumerable<AdLinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
-**Price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result |[optional]|
-**Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
+**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|

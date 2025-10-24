@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// contains arrays of specific images
+        /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AppElement> Items { get; set; }

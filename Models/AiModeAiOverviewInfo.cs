@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
         public string Markdown { get; set; }
 
         /// <summary>
-        /// items of the element
+        /// elements of search results found in SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiAiModeAiOverviewElementItem> Items { get; set; }

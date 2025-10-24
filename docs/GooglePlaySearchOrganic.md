@@ -14,7 +14,7 @@
 **Url** | **string** | URL to the app page on Google Play |[optional]|
 **Icon** | **string** | URL to the app icon |[optional]|
 **ReviewsCount** | **long?** | the total number of reviews of the app |[optional]|
-**Rating** | **RatingElement** | average rating of the app |[optional]|
+**Rating** | **RatingInfo** | average rating of the app |[optional]|
 **IsFree** | **bool?** | indicates whether the app is free |[optional]|
 **Price** | **PriceInfo** | price of the app |[optional]|
 **Developer** | **string** | name of the app developer |[optional]|

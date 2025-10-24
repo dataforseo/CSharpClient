@@ -9,13 +9,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the item
+        /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// URL
+        /// relevant URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

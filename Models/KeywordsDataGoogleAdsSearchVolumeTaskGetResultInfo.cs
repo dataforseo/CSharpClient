@@ -90,7 +90,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates the amount paid for each click on the ad displayed for a given keyword
         /// </summary>
         [JsonProperty("cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Cpc { get; set; }
+        public int? Cpc { get; set; }
 
         /// <summary>
         /// monthly searches

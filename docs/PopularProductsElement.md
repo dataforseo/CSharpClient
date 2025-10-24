@@ -6,9 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Title** | **string** | title of a given link element |[optional]|
+**Title** | **string** | title of the row |[optional]|
 **Description** | **string** | description of the results element in SERP |[optional]|
 **Seller** | **string** | seller of the product |[optional]|
-**ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
-**Price** | **PriceInfo** | price indicated in the element |[optional]|
-**Rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**ImageUrl** | **string** | URL of the image |[optional]|
+**Price** | **PriceInfo** | price of the app element |[optional]|
+**Rating** | **RatingInfo** | the element’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|

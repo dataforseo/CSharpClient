@@ -157,6 +157,17 @@ namespace DataForSeo.Client.Models
         public string ShopAdAclk { get; set; }
 
         /// <summary>
+        /// global product identifier on Google Shopping
+        /// <br/>note that there is no full list of possible values as the gid is a dynamic value assigned by Google
+        /// <br/>if there are no values, you will get null
+        /// <br/>example:
+        /// <br/>4702526954592161872
+        /// <br/>learn more about gid parameter in this help center guide
+        /// </summary>
+        [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Gid { get; set; }
+
+        /// <summary>
         /// delivery information
         /// <br/>delivery information including free and fast delivery date ranges
         /// </summary>

@@ -17,4 +17,4 @@
 **OriginalQuestionText** | **string** | original text of the question |[optional]|
 **TimeAgo** | **string** | estimated time when the question was posted |[optional]|
 **Timestamp** | **string** | exact time when the question was posted |[optional]|
-**Items** | **GoogleBusinessAnswerElement** | array of items<br>items within google_business_question_item |[optional]|
+**Items** | **IEnumerable<GoogleBusinessAnswerElement>** | array of items<br>items within google_business_question_item |[optional]|
