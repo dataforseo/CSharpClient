@@ -25,7 +25,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
-        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’ the charge per task will be multiplied by 5
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
@@ -147,7 +146,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify up to 10 target values in this array
         /// <br/>example:
         /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets;
+        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>Your account will be billed per each SERP crawled through the specified targets
         /// </summary>
         [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> StopCrawlOnMatch { get; set; }

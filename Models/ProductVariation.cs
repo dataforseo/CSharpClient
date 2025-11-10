@@ -28,8 +28,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// seller url
-        /// <br/>url of the webpage on the seller’s website where the product is sold
+        /// product url on google shopping
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

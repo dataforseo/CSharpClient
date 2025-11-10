@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models
         /// number of search results for the returned keyword
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SeResultsCount { get; set; }
+        public long? SeResultsCount { get; set; }
 
         /// <summary>
         /// difficulty of ranking in the first top-10 organic results for a keyword

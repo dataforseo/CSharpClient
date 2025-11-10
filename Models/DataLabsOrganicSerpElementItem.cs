@@ -21,13 +21,13 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// result’s URL
+        /// sitelink URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// breadcrumb of the Ad element in SERP
+        /// breadcrumb in SERP
         /// </summary>
         [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Breadcrumb { get; set; }

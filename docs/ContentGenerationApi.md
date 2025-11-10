@@ -43,7 +43,7 @@ var result = await dfsClient.ContentGenerationApi.GenerateLiveAsync(new List<Con
         StopWords = new List<string>()
         {
             "123",
-            "\n",
+            "n",
         },
     }
 });
@@ -154,7 +154,7 @@ var result = await dfsClient.ContentGenerationApi.GenerateMetaTagsLiveAsync(new 
 {
     new()
     {
-        Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.\n\n“We started to develop the idea of ​​our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.",
+        Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.nn“We started to develop the idea of ··our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.",
     }
 });
 ```

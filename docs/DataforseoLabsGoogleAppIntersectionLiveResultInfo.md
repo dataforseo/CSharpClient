@@ -11,4 +11,4 @@
 **LanguageCode** | **string** | language code in a POST array |[optional]|
 **TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsGoogleAppIntersectionLiveItem>** | contains data related to the ranking keywords for the app specified in the app_id field |[optional]|
+**Items** | **IEnumerable<DataforseoLabsleAppIntersectionLiveItem>** | contains data related to the ranking keywords for the app specified in the app_id field |[optional]|

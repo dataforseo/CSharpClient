@@ -184,7 +184,6 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// array of objects with top reviews from target location
-        /// <br/>to obtain additional local reviews, you can specify the load_more_local_reviews parameter in Task POST
         /// </summary>
         [JsonProperty("top_local_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AmazonReviewItem> TopLocalReviews { get; set; }

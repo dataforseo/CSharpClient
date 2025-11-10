@@ -58,6 +58,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
 
+        /// <summary>
+        /// business listing is claimed
+        /// <br/>if true, the business listing is claimed by the owner or representative
+        /// </summary>
+        [JsonProperty("is_claimed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsClaimed { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

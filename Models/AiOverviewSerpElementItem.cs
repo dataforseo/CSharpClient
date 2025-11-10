@@ -26,8 +26,8 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// indicates whether the element is loaded asynchronically
-        /// <br/>if true, the ai_overview element is loaded asynchronically;
+        /// indicates whether the element is loaded asynchronously
+        /// <br/>if true, the ai_overview element is loaded asynchronously;
         /// <br/>if false, the ai_overview element is loaded from cache;
         /// </summary>
         [JsonProperty("asynchronous_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

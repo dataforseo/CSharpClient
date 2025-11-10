@@ -54,6 +54,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("delivery_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DeliveryInfo DeliveryInfo { get; set; }
 
+        /// <summary>
+        /// product availability information
+        /// <br/>can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+        /// </summary>
+        [JsonProperty("product_availability", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string ProductAvailability { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// array of results
         /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AppDataAppleAppListingsSearchLiveResultInfo> Result { get; set; }
+        public object Result { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

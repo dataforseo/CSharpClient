@@ -100,25 +100,6 @@ namespace DataForSeo.Client.Models.Requests
         public string SeDomain { get; set; }
 
         /// <summary>
-        /// load more local reviews
-        /// <br/>optional field
-        /// <br/>if set to true, additional local reviews will be loaded in the top_local_reviews array of the Task GET response;
-        /// <br/>Note: you will be charged double the price for using this parameter
-        /// </summary>
-        [JsonProperty("load_more_local_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LoadMoreLocalReviews { get; set; }
-
-        /// <summary>
-        /// sort local reviews
-        /// <br/>optional field
-        /// <br/>reviews in the top_local_reviews array of the Task GET response can be sorted by most helpful or most recent first;
-        /// <br/>possible values: helpful, recent
-        /// <br/>default value: helpful
-        /// </summary>
-        [JsonProperty("local_reviews_sort", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocalReviewsSort { get; set; }
-
-        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

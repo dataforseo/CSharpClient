@@ -14,7 +14,7 @@
 **Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **Spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
 **RefinementChips** | **RefinementChipsInfo** | search refinement chips<br>equals null |[optional]|
-**ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>featured_snippet, images, local_pack, hotels_pack, organic, paid, people_also_ask, related_searches, shopping, recipes, top_stories, video |[optional]|
+**ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>featured_snippet, images, local_pack, hotels_pack, organic, paid, people_also_ask, related_searches, shopping, recipes, top_stories, video, ai_overview |[optional]|
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **PagesCount** | **long?** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|

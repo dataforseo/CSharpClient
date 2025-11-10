@@ -26,7 +26,7 @@ namespace DataForSeo.Client
             _client = new System.Net.Http.HttpClient(new System.Net.Http.HttpClientHandler { AutomaticDecompression = System.Net.DecompressionMethods.GZip, MaxConnectionsPerServer = 1000 });
             _client.Timeout = System.TimeSpan.FromMinutes(1);
 
-            _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.9");
+            _client.DefaultRequestHeaders.UserAgent.ParseAdd("csharp-client/2.0.12");
             if (configuration.CustomHeaders != null)
             {
                 foreach (var header in configuration.CustomHeaders)

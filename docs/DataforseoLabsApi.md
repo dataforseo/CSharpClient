@@ -80,8 +80,8 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 {
     new()
     {
-        DatetimeFrom = "2025-07-24 12:01:06 +00:00",
-        DatetimeTo = "2025-09-24 12:01:06 +00:00",
+        DatetimeFrom = "2025-08-10 10:59:26 +00:00",
+        DatetimeTo = "2025-10-10 10:59:26 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -912,8 +912,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-        FirstDate = "2025-07-24",
-        SecondDate = "2025-09-24",
+        FirstDate = "2025-08-10",
+        SecondDate = "2025-10-10",
         LocationCode = 2840,
         LanguageCode = "en",
         Limit = 3,
@@ -1424,8 +1424,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(ne
     new()
     {
         Keyword = "albert einstein",
-        DateFrom = "2025-07-24",
-        DateTo = "2025-09-24",
+        DateFrom = "2025-08-10",
+        DateTo = "2025-10-10",
         LocationCode = 2840,
         LanguageCode = "en",
     }
@@ -1477,8 +1477,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
         Target = "dataforseo.com",
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2025-07-24",
-        DateTo = "2025-09-24",
+        DateFrom = "2025-08-10",
+        DateTo = "2025-10-10",
     }
 });
 ```
@@ -1647,8 +1647,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2025-07-24",
-        DateTo = "2025-09-24",
+        DateFrom = "2025-08-10",
+        DateTo = "2025-10-10",
         ItemTypes = new List<string>()
         {
             "organic",
@@ -2852,8 +2852,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(ne
     {
         AppIds = new Dictionary<string, string>()
         {
-            ["1"] = "686449807",
-            ["2"] = "382617920",
+            ["1"] = "org.telegram.messenger",
+            ["2"] = "com.zhiliaoapp.musically",
         },
         LocationCode = 2840,
         LanguageName = "English",

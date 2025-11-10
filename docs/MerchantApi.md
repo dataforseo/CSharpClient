@@ -17,7 +17,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleSellersTaskPost**](MerchantApi.md#googleSellersTaskPost) | **POST**  /v3/merchant/google/sellers/task_post  |
 [**googleSellersTasksReady**](MerchantApi.md#googleSellersTasksReady) | **GET**  /v3/merchant/google/sellers/tasks_ready  |
 [**googleSellersTaskGetAdvanced**](MerchantApi.md#googleSellersTaskGetAdvanced) | **GET**  /v3/merchant/google/sellers/task_get/advanced/{id}  |
-[**googleProductSpecTaskGetAdvanced**](MerchantApi.md#googleProductSpecTaskGetAdvanced) | **GET**  /v3/merchant/google/product_spec/task_get/advanced/{id}  |
 [**googleProductInfoTaskPost**](MerchantApi.md#googleProductInfoTaskPost) | **POST**  /v3/merchant/google/product_info/task_post  |
 [**googleProductInfoTasksReady**](MerchantApi.md#googleProductInfoTasksReady) | **GET**  /v3/merchant/google/product_info/tasks_ready  |
 [**googleProductInfoTaskGetAdvanced**](MerchantApi.md#googleProductInfoTaskGetAdvanced) | **GET**  /v3/merchant/google/product_info/task_get/advanced/{id}  |
@@ -58,8 +57,8 @@ var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantId
 {
     new()
     {
-        DatetimeFrom = "2025-07-24 12:05:35 +00:00",
-        DatetimeTo = "2025-09-24 12:05:35 +00:00",
+        DatetimeFrom = "2025-08-10 11:04:49 +00:00",
+        DatetimeTo = "2025-10-10 11:04:49 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -599,48 +598,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**MerchantGoogleSellersTaskGetAdvancedResponseInfo**](MerchantGoogleSellersTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleProductSpecTaskGetAdvanced"></a>
-# **googleProductSpecTaskGetAdvanced**
-> MerchantGoogleProductSpecTaskGetAdvancedResponseInfo googleProductSpecTaskGetAdvanced()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.MerchantApi.GoogleProductSpecTaskGetAdvancedAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**MerchantGoogleProductSpecTaskGetAdvancedResponseInfo**](MerchantGoogleProductSpecTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 

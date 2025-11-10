@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("keyword_suggestions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IDictionary<string, string>> KeywordSuggestions { get; set; }
         [JsonProperty("ranked_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RankedKeywordsInfo RankedKeywords { get; set; }
+        public IDictionary<string, IDictionary<string, string>> RankedKeywords { get; set; }
         [JsonProperty("keyword_ideas", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IDictionary<string, string>> KeywordIdeas { get; set; }
         [JsonProperty("serp_competitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -31,8 +31,6 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, IDictionary<string, string>> DomainIntersection { get; set; }
         [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IDictionary<string, string>> PageIntersection { get; set; }
-        [JsonProperty("domain_whois_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, IDictionary<string, string>> DomainWhoisOverview { get; set; }
         [JsonProperty("top_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IDictionary<string, string>> TopSearches { get; set; }
         [JsonProperty("domain_metrics_by_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -42,7 +40,7 @@ namespace DataForSeo.Client.Models
         [JsonProperty("product_competitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IDictionary<string, string>> ProductCompetitors { get; set; }
         [JsonProperty("product_keyword_intersections", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> ProductKeywordIntersections { get; set; }
+        public IDictionary<string, IDictionary<string, string>> ProductKeywordIntersections { get; set; }
         [JsonProperty("app_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IDictionary<string, string>> AppIntersection { get; set; }
         [JsonProperty("app_competitors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

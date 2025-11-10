@@ -16,8 +16,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
         /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘definition:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘site:’, the charge per task will be multiplied by 5
-        /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation errorlearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -154,12 +153,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note that the results of target-specific tasks will only include SERP elements that contain a url string;
         /// <br/>you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
         /// <br/>examples:
-        /// <br/>example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
+        /// <br/>example.com – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
         /// <br/>example.com* – returns results for the domain, including all its pages;
         /// <br/>*example.com* – returns results for the entire domain, including all its pages and subdomains;
-        /// <br/>*example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com;
-        /// <br/>example.com/example-page  – returns results for the exact URL;
-        /// <br/>example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
+        /// <br/>*example.com – returns results for the home page regardless of the subdomain, such as https://en.example.com;
+        /// <br/>example.com/example-page – returns results for the exact URL;
+        /// <br/>example.com/example-page* – returns results for all domain’s URLs that start with the specified string
         /// </summary>
         [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -171,7 +170,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify up to 10 target values in this array
         /// <br/>example:
         /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets;
+        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>Your account will be billed per each SERP crawled through the specified targets
         /// </summary>
         [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> StopCrawlOnMatch { get; set; }
@@ -270,7 +270,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// load asynchronous ai overview
         /// <br/>optional field
-        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
+        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;
         /// <br/>if set to false, you will only obtain ai_overview items from cache;
         /// <br/>default value: false
         /// <br/>Note: you will be charged extra $0.002 for using this parameter;

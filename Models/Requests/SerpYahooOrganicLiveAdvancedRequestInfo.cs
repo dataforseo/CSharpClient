@@ -170,6 +170,38 @@ namespace DataForSeo.Client.Models.Requests
         public string SearchParam { get; set; }
 
         /// <summary>
+        /// array of targets to stop crawling
+        /// <br/>optional field
+        /// <br/>if specified, the response will contain SERP results up to and including the specified match_value;
+        /// <br/>you can specify up to 10 target values in this array
+        /// <br/>example:
+        /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>Your account will be billed per each SERP crawled through the specified targets
+        /// </summary>
+        [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> StopCrawlOnMatch { get; set; }
+
+        /// <summary>
+        /// array of targets to stop crawling
+        /// <br/>required field if stop_crawl_on_match is specified;
+        /// <br/>specify a target domain or wildcard value;
+        /// <br/>Note: domain name must be specified without a request protocol;
+        /// <br/>example: dataforseo.com
+        /// </summary>
+        [JsonProperty("match_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string MatchValue { get; set; }
+
+        /// <summary>
+        /// array of targets to stop crawling
+        /// <br/>required field if stop_crawl_on_match is specified;
+        /// <br/>type of match for the match_value
+        /// <br/>possible values: domain, with_subdomains, wildcard
+        /// </summary>
+        [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> MatchType { get; set; }
+
+        /// <summary>
         /// user-defined task identifier
         /// <br/>optional field
         /// <br/>the character limit is 255

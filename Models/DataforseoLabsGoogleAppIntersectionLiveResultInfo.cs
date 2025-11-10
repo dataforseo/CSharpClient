@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// contains data related to the ranking keywords for the app specified in the app_id field
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsGoogleAppIntersectionLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsleAppIntersectionLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -64,7 +64,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify up to 10 target values in this array
         /// <br/>example:
         /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets;
+        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>Your account will be billed per each SERP crawled through the specified targets
         /// </summary>
         [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> StopCrawlOnMatch { get; set; }
@@ -264,7 +265,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// load asynchronous ai overview
         /// <br/>optional field
-        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
+        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;
         /// <br/>if set to false, you will only obtain ai_overview items from cache;
         /// <br/>default value: false
         /// <br/>Note: you will be charged extra $0.0006 for using this parameter;

@@ -6,8 +6,8 @@ namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
     [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
-    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
     [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
+    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
     [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
     [JsonInheritance("answer_box", typeof(DataLabsAnswerBoxSerpElementItem))]
     [JsonInheritance("carousel", typeof(DataLabsCarouselSerpElementItem))]

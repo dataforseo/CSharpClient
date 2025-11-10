@@ -25,7 +25,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
-        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’ the charge per task will be multiplied by 5
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
@@ -101,10 +100,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 100
-        /// <br/>max value: 700
-        /// <br/>Your account will be billed per each SERP containing up to 10 results;
-        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>default value: 5
+        /// <br/>max value: 100
+        /// <br/>Your account will be billed per each SERP containing up to 5 results;
+        /// <br/>Setting depth above 5 may result in additional charges if the search engine returns more than 5 results;
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

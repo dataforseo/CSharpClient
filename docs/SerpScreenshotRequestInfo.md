@@ -10,4 +10,4 @@
 **BrowserScreenWidth** | **long?** | width of the browser resolution<br>optional field<br>can be specified in the following range: 240-9999 |[optional]|
 **BrowserScreenHeight** | **int?** | height of the browser resolution<br>optional field<br>can be specified in the following range: 240-9999 |[optional]|
 **BrowserScreenScaleFactor** | **double?** | browser scale factor<br>optional field<br>can be specified in the following range: 0.5-3 |[optional]|
-**Page** | **int?** | number of SERP pages<br>optional field<br>if depth in the corresponding Task POST request exceeds 100 results (or 1 SERP page), specify the number of SERP pages to screenshot;<br>default value: 1 |[optional]|
+**Page** | **int?** | number of SERP pages<br>optional field<br>if depth in the corresponding Task POST request exceeds 10 results (or 1 SERP page), specify the number of SERP pages to screenshot;<br>default value: 1 |[optional]|

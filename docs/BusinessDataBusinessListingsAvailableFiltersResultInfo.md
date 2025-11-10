@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Search** | **Info** |  |[optional]|
-**CategoriesAggregation** | **Info** |  |[optional]|
+**Search** | **IDictionary<string, string>** |  |[optional]|
+**CategoriesAggregation** | **IDictionary<string, string>** |  |[optional]|

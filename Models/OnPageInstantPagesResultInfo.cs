@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// <br/>in this case the value will be null
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public CrawlStatusInfo CrawlStatus { get; set; }
+        public object CrawlStatus { get; set; }
 
         /// <summary>
         /// crawler ip address
@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// items array
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<OnPageStylesheetResourceItem> Items { get; set; }
+        public IEnumerable<BaseOnPageResourceItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

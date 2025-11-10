@@ -71,6 +71,13 @@ namespace DataForSeo.Client.Models
         public IEnumerable<ChatGptSource> Sources { get; set; }
 
         /// <summary>
+        /// array of fan-out queries
+        /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
+        /// </summary>
+        [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> FanOutQueries { get; set; }
+
+        /// <summary>
         /// total number of results
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -156,10 +156,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: 100
-        /// <br/>max value: 700
-        /// <br/>Your account will be billed per each SERP containing up to 100 results;
-        /// <br/>Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;
+        /// <br/>default value: 10
+        /// <br/>max value: 200
+        /// <br/>Your account will be billed per each SERP containing up to 10 results;
+        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
         /// <br/>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>

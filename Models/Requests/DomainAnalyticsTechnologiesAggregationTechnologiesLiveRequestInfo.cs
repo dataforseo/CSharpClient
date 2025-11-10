@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// id of the target technology group
-        /// <br/>required field if you don’t specify technology, category  or keyword
+        /// <br/>required field if you don’t specify technology, category or keyword
         /// <br/>at least one field (group, category, keyword, technology) must be set
         /// <br/>you can find the full list of technology group ids on this page
         /// <br/>example:
@@ -47,8 +47,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>at least one field (group, category, keyword, technology) must be set
         /// <br/>UTF-8 encoding
         /// <br/>example:
-        /// <br/>'seo'
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>'seo'learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }

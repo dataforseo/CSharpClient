@@ -9,16 +9,6 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// direct URL of the search query
-        /// <br/>optional field
-        /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-        /// <br/>example:
-        /// <br/>https://www.google.co.uk/search?q=%20rank%20tracker%20api&amp;hl=en&amp;gl=GB&amp;uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
-        /// </summary>
-        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Url { get; set; }
-
-        /// <summary>
         /// keyword
         /// <br/>required field
         /// <br/>you can specify up to 700 characters in the keyword field
@@ -108,17 +98,6 @@ namespace DataForSeo.Client.Models.Requests
         public string Os { get; set; }
 
         /// <summary>
-        /// search engine domain
-        /// <br/>optional field
-        /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
-        /// <br/>however, you can set a custom search engine domain in this field
-        /// <br/>example:
-        /// <br/>google.co.uk, google.com.au, google.de, etc.
-        /// </summary>
-        [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeDomain { get; set; }
-
-        /// <summary>
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
@@ -149,58 +128,6 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("search_param", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchParam { get; set; }
-
-        /// <summary>
-        /// load asynchronous ai overview
-        /// <br/>optional field
-        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
-        /// <br/>if set to false, you will only obtain ai_overview items from cache;
-        /// <br/>default value: false
-        /// <br/>Note your account will be billed $0.002 extra for each request;
-        /// <br/>if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
-        /// </summary>
-        [JsonProperty("load_async_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? LoadAsyncAiOverview { get; set; }
-
-        /// <summary>
-        /// expand ai overview
-        /// <br/>optional field
-        /// <br/>set to true to expand the ai_overview item;
-        /// <br/>default value: false
-        /// </summary>
-        [JsonProperty("expand_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? ExpandAiOverview { get; set; }
-
-        /// <summary>
-        /// array of targets to stop crawling
-        /// <br/>optional field
-        /// <br/>if specified, the response will contain SERP results up to and including the specified match_value;
-        /// <br/>you can specify up to 10 target values in this array
-        /// <br/>example:
-        /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets;
-        /// </summary>
-        [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> StopCrawlOnMatch { get; set; }
-
-        /// <summary>
-        /// array of targets to stop crawling
-        /// <br/>required field if stop_crawl_on_match is specified;
-        /// <br/>specify a target domain or wildcard value;
-        /// <br/>Note: domain name must be specified without a request protocol;
-        /// <br/>example: dataforseo.com
-        /// </summary>
-        [JsonProperty("match_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchValue { get; set; }
-
-        /// <summary>
-        /// array of targets to stop crawling
-        /// <br/>required field if stop_crawl_on_match is specified;
-        /// <br/>type of match for the match_value
-        /// <br/>possible values: domain, with_subdomains, wildcard
-        /// </summary>
-        [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> MatchType { get; set; }
 
         /// <summary>
         /// user-defined task identifier

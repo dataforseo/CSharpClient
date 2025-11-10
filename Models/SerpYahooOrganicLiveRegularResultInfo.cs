@@ -73,7 +73,7 @@ namespace DataForSeo.Client.Models
         /// types of search results found in SERP
         /// <br/>contains types of all search results (items) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>featured_snippet, images, local_pack, hotels_pack, organic, paid, people_also_ask, related_searches, shopping, recipes, top_stories, video;
+        /// <br/>featured_snippet, images, local_pack, hotels_pack, organic, paid, people_also_ask, related_searches, shopping, recipes, top_stories, video, ai_overview;
         /// <br/>note that this array contains all types of search results found in the returned SERP;
         /// <br/>however, this endpoint provides data for organic, paid, and featured_snippet types only;
         /// <br/>to get all items (including SERP features and rich snippets) found in the returned SERP, please refer to the Yahoo Organiс Advanced SERP endpoint

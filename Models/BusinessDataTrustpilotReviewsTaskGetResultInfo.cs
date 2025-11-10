@@ -60,14 +60,14 @@ namespace DataForSeo.Client.Models
         /// the total number of reviews
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? ReviewsCount { get; set; }
+        public string ReviewsCount { get; set; }
 
         /// <summary>
         /// rating of the corresponding business entity
         /// <br/>popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public RatingInfo Rating { get; set; }
+        public object Rating { get; set; }
 
         /// <summary>
         /// the number of items in the results array

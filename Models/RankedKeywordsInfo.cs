@@ -7,12 +7,24 @@ namespace DataForSeo.Client.Models
 
     public class RankedKeywordsInfo 
     {
-        [JsonProperty("google", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DataforseoLabsAvailableFiltersGoogleInfo Google { get; set; }
-        [JsonProperty("bing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IDictionary<string, string> Bing { get; set; }
-        [JsonProperty("amazon", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public DataforseoLabsAvailableFiltersAmazonInfo Amazon { get; set; }
+
+        /// <summary>
+        /// number of keywords for which the page is ranked in top 3 search results
+        /// </summary>
+        [JsonProperty("page_from_keywords_count_top_3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? PageFromKeywordsCountTop3 { get; set; }
+
+        /// <summary>
+        /// number of keywords for which the page is ranked in top 10 search results
+        /// </summary>
+        [JsonProperty("page_from_keywords_count_top_10", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? PageFromKeywordsCountTop10 { get; set; }
+
+        /// <summary>
+        /// number of keywords for which the page is ranked in top 100 search results
+        /// </summary>
+        [JsonProperty("page_from_keywords_count_top_100", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? PageFromKeywordsCountTop100 { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

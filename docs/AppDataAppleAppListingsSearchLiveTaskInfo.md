@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataAppleAppListingsSearchLiveResultInfo>** | array of results |[optional]|
+**Result** | **object** | array of results |[optional]|

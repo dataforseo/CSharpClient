@@ -553,46 +553,6 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> GoogleProductSpecTaskGetAdvancedAsync(string id)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/merchant/google/product_spec/task_get/advanced/{id}"
-        
-                    .Replace("{id}", id.ToString())
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
         public virtual async Task<MerchantGoogleProductInfoTaskPostResponseInfo> GoogleProductInfoTaskPostAsync(IEnumerable<MerchantGoogleProductInfoTaskPostRequestInfo> payload)
         {
             using (var request = new HttpRequestMessage())
