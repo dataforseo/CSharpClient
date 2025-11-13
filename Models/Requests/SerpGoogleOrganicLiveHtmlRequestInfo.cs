@@ -182,11 +182,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify up to 10 target values in this array
         /// <br/>example:
         /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
         /// <br/>Your account will be billed per each SERP crawled through the specified targets
         /// </summary>
         [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> StopCrawlOnMatch { get; set; }
+        public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
 
         /// <summary>
         /// array of targets to stop crawling

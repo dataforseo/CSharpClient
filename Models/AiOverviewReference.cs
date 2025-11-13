@@ -15,12 +15,6 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// reference source name or title
-        /// </summary>
-        [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Source { get; set; }
-
-        /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
         /// <br/>left, right
@@ -29,25 +23,31 @@ namespace DataForSeo.Client.Models
         public string Position { get; set; }
 
         /// <summary>
-        /// website domain
+        /// reference source name or title
+        /// </summary>
+        [JsonProperty("source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Source { get; set; }
+
+        /// <summary>
+        /// domain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// URL
+        /// image source URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// title of the element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// row content
+        /// text of the component
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
