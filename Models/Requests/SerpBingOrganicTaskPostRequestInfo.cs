@@ -215,7 +215,7 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
 
         /// <summary>
-        /// array of targets to stop crawling
+        /// target domain or wildcard value
         /// <br/>required field if stop_crawl_on_match is specified;
         /// <br/>specify a target domain or wildcard value;
         /// <br/>Note: domain name must be specified without a request protocol;
@@ -225,13 +225,13 @@ namespace DataForSeo.Client.Models.Requests
         public string MatchValue { get; set; }
 
         /// <summary>
-        /// array of targets to stop crawling
+        /// target match type
         /// <br/>required field if stop_crawl_on_match is specified;
         /// <br/>type of match for the match_value
         /// <br/>possible values: domain, with_subdomains, wildcard
         /// </summary>
         [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> MatchType { get; set; }
+        public string MatchType { get; set; }
 
         /// <summary>
         /// user-defined task identifier

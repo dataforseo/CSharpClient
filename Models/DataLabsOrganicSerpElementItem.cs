@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// domain in SERP of the Ad element
+        /// subdomain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// sitelink URL
+        /// relevant URL in SERP
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -31,6 +31,10 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Breadcrumb { get; set; }
+
+        /// <summary>
+        /// relevant website name in SERP
+        /// </summary>
         [JsonProperty("website_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebsiteName { get; set; }
 
@@ -126,16 +130,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated organic monthly traffic to the domain
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+        /// <br/>estimated paid monthly traffic to the target
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of paid monthly search traffic
-        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
+        /// estimated cost of monthly search traffic
+        /// <br/>represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -158,7 +162,7 @@ namespace DataForSeo.Client.Models
         public RankChanges RankChanges { get; set; }
 
         /// <summary>
-        /// backlinks information for the ranked website
+        /// backlinks information for the target website
         /// </summary>
         [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }

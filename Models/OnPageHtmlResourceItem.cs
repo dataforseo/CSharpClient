@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("onpage_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? OnpageScore { get; set; }
+        public int? OnpageScore { get; set; }
 
         /// <summary>
         /// total DOM size of a page

@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicated condition of the product
-        /// <br/>possible values: Used, Refurbished, New, null
+        /// <br/>possible values: Used, Refurbished, New, Pre-owned, null
         /// </summary>
         [JsonProperty("product_condition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductCondition { get; set; }

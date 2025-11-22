@@ -20,12 +20,6 @@ namespace DataForSeo.Client.Models
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }
 
-        /// <summary>
-        /// references relevant to the element
-        /// </summary>
-        [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
-
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

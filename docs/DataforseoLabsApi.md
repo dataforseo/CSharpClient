@@ -80,8 +80,8 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 {
     new()
     {
-        DatetimeFrom = "2025-08-10 10:59:26 +00:00",
-        DatetimeTo = "2025-10-10 10:59:26 +00:00",
+        DatetimeFrom = "2025-08-22 08:06:56 +00:00",
+        DatetimeTo = "2025-10-22 08:06:56 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -912,8 +912,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-        FirstDate = "2025-08-10",
-        SecondDate = "2025-10-10",
+        FirstDate = "2025-08-22",
+        SecondDate = "2025-10-22",
         LocationCode = 2840,
         LanguageCode = "en",
         Limit = 3,
@@ -1424,8 +1424,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(ne
     new()
     {
         Keyword = "albert einstein",
-        DateFrom = "2025-08-10",
-        DateTo = "2025-10-10",
+        DateFrom = "2025-08-22",
+        DateTo = "2025-10-22",
         LocationCode = 2840,
         LanguageCode = "en",
     }
@@ -1477,8 +1477,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
         Target = "dataforseo.com",
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2025-08-10",
-        DateTo = "2025-10-10",
+        DateFrom = "2025-08-22",
+        DateTo = "2025-10-22",
     }
 });
 ```
@@ -1647,8 +1647,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2025-08-10",
-        DateTo = "2025-10-10",
+        DateFrom = "2025-08-22",
+        DateTo = "2025-10-22",
         ItemTypes = new List<string>()
         {
             "organic",

@@ -19,8 +19,8 @@
 **Price** | **PriceInfo** | price of the app |[optional]|
 **IsFree** | **bool?** | indicates whether the app is free |[optional]|
 **MainCategory** | **string** | main category/genre of the app |[optional]|
-**Categories** | **IEnumerable<string>** | all relevant categories/genres of the app |[optional]|
-**Languages** | **IEnumerable<string>** | languages supported in the app |[optional]|
+**Categories** | **IEnumerable<string>** | all relevant categories/genres of the app<br>Note: this field returns only one relevant category in the array |[optional]|
+**Languages** | **IEnumerable<string>** | languages supported in the app<br>Note: this field returns only one supported language in the array |[optional]|
 **Advisories** | **IEnumerable<string>** | age rating and age-based content advisories |[optional]|
 **Developer** | **string** | name of the app developer |[optional]|
 **DeveloperId** | **string** | ID of the app developer |[optional]|
@@ -28,7 +28,7 @@
 **Version** | **string** | current version of the app |[optional]|
 **MinimumOsVersion** | **string** | minimum OS version required to install the app |[optional]|
 **Size** | **string** | size of the app |[optional]|
-**ReleasedDate** | **string** | date and time when the app was released<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**ReleasedDate** | **string** | date and time when the app was released<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00<br>Note: this field is deprecated and always returns null |[optional]|
 **LastUpdateDate** | **string** | date and time when the app was last updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **UpdateNotes** | **string** | update notes<br>contains the latest update notes from the developer |[optional]|
 **Images** | **IEnumerable<string>** | app images<br>contains URLs to the images used on the app page on App Store |[optional]|

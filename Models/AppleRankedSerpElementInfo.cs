@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// number of search results for the returned keyword
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? SeResultsCount { get; set; }
+        public int? SeResultsCount { get; set; }
 
         /// <summary>
         /// date and time when SERP data was updated

@@ -97,12 +97,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// all relevant categories/genres of the app
+        /// <br/>Note: this field returns only one relevant category in the array
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Categories { get; set; }
 
         /// <summary>
         /// languages supported in the app
+        /// <br/>Note: this field returns only one supported language in the array
         /// </summary>
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Languages { get; set; }
@@ -154,6 +156,7 @@ namespace DataForSeo.Client.Models
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/>Note: this field is deprecated and always returns null
         /// </summary>
         [JsonProperty("released_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ReleasedDate { get; set; }

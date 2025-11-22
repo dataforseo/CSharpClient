@@ -164,7 +164,7 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
 
         /// <summary>
-        /// array of targets to stop crawling
+        /// target domain or wildcard value
         /// <br/>required field if stop_crawl_on_match is specified;
         /// <br/>specify a target domain or wildcard value;
         /// <br/>Note: domain name must be specified without a request protocol;
@@ -174,13 +174,56 @@ namespace DataForSeo.Client.Models.Requests
         public string MatchValue { get; set; }
 
         /// <summary>
-        /// array of targets to stop crawling
+        /// target match type
         /// <br/>required field if stop_crawl_on_match is specified;
         /// <br/>type of match for the match_value
         /// <br/>possible values: domain, with_subdomains, wildcard
         /// </summary>
         [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> MatchType { get; set; }
+        public string MatchType { get; set; }
+
+        /// <summary>
+        /// target matching mode
+        /// <br/>optional field
+        /// <br/>to enable this parameter, stop_crawl_on_match must also be enabled
+        /// <br/>defines how the crawl should stop when multiple targets are specified in stop_crawl_on_match
+        /// <br/>possible values: all, any
+        /// <br/>all – the crawl stops only when all specified targets are found
+        /// <br/>any – the crawl stops when any single target is found
+        /// <br/>default value: any
+        /// <br/>learn more about this parameter on our Help Center
+        /// </summary>
+        [JsonProperty("target_search_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string TargetSearchMode { get; set; }
+
+        /// <summary>
+        /// SERP element types to check for targets
+        /// <br/>optional field
+        /// <br/>to enable this parameter, stop_crawl_on_match must also be enabled
+        /// <br/>specifies which SERP element types should be checked for target matches
+        /// <br/>if not specified, all first-level elements with url and domain fields are checked for targets
+        /// <br/>possible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitter
+        /// <br/>Note: cannot contain the same element types as ignore_targets_in
+        /// <br/>example:
+        /// <br/>'find_targets_in': ['organic', 'featured_snippet']
+        /// <br/>learn more about this parameter on our Help Center
+        /// </summary>
+        [JsonProperty("find_targets_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> FindTargetsIn { get; set; }
+
+        /// <summary>
+        /// SERP element types to exclude from target search
+        /// <br/>optional field
+        /// <br/>to enable this parameter, stop_crawl_on_match must also be enabled
+        /// <br/>specifies which SERP element types should be excluded when searching for target matches
+        /// <br/>possible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitter
+        /// <br/>Note: cannot contain the same element types as find_targets_in
+        /// <br/>example:
+        /// <br/>'ignore_targets_in': ['paid', 'images']
+        /// <br/>learn more about this parameter on our Help Center
+        /// </summary>
+        [JsonProperty("ignore_targets_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> IgnoreTargetsIn { get; set; }
 
         /// <summary>
         /// display related results
