@@ -55,6 +55,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// starting date of the time range
         /// <br/>required field
+        /// <br/>minimum value: 2022-10-31
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
         /// <br/>'2019-01-15'

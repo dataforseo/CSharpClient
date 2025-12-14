@@ -7,7 +7,7 @@
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
 **Xpath** | **string** | XPath of the element |[optional]|
-**Title** | **string** | product title |[optional]|
+**Title** | **string** | title of the element |[optional]|
 **Tags** | **IEnumerable<string>** | tags assigned to the product |[optional]|
 **Seller** | **string** | name of the seller<br>the name of the company that placed a corresponding product on Google Shopping |[optional]|
 **Price** | **double?** | product price<br>example:<br>384.99 |[optional]|

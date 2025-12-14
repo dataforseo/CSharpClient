@@ -92,6 +92,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// starting date of the time range
         /// <br/>optional field
+        /// <br/>minimal value: 24 months from today’s date;
         /// <br/>if you don’t specify this field, data will be provided for the last 12 months
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:

@@ -55,6 +55,12 @@ namespace DataForSeo.Client.Models
         public string OriginalReviewText { get; set; }
 
         /// <summary>
+        /// original language of the review text
+        /// </summary>
+        [JsonProperty("original_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string OriginalLanguage { get; set; }
+
+        /// <summary>
         /// the time of publication
         /// <br/>indicates the time (in the ‘time ago’ format) when the review was listed
         /// </summary>

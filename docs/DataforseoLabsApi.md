@@ -5,10 +5,10 @@ All URIs are relative to *https://api.dataforseo.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 [**dataforseoLabsIdList**](DataforseoLabsApi.md#dataforseoLabsIdList) | **POST**  /v3/dataforseo_labs/id_list  |
-[**dataforseoLabsStatus**](DataforseoLabsApi.md#dataforseoLabsStatus) | **GET**  /v3/dataforseo_labs/status  |
+[**status**](DataforseoLabsApi.md#status) | **GET**  /v3/dataforseo_labs/status  |
 [**dataforseoLabsErrors**](DataforseoLabsApi.md#dataforseoLabsErrors) | **POST**  /v3/dataforseo_labs/errors  |
 [**availableFilters**](DataforseoLabsApi.md#availableFilters) | **GET**  /v3/dataforseo_labs/available_filters  |
-[**dataforseoLabsLocationsAndLanguages**](DataforseoLabsApi.md#dataforseoLabsLocationsAndLanguages) | **GET**  /v3/dataforseo_labs/locations_and_languages  |
+[**locationsAndLanguages**](DataforseoLabsApi.md#locationsAndLanguages) | **GET**  /v3/dataforseo_labs/locations_and_languages  |
 [**categories**](DataforseoLabsApi.md#categories) | **GET**  /v3/dataforseo_labs/categories  |
 [**googleAvailableHistory**](DataforseoLabsApi.md#googleAvailableHistory) | **GET**  /v3/dataforseo_labs/google/available_history  |
 [**googleKeywordsForSiteLive**](DataforseoLabsApi.md#googleKeywordsForSiteLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_site/live  |
@@ -17,7 +17,7 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleKeywordIdeasLive**](DataforseoLabsApi.md#googleKeywordIdeasLive) | **POST**  /v3/dataforseo_labs/google/keyword_ideas/live  |
 [**googleBulkKeywordDifficultyLive**](DataforseoLabsApi.md#googleBulkKeywordDifficultyLive) | **POST**  /v3/dataforseo_labs/google/bulk_keyword_difficulty/live  |
 [**googleSearchIntentLive**](DataforseoLabsApi.md#googleSearchIntentLive) | **POST**  /v3/dataforseo_labs/google/search_intent/live  |
-[**dataforseoLabsGoogleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#dataforseoLabsGoogleCategoriesForKeywordsLanguages) | **GET**  /v3/dataforseo_labs/google/categories_for_keywords/languages  |
+[**googleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#googleCategoriesForKeywordsLanguages) | **GET**  /v3/dataforseo_labs/google/categories_for_keywords/languages  |
 [**googleCategoriesForDomainLive**](DataforseoLabsApi.md#googleCategoriesForDomainLive) | **POST**  /v3/dataforseo_labs/google/categories_for_domain/live  |
 [**googleCategoriesForKeywordsLive**](DataforseoLabsApi.md#googleCategoriesForKeywordsLive) | **POST**  /v3/dataforseo_labs/google/categories_for_keywords/live  |
 [**googleKeywordsForCategoriesLive**](DataforseoLabsApi.md#googleKeywordsForCategoriesLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_categories/live  |
@@ -76,17 +76,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new List<DataforseoLabsIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(
+    new DataforseoLabsIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:06:56 +00:00",
-        DatetimeTo = "2025-10-22 08:06:56 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new DataforseoLabsIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -115,9 +117,9 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="dataforseoLabsStatus"></a>
-# **dataforseoLabsStatus**
-> DataforseoLabsStatusResponseInfo dataforseoLabsStatus()
+<a id="status"></a>
+# **status**
+> DataforseoLabsStatusResponseInfo status()
 
 
 ### Example
@@ -127,7 +129,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.DataforseoLabsStatusAsync();
+var result = await dfsClient.DataforseoLabsApi.StatusAsync();
 ```
 
 ### Parameters
@@ -168,14 +170,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.DataforseoLabsErrorsAsync(new List<DataforseoLabsErrorsRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.DataforseoLabsErrorsAsync(
+    new DataforseoLabsErrorsRequestInfo[]
     {
-        Limit = 10,
-        Offset = 0,
-    }
-});
+        new DataforseoLabsErrorsRequestInfo()
+        {
+            Limit = 10,
+            Offset = 0,
+        },
+    });
 ```
 
 ### Parameters
@@ -245,9 +248,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="dataforseoLabsLocationsAndLanguages"></a>
-# **dataforseoLabsLocationsAndLanguages**
-> DataforseoLabsLocationsAndLanguagesResponseInfo dataforseoLabsLocationsAndLanguages()
+<a id="locationsAndLanguages"></a>
+# **locationsAndLanguages**
+> DataforseoLabsLocationsAndLanguagesResponseInfo locationsAndLanguages()
 
 
 ### Example
@@ -257,7 +260,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.DataforseoLabsLocationsAndLanguagesAsync();
+var result = await dfsClient.DataforseoLabsApi.LocationsAndLanguagesAsync();
 ```
 
 ### Parameters
@@ -380,18 +383,25 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForSiteLiveAsync(new List<DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForSiteLiveAsync(
+    new DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo[]
     {
-        Target = "apple.com",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        IncludeSerpInfo = true,
-        IncludeSubdomains = true,
-        Limit = 3,
-    }
-});
+        new DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo()
+        {
+            Target = "apple.com",
+            LanguageCode = "en",
+            LocationCode = 2840,
+            IncludeSerpInfo = true,
+            IncludeSubdomains = true,
+            Filters = new object[]
+        {
+            "serp_info.se_results_count",
+            ">",
+            0,
+        },
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -432,16 +442,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleRelatedKeywordsLiveAsync(new List<DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleRelatedKeywordsLiveAsync(
+    new DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo[]
     {
-        Keyword = "phone",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-    }
-});
+        new DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo()
+        {
+            Keyword = "phone",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -482,18 +493,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleKeywordSuggestionsLiveAsync(new List<DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordSuggestionsLiveAsync(
+    new DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo[]
     {
-        Keyword = "phone",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        IncludeSeedKeyword = true,
-        IncludeSerpInfo = true,
-        Limit = 1,
-    }
-});
+        new DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo()
+        {
+            Keyword = "phone",
+            LocationCode = 2840,
+            LanguageCode = "en",
+            IncludeSerpInfo = true,
+            IncludeSeedKeyword = true,
+            Limit = 1,
+        },
+    });
 ```
 
 ### Parameters
@@ -534,21 +546,22 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleKeywordIdeasLiveAsync(new List<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordIdeasLiveAsync(
+    new DataforseoLabsGoogleKeywordIdeasLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleKeywordIdeasLiveRequestInfo()
+        {
+            Keywords = new string[]
         {
             "phone",
             "watch",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        IncludeSerpInfo = true,
-        Limit = 3,
-    }
-});
+            LocationCode = 2840,
+            LanguageCode = "en",
+            IncludeSerpInfo = true,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -589,20 +602,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleBulkKeywordDifficultyLiveAsync(new List<DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleBulkKeywordDifficultyLiveAsync(
+    new DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageCode = "en",
+            Keywords = new string[]
         {
             "dentist new york",
             "pizza brooklyn",
             "car dealer los angeles",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -643,20 +657,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleSearchIntentLiveAsync(new List<DataforseoLabsGoogleSearchIntentLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleSearchIntentLiveAsync(
+    new DataforseoLabsGoogleSearchIntentLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleSearchIntentLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            Keywords = new string[]
         {
             "login page",
             "audi a7",
             "elon musk",
             "milk store new york",
         },
-        LanguageCode = "en",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -685,9 +700,9 @@ var result = await dfsClient.DataforseoLabsApi.GoogleSearchIntentLiveAsync(new L
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="dataforseoLabsGoogleCategoriesForKeywordsLanguages"></a>
-# **dataforseoLabsGoogleCategoriesForKeywordsLanguages**
-> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages()
+<a id="googleCategoriesForKeywordsLanguages"></a>
+# **googleCategoriesForKeywordsLanguages**
+> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo googleCategoriesForKeywordsLanguages()
 
 
 ### Example
@@ -697,7 +712,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync();
+var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForKeywordsLanguagesAsync();
 ```
 
 ### Parameters
@@ -738,23 +753,24 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForDomainLiveAsync(new List<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForDomainLiveAsync(
+    new DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationName = "United States",
-        LanguageCode = "en",
-        ItemTypes = new List<string>()
+        new DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageCode = "en",
+            LocationName = "United States",
+            ItemTypes = new string[]
         {
             "paid",
             "organic",
             "featured_snippet",
             "local_pack",
         },
-        Limit = 3,
-    }
-});
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -795,19 +811,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForKeywordsLiveAsync(new List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleCategoriesForKeywordsLiveAsync(
+    new DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            Keywords = new string[]
         {
             "dentist new york",
             "pizza brooklyn",
             "car dealer los angeles",
         },
-        LanguageCode = "en",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -848,21 +865,22 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForCategoriesLiveAsync(new List<DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForCategoriesLiveAsync(
+    new DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo[]
     {
-        CategoryCodes = new List<string>()
+        new DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo()
+        {
+            CategoryCodes = new string[]
         {
             "12191",
             "12193",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        IncludeSerpInfo = true,
-        Limit = 3,
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            IncludeSerpInfo = true,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -903,22 +921,23 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLiveAsync(new List<DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLiveAsync(
+    new DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo[]
     {
-        CategoryCodes = new List<string>()
+        new DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageCode = "en",
+            CategoryCodes = new string[]
         {
             "13418",
             "11494",
         },
-        FirstDate = "2025-08-22",
-        SecondDate = "2025-10-22",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        Limit = 3,
-    }
-});
+            FirstDate = "2021-06-01 00:00:00 +03:00",
+            SecondDate = "2021-10-01 00:00:00 +03:00",
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -959,15 +978,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleTopSearchesLiveAsync(new List<DataforseoLabsGoogleTopSearchesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleTopSearchesLiveAsync(
+    new DataforseoLabsGoogleTopSearchesLiveRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-    }
-});
+        new DataforseoLabsGoogleTopSearchesLiveRequestInfo()
+        {
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -1008,13 +1028,27 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleDomainWhoisOverviewLiveAsync(new List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainWhoisOverviewLiveAsync(
+    new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo[]
     {
-        Limit = 2,
-    }
-});
+        new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo()
+        {
+            Limit = 2,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "epp_status_codes",
+                "in",
+                new object[]
+                {
+                    "client_transfer_prohibited",
+                    "client_update_prohibited",
+                },
+            },
+        },
+        },
+    });
 ```
 
 ### Parameters
@@ -1055,17 +1089,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleRankedKeywordsLiveAsync(new List<DataforseoLabsGoogleRankedKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleRankedKeywordsLiveAsync(
+    new DataforseoLabsGoogleRankedKeywordsLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationName = "United States",
-        LanguageName = "English",
-        Limit = 3,
-        LoadRankAbsolute = true,
-    }
-});
+        new DataforseoLabsGoogleRankedKeywordsLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationName = "United States",
+            LoadRankAbsolute = true,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -1106,23 +1141,24 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleSerpCompetitorsLiveAsync(new List<DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleSerpCompetitorsLiveAsync(
+    new DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo()
+        {
+            Keywords = new string[]
         {
             "phone",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        ItemTypes = new List<string>()
+            LanguageName = "English",
+            LocationCode = 2840,
+            ItemTypes = new string[]
         {
             "organic",
         },
-        Limit = 5,
-    }
-});
+            Limit = 5,
+        },
+    });
 ```
 
 ### Parameters
@@ -1163,22 +1199,23 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleCompetitorsDomainLiveAsync(new List<DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleCompetitorsDomainLiveAsync(
+    new DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo[]
     {
-        Target = "newmouth.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-        IntersectingDomains = new List<string>()
+        new DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo()
+        {
+            Target = "newmouth.com",
+            IntersectingDomains = new string[]
         {
             "dentaly.org",
             "health.com",
             "trysnow.com",
         },
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -1219,18 +1256,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleDomainIntersectionLiveAsync(new List<DataforseoLabsGoogleDomainIntersectionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainIntersectionLiveAsync(
+    new DataforseoLabsGoogleDomainIntersectionLiveRequestInfo[]
     {
-        Target1 = "mom.com",
-        Target2 = "quora.com",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        IncludeSerpInfo = true,
-        Limit = 3,
-    }
-});
+        new DataforseoLabsGoogleDomainIntersectionLiveRequestInfo()
+        {
+            Target1 = "mom.com",
+            Target2 = "quora.com",
+            LanguageCode = "en",
+            LocationCode = 2840,
+            IncludeSerpInfo = true,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -1271,15 +1309,32 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleSubdomainsLiveAsync(new List<DataforseoLabsGoogleSubdomainsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleSubdomainsLiveAsync(
+    new DataforseoLabsGoogleSubdomainsLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new DataforseoLabsGoogleSubdomainsLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "metrics.organic.pos_1",
+                "<>",
+                0,
+            },
+            "or",
+            new object[]
+            {
+                "metrics.organic.pos_2_3",
+                "<>",
+                0,
+            },
+        },
+        },
+    });
 ```
 
 ### Parameters
@@ -1320,16 +1375,33 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleRelevantPagesLiveAsync(new List<DataforseoLabsGoogleRelevantPagesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleRelevantPagesLiveAsync(
+    new DataforseoLabsGoogleRelevantPagesLiveRequestInfo[]
     {
-        Target = "amazon.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-    }
-});
+        new DataforseoLabsGoogleRelevantPagesLiveRequestInfo()
+        {
+            Target = "amazon.com",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "metrics.organic.pos_1",
+                "<>",
+                0,
+            },
+            "or",
+            new object[]
+            {
+                "metrics.organic.pos_2_3",
+                "<>",
+                0,
+            },
+        },
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -1370,15 +1442,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleDomainRankOverviewLiveAsync(new List<DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleDomainRankOverviewLiveAsync(
+    new DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -1419,17 +1492,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(new List<DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(
+    new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo[]
     {
-        Keyword = "albert einstein",
-        DateFrom = "2025-08-22",
-        DateTo = "2025-10-22",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
+        {
+            Keyword = "albert einstein",
+            LocationCode = 2840,
+            LanguageCode = "en",
+            DateFrom = "2021-08-01 00:00:00 +03:00",
+            DateTo = "2021-09-01 00:00:00 +03:00",
+        },
+    });
 ```
 
 ### Parameters
@@ -1470,17 +1544,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveAsync(new List<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveAsync(
+    new DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        DateFrom = "2025-08-22",
-        DateTo = "2025-10-22",
-    }
-});
+        new DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LocationCode = 2840,
+            LanguageCode = "en",
+            DateFrom = "2021-01-01 00:00:00 +02:00",
+            DateTo = "2021-03-29 00:00:00 +03:00",
+        },
+    });
 ```
 
 ### Parameters
@@ -1521,21 +1596,22 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GooglePageIntersectionLiveAsync(new List<DataforseoLabsGooglePageIntersectionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GooglePageIntersectionLiveAsync(
+    new DataforseoLabsGooglePageIntersectionLiveRequestInfo[]
     {
-        Pages = new Dictionary<string, string>()
+        new DataforseoLabsGooglePageIntersectionLiveRequestInfo()
+        {
+            Pages = new Dictionary<string, string>()
         {
             ["1"] = "https://forbes.com",
             ["2"] = "https://cnn.com/*",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-        IncludeSerpInfo = true,
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            IncludeSerpInfo = true,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -1576,25 +1652,26 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleBulkTrafficEstimationLiveAsync(new List<DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleBulkTrafficEstimationLiveAsync(
+    new DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo[]
     {
-        Targets = new List<string>()
+        new DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo()
+        {
+            Targets = new string[]
         {
             "dataforseo.com",
             "cnn.com",
             "forbes.com",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        ItemTypes = new List<string>()
+            LocationCode = 2840,
+            LanguageCode = "en",
+            ItemTypes = new string[]
         {
             "organic",
             "paid",
         },
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -1635,27 +1712,28 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstimationLiveAsync(new List<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstimationLiveAsync(
+    new DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo[]
     {
-        Targets = new List<string>()
+        new DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo()
+        {
+            Targets = new string[]
         {
             "dataforseo.com",
             "cnn.com",
             "forbes.com",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        DateFrom = "2025-08-22",
-        DateTo = "2025-10-22",
-        ItemTypes = new List<string>()
+            LocationCode = 2840,
+            LanguageCode = "en",
+            DateFrom = "2021-01-01 00:00:00 +02:00",
+            DateTo = "2021-03-29 00:00:00 +03:00",
+            ItemTypes = new string[]
         {
             "organic",
             "paid",
         },
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -1696,18 +1774,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalKeywordDataLiveAsync(new List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalKeywordDataLiveAsync(
+    new DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keywords = new string[]
         {
             "iphone",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -1748,20 +1827,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleKeywordOverviewLiveAsync(new List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordOverviewLiveAsync(
+    new DataforseoLabsGoogleKeywordOverviewLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsGoogleKeywordOverviewLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            IncludeClickstreamData = true,
+            IncludeSerpInfo = true,
+            Keywords = new string[]
         {
             "iphone",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        IncludeSerpInfo = true,
-        IncludeClickstreamData = true,
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -1802,20 +1882,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AmazonBulkSearchVolumeLiveAsync(new List<DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AmazonBulkSearchVolumeLiveAsync(
+    new DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo()
+        {
+            Keywords = new string[]
         {
             "buy laptop",
             "cheap laptops for sale",
             "purchase laptop",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+            LocationCode = 2840,
+            LanguageCode = "en",
+        },
+    });
 ```
 
 ### Parameters
@@ -1856,17 +1937,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AmazonRelatedKeywordsLiveAsync(new List<DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AmazonRelatedKeywordsLiveAsync(
+    new DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo[]
     {
-        Keyword = "computer mouse",
-        LocationCode = 2840,
-        LanguageName = "English",
-        IncludeSeedKeyword = true,
-        Limit = 5,
-    }
-});
+        new DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo()
+        {
+            Keyword = "computer mouse",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 5,
+            IncludeSeedKeyword = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -1907,15 +1989,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AmazonRankedKeywordsLiveAsync(new List<DataforseoLabsAmazonRankedKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AmazonRankedKeywordsLiveAsync(
+    new DataforseoLabsAmazonRankedKeywordsLiveRequestInfo[]
     {
-        Asin = "B00R92CL5E",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new DataforseoLabsAmazonRankedKeywordsLiveRequestInfo()
+        {
+            Asin = "B00R92CL5E",
+            LocationCode = 2840,
+            LanguageCode = "en",
+        },
+    });
 ```
 
 ### Parameters
@@ -1956,19 +2039,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AmazonProductRankOverviewLiveAsync(new List<DataforseoLabsAmazonProductRankOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AmazonProductRankOverviewLiveAsync(
+    new DataforseoLabsAmazonProductRankOverviewLiveRequestInfo[]
     {
-        Asins = new List<string>()
+        new DataforseoLabsAmazonProductRankOverviewLiveRequestInfo()
+        {
+            Asins = new string[]
         {
             "B001TJ3HUG",
             "B01LW2SL7R",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -2009,15 +2093,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AmazonProductCompetitorsLiveAsync(new List<DataforseoLabsAmazonProductCompetitorsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AmazonProductCompetitorsLiveAsync(
+    new DataforseoLabsAmazonProductCompetitorsLiveRequestInfo[]
     {
-        Asin = "019005476X",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new DataforseoLabsAmazonProductCompetitorsLiveRequestInfo()
+        {
+            Asin = "019005476X",
+            LocationCode = 2840,
+            LanguageCode = "en",
+        },
+    });
 ```
 
 ### Parameters
@@ -2058,20 +2143,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AmazonProductKeywordIntersectionsLiveAsync(new List<DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AmazonProductKeywordIntersectionsLiveAsync(
+    new DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo[]
     {
-        Asins = new Dictionary<string, string>()
+        new DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo()
+        {
+            Asins = new Dictionary<string, string>()
         {
             ["1"] = "B09172433Z",
             ["2"] = "B07GBZ4Q68",
             ["3"] = "B07GCKQD77",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -2112,20 +2198,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingBulkKeywordDifficultyLiveAsync(new List<DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingBulkKeywordDifficultyLiveAsync(
+    new DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageCode = "en",
+            Keywords = new string[]
         {
             "dentist new york",
             "pizza brooklyn",
             "car dealer los angeles",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -2166,25 +2253,26 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingBulkTrafficEstimationLiveAsync(new List<DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingBulkTrafficEstimationLiveAsync(
+    new DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo[]
     {
-        Targets = new List<string>()
+        new DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo()
+        {
+            Targets = new string[]
         {
             "dataforseo.com",
             "cnn.com",
             "forbes.com",
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        ItemTypes = new List<string>()
+            LocationCode = 2840,
+            LanguageCode = "en",
+            ItemTypes = new string[]
         {
             "organic",
             "paid",
         },
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -2225,22 +2313,23 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingCompetitorsDomainLiveAsync(new List<DataforseoLabsBingCompetitorsDomainLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingCompetitorsDomainLiveAsync(
+    new DataforseoLabsBingCompetitorsDomainLiveRequestInfo[]
     {
-        Target = "newmouth.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-        IntersectingDomains = new List<string>()
+        new DataforseoLabsBingCompetitorsDomainLiveRequestInfo()
+        {
+            Target = "newmouth.com",
+            IntersectingDomains = new string[]
         {
             "dentaly.org",
             "health.com",
             "trysnow.com",
         },
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -2281,17 +2370,34 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingDomainIntersectionLiveAsync(new List<DataforseoLabsBingDomainIntersectionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingDomainIntersectionLiveAsync(
+    new DataforseoLabsBingDomainIntersectionLiveRequestInfo[]
     {
-        Target1 = "mom.me",
-        Target2 = "quora.com",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        Limit = 5,
-    }
-});
+        new DataforseoLabsBingDomainIntersectionLiveRequestInfo()
+        {
+            Target1 = "mom.me",
+            Target2 = "quora.com",
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "first_domain_serp_element.etv",
+                ">",
+                0,
+            },
+            "and",
+            new object[]
+            {
+                "first_domain_serp_element.description",
+                "like",
+                "%goat%",
+            },
+        },
+            Limit = 5,
+        },
+    });
 ```
 
 ### Parameters
@@ -2332,15 +2438,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingDomainRankOverviewLiveAsync(new List<DataforseoLabsBingDomainRankOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingDomainRankOverviewLiveAsync(
+    new DataforseoLabsBingDomainRankOverviewLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new DataforseoLabsBingDomainRankOverviewLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -2381,20 +2488,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingPageIntersectionLiveAsync(new List<DataforseoLabsBingPageIntersectionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingPageIntersectionLiveAsync(
+    new DataforseoLabsBingPageIntersectionLiveRequestInfo[]
     {
-        Pages = new Dictionary<string, string>()
+        new DataforseoLabsBingPageIntersectionLiveRequestInfo()
+        {
+            Pages = new Dictionary<string, string>()
         {
             ["1"] = "https://dataforseo.com",
             ["2"] = "https://ahrefs.com/*",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -2435,17 +2543,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingRankedKeywordsLiveAsync(new List<DataforseoLabsBingRankedKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingRankedKeywordsLiveAsync(
+    new DataforseoLabsBingRankedKeywordsLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationName = "United States",
-        LanguageName = "English",
-        Limit = 3,
-        LoadRankAbsolute = true,
-    }
-});
+        new DataforseoLabsBingRankedKeywordsLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationName = "United States",
+            LoadRankAbsolute = true,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -2486,16 +2595,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingRelatedKeywordsLiveAsync(new List<DataforseoLabsBingRelatedKeywordsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingRelatedKeywordsLiveAsync(
+    new DataforseoLabsBingRelatedKeywordsLiveRequestInfo[]
     {
-        Keyword = "phone",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 3,
-    }
-});
+        new DataforseoLabsBingRelatedKeywordsLiveRequestInfo()
+        {
+            Keyword = "phone",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -2536,16 +2646,33 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingRelevantPagesLiveAsync(new List<DataforseoLabsBingRelevantPagesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingRelevantPagesLiveAsync(
+    new DataforseoLabsBingRelevantPagesLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 5,
-    }
-});
+        new DataforseoLabsBingRelevantPagesLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "metrics.organic.pos_1",
+                "<>",
+                0,
+            },
+            "or",
+            new object[]
+            {
+                "metrics.organic.pos_2_3",
+                "<>",
+                0,
+            },
+        },
+            Limit = 5,
+        },
+    });
 ```
 
 ### Parameters
@@ -2586,23 +2713,24 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingSerpCompetitorsLiveAsync(new List<DataforseoLabsBingSerpCompetitorsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingSerpCompetitorsLiveAsync(
+    new DataforseoLabsBingSerpCompetitorsLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new DataforseoLabsBingSerpCompetitorsLiveRequestInfo()
+        {
+            Keywords = new string[]
         {
             "phone",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        ItemTypes = new List<string>()
+            LanguageName = "English",
+            LocationCode = 2840,
+            ItemTypes = new string[]
         {
             "organic",
         },
-        Limit = 5,
-    }
-});
+            Limit = 5,
+        },
+    });
 ```
 
 ### Parameters
@@ -2643,16 +2771,33 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.BingSubdomainsLiveAsync(new List<DataforseoLabsBingSubdomainsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.BingSubdomainsLiveAsync(
+    new DataforseoLabsBingSubdomainsLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 5,
-    }
-});
+        new DataforseoLabsBingSubdomainsLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "metrics.organic.pos_1",
+                "<>",
+                0,
+            },
+            "or",
+            new object[]
+            {
+                "metrics.organic.pos_2_3",
+                "<>",
+                0,
+            },
+        },
+            Limit = 5,
+        },
+    });
 ```
 
 ### Parameters
@@ -2693,19 +2838,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleBulkAppMetricsLiveAsync(new List<DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleBulkAppMetricsLiveAsync(
+    new DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo[]
     {
-        AppIds = new List<string>()
+        new DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo()
+        {
+            AppIds = new string[]
         {
             "org.telegram.messenger",
             "com.zhiliaoapp.musically",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -2746,16 +2892,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForAppLiveAsync(new List<DataforseoLabsGoogleKeywordsForAppLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleKeywordsForAppLiveAsync(
+    new DataforseoLabsGoogleKeywordsForAppLiveRequestInfo[]
     {
-        AppId = "org.telegram.messenger",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
-    }
-});
+        new DataforseoLabsGoogleKeywordsForAppLiveRequestInfo()
+        {
+            AppId = "org.telegram.messenger",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -2796,16 +2943,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleAppCompetitorsLiveAsync(new List<DataforseoLabsGoogleAppCompetitorsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleAppCompetitorsLiveAsync(
+    new DataforseoLabsGoogleAppCompetitorsLiveRequestInfo[]
     {
-        AppId = "org.telegram.messenger",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
-    }
-});
+        new DataforseoLabsGoogleAppCompetitorsLiveRequestInfo()
+        {
+            AppId = "org.telegram.messenger",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -2846,20 +2994,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(new List<DataforseoLabsGoogleAppIntersectionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(
+    new DataforseoLabsGoogleAppIntersectionLiveRequestInfo[]
     {
-        AppIds = new Dictionary<string, string>()
+        new DataforseoLabsGoogleAppIntersectionLiveRequestInfo()
+        {
+            AppIds = new Dictionary<string, string>()
         {
             ["1"] = "org.telegram.messenger",
             ["2"] = "com.zhiliaoapp.musically",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -2900,19 +3049,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AppleBulkAppMetricsLiveAsync(new List<DataforseoLabsAppleBulkAppMetricsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AppleBulkAppMetricsLiveAsync(
+    new DataforseoLabsAppleBulkAppMetricsLiveRequestInfo[]
     {
-        AppIds = new List<string>()
+        new DataforseoLabsAppleBulkAppMetricsLiveRequestInfo()
+        {
+            AppIds = new string[]
         {
             "686449807",
             "382617920",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -2953,16 +3103,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AppleKeywordsForAppLiveAsync(new List<DataforseoLabsAppleKeywordsForAppLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AppleKeywordsForAppLiveAsync(
+    new DataforseoLabsAppleKeywordsForAppLiveRequestInfo[]
     {
-        AppId = "686449807",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
-    }
-});
+        new DataforseoLabsAppleKeywordsForAppLiveRequestInfo()
+        {
+            AppId = "686449807",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -3003,16 +3154,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AppleAppCompetitorsLiveAsync(new List<DataforseoLabsAppleAppCompetitorsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AppleAppCompetitorsLiveAsync(
+    new DataforseoLabsAppleAppCompetitorsLiveRequestInfo[]
     {
-        AppId = "686449807",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
-    }
-});
+        new DataforseoLabsAppleAppCompetitorsLiveRequestInfo()
+        {
+            AppId = "686449807",
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -3053,20 +3205,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DataforseoLabsApi.AppleAppIntersectionLiveAsync(new List<DataforseoLabsAppleAppIntersectionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DataforseoLabsApi.AppleAppIntersectionLiveAsync(
+    new DataforseoLabsAppleAppIntersectionLiveRequestInfo[]
     {
-        AppIds = new Dictionary<string, string>()
+        new DataforseoLabsAppleAppIntersectionLiveRequestInfo()
+        {
+            AppIds = new Dictionary<string, string>()
         {
             ["1"] = "686449807",
             ["2"] = "382617920",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        Limit = 10,
-    }
-});
+            LanguageName = "English",
+            LocationCode = 2840,
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters

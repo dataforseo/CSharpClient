@@ -78,6 +78,13 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> FanOutQueries { get; set; }
 
         /// <summary>
+        /// array of brand entities
+        /// <br/>contains information on brands mentioned in the response
+        /// </summary>
+        [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ChatGptBrandEntity> BrandEntities { get; set; }
+
+        /// <summary>
         /// total number of results
         /// </summary>
         [JsonProperty("se_results_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

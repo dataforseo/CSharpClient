@@ -959,7 +959,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<OnPageLighthouseLanguagesResponseInfo> OnPageLighthouseLanguagesAsync()
+        public virtual async Task<OnPageLighthouseLanguagesResponseInfo> LighthouseLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

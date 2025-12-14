@@ -81,7 +81,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AppendixErrorsResponseInfo> AppendixErrorsAsync()
+        public virtual async Task<AppendixErrorsResponseInfo> ErrorsAsync()
         {
             using (var request = new HttpRequestMessage())
             {

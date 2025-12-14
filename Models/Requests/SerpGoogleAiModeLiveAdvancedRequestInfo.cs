@@ -21,19 +21,9 @@ namespace DataForSeo.Client.Models.Requests
         public string Keyword { get; set; }
 
         /// <summary>
-        /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>Note: check  Google Search Help for the list of countries where AI Mode is currently available
-        /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
-
-        /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
+        /// <br/>required field if you don't specify location_name or location_coordinate
+        /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
         /// <br/>Note: check  Google Search Help for the list of countries where AI Mode is currently available
         /// </summary>
@@ -41,36 +31,10 @@ namespace DataForSeo.Client.Models.Requests
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,zoom” format
-        /// <br/>if “zoom” is not specified, 9z will be applied as a default value
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
-        /// <br/>the minimum value for “zoom”: 4z
-        /// <br/>the maximum value for “zoom”: 18z
-        /// <br/>example:
-        /// <br/>52.6178549,-155.352142,18z
-        /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationCoordinate { get; set; }
-
-        /// <summary>
-        /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code;
-        /// <br/>if you use this field, you don’t need to specify language_code;
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;
-        /// <br/>Note: currently, the only supported value is English
-        /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
-
-        /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name;
-        /// <br/>if you use this field, you don’t need to specify language_name;
+        /// <br/>required field if you don't specify language_name;
+        /// <br/>if you use this field, you don't need to specify language_name;
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages
-        /// <br/>Note: currently, the only supported value is en
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -85,6 +49,25 @@ namespace DataForSeo.Client.Models.Requests
         public string Device { get; set; }
 
         /// <summary>
+        /// full name of search engine location
+        /// <br/>required field if you don't specify location_code or location_coordinate
+        /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+        /// <br/>Note: check  Google Search Help for the list of countries where AI Mode is currently available
+        /// </summary>
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>required field if you don't specify language_code;
+        /// <br/>if you use this field, you don't need to specify language_code;
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
+
+        /// <summary>
         /// device operating system
         /// <br/>optional field
         /// <br/>if you specify desktop in the device field, choose from the following values: windows, macos
@@ -94,6 +77,16 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Os { get; set; }
+
+        /// <summary>
+        /// user-defined task identifier
+        /// <br/>optional field
+        /// <br/>the character limit is 255
+        /// <br/>you can use this parameter to identify the task and match it with the result
+        /// <br/>you will find the specified tag value in the data object of the response
+        /// </summary>
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Tag { get; set; }
 
         /// <summary>
         /// calculate pixel rankings for SERP elements in advanced results
@@ -146,14 +139,19 @@ namespace DataForSeo.Client.Models.Requests
         public int? BrowserScreenResolutionRatio { get; set; }
 
         /// <summary>
-        /// user-defined task identifier
-        /// <br/>optional field
-        /// <br/>the character limit is 255
-        /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// GPS coordinates of a location
+        /// <br/>required field if you don't specify location_name or location_code
+        /// <br/>if you use this field, you don't need to specify location_name or location_code
+        /// <br/>location_coordinate parameter should be specified in the 'latitude,longitude,zoom' format
+        /// <br/>if 'zoom' is not specified, 9z will be applied as a default value
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'zoom': 4z
+        /// <br/>the maximum value for 'zoom': 18z
+        /// <br/>example:
+        /// <br/>52.6178549,-155.352142,18z
         /// </summary>
-        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Tag { get; set; }
+        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationCoordinate { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

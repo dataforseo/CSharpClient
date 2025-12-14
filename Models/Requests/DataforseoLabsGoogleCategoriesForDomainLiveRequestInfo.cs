@@ -87,6 +87,19 @@ namespace DataForSeo.Client.Models.Requests
         public bool? IncludeClickstreamData { get; set; }
 
         /// <summary>
+        /// data collection mode
+        /// <br/>optional field
+        /// <br/>you can use this field to filter the results;
+        /// <br/>possible types of filtering:
+        /// <br/>live — return metrics for SERPs in which the specified target currently has ranking results;
+        /// <br/>lost — return metrics for SERPs in which the specified target had previously had ranking results, but didn’t have them during the last check;
+        /// <br/>all — return metrics for both types of SERPs.
+        /// <br/>default value: live
+        /// </summary>
+        [JsonProperty("historical_serp_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string HistoricalSerpMode { get; set; }
+
+        /// <summary>
         /// display results by item type
         /// <br/>optional field
         /// <br/>indicates the type of search results included in the response

@@ -4,14 +4,14 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-[**aiOptimizationChatGptLlmScraperLocations**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLocations) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations  |
-[**aiOptimizationChatGptLlmScraperLocationsCountry**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLocationsCountry) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations/{country}  |
-[**aiOptimizationChatGptLlmScraperLanguages**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLanguages) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/languages  |
+[**chatGptLlmScraperLocations**](AiOptimizationApi.md#chatGptLlmScraperLocations) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations  |
+[**chatGptLlmScraperLocationsCountry**](AiOptimizationApi.md#chatGptLlmScraperLocationsCountry) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations/{country}  |
+[**chatGptLlmScraperLanguages**](AiOptimizationApi.md#chatGptLlmScraperLanguages) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/languages  |
 [**chatGptLlmScraperTaskPost**](AiOptimizationApi.md#chatGptLlmScraperTaskPost) | **POST**  /v3/ai_optimization/chat_gpt/llm_scraper/task_post  |
 [**chatGptLlmScraperTasksReady**](AiOptimizationApi.md#chatGptLlmScraperTasksReady) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/tasks_ready  |
 [**chatGptLlmScraperTaskGetAdvanced**](AiOptimizationApi.md#chatGptLlmScraperTaskGetAdvanced) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/advanced/{id}  |
 [**chatGptLlmScraperTaskGetHtml**](AiOptimizationApi.md#chatGptLlmScraperTaskGetHtml) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/html/{id}  |
-[**aiOptimizationLlmMentionsLocationsAndLanguages**](AiOptimizationApi.md#aiOptimizationLlmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
+[**llmMentionsLocationsAndLanguages**](AiOptimizationApi.md#llmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
 [**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
 [**llmMentionsSearchLive**](AiOptimizationApi.md#llmMentionsSearchLive) | **POST**  /v3/ai_optimization/llm_mentions/search/live  |
 [**llmMentionsTopPagesLive**](AiOptimizationApi.md#llmMentionsTopPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_pages/live  |
@@ -36,12 +36,12 @@ All URIs are relative to *https://api.dataforseo.com*
 [**perplexityLlmResponsesModels**](AiOptimizationApi.md#perplexityLlmResponsesModels) | **GET**  /v3/ai_optimization/perplexity/llm_responses/models  |
 [**perplexityLlmResponsesLive**](AiOptimizationApi.md#perplexityLlmResponsesLive) | **POST**  /v3/ai_optimization/perplexity/llm_responses/live  |
 [**aiKeywordDataAvailableFilters**](AiOptimizationApi.md#aiKeywordDataAvailableFilters) | **GET**  /v3/ai_optimization/ai_keyword_data/available_filters  |
-[**aiOptimizationAiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiOptimizationAiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
+[**aiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
 [**aiKeywordDataKeywordsSearchVolumeLive**](AiOptimizationApi.md#aiKeywordDataKeywordsSearchVolumeLive) | **POST**  /v3/ai_optimization/ai_keyword_data/keywords_search_volume/live  |
 
-<a id="aiOptimizationChatGptLlmScraperLocations"></a>
-# **aiOptimizationChatGptLlmScraperLocations**
-> AiOptimizationChatGptLlmScraperLocationsResponseInfo aiOptimizationChatGptLlmScraperLocations()
+<a id="chatGptLlmScraperLocations"></a>
+# **chatGptLlmScraperLocations**
+> AiOptimizationChatGptLlmScraperLocationsResponseInfo chatGptLlmScraperLocations()
 
 
 ### Example
@@ -51,7 +51,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.AiOptimizationChatGptLlmScraperLocationsAsync();
+var result = await dfsClient.AiOptimizationApi.ChatGptLlmScraperLocationsAsync();
 ```
 
 ### Parameters
@@ -80,9 +80,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationChatGptLlmScraperLocationsCountry"></a>
-# **aiOptimizationChatGptLlmScraperLocationsCountry**
-> AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo aiOptimizationChatGptLlmScraperLocationsCountry()
+<a id="chatGptLlmScraperLocationsCountry"></a>
+# **chatGptLlmScraperLocationsCountry**
+> AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo chatGptLlmScraperLocationsCountry()
 
 
 ### Example
@@ -93,7 +93,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.AiOptimizationApi.AiOptimizationChatGptLlmScraperLocationsCountryAsync(country);
+var result = await dfsClient.AiOptimizationApi.ChatGptLlmScraperLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -122,9 +122,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationChatGptLlmScraperLanguages"></a>
-# **aiOptimizationChatGptLlmScraperLanguages**
-> AiOptimizationChatGptLlmScraperLanguagesResponseInfo aiOptimizationChatGptLlmScraperLanguages()
+<a id="chatGptLlmScraperLanguages"></a>
+# **chatGptLlmScraperLanguages**
+> AiOptimizationChatGptLlmScraperLanguagesResponseInfo chatGptLlmScraperLanguages()
 
 
 ### Example
@@ -134,7 +134,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.AiOptimizationChatGptLlmScraperLanguagesAsync();
+var result = await dfsClient.AiOptimizationApi.ChatGptLlmScraperLanguagesAsync();
 ```
 
 ### Parameters
@@ -175,15 +175,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.ChatGptLlmScraperTaskPostAsync(new List<AiOptimizationChatGptLlmScraperTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.ChatGptLlmScraperTaskPostAsync(
+    new AiOptimizationChatGptLlmScraperTaskPostRequestInfo[]
     {
-        Keyword = "what is chatgpt",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new AiOptimizationChatGptLlmScraperTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "what is chatgpt",
+        },
+    });
 ```
 
 ### Parameters
@@ -337,9 +338,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationLlmMentionsLocationsAndLanguages"></a>
-# **aiOptimizationLlmMentionsLocationsAndLanguages**
-> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo aiOptimizationLlmMentionsLocationsAndLanguages()
+<a id="llmMentionsLocationsAndLanguages"></a>
+# **llmMentionsLocationsAndLanguages**
+> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages()
 
 
 ### Example
@@ -349,7 +350,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.AiOptimizationLlmMentionsLocationsAndLanguagesAsync();
+var result = await dfsClient.AiOptimizationApi.LlmMentionsLocationsAndLanguagesAsync();
 ```
 
 ### Parameters
@@ -431,31 +432,47 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.LlmMentionsSearchLiveAsync(new List<AiOptimizationLlmMentionsSearchLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.LlmMentionsSearchLiveAsync(
+    new AiOptimizationLlmMentionsSearchLiveRequestInfo[]
     {
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        new AiOptimizationLlmMentionsSearchLiveRequestInfo()
         {
-            new AiOptimizationLLmMentionsKeywordElement()
+            LanguageName = "English",
+            LocationCode = 2840,
+            Target = new BaseAiOptimizationLLmMentionsTargetElement[]
+        {
+            new AiOptimizationLLmMentionsDomainElement()
             {
-                 Keyword = "bmw",
-                 SearchScope = [ "answer"],
+                Domain = "dataforseo.com",
+                SearchFilter = "exclude",
             },
             new AiOptimizationLLmMentionsKeywordElement()
             {
-                 Keyword = "auto",
-                 SearchScope = [ "question"],
-                 MatchType = "partial_match",
+                Keyword = "bmw",
+                SearchScope = new string[]
+            {
+                "answer",
+            },
             },
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-        Platform = "google",
-        Offset = 0,
-        Limit = 3,
-    }
-});
+            Platform = "google",
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "ai_search_volume",
+                ">",
+                1000,
+            },
+        },
+            OrderBy = new string[]
+        {
+            "ai_search_volume,desc",
+        },
+            Offset = 0,
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -496,32 +513,48 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.LlmMentionsTopPagesLiveAsync(new List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopPagesLiveAsync(
+    new AiOptimizationLlmMentionsTopPagesLiveRequestInfo[]
     {
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        new AiOptimizationLlmMentionsTopPagesLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Platform = "google",
+            Target = new AiOptimizationLLmMentionsKeywordElement[]
         {
             new AiOptimizationLLmMentionsKeywordElement()
             {
-                 Keyword = "bmw",
-                 SearchScope = [ "answer"],
+                Keyword = "bmw",
+                SearchScope = new string[]
+            {
+                "answer",
+            },
             },
             new AiOptimizationLLmMentionsKeywordElement()
             {
-                 Keyword = "auto",
-                 SearchScope = [ "question"],
-                 MatchType = "partial_match",
+                Keyword = "auto",
+                SearchScope = new string[]
+            {
+                "question",
+            },
+                MatchType = "partial_match",
             },
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        Platform = "google",
-        LinksScope = "sources",
-        ItemsListLimit = 3,
-        InternalListLimit = 2,
-    }
-});
+            LinksScope = "sources",
+            InitialDatasetFilters = new object[]
+        {
+            new object[]
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+            ItemsListLimit = 3,
+            InternalListLimit = 2,
+        },
+    });
 ```
 
 ### Parameters
@@ -562,32 +595,48 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.LlmMentionsTopDomainsLiveAsync(new List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopDomainsLiveAsync(
+    new AiOptimizationLlmMentionsTopDomainsLiveRequestInfo[]
     {
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        new AiOptimizationLlmMentionsTopDomainsLiveRequestInfo()
         {
-            new BaseAiOptimizationLLmMentionsTargetElement()
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Platform = "chat_gpt",
+            Target = new AiOptimizationLLmMentionsKeywordElement[]
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
             {
-                 Keyword = "bmw",
-                 SearchScope = [\n  "answer"\n],
+                Keyword = "bmw",
+                SearchScope = new string[]
+            {
+                "answer",
             },
-            new BaseAiOptimizationLLmMentionsTargetElement()
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
             {
-                 Keyword = "auto",
-                 SearchScope = [\n  "question"\n],
-                 MatchType = "partial_match",
+                Keyword = "auto",
+                SearchScope = new string[]
+            {
+                "question",
+            },
+                MatchType = "partial_match",
             },
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        Platform = "chat_gpt",
-        LinksScope = "sources",
-        ItemsListLimit = 3,
-        InternalListLimit = 2,
-    }
-});
+            LinksScope = "sources",
+            InitialDatasetFilters = new object[]
+        {
+            new object[]
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+            ItemsListLimit = 3,
+            InternalListLimit = 2,
+        },
+    });
 ```
 
 ### Parameters
@@ -628,29 +677,42 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.LlmMentionsAggregatedMetricsLiveAsync(new List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.LlmMentionsAggregatedMetricsLiveAsync(
+    new AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo[]
     {
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        new AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo()
+        {
+            LanguageCode = "es",
+            LocationCode = 2840,
+            Platform = "google",
+            Target = new BaseAiOptimizationLLmMentionsTargetElement[]
         {
             new AiOptimizationLLmMentionsDomainElement()
             {
-                 Domain = "en.wikipedia.org",
-                 SearchFilter = "exclude",
+                Domain = "en.wikipedia.org",
+                SearchFilter = "exclude",
             },
             new AiOptimizationLLmMentionsKeywordElement()
             {
-                 Keyword = "bmw",
-                 SearchScope = [ "answer"],
+                Keyword = "bmw",
+                SearchScope = new string[]
+            {
+                "answer",
+            },
             },
         },
-        LocationCode = 2840,
-        LanguageCode = "es",
-        Platform = "google",
-        InternalListLimit = 10,
-    }
-});
+            InitialDatasetFilters = new object[]
+        {
+            new object[]
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+            InternalListLimit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -691,63 +753,74 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.LlmMentionsCrossAggregatedMetricsLiveAsync(new List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.LlmMentionsCrossAggregatedMetricsLiveAsync(
+    new AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo[]
     {
-        Targets = new List<AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo>()
+        new AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Platform = "google",
+            Targets = new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo[]
         {
             new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
             {
-                 AggregationKey = "chat_gpt",
-                 Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-                 {
-                     new AiOptimizationLLmMentionsKeywordElement()
-                     {
-                         Keyword = "chat gpt",
-                     },
-                 },
+                AggregationKey = "chat_gpt",
+                Target = new AiOptimizationLLmMentionsKeywordElement[]
+            {
+                new AiOptimizationLLmMentionsKeywordElement()
+                {
+                    Keyword = "chat gpt",
+                },
+            },
             },
             new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
             {
-                 AggregationKey = "claude",
-                 Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-                 {
-                     new AiOptimizationLLmMentionsKeywordElement()
-                     {
-                         Keyword = "claude",
-                     },
-                 },
+                AggregationKey = "claude",
+                Target = new AiOptimizationLLmMentionsKeywordElement[]
+            {
+                new AiOptimizationLLmMentionsKeywordElement()
+                {
+                    Keyword = "claude",
+                },
+            },
             },
             new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
             {
-                 AggregationKey = "gemini",
-                 Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-                 {
-                     new AiOptimizationLLmMentionsKeywordElement()
-                     {
-                         Keyword = "gemini",
-                     },
-                 },
+                AggregationKey = "gemini",
+                Target = new AiOptimizationLLmMentionsKeywordElement[]
+            {
+                new AiOptimizationLLmMentionsKeywordElement()
+                {
+                    Keyword = "gemini",
+                },
+            },
             },
             new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
             {
-                 AggregationKey = "perplexity",
-                 Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-                 {
-                     new AiOptimizationLLmMentionsKeywordElement()
-                     {
-                         Keyword = "perplexity",
-                     },
-                 },
+                AggregationKey = "perplexity",
+                Target = new AiOptimizationLLmMentionsKeywordElement[]
+            {
+                new AiOptimizationLLmMentionsKeywordElement()
+                {
+                    Keyword = "perplexity",
+                    SearchFilter = "include",
+                },
+            },
             },
         },
-        LocationCode = 2840,
-        LanguageCode = "en",
-        Platform = "google",
-        InternalListLimit = 5,
-    }
-});
+            InitialDatasetFilters = new object[]
+        {
+            new object[]
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+            InternalListLimit = 5,
+        },
+    });
 ```
 
 ### Parameters
@@ -829,34 +902,35 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.ChatGptLlmResponsesLiveAsync(new List<AiOptimizationChatGptLlmResponsesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.ChatGptLlmResponsesLiveAsync(
+    new AiOptimizationChatGptLlmResponsesLiveRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "gpt-4.1-mini",
-        MaxOutputTokens = 200,
-        Temperature = 0.3,
-        TopP = 0.5,
-        WebSearch = true,
-        WebSearchCountryIsoCode = "FR",
-        WebSearchCity = "Paris",
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationChatGptLlmResponsesLiveRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            MaxOutputTokens = 200,
+            Temperature = 0.3,
+            TopP = 0.5,
+            ModelName = "gpt-4.1-mini",
+            WebSearch = true,
+            WebSearchCountryIsoCode = "FR",
+            WebSearchCity = "Paris",
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -897,28 +971,29 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.ChatGptLlmResponsesTaskPostAsync(new List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.ChatGptLlmResponsesTaskPostAsync(
+    new AiOptimizationChatGptLlmResponsesTaskPostRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "gpt-4.1-mini",
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationChatGptLlmResponsesTaskPostRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            ModelName = "gpt-4.1-mini",
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -1083,33 +1158,34 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesLiveAsync(new List<AiOptimizationClaudeLlmResponsesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesLiveAsync(
+    new AiOptimizationClaudeLlmResponsesLiveRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "claude-opus-4-0",
-        MaxOutputTokens = 200,
-        Temperature = 0.3,
-        TopP = 0.5,
-        WebSearch = true,
-        WebSearchCountryIsoCode = "FR",
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationClaudeLlmResponsesLiveRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            MaxOutputTokens = 200,
+            ModelName = "claude-opus-4-0",
+            Temperature = 0.3,
+            TopP = 0.5,
+            WebSearch = true,
+            WebSearchCountryIsoCode = "FR",
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -1150,33 +1226,34 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesTaskPostAsync(new List<AiOptimizationClaudeLlmResponsesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesTaskPostAsync(
+    new AiOptimizationClaudeLlmResponsesTaskPostRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "claude-sonnet-4-0",
-        MaxOutputTokens = 1024,
-        Temperature = 0.3,
-        TopP = 0.5,
-        WebSearch = true,
-        WebSearchCountryIsoCode = "FR",
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationClaudeLlmResponsesTaskPostRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            MaxOutputTokens = 1024,
+            Temperature = 0.3,
+            TopP = 0.5,
+            WebSearchCountryIsoCode = "FR",
+            ModelName = "claude-sonnet-4-0",
+            WebSearch = true,
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -1341,28 +1418,29 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesTaskPostAsync(new List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesTaskPostAsync(
+    new AiOptimizationGeminiLlmResponsesTaskPostRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "gemini-2.5-flash",
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationGeminiLlmResponsesTaskPostRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            ModelName = "gemini-2.5-flash",
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -1486,32 +1564,33 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesLiveAsync(new List<AiOptimizationGeminiLlmResponsesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesLiveAsync(
+    new AiOptimizationGeminiLlmResponsesLiveRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "gemini-2.5-flash",
-        MaxOutputTokens = 200,
-        Temperature = 0.3,
-        TopP = 0.5,
-        WebSearch = true,
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationGeminiLlmResponsesLiveRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            MaxOutputTokens = 200,
+            Temperature = 0.3,
+            TopP = 0.5,
+            ModelName = "gemini-2.5-flash",
+            WebSearch = true,
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -1593,32 +1672,33 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.PerplexityLlmResponsesLiveAsync(new List<AiOptimizationPerplexityLlmResponsesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.PerplexityLlmResponsesLiveAsync(
+    new AiOptimizationPerplexityLlmResponsesLiveRequestInfo[]
     {
-        UserPrompt = "provide information on how relevant the amusement park business is in France now",
-        ModelName = "sonar-reasoning",
-        MaxOutputTokens = 200,
-        Temperature = 0.3,
-        TopP = 0.5,
-        WebSearchCountryIsoCode = "FR",
-        SystemMessage = "communicate as if we are in a business meeting",
-        MessageChain = new List<LlmMessageChainItem>()
+        new AiOptimizationPerplexityLlmResponsesLiveRequestInfo()
+        {
+            SystemMessage = "communicate as if we are in a business meeting",
+            MessageChain = new LlmMessageChainItem[]
         {
             new LlmMessageChainItem()
             {
-                 Role = "user",
-                 Message = "Hello, what’s up?",
+                Role = "user",
+                Message = "Hello, what’s up?",
             },
             new LlmMessageChainItem()
             {
-                 Role = "ai",
-                 Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Role = "ai",
+                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
             },
         },
-    }
-});
+            MaxOutputTokens = 200,
+            Temperature = 0.3,
+            TopP = 0.5,
+            WebSearchCountryIsoCode = "FR",
+            ModelName = "sonar-reasoning",
+            UserPrompt = "provide information on how relevant the amusement park business is in France now",
+        },
+    });
 ```
 
 ### Parameters
@@ -1688,9 +1768,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationAiKeywordDataLocationsAndLanguages"></a>
-# **aiOptimizationAiKeywordDataLocationsAndLanguages**
-> AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo aiOptimizationAiKeywordDataLocationsAndLanguages()
+<a id="aiKeywordDataLocationsAndLanguages"></a>
+# **aiKeywordDataLocationsAndLanguages**
+> AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo aiKeywordDataLocationsAndLanguages()
 
 
 ### Example
@@ -1700,7 +1780,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.AiOptimizationAiKeywordDataLocationsAndLanguagesAsync();
+var result = await dfsClient.AiOptimizationApi.AiKeywordDataLocationsAndLanguagesAsync();
 ```
 
 ### Parameters
@@ -1741,19 +1821,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AiOptimizationApi.AiKeywordDataKeywordsSearchVolumeLiveAsync(new List<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.AiOptimizationApi.AiKeywordDataKeywordsSearchVolumeLiveAsync(
+    new AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo[]
     {
-        Keywords = new List<string>()
+        new AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo()
+        {
+            LanguageName = "English",
+            LocationCode = 2840,
+            Keywords = new string[]
         {
             "iphone",
             "seo",
         },
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters

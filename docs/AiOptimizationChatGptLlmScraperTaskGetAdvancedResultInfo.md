@@ -15,6 +15,7 @@
 **SearchResults** | **IEnumerable<ChatgptSearchResult>** | array of search results<br>all web search outputs the model retrieved when looking up information, including duplicates and unused entries |[optional]|
 **Sources** | **IEnumerable<ChatGptSource>** | array of sources<br>the sources the model actually cited or relied on in its final answer |[optional]|
 **FanOutQueries** | **IEnumerable<string>** | array of fan-out queries<br>contains related search queries derived from the main query to provide a more comprehensive response |[optional]|
+**BrandEntities** | **IEnumerable<ChatGptBrandEntity>** | array of brand entities<br>contains information on brands mentioned in the response |[optional]|
 **SeResultsCount** | **long?** | total number of results |[optional]|
 **ItemTypes** | **IEnumerable<string>** | types of search results<br>contains types of search results (items) found.<br>possible item types:<br>chat_gpt_text, chat_gpt_table, chat_gpt_navigation_list, chat_gpt_images, chat_gpt_local_businesses, chat_gpt_products |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|

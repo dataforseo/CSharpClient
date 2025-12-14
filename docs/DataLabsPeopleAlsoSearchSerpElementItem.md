@@ -6,4 +6,4 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Title** | **string** | title of the result in SERP |[optional]|
-**Items** | **IEnumerable<string>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<string>** | historical SERPs and related data found in the database |[optional]|

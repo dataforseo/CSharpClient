@@ -4,13 +4,13 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-[**serpIdList**](SerpApi.md#serpIdList) | **POST**  /v3/serp/id_list  |
-[**serpErrors**](SerpApi.md#serpErrors) | **POST**  /v3/serp/errors  |
+[**idList**](SerpApi.md#idList) | **POST**  /v3/serp/id_list  |
+[**errors**](SerpApi.md#errors) | **POST**  /v3/serp/errors  |
 [**screenshot**](SerpApi.md#screenshot) | **POST**  /v3/serp/screenshot  |
 [**aiSummary**](SerpApi.md#aiSummary) | **POST**  /v3/serp/ai_summary  |
-[**serpGoogleLocations**](SerpApi.md#serpGoogleLocations) | **GET**  /v3/serp/google/locations  |
-[**serpGoogleLocationsCountry**](SerpApi.md#serpGoogleLocationsCountry) | **GET**  /v3/serp/google/locations/{country}  |
-[**serpGoogleLanguages**](SerpApi.md#serpGoogleLanguages) | **GET**  /v3/serp/google/languages  |
+[**googleLocations**](SerpApi.md#googleLocations) | **GET**  /v3/serp/google/locations  |
+[**googleLocationsCountry**](SerpApi.md#googleLocationsCountry) | **GET**  /v3/serp/google/locations/{country}  |
+[**googleLanguages**](SerpApi.md#googleLanguages) | **GET**  /v3/serp/google/languages  |
 [**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST**  /v3/serp/google/organic/task_post  |
 [**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET**  /v3/serp/google/organic/tasks_ready  |
 [**tasksReady**](SerpApi.md#tasksReady) | **GET**  /v3/serp/tasks_ready  |
@@ -21,7 +21,7 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST**  /v3/serp/google/organic/live/regular  |
 [**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST**  /v3/serp/google/organic/live/advanced  |
 [**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST**  /v3/serp/google/organic/live/html  |
-[**serpGoogleAiModeLanguages**](SerpApi.md#serpGoogleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
+[**googleAiModeLanguages**](SerpApi.md#googleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
 [**googleAiModeTaskPost**](SerpApi.md#googleAiModeTaskPost) | **POST**  /v3/serp/google/ai_mode/task_post  |
 [**googleAiModeTasksReady**](SerpApi.md#googleAiModeTasksReady) | **GET**  /v3/serp/google/ai_mode/tasks_ready  |
 [**googleAiModeTasksFixed**](SerpApi.md#googleAiModeTasksFixed) | **GET**  /v3/serp/google/ai_mode/tasks_fixed  |
@@ -84,17 +84,17 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleDatasetInfoTasksFixed**](SerpApi.md#googleDatasetInfoTasksFixed) | **GET**  /v3/serp/google/dataset_info/tasks_fixed  |
 [**googleDatasetInfoTaskGetAdvanced**](SerpApi.md#googleDatasetInfoTaskGetAdvanced) | **GET**  /v3/serp/google/dataset_info/task_get/advanced/{id}  |
 [**googleDatasetInfoLiveAdvanced**](SerpApi.md#googleDatasetInfoLiveAdvanced) | **POST**  /v3/serp/google/dataset_info/live/advanced  |
-[**serpGoogleAdsAdvertisersLocations**](SerpApi.md#serpGoogleAdsAdvertisersLocations) | **GET**  /v3/serp/google/ads_advertisers/locations  |
+[**googleAdsAdvertisersLocations**](SerpApi.md#googleAdsAdvertisersLocations) | **GET**  /v3/serp/google/ads_advertisers/locations  |
 [**googleAdsAdvertisersTaskPost**](SerpApi.md#googleAdsAdvertisersTaskPost) | **POST**  /v3/serp/google/ads_advertisers/task_post  |
 [**googleAdsAdvertisersTasksReady**](SerpApi.md#googleAdsAdvertisersTasksReady) | **GET**  /v3/serp/google/ads_advertisers/tasks_ready  |
 [**googleAdsAdvertisersTaskGetAdvanced**](SerpApi.md#googleAdsAdvertisersTaskGetAdvanced) | **GET**  /v3/serp/google/ads_advertisers/task_get/advanced/{id}  |
-[**serpGoogleAdsSearchLocations**](SerpApi.md#serpGoogleAdsSearchLocations) | **GET**  /v3/serp/google/ads_search/locations  |
+[**googleAdsSearchLocations**](SerpApi.md#googleAdsSearchLocations) | **GET**  /v3/serp/google/ads_search/locations  |
 [**googleAdsSearchTaskPost**](SerpApi.md#googleAdsSearchTaskPost) | **POST**  /v3/serp/google/ads_search/task_post  |
 [**googleAdsSearchTasksReady**](SerpApi.md#googleAdsSearchTasksReady) | **GET**  /v3/serp/google/ads_search/tasks_ready  |
 [**googleAdsSearchTaskGetAdvanced**](SerpApi.md#googleAdsSearchTaskGetAdvanced) | **GET**  /v3/serp/google/ads_search/task_get/advanced/{id}  |
-[**serpBingLocations**](SerpApi.md#serpBingLocations) | **GET**  /v3/serp/bing/locations  |
-[**serpBingLocationsCountry**](SerpApi.md#serpBingLocationsCountry) | **GET**  /v3/serp/bing/locations/{country}  |
-[**serpBingLanguages**](SerpApi.md#serpBingLanguages) | **GET**  /v3/serp/bing/languages  |
+[**bingLocations**](SerpApi.md#bingLocations) | **GET**  /v3/serp/bing/locations  |
+[**bingLocationsCountry**](SerpApi.md#bingLocationsCountry) | **GET**  /v3/serp/bing/locations/{country}  |
+[**bingLanguages**](SerpApi.md#bingLanguages) | **GET**  /v3/serp/bing/languages  |
 [**bingOrganicTaskPost**](SerpApi.md#bingOrganicTaskPost) | **POST**  /v3/serp/bing/organic/task_post  |
 [**bingOrganicTasksReady**](SerpApi.md#bingOrganicTasksReady) | **GET**  /v3/serp/bing/organic/tasks_ready  |
 [**bingOrganicTasksFixed**](SerpApi.md#bingOrganicTasksFixed) | **GET**  /v3/serp/bing/organic/tasks_fixed  |
@@ -111,9 +111,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**bingLocalPackTaskGetHtml**](SerpApi.md#bingLocalPackTaskGetHtml) | **GET**  /v3/serp/bing/local_pack/task_get/html/{id}  |
 [**bingLocalPackLiveRegular**](SerpApi.md#bingLocalPackLiveRegular) | **POST**  /v3/serp/bing/local_pack/live/regular  |
 [**bingLocalPackLiveHtml**](SerpApi.md#bingLocalPackLiveHtml) | **POST**  /v3/serp/bing/local_pack/live/html  |
-[**serpYoutubeLocations**](SerpApi.md#serpYoutubeLocations) | **GET**  /v3/serp/youtube/locations  |
-[**serpYoutubeLocationsCountry**](SerpApi.md#serpYoutubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
-[**serpYoutubeLanguages**](SerpApi.md#serpYoutubeLanguages) | **GET**  /v3/serp/youtube/languages  |
+[**youtubeLocations**](SerpApi.md#youtubeLocations) | **GET**  /v3/serp/youtube/locations  |
+[**youtubeLocationsCountry**](SerpApi.md#youtubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
+[**youtubeLanguages**](SerpApi.md#youtubeLanguages) | **GET**  /v3/serp/youtube/languages  |
 [**youtubeVideoInfoTaskPost**](SerpApi.md#youtubeVideoInfoTaskPost) | **POST**  /v3/serp/youtube/video_info/task_post  |
 [**youtubeVideoInfoTasksReady**](SerpApi.md#youtubeVideoInfoTasksReady) | **GET**  /v3/serp/youtube/video_info/tasks_ready  |
 [**youtubeVideoInfoTasksFixed**](SerpApi.md#youtubeVideoInfoTasksFixed) | **GET**  /v3/serp/youtube/video_info/tasks_fixed  |
@@ -129,9 +129,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**youtubeVideoCommentsTasksFixed**](SerpApi.md#youtubeVideoCommentsTasksFixed) | **GET**  /v3/serp/youtube/video_comments/tasks_fixed  |
 [**youtubeVideoCommentsTaskGetAdvanced**](SerpApi.md#youtubeVideoCommentsTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_comments/task_get/advanced/{id}  |
 [**youtubeVideoCommentsLiveAdvanced**](SerpApi.md#youtubeVideoCommentsLiveAdvanced) | **POST**  /v3/serp/youtube/video_comments/live/advanced  |
-[**serpYahooLocations**](SerpApi.md#serpYahooLocations) | **GET**  /v3/serp/yahoo/locations  |
-[**serpYahooLocationsCountry**](SerpApi.md#serpYahooLocationsCountry) | **GET**  /v3/serp/yahoo/locations/{country}  |
-[**serpYahooLanguages**](SerpApi.md#serpYahooLanguages) | **GET**  /v3/serp/yahoo/languages  |
+[**yahooLocations**](SerpApi.md#yahooLocations) | **GET**  /v3/serp/yahoo/locations  |
+[**yahooLocationsCountry**](SerpApi.md#yahooLocationsCountry) | **GET**  /v3/serp/yahoo/locations/{country}  |
+[**yahooLanguages**](SerpApi.md#yahooLanguages) | **GET**  /v3/serp/yahoo/languages  |
 [**yahooOrganicTaskPost**](SerpApi.md#yahooOrganicTaskPost) | **POST**  /v3/serp/yahoo/organic/task_post  |
 [**yahooOrganicTasksReady**](SerpApi.md#yahooOrganicTasksReady) | **GET**  /v3/serp/yahoo/organic/tasks_ready  |
 [**yahooOrganicTasksFixed**](SerpApi.md#yahooOrganicTasksFixed) | **GET**  /v3/serp/yahoo/organic/tasks_fixed  |
@@ -141,9 +141,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**yahooOrganicLiveRegular**](SerpApi.md#yahooOrganicLiveRegular) | **POST**  /v3/serp/yahoo/organic/live/regular  |
 [**yahooOrganicLiveAdvanced**](SerpApi.md#yahooOrganicLiveAdvanced) | **POST**  /v3/serp/yahoo/organic/live/advanced  |
 [**yahooOrganicLiveHtml**](SerpApi.md#yahooOrganicLiveHtml) | **POST**  /v3/serp/yahoo/organic/live/html  |
-[**serpBaiduLocations**](SerpApi.md#serpBaiduLocations) | **GET**  /v3/serp/baidu/locations  |
-[**serpBaiduLocationsCountry**](SerpApi.md#serpBaiduLocationsCountry) | **GET**  /v3/serp/baidu/locations/{country}  |
-[**serpBaiduLanguages**](SerpApi.md#serpBaiduLanguages) | **GET**  /v3/serp/baidu/languages  |
+[**baiduLocations**](SerpApi.md#baiduLocations) | **GET**  /v3/serp/baidu/locations  |
+[**baiduLocationsCountry**](SerpApi.md#baiduLocationsCountry) | **GET**  /v3/serp/baidu/locations/{country}  |
+[**baiduLanguages**](SerpApi.md#baiduLanguages) | **GET**  /v3/serp/baidu/languages  |
 [**baiduOrganicTaskPost**](SerpApi.md#baiduOrganicTaskPost) | **POST**  /v3/serp/baidu/organic/task_post  |
 [**baiduOrganicTasksReady**](SerpApi.md#baiduOrganicTasksReady) | **GET**  /v3/serp/baidu/organic/tasks_ready  |
 [**baiduOrganicTasksFixed**](SerpApi.md#baiduOrganicTasksFixed) | **GET**  /v3/serp/baidu/organic/tasks_fixed  |
@@ -156,9 +156,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**naverOrganicTaskGetRegular**](SerpApi.md#naverOrganicTaskGetRegular) | **GET**  /v3/serp/naver/organic/task_get/regular/{id}  |
 [**naverOrganicTaskGetAdvanced**](SerpApi.md#naverOrganicTaskGetAdvanced) | **GET**  /v3/serp/naver/organic/task_get/advanced/{id}  |
 [**naverOrganicTaskGetHtml**](SerpApi.md#naverOrganicTaskGetHtml) | **GET**  /v3/serp/naver/organic/task_get/html/{id}  |
-[**serpSeznamLocations**](SerpApi.md#serpSeznamLocations) | **GET**  /v3/serp/seznam/locations  |
-[**serpSeznamLocationsCountry**](SerpApi.md#serpSeznamLocationsCountry) | **GET**  /v3/serp/seznam/locations/{country}  |
-[**serpSeznamLanguages**](SerpApi.md#serpSeznamLanguages) | **GET**  /v3/serp/seznam/languages  |
+[**seznamLocations**](SerpApi.md#seznamLocations) | **GET**  /v3/serp/seznam/locations  |
+[**seznamLocationsCountry**](SerpApi.md#seznamLocationsCountry) | **GET**  /v3/serp/seznam/locations/{country}  |
+[**seznamLanguages**](SerpApi.md#seznamLanguages) | **GET**  /v3/serp/seznam/languages  |
 [**seznamOrganicTaskPost**](SerpApi.md#seznamOrganicTaskPost) | **POST**  /v3/serp/seznam/organic/task_post  |
 [**seznamOrganicTasksReady**](SerpApi.md#seznamOrganicTasksReady) | **GET**  /v3/serp/seznam/organic/tasks_ready  |
 [**seznamOrganicTasksFixed**](SerpApi.md#seznamOrganicTasksFixed) | **GET**  /v3/serp/seznam/organic/tasks_fixed  |
@@ -188,9 +188,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleFinanceTickerSearchTaskGetAdvanced**](SerpApi.md#googleFinanceTickerSearchTaskGetAdvanced) | **GET**  /v3/serp/google/finance_ticker_search/task_get/advanced/{id}  |
 [**googleFinanceTickerSearchLiveAdvanced**](SerpApi.md#googleFinanceTickerSearchLiveAdvanced) | **POST**  /v3/serp/google/finance_ticker_search/live/advanced  |
 
-<a id="serpIdList"></a>
-# **serpIdList**
-> SerpIdListResponseInfo serpIdList()
+<a id="idList"></a>
+# **idList**
+> SerpIdListResponseInfo idList()
 
 
 ### Example
@@ -200,17 +200,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpIdListAsync(new List<SerpIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.IdListAsync(
+    new SerpIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:04:48 +00:00",
-        DatetimeTo = "2025-10-22 08:04:48 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new SerpIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -239,9 +241,9 @@ var result = await dfsClient.SerpApi.SerpIdListAsync(new List<SerpIdListRequestI
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpErrors"></a>
-# **serpErrors**
-> SerpErrorsResponseInfo serpErrors()
+<a id="errors"></a>
+# **errors**
+> SerpErrorsResponseInfo errors()
 
 
 ### Example
@@ -251,15 +253,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpErrorsAsync(new List<SerpErrorsRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.ErrorsAsync(
+    new SerpErrorsRequestInfo[]
     {
-        Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
-    }
-});
+        new SerpErrorsRequestInfo()
+        {
+            Limit = 10,
+            Offset = 0,
+            FilteredFunction = "pingback_url",
+        },
+    });
 ```
 
 ### Parameters
@@ -300,14 +303,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.ScreenshotAsync(new List<SerpScreenshotRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.ScreenshotAsync(
+    new SerpScreenshotRequestInfo[]
     {
-        TaskId = "06211235-0696-0139-1000-36727fbd3c90",
-        BrowserScreenScaleFactor = 0.5,
-    }
-});
+        new SerpScreenshotRequestInfo()
+        {
+            TaskId = "06211235-0696-0139-1000-36727fbd3c90",
+            BrowserScreenScaleFactor = 0.5,
+        },
+    });
 ```
 
 ### Parameters
@@ -348,16 +352,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.AiSummaryAsync(new List<SerpAiSummaryRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.AiSummaryAsync(
+    new SerpAiSummaryRequestInfo[]
     {
-        TaskId = "07031739-1535-0139-0000-9d1e639a5b7d",
-        Prompt = "explain what DataForSEO is",
-        FetchContent = true,
-        IncludeLinks = true,
-    }
-});
+        new SerpAiSummaryRequestInfo()
+        {
+            TaskId = "07031739-1535-0139-0000-9d1e639a5b7d",
+            Prompt = "explain what DataForSEO is",
+            IncludeLinks = true,
+            FetchContent = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -386,9 +391,9 @@ var result = await dfsClient.SerpApi.AiSummaryAsync(new List<SerpAiSummaryReques
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleLocations"></a>
-# **serpGoogleLocations**
-> SerpGoogleLocationsResponseInfo serpGoogleLocations()
+<a id="googleLocations"></a>
+# **googleLocations**
+> SerpGoogleLocationsResponseInfo googleLocations()
 
 
 ### Example
@@ -398,7 +403,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpGoogleLocationsAsync();
+var result = await dfsClient.SerpApi.GoogleLocationsAsync();
 ```
 
 ### Parameters
@@ -427,9 +432,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleLocationsCountry"></a>
-# **serpGoogleLocationsCountry**
-> SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry()
+<a id="googleLocationsCountry"></a>
+# **googleLocationsCountry**
+> SerpGoogleLocationsCountryResponseInfo googleLocationsCountry()
 
 
 ### Example
@@ -440,7 +445,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.SerpApi.SerpGoogleLocationsCountryAsync(country);
+var result = await dfsClient.SerpApi.GoogleLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -469,9 +474,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleLanguages"></a>
-# **serpGoogleLanguages**
-> SerpGoogleLanguagesResponseInfo serpGoogleLanguages()
+<a id="googleLanguages"></a>
+# **googleLanguages**
+> SerpGoogleLanguagesResponseInfo googleLanguages()
 
 
 ### Example
@@ -481,7 +486,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpGoogleLanguagesAsync();
+var result = await dfsClient.SerpApi.GoogleLanguagesAsync();
 ```
 
 ### Parameters
@@ -522,15 +527,31 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(
+    new SerpGoogleOrganicTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleOrganicTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+        new SerpGoogleOrganicTaskPostRequestInfo()
+        {
+            LanguageName = "English",
+            LocationName = "United States",
+            Keyword = "albert einstein",
+            Priority = 2,
+            Tag = "some_string_123",
+            PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
+        },
+        new SerpGoogleOrganicTaskPostRequestInfo()
+        {
+            Url = "https://www.google.co.uk/search?q=albert%20einstein&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS",
+            PostbackData = "html",
+            PostbackUrl = "https://your-server.com/postbackscript",
+        },
+    });
 ```
 
 ### Parameters
@@ -820,15 +841,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(new List<SerpGoogleOrganicLiveRegularRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(
+    new SerpGoogleOrganicLiveRegularRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleOrganicLiveRegularRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -869,16 +891,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(
+    new SerpGoogleOrganicLiveAdvancedRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        CalculateRectangles = true,
-    }
-});
+        new SerpGoogleOrganicLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+            CalculateRectangles = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -919,15 +942,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoogleOrganicLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(
+    new SerpGoogleOrganicLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleOrganicLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -956,9 +980,9 @@ var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoo
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleAiModeLanguages"></a>
-# **serpGoogleAiModeLanguages**
-> SerpGoogleAiModeLanguagesResponseInfo serpGoogleAiModeLanguages()
+<a id="googleAiModeLanguages"></a>
+# **googleAiModeLanguages**
+> SerpGoogleAiModeLanguagesResponseInfo googleAiModeLanguages()
 
 
 ### Example
@@ -968,7 +992,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpGoogleAiModeLanguagesAsync();
+var result = await dfsClient.SerpApi.GoogleAiModeLanguagesAsync();
 ```
 
 ### Parameters
@@ -1009,15 +1033,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAiModeTaskPostAsync(new List<SerpGoogleAiModeTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAiModeTaskPostAsync(
+    new SerpGoogleAiModeTaskPostRequestInfo[]
     {
-        Keyword = "what is google ai mode",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleAiModeTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "what is google ai mode",
+        },
+    });
 ```
 
 ### Parameters
@@ -1224,15 +1249,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAiModeLiveAdvancedAsync(new List<SerpGoogleAiModeLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAiModeLiveAdvancedAsync(
+    new SerpGoogleAiModeLiveAdvancedRequestInfo[]
     {
-        Keyword = "what is google ai mode",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleAiModeLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "what is google ai mode",
+        },
+    });
 ```
 
 ### Parameters
@@ -1273,15 +1299,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAiModeLiveHtmlAsync(new List<SerpGoogleAiModeLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAiModeLiveHtmlAsync(
+    new SerpGoogleAiModeLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleAiModeLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -1322,15 +1349,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleMapsTaskPostAsync(new List<SerpGoogleMapsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleMapsTaskPostAsync(
+    new SerpGoogleMapsTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleMapsTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -1495,15 +1523,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleMapsLiveAdvancedAsync(new List<SerpGoogleMapsLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleMapsLiveAdvancedAsync(
+    new SerpGoogleMapsLiveAdvancedRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleMapsLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -1544,17 +1573,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<SerpGoogleLocalFinderTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(
+    new SerpGoogleLocalFinderTaskPostRequestInfo[]
     {
-        Keyword = "local nail services",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        MinRating = 4.5,
-        TimeFilter = "monday",
-    }
-});
+        new SerpGoogleLocalFinderTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "local nail services",
+            MinRating = 4.5,
+            TimeFilter = "monday",
+        },
+    });
 ```
 
 ### Parameters
@@ -1761,17 +1791,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List<SerpGoogleLocalFinderLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(
+    new SerpGoogleLocalFinderLiveAdvancedRequestInfo[]
     {
-        Keyword = "local nail services",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        MinRating = 4.5,
-        TimeFilter = "monday",
-    }
-});
+        new SerpGoogleLocalFinderLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "local nail services",
+            MinRating = 4.5,
+            TimeFilter = "monday",
+        },
+    });
 ```
 
 ### Parameters
@@ -1812,15 +1843,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleLocalFinderLiveHtmlAsync(new List<SerpGoogleLocalFinderLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleLocalFinderLiveHtmlAsync(
+    new SerpGoogleLocalFinderLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleLocalFinderLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -1861,15 +1893,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleNewsTaskPostAsync(new List<SerpGoogleNewsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleNewsTaskPostAsync(
+    new SerpGoogleNewsTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleNewsTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -2076,15 +2109,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleNewsLiveAdvancedAsync(new List<SerpGoogleNewsLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleNewsLiveAdvancedAsync(
+    new SerpGoogleNewsLiveAdvancedRequestInfo[]
     {
-        Keyword = "android",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleNewsLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "android",
+        },
+    });
 ```
 
 ### Parameters
@@ -2125,15 +2159,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleNewsLiveHtmlAsync(new List<SerpGoogleNewsLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleNewsLiveHtmlAsync(
+    new SerpGoogleNewsLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleNewsLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -2174,15 +2209,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleEventsTaskPostAsync(new List<SerpGoogleEventsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleEventsTaskPostAsync(
+    new SerpGoogleEventsTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleEventsTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -2347,15 +2383,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(new List<SerpGoogleEventsLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(
+    new SerpGoogleEventsLiveAdvancedRequestInfo[]
     {
-        Keyword = "concerts",
-        LocationName = "Los Angeles,California,United States",
-        DateRange = "today",
-    }
-});
+        new SerpGoogleEventsLiveAdvancedRequestInfo()
+        {
+            Keyword = "concerts",
+            LocationName = "Los Angeles,California,United States",
+            DateRange = "today",
+        },
+    });
 ```
 
 ### Parameters
@@ -2396,15 +2433,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleImagesTaskPostAsync(new List<SerpGoogleImagesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleImagesTaskPostAsync(
+    new SerpGoogleImagesTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleImagesTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -2611,15 +2649,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleImagesLiveAdvancedAsync(new List<SerpGoogleImagesLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleImagesLiveAdvancedAsync(
+    new SerpGoogleImagesLiveAdvancedRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleImagesLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -2660,15 +2699,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleImagesLiveHtmlAsync(new List<SerpGoogleImagesLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleImagesLiveHtmlAsync(
+    new SerpGoogleImagesLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleImagesLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -2709,15 +2749,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleSearchByImageTaskPostAsync(new List<SerpGoogleSearchByImageTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleSearchByImageTaskPostAsync(
+    new SerpGoogleSearchByImageTaskPostRequestInfo[]
     {
-        ImageUrl = "https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleSearchByImageTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            ImageUrl = "https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png",
+        },
+    });
 ```
 
 ### Parameters
@@ -2882,15 +2923,24 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleJobsTaskPostAsync(new List<SerpGoogleJobsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleJobsTaskPostAsync(
+    new SerpGoogleJobsTaskPostRequestInfo[]
     {
-        Keyword = ".net developer",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleJobsTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = ".net developer",
+        },
+        new SerpGoogleJobsTaskPostRequestInfo()
+        {
+            LanguageName = "English",
+            LocationName = "United States",
+            Keyword = ".net developer",
+            Tag = "some_string_123",
+            PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
+        },
+    });
 ```
 
 ### Parameters
@@ -3097,16 +3147,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAutocompleteTaskPostAsync(new List<SerpGoogleAutocompleteTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAutocompleteTaskPostAsync(
+    new SerpGoogleAutocompleteTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        CursorPointer = 6,
-    }
-});
+        new SerpGoogleAutocompleteTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+            CursorPointer = 6,
+        },
+    });
 ```
 
 ### Parameters
@@ -3271,16 +3322,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(new List<SerpGoogleAutocompleteLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(
+    new SerpGoogleAutocompleteLiveAdvancedRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        Client = "gws-wiz-serp",
-    }
-});
+        new SerpGoogleAutocompleteLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+            Client = "gws-wiz-serp",
+        },
+    });
 ```
 
 ### Parameters
@@ -3321,26 +3373,27 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(new List<SerpGoogleDatasetSearchTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(
+    new SerpGoogleDatasetSearchTaskPostRequestInfo[]
     {
-        Keyword = "water quality",
-        LastUpdated = "1m",
-        FileFormats = new List<string>()
+        new SerpGoogleDatasetSearchTaskPostRequestInfo()
+        {
+            Keyword = "water quality",
+            LastUpdated = "1m",
+            FileFormats = new string[]
         {
             "archive",
             "image",
         },
-        UsageRights = "noncommercial",
-        IsFree = true,
-        Topics = new List<string>()
+            UsageRights = "noncommercial",
+            IsFree = true,
+            Topics = new string[]
         {
             "natural_sciences",
             "geo",
         },
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -3505,26 +3558,27 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(new List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(
+    new SerpGoogleDatasetSearchLiveAdvancedRequestInfo[]
     {
-        Keyword = "water quality",
-        LastUpdated = "1m",
-        FileFormats = new List<string>()
+        new SerpGoogleDatasetSearchLiveAdvancedRequestInfo()
+        {
+            Keyword = "water quality",
+            LastUpdated = "1m",
+            FileFormats = new string[]
         {
             "archive",
             "image",
         },
-        UsageRights = "noncommercial",
-        IsFree = true,
-        Topics = new List<string>()
+            UsageRights = "noncommercial",
+            IsFree = true,
+            Topics = new string[]
         {
             "natural_sciences",
             "geo",
         },
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -3565,13 +3619,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskPostAsync(new List<SerpGoogleDatasetInfoTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskPostAsync(
+    new SerpGoogleDatasetInfoTaskPostRequestInfo[]
     {
-        DatasetId = "L2cvMTFqbl85ZHN6MQ==",
-    }
-});
+        new SerpGoogleDatasetInfoTaskPostRequestInfo()
+        {
+            DatasetId = "L2cvMTFqbl85ZHN6MQ==",
+        },
+    });
 ```
 
 ### Parameters
@@ -3736,13 +3791,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(new List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(
+    new SerpGoogleDatasetInfoLiveAdvancedRequestInfo[]
     {
-        DatasetId = "L2cvMTFqbl85ZHN6MQ==",
-    }
-});
+        new SerpGoogleDatasetInfoLiveAdvancedRequestInfo()
+        {
+            DatasetId = "L2cvMTFqbl85ZHN6MQ==",
+        },
+    });
 ```
 
 ### Parameters
@@ -3771,9 +3827,9 @@ var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(new List
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleAdsAdvertisersLocations"></a>
-# **serpGoogleAdsAdvertisersLocations**
-> SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations()
+<a id="googleAdsAdvertisersLocations"></a>
+# **googleAdsAdvertisersLocations**
+> SerpGoogleAdsAdvertisersLocationsResponseInfo googleAdsAdvertisersLocations()
 
 
 ### Example
@@ -3783,7 +3839,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpGoogleAdsAdvertisersLocationsAsync();
+var result = await dfsClient.SerpApi.GoogleAdsAdvertisersLocationsAsync();
 ```
 
 ### Parameters
@@ -3824,14 +3880,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskPostAsync(new List<SerpGoogleAdsAdvertisersTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskPostAsync(
+    new SerpGoogleAdsAdvertisersTaskPostRequestInfo[]
     {
-        Keyword = "apple",
-        LocationCode = 2840,
-    }
-});
+        new SerpGoogleAdsAdvertisersTaskPostRequestInfo()
+        {
+            LocationCode = 2840,
+            Keyword = "apple",
+        },
+    });
 ```
 
 ### Parameters
@@ -3943,9 +4000,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleAdsSearchLocations"></a>
-# **serpGoogleAdsSearchLocations**
-> SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations()
+<a id="googleAdsSearchLocations"></a>
+# **googleAdsSearchLocations**
+> SerpGoogleAdsSearchLocationsResponseInfo googleAdsSearchLocations()
 
 
 ### Example
@@ -3955,7 +4012,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpGoogleAdsSearchLocationsAsync();
+var result = await dfsClient.SerpApi.GoogleAdsSearchLocationsAsync();
 ```
 
 ### Parameters
@@ -3996,19 +4053,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(new List<SerpGoogleAdsSearchTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(
+    new SerpGoogleAdsSearchTaskPostRequestInfo[]
     {
-        AdvertiserIds = new List<string>()
+        new SerpGoogleAdsSearchTaskPostRequestInfo()
+        {
+            LocationCode = 2840,
+            Platform = "google_search",
+            AdvertiserIds = new string[]
         {
             "AR13752565271262920705",
             "AR02439908557932462081",
         },
-        LocationCode = 2840,
-        Platform = "google_search",
-    }
-});
+        },
+    });
 ```
 
 ### Parameters
@@ -4120,9 +4178,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBingLocations"></a>
-# **serpBingLocations**
-> SerpBingLocationsResponseInfo serpBingLocations()
+<a id="bingLocations"></a>
+# **bingLocations**
+> SerpBingLocationsResponseInfo bingLocations()
 
 
 ### Example
@@ -4132,7 +4190,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpBingLocationsAsync();
+var result = await dfsClient.SerpApi.BingLocationsAsync();
 ```
 
 ### Parameters
@@ -4161,9 +4219,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBingLocationsCountry"></a>
-# **serpBingLocationsCountry**
-> SerpBingLocationsCountryResponseInfo serpBingLocationsCountry()
+<a id="bingLocationsCountry"></a>
+# **bingLocationsCountry**
+> SerpBingLocationsCountryResponseInfo bingLocationsCountry()
 
 
 ### Example
@@ -4174,7 +4232,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.SerpApi.SerpBingLocationsCountryAsync(country);
+var result = await dfsClient.SerpApi.BingLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -4203,9 +4261,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBingLanguages"></a>
-# **serpBingLanguages**
-> SerpBingLanguagesResponseInfo serpBingLanguages()
+<a id="bingLanguages"></a>
+# **bingLanguages**
+> SerpBingLanguagesResponseInfo bingLanguages()
 
 
 ### Example
@@ -4215,7 +4273,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpBingLanguagesAsync();
+var result = await dfsClient.SerpApi.BingLanguagesAsync();
 ```
 
 ### Parameters
@@ -4256,15 +4314,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicTaskPostAsync(new List<SerpBingOrganicTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingOrganicTaskPostAsync(
+    new SerpBingOrganicTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingOrganicTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -4513,15 +4572,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicLiveRegularAsync(new List<SerpBingOrganicLiveRegularRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingOrganicLiveRegularAsync(
+    new SerpBingOrganicLiveRegularRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingOrganicLiveRegularRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -4562,15 +4622,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicLiveAdvancedAsync(new List<SerpBingOrganicLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingOrganicLiveAdvancedAsync(
+    new SerpBingOrganicLiveAdvancedRequestInfo[]
     {
-        Keyword = "flight ticket new york san francisco",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingOrganicLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "flight ticket new york san francisco",
+        },
+    });
 ```
 
 ### Parameters
@@ -4611,15 +4672,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(new List<SerpBingOrganicLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(
+    new SerpBingOrganicLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingOrganicLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -4660,15 +4722,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingLocalPackTaskPostAsync(new List<SerpBingLocalPackTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingLocalPackTaskPostAsync(
+    new SerpBingLocalPackTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingLocalPackTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -4875,15 +4938,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingLocalPackLiveRegularAsync(new List<SerpBingLocalPackLiveRegularRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingLocalPackLiveRegularAsync(
+    new SerpBingLocalPackLiveRegularRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingLocalPackLiveRegularRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -4924,15 +4988,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingLocalPackLiveHtmlAsync(new List<SerpBingLocalPackLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BingLocalPackLiveHtmlAsync(
+    new SerpBingLocalPackLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpBingLocalPackLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -4961,9 +5026,9 @@ var result = await dfsClient.SerpApi.BingLocalPackLiveHtmlAsync(new List<SerpBin
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYoutubeLocations"></a>
-# **serpYoutubeLocations**
-> SerpYoutubeLocationsResponseInfo serpYoutubeLocations()
+<a id="youtubeLocations"></a>
+# **youtubeLocations**
+> SerpYoutubeLocationsResponseInfo youtubeLocations()
 
 
 ### Example
@@ -4973,7 +5038,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpYoutubeLocationsAsync();
+var result = await dfsClient.SerpApi.YoutubeLocationsAsync();
 ```
 
 ### Parameters
@@ -5002,9 +5067,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYoutubeLocationsCountry"></a>
-# **serpYoutubeLocationsCountry**
-> SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry()
+<a id="youtubeLocationsCountry"></a>
+# **youtubeLocationsCountry**
+> SerpYoutubeLocationsCountryResponseInfo youtubeLocationsCountry()
 
 
 ### Example
@@ -5015,7 +5080,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.SerpApi.SerpYoutubeLocationsCountryAsync(country);
+var result = await dfsClient.SerpApi.YoutubeLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -5044,9 +5109,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYoutubeLanguages"></a>
-# **serpYoutubeLanguages**
-> SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages()
+<a id="youtubeLanguages"></a>
+# **youtubeLanguages**
+> SerpYoutubeLanguagesResponseInfo youtubeLanguages()
 
 
 ### Example
@@ -5056,7 +5121,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpYoutubeLanguagesAsync();
+var result = await dfsClient.SerpApi.YoutubeLanguagesAsync();
 ```
 
 ### Parameters
@@ -5097,15 +5162,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(new List<SerpYoutubeVideoInfoTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(
+    new SerpYoutubeVideoInfoTaskPostRequestInfo[]
     {
-        VideoId = "vQXvyV0zIP4",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYoutubeVideoInfoTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            VideoId = "vQXvyV0zIP4",
+        },
+    });
 ```
 
 ### Parameters
@@ -5270,15 +5336,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(new List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(
+    new SerpYoutubeVideoInfoLiveAdvancedRequestInfo[]
     {
-        VideoId = "vQXvyV0zIP4",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYoutubeVideoInfoLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            VideoId = "vQXvyV0zIP4",
+        },
+    });
 ```
 
 ### Parameters
@@ -5319,15 +5386,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(new List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(
+    new SerpYoutubeVideoSubtitlesTaskPostRequestInfo[]
     {
-        VideoId = "Y8Wu4rSNJms",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            VideoId = "Y8Wu4rSNJms",
+        },
+    });
 ```
 
 ### Parameters
@@ -5492,15 +5560,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(new List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(
+    new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo[]
     {
-        VideoId = "Y8Wu4rSNJms",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            VideoId = "Y8Wu4rSNJms",
+        },
+    });
 ```
 
 ### Parameters
@@ -5541,15 +5610,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(new List<SerpYoutubeVideoCommentsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(
+    new SerpYoutubeVideoCommentsTaskPostRequestInfo[]
     {
-        VideoId = "vQXvyV0zIP4",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYoutubeVideoCommentsTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            VideoId = "vQXvyV0zIP4",
+        },
+    });
 ```
 
 ### Parameters
@@ -5714,15 +5784,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(new List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(
+    new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo[]
     {
-        VideoId = "vQXvyV0zIP4",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            VideoId = "vQXvyV0zIP4",
+        },
+    });
 ```
 
 ### Parameters
@@ -5751,9 +5822,9 @@ var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(new L
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYahooLocations"></a>
-# **serpYahooLocations**
-> SerpYahooLocationsResponseInfo serpYahooLocations()
+<a id="yahooLocations"></a>
+# **yahooLocations**
+> SerpYahooLocationsResponseInfo yahooLocations()
 
 
 ### Example
@@ -5763,7 +5834,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpYahooLocationsAsync();
+var result = await dfsClient.SerpApi.YahooLocationsAsync();
 ```
 
 ### Parameters
@@ -5792,9 +5863,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYahooLocationsCountry"></a>
-# **serpYahooLocationsCountry**
-> SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry()
+<a id="yahooLocationsCountry"></a>
+# **yahooLocationsCountry**
+> SerpYahooLocationsCountryResponseInfo yahooLocationsCountry()
 
 
 ### Example
@@ -5805,7 +5876,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.SerpApi.SerpYahooLocationsCountryAsync(country);
+var result = await dfsClient.SerpApi.YahooLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -5834,9 +5905,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYahooLanguages"></a>
-# **serpYahooLanguages**
-> SerpYahooLanguagesResponseInfo serpYahooLanguages()
+<a id="yahooLanguages"></a>
+# **yahooLanguages**
+> SerpYahooLanguagesResponseInfo yahooLanguages()
 
 
 ### Example
@@ -5846,7 +5917,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpYahooLanguagesAsync();
+var result = await dfsClient.SerpApi.YahooLanguagesAsync();
 ```
 
 ### Parameters
@@ -5887,15 +5958,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicTaskPostAsync(new List<SerpYahooOrganicTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YahooOrganicTaskPostAsync(
+    new SerpYahooOrganicTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYahooOrganicTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -6144,15 +6216,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicLiveRegularAsync(new List<SerpYahooOrganicLiveRegularRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YahooOrganicLiveRegularAsync(
+    new SerpYahooOrganicLiveRegularRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYahooOrganicLiveRegularRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -6193,15 +6266,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicLiveAdvancedAsync(new List<SerpYahooOrganicLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YahooOrganicLiveAdvancedAsync(
+    new SerpYahooOrganicLiveAdvancedRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYahooOrganicLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -6242,15 +6316,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(new List<SerpYahooOrganicLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(
+    new SerpYahooOrganicLiveHtmlRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpYahooOrganicLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -6279,9 +6354,9 @@ var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(new List<SerpYaho
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBaiduLocations"></a>
-# **serpBaiduLocations**
-> SerpBaiduLocationsResponseInfo serpBaiduLocations()
+<a id="baiduLocations"></a>
+# **baiduLocations**
+> SerpBaiduLocationsResponseInfo baiduLocations()
 
 
 ### Example
@@ -6291,7 +6366,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpBaiduLocationsAsync();
+var result = await dfsClient.SerpApi.BaiduLocationsAsync();
 ```
 
 ### Parameters
@@ -6320,9 +6395,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBaiduLocationsCountry"></a>
-# **serpBaiduLocationsCountry**
-> SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry()
+<a id="baiduLocationsCountry"></a>
+# **baiduLocationsCountry**
+> SerpBaiduLocationsCountryResponseInfo baiduLocationsCountry()
 
 
 ### Example
@@ -6333,7 +6408,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.SerpApi.SerpBaiduLocationsCountryAsync(country);
+var result = await dfsClient.SerpApi.BaiduLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -6362,9 +6437,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBaiduLanguages"></a>
-# **serpBaiduLanguages**
-> SerpBaiduLanguagesResponseInfo serpBaiduLanguages()
+<a id="baiduLanguages"></a>
+# **baiduLanguages**
+> SerpBaiduLanguagesResponseInfo baiduLanguages()
 
 
 ### Example
@@ -6374,7 +6449,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpBaiduLanguagesAsync();
+var result = await dfsClient.SerpApi.BaiduLanguagesAsync();
 ```
 
 ### Parameters
@@ -6415,16 +6490,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BaiduOrganicTaskPostAsync(new List<SerpBaiduOrganicTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.BaiduOrganicTaskPostAsync(
+    new SerpBaiduOrganicTaskPostRequestInfo[]
     {
-        Keyword = "best iphone ever",
-        Priority = 2,
-        LocationCode = 2156,
-        Tag = "some_string_123",
-    }
-});
+        new SerpBaiduOrganicTaskPostRequestInfo()
+        {
+            LocationCode = 2156,
+            Keyword = "best iphone ever",
+            Tag = "some_string_123",
+            Priority = 2,
+        },
+    });
 ```
 
 ### Parameters
@@ -6673,17 +6749,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.NaverOrganicTaskPostAsync(new List<SerpNaverOrganicTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.NaverOrganicTaskPostAsync(
+    new SerpNaverOrganicTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        Device = "desktop",
-        Tag = "some_string_123",
-        PostbackUrl = "https://your-server.com/postbackscript.php",
-        PostbackData = "regular",
-    }
-});
+        new SerpNaverOrganicTaskPostRequestInfo()
+        {
+            Keyword = "albert einstein",
+            Device = "desktop",
+            Tag = "some_string_123",
+            PostbackUrl = "https://your-server.com/postbackscript.php",
+            PostbackData = "regular",
+        },
+    });
 ```
 
 ### Parameters
@@ -6920,9 +6997,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpSeznamLocations"></a>
-# **serpSeznamLocations**
-> SerpSeznamLocationsResponseInfo serpSeznamLocations()
+<a id="seznamLocations"></a>
+# **seznamLocations**
+> SerpSeznamLocationsResponseInfo seznamLocations()
 
 
 ### Example
@@ -6932,7 +7009,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpSeznamLocationsAsync();
+var result = await dfsClient.SerpApi.SeznamLocationsAsync();
 ```
 
 ### Parameters
@@ -6961,9 +7038,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpSeznamLocationsCountry"></a>
-# **serpSeznamLocationsCountry**
-> SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry()
+<a id="seznamLocationsCountry"></a>
+# **seznamLocationsCountry**
+> SerpSeznamLocationsCountryResponseInfo seznamLocationsCountry()
 
 
 ### Example
@@ -6974,7 +7051,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.SerpApi.SerpSeznamLocationsCountryAsync(country);
+var result = await dfsClient.SerpApi.SeznamLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -7003,9 +7080,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpSeznamLanguages"></a>
-# **serpSeznamLanguages**
-> SerpSeznamLanguagesResponseInfo serpSeznamLanguages()
+<a id="seznamLanguages"></a>
+# **seznamLanguages**
+> SerpSeznamLanguagesResponseInfo seznamLanguages()
 
 
 ### Example
@@ -7015,7 +7092,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SerpSeznamLanguagesAsync();
+var result = await dfsClient.SerpApi.SeznamLanguagesAsync();
 ```
 
 ### Parameters
@@ -7056,15 +7133,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SeznamOrganicTaskPostAsync(new List<SerpSeznamOrganicTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.SeznamOrganicTaskPostAsync(
+    new SerpSeznamOrganicTaskPostRequestInfo[]
     {
-        Keyword = "albert einstein",
-        LocationCode = 2203,
-        LanguageCode = "cs",
-    }
-});
+        new SerpSeznamOrganicTaskPostRequestInfo()
+        {
+            LanguageCode = "cs",
+            LocationCode = 2203,
+            Keyword = "albert einstein",
+        },
+    });
 ```
 
 ### Parameters
@@ -7313,14 +7391,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(new List<SerpGoogleFinanceExploreTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(
+    new SerpGoogleFinanceExploreTaskPostRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new SerpGoogleFinanceExploreTaskPostRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageName = "English",
+        },
+    });
 ```
 
 ### Parameters
@@ -7486,14 +7565,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(new List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(
+    new SerpGoogleFinanceExploreLiveAdvancedRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new SerpGoogleFinanceExploreLiveAdvancedRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageName = "English",
+        },
+    });
 ```
 
 ### Parameters
@@ -7534,14 +7614,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveHtmlAsync(new List<SerpGoogleFinanceExploreLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveHtmlAsync(
+    new SerpGoogleFinanceExploreLiveHtmlRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleFinanceExploreLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -7582,14 +7663,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(new List<SerpGoogleFinanceMarketsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(
+    new SerpGoogleFinanceMarketsTaskPostRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new SerpGoogleFinanceMarketsTaskPostRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageName = "English",
+        },
+    });
 ```
 
 ### Parameters
@@ -7755,14 +7837,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(new List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(
+    new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo()
+        {
+            LocationCode = 2840,
+            LanguageName = "English",
+        },
+    });
 ```
 
 ### Parameters
@@ -7803,14 +7886,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveHtmlAsync(new List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveHtmlAsync(
+    new SerpGoogleFinanceMarketsLiveHtmlRequestInfo[]
     {
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleFinanceMarketsLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+        },
+    });
 ```
 
 ### Parameters
@@ -7851,15 +7935,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(new List<SerpGoogleFinanceQuoteTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(
+    new SerpGoogleFinanceQuoteTaskPostRequestInfo[]
     {
-        Keyword = ".DJI:INDEXDJX",
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new SerpGoogleFinanceQuoteTaskPostRequestInfo()
+        {
+            Keyword = ".DJI:INDEXDJX",
+            LocationCode = 2840,
+            LanguageName = "English",
+        },
+    });
 ```
 
 ### Parameters
@@ -8025,15 +8110,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(new List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(
+    new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo[]
     {
-        Keyword = "CLW00:NYMEX",
-        LocationCode = 2840,
-        LanguageName = "English",
-    }
-});
+        new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo()
+        {
+            Keyword = "CLW00:NYMEX",
+            LocationCode = 2840,
+            LanguageName = "English",
+        },
+    });
 ```
 
 ### Parameters
@@ -8074,15 +8160,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveHtmlAsync(new List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveHtmlAsync(
+    new SerpGoogleFinanceQuoteLiveHtmlRequestInfo[]
     {
-        Keyword = "NASDAQ-100",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new SerpGoogleFinanceQuoteLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "NASDAQ-100",
+        },
+    });
 ```
 
 ### Parameters
@@ -8123,17 +8210,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(new List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(
+    new SerpGoogleFinanceTickerSearchTaskPostRequestInfo[]
     {
-        Keyword = "DJ",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Priority = 2,
-        Category = "all",
-    }
-});
+        new SerpGoogleFinanceTickerSearchTaskPostRequestInfo()
+        {
+            LanguageName = "English",
+            LocationCode = 2840,
+            Category = "all",
+            Keyword = "DJ",
+            Priority = 2,
+        },
+    });
 ```
 
 ### Parameters
@@ -8257,16 +8345,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(new List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(
+    new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo[]
     {
-        Keyword = "DJ",
-        LocationCode = 2840,
-        LanguageName = "English",
-        Category = "all",
-    }
-});
+        new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo()
+        {
+            LanguageName = "English",
+            LocationCode = 2840,
+            Category = "all",
+            Keyword = "DJ",
+        },
+    });
 ```
 
 ### Parameters

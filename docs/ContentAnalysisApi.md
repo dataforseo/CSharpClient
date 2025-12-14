@@ -6,8 +6,8 @@ All URIs are relative to *https://api.dataforseo.com*
 |------------- | ------------- | -------------|
 [**contentAnalysisIdList**](ContentAnalysisApi.md#contentAnalysisIdList) | **POST**  /v3/content_analysis/id_list  |
 [**contentAnalysisAvailableFilters**](ContentAnalysisApi.md#contentAnalysisAvailableFilters) | **GET**  /v3/content_analysis/available_filters  |
-[**contentAnalysisLocations**](ContentAnalysisApi.md#contentAnalysisLocations) | **GET**  /v3/content_analysis/locations  |
-[**contentAnalysisLanguages**](ContentAnalysisApi.md#contentAnalysisLanguages) | **GET**  /v3/content_analysis/languages  |
+[**locations**](ContentAnalysisApi.md#locations) | **GET**  /v3/content_analysis/locations  |
+[**languages**](ContentAnalysisApi.md#languages) | **GET**  /v3/content_analysis/languages  |
 [**contentAnalysisCategories**](ContentAnalysisApi.md#contentAnalysisCategories) | **GET**  /v3/content_analysis/categories  |
 [**searchLive**](ContentAnalysisApi.md#searchLive) | **POST**  /v3/content_analysis/search/live  |
 [**contentAnalysisSummaryLive**](ContentAnalysisApi.md#contentAnalysisSummaryLive) | **POST**  /v3/content_analysis/summary/live  |
@@ -28,17 +28,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new List<ContentAnalysisIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(
+    new ContentAnalysisIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:10:56 +00:00",
-        DatetimeTo = "2025-10-22 08:10:56 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new ContentAnalysisIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -108,9 +110,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentAnalysisLocations"></a>
-# **contentAnalysisLocations**
-> ContentAnalysisLocationsResponseInfo contentAnalysisLocations()
+<a id="locations"></a>
+# **locations**
+> ContentAnalysisLocationsResponseInfo locations()
 
 
 ### Example
@@ -120,7 +122,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.ContentAnalysisLocationsAsync();
+var result = await dfsClient.ContentAnalysisApi.LocationsAsync();
 ```
 
 ### Parameters
@@ -149,9 +151,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentAnalysisLanguages"></a>
-# **contentAnalysisLanguages**
-> ContentAnalysisLanguagesResponseInfo contentAnalysisLanguages()
+<a id="languages"></a>
+# **languages**
+> ContentAnalysisLanguagesResponseInfo languages()
 
 
 ### Example
@@ -161,7 +163,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.ContentAnalysisLanguagesAsync();
+var result = await dfsClient.ContentAnalysisApi.LanguagesAsync();
 ```
 
 ### Parameters
@@ -243,16 +245,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<ContentAnalysisSearchLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(
+    new ContentAnalysisSearchLiveRequestInfo[]
     {
-        Keyword = "logitech",
-        KeywordFields = new Dictionary<string, string>()
+        new ContentAnalysisSearchLiveRequestInfo()
+        {
+            KeywordFields = new Dictionary<string, string>()
         {
             ["Snippet"] = "logitech",
         },
-        PageType = new List<string>()
+            Keyword = "logitech",
+            PageType = new string[]
         {
             "ecommerce",
             "news",
@@ -260,10 +263,20 @@ var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<Content
             "message-boards",
             "organization",
         },
-        SearchMode = "as_is",
-        Limit = 10,
-    }
-});
+            SearchMode = "as_is",
+            Filters = new object[]
+        {
+            "main_domain",
+            "=",
+            "reviewfinder.ca",
+        },
+            OrderBy = new string[]
+        {
+            "content_info.sentiment_connotations.anger,desc",
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -304,12 +317,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(new List<ContentAnalysisSummaryLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(
+    new ContentAnalysisSummaryLiveRequestInfo[]
     {
-        Keyword = "logitech",
-        PageType = new List<string>()
+        new ContentAnalysisSummaryLiveRequestInfo()
+        {
+            Keyword = "logitech",
+            PageType = new string[]
         {
             "ecommerce",
             "news",
@@ -317,10 +331,10 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(
             "message-boards",
             "organization",
         },
-        InternalListLimit = 8,
-        PositiveConnotationThreshold = 0.5,
-    }
-});
+            InternalListLimit = 8,
+            PositiveConnotationThreshold = 0.5,
+        },
+    });
 ```
 
 ### Parameters
@@ -361,14 +375,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.SentimentAnalysisLiveAsync(new List<ContentAnalysisSentimentAnalysisLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.SentimentAnalysisLiveAsync(
+    new ContentAnalysisSentimentAnalysisLiveRequestInfo[]
     {
-        Keyword = "logitech",
-        InternalListLimit = 1,
-    }
-});
+        new ContentAnalysisSentimentAnalysisLiveRequestInfo()
+        {
+            Keyword = "logitech",
+            InternalListLimit = 1,
+        },
+    });
 ```
 
 ### Parameters
@@ -409,15 +424,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(new List<ContentAnalysisRatingDistributionLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(
+    new ContentAnalysisRatingDistributionLiveRequestInfo[]
     {
-        Keyword = "logitech",
-        InternalListLimit = 10,
-        SearchMode = "as_is",
-    }
-});
+        new ContentAnalysisRatingDistributionLiveRequestInfo()
+        {
+            Keyword = "logitech",
+            SearchMode = "as_is",
+            InternalListLimit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -458,16 +474,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<ContentAnalysisPhraseTrendsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(
+    new ContentAnalysisPhraseTrendsLiveRequestInfo[]
     {
-        Keyword = "logitech",
-        SearchMode = "as_is",
-        DateFrom = "2025-08-22",
-        DateGroup = "month",
-    }
-});
+        new ContentAnalysisPhraseTrendsLiveRequestInfo()
+        {
+            Keyword = "logitech",
+            SearchMode = "as_is",
+            DateFrom = "2022-09-01 00:00:00 +03:00",
+            DateGroup = "month",
+        },
+    });
 ```
 
 ### Parameters
@@ -508,16 +525,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List<ContentAnalysisCategoryTrendsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(
+    new ContentAnalysisCategoryTrendsLiveRequestInfo[]
     {
-        CategoryCode = "10994",
-        SearchMode = "as_is",
-        DateFrom = "2025-08-22",
-        DateGroup = "month",
-    }
-});
+        new ContentAnalysisCategoryTrendsLiveRequestInfo()
+        {
+            CategoryCode = 10994,
+            SearchMode = "as_is",
+            DateFrom = "2022-09-01 00:00:00 +03:00",
+            DateGroup = "month",
+        },
+    });
 ```
 
 ### Parameters

@@ -10,10 +10,10 @@ All URIs are relative to *https://api.dataforseo.com*
 [**generateSubTopicsLive**](ContentGenerationApi.md#generateSubTopicsLive) | **POST**  /v3/content_generation/generate_sub_topics/live  |
 [**paraphraseLive**](ContentGenerationApi.md#paraphraseLive) | **POST**  /v3/content_generation/paraphrase/live  |
 [**checkGrammarLive**](ContentGenerationApi.md#checkGrammarLive) | **POST**  /v3/content_generation/check_grammar/live  |
-[**contentGenerationCheckGrammarLanguages**](ContentGenerationApi.md#contentGenerationCheckGrammarLanguages) | **GET**  /v3/content_generation/check_grammar/languages  |
+[**checkGrammarLanguages**](ContentGenerationApi.md#checkGrammarLanguages) | **GET**  /v3/content_generation/check_grammar/languages  |
 [**grammarRules**](ContentGenerationApi.md#grammarRules) | **GET**  /v3/content_generation/grammar_rules  |
 [**textSummaryLive**](ContentGenerationApi.md#textSummaryLive) | **POST**  /v3/content_generation/text_summary/live  |
-[**contentGenerationTextSummaryLanguages**](ContentGenerationApi.md#contentGenerationTextSummaryLanguages) | **GET**  /v3/content_generation/text_summary/languages  |
+[**textSummaryLanguages**](ContentGenerationApi.md#textSummaryLanguages) | **GET**  /v3/content_generation/text_summary/languages  |
 
 <a id="generateLive"></a>
 # **generateLive**
@@ -27,26 +27,28 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.GenerateLiveAsync(new List<ContentGenerationGenerateLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.GenerateLiveAsync(
+    new ContentGenerationGenerateLiveRequestInfo[]
     {
-        Text = "SEO is",
-        MaxNewTokens = 100,
-        CreativityIndex = 1,
-        AvoidStartingWords = new List<string>()
+        new ContentGenerationGenerateLiveRequestInfo()
+        {
+            Text = "SEO is",
+            MaxNewTokens = 100,
+            TokenRepetitionPenalty = 1.01,
+            StopWords = new string[]
+        {
+            "123",
+            "n",
+        },
+            CreativityIndex = 1,
+            AvoidStartingWords = new string[]
         {
             "SEO",
             "search engine optimization",
             "SEO is",
         },
-        StopWords = new List<string>()
-        {
-            "123",
-            "n",
         },
-    }
-});
+    });
 ```
 
 ### Parameters
@@ -87,29 +89,30 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.GenerateTextLiveAsync(new List<ContentGenerationGenerateTextLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.GenerateTextLiveAsync(
+    new ContentGenerationGenerateTextLiveRequestInfo[]
     {
-        Topic = "Steve Jobs",
-        WordCount = 50,
-        SubTopics = new List<string>()
+        new ContentGenerationGenerateTextLiveRequestInfo()
+        {
+            Topic = "Steve Jobs",
+            SubTopics = new string[]
         {
             "Apple",
             "Pixar",
             "Amazing Products",
         },
-        Description = "Take a closer look at Steve Jobs' life and his incredible impact on the tech industry, with a special focus on the development of the iPhone.",
-        MetaKeywords = new List<string>()
+            Description = "Take a closer look at Steve Jobs' life and his incredible impact on the tech industry, with a special focus on the development of the iPhone.",
+            MetaKeywords = new string[]
         {
             "iPhone",
             "sell",
             "CEO",
         },
-        CreativityIndex = 0.8,
-        IncludeConclusion = true,
-    }
-});
+            CreativityIndex = 0.8,
+            WordCount = 50,
+            IncludeConclusion = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -150,13 +153,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.GenerateMetaTagsLiveAsync(new List<ContentGenerationGenerateMetaTagsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.GenerateMetaTagsLiveAsync(
+    new ContentGenerationGenerateMetaTagsLiveRequestInfo[]
     {
-        Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.nn“We started to develop the idea of ··our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.",
-    }
-});
+        new ContentGenerationGenerateMetaTagsLiveRequestInfo()
+        {
+            Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.nn“We started to develop the idea of ··our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.",
+            CreativityIndex = 0.9,
+        },
+    });
 ```
 
 ### Parameters
@@ -197,14 +202,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.GenerateSubTopicsLiveAsync(new List<ContentGenerationGenerateSubTopicsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.GenerateSubTopicsLiveAsync(
+    new ContentGenerationGenerateSubTopicsLiveRequestInfo[]
     {
-        Topic = "Steve Jobs",
-        CreativityIndex = 0.9,
-    }
-});
+        new ContentGenerationGenerateSubTopicsLiveRequestInfo()
+        {
+            Topic = "Steve Jobs",
+            CreativityIndex = 0.9,
+        },
+    });
 ```
 
 ### Parameters
@@ -245,14 +251,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.ParaphraseLiveAsync(new List<ContentGenerationParaphraseLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.ParaphraseLiveAsync(
+    new ContentGenerationParaphraseLiveRequestInfo[]
     {
-        Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings.",
-        CreativityIndex = 0.8,
-    }
-});
+        new ContentGenerationParaphraseLiveRequestInfo()
+        {
+            Text = "The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings.",
+            CreativityIndex = 0.8,
+        },
+    });
 ```
 
 ### Parameters
@@ -293,14 +300,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.CheckGrammarLiveAsync(new List<ContentGenerationCheckGrammarLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.CheckGrammarLiveAsync(
+    new ContentGenerationCheckGrammarLiveRequestInfo[]
     {
-        Text = "Hello, my name is John! And I'm very glad to work with you toda",
-        LanguageCode = "en-US",
-    }
-});
+        new ContentGenerationCheckGrammarLiveRequestInfo()
+        {
+            Text = "Hello, my name is John! And I'm very glad to work with you toda",
+            LanguageCode = "en-US",
+        },
+    });
 ```
 
 ### Parameters
@@ -329,9 +337,9 @@ var result = await dfsClient.ContentGenerationApi.CheckGrammarLiveAsync(new List
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentGenerationCheckGrammarLanguages"></a>
-# **contentGenerationCheckGrammarLanguages**
-> ContentGenerationCheckGrammarLanguagesResponseInfo contentGenerationCheckGrammarLanguages()
+<a id="checkGrammarLanguages"></a>
+# **checkGrammarLanguages**
+> ContentGenerationCheckGrammarLanguagesResponseInfo checkGrammarLanguages()
 
 
 ### Example
@@ -341,7 +349,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.ContentGenerationCheckGrammarLanguagesAsync();
+var result = await dfsClient.ContentGenerationApi.CheckGrammarLanguagesAsync();
 ```
 
 ### Parameters
@@ -423,14 +431,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.TextSummaryLiveAsync(new List<ContentGenerationTextSummaryLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.ContentGenerationApi.TextSummaryLiveAsync(
+    new ContentGenerationTextSummaryLiveRequestInfo[]
     {
-        Text = "Removing [RequireHttps] does nothing but break the https redirection, and doesn't enforce an https url on my route. I've got one method which i want to expose over http and a different one over https. If i accidentally enter http in my url for the https-only method, it should redirect. It currently works as is, the problem is that there is an undocument (seemingly unrelated) setting I have to add to get it all working. And that is the SslPort thing",
-        LanguageName = "English (United States)",
-    }
-});
+        new ContentGenerationTextSummaryLiveRequestInfo()
+        {
+            Text = "Removing [RequireHttps] does nothing but break the https redirection, and doesn't enforce an https url on my route. I've got one method which i want to expose over http and a different one over https. If i accidentally enter http in my url for the https-only method, it should redirect. It currently works as is, the problem is that there is an undocument (seemingly unrelated) setting I have to add to get it all working. And that is the SslPort thing",
+            LanguageName = "English (United States)",
+        },
+    });
 ```
 
 ### Parameters
@@ -459,9 +468,9 @@ var result = await dfsClient.ContentGenerationApi.TextSummaryLiveAsync(new List<
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentGenerationTextSummaryLanguages"></a>
-# **contentGenerationTextSummaryLanguages**
-> ContentGenerationTextSummaryLanguagesResponseInfo contentGenerationTextSummaryLanguages()
+<a id="textSummaryLanguages"></a>
+# **textSummaryLanguages**
+> ContentGenerationTextSummaryLanguagesResponseInfo textSummaryLanguages()
 
 
 ### Example
@@ -471,7 +480,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentGenerationApi.ContentGenerationTextSummaryLanguagesAsync();
+var result = await dfsClient.ContentGenerationApi.TextSummaryLanguagesAsync();
 ```
 
 ### Parameters

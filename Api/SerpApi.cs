@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Api
             }
         }
 
-        public virtual async Task<SerpIdListResponseInfo> SerpIdListAsync(IEnumerable<SerpIdListRequestInfo> payload)
+        public virtual async Task<SerpIdListResponseInfo> IdListAsync(IEnumerable<SerpIdListRequestInfo> payload)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpErrorsResponseInfo> SerpErrorsAsync(IEnumerable<SerpErrorsRequestInfo> payload)
+        public virtual async Task<SerpErrorsResponseInfo> ErrorsAsync(IEnumerable<SerpErrorsRequestInfo> payload)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -203,7 +203,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleLocationsResponseInfo> SerpGoogleLocationsAsync()
+        public virtual async Task<SerpGoogleLocationsResponseInfo> GoogleLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -241,7 +241,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleLocationsCountryResponseInfo> SerpGoogleLocationsCountryAsync(string country)
+        public virtual async Task<SerpGoogleLocationsCountryResponseInfo> GoogleLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -281,7 +281,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleLanguagesResponseInfo> SerpGoogleLanguagesAsync()
+        public virtual async Task<SerpGoogleLanguagesResponseInfo> GoogleLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -713,7 +713,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleAiModeLanguagesResponseInfo> SerpGoogleAiModeLanguagesAsync()
+        public virtual async Task<SerpGoogleAiModeLanguagesResponseInfo> GoogleAiModeLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -3187,7 +3187,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleAdsAdvertisersLocationsResponseInfo> SerpGoogleAdsAdvertisersLocationsAsync()
+        public virtual async Task<SerpGoogleAdsAdvertisersLocationsResponseInfo> GoogleAdsAdvertisersLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -3343,7 +3343,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleAdsSearchLocationsResponseInfo> SerpGoogleAdsSearchLocationsAsync()
+        public virtual async Task<SerpGoogleAdsSearchLocationsResponseInfo> GoogleAdsSearchLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -3499,7 +3499,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpBingLocationsResponseInfo> SerpBingLocationsAsync()
+        public virtual async Task<SerpBingLocationsResponseInfo> BingLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -3537,7 +3537,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpBingLocationsCountryResponseInfo> SerpBingLocationsCountryAsync(string country)
+        public virtual async Task<SerpBingLocationsCountryResponseInfo> BingLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -3577,7 +3577,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpBingLanguagesResponseInfo> SerpBingLanguagesAsync()
+        public virtual async Task<SerpBingLanguagesResponseInfo> BingLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -4247,7 +4247,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpYoutubeLocationsResponseInfo> SerpYoutubeLocationsAsync()
+        public virtual async Task<SerpYoutubeLocationsResponseInfo> YoutubeLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -4285,7 +4285,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpYoutubeLocationsCountryResponseInfo> SerpYoutubeLocationsCountryAsync(string country)
+        public virtual async Task<SerpYoutubeLocationsCountryResponseInfo> YoutubeLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -4325,7 +4325,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpYoutubeLanguagesResponseInfo> SerpYoutubeLanguagesAsync()
+        public virtual async Task<SerpYoutubeLanguagesResponseInfo> YoutubeLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -4951,7 +4951,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpYahooLocationsResponseInfo> SerpYahooLocationsAsync()
+        public virtual async Task<SerpYahooLocationsResponseInfo> YahooLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -4989,7 +4989,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpYahooLocationsCountryResponseInfo> SerpYahooLocationsCountryAsync(string country)
+        public virtual async Task<SerpYahooLocationsCountryResponseInfo> YahooLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -5029,7 +5029,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpYahooLanguagesResponseInfo> SerpYahooLanguagesAsync()
+        public virtual async Task<SerpYahooLanguagesResponseInfo> YahooLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -5423,7 +5423,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpBaiduLocationsResponseInfo> SerpBaiduLocationsAsync()
+        public virtual async Task<SerpBaiduLocationsResponseInfo> BaiduLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -5461,7 +5461,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpBaiduLocationsCountryResponseInfo> SerpBaiduLocationsCountryAsync(string country)
+        public virtual async Task<SerpBaiduLocationsCountryResponseInfo> BaiduLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -5501,7 +5501,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpBaiduLanguagesResponseInfo> SerpBaiduLanguagesAsync()
+        public virtual async Task<SerpBaiduLanguagesResponseInfo> BaiduLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -6011,7 +6011,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpSeznamLocationsResponseInfo> SerpSeznamLocationsAsync()
+        public virtual async Task<SerpSeznamLocationsResponseInfo> SeznamLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -6049,7 +6049,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpSeznamLocationsCountryResponseInfo> SerpSeznamLocationsCountryAsync(string country)
+        public virtual async Task<SerpSeznamLocationsCountryResponseInfo> SeznamLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -6089,7 +6089,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpSeznamLanguagesResponseInfo> SerpSeznamLanguagesAsync()
+        public virtual async Task<SerpSeznamLanguagesResponseInfo> SeznamLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

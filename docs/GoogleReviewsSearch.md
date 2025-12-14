@@ -12,6 +12,7 @@
 **Xpath** | **string** | the XPath of the review |[optional]|
 **ReviewText** | **string** | the content of the review |[optional]|
 **OriginalReviewText** | **string** | original content of the review<br>the original content of the review, no auto-translate applied |[optional]|
+**OriginalLanguage** | **string** | original language of the review text |[optional]|
 **TimeAgo** | **string** | the time of publication<br>indicates the time (in the ‘time ago’ format) when the review was listed |[optional]|
 **Timestamp** | **string** | date and time when a review was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **Rating** | **RatingInfo** | the rating score submitted by the reviewer |[optional]|

@@ -52,6 +52,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL to the product page on the seller’s website
+        /// <br/>Note: this field is deprecated and will return null
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

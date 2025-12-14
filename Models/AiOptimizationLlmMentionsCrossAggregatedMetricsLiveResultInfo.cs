@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// <br/>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions
         /// </summary>
         [JsonProperty("total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public Total Total { get; set; }
+        public AiOptimizationResultTotalInfo Total { get; set; }
 
         /// <summary>
         /// contains relevant mentions data

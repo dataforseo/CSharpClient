@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models.Requests
         /// target keyword search scope
         /// <br/>optional field
         /// <br/>possible values:
-        /// <br/>any, question, answer
+        /// <br/>any, question, answer, brand_entities, fan_out_queries
         /// <br/>default value: any
         /// </summary>
         [JsonProperty("search_scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -87,8 +87,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify location_code
         /// <br/>if you don’t specify this field, the location_code with 2840 value will be used by default;
         /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-        /// <br/>example:
-        /// <br/>United States
+        /// <br/>Note: chat_gpt data is available for United States only
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
@@ -98,9 +97,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if you use this field, you don’t need to specify location_name
         /// <br/>you can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-        /// <br/>example:
-        /// <br/>2840
         /// <br/>default value: 2840
+        /// <br/>Note: chat_gpt data is available for 2840 only
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
@@ -111,6 +109,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify language_code;
         /// <br/>if you don’t specify this field, the language_code with en value will be used by default;
         /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
+        /// <br/>Note: chat_gpt data is available for English only
         /// </summary>
         [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -121,6 +120,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you use this field, you don’t need to specify language_name;
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
         /// <br/>default value: en
+        /// <br/>Note: chat_gpt data is available for en only
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -131,6 +131,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>chat_gpt, google
         /// <br/>default value: google
+        /// <br/>Note:chat_gpt data is available for the United States and English only
         /// </summary>
         [JsonProperty("platform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Platform { get; set; }
@@ -189,7 +190,7 @@ namespace DataForSeo.Client.Models.Requests
         public string SearchAfterToken { get; set; }
 
         /// <summary>
-        /// the maximum number of returned objacts
+        /// the maximum number of returned objects
         /// <br/>optional field
         /// <br/>default value: 100
         /// <br/>maximum value: 1000

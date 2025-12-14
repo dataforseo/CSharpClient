@@ -711,7 +711,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<MerchantAmazonLocationsResponseInfo> MerchantAmazonLocationsAsync()
+        public virtual async Task<MerchantAmazonLocationsResponseInfo> AmazonLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -749,7 +749,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<MerchantAmazonLocationsCountryResponseInfo> MerchantAmazonLocationsCountryAsync(string country)
+        public virtual async Task<MerchantAmazonLocationsCountryResponseInfo> AmazonLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -789,7 +789,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<MerchantAmazonLanguagesResponseInfo> MerchantAmazonLanguagesAsync()
+        public virtual async Task<MerchantAmazonLanguagesResponseInfo> AmazonLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

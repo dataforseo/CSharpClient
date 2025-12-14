@@ -28,6 +28,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }
 
+        /// <summary>
+        /// array of brand entities
+        /// <br/>contains information on brands mentioned in the text
+        /// </summary>
+        [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ChatGptBrandEntity> BrandEntities { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

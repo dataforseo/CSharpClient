@@ -57,6 +57,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiOptimizationItem> Items { get; set; }
 
+        /// <summary>
+        /// array of fan-out queries
+        /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
+        /// </summary>
+        [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> FanOutQueries { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

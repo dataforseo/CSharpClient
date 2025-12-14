@@ -21,9 +21,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleProductInfoTasksReady**](MerchantApi.md#googleProductInfoTasksReady) | **GET**  /v3/merchant/google/product_info/tasks_ready  |
 [**googleProductInfoTaskGetAdvanced**](MerchantApi.md#googleProductInfoTaskGetAdvanced) | **GET**  /v3/merchant/google/product_info/task_get/advanced/{id}  |
 [**googleSellersAdUrl**](MerchantApi.md#googleSellersAdUrl) | **GET**  /v3/merchant/google/sellers/ad_url/{shop_ad_aclk}  |
-[**merchantAmazonLocations**](MerchantApi.md#merchantAmazonLocations) | **GET**  /v3/merchant/amazon/locations  |
-[**merchantAmazonLocationsCountry**](MerchantApi.md#merchantAmazonLocationsCountry) | **GET**  /v3/merchant/amazon/locations/{country}  |
-[**merchantAmazonLanguages**](MerchantApi.md#merchantAmazonLanguages) | **GET**  /v3/merchant/amazon/languages  |
+[**amazonLocations**](MerchantApi.md#amazonLocations) | **GET**  /v3/merchant/amazon/locations  |
+[**amazonLocationsCountry**](MerchantApi.md#amazonLocationsCountry) | **GET**  /v3/merchant/amazon/locations/{country}  |
+[**amazonLanguages**](MerchantApi.md#amazonLanguages) | **GET**  /v3/merchant/amazon/languages  |
 [**amazonProductsTaskPost**](MerchantApi.md#amazonProductsTaskPost) | **POST**  /v3/merchant/amazon/products/task_post  |
 [**amazonProductsTasksReady**](MerchantApi.md#amazonProductsTasksReady) | **GET**  /v3/merchant/amazon/products/tasks_ready  |
 [**amazonProductsTaskGetAdvanced**](MerchantApi.md#amazonProductsTaskGetAdvanced) | **GET**  /v3/merchant/amazon/products/task_get/advanced/{id}  |
@@ -53,17 +53,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.MerchantIdListAsync(
+    new MerchantIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:11:04 +00:00",
-        DatetimeTo = "2025-10-22 08:11:04 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new MerchantIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -104,15 +106,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.MerchantErrorsAsync(new List<MerchantErrorsRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.MerchantErrorsAsync(
+    new MerchantErrorsRequestInfo[]
     {
-        Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
-    }
-});
+        new MerchantErrorsRequestInfo()
+        {
+            Limit = 10,
+            Offset = 0,
+            FilteredFunction = "pingback_url",
+        },
+    });
 ```
 
 ### Parameters
@@ -277,16 +280,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(new List<MerchantGoogleProductsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(
+    new MerchantGoogleProductsTaskPostRequestInfo[]
     {
-        Keyword = "iphone",
-        LocationCode = 2840,
-        LanguageCode = "en",
-        PriceMin = 5,
-    }
-});
+        new MerchantGoogleProductsTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "iphone",
+            PriceMin = "5",
+        },
+    });
 ```
 
 ### Parameters
@@ -493,15 +497,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.GoogleSellersTaskPostAsync(new List<MerchantGoogleSellersTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.GoogleSellersTaskPostAsync(
+    new MerchantGoogleSellersTaskPostRequestInfo[]
     {
-        ProductId = "1113158713975221117",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new MerchantGoogleSellersTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            ProductId = "1113158713975221117",
+        },
+    });
 ```
 
 ### Parameters
@@ -625,15 +630,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.GoogleProductInfoTaskPostAsync(new List<MerchantGoogleProductInfoTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.GoogleProductInfoTaskPostAsync(
+    new MerchantGoogleProductInfoTaskPostRequestInfo[]
     {
-        ProductId = "1113158713975221117",
-        LocationCode = 2840,
-        LanguageCode = "en",
-    }
-});
+        new MerchantGoogleProductInfoTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            ProductId = "1113158713975221117",
+        },
+    });
 ```
 
 ### Parameters
@@ -787,9 +793,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="merchantAmazonLocations"></a>
-# **merchantAmazonLocations**
-> MerchantAmazonLocationsResponseInfo merchantAmazonLocations()
+<a id="amazonLocations"></a>
+# **amazonLocations**
+> MerchantAmazonLocationsResponseInfo amazonLocations()
 
 
 ### Example
@@ -799,7 +805,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.MerchantAmazonLocationsAsync();
+var result = await dfsClient.MerchantApi.AmazonLocationsAsync();
 ```
 
 ### Parameters
@@ -828,9 +834,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="merchantAmazonLocationsCountry"></a>
-# **merchantAmazonLocationsCountry**
-> MerchantAmazonLocationsCountryResponseInfo merchantAmazonLocationsCountry()
+<a id="amazonLocationsCountry"></a>
+# **amazonLocationsCountry**
+> MerchantAmazonLocationsCountryResponseInfo amazonLocationsCountry()
 
 
 ### Example
@@ -841,7 +847,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.MerchantApi.MerchantAmazonLocationsCountryAsync(country);
+var result = await dfsClient.MerchantApi.AmazonLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -870,9 +876,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="merchantAmazonLanguages"></a>
-# **merchantAmazonLanguages**
-> MerchantAmazonLanguagesResponseInfo merchantAmazonLanguages()
+<a id="amazonLanguages"></a>
+# **amazonLanguages**
+> MerchantAmazonLanguagesResponseInfo amazonLanguages()
 
 
 ### Example
@@ -882,7 +888,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.MerchantAmazonLanguagesAsync();
+var result = await dfsClient.MerchantApi.AmazonLanguagesAsync();
 ```
 
 ### Parameters
@@ -923,15 +929,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonProductsTaskPostAsync(new List<MerchantAmazonProductsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.AmazonProductsTaskPostAsync(
+    new MerchantAmazonProductsTaskPostRequestInfo[]
     {
-        Keyword = "shoes",
-        LocationCode = 2840,
-        LanguageCode = "en_US",
-    }
-});
+        new MerchantAmazonProductsTaskPostRequestInfo()
+        {
+            LanguageCode = "en_US",
+            LocationCode = 2840,
+            Keyword = "shoes",
+        },
+    });
 ```
 
 ### Parameters
@@ -1097,15 +1104,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonAsinTaskPostAsync(new List<MerchantAmazonAsinTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.AmazonAsinTaskPostAsync(
+    new MerchantAmazonAsinTaskPostRequestInfo[]
     {
-        Asin = "B0756FCPPN",
-        LocationCode = 2840,
-        LanguageCode = "en_US",
-    }
-});
+        new MerchantAmazonAsinTaskPostRequestInfo()
+        {
+            LanguageCode = "en_US",
+            LocationCode = 2840,
+            Asin = "B0756FCPPN",
+        },
+    });
 ```
 
 ### Parameters
@@ -1271,15 +1279,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(new List<MerchantAmazonSellersTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(
+    new MerchantAmazonSellersTaskPostRequestInfo[]
     {
-        Asin = "B085RFFC9Q",
-        LocationCode = 2840,
-        LanguageCode = "en_US",
-    }
-});
+        new MerchantAmazonSellersTaskPostRequestInfo()
+        {
+            LanguageCode = "en_US",
+            LocationCode = 2840,
+            Asin = "B085RFFC9Q",
+        },
+    });
 ```
 
 ### Parameters
@@ -1445,15 +1454,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonReviewsTaskPostAsync(new List<MerchantAmazonReviewsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.MerchantApi.AmazonReviewsTaskPostAsync(
+    new MerchantAmazonReviewsTaskPostRequestInfo[]
     {
-        Asin = "B0773ZY26F",
-        LocationCode = 2840,
-        LanguageCode = "en_US",
-    }
-});
+        new MerchantAmazonReviewsTaskPostRequestInfo()
+        {
+            LanguageCode = "en_US",
+            LocationCode = 2840,
+            Asin = "B0773ZY26F",
+        },
+    });
 ```
 
 ### Parameters

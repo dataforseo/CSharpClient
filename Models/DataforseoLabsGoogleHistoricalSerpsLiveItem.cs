@@ -9,14 +9,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
+        /// search engine type in a POST array
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
 
         /// <summary>
-        /// keyword obtained as a result of search engine autocorrection
-        /// <br/>the results will be provided for the corrected keyword
+        /// keyword received in a POST array
+        /// <br/>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -90,8 +90,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// contains results featured in the ‘hotels_pack’ element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseDataforseoLabsApiElementItem> Items { get; set; }

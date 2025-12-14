@@ -7,4 +7,4 @@
 |------------ | ------------- | ------------- | -------------|
 **Title** | **string** | title of the result in SERP |[optional]|
 **Url** | **string** | sitelink URL |[optional]|
-**Items** | **IEnumerable<JobsElement>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<JobsElement>** | historical SERPs and related data found in the database |[optional]|

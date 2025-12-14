@@ -62,6 +62,38 @@ namespace DataForSeo.Client.Models
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
 
+        /// <summary>
+        /// date and time when the response data was first recorded
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2025-10-21 06:25:30 +00:00
+        /// </summary>
+        [JsonProperty("first_response_at", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string FirstResponseAt { get; set; }
+
+        /// <summary>
+        /// date and time when the response data was last updated
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2025-10-21 06:25:30 +00:00
+        /// </summary>
+        [JsonProperty("last_response_at", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LastResponseAt { get; set; }
+
+        /// <summary>
+        /// array of brand entities
+        /// <br/>contains information on brands mentioned in the response
+        /// </summary>
+        [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<BrandEntities> BrandEntities { get; set; }
+
+        /// <summary>
+        /// array of fan-out queries
+        /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
+        /// </summary>
+        [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> FanOutQueries { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

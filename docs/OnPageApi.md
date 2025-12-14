@@ -27,7 +27,7 @@ All URIs are relative to *https://api.dataforseo.com*
 [**contentParsing**](OnPageApi.md#contentParsing) | **POST**  /v3/on_page/content_parsing  |
 [**contentParsingLive**](OnPageApi.md#contentParsingLive) | **POST**  /v3/on_page/content_parsing/live  |
 [**instantPages**](OnPageApi.md#instantPages) | **POST**  /v3/on_page/instant_pages  |
-[**onPageLighthouseLanguages**](OnPageApi.md#onPageLighthouseLanguages) | **GET**  /v3/on_page/lighthouse/languages  |
+[**lighthouseLanguages**](OnPageApi.md#lighthouseLanguages) | **GET**  /v3/on_page/lighthouse/languages  |
 [**lighthouseAudits**](OnPageApi.md#lighthouseAudits) | **GET**  /v3/on_page/lighthouse/audits  |
 [**lighthouseVersions**](OnPageApi.md#lighthouseVersions) | **GET**  /v3/on_page/lighthouse/versions  |
 [**lighthouseTaskPost**](OnPageApi.md#lighthouseTaskPost) | **POST**  /v3/on_page/lighthouse/task_post  |
@@ -47,17 +47,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.OnPageIdListAsync(new List<OnPageIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.OnPageIdListAsync(
+    new OnPageIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:09:28 +00:00",
-        DatetimeTo = "2025-10-22 08:09:28 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new OnPageIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -98,15 +100,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.OnPageErrorsAsync(new List<OnPageErrorsRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.OnPageErrorsAsync(
+    new OnPageErrorsRequestInfo[]
     {
-        Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
-    }
-});
+        new OnPageErrorsRequestInfo()
+        {
+            Limit = 10,
+            Offset = 0,
+            FilteredFunction = "pingback_url",
+        },
+    });
 ```
 
 ### Parameters
@@ -147,13 +150,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.ForceStopAsync(new List<OnPageForceStopRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.ForceStopAsync(
+    new OnPageForceStopRequestInfo[]
     {
-        Id = "08121600-1535-0216-0000-37b4c7a34453",
-    }
-});
+        new OnPageForceStopRequestInfo()
+        {
+            Id = "08121600-1535-0216-0000-37b4c7a34453",
+        },
+        new OnPageForceStopRequestInfo()
+        {
+            Id = "08121600-1535-0216-0000-d6a5000b6897",
+        },
+    });
 ```
 
 ### Parameters
@@ -235,19 +243,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.TaskPostAsync(new List<OnPageTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.TaskPostAsync(
+    new OnPageTaskPostRequestInfo[]
     {
-        Target = "dataforseo.com",
-        MaxCrawlPages = 10,
-        LoadResources = true,
-        EnableJavascript = true,
-        CustomJs = "meta = {}; meta.url = document.URL; meta;",
-        Tag = "some_string_123",
-        PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
-    }
-});
+        new OnPageTaskPostRequestInfo()
+        {
+            Target = "dataforseo.com",
+            MaxCrawlPages = 10,
+            LoadResources = true,
+            EnableJavascript = true,
+            CustomJs = "meta = {}; meta.url = document.URL; meta;",
+            Tag = "some_string_123",
+            PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
+        },
+    });
 ```
 
 ### Parameters
@@ -371,14 +380,35 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.PagesAsync(new List<OnPagePagesRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.PagesAsync(
+    new OnPagePagesRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        Limit = 10,
-    }
-});
+        new OnPagePagesRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "resource_type",
+                "=",
+                "html",
+            },
+            "and",
+            new object[]
+            {
+                "meta.scripts_count",
+                ">",
+                40,
+            },
+        },
+            OrderBy = new string[]
+        {
+            "meta.content.plain_text_word_count,desc",
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -419,14 +449,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.PagesByResourceAsync(new List<OnPagePagesByResourceRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.PagesByResourceAsync(
+    new OnPagePagesByResourceRequestInfo[]
     {
-        Id = "02241700-1535-0216-0000-034137259bc1",
-        Url = "https://www.etsy.com/about/jobs.workco2018.js?",
-    }
-});
+        new OnPagePagesByResourceRequestInfo()
+        {
+            Id = "02241700-1535-0216-0000-034137259bc1",
+            Url = "https://www.etsy.com/about/jobs.workco2018.js?",
+        },
+    });
 ```
 
 ### Parameters
@@ -467,14 +498,35 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.ResourcesAsync(new List<OnPageResourcesRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.ResourcesAsync(
+    new OnPageResourcesRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        Limit = 10,
-    }
-});
+        new OnPageResourcesRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "resource_type",
+                "=",
+                "image",
+            },
+            "and",
+            new object[]
+            {
+                "size",
+                ">",
+                100000,
+            },
+        },
+            OrderBy = new string[]
+        {
+            "size,desc",
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -515,15 +567,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.DuplicateTagsAsync(new List<OnPageDuplicateTagsRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.DuplicateTagsAsync(
+    new OnPageDuplicateTagsRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        Type = "duplicate_description",
-        Limit = 10,
-    }
-});
+        new OnPageDuplicateTagsRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            Type = "duplicate_description",
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -564,14 +617,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.DuplicateContentAsync(new List<OnPageDuplicateContentRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.DuplicateContentAsync(
+    new OnPageDuplicateContentRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        Url = "https://www.etsy.com/",
-    }
-});
+        new OnPageDuplicateContentRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            Url = "https://www.etsy.com/",
+        },
+    });
 ```
 
 ### Parameters
@@ -612,15 +666,32 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.LinksAsync(new List<OnPageLinksRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.LinksAsync(
+    new OnPageLinksRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        PageFrom = "/apis/google-trends-api",
-        Limit = 10,
-    }
-});
+        new OnPageLinksRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            PageFrom = "/apis/google-trends-api",
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "dofollow",
+                "=",
+                true,
+            },
+            "and",
+            new object[]
+            {
+                "direction",
+                "=",
+                "external",
+            },
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -661,14 +732,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.RedirectChainsAsync(new List<OnPageRedirectChainsRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.RedirectChainsAsync(
+    new OnPageRedirectChainsRequestInfo[]
     {
-        Id = "03051327-4536-0216-1000-3b458a2cfcca",
-        Url = "https://test_rdr.dataforseo.com/a/",
-    }
-});
+        new OnPageRedirectChainsRequestInfo()
+        {
+            Id = "03051327-4536-0216-1000-3b458a2cfcca",
+            Url = "https://test_rdr.dataforseo.com/a/",
+        },
+    });
 ```
 
 ### Parameters
@@ -709,14 +781,31 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.NonIndexableAsync(new List<OnPageNonIndexableRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.NonIndexableAsync(
+    new OnPageNonIndexableRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        Limit = 10,
-    }
-});
+        new OnPageNonIndexableRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "reason",
+                "=",
+                "robots_txt",
+            },
+            "and",
+            new object[]
+            {
+                "url",
+                "like",
+                "%go%",
+            },
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -757,14 +846,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.WaterfallAsync(new List<OnPageWaterfallRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.WaterfallAsync(
+    new OnPageWaterfallRequestInfo[]
     {
-        Id = "08101204-0696-0216-0000-644a7b21a48a",
-        Url = "https://dataforseo.com/tag/broken-links",
-    }
-});
+        new OnPageWaterfallRequestInfo()
+        {
+            Id = "08101204-0696-0216-0000-644a7b21a48a",
+            Url = "https://dataforseo.com/tag/broken-links",
+        },
+    });
 ```
 
 ### Parameters
@@ -805,15 +895,22 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.KeywordDensityAsync(new List<OnPageKeywordDensityRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.KeywordDensityAsync(
+    new OnPageKeywordDensityRequestInfo[]
     {
-        Id = "09101923-1535-0216-0000-2389a8854b70",
-        KeywordLength = 2,
-        Url = "https://dataforseo.com/",
-    }
-});
+        new OnPageKeywordDensityRequestInfo()
+        {
+            Id = "09101923-1535-0216-0000-2389a8854b70",
+            Url = "https://dataforseo.com/",
+            KeywordLength = 2,
+            Filters = new object[]
+        {
+            "frequency",
+            ">",
+            5,
+        },
+        },
+    });
 ```
 
 ### Parameters
@@ -854,14 +951,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.MicrodataAsync(new List<OnPageMicrodataRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.MicrodataAsync(
+    new OnPageMicrodataRequestInfo[]
     {
-        Id = "02241700-1535-0216-0000-034137259bc1",
-        Url = "https://dataforseo.com/apis",
-    }
-});
+        new OnPageMicrodataRequestInfo()
+        {
+            Id = "02241700-1535-0216-0000-034137259bc1",
+            Url = "https://dataforseo.com/apis",
+        },
+    });
 ```
 
 ### Parameters
@@ -902,14 +1000,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.RawHtmlAsync(new List<OnPageRawHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.RawHtmlAsync(
+    new OnPageRawHtmlRequestInfo[]
     {
-        Id = "07281559-0695-0216-0000-c269be8b7592",
-        Url = "https://dataforseo.com/apis",
-    }
-});
+        new OnPageRawHtmlRequestInfo()
+        {
+            Id = "07281559-0695-0216-0000-c269be8b7592",
+            Url = "https://dataforseo.com/apis",
+        },
+    });
 ```
 
 ### Parameters
@@ -950,13 +1049,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.PageScreenshotAsync(new List<OnPagePageScreenshotRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.PageScreenshotAsync(
+    new OnPagePageScreenshotRequestInfo[]
     {
-        Url = "https://dataforseo.com/apis",
-    }
-});
+        new OnPagePageScreenshotRequestInfo()
+        {
+            Url = "https://dataforseo.com/apis",
+        },
+    });
 ```
 
 ### Parameters
@@ -997,14 +1097,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.ContentParsingAsync(new List<OnPageContentParsingRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.ContentParsingAsync(
+    new OnPageContentParsingRequestInfo[]
     {
-        Url = "https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api",
-        Id = "11161551-1535-0216-0000-500b3f307f92",
-    }
-});
+        new OnPageContentParsingRequestInfo()
+        {
+            Url = "https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api",
+            Id = "11161551-1535-0216-0000-500b3f307f92",
+        },
+    });
 ```
 
 ### Parameters
@@ -1045,13 +1146,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.ContentParsingLiveAsync(new List<OnPageContentParsingLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.ContentParsingLiveAsync(
+    new OnPageContentParsingLiveRequestInfo[]
     {
-        Url = "https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api",
-    }
-});
+        new OnPageContentParsingLiveRequestInfo()
+        {
+            Url = "https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api",
+        },
+    });
 ```
 
 ### Parameters
@@ -1092,15 +1194,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.InstantPagesAsync(new List<OnPageInstantPagesRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.InstantPagesAsync(
+    new OnPageInstantPagesRequestInfo[]
     {
-        Url = "https://dataforseo.com/blog",
-        EnableJavascript = true,
-        CustomJs = "meta = {}; meta.url = document.URL; meta;",
-    }
-});
+        new OnPageInstantPagesRequestInfo()
+        {
+            Url = "https://dataforseo.com/blog",
+            EnableJavascript = true,
+            CustomJs = "meta = {}; meta.url = document.URL; meta;",
+        },
+    });
 ```
 
 ### Parameters
@@ -1129,9 +1232,9 @@ var result = await dfsClient.OnPageApi.InstantPagesAsync(new List<OnPageInstantP
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="onPageLighthouseLanguages"></a>
-# **onPageLighthouseLanguages**
-> OnPageLighthouseLanguagesResponseInfo onPageLighthouseLanguages()
+<a id="lighthouseLanguages"></a>
+# **lighthouseLanguages**
+> OnPageLighthouseLanguagesResponseInfo lighthouseLanguages()
 
 
 ### Example
@@ -1141,7 +1244,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.OnPageLighthouseLanguagesAsync();
+var result = await dfsClient.OnPageApi.LighthouseLanguagesAsync();
 ```
 
 ### Parameters
@@ -1264,16 +1367,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.LighthouseTaskPostAsync(new List<OnPageLighthouseTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.LighthouseTaskPostAsync(
+    new OnPageLighthouseTaskPostRequestInfo[]
     {
-        Url = "https://dataforseo.com",
-        ForMobile = true,
-        Tag = "some_string_123",
-        PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
-    }
-});
+        new OnPageLighthouseTaskPostRequestInfo()
+        {
+            Url = "https://dataforseo.com",
+            ForMobile = true,
+            Tag = "some_string_123",
+            PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
+        },
+    });
 ```
 
 ### Parameters
@@ -1397,15 +1501,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.OnPageApi.LighthouseLiveJsonAsync(new List<OnPageLighthouseLiveJsonRequestInfo>()
-{
-    new()
+var result = await dfsClient.OnPageApi.LighthouseLiveJsonAsync(
+    new OnPageLighthouseLiveJsonRequestInfo[]
     {
-        Url = "https://dataforseo.com",
-        ForMobile = true,
-        Tag = "some_string_123",
-    }
-});
+        new OnPageLighthouseLiveJsonRequestInfo()
+        {
+            Url = "https://dataforseo.com",
+            ForMobile = true,
+            Tag = "some_string_123",
+        },
+    });
 ```
 
 ### Parameters

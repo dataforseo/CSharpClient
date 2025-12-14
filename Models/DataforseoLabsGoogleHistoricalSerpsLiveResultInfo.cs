@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// search engine type
+        /// search engine type in a POST array
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -34,10 +34,10 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the total amount of results in our database relevant to your request
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? TotalCount { get; set; }
+        public long? TotalCount { get; set; }
 
         /// <summary>
         /// the number of results returned in the items array
@@ -46,7 +46,8 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// contains arrays of specific images
+        /// additional items present in the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveItem> Items { get; set; }

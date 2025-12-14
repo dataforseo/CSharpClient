@@ -8,6 +8,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("google_shopping_serp", typeof(GoogleShoppingSerpElementItem))]
     [JsonInheritance("google_shopping_paid", typeof(GoogleShoppingPaidElementItem))]
     [JsonInheritance("google_shopping_sponsored_carousel", typeof(GoogleShoppingSponsoredCarouselElementItem))]
+    [JsonInheritance("google_shopping_carousel", typeof(GoogleShoppingCarouselElementItem))]
     [JsonInheritance("related_searches", typeof(RelatedSearchesElementItem))]
 
     public class BaseMerchantGoogleShoppingProductsElementItem 

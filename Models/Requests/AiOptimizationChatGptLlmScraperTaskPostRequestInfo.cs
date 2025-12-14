@@ -70,8 +70,7 @@ namespace DataForSeo.Client.Models.Requests
         /// full name of search engine language
         /// <br/>required field if you don’t specify language_code;
         /// <br/>if you use this field, you don’t need to specify language_code;
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages;
-        /// <br/>Note: currently, the only supported value is English
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages
         /// </summary>
         [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -81,7 +80,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don’t specify language_name;
         /// <br/>if you use this field, you don’t need to specify language_name;
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages
-        /// <br/>Note: currently, the only supported value is en
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

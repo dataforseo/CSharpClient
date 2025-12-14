@@ -9,23 +9,13 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// direct URL of the search query
-        /// <br/>optional field
-        /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-        /// <br/>example:
-        /// <br/>https://google.com/maps/search/pizza/@37.09024,-95.712891,4z
-        /// </summary>
-        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Url { get; set; }
-
-        /// <summary>
         /// keyword
         /// <br/>required field
         /// <br/>you can specify up to 700 characters in the keyword field
-        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
+        /// <br/>all %## will be decoded (plus character '+' will be decoded to a space character)
+        /// <br/>if you need to use the '%' character for your keyword, please specify it as '%25';
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
-        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5
+        /// <br/>if this field contains such parameters as 'allinanchor:', 'allintext:', 'allintitle:', 'allinurl:', 'define:', 'filetype:', 'id:', 'inanchor:', 'info:', 'intext:', 'intitle:', 'inurl:', 'link:', 'related:', 'site:', the charge per task will be multiplied by 5
         /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
@@ -33,21 +23,10 @@ namespace DataForSeo.Client.Models.Requests
         public string Keyword { get; set; }
 
         /// <summary>
-        /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>example:
-        /// <br/>London,England,United Kingdom
-        /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
-
-        /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+        /// <br/>required field if you don't specify location_name or location_coordinate
+        /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
+        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
         /// <br/>example:
         /// <br/>2840
         /// </summary>
@@ -55,73 +34,15 @@ namespace DataForSeo.Client.Models.Requests
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,zoom” format
-        /// <br/>if “zoom” is not specified, 17z will be applied as a default value
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
-        /// <br/>the minimum value for “zoom”: 3z
-        /// <br/>the maximum value for “zoom”: 21z
-        /// <br/>example:
-        /// <br/>52.6178549,-155.352142,20z
-        /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationCoordinate { get; set; }
-
-        /// <summary>
-        /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages  of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-        /// <br/>example:
-        /// <br/>English
-        /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
-
-        /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+        /// <br/>required field if you don't specify language_name
+        /// <br/>if you use this field, you don't need to specify language_name
+        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
         /// <br/>example:
         /// <br/>en
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
-
-        /// <summary>
-        /// device type
-        /// <br/>optional field
-        /// <br/>can take the values:desktop, mobile
-        /// <br/>default value: desktop
-        /// <br/>note: for mobile device, only 20 results are returned for every SERP
-        /// </summary>
-        [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Device { get; set; }
-
-        /// <summary>
-        /// device operating system
-        /// <br/>optional field
-        /// <br/>if you specify desktop in the device field, choose from the following values: windows, macos
-        /// <br/>default value: windows
-        /// <br/>if you specify mobile in the device field, choose from the following values: android, ios
-        /// <br/>default value: android
-        /// </summary>
-        [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Os { get; set; }
-
-        /// <summary>
-        /// search engine domain
-        /// <br/>optional field
-        /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
-        /// <br/>however, you can set a custom search engine domain in this field
-        /// <br/>example:
-        /// <br/>google.co.uk, google.com.au, google.de, etc.
-        /// </summary>
-        [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SeDomain { get; set; }
 
         /// <summary>
         /// parsing depth
@@ -137,6 +58,59 @@ namespace DataForSeo.Client.Models.Requests
         public int? Depth { get; set; }
 
         /// <summary>
+        /// device type
+        /// <br/>optional field
+        /// <br/>can take the values:desktop, mobile
+        /// <br/>default value: desktop
+        /// <br/>note: for mobile device, only 20 results are returned for every SERP
+        /// </summary>
+        [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Device { get; set; }
+
+        /// <summary>
+        /// full name of search engine location
+        /// <br/>required field if you don't specify location_code or location_coordinate
+        /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+        /// <br/>example:
+        /// <br/>London,England,United Kingdom
+        /// </summary>
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>required field if you don't specify language_code
+        /// <br/>if you use this field, you don't need to specify language_code
+        /// <br/>you can receive the list of available languages  of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+        /// <br/>example:
+        /// <br/>English
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
+
+        /// <summary>
+        /// device operating system
+        /// <br/>optional field
+        /// <br/>if you specify desktop in the device field, choose from the following values: windows, macos
+        /// <br/>default value: windows
+        /// <br/>if you specify mobile in the device field, choose from the following values: android, ios
+        /// <br/>default value: android
+        /// </summary>
+        [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Os { get; set; }
+
+        /// <summary>
+        /// user-defined task identifier
+        /// <br/>optional field
+        /// <br/>the character limit is 255
+        /// <br/>you can use this parameter to identify the task and match it with the result
+        /// <br/>you will find the specified tag value in the data object of the response
+        /// </summary>
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Tag { get; set; }
+
+        /// <summary>
         /// page crawl limit
         /// <br/>optional field
         /// <br/>number of search results pages to crawl
@@ -148,7 +122,43 @@ namespace DataForSeo.Client.Models.Requests
         public int? MaxCrawlPages { get; set; }
 
         /// <summary>
-        /// search this area
+        /// direct URL of the search query
+        /// <br/>optional field
+        /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
+        /// <br/>example:
+        /// <br/>https://google.com/maps/search/pizza/@37.09024,-95.712891,4z
+        /// </summary>
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Url { get; set; }
+
+        /// <summary>
+        /// GPS coordinates of a location
+        /// <br/>required field if you don't specify location_name or location_code
+        /// <br/>if you use this field, you don't need to specify location_name or location_code
+        /// <br/>location_coordinate parameter should be specified in the 'latitude,longitude,zoom' format
+        /// <br/>if 'zoom' is not specified, 17z will be applied as a default value
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'zoom': 3z
+        /// <br/>the maximum value for 'zoom': 21z
+        /// <br/>example:
+        /// <br/>52.6178549,-155.352142,20z
+        /// </summary>
+        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationCoordinate { get; set; }
+
+        /// <summary>
+        /// search engine domain
+        /// <br/>optional field
+        /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
+        /// <br/>however, you can set a custom search engine domain in this field
+        /// <br/>example:
+        /// <br/>google.co.uk, google.com.au, google.de, etc.
+        /// </summary>
+        [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SeDomain { get; set; }
+
+        /// <summary>
+        /// [popup_img text='search this area' width='751' height='524' src='https://docs_v3.dataforseo.com/wp-content/uploads/2020/10/search_this_area_751x524-1.png']
         /// <br/>optional field
         /// <br/>can take the values:true, false
         /// <br/>default value: true
@@ -162,23 +172,13 @@ namespace DataForSeo.Client.Models.Requests
         /// search places mode
         /// <br/>optional field
         /// <br/>the search places mode allows to obtain Google Maps results on a certain place (e.g., Apple Store in New York)
-        /// <br/>however, due to the pecularities of our data mining algorithm, this mode might interfere with some local-intent queries – and display results for a location that is different from that specified in the request;
+        /// <br/>however, due to the pecularities of our data mining algorithm, this mode might interfere with some local-intent queries - and display results for a location that is different from that specified in the request;
         /// <br/>to prevent this interference and obtain correct results for keywords with local intent you may set this parameter to false;
         /// <br/>default value: true
         /// <br/>Note: if the search_places mode is turned off and no results were found in the search area, the results array will be empty
         /// </summary>
         [JsonProperty("search_places", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SearchPlaces { get; set; }
-
-        /// <summary>
-        /// user-defined task identifier
-        /// <br/>optional field
-        /// <br/>the character limit is 255
-        /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
-        /// </summary>
-        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Tag { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

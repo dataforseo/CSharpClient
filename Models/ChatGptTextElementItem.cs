@@ -21,6 +21,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ChatGptSource> Sources { get; set; }
 
+        /// <summary>
+        /// array of brand entities
+        /// <br/>contains information on brands mentioned in the text
+        /// </summary>
+        [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ChatGptBrandEntity> BrandEntities { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

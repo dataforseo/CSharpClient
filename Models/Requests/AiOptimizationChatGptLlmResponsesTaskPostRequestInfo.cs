@@ -90,16 +90,6 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<LlmMessageChainItem> MessageChain { get; set; }
 
         /// <summary>
-        /// user-defined task identifier
-        /// <br/>optional field
-        /// <br/>the character limit is 255
-        /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data array of the response
-        /// </summary>
-        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Tag { get; set; }
-
-        /// <summary>
         /// return URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
@@ -128,6 +118,16 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }
+
+        /// <summary>
+        /// user-defined task identifier
+        /// <br/>optional field
+        /// <br/>the character limit is 255
+        /// <br/>you can use this parameter to identify the task and match it with the result
+        /// <br/>you will find the specified tag value in the data array of the response
+        /// </summary>
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Tag { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

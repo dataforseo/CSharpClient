@@ -123,7 +123,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<BusinessDataBusinessListingsLocationsResponseInfo> BusinessDataBusinessListingsLocationsAsync()
+        public virtual async Task<BusinessDataBusinessListingsLocationsResponseInfo> BusinessListingsLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1773,7 +1773,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<BusinessDataTripadvisorLocationsResponseInfo> BusinessDataTripadvisorLocationsAsync()
+        public virtual async Task<BusinessDataTripadvisorLocationsResponseInfo> TripadvisorLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1811,7 +1811,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<BusinessDataTripadvisorLocationsCountryResponseInfo> BusinessDataTripadvisorLocationsCountryAsync(string country)
+        public virtual async Task<BusinessDataTripadvisorLocationsCountryResponseInfo> TripadvisorLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1851,7 +1851,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<BusinessDataTripadvisorLanguagesResponseInfo> BusinessDataTripadvisorLanguagesAsync()
+        public virtual async Task<BusinessDataTripadvisorLanguagesResponseInfo> TripadvisorLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

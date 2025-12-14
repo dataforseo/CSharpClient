@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<DataforseoLabsStatusResponseInfo> DataforseoLabsStatusAsync()
+        public virtual async Task<DataforseoLabsStatusResponseInfo> StatusAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -199,7 +199,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<DataforseoLabsLocationsAndLanguagesResponseInfo> DataforseoLabsLocationsAndLanguagesAsync()
+        public virtual async Task<DataforseoLabsLocationsAndLanguagesResponseInfo> LocationsAndLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -553,7 +553,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> DataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync()
+        public virtual async Task<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> GoogleCategoriesForKeywordsLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

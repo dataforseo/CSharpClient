@@ -1063,7 +1063,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AppDataAppleLocationsResponseInfo> AppDataAppleLocationsAsync()
+        public virtual async Task<AppDataAppleLocationsResponseInfo> AppleLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1101,7 +1101,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AppDataAppleLanguagesResponseInfo> AppDataAppleLanguagesAsync()
+        public virtual async Task<AppDataAppleLanguagesResponseInfo> AppleLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

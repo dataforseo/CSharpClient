@@ -12,5 +12,5 @@
 **PercentageDiscount** | **double?** | percentage of the discount |[optional]|
 **CouponCode** | **string** | code of coupon discount |[optional]|
 **CouponInfo** | **string** | information on coupon discount |[optional]|
-**Url** | **string** | URL to the product page on the seller’s website |[optional]|
+**Url** | **string** | URL to the product page on the seller’s website<br>Note: this field is deprecated and will return null |[optional]|
 **Domain** | **string** | domain in SERP |[optional]|

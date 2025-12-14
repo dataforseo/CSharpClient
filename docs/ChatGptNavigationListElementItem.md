@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the element |[optional]|
+**Title** | **string** | name of the brand |[optional]|
 **Sources** | **IEnumerable<ChatGptSource>** | array of sources |[optional]|

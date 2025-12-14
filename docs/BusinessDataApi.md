@@ -6,7 +6,7 @@ All URIs are relative to *https://api.dataforseo.com*
 |------------- | ------------- | -------------|
 [**businessDataIdList**](BusinessDataApi.md#businessDataIdList) | **POST**  /v3/business_data/id_list  |
 [**businessDataErrors**](BusinessDataApi.md#businessDataErrors) | **POST**  /v3/business_data/errors  |
-[**businessDataBusinessListingsLocations**](BusinessDataApi.md#businessDataBusinessListingsLocations) | **GET**  /v3/business_data/business_listings/locations  |
+[**businessListingsLocations**](BusinessDataApi.md#businessListingsLocations) | **GET**  /v3/business_data/business_listings/locations  |
 [**businessListingsCategories**](BusinessDataApi.md#businessListingsCategories) | **GET**  /v3/business_data/business_listings/categories  |
 [**businessListingsAvailableFilters**](BusinessDataApi.md#businessListingsAvailableFilters) | **GET**  /v3/business_data/business_listings/available_filters  |
 [**businessListingsSearchLive**](BusinessDataApi.md#businessListingsSearchLive) | **POST**  /v3/business_data/business_listings/search/live  |
@@ -48,9 +48,9 @@ All URIs are relative to *https://api.dataforseo.com*
 [**trustpilotReviewsTaskPost**](BusinessDataApi.md#trustpilotReviewsTaskPost) | **POST**  /v3/business_data/trustpilot/reviews/task_post  |
 [**trustpilotReviewsTasksReady**](BusinessDataApi.md#trustpilotReviewsTasksReady) | **GET**  /v3/business_data/trustpilot/reviews/tasks_ready  |
 [**trustpilotReviewsTaskGet**](BusinessDataApi.md#trustpilotReviewsTaskGet) | **GET**  /v3/business_data/trustpilot/reviews/task_get/{id}  |
-[**businessDataTripadvisorLocations**](BusinessDataApi.md#businessDataTripadvisorLocations) | **GET**  /v3/business_data/tripadvisor/locations  |
-[**businessDataTripadvisorLocationsCountry**](BusinessDataApi.md#businessDataTripadvisorLocationsCountry) | **GET**  /v3/business_data/tripadvisor/locations/{country}  |
-[**businessDataTripadvisorLanguages**](BusinessDataApi.md#businessDataTripadvisorLanguages) | **GET**  /v3/business_data/tripadvisor/languages  |
+[**tripadvisorLocations**](BusinessDataApi.md#tripadvisorLocations) | **GET**  /v3/business_data/tripadvisor/locations  |
+[**tripadvisorLocationsCountry**](BusinessDataApi.md#tripadvisorLocationsCountry) | **GET**  /v3/business_data/tripadvisor/locations/{country}  |
+[**tripadvisorLanguages**](BusinessDataApi.md#tripadvisorLanguages) | **GET**  /v3/business_data/tripadvisor/languages  |
 [**tripadvisorSearchTaskPost**](BusinessDataApi.md#tripadvisorSearchTaskPost) | **POST**  /v3/business_data/tripadvisor/search/task_post  |
 [**tripadvisorSearchTasksReady**](BusinessDataApi.md#tripadvisorSearchTasksReady) | **GET**  /v3/business_data/tripadvisor/search/tasks_ready  |
 [**tripadvisorSearchTaskGet**](BusinessDataApi.md#tripadvisorSearchTaskGet) | **GET**  /v3/business_data/tripadvisor/search/task_get/{id}  |
@@ -73,17 +73,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(new List<BusinessDataIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(
+    new BusinessDataIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:11:28 +00:00",
-        DatetimeTo = "2025-10-22 08:11:28 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new BusinessDataIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -124,15 +126,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessDataErrorsAsync(new List<BusinessDataErrorsRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.BusinessDataErrorsAsync(
+    new BusinessDataErrorsRequestInfo[]
     {
-        Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
-    }
-});
+        new BusinessDataErrorsRequestInfo()
+        {
+            Limit = 10,
+            Offset = 0,
+            FilteredFunction = "pingback_url",
+        },
+    });
 ```
 
 ### Parameters
@@ -161,9 +164,9 @@ var result = await dfsClient.BusinessDataApi.BusinessDataErrorsAsync(new List<Bu
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="businessDataBusinessListingsLocations"></a>
-# **businessDataBusinessListingsLocations**
-> BusinessDataBusinessListingsLocationsResponseInfo businessDataBusinessListingsLocations()
+<a id="businessListingsLocations"></a>
+# **businessListingsLocations**
+> BusinessDataBusinessListingsLocationsResponseInfo businessListingsLocations()
 
 
 ### Example
@@ -173,7 +176,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessDataBusinessListingsLocationsAsync();
+var result = await dfsClient.BusinessDataApi.BusinessListingsLocationsAsync();
 ```
 
 ### Parameters
@@ -296,21 +299,35 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessListingsSearchLiveAsync(new List<BusinessDataBusinessListingsSearchLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.BusinessListingsSearchLiveAsync(
+    new BusinessDataBusinessListingsSearchLiveRequestInfo[]
     {
-        Categories = new List<string>()
+        new BusinessDataBusinessListingsSearchLiveRequestInfo()
+        {
+            Categories = new string[]
         {
             "pizza_restaurant",
         },
-        Description = "pizza",
-        Title = "pizza",
-        IsClaimed = true,
-        LocationCoordinate = "53.476225,-2.243572,10",
-        Limit = 3,
-    }
-});
+            Description = "pizza",
+            Title = "pizza",
+            IsClaimed = true,
+            LocationCoordinate = "53.476225,-2.243572,10",
+            OrderBy = new string[]
+        {
+            "rating.value,desc",
+        },
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "rating.value",
+                ">",
+                3,
+            },
+        },
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -351,21 +368,31 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessListingsCategoriesAggregationLiveAsync(new List<BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.BusinessListingsCategoriesAggregationLiveAsync(
+    new BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo[]
     {
-        Categories = new List<string>()
+        new BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo()
+        {
+            Categories = new string[]
         {
             "pizza_restaurant",
         },
-        Description = "pizza",
-        Title = "pizza",
-        IsClaimed = true,
-        LocationCoordinate = "53.476225,-2.243572,10",
-        Limit = 3,
-    }
-});
+            Description = "pizza",
+            Title = "pizza",
+            IsClaimed = true,
+            LocationCoordinate = "53.476225,-2.243572,10",
+            InitialDatasetFilters = new object[]
+        {
+            new object[]
+            {
+                "rating.value",
+                ">",
+                3,
+            },
+        },
+            Limit = 3,
+        },
+    });
 ```
 
 ### Parameters
@@ -530,15 +557,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTaskPostAsync(new List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoTaskPostAsync(
+    new BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo[]
     {
-        Keyword = "RustyBrick, Inc.",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            Keyword = "RustyBrick, Inc.",
+        },
+    });
 ```
 
 ### Parameters
@@ -703,15 +731,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoLiveAsync(new List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessInfoLiveAsync(
+    new BusinessDataGoogleMyBusinessInfoLiveRequestInfo[]
     {
-        Keyword = "RustyBrick, Inc.",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleMyBusinessInfoLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            Keyword = "RustyBrick, Inc.",
+        },
+    });
 ```
 
 ### Parameters
@@ -752,15 +781,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTaskPostAsync(new List<BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleMyBusinessUpdatesTaskPostAsync(
+    new BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo[]
     {
-        Keyword = "RustyBrick, Inc.",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            Keyword = "RustyBrick, Inc.",
+        },
+    });
 ```
 
 ### Parameters
@@ -884,26 +914,27 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskPostAsync(new List<BusinessDataGoogleHotelSearchesTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskPostAsync(
+    new BusinessDataGoogleHotelSearchesTaskPostRequestInfo[]
     {
-        Keyword = "cheap hotel",
-        Priority = 2,
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-        CheckIn = "2023-06-01",
-        CheckOut = "2023-06-30",
-        Currency = "USD",
-        Adults = 2,
-        Children = new List<string>()
+        new BusinessDataGoogleHotelSearchesTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            Keyword = "cheap hotel",
+            CheckIn = "2023-06-01 00:00:00 +03:00",
+            CheckOut = "2023-06-30 00:00:00 +03:00",
+            Currency = "USD",
+            Adults = 2,
+            Children = new string[]
         {
             "14",
         },
-        SortBy = "highest_rating",
-        Tag = "example",
-    }
-});
+            SortBy = "highest_rating",
+            Priority = 2,
+            Tag = "example",
+        },
+    });
 ```
 
 ### Parameters
@@ -1027,25 +1058,26 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesLiveAsync(new List<BusinessDataGoogleHotelSearchesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesLiveAsync(
+    new BusinessDataGoogleHotelSearchesLiveRequestInfo[]
     {
-        Keyword = "cheap hotel",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-        CheckIn = "2023-06-01",
-        CheckOut = "2023-06-30",
-        Currency = "USD",
-        Adults = 2,
-        Children = new List<string>()
+        new BusinessDataGoogleHotelSearchesLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            Keyword = "cheap hotel",
+            CheckIn = "2023-06-01 00:00:00 +03:00",
+            CheckOut = "2023-06-30 00:00:00 +03:00",
+            Currency = "USD",
+            Adults = 2,
+            Children = new string[]
         {
             "14",
         },
-        SortBy = "highest_rating",
-        Tag = "example",
-    }
-});
+            SortBy = "highest_rating",
+            Tag = "example",
+        },
+    });
 ```
 
 ### Parameters
@@ -1086,18 +1118,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskPostAsync(new List<BusinessDataGoogleHotelInfoTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoTaskPostAsync(
+    new BusinessDataGoogleHotelInfoTaskPostRequestInfo[]
     {
-        HotelIdentifier = "ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-        Tag = "some_string_123",
-        PostbackUrl = "https://your-server.com/postbackscript.php",
-        PostbackData = "advanced",
-    }
-});
+        new BusinessDataGoogleHotelInfoTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            HotelIdentifier = "ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE",
+            Tag = "some_string_123",
+            PostbackUrl = "https://your-server.com/postbackscript.php",
+            PostbackData = "advanced",
+        },
+    });
 ```
 
 ### Parameters
@@ -1263,15 +1296,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveAdvancedAsync(new List<BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveAdvancedAsync(
+    new BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo[]
     {
-        HotelIdentifier = "CgoI-KWyzenM_MV3EAE",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            HotelIdentifier = "CgoI-KWyzenM_MV3EAE",
+        },
+    });
 ```
 
 ### Parameters
@@ -1312,15 +1346,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveHtmlAsync(new List<BusinessDataGoogleHotelInfoLiveHtmlRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleHotelInfoLiveHtmlAsync(
+    new BusinessDataGoogleHotelInfoLiveHtmlRequestInfo[]
     {
-        HotelIdentifier = "ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE",
-        LocationName = "New York,New York,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleHotelInfoLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "New York,New York,United States",
+            HotelIdentifier = "ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE",
+        },
+    });
 ```
 
 ### Parameters
@@ -1361,17 +1396,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleReviewsTaskPostAsync(new List<BusinessDataGoogleReviewsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleReviewsTaskPostAsync(
+    new BusinessDataGoogleReviewsTaskPostRequestInfo[]
     {
-        Keyword = "hedonism wines",
-        LocationName = "London,England,United Kingdom",
-        LanguageName = "English",
-        Depth = 50,
-        SortBy = "highest_rating",
-    }
-});
+        new BusinessDataGoogleReviewsTaskPostRequestInfo()
+        {
+            LocationName = "London,England,United Kingdom",
+            LanguageName = "English",
+            Keyword = "hedonism wines",
+            Depth = 50,
+            SortBy = "highest_rating",
+        },
+    });
 ```
 
 ### Parameters
@@ -1495,15 +1531,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTaskPostAsync(new List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleExtendedReviewsTaskPostAsync(
+    new BusinessDataGoogleExtendedReviewsTaskPostRequestInfo[]
     {
-        Cid = "17626775537598922320",
-        LocationName = "London,England,United Kingdom",
-        LanguageName = "english",
-    }
-});
+        new BusinessDataGoogleExtendedReviewsTaskPostRequestInfo()
+        {
+            LocationName = "London,England,United Kingdom",
+            LanguageName = "english",
+            Cid = "17626775537598922320",
+        },
+    });
 ```
 
 ### Parameters
@@ -1627,15 +1664,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTaskPostAsync(new List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersTaskPostAsync(
+    new BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo[]
     {
-        Keyword = "The Last Bookstore",
-        LocationName = "Los Angeles,California,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "Los Angeles,California,United States",
+            Keyword = "The Last Bookstore",
+        },
+    });
 ```
 
 ### Parameters
@@ -1759,15 +1797,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersLiveAsync(new List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.GoogleQuestionsAndAnswersLiveAsync(
+    new BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo[]
     {
-        Keyword = "The Last Bookstore",
-        LocationName = "Los Angeles,California,United States",
-        LanguageCode = "en",
-    }
-});
+        new BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationName = "Los Angeles,California,United States",
+            Keyword = "The Last Bookstore",
+        },
+    });
 ```
 
 ### Parameters
@@ -1808,14 +1847,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.TrustpilotSearchTaskPostAsync(new List<BusinessDataTrustpilotSearchTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.TrustpilotSearchTaskPostAsync(
+    new BusinessDataTrustpilotSearchTaskPostRequestInfo[]
     {
-        Keyword = "pizza restaurant",
-        Depth = 20,
-    }
-});
+        new BusinessDataTrustpilotSearchTaskPostRequestInfo()
+        {
+            Keyword = "pizza restaurant",
+            Depth = 20,
+        },
+    });
 ```
 
 ### Parameters
@@ -1939,14 +1979,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTaskPostAsync(new List<BusinessDataTrustpilotReviewsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.TrustpilotReviewsTaskPostAsync(
+    new BusinessDataTrustpilotReviewsTaskPostRequestInfo[]
     {
-        Domain = "www.thepearlsource.com",
-        Depth = 40,
-    }
-});
+        new BusinessDataTrustpilotReviewsTaskPostRequestInfo()
+        {
+            Domain = "www.thepearlsource.com",
+            Depth = 40,
+        },
+    });
 ```
 
 ### Parameters
@@ -2058,9 +2099,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="businessDataTripadvisorLocations"></a>
-# **businessDataTripadvisorLocations**
-> BusinessDataTripadvisorLocationsResponseInfo businessDataTripadvisorLocations()
+<a id="tripadvisorLocations"></a>
+# **tripadvisorLocations**
+> BusinessDataTripadvisorLocationsResponseInfo tripadvisorLocations()
 
 
 ### Example
@@ -2070,7 +2111,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLocationsAsync();
+var result = await dfsClient.BusinessDataApi.TripadvisorLocationsAsync();
 ```
 
 ### Parameters
@@ -2099,9 +2140,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="businessDataTripadvisorLocationsCountry"></a>
-# **businessDataTripadvisorLocationsCountry**
-> BusinessDataTripadvisorLocationsCountryResponseInfo businessDataTripadvisorLocationsCountry()
+<a id="tripadvisorLocationsCountry"></a>
+# **tripadvisorLocationsCountry**
+> BusinessDataTripadvisorLocationsCountryResponseInfo tripadvisorLocationsCountry()
 
 
 ### Example
@@ -2112,7 +2153,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Password = "PASSWORD",
 });
 var country = "us";
-var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLocationsCountryAsync(country);
+var result = await dfsClient.BusinessDataApi.TripadvisorLocationsCountryAsync(country);
 ```
 
 ### Parameters
@@ -2141,9 +2182,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="businessDataTripadvisorLanguages"></a>
-# **businessDataTripadvisorLanguages**
-> BusinessDataTripadvisorLanguagesResponseInfo businessDataTripadvisorLanguages()
+<a id="tripadvisorLanguages"></a>
+# **tripadvisorLanguages**
+> BusinessDataTripadvisorLanguagesResponseInfo tripadvisorLanguages()
 
 
 ### Example
@@ -2153,7 +2194,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.BusinessDataTripadvisorLanguagesAsync();
+var result = await dfsClient.BusinessDataApi.TripadvisorLanguagesAsync();
 ```
 
 ### Parameters
@@ -2194,15 +2235,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.TripadvisorSearchTaskPostAsync(new List<BusinessDataTripadvisorSearchTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.TripadvisorSearchTaskPostAsync(
+    new BusinessDataTripadvisorSearchTaskPostRequestInfo[]
     {
-        Keyword = "pizza",
-        LocationCode = 1003854,
-        Depth = 30,
-    }
-});
+        new BusinessDataTripadvisorSearchTaskPostRequestInfo()
+        {
+            Keyword = "pizza",
+            LocationCode = 1003854,
+            Depth = 30,
+        },
+    });
 ```
 
 ### Parameters
@@ -2326,16 +2368,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTaskPostAsync(new List<BusinessDataTripadvisorReviewsTaskPostRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.TripadvisorReviewsTaskPostAsync(
+    new BusinessDataTripadvisorReviewsTaskPostRequestInfo[]
     {
-        UrlPath = "Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html",
-        LocationCode = 1003854,
-        Tag = "some_string_123",
-        PingbackUrl = "https://your-server.com/pingback.php?id=$id&tag=$tag",
-    }
-});
+        new BusinessDataTripadvisorReviewsTaskPostRequestInfo()
+        {
+            UrlPath = "Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html",
+            LocationCode = 1003854,
+            PingbackUrl = "https://your-server.com/pingback.php?id=$id&tag=$tag",
+            Tag = "some_string_123",
+        },
+    });
 ```
 
 ### Parameters
@@ -2459,19 +2502,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.SocialMediaPinterestLiveAsync(new List<BusinessDataSocialMediaPinterestLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.SocialMediaPinterestLiveAsync(
+    new BusinessDataSocialMediaPinterestLiveRequestInfo[]
     {
-        Targets = new List<string>()
+        new BusinessDataSocialMediaPinterestLiveRequestInfo()
+        {
+            Targets = new string[]
         {
             "https://www.simplyrecipes.com/recipes/grilled_salmon_with_cucumber_mango_salsa/",
             "https://tasty.co/recipe/classic-lasagna",
             "https://www.allrecipes.com/recipe/255263/sicilian-roasted-chicken/",
         },
-        Tag = "some_string_123",
-    }
-});
+            Tag = "some_string_123",
+        },
+    });
 ```
 
 ### Parameters
@@ -2512,19 +2556,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.SocialMediaFacebookLiveAsync(new List<BusinessDataSocialMediaFacebookLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.SocialMediaFacebookLiveAsync(
+    new BusinessDataSocialMediaFacebookLiveRequestInfo[]
     {
-        Targets = new List<string>()
+        new BusinessDataSocialMediaFacebookLiveRequestInfo()
+        {
+            Targets = new string[]
         {
             "https://prnt.sc/",
             "https://developers.facebook.com/docs/plugins/like-button/",
             "https://www.shbarcelona.com/blog/en/salsa-dance-clubs-in-barcelona/",
         },
-        Tag = "some_string_123",
-    }
-});
+            Tag = "some_string_123",
+        },
+    });
 ```
 
 ### Parameters
@@ -2565,11 +2610,12 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BusinessDataApi.SocialMediaRedditLiveAsync(new List<BusinessDataSocialMediaRedditLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.BusinessDataApi.SocialMediaRedditLiveAsync(
+    new BusinessDataSocialMediaRedditLiveRequestInfo[]
     {
-        Targets = new List<string>()
+        new BusinessDataSocialMediaRedditLiveRequestInfo()
+        {
+            Targets = new string[]
         {
             "https://vk.com/",
             "https://ahrefs.com/",
@@ -2578,9 +2624,9 @@ var result = await dfsClient.BusinessDataApi.SocialMediaRedditLiveAsync(new List
             "https://reddit.com/",
             "https://facebook.com/",
         },
-        Tag = "some_string_123",
-    }
-});
+            Tag = "some_string_123",
+        },
+    });
 ```
 
 ### Parameters

@@ -7,8 +7,8 @@ All URIs are relative to *https://api.dataforseo.com*
 [**domainAnalyticsIdList**](DomainAnalyticsApi.md#domainAnalyticsIdList) | **POST**  /v3/domain_analytics/id_list  |
 [**domainAnalyticsErrors**](DomainAnalyticsApi.md#domainAnalyticsErrors) | **POST**  /v3/domain_analytics/errors  |
 [**technologiesAvailableFilters**](DomainAnalyticsApi.md#technologiesAvailableFilters) | **GET**  /v3/domain_analytics/technologies/available_filters  |
-[**domainAnalyticsTechnologiesLocations**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLocations) | **GET**  /v3/domain_analytics/technologies/locations  |
-[**domainAnalyticsTechnologiesLanguages**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLanguages) | **GET**  /v3/domain_analytics/technologies/languages  |
+[**technologiesLocations**](DomainAnalyticsApi.md#technologiesLocations) | **GET**  /v3/domain_analytics/technologies/locations  |
+[**technologiesLanguages**](DomainAnalyticsApi.md#technologiesLanguages) | **GET**  /v3/domain_analytics/technologies/languages  |
 [**technologiesTechnologies**](DomainAnalyticsApi.md#technologiesTechnologies) | **GET**  /v3/domain_analytics/technologies/technologies  |
 [**technologiesAggregationTechnologiesLive**](DomainAnalyticsApi.md#technologiesAggregationTechnologiesLive) | **POST**  /v3/domain_analytics/technologies/aggregation_technologies/live  |
 [**technologiesTechnologiesSummaryLive**](DomainAnalyticsApi.md#technologiesTechnologiesSummaryLive) | **POST**  /v3/domain_analytics/technologies/technologies_summary/live  |
@@ -31,17 +31,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(new List<DomainAnalyticsIdListRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(
+    new DomainAnalyticsIdListRequestInfo[]
     {
-        DatetimeFrom = "2025-08-22 08:08:30 +00:00",
-        DatetimeTo = "2025-10-22 08:08:30 +00:00",
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
-    }
-});
+        new DomainAnalyticsIdListRequestInfo()
+        {
+            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            Limit = 100,
+            Offset = 0,
+            Sort = "desc",
+            IncludeMetadata = true,
+        },
+    });
 ```
 
 ### Parameters
@@ -82,15 +84,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsErrorsAsync(new List<DomainAnalyticsErrorsRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsErrorsAsync(
+    new DomainAnalyticsErrorsRequestInfo[]
     {
-        Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
-    }
-});
+        new DomainAnalyticsErrorsRequestInfo()
+        {
+            Limit = 10,
+            Offset = 0,
+            FilteredFunction = "pingback_url",
+        },
+    });
 ```
 
 ### Parameters
@@ -160,9 +163,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="domainAnalyticsTechnologiesLocations"></a>
-# **domainAnalyticsTechnologiesLocations**
-> DomainAnalyticsTechnologiesLocationsResponseInfo domainAnalyticsTechnologiesLocations()
+<a id="technologiesLocations"></a>
+# **technologiesLocations**
+> DomainAnalyticsTechnologiesLocationsResponseInfo technologiesLocations()
 
 
 ### Example
@@ -172,7 +175,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsTechnologiesLocationsAsync();
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesLocationsAsync();
 ```
 
 ### Parameters
@@ -201,9 +204,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="domainAnalyticsTechnologiesLanguages"></a>
-# **domainAnalyticsTechnologiesLanguages**
-> DomainAnalyticsTechnologiesLanguagesResponseInfo domainAnalyticsTechnologiesLanguages()
+<a id="technologiesLanguages"></a>
+# **technologiesLanguages**
+> DomainAnalyticsTechnologiesLanguagesResponseInfo technologiesLanguages()
 
 
 ### Example
@@ -213,7 +216,7 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsTechnologiesLanguagesAsync();
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesLanguagesAsync();
 ```
 
 ### Parameters
@@ -295,16 +298,37 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.TechnologiesAggregationTechnologiesLiveAsync(new List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesAggregationTechnologiesLiveAsync(
+    new DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo[]
     {
-        Technology = "Nginx",
-        Keyword = "WordPress",
-        Mode = "entry",
-        Limit = 10,
-    }
-});
+        new DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo()
+        {
+            Mode = "entry",
+            Technology = "Nginx",
+            Keyword = "WordPress",
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "country_iso_code",
+                "=",
+                "US",
+            },
+            "and",
+            new object[]
+            {
+                "domain_rank",
+                ">",
+                800,
+            },
+        },
+            OrderBy = new string[]
+        {
+            "groups_count,desc",
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -345,21 +369,38 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologiesSummaryLiveAsync(new List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologiesSummaryLiveAsync(
+    new DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo[]
     {
-        Technologies = new List<string>()
+        new DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo()
+        {
+            Mode = "entry",
+            Technologies = new string[]
         {
             "Ngi",
         },
-        Keywords = new List<string>()
+            Keywords = new string[]
         {
             "WordPress",
         },
-        Mode = "entry",
-    }
-});
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "country_iso_code",
+                "=",
+                "US",
+            },
+            "and",
+            new object[]
+            {
+                "domain_rank",
+                ">",
+                800,
+            },
+        },
+        },
+    });
 ```
 
 ### Parameters
@@ -400,15 +441,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveAsync(new List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveAsync(
+    new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo[]
     {
-        Technology = "jQuery",
-        DateFrom = "2025-08-22",
-        DateTo = "2025-10-22",
-    }
-});
+        new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
+        {
+            Technology = "jQuery",
+            DateFrom = "2022-10-31 00:00:00 +02:00",
+            DateTo = "2023-06-01 00:00:00 +03:00",
+        },
+    });
 ```
 
 ### Parameters
@@ -449,17 +491,38 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByTechnologyLiveAsync(new List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByTechnologyLiveAsync(
+    new DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo[]
     {
-        Technologies = new List<string>()
+        new DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo()
+        {
+            Technologies = new string[]
         {
             "Nginx",
         },
-        Limit = 10,
-    }
-});
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "country_iso_code",
+                "=",
+                "US",
+            },
+            "and",
+            new object[]
+            {
+                "domain_rank",
+                ">",
+                800,
+            },
+        },
+            OrderBy = new string[]
+        {
+            "last_visited,desc",
+        },
+            Limit = 10,
+        },
+    });
 ```
 
 ### Parameters
@@ -500,18 +563,23 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByHtmlTermsLiveAsync(new List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainsByHtmlTermsLiveAsync(
+    new DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo[]
     {
-        SearchTerms = new List<string>()
+        new DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo()
+        {
+            SearchTerms = new string[]
         {
             "data-attrid",
         },
-        Limit = 10,
-        Offset = 0,
-    }
-});
+            OrderBy = new string[]
+        {
+            "last_visited,desc",
+        },
+            Limit = 10,
+            Offset = 0,
+        },
+    });
 ```
 
 ### Parameters
@@ -552,13 +620,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainTechnologiesLiveAsync(new List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.TechnologiesDomainTechnologiesLiveAsync(
+    new DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo[]
     {
-        Target = "dataforseo.com",
-    }
-});
+        new DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo()
+        {
+            Target = "dataforseo.com",
+        },
+    });
 ```
 
 ### Parameters
@@ -640,13 +709,27 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.DomainAnalyticsApi.WhoisOverviewLiveAsync(new List<DomainAnalyticsWhoisOverviewLiveRequestInfo>()
-{
-    new()
+var result = await dfsClient.DomainAnalyticsApi.WhoisOverviewLiveAsync(
+    new DomainAnalyticsWhoisOverviewLiveRequestInfo[]
     {
-        Limit = 2,
-    }
-});
+        new DomainAnalyticsWhoisOverviewLiveRequestInfo()
+        {
+            Limit = 2,
+            Filters = new object[]
+        {
+            new object[]
+            {
+                "epp_status_codes",
+                "in",
+                new object[]
+                {
+                    "client_transfer_prohibited",
+                    "client_update_prohibited",
+                },
+            },
+        },
+        },
+    });
 ```
 
 ### Parameters

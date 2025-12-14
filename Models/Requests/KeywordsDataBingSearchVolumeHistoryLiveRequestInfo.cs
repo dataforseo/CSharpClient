@@ -97,7 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// starting date of the time range
         /// <br/>optional field
-        /// <br/>minimum value: two years back from today’s date
+        /// <br/>minimum value: 24 months back from today’s date
         /// <br/>maximum value: one day from today’s date
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:

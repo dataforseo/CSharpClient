@@ -161,7 +161,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<DomainAnalyticsTechnologiesLocationsResponseInfo> DomainAnalyticsTechnologiesLocationsAsync()
+        public virtual async Task<DomainAnalyticsTechnologiesLocationsResponseInfo> TechnologiesLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -199,7 +199,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<DomainAnalyticsTechnologiesLanguagesResponseInfo> DomainAnalyticsTechnologiesLanguagesAsync()
+        public virtual async Task<DomainAnalyticsTechnologiesLanguagesResponseInfo> TechnologiesLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

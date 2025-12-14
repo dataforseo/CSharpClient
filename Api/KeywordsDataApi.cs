@@ -161,7 +161,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataGoogleAdsLocationsResponseInfo> KeywordsDataGoogleAdsLocationsAsync()
+        public virtual async Task<KeywordsDataGoogleAdsLocationsResponseInfo> GoogleAdsLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -199,7 +199,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataGoogleAdsLocationsCountryResponseInfo> KeywordsDataGoogleAdsLocationsCountryAsync(string country)
+        public virtual async Task<KeywordsDataGoogleAdsLocationsCountryResponseInfo> GoogleAdsLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -239,7 +239,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataGoogleAdsLanguagesResponseInfo> KeywordsDataGoogleAdsLanguagesAsync()
+        public virtual async Task<KeywordsDataGoogleAdsLanguagesResponseInfo> GoogleAdsLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -909,7 +909,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataGoogleTrendsLocationsResponseInfo> KeywordsDataGoogleTrendsLocationsAsync()
+        public virtual async Task<KeywordsDataGoogleTrendsLocationsResponseInfo> GoogleTrendsLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -947,7 +947,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> KeywordsDataGoogleTrendsLocationsCountryAsync(string country)
+        public virtual async Task<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> GoogleTrendsLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -987,7 +987,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataGoogleTrendsLanguagesResponseInfo> KeywordsDataGoogleTrendsLanguagesAsync()
+        public virtual async Task<KeywordsDataGoogleTrendsLanguagesResponseInfo> GoogleTrendsLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1221,7 +1221,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataDataforseoTrendsLocationsResponseInfo> KeywordsDataDataforseoTrendsLocationsAsync()
+        public virtual async Task<KeywordsDataDataforseoTrendsLocationsResponseInfo> DataforseoTrendsLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1259,7 +1259,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> KeywordsDataDataforseoTrendsLocationsCountryAsync(string country)
+        public virtual async Task<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> DataforseoTrendsLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -2243,7 +2243,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> KeywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync()
+        public virtual async Task<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> BingKeywordPerformanceLocationsAndLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -2439,7 +2439,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync()
+        public virtual async Task<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> BingSearchVolumeHistoryLocationsAndLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -2635,7 +2635,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> KeywordsDataClickstreamDataLocationsAndLanguagesAsync()
+        public virtual async Task<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> ClickstreamDataLocationsAndLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

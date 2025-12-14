@@ -4,6 +4,7 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
     [JsonInheritance("domain", typeof(AiOptimizationLLmMentionsDomainElement))]
     [JsonInheritance("keyword", typeof(AiOptimizationLLmMentionsKeywordElement))]
 
@@ -19,15 +20,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("search_scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> SearchScope { get; set; }
-
-        /// <summary>
-        /// indicates if the subdomains of the target domain will be included in the search
-        /// <br/>optional field
-        /// <br/>if set to true, the subdomains will be included in the search
-        /// <br/>default value: false
-        /// </summary>
-        [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
         /// target domain search filter

@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Api
             }
         }
 
-        public virtual async Task<AiOptimizationChatGptLlmScraperLocationsResponseInfo> AiOptimizationChatGptLlmScraperLocationsAsync()
+        public virtual async Task<AiOptimizationChatGptLlmScraperLocationsResponseInfo> ChatGptLlmScraperLocationsAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -81,7 +81,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> AiOptimizationChatGptLlmScraperLocationsCountryAsync(string country)
+        public virtual async Task<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> ChatGptLlmScraperLocationsCountryAsync(string country)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -121,7 +121,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> AiOptimizationChatGptLlmScraperLanguagesAsync()
+        public virtual async Task<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> ChatGptLlmScraperLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -317,7 +317,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> AiOptimizationLlmMentionsLocationsAndLanguagesAsync()
+        public virtual async Task<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> LlmMentionsLocationsAndLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1297,7 +1297,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> AiOptimizationAiKeywordDataLocationsAndLanguagesAsync()
+        public virtual async Task<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> AiKeywordDataLocationsAndLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

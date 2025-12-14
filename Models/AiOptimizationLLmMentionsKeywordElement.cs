@@ -32,6 +32,26 @@ namespace DataForSeo.Client.Models
         [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchType { get; set; }
 
+        /// <summary>
+        /// target domain search scope
+        /// <br/>optional field
+        /// <br/>possible values:
+        /// <br/>any, sources, search_results
+        /// <br/>default value: any
+        /// </summary>
+        [JsonProperty("search_scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> SearchScope { get; set; }
+
+        /// <summary>
+        /// target domain search filter
+        /// <br/>optional field
+        /// <br/>possible values:
+        /// <br/>include, exclude
+        /// <br/>default value: include
+        /// </summary>
+        [JsonProperty("search_filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SearchFilter { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

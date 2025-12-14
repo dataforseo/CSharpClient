@@ -55,6 +55,13 @@ namespace DataForSeo.Client.Models
         [JsonProperty("is_another_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAnotherLanguage { get; set; }
 
+        /// <summary>
+        /// number of words in the keyword
+        /// <br/>indicates how many words the keyword consists of
+        /// </summary>
+        [JsonProperty("words_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? WordsCount { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -283,7 +283,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<ContentGenerationCheckGrammarLanguagesResponseInfo> ContentGenerationCheckGrammarLanguagesAsync()
+        public virtual async Task<ContentGenerationCheckGrammarLanguagesResponseInfo> CheckGrammarLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {
@@ -399,7 +399,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<ContentGenerationTextSummaryLanguagesResponseInfo> ContentGenerationTextSummaryLanguagesAsync()
+        public virtual async Task<ContentGenerationTextSummaryLanguagesResponseInfo> TextSummaryLanguagesAsync()
         {
             using (var request = new HttpRequestMessage())
             {

@@ -47,6 +47,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser scale factor
         /// <br/>optional field
         /// <br/>can be specified in the following range: 0.5-3
+        /// <br/>default value: 1
         /// </summary>
         [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? BrowserScreenScaleFactor { get; set; }

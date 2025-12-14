@@ -50,6 +50,20 @@ namespace DataForSeo.Client.Models
         [JsonProperty("search_results_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GroupElement> SearchResultsDomain { get; set; }
 
+        /// <summary>
+        /// data on brand entities relevant to the target
+        /// <br/>array of objects containing data on brand entity titles that appear in search results related to LLM queries
+        /// </summary>
+        [JsonProperty("brand_entities_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<GroupElement> BrandEntitiesTitle { get; set; }
+
+        /// <summary>
+        /// data on brand entities relevant to the target
+        /// <br/>array of objects containing data on brand entity categories that appear in search results related to LLM queries
+        /// </summary>
+        [JsonProperty("brand_entities_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<GroupElement> BrandEntitiesCategory { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

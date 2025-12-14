@@ -9,7 +9,9 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// domain in SERP
+        /// domain of the URL
+        /// <br/>domain of the URL where a special offer is posted
+        /// <br/>Note: this field is deprecated and will return null
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -27,7 +29,9 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// URL to the product page on the seller’s website
+        /// URL pointing at special offer page
+        /// <br/>URL where a special offer is posted
+        /// <br/>Note: this field is deprecated and will return null
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

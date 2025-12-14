@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<PopularProductsElement>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<PopularProductsElement>** | historical SERPs and related data found in the database |[optional]|

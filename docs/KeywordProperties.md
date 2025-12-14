@@ -11,3 +11,4 @@
 **KeywordDifficulty** | **int?** | difficulty of ranking in the first top-10 organic results for a keyword<br>indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;<br>calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;<br>learn more about the metric in this help center guide |[optional]|
 **DetectedLanguage** | **string** | detected language of the keyword<br>indicates the language of the keyword as identified by our system |[optional]|
 **IsAnotherLanguage** | **bool?** | detected language of the keyword is different from the set language<br>if true, the language set in the request does not match the language determined by our system for a given keyword |[optional]|
+**WordsCount** | **long?** | number of words in the keyword<br>indicates how many words the keyword consists of |[optional]|

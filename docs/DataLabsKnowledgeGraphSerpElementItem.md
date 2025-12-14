@@ -13,4 +13,4 @@
 **ImageUrl** | **string** | URL of the image |[optional]|
 **LogoUrl** | **string** | URL of the logo from knowledge graph |[optional]|
 **Cid** | **string** | google-defined client id |[optional]|
-**Items** | **IEnumerable<BaseDataforseoLabsKnowledgeGraphElementItem>** | elements of search results found in SERP |[optional]|
+**Items** | **IEnumerable<BaseDataforseoLabsKnowledgeGraphElementItem>** | historical SERPs and related data found in the database |[optional]|
