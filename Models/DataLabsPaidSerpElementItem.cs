@@ -107,7 +107,7 @@ namespace DataForSeo.Client.Models
         public RankChanges RankChanges { get; set; }
 
         /// <summary>
-        /// backlinks information for the target website
+        /// backlinks information for the relevant page URL
         /// </summary>
         [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }

@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         /// cost of the task, USD
         /// </summary>
         [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Cost { get; set; }
+        public int? Cost { get; set; }
 
         /// <summary>
         /// contains parameters you specified in the POST request

@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ID of the video
         /// <br/>required field
-        /// <br/>you can find video ID in the URL or ‘youtube_video’ item of YouTube Organic result
+        /// <br/>you can find video ID in the URL or 'youtube_video' item of YouTube Organic result
         /// <br/>example:
         /// <br/>Y8Wu4rSNJms
         /// </summary>
@@ -19,35 +19,9 @@ namespace DataForSeo.Client.Models.Requests
         public string VideoId { get; set; }
 
         /// <summary>
-        /// language code of original text
-        /// <br/>you can get the language code from YouTube Video Info result
-        /// </summary>
-        [JsonProperty("subtitles_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SubtitlesLanguage { get; set; }
-
-        /// <summary>
-        /// language code of translated text
-        /// <br/>possible values:
-        /// <br/>'az', 'ay', 'ak', 'sq', 'am', 'en', 'ar', 'hy', 'as', 'af', 'eu', 'be', 'bn', 'my', 'bg', 'bs', 'bho', 'cy', 'hu', 'vi', 'haw', 'ht', 'gl', 'lg', 'el', 'ka', 'gn', 'gu', 'gd', 'da', 'fy', 'zu', 'iw', 'ig', 'yi', 'id', 'ga', 'is', 'es', 'it', 'yo', 'kk', 'kn', 'ca', 'qu', 'rw', 'ky', 'zh-Hant', 'zh-Hans', 'ko', 'co', 'xh', 'ku', 'km', 'lo', 'la', 'lv', 'ln', 'lt', 'lb', 'mk', 'mg', 'ms', 'ml', 'dv', 'mt', 'mi', 'mr', 'mn', 'und', 'de', 'ne', 'nl', 'no', 'ny', 'or', 'om', 'pa', 'fa', 'pl', 'pt', 'ps', 'ro', 'ru', 'sm', 'sa', 'ceb', 'nso', 'sr', 'si', 'sd', 'sk', 'sl', 'so', 'sw', 'su', 'tg', 'th', 'ta', 'tt', 'te', 'ti', 'ts', 'tr', 'tk', 'uz', 'ug', 'uk', 'ur', 'fil', 'fi', 'fr', 'ha', 'hi', 'hmn', 'hr', 'cs', 'sv', 'sn', 'ee', 'eo', 'et', 'st', 'jv', 'ja', 'kri'
-        /// </summary>
-        [JsonProperty("subtitles_translate_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SubtitlesTranslateLanguage { get; set; }
-
-        /// <summary>
-        /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code
-        /// <br/>if you use this field, you don’t need to specify location_code
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-        /// <br/>example:
-        /// <br/>United States
-        /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
-
-        /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name 
-        /// <br/>if you use this field, you don’t need to specify location_name
+        /// <br/>required field if you don't specify location_name 
+        /// <br/>if you use this field, you don't need to specify location_name
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
         /// <br/>example:
         /// <br/>2840
@@ -56,20 +30,9 @@ namespace DataForSeo.Client.Models.Requests
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-        /// <br/>example:
-        /// <br/>English
-        /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
-
-        /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
+        /// <br/>required field if you don't specify language_name
+        /// <br/>if you use this field, you don't need to specify language_name
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
         /// <br/>example:
         /// <br/>en
@@ -84,6 +47,28 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
+
+        /// <summary>
+        /// full name of search engine location
+        /// <br/>required field if you don't specify location_code
+        /// <br/>if you use this field, you don't need to specify location_code
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
+        /// <br/>example:
+        /// <br/>United States
+        /// </summary>
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>required field if you don't specify language_code
+        /// <br/>if you use this field, you don't need to specify language_code
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
+        /// <br/>example:
+        /// <br/>English
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
 
         /// <summary>
         /// device operating system
@@ -103,6 +88,21 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
+
+        /// <summary>
+        /// language code of original text
+        /// <br/>you can get the language code from YouTube Video Info result
+        /// </summary>
+        [JsonProperty("subtitles_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SubtitlesLanguage { get; set; }
+
+        /// <summary>
+        /// language code of translated text
+        /// <br/>possible values:
+        /// <br/>'az', 'ay', 'ak', 'sq', 'am', 'en', 'ar', 'hy', 'as', 'af', 'eu', 'be', 'bn', 'my', 'bg', 'bs', 'bho', 'cy', 'hu', 'vi', 'haw', 'ht', 'gl', 'lg', 'el', 'ka', 'gn', 'gu', 'gd', 'da', 'fy', 'zu', 'iw', 'ig', 'yi', 'id', 'ga', 'is', 'es', 'it', 'yo', 'kk', 'kn', 'ca', 'qu', 'rw', 'ky', 'zh-Hant', 'zh-Hans', 'ko', 'co', 'xh', 'ku', 'km', 'lo', 'la', 'lv', 'ln', 'lt', 'lb', 'mk', 'mg', 'ms', 'ml', 'dv', 'mt', 'mi', 'mr', 'mn', 'und', 'de', 'ne', 'nl', 'no', 'ny', 'or', 'om', 'pa', 'fa', 'pl', 'pt', 'ps', 'ro', 'ru', 'sm', 'sa', 'ceb', 'nso', 'sr', 'si', 'sd', 'sk', 'sl', 'so', 'sw', 'su', 'tg', 'th', 'ta', 'tt', 'te', 'ti', 'ts', 'tr', 'tk', 'uz', 'ug', 'uk', 'ur', 'fil', 'fi', 'fr', 'ha', 'hi', 'hmn', 'hr', 'cs', 'sv', 'sn', 'ee', 'eo', 'et', 'st', 'jv', 'ja', 'kri'
+        /// </summary>
+        [JsonProperty("subtitles_translate_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string SubtitlesTranslateLanguage { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

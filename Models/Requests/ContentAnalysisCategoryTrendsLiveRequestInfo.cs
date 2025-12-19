@@ -13,8 +13,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
         /// </summary>
-        [JsonProperty("category_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public string CategoryCode { get; set; }
+        [JsonProperty("category_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? CategoryCode { get; set; }
 
         /// <summary>
         /// target page types

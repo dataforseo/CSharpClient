@@ -288,7 +288,7 @@ var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(
             LanguageCode = "en",
             LocationCode = 2840,
             Keyword = "iphone",
-            PriceMin = "5",
+            PriceMin = 5,
         },
     });
 ```

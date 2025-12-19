@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         /// <br/>for tasks set with a pingback/postback, this field will show the time it took your server to respond
         /// </summary>
         [JsonProperty("http_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? HttpTime { get; set; }
+        public int? HttpTime { get; set; }
 
         /// <summary>
         /// HTTP response

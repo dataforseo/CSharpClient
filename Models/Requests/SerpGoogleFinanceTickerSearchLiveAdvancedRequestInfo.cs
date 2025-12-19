@@ -22,20 +22,9 @@ namespace DataForSeo.Client.Models.Requests
         public string Keyword { get; set; }
 
         /// <summary>
-        /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code
-        /// <br/>if you use this field, you don’t need to specify location_code
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>example:
-        /// <br/>London,England,United Kingdom
-        /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
-
-        /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name
-        /// <br/>if you use this field, you don’t need to specify location_name
+        /// <br/>required field if you don't specify location_name
+        /// <br/>if you use this field, you don't need to specify location_name
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locations
         /// <br/>example:
         /// <br/>2840
@@ -44,20 +33,9 @@ namespace DataForSeo.Client.Models.Requests
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code 
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-        /// <br/>example:
-        /// <br/>English
-        /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
-
-        /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
+        /// <br/>required field if you don't specify language_name
+        /// <br/>if you use this field, you don't need to specify language_name
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:
         /// <br/>en
@@ -66,13 +44,26 @@ namespace DataForSeo.Client.Models.Requests
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// category of financial instruments to search for
-        /// <br/>optional field
-        /// <br/>possible values: all, stock, index, mutual_fund, currency, futures
-        /// <br/>default value: all
+        /// full name of search engine location
+        /// <br/>required field if you don't specify location_code
+        /// <br/>if you use this field, you don't need to specify location_code
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
+        /// <br/>example:
+        /// <br/>London,England,United Kingdom
         /// </summary>
-        [JsonProperty("category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Category { get; set; }
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>required field if you don't specify language_code 
+        /// <br/>if you use this field, you don't need to specify language_code
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+        /// <br/>example:
+        /// <br/>English
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
 
         /// <summary>
         /// user-defined task identifier
@@ -83,6 +74,15 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
+
+        /// <summary>
+        /// category of financial instruments to search for
+        /// <br/>optional field
+        /// <br/>possible values: all, stock, index, mutual_fund, currency, futures
+        /// <br/>default value: all
+        /// </summary>
+        [JsonProperty("category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Category { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

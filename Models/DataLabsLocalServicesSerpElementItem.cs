@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         /// historical SERPs and related data found in the database
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<LocalServicesElement> Items { get; set; }
+        public object Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

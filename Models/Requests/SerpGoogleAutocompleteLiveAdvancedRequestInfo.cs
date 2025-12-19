@@ -21,19 +21,8 @@ namespace DataForSeo.Client.Models.Requests
         public string Keyword { get; set; }
 
         /// <summary>
-        /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code
-        /// <br/>if you use this field, you don’t need to specify location_code;
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/serp/google/autocomplete/locations
-        /// <br/>example:
-        /// <br/>London,England,United Kingdom
-        /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
-
-        /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name;
+        /// <br/>required field if you don't specify location_name;
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locations
         /// <br/>example:
         /// <br/>2840
@@ -42,20 +31,9 @@ namespace DataForSeo.Client.Models.Requests
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code;
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/serp/google/languages
-        /// <br/>example:
-        /// <br/>English
-        /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LanguageName { get; set; }
-
-        /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name;
+        /// <br/>required field if you don't specify language_name
+        /// <br/>if you use this field, you don't need to specify language_name;
         /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:
         /// <br/>en
@@ -71,12 +49,34 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimal value: 0
         /// <br/>default value: the number of the last character of the specified keyword
         /// <br/>example:
-        /// <br/>|which query are s – 'cursor_pointer': 0
-        /// <br/>which query is s| – 'cursor_pointer': 16
-        /// <br/>which que|ry is s – 'cursor_pointer': 9
+        /// <br/>|which query are s - 'cursor_pointer': 0
+        /// <br/>which query is s| - 'cursor_pointer': 16
+        /// <br/>which que|ry is s - 'cursor_pointer': 9
         /// </summary>
         [JsonProperty("cursor_pointer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CursorPointer { get; set; }
+
+        /// <summary>
+        /// full name of search engine location
+        /// <br/>required field if you don't specify location_code
+        /// <br/>if you use this field, you don't need to specify location_code;
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/serp/google/autocomplete/locations
+        /// <br/>example:
+        /// <br/>London,England,United Kingdom
+        /// </summary>
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>required field if you don't specify language_code
+        /// <br/>if you use this field, you don't need to specify language_code;
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/serp/google/languages
+        /// <br/>example:
+        /// <br/>English
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
 
         /// <summary>
         /// search client for autocomplete
@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>toolbar — returns XML;
         /// <br/>youtube — returns JSONP;
         /// <br/>gws-wiz-local — used in google local;
-        /// <br/>img — used in google’s image search;
+        /// <br/>img — used in google's image search;
         /// <br/>products-cc — used in google shopping search
         /// </summary>
         [JsonProperty("client", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

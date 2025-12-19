@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// suggested bid value under the current targeting
         /// </summary>
         [JsonProperty("suggested_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? SuggestedBid { get; set; }
+        public double? SuggestedBid { get; set; }
 
         /// <summary>
         /// suggested daily budget value under the current targeting and bid

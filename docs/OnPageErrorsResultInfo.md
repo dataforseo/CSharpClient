@@ -13,5 +13,5 @@
 **HttpUrl** | **string** | URL that caused an error<br>URL you used for making an API call or pingback/postback URL |[optional]|
 **HttpMethod** | **string** | HTTP method |[optional]|
 **HttpCode** | **int?** | HTTP status code |[optional]|
-**HttpTime** | **double?** | time taken by HTTP request<br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
+**HttpTime** | **int?** | time taken by HTTP request<br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
 **HttpResponse** | **string** | HTTP response<br>server response |[optional]|

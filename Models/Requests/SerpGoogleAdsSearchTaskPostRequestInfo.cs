@@ -9,14 +9,6 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// domain name
-        /// <br/>required field if advertiser_ids is not specified
-        /// <br/>domain name associated with an advertiser account
-        /// </summary>
-        [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Target { get; set; }
-
-        /// <summary>
         /// advertiser identifiers
         /// <br/>required field if target is not specified
         /// <br/>you can specify the maximum of 25 values in this array;
@@ -26,82 +18,24 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<string> AdvertiserIds { get; set; }
 
         /// <summary>
-        /// full name of search engine location
-        /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_search/locations
-        /// <br/>example:
-        /// <br/>London,England,United Kingdom
-        /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
+        /// domain name
+        /// <br/>required field if advertiser_ids is not specified
+        /// <br/>domain name associated with an advertiser account
         /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationName { get; set; }
+        [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Target { get; set; }
 
         /// <summary>
         /// search engine location code
         /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
+        /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_search/locations
         /// <br/>example:
         /// <br/>2840
-        /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
+        /// <br/>Note: if you don't specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
-
-        /// <summary>
-        /// GPS coordinates of a location
-        /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>example:
-        /// <br/>52.6178549,-155.352142
-        /// <br/>Note: if you don’t specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
-        /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationCoordinate { get; set; }
-
-        /// <summary>
-        /// advertising platform
-        /// <br/>optional field
-        /// <br/>possible values: all, google_play, google_maps, google_search, google_shopping, youtube
-        /// <br/>default value: all
-        /// </summary>
-        [JsonProperty("platform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Platform { get; set; }
-
-        /// <summary>
-        /// ad format
-        /// <br/>optional field
-        /// <br/>possible values: all, text, image, video
-        /// </summary>
-        [JsonProperty("format", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Format { get; set; }
-
-        /// <summary>
-        /// starting date of the time range
-        /// <br/>optional field
-        /// <br/>required field if date_to is specified; 
-        /// <br/>date format: 'yyyy-mm-dd'
-        /// <br/>minimum value: 2018-05-31
-        /// <br/>maximum value: today’s date
-        /// <br/>example:
-        /// <br/>'2020-01-01'
-        /// </summary>
-        [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DateFrom { get; set; }
-
-        /// <summary>
-        /// ending date of the time range
-        /// <br/>optional field
-        /// <br/>required field if date_from is specified; 
-        /// <br/>date format: 'yyyy-mm-dd'
-        /// <br/>minimum value: 2018-05-31
-        /// <br/>maximum value: today’s date
-        /// <br/>example:
-        /// <br/>'2020-01-01'
-        /// </summary>
-        [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string DateTo { get; set; }
 
         /// <summary>
         /// parsing depth
@@ -129,14 +63,19 @@ namespace DataForSeo.Client.Models.Requests
         public int? Priority { get; set; }
 
         /// <summary>
-        /// user-defined task identifier
+        /// notification URL of a completed task
         /// <br/>optional field
-        /// <br/>the character limit is 255
-        /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
+        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>example:
+        /// <br/>http://your-server.com/pingscript?id=$id
+        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
+        /// <br/>Note: special characters in pingback_url will be urlencoded;
+        /// <br/>i.a., the # character will be encoded into %23
+        /// <br/>learn more on our Help Center
         /// </summary>
-        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Tag { get; set; }
+        [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string PingbackUrl { get; set; }
 
         /// <summary>
         /// return URL for sending task results
@@ -164,19 +103,80 @@ namespace DataForSeo.Client.Models.Requests
         public string PostbackData { get; set; }
 
         /// <summary>
-        /// notification URL of a completed task
+        /// full name of search engine location
         /// <br/>optional field
-        /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_search/locations
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/>London,England,United Kingdom
+        /// <br/>Note: if you don't specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
         /// </summary>
-        [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string PingbackUrl { get; set; }
+        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// GPS coordinates of a location
+        /// <br/>optional field
+        /// <br/>if you use this field, you don't need to specify location_name or location_code
+        /// <br/>example:
+        /// <br/>52.6178549,-155.352142
+        /// <br/>Note: if you don't specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
+        /// </summary>
+        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationCoordinate { get; set; }
+
+        /// <summary>
+        /// user-defined task identifier
+        /// <br/>optional field
+        /// <br/>the character limit is 255
+        /// <br/>you can use this parameter to identify the task and match it with the result
+        /// <br/>you will find the specified tag value in the data object of the response
+        /// </summary>
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Tag { get; set; }
+
+        /// <summary>
+        /// advertising platform
+        /// <br/>optional field
+        /// <br/>possible values: all, google_play, google_maps, google_search, google_shopping, youtube
+        /// <br/>default value: all
+        /// </summary>
+        [JsonProperty("platform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Platform { get; set; }
+
+        /// <summary>
+        /// ad format
+        /// <br/>optional field
+        /// <br/>possible values: all, text, image, video
+        /// </summary>
+        [JsonProperty("format", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Format { get; set; }
+
+        /// <summary>
+        /// starting date of the time range
+        /// <br/>optional field
+        /// <br/>required field if date_to is specified; 
+        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>minimum value: 2018-05-31
+        /// <br/>maximum value: today's date
+        /// <br/>example:
+        /// <br/>'2020-01-01'
+        /// </summary>
+        [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DateFrom { get; set; }
+
+        /// <summary>
+        /// ending date of the time range
+        /// <br/>optional field
+        /// <br/>required field if date_from is specified; 
+        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>minimum value: 2018-05-31
+        /// <br/>maximum value: today's date
+        /// <br/>example:
+        /// <br/>'2020-01-01'
+        /// </summary>
+        [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DateTo { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

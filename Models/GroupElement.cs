@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the number of times the target keyword or domain were mentioned in relation to this specific grouping key
         /// </summary>
         [JsonProperty("mentions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Mentions { get; set; }
+        public long? Mentions { get; set; }
 
         /// <summary>
         /// current AI search volume rate of a keyword
@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// current AI impressions rate of a keyword
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Impressions { get; set; }
+        public long? Impressions { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

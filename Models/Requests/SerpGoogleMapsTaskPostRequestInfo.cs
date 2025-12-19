@@ -194,13 +194,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
         /// <br/>however, you can set a custom search engine domain in this field
         /// <br/>example:
-        /// <br/>google.co.uk, google.com.au, google.de, etc.
+        /// <br/>google.co.uk
         /// </summary>
         [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeDomain { get; set; }
 
         /// <summary>
-        /// [popup_img text='search this area' width='751' height='524' src='https://docs_v3.dataforseo.com/wp-content/uploads/2020/10/search_this_area_751x524-1.png']
+        /// show results from the displayed area
         /// <br/>optional field
         /// <br/>can take the values:true, false
         /// <br/>default value: trueif set to false, the search_this_area mode will be turned off

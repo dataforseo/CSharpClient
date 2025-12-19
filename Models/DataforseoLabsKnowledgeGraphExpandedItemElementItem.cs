@@ -9,7 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the element
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -23,10 +23,10 @@ namespace DataForSeo.Client.Models
         public string DataAttrid { get; set; }
 
         /// <summary>
-        /// expanded element
+        /// link of the element
         /// </summary>
         [JsonProperty("expanded_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string ExpandedElement { get; set; }
+        public object ExpandedElement { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

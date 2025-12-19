@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("related_image_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<RelatedImageSearchesElement> RelatedImageSearches { get; set; }
+        public RelatedImageSearchesElement RelatedImageSearches { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

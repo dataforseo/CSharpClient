@@ -143,7 +143,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values for mobile: 2, 2.5, 3, 3.5, 4, 4.5
         /// </summary>
         [JsonProperty("min_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string MinRating { get; set; }
+        public double? MinRating { get; set; }
 
         /// <summary>
         /// filter results by open hours
