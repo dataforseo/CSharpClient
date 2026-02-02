@@ -71,6 +71,18 @@ namespace DataForSeo.Client.Models.Requests
         public string LocationCoordinate { get; set; }
 
         /// <summary>
+        /// show hotels from the displayed area
+        /// <br/>optional field
+        /// <br/>can take the values: true, false
+        /// <br/>default value: true
+        /// <br/>if set to false the search_this_area mode will be turned off
+        /// <br/>Note: if the search_this_area mode is turned off, the location_name won’t be appended to the keyword during search
+        /// <br/>learn more about this parameter on our Help Center
+        /// </summary>
+        [JsonProperty("search_this_area", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? SearchThisArea { get; set; }
+
+        /// <summary>
         /// full name of search engine language
         /// <br/>required field if you don’t specify language_code
         /// <br/>if you use this field, you don’t need to specify language_code
