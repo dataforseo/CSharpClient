@@ -36,8 +36,8 @@ var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(
     {
         new DomainAnalyticsIdListRequestInfo()
         {
-            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
+            DatetimeTo = "2026-02-17 08:21:04 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -447,8 +447,8 @@ var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveA
         new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
         {
             Technology = "jQuery",
-            DateFrom = "2022-10-31 00:00:00 +02:00",
-            DateTo = "2023-06-01 00:00:00 +03:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
+            DateTo = "2026-01-18 00:00:00 +02:00",
         },
     });
 ```

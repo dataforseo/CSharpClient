@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// contains ranking and traffic data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsDomainRankOverviewLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleDomainRankOverviewLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

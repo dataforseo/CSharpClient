@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         /// relevant pages and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsRelevantPagesLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleRelevantPagesLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

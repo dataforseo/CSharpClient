@@ -34,7 +34,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result
+        /// <br/>contains the pricing details of the product or service featured in the result;
+        /// <br/>if there is none, equals null
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

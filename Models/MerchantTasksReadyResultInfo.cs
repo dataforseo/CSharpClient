@@ -40,13 +40,13 @@ namespace DataForSeo.Client.Models
         public string Tag { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Amazon Reviews Advanced task
+        /// URL for collecting the results of Amazon Sellers Advanced task
         /// </summary>
         [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Amazon Reviews HTML task
+        /// URL for collecting the results of Amazon Sellers HTML task
         /// </summary>
         [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointHtml { get; set; }

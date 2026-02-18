@@ -103,7 +103,7 @@ namespace DataForSeo.Client.Models
         /// the list of institutions that provided the dataset
         /// </summary>
         [JsonProperty("dataset_providers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<LicensesElement> DatasetProviders { get; set; }
+        public IEnumerable<AmazonLabelElement> DatasetProviders { get; set; }
 
         /// <summary>
         /// the list of file formats of the dataset
@@ -121,7 +121,7 @@ namespace DataForSeo.Client.Models
         /// the list of licenses issued to the dataset
         /// </summary>
         [JsonProperty("licenses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<LicensesElement> Licenses { get; set; }
+        public IEnumerable<AmazonLabelElement> Licenses { get; set; }
 
         /// <summary>
         /// date and time when the result was last updated

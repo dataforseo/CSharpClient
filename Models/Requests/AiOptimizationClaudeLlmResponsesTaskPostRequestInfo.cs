@@ -31,10 +31,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// maximum number of tokens in the AI response
         /// <br/>optional field
-        /// <br/>minimum value: 1
-        /// <br/>maximum value: 2048
-        /// <br/>default value: 2048
-        /// <br/>Note: when web_search is set to true, the output token count may exceed the specified max_output_tokens limit
+        /// <br/>minimum value: 1;
+        /// <br/>maximum value: 4096;
+        /// <br/>default value: 2048;
+        /// <br/>Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }
@@ -47,6 +47,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: 0
         /// <br/>maximum value: 1
         /// <br/>default value: 0.7
+        /// <br/>Note: temperature cannot be used together with top_p in the same request
         /// </summary>
         [JsonProperty("temperature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Temperature { get; set; }
@@ -58,6 +59,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: 0
         /// <br/>maximum value: 1
         /// <br/>default value: null
+        /// <br/>Note: top_p cannot be used together with temperature in the same request
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TopP { get; set; }
@@ -135,7 +137,7 @@ namespace DataForSeo.Client.Models.Requests
         public string Tag { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

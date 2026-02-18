@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// contains detected SERP competitors and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsSerpCompetitorsLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleSerpCompetitorsLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

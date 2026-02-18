@@ -31,11 +31,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// maximum number of tokens in the AI response
         /// <br/>optional field
-        /// <br/>minimum value for reasoning models (e.g., model_name starts with ‘o’): 1024;
+        /// <br/>minimum value for reasoning models (e.g., reasoning is true in the Models endpoint): 1024;
         /// <br/>minimum value for non-reasoning models: 16;
-        /// <br/>maximum value for reasoning models: 4096;
-        /// <br/>maximum value for non-reasoning models: 2048;
-        /// <br/>default value for both reasoning and non-reasoning models: 2048;
+        /// <br/>maximum value: 4096;
+        /// <br/>default value: 2048
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }
@@ -90,7 +89,7 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<LlmMessageChainItem> MessageChain { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

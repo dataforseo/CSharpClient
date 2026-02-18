@@ -116,6 +116,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>can take the values: desktop, mobile, tablet
         /// <br/>default value: desktop
         /// </summary>
@@ -161,20 +162,24 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
 
         /// <summary>
-        /// target domain or wildcard value
-        /// <br/>required field if stop_crawl_on_match is specified;
-        /// <br/>specify a target domain or wildcard value;
-        /// <br/>Note: domain name must be specified without a request protocol;
-        /// <br/>example: dataforseo.com
+        /// target domain, subdomain, or wildcard value
+        /// <br/>required field if stop_crawl_on_match is specified
+        /// <br/>specify a target domain, subdomain, or wildcard value;
+        /// <br/>Note: domain or subdomain must be specified without a request protocol;
+        /// <br/>example: 'match_value': 'dataforseo.com',
+        /// <br/>'match_value': '/blog/post-*'
         /// </summary>
         [JsonProperty("match_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchValue { get; set; }
 
         /// <summary>
         /// target match type
-        /// <br/>required field if stop_crawl_on_match is specified;
+        /// <br/>required field if stop_crawl_on_match is specified
         /// <br/>type of match for the match_value
-        /// <br/>possible values: domain, with_subdomains, wildcard
+        /// <br/>possible values:
+        /// <br/>domain – specific domain or subdomain
+        /// <br/>with_subdomains – main domain and subdomains
+        /// <br/>wildcard –  wildcard pattern
         /// </summary>
         [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchType { get; set; }
@@ -190,7 +195,7 @@ namespace DataForSeo.Client.Models.Requests
         public string Tag { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

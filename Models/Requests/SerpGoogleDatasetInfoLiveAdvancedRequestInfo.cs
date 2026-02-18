@@ -31,6 +31,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>possible value: desktop
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

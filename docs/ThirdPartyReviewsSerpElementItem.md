@@ -10,4 +10,4 @@
 **ReviewsCount** | **long?** | the number of reviews |[optional]|
 **Title** | **string** | title of a given link element |[optional]|
 **Url** | **string** | URL |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals null |[optional]|

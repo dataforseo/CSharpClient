@@ -43,6 +43,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>possible value: desktop
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -64,7 +65,7 @@ namespace DataForSeo.Client.Models.Requests
         public string PingbackUrl { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request

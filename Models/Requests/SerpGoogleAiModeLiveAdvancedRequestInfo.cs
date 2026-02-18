@@ -42,6 +42,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// </summary>
@@ -103,6 +104,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen width
         /// <br/>optional field
         /// <br/>you can set a custom browser screen width to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: 240-9999;
         /// <br/>by default, the parameter is set to:
         /// <br/>1920 for desktop;
         /// <br/>360 for mobile on android;
@@ -116,6 +118,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen height
         /// <br/>optional field
         /// <br/>you can set a custom browser screen height to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: 240-9999;
         /// <br/>by default, the parameter is set to:
         /// <br/>1080 for desktop;
         /// <br/>640 for mobile on android;
@@ -129,6 +132,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen resolution ratio
         /// <br/>optional field
         /// <br/>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: 0.5-3;
         /// <br/>by default, the parameter is set to:
         /// <br/>1 for desktop;
         /// <br/>3 for mobile on android;

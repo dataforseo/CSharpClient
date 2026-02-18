@@ -11,6 +11,6 @@
 **Domain** | **string** | domain in SERP |[optional]|
 **Title** | **string** | title of the result in SERP |[optional]|
 **Snippet** | **string** | text alongside the link title |[optional]|
-**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element |[optional]|
+**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
 **Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **Table** | **Table** | table present in the element<br>the header and content of the table present in the element |[optional]|

@@ -21,3 +21,4 @@
 **IsAmazonChoice** | **bool?** | “Amazon’s choice” label<br>if the value is true, the product is marked with the “Amazon’s choice” label |[optional]|
 **IsBestSeller** | **bool?** | “Best Seller” label<br>if the value is true, the product is marked with the “Best Seller” label |[optional]|
 **DeliveryInfo** | **AmazonDeliveryInfo** | delivery information<br>delivery information including free and fast delivery date ranges |[optional]|
+**Labels** | **IEnumerable<AmazonLabelElement>** | product labels<br>array containing an object with main Amazon labels’ information<br>if the product contains no labels, the value will be null |[optional]|

@@ -41,6 +41,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location type
+        /// <br/>indicates the geographic classification of the location
+        /// <br/>example:
+        /// <br/>'location_type': 'Country', or 'location_type': 'State'
         /// </summary>
         [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationType { get; set; }

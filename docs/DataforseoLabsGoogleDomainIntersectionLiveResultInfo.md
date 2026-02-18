@@ -12,4 +12,4 @@
 **LanguageCode** | **string** | language code in a POST array |[optional]|
 **TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsDomainIntersectionLiveItem>** | contains keywords, relevant SERP elements and related data |[optional]|
+**Items** | **IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveItem>** | contains keywords, relevant SERP elements and related data |[optional]|

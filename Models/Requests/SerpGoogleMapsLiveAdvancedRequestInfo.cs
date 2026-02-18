@@ -60,6 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// <br/>note: for mobile device, only 20 results are returned for every SERP
@@ -158,7 +159,7 @@ namespace DataForSeo.Client.Models.Requests
         public string SeDomain { get; set; }
 
         /// <summary>
-        /// [popup_img text='search this area' width='751' height='524' src='https://docs_v3.dataforseo.com/wp-content/uploads/2020/10/search_this_area_751x524-1.png']
+        /// show results from the displayed area
         /// <br/>optional field
         /// <br/>can take the values:true, false
         /// <br/>default value: true

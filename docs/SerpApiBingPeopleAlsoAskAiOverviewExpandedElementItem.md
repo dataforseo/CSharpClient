@@ -1,9 +1,0 @@
-# SerpApiBingPeopleAlsoAskAiOverviewExpandedElementItem
-
-
-## Properties
-
-| Name | Type | Description | Notes |
-|------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<BaseSerpApiBingAiOverviewElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|
-**References** | **IEnumerable<AiModeAiOverviewReferenceInfo>** | references relevant to the element<br>includes references to webpages that were used to generate the ai_overview_element |[optional]|

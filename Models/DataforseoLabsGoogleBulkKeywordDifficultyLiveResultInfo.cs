@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// contains keywords and related keyword difficulty scores
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsBulkKeywordDifficultyLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

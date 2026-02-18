@@ -24,6 +24,7 @@
 **IsAmazonChoice** | **bool?** | “Amazon’s choice” label<br>if the value is true, the product is marked with the “Amazon’s choice” label |[optional]|
 **Rating** | **RatingElement** | product rating info |[optional]|
 **IsNewerModelAvailable** | **bool?** | indicates whether the newer model of the product is available |[optional]|
+**IsPrimeVideo** | **bool?** | indicates whether a product has an Amazon Prime Video label<br>if true, specified product is a part of Amazon Prime Video service |[optional]|
 **ApplicableVouchers** | **IEnumerable<AmazonApplicableVouchersItem>** | array of objects containing information about applicable vouchers |[optional]|
 **NewerModel** | **AmazonProductNewerModelInfo** | information about the newer model of the product |[optional]|
 **Categories** | **IEnumerable<ProductCategoryInfo>** | contains related product categories |[optional]|

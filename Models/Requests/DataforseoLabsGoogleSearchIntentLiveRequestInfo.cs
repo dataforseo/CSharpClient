@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Bosnian, bs,
         /// <br/>Greek, el,
         /// <br/>Hungarian, hu,
-        /// <br/>Slovakian, sk,
+        /// <br/>Slovak, sk,
         /// <br/>Turkish, tr
         /// <br/>example:
         /// <br/>English

@@ -117,6 +117,14 @@ namespace DataForSeo.Client.Models
         [JsonProperty("delivery_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AmazonDeliveryInfo DeliveryInfo { get; set; }
 
+        /// <summary>
+        /// product labels
+        /// <br/>array containing an object with main Amazon labels’ information
+        /// <br/>if the product contains no labels, the value will be null
+        /// </summary>
+        [JsonProperty("labels", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AmazonLabelElement> Labels { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -23,6 +23,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// target domain
         /// <br/>required field if you don’t specify keyword
+        /// <br/>you can specify up to 63 characters in the domain field;
         /// <br/>a domain should be specified without https:// and www.
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -60,7 +61,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// target keyword
         /// <br/>required field if you don’t specify domain
-        /// <br/>you can specify up to 2000 characters in the keyword field
+        /// <br/>you can specify up to 250 characters in the keyword field
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
@@ -171,8 +172,8 @@ namespace DataForSeo.Client.Models.Requests
         /// offset in the results array of the returned mentions data
         /// <br/>optional field
         /// <br/>default value: 0
-        /// <br/>if you specify the 10 value, the first ten mentions objects in the results array will be omitted and the data will be provided for the successive objects;
-        /// <br/>Note: the maximum value is 20,000, use the search_after_token if you would like to offset more results
+        /// <br/>example: if you specify the 10 value, the first ten mentions objects in the results array will be omitted and the data will be provided for the successive objects;
+        /// <br/>Note: the maximum value is 9,000, use the search_after_token if you would like to offset more results
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }

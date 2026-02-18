@@ -134,6 +134,13 @@ namespace DataForSeo.Client.Models
         public bool? IsNewerModelAvailable { get; set; }
 
         /// <summary>
+        /// indicates whether a product has an Amazon Prime Video label
+        /// <br/>if true, specified product is a part of Amazon Prime Video service
+        /// </summary>
+        [JsonProperty("is_prime_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsPrimeVideo { get; set; }
+
+        /// <summary>
         /// array of objects containing information about applicable vouchers
         /// </summary>
         [JsonProperty("applicable_vouchers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

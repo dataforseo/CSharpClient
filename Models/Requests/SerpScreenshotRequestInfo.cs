@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>browser preset associated with a certain device type
         /// <br/>can take the following values: desktop, tablet, mobile
-        /// <br/>note: by default, browser preset corresponds to the device type specified in the POST request
+        /// <br/>Note: by default, browser preset corresponds to the device type specified in the POST request
         /// </summary>
         [JsonProperty("browser_preset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BrowserPreset { get; set; }
@@ -31,6 +31,9 @@ namespace DataForSeo.Client.Models.Requests
         /// width of the browser resolution
         /// <br/>optional field
         /// <br/>can be specified in the following range: 240-9999
+        /// <br/>default value for desktop: 1920
+        /// <br/>default value for mobile: 390
+        /// <br/>default value for table: 1024
         /// </summary>
         [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrowserScreenWidth { get; set; }
@@ -39,6 +42,9 @@ namespace DataForSeo.Client.Models.Requests
         /// height of the browser resolution
         /// <br/>optional field
         /// <br/>can be specified in the following range: 240-9999
+        /// <br/>default value for desktop: 1080
+        /// <br/>default value for mobile: 844
+        /// <br/>default value for table: 1366
         /// </summary>
         [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenHeight { get; set; }
@@ -47,7 +53,9 @@ namespace DataForSeo.Client.Models.Requests
         /// browser scale factor
         /// <br/>optional field
         /// <br/>can be specified in the following range: 0.5-3
-        /// <br/>default value: 1
+        /// <br/>default value for desktop: 1
+        /// <br/>default value for mobile: 3
+        /// <br/>default value for table: 2
         /// </summary>
         [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? BrowserScreenScaleFactor { get; set; }

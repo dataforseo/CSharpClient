@@ -41,6 +41,16 @@ namespace DataForSeo.Client.Models.Requests
         public string Gid { get; set; }
 
         /// <summary>
+        /// product variant filter  on Google Shopping
+        /// <br/>optional field
+        /// <br/>parameter in Google Shopping URL, setting optional product variant filtration;
+        /// <br/>example:
+        /// <br/>Eg4iBWNvbG9yKgV3aGl0ZRISIgxwYWNrYWdlIHNpemUqAjE0EgoiBHNpemUqAnhs
+        /// </summary>
+        [JsonProperty("pvf", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Pvf { get; set; }
+
+        /// <summary>
         /// task priority
         /// <br/>optional field
         /// <br/>can take the following values:
@@ -110,6 +120,19 @@ namespace DataForSeo.Client.Models.Requests
         public string LanguageCode { get; set; }
 
         /// <summary>
+        /// parsing depth
+        /// <br/>optional field
+        /// <br/>number of results to be retrieved from Google Shopping SERP
+        /// <br/>default value: 10
+        /// <br/>max value: 200
+        /// <br/>your account will be billed per each SERP containing up to 10 results;
+        /// <br/>setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+        /// <br/>the cost can be calculated on the Pricing page
+        /// </summary>
+        [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Depth { get; set; }
+
+        /// <summary>
         /// search engine domain
         /// <br/>optional field
         /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
@@ -151,7 +174,7 @@ namespace DataForSeo.Client.Models.Requests
         public string Tag { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

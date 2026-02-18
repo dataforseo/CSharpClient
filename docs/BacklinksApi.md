@@ -46,8 +46,8 @@ var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(
     {
         new BacklinksIdListRequestInfo()
         {
-            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
+            DatetimeTo = "2026-02-17 08:21:04 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -289,8 +289,8 @@ var result = await dfsClient.BacklinksApi.HistoryLiveAsync(
         new BacklinksHistoryLiveRequestInfo()
         {
             Target = "cnn.com",
-            DateFrom = "2020-01-01 00:00:00 +02:00",
-            DateTo = "2021-01-01 00:00:00 +02:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
+            DateTo = "2026-01-18 00:00:00 +02:00",
         },
     });
 ```
@@ -904,8 +904,8 @@ var result = await dfsClient.BacklinksApi.TimeseriesSummaryLiveAsync(
         new BacklinksTimeseriesSummaryLiveRequestInfo()
         {
             Target = "dataforseo.com",
-            DateFrom = "2021-12-01 00:00:00 +02:00",
-            DateTo = "2022-02-01 00:00:00 +02:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
+            DateTo = "2026-01-18 00:00:00 +02:00",
             GroupRange = "month",
         },
     });
@@ -955,8 +955,8 @@ var result = await dfsClient.BacklinksApi.TimeseriesNewLostSummaryLiveAsync(
         new BacklinksTimeseriesNewLostSummaryLiveRequestInfo()
         {
             Target = "dataforseo.com",
-            DateFrom = "2021-12-01 00:00:00 +02:00",
-            DateTo = "2022-02-01 00:00:00 +02:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
+            DateTo = "2026-01-18 00:00:00 +02:00",
             GroupRange = "month",
         },
     });
@@ -1258,7 +1258,7 @@ var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-            DateFrom = "2021-01-01 00:00:00 +02:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
         },
     });
 ```
@@ -1319,7 +1319,7 @@ var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-            DateFrom = "2023-09-01 00:00:00 +03:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
         },
     });
 ```

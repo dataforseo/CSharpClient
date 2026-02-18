@@ -13,6 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>the domain name of the target website
         /// <br/>the domain should be specified without https:// and www.
+        /// <br/>you can specify page URL, but the results will be specific to the domain in the specified URL
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }

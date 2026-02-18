@@ -23,6 +23,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// target domain
         /// <br/>required field if you don’t specify keyword
+        /// <br/>you can specify up to 63 characters in the domain field;
         /// <br/>a domain should be specified without https:// and www.
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -60,7 +61,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// target keyword
         /// <br/>required field if you don’t specify domain
-        /// <br/>you can specify up to 2000 characters in the keyword field
+        /// <br/>you can specify up to 250 characters in the keyword field
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
@@ -158,8 +159,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>sources_domain
         /// <br/>search_results_domain
         /// <br/>minimum value: 1
-        /// <br/>maximum value: 10
-        /// <br/>default value: 5
+        /// <br/>maximum value: 20
+        /// <br/>default value: 10
         /// </summary>
         [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }

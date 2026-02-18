@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// contains subdomains and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsSubdomainsLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleSubdomainsLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

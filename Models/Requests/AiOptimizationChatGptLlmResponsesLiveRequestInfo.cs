@@ -31,12 +31,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// maximum number of tokens in the AI response
         /// <br/>optional field
-        /// <br/>minimum value for reasoning models (e.g., model_name starts with ‘o’): 1024;
+        /// <br/>minimum value for reasoning models (e.g., reasoning is true in the Models endpoint): 1024;
         /// <br/>minimum value for non-reasoning models: 16;
-        /// <br/>maximum value for reasoning models: 4096;
-        /// <br/>maximum value for non-reasoning models: 2048;
-        /// <br/>default value for both reasoning and non-reasoning models: 2048;
-        /// <br/>Note: when web_search is set to true, the output token count may exceed the specified max_output_tokens limit
+        /// <br/>maximum value: 4096;
+        /// <br/>default value: 2048
+        /// <br/>Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }

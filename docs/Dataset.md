@@ -18,10 +18,10 @@
 **UniqueIdentifier** | **string** | digital identifier of an object<br>unique digital identifier of the dataset<br>example: https://doi.org/10.5061/dryad.hmgqnk9m3 |[optional]|
 **RelatedArticle** | **string** | link to related article<br>link to the published article that is related to the dataset |[optional]|
 **Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some of Google Dataset’s search results<br>if there are none, equals null |[optional]|
-**DatasetProviders** | **IEnumerable<LicensesElement>** | the list of institutions that provided the dataset |[optional]|
+**DatasetProviders** | **IEnumerable<AmazonLabelElement>** | the list of institutions that provided the dataset |[optional]|
 **Formats** | **IEnumerable<FormatsElement>** | the list of file formats of the dataset |[optional]|
 **Authors** | **IEnumerable<AuthorsElement>** | the list of authors of the dataset |[optional]|
-**Licenses** | **IEnumerable<LicensesElement>** | the list of licenses issued to the dataset |[optional]|
+**Licenses** | **IEnumerable<AmazonLabelElement>** | the list of licenses issued to the dataset |[optional]|
 **UpdatedDate** | **string** | date and time when the result was last updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-27 02:00:00 +00:00 |[optional]|
 **AreaCovered** | **IEnumerable<string>** | the list of areas covered in the dataset<br>for example: Africa, Global |[optional]|
 **PeriodCovered** | **PeriodCovered** | period covered in the dataset |[optional]|

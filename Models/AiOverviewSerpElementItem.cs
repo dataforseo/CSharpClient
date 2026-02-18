@@ -29,6 +29,7 @@ namespace DataForSeo.Client.Models
         /// indicates whether the element is loaded asynchronously
         /// <br/>if true, the ai_overview element is loaded asynchronously;
         /// <br/>if false, the ai_overview element is loaded from cache;
+        /// <br/>to obtain the content of ai_overview elements, use the load_async_ai_overview parameter in the POST request
         /// </summary>
         [JsonProperty("asynchronous_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AsynchronousAiOverview { get; set; }

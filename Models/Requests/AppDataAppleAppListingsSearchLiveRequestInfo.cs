@@ -83,6 +83,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>default value: 0
         /// <br/>if you specify the 10 value, the first ten entities in the results array will be omitted and the data will be provided for the successive entities
+        /// <br/>Note: we recommend using this parameter only when retrieving up to 10,000 results
+        /// <br/>for retrieving over 10,000 results, use the offset_token instead.
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -95,6 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
         /// <br/>offset_token values are unique for each subsequent task
         /// <br/>Note: if the offset_token is specified in the request, all other parameters should be identical to the previous request
+        /// <br/>learn more about this parameter on our Help Center
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

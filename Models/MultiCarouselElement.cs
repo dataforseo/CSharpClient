@@ -22,6 +22,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// multi_carousel_snippet results
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("multi_carousel_snippets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SerpApiCarouselElement> MultiCarouselSnippets { get; set; }

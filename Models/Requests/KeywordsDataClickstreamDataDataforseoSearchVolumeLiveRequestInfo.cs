@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don’t specify location_code 
         /// <br/>you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
         /// <br/>example:
-        /// <br/>London,England,United Kingdom
+        /// <br/>United Kingdom
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don’t specify location_name
         /// <br/>if you use this field, you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
         /// <br/>example:
-        /// <br/>2840
+        /// <br/>2826
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }

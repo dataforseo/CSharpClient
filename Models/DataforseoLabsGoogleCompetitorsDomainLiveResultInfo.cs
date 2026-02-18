@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// contains data related to the target and competitor domains
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsCompetitorsDomainLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

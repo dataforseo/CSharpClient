@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// further search refinement options
         /// </summary>
         [JsonProperty("options", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<LicensesElement> Options { get; set; }
+        public IEnumerable<AmazonLabelElement> Options { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

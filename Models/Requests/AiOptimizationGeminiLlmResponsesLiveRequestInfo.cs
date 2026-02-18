@@ -32,9 +32,9 @@ namespace DataForSeo.Client.Models.Requests
         /// maximum number of tokens in the AI response
         /// <br/>optional field
         /// <br/>minimum value: 1
-        /// <br/>maximum value: 2048
-        /// <br/>default value: 2048
-        /// <br/>Note: when web_search is set to true, the output token count may exceed the specified max_output_tokens limit
+        /// <br/>maximum value: 4096;
+        /// <br/>default value: 2048;
+        /// <br/>Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }

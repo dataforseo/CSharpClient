@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data the value is null
         /// </summary>
         [JsonProperty("competition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? Competition { get; set; }
+        public int? Competition { get; set; }
 
         /// <summary>
         /// cost-per-click

@@ -192,7 +192,7 @@ namespace DataForSeo.Client.Models
         public double? CashFromInvestingDelta { get; set; }
 
         /// <summary>
-        /// cash from financing/em&gt;
+        /// cash from financing
         /// </summary>
         [JsonProperty("cash_from_financing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? CashFromFinancing { get; set; }

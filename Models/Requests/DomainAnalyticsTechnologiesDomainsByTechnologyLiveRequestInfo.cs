@@ -149,6 +149,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
         /// <br/>offset_token values are unique for each subsequent task
         /// <br/>Note: if the offset_token is specified in the request, all other parameters should be identical to the previous request
+        /// <br/>learn more about this parameter on our Help Center
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

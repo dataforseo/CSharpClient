@@ -60,6 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// </summary>

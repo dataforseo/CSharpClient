@@ -21,25 +21,25 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// description of the local businesses
+        /// description of the local business
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         /// <summary>
-        /// address of the local businesses
+        /// address of the local business
         /// </summary>
         [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Address { get; set; }
 
         /// <summary>
-        /// phone of the local businesses
+        /// phone of the local business
         /// </summary>
         [JsonProperty("phone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Phone { get; set; }
 
         /// <summary>
-        /// total number of reviews submitted for the local businesses
+        /// total number of reviews submitted for the local business
         /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReviewsCount { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// rating of the corresponding local businesses
+        /// rating of the corresponding local business
         /// <br/>popularity rate based on reviews as displayed in the results
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

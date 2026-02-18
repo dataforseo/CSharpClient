@@ -50,6 +50,17 @@ namespace DataForSeo.Client.Models
         [JsonProperty("backlinks_subscription_expiry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BacklinksSubscriptionExpiryDate { get; set; }
 
+        /// <summary>
+        /// expiry date of the llm mentions api subscription
+        /// <br/>date and time when the current subscription to LLM Mentions API expires;
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2026-02-28 14:01:38 +00:00
+        /// <br/>Note: if there is no active subscription to LLM Mentions API, the value equals null
+        /// </summary>
+        [JsonProperty("llm_mentions_subscription_expiry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LlmMentionsSubscriptionExpiryDate { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

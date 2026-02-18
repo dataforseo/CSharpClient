@@ -112,7 +112,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// parsing depth
         /// <br/>optional field
-        /// <br/>number of results to be retrieved from the Google Shopping results page
+        /// <br/>number of results to be retrieved from Google Shopping SERP
         /// <br/>default value: 40
         /// <br/>max value: 120
         /// <br/>Your account will be billed per each SERP containing up to 40 results;
@@ -196,7 +196,7 @@ namespace DataForSeo.Client.Models.Requests
         public string Tag { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

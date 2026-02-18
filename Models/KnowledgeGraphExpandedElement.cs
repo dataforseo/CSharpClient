@@ -46,6 +46,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// images of the element
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }

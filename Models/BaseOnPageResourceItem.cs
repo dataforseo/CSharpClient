@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// type of element
+        /// type of the returned resource = ‘html’
         /// </summary>
         [JsonProperty("resource_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ResourceType { get; set; }

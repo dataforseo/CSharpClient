@@ -72,6 +72,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// <br/>note: for mobile device, only 20 results are returned for every SERP
@@ -95,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         public string PingbackUrl { get; set; }
 
         /// <summary>
-        /// return URL for sending task results
+        /// URL for sending task results
         /// <br/>optional field
         /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
         /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
@@ -203,7 +204,8 @@ namespace DataForSeo.Client.Models.Requests
         /// show results from the displayed area
         /// <br/>optional field
         /// <br/>can take the values:true, false
-        /// <br/>default value: trueif set to false, the search_this_area mode will be turned off
+        /// <br/>default value: true
+        /// <br/>if set to false, the search_this_area mode will be turned off
         /// <br/>Note: if the search_this_area mode is turned off, Google Maps listings might contain results beyond the displayed area
         /// </summary>
         [JsonProperty("search_this_area", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

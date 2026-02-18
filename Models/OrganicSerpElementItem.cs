@@ -132,7 +132,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the item’s rating 
-        /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// <br/>the popularity rate based on reviews and displayed in SERP;
+        /// <br/>if there is none, equals null
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
@@ -176,7 +177,8 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// contains information from the ‘About this result’ panel
         /// <br/>‘About this result’ panel provides additional context about why Google returned this result for the given query;
-        /// <br/>this feature appears after clicking on the three dots next to most results
+        /// <br/>this feature appears after clicking on the three dots next to most results;
+        /// <br/>if there is none, equals null
         /// </summary>
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AboutThisResultElement AboutThisResult { get; set; }

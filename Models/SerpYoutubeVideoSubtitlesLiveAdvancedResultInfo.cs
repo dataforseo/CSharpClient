@@ -84,6 +84,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the category the video belongs to
+        /// <br/>Note: this field is deprecated and always returns null
         /// </summary>
         [JsonProperty("category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Category { get; set; }

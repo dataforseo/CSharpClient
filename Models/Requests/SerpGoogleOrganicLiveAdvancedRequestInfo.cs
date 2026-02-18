@@ -59,6 +59,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device type
         /// <br/>optional field
+        /// <br/>return results for a specific device type
         /// <br/>can take the values:desktop, mobile
         /// <br/>default value: desktop
         /// </summary>
@@ -135,19 +136,23 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target match type
-        /// <br/>required field if stop_crawl_on_match is specified;
+        /// <br/>required field if stop_crawl_on_match is specified
         /// <br/>type of match for the match_value
-        /// <br/>possible values: domain, with_subdomains, wildcard
+        /// <br/>possible values:
+        /// <br/>domain – specific domain or subdomain
+        /// <br/>with_subdomains – main domain and subdomains
+        /// <br/>wildcard –  wildcard pattern
         /// </summary>
         [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchType { get; set; }
 
         /// <summary>
-        /// target domain or wildcard value
-        /// <br/>required field if stop_crawl_on_match is specified;
-        /// <br/>specify a target domain or wildcard value;
-        /// <br/>Note: domain name must be specified without a request protocol;
-        /// <br/>example: dataforseo.com
+        /// target domain, subdomain, or wildcard value
+        /// <br/>required field if stop_crawl_on_match is specified
+        /// <br/>specify a target domain, subdomain, or wildcard value;
+        /// <br/>Note: domain or subdomain must be specified without a request protocol;
+        /// <br/>example: 'match_value': 'dataforseo.com',
+        /// <br/>'match_value': '/blog/post-*'
         /// </summary>
         [JsonProperty("match_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchValue { get; set; }
@@ -220,6 +225,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen width
         /// <br/>optional field
         /// <br/>you can set a custom browser screen width to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: 240-9999;
         /// <br/>by default, the parameter is set to:
         /// <br/>1920 for desktop;
         /// <br/>360 for mobile on android;
@@ -233,6 +239,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen height
         /// <br/>optional field
         /// <br/>you can set a custom browser screen height to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: 240-9999;
         /// <br/>by default, the parameter is set to:
         /// <br/>1080 for desktop;
         /// <br/>640 for mobile on android;
@@ -246,7 +253,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen resolution ratio
         /// <br/>optional field
         /// <br/>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
-        /// <br/>possible values: from 1 to 3;
+        /// <br/>can be specified within the following range: 0.5-3;
         /// <br/>by default, the parameter is set to:
         /// <br/>1 for desktop;
         /// <br/>3 for mobile on android;

@@ -11,4 +11,4 @@
 **LanguageCode** | **string** | language code in a POST array |[optional]|
 **TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsCompetitorsDomainLiveItem>** | contains data related to the target and competitor domains |[optional]|
+**Items** | **IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveItem>** | contains data related to the target and competitor domains |[optional]|

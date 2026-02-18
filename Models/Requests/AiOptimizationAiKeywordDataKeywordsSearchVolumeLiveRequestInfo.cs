@@ -12,8 +12,9 @@ namespace DataForSeo.Client.Models.Requests
         /// keywords
         /// <br/>required field
         /// <br/>UTF-8 encoding
-        /// <br/>The maximum number of keywords you can specify: 1000
-        /// <br/>The keywords will be converted to lowercase format
+        /// <br/>The maximum number of keywords you can specify: 1000;
+        /// <br/>The maximum number of characters in a single keyword: 250;
+        /// <br/>The keywords will be converted to lowercase format;
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]

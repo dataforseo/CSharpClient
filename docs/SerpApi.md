@@ -104,13 +104,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**bingOrganicLiveRegular**](SerpApi.md#bingOrganicLiveRegular) | **POST**  /v3/serp/bing/organic/live/regular  |
 [**bingOrganicLiveAdvanced**](SerpApi.md#bingOrganicLiveAdvanced) | **POST**  /v3/serp/bing/organic/live/advanced  |
 [**bingOrganicLiveHtml**](SerpApi.md#bingOrganicLiveHtml) | **POST**  /v3/serp/bing/organic/live/html  |
-[**bingLocalPackTaskPost**](SerpApi.md#bingLocalPackTaskPost) | **POST**  /v3/serp/bing/local_pack/task_post  |
-[**bingLocalPackTasksReady**](SerpApi.md#bingLocalPackTasksReady) | **GET**  /v3/serp/bing/local_pack/tasks_ready  |
-[**bingLocalPackTasksFixed**](SerpApi.md#bingLocalPackTasksFixed) | **GET**  /v3/serp/bing/local_pack/tasks_fixed  |
-[**bingLocalPackTaskGetRegular**](SerpApi.md#bingLocalPackTaskGetRegular) | **GET**  /v3/serp/bing/local_pack/task_get/regular/{id}  |
-[**bingLocalPackTaskGetHtml**](SerpApi.md#bingLocalPackTaskGetHtml) | **GET**  /v3/serp/bing/local_pack/task_get/html/{id}  |
-[**bingLocalPackLiveRegular**](SerpApi.md#bingLocalPackLiveRegular) | **POST**  /v3/serp/bing/local_pack/live/regular  |
-[**bingLocalPackLiveHtml**](SerpApi.md#bingLocalPackLiveHtml) | **POST**  /v3/serp/bing/local_pack/live/html  |
 [**youtubeLocations**](SerpApi.md#youtubeLocations) | **GET**  /v3/serp/youtube/locations  |
 [**youtubeLocationsCountry**](SerpApi.md#youtubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
 [**youtubeLanguages**](SerpApi.md#youtubeLanguages) | **GET**  /v3/serp/youtube/languages  |
@@ -119,6 +112,11 @@ All URIs are relative to *https://api.dataforseo.com*
 [**youtubeVideoInfoTasksFixed**](SerpApi.md#youtubeVideoInfoTasksFixed) | **GET**  /v3/serp/youtube/video_info/tasks_fixed  |
 [**youtubeVideoInfoTaskGetAdvanced**](SerpApi.md#youtubeVideoInfoTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_info/task_get/advanced/{id}  |
 [**youtubeVideoInfoLiveAdvanced**](SerpApi.md#youtubeVideoInfoLiveAdvanced) | **POST**  /v3/serp/youtube/video_info/live/advanced  |
+[**youtubeOrganicTaskPost**](SerpApi.md#youtubeOrganicTaskPost) | **POST**  /v3/serp/youtube/organic/task_post  |
+[**youtubeOrganicTasksReady**](SerpApi.md#youtubeOrganicTasksReady) | **GET**  /v3/serp/youtube/organic/tasks_ready  |
+[**youtubeOrganicTasksFixed**](SerpApi.md#youtubeOrganicTasksFixed) | **GET**  /v3/serp/youtube/organic/tasks_fixed  |
+[**youtubeOrganicTaskGetAdvanced**](SerpApi.md#youtubeOrganicTaskGetAdvanced) | **GET**  /v3/serp/youtube/organic/task_get/advanced/{id}  |
+[**youtubeOrganicLiveAdvanced**](SerpApi.md#youtubeOrganicLiveAdvanced) | **POST**  /v3/serp/youtube/organic/live/advanced  |
 [**youtubeVideoSubtitlesTaskPost**](SerpApi.md#youtubeVideoSubtitlesTaskPost) | **POST**  /v3/serp/youtube/video_subtitles/task_post  |
 [**youtubeVideoSubtitlesTasksReady**](SerpApi.md#youtubeVideoSubtitlesTasksReady) | **GET**  /v3/serp/youtube/video_subtitles/tasks_ready  |
 [**youtubeVideoSubtitlesTasksFixed**](SerpApi.md#youtubeVideoSubtitlesTasksFixed) | **GET**  /v3/serp/youtube/video_subtitles/tasks_fixed  |
@@ -205,8 +203,8 @@ var result = await dfsClient.SerpApi.IdListAsync(
     {
         new SerpIdListRequestInfo()
         {
-            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
+            DatetimeTo = "2026-02-17 08:21:04 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -4710,322 +4708,6 @@ var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="bingLocalPackTaskPost"></a>
-# **bingLocalPackTaskPost**
-> SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.BingLocalPackTaskPostAsync(
-    new SerpBingLocalPackTaskPostRequestInfo[]
-    {
-        new SerpBingLocalPackTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<SerpBingLocalPackTaskPostRequestInfo>&gt;**](IEnumerable<SerpBingLocalPackTaskPostRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**SerpBingLocalPackTaskPostResponseInfo**](SerpBingLocalPackTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTasksReady"></a>
-# **bingLocalPackTasksReady**
-> SerpBingLocalPackTasksReadyResponseInfo bingLocalPackTasksReady()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.BingLocalPackTasksReadyAsync();
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpBingLocalPackTasksReadyResponseInfo**](SerpBingLocalPackTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTasksFixed"></a>
-# **bingLocalPackTasksFixed**
-> SerpBingLocalPackTasksFixedResponseInfo bingLocalPackTasksFixed()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.BingLocalPackTasksFixedAsync();
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpBingLocalPackTasksFixedResponseInfo**](SerpBingLocalPackTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTaskGetRegular"></a>
-# **bingLocalPackTaskGetRegular**
-> SerpBingLocalPackTaskGetRegularResponseInfo bingLocalPackTaskGetRegular()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.SerpApi.BingLocalPackTaskGetRegularAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpBingLocalPackTaskGetRegularResponseInfo**](SerpBingLocalPackTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTaskGetHtml"></a>
-# **bingLocalPackTaskGetHtml**
-> SerpBingLocalPackTaskGetHtmlResponseInfo bingLocalPackTaskGetHtml()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.SerpApi.BingLocalPackTaskGetHtmlAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**SerpBingLocalPackTaskGetHtmlResponseInfo**](SerpBingLocalPackTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackLiveRegular"></a>
-# **bingLocalPackLiveRegular**
-> SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.BingLocalPackLiveRegularAsync(
-    new SerpBingLocalPackLiveRegularRequestInfo[]
-    {
-        new SerpBingLocalPackLiveRegularRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<SerpBingLocalPackLiveRegularRequestInfo>&gt;**](IEnumerable<SerpBingLocalPackLiveRegularRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**SerpBingLocalPackLiveRegularResponseInfo**](SerpBingLocalPackLiveRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackLiveHtml"></a>
-# **bingLocalPackLiveHtml**
-> SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.SerpApi.BingLocalPackLiveHtmlAsync(
-    new SerpBingLocalPackLiveHtmlRequestInfo[]
-    {
-        new SerpBingLocalPackLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo>&gt;**](IEnumerable<SerpBingLocalPackLiveHtmlRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**SerpBingLocalPackLiveHtmlResponseInfo**](SerpBingLocalPackLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
 <a id="youtubeLocations"></a>
 # **youtubeLocations**
 > SerpYoutubeLocationsResponseInfo youtubeLocations()
@@ -5359,6 +5041,230 @@ var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(
 ### Return type
 
 [**SerpYoutubeVideoInfoLiveAdvancedResponseInfo**](SerpYoutubeVideoInfoLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeOrganicTaskPost"></a>
+# **youtubeOrganicTaskPost**
+> SerpYoutubeOrganicTaskPostResponseInfo youtubeOrganicTaskPost()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.YoutubeOrganicTaskPostAsync(
+    new SerpYoutubeOrganicTaskPostRequestInfo[]
+    {
+        new SerpYoutubeOrganicTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "audi",
+        },
+    });
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeOrganicTaskPostRequestInfo>&gt;**](IEnumerable<SerpYoutubeOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeOrganicTaskPostResponseInfo**](SerpYoutubeOrganicTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeOrganicTasksReady"></a>
+# **youtubeOrganicTasksReady**
+> SerpYoutubeOrganicTasksReadyResponseInfo youtubeOrganicTasksReady()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.YoutubeOrganicTasksReadyAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeOrganicTasksReadyResponseInfo**](SerpYoutubeOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeOrganicTasksFixed"></a>
+# **youtubeOrganicTasksFixed**
+> SerpYoutubeOrganicTasksFixedResponseInfo youtubeOrganicTasksFixed()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.YoutubeOrganicTasksFixedAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeOrganicTasksFixedResponseInfo**](SerpYoutubeOrganicTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeOrganicTaskGetAdvanced"></a>
+# **youtubeOrganicTaskGetAdvanced**
+> SerpYoutubeOrganicTaskGetAdvancedResponseInfo youtubeOrganicTaskGetAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.SerpApi.YoutubeOrganicTaskGetAdvancedAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeOrganicTaskGetAdvancedResponseInfo**](SerpYoutubeOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeOrganicLiveAdvanced"></a>
+# **youtubeOrganicLiveAdvanced**
+> SerpYoutubeOrganicLiveAdvancedResponseInfo youtubeOrganicLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.SerpApi.YoutubeOrganicLiveAdvancedAsync(
+    new SerpYoutubeOrganicLiveAdvancedRequestInfo[]
+    {
+        new SerpYoutubeOrganicLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "audi",
+        },
+    });
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<SerpYoutubeOrganicLiveAdvancedRequestInfo>&gt;**](IEnumerable<SerpYoutubeOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeOrganicLiveAdvancedResponseInfo**](SerpYoutubeOrganicLiveAdvancedResponseInfo.md)
 
 ### Authorization
 

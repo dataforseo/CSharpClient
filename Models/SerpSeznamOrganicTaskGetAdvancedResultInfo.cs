@@ -73,7 +73,7 @@ namespace DataForSeo.Client.Models
         /// types of search results in SERP
         /// <br/>contains types of search results (items) found in SERP.
         /// <br/>possible item types:
-        /// <br/>images, local_pack, organic, related_searches, top_stories, featured_snippet, video
+        /// <br/>images, local_pack, organic, related_searches, top_stories, featured_snippet, video, shopping
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }

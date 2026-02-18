@@ -10,8 +10,8 @@
 **Title** | **string** | title of the element |[optional]|
 **Url** | **string** | reference page URL |[optional]|
 **Domain** | **string** | domain in link |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
-**Price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result |[optional]|
+**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP<br>if there is none, equals null |[optional]|
+**Price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals null |[optional]|
 **Seller** | **string** | seller of the product |[optional]|
 **Snippet** | **string** | text alongside the link title |[optional]|
 **Marketplace** | **string** | merchant account provider<br>commerce site that hosts products or websites of individual sellers under the same merchant account<br>example:<br>by Google |[optional]|

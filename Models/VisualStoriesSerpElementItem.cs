@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
         /// contains arrays of elements available in the list
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<LicensesElement> Items { get; set; }
+        public IEnumerable<AmazonLabelElement> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

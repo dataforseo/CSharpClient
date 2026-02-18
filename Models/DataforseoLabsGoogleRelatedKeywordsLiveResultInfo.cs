@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
         /// contains keywords and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsRelatedKeywordsLiveItem> Items { get; set; }
+        public IEnumerable<DataforseoLabsGoogleRelatedKeywordsLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

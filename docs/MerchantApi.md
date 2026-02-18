@@ -36,10 +36,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**amazonSellersTasksReady**](MerchantApi.md#amazonSellersTasksReady) | **GET**  /v3/merchant/amazon/sellers/tasks_ready  |
 [**amazonSellersTaskGetAdvanced**](MerchantApi.md#amazonSellersTaskGetAdvanced) | **GET**  /v3/merchant/amazon/sellers/task_get/advanced/{id}  |
 [**amazonSellersTaskGetHtml**](MerchantApi.md#amazonSellersTaskGetHtml) | **GET**  /v3/merchant/amazon/sellers/task_get/html/{id}  |
-[**amazonReviewsTaskPost**](MerchantApi.md#amazonReviewsTaskPost) | **POST**  /v3/merchant/amazon/reviews/task_post  |
-[**amazonReviewsTasksReady**](MerchantApi.md#amazonReviewsTasksReady) | **GET**  /v3/merchant/amazon/reviews/tasks_ready  |
-[**amazonReviewsTaskGetAdvanced**](MerchantApi.md#amazonReviewsTaskGetAdvanced) | **GET**  /v3/merchant/amazon/reviews/task_get/advanced/{id}  |
-[**amazonReviewsTaskGetHtml**](MerchantApi.md#amazonReviewsTaskGetHtml) | **GET**  /v3/merchant/amazon/reviews/task_get/html/{id}  |
 
 <a id="merchantIdList"></a>
 # **merchantIdList**
@@ -58,8 +54,8 @@ var result = await dfsClient.MerchantApi.MerchantIdListAsync(
     {
         new MerchantIdListRequestInfo()
         {
-            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
+            DatetimeTo = "2026-02-17 08:21:04 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -1427,181 +1423,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**MerchantAmazonSellersTaskGetHtmlResponseInfo**](MerchantAmazonSellersTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="amazonReviewsTaskPost"></a>
-# **amazonReviewsTaskPost**
-> MerchantAmazonReviewsTaskPostResponseInfo amazonReviewsTaskPost()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.MerchantApi.AmazonReviewsTaskPostAsync(
-    new MerchantAmazonReviewsTaskPostRequestInfo[]
-    {
-        new MerchantAmazonReviewsTaskPostRequestInfo()
-        {
-            LanguageCode = "en_US",
-            LocationCode = 2840,
-            Asin = "B0773ZY26F",
-        },
-    });
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<MerchantAmazonReviewsTaskPostRequestInfo>&gt;**](IEnumerable<MerchantAmazonReviewsTaskPostRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**MerchantAmazonReviewsTaskPostResponseInfo**](MerchantAmazonReviewsTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="amazonReviewsTasksReady"></a>
-# **amazonReviewsTasksReady**
-> MerchantAmazonReviewsTasksReadyResponseInfo amazonReviewsTasksReady()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.MerchantApi.AmazonReviewsTasksReadyAsync();
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**MerchantAmazonReviewsTasksReadyResponseInfo**](MerchantAmazonReviewsTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="amazonReviewsTaskGetAdvanced"></a>
-# **amazonReviewsTaskGetAdvanced**
-> MerchantAmazonReviewsTaskGetAdvancedResponseInfo amazonReviewsTaskGetAdvanced()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetAdvancedAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**MerchantAmazonReviewsTaskGetAdvancedResponseInfo**](MerchantAmazonReviewsTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="amazonReviewsTaskGetHtml"></a>
-# **amazonReviewsTaskGetHtml**
-> MerchantAmazonReviewsTaskGetHtmlResponseInfo amazonReviewsTaskGetHtml()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var id = "00000000-0000-0000-0000-000000000000";
-var result = await dfsClient.MerchantApi.AmazonReviewsTaskGetHtmlAsync(id);
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**MerchantAmazonReviewsTaskGetHtmlResponseInfo**](MerchantAmazonReviewsTaskGetHtmlResponseInfo.md)
 
 ### Authorization
 

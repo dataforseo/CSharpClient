@@ -64,8 +64,8 @@ var result = await dfsClient.AppDataApi.AppDataIdListAsync(
     {
         new AppDataIdListRequestInfo()
         {
-            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
+            DatetimeTo = "2026-02-17 08:21:04 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -1903,7 +1903,7 @@ var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(
                 4.5,
             },
         },
-            Limit = 10,
+            Limit = 2,
         },
     });
 ```

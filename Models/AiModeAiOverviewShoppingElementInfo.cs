@@ -37,13 +37,15 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the item’s rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// <br/>if there is none, equals null
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result
+        /// <br/>contains the pricing details of the product or service featured in the result;
+        /// <br/>if there is none, equals null
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

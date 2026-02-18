@@ -33,8 +33,8 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(
     {
         new ContentAnalysisIdListRequestInfo()
         {
-            DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-            DatetimeTo = "2023-02-01 00:00:00 +02:00",
+            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
+            DatetimeTo = "2026-02-17 08:21:04 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -481,7 +481,7 @@ var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(
         {
             Keyword = "logitech",
             SearchMode = "as_is",
-            DateFrom = "2022-09-01 00:00:00 +03:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
             DateGroup = "month",
         },
     });
@@ -532,7 +532,7 @@ var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(
         {
             CategoryCode = 10994,
             SearchMode = "as_is",
-            DateFrom = "2022-09-01 00:00:00 +03:00",
+            DateFrom = "2025-11-18 00:00:00 +02:00",
             DateGroup = "month",
         },
     });

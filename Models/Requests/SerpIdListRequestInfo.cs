@@ -11,9 +11,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// start time for filtering results
         /// <br/>required field
-        /// <br/>if include_metadata is set to true, maximum value: a month from current datetime;
-        /// <br/>if include_metadata is set to false, maximum value: six months from current datetime;
-        /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>if include_metadata is set to true, minimum start value: a month from current datetime;
+        /// <br/>if include_metadata is set to false, minimum start value: six months from current datetime;
+        /// <br/>maximum start value: current datetime;
+        /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
         /// <br/>2023-01-15 12:57:46 +00:00
         /// </summary>
@@ -23,8 +24,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// finish time for filtering results
         /// <br/>required field
-        /// <br/>maximum value: current datetime;
-        /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>if include_metadata is set to true, minimum finish value: a month from current datetime;
+        /// <br/>if include_metadata is set to false, minimum finish value: six months from current datetime;
+        /// <br/>maximum finish value: current datetime;
+        /// <br/>Note: datetime_to must be greater than datetime_from;
+        /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
         /// <br/>2023-01-31 13:57:46 +00:00
         /// </summary>
@@ -36,6 +40,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>default value: 1000
         /// <br/>maximum value: 1000
+        /// <br/>minimum value: 1
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -43,8 +48,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// offset in the results array of returned task IDs
         /// <br/>optional field
-        /// <br/>default value: 0
-        /// <br/>if you specify the 10 value, the first ten tasks in the results array will be omitted
+        /// <br/>if you specify the 10 value, the first ten tasks in the results array will be omitted;
+        /// <br/>minimum and default value: 0;
+        /// <br/>maximum value: 100M (100 million)
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -59,8 +65,9 @@ namespace DataForSeo.Client.Models.Requests
         public string Sort { get; set; }
 
         /// <summary>
-        /// include task metadata in the respond
+        /// include task metadata in the response
         /// <br/>optional field
+        /// <br/>if set to true, the metadata object containing parameters specified in the POST request will be provided in the response;
         /// <br/>default value: false
         /// </summary>
         [JsonProperty("include_metadata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
