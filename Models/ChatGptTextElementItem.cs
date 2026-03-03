@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// array of sources
         /// </summary>
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ChatGptSource> Sources { get; set; }
+        public IEnumerable<SourceInfo> Sources { get; set; }
 
         /// <summary>
         /// array of brand entities

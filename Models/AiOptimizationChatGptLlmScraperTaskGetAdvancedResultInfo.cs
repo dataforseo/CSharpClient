@@ -68,7 +68,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the sources the model actually cited or relied on in its final answer
         /// </summary>
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ChatGptSource> Sources { get; set; }
+        public IEnumerable<SourceInfo> Sources { get; set; }
 
         /// <summary>
         /// array of fan-out queries

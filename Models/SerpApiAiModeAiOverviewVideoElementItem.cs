@@ -33,8 +33,7 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// URL of the image
-        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+        /// URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
@@ -46,18 +45,13 @@ namespace DataForSeo.Client.Models
         public string Source { get; set; }
 
         /// <summary>
-        /// date when the video was published or indexed
-        /// <br/>example:
-        /// <br/>Apr 26, 2024
+        /// date when the video was published or indexedexample: Apr 26, 2024
         /// </summary>
         [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }
 
         /// <summary>
-        /// date and time when the video was published or indexed
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// date and time when the video was published or indexedin the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'example:2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

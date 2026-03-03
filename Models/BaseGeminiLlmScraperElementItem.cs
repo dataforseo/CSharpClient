@@ -4,8 +4,12 @@ using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models
 {
+    [JsonConverter(typeof(JsonInheritanceConverter), "type")]
+    [JsonInheritance("gemini_text", typeof(GeminiTextElementItem))]
+    [JsonInheritance("gemini_table", typeof(GeminiTableElementItem))]
+    [JsonInheritance("gemini_images", typeof(GeminiImagesElementItem))]
 
-    public class ChatGptImagesElement 
+    public class BaseGeminiLlmScraperElementItem 
     {
 
         /// <summary>
@@ -15,23 +19,19 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// URL
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical type values
+        /// <br/>positions of elements with different type values are omitted from rank_group
         /// </summary>
-        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Url { get; set; }
+        [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankGroup { get; set; }
 
         /// <summary>
-        /// alt tag of the image
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements in SERP
         /// </summary>
-        [JsonProperty("alt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Alt { get; set; }
-
-        /// <summary>
-        /// URL of the image
-        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
-        /// </summary>
-        [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string ImageUrl { get; set; }
+        [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// content of the element in markdown format

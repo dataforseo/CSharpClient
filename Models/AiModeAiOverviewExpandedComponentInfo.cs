@@ -33,23 +33,19 @@ namespace DataForSeo.Client.Models
         public string Markdown { get; set; }
 
         /// <summary>
-        /// images of the component
-        /// <br/>if there are none, equals null
+        /// images of the componentif there are none, equals null
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// sitelinksthe links shown below some of Google's search resultsif there are none, equals null
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeLinkElementInfo> Links { get; set; }
 
         /// <summary>
-        /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

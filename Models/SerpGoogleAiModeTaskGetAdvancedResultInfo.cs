@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// keyword received in a POST array
-        /// <br/>the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// keyword received in a POST arraythe keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -40,39 +39,31 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// direct URL to search engine results
-        /// <br/>you can use it to make sure that we provided exact results
+        /// direct URL to search engine resultsyou can use it to make sure that we provided exact results
         /// </summary>
         [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
 
         /// <summary>
-        /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
-        /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// autocorrection of the search engineif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;in this case, the value will be null
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
 
         /// <summary>
-        /// search refinement chips
+        /// search refinement chipsin this case, the value will be null
         /// </summary>
         [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
-        /// types of search results in SERP
-        /// <br/>contains types of search results (items) found in SERP.
-        /// <br/>possible item types:
-        /// <br/>ai_overview
+        /// types of search results in SERPcontains types of search results (items) found in SERP.possible item types:ai_overview
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }

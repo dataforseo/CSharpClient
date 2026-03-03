@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+        /// keyword received in a POST arraykeyword is returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -40,10 +39,7 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }

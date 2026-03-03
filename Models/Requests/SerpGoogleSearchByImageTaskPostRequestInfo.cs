@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Requests
         /// search engine location code
         /// <br/>required field if you don't specify location_name or location_coordinate
         /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
         /// <br/>example:
         /// <br/>2840
         /// </summary>
@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         /// search engine language code
         /// <br/>required field if you don't specify language_name
         /// <br/>if you use this field, you don't need to specify language_name
-        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:
         /// <br/>en
         /// </summary>
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models.Requests
         /// full name of search engine location
         /// <br/>required field if you don't specify location_code or location_coordinate
         /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
         /// <br/>example:
         /// <br/>London,England,United Kingdom
         /// </summary>
@@ -107,7 +107,7 @@ namespace DataForSeo.Client.Models.Requests
         /// full name of search engine language
         /// <br/>required field if you don't specify language_code
         /// <br/>if you use this field, you don't need to specify language_code
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:
         /// <br/>English
         /// </summary>

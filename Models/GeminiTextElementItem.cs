@@ -5,14 +5,20 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class DataforseoLabsGoogleDomainWhoisOverviewLiveTaskInfo  : BaseResponseTaskInfo 
+    public class GeminiTextElementItem  : BaseGeminiLlmScraperElementItem 
     {
 
         /// <summary>
-        /// array of results
+        /// unformatted text content of the element
         /// </summary>
-        [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveResultInfo> Result { get; set; }
+        [JsonProperty("original_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string OriginalText { get; set; }
+
+        /// <summary>
+        /// array of sources
+        /// </summary>
+        [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<SourceInfo> Sources { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

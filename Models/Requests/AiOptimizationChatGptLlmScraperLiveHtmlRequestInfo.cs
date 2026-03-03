@@ -15,14 +15,15 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
         /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
         /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”
+        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
+        /// <br/>required field if you don’t specify location_code
+        /// <br/>if you use this field, you don’t need to specify location_code
         /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/locations
         /// <br/>example:
         /// <br/>London,England,United Kingdom
@@ -32,26 +33,14 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
+        /// <br/>required field if you don’t specify location_name
+        /// <br/>if you use this field, you don’t need to specify location_name
         /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations
         /// <br/>example:
         /// <br/>2840
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
-
-        /// <summary>
-        /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude” format
-        /// <br/>Note: location will be automatically set to the country that contains the specified coordinates
-        /// <br/>example:
-        /// <br/>52.6178549,-155.352142
-        /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// full name of search engine language

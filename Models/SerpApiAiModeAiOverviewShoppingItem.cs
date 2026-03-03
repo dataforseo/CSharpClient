@@ -15,8 +15,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// content of the element in markdown format
-        /// <br/>the text of the ai_overview formatted in the markdown markup language
+        /// content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }

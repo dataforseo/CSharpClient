@@ -2,17 +2,17 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
-namespace DataForSeo.Client.Models
+namespace DataForSeo.Client.Models.Responses
 {
 
-    public class BusinessDataSocialMediaFacebookLiveTaskInfo  : BaseResponseTaskInfo 
+    public class AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo  : BaseResponseInfo 
     {
 
         /// <summary>
-        /// array of results
+        /// array of tasks
         /// </summary>
-        [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<BusinessDataSocialMediaFacebookLiveResultInfo> Result { get; set; }
+        [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AiOptimizationGeminiLlmScraperLiveAdvancedTaskInfo> Tasks { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

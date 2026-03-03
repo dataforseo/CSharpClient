@@ -35,6 +35,14 @@ All URIs are relative to *https://api.dataforseo.com*
 [**geminiLlmResponsesTasksReady**](AiOptimizationApi.md#geminiLlmResponsesTasksReady) | **GET**  /v3/ai_optimization/gemini/llm_responses/tasks_ready  |
 [**geminiLlmResponsesTaskGet**](AiOptimizationApi.md#geminiLlmResponsesTaskGet) | **GET**  /v3/ai_optimization/gemini/llm_responses/task_get/{id}  |
 [**geminiLlmResponsesLive**](AiOptimizationApi.md#geminiLlmResponsesLive) | **POST**  /v3/ai_optimization/gemini/llm_responses/live  |
+[**geminiLlmScraperLocations**](AiOptimizationApi.md#geminiLlmScraperLocations) | **GET**  /v3/ai_optimization/gemini/llm_scraper/locations  |
+[**geminiLlmScraperLanguages**](AiOptimizationApi.md#geminiLlmScraperLanguages) | **GET**  /v3/ai_optimization/gemini/llm_scraper/languages  |
+[**geminiLlmScraperTaskPost**](AiOptimizationApi.md#geminiLlmScraperTaskPost) | **POST**  /v3/ai_optimization/gemini/llm_scraper/task_post  |
+[**geminiLlmScraperTasksReady**](AiOptimizationApi.md#geminiLlmScraperTasksReady) | **GET**  /v3/ai_optimization/gemini/llm_scraper/tasks_ready  |
+[**geminiLlmScraperTaskGetAdvanced**](AiOptimizationApi.md#geminiLlmScraperTaskGetAdvanced) | **GET**  /v3/ai_optimization/gemini/llm_scraper/task_get/advanced/{id}  |
+[**geminiLlmScraperTaskGetHtml**](AiOptimizationApi.md#geminiLlmScraperTaskGetHtml) | **GET**  /v3/ai_optimization/gemini/llm_scraper/task_get/html/{id}  |
+[**geminiLlmScraperLiveAdvanced**](AiOptimizationApi.md#geminiLlmScraperLiveAdvanced) | **POST**  /v3/ai_optimization/gemini/llm_scraper/live/advanced  |
+[**geminiLlmScraperLiveHtml**](AiOptimizationApi.md#geminiLlmScraperLiveHtml) | **POST**  /v3/ai_optimization/gemini/llm_scraper/live/html  |
 [**perplexityLlmResponsesModels**](AiOptimizationApi.md#perplexityLlmResponsesModels) | **GET**  /v3/ai_optimization/perplexity/llm_responses/models  |
 [**perplexityLlmResponsesLive**](AiOptimizationApi.md#perplexityLlmResponsesLive) | **POST**  /v3/ai_optimization/perplexity/llm_responses/live  |
 [**aiKeywordDataAvailableFilters**](AiOptimizationApi.md#aiKeywordDataAvailableFilters) | **GET**  /v3/ai_optimization/ai_keyword_data/available_filters  |
@@ -1704,6 +1712,363 @@ var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesLiveAsync(
 ### Return type
 
 [**AiOptimizationGeminiLlmResponsesLiveResponseInfo**](AiOptimizationGeminiLlmResponsesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperLocations"></a>
+# **geminiLlmScraperLocations**
+> AiOptimizationGeminiLlmScraperLocationsResponseInfo geminiLlmScraperLocations()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperLocationsAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperLocationsResponseInfo**](AiOptimizationGeminiLlmScraperLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperLanguages"></a>
+# **geminiLlmScraperLanguages**
+> AiOptimizationGeminiLlmScraperLanguagesResponseInfo geminiLlmScraperLanguages()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperLanguagesAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperLanguagesResponseInfo**](AiOptimizationGeminiLlmScraperLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperTaskPost"></a>
+# **geminiLlmScraperTaskPost**
+> AiOptimizationGeminiLlmScraperTaskPostResponseInfo geminiLlmScraperTaskPost()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperTaskPostAsync(
+    new AiOptimizationGeminiLlmScraperTaskPostRequestInfo[]
+    {
+        new AiOptimizationGeminiLlmScraperTaskPostRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationGeminiLlmScraperTaskPostRequestInfo>&gt;**](IEnumerable<AiOptimizationGeminiLlmScraperTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperTaskPostResponseInfo**](AiOptimizationGeminiLlmScraperTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperTasksReady"></a>
+# **geminiLlmScraperTasksReady**
+> AiOptimizationGeminiLlmScraperTasksReadyResponseInfo geminiLlmScraperTasksReady()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperTasksReadyAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperTasksReadyResponseInfo**](AiOptimizationGeminiLlmScraperTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperTaskGetAdvanced"></a>
+# **geminiLlmScraperTaskGetAdvanced**
+> AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo geminiLlmScraperTaskGetAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperTaskGetAdvancedAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo**](AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperTaskGetHtml"></a>
+# **geminiLlmScraperTaskGetHtml**
+> AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo geminiLlmScraperTaskGetHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var id = "00000000-0000-0000-0000-000000000000";
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperTaskGetHtmlAsync(id);
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo**](AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperLiveAdvanced"></a>
+# **geminiLlmScraperLiveAdvanced**
+> AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo geminiLlmScraperLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperLiveAdvancedAsync(
+    new AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo[]
+    {
+        new AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo>&gt;**](IEnumerable<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo**](AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmScraperLiveHtml"></a>
+# **geminiLlmScraperLiveHtml**
+> AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo geminiLlmScraperLiveHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.GeminiLlmScraperLiveHtmlAsync(
+    new AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo[]
+    {
+        new AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo()
+        {
+            LanguageCode = "en",
+            LocationCode = 2840,
+            Keyword = "albert einstein",
+        },
+    });
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo>&gt;**](IEnumerable<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo**](AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo.md)
 
 ### Authorization
 

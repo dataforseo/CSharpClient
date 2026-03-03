@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// current AI impressions rate of a keyword
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Impressions { get; set; }
+        public long? Impressions { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -58,7 +58,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**tripadvisorReviewsTasksReady**](BusinessDataApi.md#tripadvisorReviewsTasksReady) | **GET**  /v3/business_data/tripadvisor/reviews/tasks_ready  |
 [**tripadvisorReviewsTaskGet**](BusinessDataApi.md#tripadvisorReviewsTaskGet) | **GET**  /v3/business_data/tripadvisor/reviews/task_get/{id}  |
 [**socialMediaPinterestLive**](BusinessDataApi.md#socialMediaPinterestLive) | **POST**  /v3/business_data/social_media/pinterest/live  |
-[**socialMediaFacebookLive**](BusinessDataApi.md#socialMediaFacebookLive) | **POST**  /v3/business_data/social_media/facebook/live  |
 [**socialMediaRedditLive**](BusinessDataApi.md#socialMediaRedditLive) | **POST**  /v3/business_data/social_media/reddit/live  |
 
 <a id="businessDataIdList"></a>
@@ -78,8 +77,8 @@ var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(
     {
         new BusinessDataIdListRequestInfo()
         {
-            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
-            DatetimeTo = "2026-02-17 08:21:04 +00:00",
+            DatetimeFrom = "2026-02-28 08:15:44 +00:00",
+            DatetimeTo = "2026-03-02 08:15:44 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -922,8 +921,8 @@ var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskPostAsync(
             LanguageCode = "en",
             LocationName = "New York,New York,United States",
             Keyword = "cheap hotel",
-            CheckIn = "2026-03-18 00:00:00 +02:00",
-            CheckOut = "2026-03-19 00:00:00 +02:00",
+            CheckIn = "2026-04-03 00:00:00 +03:00",
+            CheckOut = "2026-04-04 00:00:00 +03:00",
             Currency = "USD",
             Adults = 2,
             Children = new string[]
@@ -1066,8 +1065,8 @@ var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesLiveAsync(
             LanguageCode = "en",
             LocationName = "New York,New York,United States",
             Keyword = "cheap hotel",
-            CheckIn = "2026-03-18 00:00:00 +02:00",
-            CheckOut = "2026-03-19 00:00:00 +02:00",
+            CheckIn = "2026-04-03 00:00:00 +03:00",
+            CheckOut = "2026-04-04 00:00:00 +03:00",
             Currency = "USD",
             Adults = 2,
             Children = new string[]
@@ -2529,60 +2528,6 @@ var result = await dfsClient.BusinessDataApi.SocialMediaPinterestLiveAsync(
 ### Return type
 
 [**BusinessDataSocialMediaPinterestLiveResponseInfo**](BusinessDataSocialMediaPinterestLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="socialMediaFacebookLive"></a>
-# **socialMediaFacebookLive**
-> BusinessDataSocialMediaFacebookLiveResponseInfo socialMediaFacebookLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.BusinessDataApi.SocialMediaFacebookLiveAsync(
-    new BusinessDataSocialMediaFacebookLiveRequestInfo[]
-    {
-        new BusinessDataSocialMediaFacebookLiveRequestInfo()
-        {
-            Targets = new string[]
-        {
-            "https://prnt.sc/",
-            "https://developers.facebook.com/docs/plugins/like-button/",
-            "https://www.shbarcelona.com/blog/en/salsa-dance-clubs-in-barcelona/",
-        },
-            Tag = "some_string_123",
-        },
-    });
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo>&gt;**](IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**BusinessDataSocialMediaFacebookLiveResponseInfo**](BusinessDataSocialMediaFacebookLiveResponseInfo.md)
 
 ### Authorization
 

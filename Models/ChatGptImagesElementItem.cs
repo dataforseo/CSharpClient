@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// elements of ChatGPT results
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ChatGptImagesElement> Items { get; set; }
+        public IEnumerable<GeminiImagesElement> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

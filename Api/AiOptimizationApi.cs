@@ -1261,6 +1261,320 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
+        public virtual async Task<AiOptimizationGeminiLlmScraperLocationsResponseInfo> GeminiLlmScraperLocationsAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/locations"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperLocationsResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperLanguagesResponseInfo> GeminiLlmScraperLanguagesAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/languages"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperLanguagesResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperTaskPostResponseInfo> GeminiLlmScraperTaskPostAsync(IEnumerable<AiOptimizationGeminiLlmScraperTaskPostRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/task_post";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperTaskPostResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo> GeminiLlmScraperTasksReadyAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/tasks_ready"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo> GeminiLlmScraperTaskGetAdvancedAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/task_get/advanced/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo> GeminiLlmScraperTaskGetHtmlAsync(string id)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/task_get/html/{id}"
+        
+                    .Replace("{id}", id.ToString())
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo> GeminiLlmScraperLiveAdvancedAsync(IEnumerable<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/live/advanced";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo> GeminiLlmScraperLiveHtmlAsync(IEnumerable<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/gemini/llm_scraper/live/html";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
         public virtual async Task<AiOptimizationPerplexityLlmResponsesModelsResponseInfo> PerplexityLlmResponsesModelsAsync()
         {
             using (var request = new HttpRequestMessage())

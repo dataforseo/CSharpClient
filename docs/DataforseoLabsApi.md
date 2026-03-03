@@ -23,7 +23,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleKeywordsForCategoriesLive**](DataforseoLabsApi.md#googleKeywordsForCategoriesLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_categories/live  |
 [**googleDomainMetricsByCategoriesLive**](DataforseoLabsApi.md#googleDomainMetricsByCategoriesLive) | **POST**  /v3/dataforseo_labs/google/domain_metrics_by_categories/live  |
 [**googleTopSearchesLive**](DataforseoLabsApi.md#googleTopSearchesLive) | **POST**  /v3/dataforseo_labs/google/top_searches/live  |
-[**googleDomainWhoisOverviewLive**](DataforseoLabsApi.md#googleDomainWhoisOverviewLive) | **POST**  /v3/dataforseo_labs/google/domain_whois_overview/live  |
 [**googleRankedKeywordsLive**](DataforseoLabsApi.md#googleRankedKeywordsLive) | **POST**  /v3/dataforseo_labs/google/ranked_keywords/live  |
 [**googleSerpCompetitorsLive**](DataforseoLabsApi.md#googleSerpCompetitorsLive) | **POST**  /v3/dataforseo_labs/google/serp_competitors/live  |
 [**googleCompetitorsDomainLive**](DataforseoLabsApi.md#googleCompetitorsDomainLive) | **POST**  /v3/dataforseo_labs/google/competitors_domain/live  |
@@ -70,8 +69,8 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(
     {
         new DataforseoLabsIdListRequestInfo()
         {
-            DatetimeFrom = "2026-02-15 08:21:04 +00:00",
-            DatetimeTo = "2026-02-17 08:21:04 +00:00",
+            DatetimeFrom = "2026-02-28 08:15:44 +00:00",
+            DatetimeTo = "2026-03-02 08:15:44 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -922,8 +921,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-            FirstDate = "2025-11-18 00:00:00 +02:00",
-            SecondDate = "2026-01-18 00:00:00 +02:00",
+            FirstDate = "2025-12-03 00:00:00 +02:00",
+            SecondDate = "2026-02-03 00:00:00 +02:00",
             Limit = 3,
         },
     });
@@ -990,67 +989,6 @@ var result = await dfsClient.DataforseoLabsApi.GoogleTopSearchesLiveAsync(
 ### Return type
 
 [**DataforseoLabsGoogleTopSearchesLiveResponseInfo**](DataforseoLabsGoogleTopSearchesLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDomainWhoisOverviewLive"></a>
-# **googleDomainWhoisOverviewLive**
-> DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo googleDomainWhoisOverviewLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.DataforseoLabsApi.GoogleDomainWhoisOverviewLiveAsync(
-    new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo[]
-    {
-        new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo()
-        {
-            Limit = 2,
-            Filters = new object[]
-        {
-            new object[]
-            {
-                "epp_status_codes",
-                "in",
-                new object[]
-                {
-                    "client_transfer_prohibited",
-                    "client_update_prohibited",
-                },
-            },
-        },
-        },
-    });
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo**](DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo.md)
 
 ### Authorization
 
@@ -1489,8 +1427,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(
             Keyword = "albert einstein",
             LocationCode = 2840,
             LanguageCode = "en",
-            DateFrom = "2025-11-18 00:00:00 +02:00",
-            DateTo = "2026-01-18 00:00:00 +02:00",
+            DateFrom = "2025-12-03 00:00:00 +02:00",
+            DateTo = "2026-02-03 00:00:00 +02:00",
         },
     });
 ```
@@ -1541,8 +1479,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
             Target = "dataforseo.com",
             LocationCode = 2840,
             LanguageCode = "en",
-            DateFrom = "2025-11-18 00:00:00 +02:00",
-            DateTo = "2026-01-18 00:00:00 +02:00",
+            DateFrom = "2025-12-03 00:00:00 +02:00",
+            DateTo = "2026-02-03 00:00:00 +02:00",
         },
     });
 ```
@@ -1714,8 +1652,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
             LocationCode = 2840,
             LanguageCode = "en",
-            DateFrom = "2025-11-18 00:00:00 +02:00",
-            DateTo = "2026-01-18 00:00:00 +02:00",
+            DateFrom = "2025-12-03 00:00:00 +02:00",
+            DateTo = "2026-02-03 00:00:00 +02:00",
             ItemTypes = new string[]
         {
             "organic",

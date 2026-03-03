@@ -21,9 +21,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// the alignment of the element in SERPcan take the following values:left, right
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }

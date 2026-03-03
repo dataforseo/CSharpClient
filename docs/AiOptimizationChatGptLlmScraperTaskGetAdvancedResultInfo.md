@@ -13,7 +13,7 @@
 **Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **Markdown** | **string** | content of the element in markdown format<br>content of the result formatted in the markdown markup language |[optional]|
 **SearchResults** | **IEnumerable<ChatgptSearchResult>** | array of search results<br>all web search outputs the model retrieved when looking up information, including duplicates and unused entries |[optional]|
-**Sources** | **IEnumerable<ChatGptSource>** | array of sources<br>the sources the model actually cited or relied on in its final answer |[optional]|
+**Sources** | **IEnumerable<SourceInfo>** | array of sources<br>the sources the model actually cited or relied on in its final answer |[optional]|
 **FanOutQueries** | **IEnumerable<string>** | array of fan-out queries<br>contains related search queries derived from the main query to provide a more comprehensive response |[optional]|
 **BrandEntities** | **IEnumerable<ChatGptBrandEntity>** | array of brand entities<br>contains information on brands mentioned in the response |[optional]|
 **SeResultsCount** | **long?** | total number of results |[optional]|

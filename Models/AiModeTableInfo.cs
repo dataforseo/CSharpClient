@@ -15,8 +15,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> TableHeader { get; set; }
 
         /// <summary>
-        /// array of contents of the table present in the element
-        /// <br/>each array represents the table row
+        /// array of contents of the table present in the elementeach array represents the table row
         /// </summary>
         [JsonProperty("table_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<IEnumerable<string>> TableContent { get; set; }

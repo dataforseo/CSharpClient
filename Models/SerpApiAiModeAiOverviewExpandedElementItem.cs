@@ -15,8 +15,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// reference text
-        /// <br/>text snippet from the page that was used to generate the ai_overview_element
+        /// reference texttext snippet from the page that was used to generate the ai_overview_element
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
@@ -28,8 +27,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<AiModeAiOverviewExpandedComponentInfo> Components { get; set; }
 
         /// <summary>
-        /// additional references relevant to the item
-        /// <br/>includes references to webpages that may have been used to generate the ai_overview
+        /// additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

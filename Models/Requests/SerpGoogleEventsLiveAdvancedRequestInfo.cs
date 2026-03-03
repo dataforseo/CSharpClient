@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if you use this field, you don't need to specify language_name
         /// <br/>by default, language settings correspond to one of the local official languages of the specified location
-        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:
         /// <br/>en
         /// </summary>
@@ -73,7 +73,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>if you use this field, you don't need to specify language_code
         /// <br/>by default, language settings correspond to one of the local official languages of the specified location
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
         /// <br/>example:
         /// <br/>English
         /// </summary>

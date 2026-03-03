@@ -5,7 +5,7 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class ChatGptSource 
+    public class SourceInfo 
     {
 
         /// <summary>

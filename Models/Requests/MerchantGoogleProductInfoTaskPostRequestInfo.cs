@@ -147,10 +147,10 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// postback_url datatype
-        /// <br/>required field if you specify postback_url
+        /// <br/>optional field
         /// <br/>corresponds to the datatype that will be sent to your server
         /// <br/>possible values:
-        /// <br/>advanced, html
+        /// <br/>advanced
         /// </summary>
         [JsonProperty("postback_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }

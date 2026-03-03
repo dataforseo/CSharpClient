@@ -2165,46 +2165,6 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<BusinessDataSocialMediaFacebookLiveResponseInfo> SocialMediaFacebookLiveAsync(IEnumerable<BusinessDataSocialMediaFacebookLiveRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/business_data/social_media/facebook/live";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<BusinessDataSocialMediaFacebookLiveResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
         public virtual async Task<BusinessDataSocialMediaRedditLiveResponseInfo> SocialMediaRedditLiveAsync(IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo> payload)
         {
             using (var request = new HttpRequestMessage())

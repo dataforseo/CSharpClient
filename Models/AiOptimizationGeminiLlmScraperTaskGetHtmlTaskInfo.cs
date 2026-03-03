@@ -2,17 +2,17 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
-namespace DataForSeo.Client.Models.Responses
+namespace DataForSeo.Client.Models
 {
 
-    public class DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo  : BaseResponseInfo 
+    public class AiOptimizationGeminiLlmScraperTaskGetHtmlTaskInfo  : BaseResponseTaskInfo 
     {
 
         /// <summary>
-        /// array of tasks
+        /// array of results
         /// </summary>
-        [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<DataforseoLabsGoogleDomainWhoisOverviewLiveTaskInfo> Tasks { get; set; }
+        [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo> Result { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 
