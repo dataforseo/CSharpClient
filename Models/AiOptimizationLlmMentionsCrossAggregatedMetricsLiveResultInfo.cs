@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// aggregated mentions metrics summary
-        /// <br/>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions
+        /// aggregated mentions metrics summarycontains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions
         /// </summary>
         [JsonProperty("total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AiOptimizationResultTotalInfo Total { get; set; }

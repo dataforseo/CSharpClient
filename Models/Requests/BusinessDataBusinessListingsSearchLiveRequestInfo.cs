@@ -68,6 +68,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>['rating.value','&gt;',3]
         /// <br/>you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/business_data/business_listings/available_filters
+        /// <br/>The full list of possible filters is available here.
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> Filters { get; set; }

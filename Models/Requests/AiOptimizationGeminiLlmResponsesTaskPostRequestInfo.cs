@@ -35,6 +35,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>maximum value: 4096;
         /// <br/>default value: 2048;
         /// <br/>Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
+        /// <br/>Note #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1024
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }
@@ -96,6 +97,18 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("message_chain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LlmMessageChainItem> MessageChain { get; set; }
+
+        /// <summary>
+        /// enable reasoning for the AI model
+        /// <br/>optional field
+        /// <br/>when enabled, the model will perform reasoning before generating a response
+        /// <br/>refer to the Models endpoint for a list of models that support reasoning
+        /// <br/>default value: false
+        /// <br/>Note: if set to true, the minimum value for max_output_tokens is 1024
+        /// <br/>Note #2: for Gemini Pro models, the use_reasoning will automatically be set to true
+        /// </summary>
+        [JsonProperty("use_reasoning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? UseReasoning { get; set; }
 
         /// <summary>
         /// user-defined task identifier

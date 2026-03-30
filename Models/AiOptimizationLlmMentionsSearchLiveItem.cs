@@ -33,63 +33,55 @@ namespace DataForSeo.Client.Models
         public string Question { get; set; }
 
         /// <summary>
-        /// relevant answer in markdown format
-        /// <br/>content of the result formatted in the markdown markup language
+        /// relevant answer in markdown formatcontent of the result formatted in the markdown markup language
         /// </summary>
         [JsonProperty("answer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Answer { get; set; }
 
         /// <summary>
-        /// array of sources
-        /// <br/>the sources the model cited or relied on in its final answer
+        /// array of sourcesthe sources the model cited or relied on in its final answer
         /// </summary>
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<Sources> Sources { get; set; }
 
         /// <summary>
-        /// array of search results
-        /// <br/>all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+        /// array of search resultsall web search outputs the model retrieved when looking up information, including duplicates and unused entries
         /// </summary>
         [JsonProperty("search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SearchResults> SearchResults { get; set; }
 
         /// <summary>
-        /// current AI search volume rate of a keyword
-        /// <br/>learn more about this metric here
+        /// current AI search volume rate of a keywordlearn more about this metric here
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }
+
+        /// <summary>
+        /// monthly AI search volume ratesarray of objects with AI search volume rates in a certain month of a year
+        /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }
 
         /// <summary>
-        /// date and time when the response data was first recorded
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2025-10-21 06:25:30 +00:00
+        /// date and time when the response data was first recordedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2025-10-21 06:25:30 +00:00
         /// </summary>
         [JsonProperty("first_response_at", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstResponseAt { get; set; }
 
         /// <summary>
-        /// date and time when the response data was last updated
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2025-10-21 06:25:30 +00:00
+        /// date and time when the response data was last updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2025-10-21 06:25:30 +00:00
         /// </summary>
         [JsonProperty("last_response_at", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastResponseAt { get; set; }
 
         /// <summary>
-        /// array of brand entities
-        /// <br/>contains information on brands mentioned in the response
+        /// array of brand entitiescontains information on brands mentioned in the response
         /// </summary>
         [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BrandEntities> BrandEntities { get; set; }
 
         /// <summary>
-        /// array of fan-out queries
-        /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
+        /// array of fan-out queriescontains related search queries derived from the main query to provide a more comprehensive response
         /// </summary>
         [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> FanOutQueries { get; set; }

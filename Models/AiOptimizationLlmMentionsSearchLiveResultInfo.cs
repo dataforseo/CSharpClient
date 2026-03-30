@@ -21,9 +21,7 @@ namespace DataForSeo.Client.Models
         public int? CurrentOffset { get; set; }
 
         /// <summary>
-        /// token for subsequent requests
-        /// <br/>by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;
-        /// <br/>search_after_token values are unique for each subsequent task
+        /// token for subsequent requestsby specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;search_after_token values are unique for each subsequent task
         /// </summary>
         [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchAfterToken { get; set; }

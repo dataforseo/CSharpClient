@@ -27,6 +27,12 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
+        /// indicates whether the product is sold by multiple sellers
+        /// </summary>
+        [JsonProperty("more_sellers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? MoreSellers { get; set; }
+
+        /// <summary>
         /// seller of the product
         /// </summary>
         [JsonProperty("seller", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

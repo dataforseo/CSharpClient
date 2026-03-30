@@ -9,15 +9,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// aggregated mentions metrics summary
-        /// <br/>contains overall aggregated LLM mention metrics across all found top pages, grouped by various dimensions
+        /// aggregated mentions metrics summarycontains overall aggregated LLM mention metrics across all found top pages, grouped by various dimensions
         /// </summary>
         [JsonProperty("total", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AiOptimizationResultTotalInfo Total { get; set; }
 
         /// <summary>
-        /// individual pages results
-        /// <br/>array containing detailed mention metrics for each of the found top pages
+        /// individual pages resultsarray containing detailed mention metrics for each of the found top pages
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiOptimizationLlmMentionssLiveItem> Items { get; set; }

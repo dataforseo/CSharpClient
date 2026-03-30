@@ -11,6 +11,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// unique product identifier on Google Shopping
         /// <br/>required field if data_docid or gid is not specified
+        /// <br/>we recommend specifying product_id together with data_docid and gid for optimal results;
         /// <br/>you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint
         /// <br/>example:
         /// <br/>4485466949985702538
@@ -22,6 +23,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// unique identifier of the SERP data element
         /// <br/>required field if product_id or gid is not specified
+        /// <br/>we recommend specifying data_docid together with product_id and gid for optimal results;
         /// <br/>you can get this value for a certain element by making a separate request to the Google Shopping Products endpoint
         /// <br/>example:
         /// <br/>13071766526042404278
@@ -32,6 +34,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// global product identifier on Google Shopping
         /// <br/>required field if product_id or data_docid is not specified
+        /// <br/>we recommend specifying gid together with product_id and data_docid for optimal results;
         /// <br/>you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint
         /// <br/>example:
         /// <br/>4702526954592161872

@@ -21,6 +21,19 @@ namespace DataForSeo.Client.Models
         public string ProductId { get; set; }
 
         /// <summary>
+        /// merchant(s) offering the product
+        /// </summary>
+        [JsonProperty("merchants", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Merchants { get; set; }
+
+        /// <summary>
+        /// product identifier token
+        /// <br/>Base64-encoded token containing Google Shopping product IDs associated with the product
+        /// </summary>
+        [JsonProperty("id_to_token_map", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string IdToTokenMap { get; set; }
+
+        /// <summary>
         /// title of the element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -70,6 +83,13 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Images { get; set; }
+
+        /// <summary>
+        /// Google Shopping product identifiers
+        /// <br/>array of Google Shopping product IDs associated with the product
+        /// </summary>
+        [JsonProperty("product_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<ChatGptGoogleShoppingProduct> ProductIds { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

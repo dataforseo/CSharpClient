@@ -27,6 +27,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? OutputTokens { get; set; }
+        [JsonProperty("reasoning_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? ReasoningTokens { get; set; }
 
         /// <summary>
         /// indicates if web search was used
@@ -56,7 +58,7 @@ namespace DataForSeo.Client.Models
         /// <br/>contains structured AI response data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiOptimizationItem> Items { get; set; }
+        public IEnumerable<MessageAiOptimizationLlmResponseElementItem> Items { get; set; }
 
         /// <summary>
         /// array of fan-out queries

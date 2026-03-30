@@ -31,6 +31,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("phone", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Phone { get; set; }
+        [JsonProperty("booking_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string BookingUrl { get; set; }
 
         /// <summary>
         /// relevant URL

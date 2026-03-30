@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if you ignore this field, we will return data for all categories unless you specify audits
         /// <br/>use this field to get data for specific categories you indicate here
         /// <br/>possible values:
-        /// <br/>seo, pwa, performance, best_practices, accessibility
+        /// <br/>seo, performance, best_practices, accessibility
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Categories { get; set; }

@@ -11,6 +11,7 @@
 **Description** | **string** | link description |[optional]|
 **Domain** | **string** | domain name of the reference |[optional]|
 **Phone** | **string** | phone number |[optional]|
+**BookingUrl** | **string** | URL of the booking page |[optional]|
 **Url** | **string** | URL |[optional]|
 **IsPaid** | **bool?** | indicates whether the element is an ad |[optional]|
 **Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals null |[optional]|

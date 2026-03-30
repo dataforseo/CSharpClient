@@ -15,22 +15,19 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// grouping identifier
-        /// <br/>the specific identifier for the grouping dimension
+        /// grouping identifierthe specific identifier for the grouping dimension
         /// </summary>
         [JsonProperty("key", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Key { get; set; }
 
         /// <summary>
-        /// total LLM mentions count
-        /// <br/>the number of times the target keyword or domain were mentioned in relation to this specific grouping key
+        /// total LLM mentions countthe number of times the target keyword or domain were mentioned in relation to this specific grouping key
         /// </summary>
         [JsonProperty("mentions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Mentions { get; set; }
 
         /// <summary>
-        /// current AI search volume rate of a keyword
-        /// <br/>learn more about this metric here
+        /// current AI search volume rate of a keywordlearn more about this metric here
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }
@@ -39,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// current AI impressions rate of a keyword
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? Impressions { get; set; }
+        public int? Impressions { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

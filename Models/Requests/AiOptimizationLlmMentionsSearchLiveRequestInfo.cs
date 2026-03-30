@@ -132,7 +132,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>chat_gpt, google
         /// <br/>default value: google
-        /// <br/>Note:chat_gpt data is available for the United States and English only
+        /// <br/>Note: the data returned depends on the selected platform
+        /// <br/>Note #2:chat_gpt data is available for the United States and English only
         /// </summary>
         [JsonProperty("platform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Platform { get; set; }

@@ -50,6 +50,12 @@ namespace DataForSeo.Client.Models
         public string Phone { get; set; }
 
         /// <summary>
+        /// URL of the booking page
+        /// </summary>
+        [JsonProperty("booking_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string BookingUrl { get; set; }
+
+        /// <summary>
         /// URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

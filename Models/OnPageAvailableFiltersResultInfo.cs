@@ -21,6 +21,8 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, string> RedirectChains { get; set; }
         [JsonProperty("keyword_density", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> KeywordDensity { get; set; }
+        [JsonProperty("invalid_resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IDictionary<string, string> InvalidResources { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

@@ -132,14 +132,16 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>possible values:
         /// <br/>chat_gpt, google
         /// <br/>default value: google
-        /// <br/>Note:chat_gpt data is available for the United States and English only
+        /// <br/>Note: the data returned depends on the selected platform
+        /// <br/>Note #2:chat_gpt data is available for the United States and English only
         /// </summary>
         [JsonProperty("platform", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Platform { get; set; }
 
         /// <summary>
-        /// array of results filtering parameters
+        /// array of filter expressions applied before aggregation
         /// <br/>optional field
+        /// <br/>you can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:

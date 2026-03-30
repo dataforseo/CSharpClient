@@ -29,6 +29,13 @@ namespace DataForSeo.Client.Models
         public int? OutputTokens { get; set; }
 
         /// <summary>
+        /// number of reasoning tokens
+        /// <br/>total count of tokens used to generate reasoning content
+        /// </summary>
+        [JsonProperty("reasoning_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? ReasoningTokens { get; set; }
+
+        /// <summary>
         /// indicates if web search was used
         /// </summary>
         [JsonProperty("web_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -55,14 +62,14 @@ namespace DataForSeo.Client.Models
         /// <br/>contains structured AI response data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<AiOptimizationItem> Items { get; set; }
+        public IEnumerable<BaseAiOptimizationLlmResponseElementItem> Items { get; set; }
 
         /// <summary>
         /// array of fan-out queries
         /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
         /// </summary>
         [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object FanOutQueries { get; set; }
+        public IEnumerable<string> FanOutQueries { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 
