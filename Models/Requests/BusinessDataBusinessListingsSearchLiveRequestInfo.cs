@@ -105,7 +105,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>default value: 0
         /// <br/>if you specify the 10 value, the first ten entities in the results array will be omitted and the data will be provided for the successive entities
         /// <br/>Note: we recommend using this parameter only when retrieving up to 10,000 results
-        /// <br/>for retrieving over 10,000 results, use the offset_token instead.
+        /// <br/>for retrieving over 10,000 results, use the offset_token instead
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }

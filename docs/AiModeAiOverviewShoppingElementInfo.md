@@ -7,6 +7,8 @@
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
 **ProductId** | **string** |  |[optional]|
+**DataDocid** | **string** |  |[optional]|
+**Gid** | **string** |  |[optional]|
 **Title** | **string** | title of the element |[optional]|
 **Url** | **string** | reference page URL |[optional]|
 **Domain** | **string** | domain in link |[optional]|

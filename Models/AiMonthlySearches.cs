@@ -21,8 +21,7 @@ namespace DataForSeo.Client.Models
         public int? Month { get; set; }
 
         /// <summary>
-        /// AI search volume rate in a certain month of a year
-        /// <br/>learn more about this metric here
+        /// AI search volume rate in a certain month of a yearlearn more about this metric here
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }

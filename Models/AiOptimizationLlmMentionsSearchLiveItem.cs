@@ -15,6 +15,12 @@ namespace DataForSeo.Client.Models
         public string Platform { get; set; }
 
         /// <summary>
+        /// name of the AI model from which the data was retrievedNote: for the google platform type, the value is always google_ai_overview
+        /// </summary>
+        [JsonProperty("model_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string ModelName { get; set; }
+
+        /// <summary>
         /// location code in a POST array
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

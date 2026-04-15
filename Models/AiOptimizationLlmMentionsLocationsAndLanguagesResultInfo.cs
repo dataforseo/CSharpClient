@@ -21,8 +21,7 @@ namespace DataForSeo.Client.Models
         public string LocationName { get; set; }
 
         /// <summary>
-        /// supported languages
-        /// <br/>contains the languages which are supported for a specific location
+        /// supported languagescontains the languages which are supported for a specific location
         /// </summary>
         [JsonProperty("available_languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ResultAvailableLanguages> AvailableLanguages { get; set; }

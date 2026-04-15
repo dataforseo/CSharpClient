@@ -21,6 +21,14 @@ namespace DataForSeo.Client.Models
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
+        /// <summary>
+        /// indicates whether the element is loaded asynchronously
+        /// <br/>if true, the people_also_ask_ai_overview_expanded_element element is loaded asynchronously;
+        /// <br/>if false, the people_also_ask_ai_overview_expanded_element element is loaded from cache
+        /// </summary>
+        [JsonProperty("asynchronous_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? AsynchronousAiOverview { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

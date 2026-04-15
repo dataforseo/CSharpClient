@@ -22,16 +22,43 @@ namespace DataForSeo.Client.Models
         public string ProductId { get; set; }
 
         /// <summary>
+        /// GID ID in a POST array
+        /// <br/>learn more about the parameter in this help center guide
+        /// </summary>
+        [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Gid { get; set; }
+
+        /// <summary>
+        /// unique identifier of the SERP data element in the POST array
+        /// </summary>
+        [JsonProperty("data_docid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DataDocid { get; set; }
+
+        /// <summary>
+        /// product variation filter
+        /// <br/>used in the product variation URL as the identifier of the specific product variation
+        /// </summary>
+        [JsonProperty("pvf", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Pvf { get; set; }
+
+        /// <summary>
         /// name of the product seller
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// product url on google shopping
+        /// product variation URL on Google Shopping
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
+
+        /// <summary>
+        /// category of the product variation
+        /// <br/>example: 'Storage Capacity'
+        /// </summary>
+        [JsonProperty("variation_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string VariationCategory { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

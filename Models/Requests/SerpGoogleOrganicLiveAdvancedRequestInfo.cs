@@ -9,114 +9,61 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// keyword
-        /// <br/>required field
-        /// <br/>you can specify up to 700 characters in the keyword field
-        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
-        /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
-        /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘definition:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘site:’, the charge per task will be multiplied by 5
-        /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation errorlearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘definition:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘site:’, the charge per task will be multiplied by 5Note: queries containing the ‘cache:’ parameter are not supported and will return a validation errorlearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
-        /// search engine location code
-        /// <br/>required field if you don't specify location_name or location_coordinate
-        /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>example:
-        /// <br/>2840
+        /// search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:2840
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// search engine language code
-        /// <br/>optional field if you specify language_name
-        /// <br/>if you use this field, you don't need to specify language_name
-        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-        /// <br/>example:
-        /// <br/>en
+        /// search engine language codeoptional field if you specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:en
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// parsing depth
-        /// <br/>optional field
-        /// <br/>number of results in SERP
-        /// <br/>default value: 10
-        /// <br/>max value: 200
-        /// <br/>Your account will be billed per each SERP containing up to 10 results;
-        /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// parsing depthoptional fieldnumber of results in SERPdefault value: 10max value: 200Your account will be billed per each SERP containing up to 10 results;Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
 
         /// <summary>
-        /// device type
-        /// <br/>optional field
-        /// <br/>return results for a specific device type
-        /// <br/>can take the values:desktop, mobile
-        /// <br/>default value: desktop
+        /// device typeoptional fieldreturn results for a specific device typecan take the values:desktop, mobiledefault value: desktop
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
 
         /// <summary>
-        /// load asynchronous ai overview
-        /// <br/>optional field
-        /// <br/>set to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;
-        /// <br/>if set to false, you will only obtain ai_overview items from cache;
-        /// <br/>default value: false
-        /// <br/>Note: you will be charged extra $0.002 for using this parameter;
-        /// <br/>if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
+        /// load asynchronous ai overviewoptional fieldset to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;if set to false, you will only obtain ai_overview items from cache;default value: falseNote: you will be charged extra $0.002 for using this parameter;if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
         /// </summary>
         [JsonProperty("load_async_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LoadAsyncAiOverview { get; set; }
 
         /// <summary>
-        /// full name of search engine location
-        /// <br/>required field if you don't specify location_code or location_coordinate
-        /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-        /// <br/>example:
-        /// <br/>London,England,United Kingdom
+        /// full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
-        /// full name of search engine language
-        /// <br/>optional field if you specify language_code
-        /// <br/>if you use this field, you don't need to specify language_code
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-        /// <br/>example:
-        /// <br/>English
+        /// full name of search engine languageoptional field if you specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
         /// </summary>
         [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
-        /// device operating system
-        /// <br/>optional field
-        /// <br/>if you specify desktop in the device field, choose from the following values: windows, macos
-        /// <br/>default value: windows
-        /// <br/>if you specify mobile in the device field, choose from the following values: android, ios
-        /// <br/>default value: android
+        /// device operating systemoptional fieldif you specify desktop in the device field, choose from the following values: windows, macosdefault value: windowsif you specify mobile in the device field, choose from the following values: android, iosdefault value: android
         /// </summary>
         [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Os { get; set; }
 
         /// <summary>
-        /// user-defined task identifier
-        /// <br/>optional field
-        /// <br/>the character limit is 255
-        /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -135,225 +82,109 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
 
         /// <summary>
-        /// target match type
-        /// <br/>required field if stop_crawl_on_match is specified
-        /// <br/>type of match for the match_value
-        /// <br/>possible values:
-        /// <br/>domain – specific domain or subdomain
-        /// <br/>with_subdomains – main domain and subdomains
-        /// <br/>wildcard –  wildcard pattern
+        /// target match typerequired field if stop_crawl_on_match is specifiedtype of match for the match_valuepossible values:domain – specific domain or subdomainwith_subdomains – main domain and subdomainswildcard –  wildcard pattern
         /// </summary>
         [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchType { get; set; }
 
         /// <summary>
-        /// target domain, subdomain, or wildcard value
-        /// <br/>required field if stop_crawl_on_match is specified
-        /// <br/>specify a target domain, subdomain, or wildcard value;
-        /// <br/>Note: domain or subdomain must be specified without a request protocol;
-        /// <br/>example: 'match_value': 'dataforseo.com',
-        /// <br/>'match_value': '/blog/post-*'
+        /// target domain, subdomain, or wildcard valuerequired field if stop_crawl_on_match is specifiedspecify a target domain, subdomain, or wildcard value;Note: domain or subdomain must be specified without a request protocol;example: 'match_value': 'dataforseo.com','match_value': '/blog/post-*'
         /// </summary>
         [JsonProperty("match_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MatchValue { get; set; }
 
         /// <summary>
-        /// page crawl limit
-        /// <br/>optional field
-        /// <br/>number of search results pages to crawl
-        /// <br/>max value: 100
-        /// <br/>Note: you will be charged for each page crawled (10 organic results per page);
-        /// <br/>learn more about pricing on our Pricing page;
-        /// <br/>Note#2: the max_crawl_pages and depth parameters complement each other;
-        /// <br/>learn more at our help center
+        /// page crawl limitoptional fieldnumber of search results pages to crawlmax value: 100Note: you will be charged for each page crawled (10 organic results per page);learn more about pricing on our Pricing page;Note#2: the max_crawl_pages and depth parameters complement each other;learn more at our help center
         /// </summary>
         [JsonProperty("max_crawl_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxCrawlPages { get; set; }
 
         /// <summary>
-        /// additional parameters of the search query
-        /// <br/>optional field
-        /// <br/>get the list of available parameters and additional details here
+        /// additional parameters of the search queryoptional fieldget the list of available parameters and additional details here
         /// </summary>
         [JsonProperty("search_param", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchParam { get; set; }
 
         /// <summary>
-        /// remove specific parameters from URLs
-        /// <br/>optional field
-        /// <br/>using this field, you can specify up to 10 parameters to remove from URLs in the result
-        /// <br/>example:
-        /// <br/>'remove_from_url': ['srsltid']
-        /// <br/>Note: if the target field is specified, the specified URL parameters will be removed before the search
+        /// remove specific parameters from URLsoptional fieldusing this field, you can specify up to 10 parameters to remove from URLs in the resultexample:'remove_from_url': ['srsltid']Note: if the target field is specified, the specified URL parameters will be removed before the search
         /// </summary>
         [JsonProperty("remove_from_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> RemoveFromUrl { get; set; }
 
         /// <summary>
-        /// clicks on the corresponding element
-        /// <br/>optional field
-        /// <br/>specify the click depth on the people_also_ask element to get additional people_also_ask_element items;
-        /// <br/>Note your account will be billed $0.00015 extra for each click;
-        /// <br/>if the element is absent or we perform fewer clicks than you specified, all extra charges will be returned to your account balance
-        /// <br/>possible values: from 1 to 4
+        /// clicks on the corresponding elementoptional fieldspecify the click depth on the people_also_ask element to get additional people_also_ask_element items;Note your account will be billed $0.00015 extra for each click;if the element is absent or we perform fewer clicks than you specified, all extra charges will be returned to your account balancepossible values: from 1 to 4
         /// </summary>
         [JsonProperty("people_also_ask_click_depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PeopleAlsoAskClickDepth { get; set; }
 
         /// <summary>
-        /// display related results
-        /// <br/>optional field
-        /// <br/>if set to true, the related_result element in the response will be provided as a snippet of its parent organic result;
-        /// <br/>if set to false, the related_result element will be provided as a separate organic result;
-        /// <br/>default value: true
+        /// display related resultsoptional fieldif set to true, the related_result element in the response will be provided as a snippet of its parent organic result;if set to false, the related_result element will be provided as a separate organic result;default value: true
         /// </summary>
         [JsonProperty("group_organic_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? GroupOrganicResults { get; set; }
 
         /// <summary>
-        /// calcualte pixel rankings for SERP elements in advanced results
-        /// <br/>optional field
-        /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
-        /// <br/>Visit Help Center to learn more&gt;&gt;
-        /// <br/>by default, the parameter is set to false;
-        /// <br/>Note: you will be charged extra $0.002 for using this parameter
+        /// calcualte pixel rankings for SERP elements in advanced resultsoptional fieldpixel ranking refers to the distance between the result snippet and top left corner of the screen;Visit Help Center to learn more&gt;&gt;by default, the parameter is set to false;Note: you will be charged extra $0.002 for using this parameter
         /// </summary>
         [JsonProperty("calculate_rectangles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CalculateRectangles { get; set; }
 
         /// <summary>
-        /// browser screen width
-        /// <br/>optional field
-        /// <br/>you can set a custom browser screen width to calculate pixel rankings for a particular device;
-        /// <br/>can be specified within the following range: 240-9999;
-        /// <br/>by default, the parameter is set to:
-        /// <br/>1920 for desktop;
-        /// <br/>360 for mobile on android;
-        /// <br/>375 for mobile on iOS;
-        /// <br/>Note: to use this parameter, set calculate_rectangles to true
+        /// browser screen widthoptional fieldyou can set a custom browser screen width to calculate pixel rankings for a particular device;can be specified within the following range: 240-9999;by default, the parameter is set to:1920 for desktop;360 for mobile on android;375 for mobile on iOS;Note: to use this parameter, set calculate_rectangles to true
         /// </summary>
         [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrowserScreenWidth { get; set; }
 
         /// <summary>
-        /// browser screen height
-        /// <br/>optional field
-        /// <br/>you can set a custom browser screen height to calculate pixel rankings for a particular device;
-        /// <br/>can be specified within the following range: 240-9999;
-        /// <br/>by default, the parameter is set to:
-        /// <br/>1080 for desktop;
-        /// <br/>640 for mobile on android;
-        /// <br/>812 for mobile on iOS;
-        /// <br/>Note: to use this parameter, set calculate_rectangles to true
+        /// browser screen heightoptional fieldyou can set a custom browser screen height to calculate pixel rankings for a particular device;can be specified within the following range: 240-9999;by default, the parameter is set to:1080 for desktop;640 for mobile on android;812 for mobile on iOS;Note: to use this parameter, set calculate_rectangles to true
         /// </summary>
         [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenHeight { get; set; }
 
         /// <summary>
-        /// browser screen resolution ratio
-        /// <br/>optional field
-        /// <br/>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
-        /// <br/>can be specified within the following range: 0.5-3;
-        /// <br/>by default, the parameter is set to:
-        /// <br/>1 for desktop;
-        /// <br/>3 for mobile on android;
-        /// <br/>3 for mobile on iOS;
-        /// <br/>Note: to use this parameter, set calculate_rectangles to true
+        /// browser screen resolution ratiooptional fieldyou can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;can be specified within the following range: 0.5-3;by default, the parameter is set to:1 for desktop;3 for mobile on android;3 for mobile on iOS;Note: to use this parameter, set calculate_rectangles to true
         /// </summary>
         [JsonProperty("browser_screen_resolution_ratio", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenResolutionRatio { get; set; }
 
         /// <summary>
-        /// direct URL of the search query
-        /// <br/>optional field
-        /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-        /// <br/>example:
-        /// <br/>https://www.google.co.uk/search?q=%20rank%20tracker%20api&amp;hl=en&amp;gl=GB&amp;uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
+        /// direct URL of the search queryoptional fieldyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.example:https://www.google.co.uk/search?q=%20rank%20tracker%20api&amp;hl=en&amp;gl=GB&amp;uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// GPS coordinates of a location
-        /// <br/>optional field if you specify location_name or location_code
-        /// <br/>if you use this field, you don't need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
-        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
-        /// <br/>the minimum value for 'radius': 199.9 (mm)
-        /// <br/>the maximum value for 'radius': 199999 (mm)
-        /// <br/>example:
-        /// <br/>53.476225,-2.243572,200
+        /// GPS coordinates of a locationoptional field if you specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,radius' formatthe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'radius': 199 (mm)the maximum value for 'radius': 199999 (mm)example:53.476225,-2.243572,200
         /// </summary>
         [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
-        /// search engine domain
-        /// <br/>optional field
-        /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
-        /// <br/>however, you can set a custom search engine domain in this field
-        /// <br/>example:
-        /// <br/>google.co.uk, google.com.au, google.de, etc.
+        /// search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:google.co.uk, google.com.au, google.de, etc.
         /// </summary>
         [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeDomain { get; set; }
 
         /// <summary>
-        /// target domain, subdomain, or webpage to get results for
-        /// <br/>optional field
-        /// <br/>a domain or a subdomain should be specified without https:// and www.
-        /// <br/>note that the results of target-specific tasks will only include SERP elements that contain a url string;
-        /// <br/>you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
-        /// <br/>examples:
-        /// <br/>example.com - returns results for the website's home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
-        /// <br/>example.com* - returns results for the domain, including all its pages;
-        /// <br/>*example.com* - returns results for the entire domain, including all its pages and subdomains;
-        /// <br/>*example.com - returns results for the home page regardless of the subdomain, such as https://en.example.com;
-        /// <br/>example.com/example-page - returns results for the exact URL;
-        /// <br/>example.com/example-page* - returns results for all domain's URLs that start with the specified string
+        /// target domain, subdomain, or webpage to get results foroptional fielda domain or a subdomain should be specified without https:// and www.note that the results of target-specific tasks will only include SERP elements that contain a url string;you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;examples:example.com - returns results for the website's home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;example.com* - returns results for the domain, including all its pages;*example.com* - returns results for the entire domain, including all its pages and subdomains;*example.com - returns results for the home page regardless of the subdomain, such as https://en.example.com;example.com/example-page - returns results for the exact URL;example.com/example-page* - returns results for all domain's URLs that start with the specified string
         /// </summary>
         [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
 
         /// <summary>
-        /// target matching mode
-        /// <br/>optional field
-        /// <br/>to enable this parameter, stop_crawl_on_match must also be enabled
-        /// <br/>defines how the crawl should stop when multiple targets are specified in stop_crawl_on_match
-        /// <br/>possible values: all, any
-        /// <br/>all – the crawl stops only when all specified targets are found
-        /// <br/>any – the crawl stops when any single target is found
-        /// <br/>default value: any
-        /// <br/>learn more about this parameter on our Help Center
+        /// target matching modeoptional fieldto enable this parameter, stop_crawl_on_match must also be enableddefines how the crawl should stop when multiple targets are specified in stop_crawl_on_matchpossible values: all, anyall – the crawl stops only when all specified targets are foundany – the crawl stops when any single target is founddefault value: anylearn more about this parameter on our Help Center
         /// </summary>
         [JsonProperty("target_search_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TargetSearchMode { get; set; }
 
         /// <summary>
-        /// SERP element types to check for targets
-        /// <br/>optional field
-        /// <br/>to enable this parameter, stop_crawl_on_match must also be enabled
-        /// <br/>specifies which SERP element types should be checked for target matches
-        /// <br/>if not specified, all first-level elements with url and domain fields are checked for targets
-        /// <br/>possible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitter
-        /// <br/>Note: cannot contain the same element types as ignore_targets_in
-        /// <br/>example:
-        /// <br/>'find_targets_in': ['organic', 'featured_snippet']
-        /// <br/>learn more about this parameter on our Help Center
+        /// SERP element types to check for targetsoptional fieldto enable this parameter, stop_crawl_on_match must also be enabledspecifies which SERP element types should be checked for target matchesif not specified, all first-level elements with url and domain fields are checked for targetspossible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitterNote: cannot contain the same element types as ignore_targets_inexample:'find_targets_in': ['organic', 'featured_snippet']learn more about this parameter on our Help Center
         /// </summary>
         [JsonProperty("find_targets_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> FindTargetsIn { get; set; }
 
         /// <summary>
-        /// SERP element types to exclude from target search
-        /// <br/>optional field
-        /// <br/>to enable this parameter, stop_crawl_on_match must also be enabled
-        /// <br/>specifies which SERP element types should be excluded when searching for target matches
-        /// <br/>possible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitter
-        /// <br/>Note: cannot contain the same element types as find_targets_in
-        /// <br/>example:
-        /// <br/>'ignore_targets_in': ['paid', 'images']
-        /// <br/>learn more about this parameter on our Help Center
+        /// SERP element types to exclude from target searchoptional fieldto enable this parameter, stop_crawl_on_match must also be enabledspecifies which SERP element types should be excluded when searching for target matchespossible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitterNote: cannot contain the same element types as find_targets_inexample:'ignore_targets_in': ['paid', 'images']learn more about this parameter on our Help Center
         /// </summary>
         [JsonProperty("ignore_targets_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> IgnoreTargetsIn { get; set; }

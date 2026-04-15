@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// content of the element in markdown format
-        /// <br/>content of the result formatted in the markdown markup language
+        /// content of the element in markdown formatcontent of the result formatted in the markdown markup language
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
@@ -22,8 +21,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<SourceInfo> Sources { get; set; }
 
         /// <summary>
-        /// array of brand entities
-        /// <br/>contains information on brands mentioned in the text
+        /// array of brand entitiescontains information on brands mentioned in the text
         /// </summary>
         [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ChatGptBrandEntity> BrandEntities { get; set; }

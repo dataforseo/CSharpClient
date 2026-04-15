@@ -27,8 +27,7 @@ namespace DataForSeo.Client.Models
         public string Merchants { get; set; }
 
         /// <summary>
-        /// product identifier token
-        /// <br/>Base64-encoded token containing Google Shopping product IDs associated with the product
+        /// product identifier tokenBase64-encoded token containing Google Shopping product IDs associated with the product
         /// </summary>
         [JsonProperty("id_to_token_map", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string IdToTokenMap { get; set; }
@@ -40,8 +39,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// rating of the corresponding local business
-        /// <br/>popularity rate based on reviews as displayed in the results
+        /// rating of the corresponding local businesspopularity rate based on reviews as displayed in the results
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
@@ -53,8 +51,7 @@ namespace DataForSeo.Client.Models
         public double? Price { get; set; }
 
         /// <summary>
-        /// currency of the listed price
-        /// <br/>ISO code of the currency applied to the price
+        /// currency of the listed priceISO code of the currency applied to the price
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
@@ -78,15 +75,13 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// image URLs of the element
-        /// <br/>contains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available)
+        /// image URLs of the elementcontains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Images { get; set; }
 
         /// <summary>
-        /// Google Shopping product identifiers
-        /// <br/>array of Google Shopping product IDs associated with the product
+        /// Google Shopping product identifiersarray of Google Shopping product IDs associated with the product
         /// </summary>
         [JsonProperty("product_ids", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ChatGptGoogleShoppingProduct> ProductIds { get; set; }

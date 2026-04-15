@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// task identifier of the completed task
-        /// <br/>unique task identifier in our system in the UUID format
+        /// task identifier of the completed taskunique task identifier in our system in the UUID format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -22,8 +21,7 @@ namespace DataForSeo.Client.Models
         public string Se { get; set; }
 
         /// <summary>
-        /// type of search engine
-        /// <br/>example: llm_scraper
+        /// type of search engineexample: llm_scraper
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -41,22 +39,19 @@ namespace DataForSeo.Client.Models
         public string Tag { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Regular task
-        /// <br/>if the Regular function is not supported in the specified endpoint, the value will be null
+        /// URL for collecting the results of the Regular taskif the Regular function is not supported in the specified endpoint, the value will be null
         /// </summary>
         [JsonProperty("endpoint_regular", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointRegular { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the Advanced task
-        /// <br/>if the Advanced function is not supported in the specified endpoint, the value will be null
+        /// URL for collecting the results of the Advanced taskif the Advanced function is not supported in the specified endpoint, the value will be null
         /// </summary>
         [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
-        /// URL for collecting the results of the HTML task
-        /// <br/>if the HTML function is not supported in the specified endpoint, the value will be null
+        /// URL for collecting the results of the HTML taskif the HTML function is not supported in the specified endpoint, the value will be null
         /// </summary>
         [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointHtml { get; set; }

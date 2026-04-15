@@ -9,9 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// supported LLM platforms
-        /// <br/>contains the sources of data supported for a specific location and language combination
-        /// <br/>only google and chat_gpt are currently available
+        /// supported LLM platformscontains the sources of data supported for a specific location and language combinationonly google and chat_gpt are currently available
         /// </summary>
         [JsonProperty("available_platforms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> AvailablePlatforms { get; set; }
@@ -29,8 +27,7 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// number of LLM responses
-        /// <br/>the number of LLM responses available in the database for the certain location and language parameters
+        /// number of LLM responsesthe number of LLM responses available in the database for the certain location and language parameters
         /// </summary>
         [JsonProperty("responses_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ResponsesCount { get; set; }

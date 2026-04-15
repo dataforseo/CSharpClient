@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// content of the element in markdown format
-        /// <br/>content of the result formatted in the markdown markup language
+        /// content of the element in markdown formatcontent of the result formatted in the markdown markup language
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }

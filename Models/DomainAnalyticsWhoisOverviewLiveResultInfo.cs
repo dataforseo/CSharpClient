@@ -21,6 +21,14 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
+        /// results offset value specified in POST request
+        /// </summary>
+        [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Offset { get; set; }
+        [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string OffsetToken { get; set; }
+
+        /// <summary>
         /// contains ranking and traffic data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

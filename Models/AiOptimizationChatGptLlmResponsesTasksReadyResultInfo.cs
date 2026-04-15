@@ -9,8 +9,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// task identifier of the completed task
-        /// <br/>unique task identifier in our system in the UUID format
+        /// task identifier of the completed taskunique task identifier in our system in the UUID format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }

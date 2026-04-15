@@ -15,6 +15,10 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
         [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductId { get; set; }
+        [JsonProperty("data_docid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DataDocid { get; set; }
+        [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Gid { get; set; }
 
         /// <summary>
         /// title of the element

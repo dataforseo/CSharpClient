@@ -57,8 +57,7 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// rating of the corresponding local business
-        /// <br/>popularity rate based on reviews as displayed in the results
+        /// rating of the corresponding local businesspopularity rate based on reviews as displayed in the results
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }

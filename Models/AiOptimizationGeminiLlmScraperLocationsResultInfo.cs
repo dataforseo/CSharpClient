@@ -21,14 +21,7 @@ namespace DataForSeo.Client.Models
         public string LocationName { get; set; }
 
         /// <summary>
-        /// the code of the superordinate location
-        /// <br/>example:
-        /// <br/>'location_code': 9041134,
-        /// <br/>'location_name': 'Vienna International Airport,Lower Austria,Austria',
-        /// <br/>'location_code_parent': 20044
-        /// <br/>where location_code_parent corresponds to:
-        /// <br/>'location_code': 20044,
-        /// <br/>'location_name': 'Lower Austria,Austria'
+        /// the code of the superordinate locationexample:'location_code': 9041134,'location_name': 'Vienna International Airport,Lower Austria,Austria','location_code_parent': 20044where location_code_parent corresponds to:'location_code': 20044,'location_name': 'Lower Austria,Austria'
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCodeParent { get; set; }

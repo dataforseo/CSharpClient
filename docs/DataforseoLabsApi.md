@@ -69,8 +69,8 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(
     {
         new DataforseoLabsIdListRequestInfo()
         {
-            DatetimeFrom = "2026-03-27 06:40:56 +00:00",
-            DatetimeTo = "2026-03-29 06:40:56 +00:00",
+            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
+            DatetimeTo = "2026-04-14 04:39:39 +00:00",
             Limit = 100,
             Offset = 0,
             Sort = "desc",
@@ -921,8 +921,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-            FirstDate = "2025-12-30 00:00:00 +02:00",
-            SecondDate = "2026-02-28 00:00:00 +02:00",
+            FirstDate = "2026-01-15 00:00:00 +02:00",
+            SecondDate = "2026-03-15 00:00:00 +02:00",
             Limit = 3,
         },
     });
@@ -1427,8 +1427,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(
             Keyword = "albert einstein",
             LocationCode = 2840,
             LanguageCode = "en",
-            DateFrom = "2025-12-30 00:00:00 +02:00",
-            DateTo = "2026-02-28 00:00:00 +02:00",
+            DateFrom = "2026-01-15 00:00:00 +02:00",
+            DateTo = "2026-03-15 00:00:00 +02:00",
         },
     });
 ```
@@ -1479,8 +1479,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
             Target = "dataforseo.com",
             LocationCode = 2840,
             LanguageCode = "en",
-            DateFrom = "2025-12-30 00:00:00 +02:00",
-            DateTo = "2026-02-28 00:00:00 +02:00",
+            DateFrom = "2026-01-15 00:00:00 +02:00",
+            DateTo = "2026-03-15 00:00:00 +02:00",
         },
     });
 ```
@@ -1652,8 +1652,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
             LocationCode = 2840,
             LanguageCode = "en",
-            DateFrom = "2025-12-30 00:00:00 +02:00",
-            DateTo = "2026-02-28 00:00:00 +02:00",
+            DateFrom = "2026-01-15 00:00:00 +02:00",
+            DateTo = "2026-03-15 00:00:00 +02:00",
             ItemTypes = new string[]
         {
             "organic",

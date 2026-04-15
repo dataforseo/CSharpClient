@@ -6,6 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Platform** | **string** | platform received in a POST array |[optional]|
+**ModelName** | **string** | name of the AI model from which the data was retrievedNote: for the google platform type, the value is always google_ai_overview |[optional]|
 **LocationCode** | **int?** | location code in a POST array |[optional]|
 **LanguageCode** | **string** | language code in a POST array |[optional]|
 **Question** | **string** | relevant question |[optional]|

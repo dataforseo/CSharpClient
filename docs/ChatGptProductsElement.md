@@ -8,13 +8,13 @@
 **Type** | **string** | type of element |[optional]|
 **ProductId** | **string** | product id |[optional]|
 **Merchants** | **string** | merchant(s) offering the product |[optional]|
-**IdToTokenMap** | **string** | product identifier token<br>Base64-encoded token containing Google Shopping product IDs associated with the product |[optional]|
+**IdToTokenMap** | **string** | product identifier tokenBase64-encoded token containing Google Shopping product IDs associated with the product |[optional]|
 **Title** | **string** | title of the element |[optional]|
-**Rating** | **RatingInfo** | rating of the corresponding local business<br>popularity rate based on reviews as displayed in the results |[optional]|
+**Rating** | **RatingInfo** | rating of the corresponding local businesspopularity rate based on reviews as displayed in the results |[optional]|
 **Price** | **double?** | product price |[optional]|
-**Currency** | **string** | currency of the listed price<br>ISO code of the currency applied to the price |[optional]|
+**Currency** | **string** | currency of the listed priceISO code of the currency applied to the price |[optional]|
 **Tag** | **string** | tag text |[optional]|
 **Url** | **string** | URL |[optional]|
 **Domain** | **string** | domain |[optional]|
-**Images** | **IEnumerable<string>** | image URLs of the element<br>contains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
-**ProductIds** | **IEnumerable<ChatGptGoogleShoppingProduct>** | Google Shopping product identifiers<br>array of Google Shopping product IDs associated with the product |[optional]|
+**Images** | **IEnumerable<string>** | image URLs of the elementcontains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**ProductIds** | **IEnumerable<ChatGptGoogleShoppingProduct>** | Google Shopping product identifiersarray of Google Shopping product IDs associated with the product |[optional]|
