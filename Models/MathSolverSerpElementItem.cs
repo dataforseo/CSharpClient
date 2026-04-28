@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// reference page title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         public string Result { get; set; }
 
         /// <summary>
-        /// contains arrays of elements available in the list
+        /// contains arrays of specific images
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MathSolverElement> Items { get; set; }

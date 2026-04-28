@@ -28,19 +28,19 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// website domain
+        /// domain where a link points
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// reference page title
+        /// title of the link
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// URL
+        /// reference page URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -115,7 +115,7 @@ namespace DataForSeo.Client.Models
         public bool? AmpVersion { get; set; }
 
         /// <summary>
-        /// the element’s rating
+        /// the item’s rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP;
         /// <br/>if there is none, equals null
         /// </summary>
@@ -123,7 +123,7 @@ namespace DataForSeo.Client.Models
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// price indicated in the element
+        /// price of booking a place for the specified dates of stay
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

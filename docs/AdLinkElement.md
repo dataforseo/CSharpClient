@@ -6,8 +6,8 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Title** | **string** | title of the element in SERP |[optional]|
+**Title** | **string** | reference page title |[optional]|
 **Description** | **string** | link description |[optional]|
-**Url** | **string** | relevant URL |[optional]|
+**Url** | **string** | reference page URL |[optional]|
 **Domain** | **string** | domain where a link points |[optional]|
 **AdAclk** | **string** | the identifier of the ad |[optional]|

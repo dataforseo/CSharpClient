@@ -101,6 +101,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>'or',
         /// <br/>['content_info.text_category','has',10994]]]
         /// <br/>for more information about filters, please refer to Content Analysis API – Filters
+        /// <br/>learn more about the initial dataset filters in this help center article.
         /// </summary>
         [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> InitialDatasetFilters { get; set; }

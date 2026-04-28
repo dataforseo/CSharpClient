@@ -67,7 +67,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>example:
         /// <br/>['rating.value','&gt;',3]
         /// <br/>you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/business_data/business_listings/available_filters
-        /// <br/>The full list of possible filters is available here.
+        /// <br/>the full list of possible filters is available here.
+        /// <br/>learn more about the initial dataset filters in this help center article.
         /// </summary>
         [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> InitialDatasetFilters { get; set; }

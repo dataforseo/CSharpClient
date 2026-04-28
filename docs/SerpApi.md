@@ -198,19 +198,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.IdListAsync(
-    new SerpIdListRequestInfo[]
+var result = await dfsClient.SerpApi.IdListAsync(new List<SerpIdListRequestInfo>()
+{
+    new()
     {
-        new SerpIdListRequestInfo()
-        {
-            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
-            DatetimeTo = "2026-04-14 04:39:39 +00:00",
-            Limit = 100,
-            Offset = 0,
-            Sort = "desc",
-            IncludeMetadata = true,
-        },
-    });
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+        IncludeMetadata = true,
+    }
+});
 ```
 
 ### Parameters
@@ -251,16 +248,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.ErrorsAsync(
-    new SerpErrorsRequestInfo[]
+var result = await dfsClient.SerpApi.ErrorsAsync(new List<SerpErrorsRequestInfo>()
+{
+    new()
     {
-        new SerpErrorsRequestInfo()
-        {
-            Limit = 10,
-            Offset = 0,
-            FilteredFunction = "pingback_url",
-        },
-    });
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
 
 ### Parameters
@@ -301,15 +297,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.ScreenshotAsync(
-    new SerpScreenshotRequestInfo[]
+var result = await dfsClient.SerpApi.ScreenshotAsync(new List<SerpScreenshotRequestInfo>()
+{
+    new()
     {
-        new SerpScreenshotRequestInfo()
-        {
-            TaskId = "06211235-0696-0139-1000-36727fbd3c90",
-            BrowserScreenScaleFactor = 0.5,
-        },
-    });
+        TaskId = "06211235-0696-0139-1000-36727fbd3c90",
+        BrowserScreenScaleFactor = 0.5,
+    }
+});
 ```
 
 ### Parameters
@@ -350,17 +345,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.AiSummaryAsync(
-    new SerpAiSummaryRequestInfo[]
+var result = await dfsClient.SerpApi.AiSummaryAsync(new List<SerpAiSummaryRequestInfo>()
+{
+    new()
     {
-        new SerpAiSummaryRequestInfo()
-        {
-            TaskId = "07031739-1535-0139-0000-9d1e639a5b7d",
-            Prompt = "explain what DataForSEO is",
-            IncludeLinks = true,
-            FetchContent = true,
-        },
-    });
+        TaskId = "07031739-1535-0139-0000-9d1e639a5b7d",
+        Prompt = "explain what DataForSEO is",
+        IncludeLinks = true,
+        FetchContent = true,
+    }
+});
 ```
 
 ### Parameters
@@ -525,31 +519,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(
-    new SerpGoogleOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleOrganicTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-        new SerpGoogleOrganicTaskPostRequestInfo()
-        {
-            LanguageName = "English",
-            LocationName = "United States",
-            Keyword = "albert einstein",
-            Priority = 2,
-            Tag = "some_string_123",
-            PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
-        },
-        new SerpGoogleOrganicTaskPostRequestInfo()
-        {
-            Url = "https://www.google.co.uk/search?q=albert%20einstein&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS",
-            PostbackData = "html",
-            PostbackUrl = "https://your-server.com/postbackscript",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -839,16 +817,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(
-    new SerpGoogleOrganicLiveRegularRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleOrganicLiveRegularAsync(new List<SerpGoogleOrganicLiveRegularRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleOrganicLiveRegularRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -889,17 +866,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(
-    new SerpGoogleOrganicLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<SerpGoogleOrganicLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleOrganicLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-            CalculateRectangles = true,
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+        CalculateRectangles = true,
+    }
+});
 ```
 
 ### Parameters
@@ -940,16 +916,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(
-    new SerpGoogleOrganicLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleOrganicLiveHtmlAsync(new List<SerpGoogleOrganicLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleOrganicLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -1031,16 +1006,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAiModeTaskPostAsync(
-    new SerpGoogleAiModeTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAiModeTaskPostAsync(new List<SerpGoogleAiModeTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAiModeTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "what is google ai mode",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "what is google ai mode",
+    }
+});
 ```
 
 ### Parameters
@@ -1247,16 +1221,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAiModeLiveAdvancedAsync(
-    new SerpGoogleAiModeLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAiModeLiveAdvancedAsync(new List<SerpGoogleAiModeLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAiModeLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "what is google ai mode",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "what is google ai mode",
+    }
+});
 ```
 
 ### Parameters
@@ -1297,16 +1270,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAiModeLiveHtmlAsync(
-    new SerpGoogleAiModeLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAiModeLiveHtmlAsync(new List<SerpGoogleAiModeLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAiModeLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -1347,16 +1319,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleMapsTaskPostAsync(
-    new SerpGoogleMapsTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleMapsTaskPostAsync(new List<SerpGoogleMapsTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleMapsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -1521,16 +1492,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleMapsLiveAdvancedAsync(
-    new SerpGoogleMapsLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleMapsLiveAdvancedAsync(new List<SerpGoogleMapsLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleMapsLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -1571,18 +1541,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(
-    new SerpGoogleLocalFinderTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<SerpGoogleLocalFinderTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleLocalFinderTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "local nail services",
-            MinRating = 4.5,
-            TimeFilter = "monday",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "local nail services",
+        MinRating = 4.5,
+        TimeFilter = "monday",
+    }
+});
 ```
 
 ### Parameters
@@ -1789,18 +1758,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(
-    new SerpGoogleLocalFinderLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List<SerpGoogleLocalFinderLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleLocalFinderLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "local nail services",
-            MinRating = 4.5,
-            TimeFilter = "monday",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "local nail services",
+        MinRating = 4.5,
+        TimeFilter = "monday",
+    }
+});
 ```
 
 ### Parameters
@@ -1841,16 +1809,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleLocalFinderLiveHtmlAsync(
-    new SerpGoogleLocalFinderLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleLocalFinderLiveHtmlAsync(new List<SerpGoogleLocalFinderLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleLocalFinderLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -1891,16 +1858,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleNewsTaskPostAsync(
-    new SerpGoogleNewsTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleNewsTaskPostAsync(new List<SerpGoogleNewsTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleNewsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -2107,16 +2073,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleNewsLiveAdvancedAsync(
-    new SerpGoogleNewsLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleNewsLiveAdvancedAsync(new List<SerpGoogleNewsLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleNewsLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "android",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "android",
+    }
+});
 ```
 
 ### Parameters
@@ -2157,16 +2122,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleNewsLiveHtmlAsync(
-    new SerpGoogleNewsLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleNewsLiveHtmlAsync(new List<SerpGoogleNewsLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleNewsLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -2207,16 +2171,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleEventsTaskPostAsync(
-    new SerpGoogleEventsTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleEventsTaskPostAsync(new List<SerpGoogleEventsTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleEventsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -2381,16 +2344,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(
-    new SerpGoogleEventsLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(new List<SerpGoogleEventsLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleEventsLiveAdvancedRequestInfo()
-        {
-            Keyword = "concerts",
-            LocationName = "Los Angeles,California,United States",
-            DateRange = "today",
-        },
-    });
+        Keyword = "concerts",
+        LocationName = "Los Angeles,California,United States",
+        DateRange = "today",
+    }
+});
 ```
 
 ### Parameters
@@ -2431,16 +2393,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleImagesTaskPostAsync(
-    new SerpGoogleImagesTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleImagesTaskPostAsync(new List<SerpGoogleImagesTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleImagesTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -2647,16 +2608,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleImagesLiveAdvancedAsync(
-    new SerpGoogleImagesLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleImagesLiveAdvancedAsync(new List<SerpGoogleImagesLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleImagesLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -2697,16 +2657,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleImagesLiveHtmlAsync(
-    new SerpGoogleImagesLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleImagesLiveHtmlAsync(new List<SerpGoogleImagesLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleImagesLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -2747,16 +2706,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleSearchByImageTaskPostAsync(
-    new SerpGoogleSearchByImageTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleSearchByImageTaskPostAsync(new List<SerpGoogleSearchByImageTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleSearchByImageTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            ImageUrl = "https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        ImageUrl = "https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png",
+    }
+});
 ```
 
 ### Parameters
@@ -2921,24 +2879,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleJobsTaskPostAsync(
-    new SerpGoogleJobsTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleJobsTaskPostAsync(new List<SerpGoogleJobsTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleJobsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = ".net developer",
-        },
-        new SerpGoogleJobsTaskPostRequestInfo()
-        {
-            LanguageName = "English",
-            LocationName = "United States",
-            Keyword = ".net developer",
-            Tag = "some_string_123",
-            PingbackUrl = "https://your-server.com/pingscript?id=$id&tag=$tag",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = ".net developer",
+    }
+});
 ```
 
 ### Parameters
@@ -3145,17 +3094,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAutocompleteTaskPostAsync(
-    new SerpGoogleAutocompleteTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAutocompleteTaskPostAsync(new List<SerpGoogleAutocompleteTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAutocompleteTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-            CursorPointer = 6,
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+        CursorPointer = 6,
+    }
+});
 ```
 
 ### Parameters
@@ -3320,17 +3268,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(
-    new SerpGoogleAutocompleteLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(new List<SerpGoogleAutocompleteLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAutocompleteLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-            Client = "gws-wiz-serp",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+        Client = "gws-wiz-serp",
+    }
+});
 ```
 
 ### Parameters
@@ -3371,27 +3318,26 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(
-    new SerpGoogleDatasetSearchTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(new List<SerpGoogleDatasetSearchTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleDatasetSearchTaskPostRequestInfo()
-        {
-            Keyword = "water quality",
-            LastUpdated = "1m",
-            FileFormats = new string[]
+        Keyword = "water quality",
+        LastUpdated = "1m",
+        FileFormats = new List<string>()
         {
             "archive",
             "image",
         },
-            UsageRights = "noncommercial",
-            IsFree = true,
-            Topics = new string[]
+        UsageRights = "noncommercial",
+        IsFree = true,
+        Topics = new List<string>()
         {
             "natural_sciences",
             "geo",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3556,27 +3502,26 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(
-    new SerpGoogleDatasetSearchLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(new List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleDatasetSearchLiveAdvancedRequestInfo()
-        {
-            Keyword = "water quality",
-            LastUpdated = "1m",
-            FileFormats = new string[]
+        Keyword = "water quality",
+        LastUpdated = "1m",
+        FileFormats = new List<string>()
         {
             "archive",
             "image",
         },
-            UsageRights = "noncommercial",
-            IsFree = true,
-            Topics = new string[]
+        UsageRights = "noncommercial",
+        IsFree = true,
+        Topics = new List<string>()
         {
             "natural_sciences",
             "geo",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3617,14 +3562,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskPostAsync(
-    new SerpGoogleDatasetInfoTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleDatasetInfoTaskPostAsync(new List<SerpGoogleDatasetInfoTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleDatasetInfoTaskPostRequestInfo()
-        {
-            DatasetId = "L2cvMTFqbl85ZHN6MQ==",
-        },
-    });
+        DatasetId = "L2cvMTFqbl85ZHN6MQ==",
+    }
+});
 ```
 
 ### Parameters
@@ -3789,14 +3733,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(
-    new SerpGoogleDatasetInfoLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleDatasetInfoLiveAdvancedAsync(new List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleDatasetInfoLiveAdvancedRequestInfo()
-        {
-            DatasetId = "L2cvMTFqbl85ZHN6MQ==",
-        },
-    });
+        DatasetId = "L2cvMTFqbl85ZHN6MQ==",
+    }
+});
 ```
 
 ### Parameters
@@ -3878,15 +3821,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskPostAsync(
-    new SerpGoogleAdsAdvertisersTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAdsAdvertisersTaskPostAsync(new List<SerpGoogleAdsAdvertisersTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAdsAdvertisersTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            Keyword = "apple",
-        },
-    });
+        LocationCode = 2840,
+        Keyword = "apple",
+    }
+});
 ```
 
 ### Parameters
@@ -4051,20 +3993,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(
-    new SerpGoogleAdsSearchTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(new List<SerpGoogleAdsSearchTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleAdsSearchTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            Platform = "google_search",
-            AdvertiserIds = new string[]
+        LocationCode = 2840,
+        Platform = "google_search",
+        AdvertiserIds = new List<string>()
         {
             "AR13752565271262920705",
             "AR02439908557932462081",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -4312,16 +4253,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicTaskPostAsync(
-    new SerpBingOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.BingOrganicTaskPostAsync(new List<SerpBingOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpBingOrganicTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -4570,16 +4510,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicLiveRegularAsync(
-    new SerpBingOrganicLiveRegularRequestInfo[]
+var result = await dfsClient.SerpApi.BingOrganicLiveRegularAsync(new List<SerpBingOrganicLiveRegularRequestInfo>()
+{
+    new()
     {
-        new SerpBingOrganicLiveRegularRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -4620,16 +4559,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicLiveAdvancedAsync(
-    new SerpBingOrganicLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.BingOrganicLiveAdvancedAsync(new List<SerpBingOrganicLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpBingOrganicLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "flight ticket new york san francisco",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "flight ticket new york san francisco",
+    }
+});
 ```
 
 ### Parameters
@@ -4670,16 +4608,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(
-    new SerpBingOrganicLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.BingOrganicLiveHtmlAsync(new List<SerpBingOrganicLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpBingOrganicLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -4844,16 +4781,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(
-    new SerpYoutubeVideoInfoTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(new List<SerpYoutubeVideoInfoTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeVideoInfoTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            VideoId = "vQXvyV0zIP4",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        VideoId = "vQXvyV0zIP4",
+    }
+});
 ```
 
 ### Parameters
@@ -5018,16 +4954,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(
-    new SerpYoutubeVideoInfoLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeVideoInfoLiveAdvancedAsync(new List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeVideoInfoLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            VideoId = "vQXvyV0zIP4",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        VideoId = "vQXvyV0zIP4",
+    }
+});
 ```
 
 ### Parameters
@@ -5068,16 +5003,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeOrganicTaskPostAsync(
-    new SerpYoutubeOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeOrganicTaskPostAsync(new List<SerpYoutubeOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeOrganicTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "audi",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "audi",
+    }
+});
 ```
 
 ### Parameters
@@ -5242,16 +5176,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeOrganicLiveAdvancedAsync(
-    new SerpYoutubeOrganicLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeOrganicLiveAdvancedAsync(new List<SerpYoutubeOrganicLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeOrganicLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "audi",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "audi",
+    }
+});
 ```
 
 ### Parameters
@@ -5292,16 +5225,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(
-    new SerpYoutubeVideoSubtitlesTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(new List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            VideoId = "Y8Wu4rSNJms",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        VideoId = "Y8Wu4rSNJms",
+    }
+});
 ```
 
 ### Parameters
@@ -5466,16 +5398,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(
-    new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(new List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            VideoId = "Y8Wu4rSNJms",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        VideoId = "Y8Wu4rSNJms",
+    }
+});
 ```
 
 ### Parameters
@@ -5516,16 +5447,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(
-    new SerpYoutubeVideoCommentsTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(new List<SerpYoutubeVideoCommentsTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeVideoCommentsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            VideoId = "vQXvyV0zIP4",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        VideoId = "vQXvyV0zIP4",
+    }
+});
 ```
 
 ### Parameters
@@ -5690,16 +5620,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(
-    new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.YoutubeVideoCommentsLiveAdvancedAsync(new List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            VideoId = "vQXvyV0zIP4",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        VideoId = "vQXvyV0zIP4",
+    }
+});
 ```
 
 ### Parameters
@@ -5864,16 +5793,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicTaskPostAsync(
-    new SerpYahooOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.YahooOrganicTaskPostAsync(new List<SerpYahooOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpYahooOrganicTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -6122,16 +6050,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicLiveRegularAsync(
-    new SerpYahooOrganicLiveRegularRequestInfo[]
+var result = await dfsClient.SerpApi.YahooOrganicLiveRegularAsync(new List<SerpYahooOrganicLiveRegularRequestInfo>()
+{
+    new()
     {
-        new SerpYahooOrganicLiveRegularRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -6172,16 +6099,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicLiveAdvancedAsync(
-    new SerpYahooOrganicLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.YahooOrganicLiveAdvancedAsync(new List<SerpYahooOrganicLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpYahooOrganicLiveAdvancedRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -6222,16 +6148,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(
-    new SerpYahooOrganicLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.YahooOrganicLiveHtmlAsync(new List<SerpYahooOrganicLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpYahooOrganicLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -6396,17 +6321,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.BaiduOrganicTaskPostAsync(
-    new SerpBaiduOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.BaiduOrganicTaskPostAsync(new List<SerpBaiduOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpBaiduOrganicTaskPostRequestInfo()
-        {
-            LocationCode = 2156,
-            Keyword = "best iphone ever",
-            Tag = "some_string_123",
-            Priority = 2,
-        },
-    });
+        LocationCode = 2156,
+        Keyword = "best iphone ever",
+        Tag = "some_string_123",
+        Priority = 2,
+    }
+});
 ```
 
 ### Parameters
@@ -6655,18 +6579,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.NaverOrganicTaskPostAsync(
-    new SerpNaverOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.NaverOrganicTaskPostAsync(new List<SerpNaverOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpNaverOrganicTaskPostRequestInfo()
-        {
-            Keyword = "albert einstein",
-            Device = "desktop",
-            Tag = "some_string_123",
-            PostbackUrl = "https://your-server.com/postbackscript.php",
-            PostbackData = "regular",
-        },
-    });
+        Keyword = "albert einstein",
+        Device = "desktop",
+        Tag = "some_string_123",
+        PostbackUrl = "https://your-server.com/postbackscript.php",
+        PostbackData = "regular",
+    }
+});
 ```
 
 ### Parameters
@@ -7039,16 +6962,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.SeznamOrganicTaskPostAsync(
-    new SerpSeznamOrganicTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.SeznamOrganicTaskPostAsync(new List<SerpSeznamOrganicTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpSeznamOrganicTaskPostRequestInfo()
-        {
-            LanguageCode = "cs",
-            LocationCode = 2203,
-            Keyword = "albert einstein",
-        },
-    });
+        LanguageCode = "cs",
+        LocationCode = 2203,
+        Keyword = "albert einstein",
+    }
+});
 ```
 
 ### Parameters
@@ -7297,15 +7219,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(
-    new SerpGoogleFinanceExploreTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(new List<SerpGoogleFinanceExploreTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceExploreTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageName = "English",
-        },
-    });
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
 ### Parameters
@@ -7471,15 +7392,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(
-    new SerpGoogleFinanceExploreLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(new List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceExploreLiveAdvancedRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageName = "English",
-        },
-    });
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
 ### Parameters
@@ -7520,15 +7440,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveHtmlAsync(
-    new SerpGoogleFinanceExploreLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveHtmlAsync(new List<SerpGoogleFinanceExploreLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceExploreLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+    }
+});
 ```
 
 ### Parameters
@@ -7569,15 +7488,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(
-    new SerpGoogleFinanceMarketsTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(new List<SerpGoogleFinanceMarketsTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceMarketsTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageName = "English",
-        },
-    });
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
 ### Parameters
@@ -7743,15 +7661,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(
-    new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(new List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageName = "English",
-        },
-    });
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
 ### Parameters
@@ -7792,15 +7709,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveHtmlAsync(
-    new SerpGoogleFinanceMarketsLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveHtmlAsync(new List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceMarketsLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+    }
+});
 ```
 
 ### Parameters
@@ -7841,16 +7757,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(
-    new SerpGoogleFinanceQuoteTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(new List<SerpGoogleFinanceQuoteTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceQuoteTaskPostRequestInfo()
-        {
-            Keyword = ".DJI:INDEXDJX",
-            LocationCode = 2840,
-            LanguageName = "English",
-        },
-    });
+        Keyword = ".DJI:INDEXDJX",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
 ### Parameters
@@ -8016,16 +7931,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(
-    new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(new List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo()
-        {
-            Keyword = "CLW00:NYMEX",
-            LocationCode = 2840,
-            LanguageName = "English",
-        },
-    });
+        Keyword = "CLW00:NYMEX",
+        LocationCode = 2840,
+        LanguageName = "English",
+    }
+});
 ```
 
 ### Parameters
@@ -8066,16 +7980,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveHtmlAsync(
-    new SerpGoogleFinanceQuoteLiveHtmlRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveHtmlAsync(new List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceQuoteLiveHtmlRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "NASDAQ-100",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "NASDAQ-100",
+    }
+});
 ```
 
 ### Parameters
@@ -8116,18 +8029,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(
-    new SerpGoogleFinanceTickerSearchTaskPostRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(new List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceTickerSearchTaskPostRequestInfo()
-        {
-            LanguageName = "English",
-            LocationCode = 2840,
-            Category = "all",
-            Keyword = "DJ",
-            Priority = 2,
-        },
-    });
+        LanguageName = "English",
+        LocationCode = 2840,
+        Category = "all",
+        Keyword = "DJ",
+        Priority = 2,
+    }
+});
 ```
 
 ### Parameters
@@ -8251,17 +8163,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(
-    new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo[]
+var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(new List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>()
+{
+    new()
     {
-        new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo()
-        {
-            LanguageName = "English",
-            LocationCode = 2840,
-            Category = "all",
-            Keyword = "DJ",
-        },
-    });
+        LanguageName = "English",
+        LocationCode = 2840,
+        Category = "all",
+        Keyword = "DJ",
+    }
+});
 ```
 
 ### Parameters

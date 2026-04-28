@@ -59,19 +59,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppDataIdListAsync(
-    new AppDataIdListRequestInfo[]
+var result = await dfsClient.AppDataApi.AppDataIdListAsync(new List<AppDataIdListRequestInfo>()
+{
+    new()
     {
-        new AppDataIdListRequestInfo()
-        {
-            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
-            DatetimeTo = "2026-04-14 04:39:39 +00:00",
-            Limit = 100,
-            Offset = 0,
-            Sort = "desc",
-            IncludeMetadata = true,
-        },
-    });
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+        IncludeMetadata = true,
+    }
+});
 ```
 
 ### Parameters
@@ -112,16 +109,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppDataErrorsAsync(
-    new AppDataErrorsRequestInfo[]
+var result = await dfsClient.AppDataApi.AppDataErrorsAsync(new List<AppDataErrorsRequestInfo>()
+{
+    new()
     {
-        new AppDataErrorsRequestInfo()
-        {
-            Limit = 10,
-            Offset = 0,
-            FilteredFunction = "pingback_url",
-        },
-    });
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
 
 ### Parameters
@@ -327,17 +323,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskPostAsync(
-    new AppDataGoogleAppSearchesTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.GoogleAppSearchesTaskPostAsync(new List<AppDataGoogleAppSearchesTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataGoogleAppSearchesTaskPostRequestInfo()
-        {
-            Keyword = "vpn",
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Depth = 30,
-        },
-    });
+        Keyword = "vpn",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 30,
+    }
+});
 ```
 
 ### Parameters
@@ -544,17 +539,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.GoogleAppListTaskPostAsync(
-    new AppDataGoogleAppListTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.GoogleAppListTaskPostAsync(new List<AppDataGoogleAppListTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataGoogleAppListTaskPostRequestInfo()
-        {
-            AppCollection = "topselling_free",
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Depth = 100,
-        },
-    });
+        AppCollection = "topselling_free",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 100,
+    }
+});
 ```
 
 ### Parameters
@@ -720,16 +714,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.GoogleAppInfoTaskPostAsync(
-    new AppDataGoogleAppInfoTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.GoogleAppInfoTaskPostAsync(new List<AppDataGoogleAppInfoTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataGoogleAppInfoTaskPostRequestInfo()
-        {
-            AppId = "org.telegram.messenger",
-            LocationCode = 2840,
-            LanguageCode = "en",
-        },
-    });
+        AppId = "org.telegram.messenger",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
 ### Parameters
@@ -895,17 +888,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskPostAsync(
-    new AppDataGoogleAppReviewsTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.GoogleAppReviewsTaskPostAsync(new List<AppDataGoogleAppReviewsTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataGoogleAppReviewsTaskPostRequestInfo()
-        {
-            AppId = "org.telegram.messenger",
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Depth = 150,
-        },
-    });
+        AppId = "org.telegram.messenger",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 150,
+    }
+});
 ```
 
 ### Parameters
@@ -1112,33 +1104,32 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.GoogleAppListingsSearchLiveAsync(
-    new AppDataGoogleAppListingsSearchLiveRequestInfo[]
+var result = await dfsClient.AppDataApi.GoogleAppListingsSearchLiveAsync(new List<AppDataGoogleAppListingsSearchLiveRequestInfo>()
+{
+    new()
     {
-        new AppDataGoogleAppListingsSearchLiveRequestInfo()
-        {
-            Title = "vpn",
-            Description = "vpn",
-            Categories = new string[]
+        Title = "vpn",
+        Description = "vpn",
+        Categories = new List<string>()
         {
             "Tools",
         },
-            OrderBy = new string[]
+        OrderBy = new List<string>()
         {
             "item.installs_count,asc",
         },
-            Filters = new object[]
+        Filters = new List<object>()
         {
-            new object[]
+            new List<object>()
             {
                 "item.rating.value",
                 ">",
                 4.5,
             },
         },
-            Limit = 10,
-        },
-    });
+        Limit = 10,
+    }
+});
 ```
 
 ### Parameters
@@ -1302,17 +1293,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppleAppSearchesTaskPostAsync(
-    new AppDataAppleAppSearchesTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.AppleAppSearchesTaskPostAsync(new List<AppDataAppleAppSearchesTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataAppleAppSearchesTaskPostRequestInfo()
-        {
-            Keyword = "vpn",
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Depth = 200,
-        },
-    });
+        Keyword = "vpn",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 200,
+    }
+});
 ```
 
 ### Parameters
@@ -1436,16 +1426,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppleAppInfoTaskPostAsync(
-    new AppDataAppleAppInfoTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.AppleAppInfoTaskPostAsync(new List<AppDataAppleAppInfoTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataAppleAppInfoTaskPostRequestInfo()
-        {
-            AppId = "835599320",
-            LocationCode = 2840,
-            LanguageCode = "en",
-        },
-    });
+        AppId = "835599320",
+        LocationCode = 2840,
+        LanguageCode = "en",
+    }
+});
 ```
 
 ### Parameters
@@ -1569,18 +1558,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppleAppListTaskPostAsync(
-    new AppDataAppleAppListTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.AppleAppListTaskPostAsync(new List<AppDataAppleAppListTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataAppleAppListTaskPostRequestInfo()
-        {
-            AppCollection = "top_free_ios",
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Depth = 200,
-            AppCategory = "games",
-        },
-    });
+        AppCollection = "top_free_ios",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 200,
+        AppCategory = "games",
+    }
+});
 ```
 
 ### Parameters
@@ -1704,17 +1692,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppleAppReviewsTaskPostAsync(
-    new AppDataAppleAppReviewsTaskPostRequestInfo[]
+var result = await dfsClient.AppDataApi.AppleAppReviewsTaskPostAsync(new List<AppDataAppleAppReviewsTaskPostRequestInfo>()
+{
+    new()
     {
-        new AppDataAppleAppReviewsTaskPostRequestInfo()
-        {
-            AppId = "835599320",
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Depth = 200,
-        },
-    });
+        AppId = "835599320",
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Depth = 200,
+    }
+});
 ```
 
 ### Parameters
@@ -1879,33 +1866,32 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(
-    new AppDataAppleAppListingsSearchLiveRequestInfo[]
+var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(new List<AppDataAppleAppListingsSearchLiveRequestInfo>()
+{
+    new()
     {
-        new AppDataAppleAppListingsSearchLiveRequestInfo()
-        {
-            Title = "vpn",
-            Description = "vpn",
-            Categories = new string[]
+        Title = "vpn",
+        Description = "vpn",
+        Categories = new List<string>()
         {
             "Tools",
         },
-            OrderBy = new string[]
+        OrderBy = new List<string>()
         {
             "item.rating.value,desc",
         },
-            Filters = new object[]
+        Filters = new List<object>()
         {
-            new object[]
+            new List<object>()
             {
                 "item.rating.value",
                 ">",
                 4.5,
             },
         },
-            Limit = 2,
-        },
-    });
+        Limit = 2,
+    }
+});
 ```
 
 ### Parameters

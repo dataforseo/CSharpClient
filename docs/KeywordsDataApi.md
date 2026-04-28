@@ -87,19 +87,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.KeywordsDataIdListAsync(
-    new KeywordsDataIdListRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.KeywordsDataIdListAsync(new List<KeywordsDataIdListRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataIdListRequestInfo()
-        {
-            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
-            DatetimeTo = "2026-04-14 04:39:39 +00:00",
-            Limit = 100,
-            Offset = 0,
-            Sort = "desc",
-            IncludeMetadata = true,
-        },
-    });
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+        IncludeMetadata = true,
+    }
+});
 ```
 
 ### Parameters
@@ -140,16 +137,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.KeywordsDataErrorsAsync(
-    new KeywordsDataErrorsRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.KeywordsDataErrorsAsync(new List<KeywordsDataErrorsRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataErrorsRequestInfo()
-        {
-            Limit = 10,
-            Offset = 0,
-            FilteredFunction = "pingback_url",
-        },
-    });
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
 
 ### Parameters
@@ -355,20 +351,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeTaskPostAsync(
-    new KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeTaskPostAsync(new List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo()
-        {
-            LocationName = "United States",
-            Keywords = new string[]
+        LocationName = "United States",
+        Keywords = new List<string>()
         {
             "buy laptop",
             "cheap laptops for sale",
             "purchase laptop",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -492,22 +487,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(
-    new KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(new List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            Keywords = new string[]
+        LocationCode = 2840,
+        Keywords = new List<string>()
         {
             "buy laptop",
             "cheap laptops for sale",
             "purchase laptop",
         },
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            SearchPartners = true,
-        },
-    });
+        SearchPartners = true,
+    }
+});
 ```
 
 ### Parameters
@@ -548,15 +541,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForSiteTaskPostAsync(
-    new KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForSiteTaskPostAsync(new List<KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            Target = "dataforseo.com",
-        },
-    });
+        LocationCode = 2840,
+        Target = "dataforseo.com",
+    }
+});
 ```
 
 ### Parameters
@@ -680,15 +672,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForSiteLiveAsync(
-    new KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForSiteLiveAsync(new List<KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            Target = "dataforseo.com",
-        },
-    });
+        LocationCode = 2840,
+        Target = "dataforseo.com",
+    }
+});
 ```
 
 ### Parameters
@@ -729,19 +720,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForKeywordsTaskPostAsync(
-    new KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForKeywordsTaskPostAsync(new List<KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            Keywords = new string[]
+        LocationCode = 2840,
+        Keywords = new List<string>()
         {
             "phone",
             "cellphone",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -865,19 +855,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForKeywordsLiveAsync(
-    new KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsKeywordsForKeywordsLiveAsync(new List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            Keywords = new string[]
+        LocationCode = 2840,
+        Keywords = new List<string>()
         {
             "phone",
             "cellphone",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -918,21 +907,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsAdTrafficByKeywordsTaskPostAsync(
-    new KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsAdTrafficByKeywordsTaskPostAsync(new List<KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Bid = 999,
-            Match = "exact",
-            Keywords = new string[]
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Bid = 999,
+        Match = "exact",
+        Keywords = new List<string>()
         {
             "seo marketing",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1056,21 +1044,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleAdsAdTrafficByKeywordsLiveAsync(
-    new KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleAdsAdTrafficByKeywordsLiveAsync(new List<KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Bid = 999,
-            Match = "exact",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Bid = 999,
+        Match = "exact",
+        Keywords = new List<string>()
         {
             "seo marketing",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1276,22 +1263,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(
-    new KeywordsDataGoogleTrendsExploreTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(new List<KeywordsDataGoogleTrendsExploreTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleTrendsExploreTaskPostRequestInfo()
-        {
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            Type = "youtube",
-            CategoryCode = 3,
-            Keywords = new string[]
+        Type = "youtube",
+        CategoryCode = 3,
+        Keywords = new List<string>()
         {
             "seo api",
             "rank api",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1415,23 +1399,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(
-    new KeywordsDataGoogleTrendsExploreLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(new List<KeywordsDataGoogleTrendsExploreLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataGoogleTrendsExploreLiveRequestInfo()
-        {
-            LocationName = "United States",
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            Type = "youtube",
-            CategoryCode = 3,
-            Keywords = new string[]
+        LocationName = "United States",
+        Type = "youtube",
+        CategoryCode = 3,
+        Keywords = new List<string>()
         {
             "rugby",
             "cricket",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1555,19 +1536,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.DataforseoTrendsExploreLiveAsync(
-    new KeywordsDataDataforseoTrendsExploreLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.DataforseoTrendsExploreLiveAsync(new List<KeywordsDataDataforseoTrendsExploreLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataDataforseoTrendsExploreLiveRequestInfo()
-        {
-            Keywords = new string[]
+        Keywords = new List<string>()
         {
             "iphone 14",
             "samsung s23",
         },
-            LocationCode = 2840,
-        },
-    });
+        LocationCode = 2840,
+    }
+});
 ```
 
 ### Parameters
@@ -1608,22 +1588,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.DataforseoTrendsSubregionInterestsLiveAsync(
-    new KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.DataforseoTrendsSubregionInterestsLiveAsync(new List<KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo()
-        {
-            Keywords = new string[]
+        Keywords = new List<string>()
         {
             "rugby",
             "cricket",
         },
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            Type = "web",
-            LocationName = "United States",
-        },
-    });
+        Type = "web",
+        LocationName = "United States",
+    }
+});
 ```
 
 ### Parameters
@@ -1664,22 +1641,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.DataforseoTrendsDemographyLiveAsync(
-    new KeywordsDataDataforseoTrendsDemographyLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.DataforseoTrendsDemographyLiveAsync(new List<KeywordsDataDataforseoTrendsDemographyLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataDataforseoTrendsDemographyLiveRequestInfo()
-        {
-            Keywords = new string[]
+        Keywords = new List<string>()
         {
             "rugby",
             "cricket",
         },
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            Type = "web",
-            LocationName = "United States",
-        },
-    });
+        Type = "web",
+        LocationName = "United States",
+    }
+});
 ```
 
 ### Parameters
@@ -1720,22 +1694,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.DataforseoTrendsMergedDataLiveAsync(
-    new KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.DataforseoTrendsMergedDataLiveAsync(new List<KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo()
-        {
-            Keywords = new string[]
+        Keywords = new List<string>()
         {
             "rugby",
             "cricket",
         },
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            Type = "web",
-            LocationName = "United States",
-        },
-    });
+        Type = "web",
+        LocationName = "United States",
+    }
+});
 ```
 
 ### Parameters
@@ -1858,21 +1829,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingSearchVolumeTaskPostAsync(
-    new KeywordsDataBingSearchVolumeTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingSearchVolumeTaskPostAsync(new List<KeywordsDataBingSearchVolumeTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingSearchVolumeTaskPostRequestInfo()
-        {
-            LocationName = "United States",
-            LanguageName = "English",
-            Keywords = new string[]
+        LocationName = "United States",
+        LanguageName = "English",
+        Keywords = new List<string>()
         {
             "average page rpm adsense",
             "adsense blank ads how long",
             "leads and prospects",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1996,21 +1966,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingSearchVolumeLiveAsync(
-    new KeywordsDataBingSearchVolumeLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingSearchVolumeLiveAsync(new List<KeywordsDataBingSearchVolumeLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingSearchVolumeLiveRequestInfo()
-        {
-            LocationName = "United States",
-            LanguageCode = "en",
-            Keywords = new string[]
+        LocationName = "United States",
+        LanguageCode = "en",
+        Keywords = new List<string>()
         {
             "tom and jerry",
             "silicon valley",
             "spider man",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -2133,35 +2102,34 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingAudienceEstimationTaskPostAsync(
-    new KeywordsDataBingAudienceEstimationTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingAudienceEstimationTaskPostAsync(new List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingAudienceEstimationTaskPostRequestInfo()
-        {
-            LocationCoordinate = "29.6821525,-82.4098881,100",
-            Age = new string[]
+        LocationCoordinate = "29.6821525,-82.4098881,100",
+        Age = new List<string>()
         {
             "twenty_five_to_thirty_four",
             "eighteen_to_twenty_four",
             "unknown",
         },
-            Bid = 1,
-            DailyBudget = 24,
-            Gender = new string[]
+        Bid = 1,
+        DailyBudget = 24,
+        Gender = new List<string>()
         {
             "male",
         },
-            Industry = new string[]
+        Industry = new List<string>()
         {
             "806303407",
             "806301758",
         },
-            JobFunction = new string[]
+        JobFunction = new List<string>()
         {
             "806298607",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -2285,35 +2253,34 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingAudienceEstimationLiveAsync(
-    new KeywordsDataBingAudienceEstimationLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingAudienceEstimationLiveAsync(new List<KeywordsDataBingAudienceEstimationLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingAudienceEstimationLiveRequestInfo()
-        {
-            LocationCoordinate = "29.6821525,-82.4098881,100",
-            Age = new string[]
+        LocationCoordinate = "29.6821525,-82.4098881,100",
+        Age = new List<string>()
         {
             "twenty_five_to_thirty_four",
             "eighteen_to_twenty_four",
             "unknown",
         },
-            Bid = 1,
-            DailyBudget = 24,
-            Gender = new string[]
+        Bid = 1,
+        DailyBudget = 24,
+        Gender = new List<string>()
         {
             "male",
         },
-            Industry = new string[]
+        Industry = new List<string>()
         {
             "806303407",
             "806301758",
         },
-            JobFunction = new string[]
+        JobFunction = new List<string>()
         {
             "806298607",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -2354,16 +2321,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingKeywordsForSiteTaskPostAsync(
-    new KeywordsDataBingKeywordsForSiteTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingKeywordsForSiteTaskPostAsync(new List<KeywordsDataBingKeywordsForSiteTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingKeywordsForSiteTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Target = "dataforseo.com",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Target = "dataforseo.com",
+    }
+});
 ```
 
 ### Parameters
@@ -2487,16 +2453,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingKeywordsForSiteLiveAsync(
-    new KeywordsDataBingKeywordsForSiteLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingKeywordsForSiteLiveAsync(new List<KeywordsDataBingKeywordsForSiteLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingKeywordsForSiteLiveRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Target = "dataforseo.com",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Target = "dataforseo.com",
+    }
+});
 ```
 
 ### Parameters
@@ -2537,21 +2502,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingKeywordsForKeywordsTaskPostAsync(
-    new KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingKeywordsForKeywordsTaskPostAsync(new List<KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Keywords = new List<string>()
         {
             "average page rpm adsense",
             "adsense blank ads how long",
             "leads and prospects",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -2675,21 +2639,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingKeywordsForKeywordsLiveAsync(
-    new KeywordsDataBingKeywordsForKeywordsLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingKeywordsForKeywordsLiveAsync(new List<KeywordsDataBingKeywordsForKeywordsLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingKeywordsForKeywordsLiveRequestInfo()
-        {
-            LocationName = "United States",
-            LanguageName = "English",
-            Keywords = new string[]
+        LocationName = "United States",
+        LanguageName = "English",
+        Keywords = new List<string>()
         {
             "average page rpm adsense",
             "adsense blank ads how long",
             "leads and prospects",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -2771,21 +2734,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingKeywordPerformanceTaskPostAsync(
-    new KeywordsDataBingKeywordPerformanceTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingKeywordPerformanceTaskPostAsync(new List<KeywordsDataBingKeywordPerformanceTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingKeywordPerformanceTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Keywords = new List<string>()
         {
             "dataforseo",
             "seo",
             "ranking",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -2909,21 +2871,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingKeywordPerformanceLiveAsync(
-    new KeywordsDataBingKeywordPerformanceLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingKeywordPerformanceLiveAsync(new List<KeywordsDataBingKeywordPerformanceLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingKeywordPerformanceLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Keywords = new List<string>()
         {
             "dataforseo",
             "seo",
             "ranking",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3005,19 +2966,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingSearchVolumeHistoryTaskPostAsync(
-    new KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingSearchVolumeHistoryTaskPostAsync(new List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Keywords = new List<string>()
         {
             "10 minute timer",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3141,19 +3101,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.BingSearchVolumeHistoryLiveAsync(
-    new KeywordsDataBingSearchVolumeHistoryLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.BingSearchVolumeHistoryLiveAsync(new List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataBingSearchVolumeHistoryLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Keywords = new List<string>()
         {
             "10 minute timer",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3235,22 +3194,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.ClickstreamDataDataforseoSearchVolumeLiveAsync(
-    new KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.ClickstreamDataDataforseoSearchVolumeLiveAsync(new List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            LanguageCode = "en",
-            Tag = "test-tag",
-            Keywords = new string[]
+        LocationCode = 2840,
+        LanguageCode = "en",
+        Tag = "test-tag",
+        Keywords = new List<string>()
         {
             "you tube",
             "youtube",
             "youtub",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3291,20 +3249,19 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.ClickstreamDataGlobalSearchVolumeLiveAsync(
-    new KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.ClickstreamDataGlobalSearchVolumeLiveAsync(new List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo()
-        {
-            Tag = "test-tag",
-            Keywords = new string[]
+        Tag = "test-tag",
+        Keywords = new List<string>()
         {
             "you tube",
             "youtube",
             "youtub",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -3345,21 +3302,20 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.KeywordsDataApi.ClickstreamDataBulkSearchVolumeLiveAsync(
-    new KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo[]
+var result = await dfsClient.KeywordsDataApi.ClickstreamDataBulkSearchVolumeLiveAsync(new List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo>()
+{
+    new()
     {
-        new KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo()
-        {
-            LocationCode = 2840,
-            Tag = "test-tag",
-            Keywords = new string[]
+        LocationCode = 2840,
+        Tag = "test-tag",
+        Keywords = new List<string>()
         {
             "you tube",
             "youtube",
             "youtub",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters

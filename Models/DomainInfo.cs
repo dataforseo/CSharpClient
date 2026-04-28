@@ -99,6 +99,14 @@ namespace DataForSeo.Client.Models
         public long? TotalPages { get; set; }
 
         /// <summary>
+        /// total uncrawlable resources
+        /// <br/>the total number of resources that could not be crawled;
+        /// <br/>the resource is considered uncrawlable when the actual content type of the resource doesn’t match the content type expected by the crawler
+        /// </summary>
+        [JsonProperty("total_uncrawlable_resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? TotalUncrawlableResources { get; set; }
+
+        /// <summary>
         /// status code returned by a non-existent page
         /// <br/>in most cases, it is recommended a server returns a 404 response code
         /// </summary>

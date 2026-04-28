@@ -51,6 +51,48 @@ namespace DataForSeo.Client.Models.Requests
         public string LanguageCode { get; set; }
 
         /// <summary>
+        /// custom user agentoptional fieldspecify the custom user agent used by the browser when running the Lighthouse audit;can be specified with up to 254 characters;
+        /// </summary>
+        [JsonProperty("custom_user_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string CustomUserAgent { get; set; }
+
+        /// <summary>
+        /// browser screen widthoptional fieldset the screen width of the browser used for the Lighthouse audit to emulate a specific device;can be specified within the following range: 240–9999;
+        /// </summary>
+        [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? BrowserScreenWidth { get; set; }
+
+        /// <summary>
+        /// browser screen heightoptional fieldset the screen height of the browser used for the Lighthouse audit to emulate a specific device;can be specified within the following range: 240–9999;
+        /// </summary>
+        [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? BrowserScreenHeight { get; set; }
+
+        /// <summary>
+        /// browser screen scale factoroptional fieldset the device pixel ratio of the browser used for the Lighthouse audit;can be specified within the following range: 0.5–3;
+        /// </summary>
+        [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? BrowserScreenScaleFactor { get; set; }
+
+        /// <summary>
+        /// browser network throttling methodoptional fielddefines the method used to apply throttling during the Lighthouse audit;possible vaules:simulate - calculates estimated performance metrics without applying explicit throttling;devtools -  applies the throttling settings specified in browser_network_throttling and browser_cpu_throttling_multiplier;provided - uses the network conditions of the crawling environment;
+        /// </summary>
+        [JsonProperty("browser_network_throttling_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string BrowserNetworkThrottlingMethod { get; set; }
+
+        /// <summary>
+        /// browser CPU throttling multiplierrequired if browser_network_throttling_method is set to devtools;set the CPU throttling multiplier to simulate device performance conditions during the Lighthouse audit;can be specified within the following range: 1–4;Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+        /// </summary>
+        [JsonProperty("browser_cpu_throttling_multiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? BrowserCpuThrottlingMultiplier { get; set; }
+
+        /// <summary>
+        /// browser network throttlingrequired if browser_network_throttling_method is set to devtools;set the network throttling profile to simulate connection speed conditions during the Lighthouse audit;possible values: no_throttling, fast_4g, slow_4g, regular_3g, pc;Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+        /// </summary>
+        [JsonProperty("browser_network_throttling", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string BrowserNetworkThrottling { get; set; }
+
+        /// <summary>
         /// user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -54,6 +54,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("is_paid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsPaid { get; set; }
+        [JsonProperty("official_site", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? OfficialSite { get; set; }
 
         /// <summary>
         /// date until which free cancellation is available

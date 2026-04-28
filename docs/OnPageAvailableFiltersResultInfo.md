@@ -12,4 +12,4 @@
 **PagesByResource** | **IDictionary<string, string>** |  |[optional]|
 **RedirectChains** | **IDictionary<string, string>** |  |[optional]|
 **KeywordDensity** | **IDictionary<string, string>** |  |[optional]|
-**InvalidResources** | **IDictionary<string, string>** |  |[optional]|
+**UncrawlableResources** | **IDictionary<string, string>** |  |[optional]|

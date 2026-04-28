@@ -49,19 +49,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.MerchantIdListAsync(
-    new MerchantIdListRequestInfo[]
+var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantIdListRequestInfo>()
+{
+    new()
     {
-        new MerchantIdListRequestInfo()
-        {
-            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
-            DatetimeTo = "2026-04-14 04:39:39 +00:00",
-            Limit = 100,
-            Offset = 0,
-            Sort = "desc",
-            IncludeMetadata = true,
-        },
-    });
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+        IncludeMetadata = true,
+    }
+});
 ```
 
 ### Parameters
@@ -102,16 +99,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.MerchantErrorsAsync(
-    new MerchantErrorsRequestInfo[]
+var result = await dfsClient.MerchantApi.MerchantErrorsAsync(new List<MerchantErrorsRequestInfo>()
+{
+    new()
     {
-        new MerchantErrorsRequestInfo()
-        {
-            Limit = 10,
-            Offset = 0,
-            FilteredFunction = "pingback_url",
-        },
-    });
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "pingback_url",
+    }
+});
 ```
 
 ### Parameters
@@ -276,17 +272,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(
-    new MerchantGoogleProductsTaskPostRequestInfo[]
+var result = await dfsClient.MerchantApi.GoogleProductsTaskPostAsync(new List<MerchantGoogleProductsTaskPostRequestInfo>()
+{
+    new()
     {
-        new MerchantGoogleProductsTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            Keyword = "iphone",
-            PriceMin = 5,
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Keyword = "iphone",
+        PriceMin = 5,
+    }
+});
 ```
 
 ### Parameters
@@ -493,16 +488,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.GoogleSellersTaskPostAsync(
-    new MerchantGoogleSellersTaskPostRequestInfo[]
+var result = await dfsClient.MerchantApi.GoogleSellersTaskPostAsync(new List<MerchantGoogleSellersTaskPostRequestInfo>()
+{
+    new()
     {
-        new MerchantGoogleSellersTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            ProductId = "1113158713975221117",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        ProductId = "1113158713975221117",
+    }
+});
 ```
 
 ### Parameters
@@ -626,16 +620,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.GoogleProductInfoTaskPostAsync(
-    new MerchantGoogleProductInfoTaskPostRequestInfo[]
+var result = await dfsClient.MerchantApi.GoogleProductInfoTaskPostAsync(new List<MerchantGoogleProductInfoTaskPostRequestInfo>()
+{
+    new()
     {
-        new MerchantGoogleProductInfoTaskPostRequestInfo()
-        {
-            LanguageCode = "en",
-            LocationCode = 2840,
-            ProductId = "1113158713975221117",
-        },
-    });
+        LanguageCode = "en",
+        LocationCode = 2840,
+        ProductId = "1113158713975221117",
+    }
+});
 ```
 
 ### Parameters
@@ -925,16 +918,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonProductsTaskPostAsync(
-    new MerchantAmazonProductsTaskPostRequestInfo[]
+var result = await dfsClient.MerchantApi.AmazonProductsTaskPostAsync(new List<MerchantAmazonProductsTaskPostRequestInfo>()
+{
+    new()
     {
-        new MerchantAmazonProductsTaskPostRequestInfo()
-        {
-            LanguageCode = "en_US",
-            LocationCode = 2840,
-            Keyword = "shoes",
-        },
-    });
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Keyword = "shoes",
+    }
+});
 ```
 
 ### Parameters
@@ -1100,16 +1092,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonAsinTaskPostAsync(
-    new MerchantAmazonAsinTaskPostRequestInfo[]
+var result = await dfsClient.MerchantApi.AmazonAsinTaskPostAsync(new List<MerchantAmazonAsinTaskPostRequestInfo>()
+{
+    new()
     {
-        new MerchantAmazonAsinTaskPostRequestInfo()
-        {
-            LanguageCode = "en_US",
-            LocationCode = 2840,
-            Asin = "B0756FCPPN",
-        },
-    });
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Asin = "B0756FCPPN",
+    }
+});
 ```
 
 ### Parameters
@@ -1275,16 +1266,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(
-    new MerchantAmazonSellersTaskPostRequestInfo[]
+var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(new List<MerchantAmazonSellersTaskPostRequestInfo>()
+{
+    new()
     {
-        new MerchantAmazonSellersTaskPostRequestInfo()
-        {
-            LanguageCode = "en_US",
-            LocationCode = 2840,
-            Asin = "B085RFFC9Q",
-        },
-    });
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Asin = "B085RFFC9Q",
+    }
+});
 ```
 
 ### Parameters

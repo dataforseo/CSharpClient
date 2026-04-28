@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         public long? ReviewsCount { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the element’s rating
         /// <br/>the popularity rate based on reviews and displayed in SERP;
         /// <br/>if there is none, equals null
         /// </summary>

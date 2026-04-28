@@ -28,19 +28,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(
-    new ContentAnalysisIdListRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new List<ContentAnalysisIdListRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisIdListRequestInfo()
-        {
-            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
-            DatetimeTo = "2026-04-14 04:39:39 +00:00",
-            Limit = 100,
-            Offset = 0,
-            Sort = "desc",
-            IncludeMetadata = true,
-        },
-    });
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+        IncludeMetadata = true,
+    }
+});
 ```
 
 ### Parameters
@@ -245,17 +242,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(
-    new ContentAnalysisSearchLiveRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<ContentAnalysisSearchLiveRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisSearchLiveRequestInfo()
-        {
-            KeywordFields = new Dictionary<string, string>()
+        KeywordFields = new Dictionary<string, string>()
         {
             ["Snippet"] = "logitech",
         },
-            Keyword = "logitech",
-            PageType = new string[]
+        Keyword = "logitech",
+        PageType = new List<string>()
         {
             "ecommerce",
             "news",
@@ -263,20 +259,20 @@ var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(
             "message-boards",
             "organization",
         },
-            SearchMode = "as_is",
-            Filters = new object[]
+        SearchMode = "as_is",
+        Filters = new List<object>()
         {
             "main_domain",
             "=",
             "reviewfinder.ca",
         },
-            OrderBy = new string[]
+        OrderBy = new List<string>()
         {
             "content_info.sentiment_connotations.anger,desc",
         },
-            Limit = 10,
-        },
-    });
+        Limit = 10,
+    }
+});
 ```
 
 ### Parameters
@@ -317,13 +313,12 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(
-    new ContentAnalysisSummaryLiveRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(new List<ContentAnalysisSummaryLiveRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisSummaryLiveRequestInfo()
-        {
-            Keyword = "logitech",
-            PageType = new string[]
+        Keyword = "logitech",
+        PageType = new List<string>()
         {
             "ecommerce",
             "news",
@@ -331,10 +326,10 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisSummaryLiveAsync(
             "message-boards",
             "organization",
         },
-            InternalListLimit = 8,
-            PositiveConnotationThreshold = 0.5,
-        },
-    });
+        InternalListLimit = 8,
+        PositiveConnotationThreshold = 0.5,
+    }
+});
 ```
 
 ### Parameters
@@ -375,15 +370,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.SentimentAnalysisLiveAsync(
-    new ContentAnalysisSentimentAnalysisLiveRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.SentimentAnalysisLiveAsync(new List<ContentAnalysisSentimentAnalysisLiveRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisSentimentAnalysisLiveRequestInfo()
-        {
-            Keyword = "logitech",
-            InternalListLimit = 1,
-        },
-    });
+        Keyword = "logitech",
+        InternalListLimit = 1,
+    }
+});
 ```
 
 ### Parameters
@@ -424,16 +418,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(
-    new ContentAnalysisRatingDistributionLiveRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.RatingDistributionLiveAsync(new List<ContentAnalysisRatingDistributionLiveRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisRatingDistributionLiveRequestInfo()
-        {
-            Keyword = "logitech",
-            SearchMode = "as_is",
-            InternalListLimit = 10,
-        },
-    });
+        Keyword = "logitech",
+        SearchMode = "as_is",
+        InternalListLimit = 10,
+    }
+});
 ```
 
 ### Parameters
@@ -474,17 +467,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(
-    new ContentAnalysisPhraseTrendsLiveRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<ContentAnalysisPhraseTrendsLiveRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisPhraseTrendsLiveRequestInfo()
-        {
-            Keyword = "logitech",
-            SearchMode = "as_is",
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateGroup = "month",
-        },
-    });
+        Keyword = "logitech",
+        SearchMode = "as_is",
+        DateGroup = "month",
+    }
+});
 ```
 
 ### Parameters
@@ -525,17 +516,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(
-    new ContentAnalysisCategoryTrendsLiveRequestInfo[]
+var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List<ContentAnalysisCategoryTrendsLiveRequestInfo>()
+{
+    new()
     {
-        new ContentAnalysisCategoryTrendsLiveRequestInfo()
-        {
-            CategoryCode = 10994,
-            SearchMode = "as_is",
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateGroup = "month",
-        },
-    });
+        CategoryCode = 10994,
+        SearchMode = "as_is",
+        DateGroup = "month",
+    }
+});
 ```
 
 ### Parameters

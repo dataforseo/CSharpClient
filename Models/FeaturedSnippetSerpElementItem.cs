@@ -18,8 +18,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// absolute rank in SERP
-        /// <br/>absolute position among all the elements found in SERP
-        /// <br/>note values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+        /// <br/>absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
         /// <br/>to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

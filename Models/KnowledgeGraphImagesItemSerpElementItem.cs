@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         public LinkElement Link { get; set; }
 
         /// <summary>
-        /// contains arrays of elements available in the list
+        /// contains arrays of specific images
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<KnowledgeGraphImagesElement> Items { get; set; }

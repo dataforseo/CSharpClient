@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// title of a given link element
+        /// reference page title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -68,7 +68,7 @@ namespace DataForSeo.Client.Models
         public bool? IsPaid { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the element’s rating
         /// <br/>the popularity rate based on reviews and displayed in SERP;
         /// <br/>if there is none, equals null
         /// </summary>

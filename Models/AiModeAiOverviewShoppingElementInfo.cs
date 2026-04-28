@@ -13,21 +13,33 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Type { get; set; }
+
+        /// <summary>
+        /// unique product identifier on Google Shoppinglearn more about the parameter in this help center guide
+        /// </summary>
         [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductId { get; set; }
+
+        /// <summary>
+        /// unique identifier of the SERP data element
+        /// </summary>
         [JsonProperty("data_docid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataDocid { get; set; }
+
+        /// <summary>
+        /// global product identifier on Google Shoppinglearn more about the parameter in this help center guide
+        /// </summary>
         [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Gid { get; set; }
 
         /// <summary>
-        /// title of the element
+        /// reference page title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// reference page URL
+        /// URL in link
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -39,52 +51,43 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// the item’s rating 
-        /// <br/>the popularity rate based on reviews and displayed in SERP
-        /// <br/>if there is none, equals null
+        /// product rating the popularity rate based on reviews if there is none, the value will be null
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result;
-        /// <br/>if there is none, equals null
+        /// product priceproduct price details on the seller's website; if there is none, the value will be null
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// seller of the product
+        /// product sellername of the product's seller as displayed in search results
         /// </summary>
         [JsonProperty("seller", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Seller { get; set; }
 
         /// <summary>
-        /// text alongside the link title
+        /// additional information about the result
         /// </summary>
         [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Snippet { get; set; }
 
         /// <summary>
-        /// merchant account provider
-        /// <br/>commerce site that hosts products or websites of individual sellers under the same merchant account
-        /// <br/>example:
-        /// <br/>by Google
+        /// merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant accountexample:by Google
         /// </summary>
         [JsonProperty("marketplace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Marketplace { get; set; }
 
         /// <summary>
-        /// relevant marketplace URL
-        /// <br/>URL of the page on the marketplace website where the product is hosted
+        /// URL to the merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant account
         /// </summary>
         [JsonProperty("marketplace_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MarketplaceUrl { get; set; }
 
         /// <summary>
-        /// URL of the image
-        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+        /// URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }

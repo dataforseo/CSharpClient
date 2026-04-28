@@ -103,14 +103,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.AppendixApi.WebhookResendAsync(
-    new AppendixWebhookResendRequestInfo[]
+var result = await dfsClient.AppendixApi.WebhookResendAsync(new List<AppendixWebhookResendRequestInfo>()
+{
+    new()
     {
-        new AppendixWebhookResendRequestInfo()
-        {
-            Id = "08161139-0001-0066-1000-06491d097ed5",
-        },
-    });
+        Id = "08161139-0001-0066-1000-06491d097ed5",
+    }
+});
 ```
 
 ### Parameters

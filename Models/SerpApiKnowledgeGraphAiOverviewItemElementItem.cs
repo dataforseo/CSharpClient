@@ -18,7 +18,8 @@ namespace DataForSeo.Client.Models
         public bool? AsynchronousAiOverview { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// popular keywords relevant to the initial search query
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }

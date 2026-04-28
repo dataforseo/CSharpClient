@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<RecipesElement>** | additional items present in the element<br>if there are none, equals null |[optional]|
+**Items** | **IEnumerable<RecipesElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|

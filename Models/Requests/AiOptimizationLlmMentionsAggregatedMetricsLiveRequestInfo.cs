@@ -21,54 +21,6 @@ namespace DataForSeo.Client.Models.Requests
         public IEnumerable<BaseAiOptimizationLLmMentionsTargetElement> Target { get; set; }
 
         /// <summary>
-        /// domain entity in the target arrayexample:{'domain': 'en.wikipedia.org', 'search_filter': 'exclude', 'search_scope': ['sources']}
-        /// </summary>
-        [JsonProperty("domain_entity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object DomainEntity { get; set; }
-
-        /// <summary>
-        /// target domainrequired field if you don't specify keywordyou can specify up to 63 characters in the domain field;a domain should be specified without https:// and www.
-        /// </summary>
-        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Domain { get; set; }
-
-        /// <summary>
-        /// target keyword search filteroptional fieldpossible values:include, excludedefault value: include
-        /// </summary>
-        [JsonProperty("search_filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string SearchFilter { get; set; }
-
-        /// <summary>
-        /// target keyword search scopeoptional fieldpossible values:any, question, answer, brand_entities, fan_out_queriesdefault value: any
-        /// </summary>
-        [JsonProperty("search_scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> SearchScope { get; set; }
-
-        /// <summary>
-        /// indicates if the subdomains of the target domain will be included in the searchoptional fieldif set to true, the subdomains will be included in the searchdefault value: false
-        /// </summary>
-        [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IncludeSubdomains { get; set; }
-
-        /// <summary>
-        /// keyword entity in the target arrayexample:{'keyword': 'bmw', 'search_filter': 'include', 'search_scope': ['question'], 'match_type ': 'partial_match'}
-        /// </summary>
-        [JsonProperty("keyword_entity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object KeywordEntity { get; set; }
-
-        /// <summary>
-        /// target keywordrequired field if you don't specify domainyou can specify up to 250 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
-        /// </summary>
-        [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Keyword { get; set; }
-
-        /// <summary>
-        /// target keyword match typeoptional fieldword_match -  full-text search for terms that match the specified seed keyword with additional words included before, after, or within the key phrase (e.g., search for “light” will return results with “light bulb”, “light switch”);partial_match - substring search that finds all instances containing the specified sequence of characters, even if it appears inside a longer word (e.g., search for “light” will return results with “lighting”, “highlight”);possible values:word_match, partial_matchdefault value: word_match
-        /// </summary>
-        [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchType { get; set; }
-
-        /// <summary>
         /// full name of search locationoptional fieldif you use this field, you don't need to specify location_codeif you don't specify this field, the location_code with 2840 value will be used by default;you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesNote: chat_gpt data is available for United States only
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -99,7 +51,7 @@ namespace DataForSeo.Client.Models.Requests
         public string Platform { get; set; }
 
         /// <summary>
-        /// array of filter expressions applied before aggregationoptional fieldyou can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:=, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, match, not_matchyou can use the % operator with like and not_like to match any string of zero or more charactersexample:['ai_search_volume','&gt;','1000']The full list of possible filters is available here.
+        /// array of filter expressions applied before aggregationoptional fieldyou can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:=, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, match, not_matchyou can use the % operator with like and not_like to match any string of zero or more charactersexample:['ai_search_volume','&gt;','1000']the full list of possible filters is available here.learn more about the initial dataset filters in this help center article.
         /// </summary>
         [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> InitialDatasetFilters { get; set; }

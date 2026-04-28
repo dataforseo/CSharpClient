@@ -41,19 +41,16 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(
-    new BacklinksIdListRequestInfo[]
+var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(new List<BacklinksIdListRequestInfo>()
+{
+    new()
     {
-        new BacklinksIdListRequestInfo()
-        {
-            DatetimeFrom = "2026-04-12 04:39:39 +00:00",
-            DatetimeTo = "2026-04-14 04:39:39 +00:00",
-            Limit = 100,
-            Offset = 0,
-            Sort = "desc",
-            IncludeMetadata = true,
-        },
-    });
+        Limit = 100,
+        Offset = 0,
+        Sort = "desc",
+        IncludeMetadata = true,
+    }
+});
 ```
 
 ### Parameters
@@ -94,16 +91,15 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BacklinksErrorsAsync(
-    new BacklinksErrorsRequestInfo[]
+var result = await dfsClient.BacklinksApi.BacklinksErrorsAsync(new List<BacklinksErrorsRequestInfo>()
+{
+    new()
     {
-        new BacklinksErrorsRequestInfo()
-        {
-            Limit = 10,
-            Offset = 0,
-            FilteredFunction = "backlinks/content_duplicates",
-        },
-    });
+        Limit = 10,
+        Offset = 0,
+        FilteredFunction = "backlinks/content_duplicates",
+    }
+});
 ```
 
 ### Parameters
@@ -226,23 +222,22 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.SummaryLiveAsync(
-    new BacklinksSummaryLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.SummaryLiveAsync(new List<BacklinksSummaryLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksSummaryLiveRequestInfo()
-        {
-            Target = "explodingtopics.com",
-            InternalListLimit = 10,
-            IncludeSubdomains = true,
-            BacklinksFilters = new object[]
+        Target = "explodingtopics.com",
+        InternalListLimit = 10,
+        IncludeSubdomains = true,
+        BacklinksFilters = new List<object>()
         {
             "dofollow",
             "=",
             true,
         },
-            BacklinksStatusType = "all",
-        },
-    });
+        BacklinksStatusType = "all",
+    }
+});
 ```
 
 ### Parameters
@@ -283,16 +278,13 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.HistoryLiveAsync(
-    new BacklinksHistoryLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.HistoryLiveAsync(new List<BacklinksHistoryLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksHistoryLiveRequestInfo()
-        {
-            Target = "cnn.com",
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-        },
-    });
+        Target = "cnn.com",
+    }
+});
 ```
 
 ### Parameters
@@ -333,22 +325,21 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BacklinksLiveAsync(
-    new BacklinksBacklinksLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BacklinksLiveAsync(new List<BacklinksBacklinksLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBacklinksLiveRequestInfo()
-        {
-            Target = "forbes.com",
-            Mode = "as_is",
-            Filters = new object[]
+        Target = "forbes.com",
+        Mode = "as_is",
+        Filters = new List<object>()
         {
             "dofollow",
             "=",
             true,
         },
-            Limit = 5,
-        },
-    });
+        Limit = 5,
+    }
+});
 ```
 
 ### Parameters
@@ -389,25 +380,24 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.AnchorsLiveAsync(
-    new BacklinksAnchorsLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.AnchorsLiveAsync(new List<BacklinksAnchorsLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksAnchorsLiveRequestInfo()
-        {
-            Target = "forbes.com",
-            Limit = 4,
-            OrderBy = new string[]
+        Target = "forbes.com",
+        Limit = 4,
+        OrderBy = new List<string>()
         {
             "backlinks,desc",
         },
-            Filters = new object[]
+        Filters = new List<object>()
         {
             "anchor",
             "like",
             "%news%",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -448,31 +438,30 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.DomainPagesLiveAsync(
-    new BacklinksDomainPagesLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.DomainPagesLiveAsync(new List<BacklinksDomainPagesLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksDomainPagesLiveRequestInfo()
+        Target = "forbes.com",
+        Limit = 5,
+        Filters = new List<object>()
         {
-            Target = "forbes.com",
-            Limit = 5,
-            Filters = new object[]
-        {
-            new object[]
+            new List<object>()
             {
                 "page_summary.backlinks",
                 ">",
                 5,
             },
             "and",
-            new object[]
+            new List<object>()
             {
                 "page",
                 "like",
                 "%sites%",
             },
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -513,19 +502,18 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.DomainPagesSummaryLiveAsync(
-    new BacklinksDomainPagesSummaryLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.DomainPagesSummaryLiveAsync(new List<BacklinksDomainPagesSummaryLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksDomainPagesSummaryLiveRequestInfo()
-        {
-            Target = "forbes.com",
-            Limit = 4,
-            OrderBy = new string[]
+        Target = "forbes.com",
+        Limit = 4,
+        OrderBy = new List<string>()
         {
             "backlinks,desc",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -566,32 +554,31 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.ReferringDomainsLiveAsync(
-    new BacklinksReferringDomainsLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.ReferringDomainsLiveAsync(new List<BacklinksReferringDomainsLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksReferringDomainsLiveRequestInfo()
-        {
-            Target = "backlinko.com",
-            Limit = 5,
-            OrderBy = new string[]
+        Target = "backlinko.com",
+        Limit = 5,
+        OrderBy = new List<string>()
         {
             "rank,desc",
         },
-            ExcludeInternalBacklinks = true,
-            BacklinksFilters = new object[]
+        ExcludeInternalBacklinks = true,
+        BacklinksFilters = new List<object>()
         {
             "dofollow",
             "=",
             true,
         },
-            Filters = new object[]
+        Filters = new List<object>()
         {
             "backlinks",
             ">",
             100,
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -632,33 +619,32 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.ReferringNetworksLiveAsync(
-    new BacklinksReferringNetworksLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.ReferringNetworksLiveAsync(new List<BacklinksReferringNetworksLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksReferringNetworksLiveRequestInfo()
-        {
-            Target = "backlinko.com",
-            NetworkAddressType = "subnet",
-            Limit = 5,
-            OrderBy = new string[]
+        Target = "backlinko.com",
+        NetworkAddressType = "subnet",
+        Limit = 5,
+        OrderBy = new List<string>()
         {
             "rank,desc",
         },
-            ExcludeInternalBacklinks = true,
-            BacklinksFilters = new object[]
+        ExcludeInternalBacklinks = true,
+        BacklinksFilters = new List<object>()
         {
             "dofollow",
             "=",
             true,
         },
-            Filters = new object[]
+        Filters = new List<object>()
         {
             "backlinks",
             ">",
             100,
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -699,25 +685,24 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.CompetitorsLiveAsync(
-    new BacklinksCompetitorsLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.CompetitorsLiveAsync(new List<BacklinksCompetitorsLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksCompetitorsLiveRequestInfo()
-        {
-            Target = "dataforseo.com",
-            Filters = new object[]
+        Target = "dataforseo.com",
+        Filters = new List<object>()
         {
             "rank",
             ">",
             100,
         },
-            OrderBy = new string[]
+        OrderBy = new List<string>()
         {
             "rank,desc",
         },
-            Limit = 5,
-        },
-    });
+        Limit = 5,
+    }
+});
 ```
 
 ### Parameters
@@ -758,29 +743,28 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.DomainIntersectionLiveAsync(
-    new BacklinksDomainIntersectionLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.DomainIntersectionLiveAsync(new List<BacklinksDomainIntersectionLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksDomainIntersectionLiveRequestInfo()
-        {
-            Targets = new Dictionary<string, string>()
+        Targets = new Dictionary<string, string>()
         {
             ["1"] = "moz.com",
             ["2"] = "ahrefs.com",
         },
-            IncludeSubdomains = false,
-            ExcludeTargets = new string[]
+        IncludeSubdomains = false,
+        ExcludeTargets = new List<string>()
         {
             "semrush.com",
         },
-            Limit = 5,
-            OrderBy = new string[]
+        Limit = 5,
+        OrderBy = new List<string>()
         {
             "1.backlinks,desc",
         },
-            ExcludeInternalBacklinks = true,
-        },
-    });
+        ExcludeInternalBacklinks = true,
+    }
+});
 ```
 
 ### Parameters
@@ -821,43 +805,42 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.PageIntersectionLiveAsync(
-    new BacklinksPageIntersectionLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.PageIntersectionLiveAsync(new List<BacklinksPageIntersectionLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksPageIntersectionLiveRequestInfo()
-        {
-            Targets = new Dictionary<string, string>()
+        Targets = new Dictionary<string, string>()
         {
             ["1"] = "football.com",
             ["2"] = "fifa.com",
         },
-            ExcludeTargets = new string[]
+        ExcludeTargets = new List<string>()
         {
             "skysports.com",
         },
-            Limit = 5,
-            OrderBy = new string[]
+        Limit = 5,
+        OrderBy = new List<string>()
         {
             "1.rank,desc",
         },
-            Filters = new object[]
+        Filters = new List<object>()
         {
-            new object[]
+            new List<object>()
             {
                 "2.domain_from_rank",
                 ">",
                 400,
             },
             "and",
-            new object[]
+            new List<object>()
             {
                 "1.dofollow",
                 "=",
                 true,
             },
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -898,17 +881,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.TimeseriesSummaryLiveAsync(
-    new BacklinksTimeseriesSummaryLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.TimeseriesSummaryLiveAsync(new List<BacklinksTimeseriesSummaryLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksTimeseriesSummaryLiveRequestInfo()
-        {
-            Target = "dataforseo.com",
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            GroupRange = "month",
-        },
-    });
+        Target = "dataforseo.com",
+        GroupRange = "month",
+    }
+});
 ```
 
 ### Parameters
@@ -949,17 +929,14 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.TimeseriesNewLostSummaryLiveAsync(
-    new BacklinksTimeseriesNewLostSummaryLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.TimeseriesNewLostSummaryLiveAsync(new List<BacklinksTimeseriesNewLostSummaryLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksTimeseriesNewLostSummaryLiveRequestInfo()
-        {
-            Target = "dataforseo.com",
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-            DateTo = "2026-03-15 00:00:00 +02:00",
-            GroupRange = "month",
-        },
-    });
+        Target = "dataforseo.com",
+        GroupRange = "month",
+    }
+});
 ```
 
 ### Parameters
@@ -1000,12 +977,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkRanksLiveAsync(
-    new BacklinksBulkRanksLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkRanksLiveAsync(new List<BacklinksBulkRanksLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkRanksLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "forbes.com",
             "cnn.com",
@@ -1018,8 +994,8 @@ var result = await dfsClient.BacklinksApi.BulkRanksLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1060,12 +1036,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkBacklinksLiveAsync(
-    new BacklinksBulkBacklinksLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkBacklinksLiveAsync(new List<BacklinksBulkBacklinksLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkBacklinksLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "forbes.com",
             "cnn.com",
@@ -1078,8 +1053,8 @@ var result = await dfsClient.BacklinksApi.BulkBacklinksLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1120,12 +1095,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkSpamScoreLiveAsync(
-    new BacklinksBulkSpamScoreLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkSpamScoreLiveAsync(new List<BacklinksBulkSpamScoreLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkSpamScoreLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "forbes.com",
             "cnn.com",
@@ -1138,8 +1112,8 @@ var result = await dfsClient.BacklinksApi.BulkSpamScoreLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1180,12 +1154,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkReferringDomainsLiveAsync(
-    new BacklinksBulkReferringDomainsLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkReferringDomainsLiveAsync(new List<BacklinksBulkReferringDomainsLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkReferringDomainsLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "forbes.com",
             "cnn.com",
@@ -1198,8 +1171,8 @@ var result = await dfsClient.BacklinksApi.BulkReferringDomainsLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1240,12 +1213,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(
-    new BacklinksBulkNewLostBacklinksLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(new List<BacklinksBulkNewLostBacklinksLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkNewLostBacklinksLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "forbes.com",
             "cnn.com",
@@ -1258,9 +1230,8 @@ var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1301,12 +1272,11 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(
-    new BacklinksBulkNewLostReferringDomainsLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(new List<BacklinksBulkNewLostReferringDomainsLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkNewLostReferringDomainsLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "forbes.com",
             "cnn.com",
@@ -1319,9 +1289,8 @@ var result = await dfsClient.BacklinksApi.BulkNewLostReferringDomainsLiveAsync(
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-            DateFrom = "2026-01-15 00:00:00 +02:00",
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
@@ -1362,18 +1331,17 @@ var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
     Username = "USERNAME",
     Password = "PASSWORD",
 });
-var result = await dfsClient.BacklinksApi.BulkPagesSummaryLiveAsync(
-    new BacklinksBulkPagesSummaryLiveRequestInfo[]
+var result = await dfsClient.BacklinksApi.BulkPagesSummaryLiveAsync(new List<BacklinksBulkPagesSummaryLiveRequestInfo>()
+{
+    new()
     {
-        new BacklinksBulkPagesSummaryLiveRequestInfo()
-        {
-            Targets = new string[]
+        Targets = new List<string>()
         {
             "https://dataforseo.com/solutions",
             "https://dataforseo.com/about-us",
         },
-        },
-    });
+    }
+});
 ```
 
 ### Parameters
