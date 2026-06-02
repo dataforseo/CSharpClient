@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models.Requests
         public double? Temperature { get; set; }
 
         /// <summary>
-        /// 
+        /// diversity of the AI responseoptional field controls diversity of the response by limiting token selection;minimum value: 0maximum value: 1 default value: 0.92Note:  top_p cannot be used together with temperature in the same request
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TopP { get; set; }
@@ -51,13 +51,13 @@ namespace DataForSeo.Client.Models.Requests
         public bool? ForceWebSearch { get; set; }
 
         /// <summary>
-        /// ISO country code of the locationoptional fieldrequired if web_search_city is specified;to enable this parameter, web_search must also be enabled;when enabled, the AI model will search the web from the country you specify;Note: not supported in o3-mini, o1-pro, o1 models
+        /// ISO country code of the locationoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model will search the web from the country you specify;Note: not supported in o3-mini, o1-pro, o1 models
         /// </summary>
         [JsonProperty("web_search_country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebSearchCountryIsoCode { get; set; }
 
         /// <summary>
-        /// city name of the locationoptional fieldNote: specify web_search_country_iso_code to use this parameterNote #2: not supported in o3-mini, o1-pro, o1 models
+        /// city name of the locationoptional fieldNote: not supported in o3-mini, o1-pro, o1 models
         /// </summary>
         [JsonProperty("web_search_city", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebSearchCity { get; set; }

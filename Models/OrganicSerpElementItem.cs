@@ -162,7 +162,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// frequently asked questions
         /// <br/>questions and answers extension shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// <br/>Note: this object is deprecated and always returns null
         /// </summary>
         [JsonProperty("faq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public FaqBox Faq { get; set; }

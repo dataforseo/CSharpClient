@@ -49,6 +49,7 @@ namespace DataForSeo.Client.Models.Requests
         /// offset in the results array of returned links
         /// <br/>optional field
         /// <br/>default value: 0
+        /// <br/>maximum value: 2000000
         /// <br/>if you specify the 10 value, the first ten links in the results array will be omitted and the data will be provided for the successive links
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

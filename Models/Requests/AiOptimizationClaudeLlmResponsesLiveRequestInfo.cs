@@ -51,13 +51,13 @@ namespace DataForSeo.Client.Models.Requests
         public bool? ForceWebSearch { get; set; }
 
         /// <summary>
-        /// ISO country code of the locationoptional fieldpossible values: 'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'
+        /// ISO country code of the location used for searching the weboptional fieldpossible values: 'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'
         /// </summary>
         [JsonProperty("web_search_country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebSearchCountryIsoCode { get; set; }
 
         /// <summary>
-        /// city name of the locationoptional fieldNote: specify web_search_country_iso_code to use this parameter
+        /// city name of the location used for searching the weboptional field
         /// </summary>
         [JsonProperty("web_search_city", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebSearchCity { get; set; }

@@ -43,15 +43,6 @@ namespace DataForSeo.Client.Models.Requests
         public string Match { get; set; }
 
         /// <summary>
-        /// include Google search partners
-        /// <br/>optional field
-        /// <br/>if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-        /// <br/>default value: false – results are returned for Google search sites
-        /// </summary>
-        [JsonProperty("search_partners", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SearchPartners { get; set; }
-
-        /// <summary>
         /// full name of search engine location
         /// <br/>optional field
         /// <br/>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;

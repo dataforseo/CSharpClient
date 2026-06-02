@@ -11,7 +11,7 @@
 **LanguageCode** | **string** | language code in a POST array |[optional]|
 **Question** | **string** | relevant question |[optional]|
 **Answer** | **string** | relevant answer in markdown formatcontent of the result formatted in the markdown markup language |[optional]|
-**Sources** | **IEnumerable<Sources>** | array of sourcesthe sources the model cited or relied on in its final answer |[optional]|
+**Sources** | **IEnumerable<Sources>** | array of sourcesthe sources the model cited or relied on in its final answerlearn more about the sources and how to retrieve LLM citation data at our Help Center |[optional]|
 **SearchResults** | **IEnumerable<SearchResults>** | array of search resultsall web search outputs the model retrieved when looking up information, including duplicates and unused entries |[optional]|
 **AiSearchVolume** | **long?** | current AI search volume rate of a keywordlearn more about this metric here |[optional]|
 **MonthlySearches** | **IEnumerable<MonthlySearchesInfo>** | monthly AI search volume ratesarray of objects with AI search volume rates in a certain month of a year |[optional]|

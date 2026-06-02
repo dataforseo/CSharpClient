@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         public long? AiSearchVolume { get; set; }
 
         /// <summary>
-        /// current AI impressions rate of a keyword
+        /// AI impressions rate of a keyworddeprecated field, the value will be null
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Impressions { get; set; }

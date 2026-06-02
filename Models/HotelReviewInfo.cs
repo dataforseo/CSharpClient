@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// reviews on third-party sites
-        /// <br/>reviews from third-paty sites
+        /// <br/>reviews from third-party sites
         /// </summary>
         [JsonProperty("other_sites_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<OtherSitesReviewsInfo> OtherSitesReviews { get; set; }

@@ -27,7 +27,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<GroupElement> Platform { get; set; }
 
         /// <summary>
-        /// found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responses
+        /// found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responseslearn more about the sources and how to retrieve LLM citation data at our Help Center
         /// </summary>
         [JsonProperty("sources_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GroupElement> SourcesDomain { get; set; }

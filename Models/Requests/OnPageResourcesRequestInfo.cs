@@ -41,6 +41,7 @@ namespace DataForSeo.Client.Models.Requests
         /// offset in the results array of returned resources
         /// <br/>optional field
         /// <br/>default value: 0
+        /// <br/>maximum value: 2000000
         /// <br/>if you specify the 10 value, the first ten resources in the results array will be omitted and the data will be provided for the successive resources
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

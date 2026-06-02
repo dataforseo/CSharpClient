@@ -11,6 +11,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("chat_gpt_images", typeof(ChatGptImagesElementItem))]
     [JsonInheritance("chat_gpt_products", typeof(ChatGptProductsElementItem))]
     [JsonInheritance("chat_gpt_local_businesses", typeof(ChatGptLocalBusinessesElementItem))]
+    [JsonInheritance("chat_gpt_ad", typeof(ChatGptAdElementItem))]
 
     public class BaseChatGptLlmScraperElementItem 
     {

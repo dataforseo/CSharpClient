@@ -44,15 +44,6 @@ namespace DataForSeo.Client.Models.Requests
         public string Match { get; set; }
 
         /// <summary>
-        /// include Google search partners
-        /// <br/>optional field
-        /// <br/>if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-        /// <br/>default value: false – results are returned for Google search sites
-        /// </summary>
-        [JsonProperty("search_partners", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? SearchPartners { get; set; }
-
-        /// <summary>
         /// full name of search engine location
         /// <br/>optional field
         /// <br/>if you do not indicate the location, you will receive worldwide results, i.e., for all available locations;
@@ -149,7 +140,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// results sorting parameters
         /// <br/>optional field
-        /// <br/>Use these parameters to sort the results by relevance, impressions, ctr, average_cpc, cost, or clicks in the descending order
+        /// <br/>Use these parameters to sort the results by relevance, average_cpc, cost, or clicks in the descending order
         /// <br/>default value: relevance
         /// </summary>
         [JsonProperty("sort_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

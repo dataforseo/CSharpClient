@@ -108,10 +108,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in Google Hotels
-        /// <br/>default value: 20 organic results
+        /// <br/>default value: 18 organic results
         /// <br/>max value: 140
-        /// <br/>Note: your account will be billed per each 20 organic results regardless of paid listings in the response;
-        /// <br/>thus, setting a depth above 20 may result in additional charges if Google Hotels return more than 20 results;
+        /// <br/>Note: your account will be billed per each 18 organic results regardless of paid listings in the response;
+        /// <br/>thus, setting a depth above 18 may result in additional charges if Google Hotels return more than 18 results;
         /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

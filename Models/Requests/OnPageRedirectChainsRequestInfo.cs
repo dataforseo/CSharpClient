@@ -40,6 +40,7 @@ namespace DataForSeo.Client.Models.Requests
         /// offset in the results array of returned redirect chains
         /// <br/>optional field
         /// <br/>default value: 0
+        /// <br/>maximum value: 2000000
         /// <br/>if you specify the 10 value, the first ten redirect chains in the results array will be omitted and the data will be provided for the successive redirect chains
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

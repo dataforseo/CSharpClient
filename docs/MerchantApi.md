@@ -27,15 +27,21 @@ All URIs are relative to *https://api.dataforseo.com*
 [**amazonProductsTaskPost**](MerchantApi.md#amazonProductsTaskPost) | **POST**  /v3/merchant/amazon/products/task_post  |
 [**amazonProductsTasksReady**](MerchantApi.md#amazonProductsTasksReady) | **GET**  /v3/merchant/amazon/products/tasks_ready  |
 [**amazonProductsTaskGetAdvanced**](MerchantApi.md#amazonProductsTaskGetAdvanced) | **GET**  /v3/merchant/amazon/products/task_get/advanced/{id}  |
+[**amazonProductsLiveAdvanced**](MerchantApi.md#amazonProductsLiveAdvanced) | **POST**  /v3/merchant/amazon/products/live/advanced  |
 [**amazonProductsTaskGetHtml**](MerchantApi.md#amazonProductsTaskGetHtml) | **GET**  /v3/merchant/amazon/products/task_get/html/{id}  |
+[**amazonProductsLiveHtml**](MerchantApi.md#amazonProductsLiveHtml) | **POST**  /v3/merchant/amazon/products/live/html  |
 [**amazonAsinTaskPost**](MerchantApi.md#amazonAsinTaskPost) | **POST**  /v3/merchant/amazon/asin/task_post  |
 [**amazonAsinTasksReady**](MerchantApi.md#amazonAsinTasksReady) | **GET**  /v3/merchant/amazon/asin/tasks_ready  |
 [**amazonAsinTaskGetAdvanced**](MerchantApi.md#amazonAsinTaskGetAdvanced) | **GET**  /v3/merchant/amazon/asin/task_get/advanced/{id}  |
+[**amazonAsinLiveAdvanced**](MerchantApi.md#amazonAsinLiveAdvanced) | **POST**  /v3/merchant/amazon/asin/live/advanced  |
 [**amazonAsinTaskGetHtml**](MerchantApi.md#amazonAsinTaskGetHtml) | **GET**  /v3/merchant/amazon/asin/task_get/html/{id}  |
+[**amazonAsinLiveHtml**](MerchantApi.md#amazonAsinLiveHtml) | **POST**  /v3/merchant/amazon/asin/live/html  |
 [**amazonSellersTaskPost**](MerchantApi.md#amazonSellersTaskPost) | **POST**  /v3/merchant/amazon/sellers/task_post  |
 [**amazonSellersTasksReady**](MerchantApi.md#amazonSellersTasksReady) | **GET**  /v3/merchant/amazon/sellers/tasks_ready  |
 [**amazonSellersTaskGetAdvanced**](MerchantApi.md#amazonSellersTaskGetAdvanced) | **GET**  /v3/merchant/amazon/sellers/task_get/advanced/{id}  |
+[**amazonSellersLiveAdvanced**](MerchantApi.md#amazonSellersLiveAdvanced) | **POST**  /v3/merchant/amazon/sellers/live/advanced  |
 [**amazonSellersTaskGetHtml**](MerchantApi.md#amazonSellersTaskGetHtml) | **GET**  /v3/merchant/amazon/sellers/task_get/html/{id}  |
+[**amazonSellersLiveHtml**](MerchantApi.md#amazonSellersLiveHtml) | **POST**  /v3/merchant/amazon/sellers/live/html  |
 
 <a id="merchantIdList"></a>
 # **merchantIdList**
@@ -1038,6 +1044,55 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="amazonProductsLiveAdvanced"></a>
+# **amazonProductsLiveAdvanced**
+> MerchantAmazonProductsLiveAdvancedResponseInfo amazonProductsLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.MerchantApi.AmazonProductsLiveAdvancedAsync(new List<MerchantAmazonProductsLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Keyword = "shoes",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonProductsLiveAdvancedRequestInfo>&gt;**](IEnumerable<MerchantAmazonProductsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**MerchantAmazonProductsLiveAdvancedResponseInfo**](MerchantAmazonProductsLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="amazonProductsTaskGetHtml"></a>
 # **amazonProductsTaskGetHtml**
 > MerchantAmazonProductsTaskGetHtmlResponseInfo amazonProductsTaskGetHtml()
@@ -1065,6 +1120,55 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**MerchantAmazonProductsTaskGetHtmlResponseInfo**](MerchantAmazonProductsTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="amazonProductsLiveHtml"></a>
+# **amazonProductsLiveHtml**
+> MerchantAmazonProductsLiveHtmlResponseInfo amazonProductsLiveHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.MerchantApi.AmazonProductsLiveHtmlAsync(new List<MerchantAmazonProductsLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Keyword = "shoes",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonProductsLiveHtmlRequestInfo>&gt;**](IEnumerable<MerchantAmazonProductsLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**MerchantAmazonProductsLiveHtmlResponseInfo**](MerchantAmazonProductsLiveHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -1212,6 +1316,55 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="amazonAsinLiveAdvanced"></a>
+# **amazonAsinLiveAdvanced**
+> MerchantAmazonAsinLiveAdvancedResponseInfo amazonAsinLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.MerchantApi.AmazonAsinLiveAdvancedAsync(new List<MerchantAmazonAsinLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Asin = "B0756FCPPN",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonAsinLiveAdvancedRequestInfo>&gt;**](IEnumerable<MerchantAmazonAsinLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**MerchantAmazonAsinLiveAdvancedResponseInfo**](MerchantAmazonAsinLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="amazonAsinTaskGetHtml"></a>
 # **amazonAsinTaskGetHtml**
 > MerchantAmazonAsinTaskGetHtmlResponseInfo amazonAsinTaskGetHtml()
@@ -1239,6 +1392,55 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**MerchantAmazonAsinTaskGetHtmlResponseInfo**](MerchantAmazonAsinTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="amazonAsinLiveHtml"></a>
+# **amazonAsinLiveHtml**
+> MerchantAmazonAsinLiveHtmlResponseInfo amazonAsinLiveHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.MerchantApi.AmazonAsinLiveHtmlAsync(new List<MerchantAmazonAsinLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Asin = "B0756FCPPN",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonAsinLiveHtmlRequestInfo>&gt;**](IEnumerable<MerchantAmazonAsinLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**MerchantAmazonAsinLiveHtmlResponseInfo**](MerchantAmazonAsinLiveHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -1386,6 +1588,55 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="amazonSellersLiveAdvanced"></a>
+# **amazonSellersLiveAdvanced**
+> MerchantAmazonSellersLiveAdvancedResponseInfo amazonSellersLiveAdvanced()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.MerchantApi.AmazonSellersLiveAdvancedAsync(new List<MerchantAmazonSellersLiveAdvancedRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Asin = "B07D528W98",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonSellersLiveAdvancedRequestInfo>&gt;**](IEnumerable<MerchantAmazonSellersLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**MerchantAmazonSellersLiveAdvancedResponseInfo**](MerchantAmazonSellersLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="amazonSellersTaskGetHtml"></a>
 # **amazonSellersTaskGetHtml**
 > MerchantAmazonSellersTaskGetHtmlResponseInfo amazonSellersTaskGetHtml()
@@ -1413,6 +1664,55 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**MerchantAmazonSellersTaskGetHtmlResponseInfo**](MerchantAmazonSellersTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="amazonSellersLiveHtml"></a>
+# **amazonSellersLiveHtml**
+> MerchantAmazonSellersLiveHtmlResponseInfo amazonSellersLiveHtml()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.MerchantApi.AmazonSellersLiveHtmlAsync(new List<MerchantAmazonSellersLiveHtmlRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en_US",
+        LocationCode = 2840,
+        Asin = "B085RFFC9Q",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<MerchantAmazonSellersLiveHtmlRequestInfo>&gt;**](IEnumerable<MerchantAmazonSellersLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**MerchantAmazonSellersLiveHtmlResponseInfo**](MerchantAmazonSellersLiveHtmlResponseInfo.md)
 
 ### Authorization
 

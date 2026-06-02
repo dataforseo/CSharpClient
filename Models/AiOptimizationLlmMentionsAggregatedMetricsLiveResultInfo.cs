@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// individual pages resultsarray containing detailed mention metrics for each of the found top pagesin this case, equals null
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object Items { get; set; }
+        public IEnumerable<AiOptimizationLlmMentionssLiveItem> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

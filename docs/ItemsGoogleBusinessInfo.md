@@ -45,3 +45,4 @@
 **LocalBusinessLinks** | **object** | available interactions with the business<br>list of options to interact with the business directly from search results |[optional]|
 **IsDirectoryItem** | **bool?** | business establishment is a part of the directory<br>indicates whether the business establishment is a part of the directory;<br>if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);<br>note: if the business establishment is a parent item in the directory, the value will be null |[optional]|
 **Directory** | **object** | items of the directory<br>includes information about businesses that are located within the target business establishment and have the same address |[optional]|
+**Services** | **IEnumerable<Services>** | list of services offered by the business |[optional]|

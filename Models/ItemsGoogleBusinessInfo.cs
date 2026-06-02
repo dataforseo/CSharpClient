@@ -286,6 +286,12 @@ namespace DataForSeo.Client.Models
         [JsonProperty("directory", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public object Directory { get; set; }
 
+        /// <summary>
+        /// list of services offered by the business
+        /// </summary>
+        [JsonProperty("services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<Services> Services { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

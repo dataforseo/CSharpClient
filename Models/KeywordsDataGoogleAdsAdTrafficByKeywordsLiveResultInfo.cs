@@ -37,8 +37,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// include Google search partners
         /// <br/>the value you specified when setting the task
-        /// <br/>if true, the results are returned for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-        /// <br/>if false, the results are returned for Google search sites only
+        /// <br/>Note: parameter deprecated, the value is always false
         /// </summary>
         [JsonProperty("search_partners", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SearchPartners { get; set; }
@@ -63,8 +62,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// projected number of ad impressions
         /// <br/>number of impressions an ad is projected to get within the specified time period
-        /// <br/>if there is no data, then the value is null
-        /// <br/>learn more about impressions in this help center article
+        /// <br/>Note: parameter deprecated, the value is always null
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Impressions { get; set; }
@@ -72,7 +70,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// projected click through rate (CTR) of the advertisement
         /// <br/>number of clicks an ad is projected to receive divided by the number of ad impressions; the CTR is projected for the specified time period
-        /// <br/>if there is no data, then the value is null
+        /// <br/>Note: parameter deprecated, the value is always null
         /// </summary>
         [JsonProperty("ctr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Ctr { get; set; }

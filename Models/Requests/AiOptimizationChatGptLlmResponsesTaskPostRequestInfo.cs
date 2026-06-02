@@ -33,10 +33,34 @@ namespace DataForSeo.Client.Models.Requests
         public double? Temperature { get; set; }
 
         /// <summary>
-        /// 
+        /// diversity of the AI responseoptional field controls diversity of the response by limiting token selection;minimum value: 0maximum value: 1 default value: 0.92Note:  top_p cannot be used together with temperature in the same request
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TopP { get; set; }
+
+        /// <summary>
+        /// enable web searchoptional fieldwhen enabled, the AI model can access and cite current web information;default value: false;Note: refer to the Models endpoint for a list of models that support web_search;
+        /// </summary>
+        [JsonProperty("web_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? WebSearch { get; set; }
+
+        /// <summary>
+        /// force AI agent to use web searchoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model is forced to access and cite current web information;default value: false;Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response Note #2: not supported in reasoning models
+        /// </summary>
+        [JsonProperty("force_web_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? ForceWebSearch { get; set; }
+
+        /// <summary>
+        /// ISO country code of the locationoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model will search the web from the country you specify;Note: not supported in o3-mini, o1-pro, o1 models
+        /// </summary>
+        [JsonProperty("web_search_country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string WebSearchCountryIsoCode { get; set; }
+
+        /// <summary>
+        /// city name of the locationoptional fieldNote: not supported in o3-mini, o1-pro, o1 models
+        /// </summary>
+        [JsonProperty("web_search_city", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string WebSearchCity { get; set; }
 
         /// <summary>
         /// instructions for the AI behaviouroptional fielddefines the AI's role, tone, or specific behavior;you can specify up to 500 characters in the system_message field

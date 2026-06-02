@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
         public string Answer { get; set; }
 
         /// <summary>
-        /// array of sourcesthe sources the model cited or relied on in its final answer
+        /// array of sourcesthe sources the model cited or relied on in its final answerlearn more about the sources and how to retrieve LLM citation data at our Help Center
         /// </summary>
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<Sources> Sources { get; set; }
