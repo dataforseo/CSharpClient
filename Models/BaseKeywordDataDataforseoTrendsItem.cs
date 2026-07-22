@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -26,8 +27,7 @@ namespace DataForSeo.Client.Models
         public int? Position { get; set; }
 
         /// <summary>
-        /// relevant keywords
-        /// <br/>the data included in the dataforseo_trends_graph element is based on the keywords listed in this array
+        /// keywords in a POST array
         /// </summary>
         [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }

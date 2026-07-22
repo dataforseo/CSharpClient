@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,7 +16,7 @@ namespace DataForSeo.Client.Models
         public LinkElement Link { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// historical SERPs and related data found in the database
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<KnowledgeGraphImagesElement> Items { get; set; }

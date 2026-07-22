@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Value** | **string** | contact displayed in SERP <br>example:<br>'+119797979736' |[optional]|
+**Value** | **string** | the value of the rating |[optional]|
 **Source** | **string** | data source |[optional]|

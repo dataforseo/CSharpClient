@@ -1,9 +1,11 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models
 {
+    [Obsolete]
 
     public class RelatedImageSearchesElement 
     {
@@ -15,7 +17,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of a given shopping element
+        /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -7,13 +8,8 @@ namespace DataForSeo.Client.Models
 
     public class SerpGoogleAiModeTaskPostTaskInfo  : BaseResponseTaskInfo 
     {
-
-        /// <summary>
-        /// array of results
-        /// <br/>in this case, the value will be null
-        /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object Result { get; set; }
+        public string Result { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

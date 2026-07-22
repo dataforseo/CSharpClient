@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleOrganicLiveHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleOrganicLiveHtmlResultInfo>** |  |[optional]|

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the place
+        /// title of the result in SERP
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -17,13 +18,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google defined data attribute ID
         /// <br/>example:
-        /// <br/>kc:/common/topic:social media presence
+        /// <br/>action:listen_artist
         /// </summary>
         [JsonProperty("data_attrid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }
 
         /// <summary>
-        /// row content
+        /// description content
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }

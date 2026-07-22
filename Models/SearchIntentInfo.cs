@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -10,7 +11,6 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search engine type
-        /// <br/>possible values: google
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> ForeignIntent { get; set; }
 
         /// <summary>
-        /// date and time when the dataset was updated
+        /// date and time when keyword data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

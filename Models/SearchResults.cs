@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -21,31 +22,34 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// position in the results
+        /// rank in the results
         /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Position { get; set; }
+        [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Rank { get; set; }
 
         /// <summary>
-        /// result title
+        /// source title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// result domain
+        /// source domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// result URL
+        /// source URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// date and time when the result was publishedin the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”example:2019-11-15 12:57:46 +00:00
+        /// date and time when the result was published
+        /// <br/>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
+        /// <br/>example:
+        /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("publication_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PublicationDate { get; set; }

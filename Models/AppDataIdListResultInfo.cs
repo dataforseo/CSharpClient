@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// id of the task
+        /// task identifier
+        /// <br/>unique task identifier in our system in the UUID format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -47,7 +49,7 @@ namespace DataForSeo.Client.Models
         public string Status { get; set; }
 
         /// <summary>
-        /// cost of the task, USD
+        /// total tasks cost, USD
         /// </summary>
         [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Cost { get; set; }

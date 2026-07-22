@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -50,8 +51,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// keyword popularity values per location
-        /// <br/>values in this array represent percentages relative to the maximum value within each region
+        /// contains keyword popularity and related data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseKeywordDataDataforseoTrendsItem> Items { get; set; }

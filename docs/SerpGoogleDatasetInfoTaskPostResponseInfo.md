@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleDatasetInfoTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleDatasetInfoTaskPostTaskInfo>** |  |[optional]|

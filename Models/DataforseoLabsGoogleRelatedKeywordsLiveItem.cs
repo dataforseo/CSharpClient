@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -10,7 +11,6 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search engine type
-        /// <br/>possible values: google
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }

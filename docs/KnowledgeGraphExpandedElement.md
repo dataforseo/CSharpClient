@@ -8,7 +8,7 @@
 **Type** | **string** | type of element |[optional]|
 **FeaturedTitle** | **string** | title of a given element |[optional]|
 **Url** | **string** | relevant URL |[optional]|
-**Domain** | **string** | domain in SERP |[optional]|
+**Domain** | **string** | domain where a link points |[optional]|
 **Title** | **string** | title of the result in SERP |[optional]|
 **Snippet** | **string** | text alongside the link title |[optional]|
 **Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|

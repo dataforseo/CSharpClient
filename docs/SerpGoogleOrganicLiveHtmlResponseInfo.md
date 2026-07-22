@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleOrganicLiveHtmlTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleOrganicLiveHtmlTaskInfo>** |  |[optional]|

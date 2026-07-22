@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -34,7 +35,7 @@ namespace DataForSeo.Client.Models
         public string HotelIdentifier { get; set; }
 
         /// <summary>
-        /// URL
+        /// URL of the third-party review source
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleDatasetSearchLiveAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleDatasetSearchLiveAdvancedResultInfo>** |  |[optional]|

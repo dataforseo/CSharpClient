@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -56,7 +57,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>number of blocks of results in SERP
         /// <br/>default value: 20
-        /// <br/>max value: 700
+        /// <br/>max value: 200
         /// <br/>Note: your account will be billed per each SERP containing up to 20 results;
         /// <br/>thus, setting a block depth above 20 may result in additional charges if the search engine returns more than 20 results;
         /// <br/>if the specified block depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance

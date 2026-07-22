@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Data** | **IEnumerable<DataforseoTrendsGraphDataTrendsGraphDataInfo>** | DataForSEO Trends data for the specified parameters |[optional]|
-**Averages** | **IEnumerable<int?>** | keyword popularity values averaged over the whole time range |[optional]|
+**Data** | **IEnumerable<DataforseoTrendsGraphDataTrendsGraphDataInfo>** | contains the same parameters that you specified in the POST request |[optional]|
+**Averages** | **IEnumerable<int?>** |  |[optional]|

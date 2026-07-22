@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,33 +10,31 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// number of referring domains
-        /// <br/>referring domains include subdomains that are counted as separate domains for this metric
+        /// average number of referring domains
         /// </summary>
         [JsonProperty("referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringDomains { get; set; }
 
         /// <summary>
-        /// number of referring main domains
+        /// average number of referring main domains
         /// </summary>
         [JsonProperty("referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringMainDomains { get; set; }
 
         /// <summary>
-        /// number of pages pointing to the target website
+        /// average number of referring pages
         /// </summary>
         [JsonProperty("referring_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringPages { get; set; }
 
         /// <summary>
-        /// number of dofollow links
+        /// average number of dofollow links
         /// </summary>
         [JsonProperty("dofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? Dofollow { get; set; }
 
         /// <summary>
-        /// total number of backlinks
-        /// <br/>the total number of backlinks, including dofollow and nofollow links
+        /// average number of backlinks
         /// </summary>
         [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? Backlinks { get; set; }

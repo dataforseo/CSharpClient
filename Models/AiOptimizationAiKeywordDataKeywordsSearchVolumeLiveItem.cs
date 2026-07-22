@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,13 +16,15 @@ namespace DataForSeo.Client.Models
         public string Keyword { get; set; }
 
         /// <summary>
-        /// current AI search volume rate of a keywordlearn more about this metric here
+        /// current AI search volume rate of a keyword
+        /// <br/>learn more about this metric here
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }
 
         /// <summary>
-        /// monthly AI search volume ratesarray of objects with AI search volume rates in a certain month of a year
+        /// monthly AI search volume rates
+        /// <br/>array of objects with AI search volume rates in a certain month of a year
         /// </summary>
         [JsonProperty("ai_monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiMonthlySearches> AiMonthlySearches { get; set; }

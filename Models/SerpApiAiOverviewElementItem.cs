@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -27,9 +28,7 @@ namespace DataForSeo.Client.Models
         public string Markdown { get; set; }
 
         /// <summary>
-        /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// website links featured in the element
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

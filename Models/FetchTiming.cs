@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// indicates how many seconds it took to download a page
+        /// total time it takes until a browser receives a complete response from a server (in milliseconds)
         /// </summary>
         [JsonProperty("duration_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DurationTime { get; set; }

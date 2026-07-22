@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -133,6 +134,7 @@ namespace DataForSeo.Client.Models
         /// <br/>questions and answers extension shown below some of Google’s search results
         /// <br/>if there are none, equals null
         /// </summary>
+        [Obsolete]
         [JsonProperty("faq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public FaqBox Faq { get; set; }
 
@@ -149,6 +151,7 @@ namespace DataForSeo.Client.Models
         /// <br/>‘About this result’ panel provides additional context about why Google returned this result for the given query;
         /// <br/>this feature appears after clicking on the three dots next to most results
         /// </summary>
+        [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AboutThisResultElement AboutThisResult { get; set; }
 

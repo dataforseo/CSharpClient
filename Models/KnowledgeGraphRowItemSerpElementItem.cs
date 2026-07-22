@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -26,7 +27,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// reference page title
+        /// title of the row
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -47,7 +48,9 @@ namespace DataForSeo.Client.Models
         public string Text { get; set; }
 
         /// <summary>
-        /// website links featured in the element
+        /// sitelinks
+        /// <br/>the links shown below some of Google’s search results
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

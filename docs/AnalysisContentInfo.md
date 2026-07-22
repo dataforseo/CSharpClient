@@ -15,7 +15,7 @@
 **SnippetLength** | **int?** | character length of the snippet |[optional]|
 **SocialMetrics** | **IEnumerable<SocialMetricsInfo>** | social media engagement metrics<br>data on social media interactions associated with the content based on website embeds developed and supported by social media platforms |[optional]|
 **HighlightedText** | **string** | highlighted text from the snippet |[optional]|
-**Language** | **string** | content language<br>to obtain a full list of available languages, refer to the Languages endpoint |[optional]|
+**Language** | **string** | main language of the domain<br>to obtain a full list of available languages, refer to the Languages endpoint |[optional]|
 **SentimentConnotations** | **IDictionary<string, long?>** | sentiment connotations<br>contains sentiments (emotional reactions) related to the given citation and probability index per each sentiment<br>possible sentiment connotations: anger, happiness, love, sadness, share, fun |[optional]|
 **ConnotationTypes** | **IDictionary<string, long?>** | connotation types<br>contains types of sentiments (sentiment polarity) related to the given citation and probability index per each sentiment type<br>possible sentiment connotation types: positive, negative, neutral |[optional]|
 **TextCategory** | **IEnumerable<int?>** | text category<br>to obtain a full list of available categories, refer to the Categories endpoint |[optional]|

@@ -873,7 +873,6 @@ var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<Ser
         LanguageCode = "en",
         LocationCode = 2840,
         Keyword = "albert einstein",
-        CalculateRectangles = true,
     }
 });
 ```
@@ -1548,8 +1547,6 @@ var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<Ser
         LanguageCode = "en",
         LocationCode = 2840,
         Keyword = "local nail services",
-        MinRating = 4.5,
-        TimeFilter = "monday",
     }
 });
 ```
@@ -1765,8 +1762,6 @@ var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List
         LanguageCode = "en",
         LocationCode = 2840,
         Keyword = "local nail services",
-        MinRating = 4.5,
-        TimeFilter = "monday",
     }
 });
 ```
@@ -2349,8 +2344,6 @@ var result = await dfsClient.SerpApi.GoogleEventsLiveAdvancedAsync(new List<Serp
     new()
     {
         Keyword = "concerts",
-        LocationName = "Los Angeles,California,United States",
-        DateRange = "today",
     }
 });
 ```
@@ -3275,7 +3268,6 @@ var result = await dfsClient.SerpApi.GoogleAutocompleteLiveAdvancedAsync(new Lis
         LanguageCode = "en",
         LocationCode = 2840,
         Keyword = "albert einstein",
-        Client = "gws-wiz-serp",
     }
 });
 ```
@@ -3323,19 +3315,6 @@ var result = await dfsClient.SerpApi.GoogleDatasetSearchTaskPostAsync(new List<S
     new()
     {
         Keyword = "water quality",
-        LastUpdated = "1m",
-        FileFormats = new List<string>()
-        {
-            "archive",
-            "image",
-        },
-        UsageRights = "noncommercial",
-        IsFree = true,
-        Topics = new List<string>()
-        {
-            "natural_sciences",
-            "geo",
-        },
     }
 });
 ```
@@ -3507,19 +3486,6 @@ var result = await dfsClient.SerpApi.GoogleDatasetSearchLiveAdvancedAsync(new Li
     new()
     {
         Keyword = "water quality",
-        LastUpdated = "1m",
-        FileFormats = new List<string>()
-        {
-            "archive",
-            "image",
-        },
-        UsageRights = "noncommercial",
-        IsFree = true,
-        Topics = new List<string>()
-        {
-            "natural_sciences",
-            "geo",
-        },
     }
 });
 ```
@@ -3998,7 +3964,6 @@ var result = await dfsClient.SerpApi.GoogleAdsSearchTaskPostAsync(new List<SerpG
     new()
     {
         LocationCode = 2840,
-        Platform = "google_search",
         AdvertiserIds = new List<string>()
         {
             "AR13752565271262920705",
@@ -7224,7 +7189,6 @@ var result = await dfsClient.SerpApi.GoogleFinanceExploreTaskPostAsync(new List<
     new()
     {
         LocationCode = 2840,
-        LanguageName = "English",
     }
 });
 ```
@@ -7397,7 +7361,6 @@ var result = await dfsClient.SerpApi.GoogleFinanceExploreLiveAdvancedAsync(new L
     new()
     {
         LocationCode = 2840,
-        LanguageName = "English",
     }
 });
 ```
@@ -7493,7 +7456,6 @@ var result = await dfsClient.SerpApi.GoogleFinanceMarketsTaskPostAsync(new List<
     new()
     {
         LocationCode = 2840,
-        LanguageName = "English",
     }
 });
 ```
@@ -7666,7 +7628,6 @@ var result = await dfsClient.SerpApi.GoogleFinanceMarketsLiveAdvancedAsync(new L
     new()
     {
         LocationCode = 2840,
-        LanguageName = "English",
     }
 });
 ```
@@ -7763,7 +7724,6 @@ var result = await dfsClient.SerpApi.GoogleFinanceQuoteTaskPostAsync(new List<Se
     {
         Keyword = ".DJI:INDEXDJX",
         LocationCode = 2840,
-        LanguageName = "English",
     }
 });
 ```
@@ -7937,7 +7897,6 @@ var result = await dfsClient.SerpApi.GoogleFinanceQuoteLiveAdvancedAsync(new Lis
     {
         Keyword = "CLW00:NYMEX",
         LocationCode = 2840,
-        LanguageName = "English",
     }
 });
 ```
@@ -8033,9 +7992,7 @@ var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchTaskPostAsync(new 
 {
     new()
     {
-        LanguageName = "English",
         LocationCode = 2840,
-        Category = "all",
         Keyword = "DJ",
         Priority = 2,
     }
@@ -8167,9 +8124,7 @@ var result = await dfsClient.SerpApi.GoogleFinanceTickerSearchLiveAdvancedAsync(
 {
     new()
     {
-        LanguageName = "English",
         LocationCode = 2840,
-        Category = "all",
         Keyword = "DJ",
     }
 });

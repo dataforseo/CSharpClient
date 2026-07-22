@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Title** | **string** | title of the result in SERP |[optional]|
-**Url** | **string** | sitelink URL |[optional]|
+**Url** | **string** | relevant URL in SERP |[optional]|
 **Items** | **IEnumerable<ScholarlyArticlesElement>** | historical SERPs and related data found in the database |[optional]|

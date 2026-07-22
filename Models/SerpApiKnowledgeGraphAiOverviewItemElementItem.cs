@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -18,8 +19,7 @@ namespace DataForSeo.Client.Models
         public bool? AsynchronousAiOverview { get; set; }
 
         /// <summary>
-        /// popular keywords relevant to the initial search query
-        /// <br/>if there are none, equals null
+        /// contains results featured in the ‘hotels_pack’ element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }

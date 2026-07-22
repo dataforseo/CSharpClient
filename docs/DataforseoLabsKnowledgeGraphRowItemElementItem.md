@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the element |[optional]|
-**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>kc:/local:place qa |[optional]|
-**Text** | **string** | content within the item |[optional]|
-**Links** | **IEnumerable<LinkElement>** | link of the element |[optional]|
+**Title** | **string** | title of the result in SERP |[optional]|
+**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
+**Text** | **string** | description content |[optional]|
+**Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|

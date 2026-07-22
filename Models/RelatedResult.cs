@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -28,19 +29,19 @@ namespace DataForSeo.Client.Models
         public string Xpath { get; set; }
 
         /// <summary>
-        /// domain where a link points
+        /// website domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// title of the link
+        /// title of a given link element
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// reference page URL
+        /// URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -83,7 +84,7 @@ namespace DataForSeo.Client.Models
         public bool? IsVideo { get; set; }
 
         /// <summary>
-        /// description of the hotel booking element
+        /// description of the results element in SERP
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
@@ -136,14 +137,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains information from the ‘About this result’ panel
-        /// <br/>‘About this result’ panel provides additional context about why Google returned this result for the given query;
-        /// <br/>this feature appears after clicking on the three dots next to most results
+        /// <br/>Note: this object is deprecated and always returns null
         /// </summary>
+        [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AboutThisResultElement AboutThisResult { get; set; }
 
         /// <summary>
-        /// date and time when the video was published or indexed
+        /// date and time when the result was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

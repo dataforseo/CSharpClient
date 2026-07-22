@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,7 +16,9 @@ namespace DataForSeo.Client.Models
         public string CountryIsoCode { get; set; }
 
         /// <summary>
-        /// search volume in a given country
+        /// clickstream-based average monthly search volume rate
+        /// <br/>represents the (approximate) number of searches for the given keyword idea based on clickstream
+        /// <br/>you can learn more about clickstream search volume in this Help Center article
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }

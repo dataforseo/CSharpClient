@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -67,8 +68,7 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// ASIN of the product
-        /// <br/>learn more about ASIN in this help center guide
+        /// ASIN in a POST array
         /// </summary>
         [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }

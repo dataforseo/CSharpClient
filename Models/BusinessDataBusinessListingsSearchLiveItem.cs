@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -175,7 +176,7 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, long?> PlaceTopics { get; set; }
 
         /// <summary>
-        /// the element’s rating 
+        /// the element's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -262,6 +263,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("first_seen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstSeen { get; set; }
+        [JsonProperty("services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<BusinessDataServiceInfo> Services { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

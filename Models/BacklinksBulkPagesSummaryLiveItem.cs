@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -100,10 +101,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringMainDomains { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [JsonProperty("referring_main_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringMainDomainsNofollow { get; set; }
 

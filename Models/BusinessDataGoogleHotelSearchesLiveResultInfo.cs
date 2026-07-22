@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -51,8 +52,9 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// array of items
-        /// <br/>note: this field always equals null; use it to facilitate integration and ensure interoperability with the Hotel Info endpoint
+        /// encountered item types
+        /// <br/>types of search engine results encountered in the items array;
+        /// <br/>possible item types: hotel_search_item
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BusinessDataGoogleHotelSearchesItem> Items { get; set; }

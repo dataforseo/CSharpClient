@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -7,10 +8,6 @@ namespace DataForSeo.Client.Models
 
     public class SerpGoogleLocalFinderLiveHtmlTaskInfo  : BaseResponseTaskInfo 
     {
-
-        /// <summary>
-        /// array of results
-        /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SerpGoogleLocalFinderLiveHtmlResultInfo> Result { get; set; }
 

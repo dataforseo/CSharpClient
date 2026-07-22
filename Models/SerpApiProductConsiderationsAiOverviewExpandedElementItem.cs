@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// contains arrays of elements available in the list
+        /// items present in the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiOverviewElement> Items { get; set; }

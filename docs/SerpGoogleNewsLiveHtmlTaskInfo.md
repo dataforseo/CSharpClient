@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleNewsLiveHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleNewsLiveHtmlResultInfo>** |  |[optional]|

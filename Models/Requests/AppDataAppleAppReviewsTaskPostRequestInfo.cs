@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -80,11 +81,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of reviews to be returned in the API response;
-        /// <br/>we strongly recommend setting the parsing depth in the multiples of 50, because our system processes 50 reviews in a row;
-        /// <br/>default value: 50;
+        /// <br/>we strongly recommend setting the parsing depth in the multiples of 25, because our system processes 25 reviews in a row;
+        /// <br/>default value: 25;
         /// <br/>maximum value: 500;
-        /// <br/>Your account will be billed per each SERP containing up to 50 results;
-        /// <br/>Setting depth above 50 may result in additional charges if the search engine returns more than 50 results;
+        /// <br/>Your account will be billed per each SERP containing up to 25 results;
+        /// <br/>Setting depth above 25 may result in additional charges if the search engine returns more than 25 results;
         /// <br/>The cost can be calculated on the Pricing page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

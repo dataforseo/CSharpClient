@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -7,10 +8,6 @@ namespace DataForSeo.Client.Models.Responses
 
     public class SerpGoogleAiModeTaskPostResponseInfo  : BaseResponseInfo 
     {
-
-        /// <summary>
-        /// array of tasks
-        /// </summary>
         [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SerpGoogleAiModeTaskPostTaskInfo> Tasks { get; set; }
 

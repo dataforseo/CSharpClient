@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -64,7 +65,9 @@ namespace DataForSeo.Client.Models
         public int? CompetitionIndex { get; set; }
 
         /// <summary>
-        /// monthly average search volume rate
+        /// monthly average search volume rate;
+        /// <br/>represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting;
+        /// <br/>if there is no data then the value is null
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -24,7 +25,6 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("answer_box", typeof(AnswerBoxSerpElementItem))]
     [JsonInheritance("shopping", typeof(ShoppingSerpElementItem))]
     [JsonInheritance("google_flights", typeof(GoogleFlightsSerpElementItem))]
-    [JsonInheritance("mention_carousel", typeof(MentionCarouselSerpElementItem))]
     [JsonInheritance("events", typeof(EventsSerpElementItem))]
     [JsonInheritance("related_searches", typeof(RelatedSearchesSerpElementItem))]
     [JsonInheritance("multi_carousel", typeof(MultiCarouselSerpElementItem))]
@@ -32,27 +32,21 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("top_sights", typeof(TopSightsSerpElementItem))]
     [JsonInheritance("scholarly_articles", typeof(ScholarlyArticlesSerpElementItem))]
     [JsonInheritance("popular_products", typeof(PopularProductsSerpElementItem))]
-    [JsonInheritance("podcasts", typeof(PodcastsSerpElementItem))]
     [JsonInheritance("stocks_box", typeof(StocksBoxSerpElementItem))]
     [JsonInheritance("find_results_on", typeof(FindResultsOnSerpElementItem))]
     [JsonInheritance("questions_and_answers", typeof(QuestionsAndAnswersSerpElementItem))]
     [JsonInheritance("hotels_pack", typeof(HotelsPackSerpElementItem))]
-    [JsonInheritance("visual_stories", typeof(VisualStoriesSerpElementItem))]
     [JsonInheritance("commercial_units", typeof(CommercialUnitsSerpElementItem))]
     [JsonInheritance("local_services", typeof(LocalServicesSerpElementItem))]
     [JsonInheritance("google_hotels", typeof(GoogleHotelsSerpElementItem))]
     [JsonInheritance("math_solver", typeof(MathSolverSerpElementItem))]
     [JsonInheritance("currency_box", typeof(CurrencyBoxSerpElementItem))]
-    [JsonInheritance("google_posts", typeof(GooglePostsSerpElementItem))]
     [JsonInheritance("product_considerations", typeof(ProductConsiderationsSerpElementItem))]
-    [JsonInheritance("found_on_web", typeof(FoundOnWebSerpElementItem))]
     [JsonInheritance("short_videos", typeof(ShortVideosSerpElementItem))]
     [JsonInheritance("refine_products", typeof(RefineProductsSerpElementItem))]
-    [JsonInheritance("explore_brands", typeof(ExploreBrandsSerpElementItem))]
     [JsonInheritance("perspectives", typeof(PerspectivesSerpElementItem))]
     [JsonInheritance("discussions_and_forums", typeof(DiscussionsAndForumsSerpElementItem))]
     [JsonInheritance("compare_sites", typeof(CompareSitesSerpElementItem))]
-    [JsonInheritance("courses", typeof(CoursesSerpElementItem))]
     [JsonInheritance("knowledge_graph_carousel_item", typeof(KnowledgeGraphCarouselItemSerpElementItem))]
     [JsonInheritance("knowledge_graph_description_item", typeof(KnowledgeGraphDescriptionItemSerpElementItem))]
     [JsonInheritance("knowledge_graph_images_item", typeof(KnowledgeGraphImagesItemSerpElementItem))]
@@ -66,6 +60,13 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("ai_overview", typeof(AiOverviewSerpElementItem))]
     [JsonInheritance("third_party_reviews", typeof(ThirdPartyReviewsSerpElementItem))]
     [JsonInheritance("dictionary", typeof(DictionarySerpElementItem))]
+    [JsonInheritance("google_posts", typeof(GooglePostsSerpElementItem))]
+    [JsonInheritance("mention_carousel", typeof(MentionCarouselSerpElementItem))]
+    [JsonInheritance("podcasts", typeof(PodcastsSerpElementItem))]
+    [JsonInheritance("visual_stories", typeof(VisualStoriesSerpElementItem))]
+    [JsonInheritance("found_on_web", typeof(FoundOnWebSerpElementItem))]
+    [JsonInheritance("explore_brands", typeof(ExploreBrandsSerpElementItem))]
+    [JsonInheritance("courses", typeof(CoursesSerpElementItem))]
 
     public class BaseSerpApiElementItem 
     {
@@ -77,8 +78,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// search results page number
-        /// <br/>indicates the number of the SERP page on which the element is located
+        /// search results page numberindicates the number of the SERP page on which the element is located
         /// </summary>
         [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Page { get; set; }

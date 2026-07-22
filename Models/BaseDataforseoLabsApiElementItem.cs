@@ -1,14 +1,15 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
+    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
     [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
     [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
-    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
+    [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
     [JsonInheritance("answer_box", typeof(DataLabsAnswerBoxSerpElementItem))]
     [JsonInheritance("carousel", typeof(DataLabsCarouselSerpElementItem))]
     [JsonInheritance("multi_carousel", typeof(DataLabsMultiCarouselSerpElementItem))]
@@ -41,6 +42,10 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("local_services", typeof(DataLabsLocalServicesSerpElementItem))]
     [JsonInheritance("google_hotels", typeof(DataLabsGoogleHotelsSerpElementItem))]
     [JsonInheritance("math_solver", typeof(DataLabsMathSolverSerpElementItem))]
+    [JsonInheritance("visual_stories", typeof(DataLabsVisualStoriesSerpElementItem))]
+    [JsonInheritance("found_on_web", typeof(DataLabsFoundOnWebSerpElementItem))]
+    [JsonInheritance("explore_brands", typeof(DataLabsExploreBrandsSerpElementItem))]
+    [JsonInheritance("courses", typeof(DataLabsCoursesSerpElementItem))]
 
     public class BaseDataforseoLabsApiElementItem 
     {

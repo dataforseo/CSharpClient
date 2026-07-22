@@ -397,282 +397,6 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> LlmMentionsLocationsAndLanguagesAsync()
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/locations_and_languages"
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<AiOptimizationLlmMentionsAvailableFiltersResponseInfo> LlmMentionsAvailableFiltersAsync()
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                request.Method = new HttpMethod("GET");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/available_filters"
-        
-                ;
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsAvailableFiltersResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<AiOptimizationLlmMentionsSearchLiveResponseInfo> LlmMentionsSearchLiveAsync(IEnumerable<AiOptimizationLlmMentionsSearchLiveRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/search/live";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsSearchLiveResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<AiOptimizationLlmMentionsTopPagesLiveResponseInfo> LlmMentionsTopPagesLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopPagesLiveRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/top_pages/live";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopPagesLiveResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo> LlmMentionsTopDomainsLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/top_domains/live";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo> LlmMentionsAggregatedMetricsLiveAsync(IEnumerable<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/aggregated_metrics/live";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
-        public virtual async Task<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo> LlmMentionsCrossAggregatedMetricsLiveAsync(IEnumerable<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> payload)
-        {
-            using (var request = new HttpRequestMessage())
-            {
-                var json = JsonConvert.SerializeObject(payload, _settings);
-                var content = new StringContent(json);
-                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-                request.Content = content;
-                request.Method = new HttpMethod("POST");
-                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
-                var urlBuilder = new StringBuilder();
-                if (!string.IsNullOrEmpty(_baseUrl))
-                    urlBuilder.Append(_baseUrl);
-                var path = "/v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live";
-                urlBuilder.Append(path);
-                var url = urlBuilder.ToString();
-                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
-                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-                {
-                    var headers = new Dictionary<string, IEnumerable<string>>();
-                    foreach (var item_ in response.Headers)
-                        headers[item_.Key] = item_.Value;
-                    if (response.Content != null && response.Content.Headers != null)
-                    {
-                        foreach (var item_ in response.Content.Headers)
-                            headers[item_.Key] = item_.Value;
-                    }
-
-                    var status = (int)response.StatusCode;
-                    if (status == 200)
-                    {
-                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo>(response, headers).ConfigureAwait(false);
-                        return objectResponse.Object;
-                    }
-
-                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
-                }
-            }
-        }
         public virtual async Task<AiOptimizationChatGptLlmResponsesModelsResponseInfo> ChatGptLlmResponsesModelsAsync()
         {
             using (var request = new HttpRequestMessage())
@@ -1761,6 +1485,682 @@ namespace DataForSeo.Client.Api
                     if (status == 200)
                     {
                         var objectResponse = await ReadObjectResponseAsync<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsAvailableFiltersResponseInfo> LlmMentionsAvailableFiltersAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/available_filters"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsAvailableFiltersResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> LlmMentionsLocationsAndLanguagesAsync()
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                request.Method = new HttpMethod("GET");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/locations_and_languages"
+        
+                ;
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo> LlmMentionsSearchMentionsLiveAsync(IEnumerable<AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/search_mentions/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo> LlmMentionsTargetMetricsLiveAsync(IEnumerable<AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/target_metrics/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo> LlmMentionsMultiTargetMetricsLiveAsync(IEnumerable<AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/multi_target_metrics/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo> LlmMentionsTopMentionedDomainsLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_domains/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo> LlmMentionsTopMentionedPagesLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_pages/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo> LlmMentionsTopMentionedBrandsLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_brands/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo> LlmMentionsTopMentionedBrandCategoriesLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_brand_categories/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo> LlmMentionsTargetMetricsLiteLiveAsync(IEnumerable<AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/target_metrics_lite/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo> LlmMentionsTopMentionedDomainsLiteLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_domains_lite/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo> LlmMentionsTopMentionedPagesLiteLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_pages_lite/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo> LlmMentionsTopMentionedBrandsLiteLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_brands_lite/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo> LlmMentionsTopMentionedBrandCategoriesLiteLiveAsync(IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsHistoricalLiveResponseInfo> LlmMentionsHistoricalLiveAsync(IEnumerable<AiOptimizationLlmMentionsHistoricalLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/historical/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsHistoricalLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo> LlmMentionsTimeseriesDeltaLiveAsync(IEnumerable<AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/timeseries_delta/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo>(response, headers).ConfigureAwait(false);
+                        return objectResponse.Object;
+                    }
+
+                    var responseData = response.Content == null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
+                }
+            }
+        }
+        public virtual async Task<AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo> LlmMentionsTimeseriesNewLostLiveAsync(IEnumerable<AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo> payload)
+        {
+            using (var request = new HttpRequestMessage())
+            {
+                var json = JsonConvert.SerializeObject(payload, _settings);
+                var content = new StringContent(json);
+                content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+                request.Content = content;
+                request.Method = new HttpMethod("POST");
+                request.Headers.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+                var urlBuilder = new StringBuilder();
+                if (!string.IsNullOrEmpty(_baseUrl))
+                    urlBuilder.Append(_baseUrl);
+                var path = "/v3/ai_optimization/llm_mentions/timeseries_new_lost/live";
+                urlBuilder.Append(path);
+                var url = urlBuilder.ToString();
+                request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
+                using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+                {
+                    var headers = new Dictionary<string, IEnumerable<string>>();
+                    foreach (var item_ in response.Headers)
+                        headers[item_.Key] = item_.Value;
+                    if (response.Content != null && response.Content.Headers != null)
+                    {
+                        foreach (var item_ in response.Content.Headers)
+                            headers[item_.Key] = item_.Value;
+                    }
+
+                    var status = (int)response.StatusCode;
+                    if (status == 200)
+                    {
+                        var objectResponse = await ReadObjectResponseAsync<AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo>(response, headers).ConfigureAwait(false);
                         return objectResponse.Object;
                     }
 

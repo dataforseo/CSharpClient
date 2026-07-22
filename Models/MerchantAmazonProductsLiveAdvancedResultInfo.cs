@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// keyword received in a POST arraykeyword is returned with decoded %## (plus character '+' will be decoded to a space character)
+        /// keyword received in a POST array
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -39,25 +41,33 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// direct URL to Amazon resultsyou can use it to make sure that we provided accurate results
+        /// direct URL to Amazon results
+        /// <br/>you can use it to make sure that we provided accurate results
         /// </summary>
         [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
 
         /// <summary>
-        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+        /// date and time when the result was received
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
-        /// autocorrection of the search engineif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// autocorrection of the search engine
+        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
 
         /// <summary>
-        /// types of search results found in Amazon SERPcontains types of all search results (items) found in the returned SERPpossible item types:amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
+        /// types of search results found in Amazon SERP
+        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>possible item types:
+        /// <br/>amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -81,7 +91,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// Amazon product items within the editorial_recommendations element
+        /// Amazon product items
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseMerchantAmazonElementItem> Items { get; set; }

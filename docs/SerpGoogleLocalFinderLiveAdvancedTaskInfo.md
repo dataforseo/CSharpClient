@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleLocalFinderLiveAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleLocalFinderLiveAdvancedResultInfo>** |  |[optional]|

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -64,10 +65,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("free_cancellation_until", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FreeCancellationUntil { get; set; }
-
-        /// <summary>
-        /// featured price offers
-        /// </summary>
         [JsonProperty("offers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HotelInfoPriceOffer> Offers { get; set; }
 

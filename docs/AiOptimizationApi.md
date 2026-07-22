@@ -13,13 +13,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**chatGptLlmScraperTaskGetHtml**](AiOptimizationApi.md#chatGptLlmScraperTaskGetHtml) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/html/{id}  |
 [**chatGptLlmScraperLiveAdvanced**](AiOptimizationApi.md#chatGptLlmScraperLiveAdvanced) | **POST**  /v3/ai_optimization/chat_gpt/llm_scraper/live/advanced  |
 [**chatGptLlmScraperLiveHtml**](AiOptimizationApi.md#chatGptLlmScraperLiveHtml) | **POST**  /v3/ai_optimization/chat_gpt/llm_scraper/live/html  |
-[**llmMentionsLocationsAndLanguages**](AiOptimizationApi.md#llmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
-[**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
-[**llmMentionsSearchLive**](AiOptimizationApi.md#llmMentionsSearchLive) | **POST**  /v3/ai_optimization/llm_mentions/search/live  |
-[**llmMentionsTopPagesLive**](AiOptimizationApi.md#llmMentionsTopPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_pages/live  |
-[**llmMentionsTopDomainsLive**](AiOptimizationApi.md#llmMentionsTopDomainsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_domains/live  |
-[**llmMentionsAggregatedMetricsLive**](AiOptimizationApi.md#llmMentionsAggregatedMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/aggregated_metrics/live  |
-[**llmMentionsCrossAggregatedMetricsLive**](AiOptimizationApi.md#llmMentionsCrossAggregatedMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live  |
 [**chatGptLlmResponsesModels**](AiOptimizationApi.md#chatGptLlmResponsesModels) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/models  |
 [**chatGptLlmResponsesLive**](AiOptimizationApi.md#chatGptLlmResponsesLive) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/live  |
 [**chatGptLlmResponsesTaskPost**](AiOptimizationApi.md#chatGptLlmResponsesTaskPost) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/task_post  |
@@ -48,6 +41,23 @@ All URIs are relative to *https://api.dataforseo.com*
 [**aiKeywordDataAvailableFilters**](AiOptimizationApi.md#aiKeywordDataAvailableFilters) | **GET**  /v3/ai_optimization/ai_keyword_data/available_filters  |
 [**aiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
 [**aiKeywordDataKeywordsSearchVolumeLive**](AiOptimizationApi.md#aiKeywordDataKeywordsSearchVolumeLive) | **POST**  /v3/ai_optimization/ai_keyword_data/keywords_search_volume/live  |
+[**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
+[**llmMentionsLocationsAndLanguages**](AiOptimizationApi.md#llmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
+[**llmMentionsSearchMentionsLive**](AiOptimizationApi.md#llmMentionsSearchMentionsLive) | **POST**  /v3/ai_optimization/llm_mentions/search_mentions/live  |
+[**llmMentionsTargetMetricsLive**](AiOptimizationApi.md#llmMentionsTargetMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/target_metrics/live  |
+[**llmMentionsMultiTargetMetricsLive**](AiOptimizationApi.md#llmMentionsMultiTargetMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/multi_target_metrics/live  |
+[**llmMentionsTopMentionedDomainsLive**](AiOptimizationApi.md#llmMentionsTopMentionedDomainsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_domains/live  |
+[**llmMentionsTopMentionedPagesLive**](AiOptimizationApi.md#llmMentionsTopMentionedPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_pages/live  |
+[**llmMentionsTopMentionedBrandsLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brands/live  |
+[**llmMentionsTopMentionedBrandCategoriesLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandCategoriesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brand_categories/live  |
+[**llmMentionsTargetMetricsLiteLive**](AiOptimizationApi.md#llmMentionsTargetMetricsLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/target_metrics_lite/live  |
+[**llmMentionsTopMentionedDomainsLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedDomainsLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_domains_lite/live  |
+[**llmMentionsTopMentionedPagesLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedPagesLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_pages_lite/live  |
+[**llmMentionsTopMentionedBrandsLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandsLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brands_lite/live  |
+[**llmMentionsTopMentionedBrandCategoriesLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandCategoriesLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live  |
+[**llmMentionsHistoricalLive**](AiOptimizationApi.md#llmMentionsHistoricalLive) | **POST**  /v3/ai_optimization/llm_mentions/historical/live  |
+[**llmMentionsTimeseriesDeltaLive**](AiOptimizationApi.md#llmMentionsTimeseriesDeltaLive) | **POST**  /v3/ai_optimization/llm_mentions/timeseries_delta/live  |
+[**llmMentionsTimeseriesNewLostLive**](AiOptimizationApi.md#llmMentionsTimeseriesNewLostLive) | **POST**  /v3/ai_optimization/llm_mentions/timeseries_new_lost/live  |
 
 <a id="chatGptLlmScraperLocations"></a>
 # **chatGptLlmScraperLocations**
@@ -445,499 +455,6 @@ var result = await dfsClient.AiOptimizationApi.ChatGptLlmScraperLiveHtmlAsync(ne
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="llmMentionsLocationsAndLanguages"></a>
-# **llmMentionsLocationsAndLanguages**
-> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsLocationsAndLanguagesAsync();
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo**](AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsAvailableFilters"></a>
-# **llmMentionsAvailableFilters**
-> AiOptimizationLlmMentionsAvailableFiltersResponseInfo llmMentionsAvailableFilters()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsAvailableFiltersAsync();
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsAvailableFiltersResponseInfo**](AiOptimizationLlmMentionsAvailableFiltersResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsSearchLive"></a>
-# **llmMentionsSearchLive**
-> AiOptimizationLlmMentionsSearchLiveResponseInfo llmMentionsSearchLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsSearchLiveAsync(new List<AiOptimizationLlmMentionsSearchLiveRequestInfo>()
-{
-    new()
-    {
-        LanguageName = "English",
-        LocationCode = 2840,
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-        {
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Domain = "dataforseo.com",
-                SearchFilter = "exclude",
-            },
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Keyword = "bmw",
-                SearchScope = new List<string>()
-                {
-                    "answer",
-                } 
-            },
-        },
-        Platform = "google",
-        Filters = new List<object>()
-        {
-            new List<object>()
-            {
-                "ai_search_volume",
-                ">",
-                1000,
-            },
-        },
-        OrderBy = new List<string>()
-        {
-            "ai_search_volume,desc",
-        },
-        Offset = 0,
-        Limit = 3,
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsSearchLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsSearchLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsSearchLiveResponseInfo**](AiOptimizationLlmMentionsSearchLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsTopPagesLive"></a>
-# **llmMentionsTopPagesLive**
-> AiOptimizationLlmMentionsTopPagesLiveResponseInfo llmMentionsTopPagesLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsTopPagesLiveAsync(new List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>()
-{
-    new()
-    {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        Platform = "google",
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-        {
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Keyword = "bmw",
-                SearchScope = new List<string>()
-                {
-                    "answer",
-                } 
-            },
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Keyword = "auto",
-                SearchScope = new List<string>()
-                {
-                    "question",
-                } 
-                MatchType = "partial_match",
-            },
-        },
-        LinksScope = "sources",
-        InitialDatasetFilters = new List<object>()
-        {
-            new List<object>()
-            {
-                "ai_search_volume",
-                ">",
-                10,
-            },
-        },
-        ItemsListLimit = 3,
-        InternalListLimit = 2,
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsTopPagesLiveResponseInfo**](AiOptimizationLlmMentionsTopPagesLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsTopDomainsLive"></a>
-# **llmMentionsTopDomainsLive**
-> AiOptimizationLlmMentionsTopDomainsLiveResponseInfo llmMentionsTopDomainsLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsTopDomainsLiveAsync(new List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>()
-{
-    new()
-    {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        Platform = "chat_gpt",
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-        {
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Keyword = "bmw",
-                SearchScope = new List<string>()
-                {
-                    "answer",
-                } 
-            },
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Keyword = "auto",
-                SearchScope = new List<string>()
-                {
-                    "question",
-                } 
-                MatchType = "partial_match",
-            },
-        },
-        LinksScope = "sources",
-        InitialDatasetFilters = new List<object>()
-        {
-            new List<object>()
-            {
-                "ai_search_volume",
-                ">",
-                10,
-            },
-        },
-        ItemsListLimit = 3,
-        InternalListLimit = 2,
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsTopDomainsLiveResponseInfo**](AiOptimizationLlmMentionsTopDomainsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsAggregatedMetricsLive"></a>
-# **llmMentionsAggregatedMetricsLive**
-> AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo llmMentionsAggregatedMetricsLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsAggregatedMetricsLiveAsync(new List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>()
-{
-    new()
-    {
-        LanguageCode = "es",
-        LocationCode = 2840,
-        Platform = "google",
-        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
-        {
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Domain = "en.wikipedia.org",
-                SearchFilter = "exclude",
-            },
-            new BaseAiOptimizationLLmMentionsTargetElement()
-            {
-                Keyword = "bmw",
-                SearchScope = new List<string>()
-                {
-                    "answer",
-                } 
-            },
-        },
-        InitialDatasetFilters = new List<object>()
-        {
-            new List<object>()
-            {
-                "ai_search_volume",
-                ">",
-                10,
-            },
-        },
-        InternalListLimit = 10,
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo**](AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsCrossAggregatedMetricsLive"></a>
-# **llmMentionsCrossAggregatedMetricsLive**
-> AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo llmMentionsCrossAggregatedMetricsLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.AiOptimizationApi.LlmMentionsCrossAggregatedMetricsLiveAsync(new List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>()
-{
-    new()
-    {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        Platform = "google",
-        Targets = new List<AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo>()
-        {
-            new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
-            {
-                AggregationKey = "chat_gpt",
-                Target = new List<string>()
-                {
-                    ,
-                } 
-            },
-            new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
-            {
-                AggregationKey = "claude",
-                Target = new List<string>()
-                {
-                    ,
-                } 
-            },
-            new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
-            {
-                AggregationKey = "gemini",
-                Target = new List<string>()
-                {
-                    ,
-                } 
-            },
-            new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
-            {
-                AggregationKey = "perplexity",
-                Target = new List<string>()
-                {
-                    ,
-                } 
-            },
-        },
-        InitialDatasetFilters = new List<object>()
-        {
-            new List<object>()
-            {
-                "ai_search_volume",
-                ">",
-                10,
-            },
-        },
-        InternalListLimit = 5,
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo**](AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
 <a id="chatGptLlmResponsesModels"></a>
 # **chatGptLlmResponsesModels**
 > AiOptimizationChatGptLlmResponsesModelsResponseInfo chatGptLlmResponsesModels()
@@ -1001,12 +518,12 @@ var result = await dfsClient.AiOptimizationApi.ChatGptLlmResponsesLiveAsync(new 
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         MaxOutputTokens = 200,
@@ -1069,12 +586,12 @@ var result = await dfsClient.AiOptimizationApi.ChatGptLlmResponsesTaskPostAsync(
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         ModelName = "gpt-4.1-mini",
@@ -1255,12 +772,12 @@ var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesLiveAsync(new L
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         MaxOutputTokens = 200,
@@ -1321,12 +838,12 @@ var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesTaskPostAsync(n
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         MaxOutputTokens = 1024,
@@ -1511,12 +1028,12 @@ var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesTaskPostAsync(n
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         ModelName = "gemini-2.5-flash",
@@ -1656,12 +1173,12 @@ var result = await dfsClient.AiOptimizationApi.GeminiLlmResponsesLiveAsync(new L
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         MaxOutputTokens = 200,
@@ -2117,12 +1634,12 @@ var result = await dfsClient.AiOptimizationApi.PerplexityLlmResponsesLiveAsync(n
             new LlmMessageChainItem()
             {
                 Role = "user",
-                Message = "Hello, what’s up?",
+                Message = "Hello, what\u2019s up?",
             },
             new LlmMessageChainItem()
             {
                 Role = "ai",
-                Message = "Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?",
+                Message = "Hello! I\u2019m doing well, thank you. How can I assist you today? Are there any specific topics or projects you\u2019d like to discuss in our meeting?",
             },
         },
         MaxOutputTokens = 200,
@@ -2281,6 +1798,1266 @@ var result = await dfsClient.AiOptimizationApi.AiKeywordDataKeywordsSearchVolume
 ### Return type
 
 [**AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo**](AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsAvailableFilters"></a>
+# **llmMentionsAvailableFilters**
+> AiOptimizationLlmMentionsAvailableFiltersResponseInfo llmMentionsAvailableFilters()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsAvailableFiltersAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsAvailableFiltersResponseInfo**](AiOptimizationLlmMentionsAvailableFiltersResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsLocationsAndLanguages"></a>
+# **llmMentionsLocationsAndLanguages**
+> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsLocationsAndLanguagesAsync();
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo**](AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsSearchMentionsLive"></a>
+# **llmMentionsSearchMentionsLive**
+> AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo llmMentionsSearchMentionsLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsSearchMentionsLiveAsync(new List<AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageName = "English",
+        LocationCode = 2840,
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsDomainElement()
+            {
+                Domain = "dataforseo.com",
+                SearchFilter = "exclude",
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+        },
+        Platform = "google",
+        Filters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                1000,
+            },
+        },
+        OrderBy = new List<string>()
+        {
+            "ai_search_volume,desc",
+        },
+        Offset = 0,
+        Limit = 3,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo**](AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTargetMetricsLive"></a>
+# **llmMentionsTargetMetricsLive**
+> AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo llmMentionsTargetMetricsLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTargetMetricsLiveAsync(new List<AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsDomainElement()
+            {
+                Domain = "en.wikipedia.org",
+                SearchFilter = "exclude",
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        InternalListLimit = 10,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo**](AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsMultiTargetMetricsLive"></a>
+# **llmMentionsMultiTargetMetricsLive**
+> AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo llmMentionsMultiTargetMetricsLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsMultiTargetMetricsLiveAsync(new List<AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "google",
+        Targets = new List<AiOptimizationLLmMentionsMultiTargetMetricsRequestInfo>()
+        {
+            new AiOptimizationLLmMentionsMultiTargetMetricsRequestInfo()
+            {
+                Key = "chat_gpt",
+                Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+                {
+                    new AiOptimizationLLmMentionsKeywordElement()
+                    {
+                        Keyword = "chat gpt",
+                    },
+                },
+            },
+            new AiOptimizationLLmMentionsMultiTargetMetricsRequestInfo()
+            {
+                Key = "claude",
+                Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+                {
+                    new AiOptimizationLLmMentionsKeywordElement()
+                    {
+                        Keyword = "claude",
+                    },
+                },
+            },
+            new AiOptimizationLLmMentionsMultiTargetMetricsRequestInfo()
+            {
+                Key = "gemini",
+                Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+                {
+                    new AiOptimizationLLmMentionsKeywordElement()
+                    {
+                        Keyword = "gemini",
+                    },
+                },
+            },
+            new AiOptimizationLLmMentionsMultiTargetMetricsRequestInfo()
+            {
+                Key = "perplexity",
+                Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+                {
+                    new AiOptimizationLLmMentionsKeywordElement()
+                    {
+                        Keyword = "perplexity",
+                        SearchFilter = "include",
+                    },
+                },
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        InternalListLimit = 5,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo**](AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedDomainsLive"></a>
+# **llmMentionsTopMentionedDomainsLive**
+> AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo llmMentionsTopMentionedDomainsLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedDomainsLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        LinksScope = "sources",
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedPagesLive"></a>
+# **llmMentionsTopMentionedPagesLive**
+> AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo llmMentionsTopMentionedPagesLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedPagesLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        LinksScope = "sources",
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandsLive"></a>
+# **llmMentionsTopMentionedBrandsLive**
+> AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo llmMentionsTopMentionedBrandsLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandsLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandCategoriesLive"></a>
+# **llmMentionsTopMentionedBrandCategoriesLive**
+> AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo llmMentionsTopMentionedBrandCategoriesLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandCategoriesLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTargetMetricsLiteLive"></a>
+# **llmMentionsTargetMetricsLiteLive**
+> AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo llmMentionsTargetMetricsLiteLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTargetMetricsLiteLiveAsync(new List<AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "es",
+        LocationCode = 2840,
+        Platform = "google",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsDomainElement()
+            {
+                Domain = "en.wikipedia.org",
+                SearchFilter = "exclude",
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 6,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo**](AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedDomainsLiteLive"></a>
+# **llmMentionsTopMentionedDomainsLiteLive**
+> AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo llmMentionsTopMentionedDomainsLiteLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedDomainsLiteLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        LinksScope = "sources",
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedPagesLiteLive"></a>
+# **llmMentionsTopMentionedPagesLiteLive**
+> AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo llmMentionsTopMentionedPagesLiteLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedPagesLiteLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        LinksScope = "sources",
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandsLiteLive"></a>
+# **llmMentionsTopMentionedBrandsLiteLive**
+> AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo llmMentionsTopMentionedBrandsLiteLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandsLiteLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandCategoriesLiteLive"></a>
+# **llmMentionsTopMentionedBrandCategoriesLiteLive**
+> AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo llmMentionsTopMentionedBrandCategoriesLiteLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandCategoriesLiteLiveAsync(new List<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "en",
+        LocationCode = 2840,
+        Platform = "chat_gpt",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "auto",
+                SearchScope = new List<string>()
+                {
+                    "question",
+                },
+                MatchType = "partial_match",
+            },
+        },
+        InitialDatasetFilters = new List<object>()
+        {
+            new List<object>()
+            {
+                "ai_search_volume",
+                ">",
+                10,
+            },
+        },
+        Limit = 3,
+        InternalListLimit = 2,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsHistoricalLive"></a>
+# **llmMentionsHistoricalLive**
+> AiOptimizationLlmMentionsHistoricalLiveResponseInfo llmMentionsHistoricalLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsHistoricalLiveAsync(new List<AiOptimizationLlmMentionsHistoricalLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageCode = "es",
+        LocationCode = 2840,
+        Platform = "google",
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsDomainElement()
+            {
+                Domain = "en.wikipedia.org",
+                SearchFilter = "exclude",
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+        },
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsHistoricalLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsHistoricalLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsHistoricalLiveResponseInfo**](AiOptimizationLlmMentionsHistoricalLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTimeseriesDeltaLive"></a>
+# **llmMentionsTimeseriesDeltaLive**
+> AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo llmMentionsTimeseriesDeltaLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTimeseriesDeltaLiveAsync(new List<AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageName = "English",
+        LocationCode = 2840,
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsDomainElement()
+            {
+                Domain = "dataforseo.com",
+                SearchFilter = "exclude",
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "bmw",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+        },
+        Platform = "google",
+        GroupRange = "month",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo**](AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTimeseriesNewLostLive"></a>
+# **llmMentionsTimeseriesNewLostLive**
+> AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo llmMentionsTimeseriesNewLostLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.AiOptimizationApi.LlmMentionsTimeseriesNewLostLiveAsync(new List<AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo>()
+{
+    new()
+    {
+        LanguageName = "English",
+        LocationCode = 2840,
+        Target = new List<BaseAiOptimizationLLmMentionsTargetElement>()
+        {
+            new AiOptimizationLLmMentionsDomainElement()
+            {
+                Domain = "dataforseo.com",
+                SearchFilter = "exclude",
+            },
+            new AiOptimizationLLmMentionsKeywordElement()
+            {
+                Keyword = "serp",
+                SearchScope = new List<string>()
+                {
+                    "answer",
+                },
+            },
+        },
+        Platform = "google",
+        GroupRange = "month",
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo>&gt;**](IEnumerable<AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo**](AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo.md)
 
 ### Authorization
 

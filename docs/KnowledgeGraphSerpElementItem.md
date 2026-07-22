@@ -15,4 +15,4 @@
 **ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
 **LogoUrl** | **string** | URL of the logo from knowledge graph |[optional]|
 **Cid** | **string** | google-defined client id<br>unique id of a local establishment;<br>can be used with Google Reviews API to get a full list of reviews |[optional]|
-**Items** | **IEnumerable<BaseSerpApiKnowledgeGraphElementItem>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**Items** | **IEnumerable<BaseSerpApiKnowledgeGraphElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|

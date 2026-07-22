@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -150,13 +151,13 @@ namespace DataForSeo.Client.Models
         /// information about the newer model of the product
         /// </summary>
         [JsonProperty("newer_model", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AmazonProductNewerModelInfo NewerModel { get; set; }
+        public NewerModel NewerModel { get; set; }
 
         /// <summary>
         /// contains related product categories
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ProductCategoryInfo> Categories { get; set; }
+        public IEnumerable<Categories> Categories { get; set; }
 
         /// <summary>
         /// contains related product information

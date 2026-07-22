@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -292,7 +293,7 @@ namespace DataForSeo.Client.Models
         /// list of services offered by the business
         /// </summary>
         [JsonProperty("services", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<Services> Services { get; set; }
+        public IEnumerable<BusinessDataServiceInfo> Services { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

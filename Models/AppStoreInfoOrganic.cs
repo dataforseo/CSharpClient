@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -46,6 +47,12 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
+
+        /// <summary>
+        /// subtitle of the app
+        /// </summary>
+        [JsonProperty("subtitle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Subtitle { get; set; }
 
         /// <summary>
         /// URL to the app page on App Store

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -11,8 +12,8 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// ASIN received in a POST array
         /// </summary>
-        [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string ProductId { get; set; }
+        [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Asin { get; set; }
 
         /// <summary>
         /// type of element

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,13 +10,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// position in the results
+        /// rank in the results
         /// </summary>
-        [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Position { get; set; }
+        [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? Rank { get; set; }
 
         /// <summary>
-        /// name of the brand
+        /// source title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }

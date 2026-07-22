@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// id of the competitor app
+        /// id of the app in a POST array
         /// </summary>
         [JsonProperty("app_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AppId { get; set; }

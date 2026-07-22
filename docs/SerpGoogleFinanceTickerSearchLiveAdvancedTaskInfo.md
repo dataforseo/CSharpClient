@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo>** |  |[optional]|

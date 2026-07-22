@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,19 +16,25 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// reason the resource is uncrawlablecan take the following values: content_type_inconsistency
+        /// reason the resource is uncrawlable
+        /// <br/>can take the following values: content_type_inconsistency
         /// </summary>
         [JsonProperty("reason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Reason { get; set; }
 
         /// <summary>
-        /// HTTP response code returned by the uncrawlable resourcepossible values: 200
+        /// general status code
+        /// <br/>you can find the full list of the response codes here
+        /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? StatusCode { get; set; }
 
         /// <summary>
-        /// date and time when the resource was fetchedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2026-03-09 18:20:32 +00:00
+        /// date and time when the resource was fetched
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2026-03-09 18:20:32 +00:00
         /// </summary>
         [JsonProperty("fetch_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FetchTime { get; set; }

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,13 +10,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// current search volume rate of a keyword
+        /// average monthly search volume rate
+        /// <br/>represents the (approximate) number of searches for the given keyword idea on google.com
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }
 
         /// <summary>
-        /// date and time when backlink data was updated
+        /// date and time when keyword data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// status of the crawling sessionpossible values: in_progress, finished
+        /// status of the crawling session
+        /// <br/>possible values: in_progress, finished
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }
@@ -23,7 +25,8 @@ namespace DataForSeo.Client.Models
         public int? CurrentOffset { get; set; }
 
         /// <summary>
-        /// total number of uncrawlable resources found total number of uncrawlable resources found during the crawl of the target domain
+        /// total number of uncrawlable resources found
+        /// <br/> total number of uncrawlable resources found during the crawl of the target domain
         /// </summary>
         [JsonProperty("total_items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalItemsCount { get; set; }

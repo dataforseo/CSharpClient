@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -18,6 +19,7 @@ namespace DataForSeo.Client.Models
         /// contains keywords and images related to the specified search term
         /// <br/>if there are none, equals null
         /// </summary>
+        [Obsolete]
         [JsonProperty("related_image_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<RelatedImageSearchesElement> RelatedImageSearches { get; set; }
 

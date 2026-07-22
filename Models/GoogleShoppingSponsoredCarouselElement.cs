@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -33,59 +34,49 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> Tags { get; set; }
 
         /// <summary>
-        /// name of the seller
-        /// <br/>the name of the company that placed a corresponding product on Google Shopping
+        /// name of the sellerthe name of the company that placed a corresponding product on Google Shopping
         /// </summary>
         [JsonProperty("seller", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Seller { get; set; }
 
         /// <summary>
-        /// product price
-        /// <br/>example:
-        /// <br/>384.99
+        /// product priceexample:384.99
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Price { get; set; }
 
         /// <summary>
-        /// currency in the ISO format
-        /// <br/>example:
-        /// <br/>USD
+        /// currency in the ISO formatexample:USD
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
 
         /// <summary>
-        /// product rating
-        /// <br/>the product popularity rate based on product reviews
+        /// product ratingthe product popularity rate based on product reviews
         /// </summary>
         [JsonProperty("product_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingElement ProductRating { get; set; }
 
         /// <summary>
-        /// URLs to the images of the product
-        /// <br/>the first URL in the array is the featured image of the product
+        /// URLs to the images of the productthe first URL in the array is the featured image of the product
         /// </summary>
         [JsonProperty("product_images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ProductImages { get; set; }
 
         /// <summary>
-        /// unique ad click referral parameter
-        /// <br/>using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+        /// unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
         /// </summary>
         [JsonProperty("shop_ad_aclk", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ShopAdAclk { get; set; }
 
         /// <summary>
-        /// delivery information
-        /// <br/>delivery information including free and fast delivery date ranges
+        /// delivery informationdelivery information including free and fast delivery date ranges
         /// </summary>
         [JsonProperty("delivery_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DeliveryInfo DeliveryInfo { get; set; }
 
         /// <summary>
-        /// special offer from the seller
-        /// <br/>information on the special offer from the seller, including discount and coupon info
+        /// special offer from the sellerinformation on the special offer from the seller, including discount and coupon info
         /// </summary>
         [JsonProperty("special_offer_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpecialOfferInfo SpecialOfferInfo { get; set; }

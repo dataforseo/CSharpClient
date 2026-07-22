@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,17 +10,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
-        /// absolute rank in SERP
-        /// <br/>absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
-        /// <br/>to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
+        /// absolute rank in SERPabsolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
@@ -152,9 +149,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> Highlighted { get; set; }
 
         /// <summary>
-        /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// link of the element
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
@@ -164,6 +159,7 @@ namespace DataForSeo.Client.Models
         /// <br/>questions and answers extension shown below some of Google’s search results
         /// <br/>Note: this object is deprecated and always returns null
         /// </summary>
+        [Obsolete]
         [JsonProperty("faq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public FaqBox Faq { get; set; }
 
@@ -177,10 +173,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains information from the ‘About this result’ panel
-        /// <br/>‘About this result’ panel provides additional context about why Google returned this result for the given query;
-        /// <br/>this feature appears after clicking on the three dots next to most results;
-        /// <br/>if there is none, equals null
+        /// <br/>Note: this object is deprecated and always returns null
         /// </summary>
+        [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AboutThisResultElement AboutThisResult { get; set; }
 

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -20,18 +21,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? Count { get; set; }
-
-        /// <summary>
-        /// offset in the results array of returned businesses
-        /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? Offset { get; set; }
-
-        /// <summary>
-        /// token for subsequent requests
-        /// <br/>by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task;
-        /// <br/>offset_token values are unique for each subsequent task
-        /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }
 

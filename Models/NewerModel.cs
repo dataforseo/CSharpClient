@@ -1,0 +1,33 @@
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using DataForSeo.Client.Models;
+
+namespace DataForSeo.Client.Models
+{
+
+    public class NewerModel 
+    {
+
+        /// <summary>
+        /// product title
+        /// </summary>
+        [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Title { get; set; }
+
+        /// <summary>
+        /// ASIN of the newer product model
+        /// </summary>
+        [JsonProperty("newer_model_asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string NewerModelAsin { get; set; }
+
+        private IDictionary<string, object> _additionalProperties;
+
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties
+        {
+            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+            set { _additionalProperties = value; }
+        }
+    }
+}

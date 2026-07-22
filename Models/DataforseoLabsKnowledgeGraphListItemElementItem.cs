@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -17,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google defined data attribute ID
         /// <br/>example:
-        /// <br/>ss:/webfacts:net_worth
+        /// <br/>action:listen_artist
         /// </summary>
         [JsonProperty("data_attrid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }
@@ -29,8 +30,7 @@ namespace DataForSeo.Client.Models
         public LinkElement Link { get; set; }
 
         /// <summary>
-        /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// historical SERPs and related data found in the database
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<KnowledgeGraphListElement> Items { get; set; }

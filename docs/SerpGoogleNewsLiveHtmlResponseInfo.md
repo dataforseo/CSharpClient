@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleNewsLiveHtmlTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleNewsLiveHtmlTaskInfo>** |  |[optional]|

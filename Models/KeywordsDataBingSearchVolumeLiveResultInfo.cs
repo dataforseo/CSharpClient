@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -62,7 +63,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// monthly average search volume rate
-        /// <br/>search volume is rounded to the nearest tens
+        /// <br/>represents either the (approximate) number of searches for the given keyword idea on bing search engine depending on the user’s targeting;
+        /// <br/>search volume is rounded to the nearest tens;
+        /// <br/>if there is no data, the value is null
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }

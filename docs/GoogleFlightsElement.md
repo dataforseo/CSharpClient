@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Description** | **string** | description of the results element in SERP |[optional]|
-**Url** | **string** | URL |[optional]|
+**Description** | **string** | link description |[optional]|
+**Url** | **string** | source URL |[optional]|

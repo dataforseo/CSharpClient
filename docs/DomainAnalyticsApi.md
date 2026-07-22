@@ -708,7 +708,11 @@ var result = await dfsClient.DomainAnalyticsApi.WhoisOverviewLiveAsync(new List<
             {
                 "epp_status_codes",
                 "in",
-                ,
+                new List<object>()
+                {
+                    "client_transfer_prohibited",
+                    "client_update_prohibited",
+                },
             },
         },
     }

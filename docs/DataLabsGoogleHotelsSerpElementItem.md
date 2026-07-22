@@ -6,4 +6,4 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **HotelIdentifier** | **string** | unique hotel identifier<br>unique hotel identifier assigned by Google;<br>example: 'CgoIjaeSlI6CnNpVEAE' |[optional]|
-**Url** | **string** | sitelink URL |[optional]|
+**Url** | **string** | relevant URL in SERP |[optional]|

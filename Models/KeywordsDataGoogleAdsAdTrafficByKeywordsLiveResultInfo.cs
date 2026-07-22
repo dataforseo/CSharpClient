@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -84,9 +85,7 @@ namespace DataForSeo.Client.Models
         public double? AverageCpc { get; set; }
 
         /// <summary>
-        /// charge for an ad
-        /// <br/>amount that will be charged for running an ad within the specified time period
-        /// <br/>if there is no data, then the value is null
+        /// total tasks cost, USD
         /// </summary>
         [JsonProperty("cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Cost { get; set; }

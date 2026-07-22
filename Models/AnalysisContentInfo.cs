@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -73,7 +74,7 @@ namespace DataForSeo.Client.Models
         public string HighlightedText { get; set; }
 
         /// <summary>
-        /// content language
+        /// main language of the domain
         /// <br/>to obtain a full list of available languages, refer to the Languages endpoint
         /// </summary>
         [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

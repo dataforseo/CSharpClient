@@ -18,4 +18,4 @@
 **SeResultsCount** | **long?** | total number of results in SERP |[optional]|
 **PagesCount** | **long?** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseBingSerpApiElementItem>** | items inside the element<br>array of 8 search queries related to the keyword |[optional]|
+**Items** | **IEnumerable<BaseBingSerpApiElementItem>** | items in SERP |[optional]|

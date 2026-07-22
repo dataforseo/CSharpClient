@@ -1,9 +1,11 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
 namespace DataForSeo.Client.Models
 {
+    [Obsolete]
 
     public class GooglePostsSerpElementItem  : BaseSerpApiElementItem 
     {

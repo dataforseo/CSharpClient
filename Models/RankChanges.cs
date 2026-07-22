@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -17,22 +18,22 @@ namespace DataForSeo.Client.Models
         public int? PreviousRankAbsolute { get; set; }
 
         /// <summary>
-        /// element was previously present in SERP
-        /// <br/>if the value is true, previously collected SERP didn’t contain this element
+        /// number of new ranked elements
+        /// <br/>indicates how many new ranked elements were found for this domain or webpage
         /// </summary>
         [JsonProperty("is_new", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsNew { get; set; }
 
         /// <summary>
-        /// rank of this element went up
-        /// <br/>if the value is true, position of the element in SERP is higher compared to the previous check
+        /// rank went up
+        /// <br/>indicates how many ranked elements of this target went up in Google Search
         /// </summary>
         [JsonProperty("is_up", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsUp { get; set; }
 
         /// <summary>
-        /// rank of this element went down
-        /// <br/>if the value is true, position of the element in SERP is lower compared to the previous check
+        /// rank went down
+        /// <br/>indicates how many ranked elements of this target went down in Google Search
         /// </summary>
         [JsonProperty("is_down", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsDown { get; set; }

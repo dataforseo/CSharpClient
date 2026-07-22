@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// asin received in a POST arraylearn more about ASINs in this help center guide
+        /// asin received in a POST array
+        /// <br/>learn more about ASINs in this help center guide
         /// </summary>
         [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }
@@ -39,31 +41,40 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// direct URL to Amazon resultsyou can use it to make sure the provided results are accurate
+        /// direct URL to Amazon results
+        /// <br/>you can use it to make sure the provided results are accurate
         /// </summary>
         [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
 
         /// <summary>
-        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+        /// date and time when the result was received
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
-        /// product titletitle of the product relevant to the asin received in a POST array
+        /// product title
+        /// <br/>title of the product relevant to the asin received in a POST array
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// product image urlimage URL of the product relevant to the asin received in a POST array
+        /// product image url
+        /// <br/>image URL of the product relevant to the asin received in a POST array
         /// </summary>
         [JsonProperty("image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Image { get; set; }
 
         /// <summary>
-        /// types of search results found in Amazon Sellers SERPcontains types of all search results (items) found in the returned SERPpossible item types:amazon_seller_main_item, amazon_seller_item
+        /// types of search results found in Amazon Sellers SERP
+        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>possible item types:
+        /// <br/>amazon_seller_main_item, amazon_seller_item
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }

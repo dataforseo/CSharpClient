@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -13,8 +14,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>The maximum number of keywords you can specify: 1000
         /// <br/>The maximum number of characters for each keyword: 100
-        /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate array
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate arraylearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }
@@ -76,7 +76,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>specify this field if you want to get the data for a particular device types
         /// <br/>possible values: mobile, desktop, tablet, non_smartphones
-        /// <br/>default value:  ['mobile', 'desktop', 'tablet', 'non_smartphones']
+        /// <br/>default value: ['mobile', 'desktop', 'tablet', 'non_smartphones']
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Device { get; set; }
@@ -84,12 +84,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// aggregates the returned data to a certain time period
         /// <br/>optional field
-        /// <br/>specify this field if you want to get the data in monthly, weekly or daily format
-        /// <br/>possible values: monthly, weekly, daily
+        /// <br/>specify this field if you want to get the data in monthly, weekly or daily formatpossible values: monthly, weekly, daily
         /// <br/>monthly – returns data up to past 24 months
         /// <br/>weekly – returns data up to past 15 weeks
         /// <br/>daily – returns data up to past 45 days
-        /// <br/>default value:  monthly
+        /// <br/>default value: monthly
         /// </summary>
         [JsonProperty("period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Period { get; set; }
@@ -101,8 +100,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>maximum value: one day from today’s date
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>'2020-01-01'
-        /// <br/>Note: we do not recommend using a custom time range
+        /// <br/>'2020-01-01'Note: we do not recommend using a custom time range
         /// <br/>Note 2: if date_from and date_to parameters are not specified, the data will be returned for the past 24 months
         /// <br/>if you specify the period parameter:
         /// <br/>with value weekly, you will get results for the past 15 weeks
@@ -113,8 +111,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// ending date of the time range
-        /// <br/>optional field
-        /// <br/>minimum value: two years back from today’s date;
+        /// <br/>optional fieldminimum value: two years back from today’s date;
         /// <br/>maximum value: one day from today’s date;
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:

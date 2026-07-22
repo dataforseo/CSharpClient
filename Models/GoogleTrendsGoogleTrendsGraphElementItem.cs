@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -13,10 +14,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<TrendsGraphDataInfo> Data { get; set; }
-
-        /// <summary>
-        /// keyword popularity values averaged over the whole time range
-        /// </summary>
         [JsonProperty("averages", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<double?> Averages { get; set; }
 

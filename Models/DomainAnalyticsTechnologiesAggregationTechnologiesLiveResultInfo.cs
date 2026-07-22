@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -25,10 +26,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
-
-        /// <summary>
-        /// items array
-        /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem> Items { get; set; }
 

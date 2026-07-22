@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -38,7 +39,7 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
-        /// date and time when search intent data was last updated
+        /// date and time when keyword data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
         /// <br/>2019-11-15 12:57:46 +00:00

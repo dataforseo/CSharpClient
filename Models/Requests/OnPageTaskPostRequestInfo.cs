@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -302,7 +303,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>'test': 'test'
         /// <br/>}
         /// <br/>Note: the length of the script you enter must be no more than 2000 characters
-        /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
         /// </summary>
         [JsonProperty("custom_js", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CustomJs { get; set; }

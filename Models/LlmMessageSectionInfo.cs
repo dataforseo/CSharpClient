@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,13 +16,16 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// AI-generated text content
+        /// text of the reasoning chain section
+        /// <br/>text of the reasoning chain  section summarizing the model's thought process
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }
 
         /// <summary>
-        /// array of references used to generate the responseequals null if the web_search parameter is not set to trueNote: annotations may return empty even when web_search is true, as the AI will attempt to retrieve web information but may not find relevant results
+        /// array of references used to generate the response
+        /// <br/>equals null if the web_search parameter is not set to true
+        /// <br/>Note: annotations may return empty even when web_search is true, as the AI will attempt to retrieve web information but may not find relevant results
         /// </summary>
         [JsonProperty("annotations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AnnotationInfo> Annotations { get; set; }

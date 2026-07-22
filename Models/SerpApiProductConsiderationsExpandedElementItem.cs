@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// title of the row
+        /// title of the carousel item
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -27,19 +28,19 @@ namespace DataForSeo.Client.Models
         public string Breadcrumb { get; set; }
 
         /// <summary>
-        /// text alongside the title
+        /// text alongside the link title
         /// </summary>
         [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Snippet { get; set; }
 
         /// <summary>
-        /// domain where a link points
+        /// source domain
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
-        /// URL of element
+        /// relevant URL
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -61,9 +62,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains information from the ‘About this result’ panel
-        /// <br/>‘About this result’ panel provides additional context about why Google returned this result for the given query;
-        /// <br/>this feature appears after clicking on the three dots next to most results
+        /// <br/>Note: element no longer appears in SERP and has been deprecated in SERP API
         /// </summary>
+        [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AboutThisResultElement AboutThisResult { get; set; }
 

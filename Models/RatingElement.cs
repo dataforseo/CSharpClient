@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,16 +16,13 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// the alignment of the element in Google Shopping SERP
-        /// <br/>possible values:
-        /// <br/>left, right
+        /// the alignment of the element in Google Shopping SERPpossible values:left, right
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the type of rating
-        /// <br/>here you can find the following elements: Max5, Percents, CustomMax
+        /// the type of ratinghere you can find the following elements: Max5, Percents, CustomMax
         /// </summary>
         [JsonProperty("rating_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RatingType { get; set; }

@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Header** | **PageSectionContentInfo** | content of the header of the table |[optional]|
+**Header** | **PageSectionContentInfo** | parsed content of the header |[optional]|
 **Footer** | **PageSectionContentInfo** | content of the footer of the table |[optional]|
 **MainTopic** | **IEnumerable<TopicInfo>** | main topic on the page<br>you can find more information about topic priority calculation in this help center article |[optional]|
 **SecondaryTopic** | **IEnumerable<TopicInfo>** | secondary topic on the page<br>you can find more information about topic priority calculation in this help center article |[optional]|

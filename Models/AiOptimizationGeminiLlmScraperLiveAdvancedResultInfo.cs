@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -9,7 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// keyword received in a POST arraythe keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
+        /// keyword received in a POST array
+        /// <br/>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -33,19 +35,24 @@ namespace DataForSeo.Client.Models
         public string Model { get; set; }
 
         /// <summary>
-        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+        /// date and time when the result was received
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/>2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
-        /// content of the element in markdown formatcontent of the result formatted in the markdown markup language
+        /// content of the element in markdown format
+        /// <br/>content of the result formatted in the markdown markup language
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
 
         /// <summary>
-        /// array of sourcesthe sources the model actually cited or relied on in its final answer
+        /// array of sources
+        /// <br/>the sources the model actually cited or relied on in its final answer
         /// </summary>
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SourceInfo> Sources { get; set; }
@@ -57,7 +64,10 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
-        /// types of search resultscontains types of search results (items) found in SERP.possible item types:gemini_text, gemini_table, gemini_images
+        /// types of search results
+        /// <br/>contains types of search results (items) found in SERP.
+        /// <br/>possible item types:
+        /// <br/>gemini_text, gemini_table, gemini_images
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -69,7 +79,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// items present in the element
+        /// elements of Gemini results
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseGeminiLlmScraperElementItem> Items { get; set; }

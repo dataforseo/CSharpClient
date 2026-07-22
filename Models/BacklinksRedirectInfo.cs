@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,7 +16,9 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// HTTP status code of the URL
+        /// general status code
+        /// <br/>you can find the full list of the response codes here
+        /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? StatusCode { get; set; }

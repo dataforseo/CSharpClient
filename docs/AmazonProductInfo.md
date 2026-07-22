@@ -26,8 +26,8 @@
 **IsNewerModelAvailable** | **bool?** | indicates whether the newer model of the product is available |[optional]|
 **IsPrimeVideo** | **bool?** | indicates whether a product has an Amazon Prime Video label<br>if true, specified product is a part of Amazon Prime Video service |[optional]|
 **ApplicableVouchers** | **IEnumerable<AmazonApplicableVouchersItem>** | array of objects containing information about applicable vouchers |[optional]|
-**NewerModel** | **AmazonProductNewerModelInfo** | information about the newer model of the product |[optional]|
-**Categories** | **IEnumerable<ProductCategoryInfo>** | contains related product categories |[optional]|
+**NewerModel** | **NewerModel** | information about the newer model of the product |[optional]|
+**Categories** | **IEnumerable<Categories>** | contains related product categories |[optional]|
 **ProductInformation** | **IEnumerable<BaseMerchantAmazonProductInformationElementItem>** | contains related product information |[optional]|
 **ProductImagesList** | **IEnumerable<string>** | contains URLs for all images of the product displayed on the left side of the main image |[optional]|
 **ProductVideosList** | **IEnumerable<string>** | contains URLs for all videos of the product displayed on the right side of the main video |[optional]|

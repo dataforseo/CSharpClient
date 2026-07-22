@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -13,8 +14,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>The maximum number of keywords you can specify: 1000
         /// <br/>The maximum number of characters for each keyword: 100
-        /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate array
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>the specified keywords will be converted to lowercase, data will be provided in a separate arraylearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>
         [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }
@@ -100,8 +100,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>minimum value: two years back from today’s date
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>'2020-01-01'
-        /// <br/>Note: we do not recommend using a custom time range for the past year’s dates
+        /// <br/>'2020-01-01'Note: we do not recommend using a custom time range for the past year’s dates
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
@@ -115,8 +114,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>note: we do not recommend using a custom time range for the past year’s dates;
         /// <br/>date format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>'2020-03-15'
-        /// <br/>Note: we do not recommend using a custom time range for the past year’s dates
+        /// <br/>'2020-03-15'Note: we do not recommend using a custom time range for the past year’s dates
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }

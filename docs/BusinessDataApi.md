@@ -58,7 +58,6 @@ All URIs are relative to *https://api.dataforseo.com*
 [**tripadvisorReviewsTasksReady**](BusinessDataApi.md#tripadvisorReviewsTasksReady) | **GET**  /v3/business_data/tripadvisor/reviews/tasks_ready  |
 [**tripadvisorReviewsTaskGet**](BusinessDataApi.md#tripadvisorReviewsTaskGet) | **GET**  /v3/business_data/tripadvisor/reviews/task_get/{id}  |
 [**socialMediaPinterestLive**](BusinessDataApi.md#socialMediaPinterestLive) | **POST**  /v3/business_data/social_media/pinterest/live  |
-[**socialMediaRedditLive**](BusinessDataApi.md#socialMediaRedditLive) | **POST**  /v3/business_data/social_media/reddit/live  |
 
 <a id="businessDataIdList"></a>
 # **businessDataIdList**
@@ -298,28 +297,6 @@ var result = await dfsClient.BusinessDataApi.BusinessListingsSearchLiveAsync(new
 {
     new()
     {
-        Categories = new List<string>()
-        {
-            "pizza_restaurant",
-        },
-        Description = "pizza",
-        Title = "pizza",
-        IsClaimed = true,
-        LocationCoordinate = "53.476225,-2.243572,10",
-        OrderBy = new List<string>()
-        {
-            "rating.value,desc",
-        },
-        Filters = new List<object>()
-        {
-            new List<object>()
-            {
-                "rating.value",
-                ">",
-                3,
-            },
-        },
-        Limit = 3,
     }
 });
 ```
@@ -2501,62 +2478,6 @@ var result = await dfsClient.BusinessDataApi.SocialMediaPinterestLiveAsync(new L
 ### Return type
 
 [**BusinessDataSocialMediaPinterestLiveResponseInfo**](BusinessDataSocialMediaPinterestLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="socialMediaRedditLive"></a>
-# **socialMediaRedditLive**
-> BusinessDataSocialMediaRedditLiveResponseInfo socialMediaRedditLive()
-
-
-### Example
-```csharp
-var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
-{
-    Username = "USERNAME",
-    Password = "PASSWORD",
-});
-var result = await dfsClient.BusinessDataApi.SocialMediaRedditLiveAsync(new List<BusinessDataSocialMediaRedditLiveRequestInfo>()
-{
-    new()
-    {
-        Targets = new List<string>()
-        {
-            "https://vk.com/",
-            "https://ahrefs.com/",
-            "https://google.com/",
-            "https://twitter.com/",
-            "https://reddit.com/",
-            "https://facebook.com/",
-        },
-        Tag = "some_string_123",
-    }
-});
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **** | [**List&lt;IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo>&gt;**](IEnumerable<BusinessDataSocialMediaRedditLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**BusinessDataSocialMediaRedditLiveResponseInfo**](BusinessDataSocialMediaRedditLiveResponseInfo.md)
 
 ### Authorization
 

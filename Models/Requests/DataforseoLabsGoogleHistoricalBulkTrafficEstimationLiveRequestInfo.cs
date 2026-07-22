@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -90,7 +91,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ignore highly similar keywords
         /// <br/>optional field
-        /// <br/>if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
+        /// <br/>if set to true only core keywords will be returned, all highly similar keywords will be excluded;
         /// <br/>default value: false
         /// </summary>
         [JsonProperty("ignore_synonyms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

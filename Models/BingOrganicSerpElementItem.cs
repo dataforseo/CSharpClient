@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -145,6 +146,7 @@ namespace DataForSeo.Client.Models
         /// <br/>questions and answers extension shown below some search results
         /// <br/>if there are none, equals null
         /// </summary>
+        [Obsolete]
         [JsonProperty("faq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public FaqBox Faq { get; set; }
 
@@ -160,6 +162,7 @@ namespace DataForSeo.Client.Models
         /// contains information from the ‘About this result’ panel
         /// <br/>note: about_this_result feature is not available in Bing search engine, that’s why it always equals null
         /// </summary>
+        [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AboutThisResultElement AboutThisResult { get; set; }
 

@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -15,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// title of the element
+        /// reference page title
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
@@ -41,7 +42,9 @@ namespace DataForSeo.Client.Models
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// website links featured in the element
+        /// sitelinks
+        /// <br/>the links shown below some of Google’s search results
+        /// <br/>if there are none, equals null
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

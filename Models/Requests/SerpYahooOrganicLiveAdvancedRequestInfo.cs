@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
@@ -125,7 +126,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>number of results in SERP
         /// <br/>default value: 6
-        /// <br/>max value: 700
+        /// <br/>max value: 200
         /// <br/>Your account will be billed per each SERP;
         /// <br/>Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
         /// <br/>The cost can be calculated on the Pricing page.

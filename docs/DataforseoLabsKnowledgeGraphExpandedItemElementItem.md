@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of a given link element |[optional]|
-**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>kc:/local:place qa |[optional]|
+**Title** | **string** | title of the result in SERP |[optional]|
+**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
 **ExpandedElement** | **object** | link of the element |[optional]|
