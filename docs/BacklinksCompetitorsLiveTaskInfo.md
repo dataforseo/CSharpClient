@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BacklinksCompetitorsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BacklinksCompetitorsLiveResultInfo>** | <em>array of results</em> |[optional]|

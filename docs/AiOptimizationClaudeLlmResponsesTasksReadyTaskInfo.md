@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationClaudeLlmResponsesTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationClaudeLlmResponsesTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

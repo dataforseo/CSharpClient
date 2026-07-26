@@ -10,8 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// asin received in a POST array
-        /// <br/>learn more about ASINs in this help center guide
+        /// <c>asin</c> received in a POST array
+        /// <br/>learn more about ASINs in <see href="https://dataforseo.com/help-center/asin-in-amazon-api">this help center guide</see>
         /// </summary>
         [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }
@@ -51,36 +51,36 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
         /// product title
-        /// <br/>title of the product relevant to the asin received in a POST array
+        /// <br/>title of the product relevant to the <c>asin</c> received in a POST array
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// product image url
-        /// <br/>image URL of the product relevant to the asin received in a POST array
+        /// <br/>image URL of the product relevant to the <c>asin</c> received in a POST array
         /// </summary>
         [JsonProperty("image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Image { get; set; }
 
         /// <summary>
         /// types of search results found in Amazon Sellers SERP
-        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>amazon_seller_main_item, amazon_seller_item
+        /// <br/><c>amazon_seller_main_item</c>, <c>amazon_seller_item</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

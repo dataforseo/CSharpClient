@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | name of the brand |[optional]|
-**Sources** | **IEnumerable<SourceInfo>** | array of sources |[optional]|
+**Title** | **string** | <em>name of the brand</em> |[optional]|
+**Sources** | **IEnumerable<SourceInfo>** | <em>array of sources</em> |[optional]|

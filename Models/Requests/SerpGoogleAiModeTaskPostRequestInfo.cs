@@ -10,56 +10,205 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// keyword
+        /// <br/>required field
+        /// <br/>you can specify up to 700 characters in the <c>keyword</c> field
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+        /// <br/>if you need to use the “%” character for your <c>keyword</c>, please specify it as “%25”;
+        /// <br/>if you need to use the “+” character for your <c>keyword</c>, please specify it as “%2B”
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
-        /// search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsNote: check  Google Search Help for the list of countries where AI Mode is currently available
+        /// search engine location code
+        /// <br/>required field if you don't specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations of the search engines with their <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/locations</c>
+        /// <br/>Note: check <see href="https://support.google.com/websearch/answer/16011537?hl=en&amp;co=GENIE.Platform%3DAndroid#">Google Search Help</see> for the list of countries where AI Mode is currently available
         /// </summary>
         [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// search engine language coderequired field if you don't specify language_name;if you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages
+        /// search engine language code
+        /// <br/>required field if you don't specify <c>language_name</c>;
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
+        /// task priority
+        /// <br/>optional field
+        /// <br/>can take the following values:
+        /// <br/>1 – normal execution priority (set by default)
+        /// <br/>2 – high execution priority
+        /// <br/>You will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-ai-mode-serp-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
-        /// device typeoptional fieldreturn results for a specific device typecan take the values:desktop, mobiledefault value: desktop
+        /// device type
+        /// <br/>optional field
+        /// <br/>return results for a specific device type
+        /// <br/>can take the values:<c>desktop</c>, <c>mobile</c>
+        /// <br/>default value: <c>desktop</c>
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
 
         /// <summary>
-        /// notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&amp;tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// notification URL of a completed task
+        /// <br/>optional field
+        /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
+        /// <br/>example:
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }
 
         /// <summary>
-        /// URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&amp;tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// URL for sending task results
+        /// <br/>optional field
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
+        /// <br/>example:
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
-        /// postback_url datatyperequired field if you specify postback_urlcorresponds to the function you used for setting a taskpossible values:advanced, html
+        /// postback_url datatype
+        /// <br/>required field if you specify <c>postback_url</c>
+        /// <br/>corresponds to the function you used for setting a task
+        /// <br/>possible values:
+        /// <br/><c>advanced</c>, <c>html</c>
         /// </summary>
         [JsonProperty("postback_data", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
+
+        /// <summary>
+        /// full name of search engine location
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations of the search engine with their <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/locations</c>
+        /// <br/>Note: check <see href="https://support.google.com/websearch/answer/16011537?hl=en&amp;co=GENIE.Platform%3DAndroid#">Google Search Help</see> for the list of countries where AI Mode is currently available
+        /// </summary>
+        [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationName { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>required field if you don't specify <c>language_code</c>;
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>;
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
+
+        /// <summary>
+        /// device operating system
+        /// <br/>optional field
+        /// <br/>if you specify <c>desktop</c> in the <c>device</c> field, choose from the following values: <c>windows</c>, <c>macos</c>
+        /// <br/>default value: <c>windows</c>
+        /// <br/>if you specify <c>mobile</c> in the <c>device</c> field, choose from the following values: <c>android</c>, <c>ios</c>
+        /// <br/>default value: <c>android</c>
+        /// </summary>
+        [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Os { get; set; }
+
+        /// <summary>
+        /// user-defined task identifier
+        /// <br/>optional field
+        /// <br/>the character limit is 255
+        /// <br/>you can use this parameter to identify the task and match it with the result
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
+        /// </summary>
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Tag { get; set; }
+
+        /// <summary>
+        /// calculate pixel rankings for SERP elements in advanced results
+        /// <br/>optional field
+        /// <br/>pixel ranking refers to the distance between the result snippet and top left corner of the screen;
+        /// <br/><see href="https://dataforseo.com/help-center/pixel-ranking-in-serp-api">Visit Help Center to learn more&gt;&gt;</see>
+        /// <br/>by default, the parameter is set to <c>false</c>
+        /// <br/>Note: if set to <c>true</c>, the charge per task will be multiplied by 2
+        /// </summary>
+        [JsonProperty("calculate_rectangles", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? CalculateRectangles { get; set; }
+
+        /// <summary>
+        /// browser screen width
+        /// <br/>optional field
+        /// <br/>you can set a custom browser screen width to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: <c>240-9999</c>;
+        /// <br/>by default, the parameter is set to:
+        /// <br/><c>1920</c> for <c>desktop</c>;
+        /// <br/><c>360</c> for <c>mobile</c> on <c>android</c>;
+        /// <br/><c>375</c> for <c>mobile</c> on <c>iOS</c>;
+        /// <br/>Note: to use this parameter, set <c>calculate_rectangles</c> to <c>true</c>
+        /// </summary>
+        [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public long? BrowserScreenWidth { get; set; }
+
+        /// <summary>
+        /// browser screen height
+        /// <br/>optional field
+        /// <br/>you can set a custom browser screen height to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: <c>240-9999</c>;
+        /// <br/>by default, the parameter is set to:
+        /// <br/><c>1080</c> for <c>desktop</c>;
+        /// <br/><c>640</c> for <c>mobile</c> on <c>android</c>;
+        /// <br/><c>812</c> for <c>mobile</c> on <c>iOS</c>;
+        /// <br/>Note: to use this parameter, set <c>calculate_rectangles</c> to <c>true</c>
+        /// </summary>
+        [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? BrowserScreenHeight { get; set; }
+
+        /// <summary>
+        /// browser screen resolution ratio
+        /// <br/>optional field
+        /// <br/>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
+        /// <br/>can be specified within the following range: <c>0.5-3</c>;
+        /// <br/>by default, the parameter is set to:
+        /// <br/><c>1</c> for <c>desktop</c>;
+        /// <br/><c>3</c> for <c>mobile</c> on <c>android</c>;
+        /// <br/><c>3</c> for <c>mobile</c> on <c>iOS</c>;
+        /// <br/>Note: to use this parameter, set <c>calculate_rectangles</c> to <c>true</c>
+        /// </summary>
+        [JsonProperty("browser_screen_resolution_ratio", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? BrowserScreenResolutionRatio { get; set; }
+
+        /// <summary>
+        /// GPS coordinates of a location
+        /// <br/>required field if you don't specify <c>location_name</c> or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,zoom' format
+        /// <br/>if 'zoom' is not specified, 9z will be applied as a default value
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'zoom': 4z
+        /// <br/>the maximum value for 'zoom': 18z
+        /// <br/>example:
+        /// <br/><c>52.6178549,-155.352142,18z</c>
+        /// </summary>
+        [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
+        public string LocationCoordinate { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

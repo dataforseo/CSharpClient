@@ -24,7 +24,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>custom user agent for crawling a website
         /// <br/>example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
-        /// <br/>
         /// <br/>default value: Mozilla/5.0 (compatible; RSiteAuditor)
         /// </summary>
         [JsonProperty("custom_user_agent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantAmazonSellersLiveHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantAmazonSellersLiveHtmlResultInfo>** | <em>array of results</em> |[optional]|

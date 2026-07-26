@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// business categories
         /// <br/>optional field
         /// <br/>the categories you specify are used to search for business listings;
-        /// <br/>if you don’t use this field, we will return business listings found in the specified location;
+        /// <br/>if you don't use this field, we will return business listings found in the specified location;
         /// <br/>you can specify up to 10 categories
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -47,12 +47,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// GPS coordinates of a location
         /// <br/>optional field
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
-        /// <br/>the minimum value for “radius”: 1
-        /// <br/>the maximum value for “radius”: 100000
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,radius' format
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'radius': <c>1</c>
+        /// <br/>the maximum value for 'radius': <c>100000</c>
         /// <br/>example:
-        /// <br/>53.476225,-2.243572,200
+        /// <br/><c>53.476225,-2.243572,200</c>
         /// </summary>
         [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
@@ -61,15 +61,15 @@ namespace DataForSeo.Client.Models.Requests
         /// array of results filtering parameters
         /// <br/>optional field
         /// <br/>you can add several filters at once (8 filters maximum)
-        /// <br/>you should set a logical operator and, or between the conditions
+        /// <br/>you should set a logical operator <c>and</c>, <c>or</c> between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like, not_like, match, not_match
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
+        /// <br/><c>regex</c>, <c>not_regex</c>, <c>&lt;</c>, <c>&lt;=</c>, <c>&gt;</c>, <c>&gt;=</c>, <c>=</c>, <c>&lt;&gt;</c>, <c>in</c>, <c>not_in</c>, <c>like</c>, <c>not_like</c>, <c>match</c>, <c>not_match</c>
+        /// <br/>you can use the <c>%</c> operator with <c>like</c> and <c>not_like</c> to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>['rating.value','&gt;',3]
-        /// <br/>you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/business_data/business_listings/available_filters
-        /// <br/>the full list of possible filters is available here.
-        /// <br/>learn more about the initial dataset filters in this help center article.
+        /// <br/><c>['rating.value','&gt;',3]</c>
+        /// <br/>you can receive the list of available filters_by making a separate request to <c>https://api.dataforseo.com/v3/business_data/business_listings/available_filters</c>
+        /// <br/>the full list of possible filters is available <see href="/v3/business_data/business_listings/filters/?bash">here.</see>
+        /// <br/>learn more about the initial dataset filters in <see href="https://dataforseo.com/help-center/what-are-the-initial-dataset-filters-and-how-do-they-work">this help center article.</see>n
         /// </summary>
         [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> InitialDatasetFilters { get; set; }
@@ -78,7 +78,7 @@ namespace DataForSeo.Client.Models.Requests
         /// maximum number of elements within internal arrays
         /// <br/>optional field
         /// <br/>you can use this field to limit the number of elements within the aggregated categories
-        /// <br/>default value: 10
+        /// <br/>default value: <c>10</c>
         /// </summary>
         [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }
@@ -86,8 +86,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of returned businesses
         /// <br/>optional field
-        /// <br/>default value: 100
-        /// <br/>maximum value: 1000
+        /// <br/>default value: <c>100</c>
+        /// <br/>maximum value: <c>1000</c>
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -104,7 +104,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

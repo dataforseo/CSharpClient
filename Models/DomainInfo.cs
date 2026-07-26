@@ -69,7 +69,7 @@ namespace DataForSeo.Client.Models
         /// <br/>no_errors – no crawling errors were detected;
         /// <br/>site_unreachable – our crawler could not reach a website and thus was not able to obtain a status code;
         /// <br/>invalid_page_status_code – status code of the first crawled page &gt;= 400;
-        /// <br/>forbidden_meta_tag – the first crawled page contains the &lt;meta robots=”noindex”&gt; tag;
+        /// <br/>forbidden_meta_tag – the first crawled page contains the  tag;
         /// <br/>forbidden_robots – robots.txt forbids crawling the page;
         /// <br/>forbidden_http_header – HTTP header of the page contains “X-Robots-Tag: noindex” ;
         /// <br/>too_many_redirects – the first crawled page has more than 10 redirects;

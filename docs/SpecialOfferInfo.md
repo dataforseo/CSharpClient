@@ -5,12 +5,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | product title |[optional]|
-**SubTitle** | **string** | subtitle of the special offer |[optional]|
-**FixedDiscount** | **double?** | amount of the fixed discount |[optional]|
-**FixedDiscountCurrency** | **string** | currency of the fixed discount |[optional]|
-**PercentageDiscount** | **double?** | percentage of the discount |[optional]|
-**CouponCode** | **string** | code of coupon discount |[optional]|
-**CouponInfo** | **string** | information on coupon discount |[optional]|
-**Url** | **string** | URL to the product page on the seller's websiteNote: this field is deprecated and will return null |[optional]|
-**Domain** | **string** | domain in SERP |[optional]|
+**Title** | **string** | <em>product title</em> |[optional]|
+**SubTitle** | **string** | <em>subtitle of the special offer</em> |[optional]|
+**FixedDiscount** | **double?** | <em>amount of the fixed discount</em> |[optional]|
+**FixedDiscountCurrency** | **string** | <em>currency of the fixed discount</em> |[optional]|
+**PercentageDiscount** | **double?** | <em>percentage of the discount</em> |[optional]|
+**CouponCode** | **string** | <em>code of coupon discount</em> |[optional]|
+**CouponInfo** | **string** | <em>information on coupon discount</em> |[optional]|
+**Url** | **string** | <em>URL to the product page on the seller's website</em><br><strong>Note:</strong> this field is deprecated and will return <code>null</code> |[optional]|
+**Domain** | **string** | <em>domain in SERP</em> |[optional]|

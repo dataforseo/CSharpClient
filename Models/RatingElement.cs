@@ -16,13 +16,16 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// the alignment of the element in Google Shopping SERPpossible values:left, right
+        /// the alignment of the element in Google Shopping SERP
+        /// <br/>possible values:
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the type of ratinghere you can find the following elements: Max5, Percents, CustomMax
+        /// the type of rating
+        /// <br/>here you can find the following elements: <c>Max5</c>, <c>Percents</c>, <c>CustomMax</c>
         /// </summary>
         [JsonProperty("rating_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RatingType { get; set; }

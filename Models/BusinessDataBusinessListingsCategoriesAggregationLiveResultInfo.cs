@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// item types
-        /// <br/>the number of items in the items array
+        /// <br/>the number of items in the <c>items</c> array
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? Count { get; set; }
@@ -30,16 +30,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// token for subsequent requests
-        /// <br/>by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task;
-        /// <br/>offset_token values are unique for each subsequent task
+        /// <br/>by specifying the unique <c>offset_token</c> when setting a new task, you will get the subsequent results of the initial task;
+        /// <br/><c>offset_token</c> values are unique for each subsequent task
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string OffsetToken { get; set; }
+        public object OffsetToken { get; set; }
 
         /// <summary>
         /// encountered item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: business_category
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>business_category</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BusinessDataBusinessListingsCategoriesAggregationLiveItem> Items { get; set; }

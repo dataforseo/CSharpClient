@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// name of the AI model from which the data was retrieved
-        /// <br/>Note: for the google platform type, the value is always google_ai_overview
+        /// <br/>Note: for the <c>google</c> platform type, the value is always <c>google_ai_overview</c>
         /// </summary>
         [JsonProperty("model_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ModelName { get; set; }
@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// relevant answer in markdown format
-        /// <br/>content of the result formatted in the markdown markup language
+        /// <br/>content of the result formatted in the <see href="https://en.wikipedia.org/wiki/Markdown">markdown markup language</see>
         /// </summary>
         [JsonProperty("answer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Answer { get; set; }
@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of sources
         /// <br/>the sources the model cited or relied on in its final answer
-        /// <br/>learn more about the sources and how to retrieve LLM citation data at our Help Center
+        /// <br/>learn more about the sources and how to retrieve LLM citation data at our <see href="https://dataforseo.com/help-center/how-to-get-llm-citation-data-with-llm-mentions-api">Help Center</see>
         /// </summary>
         [JsonProperty("sources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<Sources> Sources { get; set; }
@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// current AI search volume rate of a keyword
-        /// <br/>learn more about this metric here
+        /// <br/>learn more about this metric <see href="https://dataforseo.com/help-center/how-the-ai-search-volume-metric-works-in-llm-mentions">here</see>
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }
@@ -80,7 +80,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the response data was first recorded
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2025-10-21 06:25:30 +00:00
+        /// <br/><c>2025-10-21 06:25:30 +00:00</c>
         /// </summary>
         [JsonProperty("first_response_at", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstResponseAt { get; set; }
@@ -89,7 +89,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the response data was last updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2025-10-21 06:25:30 +00:00
+        /// <br/><c>2025-10-21 06:25:30 +00:00</c>
         /// </summary>
         [JsonProperty("last_response_at", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastResponseAt { get; set; }
@@ -110,8 +110,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the response was generated using web search results
-        /// <br/>if true, the model retrieved live web search results to produce the response
-        /// <br/>if false, the response was generated from the model's internal knowledge
+        /// <br/>if <c>true</c>, the model retrieved live web search results to produce the response
+        /// <br/>if <c>false</c>, the response was generated from the model's internal knowledge
         /// </summary>
         [JsonProperty("is_web_search_based", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsWebSearchBased { get; set; }

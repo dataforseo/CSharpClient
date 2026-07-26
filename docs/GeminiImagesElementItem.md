@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<GeminiImagesElement>** | elements of Gemini results |[optional]|
+**Items** | **IEnumerable<GeminiImagesElement>** | <em>elements of Gemini results</em> |[optional]|

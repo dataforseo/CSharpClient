@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// aggregated AI search volume for mentions within this grouping
-        /// <br/>learn more about this metric here
+        /// <br/>learn more about this metric <see href="https://dataforseo.com/help-center/how-the-ai-search-volume-metric-works-in-llm-mentions">here</see>
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }

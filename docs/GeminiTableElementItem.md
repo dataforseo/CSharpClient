@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**OriginalText** | **string** | unformatted text content of the element |[optional]|
-**Table** | **Table** | table present in the elementthe header and content of the table present in the element |[optional]|
+**OriginalText** | **string** | <em>unformatted text content of the element</em> |[optional]|
+**Table** | **Table** | <em>table present in the element</em><br>the header and content of the table present in the element |[optional]|

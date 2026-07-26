@@ -24,13 +24,16 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
-        /// absolute rank in SERPabsolute position among all the elements
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }

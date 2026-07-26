@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationGeminiLlmScraperTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationGeminiLlmScraperTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

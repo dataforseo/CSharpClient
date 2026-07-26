@@ -28,19 +28,22 @@ namespace DataForSeo.Client.Models
         public string Markdown { get; set; }
 
         /// <summary>
-        /// website links featured in the elementif there are none, equals null
+        /// website links featured in the element
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeLinkElementInfo> Links { get; set; }
 
         /// <summary>
-        /// images of the elementif there are none, equals null
+        /// images of the element
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element
+        /// references relevant to the element
+        /// <br/>includes references to webpages that were used to generate the <c>ai_overview_element</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

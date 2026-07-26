@@ -6,12 +6,12 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**RankGroup** | **int?** | group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank in SERPabsolute position among all the elements in SERP |[optional]|
-**Page** | **int?** | SERP pageSERP page on which the element ranks |[optional]|
-**Position** | **string** | the alignment of the element in SERPcan take the following values:left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
-**Markdown** | **string** | content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language |[optional]|
-**Items** | **IEnumerable<BaseSerpApiAiModeAiOverviewElementItem>** | elements of search results found in SERP |[optional]|
-**References** | **IEnumerable<AiModeAiOverviewReferenceInfo>** | additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview |[optional]|
-**Rectangle** | **AiModeRectangleInfo** | rectangle parameterscontains cartesian coordinates and pixel dimensions of the result's snippet in SERPequals null if calculate_rectangles in the POST request is not set to true |[optional]|
+**RankGroup** | **int?** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**Page** | **int?** | <em>SERP page</em><br>SERP page on which the element ranks |[optional]|
+**Position** | **string** | <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code> |[optional]|
+**Xpath** | **string** | <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the element</em> |[optional]|
+**Markdown** | **string** | <em>content of the element in markdown format</em><br>the text of the <code>ai_overview</code> formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a> |[optional]|
+**Items** | **IEnumerable<BaseSerpApiAiModeAiOverviewElementItem>** | <em>items present in the element</em> |[optional]|
+**References** | **IEnumerable<AiModeAiOverviewReferenceInfo>** | <em>additional references relevant to the item</em><br>includes references to webpages that may have been used to generate the <code>ai_overview</code> |[optional]|
+**Rectangle** | **AiModeRectangleInfo** | <em>rectangle parameters</em><br>contains cartesian coordinates and pixel dimensions of the result's snippet in SERP<br>equals <code>null</code> if <code>calculate_rectangles</code> in the POST request is not set to <code>true</code> |[optional]|

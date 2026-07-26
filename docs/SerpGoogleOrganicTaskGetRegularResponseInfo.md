@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleOrganicTaskGetRegularTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleOrganicTaskGetRegularTaskInfo>** | <em>array of tasks</em> |[optional]|

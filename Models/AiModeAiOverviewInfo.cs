@@ -16,55 +16,65 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
-        /// absolute rank in SERPabsolute position among all the elements in SERP
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// SERP pageSERP page on which the element ranks
+        /// SERP page
+        /// <br/>SERP page on which the element ranks
         /// </summary>
         [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Page { get; set; }
 
         /// <summary>
-        /// the alignment of the element in SERPcan take the following values:left, right
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
 
         /// <summary>
-        /// content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language
+        /// content of the element in markdown format
+        /// <br/>the text of the <c>ai_overview</c> formatted in the <see href="https://en.wikipedia.org/wiki/Markdown">markdown markup language</see>
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
 
         /// <summary>
-        /// elements of search results found in SERP
+        /// items present in the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiAiModeAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
-        /// additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview
+        /// additional references relevant to the item
+        /// <br/>includes references to webpages that may have been used to generate the <c>ai_overview</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         /// <summary>
-        /// rectangle parameterscontains cartesian coordinates and pixel dimensions of the result's snippet in SERPequals null if calculate_rectangles in the POST request is not set to true
+        /// rectangle parameters
+        /// <br/>contains cartesian coordinates and pixel dimensions of the result's snippet in SERP
+        /// <br/>equals <c>null</c> if <c>calculate_rectangles</c> in the POST request is not set to <c>true</c>
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AiModeRectangleInfo Rectangle { get; set; }

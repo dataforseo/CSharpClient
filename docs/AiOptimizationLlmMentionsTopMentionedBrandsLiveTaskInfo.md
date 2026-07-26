@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo>** | <em>array of results</em> |[optional]|

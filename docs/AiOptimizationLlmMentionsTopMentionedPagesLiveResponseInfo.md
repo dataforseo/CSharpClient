@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedPagesLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

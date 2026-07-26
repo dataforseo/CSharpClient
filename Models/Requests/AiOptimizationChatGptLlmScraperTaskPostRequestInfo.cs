@@ -12,10 +12,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// keyword
         /// <br/>required field
-        /// <br/>you can specify up to 2000 characters in the keyword field
+        /// <br/>you can specify up to 2000 characters in the <c>keyword</c> field
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
-        /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>if you need to use the “%” character for your <c>keyword</c>, please specify it as “%25”;
+        /// <br/>if you need to use the “+” character for your <c>keyword</c>, please specify it as “%2B”
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -26,47 +27,47 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
         /// <br/>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/ai-optimization/llm-scraper">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don't specify location_code
-        /// <br/>if you use this field, you don't need to specify location_code
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations
+        /// <br/>required field if you don't specify <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c>
+        /// <br/>you can receive the list of available locations of the search engine with their <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations</c>
         /// <br/>example:
-        /// <br/>United States
+        /// <br/><c>United States</c>
         /// </summary>
         [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don't specify location_name
-        /// <br/>if you use this field, you don't need to specify location_name
-        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations
+        /// <br/>required field if you don't specify <c>location_name</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c>
+        /// <br/>you can receive the list of available locations of the search engines with their <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations</c>
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// full name of search engine language
-        /// <br/>required field if you don't specify language_code;
-        /// <br/>if you use this field, you don't need to specify language_code;
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages
+        /// <br/>required field if you don't specify <c>language_code</c>;
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// search engine language code
-        /// <br/>required field if you don't specify language_name;
-        /// <br/>if you use this field, you don't need to specify language_name;
-        /// <br/>you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languagesn
+        /// <br/>required field if you don't specify <c>language_name</c>;
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -75,8 +76,8 @@ namespace DataForSeo.Client.Models.Requests
         /// force AI agent to use web search
         /// <br/>optional field
         /// <br/>when enabled, the AI model is forced to access and cite current web information;
-        /// <br/>default value: false;
-        /// <br/>Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response
+        /// <br/>default value: <c>false</c>;
+        /// <br/>Note: even if the parameter is set to <c>true</c>, there is no guarantee web sources will be cited in the response
         /// </summary>
         [JsonProperty("force_web_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ForceWebSearch { get; set; }
@@ -84,9 +85,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// return expanded citation bar in HTML results
         /// <br/>optional field
-        /// <br/>to enable this parameter, force_web_search must also be enabled;
+        /// <br/>to enable this parameter, <c>force_web_search</c> must also be enabled;
         /// <br/>when enabled, the HTML endpoint will return data from the expanded citation bar;
-        /// <br/>default value: false
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("expand_citations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExpandCitations { get; set; }
@@ -96,7 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -104,23 +105,24 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// URL for sending task results
         /// <br/>optional field
-        /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/postbackscript?id=$id
-        /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in postback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23learn more on our Help Center
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
         /// postback_url datatype
-        /// <br/>required field if you specify postback_url
+        /// <br/>required field if you specify <c>postback_url</c>
         /// <br/>corresponds to the function you used for setting a task
         /// <br/>possible values:
-        /// <br/>advanced, html
+        /// <br/><c>advanced</c>, <c>html</c>
         /// </summary>
         [JsonProperty("postback_data", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
@@ -129,12 +131,13 @@ namespace DataForSeo.Client.Models.Requests
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

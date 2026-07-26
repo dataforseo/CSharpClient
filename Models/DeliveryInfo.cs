@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// earliest delivery date
         /// <br/>the earliest date when the product can be shipped, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example: 2019-11-15 12:57:46 +00:00
+        /// <br/>example: <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("delivery_date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DeliveryDateFrom { get; set; }
@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// latest delivery date
         /// <br/>the latest date when the product can be delivered, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example: 2019-11-15 12:57:46 +00:00
+        /// <br/>example: <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("delivery_date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DeliveryDateTo { get; set; }
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// earliest free delivery date
         /// <br/>the earliest date when the product can be delivered with a fast delivery option, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example: 2019-11-15 12:57:46 +00:00
+        /// <br/>example: <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("fastest_delivery_date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FastestDeliveryDateFrom { get; set; }
@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// latest free delivery date
         /// <br/>the latest date when the product can be delivered with a fast delivery option, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example: 2019-11-15 12:57:46 +00:00
+        /// <br/>example: <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("fastest_delivery_date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FastestDeliveryDateTo { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// price for the delivery
         /// <br/>price of the delivery based on the location you specified in the POST request;
-        /// <br/>if free delivery is available, the value is null
+        /// <br/>if free delivery is available, the value is <c>null</c>
         /// </summary>
         [JsonProperty("delivery_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo DeliveryPrice { get; set; }

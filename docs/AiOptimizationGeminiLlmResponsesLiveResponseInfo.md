@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationGeminiLlmResponsesLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationGeminiLlmResponsesLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

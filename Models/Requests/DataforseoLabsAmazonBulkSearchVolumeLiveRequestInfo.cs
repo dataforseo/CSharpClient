@@ -25,7 +25,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if don’t specify location_code
         /// <br/>you can receive the list of available locations with their location_name by making a separate request to
         /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
-        /// <br/>
         /// <br/>Note: this endpoint currently supports the following locations and languages only:
         /// <br/>Australia – 2036, en
         /// <br/>Austria – 2040, de

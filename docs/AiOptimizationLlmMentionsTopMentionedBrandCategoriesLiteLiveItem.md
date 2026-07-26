@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**BrandCategory** | **string** | brand category<br>brand category identifier of aggregated metrics |[optional]|
-**Location** | **int?** | location identifier<br>location of aggregated metrics |[optional]|
-**Language** | **string** | language identifier<br>language of aggregated metrics |[optional]|
-**Platform** | **string** | LLM platform identifiers<br>LLM platform of aggregated metrics |[optional]|
-**Metrics** | **AggregatedMetricsInfoTotalInfo** | LLM metrics<br>metrics aggregated by specific parameters and respective identifiers |[optional]|
+**BrandCategory** | **string** | <em>brand category</em><br>brand category identifier of aggregated metrics |[optional]|
+**Location** | **int?** | <em>location identifier</em><br>location of aggregated metrics |[optional]|
+**Language** | **string** | <em>language identifier</em><br>language of aggregated metrics |[optional]|
+**Platform** | **string** | <em>LLM platform identifiers</em><br>LLM platform of aggregated metrics |[optional]|
+**Metrics** | **AggregatedMetricsInfoTotalInfo** | <em>LLM metrics</em><br>metrics aggregated by specific parameters and respective identifiers |[optional]|

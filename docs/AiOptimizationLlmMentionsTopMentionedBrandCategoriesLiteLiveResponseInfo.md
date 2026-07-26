@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

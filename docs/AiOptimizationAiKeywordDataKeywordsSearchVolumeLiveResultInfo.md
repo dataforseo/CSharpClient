@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationCode** | **int?** | location code in a POST array |[optional]|
-**LanguageCode** | **string** | language code in a POST array |[optional]|
-**ItemsCount** | **long?** | number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveItem>** | contains specified keywords with their AI search volume rates |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em> |[optional]|
+**ItemsCount** | **long?** | <em>number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveItem>** | <em>contains specified keywords with their AI search volume rates</em> |[optional]|

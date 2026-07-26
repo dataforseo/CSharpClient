@@ -10,7 +10,9 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// domain of the URLdomain of the URL where a special offer is postedNote: this field is deprecated and will return null
+        /// domain of the URL
+        /// <br/>domain of the URL where a special offer is posted
+        /// <br/>Note: this field is deprecated and will return <c>null</c>
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -28,13 +30,16 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// URL pointing at special offer pageURL where a special offer is postedNote: this field is deprecated and will return null
+        /// URL pointing at special offer page
+        /// <br/>URL where a special offer is posted
+        /// <br/>Note: this field is deprecated and will return <c>null</c>
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+        /// unique ad click referral parameter
+        /// <br/>using this parameter you can get a URL of the advertisement in <see href="/v3/merchant/google/sellers/ad_url/">Google Shopping Sellers Ad URL</see>
         /// </summary>
         [JsonProperty("shop_ad_aclk", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ShopAdAclk { get; set; }

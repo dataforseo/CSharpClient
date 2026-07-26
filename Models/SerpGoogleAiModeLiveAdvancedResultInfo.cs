@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -59,23 +59,23 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// autocorrection of the search engine
         /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;
-        /// <br/>in this case, the value will be null
+        /// <br/>in this case, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
 
         /// <summary>
         /// search refinement chips
-        /// <br/>in this case, the value will be null
+        /// <br/>in this case, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
         /// types of search results in SERP
-        /// <br/>contains types of search results (items) found in SERP.
+        /// <br/>contains types of search results (<c>items</c>) found in SERP.
         /// <br/>possible item types:
-        /// <br/>ai_overview
+        /// <br/><c>ai_overview</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -87,7 +87,7 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

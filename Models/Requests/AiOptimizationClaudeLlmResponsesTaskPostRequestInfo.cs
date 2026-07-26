@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// prompt for the AI model
         /// <br/>required field
         /// <br/>the question or task you want to send to the AI model;
-        /// <br/>you can specify up to 500 characters in the user_prompt field
+        /// <br/>you can specify up to 500 characters in the <c>user_prompt</c> field
         /// </summary>
         [JsonProperty("user_prompt", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string UserPrompt { get; set; }
@@ -21,10 +21,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// name of the AI model
         /// <br/>required field
-        /// <br/>model_nameconsists of the actual model name and version name;
-        /// <br/>if the basic model name is specified, its latest version will be set by default;
-        /// <br/>for example, if claude-opus-4-0 is specified, the claude-opus-4-20250514 will be set as model_name automatically;
-        /// <br/>you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/claude/llm_responses/models
+        /// <br/><c>model_nameconsists of the actual model name and version name;if the basic model name is specified, its latest version will be set by default;for example, if claude-opus-4-0</c> is specified, the <c>claude-opus-4-20250514</c> will be set as <c>model_name</c> automatically;
+        /// <br/>you can receive the list of available LLM models by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/claude/llm_responses/models</c>
         /// </summary>
         [JsonProperty("model_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string ModelName { get; set; }
@@ -32,11 +30,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// maximum number of tokens in the AI response
         /// <br/>optional field
-        /// <br/>minimum value: 1;
-        /// <br/>maximum value: 4096;
-        /// <br/>default value: 2048;
-        /// <br/>Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
-        /// <br/>Note #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1025
+        /// <br/>minimum value: <c>1</c>;
+        /// <br/>maximum value: <c>4096</c>;
+        /// <br/>default value: <c>2048</c>;
+        /// <br/>Note: if <c>web_search</c> is set to <c>true</c> or the reasoning model is specified in the request, the output token count may exceed the specified <c>max_output_tokens</c> limit
+        /// <br/>Note #2: if <c>use_reasoning</c> is set to <c>true</c>, the minimum value for <c>max_output_tokens</c> is <c>1025</c>
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }
@@ -46,9 +44,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>higher values make output more diverse; 
         /// <br/>lower values make output more focused;
-        /// <br/>minimum value: 0
-        /// <br/>maximum value: 1
-        /// <br/>default value: 0.7Note: temperature cannot be used together with top_p in the same request
+        /// <br/>minimum value: <c>0</c>
+        /// <br/>maximum value: <c>1</c>
+        /// <br/>default value: <c>0.7</c>
+        /// <br/>Note: <c>temperature</c> cannot be used together with <c>top_p</c> in the same request
         /// </summary>
         [JsonProperty("temperature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Temperature { get; set; }
@@ -57,9 +56,10 @@ namespace DataForSeo.Client.Models.Requests
         /// diversity of the AI response
         /// <br/>optional field 
         /// <br/>controls diversity of the response by limiting token selection;
-        /// <br/>minimum value: 0
-        /// <br/>maximum value: 1 
-        /// <br/>default value: nullNote: top_p cannot be used together with temperature in the same request
+        /// <br/>minimum value: <c>0</c>
+        /// <br/>maximum value: <c>1</c> 
+        /// <br/>default value: <c>null</c>
+        /// <br/>Note: <c>top_p</c> cannot be used together with <c>temperature</c> in the same request
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TopP { get; set; }
@@ -68,9 +68,9 @@ namespace DataForSeo.Client.Models.Requests
         /// enable web search for current information
         /// <br/>optional field
         /// <br/>when enabled, the AI model can access and cite current web information;
-        /// <br/>Note: refer to the Models endpoint for a list of models that support web_search; 
-        /// <br/>default value: false;
-        /// <br/>The cost of the parameter can be calculated on the Pricing page
+        /// <br/>Note: refer to the <see href="https://docs.dataforseo.com/v3/ai_optimization/claude/llm_responses/models/">Models endpoint</see> for a list of models that support <c>web_search</c>; 
+        /// <br/>default value: <c>false</c>;
+        /// <br/>The cost of the parameter can be calculated on the <see href="https://docs.anthropic.com/en/docs/about-claude/pricing">Pricing</see> page
         /// </summary>
         [JsonProperty("web_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? WebSearch { get; set; }
@@ -78,10 +78,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// force AI agent to use web search
         /// <br/>optional field
-        /// <br/>to enable this parameter, web_search must also be enabled;
+        /// <br/>to enable this parameter, <c>web_search</c> must also be enabled;
         /// <br/>when enabled, the AI model is forced to access and cite current web information;
-        /// <br/>default value: false;
-        /// <br/>Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response
+        /// <br/>default value: <c>false</c>;
+        /// <br/>Note: even if the parameter is set to <c>true</c>, there is no guarantee web sources will be cited in the response
         /// </summary>
         [JsonProperty("force_web_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ForceWebSearch { get; set; }
@@ -89,7 +89,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ISO country code of the location used for searching the web
         /// <br/>optional field
-        /// <br/>possible values: 'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'
+        /// <br/>possible values: <c>'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'</c>
         /// </summary>
         [JsonProperty("web_search_country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebSearchCountryIsoCode { get; set; }
@@ -105,7 +105,7 @@ namespace DataForSeo.Client.Models.Requests
         /// instructions for the AI behaviour
         /// <br/>optional field
         /// <br/>defines the AI's role, tone, or specific behavior;
-        /// <br/>you can specify up to 500 characters in the system_message field
+        /// <br/>you can specify up to 500 characters in the <c>system_message</c> field
         /// </summary>
         [JsonProperty("system_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SystemMessage { get; set; }
@@ -129,11 +129,11 @@ namespace DataForSeo.Client.Models.Requests
         /// enable reasoning for the AI model
         /// <br/>optional field
         /// <br/>when enabled, the model will perform reasoning before generating a response
-        /// <br/>refer to the Models endpoint for a list of models that support reasoning
-        /// <br/>default value: false
-        /// <br/>Note: if set to true, the minimum value for max_output_tokens is 1025
-        /// <br/>Note #2: if set to true, force_web_search must be set to false
-        /// <br/>Note #3: if set to true, the temperature and top_p cannot be used
+        /// <br/>refer to the <see href="https://docs.dataforseo.com/v3/ai_optimization/claude/llm_responses/models/">Models endpoint</see> for a list of models that support <c>reasoning</c>
+        /// <br/>default value: <c>false</c>
+        /// <br/>Note: if set to <c>true</c>, the minimum value for <c>max_output_tokens</c> is <c>1025</c>
+        /// <br/>Note #2: if set to <c>true</c>, <c>force_web_search</c> must be set to <c>false</c>
+        /// <br/>Note #3: if set to <c>true</c>, the <c>temperature</c> and <c>top_p</c> cannot be used
         /// </summary>
         [JsonProperty("use_reasoning", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UseReasoning { get; set; }
@@ -143,7 +143,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -151,13 +151,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// URL for sending task results
         /// <br/>optional field
-        /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/postbackscript?id=$id
-        /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special character in postback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23learn more on our Help Center
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special character in <c>postback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -166,12 +167,13 @@ namespace DataForSeo.Client.Models.Requests
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special character in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special character in <c>pingback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

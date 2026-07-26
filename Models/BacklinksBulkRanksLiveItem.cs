@@ -16,10 +16,10 @@ namespace DataForSeo.Client.Models
         public string Target { get; set; }
 
         /// <summary>
-        /// rank of the target
+        /// rank of the <c>target</c>
         /// <br/>values represent real-time data for the date of the request
-        /// <br/>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>rank</c> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Rank { get; set; }

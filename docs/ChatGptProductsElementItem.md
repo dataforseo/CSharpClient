@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<ChatGptProductsElement>** | elements of ChatGPT results |[optional]|
+**Items** | **IEnumerable<ChatGptProductsElement>** | <em>elements of ChatGPT results</em> |[optional]|

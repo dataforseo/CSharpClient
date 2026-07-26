@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationChatGptLlmScraperLocationsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationChatGptLlmScraperLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

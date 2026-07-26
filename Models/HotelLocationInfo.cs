@@ -29,8 +29,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// overall score of the hotel location
-        /// <br/>indicates the overall score of the hotel’s location in the range from 1 to 5;
-        /// <br/>calculated based on data from the hotel’s proximity to nearby things to do and restaurants, transportation, and airports;
+        /// <br/>indicates the overall score of the hotel's location in the range from 1 to 5;
+        /// <br/>calculated based on data from the hotel's proximity to nearby things to do and restaurants, transportation, and airports;
         /// <br/>note that the criteria are not weighted equally in the overall score
         /// </summary>
         [JsonProperty("overall_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -38,25 +38,25 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// category scores of the hotel location
-        /// <br/>the scores of the hotel’s location tied to the categories that indicate the proximity to nearby things to do, restaurants, transportation, and airports;
+        /// <br/>the scores of the hotel's location tied to the categories that indicate the proximity to nearby things to do, restaurants, transportation, and airports;
         /// </summary>
         [JsonProperty("score_by_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, double?> ScoreByCategories { get; set; }
 
         /// <summary>
         /// hotel latitude
-        /// <br/>latitude coordinates of the hotel’s location
+        /// <br/>latitude coordinates of the hotel's location
         /// <br/>example:
-        /// <br/>39.4806397
+        /// <br/><c>39.4806397</c>
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Latitude { get; set; }
 
         /// <summary>
         /// hotel longitude
-        /// <br/>latitude coordinates of the hotel’s location
+        /// <br/>latitude coordinates of the hotel's location
         /// <br/>example:
-        /// <br/>-106.0512973
+        /// <br/><c>-106.0512973</c>
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Longitude { get; set; }

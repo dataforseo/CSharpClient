@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo>** | <em>array of results</em> |[optional]|

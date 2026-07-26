@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**RankGroup** | **int?** | group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank in SERPabsolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint |[optional]|
-**Domain** | **string** | domain in SERP |[optional]|
-**Title** | **string** | title of the results element in SERP |[optional]|
-**Description** | **string** | description of the results element in SERP |[optional]|
-**Url** | **string** | relevant URL in SERP |[optional]|
-**Breadcrumb** | **string** | breadcrumb in SERP |[optional]|
+**RankGroup** | **int?** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em> absolute rank in SERP</em><br>absolute position among all the elements found in SERP<strong>note</strong> values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;<br>to get all items (including SERP features and rich snippets) with their positions, please refer to the <a href='https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?php'>Google Organiс Advanced SERP</a> endpoint |[optional]|
+**Domain** | **string** | <em>domain in SERP</em> |[optional]|
+**Title** | **string** | <em>title of the results element in SERP</em> |[optional]|
+**Description** | **string** | <em>description of the results element in SERP</em> |[optional]|
+**Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
+**Breadcrumb** | **string** | <em>breadcrumb in SERP</em> |[optional]|
 **WebsiteName** | **string** | name of the website in SERP |[optional]|
 **IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
 **IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|

@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// general status code
-        /// <br/>you can find the full list of the response codes here
+        /// <br/>you can find the full list of the response codes <see href="/v3/appendix/errors">here</see>
         /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

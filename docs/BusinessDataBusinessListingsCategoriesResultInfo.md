@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**CategoryName** | **string** | full name of the category |[optional]|
-**BusinessCount** | **long?** | number of businesses in the category |[optional]|
+**CategoryName** | **string** | <em>full name of the category</em> |[optional]|
+**BusinessCount** | **long?** | <em>number of businesses in the category</em> |[optional]|

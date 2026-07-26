@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
@@ -47,8 +47,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// token for subsequent requests
-        /// <br/>by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;
-        /// <br/>search_after_token values are unique for each subsequent task
+        /// <br/>by specifying the unique <c>search_after_token</c> when setting a new task, you will get the subsequent results of the initial task;
+        /// <br/><c>search_after_token</c> values are unique for each subsequent task
         /// </summary>
         [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchAfterToken { get; set; }

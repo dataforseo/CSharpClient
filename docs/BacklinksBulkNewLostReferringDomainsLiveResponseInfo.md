@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BacklinksBulkNewLostReferringDomainsLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BacklinksBulkNewLostReferringDomainsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// item types
-        /// <br/>the number of items in the items array
+        /// <br/>the number of items in the <c>items</c> array
         /// </summary>
         [JsonProperty("count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? Count { get; set; }
@@ -28,8 +28,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// encountered item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: business_listing
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>business_listing</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BusinessDataBusinessListingsSearchLiveItem> Items { get; set; }

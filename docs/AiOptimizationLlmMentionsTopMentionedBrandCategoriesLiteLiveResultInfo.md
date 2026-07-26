@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**TotalCount** | **long?** | total number of results |[optional]|
-**Offset** | **int?** | offset in the results array of the returned mentions data<br>offset specified in the request |[optional]|
-**ItemsCount** | **long?** | number of items in the results array |[optional]|
-**AggregatedMetrics** | **object** | aggregated mentions metrics summary<br>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensionsin this case, the value will be null |[optional]|
-**Items** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveItem>** | contains relevant mentions data |[optional]|
+**TotalCount** | **long?** | <em>total number of results</em> |[optional]|
+**Offset** | **int?** | <em>offset in the results array of the returned mentions data</em><br><code>offset</code> specified in the request |[optional]|
+**ItemsCount** | **long?** | <em>number of items in the results array</em> |[optional]|
+**AggregatedMetrics** | **object** | <em>aggregated mentions metrics summary</em><br>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions</br>in this case, the value will be <code>null</code> |[optional]|
+**Items** | **IEnumerable<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveItem>** | <em>contains relevant mentions data</em> |[optional]|

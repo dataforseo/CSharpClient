@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// current AI search volume rate of a keyword
-        /// <br/>learn more about this metric here
+        /// <br/>learn more about this metric <see href="https://dataforseo.com/help-center/what-is-ai-search-volume-in-dataforseo">here</see>
         /// </summary>
         [JsonProperty("ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? AiSearchVolume { get; set; }

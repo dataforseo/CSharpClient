@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// supported LLM platforms
         /// <br/>contains the sources of data supported for a specific location and language combination
-        /// <br/>only google and chat_gpt are currently available
+        /// <br/>only <c>google</c> and <c>chat_gpt</c> are currently available
         /// </summary>
         [JsonProperty("available_platforms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> AvailablePlatforms { get; set; }
@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         public string LanguageName { get; set; }
 
         /// <summary>
-        /// language code according to ISO 639-1
+        /// language code according to <see href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</see>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

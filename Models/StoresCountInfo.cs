@@ -22,7 +22,11 @@ namespace DataForSeo.Client.Models
         public string DisplayedText { get; set; }
 
         /// <summary>
-        /// whether the number of stores is taken from textindicates whether the number of stores is taken from displayed_text;if the API finds the exact number of stores in the HTML code of the Google Shopping page, this parameter is false;if the API cannot find the number of stores in the HTML code of the page, it takes the number from the displayed_text;in this case, the parameter is true
+        /// whether the number of stores is taken from text
+        /// <br/>indicates whether the number of stores is taken from <c>displayed_text</c>;
+        /// <br/>if the API finds the exact number of stores in the HTML code of the Google Shopping page, this parameter is <c>false</c>;
+        /// <br/>if the API cannot find the number of stores in the HTML code of the page, it takes the number from the <c>displayed_text</c>;
+        /// <br/>in this case, the parameter is <c>true</c>
         /// </summary>
         [JsonProperty("count_from_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? CountFromText { get; set; }

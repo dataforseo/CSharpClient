@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Markdown** | **string** | content of the element in markdown formatcontent of the result formatted in the markdown markup language |[optional]|
-**Items** | **IEnumerable<ChatGptLocalBusinessesElement>** | elements of ChatGPT results |[optional]|
+**Markdown** | **string** | <em>content of the element in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a> |[optional]|
+**Items** | **IEnumerable<ChatGptLocalBusinessesElement>** | <em>elements of ChatGPT results</em> |[optional]|

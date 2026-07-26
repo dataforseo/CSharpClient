@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// reason the resource is uncrawlable
-        /// <br/>can take the following values: content_type_inconsistency
+        /// <br/>can take the following values: <c>content_type_inconsistency</c>
         /// </summary>
         [JsonProperty("reason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Reason { get; set; }
 
         /// <summary>
         /// general status code
-        /// <br/>you can find the full list of the response codes here
+        /// <br/>you can find the full list of the response codes <see href="/v3/appendix/errors">here</see>
         /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the resource was fetched
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2026-03-09 18:20:32 +00:00
+        /// <br/><c>2026-03-09 18:20:32 +00:00</c>
         /// </summary>
         [JsonProperty("fetch_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FetchTime { get; set; }

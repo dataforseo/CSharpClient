@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<string>** | additional items present in the elementif there are none, equals null |[optional]|
+**Items** | **IEnumerable<string>** | <em>additional items present in the element</em><br>if there are none, equals <code>null</code> |[optional]|

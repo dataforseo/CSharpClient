@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the maximum number of characters you can specify in a keyword: 100
         /// <br/>the minimum number of characters must be greater than 1
         /// <br/>comma characters (,) in the specified keywords will be unset and ignored
-        /// <br/>Note: keywords cannot consist of a combination of the following characters: &lt; &gt; | \ ' - + = ~ ! : * ( ) [ ] { }
+        /// <br/>Note: keywords cannot consist of a combination of the following characters:  | \ ' - + = ~ ! : * ( ) [ ] { }
         /// <br/>Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword
         /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
         /// </summary>

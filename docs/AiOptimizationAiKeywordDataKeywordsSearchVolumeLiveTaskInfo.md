@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo>** | <em>array of results</em> |[optional]|

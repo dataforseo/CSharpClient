@@ -18,7 +18,6 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>
         /// <br/>Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;
         /// <br/>we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
         /// </summary>

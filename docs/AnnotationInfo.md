@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | the domain name or title of the quoted source |[optional]|
-**Url** | **string** | URL of the quoted source |[optional]|
+**Title** | **string** | <em>the domain name or title of the quoted source</em> |[optional]|
+**Url** | **string** | <em>URL of the quoted source</em> |[optional]|

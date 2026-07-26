@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

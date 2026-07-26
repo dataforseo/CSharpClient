@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// cost of AI tokens, USD
-        /// <br/>the price charged by the third-party AI model provider for according to its Pricing
+        /// <br/>the price charged by the third-party AI model provider for according to its <see href="https://ai.google.dev/gemini-api/docs/pricing">Pricing</see>
         /// </summary>
         [JsonProperty("money_spent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? MoneySpent { get; set; }
@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }

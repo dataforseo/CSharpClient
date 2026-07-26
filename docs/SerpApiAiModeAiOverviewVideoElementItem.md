@@ -5,11 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the element in SERP |[optional]|
-**Snippet** | **string** | additional information for the video |[optional]|
-**Url** | **string** | relevant URL |[optional]|
-**Domain** | **string** | domain name of the reference |[optional]|
-**ImageUrl** | **string** | URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
-**Source** | **string** | reference source name or title |[optional]|
-**Date** | **string** | date when the video was published or indexedexample: Apr 26, 2024 |[optional]|
-**Timestamp** | **string** | date and time when the video was published or indexedin the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'example:2019-11-15 12:57:46 +00:00 |[optional]|
+**Title** | **string** | <em>title of the element in SERP</em> |[optional]|
+**Snippet** | **string** | <em>additional information for the video</em> |[optional]|
+**Url** | **string** | <em>relevant URL</em> |[optional]|
+**Domain** | **string** | <em>domain name of the reference</em> |[optional]|
+**ImageUrl** | **string** | <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**Source** | **string** | <em>reference source name or title</em> |[optional]|
+**Date** | **string** | <em>date when the video was published or indexed</em><br>example: <br><code>Apr 26, 2024</code> |[optional]|
+**Timestamp** | **string** | <em>date and time when the video was published or indexed</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|

@@ -79,7 +79,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>&lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in
+        /// <br/>, &gt;=, =, &lt;&gt;, in, not_in
         /// <br/>example:
         /// <br/>['intersections','&gt;',500]
         /// <br/>[['competitor_metrics.app_store_search_organic.pos_1','&lt;&gt;',10],'and',['avg_position','&gt;=','10']]

@@ -28,13 +28,15 @@ namespace DataForSeo.Client.Models
         public string Alt { get; set; }
 
         /// <summary>
-        /// URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+        /// URL of the image
+        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
 
         /// <summary>
-        /// content of the element in markdown formatcontent of the result formatted in the markdown markup language
+        /// content of the element in markdown format
+        /// <br/>content of the result formatted in the <see href="https://en.wikipedia.org/wiki/Markdown">markdown markup language</see>
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }

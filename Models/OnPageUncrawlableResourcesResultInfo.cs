@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// status of the crawling session
-        /// <br/>possible values: in_progress, finished
+        /// <br/>possible values: <c>in_progress</c>, <c>finished</c>
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }
@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         public long? TotalItemsCount { get; set; }
 
         /// <summary>
-        /// number of uncrawlable resources in the items array
+        /// number of uncrawlable resources in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

@@ -11,21 +11,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// total amount of results relevant to the request
-        /// <br/>in this case, always equals 0
+        /// <br/>in this case, always equals <c>0</c>
         /// </summary>
         [JsonProperty("total_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of mentions objects that are omitted in the items array
-        /// <br/>in this case, always equals 0
+        /// the number of mentions objects that are omitted in the <c>items</c> array
+        /// <br/>in this case, always equals <c>0</c>
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
-        /// <br/>in this case, always equals 0
+        /// the number of results returned in the <c>items</c> array
+        /// <br/>in this case, always equals <c>0</c>
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// individual target results
-        /// <br/>in this case, equals null
+        /// <br/>in this case, equals <c>null</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> Items { get; set; }

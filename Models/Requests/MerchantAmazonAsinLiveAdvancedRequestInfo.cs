@@ -12,67 +12,67 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// product ID
         /// <br/>required field
-        /// <br/>unique product identifier (ASIN) in Amazon
-        /// <br/>you can receive the asin parameter by making a separate request to the Amazon Products endpoint
+        /// <br/><see href="https://dataforseo.com/help-center/asin-in-amazon-api">unique product identifier (ASIN)</see> in Amazon
+        /// <br/>you can receive the <c>asin</c> parameter by making a separate request to the <see href="/v3/merchant/amazon/products/live/advanced/">Amazon Products endpoint</see>
         /// </summary>
         [JsonProperty("asin", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don't specify location_code or location_coordinate
-        /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations with their location_name parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with their <c>location_name</c> parameters by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/locations</c>
         /// <br/>example:
-        /// <br/>HA1,England,United Kingdom
+        /// <br/><c>HA1,England,United Kingdom</c>
         /// </summary>
         [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don't specify location_name or location_coordinate
-        /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations with their location_code parameters by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/merchant/amazon/locations
+        /// <br/>required field if you don't specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with their <c>location_code</c> parameters by making a separate request to the
+        /// <br/><c>https://api.dataforseo.com/v3/merchant/amazon/locations</c>
         /// <br/>example:
-        /// <br/>9045969
+        /// <br/><c>9045969</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don't specify location_name or location_code
-        /// <br/>if you use this field, you don't need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
+        /// <br/>required field if you don't specify <c>location_name</c> or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,radius' format
         /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
         /// <br/>the minimum value for 'radius': 199.9
         /// <br/>example:
-        /// <br/>53.476225,-2.243572,200
+        /// <br/><c>53.476225,-2.243572,200</c>
         /// </summary>
         [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// full name of search engine language
-        /// <br/>required field if you don't specify language_code
-        /// <br/>if you use this field, you don't need to specify language_code
-        /// <br/>you can receive the list of available languages with their language_name parameters by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/merchant/amazon/languages
+        /// <br/>required field if you don't specify <c>language_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>you can receive the list of available languages with their <c>language_name</c> parameters by making a separate request to the
+        /// <br/><c>https://api.dataforseo.com/v3/merchant/amazon/languages</c>
         /// <br/>example:
-        /// <br/>English (United Kingdom)
+        /// <br/><c>English (United Kingdom)</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// search engine language code
-        /// <br/>required field if you don't specify language_name
-        /// <br/>if you use this field, you don't need to specify language_name
-        /// <br/>you can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
+        /// <br/>required field if you don't specify <c>language_name</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>
+        /// <br/>you can receive the list of available languages with their <c>language_code</c> parameters by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/languages</c>
         /// <br/>example:
-        /// <br/>en_GB
+        /// <br/><c>en_GB</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
         /// <br/>however, you can set a custom search engine domain in this field
         /// <br/>example:
-        /// <br/>amazon.com, amazon.co.uk, amazon.fr, etc.
+        /// <br/><c>amazon.com</c>, <c>amazon.co.uk</c>, <c>amazon.fr</c>, etc.
         /// </summary>
         [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeDomain { get; set; }
@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

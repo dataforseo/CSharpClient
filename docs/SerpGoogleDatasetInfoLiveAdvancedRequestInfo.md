@@ -5,6 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**DatasetId** | **string** | ID of the datasetrequired fieldyou can find dataset ID in the dataset URL or dataset item of Google Dataset Search resultexample:L2cvMTFqbl85ZHN6MQ== |[optional]|
-**LanguageCode** | **string** | search engine language codeoptional fieldif you use this field, you don't need to specify language_namepossible value:en |[optional]|
-**Device** | **string** | device typeoptional fieldreturn results for a specific device typepossible value: desktop |[optional]|
+**DatasetId** | **string** | <p><em>ID of the dataset</em><p><strong>required field</strong><p>you can find dataset ID in the dataset URL or <code>dataset</code> item of <a href='https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced'>Google Dataset Search</a> result<p>example:<p><code>L2cvMTFqbl85ZHN6MQ==</code></p> |[optional]|
+**LanguageCode** | **string** | <p><em>search engine language code</em><p>optional field<p>if you use this field, you don't need to specify <code>language_name</code><p>possible value:<p><code class='long-string'>en</code></p> |[optional]|
+**Device** | **string** | <p><em>device type</em><p>optional field<p>return results for a specific device type<p>possible value: <code>desktop</code></p> |[optional]|
+**LanguageName** | **string** | <p><em>full name of search engine language</em><p>optional field<p>if you use this field, you don't need to specify <code>language_code</code><p>possible value:<p><code class='long-string'>English</code></p> |[optional]|
+**Os** | **string** | <p><em>device operating system</em><p>optional field<p>possible values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p> |[optional]|
+**Tag** | **string** | <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p> |[optional]|

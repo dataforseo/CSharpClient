@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationGeminiLlmResponsesTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationGeminiLlmResponsesTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

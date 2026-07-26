@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationName** | **string** | full name of the location |[optional]|
-**CountryIsoCode** | **string** | ISO country code of the location |[optional]|
-**BusinessCount** | **long?** | number of businesses in this location in our database |[optional]|
+**LocationName** | **string** | <em>full name of the location</em> |[optional]|
+**CountryIsoCode** | **string** | <em>ISO country code of the location</em> |[optional]|
+**BusinessCount** | **long?** | <em>number of businesses in this location in our database</em> |[optional]|

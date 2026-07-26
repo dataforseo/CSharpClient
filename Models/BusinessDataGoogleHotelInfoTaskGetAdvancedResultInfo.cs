@@ -11,9 +11,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique hotel identifier
-        /// <br/>this field will contain the hotel_identifier parameter;
+        /// <br/>this field will contain the <c>hotel_identifier</c> parameter;
         /// <br/>example:
-        /// <br/>CgoI-KWyzenM_MV3EAE
+        /// <br/><c>CgoI-KWyzenM_MV3EAE</c>
         /// </summary>
         [JsonProperty("hotel_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HotelIdentifier { get; set; }
@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -110,7 +110,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// pricing details of the hotel entity
-        /// <br/>contains information about the hotel’s prices
+        /// <br/>contains information about the hotel's prices
         /// </summary>
         [JsonProperty("prices", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public HotelPriceInfo Prices { get; set; }

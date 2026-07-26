@@ -16,7 +16,8 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// additional items present in the elementif there are none, equals null
+        /// additional items present in the element
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleShoppingCarouselElement> Items { get; set; }

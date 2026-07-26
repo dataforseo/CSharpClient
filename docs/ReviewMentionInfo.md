@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the evaluated criterion |[optional]|
-**PositiveScore** | **double?** | positive score by criterion |[optional]|
-**PositiveCount** | **long?** | count of positive reviews by criterion |[optional]|
-**NegativeCount** | **long?** | count of negative reviews by criterion |[optional]|
-**TotalCount** | **long?** | count of all reviews by criterion |[optional]|
-**VisibleByDefault** | **bool?** | element is visible by default<br>indicates whether the review element is visible by default |[optional]|
+**Title** | **string** | <em>title of the evaluated criterion</em> |[optional]|
+**PositiveScore** | **double?** | <em>positive score by criterion</em> |[optional]|
+**PositiveCount** | **long?** | <em>count of positive reviews by criterion</em> |[optional]|
+**NegativeCount** | **long?** | <em>count of negative reviews by criterion</em> |[optional]|
+**TotalCount** | **long?** | <em>count of all reviews by criterion</em> |[optional]|
+**VisibleByDefault** | **bool?** | <em>element is visible by default</em><br>indicates whether the review element is visible by default |[optional]|

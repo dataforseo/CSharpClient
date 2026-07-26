@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | name of the source where the review was posted |[optional]|
-**Image** | **string** | featured image of the source |[optional]|
-**Domain** | **string** | domain of the source where the review was posted |[optional]|
+**Title** | **string** | <em>name of the source where the review was posted</em> |[optional]|
+**Image** | **string** | <em>featured image of the source</em> |[optional]|
+**Domain** | **string** | <em>domain of the source where the review was posted</em> |[optional]|

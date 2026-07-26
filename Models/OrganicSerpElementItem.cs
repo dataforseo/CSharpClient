@@ -10,13 +10,17 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+        /// group rank in SERP
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
-        /// absolute rank in SERPabsolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
+        /// absolute rank in SERP
+        /// <br/>absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+        /// <br/>to get all items (including SERP features and rich snippets) with their positions, please refer to the <see href="https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?php">Google Organiс Advanced SERP</see> endpoint
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }

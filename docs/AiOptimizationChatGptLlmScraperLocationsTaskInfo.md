@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationChatGptLlmScraperLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationChatGptLlmScraperLocationsResultInfo>** | <em>array of results</em> |[optional]|

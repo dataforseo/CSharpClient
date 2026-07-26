@@ -12,8 +12,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// domain, subdomain or webpage to get backlinks for
         /// <br/>required field
-        /// <br/>a domain or a subdomain should be specified without https:// and www.
-        /// <br/>a page should be specified with absolute URL (including http:// or https://)
+        /// <br/>a domain or a subdomain should be specified without <c>https://</c> and <c>www.</c>
+        /// <br/>a page should be specified with absolute URL (including <c>http://</c> or <c>https://</c>)
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -22,10 +22,10 @@ namespace DataForSeo.Client.Models.Requests
         /// results grouping type
         /// <br/>optional field
         /// <br/>possible grouping types:
-        /// <br/>as_is – returns all backlinks
-        /// <br/>one_per_domain – returns one backlink per domain
-        /// <br/>one_per_anchor – returns one backlink per anchor
-        /// <br/>default value: as_is
+        /// <br/><c>as_is</c> - returns all backlinks
+        /// <br/><c>one_per_domain</c> - returns one backlink per domain
+        /// <br/><c>one_per_anchor</c> - returns one backlink per anchor
+        /// <br/>default value: <c>as_is</c>
         /// </summary>
         [JsonProperty("mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Mode { get; set; }
@@ -33,56 +33,27 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// detailed results grouping type
         /// <br/>optional field
-        /// <br/>use this object to get a specific number of backlinks per field
-        /// <br/>if you use custom_mode, then mode will be ignored
+        /// <br/>use this object to get a specific number of backlinks per <c>field</c>
+        /// <br/>if you use <c>custom_mode</c>, then <c>mode</c> will be ignored
         /// <br/>example:
-        /// <br/>'custom_mode': {'field': 'domain', 'value': 100}
+        /// <br/><c>'custom_mode': {'field': 'domain', 'value': 100}</c>
         /// </summary>
         [JsonProperty("custom_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, object> CustomMode { get; set; }
 
         /// <summary>
-        /// response field
-        /// <br/>required field if you choose to specify custom_mode
-        /// <br/>possible values:
-        /// <br/>anchor
-        /// <br/>domain_from
-        /// <br/>domain_from_country
-        /// <br/>tld_from
-        /// <br/>page_from_encoding
-        /// <br/>page_from_language
-        /// <br/>item_type
-        /// <br/>page_from_status_code
-        /// <br/>semantic_location
-        /// </summary>
-        [JsonProperty("field", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Field { get; set; }
-
-        /// <summary>
-        /// number of backlinks to return per field
-        /// <br/>required field if you choose to specify custom_mode
-        /// <br/>can be set from 1 to 1000
-        /// </summary>
-        [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Value { get; set; }
-
-        /// <summary>
         /// array of results filtering parameters
         /// <br/>optional field
         /// <br/>you can add several filters at once (8 filters maximum)
-        /// <br/>you should set a logical operator and, or between the conditions
+        /// <br/>you should set a logical operator <c>and</c>, <c>or</c> between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>=, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex, match, not_match
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
+        /// <br/><c>=</c>, <c>&lt;&gt;</c>, <c>in</c>, <c>not_in</c>, <c>like</c>, <c>not_like</c>, <c>ilike</c>, <c>not_ilike</c>, <c>regex</c>, <c>not_regex</c>, <c>match</c>, <c>not_match</c>
+        /// <br/>you can use the <c>%</c> operator with <c>like</c> and <c>not_like</c> to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>['rank','&gt;','80']
-        /// <br/>[['page_from_rank','&gt;','55'],
-        /// <br/>'and',
-        /// <br/>['dofollow','=',true]]
-        /// <br/>[['first_seen','&gt;','2017-10-23 11:31:45 +00:00'],
-        /// <br/>'and',
-        /// <br/>[['anchor','like','%seo%'],'or',['text_pre','like','%seo%']]]
-        /// <br/>The full list of possible filters is available here.
+        /// <br/><c>['rank','&gt;','80']</c>
+        /// <br/><c>[['page_from_rank','&gt;','55'],'and',['dofollow','=',true]]</c>
+        /// <br/><c>[['first_seen','&gt;','2017-10-23 11:31:45 +00:00'],'and',[['anchor','like','%seo%'],'or',['text_pre','like','%seo%']]]</c>
+        /// <br/>The full list of possible filters is available <see href="/v3/backlinks/filters/?bash">here.</see>
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> Filters { get; set; }
@@ -90,17 +61,17 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// results sorting rules
         /// <br/>optional field
-        /// <br/>you can use the same values as in the filters array to sort the results
+        /// <br/>you can use the same values as in the <c>filters</c> array to sort the results
         /// <br/>possible sorting types:
-        /// <br/>asc – results will be sorted in the ascending order
-        /// <br/>desc – results will be sorted in the descending order
+        /// <br/><c>asc</c> - results will be sorted in the ascending order
+        /// <br/><c>desc</c> - results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting type
         /// <br/>example:
-        /// <br/>['rank,desc']
+        /// <br/><c>['rank,desc']</c>
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>['domain_from_rank,desc','page_from_rank,asc']
+        /// <br/><c>['domain_from_rank,desc','page_from_rank,asc']</c>
         /// </summary>
         [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> OrderBy { get; set; }
@@ -108,9 +79,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// offset in the results array of the returned backlinks
         /// <br/>optional field
-        /// <br/>default value: 0
-        /// <br/>if you specify the 10 value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks;
-        /// <br/>Note: the maximum value is 20,000, use the search_after_token if you would like to offset more results
+        /// <br/>default value: <c>0</c>
+        /// <br/>if you specify the <c>10</c> value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks;
+        /// <br/>Note: the maximum value is <c>20,000</c>, use the <c>search_after_token</c> if you would like to offset more results
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -119,10 +90,10 @@ namespace DataForSeo.Client.Models.Requests
         /// token for subsequent requests
         /// <br/>optional field
         /// <br/>provided in the identical filed of the response to each request;
-        /// <br/>use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
-        /// <br/>by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
-        /// <br/>search_after_token values are unique for each subsequent task ;
-        /// <br/>Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+        /// <br/>use this parameter to avoid timeouts while trying to obtain over <c>20,000</c> results in a single request;
+        /// <br/>by specifying the unique <c>search_after_token</c> value from the response array, you will get the subsequent results of the initial task;
+        /// <br/><c>search_after_token</c> values are unique for each subsequent task ;
+        /// <br/>Note: if the <c>search_after_token</c> is specified in the request, all other parameters should be identical to the previous request
         /// </summary>
         [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchAfterToken { get; set; }
@@ -130,8 +101,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of returned backlinks
         /// <br/>optional field
-        /// <br/>default value: 100
-        /// <br/>maximum value: 1000
+        /// <br/>default value: <c>100</c>
+        /// <br/>maximum value: <c>1000</c>
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -139,54 +110,44 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// set what backlinks to return and count
         /// <br/>optional field
-        /// <br/>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your target;
-        /// <br/>possible values:
-        /// <br/>all – all backlinks will be returned and counted;
-        /// <br/>live – backlinks found during the last check will be returned and counted;
-        /// <br/>lost – lost backlinks will be returned and counted;
-        /// <br/>default value: live
+        /// <br/>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your <c>target</c>;
+        /// <br/>possible values: 
+        /// <br/><c>all</c> - all backlinks will be returned and counted;
+        /// <br/><c>live</c> - backlinks found during the last check will be returned and counted;
+        /// <br/><c>lost</c> - lost backlinks will be returned and counted;
+        /// <br/>default value: <c>live</c>
         /// </summary>
         [JsonProperty("backlinks_status_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BacklinksStatusType { get; set; }
 
         /// <summary>
-        /// indicates if the subdomains of the target will be included in the search
+        /// indicates if the subdomains of the <c>target</c> will be included in the search
         /// <br/>optional field
-        /// <br/>if set to false, the subdomains will be ignored
-        /// <br/>default value: true
+        /// <br/>if set to <c>false</c>, the subdomains will be ignored
+        /// <br/>default value: <c>true</c>
         /// </summary>
         [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
-        /// indicates if indirect links to the target will be included in the results
+        /// indicates if internal backlinks from subdomains to the <c>target</c> will be excluded from the results
         /// <br/>optional field
-        /// <br/>if set to true, the results will include data on indirect links pointing to a page that either redirects to the target, or points to a canonical page
-        /// <br/>if set to false, indirect links will be ignored
-        /// <br/>default value: true
-        /// </summary>
-        [JsonProperty("include_indirect_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public bool? IncludeIndirectLinks { get; set; }
-
-        /// <summary>
-        /// indicates if internal backlinks from subdomains to the target will be excluded from the results
-        /// <br/>optional field
-        /// <br/>if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target
-        /// <br/>if set to false, internal links will be included in the results
-        /// <br/>default value: true
+        /// <br/>if set to <c>true</c>, the results will not include data on internal backlinks from subdomains of the same domain as <c>target</c>
+        /// <br/>if set to <c>false</c>, internal links will be included in the results
+        /// <br/>default value: <c>true</c>
         /// </summary>
         [JsonProperty("exclude_internal_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExcludeInternalBacklinks { get; set; }
 
         /// <summary>
-        /// defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
+        /// defines the scale used for calculating and displaying the <c>rank</c>, <c>domain_from_rank</c>, and <c>page_from_rank</c> values
         /// <br/>optional field
         /// <br/>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
         /// <br/>possible values:
-        /// <br/>one_hundred — rank values are displayed on a 0–100 scale
-        /// <br/>one_thousand — rank values are displayed on a 0–1000 scale
-        /// <br/>default value: one_thousand
-        /// <br/>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+        /// <br/><c>one_hundred</c> — rank values are displayed on a 0–100 scale
+        /// <br/><c>one_thousand</c> — rank values are displayed on a 0–1000 scale
+        /// <br/>default value: <c>one_thousand</c>
+        /// <br/>learn more about how this parameter works and how ranking metrics are calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale">this Help Center article</see>
         /// </summary>
         [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
@@ -196,7 +157,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

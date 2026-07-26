@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**AvailableAttributes** | **IDictionary<string, IEnumerable<string>>** | available attributes<br>indicates attributes a business entity can offer |[optional]|
-**UnavailableAttributes** | **IDictionary<string, IEnumerable<string>>** | unavailable attributes<br>indicates attributes a business entity cannot offer |[optional]|
+**AvailableAttributes** | **IDictionary<string, IEnumerable<string>>** | <em>available attributes</em><br>indicates attributes a business entity can offer |[optional]|
+**UnavailableAttributes** | **IDictionary<string, IEnumerable<string>>** | <em>unavailable attributes</em><br>indicates attributes a business entity cannot offer |[optional]|

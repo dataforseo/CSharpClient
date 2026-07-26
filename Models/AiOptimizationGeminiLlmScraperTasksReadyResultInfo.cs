@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// task identifier of the completed task
-        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>unique task identifier in our system in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search engine function
-        /// <br/>example: llm_scraper
+        /// <br/>example: <c>llm_scraper</c>
         /// </summary>
         [JsonProperty("function", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Function { get; set; }
@@ -43,14 +43,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL for collecting the results of the Advanced task
-        /// <br/>if the Advanced function is not supported in the specified endpoint, the value will be null
+        /// <br/>if the Advanced function is not supported in the specified endpoint, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
         /// URL for collecting the results of the HTML task
-        /// <br/>if the HTML function is not supported in the specified endpoint, the value will be null
+        /// <br/>if the HTML function is not supported in the specified endpoint, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointHtml { get; set; }

@@ -13,10 +13,9 @@ namespace DataForSeo.Client.Models.Requests
         /// domains, subdomains or webpages to get new &amp; lost backlinks for
         /// <br/>required field
         /// <br/>you can set up to 1000 domains, subdomains or webpages
-        /// <br/>the domain or subdomain should be specified without https:// and www.
-        /// <br/>the page should be specified with absolute URL (including http:// or https://)
+        /// <br/>the domain or subdomain should be specified without `https://` and `www.` the page should be specified with absolute URL (including <c>http://</c> or <c>https://</c>)
         /// <br/>example:
-        /// <br/>'targets': [
+        /// <br/> `'targets': [
         /// <br/>  'forbes.com',
         /// <br/>  'cnn.com',
         /// <br/>  'bbc.com',
@@ -27,7 +26,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>  'https://variety.com/',
         /// <br/>  'https://stackoverflow.com/',
         /// <br/>  'www.trustpilot.com'
-        /// <br/>]
+        /// <br/>]`
         /// </summary>
         [JsonProperty("targets", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Targets { get; set; }
@@ -37,14 +36,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>this field indicates the date which will be used as a threshold for new and lost backlinks;
         /// <br/>the backlinks that appeared in our index after the specified date will be considered as new;
-        /// <br/>the backlinks that weren’t found after the specified date, but were present before, will be considered as lost;
-        /// <br/>default value: today’s date -(minus) one month;
-        /// <br/>e.g. if today is 2021-10-13, default date_from will be 2021-09-13.
-        /// <br/>minimum value equals today’s date -(minus) one year;
-        /// <br/>e.g. if today is 2021-10-13, minimum date_from will be 2020-10-13.
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>the backlinks that weren't found after the specified date, but were present before, will be considered as lost;
+        /// <br/>default value: today's date -(minus) one month;
+        /// <br/>e.g. if today is <c>2021-10-13</c>, default <c>date_from</c> will be <c>2021-09-13</c>.
+        /// <br/>minimum value equals today's date -(minus) one year;
+        /// <br/>e.g. if today is <c>2021-10-13</c>, minimum <c>date_from</c> will be <c>2020-10-13</c>.
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2021-01-01'
+        /// <br/><c>'2021-01-01'</c>
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
@@ -54,7 +53,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

@@ -86,7 +86,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the value may differ depending on the location specified in a POST request
         /// </summary>
         [JsonProperty("high_top_of_page_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? HighTopOfPageBid { get; set; }
+        public int? HighTopOfPageBid { get; set; }
 
         /// <summary>
         /// cost per click

@@ -11,22 +11,22 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date timestamp
-        /// <br/> date format: 'yyyy-mm-dd'
+        /// <br/> date format: <c>'yyyy-mm-dd'</c>
         /// </summary>
         [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }
 
         /// <summary>
         /// LLM mentions count delta
-        /// <br/>the difference in mentions between the current timestamp and the previous one
+        /// <br/>the difference in <c>mentions</c> between the current timestamp and the previous one
         /// </summary>
         [JsonProperty("delta_mentions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DeltaMentions { get; set; }
 
         /// <summary>
         /// LLM mentions count delta
-        /// <br/>the difference in ai_search_volume values between the current timestamp and the previous one
-        /// <br/>learn more about this metric here
+        /// <br/>the difference in <c>ai_search_volume</c> values between the current timestamp and the previous one
+        /// <br/>learn more about this metric <see href="https://dataforseo.com/help-center/how-ai-search-volume-metrics-work-in-the-llm-mentions-timeseries-endpoints">here</see>
         /// </summary>
         [JsonProperty("delta_ai_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? DeltaAiSearchVolume { get; set; }

@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// XPath of the element
+        /// <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -34,49 +34,59 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> Tags { get; set; }
 
         /// <summary>
-        /// name of the sellerthe name of the company that placed a corresponding product on Google Shopping
+        /// name of the seller
+        /// <br/>the name of the company that placed a corresponding product on Google Shopping
         /// </summary>
         [JsonProperty("seller", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Seller { get; set; }
 
         /// <summary>
-        /// product priceexample:384.99
+        /// product price
+        /// <br/>example:
+        /// <br/><c>384.99</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Price { get; set; }
 
         /// <summary>
-        /// currency in the ISO formatexample:USD
+        /// currency in the <see href="https://en.wikipedia.org/wiki/ISO_4217">ISO</see> format
+        /// <br/>example:
+        /// <br/><c>USD</c>
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
 
         /// <summary>
-        /// product ratingthe product popularity rate based on product reviews
+        /// product rating
+        /// <br/>the product popularity rate based on product reviews
         /// </summary>
         [JsonProperty("product_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingElement ProductRating { get; set; }
 
         /// <summary>
-        /// URLs to the images of the productthe first URL in the array is the featured image of the product
+        /// URLs to the images of the product
+        /// <br/>the first URL in the array is the featured image of the product
         /// </summary>
         [JsonProperty("product_images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ProductImages { get; set; }
 
         /// <summary>
-        /// unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+        /// unique ad click referral parameter
+        /// <br/>using this parameter you can get a URL of the advertisement in <see href="/v3/merchant/google/sellers/ad_url/">Google Shopping Sellers Ad URL</see>
         /// </summary>
         [JsonProperty("shop_ad_aclk", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ShopAdAclk { get; set; }
 
         /// <summary>
-        /// delivery informationdelivery information including free and fast delivery date ranges
+        /// delivery information
+        /// <br/>delivery information including free and fast delivery date ranges
         /// </summary>
         [JsonProperty("delivery_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DeliveryInfo DeliveryInfo { get; set; }
 
         /// <summary>
-        /// special offer from the sellerinformation on the special offer from the seller, including discount and coupon info
+        /// special offer from the seller
+        /// <br/>information on the special offer from the seller, including discount and coupon info
         /// </summary>
         [JsonProperty("special_offer_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpecialOfferInfo SpecialOfferInfo { get; set; }

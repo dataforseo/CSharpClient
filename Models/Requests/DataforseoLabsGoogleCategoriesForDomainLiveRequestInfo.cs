@@ -119,7 +119,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in
+        /// <br/>regex, not_regex, , &gt;=, =, &lt;&gt;, in, not_in
         /// <br/>example:
         /// <br/>['metrics.organic.pos_1,'&gt;',0]
         /// <br/>[[['metrics.organic.count','&gt;=',100],'and',['metrics.organic.pos_1','&gt;',0]],

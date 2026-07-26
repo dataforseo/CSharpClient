@@ -60,14 +60,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google-defined client id
         /// <br/>unique id of a local establishment
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
 
         /// <summary>
         /// the unique identifier of the element in SERP
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("feature_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FeatureId { get; set; }
@@ -86,8 +86,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique place identifier
-        /// <br/>place id of the local establishment featured in the element
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/><see href="https://developers.google.com/places/place-id">place id</see> of the local establishment featured in the element
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("place_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PlaceId { get; set; }
@@ -137,7 +137,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// latitude coordinate of the local establishments in google maps
         /// <br/>example:
-        /// <br/>'latitude': 51.584091
+        /// <br/><c>'latitude': 51.584091</c>
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Latitude { get; set; }
@@ -145,7 +145,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// longitude coordinate of the local establishment in google maps
         /// <br/>example:
-        /// <br/>'longitude': -0.31365919999999997
+        /// <br/><c>'longitude': -0.31365919999999997</c>
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Longitude { get; set; }
@@ -158,7 +158,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// service details in a form of user-reviewed checks;
-        /// <br/>service details of a business entity displayed in a form of checks and based on user feedback and business category
+        /// <br/>service details of a business entity displayed in a form of checks and based on user feedback and business <c>category</c>
         /// </summary>
         [JsonProperty("attributes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BusinessDataAttributesInfo Attributes { get; set; }
@@ -166,11 +166,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// keywords mentioned in customer reviews
         /// <br/>contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword
-        /// <br/>example: 
-        /// <br/>'place_topics': {
-        /// <br/>'egg roll': 48,
-        /// <br/>'birthday': 33
-        /// <br/>}
+        /// <br/>example: <c>'place_topics': {'egg roll': 48,'birthday': 33}</c>
         /// </summary>
         [JsonProperty("place_topics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> PlaceTopics { get; set; }
@@ -184,16 +180,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// hotel class rating
-        /// <br/>class ratings range between 1-5 stars, learn more
-        /// <br/>if there is no hotel class rating information, the value will be null
+        /// <br/>class ratings range between 1-5 stars, <see href="https://support.google.com/business/answer/7660515?hl=en">learn more</see>
+        /// <br/>if there is no hotel class rating information, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("hotel_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? HotelRating { get; set; }
 
         /// <summary>
         /// property price level
-        /// <br/>can take values: inexpensive, moderate, expensive, very_expensive
-        /// <br/>if there is no price level information, the value will be null
+        /// <br/>can take values: <c>inexpensive</c>, <c>moderate</c>, <c>expensive</c>, <c>very_expensive</c>
+        /// <br/>if there is no price level information, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("price_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PriceLevel { get; set; }
@@ -250,7 +246,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the data was last updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2023-01-26 09:03:15 +00:00
+        /// <br/><c>2023-01-26 09:03:15 +00:00</c>
         /// </summary>
         [JsonProperty("last_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }
@@ -259,7 +255,7 @@ namespace DataForSeo.Client.Models
         /// date and time when our crawler found the business listing element for the first time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2023-03-11 10:04:11 +00:00
+        /// <br/><c>2023-03-11 10:04:11 +00:00</c>
         /// </summary>
         [JsonProperty("first_seen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstSeen { get; set; }

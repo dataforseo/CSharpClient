@@ -52,7 +52,8 @@ namespace DataForSeo.Client.Models
         public string CouponInfo { get; set; }
 
         /// <summary>
-        /// URL to the product page on the seller's websiteNote: this field is deprecated and will return null
+        /// URL to the product page on the seller's website
+        /// <br/>Note: this field is deprecated and will return <c>null</c>
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationPerplexityLlmResponsesLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationPerplexityLlmResponsesLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

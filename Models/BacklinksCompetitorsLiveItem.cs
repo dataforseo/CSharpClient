@@ -24,14 +24,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// domain rank
         /// <br/>domain rank across all domains in the database
-        /// <br/>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>rank</c> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Rank { get; set; }
 
         /// <summary>
-        /// indicates the number of backlink intersections with the target specified in the POST array
+        /// indicates the number of backlink intersections with the <c>target</c> specified in the POST array
         /// </summary>
         [JsonProperty("intersections", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Intersections { get; set; }

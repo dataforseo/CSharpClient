@@ -10,57 +10,167 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”.
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// keyword
+        /// <br/>required field
+        /// <br/>you can specify up to 700 characters in the <c>keyword</c> field
+        /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+        /// <br/>if you need to use the “%” character for your <c>keyword</c>, please specify it as “%25”;
+        /// <br/>if you need to use the “+” character for your <c>keyword</c>, please specify it as “%2B”.
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
-        /// search engine language codeoptional fieldpossible value:en
+        /// search engine language code
+        /// <br/>optional field
+        /// <br/>possible value:
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// parsing depthoptional fieldnumber of results in SERPdefault value: 20max value: 700
-        /// <br/>Your account will be billed per each SERP containing up to 20 results;Setting depth above 20 may result in additional charges if the search engine returns more than 20 results;If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;
+        /// parsing depth
+        /// <br/>optional field
+        /// <br/>number of results in SERP
+        /// <br/>default value: <c>20</c>
+        /// <br/>max value: <c>700</c>
+        /// <br/>Your account will be billed per each SERP containing up to 20 results;
+        /// <br/>Setting depth above 20 may result in additional charges if the search engine returns more than 20 results;
+        /// <br/>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
 
         /// <summary>
-        /// task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
+        /// task priority
+        /// <br/>optional field
+        /// <br/>can take the following values:
+        /// <br/>1 – normal execution priority (set by default)
+        /// <br/>2 – high execution priority
+        /// <br/>You will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-dataset-search-serp-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
-        /// device typeoptional fieldreturn results for a specific device typepossible value: desktop
+        /// device type
+        /// <br/>optional field
+        /// <br/>return results for a specific device type
+        /// <br/>possible value: <c>desktop</c>
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
 
         /// <summary>
-        /// notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&amp;tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// notification URL of a completed task
+        /// <br/>optional field
+        /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
+        /// <br/>example:
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }
 
         /// <summary>
-        /// URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&amp;tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// URL for sending task results
+        /// <br/>optional field
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request
+        /// <br/>example:
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
-        /// postback_url datatyperequired field if you specify postback_urlcorresponds to the datatype that will be sent to your serveronly value: advanced
+        /// postback_url datatype
+        /// <br/>required field if you specify <c>postback_url</c>
+        /// <br/>corresponds to the datatype that will be sent to your server
+        /// <br/>only value: <c>advanced</c>
         /// </summary>
         [JsonProperty("postback_data", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
+
+        /// <summary>
+        /// full name of search engine language
+        /// <br/>optional field
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>possible value:
+        /// <br/><c>English</c>
+        /// </summary>
+        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LanguageName { get; set; }
+
+        /// <summary>
+        /// device operating system
+        /// <br/>optional field
+        /// <br/>possible values: <c>windows</c>, <c>macos</c>
+        /// <br/>default value: <c>windows</c>
+        /// </summary>
+        [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Os { get; set; }
+
+        /// <summary>
+        /// user-defined task identifier
+        /// <br/>optional field
+        /// <br/>the character limit is 255
+        /// <br/>you can use this parameter to identify the task and match it with the result
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
+        /// </summary>
+        [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Tag { get; set; }
+
+        /// <summary>
+        /// last time the dataset was updated
+        /// <br/>optional field
+        /// <br/>possible values: <c>1m</c>, <c>1y</c>, <c>3y</c>
+        /// </summary>
+        [JsonProperty("last_updated", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string LastUpdated { get; set; }
+
+        /// <summary>
+        /// file formats of the dataset
+        /// <br/>optional field
+        /// <br/>possible values: <c>other</c>, <c>archive</c>, <c>text</c>, <c>image</c>, <c>document</c>, <c>tabular</c>
+        /// </summary>
+        [JsonProperty("file_formats", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> FileFormats { get; set; }
+
+        /// <summary>
+        /// usage rights of the dataset
+        /// <br/>optional field
+        /// <br/>possible values: <c>commercial</c>, <c>noncommercial</c>
+        /// </summary>
+        [JsonProperty("usage_rights", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string UsageRights { get; set; }
+
+        /// <summary>
+        /// indicates whether displayed datasets are free
+        /// <br/>optional field
+        /// <br/>possible values: <c>true</c>, <c>false</c>
+        /// </summary>
+        [JsonProperty("is_free", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsFree { get; set; }
+
+        /// <summary>
+        /// dataset topics
+        /// <br/>optional field
+        /// <br/>possible values: <c>humanities</c>, <c>social_sciences</c>, <c>life_sciences</c>, <c>agriculture</c>, <c>natural_sciences</c>, <c>geo</c>, <c>computer</c>, <c>architecture_and_urban_planning</c>, <c>engineering</c>
+        /// </summary>
+        [JsonProperty("topics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Topics { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

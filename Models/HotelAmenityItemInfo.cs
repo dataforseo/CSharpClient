@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         public string HintLabel { get; set; }
 
         /// <summary>
-        /// indicates whether the amenity is available in the hotel
+        /// indicates whether the <c>amenity</c> is available in the hotel
         /// </summary>
         [JsonProperty("is_available", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAvailable { get; set; }

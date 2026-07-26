@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BacklinksBulkBacklinksLiveItem>** | contains relevant backlink data |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<BacklinksBulkBacklinksLiveItem>** | <em>contains relevant backlink data</em> |[optional]|

@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains data on domains that link to the corresponding targets specified in the POST array
-        /// <br/>data is provided in separate objects corresponding to domains, subdomains or pages specified in the targets object
+        /// <br/>data is provided in separate objects corresponding to domains, subdomains or pages specified in the <c>targets</c> object
         /// </summary>
         [JsonProperty("domain_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, BacklinksDomainIntersection> DomainIntersection { get; set; }

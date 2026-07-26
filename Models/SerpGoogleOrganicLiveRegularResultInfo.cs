@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -71,11 +71,12 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// types of search results found in SERP
-        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews,  images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, recipes, top_sights, scholarly_articles, popular_products, questions_and_answers, find_results_on, stocks_box, commercial_units, local_services, google_hotels, math_solver, currency_box, product_considerations, short_videos, refine_products, perspectives, discussions_and_forums, compare_sites, ai_overviewnote that this array contains all types of search results found in the returned SERP;
-        /// <br/>however, this endpoint provides data for featured_snippet, organic and paid types only
-        /// <br/>to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the Google Organiс Advanced SERP endpoint
+        /// <br/><c>answer_box</c>, <c>app</c>, <c>carousel</c>, <c>multi_carousel</c>, <c>featured_snippet</c>, <c>google_flights</c>, <c>google_reviews</c>, <c>third_party_reviews</c>,  <c>images</c>, <c>jobs</c>, <c>knowledge_graph</c>, <c>local_pack</c>, <c>hotels_pack</c>, <c>map</c>, <c>organic</c>, <c>paid</c>, <c>people_also_ask</c>, <c>related_searches</c>, <c>people_also_search</c>, <c>shopping</c>, <c>top_stories</c>, <c>twitter</c>, <c>video</c>, <c>events</c>, <c>recipes</c>, <c>top_sights</c>, <c>scholarly_articles</c>, <c>popular_products</c>, <c>questions_and_answers</c>, <c>find_results_on</c>, <c>stocks_box</c>, <c>commercial_units</c>, <c>local_services</c>, <c>google_hotels</c>, <c>math_solver</c>, <c>currency_box</c>, <c>product_considerations</c>, <c>short_videos</c>, <c>refine_products</c>, <c>perspectives</c>, <c>discussions_and_forums</c>, <c>compare_sites</c>, <c>ai_overview</c>
+        /// <br/>note that this array contains all types of search results found in the returned SERP;
+        /// <br/>however, this endpoint provides data for <c>featured_snippet</c>, <c>organic</c> and <c>paid</c> types only
+        /// <br/>to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the <see href="https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?php">Google Organiс Advanced SERP</see> endpoint
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -94,7 +95,7 @@ namespace DataForSeo.Client.Models
         public long? PagesCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

@@ -17,26 +17,26 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// number of new referring domains
-        /// <br/>number of new referring domains pointing to the target
+        /// <br/>number of new referring domains pointing to the <c>target</c>
         /// </summary>
         [JsonProperty("new_referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? NewReferringDomains { get; set; }
 
         /// <summary>
         /// number of lost referring domains
-        /// <br/>number of lost referring domains of the target
+        /// <br/>number of lost referring domains of the <c>target</c>
         /// </summary>
         [JsonProperty("lost_referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? LostReferringDomains { get; set; }
 
         /// <summary>
-        /// number of new referring main domains pointing to the target
+        /// number of new referring main domains pointing to the <c>target</c>
         /// </summary>
         [JsonProperty("new_referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? NewReferringMainDomains { get; set; }
 
         /// <summary>
-        /// number of lost referring main domains pointing to the target
+        /// number of lost referring main domains pointing to the <c>target</c>
         /// </summary>
         [JsonProperty("lost_referring_main_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? LostReferringMainDomains { get; set; }

@@ -16,20 +16,20 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of mentions objects that are omitted in the items array
+        /// the number of mentions objects that are omitted in the <c>items</c> array
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
         /// aggregated mentions metrics
-        /// <br/>in this case, always returns null
+        /// <br/>in this case, always returns <c>null</c>
         /// </summary>
         [JsonProperty("aggregated_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public object AggregatedMetrics { get; set; }

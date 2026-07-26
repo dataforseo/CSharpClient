@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, &lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in, like, not_like
+        /// <br/>regex, not_regex, , &gt;=, =, &lt;&gt;, in, not_in, like, not_like
         /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
         /// <br/>example:
         /// <br/>['meta.external_links_count','&lt;=',50]['url','like','https://dataforseo.com/apis/dataforseo-labs-api'][['checks.high_waiting_time','=',false],

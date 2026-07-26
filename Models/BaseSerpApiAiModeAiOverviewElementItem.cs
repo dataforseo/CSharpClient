@@ -11,6 +11,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("ai_overview_video_element", typeof(SerpApiAiModeAiOverviewVideoElementItem))]
     [JsonInheritance("ai_overview_table_element", typeof(SerpApiAiModeAiOverviewTableElementItem))]
     [JsonInheritance("ai_overview_shopping", typeof(SerpApiAiModeAiOverviewShoppingItem))]
+    [JsonInheritance("ai_overview_paid", typeof(SerpApiAiModeAiOverviewPaidItem))]
 
     public class BaseSerpApiAiModeAiOverviewElementItem 
     {
@@ -22,7 +23,9 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// the alignment of the element in SERPcan take the following values:left, right
+        /// the alignment of the element in SERP
+        /// <br/>can take the following values:
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }

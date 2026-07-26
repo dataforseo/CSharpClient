@@ -28,7 +28,8 @@ namespace DataForSeo.Client.Models
         public string Category { get; set; }
 
         /// <summary>
-        /// brand name in markdown formatcontains brand name formatted in the markdown markup language
+        /// brand name in markdown format
+        /// <br/>contains brand name formatted in the <see href="https://en.wikipedia.org/wiki/Markdown">markdown markup language</see>
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }

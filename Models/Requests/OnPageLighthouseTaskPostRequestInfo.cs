@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>target page should be specified with its absolute URL (including http:// or https://)
         /// <br/>example:
-        /// <br/>https://dataforseo.com/
+        /// <br/><c>https://dataforseo.com/</c>
         /// </summary>
         [JsonProperty("url", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -22,9 +22,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// applies mobile emulation
         /// <br/>optional field
-        /// <br/>if set to true, Lighthouse will use mobile device and screen emulation to test the page against mobile environment
-        /// <br/>if set to false, the results will be provided for desktop
-        /// <br/>default value: false
+        /// <br/>if set to <c>true</c>, Lighthouse will use mobile device and screen emulation to test the page against mobile environment
+        /// <br/>if set to <c>false</c>, the results will be provided for desktop
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("for_mobile", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ForMobile { get; set; }
@@ -32,9 +32,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// categories of Lighthouse audits
         /// <br/>optional field
-        /// <br/>each category is a collection of audits and audit groups that applies weighting and scoring to the section (see official definition)if you ignore this field, we will return data for all categories unless you specify audits
-        /// <br/>use this field to get data for specific categories you indicate herepossible values:
-        /// <br/>seo, performance, best_practices, accessibility
+        /// <br/>each category is a collection of audits and audit groups that applies weighting and scoring to the section (<see href="https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md#auditreport-terminology">see official definition</see>)if you ignore this field, we will return data for all categories unless you specify <c>audits</c>
+        /// <br/>use this field to get data for specific categories you indicate here
+        /// <br/>possible values:
+        /// <br/><c>seo</c>, <c>performance</c>, <c>best_practices</c>, <c>accessibility</c>
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Categories { get; set; }
@@ -42,10 +43,15 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// Lighthouse audits
         /// <br/>optional field
-        /// <br/>audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition)if you ignore this field, we will return data for all audits
-        /// <br/>use this field to get data for specific audits you indicate herenote that some audits do not belong to a specific category and are stand-alone page quality measurementsin general, there can be several use cases:1. if you ignore categories, you can use this field to get data for the specified audits only
-        /// <br/>for example, if you ignore 'categories' and specify 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get data only for these audits2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified
-        /// <br/>for example, if you specify 'categories': ['seo'] and 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get only these audits under 'performance' and all audits under 'seo'you can get the full list of possible audits here
+        /// <br/>audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (<see href="https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md#components--terminology">see official definition</see>)if you ignore this field, we will return data for all audits
+        /// <br/>use this field to get data for specific audits you indicate here
+        /// <br/>note that some audits do not belong to a specific category and are stand-alone page quality measurements
+        /// <br/>in general, there can be several use cases:
+        /// <br/>1. if you ignore <c>categories</c>, you can use this field to get data for the specified audits only
+        /// <br/>for example, if you ignore <c>'categories'</c> and specify <c>'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time']</c>, you will get data only for these audits
+        /// <br/>2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified
+        /// <br/>for example, if you specify <c>'categories': ['seo']</c> and <c>'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time']</c>, you will get only these audits under 'performance' and all audits under 'seo'
+        /// <br/>you can get <see href="/v3/on_page/lighthouse/audits/">the full list of possible audits here</see>
         /// </summary>
         [JsonProperty("audits", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Audits { get; set; }
@@ -54,7 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// lighthouse version
         /// <br/>optional field
         /// <br/>you can obtain the results specific to a certain Lighthouse version by specifying its number
-        /// <br/>the list of available versions is available through the Lighthouse Versions endpoint
+        /// <br/>the list of available versions is available through the <see href="/v3/on_page/lighthouse/versions/">Lighthouse Versions endpoint</see>
         /// </summary>
         [JsonProperty("version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Version { get; set; }
@@ -62,9 +68,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// lighthouse language name
         /// <br/>optional field
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languages
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to <c>https://api.dataforseo.com/v3/on_page/lighthouse/languages</c>
         /// <br/>default value:
-        /// <br/>English
+        /// <br/><c>English</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -72,9 +78,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// lighthouse language code
         /// <br/>optional field
-        /// <br/>you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languages
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c> by making a separate request to <c>https://api.dataforseo.com/v3/on_page/lighthouse/languages</c>
         /// <br/>default value:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -92,7 +98,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen width
         /// <br/>optional field
         /// <br/>set the screen width of the browser used for the Lighthouse audit to emulate a specific device;
-        /// <br/>can be specified within the following range: 240–9999;
+        /// <br/>can be specified within the following range: <c>240–9999</c>;
         /// </summary>
         [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrowserScreenWidth { get; set; }
@@ -101,7 +107,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen height
         /// <br/>optional field
         /// <br/>set the screen height of the browser used for the Lighthouse audit to emulate a specific device;
-        /// <br/>can be specified within the following range: 240–9999;
+        /// <br/>can be specified within the following range: <c>240–9999</c>;
         /// </summary>
         [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenHeight { get; set; }
@@ -110,7 +116,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser screen scale factor
         /// <br/>optional field
         /// <br/>set the device pixel ratio of the browser used for the Lighthouse audit;
-        /// <br/>can be specified within the following range: 0.5–3;
+        /// <br/>can be specified within the following range: <c>0.5–3</c>;
         /// </summary>
         [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? BrowserScreenScaleFactor { get; set; }
@@ -120,29 +126,29 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>defines the method used to apply throttling during the Lighthouse audit;
         /// <br/>possible vaules:
-        /// <br/>simulate - calculates estimated performance metrics without applying explicit throttling;
-        /// <br/>devtools -  applies the throttling settings specified in browser_network_throttling and browser_cpu_throttling_multiplier;
-        /// <br/>provided - uses the network conditions of the crawling environment;
+        /// <br/><c>simulate</c> - calculates estimated performance metrics without applying explicit throttling;
+        /// <br/><c>devtools</c> -  applies the throttling settings specified in <c>browser_network_throttling</c> and <c>browser_cpu_throttling_multiplier</c>;
+        /// <br/><c>provided</c> - uses the network conditions of the crawling environment;
         /// </summary>
         [JsonProperty("browser_network_throttling_method", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BrowserNetworkThrottlingMethod { get; set; }
 
         /// <summary>
         /// browser CPU throttling multiplier
-        /// <br/>required if browser_network_throttling_method is set to devtools;
+        /// <br/>required if <c>browser_network_throttling_method</c> is set to <c>devtools</c>;
         /// <br/>set the CPU throttling multiplier to simulate device performance conditions during the Lighthouse audit;
-        /// <br/>can be specified within the following range: 1–4;
-        /// <br/>Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+        /// <br/>can be specified within the following range: <c>1–4</c>;
+        /// <br/>Note: this parameter is applied only when <c>browser_network_throttling_method</c> is set to <c>devtools</c>;
         /// </summary>
         [JsonProperty("browser_cpu_throttling_multiplier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? BrowserCpuThrottlingMultiplier { get; set; }
 
         /// <summary>
         /// browser network throttling
-        /// <br/>required if browser_network_throttling_method is set to devtools;
+        /// <br/>required if <c>browser_network_throttling_method</c> is set to <c>devtools</c>;
         /// <br/>set the network throttling profile to simulate connection speed conditions during the Lighthouse audit;
-        /// <br/>possible values: no_throttling, fast_4g, slow_4g, regular_3g, pc;
-        /// <br/>Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+        /// <br/>possible values: <c>no_throttling</c>, <c>fast_4g</c>, <c>slow_4g</c>, <c>regular_3g</c>, <c>pc</c>;
+        /// <br/>Note: this parameter is applied only when <c>browser_network_throttling_method</c> is set to <c>devtools</c>;
         /// </summary>
         [JsonProperty("browser_network_throttling", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BrowserNetworkThrottling { get; set; }
@@ -152,7 +158,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -161,12 +167,12 @@ namespace DataForSeo.Client.Models.Requests
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded;
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

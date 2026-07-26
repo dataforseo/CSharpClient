@@ -66,8 +66,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated organic monthly traffic to the domain or webpage;
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
+        /// <br/>estimated organic monthly traffic to the domain
+        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -75,8 +75,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated cost of converting organic search traffic into paid
-        /// <br/>represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
-        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
+        /// <br/>represents the estimated monthly cost of running ads (USD) for the returned keyword
+        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -84,8 +84,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume based on clickstream data
-        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
-        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true;
+        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
+        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
         /// <br/>learn more about how the metric is calculated in this help center article
         /// </summary>
         [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -99,7 +99,7 @@ namespace DataForSeo.Client.Models
         public RankChanges RankChanges { get; set; }
 
         /// <summary>
-        /// backlinks information for the relevant page URL
+        /// backlinks information for the ranked website
         /// </summary>
         [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }

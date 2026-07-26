@@ -79,7 +79,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can add several filters at once (8 filters maximum)
         /// <br/>you should set a logical operator and, or between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>&lt;, &lt;=, &gt;, &gt;=, =, &lt;&gt;, in, not_in
+        /// <br/>, &gt;=, =, &lt;&gt;, in, not_in
         /// <br/>example:
         /// <br/>['keyword_data.keyword_info.search_volume','&gt;',500]
         /// <br/>[['keyword_data.keyword_info.search_volume','&lt;&gt;',500],'and',['ranked_serp_element.serp_item.rank_group','&gt;=','10']]

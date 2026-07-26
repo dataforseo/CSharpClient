@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataErrorsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataErrorsResultInfo>** | <em>array of results</em> |[optional]|

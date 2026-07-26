@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**TotalCount** | **long?** | total number of results in our database relevant to your request |[optional]|
-**Count** | **long?** | item types<br>the number of items in the items array |[optional]|
+**TotalCount** | **long?** | <em>total number of results in our database relevant to your request</em> |[optional]|
+**Count** | **long?** | <em>item types</em><br>the number of items in the <code>items</code> array |[optional]|
 **Offset** | **long?** |  |[optional]|
 **OffsetToken** | **string** |  |[optional]|
-**Items** | **IEnumerable<BusinessDataBusinessListingsSearchLiveItem>** | encountered item types<br>types of search engine results encountered in the items array;<br>possible item types: business_listing |[optional]|
+**Items** | **IEnumerable<BusinessDataBusinessListingsSearchLiveItem>** | <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>business_listing</code> |[optional]|

@@ -11,21 +11,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date for which index volume data is provided
-        /// <br/>in the UTC format: “yyyy-mm-dd”
+        /// <br/>in the UTC format: 'yyyy-mm-dd'
         /// <br/>example:
-        /// <br/>2021-10-01
+        /// <br/><c>2021-10-01</c>
         /// </summary>
         [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }
 
         /// <summary>
-        /// total number of backlinks our database contained on the given date
+        /// total number of backlinks our database contained on the given <c>date</c>
         /// </summary>
         [JsonProperty("total_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalBacklinks { get; set; }
 
         /// <summary>
-        /// total number of pages our database contained on the given date
+        /// total number of pages our database contained on the given <c>date</c>
         /// </summary>
         [JsonProperty("total_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalPages { get; set; }

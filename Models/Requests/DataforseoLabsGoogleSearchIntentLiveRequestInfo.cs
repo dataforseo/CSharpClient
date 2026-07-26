@@ -24,7 +24,6 @@ namespace DataForSeo.Client.Models.Requests
         /// full name of the language
         /// <br/>required field if don’t specify language_code
         /// <br/>you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
-        /// <br/>
         /// <br/>Note: this endpoint currently supports the following languages only:
         /// <br/>Arabic, ar,
         /// <br/>Chinese(Traditional), zh-TW,

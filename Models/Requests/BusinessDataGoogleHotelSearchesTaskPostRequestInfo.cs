@@ -258,7 +258,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>            'free_parking',
         /// <br/>            'pets_allowed'
         /// <br/>        ]
-        /// <br/>
         /// <br/>possible values:
         /// <br/>'air_conditioning',
         /// <br/>'all_inclusive_available',

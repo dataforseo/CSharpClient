@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BacklinksIndexResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BacklinksIndexResultInfo>** | <em>array of results</em> |[optional]|

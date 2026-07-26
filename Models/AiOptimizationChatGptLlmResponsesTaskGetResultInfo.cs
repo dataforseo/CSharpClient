@@ -16,19 +16,22 @@ namespace DataForSeo.Client.Models
         public string ModelName { get; set; }
 
         /// <summary>
-        /// number of tokens in the inputtotal count of tokens processed
+        /// number of tokens in the input
+        /// <br/>total count of tokens processed
         /// </summary>
         [JsonProperty("input_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InputTokens { get; set; }
 
         /// <summary>
-        /// number of tokens in the outputtotal count of tokens generated in the AI response
+        /// number of tokens in the output
+        /// <br/>total count of tokens generated in the AI response
         /// </summary>
         [JsonProperty("output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? OutputTokens { get; set; }
 
         /// <summary>
-        /// number of reasoning tokenstotal count of tokens used to generate reasoning content
+        /// number of reasoning tokens
+        /// <br/>total count of tokens used to generate reasoning content
         /// </summary>
         [JsonProperty("reasoning_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ReasoningTokens { get; set; }
@@ -40,25 +43,31 @@ namespace DataForSeo.Client.Models
         public bool? WebSearch { get; set; }
 
         /// <summary>
-        /// cost of AI tokens, USDthe price charged by the third-party AI model provider for according to its Pricing
+        /// cost of AI tokens, USD
+        /// <br/>the price charged by the third-party AI model provider for according to its <see href="https://platform.openai.com/docs/pricing">Pricing</see>
         /// </summary>
         [JsonProperty("money_spent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? MoneySpent { get; set; }
 
         /// <summary>
-        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+        /// date and time when the result was received
+        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>example:
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
-        /// array of response itemscontains structured AI response data
+        /// array of response items
+        /// <br/>contains structured AI response data
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseAiOptimizationLlmResponseElementItem> Items { get; set; }
 
         /// <summary>
-        /// array of fan-out queriescontains related search queries derived from the main query to provide a more comprehensive response
+        /// array of fan-out queries
+        /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
         /// </summary>
         [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> FanOutQueries { get; set; }

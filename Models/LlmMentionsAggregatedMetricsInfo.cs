@@ -33,7 +33,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// found top source domains relevant to the target
         /// <br/>array of objects containing data on top domains that are cited as sources in LLM responses
-        /// <br/>learn more about the sources and how to retrieve LLM citation data at our Help Center
+        /// <br/>learn more about the sources and how to retrieve LLM citation data at our <see href="https://dataforseo.com/help-center/how-to-get-llm-citation-data-with-llm-mentions-api">Help Center</see>
         /// </summary>
         [JsonProperty("sources_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AggregatedMetricsItemInfo> SourcesDomain { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BusinessDataBusinessListingsSearchLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BusinessDataBusinessListingsSearchLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

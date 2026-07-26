@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// prompt for the AI model
         /// <br/>required field
         /// <br/>the question or task you want to send to the AI model;
-        /// <br/>you can specify up to 500 characters in the user_prompt field
+        /// <br/>you can specify up to 500 characters in the <c>user_prompt</c> field
         /// </summary>
         [JsonProperty("user_prompt", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string UserPrompt { get; set; }
@@ -21,9 +21,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// name of the AI model
         /// <br/>required field
-        /// <br/>model_nameconsists of the actual model name and version name;
-        /// <br/>if the basic model name is specified, its latest version will be set by default;
-        /// <br/>you can receive the list of available LLM models by making a separate request to the following endpoint: https://api.dataforseo.com/v3/ai_optimization/perplexity/llm_responses/models
+        /// <br/><c>model_nameconsists of the actual model name and version name;if the basic model name is specified, its latest version will be set by default;you can receive the list of available LLM models by making a separate request to the following endpoint: https://api.dataforseo.com/v3/ai_optimization/perplexity/llm_responses/models</c>
         /// </summary>
         [JsonProperty("model_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string ModelName { get; set; }
@@ -31,10 +29,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// maximum number of tokens in the AI response
         /// <br/>optional field
-        /// <br/>minimum value: 1
-        /// <br/>maximum value: 4096;
-        /// <br/>default value: 2048;
-        /// <br/>Note: if the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
+        /// <br/>minimum value: <c>1</c>
+        /// <br/>maximum value: <c>4096</c>;
+        /// <br/>default value: <c>2048</c>;
+        /// <br/>Note: if the reasoning model is specified in the request, the output token count may exceed the specified <c>max_output_tokens</c> limit
         /// </summary>
         [JsonProperty("max_output_tokens", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxOutputTokens { get; set; }
@@ -44,9 +42,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>higher values make output more diverse 
         /// <br/>lower values make output more focused
-        /// <br/>minimum value: 0
-        /// <br/>maximum value: 1.9
-        /// <br/>default value: 0.77
+        /// <br/>minimum value: <c>0</c>
+        /// <br/>maximum value: <c>1.9</c>
+        /// <br/>default value: <c>0.77</c>
         /// </summary>
         [JsonProperty("temperature", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Temperature { get; set; }
@@ -55,9 +53,9 @@ namespace DataForSeo.Client.Models.Requests
         /// diversity of the AI response
         /// <br/>optional field 
         /// <br/>controls diversity of the response by limiting token selection
-        /// <br/>minimum value: 0
-        /// <br/>maximum value: 1 
-        /// <br/>default value: 0.9
+        /// <br/>minimum value: <c>0</c>
+        /// <br/>maximum value: <c>1</c> 
+        /// <br/>default value: <c>0.9</c>
         /// </summary>
         [JsonProperty("top_p", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TopP { get; set; }
@@ -67,7 +65,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>specify the country  ISO code to get localized web search results
         /// <br/>Note: available only for Perplexity Sonar models
-        /// <br/>example: US
+        /// <br/>example: <c>US</c>
         /// </summary>
         [JsonProperty("web_search_country_iso_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebSearchCountryIsoCode { get; set; }
@@ -76,7 +74,7 @@ namespace DataForSeo.Client.Models.Requests
         /// instructions for the AI behavior
         /// <br/>optional field
         /// <br/>defines the AI's role, tone, or specific behavior 
-        /// <br/>you can specify up to 500 characters in the system_message field
+        /// <br/>you can specify up to 500 characters in the <c>system_message</c> field
         /// </summary>
         [JsonProperty("system_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SystemMessage { get; set; }
@@ -101,7 +99,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

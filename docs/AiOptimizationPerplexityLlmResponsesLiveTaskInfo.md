@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationPerplexityLlmResponsesLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationPerplexityLlmResponsesLiveResultInfo>** | <em>array of results</em> |[optional]|

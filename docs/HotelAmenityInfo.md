@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Category** | **string** | standardised category of the ammenity |[optional]|
-**CategoryLabel** | **string** | label of the category |[optional]|
-**Items** | **IEnumerable<HotelAmenityItemInfo>** | specific amenities and details |[optional]|
+**Category** | **string** | <em>standardised category of the ammenity</em> |[optional]|
+**CategoryLabel** | **string** | <em>label of the category</em> |[optional]|
+**Items** | **IEnumerable<HotelAmenityItemInfo>** | <em>specific amenities and details</em> |[optional]|

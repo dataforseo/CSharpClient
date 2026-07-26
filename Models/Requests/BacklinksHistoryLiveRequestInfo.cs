@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// domain
         /// <br/>required field
-        /// <br/>a domain should be specified without https:// and www.
+        /// <br/>a domain should be specified without <c>https://</c> and <c>www.</c>
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -20,11 +20,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// starting date of the time range
         /// <br/>optional field
-        /// <br/>minimum value 2019-01-01
-        /// <br/>if you don’t specify this field, the minimum value will be used by default
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>minimum value <c>2019-01-01</c>
+        /// <br/>if you don't specify this field, the minimum value will be used by default
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
@@ -32,23 +32,23 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ending date of the time range
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, the today’s date will be used by default
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>if you don't specify this field, the today's date will be used by default
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
-        /// defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
+        /// defines the scale used for calculating and displaying the <c>rank</c>, <c>domain_from_rank</c>, and <c>page_from_rank</c> values
         /// <br/>optional field
         /// <br/>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
         /// <br/>possible values:
-        /// <br/>one_hundred — rank values are displayed on a 0–100 scale
-        /// <br/>one_thousand — rank values are displayed on a 0–1000 scale
-        /// <br/>default value: one_thousand
-        /// <br/>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+        /// <br/><c>one_hundred</c> — rank values are displayed on a 0–100 scale
+        /// <br/><c>one_thousand</c> — rank values are displayed on a 0–1000 scale
+        /// <br/>default value: <c>one_thousand</c>
+        /// <br/>learn more about how this parameter works and how ranking metrics are calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale">this Help Center article</see>
         /// </summary>
         [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

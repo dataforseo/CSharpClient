@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// offset in the results array of the returned mentions data
-        /// <br/>offset specified in the request
+        /// <br/><c>offset</c> specified in the request
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// aggregated mentions metrics summary
-        /// <br/>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensionsin this case, the value will be null
+        /// <br/>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensionsin this case, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("aggregated_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public object AggregatedMetrics { get; set; }

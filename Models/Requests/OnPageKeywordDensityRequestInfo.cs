@@ -59,10 +59,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>['keyword','=','%seo%']
         /// <br/>[['keyword','=','%seo%'],
         /// <br/>'and',
-        /// <br/>['frequency','&lt;','6']]
-        /// <br/>[['keyword','not_like','%seo%'],
-        /// <br/>'and',
-        /// <br/>[['frequency','&gt;','6'],'or',['density','&gt;','0.02']]]
+        /// <br/>['frequency','','6'],'or',['density','&gt;','0.02']]]
         /// <br/>The full list of possible filters is available by this link.
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

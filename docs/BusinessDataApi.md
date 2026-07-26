@@ -297,6 +297,28 @@ var result = await dfsClient.BusinessDataApi.BusinessListingsSearchLiveAsync(new
 {
     new()
     {
+        Categories = new List<string>()
+        {
+            "pizza_restaurant",
+        },
+        Description = "pizza",
+        Title = "pizza",
+        IsClaimed = true,
+        LocationCoordinate = "53.476225,-2.243572,10",
+        OrderBy = new List<string>()
+        {
+            "rating.value,desc",
+        },
+        Filters = new List<object>()
+        {
+            new List<object>()
+            {
+                "rating.value",
+                ">",
+                3,
+            },
+        },
+        Limit = 3,
     }
 });
 ```

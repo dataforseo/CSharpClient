@@ -16,7 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// unique product identifier on Google Shoppinglearn more about the parameter in this help center guide
+        /// unique product identifier on Google Shopping
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/product-id-google-shopping">this help center guide</see>
         /// </summary>
         [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductId { get; set; }
@@ -28,7 +29,8 @@ namespace DataForSeo.Client.Models
         public string DataDocid { get; set; }
 
         /// <summary>
-        /// global product identifier on Google Shoppinglearn more about the parameter in this help center guide
+        /// global product identifier on Google Shopping
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api">this help center guide</see>
         /// </summary>
         [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Gid { get; set; }
@@ -52,19 +54,24 @@ namespace DataForSeo.Client.Models
         public string Domain { get; set; }
 
         /// <summary>
-        /// product rating the popularity rate based on reviews if there is none, the value will be null
+        /// product rating 
+        /// <br/>the popularity rate based on reviews
+        /// <br/> if there is none, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// product priceproduct price details on the seller's website; if there is none, the value will be null
+        /// product price
+        /// <br/>product price details on the seller's website;
+        /// <br/> if there is none, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// product sellername of the product's seller as displayed in search results
+        /// product seller
+        /// <br/>name of the product's seller as displayed in search results
         /// </summary>
         [JsonProperty("seller", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Seller { get; set; }
@@ -76,19 +83,24 @@ namespace DataForSeo.Client.Models
         public string Snippet { get; set; }
 
         /// <summary>
-        /// merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant accountexample:by Google
+        /// merchant account provider
+        /// <br/>e-commerce site that hosts products or websites of individual sellers under the same merchant account
+        /// <br/>example:
+        /// <br/><c>by Google</c>
         /// </summary>
         [JsonProperty("marketplace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Marketplace { get; set; }
 
         /// <summary>
-        /// URL to the merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant account
+        /// URL to the merchant account provider
+        /// <br/>e-commerce site that hosts products or websites of individual sellers under the same merchant account
         /// </summary>
         [JsonProperty("marketplace_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MarketplaceUrl { get; set; }
 
         /// <summary>
-        /// URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+        /// URL of the image
+        /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }

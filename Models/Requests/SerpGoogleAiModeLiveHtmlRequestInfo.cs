@@ -12,64 +12,64 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// keyword
         /// <br/>required field
-        /// <br/>you can specify up to 700 characters in the keyword field
+        /// <br/>you can specify up to 700 characters in the <c>keyword</c> field
         /// <br/>all %## will be decoded (plus character '+' will be decoded to a space character)
-        /// <br/>if you need to use the '%' character for your keyword, please specify it as '%25';
-        /// <br/>if you need to use the “+” character for your keyword, please specify it as “%2B”;
+        /// <br/>if you need to use the '%' character for your <c>keyword</c>, please specify it as '%25';
+        /// <br/>if you need to use the “+” character for your <c>keyword</c>, please specify it as “%2B”;
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don't specify location_code or location_coordinate
-        /// <br/>if you use this field, you don't need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations of the search engine with their <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</c>
         /// <br/>example:
-        /// <br/>London,England,United Kingdom
+        /// <br/><c>London,England,United Kingdom</c>
         /// </summary>
         [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don't specify location_name_or location_coordinate
-        /// <br/>if you use this field, you don't need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations of the search engines with their <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</c>
         /// <br/>example:
-        /// <br/>2840n
+        /// <br/><c>2840</c>n
         /// </summary>
         [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don't specify location_name_or location_code
-        /// <br/>if you use this field, you don't need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,radius' format
         /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
         /// <br/>the minimum value for 'radius': 199.9 (mm)
         /// <br/>the maximum value for 'radius': 199999 (mm)
         /// <br/>example:
-        /// <br/>53.476225,-2.243572,200n
+        /// <br/><c>53.476225,-2.243572,200</c>n
         /// </summary>
         [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// full name of search engine language
-        /// <br/>required field if you don't specify language_code;
-        /// <br/>if you use this field, you don't need to specify language_code;
-        /// <br/>you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;
+        /// <br/>required field if you don't specify <c>language_code</c>;
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>;
         /// </summary>
         [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// search engine language code
-        /// <br/>required field if you don't specify language_name;
-        /// <br/>if you use this field, you don't need to specify language_name;
-        /// <br/>you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languagesn
+        /// <br/>required field if you don't specify <c>language_name</c>;
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -78,8 +78,8 @@ namespace DataForSeo.Client.Models.Requests
         /// device type
         /// <br/>optional field
         /// <br/>return results for a specific device type
-        /// <br/>can take the values:desktop, mobile
-        /// <br/>default value: desktop
+        /// <br/>can take the values:<c>desktop</c>, <c>mobile</c>
+        /// <br/>default value: <c>desktop</c>
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
@@ -87,10 +87,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// device operating system
         /// <br/>optional field
-        /// <br/>if you specify desktop in the device field, choose from the following values: windows, macos
-        /// <br/>default value: windows
-        /// <br/>if you specify mobile in the device field, choose from the following values: android, ios
-        /// <br/>default value: android
+        /// <br/>if you specify <c>desktop</c> in the <c>device</c> field, choose from the following values: <c>windows</c>, <c>macos</c>
+        /// <br/>default value: <c>windows</c>
+        /// <br/>if you specify <c>mobile</c> in the <c>device</c> field, choose from the following values: <c>android</c>, <c>ios</c>
+        /// <br/>default value: <c>android</c>
         /// </summary>
         [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Os { get; set; }
@@ -100,7 +100,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

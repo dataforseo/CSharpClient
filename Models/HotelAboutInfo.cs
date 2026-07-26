@@ -46,14 +46,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// hotel domain
-        /// <br/>domain of the hotel’s website
+        /// <br/>domain of the hotel's website
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
 
         /// <summary>
         /// hotel url
-        /// <br/>URL to the hotel’s website indicated in the listing
+        /// <br/>URL to the hotel's website indicated in the listing
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -67,7 +67,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// hotel amenities
-        /// <br/>information about hotel amenities labelled as “popular”
+        /// <br/>information about hotel amenities labelled as 'popular'
         /// </summary>
         [JsonProperty("popular_amenities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HotelAmenityItemInfo> PopularAmenities { get; set; }

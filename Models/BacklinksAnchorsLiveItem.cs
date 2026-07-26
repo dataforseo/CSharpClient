@@ -23,9 +23,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// rank of the anchor links
-        /// <br/>rank volume that referring websites pass to the target through links with a particular anchor
-        /// <br/>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/>rank volume that referring websites pass to the <c>target</c> through links with a particular anchor
+        /// <br/><c>rank</c> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Rank { get; set; }
@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         /// date and time when our crawler found the backlink with this anchor for the first time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("first_seen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstSeen { get; set; }
@@ -48,23 +48,23 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// date and time when the last backlink with this anchor was lost
         /// <br/>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("lost_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LostDate { get; set; }
 
         /// <summary>
         /// average spam score of all backlinks with this anchor
-        /// <br/>learn more about how the metric is calculated on this help center page
+        /// <br/>learn more about how the metric is calculated on <see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">this help center page</see>
         /// </summary>
         [JsonProperty("backlinks_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BacklinksSpamScore { get; set; }
 
         /// <summary>
         /// number of broken backlinks
-        /// <br/>number of broken backlinks pointing to the target
+        /// <br/>number of broken backlinks pointing to the <c>target</c>
         /// </summary>
         [JsonProperty("broken_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrokenBacklinks { get; set; }
@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Models
         public long? ReferringDomains { get; set; }
 
         /// <summary>
-        /// number of domains pointing at least one nofollow link to the target
+        /// number of domains pointing at least one nofollow link to the <c>target</c>
         /// </summary>
         [JsonProperty("referring_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringDomainsNofollow { get; set; }
@@ -95,7 +95,7 @@ namespace DataForSeo.Client.Models
         public long? ReferringMainDomains { get; set; }
 
         /// <summary>
-        /// number of main domains pointing at least one nofollow link to the target
+        /// number of main domains pointing at least one nofollow link to the <c>target</c>
         /// </summary>
         [JsonProperty("referring_main_domains_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringMainDomainsNofollow { get; set; }
@@ -114,13 +114,13 @@ namespace DataForSeo.Client.Models
         public long? ReferringSubnets { get; set; }
 
         /// <summary>
-        /// indicates the number of pages pointing to target with this anchor
+        /// indicates the number of pages pointing to <c>target</c> with this anchor
         /// </summary>
         [JsonProperty("referring_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringPages { get; set; }
 
         /// <summary>
-        /// number of referring pages pointing at least one nofollow link to the target with this anchor
+        /// number of referring pages pointing at least one nofollow link to the <c>target</c> with this anchor
         /// </summary>
         [JsonProperty("referring_pages_nofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReferringPagesNofollow { get; set; }
@@ -136,7 +136,7 @@ namespace DataForSeo.Client.Models
         /// types of referring links
         /// <br/>indicates the types of the referring links and link count per each type
         /// <br/>possible values:
-        /// <br/>anchor, image, link, meta, canonical, alternate, redirect
+        /// <br/><c>anchor</c>, <c>image</c>, <c>link</c>, <c>meta</c>, <c>canonical</c>, <c>alternate</c>, <c>redirect</c>
         /// </summary>
         [JsonProperty("referring_links_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ReferringLinksTypes { get; set; }
@@ -151,7 +151,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// types of referring platforms
         /// <br/>indicates referring platform types and and link count per each platform
-        /// <br/>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
+        /// <br/>possible values: <c>cms</c>, <c>blogs</c>, <c>ecommerce</c>, <c>message-boards</c>, <c>wikis</c>, <c>news</c>, <c>organization</c>
         /// </summary>
         [JsonProperty("referring_links_platform_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ReferringLinksPlatformTypes { get; set; }
@@ -159,9 +159,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// semantic locations of the referring links
         /// <br/>indicates semantic elements in HTML where the referring links are located and link count per each semantic location
-        /// <br/>you can get the full list of semantic elements here
+        /// <br/>you can get the full list of semantic elements <see href="https://www.w3schools.com/html/html5_semantic_elements.asp">here</see>
         /// <br/>examples:
-        /// <br/>article, section, summary
+        /// <br/><c>article</c>, <c>section</c>, <c>summary</c>
         /// </summary>
         [JsonProperty("referring_links_semantic_locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ReferringLinksSemanticLocations { get; set; }
