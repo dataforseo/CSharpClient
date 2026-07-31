@@ -202,8 +202,6 @@ var result = await dfsClient.SerpApi.IdListAsync(new List<SerpIdListRequestInfo>
 {
     new()
     {
-        DatetimeFrom = "2026-07-28 11:09:05 +00:00",
-        DatetimeTo = "2026-07-30 11:09:05 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",

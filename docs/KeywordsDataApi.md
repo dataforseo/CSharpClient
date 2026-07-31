@@ -91,8 +91,6 @@ var result = await dfsClient.KeywordsDataApi.KeywordsDataIdListAsync(new List<Ke
 {
     new()
     {
-        DatetimeFrom = "2026-07-28 11:09:05 +00:00",
-        DatetimeTo = "2026-07-30 11:09:05 +00:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -500,7 +498,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(new 
             "cheap laptops for sale",
             "purchase laptop",
         },
-        DateFrom = "2026-04-30",
         SearchPartners = true,
     }
 });
@@ -1270,8 +1267,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(ne
 {
     new()
     {
-        DateFrom = "2026-04-30",
-        DateTo = "2026-06-30",
         Type = "youtube",
         CategoryCode = 3,
         Keywords = new List<string>()
@@ -1409,8 +1404,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(new Li
     new()
     {
         LocationName = "United States",
-        DateFrom = "2026-04-30",
-        DateTo = "2026-06-30",
         Type = "youtube",
         CategoryCode = 3,
         Keywords = new List<string>()
@@ -1604,8 +1597,6 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsSubregionInterestsL
             "rugby",
             "cricket",
         },
-        DateFrom = "2026-04-30",
-        DateTo = "2026-06-30",
         Type = "web",
         LocationName = "United States",
     }
@@ -1659,8 +1650,6 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsDemographyLiveAsync
             "rugby",
             "cricket",
         },
-        DateFrom = "2026-04-30",
-        DateTo = "2026-06-30",
         Type = "web",
         LocationName = "United States",
     }
@@ -1714,8 +1703,6 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsMergedDataLiveAsync
             "rugby",
             "cricket",
         },
-        DateFrom = "2026-04-30",
-        DateTo = "2026-06-30",
         Type = "web",
         LocationName = "United States",
     }

@@ -63,8 +63,6 @@ var result = await dfsClient.AppDataApi.AppDataIdListAsync(new List<AppDataIdLis
 {
     new()
     {
-        DatetimeFrom = "2023-01-31 00:00:00 +02:00",
-        DatetimeTo = "2023-02-01 00:00:00 +02:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
