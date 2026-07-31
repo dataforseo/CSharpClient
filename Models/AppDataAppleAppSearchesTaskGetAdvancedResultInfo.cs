@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// direct URL to search engine results
-        /// <br/>in this case, the value will be null
+        /// <br/>in this case, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }

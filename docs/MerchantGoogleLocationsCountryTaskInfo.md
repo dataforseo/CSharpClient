@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantGoogleLocationsCountryResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantGoogleLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleJobsTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleJobsTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

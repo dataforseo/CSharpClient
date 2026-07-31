@@ -14,56 +14,56 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>product IDs to receive ranking data for;
         /// <br/>the maximum number of ASINs you can specify in this array is 1000;
-        /// <br/>you can receive the asin parameter by making a separate request to the Amazon Products endpoint
+        /// <br/>you can receive the <c>asin</c> parameter by making a separate request to the <see href="/v3/merchant/amazon/products/task_post/">Amazon Products endpoint</see>
         /// <br/>Note: all letters in ASIN code must be specified in uppercase format;
         /// <br/>example:
-        /// <br/>B01LW2SL7R
+        /// <br/><c>B01LW2SL7R</c>
         /// </summary>
         [JsonProperty("asins", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Asins { get; set; }
 
         /// <summary>
         /// full name of the location
-        /// <br/>required field if don’t specify location_code
-        /// <br/>you can receive the list of available locations with their location_name by making a separate request to
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
+        /// <br/>required field if don't specify <c>location_code</c>
+        /// <br/>you can receive the list of available locations with their <c>location_name</c> by making a separate request to 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>;
         /// <br/>Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
         /// <br/>example:
-        /// <br/>United States
+        /// <br/><c>United States</c>
         /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// location code
-        /// <br/>required field if don’t specify location_name
-        /// <br/>you can receive the list of available locations with their location_code by making a separate request to
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages;
+        /// <br/>required field if don't specify <c>location_name</c>
+        /// <br/>you can receive the list of available locations with their <c>location_code</c> by making a separate request to 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>;
         /// <br/>Note: this endpoint currently supports the US, Egypt, Saudi Arabia, and the United Arab Emirates locations only;
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>
         /// </summary>
-        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// full name of the language
-        /// <br/>required field if don’t specify language_code
-        /// <br/>you can receive the list of available languages with their language_name by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
+        /// <br/>required field if don't specify <c>language_code</c>
+        /// <br/>you can receive the list of available languages with their <c>language_name</c> by making a separate request to the 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>
         /// <br/>example:
-        /// <br/>English
+        /// <br/><c>English</c>
         /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// language code
-        /// <br/>required field if don’t specify language_name
-        /// <br/>you can receive the list of available languages with their language_code by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
+        /// <br/>required field if don't specify <c>language_name</c>
+        /// <br/>you can receive the list of available languages with their <c>language_code</c> by making a separate request to the 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>
         /// <br/>example:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -73,7 +73,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsStatusTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsStatusTaskInfo>** | <em>array of tasks</em> |[optional]|

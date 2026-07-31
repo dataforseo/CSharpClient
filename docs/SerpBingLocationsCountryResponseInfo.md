@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpBingLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpBingLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

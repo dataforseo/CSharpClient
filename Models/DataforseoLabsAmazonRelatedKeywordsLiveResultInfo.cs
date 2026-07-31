@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword data for the seed keyword
-        /// <br/>fields in the object are identical to that of keyword_data
+        /// <br/>fields in the object are identical to that of <c>keyword_data</c>
         /// </summary>
         [JsonProperty("seed_keyword_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AmazonKeywordData SeedKeywordData { get; set; }
@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

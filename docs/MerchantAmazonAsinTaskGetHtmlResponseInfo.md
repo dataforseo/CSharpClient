@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<MerchantAmazonAsinTaskGetHtmlTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<MerchantAmazonAsinTaskGetHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

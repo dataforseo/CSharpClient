@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleNewsTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleNewsTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

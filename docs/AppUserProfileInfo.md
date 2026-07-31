@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**ProfileName** | **string** | profile name of the reviewer |[optional]|
-**ProfileImageUrl** | **string** | URL to the reviewer’s profile image |[optional]|
+**ProfileName** | **string** | <em>profile name of the reviewer</em> |[optional]|
+**ProfileImageUrl** | **string** | <em>URL to the reviewer's profile image</em> |[optional]|

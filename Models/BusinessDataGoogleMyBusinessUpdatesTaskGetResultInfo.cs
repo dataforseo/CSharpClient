@@ -11,11 +11,11 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
-        /// <br/>this field will contain the cid parameter if you specified it in the keyword field when setting a task;
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
+        /// <br/>this field will contain the <c>cid</c> parameter if you specified it in the <c>keyword</c> field when setting a task;
         /// <br/>example:
-        /// <br/>cid:2946633002421908862
-        /// <br/>learn more about the parameter in this help center article
+        /// <br/><c>cid:2946633002421908862</c>
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -63,37 +63,37 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google-defined client id
         /// <br/>unique id of a local establishment
-        /// <br/>learn more about the cid identifier in this help center article
+        /// <br/>learn more about the <c>cid</c> identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
 
         /// <summary>
         /// the unique identifier of the element in SERP
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("feature_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FeatureId { get; set; }
 
         /// <summary>
         /// item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: google_business_post
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>google_business_post</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
         /// item types
-        /// <br/>the number of items in the items array
+        /// <br/>the number of items in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
         /// encountered item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: google_business_post
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>google_business_post</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleBusinessPost> Items { get; set; }

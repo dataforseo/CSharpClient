@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BusinessDataGoogleReviewsTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BusinessDataGoogleReviewsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

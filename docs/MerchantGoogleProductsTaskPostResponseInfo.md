@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<MerchantGoogleProductsTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<MerchantGoogleProductsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

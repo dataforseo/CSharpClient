@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the referring URL is secured with HTTPS
-        /// <br/>if true, the referring URL is secured with HTTPS
+        /// <br/>if <c>true</c>, the referring URL is secured with HTTPS
         /// </summary>
         [JsonProperty("url_from_https", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UrlFromHttps { get; set; }
@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates if the URL the backlink is pointing to is secured with HTTPS
-        /// <br/>if true, the URL is secured with HTTPS
+        /// <br/>if <c>true</c>, the URL is secured with HTTPS
         /// </summary>
         [JsonProperty("url_to_https", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UrlToHttps { get; set; }
@@ -61,37 +61,37 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the backlink is new
-        /// <br/>if true, the backlink was found on the page last time our crawler visited it
+        /// <br/>if <c>true</c>, the backlink was found on the page last time our crawler visited it
         /// </summary>
         [JsonProperty("is_new", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsNew { get; set; }
 
         /// <summary>
         /// indicates whether the backlink was removed
-        /// <br/>if true, the backlink or the entire page was removed
+        /// <br/>if <c>true</c>, the backlink or the entire page was removed
         /// </summary>
         [JsonProperty("is_lost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsLost { get; set; }
 
         /// <summary>
         /// spam score of the backlink
-        /// <br/>learn more about how the metric is calculated on this help center page
+        /// <br/>learn more about how the metric is calculated on <see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">this help center page</see>
         /// </summary>
         [JsonProperty("backlink_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BacklinkSpamScore { get; set; }
 
         /// <summary>
         /// backlink rank
-        /// <br/>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>rank</c> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Rank { get; set; }
 
         /// <summary>
         /// page rank of the referring page
-        /// <br/>page_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>page_from_rank</c> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("page_from_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PageFromRank { get; set; }
@@ -99,22 +99,22 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// domain rank of the referring domain
         /// <br/>indicates the rank of the domain at the time our crawler last saw the backlink;
-        /// <br/>domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>domain_from_rank</c> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("domain_from_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DomainFromRank { get; set; }
 
         /// <summary>
         /// platform types of the referring domain
-        /// <br/>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
+        /// <br/>possible values: <c>cms</c>, <c>blogs</c>, <c>ecommerce</c>, <c>message-boards</c>, <c>wikis</c>, <c>news</c>, <c>organization</c>
         /// </summary>
         [JsonProperty("domain_from_platform_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> DomainFromPlatformType { get; set; }
 
         /// <summary>
         /// indicates if the domain is IP
-        /// <br/>if true, the domain functions as an IP address and does not have a domain name
+        /// <br/>if <c>true</c>, the domain functions as an IP address and does not have a domain name
         /// </summary>
         [JsonProperty("domain_from_is_ip", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DomainFromIsIp { get; set; }
@@ -146,7 +146,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// size of the referring page, in bytes
         /// <br/>example:
-        /// <br/>63357
+        /// <br/><c>63357</c>
         /// </summary>
         [JsonProperty("page_from_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PageFromSize { get; set; }
@@ -154,7 +154,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// character encoding of the referring page
         /// <br/>example:
-        /// <br/>utf-8
+        /// <br/><c>utf-8</c>
         /// </summary>
         [JsonProperty("page_from_encoding", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageFromEncoding { get; set; }
@@ -163,7 +163,7 @@ namespace DataForSeo.Client.Models
         /// language of the referring page
         /// <br/>in ISO 639-1 format
         /// <br/>example:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("page_from_language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageFromLanguage { get; set; }
@@ -177,7 +177,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// HTTP status code returned by the referring page
         /// <br/>example:
-        /// <br/>200
+        /// <br/><c>200</c>
         /// </summary>
         [JsonProperty("page_from_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PageFromStatusCode { get; set; }
@@ -186,7 +186,7 @@ namespace DataForSeo.Client.Models
         /// date and time when our crawler found the backlink for the first time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("first_seen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstSeen { get; set; }
@@ -195,7 +195,7 @@ namespace DataForSeo.Client.Models
         /// previous to the most recent date when our crawler visited the backlink
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("prev_seen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PrevSeen { get; set; }
@@ -204,7 +204,7 @@ namespace DataForSeo.Client.Models
         /// most recent date when our crawler visited the backlink
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("last_seen", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastSeen { get; set; }
@@ -212,7 +212,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// link type
         /// <br/>possible values:
-        /// <br/>anchor, image, link, meta, canonical, alternate, redirect
+        /// <br/><c>anchor</c>, <c>image</c>, <c>link</c>, <c>meta</c>, <c>canonical</c>, <c>alternate</c>, <c>redirect</c>
         /// </summary>
         [JsonProperty("item_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ItemType { get; set; }
@@ -220,14 +220,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// link attributes of the referring links
         /// <br/>example:
-        /// <br/>nofollow
+        /// <br/><c>nofollow</c>
         /// </summary>
         [JsonProperty("attributes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Attributes { get; set; }
 
         /// <summary>
         /// indicates whether the backlink is dofollow
-        /// <br/>if false, the backlink is nofollow
+        /// <br/>if <c>false</c>, the backlink is nofollow
         /// </summary>
         [JsonProperty("dofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Dofollow { get; set; }
@@ -240,7 +240,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// alternative text of the image
-        /// <br/>this field will be null if backlink type is not image
+        /// <br/>this field will be <c>null</c> if backlink <c>type</c> is not image
         /// </summary>
         [JsonProperty("alt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Alt { get; set; }
@@ -265,9 +265,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates semantic element in HTML where the backlink is found
-        /// <br/>you can get the full list of semantic elements here
+        /// <br/>you can get the full list of semantic elements <see href="https://www.w3schools.com/html/html5_semantic_elements.asp">here</see>
         /// <br/>examples:
-        /// <br/>article, section, summary
+        /// <br/><c>article</c>, <c>section</c>, <c>summary</c>
         /// </summary>
         [JsonProperty("semantic_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SemanticLocation { get; set; }
@@ -280,31 +280,31 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates total number of backlinks from this domain
-        /// <br/>for example, if mode is set to one_per_domain, this field will indicate the total number of backlinks coming from this domain
+        /// <br/>for example, if <c>mode</c> is set to <c>one_per_domain</c>, this field will indicate the total number of backlinks coming from this domain
         /// </summary>
         [JsonProperty("group_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? GroupCount { get; set; }
 
         /// <summary>
         /// indicates whether the backlink is broken
-        /// <br/>if true, the backlink is pointing to a page responding with a 4xx or 5xx status code
+        /// <br/>if <c>true</c>, the backlink is pointing to a page responding with a 4xx or 5xx status code
         /// </summary>
         [JsonProperty("is_broken", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsBroken { get; set; }
 
         /// <summary>
         /// status code of the referenced page
-        /// <br/>if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to
+        /// <br/>if the value is <c>null</c>, our crawler hasn't yet visited the webpage the link is pointing to
         /// <br/>example:
-        /// <br/>200
+        /// <br/><c>200</c>
         /// </summary>
         [JsonProperty("url_to_status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? UrlToStatusCode { get; set; }
 
         /// <summary>
         /// spam score of the referenced page
-        /// <br/>if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to
-        /// <br/>learn more about how the metric is calculated on this help center page
+        /// <br/>if the value is <c>null</c>, our crawler hasn't yet visited the webpage the link is pointing to
+        /// <br/>learn more about how the metric is calculated on <see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">this help center page</see>
         /// </summary>
         [JsonProperty("url_to_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? UrlToSpamScore { get; set; }
@@ -318,14 +318,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the backlink is an indirect link
-        /// <br/>if true, the backlink is an indirect link pointing to a page that either redirects to url_to, or points to a canonical page
+        /// <br/>if <c>true</c>, the backlink is an indirect link pointing to a page that either redirects to <c>url_to</c>, or points to a canonical page
         /// </summary>
         [JsonProperty("is_indirect_link", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsIndirectLink { get; set; }
 
         /// <summary>
         /// indirect link path
-        /// <br/>indicates a URL or a sequence of URLs that lead to url_to
+        /// <br/>indicates a URL or a sequence of URLs that lead to <c>url_to</c>
         /// </summary>
         [JsonProperty("indirect_link_path", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BacklinksRedirectInfo> IndirectLinkPath { get; set; }

@@ -40,13 +40,13 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// contains data related to the target and competitor domains
+        /// contains data related to the <c>target</c> and competitor domains
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<DataforseoLabsGoogleCompetitorsDomainLiveItem> Items { get; set; }

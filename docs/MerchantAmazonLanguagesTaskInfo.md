@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantAmazonLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantAmazonLanguagesResultInfo>** | <em>array of results</em> |[optional]|

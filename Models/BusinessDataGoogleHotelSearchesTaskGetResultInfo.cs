@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character);
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character);
         /// <br/>in order to obtain accurate search results, the location name is appended to the keyword automatically
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -40,21 +40,21 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
         /// item types
-        /// <br/>the number of items in the items array
+        /// <br/>the number of items in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
         /// array of items
-        /// <br/>note: this field always equals null; use it to facilitate integration and ensure interoperability with the Hotel Info endpoint
+        /// <br/>note: this field always equals <c>null</c>; use it to facilitate integration and ensure interoperability with the <see href="/v3/business_data/google/hotel_info/live/advanced/">Hotel Info</see> endpoint
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BusinessDataGoogleHotelSearchesItem> Items { get; set; }

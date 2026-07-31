@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpTasksReadyTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

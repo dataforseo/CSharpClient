@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsStatusResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsStatusResultInfo>** | <em>array of results</em> |[optional]|

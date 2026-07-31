@@ -10,8 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// reference text
-        /// <br/>text snippet from the page that was used to generate the <c>ai_overview_element</c>
+        /// introductory text of the element in the response
+        /// <br/>text preceding the paid ad items
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }

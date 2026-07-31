@@ -21,6 +21,25 @@ namespace DataForSeo.Client.Models
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
+        /// <summary>
+        /// start of the annotation indexing
+        /// </summary>
+        [JsonProperty("start_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? StartIndex { get; set; }
+
+        /// <summary>
+        /// end of the annotation indexing
+        /// </summary>
+        [JsonProperty("end_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public int? EndIndex { get; set; }
+
+        /// <summary>
+        /// text of the reasoning chain section
+        /// <br/>text of the reasoning chain  section summarizing the model's thought process
+        /// </summary>
+        [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Text { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// task identifier
         /// <br/>required field
-        /// <br/>unique identifier of the associated task in the UUID format
+        /// <br/>unique identifier of the associated task in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// <br/>you will be able to use it within 30 days to request the results of the task at any time
         /// </summary>
         [JsonProperty("task_id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
@@ -22,8 +22,8 @@ namespace DataForSeo.Client.Models.Requests
         /// AI prompt
         /// <br/>optional field
         /// <br/>additional task for AI summariser;
-        /// <br/>any form of text, question or information that communicates to AI what response you’re looking for;
-        /// <br/>max number of symbols or characters you can specify: 2000;
+        /// <br/>any form of text, question or information that communicates to AI what response you're looking for;
+        /// <br/>max number of symbols or characters you can specify: <c>2000</c>;
         /// <br/>note: your prompt has to be relevant to the keyword specified in the POST request to SERP API
         /// </summary>
         [JsonProperty("prompt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -32,8 +32,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// support extra SERP features
         /// <br/>optional field
-        /// <br/>if set to true, the AI model will consider the following extra SERP features, in addition to organic results: answer_box, knowledge_graph, featured_snippet;
-        /// <br/>default value: true
+        /// <br/>if set to <c>true</c>, the AI model will consider the following extra SERP features, in addition to <c>organic</c> results: <c>answer_box</c>, <c>knowledge_graph</c>, <c>featured_snippet</c>;
+        /// <br/>default value: <c>true</c>
         /// </summary>
         [JsonProperty("support_extra", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SupportExtra { get; set; }
@@ -41,8 +41,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// fetch content from pages in SERPs
         /// <br/>optional field
-        /// <br/>if set to true, the API will fetch the content from pages featured in SERP results, and the AI model will consider this content when generating the summary in the result;
-        /// <br/>default value: false
+        /// <br/>if set to <c>true</c>, the API will fetch the content from pages featured in SERP results, and the AI model will consider this content when generating the summary in the result;
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("fetch_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? FetchContent { get; set; }
@@ -50,8 +50,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// include source links in the summary
         /// <br/>optional field
-        /// <br/>if set to true, the summary field in the API response will contain links to sources of the generated summary;
-        /// <br/>default value: false
+        /// <br/>if set to <c>true</c>, the <c>summary</c> field in the API response will contain links to sources of the generated summary;
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("include_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeLinks { get; set; }

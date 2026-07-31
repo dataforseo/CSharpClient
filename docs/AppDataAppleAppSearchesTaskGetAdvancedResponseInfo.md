@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppDataAppleAppSearchesTaskGetAdvancedTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppDataAppleAppSearchesTaskGetAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleDatasetInfoTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleDatasetInfoTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

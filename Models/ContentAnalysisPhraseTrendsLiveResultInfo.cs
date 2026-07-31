@@ -28,8 +28,8 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// rank of all URLs citing the keyword
-        /// <br/>normalized sum of ranks of all URLs citing the target keyword for the given date
+        /// rank of all URLs citing the <c>keyword</c>
+        /// <br/>normalized sum of ranks of all URLs citing the target <c>keyword</c> for the given date
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Rank { get; set; }
@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// sentiment connotations
         /// <br/>contains sentiments (emotional reactions) related to the target keyword citation and the number of citations per each sentiment
-        /// <br/>possible connotations: 'anger', 'happiness', 'love', 'sadness', 'share', 'fun'
+        /// <br/>possible connotations: <c>'anger'</c>, <c>'happiness'</c>, <c>'love'</c>, <c>'sadness'</c>, <c>'share'</c>, <c>'fun'</c>
         /// </summary>
         [JsonProperty("sentiment_connotations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> SentimentConnotations { get; set; }
@@ -52,7 +52,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// connotation types
         /// <br/>contains types of sentiments (sentiment polarity) related to the keyword citation and citation count per each sentiment type
-        /// <br/>possible connotation types: 'positive', 'negative', 'neutral'
+        /// <br/>possible connotation types: <c>'positive'</c>, <c>'negative'</c>, <c>'neutral'</c>
         /// </summary>
         [JsonProperty("connotation_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ConnotationTypes { get; set; }
@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// text categories
         /// <br/>contains objects with text categories and citation count in each text category
-        /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
+        /// <br/>to obtain a full list of available categories, refer to the <see href="/v3/content_analysis/categories/">Categories</see> endpoint
         /// </summary>
         [JsonProperty("text_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ContentAnalysisCategoriesInfo> TextCategories { get; set; }
@@ -68,7 +68,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// page categories
         /// <br/>contains objects with page categories and citation count in each page category
-        /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
+        /// <br/>to obtain a full list of available categories, refer to the <see href="/v3/content_analysis/categories/">Categories</see> endpoint
         /// </summary>
         [JsonProperty("page_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ContentAnalysisCategoriesInfo> PageCategories { get; set; }
@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// countries
         /// <br/>contains countries and citation count in each country
-        /// <br/>to obtain a full list of available countries, refer to the Locations endpoint
+        /// <br/>to obtain a full list of available countries, refer to the <see href="/v3/content_analysis/locations/">Locations</see> endpoint
         /// </summary>
         [JsonProperty("countries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> Countries { get; set; }
@@ -91,7 +91,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// languages
         /// <br/>contains languages and citation count in each language
-        /// <br/>to obtain a full list of available languages, refer to the Languages endpoint
+        /// <br/>to obtain a full list of available languages, refer to the <see href="/v3/content_analysis/languages/">Languages</see> endpoint
         /// </summary>
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> Languages { get; set; }

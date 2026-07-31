@@ -11,13 +11,13 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**AdAclk** | **string** | unique ad click referral parameter |[optional]|
-**AdUrl** | **string** | full URL of the advertisement |[optional]|
-**AdUrlRedirects** | **IEnumerable<string>** | URLs where the link from Google Shopping redirects before reaching a final URL<br>includes up to 10 URLs of the ad’s redirect path to the seller’s ad_url |[optional]|
+**AdAclk** | **string** | <em>unique ad click referral parameter</em> |[optional]|
+**AdUrl** | **string** | <em>full URL of the advertisement</em> |[optional]|
+**AdUrlRedirects** | **IEnumerable<string>** | <em>URLs where the link from Google Shopping redirects before reaching a final URL</em><br>includes up to 10 URLs of the ad's redirect path to the seller's <code>ad_url</code> |[optional]|

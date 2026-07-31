@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the code of the superordinate location
-        /// <br/>the value will be null as Country is the only supported location_type for this API
+        /// <br/>the value will be <c>null</c> as <c>Country</c> is the only supported <c>location_type</c> for this API
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCodeParent { get; set; }
@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// location type
         /// <br/>possible values:
-        /// <br/>Country
+        /// <br/><c>Country</c>
         /// </summary>
         [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationType { get; set; }

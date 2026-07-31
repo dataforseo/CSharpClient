@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeOrganicTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeOrganicTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

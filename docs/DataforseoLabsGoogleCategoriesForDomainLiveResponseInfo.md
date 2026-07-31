@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsGoogleCategoriesForDomainLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

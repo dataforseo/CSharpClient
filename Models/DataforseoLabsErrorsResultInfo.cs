@@ -11,16 +11,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// task identifier
-        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>unique task identifier in our system in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
 
         /// <summary>
         /// date and time when an error occurred
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// error message or error URL
-        /// <br/>error message (see full list) or URL that caused an error
+        /// <br/>error message <see href="https://docs.dataforseo.com/v3/appendix/errors/">(see full list)</see> or URL that caused an error
         /// </summary>
         [JsonProperty("error_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ErrorMessage { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BusinessDataSocialMediaPinterestLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BusinessDataSocialMediaPinterestLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

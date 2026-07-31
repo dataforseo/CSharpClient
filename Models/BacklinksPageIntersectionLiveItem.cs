@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains data on pages that link to the corresponding targets specified in the POST array
-        /// <br/>data is provided in separate objects corresponding to pages specified in the targets object
+        /// <br/>data is provided in separate objects corresponding to pages specified in the <c>targets</c> object
         /// </summary>
         [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, IEnumerable<BacklinksPageIntersection>> PageIntersection { get; set; }

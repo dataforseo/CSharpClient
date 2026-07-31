@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYahooLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYahooLocationsResultInfo>** | <em>array of results</em> |[optional]|

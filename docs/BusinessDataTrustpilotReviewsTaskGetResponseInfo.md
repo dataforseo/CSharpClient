@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BusinessDataTrustpilotReviewsTaskGetTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BusinessDataTrustpilotReviewsTaskGetTaskInfo>** | <em>array of tasks</em> |[optional]|

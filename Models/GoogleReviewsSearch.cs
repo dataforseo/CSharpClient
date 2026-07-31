@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -31,13 +31,13 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the review in SERP
-        /// <br/>can take the following values: right
+        /// <br/>can take the following values: <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the review
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the review
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -63,7 +63,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the time of publication
-        /// <br/>indicates the time (in the ‘time ago’ format) when the review was listed
+        /// <br/>indicates the time (in the 'time ago' format) when the review was listed
         /// </summary>
         [JsonProperty("time_ago", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TimeAgo { get; set; }
@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         /// date and time when a review was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         public long? PhotosCount { get; set; }
 
         /// <summary>
-        /// indicates whether the reviewer has a ‘local guide’ status
+        /// indicates whether the reviewer has a 'local guide' status
         /// </summary>
         [JsonProperty("local_guide", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? LocalGuide { get; set; }
@@ -108,7 +108,7 @@ namespace DataForSeo.Client.Models
         public string ProfileName { get; set; }
 
         /// <summary>
-        /// URL of the reviewer’s profile
+        /// URL of the reviewer's profile
         /// </summary>
         [JsonProperty("profile_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileUrl { get; set; }
@@ -120,20 +120,20 @@ namespace DataForSeo.Client.Models
         public string ReviewUrl { get; set; }
 
         /// <summary>
-        /// URL of the reviewer’s profile image
+        /// URL of the reviewer's profile image
         /// </summary>
         [JsonProperty("profile_image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileImageUrl { get; set; }
 
         /// <summary>
-        /// text of the owner’s response
-        /// <br/>the owner’s response to the review
+        /// text of the owner's response
+        /// <br/>the owner's response to the review
         /// </summary>
         [JsonProperty("owner_answer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OwnerAnswer { get; set; }
 
         /// <summary>
-        /// original text of the owner’s response
+        /// original text of the owner's response
         /// <br/>the original response to the review, no auto-translate applied
         /// </summary>
         [JsonProperty("original_owner_answer", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -141,16 +141,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// publication time
-        /// <br/>indicates the time (in the ‘time ago’ format) when the owner submitted the response to the review
+        /// <br/>indicates the time (in the 'time ago' format) when the owner submitted the response to the review
         /// </summary>
         [JsonProperty("owner_time_ago", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OwnerTimeAgo { get; set; }
 
         /// <summary>
-        /// date and time of the owner’s reply to the review
+        /// date and time of the owner's reply to the review
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("owner_timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OwnerTimestamp { get; set; }
@@ -158,7 +158,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the unique identifier of a review on Google
         /// <br/>example:
-        /// <br/>ChZDSUhNMG9nS0VJQ0FnSUMxbHFyMFlnEAE
+        /// <br/><c>ChZDSUhNMG9nS0VJQ0FnSUMxbHFyMFlnEAE</c>
         /// </summary>
         [JsonProperty("review_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ReviewId { get; set; }

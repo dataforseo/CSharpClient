@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// top-level domain
-        /// <br/>top-level domain in the DNS root zone
+        /// <br/>top-level domain in the <see href="https://www.iana.org/domains/root/db">DNS root zone</see>
         /// </summary>
         [JsonProperty("tld", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tld { get; set; }
@@ -54,7 +54,7 @@ namespace DataForSeo.Client.Models
         /// <br/>date and time when our crawler visited this page for the first time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("first_visited", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FirstVisited { get; set; }
@@ -63,7 +63,7 @@ namespace DataForSeo.Client.Models
         /// previous to the most recent date when our crawler visited the page
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("prev_visited", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PrevVisited { get; set; }
@@ -72,14 +72,14 @@ namespace DataForSeo.Client.Models
         /// most recent date and time when our crawler visited the page
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("fetch_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FetchTime { get; set; }
 
         /// <summary>
         /// general status code
-        /// <br/>you can find the full list of the response codes here
+        /// <br/>you can find the full list of the response codes <see href="/v3/appendix/errors">here</see>
         /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

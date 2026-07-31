@@ -16,8 +16,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>a domain or a subdomain should be specified without <c>https://</c> and <c>www.</c>
         /// <br/>a page should be specified with absolute URL (including <c>http://</c> or <c>https://</c>)
         /// <br/>example:
-        /// <br/><c>'targets':</c> <c>{'1': 'http://planet.postgresql.org/',</c>
-        /// <br/><c>'2': 'http://gborg.postgresql.org/'}</c>
+        /// <br/>`'targets': {
+        /// <br/>'1': 'http://planet.postgresql.org/',
+        /// <br/>'2': 'http://gborg.postgresql.org/'
+        /// <br/>}`
         /// </summary>
         [JsonProperty("targets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> Targets { get; set; }
@@ -28,7 +30,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>you can specify up to 10 domains, subdomains or webpages
         /// <br/>if you use this array, results will contain the referring domains that link to <c>targets</c> but don't link to <c>exclude_targets</c>
         /// <br/>example:
-        /// <br/><c>'exclude_targets': ['bbc.com','https://www.apple.com/iphone/*','https://dataforseo.com/apis/*']</c>
+        /// <br/>`'exclude_targets': [
+        /// <br/>'bbc.com',
+        /// <br/>'https://www.apple.com/iphone/*',
+        /// <br/>'https://dataforseo.com/apis/*']`
         /// </summary>
         [JsonProperty("exclude_targets", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ExcludeTargets { get; set; }

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Alt** | **string** | alternative text of the related product image |[optional]|
-**Url** | **string** | URL of the image |[optional]|
+**Alt** | **string** | <em>alternative text of the related product image</em> |[optional]|
+**Url** | **string** | <em>URL of the image</em> |[optional]|

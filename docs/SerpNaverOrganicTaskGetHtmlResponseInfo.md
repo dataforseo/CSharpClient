@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpNaverOrganicTaskGetHtmlTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpNaverOrganicTaskGetHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

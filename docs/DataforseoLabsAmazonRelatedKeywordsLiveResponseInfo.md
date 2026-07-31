@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsAmazonRelatedKeywordsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

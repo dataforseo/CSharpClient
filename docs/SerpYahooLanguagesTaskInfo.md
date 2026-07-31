@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYahooLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYahooLanguagesResultInfo>** | <em>array of results</em> |[optional]|

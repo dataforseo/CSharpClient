@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleAdsAdvertisersTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleAdsAdvertisersTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

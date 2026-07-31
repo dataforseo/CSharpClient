@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<ContentAnalysisLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<ContentAnalysisLocationsResultInfo>** | <em>array of results</em> |[optional]|

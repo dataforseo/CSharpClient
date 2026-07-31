@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleAiModeTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleAiModeTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

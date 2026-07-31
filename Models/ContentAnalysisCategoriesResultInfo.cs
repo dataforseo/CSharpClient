@@ -24,13 +24,10 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the code of the superordinate category
         /// <br/>example:
-        /// <br/>'category_code': 10178,
-        /// <br/>'category_name': 'Apparel Accessories',
-        /// <br/>'category_code_parent': 10021
-        /// <br/>where category_code_parent
-        /// <br/>corresponds to:
-        /// <br/>'category_code': 10178,
-        /// <br/>'category_name': 'Apparel Accessories'
+        /// <br/><c>'category_code': 10178,'category_name': 'Apparel Accessories','category_code_parent': 10021</c> 
+        /// <br/>where <c>category_code_parent</c> 
+        /// <br/>corresponds to: 
+        /// <br/><c>'category_code': 10178,'category_name': 'Apparel Accessories'</c>
         /// </summary>
         [JsonProperty("category_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CategoryCodeParent { get; set; }

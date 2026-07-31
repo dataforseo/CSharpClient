@@ -6,10 +6,10 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**RankGroup** | **int?** | position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank among all the listed reviews<br>absolute position among all reviews on the list |[optional]|
-**Title** | **string** | title of the establishment |[optional]|
-**Domain** | **string** | domain of the establishment |[optional]|
-**Url** | **string** | URL to the establishment |[optional]|
-**ReviewsCount** | **long?** | the total number of reviews |[optional]|
-**Rating** | **RatingInfo** | the rating score of the establishment submitted by reviewers |[optional]|
+**RankGroup** | **int?** | <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank among all the listed reviews</em><br>absolute position among all reviews on the list |[optional]|
+**Title** | **string** | <em>title of the establishment</em> |[optional]|
+**Domain** | **string** | <em>domain of the establishment</em> |[optional]|
+**Url** | **string** | <em>URL to the establishment</em> |[optional]|
+**ReviewsCount** | **long?** | <em>the total number of reviews</em> |[optional]|
+**Rating** | **RatingInfo** | <em>the rating score of the establishment submitted by reviewers</em> |[optional]|

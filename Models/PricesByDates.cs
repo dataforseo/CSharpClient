@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// price currency
-        /// <br/>USD is applied by default, unless specified in the POST array
+        /// <br/><c>USD</c> is applied by default, unless specified in the POST array
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }

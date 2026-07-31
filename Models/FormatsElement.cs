@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// type of file format of the dataset
-        /// <br/>for example: zip, html, csv
+        /// <br/>for example: <c>zip</c>, <c>html</c>, <c>csv</c>
         /// </summary>
         [JsonProperty("format", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Format { get; set; }

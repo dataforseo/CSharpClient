@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsGoogleSubdomainsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsGoogleSubdomainsLiveResultInfo>** | <em>array of results</em> |[optional]|

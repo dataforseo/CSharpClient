@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models
         public KeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
-        /// contains data on the domain’s SERP element found for the returned keyword
+        /// contains data on the domain's SERP element found for the returned <c>keyword</c>
         /// </summary>
         [JsonProperty("ranked_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public GooglePlayRankedSerpElementInfo RankedSerpElement { get; set; }

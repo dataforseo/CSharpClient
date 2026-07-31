@@ -11,11 +11,11 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
-        /// <br/>this field will contain the cid parameter if you specified it in the keyword field when setting a task;
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
+        /// <br/>this field will contain the <c>cid</c> parameter if you specified it in the <c>keyword</c> field when setting a task;
         /// <br/>example:
-        /// <br/>cid:2946633002421908862
-        /// <br/>learn more about the parameter in this help center article
+        /// <br/><c>cid:2946633002421908862</c>
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google-defined client id
         /// <br/>unique id of a local establishment;
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
@@ -70,8 +70,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: google_business_question_item
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>google_business_question_item</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -83,16 +83,16 @@ namespace DataForSeo.Client.Models
         public IEnumerable<GoogleBusinessQuestionItem> ItemsWithoutAnswers { get; set; }
 
         /// <summary>
-        /// the number of items in the items array
+        /// the number of items in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// array of items within google_business_question_item
+        /// array of items within <c>google_business_question_item</c>
         /// <br/>contains answers to the google business questions;
-        /// <br/>the maximum number of answers returned for each question: 5
-        /// <br/>possible item types google_business_answer_element
+        /// <br/>the maximum number of answers returned for each question: <c>5</c> 
+        /// <br/>possible item types <c>google_business_answer_element</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleBusinessQuestionItem> Items { get; set; }

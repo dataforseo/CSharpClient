@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// latitude coordinate of the hotel in google maps
         /// <br/>example:
-        /// <br/>'latitude': 51.584091
+        /// <br/><c>'latitude': 51.584091</c>
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Latitude { get; set; }
@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// longitude coordinate of the hotel in google maps
         /// <br/>example:
-        /// <br/>'longitude': -0.31365919999999997
+        /// <br/><c>'longitude': -0.31365919999999997</c>
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Longitude { get; set; }

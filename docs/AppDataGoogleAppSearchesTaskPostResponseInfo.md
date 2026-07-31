@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppDataGoogleAppSearchesTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppDataGoogleAppSearchesTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique identifier of the advertiser account
-        /// <br/>can be used to obtain data on advertising campaigns from the Google Ads Search endpoint
+        /// <br/>can be used to obtain data on advertising campaigns from the <see href="/v3/serp/google/ads_search/task_post/">Google Ads Search endpoint</see>
         /// </summary>
         [JsonProperty("advertiser_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AdvertiserId { get; set; }
@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// verified advertiser account
-        /// <br/>equals true if advertiser account is verified by Google Ads
+        /// <br/>equals <c>true</c> if advertiser account is verified by Google Ads
         /// </summary>
         [JsonProperty("verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Verified { get; set; }

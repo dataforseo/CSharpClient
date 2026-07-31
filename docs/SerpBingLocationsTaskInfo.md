@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBingLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBingLocationsResultInfo>** | <em>array of results</em> |[optional]|

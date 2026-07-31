@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleEventsTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleEventsTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

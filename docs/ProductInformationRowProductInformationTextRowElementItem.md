@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Text** | **string** | text of the voucher |[optional]|
+**Text** | **string** | <em>text of the voucher</em> |[optional]|

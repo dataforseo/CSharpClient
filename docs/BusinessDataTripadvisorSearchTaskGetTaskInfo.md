@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataTripadvisorSearchTaskGetResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataTripadvisorSearchTaskGetResultInfo>** | <em>array of results</em> |[optional]|

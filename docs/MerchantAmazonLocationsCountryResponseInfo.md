@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<MerchantAmazonLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<MerchantAmazonLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

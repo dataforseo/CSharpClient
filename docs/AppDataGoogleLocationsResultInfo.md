@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationCode** | **int?** | location code |[optional]|
-**LocationName** | **string** | full name of the location |[optional]|
-**LocationNameParent** | **string** | the name of the superordinate location<br>example:<br>'location_code': 1006473,<br>'location_name': 'Altrincham,England,United Kingdom',<br>'location_name_parent': 'England,United Kingdom', where location_name_parent corresponds to:<br>'location_code': 20339,<br>'location_name': 'England,United Kingdom' |[optional]|
-**CountryIsoCode** | **string** | ISO country code of the location |[optional]|
-**LocationType** | **string** | location type |[optional]|
+**LocationCode** | **int?** | <em>location code</em> |[optional]|
+**LocationName** | **string** | <em>full name of the location</em> |[optional]|
+**LocationNameParent** | **string** | <em>the name of the superordinate location</em><br>example:<br><code>'location_code': 1006473,<br>'location_name': 'Altrincham,England,United Kingdom',<br>'location_name_parent': 'England,United Kingdom',</code> where <code>location_name_parent</code> corresponds to:<p><code>'location_code': 20339,<br>'location_name': 'England,United Kingdom'</code> |[optional]|
+**CountryIsoCode** | **string** | <em>ISO country code of the location</em> |[optional]|
+**LocationType** | **string** | <em>location type</em> |[optional]|

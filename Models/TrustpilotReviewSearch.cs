@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the review in SERP
-        /// <br/>can take the following values: right
+        /// <br/>can take the following values: <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// indicates whether the review has the “Verified” mark
+        /// indicates whether the review has the 'Verified' mark
         /// </summary>
         [JsonProperty("verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Verified { get; set; }
@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// date and time when a review was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
@@ -84,7 +84,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// images submitted by the reviewer
         /// <br/>displays URLs to the images provided by the author of the review;
-        /// <br/>please note that Trustpilot doesn’t allow adding images to reviews, so the review_images parameter will always equal null
+        /// <br/>please note that Trustpilot doesn't allow adding images to reviews, so the <c>review_images</c> parameter will always equal <c>null</c>
         /// </summary>
         [JsonProperty("review_images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ReviewImages { get; set; }
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         public BusinessDataUserProfileInfo UserProfile { get; set; }
 
         /// <summary>
-        /// owner’s response to the submitted review
+        /// owner's response to the submitted review
         /// </summary>
         [JsonProperty("responses", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ReviewResponseItemInfo> Responses { get; set; }

@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -38,14 +38,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// URL path of the business entity
         /// <br/>URL path to the Tripadvisor page of the business entity
-        /// <br/>you can use this identifier to collect reviews for the business entity using Tripadvisor Reviews
+        /// <br/>you can use this identifier to collect reviews for the business entity using <see href="/v3/business_data/tripadvisor/reviews/task_post/">Tripadvisor Reviews</see>
         /// </summary>
         [JsonProperty("url_path", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UrlPath { get; set; }
 
         /// <summary>
         /// indicates a sponsored placement
-        /// <br/>if true, related tripadvisor_search_organic item is a paid advertising on Tripadvisor
+        /// <br/>if <c>true</c>, related <c>tripadvisor_search_organic</c> item is a paid advertising on Tripadvisor
         /// </summary>
         [JsonProperty("is_sponsored", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsSponsored { get; set; }

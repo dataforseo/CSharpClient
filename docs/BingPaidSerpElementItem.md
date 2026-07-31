@@ -13,6 +13,7 @@
 **WebsiteName** | **string** | website name in SERP |[optional]|
 **IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
 **IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
+**Checks** | **IEnumerable<string>** |  |[optional]|
 **Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element |[optional]|
 **Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
 **Extra** | **IDictionary<string, string>** | additional information about the result |[optional]|

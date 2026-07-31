@@ -82,7 +82,7 @@ namespace DataForSeo.Client.Models
         /// <br/>if there is no data, then the value is null
         /// </summary>
         [JsonProperty("average_cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? AverageCpc { get; set; }
+        public double? AverageCpc { get; set; }
 
         /// <summary>
         /// charge for an ad

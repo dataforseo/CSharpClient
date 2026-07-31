@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

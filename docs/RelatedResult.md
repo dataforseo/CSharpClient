@@ -15,8 +15,9 @@
 **RelatedSearchUrl** | **string** | URL to a similar search<br>URL to a new search for the same keyword(s) on related sites |[optional]|
 **Breadcrumb** | **string** | breadcrumb in SERP |[optional]|
 **WebsiteName** | **string** | name of the website in the ad element |[optional]|
-**IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
-**IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
+**IsImage** | **bool?** | indicates whether the element contains an image<br>Note: this check no longer appears in SERP |[optional]|
+**IsVideo** | **bool?** | indicates whether the element contains a video<br>Note: this check no longer appears in SERP |[optional]|
+**Checks** | **IEnumerable<string>** | array of properties detected for the SERP element<br>lists the properties that are true for this element<br>each value in the array represents a detected property<br>example:<br>if is_image is present in the array, the element contains an image<br>possible values in the array:<br>is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited<br>equals null if none of the properties are detected for the element<br>learn more about the checks array in this Help Center article |[optional]|
 **Description** | **string** | description of the results element in SERP |[optional]|
 **PreSnippet** | **string** | includes additional information appended before the result description in SERP |[optional]|
 **ExtendedSnippet** | **string** | includes additional information appended after the result description in SERP |[optional]|

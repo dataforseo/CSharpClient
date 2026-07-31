@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppDataAppleAppListTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppDataAppleAppListTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

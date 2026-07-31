@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// name of the section related to product information specified in the contents
+        /// name of the section related to product information specified in the <c>contents</c>
         /// </summary>
         [JsonProperty("section_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SectionName { get; set; }

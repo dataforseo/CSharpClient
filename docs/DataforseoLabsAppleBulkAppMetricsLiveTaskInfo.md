@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsAppleBulkAppMetricsLiveResultInfo>** | <em>array of results</em> |[optional]|

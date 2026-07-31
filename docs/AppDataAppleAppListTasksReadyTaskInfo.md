@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataAppleAppListTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataAppleAppListTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

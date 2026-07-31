@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeVideoSubtitlesTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeVideoSubtitlesTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

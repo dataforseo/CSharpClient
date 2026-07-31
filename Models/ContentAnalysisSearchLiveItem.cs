@@ -34,58 +34,58 @@ namespace DataForSeo.Client.Models
         public string MainDomain { get; set; }
 
         /// <summary>
-        /// rank of the url
+        /// rank of the <c>url</c>
         /// <br/>this value is based on backlink data for the given URL from DataForSEO Backlink Index;
-        /// <br/>url_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>url_rank</c> is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("url_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? UrlRank { get; set; }
 
         /// <summary>
-        /// backlink spam score of the url
+        /// backlink spam score of the <c>url</c>
         /// <br/>this value is based on backlink data for the given URL from DataForSEO Backlink Index;
-        /// <br/>learn more about how the metric is calculated on this help center page
+        /// <br/>learn more about how the metric is calculated on <see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">this help center page</see>
         /// </summary>
         [JsonProperty("spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SpamScore { get; set; }
 
         /// <summary>
-        /// rank of the domain
+        /// rank of the <c>domain</c>
         /// <br/>this value is based on backlink data for the given domain from DataForSEO Backlink Index;
-        /// <br/>domain_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/><c>domain_rank</c> is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DomainRank { get; set; }
 
         /// <summary>
         /// date and time when our crawler visited the page
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("fetch_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FetchTime { get; set; }
 
         /// <summary>
         /// country code of the domain registration
-        /// <br/>to obtain a full list of available countries, refer to the Locations endpoint
+        /// <br/>to obtain a full list of available countries, refer to the <see href="/v3/content_analysis/locations/">Locations</see> endpoint
         /// </summary>
         [JsonProperty("country", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Country { get; set; }
 
         /// <summary>
         /// main language of the domain
-        /// <br/>to obtain a full list of available languages, refer to the Languages endpoint
+        /// <br/>to obtain a full list of available languages, refer to the <see href="/v3/content_analysis/languages/">Languages</see> endpoint
         /// </summary>
         [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Language { get; set; }
 
         /// <summary>
         /// citation prominence score
-        /// <br/>this value is based on url_rank, domain_rank, keyword presence in title, main_title, url, snippet
-        /// <br/>the higher the score, the more value the related citation has
+        /// <br/>this value is based on <c>url_rank</c>, <c>domain_rank</c>, <c>keyword</c> presence in <c>title</c>, <c>main_title</c>, <c>url</c>, <c>snippet</c>
+        /// <br/>the higher the <c>score</c>, the more value the related citation has
         /// </summary>
         [JsonProperty("score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Score { get; set; }
@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// contains all relevant page categories
         /// <br/>product and service categories relevant for the page
-        /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
+        /// <br/>to obtain a full list of available categories, refer to the <see href="/v3/content_analysis/categories/">Categories</see> endpoint
         /// </summary>
         [JsonProperty("page_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<int?> PageCategory { get; set; }
@@ -119,7 +119,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<SocialMetricsInfo> SocialMetrics { get; set; }
 
         /// <summary>
-        /// contains data on citations from the given url
+        /// contains data on citations from the given <c>url</c>
         /// </summary>
         [JsonProperty("content_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AnalysisContentInfo ContentInfo { get; set; }

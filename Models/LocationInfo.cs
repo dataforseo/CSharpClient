@@ -10,13 +10,13 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// name of the event’s venue
+        /// name of the event's venue
         /// </summary>
         [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Name { get; set; }
 
         /// <summary>
-        /// address of the event’s venue
+        /// address of the event's venue
         /// </summary>
         [JsonProperty("address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Address { get; set; }
@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// google-defined client id
-        /// <br/>can be used with Google Reviews API to get a full list of reviews
+        /// <br/>can be used with <see href="/v3/business_data/google/reviews/task_post/?php">Google Reviews API</see> to get a full list of reviews
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }

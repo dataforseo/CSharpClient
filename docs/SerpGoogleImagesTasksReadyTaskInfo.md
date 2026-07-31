@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleImagesTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleImagesTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleAiModeTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleAiModeTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

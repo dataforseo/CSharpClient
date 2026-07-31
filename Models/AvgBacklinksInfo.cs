@@ -46,24 +46,19 @@ namespace DataForSeo.Client.Models
         public double? ReferringMainDomains { get; set; }
 
         /// <summary>
-        /// average rank
-        /// <br/>learn more about the metric and its calculation formula in this help center article
+        /// average ranklearn more about the metric and its calculation formula in this help center article
         /// </summary>
         [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Rank { get; set; }
 
         /// <summary>
-        /// average main domain rank
-        /// <br/>learn more about the metric and its calculation formula in this help center article
+        /// average main domain ranklearn more about the metric and its calculation formula in this help center article
         /// </summary>
         [JsonProperty("main_domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? MainDomainRank { get; set; }
 
         /// <summary>
-        /// date and time when keyword data was updated
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("last_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }

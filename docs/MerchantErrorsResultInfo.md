@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Id** | **string** | task identifier<br>unique task identifier in our system in the UUID format |[optional]|
-**Datetime** | **string** | date and time when an error occurred<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**Function** | **string** | corresponding API function |[optional]|
-**ErrorCode** | **int?** | error code |[optional]|
-**ErrorMessage** | **string** | error message or error URL<br>error message (see full list) or URL that caused an error |[optional]|
-**HttpUrl** | **string** | URL that caused an error<br>URL you used for making an API call or pingback/postback URL |[optional]|
-**HttpMethod** | **string** | HTTP method |[optional]|
-**HttpCode** | **int?** | HTTP status code |[optional]|
-**HttpTime** | **double?** | time taken by HTTP request<br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
-**HttpResponse** | **string** | HTTP response<br>server response |[optional]|
+**Id** | **string** | <em>task identifier</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**Datetime** | **string** | <em>date and time when an error occurred</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**Function** | **string** | <em>corresponding API function</em> |[optional]|
+**ErrorCode** | **int?** | <em>error code</em> |[optional]|
+**ErrorMessage** | **string** | <em>error message or error URL</em><br>error message <a href='https://docs.dataforseo.com/v3/appendix/errors/' rel='noopener noreferrer' target='_blank'>(see full list)</a> or URL that caused an error |[optional]|
+**HttpUrl** | **string** | <em>URL that caused an error</em><br>URL you used for making an API call or pingback/postback URL |[optional]|
+**HttpMethod** | **string** | <em>HTTP method</em> |[optional]|
+**HttpCode** | **int?** | <em>HTTP status code</em> |[optional]|
+**HttpTime** | **double?** | <em>time taken by HTTP request</em><br>for tasks set with a pingback/postback, this field will show the time it took your server to respond |[optional]|
+**HttpResponse** | **string** | <em>HTTP response</em><br>server response |[optional]|

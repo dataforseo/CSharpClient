@@ -32,6 +32,8 @@ var result = await dfsClient.ContentAnalysisApi.ContentAnalysisIdListAsync(new L
 {
     new()
     {
+        DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+        DatetimeTo = "2023-02-01 00:00:00 +02:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -473,6 +475,7 @@ var result = await dfsClient.ContentAnalysisApi.PhraseTrendsLiveAsync(new List<C
     {
         Keyword = "logitech",
         SearchMode = "as_is",
+        DateFrom = "2022-09-01",
         DateGroup = "month",
     }
 });
@@ -522,6 +525,7 @@ var result = await dfsClient.ContentAnalysisApi.CategoryTrendsLiveAsync(new List
     {
         CategoryCode = 10994,
         SearchMode = "as_is",
+        DateFrom = "2022-09-01",
         DateGroup = "month",
     }
 });

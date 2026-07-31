@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpYahooOrganicTasksReadyTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpYahooOrganicTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

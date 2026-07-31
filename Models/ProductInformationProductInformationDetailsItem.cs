@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// contains information specified about the product within the section_name
+        /// contains information specified about the product within the <c>section_name</c>
         /// </summary>
         [JsonProperty("body", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> Body { get; set; }

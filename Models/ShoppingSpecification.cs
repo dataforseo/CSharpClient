@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product attribute
-        /// <br/>attribute name of the product data specification
+        /// <br/>attribute name of the <see href="https://support.google.com/merchants/answer/7052112?hl=en">product data specification</see>
         /// </summary>
         [JsonProperty("specification_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SpecificationName { get; set; }

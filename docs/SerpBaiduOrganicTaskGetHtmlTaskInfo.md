@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBaiduOrganicTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBaiduOrganicTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

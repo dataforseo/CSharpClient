@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>this field will contain the alias parameter if it was specified in a POST array
+        /// <br/>this field will contain the <c>alias</c> parameter if it was specified in a POST array
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -45,14 +45,14 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
         /// item types encountered in the result
-        /// <br/>possible item types: tripadvisor_search_organic
+        /// <br/>possible item types: <c>tripadvisor_search_organic</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -65,14 +65,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the number of items in the results array
-        /// <br/>you can get more results by using the depth parameter when setting a task
+        /// <br/>you can get more results by using the <c>depth</c> parameter when setting a task
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
         /// Tripadvisor search listing results
-        /// <br/>you can get more results by using the depth parameter when setting a task
+        /// <br/>you can get more results by using the <c>depth</c> parameter when setting a task
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<TripadvisorSearchOrganic> Items { get; set; }

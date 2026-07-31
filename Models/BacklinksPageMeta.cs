@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// spam score of the page
-        /// <br/>learn more about how the metric is calculated on this help center page
+        /// <br/>learn more about how the metric is calculated on <see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">this help center page</see>
         /// </summary>
         [JsonProperty("page_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PageSpamScore { get; set; }
@@ -55,34 +55,34 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of social media tags found on the page
         /// <br/>contains social media tags and their content
-        /// <br/>supported tags include but are not limited to Open Graph and Twitter card
+        /// <br/>supported tags include but are not limited to <see href="https://ogp.me/">Open Graph</see> and <see href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started">Twitter card</see>
         /// </summary>
         [JsonProperty("social_media_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> SocialMediaTags { get; set; }
 
         /// <summary>
         /// h1 tag
-        /// <br/>content of h1 tags
+        /// <br/>content of <c>h1</c> tags
         /// </summary>
         [JsonProperty("h1", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> H1 { get; set; }
 
         /// <summary>
         /// h2 tag
-        /// <br/>content of h2 tags
+        /// <br/>content of <c>h2</c> tags
         /// </summary>
         [JsonProperty("h2", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> H2 { get; set; }
 
         /// <summary>
         /// h3 tag
-        /// <br/>content of h3 tags
+        /// <br/>content of <c>h3</c> tags
         /// </summary>
         [JsonProperty("h3", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> H3 { get; set; }
 
         /// <summary>
-        /// content of alt tags
+        /// content of <c>alt</c> tags
         /// </summary>
         [JsonProperty("images_alt", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ImagesAlt { get; set; }
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// page content language
         /// <br/>example:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Language { get; set; }
@@ -104,7 +104,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// character encoding
         /// <br/>examples:
-        /// <br/>utf-8
+        /// <br/><c>utf-8</c>
         /// </summary>
         [JsonProperty("charset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Charset { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeVideoCommentsTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeVideoCommentsTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleAdsSearchLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleAdsSearchLocationsResultInfo>** | <em>array of results</em> |[optional]|

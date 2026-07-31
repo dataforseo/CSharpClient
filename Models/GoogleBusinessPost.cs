@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -31,13 +31,13 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the element in SERP
-        /// <br/>can take the following values: right
+        /// <br/>can take the following values: <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// date when a post was published
         /// <br/>in the following format:
-        /// <br/>'mm/dd/yyyy hh:mm:ss'
+        /// <br/><c>'mm/dd/yyyy hh:mm:ss'</c>
         /// </summary>
         [JsonProperty("post_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostDate { get; set; }

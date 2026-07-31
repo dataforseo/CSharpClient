@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BacklinksDomainPagesSummaryLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BacklinksDomainPagesSummaryLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

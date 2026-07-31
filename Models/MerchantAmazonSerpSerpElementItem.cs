@@ -42,7 +42,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the regular price of a product
         /// <br/>example:
-        /// <br/>49.98
+        /// <br/><c>49.98</c>
         /// </summary>
         [JsonProperty("price_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PriceFrom { get; set; }
@@ -50,15 +50,15 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the upper limit of the product price range
         /// <br/>example:
-        /// <br/>384.99
+        /// <br/><c>384.99</c>
         /// </summary>
         [JsonProperty("price_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PriceTo { get; set; }
 
         /// <summary>
-        /// currency in the ISO format
+        /// currency in the <see href="https://en.wikipedia.org/wiki/ISO_4217">ISO</see> format
         /// <br/>example:
-        /// <br/>USD
+        /// <br/><c>USD</c>
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
@@ -72,9 +72,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique product identifier on Amazon
-        /// <br/>note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon
+        /// <br/>note that there is no full list of possible values as the <c>data_asin</c> is a dynamic value assigned by Amazon
         /// <br/>example:
-        /// <br/>B07G82D89J
+        /// <br/><c>B07G82D89J</c>
         /// </summary>
         [JsonProperty("data_asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataAsin { get; set; }
@@ -86,15 +86,15 @@ namespace DataForSeo.Client.Models
         public RatingElement Rating { get; set; }
 
         /// <summary>
-        /// “Amazon’s choice” label
-        /// <br/>if the value is true, the product is marked with the “Amazon’s choice” label
+        /// 'Amazon's choice' label
+        /// <br/>if the value is <c>true</c>, the product is marked with the 'Amazon's choice' label
         /// </summary>
         [JsonProperty("is_amazon_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAmazonChoice { get; set; }
 
         /// <summary>
-        /// “Best Seller” label
-        /// <br/>if the value is true, the product is marked with the “Best Seller” label
+        /// 'Best Seller' label
+        /// <br/>if the value is <c>true</c>, the product is marked with the 'Best Seller' label
         /// </summary>
         [JsonProperty("is_best_seller", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsBestSeller { get; set; }
@@ -109,7 +109,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// product labels
         /// <br/>array containing an object with main Amazon labels’ information
-        /// <br/>if the product contains no labels, the value will be null
+        /// <br/>if the product contains no labels, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("labels", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AmazonLabelElement> Labels { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppDataAppleAppReviewsTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppDataAppleAppReviewsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

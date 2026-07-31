@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// ASIN of the product
         /// <br/>unique product identifier on Amazon;
-        /// <br/>for more information, refer to this help center guide
+        /// <br/>for more information, refer to <see href="https://dataforseo.com/help-center/asin-in-amazon-api">this help center guide</see>
         /// </summary>
         [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }

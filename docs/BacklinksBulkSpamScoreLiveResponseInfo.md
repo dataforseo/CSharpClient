@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BacklinksBulkSpamScoreLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BacklinksBulkSpamScoreLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

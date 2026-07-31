@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpNaverOrganicTasksFixedTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpNaverOrganicTasksFixedTaskInfo>** | <em>array of tasks</em> |[optional]|

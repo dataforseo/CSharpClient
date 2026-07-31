@@ -17,21 +17,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keywords specified in the request
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("seed_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> SeedKeywords { get; set; }
 
         /// <summary>
         /// location code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

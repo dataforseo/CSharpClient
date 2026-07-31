@@ -17,8 +17,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -56,14 +56,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// verified advertiser account
-        /// <br/>equals true if advertiser account is verified by Google Ads
+        /// <br/>equals <c>true</c> if advertiser account is verified by Google Ads
         /// </summary>
         [JsonProperty("verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Verified { get; set; }
 
         /// <summary>
         /// format of the advertisement
-        /// <br/>possible values: text, image, video
+        /// <br/>possible values: <c>text</c>, <c>image</c>, <c>video</c>
         /// </summary>
         [JsonProperty("format", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Format { get; set; }

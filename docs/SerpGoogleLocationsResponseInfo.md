@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleLocationsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

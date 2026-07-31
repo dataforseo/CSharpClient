@@ -13,12 +13,12 @@ namespace DataForSeo.Client.Models.Requests
         /// keyword
         /// <br/>optional field
         /// <br/>the keyword you specify is used to search for the list of hotels;
-        /// <br/>if you don’t use this field, we will return the list of hotels found in a specified location;
-        /// <br/>you can specify up to 700 characters in the keyword filed
+        /// <br/>if you don't use this field, we will return the list of hotels found in a specified location;
+        /// <br/>you can specify up to 700 characters in the <c>keyword</c> filed
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
+        /// <br/>if you need to use the “%” character for your <c>keyword</c>, please specify it as “%25”; 
         /// <br/>Note: in order to obtain accurate search results, the location name is appended to the keyword automatically
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -28,91 +28,90 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/business-data/google-hotels-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with <c>location_name</c> by making a separate request to <c>https://api.dataforseo.com/v3/business_data/google/locations</c>
         /// <br/>example:
-        /// <br/>London,England,United Kingdom
-        /// <br/>Note: in order to obtain accurate search results, the location_name you specify will be automatically appended to the keyword
+        /// <br/><c>London,England,United Kingdom</c>
+        /// <br/>Note: in order to obtain accurate search results, the <c>location_name</c> you specify will be automatically appended to the keyword
         /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/business_data/google/locations</c>
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>n
         /// </summary>
-        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude” format
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude' format
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
         /// <br/>Note: if the coordinates are used to set a location, the search will occur in the nearest settlement;
         /// <br/>example:
-        /// <br/>53.476225,-2.243572
+        /// <br/><c>53.476225,-2.243572</c>
         /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// show hotels from the displayed area
         /// <br/>optional field
-        /// <br/>can take the values: true, false
-        /// <br/>default value: true
-        /// <br/>if set to false the search_this_area mode will be turned off
-        /// <br/>Note: if the search_this_area mode is turned off, the location_name won’t be appended to the keyword during search
-        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>can take the values: <c>true</c>, <c>false</c>
+        /// <br/>default value: <c>true</c>
+        /// <br/>if set to <c>false</c> the <c>search_this_area</c> mode will be turned off
+        /// <br/>Note: if the <c>search_this_area</c> mode is turned off, the <c>location_name</c> won't be appended to the <c>keyword</c> during search
+        /// <br/>learn more about this parameter <see href="https://dataforseo.com/help-center/how-to-use-search_this_area-parameter-in-google-hotel-searches">on our Help Center</see>
         /// </summary>
         [JsonProperty("search_this_area", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SearchThisArea { get; set; }
 
         /// <summary>
         /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages
+        /// <br/>required field if you don't specify <c>language_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>you can receive the list of available languages with <c>language_name</c> by making a separate request to <c>https://api.dataforseo.com/v3/business_data/google/languages</c>
         /// <br/>example:
-        /// <br/>English
+        /// <br/><c>English</c>
         /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages
+        /// <br/>required field if you don't specify <c>language_name</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>
+        /// <br/>you can receive the list of available languages with their <c>language_code</c>_by making a separate request to <c>https://api.dataforseo.com/v3/business_data/google/languages</c>
         /// <br/>example:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
-        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in Google Hotels
-        /// <br/>default value: 18 organic results
-        /// <br/>max value: 140
+        /// <br/>default value: <c>18</c> organic results
+        /// <br/>max value: <c>140</c>
         /// <br/>Note: your account will be billed per each 18 organic results regardless of paid listings in the response;
-        /// <br/>thus, setting a depth above 18 may result in additional charges if Google Hotels return more than 18 results;
+        /// <br/>thus, setting a depth above <c>18</c> may result in additional charges if Google Hotels return more than 18 results;
         /// <br/>if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -121,11 +120,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// check-in date
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, tomorrow’s date will be used by default;
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>if you don't specify this field, tomorrow's date will be used by default;
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
-        /// <br/>Note: the value cannot precede the today’s date
+        /// <br/><c>'2019-01-15'</c>
+        /// <br/>Note: the value cannot precede the today's date
         /// </summary>
         [JsonProperty("check_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckIn { get; set; }
@@ -133,12 +132,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// check-out date
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, our system will apply the date of two days from now by default;
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>if you don't specify this field, our system will apply the date of two days from now by default;
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
-        /// <br/>Note: the value cannot be less than or equal to check_in;
-        /// <br/>the range between check_in and check_out values cannot exceed 30 days
+        /// <br/><c>'2019-01-15'</c>
+        /// <br/>Note: the value cannot be less than or equal to <c>check_in</c>;
+        /// <br/>the range between <c>check_in</c> and <c>check_out</c> values cannot exceed 30 days
         /// </summary>
         [JsonProperty("check_out", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckOut { get; set; }
@@ -147,7 +146,7 @@ namespace DataForSeo.Client.Models.Requests
         /// currency
         /// <br/>optional field
         /// <br/>example:
-        /// <br/>'USD'
+        /// <br/><c>'USD'</c>
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
@@ -155,10 +154,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// number of adults
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, the default value of 2 will be applied;
+        /// <br/>if you don't specify this field, the default value of <c>2</c> will be applied;
         /// <br/>note that you can specify up to 6 persons including both adults and children
         /// <br/>example:
-        /// <br/>1
+        /// <br/><c>1</c>
         /// </summary>
         [JsonProperty("adults", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Adults { get; set; }
@@ -166,13 +165,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// number and age of children
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, no children will be included in the search;
-        /// <br/>age of child can be from 0 to 17;
+        /// <br/>if you don't specify this field, no children will be included in the search;
+        /// <br/>age of child can be from <c>0</c> to <c>17</c>;
         /// <br/>note that you can specify up to 6 persons including both adults and children
         /// <br/>set the following value if you want to include one 14-year-old child:
-        /// <br/>[14]
+        /// <br/><c>[14]</c>
         /// <br/>set the following value if you want to include one 13-year-old child and one 8-year-old child:
-        /// <br/>[13,8]
+        /// <br/><c>[13,8]</c>
         /// </summary>
         [JsonProperty("children", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Children { get; set; }
@@ -180,9 +179,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// hotel stars
         /// <br/>optional field
-        /// <br/>set this field to [5] if you want to get the list of 5-star hotels only
+        /// <br/>set this field to <c>[5]</c> if you want to get the list of 5-star hotels only
         /// <br/>example:
-        /// <br/>[3,4,5]
+        /// <br/><c>[3,4,5]</c>
         /// </summary>
         [JsonProperty("stars", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Stars { get; set; }
@@ -192,7 +191,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to specify guest rating higher than a certain value
         /// <br/>example:
-        /// <br/>2.5
+        /// <br/><c>2.5</c>
         /// </summary>
         [JsonProperty("min_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? MinRating { get; set; }
@@ -202,11 +201,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to sort the results
         /// <br/>possible types of sorting:
-        /// <br/>relevance – sort by most relevant
-        /// <br/>lowest_price – sort by the lowest price
-        /// <br/>highest_rating – sort by highest rating
-        /// <br/>most_reviewed – sort by most reviewed
-        /// <br/>default value: relevance
+        /// <br/><c>relevance</c> – sort by most relevant
+        /// <br/><c>lowest_price</c> – sort by the lowest price
+        /// <br/><c>highest_rating</c> – sort by highest rating
+        /// <br/><c>most_reviewed</c> – sort by most reviewed
+        /// <br/>default value: <c>relevance</c>
         /// </summary>
         [JsonProperty("sort_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SortBy { get; set; }
@@ -214,9 +213,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// minimum price per night
         /// <br/>optional field
-        /// <br/>the currency of this value depends on the currency field
+        /// <br/>the currency of this value depends on the <c>currency</c> field
         /// <br/>example:
-        /// <br/>100
+        /// <br/><c>100</c>
         /// </summary>
         [JsonProperty("min_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MinPrice { get; set; }
@@ -224,9 +223,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// maximum price per night
         /// <br/>optional field
-        /// <br/>the currency of this value depends on the currency field
+        /// <br/>the currency of this value depends on the <c>currency</c> field
         /// <br/>example:
-        /// <br/>600
+        /// <br/><c>600</c>
         /// </summary>
         [JsonProperty("max_price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxPrice { get; set; }
@@ -234,8 +233,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// hotels with a free cancellation
         /// <br/>optional field
-        /// <br/>set this field to true if you want to get the list of hotels with free cancellation of reservations
-        /// <br/>default value: false
+        /// <br/>set this field to <c>true</c> if you want to get the list of hotels with free cancellation of reservations
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("free_cancellation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? FreeCancellation { get; set; }
@@ -243,8 +242,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// search for vacation rentals
         /// <br/>optional field
-        /// <br/>set this field to true if you want to get the list of vacation rentals instead of hotels
-        /// <br/>default value: false
+        /// <br/>set this field to <c>true</c> if you want to get the list of vacation rentals instead of hotels
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("is_vacation_rentals", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVacationRentals { get; set; }
@@ -254,29 +253,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to specify different hotel amenities
         /// <br/>example:
-        /// <br/>  [
-        /// <br/>            'free_parking',
-        /// <br/>            'pets_allowed'
-        /// <br/>        ]
+        /// <br/><c>[            'free_parking',            'pets_allowed'        ]</c>
         /// <br/>possible values:
-        /// <br/>'air_conditioning',
-        /// <br/>'all_inclusive_available',
-        /// <br/>'bar',
-        /// <br/>'free_breakfast',
-        /// <br/>'fitness_center',
-        /// <br/>'kid_friendly',
-        /// <br/>'free_parking',
-        /// <br/>'pets_allowed',
-        /// <br/>'pool',
-        /// <br/>'restaurant',
-        /// <br/>'room_service',
-        /// <br/>'spa',
-        /// <br/>'free_wifi',
-        /// <br/>'parking',
-        /// <br/>'indoor_pool',
-        /// <br/>'outdoor_pool',
-        /// <br/>'wheelchair_accessible',
-        /// <br/>'beach_access'
+        /// <br/><c>'air_conditioning','all_inclusive_available','bar','free_breakfast','fitness_center','kid_friendly','free_parking','pets_allowed','pool','restaurant','room_service','spa','free_wifi','parking','indoor_pool','outdoor_pool','wheelchair_accessible','beach_access'</c>
         /// </summary>
         [JsonProperty("amenities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Amenities { get; set; }
@@ -286,7 +265,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -294,14 +273,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// URL for sending task results
         /// <br/>optional field
-        /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/postbackscript?id=$id
-        /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in postback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -310,13 +289,13 @@ namespace DataForSeo.Client.Models.Requests
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

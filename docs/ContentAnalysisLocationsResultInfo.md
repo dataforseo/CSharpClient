@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationName** | **string** | full name of the location |[optional]|
-**CountryIsoCode** | **string** | ISO country code of the location |[optional]|
+**LocationName** | **string** | <em>full name of the location</em> |[optional]|
+**CountryIsoCode** | **string** | <em>ISO country code of the location</em> |[optional]|

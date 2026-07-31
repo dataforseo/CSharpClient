@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Limits** | **AppendixLimitsRatesData** | rate limits for API calls per a certain period of time |[optional]|
-**Statistics** | **AppendixStatisticsDataInfo** | statisctics for API calls |[optional]|
+**Limits** | **AppendixLimitsRatesData** | <em>rate limits for API calls per a certain period of time</em> |[optional]|
+**Statistics** | **AppendixStatisticsDataInfo** | <em>statisctics for API calls</em> |[optional]|

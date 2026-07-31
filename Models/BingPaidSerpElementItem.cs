@@ -56,6 +56,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVideo { get; set; }
+        [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Checks { get; set; }
 
         /// <summary>
         /// images of the element

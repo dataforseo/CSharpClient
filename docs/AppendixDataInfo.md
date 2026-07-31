@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Serp** | **AppendixSerpDataInfo** |  |[optional]|
-**Total** | **double?** | total amount of money deposited to your account |[optional]|
+**Total** | **double?** | <em>total amount of money deposited to your account</em> |[optional]|
 **TotalSerp** | **double?** |  |[optional]|
 **KeywordsData** | **AppendixKeywordsDataDataInfo** |  |[optional]|
 **TotalKeywordsData** | **double?** |  |[optional]|

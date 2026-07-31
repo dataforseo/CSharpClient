@@ -65,8 +65,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// time period for grouping
-        /// <br/>day in the yyyy-MM-dd format
-        /// <br/>minute in the yyyy-MM-dd HH:mm format
+        /// <br/><c>day</c>_in the yyyy-MM-dd format
+        /// <br/><c>minute</c>_in the yyyy-MM-dd HH:mm formatn
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Value { get; set; }

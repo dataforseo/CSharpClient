@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataTripadvisorLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataTripadvisorLocationsResultInfo>** | <em>array of results</em> |[optional]|

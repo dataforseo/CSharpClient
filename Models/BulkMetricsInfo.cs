@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// estimated traffic volume
         /// <br/>estimated organic monthly traffic to the domain
         /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-etv-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }

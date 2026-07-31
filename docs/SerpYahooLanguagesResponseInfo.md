@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpYahooLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpYahooLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

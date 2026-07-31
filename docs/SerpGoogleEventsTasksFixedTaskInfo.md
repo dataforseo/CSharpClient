@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleEventsTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleEventsTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// average spam score the target
-        /// <br/>learn more about how the metric is calculated
+        /// <br/><see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">learn more</see> about how the metric is calculated
         /// </summary>
         [JsonProperty("spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? SpamScore { get; set; }

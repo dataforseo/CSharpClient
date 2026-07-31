@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<MerchantGoogleLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<MerchantGoogleLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

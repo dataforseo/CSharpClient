@@ -46,14 +46,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// metrics for intersecting keywords
         /// <br/>ranking data relevant to the keywords that the provided competitor application shares with the app in a POST request;
-        /// <br/>note: in this array ranking data is provided for the returned competitor’s app_id
+        /// <br/>note: in this array ranking data is provided for the returned competitor's <c>app_id</c>
         /// </summary>
         [JsonProperty("competitor_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, AppMetricsInfo> CompetitorMetrics { get; set; }
 
         /// <summary>
         /// metrics for all keywords of the application
-        /// <br/>full overview of ranking data relevant to all keywords that the provided app_id is ranking for
+        /// <br/>full overview of ranking data relevant to all keywords that the provided <c>app_id</c> is ranking for
         /// </summary>
         [JsonProperty("full_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, AppMetricsInfo> FullMetrics { get; set; }

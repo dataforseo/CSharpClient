@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// ASIN received in a POST array
         /// <br/>the unique product identifier in Amazon (ASIN) received in a POST array
-        /// <br/>learn more about the identified in this help center guide
+        /// <br/>learn more about the identified in <see href="https://dataforseo.com/help-center/asin-in-amazon-api">this help center guide</see>
         /// </summary>
         [JsonProperty("asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }
@@ -52,22 +52,22 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
         /// types of search results found on Amazon
-        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>amazon_product_info
+        /// <br/><c>amazon_product_info</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

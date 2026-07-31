@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataTrustpilotSearchTaskGetResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataTrustpilotSearchTaskGetResultInfo>** | <em>array of results</em> |[optional]|

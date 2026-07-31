@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleImagesTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleImagesTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

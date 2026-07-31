@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

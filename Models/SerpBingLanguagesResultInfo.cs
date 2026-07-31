@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string LanguageName { get; set; }
 
         /// <summary>
-        /// language code according to ISO 639-1
+        /// language code according to <see href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</see>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

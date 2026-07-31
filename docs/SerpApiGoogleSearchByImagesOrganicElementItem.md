@@ -15,6 +15,7 @@
 **IsFeaturedSnippet** | **bool?** | indicates whether the element is a featured_snippet |[optional]|
 **IsMalicious** | **bool?** | indicates whether the element is marked as malicious |[optional]|
 **IsWebStory** | **bool?** | indicates whether the element is marked as Google web story |[optional]|
+**Checks** | **IEnumerable<string>** |  |[optional]|
 **Description** | **string** | description of the results element in SERP |[optional]|
 **PreSnippet** | **string** | includes additional information appended before the result description in SERP |[optional]|
 **ExtendedSnippet** | **string** | includes additional information appended after the result description in SERP |[optional]|

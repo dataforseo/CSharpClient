@@ -68,6 +68,8 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 {
     new()
     {
+        DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+        DatetimeTo = "2023-02-01 00:00:00 +02:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",
@@ -907,6 +909,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
+        FirstDate = "2021-06-01",
+        SecondDate = "2021-10-01",
         Limit = 3,
     }
 });
@@ -1402,6 +1406,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSerpsLiveAsync(ne
         Keyword = "albert einstein",
         LocationCode = 2840,
         LanguageCode = "en",
+        DateFrom = "2026-04-30",
+        DateTo = "2026-06-30",
     }
 });
 ```
@@ -1451,6 +1457,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
         Target = "dataforseo.com",
         LocationCode = 2840,
         LanguageCode = "en",
+        DateFrom = "2021-01-01",
+        DateTo = "2021-03-29",
     }
 });
 ```
@@ -1619,6 +1627,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
         LocationCode = 2840,
         LanguageCode = "en",
+        DateFrom = "2021-01-01",
+        DateTo = "2021-03-29",
         ItemTypes = new List<string>()
         {
             "organic",

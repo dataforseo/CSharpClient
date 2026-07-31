@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string Text { get; set; }
 
         /// <summary>
-        /// links featured in the ‘dataset_description’
+        /// links featured in the 'dataset_description'
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

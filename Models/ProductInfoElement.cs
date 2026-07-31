@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -32,14 +32,14 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// alignment of the element on the product specification page
         /// <br/>can take the following values:
-        /// <br/>right, left
+        /// <br/><c>right</c>, <c>left</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
         /// product_id received in a POST array
-        /// <br/>ilearn more about the parameter in this help center guide
+        /// <br/>ilearn more about the parameter in <see href="https://dataforseo.com/help-center/product-id-google-shopping">this help center guide</see>
         /// </summary>
         [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductId { get; set; }
@@ -86,16 +86,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// number of seller reviews
-        /// <br/>number of reviews on the product seller’s account
+        /// <br/>number of reviews on the product seller's account
         /// </summary>
         [JsonProperty("seller_reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SellerReviewsCount { get; set; }
 
         /// <summary>
         /// unique identifier of the SERP data element
-        /// <br/>note that there is no full list of possible values as the data_docid is a dynamic value assigned by Google
+        /// <br/>note that there is no full list of possible values as the <c>data_docid</c> is a dynamic value assigned by Google
         /// <br/>example:
-        /// <br/>17363035694596624076
+        /// <br/><c>17363035694596624076</c>
         /// </summary>
         [JsonProperty("data_docid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataDocid { get; set; }
@@ -103,10 +103,10 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// global product identifier on Google Shopping
         /// <br/>note that there is no full list of possible values as the gid is a dynamic value assigned by Google
-        /// <br/>if there are no values, you will get null
+        /// <br/>if there are no values, you will get <c>null</c>
         /// <br/>example:
-        /// <br/>4702526954592161872
-        /// <br/>learn more about gid in this help center guide
+        /// <br/><c>4702526954592161872</c>
+        /// <br/>learn more about <c>gid</c> in <see href="https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api">this help center guide</see>
         /// </summary>
         [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Gid { get; set; }
@@ -120,7 +120,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// sellers of the product
-        /// <br/>number of reviews on the product seller’s account
+        /// <br/>number of reviews on the product seller's account
         /// </summary>
         [JsonProperty("sellers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ProductSeller> Sellers { get; set; }

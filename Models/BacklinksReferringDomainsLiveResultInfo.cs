@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// target in a POST array
+        /// <c>target</c> in a POST array
         /// </summary>
         [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// number of items in the items array
+        /// number of items in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

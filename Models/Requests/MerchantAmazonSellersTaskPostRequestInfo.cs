@@ -12,11 +12,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// unique product identifier on Amazon
         /// <br/>required field
-        /// <br/>you can get this value making a separate request to the Amazon Products endpoint
-        /// <br/>note that there is no full list of possible values as the asin values is a dynamic value assigned by Amazon
+        /// <br/>you can get this value making a separate request to <see href="/v3/merchant/amazon/products/task_post">the Amazon Products endpoint</see>
+        /// <br/>note that there is no full list of possible values as the <c>asin</c> values is a dynamic value assigned by Amazon
         /// <br/>example:
-        /// <br/>B085RFFC9Q
-        /// <br/>learn more about the identifier in this help center guide
+        /// <br/><c>B085RFFC9Q</c>
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/asin-in-amazon-api">this help center guide</see>
         /// </summary>
         [JsonProperty("asin", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Asin { get; set; }
@@ -26,68 +26,67 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/merchant/amazon-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
         /// full name of the location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available Amazon locations with their location_name by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available Amazon locations with their <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/locations</c>
         /// <br/>example:
-        /// <br/>London,England,United Kingdom
+        /// <br/><c>London,England,United Kingdom</c>
         /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available Amazon locations with their location_code by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available Amazon locations with their <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/locations</c>
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>
         /// </summary>
-        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
-        /// <br/>the minimum value for “radius”: 199.9
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,radius' format
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'radius': 199.9
         /// <br/>example:
-        /// <br/>53.476225,-2.243572,200
+        /// <br/><c>53.476225,-2.243572,200</c>
         /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// full name of the language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available Amazon languages with their language_name by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
+        /// <br/>required field if you don't specify <c>language_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>you can receive the list of available Amazon languages with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/languages</c>
         /// <br/>example:
-        /// <br/>English (United States)
+        /// <br/><c>English (United States)</c>
         /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available Amazon languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
+        /// <br/>required field if you don't specify <c>language_name</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>
+        /// <br/>you can receive the list of available Amazon languages with their <c>language_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/languages</c>
         /// <br/>example:
-        /// <br/>en_US
+        /// <br/><c>en_US</c>
         /// </summary>
-        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -96,7 +95,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
         /// <br/>however, you can set a custom search engine domain in this field
         /// <br/>example:
-        /// <br/>amazon.co.uk, amazon.com.au, amazon.de, etc.
+        /// <br/><c>amazon.co.uk</c>, <c>amazon.com.au</c>, <c>amazon.de</c>, etc.
         /// </summary>
         [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeDomain { get; set; }
@@ -106,7 +105,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -114,39 +113,39 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// URL for sending task results
         /// <br/>optional field
-        /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/postbackscript?id=$id
-        /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in postback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
         /// postback_url datatype
-        /// <br/>required field if you specify postback_url
+        /// <br/>required field if you specify <c>postback_url</c>
         /// <br/>corresponds to the datatype that will be sent to your server
         /// <br/>possible values:
-        /// <br/>advanced, html
+        /// <br/><c>advanced</c>, <c>html</c>
         /// </summary>
-        [JsonProperty("postback_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("postback_data", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
 
         /// <summary>
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

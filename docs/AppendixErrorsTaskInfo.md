@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppendixErrorsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppendixErrorsResultInfo>** | <em>array of results</em> |[optional]|

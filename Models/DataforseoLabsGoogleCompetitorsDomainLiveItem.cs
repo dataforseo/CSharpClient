@@ -45,23 +45,23 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// metrics for all keywords of the domain
-        /// <br/>full overview of ranking and traffic data relevant to all keywords that the provided domain is ranking for
+        /// <br/>full overview of ranking and traffic data relevant to all keywords that the provided <c>domain</c> is ranking for
         /// </summary>
         [JsonProperty("full_domain_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, DataforseoLabsMetricsInfo> FullDomainMetrics { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
-        /// <br/>ranking and traffic data relevant to the keywords that the provided domain shares with the target domain
-        /// <br/>note: in this array ranking and traffic data is provided for the target considering the keywords target shares in search with the competitor’s domain
+        /// <br/>ranking and traffic data relevant to the keywords that the provided <c>domain</c> shares with the <c>target</c> domain
+        /// <br/>note: in this array ranking and traffic data is provided for the <c>target</c> considering the keywords <c>target</c> shares in search with the competitor's <c>domain</c>
         /// </summary>
         [JsonProperty("metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
         /// metrics for intersecting keywords
-        /// <br/>ranking and traffic data relevant to the keywords that the provided domain shares with the target domain
-        /// <br/>note: in this array ranking and traffic data is provided for the returned competitor’s domain
+        /// <br/>ranking and traffic data relevant to the keywords that the provided <c>domain</c> shares with the <c>target</c> domain
+        /// <br/>note: in this array ranking and traffic data is provided for the returned competitor's <c>domain</c>
         /// </summary>
         [JsonProperty("competitor_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, DataforseoLabsMetricsInfo> CompetitorMetrics { get; set; }

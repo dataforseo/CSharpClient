@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpAiSummaryTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpAiSummaryTaskInfo>** | <em>array of tasks</em> |[optional]|

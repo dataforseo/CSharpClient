@@ -8,28 +8,12 @@ namespace DataForSeo.Client.Models
 
     public class BusinessDataUserProfileInfo 
     {
-
-        /// <summary>
-        /// the name of the reviewer
-        /// </summary>
         [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Name { get; set; }
-
-        /// <summary>
-        /// URL to the reviewer’s profile
-        /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
-
-        /// <summary>
-        /// URL to the reviewer’s profile picture
-        /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
-
-        /// <summary>
-        /// country of the reviewer
-        /// </summary>
         [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Location { get; set; }
 

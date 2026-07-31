@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpErrorsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpErrorsResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BacklinksTimeseriesNewLostSummaryLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BacklinksTimeseriesNewLostSummaryLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

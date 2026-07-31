@@ -24,9 +24,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the name of the superordinate location
         /// <br/>example:
-        /// <br/>'location_code': 9041134,
-        /// <br/>'location_name': 'Vienna International Airport,Lower Austria,Austria',
-        /// <br/>'location_name_parent': 'Lower Austria,Austria'
+        /// <br/><c>'location_code': 9041134,'location_name': 'Vienna International Airport,Lower Austria,Austria','location_name_parent': 'Lower Austria,Austria'</c>
         /// </summary>
         [JsonProperty("location_name_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationNameParent { get; set; }

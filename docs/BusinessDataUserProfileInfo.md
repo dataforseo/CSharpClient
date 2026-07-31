@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Name** | **string** | the name of the reviewer |[optional]|
-**Url** | **string** | URL to the reviewer’s profile |[optional]|
-**ImageUrl** | **string** | URL to the reviewer’s profile picture |[optional]|
-**Location** | **string** | country of the reviewer |[optional]|
-**ReviewsCount** | **long?** | total number of reviews submitted by the reviewer |[optional]|
+**Name** | **string** |  |[optional]|
+**Url** | **string** |  |[optional]|
+**ImageUrl** | **string** |  |[optional]|
+**Location** | **string** |  |[optional]|
+**ReviewsCount** | **long?** | <em>total number of reviews submitted by the reviewer</em> |[optional]|

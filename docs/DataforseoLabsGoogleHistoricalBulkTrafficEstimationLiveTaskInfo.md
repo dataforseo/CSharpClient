@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResultInfo>** | <em>array of results</em> |[optional]|

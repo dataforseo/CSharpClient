@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<ContentAnalysisLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<ContentAnalysisLanguagesResultInfo>** | <em>array of results</em> |[optional]|

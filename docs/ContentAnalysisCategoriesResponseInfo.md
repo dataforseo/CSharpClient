@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<ContentAnalysisCategoriesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<ContentAnalysisCategoriesTaskInfo>** | <em>array of tasks</em> |[optional]|

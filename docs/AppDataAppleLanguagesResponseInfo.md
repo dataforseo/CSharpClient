@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppDataAppleLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppDataAppleLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string ProfileName { get; set; }
 
         /// <summary>
-        /// URL to the reviewer’s profile image
+        /// URL to the reviewer's profile image
         /// </summary>
         [JsonProperty("profile_image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileImageUrl { get; set; }

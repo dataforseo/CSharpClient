@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -79,15 +79,15 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google-defined client id
         /// <br/>unique id of a local establishment;
-        /// <br/>can be used with Google Reviews API to get a full list of reviews
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/>can be used with <see href="/v3/reviews/google/overview/?php">Google Reviews API</see> to get a full list of reviews
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
 
         /// <summary>
         /// the unique identifier of the element in SERP
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("feature_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FeatureId { get; set; }
@@ -106,8 +106,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique place identifier
-        /// <br/>place id of the local establishment featured in the element
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/><see href="https://developers.google.com/places/place-id">place id</see> of the local establishment featured in the element
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
         [JsonProperty("place_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PlaceId { get; set; }
@@ -131,13 +131,13 @@ namespace DataForSeo.Client.Models
         public string ContactUrl { get; set; }
 
         /// <summary>
-        /// URL of the user’s or entity’s Local Guides profile, if available
+        /// URL of the user's or entity's Local Guides profile, if available
         /// </summary>
         [JsonProperty("contributor_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ContributorUrl { get; set; }
 
         /// <summary>
-        /// URL in the ‘book online’ button of the element
+        /// URL in the 'book online' button of the element
         /// <br/>URL directing users to the online booking or order page of the business entity
         /// </summary>
         [JsonProperty("book_online_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -176,7 +176,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// latitude coordinate of the local establishments in google maps
         /// <br/>example:
-        /// <br/>'latitude': 51.584091
+        /// <br/><c>'latitude': 51.584091</c>
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Latitude { get; set; }
@@ -184,7 +184,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// longitude coordinate of the local establishment in google maps
         /// <br/>example:
-        /// <br/>'longitude': -0.31365919999999997
+        /// <br/><c>'longitude': -0.31365919999999997</c>
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Longitude { get; set; }
@@ -199,7 +199,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// service details in a form of user-reviewed checks;
-        /// <br/>service details of a business entity displayed in a form of checks and based on user feedback and business category
+        /// <br/>service details of a business entity displayed in a form of checks and based on user feedback and business <c>category</c>
         /// </summary>
         [JsonProperty("attributes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BusinessDataAttributesInfo Attributes { get; set; }
@@ -207,17 +207,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// keywords mentioned in customer reviews
         /// <br/>contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword
-        /// <br/>example: 
-        /// <br/>'place_topics': {
-        /// <br/>'egg roll': 48,
-        /// <br/>'birthday': 33
-        /// <br/>}
+        /// <br/>example: <c>'place_topics': {'egg roll': 48,'birthday': 33}</c>
         /// </summary>
         [JsonProperty("place_topics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> PlaceTopics { get; set; }
 
         /// <summary>
-        /// the element’s rating 
+        /// the element's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -225,16 +221,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// hotel class rating
-        /// <br/>class ratings range between 1-5 stars, learn more
-        /// <br/>if there is no hotel class rating information, the value will be null
+        /// <br/>class ratings range between 1-5 stars, <see href="https://support.google.com/business/answer/7660515?hl=en">learn more</see>
+        /// <br/>if there is no hotel class rating information, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("hotel_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? HotelRating { get; set; }
 
         /// <summary>
         /// property price level
-        /// <br/>can take values: inexpensive, moderate, expensive, very_expensive
-        /// <br/>if there is no price level information, the value will be null
+        /// <br/>can take values: <c>inexpensive</c>, <c>moderate</c>, <c>expensive</c>, <c>very_expensive</c>
+        /// <br/>if there is no price level information, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("price_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PriceLevel { get; set; }
@@ -276,8 +272,8 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// business establishment is a part of the directory
         /// <br/>indicates whether the business establishment is a part of the directory;
-        /// <br/>if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);
-        /// <br/>note: if the business establishment is a parent item in the directory, the value will be null
+        /// <br/>if <c>true</c>, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre);
+        /// <br/>note: if the business establishment is a parent item in the directory, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("is_directory_item", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsDirectoryItem { get; set; }

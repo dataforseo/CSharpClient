@@ -45,15 +45,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// metrics for intersecting keywords
-        /// <br/>ranking data relevant to the keywords that the provided asin shares with the target asin;
-        /// <br/>Note: in this object ranking data is provided for the returned competitor’s asin
+        /// <br/>ranking data relevant to the keywords that the provided <c>asin</c> shares with the target <c>asin</c>;
+        /// <br/>Note: in this object ranking data is provided for the returned competitor's <c>asin</c>
         /// </summary>
         [JsonProperty("competitor_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AmazonMetricsBundleInfo CompetitorMetrics { get; set; }
 
         /// <summary>
         /// metrics for all keywords of the product
-        /// <br/>full overview of ranking data relevant to all keywords that the provided asin is ranking for
+        /// <br/>full overview of ranking data relevant to all keywords that the provided <c>asin</c> is ranking for
         /// </summary>
         [JsonProperty("full_metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AmazonMetricsBundleInfo FullMetrics { get; set; }

@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// price currency
-        /// <br/>USD is applied by default, unless specified in the POST array
+        /// <br/><c>USD</c> is applied by default, unless specified in the POST array
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
@@ -50,8 +50,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates a paid hotel listing
-        /// <br/>if true, related hotel_search_item is a paid ad
-        /// <br/>if false, related hotel_search_item is an organic hotel listing
+        /// <br/>if <c>true</c>, related <c>hotel_search_item</c> is a paid ad
+        /// <br/>if <c>false</c>, related <c>hotel_search_item</c> is an organic hotel listing
         /// </summary>
         [JsonProperty("is_paid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsPaid { get; set; }

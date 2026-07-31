@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -31,19 +31,19 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the review in SERP
-        /// <br/>can take the following values: right
+        /// <br/>can take the following values: <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
 
         /// <summary>
-        /// indicates whether the review has the “Verified Purchase” mark
+        /// indicates whether the review has the 'Verified Purchase' mark
         /// </summary>
         [JsonProperty("verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Verified { get; set; }
@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// helpful votes count
-        /// <br/>number of users who clicked on the ‘Helpful” button under the review text
+        /// <br/>number of users who clicked on the 'Helpful' button under the review text
         /// </summary>
         [JsonProperty("helpful_votes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HelpfulVotes { get; set; }
@@ -84,10 +84,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
-
-        /// <summary>
-        /// URL to the reviewer’s profile
-        /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
@@ -101,7 +97,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the review was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("publication_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PublicationDate { get; set; }

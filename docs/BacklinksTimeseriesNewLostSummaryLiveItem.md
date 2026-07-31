@@ -6,10 +6,10 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Date** | **string** | date and time when the data for the target was stored<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**NewBacklinks** | **long?** | number of new backlinks<br>number of new backlinks pointing to the target |[optional]|
-**LostBacklinks** | **long?** | number of lost backlinks<br>number of lost backlinks of the target |[optional]|
-**NewReferringDomains** | **long?** | number of new referring domains<br>number of new referring domains pointing to the target |[optional]|
-**LostReferringDomains** | **long?** | number of lost referring domains<br>number of lost referring domains of the target |[optional]|
-**NewReferringMainDomains** | **long?** | number of new referring main domains<br>number of new referring main domains pointing to the target |[optional]|
-**LostReferringMainDomains** | **long?** | number of lost referring main domains<br>number of lost referring main domains of the target |[optional]|
+**Date** | **string** | <em>date and time when the data for the target was stored</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**NewBacklinks** | **long?** | <em>number of new backlinks</code></em><br>number of new backlinks pointing to the <code>target</code> |[optional]|
+**LostBacklinks** | **long?** | <em>number of lost backlinks</code></em><br>number of lost backlinks of the <code>target</code> |[optional]|
+**NewReferringDomains** | **long?** | <em>number of new referring domains</code></em><br>number of new referring domains pointing to the <code>target</code> |[optional]|
+**LostReferringDomains** | **long?** | <em>number of lost referring domains</code></em><br>number of lost referring domains of the <code>target</code> |[optional]|
+**NewReferringMainDomains** | **long?** | <em>number of new referring main domains</code></em><br>number of new referring main domains pointing to the <code>target</code> |[optional]|
+**LostReferringMainDomains** | **long?** | <em>number of lost referring main domains</code></em><br>number of lost referring main domains of the <code>target</code> |[optional]|

@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// price currency
-        /// <br/>USD is applied by default, unless specified in the POST array
+        /// <br/><c>USD</c> is applied by default, unless specified in the POST array
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// check-in date and time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("check_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckIn { get; set; }
@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
         /// check-out date and time
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("check_out", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckOut { get; set; }
@@ -60,8 +60,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// encountered item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: hotel_search_item
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>hotel_search_item</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HotelPriceItemInfo> Items { get; set; }

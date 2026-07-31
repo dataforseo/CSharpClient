@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataGoogleAppListingsCategoriesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataGoogleAppListingsCategoriesResultInfo>** | <em>array of results</em> |[optional]|

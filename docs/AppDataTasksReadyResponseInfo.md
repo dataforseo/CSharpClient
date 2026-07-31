@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppDataTasksReadyTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppDataTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

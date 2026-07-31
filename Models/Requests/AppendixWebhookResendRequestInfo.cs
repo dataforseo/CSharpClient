@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// task identifier
-        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>unique task identifier in our system in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// <br/>you can specify up to 100 identifiers;
         /// <br/>each identifier in the task array must be specified as a separate object
         /// </summary>

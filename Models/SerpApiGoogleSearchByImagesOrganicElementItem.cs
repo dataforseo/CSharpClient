@@ -69,6 +69,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("is_web_story", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsWebStory { get; set; }
+        [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Checks { get; set; }
 
         /// <summary>
         /// description of the results element in SERP

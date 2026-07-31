@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BusinessDataTripadvisorReviewsTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BusinessDataTripadvisorReviewsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

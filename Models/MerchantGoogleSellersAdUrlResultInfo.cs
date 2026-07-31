@@ -23,7 +23,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URLs where the link from Google Shopping redirects before reaching a final URL
-        /// <br/>includes up to 10 URLs of the ad’s redirect path to the seller’s ad_url
+        /// <br/>includes up to 10 URLs of the ad's redirect path to the seller's <c>ad_url</c>
         /// </summary>
         [JsonProperty("ad_url_redirects", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> AdUrlRedirects { get; set; }

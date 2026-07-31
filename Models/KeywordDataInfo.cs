@@ -52,8 +52,7 @@ namespace DataForSeo.Client.Models
         public KeywordInfoNormalizedWithInfo KeywordInfoNormalizedWithClickstream { get; set; }
 
         /// <summary>
-        /// clickstream data for the returned keyword
-        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true
+        /// clickstream data for the returned keywordto retrieve results for this field, the parameter include_clickstream_data must be set to true
         /// </summary>
         [JsonProperty("clickstream_keyword_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ClickstreamKeywordInfo ClickstreamKeywordInfo { get; set; }
@@ -65,22 +64,19 @@ namespace DataForSeo.Client.Models
         public KeywordProperties KeywordProperties { get; set; }
 
         /// <summary>
-        /// SERP data
-        /// <br/>the value will be null if you didn’t set the field include_serp_info to true in the POST array or if there is no SERP data for this keyword in our database
+        /// SERP datathe value will be null if you didn't set the field include_serp_info to true in the POST array or if there is no SERP data for this keyword in our database
         /// </summary>
         [JsonProperty("serp_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SerpInfo SerpInfo { get; set; }
 
         /// <summary>
-        /// backlink data for the returned keyword
-        /// <br/>this object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 webpages ranking organically for the keyword
+        /// backlink data for the returned keywordthis object provides the average number of backlinks, referring pages and domains, as well as the average rank values among the top-10 webpages ranking organically for the keyword
         /// </summary>
         [JsonProperty("avg_backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AvgBacklinksInfo AvgBacklinksInfo { get; set; }
 
         /// <summary>
-        /// search intent info for the returned keyword
-        /// <br/>learn about search intent in this help center article
+        /// search intent info for the returned keywordlearn about search intent in this help center article
         /// </summary>
         [JsonProperty("search_intent_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SearchIntentInfo SearchIntentInfo { get; set; }

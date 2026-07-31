@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBaiduOrganicTasksFixedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBaiduOrganicTasksFixedResultInfo>** | <em>array of results</em> |[optional]|

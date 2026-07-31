@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleOrganicTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleOrganicTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

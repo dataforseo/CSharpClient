@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo>** | <em>array of results</em> |[optional]|

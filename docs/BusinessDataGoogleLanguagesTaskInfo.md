@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataGoogleLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

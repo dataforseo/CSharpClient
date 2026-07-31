@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataGoogleLocationsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataGoogleLocationsResultInfo>** | <em>array of results</em> |[optional]|

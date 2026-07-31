@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
@@ -72,16 +72,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
-
-        /// <summary>
-        /// indicates whether the app is free
-        /// </summary>
         [JsonProperty("is_free", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsFree { get; set; }
-
-        /// <summary>
-        /// price of the app
-        /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantAmazonAsinTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantAmazonAsinTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

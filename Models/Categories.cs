@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product category URL
-        /// <br/>indicates the browse path on Amazon with the unique browse node ID (product category ID on Amazon)
+        /// <br/>indicates the <see href="https://sellercentral.amazon.com/gp/help/external/G1661?language=en_US">browse path on Amazon</see> with the unique browse node ID (product category ID on Amazon)
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }

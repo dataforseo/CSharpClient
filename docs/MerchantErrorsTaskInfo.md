@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantErrorsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantErrorsResultInfo>** | <em>array of results</em> |[optional]|

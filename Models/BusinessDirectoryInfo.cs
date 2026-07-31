@@ -18,8 +18,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// encountered item types
-        /// <br/>types of search engine results encountered in the items array;
-        /// <br/>possible item types: google_business_info
+        /// <br/>types of search engine results encountered in the <c>items</c> array;
+        /// <br/>possible item types: <c>google_business_info</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MapsSearch> Items { get; set; }

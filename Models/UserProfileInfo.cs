@@ -8,16 +8,8 @@ namespace DataForSeo.Client.Models
 
     public class UserProfileInfo 
     {
-
-        /// <summary>
-        /// the name of the reviewer
-        /// </summary>
         [JsonProperty("name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Name { get; set; }
-
-        /// <summary>
-        /// URL to the profile picture of the reviewer
-        /// </summary>
         [JsonProperty("avatar", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Avatar { get; set; }
 
@@ -26,16 +18,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
-
-        /// <summary>
-        /// total number of reviews submitted by the reviewer
-        /// </summary>
         [JsonProperty("reviews_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ReviewsCount { get; set; }
-
-        /// <summary>
-        /// country of the reviewer
-        /// </summary>
         [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Locations { get; set; }
 

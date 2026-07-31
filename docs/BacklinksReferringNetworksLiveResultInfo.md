@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Target** | **string** | target in a POST array |[optional]|
-**TotalCount** | **long?** | total number of relevant items in the database |[optional]|
-**ItemsCount** | **long?** | number of items in the items array |[optional]|
-**Items** | **IEnumerable<BacklinksReferringNetworksLiveItem>** | items array |[optional]|
+**Target** | **string** | <em><code>target</code> in a POST array</em> |[optional]|
+**TotalCount** | **long?** | <em>total number of relevant items in the database</em> |[optional]|
+**ItemsCount** | **long?** | <em>number of items in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<BacklinksReferringNetworksLiveItem>** | <em>items array</em> |[optional]|

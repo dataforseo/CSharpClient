@@ -17,8 +17,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -33,13 +33,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -71,16 +71,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// url of scholarly articles
-        /// <br/>link to the list of scholarly articles on Google Scholar
-        /// <br/>example: https://scholar.google.com/scholar?q=%2210.6084%20m9%20figshare%207427933%20v1%22
+        /// <br/>link to the list of scholarly articles on Google Scholar 
+        /// <br/>example: <c>https://scholar.google.com/scholar?q=%2210.6084%20m9%20figshare%207427933%20v1%22</c>
         /// </summary>
         [JsonProperty("scholarly_articles_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ScholarlyArticlesUrl { get; set; }
 
         /// <summary>
         /// digital identifier of an object
-        /// <br/>unique digital identifier of the dataset
-        /// <br/>example: https://doi.org/10.5061/dryad.hmgqnk9m3
+        /// <br/>unique digital identifier of the dataset 
+        /// <br/>example: <c>https://doi.org/10.5061/dryad.hmgqnk9m3</c>
         /// </summary>
         [JsonProperty("unique_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UniqueIdentifier { get; set; }
@@ -94,8 +94,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// sitelinks
-        /// <br/>the links shown below some of Google Dataset’s search results
-        /// <br/>if there are none, equals null
+        /// <br/>the links shown below some of Google Dataset's search results
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
@@ -128,14 +128,14 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was last updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2022-11-27 02:00:00 +00:00
+        /// <br/><c>2022-11-27 02:00:00 +00:00</c>
         /// </summary>
         [JsonProperty("updated_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string UpdatedDate { get; set; }
 
         /// <summary>
         /// the list of areas covered in the dataset
-        /// <br/>for example: Africa, Global
+        /// <br/>for example: <c>Africa</c>, <c>Global</c>
         /// </summary>
         [JsonProperty("area_covered", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> AreaCovered { get; set; }

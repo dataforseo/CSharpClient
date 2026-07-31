@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BacklinksBulkReferringDomainsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BacklinksBulkReferringDomainsLiveResultInfo>** | <em>array of results</em> |[optional]|

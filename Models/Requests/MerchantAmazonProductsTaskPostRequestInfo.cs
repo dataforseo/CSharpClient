@@ -14,8 +14,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>you can specify up to 700 characters in this field
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>if you need to use the “%” character for your <c>keyword</c>, please specify it as “%25”;
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
         /// <br/>example:
-        /// <br/>https://www.amazon.com/s/?field-keywords=shoes&amp;language=en_US
+        /// <br/><c>https://www.amazon.com/s/?field-keywords=shoes&amp;language=en_US</c>
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
@@ -35,70 +35,69 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/merchant/amazon-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations with their location_name parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with their <c>location_name</c> parameters by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/locations</c>
         /// <br/>example:
-        /// <br/>HA1,England,United Kingdom
+        /// <br/><c>HA1,England,United Kingdom</c>
         /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations with their location_code parameters by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/merchant/amazon/locations
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with their <c>location_code</c> parameters by making a separate request to the
+        /// <br/><c>https://api.dataforseo.com/v3/merchant/amazon/locations</c>
         /// <br/>example:
-        /// <br/>9045969
+        /// <br/><c>9045969</c>
         /// </summary>
-        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
-        /// <br/>the minimum value for “radius”: 199.9
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,radius' format
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'radius': 199.9
         /// <br/>example:
-        /// <br/>53.476225,-2.243572,200
+        /// <br/><c>53.476225,-2.243572,200</c>
         /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages with their language_name parameters by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/merchant/amazon/languages
+        /// <br/>required field if you don't specify <c>language_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>you can receive the list of available languages with their <c>language_name</c> parameters by making a separate request to the
+        /// <br/><c>https://api.dataforseo.com/v3/merchant/amazon/languages</c>
         /// <br/>example:
-        /// <br/>English (United Kingdom)
+        /// <br/><c>English (United Kingdom)</c>
         /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
+        /// <br/>required field if you don't specify <c>language_name</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>
+        /// <br/>you can receive the list of available languages with their <c>language_code</c>_parameters by making a separate request to the <c>https://api.dataforseo.com/v3/merchant/amazon/languages</c>
         /// <br/>example:
-        /// <br/>en_GB
+        /// <br/><c>en_GB</c>
         /// </summary>
-        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -107,7 +106,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>we choose the relevant search engine domain automatically according to the location and language you specify
         /// <br/>however, you can set a custom search engine domain in this field
         /// <br/>example:
-        /// <br/>amazon.com, amazon.co.uk, amazon.fr, etc.
+        /// <br/><c>amazon.com</c>, <c>amazon.co.uk</c>, <c>amazon.fr</c>, etc.
         /// </summary>
         [JsonProperty("se_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeDomain { get; set; }
@@ -116,11 +115,11 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results to be retrieved from the Amazon results page
-        /// <br/>default value: 100
-        /// <br/>max value: 700
-        /// <br/>Your account will be billed per each SERP containing up to 100 results;
+        /// <br/>default value: <c>100</c>
+        /// <br/>max value: <c>700</c>
+        /// <br/>Your account will be billed per each SERP containing up to 100 results; 
         /// <br/>Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/merchant/amazon-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
@@ -129,9 +128,9 @@ namespace DataForSeo.Client.Models.Requests
         /// page crawl limit
         /// <br/>optional field
         /// <br/>number of search results pages to crawl
-        /// <br/>max value: 7
-        /// <br/>Note: the max_crawl_pages and depth parameters complement each other;
-        /// <br/>learn more at our help center
+        /// <br/>max value: <c>7</c>
+        /// <br/>Note: the <c>max_crawl_pages</c> and <c>depth</c> parameters complement each other;
+        /// <br/>learn more at <see href="https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work">our help center</see>
         /// </summary>
         [JsonProperty("max_crawl_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? MaxCrawlPages { get; set; }
@@ -140,7 +139,7 @@ namespace DataForSeo.Client.Models.Requests
         /// amazon product department
         /// <br/>optional field
         /// <br/>specify one of the following amazon departments for extracting product listings:
-        /// <br/>'Arts &amp; Crafts', 'Automotive', 'Baby', 'Beauty &amp; Personal Care', 'Books', 'Computers', 'Digital Music', 'Electronics', 'Kindle Store', 'Prime Video', 'Women's Fashion', 'Men's Fashion', 'Girls' Fashion', 'Boys' Fashion', 'Deals', 'Health &amp; Household', 'Home &amp; Kitchen', 'Industrial &amp; Scientific', 'Luggage', 'Movies &amp; TV', 'Music, CDs &amp; Vinyl', 'Pet Supplies', 'Software', 'Sports &amp; Outdoors', 'Tools &amp; Home Improvement', 'Toys &amp; Games', 'Video Games'
+        /// <br/><c>'Arts &amp; Crafts'</c>, <c>'Automotive'</c>, <c>'Baby'</c>, <c>'Beauty &amp; Personal Care'</c>, <c>'Books'</c>, <c>'Computers'</c>, <c>'Digital Music'</c>, <c>'Electronics'</c>, <c>'Kindle Store'</c>, <c>'Prime Video'</c>, <c>'Women's Fashion'</c>, <c>'Men's Fashion'</c>, <c>'Girls' Fashion'</c>, <c>'Boys' Fashion'</c>, <c>'Deals'</c>, <c>'Health &amp; Household'</c>, <c>'Home &amp; Kitchen'</c>, <c>'Industrial &amp; Scientific'</c>, <c>'Luggage'</c>, <c>'Movies &amp; TV'</c>, <c>'Music, CDs &amp; Vinyl'</c>, <c>'Pet Supplies'</c>, <c>'Software'</c>, <c>'Sports &amp; Outdoors'</c>, <c>'Tools &amp; Home Improvement'</c>, <c>'Toys &amp; Games'</c>, <c>'Video Games'</c>
         /// </summary>
         [JsonProperty("department", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Department { get; set; }
@@ -150,15 +149,15 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use the following Amazon search URL parameters for customizing the search
         /// <br/>example:
-        /// <br/>&amp;low-price=52 – search for products that cost more than 52 USD;
-        /// <br/>&amp;high-price=45 – search for products that cost less than 45 USD;
-        /// <br/>&amp;sort=relevancerank – sort results by relevance;
-        /// <br/>&amp;sort=featured-rank – sort results by featured products;
-        /// <br/>&amp;sort=price-asc-rank – sort by ascending price;
-        /// <br/>&amp;sort=price-desc-rank – sort by descending price;
-        /// <br/>&amp;sort=review-rank – sort by the average customer reviews value;
-        /// <br/>&amp;sort=date-desc-rank – sort by the newest arrival
-        /// <br/>Note that search_param values will be ignored if any of the following parameters is used: price_min, price_max, sort_by
+        /// <br/><c>&amp;low-price=52</c> - search for products that cost more than 52 USD;
+        /// <br/><c>&amp;high-price=45</c> - search for products that cost less than 45 USD;
+        /// <br/><c>&amp;sort=relevancerank</c> - sort results by relevance;
+        /// <br/><c>&amp;sort=featured-rank</c> - sort results by featured products;
+        /// <br/><c>&amp;sort=price-asc-rank</c> - sort by ascending price;
+        /// <br/><c>&amp;sort=price-desc-rank</c> - sort by descending price;
+        /// <br/><c>&amp;sort=review-rank</c> - sort by the average customer reviews value;
+        /// <br/><c>&amp;sort=date-desc-rank</c> - sort by the newest arrival
+        /// <br/>Note that <c>search_param</c> values will be ignored if any of the following parameters is used: <c>price_min</c>, <c>price_max</c>, <c>sort_by</c>
         /// </summary>
         [JsonProperty("search_param", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchParam { get; set; }
@@ -168,8 +167,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>minimum price of the returned products listed on Amazon for the specified query
         /// <br/>example:
-        /// <br/>5
-        /// <br/>Note: if you specify price_min, the search_param parameter will be ignored
+        /// <br/><c>5</c>
+        /// <br/>Note: if you specify <c>price_min</c>, the <c>search_param</c> parameter will be ignored
         /// </summary>
         [JsonProperty("price_min", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PriceMin { get; set; }
@@ -179,8 +178,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>maximum price of the returned products listed on Amazon for the specified query
         /// <br/>example:
-        /// <br/>100
-        /// <br/>Note: if you specify price_max, the search_param parameter will be ignored
+        /// <br/><c>100</c>
+        /// <br/>Note: if you specify <c>price_max</c>, the <c>search_param</c> parameter will be ignored
         /// </summary>
         [JsonProperty("price_max", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? PriceMax { get; set; }
@@ -189,10 +188,10 @@ namespace DataForSeo.Client.Models.Requests
         /// results sorting rules
         /// <br/>optional field
         /// <br/>the following sorting rules are supported:
-        /// <br/>relevance, price_low_to_high, price_high_to_low, featured, avg_customer_review, newest_arrival
+        /// <br/><c>relevance</c>, <c>price_low_to_high</c>, <c>price_high_to_low</c>, <c>featured</c>, <c>avg_customer_review</c>, <c>newest_arrival</c>
         /// <br/>example:
-        /// <br/>sort_by:'relevance'
-        /// <br/>Note: if you specify sort_by, the search_param parameter will be ignored
+        /// <br/><c>sort_by:'relevance'</c>
+        /// <br/>Note: if you specify <c>sort_by</c>, the <c>search_param</c> parameter will be ignored
         /// </summary>
         [JsonProperty("sort_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SortBy { get; set; }
@@ -202,7 +201,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -210,39 +209,39 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// URL for sending task results
         /// <br/>optional field
-        /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/postbackscript?id=$id
-        /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in postback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
 
         /// <summary>
         /// postback_url datatype
-        /// <br/>required field if you specify postback_url
+        /// <br/>required field if you specify <c>postback_url</c>
         /// <br/>corresponds to the datatype that will be sent to your server
         /// <br/>possible values:
-        /// <br/>advanced, html
+        /// <br/><c>advanced</c>, <c>html</c>
         /// </summary>
-        [JsonProperty("postback_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("postback_data", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackData { get; set; }
 
         /// <summary>
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

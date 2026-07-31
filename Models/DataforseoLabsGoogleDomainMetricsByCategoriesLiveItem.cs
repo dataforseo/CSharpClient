@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, IDictionary<string, DataforseoLabsMetricsInfo>> MetricsHistory { get; set; }
 
         /// <summary>
-        /// metrics difference between first_date and second_date
+        /// metrics difference between <c>first_date</c> and <c>second_date</c>
         /// <br/>calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date
         /// </summary>
         [JsonProperty("metrics_difference", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -16,24 +16,19 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// main search intent
-        /// <br/>possible values: informational, navigational, commercial, transactional
+        /// main search intentpossible values: informational, navigational, commercial, transactional
         /// </summary>
         [JsonProperty("main_intent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MainIntent { get; set; }
 
         /// <summary>
-        /// supplementary search intents
-        /// <br/>possible values: informational, navigational, commercial, transactional
+        /// supplementary search intentspossible values: informational, navigational, commercial, transactional
         /// </summary>
         [JsonProperty("foreign_intent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ForeignIntent { get; set; }
 
         /// <summary>
-        /// date and time when keyword data was updated
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("last_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpYahooLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpYahooLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

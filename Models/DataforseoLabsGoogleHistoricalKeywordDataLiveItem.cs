@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }

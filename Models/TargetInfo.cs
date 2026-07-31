@@ -28,28 +28,28 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> PlatformType { get; set; }
 
         /// <summary>
-        /// IP address of the target
+        /// IP address of the <c>target</c>
         /// </summary>
         [JsonProperty("ip_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string IpAddress { get; set; }
 
         /// <summary>
-        /// country code that the target domain is determined to belong to
+        /// country code that the <c>target</c> domain is determined to belong to
         /// </summary>
         [JsonProperty("country", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Country { get; set; }
 
         /// <summary>
-        /// indicates if the target is IP
-        /// <br/>if true, the domain, subdomain or webpage functions as an IP address and does not have a domain name
+        /// indicates if the <c>target</c> is IP
+        /// <br/>if <c>true</c>, the domain, subdomain or webpage functions as an IP address and does not have a domain name
         /// </summary>
         [JsonProperty("is_ip", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsIp { get; set; }
 
         /// <summary>
-        /// spam score of the target
-        /// <br/>if the target is a domain/subdomain, this fields indicates the average spam score of all pages of that domain/subdomain;
-        /// <br/>learn more about how the metric is calculated on this help center page
+        /// spam score of the <c>target</c>
+        /// <br/>if the <c>target</c> is a domain/subdomain, this fields indicates the average spam score of all pages of that domain/subdomain;
+        /// <br/>learn more about how the metric is calculated on <see href="https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated">this help center page</see>
         /// </summary>
         [JsonProperty("target_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TargetSpamScore { get; set; }

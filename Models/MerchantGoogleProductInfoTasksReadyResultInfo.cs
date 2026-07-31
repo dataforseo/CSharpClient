@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// task identifier of the completed task
-        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>unique task identifier in our system in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// type of search engine
-        /// <br/>can take the following values: shopping_specifications
+        /// <br/>can take the following values: <c>shopping_specifications</c>
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -34,10 +34,6 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("date_posted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DatePosted { get; set; }
-
-        /// <summary>
-        /// user-defined task identifier
-        /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
 
@@ -49,7 +45,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL for collecting the results of the Google Shopping Product Specifications HTML task
-        /// <br/>note: HTML is not available for this endpoint, the value will be null
+        /// <br/>note: HTML is not available for this endpoint, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointHtml { get; set; }

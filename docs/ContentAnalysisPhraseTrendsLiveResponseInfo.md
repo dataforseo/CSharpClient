@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<ContentAnalysisPhraseTrendsLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<ContentAnalysisPhraseTrendsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

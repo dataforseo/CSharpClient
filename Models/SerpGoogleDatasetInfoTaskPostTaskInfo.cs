@@ -8,8 +8,13 @@ namespace DataForSeo.Client.Models
 
     public class SerpGoogleDatasetInfoTaskPostTaskInfo  : BaseResponseTaskInfo 
     {
+
+        /// <summary>
+        /// array of results
+        /// <br/>in this case, the value will be <c>null</c>
+        /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Result { get; set; }
+        public object Result { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

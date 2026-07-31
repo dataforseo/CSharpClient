@@ -12,37 +12,37 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// domain, subdomain or webpage to get data for
         /// <br/>required field
-        /// <br/>a domain or a subdomain should be specified without https:// and www.
-        /// <br/>a page should be specified with absolute URL (including http:// or https://)
+        /// <br/>a domain or a subdomain should be specified without <c>https://</c> and <c>www.</c>
+        /// <br/>a page should be specified with absolute URL (including <c>http://</c> or <c>https://</c>)
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
 
         /// <summary>
-        /// indicates if the subdomains of the target will be included in the search
+        /// indicates if the subdomains of the <c>target</c> will be included in the search
         /// <br/>optional field
-        /// <br/>if set to false, the subdomains will be ignored
-        /// <br/>default value: true
+        /// <br/>if set to <c>false</c>, the subdomains will be ignored
+        /// <br/>default value: <c>true</c>
         /// </summary>
         [JsonProperty("include_subdomains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeSubdomains { get; set; }
 
         /// <summary>
-        /// indicates if indirect links to the target will be included in the results
+        /// indicates if indirect links to the <c>target</c> will be included in the results
         /// <br/>optional field
-        /// <br/>if set to true, the results will include data on indirect links pointing to a page that either redirects to the target, or points to a canonical page
-        /// <br/>if set to false, indirect links will be ignored
-        /// <br/>default value: true
+        /// <br/>if set to <c>true</c>, the results will include data on indirect links pointing to a page that either redirects to the target, or points to a canonical page
+        /// <br/>if set to <c>false</c>, indirect links will be ignored
+        /// <br/>default value: <c>true</c>
         /// </summary>
         [JsonProperty("include_indirect_links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeIndirectLinks { get; set; }
 
         /// <summary>
-        /// indicates if internal backlinks from subdomains to the target will be excluded from the results
+        /// indicates if internal backlinks from subdomains to the <c>target</c> will be excluded from the results
         /// <br/>optional field
-        /// <br/>if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target
-        /// <br/>if set to false, internal links will be included in the results
-        /// <br/>default value: true
+        /// <br/>if set to <c>true</c>, the results will not include data on internal backlinks from subdomains of the same domain as <c>target</c>
+        /// <br/>if set to <c>false</c>, internal links will be included in the results
+        /// <br/>default value: <c>true</c>
         /// </summary>
         [JsonProperty("exclude_internal_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? ExcludeInternalBacklinks { get; set; }
@@ -51,13 +51,13 @@ namespace DataForSeo.Client.Models.Requests
         /// maximum number of elements within internal arrays
         /// <br/>optional field
         /// <br/>you can use this field to limit the number of elements within the following arrays:
-        /// <br/>referring_links_tld
-        /// <br/>referring_links_types
-        /// <br/>referring_links_attributes
-        /// <br/>referring_links_platform_types
-        /// <br/>referring_links_semantic_locations
-        /// <br/>default value: 10
-        /// <br/>maximum value: 1000
+        /// <br/><c>referring_links_tld</c>
+        /// <br/><c>referring_links_types</c>
+        /// <br/><c>referring_links_attributes</c>
+        /// <br/><c>referring_links_platform_types</c>
+        /// <br/><c>referring_links_semantic_locations</c>
+        /// <br/>default value: <c>10</c>
+        /// <br/>maximum value: <c>1000</c>
         /// </summary>
         [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }
@@ -65,37 +65,37 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// set what backlinks to return and count
         /// <br/>optional field
-        /// <br/>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your target;
-        /// <br/>possible values:
-        /// <br/>all – all backlinks will be returned and counted;
-        /// <br/>live – backlinks found during the last check will be returned and counted;
-        /// <br/>lost – lost backlinks will be returned and counted;
-        /// <br/>default value: live
+        /// <br/>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your <c>target</c>;
+        /// <br/>possible values: 
+        /// <br/><c>all</c> - all backlinks will be returned and counted;
+        /// <br/><c>live</c> - backlinks found during the last check will be returned and counted;
+        /// <br/><c>lost</c> - lost backlinks will be returned and counted;
+        /// <br/>default value: <c>live</c>
         /// </summary>
         [JsonProperty("backlinks_status_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BacklinksStatusType { get; set; }
 
         /// <summary>
-        /// filter the backlinks of your target
+        /// filter the backlinks of your <c>target</c>
         /// <br/>optional field
-        /// <br/>you can use this field to filter the initial backlinks that will be included in the dataset for aggregated metrics for your target
-        /// <br/>you can filter the backlinks by all fields available in the response of this endpoint
+        /// <br/>you can use this field to filter the initial backlinks that will be included in the dataset for aggregated metrics for your <c>target</c>
+        /// <br/>you can filter the backlinks by all fields available in the response of <see href="/v3/backlinks/backlinks/live">this endpoint</see>
         /// <br/>using this parameter, you can include only dofollow backlinks in the response and create a flexible backlinks dataset to calculate the metrics for
         /// <br/>example:
-        /// <br/>'backlinks_filters': ['dofollow', '=', true]
+        /// <br/><c>'backlinks_filters': ['dofollow', '=', true]</c>
         /// </summary>
         [JsonProperty("backlinks_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> BacklinksFilters { get; set; }
 
         /// <summary>
-        /// defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
+        /// defines the scale used for calculating and displaying the <c>rank</c>, <c>domain_from_rank</c>, and <c>page_from_rank</c> values
         /// <br/>optional field
         /// <br/>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
         /// <br/>possible values:
-        /// <br/>one_hundred — rank values are displayed on a 0–100 scale
-        /// <br/>one_thousand — rank values are displayed on a 0–1000 scale
-        /// <br/>default value: one_thousand
-        /// <br/>learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+        /// <br/><c>one_hundred</c> — rank values are displayed on a 0–100 scale
+        /// <br/><c>one_thousand</c> — rank values are displayed on a 0–1000 scale
+        /// <br/>default value: <c>one_thousand</c>
+        /// <br/>learn more about how this parameter works and how ranking metrics are calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale">this Help Center article</see>
         /// </summary>
         [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
@@ -105,7 +105,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

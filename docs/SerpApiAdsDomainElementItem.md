@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Domain** | **string** | domain in SERP |[optional]|
+**Domain** | **string** | <em>domain in SERP</em> |[optional]|

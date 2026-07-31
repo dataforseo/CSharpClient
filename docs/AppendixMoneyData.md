@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Total** | **double?** | total amount of money deposited to your account |[optional]|
-**Balance** | **double?** | amount of money left in your account |[optional]|
-**Limits** | **AppendixLimitsMoneyData** | cost limits |[optional]|
-**Statistics** | **AppendixStatisticsDataInfo** | statistics of your spending |[optional]|
+**Total** | **double?** | <em>total amount of money deposited to your account</em> |[optional]|
+**Balance** | **double?** | <em>amount of money left in your account</em> |[optional]|
+**Limits** | **AppendixLimitsMoneyData** | <em>cost limits</em> |[optional]|
+**Statistics** | **AppendixStatisticsDataInfo** | <em>statistics of your spending</em> |[optional]|

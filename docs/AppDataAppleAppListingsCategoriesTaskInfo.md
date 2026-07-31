@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataAppleAppListingsCategoriesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataAppleAppListingsCategoriesResultInfo>** | <em>array of results</em> |[optional]|

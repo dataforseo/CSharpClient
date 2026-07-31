@@ -11,14 +11,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search intent name
-        /// <br/>possible values: informational, navigational, commercial, transactional
+        /// <br/>possible values: <c>informational</c>, <c>navigational</c>, <c>commercial</c>, <c>transactional</c>
         /// </summary>
         [JsonProperty("label", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Label { get; set; }
 
         /// <summary>
         /// search intent probability
-        /// <br/>1 indicates the highest probability
+        /// <br/><c>1</c> indicates the highest probability
         /// </summary>
         [JsonProperty("probability", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Probability { get; set; }

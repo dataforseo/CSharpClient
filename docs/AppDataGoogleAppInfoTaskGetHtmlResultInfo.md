@@ -5,11 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**AppId** | **string** | application ID received in a POST request |[optional]|
+**AppId** | **string** | <em>application ID received in a POST request</em> |[optional]|
 **Type** | **string** | type of element |[optional]|
-**SeDomain** | **string** | search engine domain in a POST array |[optional]|
-**LocationCode** | **int?** | location code in a POST array |[optional]|
-**LanguageCode** | **string** | language code in a POST array |[optional]|
-**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<HtmlItemInfo>** | HTML pages and related data |[optional]|
+**SeDomain** | **string** | <em>search engine domain in a POST array</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em> |[optional]|
+**Datetime** | **string** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <strong><code>items</code></strong> array</em> |[optional]|
+**Items** | **IEnumerable<HtmlItemInfo>** | <em>HTML pages and related data</em> |[optional]|

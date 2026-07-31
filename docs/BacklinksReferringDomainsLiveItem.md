@@ -6,25 +6,25 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Domain** | **string** | referring domain |[optional]|
-**Rank** | **int?** | domain rank<br>rank volume that a referring website passes to the target<br>rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in this help center article |[optional]|
-**Backlinks** | **long?** | indicates the number of backlinks pointing to the target |[optional]|
-**FirstSeen** | **string** | date and time when our crawler found the backlink for the first time<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**LostDate** | **string** | date and time when the last backlink from this domain was lost<br>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2017-01-24 13:20:59 +00:00 |[optional]|
-**BacklinksSpamScore** | **long?** | average spam score of all backlinks pointing to the domain<br>learn more about how the metric is calculated on this help center page |[optional]|
-**BrokenBacklinks** | **long?** | number of broken backlinks<br>number of broken backlinks pointing to the domain |[optional]|
-**BrokenPages** | **int?** | number of broken pages<br>number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to |[optional]|
-**ReferringDomains** | **long?** | indicates the number of referring domains<br>note that we calculate main domains (root domains, like example.com) and their subdomains (e.g. blog.example.com) separately for this metric |[optional]|
-**ReferringDomainsNofollow** | **long?** | number of domains pointing at least one nofollow link to the target |[optional]|
-**ReferringMainDomains** | **long?** | indicates the number of referring main domains<br>the number of primary (root) domains referring to your target |[optional]|
-**ReferringMainDomainsNofollow** | **long?** | number of main domains pointing at least one nofollow link to the target |[optional]|
-**ReferringIps** | **long?** | number of referring IP addresses<br>number of IP addresses pointing to this page |[optional]|
-**ReferringSubnets** | **long?** | number of referring subnetworks |[optional]|
-**ReferringPages** | **long?** | indicates the number of pages pointing to the target specified |[optional]|
-**ReferringPagesNofollow** | **long?** | number of referring pages pointing at least one nofollow link to the target |[optional]|
-**ReferringLinksTld** | **IDictionary<string, long?>** | top-level domains of the referring links<br>contains top level domains and referring link count per each |[optional]|
-**ReferringLinksTypes** | **IDictionary<string, long?>** | types of referring links<br>indicates the types of the referring links and link count per each type<br>possible values:<br>anchor, image, link, meta, canonical, alternate, redirect |[optional]|
-**ReferringLinksAttributes** | **IDictionary<string, long?>** | link attributes of the referring links<br>indicates link attributes of the referring links and link count per each attribute |[optional]|
-**ReferringLinksPlatformTypes** | **IDictionary<string, long?>** | types of referring platforms<br>indicates referring platform types and link count per each platform<br>possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization |[optional]|
-**ReferringLinksSemanticLocations** | **IDictionary<string, long?>** | semantic locations of the referring links<br>indicates semantic elements in HTML where the referring links are located and the link count per each semantic location<br>you can get the full list of semantic elements here<br>examples:<br>article, section, summary |[optional]|
-**ReferringLinksCountries** | **IDictionary<string, long?>** | ISO country codes of the referring links<br>indicates ISO country codes of the domains where the referring links are located and the link count per each country |[optional]|
+**Domain** | **string** | <em>referring domain</em> |[optional]|
+**Rank** | **int?** | <em>domain rank</em><br>rank volume that a referring website passes to the <code>target</code><br><code>rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a> |[optional]|
+**Backlinks** | **long?** | <em>indicates the number of backlinks pointing to the <code>target</code></em> |[optional]|
+**FirstSeen** | **string** | <em>date and time when our crawler found the backlink for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**LostDate** | **string** | <em>date and time when the last backlink from this domain was lost</em><br>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2017-01-24 13:20:59 +00:00</code> |[optional]|
+**BacklinksSpamScore** | **long?** | <em>average spam score of all backlinks pointing to the domain</em><br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a> |[optional]|
+**BrokenBacklinks** | **long?** | <em>number of broken backlinks</em><br>number of broken backlinks pointing to the domain |[optional]|
+**BrokenPages** | **int?** | <em>number of broken pages</em><br>number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to |[optional]|
+**ReferringDomains** | **long?** | <em>indicates the number of referring domains</em><br>note that we calculate main domains (root domains, like <code>example.com</code>) and their subdomains (e.g. <code>blog.example.com</code>) separately for this metric |[optional]|
+**ReferringDomainsNofollow** | **long?** | <em>number of domains pointing at least one nofollow link to the <code>target</code></em> |[optional]|
+**ReferringMainDomains** | **long?** | <em>indicates the number of referring main domains</em><br>the number of primary (root) domains referring to your target |[optional]|
+**ReferringMainDomainsNofollow** | **long?** | <em>number of main domains pointing at least one nofollow link to the <code>target</code></em> |[optional]|
+**ReferringIps** | **long?** | <em>number of referring IP addresses</em><br>number of IP addresses pointing to this page |[optional]|
+**ReferringSubnets** | **long?** | <em>number of referring subnetworks</em> |[optional]|
+**ReferringPages** | **long?** | <em>indicates the number of pages pointing to the <code>target</code> specified</em> |[optional]|
+**ReferringPagesNofollow** | **long?** | <em>number of referring pages pointing at least one nofollow link to the <code>target</code></em> |[optional]|
+**ReferringLinksTld** | **IDictionary<string, long?>** | <em>top-level domains of the referring links</em><br>contains top level domains and referring link count per each |[optional]|
+**ReferringLinksTypes** | **IDictionary<string, long?>** | <em>types of referring links</em><br>indicates the types of the referring links and link count per each type<br>possible values:<br><code>anchor</code>, <code>image</code>, <code>link</code>, <code>meta</code>, <code>canonical</code>, <code>alternate</code>, <code>redirect</code> |[optional]|
+**ReferringLinksAttributes** | **IDictionary<string, long?>** | <em>link attributes of the referring links</em><br>indicates link attributes of the referring links and link count per each attribute |[optional]|
+**ReferringLinksPlatformTypes** | **IDictionary<string, long?>** | <em>types of referring platforms</em><br>indicates referring platform types and link count per each platform<p>possible values: <code>cms</code>, <code>blogs</code>, <code>ecommerce</code>, <code>message-boards</code>, <code>wikis</code>, <code>news</code>, <code>organization</code> |[optional]|
+**ReferringLinksSemanticLocations** | **IDictionary<string, long?>** | <em>semantic locations of the referring links</em><br>indicates semantic elements in HTML where the referring links are located and the link count per each semantic location<p>you can get the full list of semantic elements <a href='https://www.w3schools.com/html/html5_semantic_elements.asp' target='_blank' rel='noopener noreferrer'>here</a><br>examples:<br><code>article</code>, <code>section</code>, <code>summary</code> |[optional]|
+**ReferringLinksCountries** | **IDictionary<string, long?>** | <em>ISO country codes of the referring links</em><br>indicates ISO country codes of the domains where the referring links are located and the link count per each country |[optional]|

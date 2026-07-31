@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<ContentAnalysisRatingDistributionLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<ContentAnalysisRatingDistributionLiveResultInfo>** | <em>array of results</em> |[optional]|

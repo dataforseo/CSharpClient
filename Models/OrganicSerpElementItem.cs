@@ -76,33 +76,52 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the element contains an image
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
 
         /// <summary>
         /// indicates whether the element contains a video
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVideo { get; set; }
 
         /// <summary>
         /// indicates whether the element is a featured_snippet
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_featured_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsFeaturedSnippet { get; set; }
 
         /// <summary>
         /// indicates whether the element is marked as malicious
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_malicious", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsMalicious { get; set; }
 
         /// <summary>
         /// indicates whether the element is marked as Google web story
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_web_story", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsWebStory { get; set; }
+
+        /// <summary>
+        /// array of properties detected for the SERP element
+        /// <br/>lists the properties that are true for this element
+        /// <br/>each value in the array represents a detected property
+        /// <br/>example:
+        /// <br/>if is_image is present in the array, the element contains an image
+        /// <br/>possible values in the array:
+        /// <br/>is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
+        /// <br/>equals null if none of the properties are detected for the element
+        /// <br/>learn more about the checks array in this Help Center article
+        /// </summary>
+        [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Checks { get; set; }
 
         /// <summary>
         /// includes additional information appended before the result description in SERP

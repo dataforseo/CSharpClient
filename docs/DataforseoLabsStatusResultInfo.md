@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Google** | **DataforseoLabsStatusInfo** | update information for the Google endpoints |[optional]|
-**Bing** | **DataforseoLabsStatusInfo** | update information for the Bing endpoints |[optional]|
-**Amazon** | **DataforseoLabsStatusInfo** | update information for the Amazon endpoints |[optional]|
+**Google** | **DataforseoLabsStatusInfo** | <em>update information for the Google endpoints</em> |[optional]|
+**Bing** | **DataforseoLabsStatusInfo** | <em>update information for the Bing endpoints</em> |[optional]|
+**Amazon** | **DataforseoLabsStatusInfo** | <em>update information for the Amazon endpoints</em> |[optional]|

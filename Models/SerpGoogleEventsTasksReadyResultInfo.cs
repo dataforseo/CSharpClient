@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// task identifier of the completed task
-        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>unique task identifier in our system in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// type of search engine
-        /// <br/>example: events
+        /// <br/>example: <c>{{low_se_type_under}}</c>
         /// </summary>
         [JsonProperty("se_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SeType { get; set; }
@@ -43,21 +43,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL for collecting the results of the SERP Regular task
-        /// <br/>if SERP Regular is not supported in the specified endpoint, the value will be null
+        /// <br/>if SERP Regular is not supported in the specified endpoint, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("endpoint_regular", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointRegular { get; set; }
 
         /// <summary>
         /// URL for collecting the results of the SERP Advanced task
-        /// <br/>if SERP Advanced is not supported in the specified endpoint, the value will be null
+        /// <br/>if SERP Advanced is not supported in the specified endpoint, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("endpoint_advanced", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointAdvanced { get; set; }
 
         /// <summary>
         /// URL for collecting the results of the SERP HTML task
-        /// <br/>if SERP HTML is not supported in the specified endpoint, the value will be null
+        /// <br/>if SERP HTML is not supported in the specified endpoint, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("endpoint_html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EndpointHtml { get; set; }

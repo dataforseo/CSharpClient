@@ -42,9 +42,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when SERP data was last updated
-        /// <br/>in the ISO 8601 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”
+        /// <br/>in the <see href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</see> format: “YYYY-MM-DDThh:mm:ss.sssssssZ”
         /// <br/>example:
-        /// <br/>2023-05-23 10:16:19 +00:00
+        /// <br/><c>2023-05-23 10:16:19 +00:00</c>
         /// </summary>
         [JsonProperty("time_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TimeUpdate { get; set; }

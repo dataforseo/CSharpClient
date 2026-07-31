@@ -67,7 +67,7 @@ namespace DataForSeo.Client.Models
         /// <br/> if there is none, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public PriceInfo Price { get; set; }
+        public AiModePriceInfo Price { get; set; }
 
         /// <summary>
         /// product seller

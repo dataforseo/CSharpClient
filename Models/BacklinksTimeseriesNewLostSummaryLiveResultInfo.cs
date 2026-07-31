@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// target from a POST array
+        /// <c>target</c> from a POST array
         /// </summary>
         [JsonProperty("target", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -19,28 +19,28 @@ namespace DataForSeo.Client.Models
         /// starting date of the time range
         /// <br/>in the UTC format: “yyyy-mm-dd”
         /// <br/>example:
-        /// <br/>2019-01-01
+        /// <br/><c>2019-01-01</c>
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
         /// ending date of the time range
-        /// <br/>in the UTC format: 'yyyy-mm-dd'
+        /// <br/>in the UTC format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
-        /// group_range from the POST array
+        /// <c>group_range</c> from the POST array
         /// </summary>
         [JsonProperty("group_range", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GroupRange { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// task identifier
-        /// <br/>unique task identifier in our system in the UUID format
+        /// <br/>unique task identifier in our system in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -25,25 +25,25 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the task was made
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2023-01-15 12:57:46 +00:00
+        /// <br/><c>2023-01-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime_posted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DatetimePosted { get; set; }
 
         /// <summary>
         /// date and time when the task was completed
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2023-01-15 12:57:46 +00:00
+        /// <br/><c>2023-01-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime_done", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DatetimeDone { get; set; }
 
         /// <summary>
         /// informational message of the task
-        /// <br/>you can find the full list of general informational messages here
+        /// <br/>you can find the full list of general informational messages <see href="/v3/appendix-errors/">here</see>
         /// </summary>
         [JsonProperty("status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Status { get; set; }

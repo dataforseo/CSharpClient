@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Url** | **string** | URL of the image used in the review |[optional]|
+**Url** | **string** | <em>URL of the image used in the review</em> |[optional]|

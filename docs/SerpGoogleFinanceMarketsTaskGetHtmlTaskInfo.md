@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleFinanceMarketsTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleFinanceMarketsTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

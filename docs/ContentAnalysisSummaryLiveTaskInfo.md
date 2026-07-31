@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<ContentAnalysisSummaryInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<ContentAnalysisSummaryInfo>** | <em>array of results</em> |[optional]|

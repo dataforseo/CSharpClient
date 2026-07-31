@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         public long? Count { get; set; }
 
         /// <summary>
-        /// total search volume of the product’s ranking keywords in organic SERP
+        /// total search volume of the product's ranking keywords in organic SERP
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }

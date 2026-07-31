@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product price
-        /// <br/>product price details on the seller’s website
+        /// <br/>product price details on the seller's website
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product availability information
-        /// <br/>can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+        /// <br/>can take the following values: <c>in_stock</c>, <c>limited_stock</c>, <c>out_of_stock</c>, <c>backordered</c>, <c>pre_order_available</c>, <c>on_display_to_order</c>
         /// </summary>
         [JsonProperty("product_availability", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductAvailability { get; set; }

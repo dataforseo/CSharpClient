@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBaiduLocationsCountryResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBaiduLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

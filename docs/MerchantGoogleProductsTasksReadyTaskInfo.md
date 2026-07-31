@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantGoogleProductsTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantGoogleProductsTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

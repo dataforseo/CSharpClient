@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -32,13 +32,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in Amazon SERP
         /// <br/>possible values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -74,7 +74,7 @@ namespace DataForSeo.Client.Models
         public string DataAsin { get; set; }
 
         /// <summary>
-        /// parent ASIN of the product
+        /// <see href="https://sellercentral.amazon.com/gp/help/external/help.html?itemID=8831&amp;language=en-US&amp;ref=mpbc_200779220_cont_8831&amp;">parent ASIN</see> of the product
         /// </summary>
         [JsonProperty("parent_asin", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ParentAsin { get; set; }
@@ -88,7 +88,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the lower limit of the product price range
         /// <br/>example:
-        /// <br/>49.98
+        /// <br/><c>49.98</c>
         /// </summary>
         [JsonProperty("price_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PriceFrom { get; set; }
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the upper limit of the product price range
         /// <br/>example:
-        /// <br/>384.99
+        /// <br/><c>384.99</c>
         /// </summary>
         [JsonProperty("price_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PriceTo { get; set; }
@@ -108,16 +108,16 @@ namespace DataForSeo.Client.Models
         public string PercentageDiscount { get; set; }
 
         /// <summary>
-        /// currency in the ISO format
+        /// currency in the <see href="https://en.wikipedia.org/wiki/ISO_4217">ISO</see> format
         /// <br/>example:
-        /// <br/>USD
+        /// <br/><c>USD</c>
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
 
         /// <summary>
-        /// “Amazon’s choice” label
-        /// <br/>if the value is true, the product is marked with the “Amazon’s choice” label
+        /// 'Amazon's choice' label
+        /// <br/>if the value is <c>true</c>, the product is marked with the 'Amazon's choice' label
         /// </summary>
         [JsonProperty("is_amazon_choice", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAmazonChoice { get; set; }
@@ -136,7 +136,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether a product has an Amazon Prime Video label
-        /// <br/>if true, specified product is a part of Amazon Prime Video service
+        /// <br/>if <c>true</c>, specified product is a part of Amazon Prime Video service
         /// </summary>
         [JsonProperty("is_prime_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsPrimeVideo { get; set; }
@@ -184,8 +184,8 @@ namespace DataForSeo.Client.Models
         public string Description { get; set; }
 
         /// <summary>
-        /// indicates whether the product is available for ordering
-        /// <br/>if the value is true, the product can be ordered
+        /// indicates whether the product is <see href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201910280">available for ordering</see>
+        /// <br/>if the value is <c>true</c>, the product can be ordered
         /// </summary>
         [JsonProperty("is_available", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsAvailable { get; set; }

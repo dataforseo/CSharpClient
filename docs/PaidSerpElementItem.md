@@ -13,8 +13,9 @@
 **Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
 **Breadcrumb** | **string** | <em>breadcrumb in SERP</em> |[optional]|
 **WebsiteName** | **string** | name of the website in SERP |[optional]|
-**IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
-**IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
+**IsImage** | **bool?** | indicates whether the element contains an image<br>Note: this check no longer appears in SERP |[optional]|
+**IsVideo** | **bool?** | indicates whether the element contains a video<br>Note: this check no longer appears in SERP |[optional]|
+**Checks** | **IEnumerable<string>** | array of properties detected for the SERP element<br>lists the properties that are true for this element<br>each value in the array represents a detected property<br>example:<br>if is_image is present in the array, the element contains an image<br>possible values in the array:<br>is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited<br>equals null if none of the properties are detected for the element<br>learn more about the checks array in this Help Center article |[optional]|
 **Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
 **Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
 **Extra** | **IDictionary<string, string>** | additional information about the result |[optional]|

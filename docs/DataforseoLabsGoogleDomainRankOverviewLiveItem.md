@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**LocationCode** | **int?** | location code in a POST array |[optional]|
-**LanguageCode** | **string** | language code in a POST array |[optional]|
-**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em> |[optional]|
+**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | <em>ranking data relevant to the specified domain</em> |[optional]|

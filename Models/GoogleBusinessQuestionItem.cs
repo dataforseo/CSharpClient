@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -41,13 +41,13 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// URL of the user’s profile image
+        /// URL of the user's profile image
         /// </summary>
         [JsonProperty("profile_image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileImageUrl { get; set; }
 
         /// <summary>
-        /// URL of the user’s profile
+        /// URL of the user's profile
         /// </summary>
         [JsonProperty("profile_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileUrl { get; set; }
@@ -84,7 +84,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// array of items
-        /// <br/>items within google_business_question_item
+        /// <br/>items within <c>google_business_question_item</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleBusinessAnswerElement> Items { get; set; }

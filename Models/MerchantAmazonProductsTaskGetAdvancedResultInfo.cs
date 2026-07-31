@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -65,9 +65,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// types of search results found in Amazon SERP
-        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
+        /// <br/><c>amazon_serp</c>, <c>amazon_paid</c>, <c>editorial_recommendations</c>, <c>top_rated_from_our_brands</c>, <c>related_searches</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -85,13 +85,13 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> Categories { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// Amazon product items within the editorial_recommendations element
+        /// Amazon product items within the <c>editorial_recommendations</c> element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseMerchantAmazonElementItem> Items { get; set; }

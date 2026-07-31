@@ -28,8 +28,7 @@ namespace DataForSeo.Client.Models
         public int? Depth { get; set; }
 
         /// <summary>
-        /// list of related keywords
-        /// <br/>represents the list of search queries which are related to the keyword returned in the array above
+        /// list of related keywordsrepresents the list of search queries which are related to the keyword returned in the array above
         /// </summary>
         [JsonProperty("related_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> RelatedKeywords { get; set; }

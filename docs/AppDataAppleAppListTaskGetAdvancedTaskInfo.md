@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataAppleAppListTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataAppleAppListTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

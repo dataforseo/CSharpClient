@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeLanguagesResultInfo>** | <em>array of results</em> |[optional]|

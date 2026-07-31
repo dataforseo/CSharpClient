@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

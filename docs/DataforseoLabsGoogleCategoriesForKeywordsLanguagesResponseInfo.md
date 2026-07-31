@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

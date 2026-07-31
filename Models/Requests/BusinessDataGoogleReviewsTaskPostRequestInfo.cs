@@ -11,36 +11,37 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// keyword
-        /// <br/>required field if you don’t specify cid or place_id
+        /// <br/>required field if you don't specify <c>cid</c> or <c>place_id</c>
         /// <br/>the keyword you specify should indicate the name of the local establishment;
-        /// <br/>you can specify up to 700 characters in the keyword filed;
+        /// <br/>you can specify up to 700 characters in the <c>keyword</c> filed;
         /// <br/>all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-        /// <br/>if you need to use the “%” character for your keyword, please specify it as “%25”;
+        /// <br/>if you need to use the “%” character for your <c>keyword</c>, please specify it as “%25”;
+        /// <br/> 
         /// <br/>if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5
         /// <br/>Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
-        [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
 
         /// <summary>
         /// unique, google-defined id of the business entity
-        /// <br/>required field if you don’t specify keyword or place_id
+        /// <br/>required field if you don't specify <c>keyword</c> or <c>place_id</c>
         /// <br/>example:
-        /// <br/>194604053573767737
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/><c>194604053573767737</c>
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
-        [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("cid", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
 
         /// <summary>
         /// identifier of the business entity in Google Maps
-        /// <br/>required field if you don’t specify keyword or cid
+        /// <br/>required field if you don't specify <c>keyword</c> or <c>cid</c>
         /// <br/>example:
-        /// <br/>GhIJQWDl0CIeQUARxks3icF8U8A
-        /// <br/>learn more about the identifier in this help center article
+        /// <br/><c>GhIJQWDl0CIeQUARxks3icF8U8A</c>
+        /// <br/>learn more about the identifier in <see href="https://dataforseo.com/help-center/what-is-cid-place-id-feature-id">this help center article</see>
         /// </summary>
-        [JsonProperty("place_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("place_id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string PlaceId { get; set; }
 
         /// <summary>
@@ -48,68 +49,67 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/business-data/google-reviews-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
 
         /// <summary>
         /// full name of search engine location
-        /// <br/>required field if you don’t specify location_code or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_code or location_coordinate
-        /// <br/>you can receive the list of available locations with location_name by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations
+        /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/business_data/google/locations</c>
         /// <br/>example:
-        /// <br/>London,England,United Kingdom
+        /// <br/><c>London,England,United Kingdom</c>
         /// </summary>
-        [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
 
         /// <summary>
         /// search engine location code
-        /// <br/>required field if you don’t specify location_name or location_coordinate
-        /// <br/>if you use this field, you don’t need to specify location_name or location_coordinate
-        /// <br/>you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_coordinate</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
+        /// <br/>you can receive the list of available locations with <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/business_data/google/locations</c>
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>
         /// </summary>
-        [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location
-        /// <br/>required field if you don’t specify location_name or location_code
-        /// <br/>if you use this field, you don’t need to specify location_name or location_code
-        /// <br/>location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-        /// <br/>the maximum number of decimal digits for “latitude” and “longitude”: 7
-        /// <br/>the minimum value for “radius”: 199.9
+        /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_code</c>
+        /// <br/><c>location_coordinate</c> parameter should be specified in the 'latitude,longitude,radius' format
+        /// <br/>the maximum number of decimal digits for 'latitude' and 'longitude': 7
+        /// <br/>the minimum value for 'radius': 199.9
         /// <br/>example:
-        /// <br/>53.476225,-2.243572,200
+        /// <br/><c>53.476225,-2.243572,200</c>
         /// </summary>
-        [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
         /// <summary>
         /// full name of search engine language
-        /// <br/>required field if you don’t specify language_code
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages with language_name by making a separate request to the https://api.dataforseo.com/v3/business_data/google/languages
+        /// <br/>required field if you don't specify <c>language_code</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>you can receive the list of available languages with <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/business_data/google/languages</c>
         /// <br/>example:
-        /// <br/>English
+        /// <br/><c>English</c>
         /// </summary>
-        [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
 
         /// <summary>
         /// search engine language code
-        /// <br/>required field if you don’t specify language_name
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/languages
+        /// <br/>required field if you don't specify <c>language_name</c>
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>
+        /// <br/>you can receive the list of available languages with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/business_data/google/languages</c>
         /// <br/>example:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
-        [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
@@ -117,11 +117,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>number of reviews in SERP
         /// <br/>we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row
-        /// <br/>default value: 10
-        /// <br/>maximum value: 4490
-        /// <br/>Your account will be billed per each SERP containing up to 10 results;
+        /// <br/>default value: <c>10</c>
+        /// <br/>maximum value: <c>4490</c>
+        /// <br/>Your account will be billed per each SERP containing up to 10 results; 
         /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
-        /// <br/>The cost can be calculated on the Pricing page.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/business-data/google-reviews-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
@@ -131,11 +131,11 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>you can use this field to sort the results
         /// <br/>possible types of sorting:
-        /// <br/>newest – sort by newest first
-        /// <br/>highest_rating – sort by highest rating
-        /// <br/>lowest_rating – sort by lowest rating
-        /// <br/>relevant – sort by relevance
-        /// <br/>default value: relevant
+        /// <br/><c>newest</c> – sort by newest first
+        /// <br/><c>highest_rating</c> – sort by highest rating
+        /// <br/><c>lowest_rating</c> – sort by lowest rating
+        /// <br/><c>relevant</c> – sort by relevance
+        /// <br/>default value: <c>relevant</c>
         /// </summary>
         [JsonProperty("sort_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SortBy { get; set; }
@@ -145,7 +145,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
@@ -153,14 +153,14 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// URL for sending task results
         /// <br/>optional field
-        /// <br/>once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>once the task is completed, we will send a POST request with its results compressed in the <c>gzip</c> format to the <c>postback_url</c> you specified
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/postbackscript?id=$id
-        /// <br/>http://your-server.com/postbackscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in postback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/postbackscript?id=$id</c>
+        /// <br/><c>http://your-server.com/postbackscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>postback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("postback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PostbackUrl { get; set; }
@@ -169,13 +169,13 @@ namespace DataForSeo.Client.Models.Requests
         /// notification URL of a completed task
         /// <br/>optional field
         /// <br/>when a task is completed we will notify you by GET request sent to the URL you have specified
-        /// <br/>you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+        /// <br/>you can use the ‘$id’ string as a <c>$id</c> variable and ‘$tag’ as urlencoded <c>$tag</c> variable. We will set the necessary values before sending the request.
         /// <br/>example:
-        /// <br/>http://your-server.com/pingscript?id=$id
-        /// <br/>http://your-server.com/pingscript?id=$id&amp;tag=$tag
-        /// <br/>Note: special characters in pingback_url will be urlencoded;
-        /// <br/>i.a., the # character will be encoded into %23
-        /// <br/>learn more on our Help Center
+        /// <br/><c>http://your-server.com/pingscript?id=$id</c>
+        /// <br/><c>http://your-server.com/pingscript?id=$id&amp;tag=$tag</c>
+        /// <br/>Note: special characters in <c>pingback_url</c> will be urlencoded; 
+        /// <br/>i.a., the <c>#</c> character will be encoded into <c>%23</c>
+        /// <br/>learn more on our <see href="https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api">Help Center</see>
         /// </summary>
         [JsonProperty("pingback_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PingbackUrl { get; set; }

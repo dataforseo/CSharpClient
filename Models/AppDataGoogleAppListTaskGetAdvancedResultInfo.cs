@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the number of app items in the results array
-        /// <br/>you can get more results by using the depth parameter when setting a task
+        /// <br/>you can get more results by using the <c>depth</c> parameter when setting a task
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

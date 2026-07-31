@@ -23,8 +23,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the code of the superordinate location
-        /// <br/>only City location_type is supported for all countries except China (where Country is also supported);
-        /// <br/>don’t match locations by location_code_parent because the results for Region and Country-level results for most countries are not supported by Baidu SERP API
+        /// <br/>only <c>City</c> <c>location_type</c> is supported for all countries except China (where <c>Country</c> is also supported);
+        /// <br/>don't match locations by <c>location_code_parent</c> because the results for <c>Region</c> and <c>Country</c>-level results for most countries are not supported by Baidu SERP API
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCodeParent { get; set; }
@@ -37,7 +37,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location type
-        /// <br/>only City is supported for all countries except China (where Country is also supported)
+        /// <br/>only <c>City</c> is supported for all countries except China (where <c>Country</c> is also supported)
         /// </summary>
         [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationType { get; set; }

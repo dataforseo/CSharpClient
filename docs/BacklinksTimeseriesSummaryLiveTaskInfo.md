@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BacklinksTimeseriesSummaryLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BacklinksTimeseriesSummaryLiveResultInfo>** | <em>array of results</em> |[optional]|

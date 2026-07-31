@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<MerchantIdListTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<MerchantIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

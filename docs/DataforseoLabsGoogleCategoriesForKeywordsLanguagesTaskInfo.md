@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBingOrganicTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBingOrganicTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

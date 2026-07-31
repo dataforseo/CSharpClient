@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**Year** | **int?** | year for which the data is provided |[optional]|
-**Month** | **int?** | month for which the data is provided |[optional]|
-**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**Year** | **int?** | <em>year for which the data is provided</em> |[optional]|
+**Month** | **int?** | <em>month for which the data is provided</em> |[optional]|
+**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | <em>ranking data relevant to the specified domain</em> |[optional]|

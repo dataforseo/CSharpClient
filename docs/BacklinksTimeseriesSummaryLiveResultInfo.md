@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Target** | **string** | target from a POST array |[optional]|
-**DateFrom** | **string** | starting date of the time range<br>in the UTC format: “yyyy-mm-dd”<br>example:<br>2019-01-01 |[optional]|
-**DateTo** | **string** | ending date of the time range<br>in the UTC format: 'yyyy-mm-dd'<br>example:<br>'2019-01-15' |[optional]|
+**Target** | **string** | <em><code>target</code> from a POST array</em> |[optional]|
+**DateFrom** | **string** | <em>starting date of the time range</em><br>in the UTC format: “yyyy-mm-dd”<br>example:<br><code>2019-01-01</code> |[optional]|
+**DateTo** | **string** | <em>ending date of the time range</em><br>in the UTC format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code> |[optional]|
 **GroupRange** | **string** | group_range from a POST array |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BacklinksTimeseriesSummaryLiveItem>** | contains relevant summary data |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<BacklinksTimeseriesSummaryLiveItem>** | <em>contains relevant summary data</em> |[optional]|

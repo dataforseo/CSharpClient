@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// value of the percentage discount
-        /// <br/>if the discount is fixed, the value will be null
+        /// <br/>if the discount is fixed, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("percentage_discount", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PercentageDiscount { get; set; }

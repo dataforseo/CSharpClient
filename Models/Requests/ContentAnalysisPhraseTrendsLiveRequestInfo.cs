@@ -14,10 +14,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field
         /// <br/>UTF-8 encoding
         /// <br/>the keywords will be converted to a lowercase format;
-        /// <br/>Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;
-        /// <br/>example:
-        /// <br/>'keyword': '\'tesla palo alto\''
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes; 
+        /// <br/>example: 
+        /// <br/><c>'keyword': '\'tesla palo alto\''</c>
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keyword", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -26,14 +26,14 @@ namespace DataForSeo.Client.Models.Requests
         /// target keyword fields and target keywords
         /// <br/>optional field
         /// <br/>use this parameter to filter the dataset by keywords that certain fields should contain;
-        /// <br/>fields you can specify: title, main_title, previous_title, snippet
+        /// <br/>fields you can specify: <c>title</c>, <c>main_title</c>, <c>previous_title</c>, <c>snippet</c>
         /// <br/>you can indicate several fields;
-        /// <br/>Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes;
+        /// <br/>Note: to match an exact phrase instead of a stand-alone keyword, use double quotes and backslashes; 
         /// <br/>example:
-        /// <br/>'keyword_fields': {
-        /// <br/>    'snippet': '\'logitech mouse\'',
-        /// <br/>    'main_title': 'sale'
-        /// <br/>}
+        /// <br/>`'keyword_fields': {
+        /// <br/>'snippet': '\'logitech mouse\'',
+        /// <br/>'main_title': 'sale'
+        /// <br/>}`
         /// </summary>
         [JsonProperty("keyword_fields", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> KeywordFields { get; set; }
@@ -42,8 +42,8 @@ namespace DataForSeo.Client.Models.Requests
         /// target page types
         /// <br/>optional field
         /// <br/>use this parameter to filter the dataset by page types
-        /// <br/>possible values:
-        /// <br/>'ecommerce', 'news', 'blogs', 'message-boards', 'organization'
+        /// <br/>possible values: 
+        /// <br/><c>'ecommerce'</c>, <c>'news'</c>, <c>'blogs'</c>, <c>'message-boards'</c>, <c>'organization'</c>
         /// </summary>
         [JsonProperty("page_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> PageType { get; set; }
@@ -52,9 +52,9 @@ namespace DataForSeo.Client.Models.Requests
         /// results grouping type
         /// <br/>optional field
         /// <br/>possible grouping types:
-        /// <br/>as_is – returns data on all citations for the target keyword
-        /// <br/>one_per_domain – returns data on one citation of the keyword per domain
-        /// <br/>default value: as_is
+        /// <br/><c>as_is</c> - returns data on all citations for the target <c>keyword</c>
+        /// <br/><c>one_per_domain</c> - returns data on one citation of the <c>keyword</c> per domain
+        /// <br/>default value: <c>as_is</c>
         /// </summary>
         [JsonProperty("search_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchMode { get; set; }
@@ -63,13 +63,13 @@ namespace DataForSeo.Client.Models.Requests
         /// maximum number of elements within internal arrays
         /// <br/>optional field
         /// <br/>you can use this field to limit the number of elements within the following arrays:
-        /// <br/>top_domains
-        /// <br/>text_categories
-        /// <br/>page_categories
-        /// <br/>countries
-        /// <br/>languages
-        /// <br/>default value: 1
-        /// <br/>maximum value: 20
+        /// <br/><c>top_domains</c>
+        /// <br/><c>text_categories</c>
+        /// <br/><c>page_categories</c>
+        /// <br/><c>countries</c>
+        /// <br/><c>languages</c>
+        /// <br/>default value: <c>1</c>
+        /// <br/>maximum value: <c>20</c>
         /// </summary>
         [JsonProperty("internal_list_limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? InternalListLimit { get; set; }
@@ -77,9 +77,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// starting date of the time range
         /// <br/>required field
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_from", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
@@ -87,10 +87,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ending date of the time range
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, today’s date will be used by default
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>if you don't specify this field, today's date will be used by default
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
@@ -98,8 +98,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// time range which will be used to group the results
         /// <br/>optional field
-        /// <br/>default value: month
-        /// <br/>possible values: day, week, month
+        /// <br/>default value: <c>month</c>
+        /// <br/>possible values: <c>day</c>, <c>week</c>, <c>month</c>
         /// </summary>
         [JsonProperty("date_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateGroup { get; set; }
@@ -107,35 +107,31 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// initial dataset filtering parameters
         /// <br/>optional field
-        /// <br/>initial filtering parameters that apply to fields in the Search endpoint;
+        /// <br/>initial filtering parameters that apply to fields in the <see href="/v3/content_analysis/search/live/?bash">Search endpoint</see>;
         /// <br/>you can add several filters at once (8 filters maximum);
-        /// <br/>you should set a logical operator and, or between the conditions;
+        /// <br/>you should set a logical operator <c>and</c>, <c>or</c> between the conditions;
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, , &gt;=, =, &lt;&gt;, in, not_in, like,not_like, has, has_not, match, not_match
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters;
+        /// <br/><c>regex</c>, <c>not_regex</c>, <c>&lt;</c>, <c>&lt;=</c>, <c>&gt;</c>, <c>&gt;=</c>, <c>=</c>, <c>&lt;&gt;</c>, <c>in</c>, <c>not_in</c>, <c>like</c>,<c>not_like</c>, <c>has</c>, <c>has_not</c>, <c>match</c>, <c>not_match</c>
+        /// <br/>you can use the <c>%</c> operator with <c>like</c> and <c>not_like</c> to match any string of zero or more characters;
         /// <br/>example:
-        /// <br/>['domain','&lt;&gt;', 'logitech.com']
-        /// <br/>[['domain','&lt;&gt;','logitech.com'],'and',['content_info.connotation_types.negative','&gt;',1000]]
-        /// <br/>[['domain','&lt;&gt;','logitech.com']],
-        /// <br/>'and',
-        /// <br/>[['content_info.connotation_types.negative','&gt;',1000],
-        /// <br/>'or',
-        /// <br/>['content_info.text_category','has',10994]]]
-        /// <br/>for more information about filters, please refer to Content Analysis API – Filters
-        /// <br/>learn more about the initial dataset filters in this help center article.
+        /// <br/><c>['domain','&lt;&gt;', 'logitech.com']</c>
+        /// <br/><c>[['domain','&lt;&gt;','logitech.com'],'and',['content_info.connotation_types.negative','&gt;',1000]]</c>
+        /// <br/><c>[['domain',''and',[['content_info.connotation_types.negative','&gt;',1000],'or',['content_info.text_category','has',10994]]]</c>
+        /// <br/>for more information about filters, please refer to <see href="/v3/content_analysis/filters">Content Analysis API - Filters</see>
+        /// <br/>learn more about the initial dataset filters in <see href="https://dataforseo.com/help-center/what-are-the-initial-dataset-filters-and-how-do-they-work">this help center article.</see>
         /// </summary>
         [JsonProperty("initial_dataset_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> InitialDatasetFilters { get; set; }
 
         /// <summary>
-        /// defines the scale used for calculating and displaying the rank values
+        /// defines the scale used for calculating and displaying the <c>rank</c> values
         /// <br/>optional field
         /// <br/>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
         /// <br/>possible values:
-        /// <br/>one_hundred — rank values are displayed on a 0–100 scale
-        /// <br/>one_thousand — rank values are displayed on a 0–1000 scale
-        /// <br/>default value: one_thousand
-        /// <br/>learn more about how this parameter works in this Help Center article
+        /// <br/><c>one_hundred</c> — rank values are displayed on a 0–100 scale
+        /// <br/><c>one_thousand</c> — rank values are displayed on a 0–1000 scale
+        /// <br/>default value: <c>one_thousand</c>
+        /// <br/>learn more about how this parameter works in <see href="https://dataforseo.com/help-center/using-the-rank_scale-parameter-in-content-analysis-api">this Help Center article</see>
         /// </summary>
         [JsonProperty("rank_scale", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RankScale { get; set; }
@@ -145,7 +141,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

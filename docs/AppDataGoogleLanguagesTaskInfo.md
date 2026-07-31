@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataGoogleLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Label** | **string** | search intent name<br>possible values: informational, navigational, commercial, transactional |[optional]|
-**Probability** | **double?** | search intent probability<br>1 indicates the highest probability |[optional]|
+**Label** | **string** | <em>search intent name</em><br>possible values: <code>informational</code>, <code>navigational</code>, <code>commercial</code>, <code>transactional</code> |[optional]|
+**Probability** | **double?** | <em>search intent probability</em><br><code>1</code> indicates the highest probability |[optional]|

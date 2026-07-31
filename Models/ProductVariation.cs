@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product ID in a POST array
-        /// <br/>learn more about the parameter in this help center guide
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/product-id-google-shopping">this help center guide</see>
         /// </summary>
         [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductId { get; set; }
 
         /// <summary>
         /// GID ID in a POST array
-        /// <br/>learn more about the parameter in this help center guide
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api">this help center guide</see>
         /// </summary>
         [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Gid { get; set; }
@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// category of the product variation
-        /// <br/>example: 'Storage Capacity'
+        /// <br/>example: <c>'Storage Capacity'</c>
         /// </summary>
         [JsonProperty("variation_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string VariationCategory { get; set; }

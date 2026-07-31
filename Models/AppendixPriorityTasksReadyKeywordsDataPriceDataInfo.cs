@@ -12,8 +12,8 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// charge type
         /// <br/>can take the following values:
-        /// <br/>per_result – charge for every row in the result array
-        /// <br/>per_request – charge for a GET or POST request
+        /// <br/><c>per_result</c>_- charge for every row in the <c>result</c> array
+        /// <br/><c>per_request</c>_- charge for a GET or POST requestn
         /// </summary>
         [JsonProperty("cost_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CostType { get; set; }

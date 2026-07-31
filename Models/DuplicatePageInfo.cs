@@ -8,12 +8,6 @@ namespace DataForSeo.Client.Models
 
     public class DuplicatePageInfo 
     {
-
-        /// <summary>
-        /// content similarity score
-        /// <br/>by default, the content is considered duplicate if the value is greater than or equals 6
-        /// <br/>can take values from 0 to 10
-        /// </summary>
         [JsonProperty("similarity", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Similarity { get; set; }
 

@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// date and time when keyword data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("last_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }
@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// previous to the most recent date and time when SERP data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-10-15 12:57:46 +00:00;
+        /// <br/><c>2019-10-15 12:57:46 +00:00</c>;
         /// <br/>in this case, will equal null
         /// </summary>
         [JsonProperty("previous_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

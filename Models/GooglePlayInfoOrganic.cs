@@ -16,8 +16,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -31,7 +31,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the element in SERP
-        /// <br/>can take the following values: left
+        /// <br/>can take the following values: <c>left</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
@@ -168,7 +168,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the app was released
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("released_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ReleasedDate { get; set; }
@@ -177,7 +177,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the app was last updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("last_update_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdateDate { get; set; }

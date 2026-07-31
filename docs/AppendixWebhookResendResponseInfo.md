@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppendixWebhookResendTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppendixWebhookResendTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,11 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**Domain** | **string** | domain name |[optional]|
-**AvgPosition** | **float?** | average position of the domain in SERP<br>Note: average position is calculated for intersected keywords only;<br>the value for a given domain may differ when combined with different target websites |[optional]|
-**SumPosition** | **int?** | sum of all domain positions in SERP<br>Note: average position is calculated for intersected keywords only;<br>the value for a given domain may differ when combined with different target websites |[optional]|
-**Intersections** | **int?** | number of intersecting keywords |[optional]|
-**FullDomainMetrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | metrics for all keywords of the domain<br>full overview of ranking and traffic data relevant to all keywords that the provided domain is ranking for |[optional]|
-**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | metrics for intersecting keywords<br>ranking and traffic data relevant to the keywords that the provided domain shares with the target domain<br>note: in this array ranking and traffic data is provided for the target considering the keywords target shares in search with the competitor’s domain |[optional]|
-**CompetitorMetrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | metrics for intersecting keywords<br>ranking and traffic data relevant to the keywords that the provided domain shares with the target domain<br>note: in this array ranking and traffic data is provided for the returned competitor’s domain |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**Domain** | **string** | <em>domain name</em> |[optional]|
+**AvgPosition** | **float?** | <em>average position of the domain in SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given domain may differ when combined with different target websites |[optional]|
+**SumPosition** | **int?** | <em>sum of all domain positions in SERP</em><br><strong>Note:</strong> average position is calculated for intersected keywords only;<br>the value for a given domain may differ when combined with different target websites |[optional]|
+**Intersections** | **int?** | <em>number of intersecting keywords</em> |[optional]|
+**FullDomainMetrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | <em>metrics for all keywords of the domain</em><br>full overview of ranking and traffic data relevant to all keywords that the provided <code>domain</code> is ranking for |[optional]|
+**Metrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | <em>metrics for intersecting keywords</em><br>ranking and traffic data relevant to the keywords that the provided <code>domain</code> shares with the <code>target</code> domain<br><strong>note:</strong> in this array ranking and traffic data is provided for the <code>target</code> considering the keywords <code>target</code> shares in search with the competitor's <code>domain</code> |[optional]|
+**CompetitorMetrics** | **IDictionary<string, DataforseoLabsMetricsInfo>** | <em>metrics for intersecting keywords</em><br>ranking and traffic data relevant to the keywords that the provided <code>domain</code> shares with the <code>target</code> domain<br><strong>note:</strong> in this array ranking and traffic data is provided for the returned competitor's <code>domain</code> |[optional]|

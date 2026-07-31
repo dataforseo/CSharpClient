@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**Target** | **string** | target domain in a POST array |[optional]|
-**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
-**TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsGoogleRelevantPagesLiveItem>** | relevant pages and related data |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**Target** | **string** | <em>target domain in a POST array</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em><br>if there is no data, then the value is <code>null</code> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em><br>if there is no data, then the value is <code>null</code> |[optional]|
+**TotalCount** | **long?** | <em>total amount of results in our database relevant to your request</em> |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<DataforseoLabsGoogleRelevantPagesLiveItem>** | <em>relevant pages and related data</em> |[optional]|

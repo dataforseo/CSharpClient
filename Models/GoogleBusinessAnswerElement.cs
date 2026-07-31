@@ -22,13 +22,13 @@ namespace DataForSeo.Client.Models
         public string AnswerId { get; set; }
 
         /// <summary>
-        /// URL of the user’s profile image
+        /// URL of the user's profile image
         /// </summary>
         [JsonProperty("profile_image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileImageUrl { get; set; }
 
         /// <summary>
-        /// URL of the user’s profile
+        /// URL of the user's profile
         /// </summary>
         [JsonProperty("profile_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProfileUrl { get; set; }

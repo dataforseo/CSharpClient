@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
-**TotalCount** | **long?** | total amount of results in our database relevant to your request |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem>** | contains keywords and related keyword difficulty scores |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em><br>if there is no data, then the value is <code>null</code> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em><br>if there is no data, then the value is <code>null</code> |[optional]|
+**TotalCount** | **long?** | <em>total amount of results in our database relevant to your request</em> |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem>** | <em>contains keywords and related keyword difficulty scores</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpBaiduLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpBaiduLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

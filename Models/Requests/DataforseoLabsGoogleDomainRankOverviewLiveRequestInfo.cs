@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// domain
         /// <br/>required field
         /// <br/>the domain name of the target website
-        /// <br/>the domain should be specified without https:// and www.
+        /// <br/>the domain should be specified without <c>https://</c> and <c>www.</c>
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -21,12 +21,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// full name of the location
         /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify location_code
-        /// <br/>you can receive the list of available locations with their location_name by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c>
+        /// <br/>you can receive the list of available locations with their <c>location_name</c> by making a separate request to the 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>
         /// <br/>ignore this field to get the results for all available locations
         /// <br/>example:
-        /// <br/>United Kingdom
+        /// <br/><c>United Kingdom</c>
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
@@ -34,12 +34,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// location code
         /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify location_name
-        /// <br/>you can receive the list of available locations with their location_code by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c>
+        /// <br/>you can receive the list of available locations with their <c>location_code</c> by making a separate request to the 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>
         /// <br/>ignore this field to get the results for all available locations
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
@@ -47,12 +47,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// full name of the language
         /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify language_code
-        /// <br/>you can receive the list of available languages with their language_name by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
+        /// <br/>if you use this field, you don't need to specify <c>language_code</c>
+        /// <br/>you can receive the list of available languages with their <c>language_name</c> by making a separate request to the 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>
         /// <br/>ignore this field to get the results for all available languages
         /// <br/>example:
-        /// <br/>English
+        /// <br/><c>English</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -60,12 +60,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// language code
         /// <br/>optional field
-        /// <br/>if you use this field, you don’t need to specify language_name
-        /// <br/>you can receive the list of available languages with their language_code by making a separate request to the
-        /// <br/>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages
+        /// <br/>if you use this field, you don't need to specify <c>language_name</c>
+        /// <br/>you can receive the list of available languages with their <c>language_code</c> by making a separate request to the 
+        /// <br/><c>https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages</c>
         /// <br/>ignore this field to get the results for all available languages
         /// <br/>example:
-        /// <br/>en
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -73,8 +73,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ignore highly similar keywords
         /// <br/>optional field
-        /// <br/>if set to true, all highly similar keywords will be excluded from the ranking and traffic calculations, the results will be based on data for main keywords from groups of synonyms
-        /// <br/>default value: false
+        /// <br/>if set to_<c>true</c>, all highly similar keywords will be excluded from the ranking and traffic calculations, the results will be based on data for main keywords from groups of synonyms
+        /// <br/>default value: <c>false</c>n
         /// </summary>
         [JsonProperty("ignore_synonyms", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IgnoreSynonyms { get; set; }
@@ -82,8 +82,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of returned results for domain
         /// <br/>optional field
-        /// <br/>default value: 100
-        /// <br/>maximum value: 1000
+        /// <br/>default value: <c>100</c>
+        /// <br/>maximum value: <c>1000</c>
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -91,8 +91,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// offset in the results array of returned items
         /// <br/>optional field
-        /// <br/>default value: 0
-        /// <br/>if you specify the 10 value, the first ten items in the results array will be omitted and the data will be provided for the successive items
+        /// <br/>default value: <c>0</c>
+        /// <br/>if you specify the <c>10</c> value, the first ten <c>items</c> in the results array will be omitted and the data will be provided for the successive items
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -102,7 +102,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

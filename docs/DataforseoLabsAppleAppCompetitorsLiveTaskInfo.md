@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsAppleAppCompetitorsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsAppleAppCompetitorsLiveResultInfo>** | <em>array of results</em> |[optional]|

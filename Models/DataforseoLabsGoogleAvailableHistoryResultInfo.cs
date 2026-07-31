@@ -11,9 +11,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// available date
-        /// <br/>indicates the date of the range available for setting in the Domain Metrics by Categories endpoint
+        /// <br/>indicates the date of the range available for setting in the <see href="/v3/dataforseo_labs/google/domain_metrics_by_categories/live/">Domain Metrics by Categories</see> endpoint
         /// <br/>example:
-        /// <br/>2022-05-16
+        /// <br/><c>2022-05-16</c>
         /// </summary>
         [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataGoogleAppListingsSearchLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataGoogleAppListingsSearchLiveResultInfo>** | <em>array of results</em> |[optional]|

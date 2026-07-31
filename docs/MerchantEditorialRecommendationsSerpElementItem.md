@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Position** | **string** | the alignment of the element in Amazon SERP<br>possible values:<br>left, right |[optional]|
-**Items** | **IEnumerable<AmazonSerpElement>** | Amazon product items |[optional]|
+**Position** | **string** | <em>the alignment of the element in Amazon SERP</em><br>possible values:<br><code>left</code>, <code>right</code> |[optional]|
+**Items** | **IEnumerable<AmazonSerpElement>** | <em>Amazon product items</em> |[optional]|

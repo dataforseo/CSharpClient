@@ -22,8 +22,7 @@ namespace DataForSeo.Client.Models
         public string SeedKeyword { get; set; }
 
         /// <summary>
-        /// keyword data for the seed keyword
-        /// <br/>fields in the array are identical to that of keyword_data
+        /// keyword data for the seed keywordfields in the array are identical to that of keyword_data
         /// </summary>
         [JsonProperty("seed_keyword_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public KeywordDataInfo SeedKeywordData { get; set; }

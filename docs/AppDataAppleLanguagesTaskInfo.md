@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataAppleLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataAppleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

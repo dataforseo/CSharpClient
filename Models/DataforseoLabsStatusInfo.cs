@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// update date of the Google endpoints
         /// <br/>indicates the last date when the Google endpoints of DataForSEO Labs API were updated;
         /// <br/>example:
-        /// <br/>2022-05-16
+        /// <br/><c>2022-05-16</c>
         /// </summary>
         [JsonProperty("date_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateUpdate { get; set; }

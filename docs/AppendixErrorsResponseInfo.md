@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AppendixErrorsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AppendixErrorsTaskInfo>** | <em>array of tasks</em> |[optional]|

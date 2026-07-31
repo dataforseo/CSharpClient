@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<MerchantGoogleLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<MerchantGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|

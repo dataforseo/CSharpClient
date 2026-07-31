@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBingLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBingLanguagesResultInfo>** | <em>array of results</em> |[optional]|

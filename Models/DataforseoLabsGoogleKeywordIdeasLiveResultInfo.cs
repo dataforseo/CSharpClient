@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keywords in a POST array
-        /// <br/>keywords are returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+        /// <br/>keywords are returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("seed_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> SeedKeywords { get; set; }
@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// number of results returned in the items array
+        /// number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
@@ -55,7 +55,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// offset token for subsequent requests
         /// <br/>you can use the string provided in this field to get the subsequent results of the initial task;
-        /// <br/>note: offset_token values are unique for each subsequent task
+        /// <br/>note: <c>offset_token</c> values are unique for each subsequent task
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

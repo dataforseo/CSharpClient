@@ -52,9 +52,7 @@ namespace DataForSeo.Client.Models
         public int? Offset { get; set; }
 
         /// <summary>
-        /// offset token for subsequent requests
-        /// <br/>you can use the string provided in this field to get the subsequent results of the initial task;
-        /// <br/>note: offset_token values are unique for each subsequent task
+        /// offset token for subsequent requestsyou can use the string provided in this field to get the subsequent results of the initial task;note: offset_token values are unique for each subsequent task
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

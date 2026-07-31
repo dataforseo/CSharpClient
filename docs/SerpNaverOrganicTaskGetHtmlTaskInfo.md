@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpNaverOrganicTaskGetHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpNaverOrganicTaskGetHtmlResultInfo>** | <em>array of results</em> |[optional]|

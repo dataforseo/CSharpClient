@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataIdListResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataIdListResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataGoogleHotelSearchesLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataGoogleHotelSearchesLiveResultInfo>** | <em>array of results</em> |[optional]|

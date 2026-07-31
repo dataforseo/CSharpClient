@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpBaiduLocationsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpBaiduLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

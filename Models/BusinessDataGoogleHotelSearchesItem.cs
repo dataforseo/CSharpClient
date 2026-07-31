@@ -18,7 +18,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// unique identifier of a hotel entity in Google search
         /// <br/>example:
-        /// <br/>CgoI-KWyzenM_MV3EAE
+        /// <br/><c>CgoI-KWyzenM_MV3EAE</c>
         /// </summary>
         [JsonProperty("hotel_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HotelIdentifier { get; set; }
@@ -38,14 +38,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates a paid hotel listing
-        /// <br/>if true, related hotel_search_item is a paid ad
-        /// <br/>if false, related hotel_search_item is an organic hotel listing
+        /// <br/>if <c>true</c>, related <c>hotel_search_item</c> is a paid ad
+        /// <br/>if <c>false</c>, related <c>hotel_search_item</c> is an organic hotel listing
         /// </summary>
         [JsonProperty("is_paid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsPaid { get; set; }
 
         /// <summary>
-        /// GPS coordinates of the hotel’s location
+        /// GPS coordinates of the hotel's location
         /// </summary>
         [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public GpsCoordinatesLocationInfo Location { get; set; }

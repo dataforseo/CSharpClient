@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AppDataGoogleAppListTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AppDataGoogleAppListTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

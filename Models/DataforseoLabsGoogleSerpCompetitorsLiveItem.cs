@@ -23,14 +23,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the average position of the domain for the specified keywords
-        /// <br/>the arithmetic mean of values in the keywords_positions array
+        /// <br/>the arithmetic mean of values in the <c>keywords_positions</c> array
         /// </summary>
         [JsonProperty("avg_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public float? AvgPosition { get; set; }
 
         /// <summary>
         /// the median position of the domain for the specified keywords
-        /// <br/>the median of the values in the keywords_positions array
+        /// <br/>the median of the values in the <c>keywords_positions</c> array
         /// </summary>
         [JsonProperty("median_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? MedianPosition { get; set; }
@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the margin between the greatest possible and actual keyword positions
         /// <br/>represents the relative visibility rate of the domain in SERP for the specified keywords
-        /// <br/>calculated as sum(100-keywords_positions)
+        /// <br/>calculated as sum(100-<c>keywords_positions</c>)
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Rating { get; set; }
@@ -46,8 +46,8 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// estimated traffic volume
         /// <br/>represents the estimated monthly traffic that specified keywords are driving to the website
-        /// <br/>calculated as the sum of the products of the specified keywords’ search volume values and CTR (click-through-rate) rates at certain positions in SERP
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>calculated as the sum of the products of the specified keywords' search volume values and CTR (click-through-rate) rates at certain positions in SERP
+        /// <br/>learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-etv-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }

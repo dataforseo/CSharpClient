@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Category** | **string** | product category name |[optional]|
-**Url** | **string** | product category URL<br>indicates the browse path on Amazon with the unique browse node ID (product category ID on Amazon) |[optional]|
+**Category** | **string** | <em>product category name</em> |[optional]|
+**Url** | **string** | <em>product category URL</em><br>indicates the <a href='https://sellercentral.amazon.com/gp/help/external/G1661?language=en_US' rel='noopener noreferrer' target='_blank'>browse path on Amazon</a> with the unique browse node ID (product category ID on Amazon) |[optional]|

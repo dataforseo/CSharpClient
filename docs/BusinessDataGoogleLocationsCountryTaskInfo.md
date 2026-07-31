@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataGoogleLocationsCountryResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataGoogleLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the element<br>domain of the online menu system |[optional]|
-**Items** | **IEnumerable<MapsSearch>** | encountered item types<br>types of search engine results encountered in the items array;<br>possible item types: google_business_info |[optional]|
+**Title** | **string** | <em>title of the element</em><br>domain of the online menu system |[optional]|
+**Items** | **IEnumerable<MapsSearch>** | <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>google_business_info</code> |[optional]|

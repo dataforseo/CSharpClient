@@ -17,15 +17,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL of the page the data is provided for
-        /// <br/>corresponding URL you specified in the targets array when setting a task
+        /// <br/>corresponding URL you specified in the <c>targets</c> array when setting a task
         /// </summary>
         [JsonProperty("page_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageUrl { get; set; }
 
         /// <summary>
-        /// number of pins for the related page_url
-        /// <br/>pins on Pinterest correspond to content saves;
-        /// <br/>this field shows the number of content saves made from the related page_url using the Pinterest Save Button
+        /// number of pins for the related <c>page_url</c>
+        /// <br/><see href="https://help.pinterest.com/en/business/article/build-a-pin">pins on Pinterest</see> correspond to content saves;
+        /// <br/>this field shows the number of content saves made from the related <c>page_url</c> using the <see href="https://developers.pinterest.com/docs/widgets/save/?">Pinterest Save Button</see>
         /// </summary>
         [JsonProperty("pins_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? PinsCount { get; set; }

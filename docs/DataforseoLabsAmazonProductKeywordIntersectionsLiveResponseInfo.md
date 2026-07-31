@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsAmazonProductKeywordIntersectionsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsAmazonBulkSearchVolumeLiveResultInfo>** | <em>array of results</em> |[optional]|

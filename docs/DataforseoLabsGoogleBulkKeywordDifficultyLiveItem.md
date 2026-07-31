@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**Keyword** | **string** | keyword in a POST array |[optional]|
-**KeywordDifficulty** | **int?** | difficulty of ranking in the first top-10 organic results for a keyword<br>indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;<br>calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;<br>learn more about the metric in this help center guide |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**Keyword** | **string** | <em>keyword in a POST array</em> |[optional]|
+**KeywordDifficulty** | **int?** | <em>difficulty of ranking in the first top-10 organic results for a keyword</em><br>indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100;<br>calculated by analysing, among other parameters, link profiles of the first 10 pages in SERP;<br>learn more about the metric in <a href='https://dataforseo.com/help-center/what-is-keyword-difficulty-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center guide</a> |[optional]|

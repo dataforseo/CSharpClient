@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<ContentAnalysisPhraseTrendsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<ContentAnalysisPhraseTrendsLiveResultInfo>** | <em>array of results</em> |[optional]|

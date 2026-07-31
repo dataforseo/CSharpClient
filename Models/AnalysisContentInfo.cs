@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// type of content
         /// <br/>example:
-        /// <br/>page_content, comment
+        /// <br/><c>page_content</c>, <c>comment</c>
         /// </summary>
         [JsonProperty("content_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ContentType { get; set; }
@@ -36,8 +36,8 @@ namespace DataForSeo.Client.Models
         public string PreviousTitle { get; set; }
 
         /// <summary>
-        /// title heading level
-        /// <br/>indicates h-tag level from 1 (top) to 6 (bottom)
+        /// <c>title</c> heading level
+        /// <br/>indicates h-tag level from <c>1</c> (top) to <c>6</c> (bottom)
         /// </summary>
         [JsonProperty("level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Level { get; set; }
@@ -68,14 +68,14 @@ namespace DataForSeo.Client.Models
         public IEnumerable<SocialMetricsInfo> SocialMetrics { get; set; }
 
         /// <summary>
-        /// highlighted text from the snippet
+        /// highlighted text from the <c>snippet</c>
         /// </summary>
         [JsonProperty("highlighted_text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HighlightedText { get; set; }
 
         /// <summary>
         /// main language of the domain
-        /// <br/>to obtain a full list of available languages, refer to the Languages endpoint
+        /// <br/>to obtain a full list of available languages, refer to the <see href="/v3/content_analysis/languages/">Languages</see> endpoint
         /// </summary>
         [JsonProperty("language", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Language { get; set; }
@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// sentiment connotations
         /// <br/>contains sentiments (emotional reactions) related to the given citation and probability index per each sentiment
-        /// <br/>possible sentiment connotations: anger, happiness, love, sadness, share, fun
+        /// <br/>possible sentiment connotations: <c>anger</c>, <c>happiness</c>, <c>love</c>, <c>sadness</c>, <c>share</c>, <c>fun</c>
         /// </summary>
         [JsonProperty("sentiment_connotations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> SentimentConnotations { get; set; }
@@ -91,23 +91,23 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// connotation types
         /// <br/>contains types of sentiments (sentiment polarity) related to the given citation and probability index per each sentiment type
-        /// <br/>possible sentiment connotation types: positive, negative, neutral
+        /// <br/>possible sentiment connotation types: <c>positive</c>, <c>negative</c>, <c>neutral</c>
         /// </summary>
         [JsonProperty("connotation_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> ConnotationTypes { get; set; }
 
         /// <summary>
         /// text category
-        /// <br/>to obtain a full list of available categories, refer to the Categories endpoint
+        /// <br/>to obtain a full list of available categories, refer to the <see href="/v3/content_analysis/categories/">Categories</see> endpoint
         /// </summary>
         [JsonProperty("text_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<int?> TextCategory { get; set; }
 
         /// <summary>
         /// date and time when the content was published
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("date_published", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DatePublished { get; set; }
@@ -123,14 +123,14 @@ namespace DataForSeo.Client.Models
         /// semantic location
         /// <br/>indicates semantic element in HTML where the target keyword citation is located
         /// <br/>example:
-        /// <br/>article, header
+        /// <br/><c>article</c>, <c>header</c>
         /// </summary>
         [JsonProperty("semantic_location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SemanticLocation { get; set; }
 
         /// <summary>
         /// content rating
-        /// <br/>rating related to content_info
+        /// <br/>rating related to <c>content_info</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ContentRatingInfo Rating { get; set; }
@@ -139,9 +139,9 @@ namespace DataForSeo.Client.Models
         /// citation group date and time
         /// <br/>indicates content publication date or date and time when our crawler visited the page for the first time;
         /// <br/>this field can be used to group citations by date and display citation trends;
-        /// <br/>date and time are provided in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>date and time are provided in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2017-01-24 13:20:59 +00:00
+        /// <br/><c>2017-01-24 13:20:59 +00:00</c>
         /// </summary>
         [JsonProperty("group_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GroupDate { get; set; }

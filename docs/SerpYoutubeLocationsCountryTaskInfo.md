@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeLocationsCountryResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

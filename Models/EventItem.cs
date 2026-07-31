@@ -17,8 +17,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -33,13 +33,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -70,13 +70,13 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// dates when the event takes place
-        /// <br/>if there are none, equals null
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("event_dates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public EventDates EventDates { get; set; }
 
         /// <summary>
-        /// information about the event’s venue
+        /// information about the event's venue
         /// </summary>
         [JsonProperty("location_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public LocationInfo LocationInfo { get; set; }

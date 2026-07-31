@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | product title |[optional]|
-**NewerModelAsin** | **string** | ASIN of the newer product model |[optional]|
+**Title** | **string** | <em>product title</em> |[optional]|
+**NewerModelAsin** | **string** | <em>ASIN of the newer product model</em> |[optional]|

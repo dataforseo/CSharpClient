@@ -59,6 +59,8 @@ var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantId
 {
     new()
     {
+        DatetimeFrom = "2023-01-31 00:00:00 +02:00",
+        DatetimeTo = "2023-02-01 00:00:00 +02:00",
         Limit = 100,
         Offset = 0,
         Sort = "desc",

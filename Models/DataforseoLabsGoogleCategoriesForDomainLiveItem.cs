@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product and service categories
-        /// <br/>you can download the full list of possible categories
+        /// <br/>you can download <see href="https://cdn.dataforseo.com/v3/categories/categories_dataforseo_labs_2023_10_25.csv">the full list of possible categories</see>
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<int?> Categories { get; set; }

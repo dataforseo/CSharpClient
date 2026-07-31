@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleLanguagesResultInfo>** | <em>array of results</em> |[optional]|
