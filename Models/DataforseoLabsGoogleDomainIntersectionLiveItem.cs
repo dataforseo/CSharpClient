@@ -22,15 +22,13 @@ namespace DataForSeo.Client.Models
         public KeywordDataInfo KeywordData { get; set; }
 
         /// <summary>
-        /// contains data on the first domain's SERP element found for the returned <c>keyword</c>
-        /// <br/>            the list of supported SERP elements can be found below
+        /// contains data on the first domain's SERP element found for the returned keyword            the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("first_domain_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BaseDataforseoLabsApiElementItem FirstDomainSerpElement { get; set; }
 
         /// <summary>
-        /// contains data on the second domain's SERP element found for the returned <c>keyword</c>
-        /// <br/>            the list of supported SERP elements can be found below
+        /// contains data on the second domain's SERP element found for the returned keyword            the list of supported SERP elements can be found below
         /// </summary>
         [JsonProperty("second_domain_serp_element", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BaseDataforseoLabsApiElementItem SecondDomainSerpElement { get; set; }

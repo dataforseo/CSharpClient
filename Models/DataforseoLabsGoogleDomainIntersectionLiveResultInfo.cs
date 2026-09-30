@@ -46,7 +46,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the <c>items</c> array
+        /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

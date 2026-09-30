@@ -1561,7 +1561,6 @@ var result = await dfsClient.AppDataApi.AppleAppListTaskPostAsync(new List<AppDa
         AppCollection = "top_free_ios",
         LocationCode = 2840,
         LanguageCode = "en",
-        Depth = 200,
         AppCategory = "games",
     }
 });

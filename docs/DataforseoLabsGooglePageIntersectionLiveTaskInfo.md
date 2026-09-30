@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsGooglePageIntersectionLiveResultInfo>** | <em>array of results</em> |[optional]|
+**Result** | **IEnumerable<DataforseoLabsGooglePageIntersectionLiveResultInfo>** | array of results |[optional]|

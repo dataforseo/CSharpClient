@@ -34,33 +34,25 @@ namespace DataForSeo.Client.Models
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// direct URL to search engine results
-        /// <br/>you can use it to make sure that we provided accurate results
+        /// direct URL to search engine resultsyou can use it to make sure that we provided accurate results
         /// </summary>
         [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
 
         /// <summary>
-        /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
+        /// date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
-        /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// autocorrection of the search engineif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
 
         /// <summary>
-        /// types of search results in SERP
-        /// <br/>contains types of search results (<c>items</c>) found in SERP.
-        /// <br/>possible item:
-        /// <br/><c>youtube_subtitles</c>
+        /// types of search results in SERPcontains types of search results (items) found in SERP.possible item:youtube_subtitles
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -84,8 +76,7 @@ namespace DataForSeo.Client.Models
         public string OriginLanguage { get; set; }
 
         /// <summary>
-        /// the category the video belongs to
-        /// <br/>Note: this field is deprecated and always returns <c>null</c>
+        /// the category the video belongs toNote: this field is deprecated and always returns null
         /// </summary>
         [JsonProperty("category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Category { get; set; }
@@ -103,7 +94,7 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// the number of results returned in the <c>items</c> array
+        /// the number of results returned in the items array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

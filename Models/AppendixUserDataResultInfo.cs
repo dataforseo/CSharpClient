@@ -47,6 +47,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/><c>2025-06-15 12:57:46 +00:00</c>
         /// <br/>Note: if there is no active subscription to Backlinks API, the value equals <c>null</c>
+        /// <br/>Note #2: the Backlinks API subscription format was removed, and this field is deprecated
         /// </summary>
         [JsonProperty("backlinks_subscription_expiry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BacklinksSubscriptionExpiryDate { get; set; }
@@ -58,6 +59,7 @@ namespace DataForSeo.Client.Models
         /// <br/>example:
         /// <br/><c>2026-02-28 14:01:38 +00:00</c>
         /// <br/>Note: if there is no active subscription to LLM Mentions API, the value equals <c>null</c>
+        /// <br/>Note #2: the LLM Mentions API subscription format was removed, and this field is deprecated
         /// </summary>
         [JsonProperty("llm_mentions_subscription_expiry_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LlmMentionsSubscriptionExpiryDate { get; set; }

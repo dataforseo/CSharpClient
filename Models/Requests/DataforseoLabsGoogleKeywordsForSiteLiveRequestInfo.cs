@@ -10,10 +10,13 @@ namespace DataForSeo.Client.Models.Requests
     {
 
         /// <summary>
-        /// target domain
+        /// domain name or page url
         /// <br/>required field
-        /// <br/>the domain name of the target website
-        /// <br/>the domain should be specified without <c>https://</c>
+        /// <br/>the domain name of the target website, subdomain or URL of the target webpage;
+        /// <br/>the domain name must be specified without <c>https://</c> or <c>www.</c>;
+        /// <br/>the subdomain must be specified without <c>https://</c>;
+        /// <br/>the webpage URL must be specified with <c>https://</c> or <c>www.</c>
+        /// <br/>Note: if you specify the webpage URL without <c>https://</c> or <c>www.</c>, the result will be returned for the entire domain rather than the specific page
         /// </summary>
         [JsonProperty("target", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Target { get; set; }
@@ -94,7 +97,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>if the parameter is set to_<c>true</c>, you will receive <c>clickstream_keyword_info</c>, <c>keyword_info_normalized_with_clickstream</c>, and <c>keyword_info_normalized_with_bing</c> fields in the response
         /// <br/>default value: <c>false</c>
         /// <br/>with this parameter enabled, you will be charged double the price for the request
-        /// <br/>learn more about how clickstream-based metrics are calculated in this <see href="https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them">help center article</see>n'
+        /// <br/>learn more about how clickstream-based metrics are calculated in this <see href="https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them">help center article</see>
         /// </summary>
         [JsonProperty("include_clickstream_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeClickstreamData { get; set; }

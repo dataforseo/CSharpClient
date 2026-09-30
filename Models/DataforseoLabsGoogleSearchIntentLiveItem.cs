@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// contains objects with other possible search intents for the specified keyword
         /// </summary>
         [JsonProperty("secondary_keyword_intents", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object SecondaryKeywordIntents { get; set; }
+        public IEnumerable<KeywordIntentInfo> SecondaryKeywordIntents { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

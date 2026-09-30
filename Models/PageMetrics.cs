@@ -77,7 +77,7 @@ namespace DataForSeo.Client.Models
         /// <br/>learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-onpage-score-of-a-domain-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("onpage_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? OnpageScore { get; set; }
+        public double? OnpageScore { get; set; }
 
         /// <summary>
         /// number of non-indexable pages

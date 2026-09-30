@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveTaskInfo>** | <em>array of tasks</em> |[optional]|
+**Tasks** | **IEnumerable<DataforseoLabsGoogleDomainIntersectionLiveTaskInfo>** | array of tasks |[optional]|

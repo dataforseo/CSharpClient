@@ -46,12 +46,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value for <c>desktop</c>: <c>20</c>
-        /// <br/>max value for <c>desktop</c>: <c>500</c>
-        /// <br/>default value for <c>mobile</c>: <c>10</c>
-        /// <br/>max value for <c>mobile</c>: <c>350</c>
-        /// <br/>Your account will be billed per each SERP containing up to 20 results for desktop or up to 10 results for a mobile device;
-        /// <br/>Setting depth above 20 for desktop or above 10 for mobile may result in additional charges if the search engine returns more than 20 or 10 results respectively;
+        /// <br/>default value: <c>10</c>
+        /// <br/>max value: <c>350</c>
+        /// <br/>your account will be billed per each SERP containing up to 10 results;
+        /// <br/>setting depth above 10 may result in additional charges if the search engine returns more than 10 results respectively;
         /// <br/>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
         /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-local-finder-serp-api">Pricing</see> page.
         /// </summary>

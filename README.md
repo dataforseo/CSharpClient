@@ -50,6 +50,9 @@ dotnet add package DataForSeo.Client
 
 Example of live request
 ```csharp
+using DataForSeo.Client;
+using DataForSeo.Client.Models.Requests;
+
 var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
@@ -69,12 +72,16 @@ var result = await dfsClient.SerpApi.GoogleOrganicLiveAdvancedAsync(new List<Ser
 
 Example of Task-based request
 ```csharp
+using System.Diagnostics;
+using DataForSeo.Client;
+using DataForSeo.Client.Models.Requests;
+
 var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
 {
     Username = "USERNAME",
     Password = "PASSWORD",    
 });
-var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpTaskRequestInfo>()
+var result = await dfsClient.SerpApi.GoogleOrganicTaskPostAsync(new List<SerpGoogleOrganicTaskPostRequestInfo>()
 {
     new()
     {
