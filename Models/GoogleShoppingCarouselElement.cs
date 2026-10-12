@@ -41,6 +41,12 @@ namespace DataForSeo.Client.Models
         public string Seller { get; set; }
 
         /// <summary>
+        /// additional information about the result
+        /// </summary>
+        [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Snippet { get; set; }
+
+        /// <summary>
         /// product price
         /// <br/>example:
         /// <br/><c>384.99</c>

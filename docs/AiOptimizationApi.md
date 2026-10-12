@@ -781,7 +781,7 @@ var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesLiveAsync(new L
             },
         },
         MaxOutputTokens = 200,
-        ModelName = "claude-opus-4-0",
+        ModelName = "claude-opus-5",
         Temperature = 0.3,
         WebSearch = true,
         WebSearchCountryIsoCode = "FR",
@@ -849,7 +849,7 @@ var result = await dfsClient.AiOptimizationApi.ClaudeLlmResponsesTaskPostAsync(n
         MaxOutputTokens = 1024,
         Temperature = 0.3,
         WebSearchCountryIsoCode = "FR",
-        ModelName = "claude-sonnet-4-0",
+        ModelName = "claude-sonnet-5",
         WebSearch = true,
         UserPrompt = "provide information on how relevant the amusement park business is in France now",
     }
@@ -2189,11 +2189,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedDomainsLiv
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         LinksScope = "sources",
@@ -2270,11 +2270,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedPagesLiveA
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         LinksScope = "sources",
@@ -2351,11 +2351,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandsLive
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         InitialDatasetFilters = new List<object>()
@@ -2431,11 +2431,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandCateg
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         InitialDatasetFilters = new List<object>()
@@ -2586,11 +2586,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedDomainsLit
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         LinksScope = "sources",
@@ -2667,11 +2667,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedPagesLiteL
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         LinksScope = "sources",
@@ -2748,11 +2748,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandsLite
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         InitialDatasetFilters = new List<object>()
@@ -2828,11 +2828,11 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTopMentionedBrandCateg
             new AiOptimizationLLmMentionsKeywordElement()
             {
                 Keyword = "auto",
+                MatchType = "partial_match",
                 SearchScope = new List<string>()
                 {
                     "question",
                 },
-                MatchType = "partial_match",
             },
         },
         InitialDatasetFilters = new List<object>()

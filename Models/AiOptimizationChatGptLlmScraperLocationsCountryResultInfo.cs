@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
         /// <br/><c>'location_code': 20044,'location_name': 'Lower Austria,Austria'</c>
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string LocationCodeParent { get; set; }
+        public int? LocationCodeParent { get; set; }
 
         /// <summary>
         /// ISO country code of the location

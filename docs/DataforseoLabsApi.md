@@ -33,6 +33,7 @@ All URIs are relative to *https://api.dataforseo.com*
 [**googleHistoricalSerpsLive**](DataforseoLabsApi.md#googleHistoricalSerpsLive) | **POST**  /v3/dataforseo_labs/google/historical_serps/live  |
 [**googleHistoricalRankOverviewLive**](DataforseoLabsApi.md#googleHistoricalRankOverviewLive) | **POST**  /v3/dataforseo_labs/google/historical_rank_overview/live  |
 [**googlePageIntersectionLive**](DataforseoLabsApi.md#googlePageIntersectionLive) | **POST**  /v3/dataforseo_labs/google/page_intersection/live  |
+[**googleHistoricalSearchVolumeLive**](DataforseoLabsApi.md#googleHistoricalSearchVolumeLive) | **POST**  /v3/dataforseo_labs/google/historical_search_volume/live  |
 [**googleBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleBulkTrafficEstimationLive) | **POST**  /v3/dataforseo_labs/google/bulk_traffic_estimation/live  |
 [**googleHistoricalBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleHistoricalBulkTrafficEstimationLive) | **POST**  /v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live  |
 [**googleHistoricalKeywordDataLive**](DataforseoLabsApi.md#googleHistoricalKeywordDataLive) | **POST**  /v3/dataforseo_labs/google/historical_keyword_data/live  |
@@ -1517,6 +1518,60 @@ var result = await dfsClient.DataforseoLabsApi.GooglePageIntersectionLiveAsync(n
 ### Return type
 
 [**DataforseoLabsGooglePageIntersectionLiveResponseInfo**](DataforseoLabsGooglePageIntersectionLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleHistoricalSearchVolumeLive"></a>
+# **googleHistoricalSearchVolumeLive**
+> DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo googleHistoricalSearchVolumeLive()
+
+
+### Example
+```csharp
+var dfsClient = new DataForSeoClient(new DataForSeoClientConfiguration()
+{
+    Username = "USERNAME",
+    Password = "PASSWORD",
+});
+var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalSearchVolumeLiveAsync(new List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo>()
+{
+    new()
+    {
+        Keywords = new List<string>()
+        {
+            "phone",
+            "watch",
+        },
+        LanguageName = "English",
+        LocationCode = 2840,
+        IncludeSerpInfo = true,
+    }
+});
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **** | [**List&lt;IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo>&gt;**](IEnumerable<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo**](DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo.md)
 
 ### Authorization
 

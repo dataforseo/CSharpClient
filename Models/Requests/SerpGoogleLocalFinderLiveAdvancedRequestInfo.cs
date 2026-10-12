@@ -136,28 +136,6 @@ namespace DataForSeo.Client.Models.Requests
         [JsonProperty("location_coordinate", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }
 
-        /// <summary>
-        /// filter results by minimum rating
-        /// <br/>optional field
-        /// <br/>possible values for <c>desktop</c>: <c>3.5</c>, <c>4</c>, <c>4.5</c>;
-        /// <br/>possible values for <c>mobile</c>: <c>2</c>, <c>2.5</c>, <c>3</c>, <c>3.5</c>, <c>4</c>, <c>4.5</c>
-        /// </summary>
-        [JsonProperty("min_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? MinRating { get; set; }
-
-        /// <summary>
-        /// filter results by open hours
-        /// <br/>optional field
-        /// <br/>using this field, you can filter places in the results by the time a place is open for visitors
-        /// <br/>note that Google may also provide results that do not match this filter
-        /// <br/>possible values: <c>'open_now'</c>, <c>'24_hours'</c>, <c>'$day_value'</c>, <c>'$day_value;$time_value'</c>;
-        /// <br/>instead of <c>$day_value</c> use one of these values: <c>'monday'</c>, <c>'tuesday'</c>, <c>'wednesday'</c>, <c>'thursday'</c>, <c>'friday'</c>, <c>'saturday'</c>, <c>'sunday'</c>;
-        /// <br/>instead of <c>$time_value</c> use one of these values: <c>'00'</c>, <c>'01'</c>, <c>'02'</c>, <c>'03'</c>, <c>'04'</c>, <c>'05'</c>, <c>'06'</c>, <c>'07'</c>, <c>'08'</c>, <c>'09'</c>, <c>'10'</c>, <c>'11'</c>, <c>'12'</c>, <c>'13'</c>, <c>'14'</c>, <c>'15'</c>, <c>'16'</c>, <c>'17'</c>, <c>'18'</c>, <c>'19'</c>, <c>'20'</c>, <c>'21'</c>, <c>'22'</c>, <c>'23'</c>
-        /// <br/>example: <c>'tuesday;18'</c>
-        /// </summary>
-        [JsonProperty("time_filter", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string TimeFilter { get; set; }
-
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -68,6 +68,20 @@ namespace DataForSeo.Client.Models
         public bool? IsMalicious { get; set; }
 
         /// <summary>
+        /// array of properties detected for the SERP element
+        /// <br/>lists the properties that are true for this element
+        /// <br/>each value in the array represents a detected property 
+        /// <br/>example:
+        /// <br/>if <c>is_image</c> is present in the array, the element contains an image
+        /// <br/>possible values in the array:
+        /// <br/><c>is_image</c>, <c>is_video</c>, <c>is_featured_snippet</c>, <c>amp_version</c>, <c>is_malicious</c>, <c>is_web_story</c>, <c>is_highly_cited</c>
+        /// <br/>equals <c>null</c> if none of the properties are detected for the element
+        /// <br/>learn more about the <c>checks</c> array in <see href="https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api">this Help Center article</see>
+        /// </summary>
+        [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<string> Checks { get; set; }
+
+        /// <summary>
         /// description of the results element in SERP
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -87,7 +101,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// Accelerated Mobile Pages
-        /// <br/>            indicates whether an item has the Accelerated Mobile Page (AMP) version
+        /// <br/>indicates whether an item has the Accelerated Mobile Page (AMP) version
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("amp_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AmpVersion { get; set; }

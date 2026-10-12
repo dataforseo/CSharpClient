@@ -73,7 +73,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the element contains an_<c>image</c>
-        /// <br/>Note: this check no longer appears in SERPn
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
@@ -127,6 +127,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// Accelerated Mobile Pages
         /// <br/>indicates whether an item has the Accelerated Mobile Page (AMP) version
+        /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("amp_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AmpVersion { get; set; }

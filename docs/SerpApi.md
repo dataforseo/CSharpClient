@@ -1541,8 +1541,6 @@ var result = await dfsClient.SerpApi.GoogleLocalFinderTaskPostAsync(new List<Ser
         LanguageCode = "en",
         LocationCode = 2840,
         Keyword = "local nail services",
-        MinRating = 4.5,
-        TimeFilter = "monday",
     }
 });
 ```
@@ -1758,8 +1756,6 @@ var result = await dfsClient.SerpApi.GoogleLocalFinderLiveAdvancedAsync(new List
         LanguageCode = "en",
         LocationCode = 2840,
         Keyword = "local nail services",
-        MinRating = 4.5,
-        TimeFilter = "monday",
     }
 });
 ```

@@ -246,7 +246,7 @@ var result = await dfsClient.ContentAnalysisApi.SearchLiveAsync(new List<Content
     {
         KeywordFields = new Dictionary<string, string>()
         {
-            ["Snippet"] = "logitech",
+            ["snippet"] = "logitech",
         },
         Keyword = "logitech",
         PageType = new List<string>()

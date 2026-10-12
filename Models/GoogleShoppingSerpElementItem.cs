@@ -109,6 +109,12 @@ namespace DataForSeo.Client.Models
         public string Seller { get; set; }
 
         /// <summary>
+        /// additional information about the result
+        /// </summary>
+        [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Snippet { get; set; }
+
+        /// <summary>
         /// object containing additional url parameters
         /// <br/>you can get more details about the product by using this object in the POST request to the <see href="/v3/merchant/google/products/task_post/?php">Google Shopping Product Specification</see> and <see href="/v3/merchant/google/sellers/task_post/?php">Google Shopping Sellers</see> endpoint
         /// </summary>

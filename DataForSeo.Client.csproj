@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/dataforseo/CSharpClient</RepositoryUrl>
         <PackageProjectUrl>https://github.com/dataforseo/CSharpClient</PackageProjectUrl>
         <RootNamespace>DataForSeo.Client</RootNamespace>
-        <Version>2.1.8</Version>
+        <Version>2.1.9</Version>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>
@@ -23,6 +23,9 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
         <Content Include="SKILL.md" Pack="true" PackagePath="">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="knowledge-base\*.md" Pack="true" PackagePath="knowledge-base\">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>

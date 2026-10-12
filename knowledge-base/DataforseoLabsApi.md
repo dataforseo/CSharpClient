@@ -280,6 +280,7 @@ All methods of `DataforseoLabsApi`. Request and response DTO names are derived f
 | `GoogleHistoricalSerpsLiveAsync` | POST | `/v3/dataforseo_labs/google/historical_serps/live` |
 | `GoogleHistoricalRankOverviewLiveAsync` | POST | `/v3/dataforseo_labs/google/historical_rank_overview/live` |
 | `GooglePageIntersectionLiveAsync` | POST | `/v3/dataforseo_labs/google/page_intersection/live` |
+| `GoogleHistoricalSearchVolumeLiveAsync` | POST | `/v3/dataforseo_labs/google/historical_search_volume/live` |
 | `GoogleBulkTrafficEstimationLiveAsync` | POST | `/v3/dataforseo_labs/google/bulk_traffic_estimation/live` |
 | `GoogleHistoricalBulkTrafficEstimationLiveAsync` | POST | `/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live` |
 | `GoogleHistoricalKeywordDataLiveAsync` | POST | `/v3/dataforseo_labs/google/historical_keyword_data/live` |

@@ -10,6 +10,7 @@
 **Title** | **string** | <em>product title</em> |[optional]|
 **Tags** | **IEnumerable<string>** | <em>tags assigned to the product</em> |[optional]|
 **Seller** | **string** | <em>name of the seller</em><br>the name of the company that placed a corresponding product on Google Shopping |[optional]|
+**Snippet** | **string** | <em>additional information about the result</em> |[optional]|
 **Price** | **double?** | <em>product price</em><br>example:<br><code>384.99</code> |[optional]|
 **Currency** | **string** | <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code> |[optional]|
 **ProductRating** | **RatingElement** | <em>product rating</em><br>the product popularity rate based on product reviews |[optional]|
