@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models
         public string Source { get; set; }
 
         /// <summary>
-        /// description of the results element in SERP
+        /// description of the place in SERP
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }

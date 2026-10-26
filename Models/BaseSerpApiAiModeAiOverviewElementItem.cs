@@ -10,6 +10,7 @@ namespace DataForSeo.Client.Models
     [JsonInheritance("ai_overview_expanded_element", typeof(SerpApiAiModeAiOverviewExpandedElementItem))]
     [JsonInheritance("ai_overview_video_element", typeof(SerpApiAiModeAiOverviewVideoElementItem))]
     [JsonInheritance("ai_overview_table_element", typeof(SerpApiAiModeAiOverviewTableElementItem))]
+    [JsonInheritance("ai_overview_code_block_element", typeof(SerpApiAiModeAiOverviewCodeBlockElementItem))]
     [JsonInheritance("ai_overview_shopping", typeof(SerpApiAiModeAiOverviewShoppingItem))]
     [JsonInheritance("ai_overview_paid", typeof(SerpApiAiModeAiOverviewPaidItem))]
 

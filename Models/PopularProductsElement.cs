@@ -52,6 +52,18 @@ namespace DataForSeo.Client.Models
         public string Seller { get; set; }
 
         /// <summary>
+        /// title of the hotel listing's group
+        /// </summary>
+        [JsonProperty("group_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string GroupTitle { get; set; }
+
+        /// <summary>
+        /// domain or brand name of the hotel listing's group
+        /// </summary>
+        [JsonProperty("group_source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string GroupSource { get; set; }
+
+        /// <summary>
         /// URL of the image
         /// <br/>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
         /// </summary>

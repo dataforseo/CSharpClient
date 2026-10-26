@@ -53,6 +53,10 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
+
+        /// <summary>
+        /// ((‘related_searches’ element in SERP|https://dataforseo.com/wp-content/uploads/2020/02/window-feature-related-searches.png))
+        /// </summary>
         [JsonProperty("related_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> RelatedSearches { get; set; }
 

@@ -48,6 +48,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don't specify <c>language_code</c>;
         /// <br/>if you use this field, you don't need to specify <c>language_code</c>;
         /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>
+        /// <br/>example:
+        /// <br/><c>English</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -57,6 +59,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don't specify <c>language_name</c>;
         /// <br/>if you use this field, you don't need to specify <c>language_name</c>;
         /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>
+        /// <br/>example:
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

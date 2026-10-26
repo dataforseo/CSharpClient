@@ -10,8 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// introductory text of the element in the response
-        /// <br/>text preceding the paid ad items
+        /// content of the code block
+        /// <br/>contains the code returned in the AI Mode response
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Text { get; set; }

@@ -67,6 +67,18 @@ namespace DataForSeo.Client.Models
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
+        /// <summary>
+        /// title of the hotel listing's group
+        /// </summary>
+        [JsonProperty("group_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string GroupTitle { get; set; }
+
+        /// <summary>
+        /// domain or brand name of the hotel listing's group
+        /// </summary>
+        [JsonProperty("group_source", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string GroupSource { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -26,7 +26,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>can take the following values:
         /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.
+        /// <br/>2 – high execution priority
+        /// <br/>You will be additionally charged for the tasks with high execution priority.
         /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/ai-optimization/llm-scraper">Pricing</see> page.
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -59,6 +60,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>required field if you don't specify <c>language_code</c>;
         /// <br/>if you use this field, you don't need to specify <c>language_code</c>;
         /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>
+        /// <br/>example:
+        /// <br/><c>English</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -67,7 +70,9 @@ namespace DataForSeo.Client.Models.Requests
         /// search engine language code
         /// <br/>required field if you don't specify <c>language_name</c>;
         /// <br/>if you use this field, you don't need to specify <c>language_name</c>;
-        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>n
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/languages</c>
+        /// <br/>example:
+        /// <br/><c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

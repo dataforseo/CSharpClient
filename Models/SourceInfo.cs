@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         public string Snippet { get; set; }
 
         /// <summary>
-        /// source domain in SERP
+        /// source domain in a ChatGPT result
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the result was published
-        /// <br/>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
+        /// <br/>in the format: “yyyy-mm-dd hh:mm:ss +hh:mm”
         /// <br/>example:
         /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>

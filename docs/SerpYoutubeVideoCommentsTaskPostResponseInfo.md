@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpYoutubeVideoCommentsTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpYoutubeVideoCommentsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -98,6 +98,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>set to <c>true</c> to use the <see href="/v3/on_page/content_parsing/live/">OnPage Content Parsing endpoint</see>
         /// <br/>default value: <c>false</c>
+        /// <br/>Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter <see href="https://dataforseo.com/help-center/cost-of-onpage-api-parameters">in our help article</see>; the cost can be calculated on the <see href="https://dataforseo.com/pricing/on-page/onpage-api">Pricing Page</see>
         /// </summary>
         [JsonProperty("enable_content_parsing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableContentParsing { get; set; }
@@ -293,7 +294,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// custom javascript
         /// <br/>optional field
-        /// <br/>Note that the execution time for the script you enter here should be 700 ms maximum, for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a <c>scr</c> attribute:
+        /// <br/>Note: that the execution time for the script you enter here should be 700 ms maximum, for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a <c>scr</c> attribute:
         /// <br/><c>let meta = { haveGoogleAnalytics: false, haveTagManager: false };rnfor (var i = 0; i = 0)rn      meta.haveGoogleAnalytics = true;rntif (src.indexOf('gtm.js') &gt;= 0)rn      meta.haveTagManager = true;rn  }rn}rnmeta;</c>the returned value depends on what you specified in this field. For instance, if you specify the following script:
         /// <br/>`meta = {}; meta.url = document.URL; meta.test = 'test'; meta;`
         /// <br/>as a response you will receive the following data:
@@ -301,7 +302,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>'url': 'https://dataforseo.com/',
         /// <br/>'test': 'test'
         /// <br/>}`
-        /// <br/>Note: the length of the script you enter must be no more than 2000 characters
+        /// <br/>Note #2: the length of the script you enter must be no more than 2000 characters
+        /// <br/>Note #3: the serialized script response must be no more than 100000 characters. If it exceeds this limit, both `custom_js_response` and `custom_js_client_exception` will contain the following message: `your response was truncated because greater than 100000 symbols`
         /// </summary>
         [JsonProperty("custom_js", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CustomJs { get; set; }

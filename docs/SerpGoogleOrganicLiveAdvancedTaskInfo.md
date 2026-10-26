@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleOrganicLiveAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleOrganicLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// elements of Gemini results
+        /// elements of a Gemini result
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GeminiImagesElement> Items { get; set; }

@@ -72,7 +72,7 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an_<c>image</c>
+        /// indicates whether the element contains an <c>image</c>
         /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

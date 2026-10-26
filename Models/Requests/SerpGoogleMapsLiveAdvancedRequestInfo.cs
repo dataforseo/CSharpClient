@@ -62,7 +62,6 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>return results for a specific device type
         /// <br/>can take the values:<c>desktop</c>, <c>mobile</c>
         /// <br/>default value: <c>desktop</c>
-        /// <br/>note: for <c>mobile</c> device, only 20 results are returned for every SERP
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }

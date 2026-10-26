@@ -6,10 +6,10 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
-    [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
     [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
+    [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
     [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
+    [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
     [JsonInheritance("answer_box", typeof(DataLabsAnswerBoxSerpElementItem))]
     [JsonInheritance("carousel", typeof(DataLabsCarouselSerpElementItem))]
     [JsonInheritance("multi_carousel", typeof(DataLabsMultiCarouselSerpElementItem))]

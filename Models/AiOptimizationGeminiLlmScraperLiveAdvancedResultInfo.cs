@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: “yyyy-mm-dd hh:mm:ss +hh:mm”
         /// <br/>example:
         /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
@@ -64,8 +64,8 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
-        /// types of search results
-        /// <br/>contains types of search results (<c>items</c>) found in SERP.
+        /// types of result items
+        /// <br/>contains types of result <c>items</c> found in a Gemini result.
         /// <br/>possible item types:
         /// <br/><c>gemini_text</c>, <c>gemini_table</c>, <c>gemini_images</c>
         /// </summary>
@@ -79,7 +79,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// elements of Gemini results
+        /// elements of a Gemini result
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseGeminiLlmScraperElementItem> Items { get; set; }

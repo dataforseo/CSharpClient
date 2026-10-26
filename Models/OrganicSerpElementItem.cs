@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an_<c>image</c>
+        /// indicates whether the element contains an <c>image</c>
         /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -110,7 +110,7 @@ namespace DataForSeo.Client.Models
         public bool? IsWebStory { get; set; }
 
         /// <summary>
-        /// array of properties detected for the SERP element
+        /// properties detected for the SERP element
         /// <br/>lists the properties that are true for this element
         /// <br/>each value in the array represents a detected property 
         /// <br/>example:

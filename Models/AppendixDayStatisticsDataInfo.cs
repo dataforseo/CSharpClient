@@ -6,7 +6,7 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class AppendixStatisticsRatesDataInfo 
+    public class AppendixDayStatisticsDataInfo 
     {
         [JsonProperty("serp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixSerpDaysRatesDataInfo Serp { get; set; }

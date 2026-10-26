@@ -10,7 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// array of resultsin this case, the value will be null
+        /// array of results
+        /// <br/>in this case, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public object Result { get; set; }

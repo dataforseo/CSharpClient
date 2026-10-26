@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: “yyyy-mm-dd hh:mm:ss +hh:mm”
         /// <br/>example:
         /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>

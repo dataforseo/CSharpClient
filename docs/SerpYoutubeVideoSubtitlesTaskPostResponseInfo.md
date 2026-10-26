@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpYoutubeVideoSubtitlesTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpYoutubeVideoSubtitlesTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -105,6 +105,19 @@ namespace DataForSeo.Client.Models
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
 
+        /// <summary>
+        /// introductory text of the element in the response
+        /// <br/>text preceding the paid ad items
+        /// </summary>
+        [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Text { get; set; }
+
+        /// <summary>
+        /// content of the element in the markdown format
+        /// </summary>
+        [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Markdown { get; set; }
+
         private IDictionary<string, object> _additionalProperties;
 
         [JsonExtensionData]

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

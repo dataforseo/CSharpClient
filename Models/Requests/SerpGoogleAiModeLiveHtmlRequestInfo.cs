@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models.Requests
         /// full name of search engine location
         /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
         /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
-        /// <br/>you can receive the list of available locations of the search engine with their <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</c>
+        /// <br/>you can receive the list of available locations of the search engine with their <c>location_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/locations</c>
         /// <br/>example:
         /// <br/><c>London,England,United Kingdom</c>
         /// </summary>
@@ -35,9 +35,9 @@ namespace DataForSeo.Client.Models.Requests
         /// search engine location code
         /// <br/>required field if you don't specify <c>location_name</c>_or <c>location_coordinate</c>
         /// <br/>if you use this field, you don't need to specify <c>location_name</c> or <c>location_coordinate</c>
-        /// <br/>you can receive the list of available locations of the search engines with their <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</c>
+        /// <br/>you can receive the list of available locations of the search engines with their <c>location_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/locations</c>
         /// <br/>example:
-        /// <br/><c>2840</c>n
+        /// <br/><c>2840</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models.Requests
         /// full name of search engine language
         /// <br/>required field if you don't specify <c>language_code</c>;
         /// <br/>if you use this field, you don't need to specify <c>language_code</c>;
-        /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>;
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_name</c> by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>
         /// </summary>
         [JsonProperty("language_name", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageName { get; set; }
@@ -69,7 +69,7 @@ namespace DataForSeo.Client.Models.Requests
         /// search engine language code
         /// <br/>required field if you don't specify <c>language_name</c>;
         /// <br/>if you use this field, you don't need to specify <c>language_name</c>;
-        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>n
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }

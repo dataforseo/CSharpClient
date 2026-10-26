@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: “yyyy-mm-dd hh:mm:ss +hh:mm”
         /// <br/>example:
         /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
@@ -92,10 +92,10 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
-        /// types of search results
-        /// <br/>contains types of search results (<c>items</c>) found in SERP.
+        /// types of result items
+        /// <br/>contains types of result <c>items</c> found in a ChatGPT result.
         /// <br/>possible item types:
-        /// <br/><c>chat_gpt_text</c>, <c>chat_gpt_table</c>, <c>chat_gpt_navigation_list</c>, <c>chat_gpt_images</c>, <c>chat_gpt_local_businesses</c>, <c>chat_gpt_products</c>
+        /// <br/><c>chat_gpt_text</c>, <c>chat_gpt_table</c>, <c>chat_gpt_navigation_list</c>, <c>chat_gpt_images</c>, <c>chat_gpt_local_businesses</c>, <c>chat_gpt_products</c>, <c>chat_gpt_ad</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -107,7 +107,7 @@ namespace DataForSeo.Client.Models
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// elements of ChatGPT results
+        /// elements of a ChatGPT result
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseChatGptLlmScraperElementItem> Items { get; set; }

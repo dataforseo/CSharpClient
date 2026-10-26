@@ -6,12 +6,12 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class AppendixStatisticsDataInfo 
+    public class AppendixStatisticsRatesData 
     {
         [JsonProperty("day", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixStatisticsRatesDataInfo Day { get; set; }
+        public AppendixDayStatisticsDataInfo Day { get; set; }
         [JsonProperty("minute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixStatisticsRatesDataInfo Minute { get; set; }
+        public AppendixMinuteStatisticsRatesData Minute { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

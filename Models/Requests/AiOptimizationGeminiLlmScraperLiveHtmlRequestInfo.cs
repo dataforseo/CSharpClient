@@ -72,8 +72,8 @@ namespace DataForSeo.Client.Models.Requests
         /// search engine language code
         /// <br/>required field if you don't specify <c>language_name</c>
         /// <br/>if you use this field, you don't need to specify <c>language_name</c>
-        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c>_by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languages</c>
-        /// <br/>example:<c>en</c>n
+        /// <br/>you can receive the list of available languages of the search engine with their <c>language_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languages</c>
+        /// <br/>example:<c>en</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
