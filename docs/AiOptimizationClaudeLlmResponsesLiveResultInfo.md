@@ -14,3 +14,4 @@
 **Datetime** | **string** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
 **Items** | **IEnumerable<BaseAiOptimizationLlmResponseElementItem>** | <em>array of response items</em><br>contains structured AI response data |[optional]|
 **FanOutQueries** | **IEnumerable<string>** | <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response |[optional]|
+**SearchResults** | **IEnumerable<SearchResults>** | <em>array of search results</em><br>contains objects with search results relevant to the user query and model's response |[optional]|

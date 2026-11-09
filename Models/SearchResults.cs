@@ -10,49 +10,30 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// result description
-        /// </summary>
-        [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Description { get; set; }
-
-        /// <summary>
-        /// breadcrumb
-        /// </summary>
-        [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Breadcrumb { get; set; }
-
-        /// <summary>
-        /// rank in the results
-        /// </summary>
-        [JsonProperty("rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Rank { get; set; }
-
-        /// <summary>
-        /// source title
+        /// the domain name or title of the quoted source
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
-        /// source domain
-        /// </summary>
-        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string Domain { get; set; }
-
-        /// <summary>
-        /// source URL
+        /// URL of the quoted source
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
-        /// date and time when the result was published
-        /// <br/>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
-        /// <br/>example:
-        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
+        /// publishing date
+        /// <br/>date when the page appearing in the search result was published or indexed
+        /// <br/> in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// </summary>
-        [JsonProperty("publication_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string PublicationDate { get; set; }
+        [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Date { get; set; }
+
+        /// <summary>
+        /// text snippet in the search result
+        /// </summary>
+        [JsonProperty("snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Snippet { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

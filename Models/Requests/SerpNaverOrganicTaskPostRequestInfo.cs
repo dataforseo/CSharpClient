@@ -47,10 +47,10 @@ namespace DataForSeo.Client.Models.Requests
         /// parsing depth
         /// <br/>optional field
         /// <br/>number of results in SERP
-        /// <br/>default value: <c>15</c>
+        /// <br/>default value: <c>20</c>
         /// <br/>max value: <c>700</c>
-        /// <br/>Your account will be billed per each SERP containing up to 15 results; 
-        /// <br/>Setting depth above 15 may result in additional charges <see href="https://dataforseo.com/help-center/how-many-results-scraped">if the search engine returns more than 15 results</see>;
+        /// <br/>Your account will be billed per each SERP containing up to 20 results; 
+        /// <br/>Setting depth above 20 may result in additional charges <see href="https://dataforseo.com/help-center/how-many-results-scraped">if the search engine returns more than 20 results</see>;
         /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/naver-organic-serp-api">Pricing</see> page.
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

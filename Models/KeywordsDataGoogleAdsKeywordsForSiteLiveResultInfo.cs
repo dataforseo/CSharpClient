@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the value may differ depending on the location specified in a POST request
         /// </summary>
         [JsonProperty("low_top_of_page_bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? LowTopOfPageBid { get; set; }
+        public int? LowTopOfPageBid { get; set; }
 
         /// <summary>
         /// maximum bid for the ad to be displayed at the top of the first page

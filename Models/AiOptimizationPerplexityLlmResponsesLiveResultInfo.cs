@@ -66,7 +66,14 @@ namespace DataForSeo.Client.Models
         /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
         /// </summary>
         [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object FanOutQueries { get; set; }
+        public IEnumerable<string> FanOutQueries { get; set; }
+
+        /// <summary>
+        /// array of search results
+        /// <br/>contains objects with search results relevant to the user query and model's response
+        /// </summary>
+        [JsonProperty("search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public IEnumerable<SearchResults> SearchResults { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

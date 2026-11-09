@@ -166,7 +166,7 @@ namespace DataForSeo.Client.Models
         /// <br/>indicates ISO country codes of the domains where the referring links are located and the link count per each country
         /// </summary>
         [JsonProperty("referring_links_countries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object ReferringLinksCountries { get; set; }
+        public IDictionary<string, long?> ReferringLinksCountries { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

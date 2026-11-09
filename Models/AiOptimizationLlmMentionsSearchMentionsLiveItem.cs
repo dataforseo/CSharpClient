@@ -61,7 +61,7 @@ namespace DataForSeo.Client.Models
         /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SearchResults> SearchResults { get; set; }
+        public IEnumerable<ItemsSearchResults> SearchResults { get; set; }
 
         /// <summary>
         /// current AI search volume rate of a keyword

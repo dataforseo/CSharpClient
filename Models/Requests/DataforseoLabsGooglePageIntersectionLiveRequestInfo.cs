@@ -46,7 +46,7 @@ namespace DataForSeo.Client.Models.Requests
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// search results typeindicates type of search results included in the responseoptional fieldpossible values: ['organic', 'paid', 'featured_snippet', 'local_pack']default value: ['organic', 'paid']
+        /// search results typeindicates type of search results included in the responseoptional fieldpossible values: ['organic', 'paid', 'featured_snippet', 'local_pack', 'ai_overview_reference']default value: ['organic', 'paid']
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }

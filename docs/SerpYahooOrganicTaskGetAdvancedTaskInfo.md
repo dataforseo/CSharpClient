@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYahooOrganicTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|
+**Result** | **IEnumerable<SerpYahooOrganicTaskGetAdvancedResultInfo>** | array of results |[optional]|
