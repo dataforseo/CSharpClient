@@ -91,8 +91,6 @@ var result = await dfsClient.KeywordsDataApi.KeywordsDataIdListAsync(new List<Ke
 {
     new()
     {
-        DatetimeFrom = "2026-10-24 16:19:26",
-        DatetimeTo = "2026-11-03 16:19:26",
         Limit = 10,
         IncludeMetadata = true,
     }
@@ -498,7 +496,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(new 
             "cheap laptops for sale",
             "purchase laptop",
         },
-        DateFrom = "2021-08-01",
         SearchPartners = true,
     }
 });
@@ -1268,8 +1265,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(ne
 {
     new()
     {
-        DateFrom = "2019-01-01",
-        DateTo = "2020-01-01",
         Type = "youtube",
         CategoryCode = 3,
         Keywords = new List<string>()
@@ -1407,8 +1402,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(new Li
     new()
     {
         LocationName = "United States",
-        DateFrom = "2019-01-01",
-        DateTo = "2020-01-01",
         Type = "youtube",
         CategoryCode = 3,
         Keywords = new List<string>()
@@ -1602,8 +1595,6 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsSubregionInterestsL
             "rugby",
             "cricket",
         },
-        DateFrom = "2023-01-01",
-        DateTo = "2024-01-01",
         Type = "web",
         LocationName = "United States",
     }
@@ -1657,8 +1648,6 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsDemographyLiveAsync
             "rugby",
             "cricket",
         },
-        DateFrom = "2023-01-01",
-        DateTo = "2024-01-01",
         Type = "web",
         LocationName = "United States",
     }
@@ -1712,8 +1701,6 @@ var result = await dfsClient.KeywordsDataApi.DataforseoTrendsMergedDataLiveAsync
             "rugby",
             "cricket",
         },
-        DateFrom = "2023-01-01",
-        DateTo = "2024-01-01",
         Type = "web",
         LocationName = "United States",
     }

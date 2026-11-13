@@ -59,8 +59,6 @@ var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantId
 {
     new()
     {
-        DatetimeFrom = "2026-10-24 16:19:26",
-        DatetimeTo = "2026-11-03 16:19:26",
         Limit = 10,
         IncludeMetadata = true,
     }

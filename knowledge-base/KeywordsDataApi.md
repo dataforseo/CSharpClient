@@ -57,8 +57,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreTaskPostAsync(ne
 {
     new()
     {
-        DateFrom = "2019-01-01",
-        DateTo = "2020-01-01",
         Type = "youtube",
         CategoryCode = 3,
         Keywords = new List<string>()
@@ -91,7 +89,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleAdsSearchVolumeLiveAsync(new 
             "cheap laptops for sale",
             "purchase laptop",
         },
-        DateFrom = "2021-08-01",
         SearchPartners = true,
     }
 });
@@ -138,8 +135,6 @@ var result = await dfsClient.KeywordsDataApi.GoogleTrendsExploreLiveAsync(new Li
     new()
     {
         LocationName = "United States",
-        DateFrom = "2019-01-01",
-        DateTo = "2020-01-01",
         Type = "youtube",
         CategoryCode = 3,
         Keywords = new List<string>()

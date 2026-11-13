@@ -252,8 +252,6 @@ var result = await dfsClient.BacklinksApi.HistoryLiveAsync(new List<BacklinksHis
     new()
     {
         Target = "cnn.com",
-        DateFrom = "2020-01-01",
-        DateTo = "2021-01-01",
     }
 });
 ```

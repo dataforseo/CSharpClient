@@ -134,8 +134,6 @@ var result = await dfsClient.DomainAnalyticsApi.DomainAnalyticsIdListAsync(new L
 {
     new()
     {
-        DatetimeFrom = "2026-10-24 16:19:26",
-        DatetimeTo = "2026-11-03 16:19:26",
         Limit = 10,
         IncludeMetadata = true,
     }
@@ -296,8 +294,6 @@ var result = await dfsClient.DomainAnalyticsApi.TechnologiesTechnologyStatsLiveA
     new()
     {
         Technology = "jQuery",
-        DateFrom = "2022-10-31",
-        DateTo = "2023-06-01",
     }
 });
 ```

@@ -69,8 +69,6 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 {
     new()
     {
-        DatetimeFrom = "2026-10-24 16:19:26",
-        DatetimeTo = "2026-11-03 16:19:26",
         Limit = 10,
         IncludeMetadata = true,
     }
@@ -906,8 +904,6 @@ var result = await dfsClient.DataforseoLabsApi.GoogleDomainMetricsByCategoriesLi
             "13418",
             "11494",
         },
-        FirstDate = "2021-06-01",
-        SecondDate = "2021-10-01",
         Limit = 3,
     }
 });
@@ -1452,8 +1448,6 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalRankOverviewLiveA
         Target = "dataforseo.com",
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2021-01-01",
-        DateTo = "2021-03-29",
     }
 });
 ```
@@ -1676,8 +1670,6 @@ var result = await dfsClient.DataforseoLabsApi.GoogleHistoricalBulkTrafficEstima
         },
         LocationCode = 2840,
         LanguageCode = "en",
-        DateFrom = "2021-01-01",
-        DateTo = "2021-03-29",
         ItemTypes = new List<string>()
         {
             "organic",

@@ -45,8 +45,6 @@ var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(new List<Backlink
 {
     new()
     {
-        DatetimeFrom = "2026-10-24 16:19:26",
-        DatetimeTo = "2026-11-03 16:19:26",
         Limit = 10,
         IncludeMetadata = true,
     }
@@ -281,8 +279,6 @@ var result = await dfsClient.BacklinksApi.HistoryLiveAsync(new List<BacklinksHis
     new()
     {
         Target = "cnn.com",
-        DateFrom = "2020-01-01",
-        DateTo = "2021-01-01",
     }
 });
 ```
@@ -886,8 +882,6 @@ var result = await dfsClient.BacklinksApi.TimeseriesSummaryLiveAsync(new List<Ba
     new()
     {
         Target = "dataforseo.com",
-        DateFrom = "2021-12-01",
-        DateTo = "2022-02-01",
         GroupRange = "month",
     }
 });
@@ -936,8 +930,6 @@ var result = await dfsClient.BacklinksApi.TimeseriesNewLostSummaryLiveAsync(new 
     new()
     {
         Target = "dataforseo.com",
-        DateFrom = "2021-12-01",
-        DateTo = "2022-02-01",
         GroupRange = "month",
     }
 });
@@ -1234,7 +1226,6 @@ var result = await dfsClient.BacklinksApi.BulkNewLostBacklinksLiveAsync(new List
             "https://stackoverflow.com/",
             "www.trustpilot.com",
         },
-        DateFrom = "2026-10-14 16:19:26",
     }
 });
 ```
