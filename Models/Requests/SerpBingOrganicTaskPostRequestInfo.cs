@@ -162,42 +162,6 @@ namespace DataForSeo.Client.Models.Requests
         public string Tag { get; set; }
 
         /// <summary>
-        /// array of targets to stop crawling
-        /// <br/>optional field
-        /// <br/>if specified, the response will contain SERP results up to and including the specified match_value;
-        /// <br/>you can specify up to 10 target values in this array
-        /// <br/>example:
-        /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets
-        /// </summary>
-        [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
-
-        /// <summary>
-        /// target match type
-        /// <br/>required field if <c>stop_crawl_on_match</c> is specified
-        /// <br/>type of match for the <c>match_value</c>
-        /// <br/>possible values:
-        /// <br/><c>domain</c> – specific domain or subdomain
-        /// <br/><c>with_subdomains</c> – main domain and subdomains
-        /// <br/><c>wildcard</c> –  wildcard pattern
-        /// </summary>
-        [JsonProperty("match_type", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchType { get; set; }
-
-        /// <summary>
-        /// target domain, subdomain, or wildcard value
-        /// <br/>required field if <c>stop_crawl_on_match</c> is specified
-        /// <br/>specify a target domain, subdomain, or wildcard value;
-        /// <br/>Note: domain or subdomain must be specified without a request protocol;
-        /// <br/>example: <c>'match_value': 'dataforseo.com'</c>,
-        /// <br/><c>'match_value': '/blog/post-*'</c>
-        /// </summary>
-        [JsonProperty("match_value", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchValue { get; set; }
-
-        /// <summary>
         /// page crawl limit
         /// <br/>optional field
         /// <br/>number of search results pages to crawl

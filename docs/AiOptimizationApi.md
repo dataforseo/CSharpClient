@@ -2976,6 +2976,8 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTimeseriesDeltaLiveAsy
             },
         },
         Platform = "google",
+        DateFrom = "2025-08-01",
+        DateTo = "2025-12-01",
         GroupRange = "month",
     }
 });
@@ -3042,6 +3044,8 @@ var result = await dfsClient.AiOptimizationApi.LlmMentionsTimeseriesNewLostLiveA
             },
         },
         Platform = "google",
+        DateFrom = "2025-08-01",
+        DateTo = "2025-12-01",
         GroupRange = "month",
     }
 });

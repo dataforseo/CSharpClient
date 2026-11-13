@@ -57,6 +57,16 @@ namespace DataForSeo.Client.Models.Requests
         public int? Depth { get; set; }
 
         /// <summary>
+        /// resolve goto redirect URLs
+        /// <br/>optional field
+        /// <br/>set to <c>true</c> to resolve goto redirect URLs in SERPs
+        /// <br/>default value: <c>false</c>
+        /// <br/>Note: this parameter adds up to 40 seconds to the turnaround time, with a maximum turnaround time of 260 seconds
+        /// </summary>
+        [JsonProperty("resolve_goto_urls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? ResolveGotoUrls { get; set; }
+
+        /// <summary>
         /// device type
         /// <br/>optional field
         /// <br/>return results for a specific device type
@@ -108,18 +118,6 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }
-
-        /// <summary>
-        /// task priority
-        /// <br/>optional field
-        /// <br/>can take the following values:
-        /// <br/>1 – normal execution priority (set by default)
-        /// <br/>2 – high execution priority
-        /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-local-finder-serp-api">Pricing</see> page.
-        /// </summary>
-        [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public int? Priority { get; set; }
 
         /// <summary>
         /// GPS coordinates of a location

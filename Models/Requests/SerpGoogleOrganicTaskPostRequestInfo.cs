@@ -132,6 +132,17 @@ namespace DataForSeo.Client.Models.Requests
         public int? Priority { get; set; }
 
         /// <summary>
+        /// resolve goto redirect URLs
+        /// <br/>optional field
+        /// <br/>set to <c>true</c> to resolve goto redirect URLs in SERPs for tasks with high execution priority
+        /// <br/>default value for tasks with <c>priority: 1</c> is <c>true</c>
+        /// <br/>default value for tasks with <c>priority: 2</c> is <c>false</c>
+        /// <br/>Note: this parameter adds up to 40 seconds to the turnaround time of high-priority tasks, with a maximum turnaround time of 260 seconds
+        /// </summary>
+        [JsonProperty("resolve_goto_urls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? ResolveGotoUrls { get; set; }
+
+        /// <summary>
         /// full name of search engine location
         /// <br/>required field if you don't specify <c>location_code</c> or <c>location_coordinate</c>
         /// <br/>if you use this field, you don't need to specify <c>location_code</c> or <c>location_coordinate</c>
@@ -187,42 +198,6 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("os", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Os { get; set; }
-
-        /// <summary>
-        /// array of targets to stop crawling
-        /// <br/>optional field
-        /// <br/>if specified, the response will contain SERP results up to and including the specified match_value;
-        /// <br/>you can specify up to 10 target values in this array
-        /// <br/>example:
-        /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets
-        /// </summary>
-        [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
-
-        /// <summary>
-        /// target match type
-        /// <br/>required field if <c>stop_crawl_on_match</c> is specified
-        /// <br/>type of match for the <c>match_value</c>
-        /// <br/>possible values:
-        /// <br/><c>domain</c> – specific domain or subdomain
-        /// <br/><c>with_subdomains</c> – main domain and subdomains
-        /// <br/><c>wildcard</c> –  wildcard pattern
-        /// </summary>
-        [JsonProperty("match_type", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchType { get; set; }
-
-        /// <summary>
-        /// target domain, subdomain, or wildcard value
-        /// <br/>required field if <c>stop_crawl_on_match</c> is specified
-        /// <br/>specify a target domain, subdomain, or wildcard value;
-        /// <br/>Note: domain or subdomain must be specified without a request protocol;
-        /// <br/>example: <c>'match_value': 'dataforseo.com'</c>,
-        /// <br/><c>'match_value': '/blog/post-*'</c>
-        /// </summary>
-        [JsonProperty("match_value", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchValue { get; set; }
 
         /// <summary>
         /// page crawl limit
@@ -350,49 +325,6 @@ namespace DataForSeo.Client.Models.Requests
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
-
-        /// <summary>
-        /// target matching mode
-        /// <br/>optional field
-        /// <br/>to enable this parameter, <c>stop_crawl_on_match</c> must also be enabled
-        /// <br/>defines how the crawl should stop when multiple targets are specified in <c>stop_crawl_on_match</c>
-        /// <br/>possible values: <c>all</c>, <c>any</c>
-        /// <br/><c>all</c> – the crawl stops only when all specified targets are found
-        /// <br/><c>any</c> – the crawl stops when any single target is found
-        /// <br/>default value: <c>any</c>
-        /// <br/>learn more about this parameter on our <see href="https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api">Help Center</see>
-        /// </summary>
-        [JsonProperty("target_search_mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string TargetSearchMode { get; set; }
-
-        /// <summary>
-        /// SERP element types to check for targets
-        /// <br/>optional field
-        /// <br/>to enable this parameter, <c>stop_crawl_on_match</c> must also be enabled
-        /// <br/>specifies which SERP element types should be checked for target matches
-        /// <br/>if not specified, all first-level elements with <c>url</c> and <c>domain</c> fields are checked for targets
-        /// <br/>possible values: <c>organic</c>, <c>paid</c>, <c>local_pack</c>, <c>featured_snippet</c>, <c>events</c>, <c>google_flights</c>, <c>images</c>, <c>jobs</c>, <c>knowledge_graph</c>, <c>local_service</c>, <c>map</c>, <c>scholarly_articles</c>, <c>third_party_reviews</c>, <c>twitter</c>
-        /// <br/>Note: cannot contain the same element types as <c>ignore_targets_in</c>
-        /// <br/>example:
-        /// <br/><c>'find_targets_in': ['organic', 'featured_snippet']</c>
-        /// <br/>learn more about this parameter on our <see href="https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api">Help Center</see>
-        /// </summary>
-        [JsonProperty("find_targets_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> FindTargetsIn { get; set; }
-
-        /// <summary>
-        /// SERP element types to exclude from target search
-        /// <br/>optional field
-        /// <br/>to enable this parameter, <c>stop_crawl_on_match</c> must also be enabled
-        /// <br/>specifies which SERP element types should be excluded when searching for target matches
-        /// <br/>possible values: <c>organic</c>, <c>paid</c>, <c>local_pack</c>, <c>featured_snippet</c>, <c>events</c>, <c>google_flights</c>, <c>images</c>, <c>jobs</c>, <c>knowledge_graph</c>, <c>local_service</c>, <c>map</c>, <c>scholarly_articles</c>, <c>third_party_reviews</c>, <c>twitter</c>
-        /// <br/>Note: cannot contain the same element types as <c>find_targets_in</c>
-        /// <br/>example:
-        /// <br/><c>'ignore_targets_in': ['paid', 'images']</c>
-        /// <br/>learn more about this parameter on our <see href="https://dataforseo.com/help-center/how-to-use-new-crawl-control-parameters-in-google-organic-serp-api">Help Center</see>
-        /// </summary>
-        [JsonProperty("ignore_targets_in", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<string> IgnoreTargetsIn { get; set; }
 
         /// <summary>
         /// search engine domain

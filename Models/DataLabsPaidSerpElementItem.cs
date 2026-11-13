@@ -40,13 +40,21 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// array of properties detected for the SERP elementlists the properties that are true for this elementeach value in the array represents a detected property example:if is_image is present in the array, the element contains an imagepossible values in the array:is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_citedequals null if none of the properties are detected for the elementlearn more about the checks array in this Help Center article
+        /// array of properties detected for the SERP element
+        /// <br/>lists the properties that are true for this element
+        /// <br/>each value in the array represents a detected property 
+        /// <br/>example:
+        /// <br/>if <c>is_image</c> is present in the array, the element contains an image
+        /// <br/>possible values in the array:
+        /// <br/><c>is_image</c>, <c>is_video</c>, <c>is_featured_snippet</c>, <c>amp_version</c>, <c>is_malicious</c>, <c>is_web_story</c>, <c>is_highly_cited</c>
+        /// <br/>equals <c>null</c> if none of the properties are detected for the element
+        /// <br/>learn more about the <c>checks</c> array in <see href="https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api">this Help Center article</see>
         /// </summary>
         [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Checks { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }
@@ -54,13 +62,16 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, string> Extra { get; set; }
 
         /// <summary>
-        /// extended description            if there is none, equals null
+        /// extended description
+        /// <br/>            if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("description_rows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> DescriptionRows { get; set; }
 
         /// <summary>
-        /// sitelinks            the links shown below some of Google's search results            if there are none, equals null
+        /// sitelinks
+        /// <br/>            the links shown below some of Google's search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AdLinkElement> Links { get; set; }
@@ -78,31 +89,41 @@ namespace DataForSeo.Client.Models
         public string RelativeUrl { get; set; }
 
         /// <summary>
-        /// estimated traffic volume            estimated organic monthly traffic to the domain            calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword            learn more about how the metric is calculated in this help center article
+        /// estimated traffic volume
+        /// <br/>            estimated organic monthly traffic to the domain or webpage;
+        /// <br/>            calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
+        /// <br/>            learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-etv-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }
 
         /// <summary>
-        /// estimated cost of paid monthly search traffic            represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values            learn more about how the metric is calculated in this help center article
+        /// estimated cost of converting organic search traffic into paid
+        /// <br/>            represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
+        /// <br/>            the metric is calculated as the product of organic <c>etv</c> and paid <c>cpc</c> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
+        /// <br/>            learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-traffic-cost-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? EstimatedPaidTrafficCost { get; set; }
 
         /// <summary>
-        /// estimated traffic volume based on clickstream data            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for            to retrieve results for this field, the parameter include_clickstream_data must be set to true            learn more about how the metric is calculated in this help center article
+        /// estimated traffic volume based on clickstream data
+        /// <br/>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
+        /// <br/>            to retrieve results for this field, the parameter <c>include_clickstream_data</c> must be set to <c>true</c>;
+        /// <br/>            learn more about how the metric is calculated in this <see href="https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated">help center article</see>
         /// </summary>
         [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ClickstreamEtv { get; set; }
 
         /// <summary>
-        /// changes in rankings            contains information about the ranking changes of the SERP element since the previous_updated_time
+        /// changes in rankings
+        /// <br/>            contains information about the ranking changes of the SERP element since the <c>previous_updated_time</c>
         /// </summary>
         [JsonProperty("rank_changes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }
 
         /// <summary>
-        /// backlinks information for the ranked website
+        /// backlinks information for the relevant page URL
         /// </summary>
         [JsonProperty("backlinks_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public BacklinksInfo BacklinksInfo { get; set; }

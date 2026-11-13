@@ -197,6 +197,15 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
+
+        private static string ConvertToQueryValue(object value)
+        {
+            if (value is bool boolValue)
+                return boolValue ? "true" : "false";
+            if (value is IFormattable formattable)
+                return formattable.ToString(null, CultureInfo.InvariantCulture);
+            return value?.ToString();
+        }
             
         protected struct ObjectResponseResult<T>
         {

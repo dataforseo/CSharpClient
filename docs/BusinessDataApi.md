@@ -74,6 +74,8 @@ var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(new List<Bu
 {
     new()
     {
+        DatetimeFrom = "2026-10-24 16:19:26",
+        DatetimeTo = "2026-11-03 16:19:26",
         Limit = 10,
         IncludeMetadata = true,
     }
@@ -905,6 +907,8 @@ var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesTaskPostAsync(ne
         LanguageCode = "en",
         LocationName = "New York,New York,United States",
         Keyword = "cheap hotel",
+        CheckIn = "2023-06-01",
+        CheckOut = "2023-06-30",
         Currency = "USD",
         Adults = 2,
         Children = new List<string>()
@@ -1046,6 +1050,8 @@ var result = await dfsClient.BusinessDataApi.GoogleHotelSearchesLiveAsync(new Li
         LanguageCode = "en",
         LocationName = "New York,New York,United States",
         Keyword = "cheap hotel",
+        CheckIn = "2023-06-01",
+        CheckOut = "2023-06-30",
         Currency = "USD",
         Adults = 2,
         Children = new List<string>()

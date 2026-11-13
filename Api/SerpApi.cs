@@ -473,7 +473,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleOrganicTaskGetRegularResponseInfo> GoogleOrganicTaskGetRegularAsync(string id)
+        public virtual async Task<SerpGoogleOrganicTaskGetRegularResponseInfo> GoogleOrganicTaskGetRegularAsync(string id, bool? resolveGotoUrls = null)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -488,6 +488,11 @@ namespace DataForSeo.Client.Api
         
                 ;
                 urlBuilder.Append(path);
+                var queryParameters = new List<string>();
+                if (resolveGotoUrls != null)
+                    queryParameters.Add("resolve_goto_urls=" + Uri.EscapeDataString(ConvertToQueryValue(resolveGotoUrls)));
+                if (queryParameters.Count > 0)
+                    urlBuilder.Append('?').Append(string.Join("&", queryParameters));
                 var url = urlBuilder.ToString();
                 request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
                 using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
@@ -513,7 +518,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleOrganicTaskGetAdvancedResponseInfo> GoogleOrganicTaskGetAdvancedAsync(string id)
+        public virtual async Task<SerpGoogleOrganicTaskGetAdvancedResponseInfo> GoogleOrganicTaskGetAdvancedAsync(string id, bool? resolveGotoUrls = null)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -528,6 +533,11 @@ namespace DataForSeo.Client.Api
         
                 ;
                 urlBuilder.Append(path);
+                var queryParameters = new List<string>();
+                if (resolveGotoUrls != null)
+                    queryParameters.Add("resolve_goto_urls=" + Uri.EscapeDataString(ConvertToQueryValue(resolveGotoUrls)));
+                if (queryParameters.Count > 0)
+                    urlBuilder.Append('?').Append(string.Join("&", queryParameters));
                 var url = urlBuilder.ToString();
                 request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
                 using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
@@ -1339,7 +1349,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> GoogleLocalFinderTaskGetAdvancedAsync(string id)
+        public virtual async Task<SerpGoogleLocalFinderTaskGetAdvancedResponseInfo> GoogleLocalFinderTaskGetAdvancedAsync(string id, bool? resolveGotoUrls = null)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1354,6 +1364,11 @@ namespace DataForSeo.Client.Api
         
                 ;
                 urlBuilder.Append(path);
+                var queryParameters = new List<string>();
+                if (resolveGotoUrls != null)
+                    queryParameters.Add("resolve_goto_urls=" + Uri.EscapeDataString(ConvertToQueryValue(resolveGotoUrls)));
+                if (queryParameters.Count > 0)
+                    urlBuilder.Append('?').Append(string.Join("&", queryParameters));
                 var url = urlBuilder.ToString();
                 request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
                 using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
@@ -1615,7 +1630,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleNewsTaskGetAdvancedResponseInfo> GoogleNewsTaskGetAdvancedAsync(string id)
+        public virtual async Task<SerpGoogleNewsTaskGetAdvancedResponseInfo> GoogleNewsTaskGetAdvancedAsync(string id, bool? resolveGotoUrls = null)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -1630,6 +1645,11 @@ namespace DataForSeo.Client.Api
         
                 ;
                 urlBuilder.Append(path);
+                var queryParameters = new List<string>();
+                if (resolveGotoUrls != null)
+                    queryParameters.Add("resolve_goto_urls=" + Uri.EscapeDataString(ConvertToQueryValue(resolveGotoUrls)));
+                if (queryParameters.Count > 0)
+                    urlBuilder.Append('?').Append(string.Join("&", queryParameters));
                 var url = urlBuilder.ToString();
                 request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
                 using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
@@ -2167,7 +2187,7 @@ namespace DataForSeo.Client.Api
                 }
             }
         }
-        public virtual async Task<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> GoogleSearchByImageTaskGetAdvancedAsync(string id)
+        public virtual async Task<SerpGoogleSearchByImageTaskGetAdvancedResponseInfo> GoogleSearchByImageTaskGetAdvancedAsync(string id, bool? resolveGotoUrls = null)
         {
             using (var request = new HttpRequestMessage())
             {
@@ -2182,6 +2202,11 @@ namespace DataForSeo.Client.Api
         
                 ;
                 urlBuilder.Append(path);
+                var queryParameters = new List<string>();
+                if (resolveGotoUrls != null)
+                    queryParameters.Add("resolve_goto_urls=" + Uri.EscapeDataString(ConvertToQueryValue(resolveGotoUrls)));
+                if (queryParameters.Count > 0)
+                    urlBuilder.Append('?').Append(string.Join("&", queryParameters));
                 var url = urlBuilder.ToString();
                 request.RequestUri = new Uri(url, UriKind.RelativeOrAbsolute);
                 using (var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
@@ -6958,6 +6983,15 @@ namespace DataForSeo.Client.Api
                     throw new ApiException("The HTTP status code of the response was not expected (" + status + ").", status, responseData, headers, null);
                 }
             }
+        }
+
+        private static string ConvertToQueryValue(object value)
+        {
+            if (value is bool boolValue)
+                return boolValue ? "true" : "false";
+            if (value is IFormattable formattable)
+                return formattable.ToString(null, CultureInfo.InvariantCulture);
+            return value?.ToString();
         }
             
         protected struct ObjectResponseResult<T>

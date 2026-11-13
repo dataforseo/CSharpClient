@@ -88,10 +88,21 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>1 – normal execution priority (set by default)
         /// <br/>2 – high execution priority
         /// <br/>You will be additionally charged for the tasks with high execution priority.
-        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-search-by-image-serp-api">Pricing</see> page.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-search-by-image-serp-api">Pricing</see> page
         /// </summary>
         [JsonProperty("priority", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Priority { get; set; }
+
+        /// <summary>
+        /// resolve goto redirect URLs
+        /// <br/>optional field
+        /// <br/>set to <c>true</c> to resolve goto redirect URLs in SERPs for tasks with high execution priority
+        /// <br/>default value for tasks with <c>priority: 1</c> is <c>true</c>
+        /// <br/>default value for tasks with <c>priority: 2</c> is <c>false</c>
+        /// <br/>Note: this parameter adds up to 40 seconds to the turnaround time of high-priority tasks, with a maximum turnaround time of 260 seconds
+        /// </summary>
+        [JsonProperty("resolve_goto_urls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? ResolveGotoUrls { get; set; }
 
         /// <summary>
         /// full name of search engine location

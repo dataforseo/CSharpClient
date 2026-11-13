@@ -94,31 +94,6 @@ namespace DataForSeo.Client.Models.Requests
         public string SearchParam { get; set; }
 
         /// <summary>
-        /// array of targets to stop crawling
-        /// <br/>optional field
-        /// <br/>if specified, the response will contain SERP results up to and including the specified match_value;
-        /// <br/>you can specify up to 10 target values in this array
-        /// <br/>example:
-        /// <br/>'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-        /// <br/>learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-        /// <br/>Your account will be billed per each SERP crawled through the specified targets
-        /// </summary>
-        [JsonProperty("stop_crawl_on_match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SerpApiStopCrawlOnMatchInfo> StopCrawlOnMatch { get; set; }
-
-        /// <summary>
-        /// target domain, subdomain, or wildcard valuerequired field if stop_crawl_on_match is specifiedspecify a target domain, subdomain, or wildcard value;Note: domain or subdomain must be specified without a request protocol;example: 'match_value': 'dataforseo.com','match_value': '/blog/post-*'
-        /// </summary>
-        [JsonProperty("match_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchValue { get; set; }
-
-        /// <summary>
-        /// target match typerequired field if stop_crawl_on_match is specifiedtype of match for the match_valuepossible values: domain – specific domain or subdomainwith_subdomains – main domain and subdomainswildcard –  wildcard pattern
-        /// </summary>
-        [JsonProperty("match_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string MatchType { get; set; }
-
-        /// <summary>
         /// user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

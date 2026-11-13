@@ -54,10 +54,20 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>Your account will be billed per each SERP containing up to 10 results;
         /// <br/>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
         /// <br/>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
-        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-news-serp-api">Pricing</see> page.
+        /// <br/>The cost can be calculated on the <see href="https://dataforseo.com/pricing/serp/google-news-serp-api">Pricing</see> page
         /// </summary>
         [JsonProperty("depth", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Depth { get; set; }
+
+        /// <summary>
+        /// resolve goto redirect URLs
+        /// <br/>optional field
+        /// <br/>set to <c>true</c> to resolve goto redirect URLs in SERPs
+        /// <br/>default value: <c>false</c>
+        /// <br/>Note: this parameter adds up to 40 seconds to the turnaround time, with a maximum turnaround time of 260 seconds
+        /// </summary>
+        [JsonProperty("resolve_goto_urls", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? ResolveGotoUrls { get; set; }
 
         /// <summary>
         /// full name of search engine location
